@@ -1,0 +1,73 @@
+================================================================================
+PAPER STRUCTURE — ANALYSIS STATUS
+[x] done  [~] wrong scope/rerun  [ ] not started
+================================================================================
+
+SECTION 1 — METADATA GAP (M1)
+--------------------------------------------------------------------------------
+[x] Census (I1) -> output_v2/figure1_panel_a_table.csv
+[x] EuBIC corpus (I2/I7/I8), 27 papers -> EuBIC-annotation/
+[x] Inter-annotator kappa -> output_v2/panel_b_table.csv, per_field_pairwise_kappa.csv
+    [ ] report shared-N per pair (some pairs share only 2-3 papers)
+[x] Text-mention rate (I6) -> field_mentions_lollipop_table.csv
+    [ ] kappa vs mention-rate rank correlation (data exists, stat not run)
+
+SECTION 2 — FRAMEWORK (descriptive)
+--------------------------------------------------------------------------------
+[x] Pipeline code, agents, gleaning, detectors implemented
+[ ] Ontology indices not built (CL/CLO/UBERON/Mondo/PSI-MS/DOID, SapBERT/FAISS)
+[ ] Model list conflict (Results vs Methods) unresolved
+[ ] Integration-layer scope decision (LLM vs PRIDE, 2-way) open
+[ ] Figure 2 redraw (remove METI elements)
+
+SECTION 3 — FRAMEWORK > MODEL (M2) — PERFORMANCE METRICS NEEDED
+--------------------------------------------------------------------------------
+[x] Train/test split clean (107/30, 0 overlap)
+[ ] Run staircase on 30-PXD test set, 3 models, 3 repeats each. Report F1,
+    precision, recall, consistency, unknown-rate at every stage:
+    [ ] S0 single master prompt (no structure)
+    [ ] S1 3 agents, bare field lists
+    [ ] S2 S1 + field defs/rules/examples
+    [ ] S3 S2 + structural validation/retries
+    [ ] S4 S3 + gleaning
+    [ ] S5 S4 + ontology normalization (full framework)
+    [ ] leave-one-out at S5: -validation, -gleaning, -evidence pairing, -normalization
+    [ ] gleaning on vs off (isolated, not just S3->S4 delta)
+    [ ] integration on vs off (LLM-only vs LLM+PRIDE)
+    [ ] normalization on vs off, scored both exact-only and full-semantic
+[ ] Crossover: weak model+S5 vs strong model+S0/S1
+[ ] Figure 3 (a-f)
+
+SECTION 4 — ONTOLOGY MATCHING
+--------------------------------------------------------------------------------
+[x] Matcher code + tests exist
+[ ] Run 5-level matching on Section-3 output (blocked on Section 3 + ontology indices)
+[ ] Exact vs full-semantic F1 deltas
+[ ] Normalization success rate per field (high/med/sub-threshold)
+[ ] Figure 4
+
+SECTION 5 — HALLUCINATION CONTROL 
+--------------------------------------------------------------------------------
+[ ] Mechanical grounding failure rate 
+[ ] Non-mentioned-field false positives 
+[ ] Gleaning outcome counts (repaired/converted/demoted) — no logs yet
+[x] Unknown-rate framing (number comes from Section 3.2)
+[ ] Figure 5
+
+SECTION 6 — VS EXISTING PRIDE METADATA
+--------------------------------------------------------------------------------
+[x] I13 (n=299) confirmed independent of I2 and of train/test — fix cross-ref
+[x] PRIDE metadata scraped for 139 agentic+EuBIC PXDs -> pride_metadata/
+[~] Fig 6a/b tables exist but "hamlet_present_n" is cached from the full
+    raw-data+text pipeline — rerun text-only (mass analyzer/fragmentation
+    numbers will shrink)
+[ ] Figure 6 regeneration after rerun
+
+--------------------------------------------------------------------------------
+BLOCKING PREREQUISITES
+--------------------------------------------------------------------------------
+[ ] Build ontology indices
+[ ] Run pipeline on 30-PXD test set (staircase, all metrics above) -> unblocks 3,4,5
+[ ] Run pipeline text-only on 299-PXD set -> unblocks 6
+
+

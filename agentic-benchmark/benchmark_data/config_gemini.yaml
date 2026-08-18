@@ -1,0 +1,23 @@
+# Gemini 2.5 Pro Benchmark Configuration
+llm:
+  provider: "gemini"
+  model: "gemini-2.5-pro"
+  api_key_env_var: "GEMINI_API_KEY"
+
+paths:
+  input_dir: "./docs"
+  output_dir: "./framework_output"
+  ontology_dir: "ontologies"
+  cache_dir: "ontology_cache"
+
+agents:
+  temperatures: [0.0]
+  validate: true
+
+concurrency:
+  max_workers: 10
+  request_timeout: 120
+
+reproducibility:
+  seed: 42
+  log_info: true

@@ -1,0 +1,45 @@
+flowchart TB
+    subgraph Inputs["📁 Inputs"]
+        docs["Paper Text Files<br/>(.txt)"]
+        ra["Runassessor Data<br/>(PXD*.json)"]
+        onto["Ontologies<br/>(cl.obo, uberon.obo, etc.)"]
+    end
+
+    subgraph Extraction["🤖 LLM Extraction Agents"]
+        bio["BiologicalAgent<br/>species, tissue, cell_type,<br/>disease, cell_line"]
+        tech["TechnicalAgent<br/>instrument, fragmentation,<br/>cleavage, labeling"]
+        exp["ExperimentalDesignAgent<br/>replicates, samples,<br/>fractions, factors"]
+    end
+
+    subgraph Processing["⚙️ Post-Processing"]
+        parse["JSON Extraction<br/>(bracket matching)"]
+        validate["ValidationAgent<br/>(optional)"]
+        normalize_pp["normalize_output()<br/>• Remove unwanted keys<br/>• Flatten arrays<br/>• Validate evidence"]
+    end
+
+    subgraph Normalization["🔬 Ontology Normalization"]
+        norm_agent["NormalizationAgent<br/>(SapBERT embeddings)"]
+        norm_result["Normalized Terms<br/>• ontology_id<br/>• similarity score<br/>• candidates"]
+    end
+
+    subgraph Integration["🔗 Integration Agent"]
+        pmid["Extract PMID<br/>from filename"]
+        index["PMID Index<br/>(runassessor files)"]
+        enrich["Enrich with:<br/>• Validated instruments<br/>• Organism predictions<br/>• PTM annotations"]
+        resolve["Conflict Resolution<br/>(provenance tracking)"]
+    end
+
+    subgraph Outputs["📤 Outputs"]
+        extracted["Extracted JSON"]
+        normalized["Normalized JSON<br/>(standardized terms)"]
+        enriched["Enriched JSON<br/>(full provenance)"]
+    end
+
+    docs --> bio & tech & exp
+    bio & tech & exp --> parse --> validate --> normalize_pp --> extracted
+    
+    onto --> norm_agent
+    extracted --> norm_agent --> norm_result --> normalized
+    
+    ra --> index
+    normalized --> pmid --> index --> enrich --> resolve --> enriched

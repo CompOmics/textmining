@@ -1,0 +1,74 @@
+# PRIDE Metadata Extraction Framework - Frozen Dependencies
+# Generated: 2026-02-09
+# Environment: reann (Python 3.x)
+# 
+# Use this file for reproducible paper experiments:
+#   pip install -r requirements-frozen.txt
+#
+# For development, use requirements.txt (flexible versions)
+
+# ============================================================
+# Core Dependencies
+# ============================================================
+
+# LLM Client
+openai==2.8.1
+
+# Embeddings and ML
+transformers==4.57.3
+torch==2.9.1
+numpy==2.3.5
+scikit-learn==1.8.0
+scipy==1.16.3
+
+# Sentence embeddings (SapBERT/SciBERT)
+sentence-transformers==5.2.2
+
+# Tokenizers
+tokenizers==0.22.1
+safetensors==0.7.0
+
+# ============================================================
+# Nearest Neighbor Search
+# ============================================================
+faiss-cpu==1.13.2
+
+# ============================================================
+# NLP and Text Processing
+# ============================================================
+spacy==3.8.11
+Levenshtein==0.27.3
+RapidFuzz==3.14.3
+regex==2025.11.3
+
+# ============================================================
+# Data Processing and Visualization
+# ============================================================
+pandas==2.3.3
+matplotlib==3.10.7
+seaborn==0.13.2
+tabulate==0.9.0
+
+# ============================================================
+# Utilities
+# ============================================================
+tqdm==4.67.1
+requests==2.32.5
+PyYAML==6.0.3
+pydantic==2.12.5
+
+# ============================================================
+# Google Generative AI (for Gemini)
+# ============================================================
+google-generativeai==0.8.6
+
+# ============================================================
+# Testing
+# ============================================================
+pytest==9.0.2
+pytest-cov==7.0.0
+
+# ============================================================
+# Hugging Face Hub
+# ============================================================
+huggingface-hub==0.36.0

@@ -1,0 +1,1 @@
+Contains the test set PXDs with manuscript files and SDRFs directly from bigbio github human annotated

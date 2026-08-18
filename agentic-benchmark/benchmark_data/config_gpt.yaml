@@ -1,0 +1,23 @@
+# GPT 5.2 Benchmark Configuration
+llm:
+  base_url: "https://api.openai.com/v1/"
+  model: "gpt-5.2-2025-12-11"
+  api_key: "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"
+
+paths:
+  input_dir: "./docs"
+  output_dir: "./framework_output"
+  ontology_dir: "ontologies"
+  cache_dir: "ontology_cache"
+
+agents:
+  temperatures: [0.0]
+  validate: true
+
+concurrency:
+  max_workers: 1
+  request_timeout: 120
+
+reproducibility:
+  seed: 42
+  log_info: true

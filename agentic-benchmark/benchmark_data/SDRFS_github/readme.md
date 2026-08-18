@@ -1,0 +1,1 @@
+Contains PXDs with the SDRF from the bigbio github converted to json and split according toa gents

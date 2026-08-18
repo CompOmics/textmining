@@ -1,0 +1,62 @@
+format-version: 1.2
+ontology: test_ontology
+data-version: test-2025
+default-namespace: TEST
+
+[Term]
+id: CL:0000000
+name: cell
+synonym: "generic cell" EXACT []
+
+[Term]
+id: CL:0000066
+name: epithelial cell
+synonym: "epithelium cell" EXACT []
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CL:0000738
+name: leukocyte
+synonym: "white blood cell" EXACT []
+synonym: "WBC" EXACT []
+is_a: CL:0000000 ! cell
+
+[Term]
+id: CL:0000084
+name: T cell
+synonym: "T lymphocyte" EXACT []
+synonym: "T-cell" EXACT []
+is_a: CL:0000738 ! leukocyte
+
+[Term]
+id: CL:0000236
+name: B cell
+synonym: "B lymphocyte" EXACT []
+synonym: "B-cell" EXACT []
+is_a: CL:0000738 ! leukocyte
+
+[Term]
+id: UBERON:0000178
+name: blood
+synonym: "whole blood" EXACT []
+
+[Term]
+id: UBERON:0002107
+name: liver
+synonym: "hepatic tissue" EXACT []
+
+[Term]
+id: NCBITaxon:9606
+name: Homo sapiens
+synonym: "human" EXACT []
+
+[Term]
+id: NCBITaxon:10090
+name: Mus musculus
+synonym: "mouse" EXACT []
+synonym: "house mouse" EXACT []
+
+[Term]
+id: DOID:162
+name: cancer
+synonym: "malignant neoplasm" EXACT []

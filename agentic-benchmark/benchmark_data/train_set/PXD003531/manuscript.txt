@@ -1,0 +1,34 @@
+ABSTRACT:
+Summary
+Our understanding of the molecular determinants of cancer is still inadequate because of cancer heterogeneity. Here, using epithelial ovarian cancer (EOC) as a model system, we analyzed a minute amount of patient-derived epithelial cells from either healthy or cancerous tissues by single-shot mass-spectrometry-based phosphoproteomics. Using a multi-disciplinary approach, we demonstrated that primary cells recapitulate tissue complexity and represent a valuable source of differentially expressed proteins and phosphorylation sites that discriminate cancer from healthy cells. Furthermore, we uncovered kinase signatures associated with EOC. In particular, CDK7 targets were characterized in both EOC primary cells and ovarian cancer cell lines. We showed that CDK7 controls cell proliferation and that pharmacological inhibition of CDK7 selectively represses EOC cell proliferation. Our approach defines the molecular landscape of EOC, paving the way for efficient therapeutic approaches for patients. Finally, we highlight the potential of phosphoproteomics to identify clinically relevant and druggable pathways in cancer.
+Graphical Abstract
+Highlights
+We analyze ex-vivo-cultured primary cells using phosphoproteomics
+We investigate epithelial ovarian cancer (EOC) and healthy tissue
+We uncover expression of cancer-specific proteins and kinase signatures
+The kinase CDK7 phosphorylates POLR2A and regulates EOC cell proliferation
+Francavilla et al. use mass-spectrometry-based phosphoproteomics as a powerful tool to reveal cancer signatures. They analyze changes in the proteome and phosphoproteome of primary cells derived from epithelial ovarian cancer (EOC) compared to healthy tissues and reveal a role for the kinase CDK7 in EOC cell proliferation.
+METHODS:
+Experimental Procedures
+Tissue Samples
+All tissue samples were obtained upon informed consent from women (age 45–75 years) undergoing surgery at the Gynecology Division of the European Institute of Oncology (Milan) and collected via standardized operative procedures approved by the Institutional Ethical Board (European Institute of Oncology, Milano, Italy). Table S1 contains a list of the samples together with the patients’ diagnosis and the use of each sample in this study.
+Cell Culture
+To derive OSE and FTE cells, healthy ovarian cortical tissues and fimbriae were incubated with dispase and red blood cells were eliminated. EOC cells were derived either from peritoneal fluid (ascites) or from tumor biopsy specimens. All primary epithelial cells were cultured on collagen-I-coated plates for a maximum of three passages. All cell lines were purchased from ATCC and maintained in the indicated conditions.
+Cell Lysis and Assays
+After the indicated treatment, cell extraction and immunoblotting or cell proliferation assay were performed as described previously.
+Immunofluorescence
+Primary cells were fixed with 4% paraformaldehyde (PFA) and incubated with primary antibodies for 2 hr at room temperature. All secondary antibodies were incubated for 1 hr at room temperature, and nuclei were counterstained with DAPI. Coverslips were then mounted with Mowiol. Images were acquired with an OLYMPUS BX63 microscope (20× objective) and processed by the software Fiji.
+IHC Staining
+The IHC analysis was carried out on four healthy ovaries, four healthy FTE, four primary EOC, and 14 recurrent EOC (Table S1). Immunostaining was performed on 3-μm sections from formalin-fixed, paraffin-embedded tissue samples. Dako EnVision+ System-HRP Labeled Polymer was used for detection, in combination with Dako chromogen substrate (Liquid DAB+ Substrate Chromogen System). Sections were counterstained with hematoxylin. Pictures of stained sections were acquired with the scanner Aperio ScanScope XT (20× objective). IHC staining was assessed by a trained pathologist (G.B.).
+TMA
+TMA analysis was carried out as previously described. Pictures of stained TMAs were acquired with the scanner Aperio ScanScope XT (20× objective). IHC scoring was performed by a trained pathologist (G.B.).
+Sample Preparation for Mass Spectrometry
+The pellet of primary cells or of OVCAR3 cells was dissolved in denaturation buffer, and 700 μg protein from each sample was analyzed. Proteins were digested with endoproteinase Lys-C and sequencing grade modified trypsin. Peptides were purified using reversed-phase Sep-Pak C18 cartridges and eluted with 50% acetonitrile. A small amount of the eluted peptides (1%) was taken for proteome analysis. The remaining peptides were used for the analysis of phosphoproteome as previously described.
+Mass Spectrometry Analysis
+Peptide mixtures were analyzed using an EASY-nLC system (Proxeon) connected to a Q-Exactive mass spectrometer (Thermo Fisher Scientific), as described previously.
+Raw Files Analysis
+Raw data were analyzed by the MaxQuant software suite, version 1.4.1.4, using the integrated Andromeda search engine. Only peptides with an Andromeda score >40 were included.
+Data Analysis
+The samples were grouped in three categories representing EOC, FTE, and OSE and we used the LIMMA package of Bioconductor in R to detect significant changes in abundance among the three groups.
+Statistics
+All experiments were performed at least three times. The mass spectrometry data were normalized before further analysis. p values were calculated by Student’s two tailed t test, Wilcoxon test, or Fisher’s exact test, as indicated. A statistically significant difference was concluded when p < 0.05 or p < 0.001 as reported in the figure legends.
