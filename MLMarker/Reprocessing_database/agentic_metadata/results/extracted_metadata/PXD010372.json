@@ -1,0 +1,920 @@
+{
+  "sample_groups": [
+    {
+      "name": "FFPE Ovarian Cancer Tissues",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "ovary",
+          "evidence": "metastatic tumors from the omentum",
+          "ontology_id": "tissues:0017",
+          "ontology_name": "ovary",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "Malignant neoplasm of ovary",
+          "evidence": "diseases: Malignant neoplasm of ovary",
+          "ontology_id": "diseases:0022",
+          "ontology_name": "ovarian cancer",
+          "similarity": 0.9084
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "high-energy collisional dissociation based fragmentation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "LysC digestion was carried out",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "trypsin was added for tryptic digestion",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 55 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "25 NCE",
+          "evidence": "normalized collision energy of 25"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "250",
+          "evidence": "250 min gradient from 2% to 60%"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "in-house packed C18 columns",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Mass spectra were acquired in data-dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification method",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for MS analysis"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No PTMs are included in the dataset"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1000 HPLC system",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    },
+    {
+      "name": "Ovarian Cancer Cell Lines",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Malignant neoplasm of ovary",
+          "evidence": "Epithelial ovarian cancer cell",
+          "ontology_id": "diseases:0022",
+          "ontology_name": "ovarian cancer",
+          "similarity": 0.9084
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "SKOV3ip1",
+          "evidence": "ovarian cancer cell lines SKOV3ip1",
+          "ontology_name": "SKOV3IP1",
+          "similarity": 1.0
+        },
+        {
+          "value": "OVCAR5",
+          "evidence": "OVCAR5",
+          "ontology_name": "OVCAR5",
+          "similarity": 1.0
+        },
+        {
+          "value": "COV318",
+          "evidence": "COV318",
+          "ontology_name": "COV318",
+          "similarity": 1.0
+        },
+        {
+          "value": "59M",
+          "evidence": "59M (ovarian cancer)",
+          "ontology_name": "59M",
+          "similarity": 1.0
+        },
+        {
+          "value": "OVKATE",
+          "evidence": "OVKATE (ovarian cancer)",
+          "ontology_name": "OVKATE",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "high-energy collisional dissociation based fragmentation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin was set as the enzyme specificity",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 55 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "25 NCE",
+          "evidence": "normalized collision energy of 25"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "250",
+          "evidence": "250 min gradient from 2% to 60%"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "in-house packed C18 columns",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Mass spectra were acquired in data-dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification method",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for MS analysis"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No PTMs are included in the dataset"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1000 HPLC system",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treatment with carboplatin"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "carboplatin",
+          "evidence": "treatment with carboplatin"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "carboplatin",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Ovarian Cancer Cell Lines (Immunopeptidomics)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Malignant neoplasm of ovary",
+          "evidence": "Epithelial ovarian cancer cell",
+          "ontology_id": "diseases:0022",
+          "ontology_name": "ovarian cancer",
+          "similarity": 0.9084
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "SKOV3ip1",
+          "evidence": "SKOV3ip1 cells were treated",
+          "ontology_name": "SKOV3IP1",
+          "similarity": 1.0
+        },
+        {
+          "value": "59M",
+          "evidence": "59M ovarian cancer cells",
+          "ontology_name": "59M",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "high-energy collisional dissociation based fragmentation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin was set as the enzyme specificity",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 55 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "25 NCE",
+          "evidence": "normalized collision energy of 25"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "250",
+          "evidence": "250 min gradient from 2% to 60%"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "in-house packed C18 columns",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Mass spectra were acquired in data-dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification method",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for MS analysis"
+      },
+      "enrichment": {
+        "value": "HLA-I peptides",
+        "method": "immunoprecipitation",
+        "evidence": "HLA-I molecules immunopurified with the W6/32 antibody"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1000 HPLC system",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated with 500nM 5-aza-2′-deoxycytidine (DAC)"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "5-aza-2′-deoxycytidine",
+          "evidence": "treated with 500nM 5-aza-2′-deoxycytidine (DAC)"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "5-aza-2′-deoxycytidine",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Ovarian Cancer Cell Lines (Phosphoproteomics)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Malignant neoplasm of ovary",
+          "evidence": "Epithelial ovarian cancer cell",
+          "ontology_id": "diseases:0022",
+          "ontology_name": "ovarian cancer",
+          "similarity": 0.9084
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "OVCAR5",
+          "evidence": "OVCAR-5 HGSOC cell line",
+          "ontology_name": "OVCAR5",
+          "similarity": 1.0
+        },
+        {
+          "value": "59M",
+          "evidence": "59M ovarian cancer cells",
+          "ontology_name": "59M",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "high-energy collisional dissociation based fragmentation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin was set as the enzyme specificity",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 55 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "25 NCE",
+          "evidence": "normalized collision energy of 25"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "250",
+          "evidence": "250 min gradient from 2% to 60%"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "in-house packed C18 columns",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Mass spectra were acquired in data-dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification method",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for MS analysis"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "EasyPhos",
+        "evidence": "Phosphoproteomic analysis of cell lines was done according to the 'EasyPhos' protocol"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1000 HPLC system",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated with carboplatin"
+        },
+        {
+          "value": "gene knockdown",
+          "evidence": "CT45-targeting siRNA"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "carboplatin",
+          "evidence": "treated with carboplatin"
+        },
+        {
+          "value": "siRNA targeting CT45",
+          "evidence": "CT45-targeting siRNA"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "carboplatin",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "siRNA targeting CT45",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Ovarian Cancer Cell Lines (ChIP-MS)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Malignant neoplasm of ovary",
+          "evidence": "Epithelial ovarian cancer cell",
+          "ontology_id": "diseases:0022",
+          "ontology_name": "ovarian cancer",
+          "similarity": 0.9084
+        }
+      ],
+      "cell_part": [
+        {
+          "value": "chromatin",
+          "evidence": "chromatin immunoprecipitation coupled to MS"
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "OVCAR5",
+          "evidence": "OVCAR-5 HGSOC cell line",
+          "ontology_name": "OVCAR5",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "high-energy collisional dissociation based fragmentation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin was set as the enzyme specificity",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 55 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "25 NCE",
+          "evidence": "normalized collision energy of 25"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "250",
+          "evidence": "250 min gradient from 2% to 60%"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "in-house packed C18 columns",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Mass spectra were acquired in data-dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification method",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "chromatin fractionation",
+        "evidence": "Chromatin fractionation was performed"
+      },
+      "enrichment": {
+        "value": "chromatin",
+        "method": "ChIP",
+        "evidence": "chromatin immunoprecipitation coupled to MS"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1000 HPLC system",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "CT45 was depleted by short hairpin RNA"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "shRNA targeting CT45",
+          "evidence": "CT45 was depleted by short hairpin RNA"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "short hairpin RNA",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Ovarian Cancer Cell Lines (AP-MS)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Malignant neoplasm of ovary",
+          "evidence": "Epithelial ovarian cancer cell",
+          "ontology_id": "diseases:0022",
+          "ontology_name": "ovarian cancer",
+          "similarity": 0.9084
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "OVCAR5",
+          "evidence": "OVCAR-5",
+          "ontology_name": "OVCAR5",
+          "similarity": 1.0
+        },
+        {
+          "value": "COV318",
+          "evidence": "COV318",
+          "ontology_name": "COV318",
+          "similarity": 1.0
+        },
+        {
+          "value": "59M",
+          "evidence": "59M cells",
+          "ontology_name": "59M",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "high-energy collisional dissociation based fragmentation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin was set as the enzyme specificity",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 55 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "25 NCE",
+          "evidence": "normalized collision energy of 25"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "250",
+          "evidence": "250 min gradient from 2% to 60%"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "in-house packed C18 columns",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Mass spectra were acquired in data-dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification method",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for MS analysis"
+      },
+      "enrichment": {
+        "value": "protein complexes",
+        "method": "immunoprecipitation",
+        "evidence": "immunoprecipitation of cell lines ectopically expressing"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1000 HPLC system",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

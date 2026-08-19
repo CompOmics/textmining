@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Liver
+instruments: Orbitrap Exploris 480
+modifications: phosphorylated residue
+experiment types: Data-independent acquisition; Data-dependent acquisition
+quantification: Protein Abundance Index - PAI
+keywords: Lc-msms; Liver; Mice
+
+ABSTRACT:
+To investigate global proteome changes dependent on KEAP1-p62 binding in vivo, we performed cytoplasmic proteome profiling.
+
+PROJECT DESCRIPTION:
+Proteome analysis in hepatocyte-specific Atg7-knockout mice with different p62 mutations
+
+SAMPLE PROCESSING:
+Each peptide (1.5 μg) was first loaded onto a Vanquish Neo (Thermo Fisher Scientific) connected inline to an Orbitrap Exploris480 (Thermo Fisher Scientific) equipped with a nano electrospray ion source (Thermo Fisher Scientific). Peptides were separated on a C18 analytical column (IonOpticks, Aurora Series Emitter Column, AUR3-25075C18 25 cm × 75 μm, 1.6 μm FSC C18 with a nanoZero fitting) using a 180-min gradient (solvent A, 0.1% FA; and solvent B, 80% ACN/0.1% FA). MS1 data were collected using the Orbitrap (60,000 resolution, 500–860 m/z, injection time 100 ms, standard AGC Target). DIA MS2 spectra were collected at m/z 500–860 at 30,000 resolution to set an AGC target of 1000% (1 × 106), a maximum injection time of “auto”, and HCD collision energies of 30%. The width of the isolation window was set to 6 Da, and overlapping window patterns at m/z 500–860 were used.
+
+DATA PROCESSING:
+The data were analyzed using CHIMERYS3.0 intelligent search algorithm (MSAID GmbH) in Thermo Scientific™ Proteome Discoverer™ 3.1. A predicted spectrum library was generated from the mouse fasta database (taxonomy ID=10090, version 2024-03-27) by INFERYS™ deep learning framework (MSAID GmbH) for all tryptic +1–+6 peptides between 7-30 amino acids in length. The maximum number of missed cleavage sites for trypsin was set to 2. Fixed carbamidomethyl modifications and Oxidation (Met), GlyGly (Lys), and Phosphorylation (Ser, Thr, and Tyr) were selected as variable modifications. Peptide identification was filtered at false discovery rate (FDR) < 0.01.

@@ -1,0 +1,354 @@
+{
+  "sample_groups": [
+    {
+      "name": "Group 1: Label-free Proteome and Phosphoproteome (DIA)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Blood",
+          "evidence": "organism parts: Blood",
+          "ontology_id": "tissues:0049",
+          "ontology_name": "blood",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "Acute leukemia",
+          "evidence": "diseases: Acute leukemia",
+          "ontology_id": "diseases:0035",
+          "ontology_name": "acute leukemia",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "MV-4-11",
+          "evidence": "MOLM-13 and MV-4-11... AML cell lines"
+        },
+        {
+          "value": "MOLM-13",
+          "evidence": "MOLM-13 and MV-4-11... AML cell lines"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "coupled to an Orbitrap Exploris 480",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Not explicitly stated, but Orbitrap Exploris 480 typically uses HCD for DIA",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "on-bead digested through the 'PAC' protocol",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "SDRF/PRIDE properties imply alkylation in standard proteomics",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "S-phosphorylation",
+          "evidence": "subjected to automated Ti-IMAC phosphopeptide enrichment",
+          "ontology_id": "modifications:0005",
+          "ontology_name": "S-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "T-phosphorylation",
+          "evidence": "subjected to automated Ti-IMAC phosphopeptide enrichment",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "subjected to automated Ti-IMAC phosphopeptide enrichment",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "Not explicitly stated, standard for Orbitrap DIA"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "30",
+          "evidence": "30 and 60 samples per day for the proteome and phosphoproteome"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "15 cm column (150 μm inner diameter)",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "operated in data-independent acquisition (DIA) mode",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "Single-shot label-free proteomics",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "Single-shot label-free proteomics"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "Ti-IMAC",
+        "evidence": "subjected to automated Ti-IMAC phosphopeptide enrichment"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Evosep One system coupled to Orbitrap",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated with SHP099"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "SHP099",
+          "evidence": "treated with SHP099"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "SHP099... allosteric SHP2 inhibitor",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Group 2: TMT Phosphoproteome (DDA)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Blood",
+          "evidence": "organism parts: Blood",
+          "ontology_id": "tissues:0049",
+          "ontology_name": "blood",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "Acute leukemia",
+          "evidence": "diseases: Acute leukemia",
+          "ontology_id": "diseases:0035",
+          "ontology_name": "acute leukemia",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "MV-4-11",
+          "evidence": "TMT-based quantitative phosphoproteomics... MV-4-11 cells"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive HF-X",
+          "evidence": "coupled to a Q Exactive HF-X",
+          "ontology_id": "instruments:0013",
+          "ontology_name": "Q Exactive HF-X",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Not explicitly stated, but Q Exactive HF-X typically uses HCD for DDA",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "proteins were digested in solution",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "SDRF/PRIDE properties imply alkylation in standard proteomics",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "S-phosphorylation",
+          "evidence": "subjected to TiO2 enrichment",
+          "ontology_id": "modifications:0005",
+          "ontology_name": "S-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "T-phosphorylation",
+          "evidence": "subjected to TiO2 enrichment",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "subjected to TiO2 enrichment",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "Not explicitly stated, standard for Q Exactive DDA"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "77",
+          "evidence": "with a 77-minute gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "15 cm column (75 μm inner diameter)",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "operated in data-dependent acquisition (DDA) mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "TMT Phosphoproteomics... peptides were TMT-labeled",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high pH reversed-phase",
+        "evidence": "separated by offline high pH reversed-phase fractionation"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "TiO2",
+        "evidence": "subjected to TiO2 enrichment"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Easy nLC 1200 coupled to Q Exactive HF-X",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated with SHP099"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "SHP099",
+          "evidence": "treated with SHP099"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "SHP099... allosteric SHP2 inhibitor",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

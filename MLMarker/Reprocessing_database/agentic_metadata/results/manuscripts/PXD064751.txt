@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: Orbitrap Fusion Lumos
+modifications: monohydroxylated residue; TMT6plex-126 reporter+balance reagent acylated residue; acetylated residue; methylthiolated residue
+experiment types: Data-dependent acquisition
+quantification: TMT
+keywords: Mydgf; Lung adenocarcinoma; Knockdown; Tandem mass tags (tmt)
+
+ABSTRACT:
+Lung adenocarcinoma (LUAD) remains the leading cause of cancer-related mortality worldwide. Unlike patients harboring epidermal growth factor receptor (EGFR) mutations, those with wild-type EGFR lack effective targeted therapeutic options. We established a super-SILAC-based proteomic dataset (PXD046807) comprising LUAD tissues stratified by EGFR mutation status and clinical stages. Notably, myeloid-derived growth factor (MYDGF) was identified as a potential key regulator in patients with wild-type EGFR LUAD. To further investigate the role of MYDGF in LUAD, we applied gene knockdown combined with tandem mass tag (TMT)-based quantitative proteomic analysis to search for the specific biological processes regulated by MYDGF in normal lung fibroblasts and LUAD cells with different EGFR status.
+
+PROJECT DESCRIPTION:
+Quantitative proteomics of MYDGF knockdown in lung adenocarcinoma cells
+
+SAMPLE PROCESSING:
+Proteins were extracted from negative control (NC) siRNA and MYDGF siRNA-treated cells, including normal lung fibroblasts WI-38, EGFR wild-type LUAD cells CL1-5, and mutant LUAD cell line PE089. Protein samples were prepared in 100 mM triethylammonium bicarbonate (TEABC) buffer, reduced with tris(2-carboxyethyl)phosphine (TCEP), and incubated at 60°C for 60 min. Subsequently, alkylation was performed with methyl methanethiosulfonate (MMTS) at 25°C for 30 min in the dark. Samples were then digested with trypsin (Promega, Madison, WI, USA) at a ratio of 100 μg protein to 1 μg trypsin at 37°C for 16 h. The resulting tryptic peptides were lyophilized using a SpeedVac concentrator and reconstituted in 100 mM TEABC. The peptides were then labeled with a 6-plex tandem mass tag (TMT) according to the manufacturer's protocol (Thermo Fisher Scientific). Equal amounts of the labeled peptides were mixed and analyzed on an Orbitrap Fusion Lumos Tribrid mass spectrometer (Thermo Scientific). The peptide mixture was separated and analyzed by two-dimensional liquid chromatography tandem mass spectrometry (2D LC-MS/MS) using strong cation exchange and reversed-phase C18 liquid chromatography systems. The analysis was performed using a Dionex UltiMate 3000 nano-LC system coupled to an Orbitrap Fusion Lumos Tribrid mass spectrometer.
+
+DATA PROCESSING:
+MS/MS spectra were analyzed using the Mascot search engine (version v2.5, Matrix Science, London, UK) against the Swiss-Prot human sequence database. Protein quantification was performed using Proteome Discoverer software (version 1.4, Thermo Scientific, San Jose, CA, USA) with reporter ion quantification for 6-plex TMT labeling. Mass tolerances were set to 10 ppm for precursor ions and 0.03 Da for fragment ions. Tryptic peptides with up to two missed cleavages were included in the analysis. Variable modifications included methionine oxidation, N-terminal acetylation, and pyroglutamination of N-terminal glutamine, while cysteine methylthiolation and TMT labeling of lysine residues and peptide N-termini were set as fixed modifications.

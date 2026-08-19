@@ -1,0 +1,219 @@
+{
+  "sample_groups": [
+    {
+      "name": "NSCLC Xenografts",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        },
+        {
+          "value": "Mus musculus",
+          "evidence": "female CD1 nu/nu mice and BALB/c nude mice",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "tumor",
+          "evidence": "Tumor material (whole tumor) was collected"
+        }
+      ],
+      "disease": [
+        {
+          "value": "non-small cell lung cancer",
+          "evidence": "four xenograft NSCLC models",
+          "ontology_id": "diseases:0013",
+          "ontology_name": "non-small cell lung carcinoma",
+          "similarity": 0.9676
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "H1975",
+          "evidence": "Human NSCLC cell lines H1975"
+        },
+        {
+          "value": "H1975-HGF",
+          "evidence": "engineered H1975-HGF cell line"
+        },
+        {
+          "value": "HCC827",
+          "evidence": "HCC827",
+          "ontology_name": "HCC-827",
+          "similarity": 1.0
+        },
+        {
+          "value": "HCC827-ER1",
+          "evidence": "HCC827-ER1 cell line"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive Hybrid Quadrupole-Orbitrap Plus",
+          "evidence": "Thermo Q Exactive Hybrid Quadrupole-Orbitrap Plus",
+          "ontology_id": "instruments:0002",
+          "ontology_name": "LTQ Orbitrap Elite",
+          "similarity": 0.7662
+        },
+        {
+          "value": "LTQ Orbitrap XL",
+          "evidence": "LTQ Orbitrap XL mass spectrometer",
+          "ontology_id": "instruments:0004",
+          "ontology_name": "LTQ Orbitrap XL",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "higher-energy collisional dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "digested using trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 50 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-TMT6plex",
+          "evidence": "labelled with TMT6-plex"
+        },
+        {
+          "value": "K-TMT10plex",
+          "evidence": "TMT10-plex"
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "Phosphopeptides were enriched by phosphotyrosine immoprecipitation",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "32 NCE",
+          "evidence": "collision energy (CE): 32%"
+        },
+        {
+          "value": "75 NCE",
+          "evidence": "HCD (CE: 75%)"
+        },
+        {
+          "value": "35 NCE",
+          "evidence": "CID in the LTQ ion trap at CE: 35%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "140",
+          "evidence": "140 min (phosphopeptides)"
+        },
+        {
+          "value": "90",
+          "evidence": "90 min (crude total peptide)"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "packed with 5 µm C18 beads",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "data-dependent acquisition mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "labelled with TMT6-plex or TMT10-plex",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "TMT multiplexing",
+        "evidence": "For each TMT multiplex, a pooled sample was included"
+      },
+      "enrichment": {
+        "value": "phosphotyrosine",
+        "method": "phosphotyrosine immoprecipitation and IMAC",
+        "evidence": "Phosphopeptides were enriched by phosphotyrosine immoprecipitation and immobolized metal ion chromotography (IMAC)"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "integrated electrospray tip",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treatment with osimertinib or JNJ-61186372"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "osimertinib",
+          "evidence": "osimertinib (AZD9291)"
+        },
+        {
+          "value": "JNJ-61186372",
+          "evidence": "EGFR/Met bispecific antibody, JNJ-61186372"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "EGFR tyrosine kinase inhibitor, osimertinib",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "EGFR/Met bispecific antibody, JNJ-61186372",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

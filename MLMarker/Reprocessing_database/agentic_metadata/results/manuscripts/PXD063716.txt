@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Q Exactive
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: Relative quantification
+keywords: Protein phosphatase 2a (pp2a); fluorescence recovery after photobleaching (frap); mass spectrometry (ms); phosphorylation; liprin-α1; liprin-β1; intrinsically disordered protein domain; phase separation; houge-janssens syndrome (hjs)
+
+ABSTRACT:
+Liprin-α1 is a widely expressed scaffolding protein that regulates cellular processes such as cell motility and synaptic transmission through assembly of localized higher-order molecular complexes. The dynamic regulation of these complexes remains poorly understood. Liquid-liquid phase separation (LLPS) is a process that concentrates proteins into cellular nanodomains, facilitating efficient spatiotemporal signaling. Whether liprin-α1 undergoes regulated LLPS remains unclear. MS-based interactomics identified PPP2R5D, the regulatory B56δ subunit of PP2A, as a liprin-α1 interaction partner through a canonical short linear motif (SLiM) in its N-terminal dimerization domain. Mutation of SLiM4 nearly abolished liprin-α1 interaction with PP2A holoenzyme and resulted in a significant increase in GFP-liprin-α1 LLPS in HEK293 cells. Consistently, GFP-liprin-α1 exhibited increased droplet formation in PPP2R5D knockout HEK293 cells. Phospho-analysis of liprin-α1 SLiM4 mutant via MS revealed increased phosphorylation of multiple Ser/Thr sites, including S763, as validated by a novel phospho-specific antibody. A liprin-α1 S763E phospho-mimetic mutant appeared sufficient to drive LLPS. Expression of the PPP2R5D missense variant E420K, recurrently found in Houge-Janssens Syndrome Type 1 compromised suppression of liprin-α1 LLPS, correlating with increased liprin-α1 S763 phosphorylation. Mechanistically, a liprin-α1 E942A mutant unable to bind liprin-β1 underwent increased LLPS, despite preserved PPP2R5D holoenzyme binding. Furthermore, liprin-α1/β1 heterodimerization significantly decreased under conditions where liprin-α1 LLPS was promoted, i.e. upon SLiM4 or S763E mutation in wild type cells, or in PPP2R5D knockout and PPP2R5D E420K knock-in cells. Our findings identify both liprin-β1 and PPP2R5D-PP2A as potent inhibitors of liprin-α1 LLPS, with PP2A contributing to liprin-α1/β1 heterodimerization via phosphorylation of at least liprin-α1 S763.
+
+PROJECT DESCRIPTION:
+The phosphatase activity of the PPP2R5D-PP2A holoenzyme modulates liquid-liquid phase separation of the scaffold protein liprin-α1
+
+SAMPLE PROCESSING:
+Human HEK293 total cell lysates (n=3 biological replicates) overexpressing GFP-tagged SLIM4 mutated or WT liprin-α1 were subjected to affinity purification using anti-GFP nanobodies and prepared for liprin-α1 interactomics essentially as described in (43). LC-MS/MS analysis was executed on a Q Exactive Orbitrap mass spectrometer (Thermo Scientific) as described in (43) operated in data-dependent acquisition mode.
+
+DATA PROCESSING:
+Proteome Discoverer 2.2 (Thermo Scientific) was used for identification (Mascot, Matrix Science) and validation (Percolator node, FDR 1%) of peptides.  Uniprot Homo sapiens (204,906 entries) was used as a database.  Oxidation (M) was included as variable modification. Two missed cleavages were allowed.  Peptide tolerance was set at 10 ppm for MS and at 20 mmu for MS/MS.  Label-free (relative) peptide quantification was executed using Progenesis software (Nonlinear Dynamics) and (relative) protein quantification was done using the Hi3 method (Silva JC, Gorenstein MV, Li G, Johannes, Geromanos SJ. Molecular & Cellular Proteomics. 2006 Jan 1;5(1):144–56).

@@ -1,0 +1,174 @@
+{
+  "sample_groups": [
+    {
+      "name": "Saccharomyces cerevisiae whole proteome and phosphoproteome",
+      "organism": [
+        {
+          "value": "Saccharomyces cerevisiae",
+          "evidence": "organisms: Saccharomyces cerevisiae (baker's yeast)",
+          "ontology_id": "organisms:0007",
+          "ontology_name": "Saccharomyces cerevisiae",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "yeast cells",
+          "evidence": "Cell pellets were resuspended in a denaturing lysis buffer"
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Eclipse",
+          "evidence": "analyzed on an Orbitrap Eclipse mass spectrometer",
+          "ontology_id": "instruments:0020",
+          "ontology_name": "Orbitrap Eclipse",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "higher-energy collisional dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "digested with 5 ng/μL LysC",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "trypsin",
+          "evidence": "combination of 5 ng/μL trypsin with 5 ng/μL LysC",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 15 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "30 NCE",
+          "evidence": "30% NCE HCD"
+        },
+        {
+          "value": "33 NCE",
+          "evidence": "33% normalized collision energy (NCE)"
+        },
+        {
+          "value": "31 NCE",
+          "evidence": "31% NCE HCD"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "103",
+          "evidence": "ramping from 7% to 50% B over 103 min"
+        },
+        {
+          "value": "73",
+          "evidence": "ramping from 6% to 50% B over 73 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "separated by reverse-phase chromatography",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition (DDA) measurements",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        },
+        {
+          "value": "DIA",
+          "evidence": "Data-independent acquisition (DIA) measurements",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label free data independent acquisition (DIA) mass spectrometry",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "gas phase fractionation",
+        "evidence": "For gas phase fractionated (GPF) samples"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "Fe3+-NTA magnetic beads",
+        "evidence": "phosphopeptides were enriched with Fe3+-NTA magnetic beads"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoLC system (ThermoFisher Scientific)",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene overexpression",
+          "evidence": "yeast strains expressing different mistranslating tRNA variants"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "tRNAProG3:U70",
+          "evidence": "tRNAProG3:U70 (pCB2948)"
+        },
+        {
+          "value": "tRNASerUGG,G26A",
+          "evidence": "tRNASerUGG,G26A (pCB4023)"
+        },
+        {
+          "value": "tRNASerUCU,G26A",
+          "evidence": "tRNASerUCU,G26A (pCB4257)"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "tRNA variants",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

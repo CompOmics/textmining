@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Q Exactive
+modifications: biotinylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: Label free
+keywords: Autophagy; Turboid; Proximity labeling; Tau; Protein aggregation; P62; Sqstm1; Mapt
+
+ABSTRACT:
+Sequestosome1 (SQSTM1) is an autophagy receptor that mediates degradation of intracellular cargo, including protein aggregates, through multiple protein interactions. These interactions form the SQSTM1 protein network that are mediated by SQSTM1 functional interaction domains, which include LIR, PB1, UBA and KIR. Despite various attempts to unravel the complexity of the SQSTM1 protein network, our understanding of the relationship of various components in cellular physiology and disease states continues to evolve. To investigate the SQSTM1 protein interaction network, we performed proximity profile labeling by fusing TurboID with the human protein SQSTM1 (TurboID::SQSTM1). This chimeric protein displayed well-established SQSTM1 features including: production of SQSTM1 intracellular bodies, binding to known SQSTM1 interacting partners via defined functional SQSTM1 interacting domains and capture of novel SQSTM1 interactors. Strikingly, aggregated tau protein altered the protein interaction network of SQSTM1 to include many stress associated proteins. Overall, our work reveals the dynamic landscape of the SQSTM1 protein network and offers a resource to study SQSTM1 function in cellular physiology and disease state.
+
+PROJECT DESCRIPTION:
+Proximity labeling reveals dynamic changes in the SQSTM1 protein network
+
+SAMPLE PROCESSING:
+Following transduction, cells expressing the chimeric proteins were lysed in  50mM Tris-HCl (pH 7.5), 150mM NaCl, 1mM EDTA, 0.5% SDS, 1% Triton-X100 and 0.5% sodium deoxycholate. Following, biotinylated proteins were enriched using streptavidin magnetic beads overnight at 4C degreees. Following the streptavidin pull down, the beads were washed twice with RIPA buffer, once with KCl 1M, once with Na2CO3 0.1M, once with Urea 2M (in 10mM Tris-HCl, pH 8) and twice with ammonium bicarbonate 50mM. On bead digestion was performed, the beads were suspended in 200 µL of 50 mM ammonium bicarbonate and incubated for 30 minutes at room temperature with 40 mM chloroacetamide and 10 mM TCEP to alkylate and reduce the proteins, respectively. The reaction was then quenched using 20 mM DTT. The beads were subsequently digested overnight at 37C with 1 µg of MS-grade trypsin.  LC-MS/MS. In brief, the desalted peptides were reconstituted in 1% formic acid and fractionated using C18 PepMap pre-column (3µm, 100Å, 75mm x 2cm) hyphenated to a RSLC C18 analytical column (2mm, 100 Å, 75 µm x 50cm) High performance nanoflow liquid chromatography-Orbitrap tandem mass spectrometry (LC-MS/MS) were performed using the Easy nLC 1200 system coupled to Q-Exactive HF-X MS (Thermo Scientific).
+
+DATA PROCESSING:
+LC-MS/MS raw data were processed in MaxQuant v1.3.7.0, using the Human proteome (2018_04 Uniprot release of UP000005640_9606) with match between-runs activated. Then, the MaxQuant output file was analyzed in Perseus v2.0.3.0 .

@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Saccharomyces cerevisiae (baker's yeast)
+instruments: Orbitrap Eclipse
+modifications: monohydroxylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Eclipse; 35-plex; Tmtprod; Tmt; Α-factor
+
+ABSTRACT:
+The regulation of cell cycle progression in response to environmental cues is essential for cellular adaptation. In Saccharomyces cerevisiae, the BAR1 gene modulates sensitivity to the mating pheromone α-factor, which induces cell cycle arrest. Here we investigated the dynamic proteomic response in the bar1 deletion strain using a 27-plex experimental design with TMTproD isobaric labeling. Asynchronous bar1Δ cells were arrested with α-factor and then released from the pheromone arrest. We acquired three replicate protein abundance time-course profiles following pheromone (α-factor) washout, with samples collected at eight time points from 0 to 165 minutes post-washout. Using higher-order TMTpro sample multiplexing, we generated global temporal profiles of protein abundance associated with recovery from pheromone-induced arrest. Our findings identify specific proteins and pathways involved in cell cycle re-entry and in the attenuation of the pheromone signal, providing insights into the regulatory mechanisms of mating response in yeast. This study contributes significantly to dynamic proteomic analysis in cell cycle progression. We present a powerful approach for investigating complex cellular processes and showcase cell cycle progression following pheromone washout in yeast.
+
+PROJECT DESCRIPTION:
+Temporal Proteomic Profiling of Pheromone-Induced Cell Cycle Re-Entry in Saccharomyces cerevisiae
+
+SAMPLE PROCESSING:
+Protein digestion, TMT labeling, and sample processing. A total of 1 µg of Lys-C (overnight at 25°C) and then 1 µg of trypsin (6 h at 37°C) were used to digest ~100 µg of protein from each sample. A final volume of 30% acetonitrile was added to the digested peptides followed by the addition of specified tandem mass tag (TMTpro) labeling reagents. An aliquot of 50 µg of digested peptide from each sample was labeled with 120 µg of the appropriate TMTpro reagent. Samples were incubated for one hour at room temperature. Before continuing sample preparation, ~1 µg of digested peptides were collected from each sample, mixed, and desalted via StageTip to verify labeling efficiency (ensuring that it was at least >97%). Hydroxylamine (final concentration of ~0.3%) was added to each sample to quench the labeling reaction. Samples were incubated at room temperature for 15 min. Then, samples were pooled 1:1 and desalted using a 50 mg Sep-Pak solid-phase extraction column and then dried.
+
+DATA PROCESSING:
+Spectra were converted to mzXML via MSconvert. Database searching included all entries from the S. cerevisiae UniProt reference Database. The database was concatenated with one composed of all protein sequences for that database in the reversed order. Searches were performed using a 50-ppm precursor ion tolerance for total protein level profiling. The product ion tolerance was set to 0.03 Da. These wide mass tolerance windows were selected to maximize sensitivity in conjunction with Comet searches and linear discriminant analysis. TMTpro labels on lysine residues and peptide N-termini +304.207 Da), as well as carbamidomethylation of cysteine residues (+57.021 Da) were set as static modifications, while oxidation of methionine residues (+15.995 Da) was set as a variable modification. Peptide-spectrum matches (PSMs) were adjusted to a 1% false discovery rate (FDR). PSM filtering was performed using a linear discriminant analysis, as described previously and then assembled further to a final protein-level FDR of 1%.

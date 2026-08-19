@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Permanent cell line cell
+diseases: Brain glioblastoma multiforme
+instruments: Orbitrap Exploris 480
+modifications: phosphorylated residue
+experiment types: Data-dependent acquisition
+quantification: Relative quantification
+keywords: Human; Phosphoproteome; Glioblastoma
+
+ABSTRACT:
+Glioblastoma (GB), the most frequent and aggressive primary adult brain tumour, remains an incurable disease and new therapeutic approaches are needed to improve patient care. The transcription factor EMX2 plays a key role in modulating the balance between neurogenesis and astrogenesis during brain development. This transcription factor has also been involved in tumor growth. To further investigate the role of EMX2 in GB, we used an EMX2-inducible U87 cells. Multi-omics analyses (ChIPseq, transcriptome, proteome and phosphoproteome) were performed in U87 cells expressing EMX2 or not in a timely delineated manner.
+
+PROJECT DESCRIPTION:
+Phosphoproteomic analysis for the detection of the EMX2-EGFR signaling network controlling glioblastoma progression
+
+SAMPLE PROCESSING:
+Trypsin digestion. Protein pellets were denatured with 8 M urea in TEAB 0.1 mM, reduced with 5 mM TCEP for 30 minutes, and then alkylated with 10 mM iodoacetamide for 30 minutes in the dark. Both reduction and alkylation were performed at room temperature and under agitation. Double digestion was performed with endoproteinase Lys-C (Wako) at a ratio 1/1000 (enzyme/proteins) in 8 M urea for 6h, followed by a dilution to 2 M urea and an overnight trypsin digestion (Promega) at a ratio 1/100. Both LysC and Trypsin digestions were performed at 37°C. Phosphopeptide enrichment. Phosphopeptides purification was performed with 2 mm × 4 cm column packed with TiO2 (Titansphere TiO 5 μm, GL Science, Japan), and UV detection (280 nm) as previously described (Negroni et al. 2014). The loading/washing buffer was 1 M Glycolic acid in 5% TFA, 50% ACN. Retained peptides were eluted with 1 M ammonium hydroxide immediately neutralized with formic acid, then desalted with C18 SPE.  Mass spectrometry. After Sep Pak desalting, peptides were analyzed using an Ultimate 3000 nano-RSLC  (Thermo Scientific, San Jose California) coupled in line with an Orbitrap ELITE (Thermo Scientific, San Jose California). Each sample was analyzed in triplicate. Briefly, peptides were separated on a C18 nano-column with a linear gradient of acetonitrile and analyzed in a Top 20 CID (Collision-induced dissociation) data-dependent mass spectrometry.
+
+DATA PROCESSING:
+Data processing. Data were processed by database searching against Human Uniprot Proteome database using Proteome Discoverer 2.2 software (Thermo Fisher Scientific) or Maxquant software (Cox et al. 2008). Precursor and fragment mass tolerance were set at 10 ppm and 0.6 Da respectively. Trypsin was set as enzyme, and up to 2 missed cleavages were allowed. Oxidation (M, +15.995), Phospho (S/T/Y, +79.966) were set as variable modification and Carbamidomethylation (C) as fixed modification. Proteins were filtered with False Discovery Rate <1% (high confidence). Lastly quantitative values were obtained from Extracted Ion Chromatogram (XIC) and p-values were determined by ANOVA with Precursor Ions Quantifier node in Proteome Discoverer or with Perseus software (Cox et al. 2008).

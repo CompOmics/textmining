@@ -1,0 +1,177 @@
+{
+  "pxd_id": "PXD007160",
+  "sample_groups": [
+    {
+      "name": "AD PD brain TMT proteomics",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "post-mortem human brain tissues (n=80)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "brain",
+          "evidence": "frontal cortex BA9 and anterior cingulate gyrus BA24",
+          "ontology_id": "tissues:0001",
+          "ontology_name": "brain",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "Alzheimer's disease",
+          "evidence": "AD",
+          "ontology_id": "diseases:0046",
+          "ontology_name": "Alzheimer's disease",
+          "similarity": 1.0
+        },
+        {
+          "value": "Parkinson's disease",
+          "evidence": "PD",
+          "ontology_id": "diseases:0047",
+          "ontology_name": "Parkinson's disease",
+          "similarity": 1.0
+        },
+        {
+          "value": "Alzheimer's disease, Parkinson's disease",
+          "evidence": "co-morbid AD/PD",
+          "ontology_id": "diseases:0047",
+          "ontology_name": "Parkinson's disease",
+          "similarity": 0.8105
+        },
+        {
+          "value": "healthy",
+          "evidence": "controls",
+          "ontology_id": "diseases:0001",
+          "ontology_name": "healthy",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion",
+          "evidence": "Orbitrap Fusion with SPS-MS3",
+          "ontology_id": "instruments:0005",
+          "ontology_name": "Orbitrap Fusion",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "CID-MS2 at 35% NCE",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        },
+        {
+          "value": "HCD",
+          "evidence": "HCD-MS3 at 65% NCE",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "Lys-C (1:100) overnight",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "trypsin",
+          "evidence": "trypsin (1:50) for 12h",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "carbamidomethylation fixed",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "M-oxidation",
+          "evidence": "Oxidation of Met variable",
+          "ontology_id": "modifications:0003",
+          "ontology_name": "M-oxidation",
+          "similarity": 1.0
+        },
+        {
+          "value": "N-deamidation",
+          "evidence": "deamidation of Asn/Gln variable",
+          "ontology_id": "modifications:0009",
+          "ontology_name": "N-deamidation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "CID-MS2 at 35% NCE"
+        },
+        {
+          "value": "65 NCE",
+          "evidence": "HCD-MS3 at 65% NCE"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Dionex RSLCnano",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "SPS-MS3 data-dependent",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "TMT 10-plex isobaric labeling",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "ERLIC",
+        "evidence": "ERLIC fractionation on PolyWAX LP column into 21 combined fractions",
+        "method_ontology_id": "fractionation_methods:0009",
+        "method_ontology_name": "ERLIC",
+        "method_similarity": 1.0
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "not mentioned"
+      },
+      "ionization": [],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

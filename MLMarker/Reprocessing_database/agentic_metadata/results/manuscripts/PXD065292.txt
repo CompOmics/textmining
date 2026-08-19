@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+diseases: Prostate adenocarcinoma
+instruments: Q Exactive HF
+modifications: acetylated residue
+experiment types: Data-dependent acquisition
+keywords: Acetyl-lysine proteomics; Prostate cancer; P300/cbp; Protac degrader
+
+ABSTRACT:
+Prostate cancer is driven by oncogenic transcription factor enhanceosomes comprising chromatin and epigenetic regulators. The lysine acetyltransferases p300 and CBP are key cofactors that activate enhancers through histone acetylation. Here, we identify p300/CBP-mediated multisite acetylation of the histone H2B N-terminus (H2BNTac) as a defining feature of oncogenic enhanceosomes in androgen receptor (AR)-positive prostate cancer. p300/CBP are essential for AR and ERG transcriptional activity, and their dual degradation eliminates H2BNTac and H3K27ac marks at hyperactive enhancers more effectively than targeting either paralog or bromodomains alone. Cytotoxicity profiling across >900 cell lines revealed that tumors with high H2BNTac, including AR-positive prostate cancer, are selectively dependent on p300/CBP. In preclinical models, systemic p300/CBP degradation inhibited tumor growth, synergized with AR antagonists, and showed no evident toxicity. These findings position H2BNTac as a key epigenetic marker of enhancer addiction and support dual p300/CBP degradation as a promising therapy for enhancer-driven cancers.
+
+PROJECT DESCRIPTION:
+Targeting histone H2B acetylated enhanceosomes via p300/CBP degradation in prostate cancer
+
+SAMPLE PROCESSING:
+Frozen cell pellets were lysed in 8 M urea buffer (100 mM Tris-HCl, pH 8.0, with 1% protease inhibitor) by sonication. After centrifugation (12,000 ×g, 15 min, 4 °C), protein concentrations were determined using the BCA assay. Two milligrams of protein per sample were reduced with 4.5 mM DTT at 37 °C for 1 hour and alkylated with 10 mM iodoacetamide at room temperature for 30 minutes in the dark. Samples were diluted with 50 mM ammonium bicarbonate and digested overnight at 37 °C with trypsin (1:200 enzyme-to-protein ratio). Digestion was stopped with 1% TFA, and peptides were desalted using C18 columns and eluted with 50% acetonitrile in 0.1% TFA. For acetylated peptide enrichment, desalted peptides were resuspended in IAP buffer and incubated with anti-acetyl-lysine antibody beads (Cell Signaling Technology) at 4 °C for 4 hours. Beads were washed, and acetylated peptides were eluted with 0.1% TFA and dried.Peptides were analyzed using an Ultimate 3000 nano UHPLC system coupled to a Q Exactive HF mass spectrometer with an ESI nanospray source (Thermo Fisher Scientific). Peptides were separated on a PepMap C18 column (75 μm × 50 cm) using a linear gradient of 2–40% buffer B (0.1% formic acid in 80% acetonitrile) over 120 minutes at a flow rate of 250 nL/min. MS1 scans were acquired from 300–1,650 m/z at 60,000 resolution. MS/MS was performed in Top20 mode with HCD fragmentation (NCE 28%), using 15,000 resolution for MS2 scans. Dynamic exclusion was set to 30 seconds, and singly charged or unassigned precursor ions were excluded.
+
+DATA PROCESSING:
+Raw MS files were analyzed and searched against the Homo sapiens protein database based on the species of the samples using Maxquant (2.3.0.0). The parameters were set as follows: the protein modifications were Carbamidomethylation (C), Oxidation (M) (variables), Acetyl (K) (variables), Acetyl (Protein N-term) (variables), Acetyl (N-term) (variables); the enzyme specificity was set to trypsin; the maximum missed cleavages were set to 5; the precursor ion mass tolerance was set to 10 ppm, and MS/MS tolerance was 0.5 Da.

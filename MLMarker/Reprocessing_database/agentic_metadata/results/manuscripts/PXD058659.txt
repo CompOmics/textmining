@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Feces
+instruments: Dionex instrument model
+modifications: acetylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: Protein Abundance Index - PAI; Peptide counting
+keywords: Human; Feces; Bacteria; Proanthocyanidin
+
+ABSTRACT:
+Longitudinal metabolomic, metagenomic, and metaproteomic changes were measured in 27 healthy subjects supplemented with soy protein isolate (SPI, 40 g per day) for 5 days followed by GPs complexed to SPI (GP-SPI standardized to 5% GPs, 40 g per day) for 10 days. Fecal, urine, and/or fasting blood samples were collected before supplementation (day -5), after 5 days of SPI (day 0), and after 2, 4 and 10 days of GP-SPI.
+
+PROJECT DESCRIPTION:
+Effects of grape polyphenols on human feces
+
+SAMPLE PROCESSING:
+Sample prep  Stool sample collection, pre-processing were performed as described previously [Zhang, X., et al., Evaluating live microbiota biobanking using an ex vivo microbiome assay and metaproteomics. Gut Microbes, 2022. 14(1): p. 2035658] . Proteins were then pelleted and washed with acetone prior to resuspension in 6 M urea 50 mM ammonium bicarbonate buffer for in-solution trypsin digestion.Desalted and dried tryptic peptides were then labeled with TMT11, with pooled sample as channel 1 for reference. All channels are combined and subjected to MS analysis for identification and quantification.   LCMS Analysis   Dionex ultimate RS3000 was hooked up with Exploris 480 mass spectrometer (ThermoFisher Scientific, San Jose, CA), operated with a nano-electrospray interface operated in positive ion mode. Reconstituted peptides were loaded on a 75 μm I.D. × 150 mm fused silica analytical column packed in-house with 3μm ReproSil-Pur C18 beads (100 Å; Dr. Maisch GmbH, Ammerbuch, Germany), with a flow rate was of 300nL/min and 2hr gradient. Method was optimized for TMT analysis. A real-time internal calibration by the lock mass of background ion 445.120025 was used. All data were recorded with Xcalibur software (ThermoFisher Scientific, San Jose, CA).    Dionex ultimate RS3000 was hooked up with Exploris 480 mass spectrometer (ThermoFisher Scientific, San Jose, CA), operated with a nano-electrospray interface operated in positive ion mode. The solvent system consists of buffer A of 0.1% FA in water, and buffer B of 0.1% FA in 80% acetonitrile. Reconstituted peptides were loaded on a 75 μm I.D. × 150 mm fused silica analytical column packed in-house with 3μm ReproSil-Pur C18 beads (100 Å; Dr. Maisch GmbH, Ammerbuch, Germany). The flow rate was set to 300nL/min, and the gradient was set as 5–35% buffer B in 105 min, followed by 5min from 35%~80%, 5min of 80%, and 5min of re-equilibration. The spray voltage was set to 2.2 kV and the temperature of the heated capillary was 300 °C. One full MS scan from 350 to 1200 m/z was followed by a data-dependent MS/MS scan of the 15 most intense ions with a dynamic exclusion repeat count of 1 in 20 seconds. The mass resolution is 60000 for ms1 and 15000 for ms2. A real-time internal calibration by the lock mass of background ion 445.120025 was used. All data were recorded with Xcalibur software (ThermoFisher Scientific, San Jose, CA).
+
+DATA PROCESSING:
+The peak lists of the raw files were processed and analyzed by Metalab MAG version (The fasta database was the 2.0, now updated to 2.02, https://www.ebi.ac.uk/metagenomics/genome-catalogues/human-gut-v2-0-2). Cysteine carbamidomethylation was selected as a fixed modification; the methionine oxidation, and protein N-terminal acetylation were set for variable modification. Enzyme specificity was set to trypsin, not allowing for cleavage N-terminal to proline. TMTpro 11 was set for MS2 level quantification. Other parameters were used as default. All taxon and function annotations are extracted from corresponding annotations for each genome.

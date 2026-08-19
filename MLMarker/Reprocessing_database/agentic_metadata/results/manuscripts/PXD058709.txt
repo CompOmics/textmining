@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Heart
+diseases: Cardiovascular system disease
+instruments: Q Exactive HF
+modifications: phosphorylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: SILAC
+keywords: Calcium handling; Speg; Camkii; Phosphoproteomics; Phosphatases
+
+ABSTRACT:
+B56alpha is a protein phosphatase 2A (PP2A) regulatory subunit which modulates the heart’s inotropic response to acute beta-adrenergic receptor (beta-AR) stimulation, although knowledge of underlying molecular mechanisms is limited. In this study, mice deficient for B56alpha and wildtype controls received an intraperitoneal injection of isoproterenol (0.1 mg/kg) to activate beta-AR signalling in vivo. Hearts were explanted two minutes post-injection and processed for quantitative phosphoproteomics. We identified >200 proteins that were differentially phosphorylated between genotypes, including 26 hyperphosphorylated proteins harbouring a B56 binding motif (i.e. putative substrates). Gene Ontology enrichment analysis revealed ‘regulation of release of sequestered Ca2+ into cytosol by sarcoplasmic reticulum’, ‘cardiac muscle contraction’ and ‘cardiac muscle hypertrophy’ as key processes likely to be impacted by B56alpha deficiency. In vitro, loss of B56alpha in cardiomyocytes blunted acute isoproterenol-induced increases in intracellular calcium transient amplitude, confirming that B56alpha plays a key role in calcium handling. In vivo, loss of B56alpha protected mice from developing systolic dysfunction in response to sustained isoproterenol infusion (60 mg/kg/day for 14 days), despite comparable increases in heart mass. These findings reaffirm a key role for B56alpha as a mediator of physiologically important cardiac responses to beta-AR stimulation and reveal potential new molecular mechanisms for this regulatory function, including putative cardiac B56alpha substrates.
+
+PROJECT DESCRIPTION:
+PP2A-B56alpha is a key determinant of cardiac protein phosphorylation  and functional responses to beta-adrenergic signalling
+
+SAMPLE PROCESSING:
+Ventricular tissue from 10-week-old male mice homozygous (HOM) for a mutated Ppp2r5a allele and wildtype (WT) littermate controls was collected following acute stimulation with ISO or saline. In brief, mice were anaesthetised with 1.5% isoflurane then injected with ISO (0.1 mg/kg body weight in vehicle, i.p.) or an equivalent volume of vehicle (0.9% NaCl). Two minutes post-injection, hearts were explanted and washed quickly in ice-cold saline. The atria and the base of the heart were removed, and the remaining ventricular tissue snap-frozen in liquid nitrogen. Protein was extracted, combined with protein from a 13C6-Lys-SILAC mouse heart standard at a ratio of 2:1, and subjected to Lys-C digestion and TiO2 phosphopeptide enrichment prior to high-pH reverse phase fractionation and mass spectrometric analysis.
+
+DATA PROCESSING:
+All raw files were processed using MaxQuant software (v1.6.5.0, MPI for Biochemistry). MS/MS spectra were searched against a UniProtKB mouse database containing 62,433 protein entries (downloaded on Apr 2019) supplemented with 246 frequently observed contaminants via the Andromeda search engine. Precursor and fragment ion mass tolerances were set to 6 and 20 ppm after initial recalibration, respectively. STY phosphorylation, protein N-terminal acetylation, and methionine oxidation were allowed as variable modifications. Cysteine carbamidomethylation was set as a fixed modification. Enzyme specificity was set to Lys-C allowing N-terminal cleavage to proline. Minimal peptide length was set to seven amino acids, with a maximum of two missed cleavages. The false discovery rate (FDR) was set to 1% on the peptide, modification site and protein level using a forward-and-reverse concatenated decoy database approach. For SILAC quantitation, multiplicity was set to two for double (Lys+0, Lys+6) labeling. At least two ratio counts were required for peptide quantitation. Both the “match between runs” and “re-quantify” options of MaxQuant were enabled.

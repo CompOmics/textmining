@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Saccharomyces cerevisiae (baker's yeast)
+instruments: Orbitrap Ascend
+modifications: monohydroxylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Μpac; Tandem mass tags; Column durability; Lc-ms/ms; Chromatographic performance
+
+ABSTRACT:
+Nanoflow liquid chromatography capable of delivering consistent and reliable results across extensive sample sets is essential for the advancement of mass spectrometry-based proteomics. Micro-Pillar Array Columns (μPACs) represent a significant breakthrough, offering durability and performance stability. Here, we evaluate the robustness of μPACs by comparing a column used continuously for over 16 months with more than 7,000 injections (μPAC1) to a nearly new column (μPAC2). Analysis of two TMT-labeled yeast TKO standards (TKOpro10u, a 10-plex unit-resolved standard; and TKOpro12, a 12-plex isotopolog-inclusive standard) showed that μPAC1 and μPAC2 yielded comparable numbers of unique peptides and proteins, exhibited similar reproducibility, and delivered equivalent chromatographic and spectral quality. Notably, these data showed that μPAC1 maintained high performance with minimal degradation of data quality, highlighting the exceptional durability of μPAC technology. These findings underscore that μPAC could contribute to reduced workflow disruptions in high-throughput analytical workflows, notably in proteomics workflows using mass spectrometry.
+
+PROJECT DESCRIPTION:
+Evaluating the Robustness of Micro-Pillar Array Columns for High-Throughput Proteomics
+
+SAMPLE PROCESSING:
+The workflow here was based on our SL-TMT (StreamLined-Tandem Mass Tag) strategy. Cell disruption was achieved through mechanical bead-beating, with cells subjected to five cycles of 30 seconds on and 30 seconds off in a chilled environment. DNA was sheared by passing the sample twelve times through a 21-gauge needle. Protein quantification was performed using the BCA assay, following the manufacturer’s instructions. Proteins were reduced with 5 mM tris(2-carboxyethyl)phosphine (TCEP) for 20 minutes, alkylated with 10 mM iodoacetamide for 20 minutes in the dark, and quenched with 10 mM dithiothreitol (DTT) for 20 minutes in the dark, all at ambient temperature. Subsequently, 100 µg of protein per sample was precipitated using the methanol-chloroform method.
+
+DATA PROCESSING:
+Mass spectra were processed using a pipeline based on the Comet search engine. Searches were performed against the S. cerevisiae UniProt database, combined with a reversed decoy database, employing a 50-ppm precursor ion tolerance and a 0.02 Da fragment ion tolerance to maximize sensitivity with Comet and linear discriminant analysis (LDA) 21. Fixed modifications included TMTpro labels on lysine residues and peptide N-termini (+304.207 Da) and carbamidomethylation of cysteine residues (+57.021 Da), with methionine oxidation (+15.995 Da) specified as a variable modification. Peptide-spectrum matches (PSMs) were filtered to achieve a 1% false discovery rate (FDR) using LDA, and protein-level FDR was likewise controlled at 1%. Protein quantification was performed by aggregating reporter ion intensities across corresponding PSMs, with corrections applied for TMTpro isotopic impurities based on manufacturer specifications. Signal-to-noise (S/N) ratios were summed for each protein, normalized across channels to account for loading variations, and scaled to a relative abundance (RA) value of 100 across all proteins. Data analysis and visualization were conducted using Microsoft Excel or R.

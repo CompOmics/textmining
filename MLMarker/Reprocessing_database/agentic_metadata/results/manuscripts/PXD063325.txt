@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: T cell; Cell culture; Primary cell
+instruments: Orbitrap Exploris 480
+modifications: iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: Label free
+keywords: Pbmc; Cd8 t cells; Immpres; Human; T cell blasts; Cd4 t cells
+
+ABSTRACT:
+Dataset release from the Immunological Proteome Resource (ImmPRes). This dataset contains proteomic data from human CD4 and CD8 T cells isolated from PBMC. T-cells were activated with OKT3 antibody (anti CD3) and IL-2 for three days, then expanded in IL-2 until day 7. Cells were then sorted into live CD4 and CD8 T-cells.
+
+PROJECT DESCRIPTION:
+ImmPRes - PBMC derived CD4 and CD8 T cells
+
+SAMPLE PROCESSING:
+Samples were processed using the S-trap method as previously described (Sinclair LV et. al., 2025, doi:10.1038/s41590-025-02090-1). Pellets were lysed in S-trap lysis buffer (5% SDS, 10 mM TCEP and 50 mM TEAB), shook briefly and boiled at 95°C for 5 minutes. Samples were sonicated and treated with benzonase to shear DNA. Samples were quantified by EZQ, and alkylated with 20 nM iodoacetemide for 1hr at room temperature and protected from light. Samples were acidified with a final concentration of 1.2% phosphoric acid, and processed on S-trap mini columns. Proteins were digested with trypsin, with a 1:20 ratio of trypsin to protein. After elution, peptides were fractionated and analysed using a DDA (data dependant acquisition) method.
+
+DATA PROCESSING:
+Raw files were searched using MaxQuant (version 1.6.7.0) against the reviewed human database (downloaded 2017) and the MaxQuant contaminants fasta file. Identification false discovery rate (FDR) was estimated using a reversed database, and the peptide and protein FDR was set at 1%. Minimum peptide length was set to 7. Cysteine carbamidomethylation was selected as a fixed modification and methionine oxidation and N-terminal acetylation were set as variable modifications. Match between runs was not enabled, and label-free quantification was used. After searching, proteins identified as hits in the decoy database or contaminant database were removed. Copy numbers were calculated using Perseus and the proteomic ruler method (Wiśniewski JR et. al., 2014; doi:10.1074/mcp.M113.037309).

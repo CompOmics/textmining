@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell
+instruments: Orbitrap Fusion Lumos
+modifications: acetylated residue; iodoacetamide derivatized residue
+experiment types: Data-independent acquisition
+keywords: Dia; Proteomics; Akt
+
+ABSTRACT:
+Isthmin-1 (ISM1) is a recently described adipokine with insulin-like properties, reported to regulate hyperglycemia and liver steatosis. However, contrary to earlier studies, we demonstrate that highly purified ISM1 does not stimulate AKT phosphorylation in 3T3-F442A pre-adipocytes. Instead, this activity is attributed to co-purifying factors. Using proteomic mass spectrometry, we analyzed the ISM1-free sample that exhibits activity on AKT phosphorylation in 3T3-F442A cells and identified the growth factors PDGF-AA and/or GDF15 as the likely contributors to this effect.
+
+PROJECT DESCRIPTION:
+Proteomics analysis of expi293 conditioned media purified with immobilized metal affinity chromatography
+
+SAMPLE PROCESSING:
+The gel samples were prepared for mass spectrometry. 20 μg of fraction sample F2 of ISM1-FL and Expi293 conditioned media after SEC were loaded on 4-20% gradient SDS-PAGE and ran for 5 min at 120 V. Bands were cut out followed by destaining with 30% acetonitrile and 1005 methanol. Reduction and alkylation were carried out using 10 mM Dithiothreitol (DTT) for 1 hour at 56°C, followed by 20 mM iodoacetamide (IAA) in darkness for 45 minutes at room temperature. The samples were then digested with trypsin (Promega) at a concentration 10ng/L overnight at 37°C. The purification of the digested peptides was performed using a C18 column (MacroSpin Columns, NEST Group INC). 1 ug of the peptide was utilized for total proteome analysis. The samples were measured by data-independent acquisition (DIA) MS method as described previously, on an Orbitrap Fusion Tribrid mass spectrometer (Thermo Scientific) coupled to a nanoelectrospray ion source (NanoFlex, Thermo Scientific) and an EASY-nLC 1200 system (Thermo Scientific, San Jose, CA). A 150-min gradient was used for the data acquisition at the flow rate at 300 nL/min with the column temperature controlled at 60 °C using a column oven (PRSO-V1, Sonation GmbH, Biberach, Germany). The DIA-MS method consisted of one MS1 scan and 33 MS2 scans of variable isolated windows with 1 m/z overlapping between windows. The MS1 scan range was 350 – 1650 m/z and the MS1 resolution was 120,000 at m/z 200. The MS1 full scan AGC target value was set to be 2E6 and the maximum injection time was 100 ms. The MS2 resolution was set to 30,000 at m/z 200 with the MS2 scan range 200 – 1800 m/z and the normalized HCD collision energy was 28%. The MS2 AGC was set to be 1.5E6 and the maximum injection time was 50 ms. The default peptide charge state was set to 2. Both MS1 and MS2 spectra were recorded in profile mode.
+
+DATA PROCESSING:
+DIA-MS data analysis was performed using Spectronaut v18 with directDIA algorithm by searching against the SwissProt downloaded human fasta file (2023). The oxidation at methionine was set as variable modification, whereas carbamidomethylation at cysteine was set as fixed modification. Both peptide and protein FDR cutoffs (Qvalue) were controlled below 1% and the resulting quantitative data matrix were exported from Spectronaut. All the other settings in Spectronaut were kept as Default.

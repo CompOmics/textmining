@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Saccharomyces cerevisiae (baker's yeast)
+instruments: Q Exactive HF
+modifications: phosphorylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: SILAC
+keywords: Lc-msms; Phosphosite; Silac; Signaling; Yeast
+
+ABSTRACT:
+In this project two different sets of SILAC based phosphoproteomic experiments were performed to study the relevance of Tco89 for phosphorylation dynamics. Per experiment three biological replicates were performed and both enriched phosphopeptides and the FT to determine source protein ratios were analyzed.
+
+PROJECT DESCRIPTION:
+TORC1 autonomously controls its spatial partitioning via the Rag GTPase tether Tco89
+
+SAMPLE PROCESSING:
+Samples were processed and LC-MS/MS analyses were performed as described in (Dokladal et al., 2021b; Hu et al., 2019). Briefly, yeast strains were grown in synthetic dextrose complete medium containing either non-labeled or labeled lysine and arginine variants (see ‘‘Yeast strains, plasmids, and growth conditions’’). Differentially labeled TCA-treated cell pellets were mixed, proteins extracted in 8 M urea, and digested by Lys-C (Lysyl Endopeptidase, WAKO) for 4 h at RT, followed by . an ON trypsin digestion (Promega). Resulting peptides were purified by SPE using HR-X columns in combination with C18 cartridges (Macherey-Nagel), eluates were frozen in liquid nitrogen and lyophilized ON. Peptides were fractionated by HpH reversed phase chromatography, fractions were acidified, frozen in liquid nitrogen, and lyophilized ON. Peptides were suspended in 200 ml 80% acetonitrile with1%TFA for phosphopeptide enrichment by TiO2 beads (GL Sciences). The tip flow-through was stored at -80°C for non-phosphopeptide analysis. LC-MS/MS measurements were performed on a QExactive (QE) HF-X mass spectrometer coupled to an EasyLC 1200 nanoflow- HPLC (all Thermo Scientific). Peptides were fractionated on a fused silica HPLC-column tip (I.D. 75 mm, New Objective, self-packed with ReproSil-Pur 120 C18-AQ, 1.9 mm [Dr. Maisch] to a length of 20 cm) using a gradient of A (0.1% formic acid in water) and B (0.1% formic acid in 80% acetonitrile in water). The QE HF-X was operated in the data-dependent mode; after each MS scan (mass range m/z = 370 – 1750; resolution: 120’000 for HF-X) a maximum of twelve MS/MS scans were performed using a normalized collision energy of 25%, a target value of 5’000 and a resolution of 30’000.
+
+DATA PROCESSING:
+MS raw files were analyzed using MaxQuant (version 2.0.1.0) (Cox and Mann, 2008) using a UniProt full-length S. cerevisiae database (March, 2016) and common contaminants, such as keratins and enzymes used for in-gel digestion, as reference. Carbamidomethylcysteine was set as fixed modification and protein amino-terminal acetylation, serine-, threonine- and tyrosine- phosphorylation, and oxidation of methionine were set as variable modifications. The MS/ MS tolerance was set to 20 ppm and three missed cleavages were allowed using trypsin/P as enzyme specificity. Peptide, site, and protein FDR based on a forward-reverse database were set to 0.01, minimum peptide length was set to 7, the minimum score for modified peptides was 40, and minimum number of peptides for identification of proteins was set to one, which must be unique.

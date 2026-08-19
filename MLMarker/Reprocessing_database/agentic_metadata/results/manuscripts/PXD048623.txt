@@ -1,0 +1,18 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Escherichia coli
+instruments: Orbitrap Eclipse
+modifications: monohydroxylated residue; iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+keywords: Nascent chain; Ribosomes; Xl-ms; Molecular chaperones; Protein synthesis; Β-galactosidase; Protein folding
+
+ABSTRACT:
+Protein folding is assisted by molecular chaperones that bind nascent polypeptides during mRNA translation. Several structurally-distinct classes of chaperone promote de novo folding, suggesting that their activities are coordinated at the ribosome. We used biochemical reconstitution and structural proteomics to explore the molecular basis for cotranslational chaperone action in bacteria. We found that chaperone binding is disfavoured close to the ribosome, allowing folding to precede chaperone recruitment. Trigger factor recognises compact folding intermediates exposing extensive unfolded surface and dictates DnaJ access to nascent chains. DnaJ uses a large surface to bind structurally diverse intermediates, and recruits DnaK to sequence-diverse solvent-accessible sites. Neither Trigger factor, DnaJ nor DnaK destabilize cotranslational folding intermediates. Instead, the chaperones collaborate to protect incipient structure in the nascent polypeptide well beyond the ribosome exit tunnel. Our findings show how the chaperone network selects and modulates cotranslational folding intermediates.
+
+PROJECT DESCRIPTION:
+Mechanism of chaperone coordination during cotranslational protein folding in bacteria
+
+SAMPLE PROCESSING:
+RNC:chaperone complexes (1-2 µM) were crosslinked with DSBU (1 mM) for 1 hour at 25 °C followed by quenching with 20 mM Tris-HCl, pH 7.5. Crosslinked samples were reduced (10 mM DTT), alkylated (50 mM iodoacetamide) and digested with trypsin (ratio of 1:100 enzyme:substrate, 1 hour, 25 °C) followed by a further digestion (ratio of 1:20 enzyme:substrate, 18 h, 37 °C). Tryptic peptides were fractionated using high pH reverse phase chromatography on TARGA C18 columns (Nest Group Inc), lyophilized, and resuspended in 1 % formic acid and 2 % acetonitrile. Samples were then subjected to nano-scale capillary LC-MS/MS analysis as described previously (van Vliet et al., 2022) using the Vanquish Neo UPLC (ThermoScientific Dionex) at a flow rate of 250 nL/min, a C18 PepMap Neo nanoViper trapping column (5 μm, 300 μm × 5 mm, ThermoScientific Dionex), an EASY-Spray column (50 cm × 75 μm ID, PepMap C18, 2 μm particles, 100 Å pore size, ThermoScientific), and quadrupole Orbitrap mass spectrometer (Orbitrap Exploris 480, ThermoScientific). Acquisition parameters were set to data-dependent mode using a top 10 method, recording a high-resolution full scan (R=60,000, m/z 380-1,800) followed by higher energy collision dissociation of the 10 most intense MS peaks, excluding ions with precursor charge state of 1+ and 2+.
+
+DATA PROCESSING:
+Data analysis was conducted as described previously (van Vliet et al., 2022) with small changes. In short, raw Xcalibur data files were converted into a MGF file format using Proteome Discoverer version 2.3 (ThermoScientific) and used directly as input files for MeroX (Götze et al., 2015). Searches were performed against protein databases containing the sequences of ribosomal proteins, chaperones and β-galactosidase with the minimum peptide length set to 5 amino acids, maximum number of missed cleavages set to 3 and False Discovery Rate cut-off set to 5 %.

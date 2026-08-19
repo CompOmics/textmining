@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Cell culture
+instruments: Orbitrap Fusion Lumos
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+quantification: TMT
+keywords: Glycosphingolipid; Kras
+
+ABSTRACT:
+Cancer cells frequently alter their lipids to grow and adapt to their environment1–3. Despite the critical functions of lipid metabolism in membrane physiology, signaling, and energy production, how specific lipids contribute to tumorigenesis is incompletely understood. Here, using functional genomics and lipidomic approaches, we identified de novo sphingolipid synthesis as an essential pathway for cancer immune evasion. Synthesis of sphingolipids is surprisingly dispensable for cancer cell proliferation in culture or in immunodeficient mice but required for tumor growth in multiple syngeneic models. Blocking sphingolipid production in cancer cells enhances the anti-proliferative effects of natural killer (NK) and CD8+ T cells partly via interferon gamma (IFNg) signaling. Mechanistically, depletion of glycosphingolipids increases surface levels of IFNg receptor subunit 1 (Ifngr1), mediating IFNg-induced growth arrest and proinflammatory signaling. Finally, pharmacological inhibition of glycosphingolipid synthesis synergizes with checkpoint blockade therapy to enhance anti-tumor immune response. Altogether, our work identifies glycosphingolipids as necessary and limiting metabolites for cancer immune evasion.
+
+PROJECT DESCRIPTION:
+Glycosphingolipid synthesis mediates immune evasion in Kras-driven cancer
+
+SAMPLE PROCESSING:
+Cysteines were reduced and alkylated with DTT and IAA. Proteins were precipitated with ice-cold acetone and the pellet was dissolved in 200mM EPPs containing 1 µg trypsin. Digestion proceeded overnight at room temperature, at which point 1 µg of trypsin was added and temperature was increased to 50°C for 1 hour. Peptides were labeled with TMTpro, quenched with hydroxylamine and, once stoichiometry was verified, pooled. TMTpro peptides were separated into 8 fractions by high-pH reversed-phase spin columns and analyzed by LC-MSMS using an Easy nLC 1200 HPLC equipped with a 250 mm * 75 µm Easyspray column connected to an orbitrap Fusion Lumos mass spectrometer operating in positive DDA mode.
+
+DATA PROCESSING:
+Spectra were queried against the mus musculus proteome (database downloaded from uniprot.org on 2020/09/22) at 1% FDR using the Sequest HT search engine through Proteome Discoverer v. 2.5 and a spectral purity of 75% was required for quantitation. Protein abundance values were further processed within the Perseus statistical software environment.

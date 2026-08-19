@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Liver
+instruments: Q Exactive HF
+modifications: TMT6plex-126 reporter+balance reagent acylated residue
+experiment types: Data-dependent acquisition
+keywords: Lc-msms; Pdi; Liver
+
+ABSTRACT:
+A proteomics analysis with quantitative tandem mass tag mass spectrometry (TMT-MS) was performed to screen for altered hepatocyte proteins in the livers of PDI-deficient versus control mice.
+
+PROJECT DESCRIPTION:
+Proteomic profiling of PDI-deficient mouse liver
+
+SAMPLE PROCESSING:
+The livers isolated from 3 pairs of Alb-cre/Pdifl/fl and Pdifl/fl mice were mixed respectively and grinded in liquid nitrogen. After adding of four volumes of lysis buffer (8 M urea, 1% protease inhibitor cocktail, 3 μM treostatin A, 50 mM nicotinamide and 2 mM EDTA), the samples were sonicated three times on ice. After centrifugation at 12,000 g for 10 min at 4 °C, the supernatant was collected and the protein concentration was measured. The samples were reduced with 5 mM dithiothreitol for 30 min at 56 °C and alkylated with 11 mM iodoacetamide for 15 min at room temperature in darkness. After trypsin digestion, peptide was desalted, vacuum-dried and reconstituted in 0.5 M triethylammonium bicarbonate (TEAB). The Alb-cre/Pdifl/fl and Pdifl/fl samples were incubated with TMT6-126 and TMT6-127 for 2 hours at room temperature according to the manufacturer’s protocol, followed by mixture, desalination, and drying by vacuum centrifugation. The labeled peptides were fractionated into 18 fractions by high pH reverse-phase HPLC using an Agilent 300Extend C18 column and dried by vacuum centrifugation. Each fraction was dissolved in 0.1% formic acid and loaded onto a home-made reversed-phase analytical column (15-cm length, 75 μm i.d.) to separate the peptides, which were injected into a nanospray ionization (NSI) source for ionization and analyzed by a Q ExactiveTM Plus Mass Spectrometer (Thermo Scientific).
+
+DATA PROCESSING:
+The secondary mass spectrometry data were searched using Maxquant (v1.5.2.8). The search parameters were set as follows: the database used was SwissProtMouse (16,839 sequences), with a decoy database added to calculate the false discovery rate (FDR) caused by random matches. A common contaminant database was also included to eliminate the impact of contaminant proteins in the identification results. The enzyme digestion method was set to Trypsin/P, with a maximum of 2 missed cleavage sites allowed. The minimum peptide length was set to 7 amino acid residues, and the maximum number of modifications per peptide was set to 5. The mass tolerance for the first search and main search precursor ions was set to 20 ppm and 5 ppm, respectively, and the mass tolerance for the secondary fragment ions was set to 0.02 Da. Cysteine alkylation was set as a fixed modification, while methionine oxidation and protein N-terminal acetylation were set as variable modifications. The quantification method was set to TMT 6plex, and the FDR for both protein identification and PSM identification was set to 1%.

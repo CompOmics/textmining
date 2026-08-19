@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Cell culture
+instruments: Orbitrap Exploris 240
+modifications: acetylated residue; 6x(13)C labeled residue; 6x(13)C; monomethylated residue
+experiment types: Data-dependent acquisition
+quantification: MS1 intensity based label-free quantification method; SILAC
+keywords: Cell cycle; Chromatin assembly; Histone chaperones; Epigenome stability; Dna replication
+
+ABSTRACT:
+Long-term perturbation of de novo chromatin assembly during DNA replication has profound effects on epigenome maintenance and cell fate. The early mechanistic origin of these functional defects is unknown. Here, we combine acute degradation of Chromatin Assembly Factor 1 (CAF-1), a key player in de novo chromatin assembly during DNA replication and analyse effects n histone modifications by mass spectrometry. Immediately upon CAF-1 depletion from human TERT-RPE-1 cells, we observe an acute cellular response affecting histone repertoire, global chromatin composition and transcriptional fidelity resulting in a p53-dependent cell cycle arrest. Our work reveals the immediate local and global consequences of defective de novo chromatin assembly during DNA replication, explaining how at later times the epigenome and cell fate can be altered.
+
+PROJECT DESCRIPTION:
+Histone modifications during acute S-phase defects
+
+SAMPLE PROCESSING:
+Cell line: Human hTERT-RPE1 cells expressing degron-CHAF1A. Upon addition of dTAGV-1, cells rapidly degrade the tagged degron-CHAF1A protein. Samples: Replicates of G1 phase enriched via palbociclib treatment (control for steady-state epigenomic landscape; only treated with light amino acids). Replicates of S/G2 phase enriched + DMSO via nocodazole treatment (epigenome right after S phase with CAF-1; switch to heavy amino acids during S phase release). Replicates of S/G2 phase enriched + dTAGV-1 via nocodazole treatment (epigenome right after S phase without CAF-1; switch to heavy amino acids during S phase release). Approximately 200ng of peptides from each sample were separated on a C18 column (Aurora Elite TS, 15 cm x 75 μm ID, 1.7 μm, IonOpticks) with a gradient from 5% B to 25% B (solvent A 0.1% FA in water, solvent B 100% ACN, 0.1% FA) over 35min at a flow rate of 300nl/min (Vanquish Neo UHPLC-Systems, Thermo - Fisher, San Jose, CA) and directly sprayed into a Exploris 240 mass spectrometer (Thermo-Fisher Scientific). The mass spectrometer was operated in full-scan mode to identify and quantify specific fragment ions of N-terminal peptides of human histone 3.1 and histone 4 proteins. Survey full scan MS spectra (from m/z 250–1600) were acquired with resolution 60,000 at m/z 400 (AGC target of 3x106). Typical mass spectrometric conditions were: spray voltage, 1.9kV; no sheath and auxiliary gas flow; heated capillary temperature, 300°C.
+
+DATA PROCESSING:
+Data analysis was performed with Skyline (version 22.2.0.351) by using doubly and triply charged peptide masses for extracted ion chromatograms (XICs). Peaks were selected manually. Heavy arginine-labelled spiketides (13C6; 15N4) were used to confirm the correct retention times. The SILAC peptides (i.e. heavy arginine-labelled peptides (R6 Arginine 13C6)) were selected to assess the newly heavy arginine incorporation into synthetized histones proteins. To that aim, we removed any peptides that did not contain any arginine. Integrated peak values (Total Area MS1) under the first 4 isotopomers were used for further calculations and log2 transformed. Since the three G1 samples are unlabeled, we used them to evaluate the labeling quality, defined as our ability to not detect hits to peptides containing heavy arginine in G1 condition and measured as the median of 100-100 x intensity_SILAC/(intensity_SILAC+intensity_light) percentage over the peptides equal to 98.7, 99.4, and 99.5% for replicates 1, 2, 3 respectively. Subsequently, any SILAC signal in G1 samples was not considered (i.e. set to 0).

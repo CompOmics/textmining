@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Permanent cell line cell; Cell culture
+diseases: Prostate adenocarcinoma
+instruments: Q Exactive HF
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+keywords: Protein methylation; Metabolism; Mitochondria
+
+ABSTRACT:
+Prostate cancer (PCa) growth depends on de novo lipogenesis controlled by the mitochondrial pyruvate dehydrogenase complex (PDC). In this study, we identified lysine methyltransferase (KMT)9 as a novel regulator of PDC activity. KMT9 is localized in mitochondria of PCa cells, but not in mitochondria of other tumor cell types. Mitochondrial KMT9 regulates PDC activity by monomethylation of its subunit dihydrolipoamide transacetylase (DLAT) at lysine 596. Depletion of KMT9 compromises PDC activity, de novo lipogenesis, and PCa cell proliferation, which can be rescued with exogenous KMT9 targeted to mitochondria. Similarly, comparable defects caused by DLAT depletion can be rescued with exogenous DLAT, but not with a methylation-defective DLAT mutant. Concomitant chemical inhibition of de novo lipogenesis and KMT9 depletion more efficiently impair PCa cell proliferation than either treatment alone. Importantly, KMT9 controls PDC activity, de novo lipogenesis, and tumor growth in a PCa mouse model. Finally, in human patients, levels of mitochondrial KMT9 and DLAT K596me1 correlate with Gleason grade. Together, we present a novel mechanism of PDC regulation and the first example of a histone methyltransferase with nuclear and mitochondrial functions. The exceptional dependency on mitochondrial KMT9 allows to develop novel therapeutic strategies to fight PCa.
+
+PROJECT DESCRIPTION:
+Mitochondrial KMT9 methylates DLAT to control pyruvate dehydrogenase activity, de novo lipogenesis, and prostate cancer growth
+
+SAMPLE PROCESSING:
+Beads were washed threetimes with 50 mM NH 4HCO3 and incubated with 0.5 μg/μl Lys-C and 20 U ben-zonase in 6 M urea, 50 mM NH 4HCO 3 pH 7.5 for 90 min at 28 °C, washed with50 mM NH 4HCO3 , and the combined supernatants were digested overnight with0.2 μg/μl of trypsin in presence of 10 mM DTT. Digested peptides were alkylatedwith 30 mM IAA and desalted prior to LC–MS analysis.For LC–MS/MS purposes, desalted peptides were injected in an Ultimate 3000RSLCnano system (Thermo), separated in either a 15 cm analytical column (75 μmID with ReproSil-Pur C18-AQ 2.4 μm from Dr. Maisch) with a 50 min gradientfrom 4 to 40% acetonitrile in 0.1% formic acid or in a 25 cm analytical column(75 μm ID, 1.6 μm C18, Aurora-IonOpticks) with a 50 min gradient from 2 to 35%acetonitrile in 0.1% formic acid. The effluent from the HPLC was directlyelectrosprayed into a Qexactive HF (Thermo) operated in data-dependent mode toautomatically switch between full-scan MS and MS/MS acquisition. Survey full-scan MS spectra (from m/z 375 to 1600) were acquired with resolution R = 60,000at m/z 400 (AGC target of 3 × 10 6). The 10 most intense peptide ions with chargestates between 2 and 5 were sequentially isolated to a target value of 1 × 105 andfragmented at 27% normalized collision energy. Typical mass spectrometricconditions were spray voltage, 1.5 kV; no sheath and auxiliary gas flow; heatedcapillary temperature, 250 °C; ion selection threshold, 33,000 counts.
+
+DATA PROCESSING:
+MaxQuant (1.6.6.0) was used to identify proteins andquantify by LFQ with the following parameters: Database,uniprot_P000005640_Hsapiens_190109; MS tol, 10 ppm; MS/MS tol, 20 ppm Da;Peptide FDR, 0.1; Protein FDR, 0.01 Min. peptide Length, 7; Variable modifica-tions, Oxidation (M); Fixed modifications, Carbamidomethyl (C); Peptides forprotein quantitation, razor and unique; Min. peptides, 1; Min. ratio count, 2.

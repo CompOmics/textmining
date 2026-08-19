@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Brain
+instruments: Orbitrap Fusion Lumos
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+keywords: Brain; Splicing
+
+ABSTRACT:
+Neuropsychiatric disorders are highly complex conditions and the risk of developing a disorder has been tied to hundreds of genomic variants that alter the expression and/or products (isoforms) made by risk genes. However, how these genes contribute to disease risk and onset through altered expression and RNA splicing is not well understood. Here we show our current understanding of gene isoforms is far from complete and reveal the precise splicing profiles of neuropsychiatric disorder risk genes. Combining our new bioinformatic pipeline IsoLamp with nanopore long-read amplicon sequencing, we deeply profiled the RNA isoform repertoire of 31 high-confidence neuropsychiatric disorder risk genes in human brain. We show most risk genes are more complex than previously reported, identifying 443 novel isoforms and 28 novel exons, including isoforms which alter protein domains, and genes such as ATG13 and GATAD2A where most expression was from previously undiscovered isoforms. The greatest isoform diversity was present in the schizophrenia risk gene ITIH4. Mass spectrometry of brain protein isolates confirmed translation of a novel exon skipping event in ITIH4, suggesting a new regulatory mechanism for this gene in brain
+
+PROJECT DESCRIPTION:
+Analysis of neuropsychiatric risk gene isoforms in the brain
+
+SAMPLE PROCESSING:
+Post-mortem frontal cortex and cerebellum brain samples (mean weight = 53.25 mg) were used for protein isolation. Samples were from a healthy 59 yo female and 74 yo male with PMIs of 30 and 22 hrs respectively who had no known neurological or neuropsychiatric conditions. Briefly, samples were lysed in 500 μL of guanidinium-HCl buffer using tip-probe sonication, heated briefly to 95 ℃ and diluted 1:1 with LC-MS water before 4 mL of ice-cold acetone was added to precipitate protein overnight at -30 ℃. Supernatant following a wash (3 mL 80% cold acetone) and incubation (-30 ℃, 1 hr) was discarded and protein air-dried (RT, 30 mins). The protein pellet was resuspended in 500 μL 10% TFE in 100 mM HEPES (pH 7.5) and sonicated. Protein concentration was estimated with BCA (1 μL sample + 9 μL 2% SDS). Normalised protein (10 μg/10 μL) was then digested using a combination of LysC/trypsin.
+
+DATA PROCESSING:
+Peptides were separated on a Dionex 3500 nanoHPLC, coupled to an Orbitrap Lumos mass spectrometer (ThermoFischer Scientific) via electrospray ionization in positive mode with 1.9 kV at 275 °C and RF set to 30%. Separation was achieved on a 50 cm × 75 µm column packed with C18AQ (1.9 µm; Dr Maisch, Ammerbuch, Germany) (PepSep, Marslev, Denmark) over 120min at a flow rate of 300 nL/min. The peptides were eluted over a linear gradient of 3–40% Buffer B (Buffer A: 0.1% v/v formic acid; Buffer B: 80% v/v acetonitrile, 0.1% v/v FA) and the column was maintained at 50 °C. The instrument was operated in targeted M2 acquisition mode with an MS1 spectrum acquired over the mass range 300–1300 m/z (120,000 resolution, 100% automatic gain control (AGC) and 50 ms maximum injection time) followed by targeted MS/MS via HCD fragmentation with 0.7 m/z isolation (60,000 resolution, 200% AGC, 300 ms maximum injection time and stepped normalised collision energy 25, 30 and 35 eV).Data were analysed in Proteome Discover v2.5.0.400 with SequestHT [PMID: 24226387] and searched against a custom .fasta database containing only risk gene predicted protein isoform sequences containing the targeted peptide sequences. Precursor mass tolerance was set to 10 ppm and fragment mass tolerance set to 0.02 Da. Data were filtered to 1% FDR at the peptide spectral match level only i.e no protein level FDR, and MS/MS annotations were manually verified.

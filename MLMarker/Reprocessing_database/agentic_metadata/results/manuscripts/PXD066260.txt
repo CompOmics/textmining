@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Stem cell
+instruments: Orbitrap Exploris 480
+modifications: monohydroxylated residue; acetylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: label free sample
+keywords: Lc-msms; Stem cells; Mouse; Telomere
+
+ABSTRACT:
+The aim of the project is to identify putative TELS1 associated proteins from mouse embryonic stem (ES) cells.
+
+PROJECT DESCRIPTION:
+Immunoprecipitation of TELS1 and identification of putative associated proteins in mouse stem cells
+
+SAMPLE PROCESSING:
+Mouse ES cells were grown on gelatinized plates. Ectopic TELS1 expression was induced with 1μg/mL doxycyclin for 24 hours before collection. Cells were washed with PBS before resuspension in buffer A (500uL HEPES 1M pH7,9, 75uL MgCl2 1M, 500uL KCl 1M, 25uL DTT 1M) for 10 minutes on ice. After centrifugation, pellets were resuspended in buffer C ( ) for 15 minutes on ice in the presence of Benzonase. Samples were then cleared by centrifugation. Capture of ectopic TELS1-V5-GFP and associated proteins was performed with GFP trap magnetic agarose beads (Chromotek) according to the manufacturer’s protocol. Proteins were eluted in Laemmi buffer before proceeding with mass spectrometry. Buffer were supplemented with protease inhibitors (Complete EDTA free, Roche). Samples were then digested with trypsin (STRAP, PROTIFI). Peptides from each sample were resuspended in A buffer (0.1% formic acid) and injected for on-line analysis using a nano flow HPLC (RSLC U3000, Thermo Fisher Scientific) coupled to a mass spectrometer (Exploris 480, Thermo Fisher Scientific). Peptides were separated on a capillary column (0.075mmx 250mm, Acclaim Pepmap 100, reversed-phase C18, NanoViper, Thermo Fisher Scientific) following a gradient of 2-40% B buffer in 60 min (A=0.1% Formic Acid B=0.1% Formic Acid, 80% Acetonitrile) at a flow rate of 300 nl/min.
+
+DATA PROCESSING:
+The spectral data were analysed using MaxQuant 2.0.3.0 using the FPP v3.5 leading script. The following databases were used: " RefProteome_MOUSE-cano_2023_05_UP000000589.fasta and contaminants_fpp_180320.fasta with the following fixed modification: Carbamidomethylation (C) and the following variable modifications: Oxidation (M), Acetyl (Protein N-term). Data validation was performed with the following filters: 1% FDR at the protein and peptide level for identification.

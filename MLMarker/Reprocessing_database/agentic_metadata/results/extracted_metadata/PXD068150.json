@@ -1,0 +1,143 @@
+{
+  "sample_groups": [
+    {
+      "name": "Human iPSCs and Neurons",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Pluripotent stem cell",
+          "evidence": "organism parts: Pluripotent stem cell",
+          "ontology_id": "tissues:0090",
+          "ontology_name": "stem cells",
+          "similarity": 0.8054
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos",
+          "evidence": "instruments: Orbitrap Fusion Lumos",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 1.0
+        },
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "instruments: Orbitrap Exploris 480",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        },
+        {
+          "value": "Orbitrap Eclipse",
+          "evidence": "instruments: Orbitrap Eclipse",
+          "ontology_id": "instruments:0020",
+          "ontology_name": "Orbitrap Eclipse",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "implied by Orbitrap Fusion Lumos and TMT labeling",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "added 5% (W/W) modified trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        },
+        {
+          "value": "Lysyl endopeptidase",
+          "evidence": "added 2 μg Lysyl endopeptidase (LysC)"
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Carbamidomethylation of cysteine residues... fixed modifications",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "standard for Orbitrap Fusion Lumos TMT experiments"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "57",
+          "evidence": "1 % to 30% B in 49 min, 30% B to 70% B in 4 min, 70% B down to 1% B in 4 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Phenomenex Gemini 5u C18 110A 150 x 4.60 mm column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "experiment types: Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "quantification: TMT",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high pH RP chromatography",
+        "evidence": "fractionation of the peptide mixture by high pH RP chromatography"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "TiO2",
+        "evidence": "Enrichment of phosphorylated peptides using titanium dioxide phosphopeptide enrichment"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "implied by LC-MSMS analysis and Orbitrap instruments",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

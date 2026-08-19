@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Q Exactive
+modifications: monohydroxylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition
+keywords: Mass spectrometry; Ip-ms; Prrc2b; Lc-ms/ms
+
+ABSTRACT:
+Two isoforms (Long isoform ~220 KDa, short isoform ~150 KDa) of the human PRRC2B protein (Uniprot accession Q5JSZ5) were recombinantly expressed with an HA-tag in HEK293 cell lines. The goal of the experiment is to identify differential interactors of the short vs long isoforms, in addition to their common interactors. To this aim, 3 sample types were analyzed by IP-MS: HA-tagged long PRRC2B, HA-tagged short PRRC2B, and HA-tagged mCherry (control). Four biological replicates were analyzed from each experimental group.
+
+PROJECT DESCRIPTION:
+Identification of human PRRC2B isoform interactors
+
+SAMPLE PROCESSING:
+Immuno-precipitation elutions were subjected to in-solution tryptic digestion using the suspension trapping (S-trap) method as previously described. Briefly, proteins were reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark. Each sample was loaded onto S-Trap microcolumns (Protifi,USA) according to the manufacturer’s instructions. After loading, samples were washed with 90:10% methanol/50 mM ammonium bicarbonate. Samples were then digested with 250ng trypsin  for 1.5 h at 47°C. The digested peptides were eluted using 50 mM ammonium bicarbonate. Trypsin (250ng) was added to this fraction and incubated overnight at 37°C. Two more elutions were made using 0.2% formic acid and 0.2% formic acid in 50% acetonitrile. The three elutions were pooled together and vacuum-centrifuged to dryness. Samples were kept at−80°C until further analysis.
+
+DATA PROCESSING:
+Raw data was processed with MaxQuant v1.6.6.0. The data was searched with the Andromeda search engine against the human (Homo sapiens) protein databases as downloaded from Uniprot (www.uniprot.com), appended with common lab protein contaminants. Enzyme specificity was set to trypsin and up to two missed cleavages were allowed. Fixed modification was set to carbamidomethylation of cysteines. Variable modifications were set to oxidation of methionines, and protein N-terminal acetylation. Peptide precursor ions were searched with a maximum mass deviation of 4.5 ppm and fragment ions with a maximum mass deviation of 20 ppm. Peptide and protein identifications were filtered at an FDR of 1% using the decoy database strategy (MaxQuant’s “Revert” module). The minimal peptide length was 7 amino-acids and the minimum Andromeda score for modified peptides was 40. Peptide identifications were propagated across samples using the match-between-runs option checked. Searches were performed with the label-free quantification option selected. The quantitative comparisons were calculated using Perseus v1.6.0.7. Decoy hits were filtered out and only proteins that were detected in at least two replicates of at least one experimental group were kept. Empty intensity values went through imputation using the corresponding Perseus function. A Student’s t-Test, after logarithmic transformation, was used to identify significant differences between the experimental groups, across the biological replica. Fold changes were calculated based on the ratio of geometric means of the different experimental groups.

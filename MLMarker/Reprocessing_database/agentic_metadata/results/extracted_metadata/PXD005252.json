@@ -1,0 +1,923 @@
+{
+  "sample_groups": [
+    {
+      "name": "Mouse MEFs (KO and Inhibitors)",
+      "organism": [
+        {
+          "value": "Mus musculus",
+          "evidence": "Crebbpfl/fl; Ep300fl/fl mouse embryonic fibroblasts",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Fibroblast",
+          "evidence": "mouse embryonic fibroblasts (MEFs)",
+          "ontology_id": "tissues:0084",
+          "ontology_name": "fibroblast",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "MEFs",
+          "evidence": "Crebbpfl/fl; Ep300fl/fl mouse embryonic fibroblasts"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q-Exactive HF",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Lys-C",
+          "evidence": "Lys-C was added",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "digesting with trypsin protease",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated by 5mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-acetylation",
+          "evidence": "Acetylated peptides were enriched",
+          "ontology_id": "modifications:0010",
+          "ontology_name": "K-acetylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "Q-Exactive HF mass spectrometer"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Proxeon easy nLC system",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "online nanoflow LC-MS/MS",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC labeled Crebbpfl/fl; Ep300fl/fl MEF cells",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high pH reverse-phase chromatography",
+        "evidence": "Peptides were fractionated by high PH reverse-phase chromatography"
+      },
+      "enrichment": {
+        "value": "acetylation",
+        "method": "PTMscan acetyllysine enrichment kit",
+        "evidence": "Acetylated peptides were enriched with PTM scan acetyllysine enrichment kit"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoflow liquid chromatography-coupled tandem mass spectrometry",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene knockout",
+          "evidence": "CBP/p300 was conditionally knocked-out"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "CBP/p300 KAT activity was inhibited with... inhibitors"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "4-hydroxy-tamoxifen",
+          "evidence": "treating cells with 2μM 4-hyroxy-tamoxifen"
+        },
+        {
+          "value": "Compound R",
+          "evidence": "CBP/p300 KAT inhibitors... Compound R"
+        },
+        {
+          "value": "A-485",
+          "evidence": "CBP/p300 KAT inhibitors... A-485"
+        },
+        {
+          "value": "CBP112",
+          "evidence": "bromodomain inhibitor... CBP112"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "environmental",
+          "evidence": "4-hydroxy-tamoxifen",
+          "ontology_id": "treatments:0003",
+          "ontology_name": "environmental",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "Compound R, A-485, CBP112",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Human Kasumi-1 cells",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "Kasumi-1 cells are derived from a human male",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Blood cell",
+          "evidence": "Kasumi-1 cells are derived from a human male with acute myeloid leukemia",
+          "ontology_id": "tissues:0049",
+          "ontology_name": "blood",
+          "similarity": 0.766
+        }
+      ],
+      "disease": [
+        {
+          "value": "acute myeloid leukemia",
+          "evidence": "acute myeloid leukemia (AML)",
+          "ontology_id": "diseases:0036",
+          "ontology_name": "acute myeloid leukemia",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "Kasumi-1",
+          "evidence": "Kasumi-1 cells are derived from a human male"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q-Exactive HF",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Lys-C",
+          "evidence": "Lys-C was added",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "digesting with trypsin protease",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated by 5mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-acetylation",
+          "evidence": "Acetylated peptides were enriched",
+          "ontology_id": "modifications:0010",
+          "ontology_name": "K-acetylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "Q-Exactive HF mass spectrometer"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Proxeon easy nLC system",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "online nanoflow LC-MS/MS",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC labeled... Kasumi-1 cells",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high pH reverse-phase chromatography",
+        "evidence": "Peptides were fractionated by high PH reverse-phase chromatography"
+      },
+      "enrichment": {
+        "value": "acetylation",
+        "method": "PTMscan acetyllysine enrichment kit",
+        "evidence": "Acetylated peptides were enriched with PTM scan acetyllysine enrichment kit"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoflow liquid chromatography-coupled tandem mass spectrometry",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "Cmpd-R-treated Kasumi-1 cells"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "Compound R",
+          "evidence": "Cmpd-R-treated Kasumi-1 cells"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "Compound R",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Human 293FT cells",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "293FT cells are a clonal isolate derived from human embryonal kidney cells",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Kidney",
+          "evidence": "human embryonal kidney cells",
+          "ontology_id": "tissues:0005",
+          "ontology_name": "kidney",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "293FT",
+          "evidence": "293FT cells are a clonal isolate derived from human embryonal kidney cells"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q-Exactive HF",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digestion with ~1/100 trypsin protease",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated by 5mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-acetylation",
+          "evidence": "enrichment of acetylated peptides",
+          "ontology_id": "modifications:0010",
+          "ontology_name": "K-acetylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "Q-Exactive HF mass spectrometer"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Proxeon easy nLC system",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "online nanoflow LC-MS/MS",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "293FT cells were cultured in SILAC DMEM media",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high pH reverse-phase chromatography",
+        "evidence": "Peptides were fractionated by high PH reverse-phase chromatography"
+      },
+      "enrichment": {
+        "value": "acetylation",
+        "method": "PTMscan acetyllysine enrichment kit",
+        "evidence": "enrichment of acetylated peptides"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoflow liquid chromatography-coupled tandem mass spectrometry",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene overexpression",
+          "evidence": "Overexpression of p300 in 293FT cells"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "pCI-p300 vector",
+          "evidence": "transfected with pCI-p300 vector"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "pCI-p300 vector",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "In vitro p300 acetylation",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "Six proteins that were identified as p300 substrates... purchased from OriGene",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        },
+        {
+          "value": "Saccharomyces cerevisiae",
+          "evidence": "PPM1G was purified from yeast cells",
+          "ontology_id": "organisms:0007",
+          "ontology_name": "Saccharomyces cerevisiae",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Q-Exactive HF",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digestion with ~1/100 trypsin protease",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated by 5mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-acetylation",
+          "evidence": "Acetylation reactions were performed... acetyl-CoA",
+          "ontology_id": "modifications:0010",
+          "ontology_name": "K-acetylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "Q-Exactive HF mass spectrometer"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Proxeon easy nLC system",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "online nanoflow LC-MS/MS",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "technical triplicate measurements",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "peptides were purified using a Sep-pak C18 cartridge"
+      },
+      "enrichment": {
+        "value": "acetylation",
+        "method": "anti-acetyllysine antibody",
+        "evidence": "acetylated peptide enrichment with anti-acetyllysine antibody"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoflow liquid chromatography-coupled tandem mass spectrometry",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "incubated with or without 40 nM p300"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "acetyl-CoA",
+          "evidence": "Reactions were initiated with 10 μM acetyl-CoA"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "acetyl-CoA",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "In vitro p300 acetylation (SILAC)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "SILAC labeled Crebbpfl/fl; Ep300fl/fl MEF cells",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Fibroblast",
+          "evidence": "SILAC labeled Crebbpfl/fl; Ep300fl/fl MEF cells",
+          "ontology_id": "tissues:0084",
+          "ontology_name": "fibroblast",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "MEFs",
+          "evidence": "SILAC labeled Crebbpfl/fl; Ep300fl/fl MEF cells"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q-Exactive HF",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Digestion to peptides",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated by 5mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-acetylation",
+          "evidence": "enrichment of acetylated peptides",
+          "ontology_id": "modifications:0010",
+          "ontology_name": "K-acetylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "Q-Exactive HF mass spectrometer"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Proxeon easy nLC system",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "online nanoflow LC-MS/MS",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC labeled Crebbpfl/fl; Ep300fl/fl MEF cells",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high pH reverse-phase chromatography",
+        "evidence": "Peptides were fractionated by high PH reverse-phase chromatography"
+      },
+      "enrichment": {
+        "value": "acetylation",
+        "method": "PTMscan acetyllysine enrichment kit",
+        "evidence": "enrichment of acetylated peptides"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoflow liquid chromatography-coupled tandem mass spectrometry",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "preincubated... with 40 nM p300 +/− 20 μM A-485"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "A-485",
+          "evidence": "preincubated... with 40 nM p300 +/− 20 μM A-485"
+        },
+        {
+          "value": "acetyl-CoA",
+          "evidence": "initiated with the addition of 20 μM acetyl-CoA"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "A-485, acetyl-CoA",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Histone stoichiometry measurement",
+      "organism": [
+        {
+          "value": "Mus musculus",
+          "evidence": "histones from SILAC heavy-labeled control and Cmpd-R-treated MEFs",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Fibroblast",
+          "evidence": "histones from SILAC heavy-labeled control and Cmpd-R-treated MEFs",
+          "ontology_id": "tissues:0084",
+          "ontology_name": "fibroblast",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "MEFs",
+          "evidence": "histones from SILAC heavy-labeled control and Cmpd-R-treated MEFs"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q-Exactive HF",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "trypsin digestion of histones",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated by 5mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-acetylation",
+          "evidence": "acetylated peptide enrichment with anti-acetyllysine antibody",
+          "ontology_id": "modifications:0010",
+          "ontology_name": "K-acetylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "Q-Exactive HF mass spectrometer"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Proxeon easy nLC system",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "online nanoflow LC-MS/MS",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC heavy-labeled control and Cmpd-R-treated MEFs",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "standard acid extraction protocol"
+      },
+      "enrichment": {
+        "value": "acetylation",
+        "method": "anti-acetyllysine antibody",
+        "evidence": "acetylated peptide enrichment with anti-acetyllysine antibody"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoflow liquid chromatography-coupled tandem mass spectrometry",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "Cmpd-R-treated MEFs"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "Compound R",
+          "evidence": "Cmpd-R-treated MEFs"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "Compound R",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

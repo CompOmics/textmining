@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Blood cell
+instruments: Orbitrap Exploris 480; Orbitrap Eclipse
+modifications: No PTMs are included in the dataset
+experiment types: Data-independent acquisition; Bottom-up proteomics; Data-dependent acquisition
+quantification: Relative quantification; TMT
+keywords: Dia; Tmt; Sphingosine; Pi(3)p; Rps6kc1; Neurodevelopmental delay; Rsk family; Mtor; Label free
+
+ABSTRACT:
+The ribosomal protein S6 kinase family members play essential biological functions in disease, from cancer to intellectual disability. Little is known about RPS6KC1, aside from its lack of phosphorylation capacity and its roles in sphingosine-1-phosphate signaling and peroxiredoxin-3 transport to mitochondria. Through whole-exome sequencing, we identified biallelic RPS6KC1 variants in 13 individuals from 8 independent families. Phenotypic manifestations included neurodevelopmental delay, hypotonia, spastic paraplegia, brain white matter loss, and dysmorphic features overlapping with Coffin-Lowry syndrome (OMIM #303600) caused by RPS6KA3 mutations. Functional studies on peripheral blood mononuclear cells (PBMCs) from the different individuals indicated a diminished expression and phosphorylation of RPS6, impacting ribosomal protein synthesis, and a decrease in the known interactors PRDX3 and SPHK1, accompanied by marked repression of the mTOR/PI3K pathway. We detected a dysregulation of phosphoinositides and sphingoid bases levels on plasma samples from the different individuals. Further studies in HAP1 RPS6KC1 knockdown cells suggested that RPS6KC1 may regulate PRDX3 and SPHK1 activities by facilitating their endosome anchoring. In Drosophila melanogaster, RPS6KC1 knockdown resulted in locomotor dysfunction, defective neuromuscular junctions, reduced lifespan, and decreased mTOR activity. Overexpression of mTOR in this model improved motor function and lifespan. These findings underscore the crucial roles of RPS6KC1 in neurodevelopment by controlling ribosomal protein synthesis, lipid signaling, and the mTOR pathway.
+
+PROJECT DESCRIPTION:
+Biallelic variants in the ribosomal protein RPS6KC1 cause a complex neurodevelopmental disorder
+
+SAMPLE PROCESSING:
+Briefly, 10ug of PBMCs lysates in lysis buffer were digested with Lys-C and Trypsin. Prior digestion, samples were reduced and alkylated with DTT and CAA, then samples were diluted with Tris 0.1M to reach urea 2 mol/L. Lys-C was added at 1:25 (w/w) (enzyme-to-protein ratio) and protein digestion was carried out at 30 °C ON, then the samples were diluted again with Tris 0.1M to reach urea 0.8 mol/L. Trypsin was added at 1:25 (w/w) (enzyme-to-protein ratio) and protein digestion was carried out at 30 °C during 8h. Enzymatic reaction was stopped with FA (10% (v/v) final concentration). Digested samples were desalted using C18.  LC-MS analysis was carried out using a HPLC system (EASY-nanoLC 1000, Thermo Scientific), with a C18 column of 50 cm (EASY-Spray; 75-μm ID, PepMap RSLC C18, 2 μm particles, 45 ºC) and a 90-minute gradient connected to a Orbitrap Fusion Lumos mass spectrometer (Thermo-Scientific, San Jose, CA, USA).
+
+DATA PROCESSING:
+The TMT raw data were analyzed using PEAKS X+ (Bioinformatics Solutions, Inc.), while the label-free DIA acquisition data were processed with DIA-NN. Samples were searched against a SwissProt database containing entries corresponding to Human (version of January 2018) a list of common contaminants and all the corresponding decoy entries. Trypsin was chosen as enzyme and a maximum of three miscleavages were allowed. Carbamidomethylation (C) was set as a fixed modification, whereas oxidation (M) and acetylation (N-terminal) were used as variable modifications. Searches were performed using a peptide tolerance of 7 ppm and a product ion tolerance of 0.5 Da. Resulting data files were filtered for a False Discovery Rate (FDR) < 1%, increasing sensitivity to detect potentially interesting proteins or genes is prioritized given the discovery-oriented nature of the approach.

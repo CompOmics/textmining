@@ -1,0 +1,152 @@
+{
+  "sample_groups": [
+    {
+      "name": "HEK293T CRBN-KO cells under various stress conditions",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK293T",
+          "evidence": "2.0×106 HEK293T CRBN-KO cells were seeded",
+          "ontology_name": "HEK293T",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos",
+          "evidence": "instruments: Orbitrap Fusion Lumos",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "TMT reporter ions were quantified",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "digested with LysC (2 µg) for 4 h",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "further digested with trypsin (4 µg)",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated by addition of iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "61",
+          "evidence": "1% B to 27% B in 50 min, 60% B in 4 min, and ramped to 70% B in 2 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "high pH reverse-phase HPLC ... Aeris peptide XB-C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "labeling by TMTpro 16-plex reagent",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high pH reverse-phase HPLC",
+        "evidence": "offline fractionated into 80 fractions by high pH reverse-phase HPLC"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for specific modifications"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "oxidative stress",
+          "evidence": "oxidative stress, cells were seeded in DMEM+/+ with 100 µM H2O2"
+        },
+        {
+          "value": "heat stress",
+          "evidence": "heat stress, cells were collected ... placed in a heat block preheated to 55 °C"
+        },
+        {
+          "value": "pH elevation",
+          "evidence": "pH elevation, cells were seeded in DMEM+/+ at pH 7.8"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "H2O2",
+          "evidence": "100 µM H2O2 for 40 min"
+        },
+        {
+          "value": "55 °C heat",
+          "evidence": "heat block preheated to 55 °C for 40 min"
+        },
+        {
+          "value": "pH 7.8",
+          "evidence": "seeded in DMEM+/+ at pH 7.8"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "environmental",
+          "evidence": "oxidative stress, heat stress, pH elevation",
+          "ontology_id": "treatments:0003",
+          "ontology_name": "environmental",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

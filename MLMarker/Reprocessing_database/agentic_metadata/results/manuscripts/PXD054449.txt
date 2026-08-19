@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Ht-1080 cell
+instruments: Orbitrap Astral
+modifications: No PTMs are included in the dataset
+experiment types: Data-independent acquisition
+keywords: Fentomycin; Proteome; Fibrosarcoma; Ferroptosis
+
+ABSTRACT:
+Our data of mass spectrometry-based lipidomics showed that fentomycin induced the oxidation of membrane lipids in HT-1080 cells compared with the established ferroptosis inducers. To deepen this discovery, we performed quantitative mass spectrometry-based proteomics using the sublethal dose of fentomycin. The human fibrosarcoma HT-1080 cells were used. N= 5 biologically independent replicates.
+
+PROJECT DESCRIPTION:
+Quantitative proteomics upon Fentomycin treatment VS untreated in human fibrosarcoma HT1080 cells
+
+SAMPLE PROCESSING:
+HT1080 cells were grown in 148 cm2 round dishes at 70 % of confluence and treated with fentomycin 1 µM for 48 h. Whole cell extracts were collected and then centrifuged at 500 × g for 5 min at 4 °C, washed three times with ice-cold 1× PBS and lysed using lysis buffer (8 M urea, 200 mM NH4HCO3 and cOmplete (Roche, 000000011697498001). The lysis was achieved by incubation on rotating wheel at 25 rpm, 45 min at 4 °C. Then, the lysates were centrifuged at 20 000 × g, 20 min at 4 °C and the supernatant that contains total proteins was used for quantitative global proteome analysis. 30 µg of total protein cell lysate was reduced by incubation with 5 mM dithiothreitol (DTT) at 57 °C for 30 min and then alkylated with 10 mM iodoacetamide for 30 min at room temperature in the dark. Trypsin/LysC (Promega) was added at 1:100 (wt/wt) enzyme:substrate. Digestion was performed overnight at 37 °C. Samples were then loaded onto custom-made C18 StageTips (AttractSPE Disk Bio C18-100.47.20, Affinisep) for desalting. Peptides were eluted using a ratio of 40:60 CH3CN:H2O + 0.1 % formic acid and vacuum concentrated to dryness with a SpeedVac device. Peptides were reconstituted in 0.3 % trifluoroacetic acid before LC-MS/MS
+
+DATA PROCESSING:
+For identification, the data were searched against the Homo sapiens (UP000005640) Uniprot database using Spectronaut v18.7 or 19 (Biognosys) by directDIA+ analysis using default search settings. Enzyme specificity was set to trypsin and a maximum of two missed cleavage were allowed. Carbamidomethyl was set as a fixed modification and N-terminal acetylation and oxidation of methionine as variable modifications. The resulting files were further processed using myProMS v3.10. https://github.com/bioinfo-pf-curie/myproms (PMID: 1761030). For protein quantification, XICs from proteotypic peptides shared between compared conditions (TopN matching) were used, with missed cleavages and carbamidomethylation allowed. Median and scale normalization at peptide level was applied on the total signal to correct the XICs for each biologically independent replicate (N = 5). To evaluate the statistical significance of the change in protein abundance, a linear model (adjusted on peptides and biological replicates) was performed, and a two-sided T-test was applied on the fold change estimated by the model. The P-values were then adjusted using the Benjamini–Hochberg FDR procedure.

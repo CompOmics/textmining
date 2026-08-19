@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Pulmonary artery endothelial cell
+diseases: Hypertension
+instruments: Q Exactive
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: MS1 intensity based label-free quantification method
+keywords: Sex differences; Human pulmonary microvascular endothelial cells; Hypoxia; Pulmonary hypertension
+
+ABSTRACT:
+There is marked sexual dimorphism displayed in the onset and progression of pulmonary hypertension (PH). Females more commonly develop pulmonary arterial hypertension (PAH), however, females with PAH and other types of PH have better survival than males. Pulmonary microvascular endothelial cells play a crucial role in the pulmonary vascular remodelling and increased pulmonary vascular resistance of PH. Given this background, we hypothesized that there are sex differences in the pulmonary microvascular endothelium basally and in response to hypoxia that are independent of the sex hormone environment.
+
+PROJECT DESCRIPTION:
+Transcriptomics and proteomics revealed sex differences in human pulmonary microvascular endothelial cells
+
+SAMPLE PROCESSING:
+Human pulmonary microvascular endothelial cells (HPMECs) from healthy male and female donors, cultured under physiological shear stress, were analysed using RNA sequencing and label-free quantitative proteomics. The samples were analyzed on a Thermo Scientific Q Exactive mass spectrometer connected to a Dionex Ultimate 3000 (RSLCnano) chromatography system. Peptides were separated on C18 home-made column (C18-AQ Dr. Maisch Reprosil-Pur 100 x 0.075 mm x 3 μm) over 120 min at a flow rate of 250 nL/min with a linear gradient of increasing ACN from 1% to 27%. The mass spectrometer was operated in data dependent mode; a high resolution (70,000) MS scan (300-1600 m/z) was performed to select the twelve most intense ions and fragmented using high energy C-trap dissociation for MS/MS analysis.
+
+DATA PROCESSING:
+Raw data from the Q-Exactive was processed using the MaxQuant(version 2.0.3.0) incorporating the Andromeda search engine.To identify peptides and proteins, MS/MS spectra were matched against Uniprot homo sapiens database (2021_03) containing 78,120 entries. All searches were performed using the default setting of MaxQuant, with trypsin as specified enzyme allowing two missed cleavages and a false discovery rate of 1% on the peptide and protein level. The database searches were performed with carbamidomethyl (C) as fixed modification and acetylation (protein N terminus) and oxidation (M) as variable modifications. For the generation of label free quantitative (LFQ) ion intensities for protein profiles, signals of corresponding peptide in different nano-HPLC MS/MS runs were matched by MaxQuant in a maximum time window of 1 min.

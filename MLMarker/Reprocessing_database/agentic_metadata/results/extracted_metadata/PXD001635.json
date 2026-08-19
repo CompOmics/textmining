@@ -1,0 +1,141 @@
+{
+  "sample_groups": [
+    {
+      "name": "HT-1080 SILAC Methyltransferase Assay",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HT-1080",
+          "evidence": "SILAC labeled HT-1080 cell lysate"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "LTQ Orbitrap Elite",
+          "evidence": "instruments: LTQ Orbitrap Elite",
+          "ontology_id": "instruments:0002",
+          "ontology_name": "LTQ Orbitrap Elite",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "top 10 CID fragmentation for MS2",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "in-gel digest with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "K-monomethylation",
+          "evidence": "proteins modified by methyl-lysine enriched",
+          "ontology_id": "modifications:0013",
+          "ontology_name": "K-dimethylation",
+          "similarity": 0.8908
+        },
+        {
+          "value": "K-dimethylation",
+          "evidence": "proteins modified by methyl-lysine enriched",
+          "ontology_id": "modifications:0013",
+          "ontology_name": "K-dimethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-trimethylation",
+          "evidence": "proteins modified by methyl-lysine enriched",
+          "ontology_id": "modifications:0014",
+          "ontology_name": "K-trimethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "top 10 CID fragmentation for MS2"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "desalted using a C18 Stage tip",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "top 10 CID fragmentation",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC labeled HT-1080 cell lysate",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SDS-PAGE",
+        "evidence": "Proteins were separated by SDS-PAGE and cut into four fractions"
+      },
+      "enrichment": {
+        "value": "methylation",
+        "method": "3xMBT",
+        "evidence": "proteins modified by methyl-lysine enriched by 3xMBT"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "enzyme treatment",
+          "evidence": "treated with active or catalytic inactive SETMAR methyltransferase enzyme"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "SETMAR",
+          "evidence": "treated with active or catalytic inactive SETMAR methyltransferase enzyme"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "SETMAR methyltransferase enzyme",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

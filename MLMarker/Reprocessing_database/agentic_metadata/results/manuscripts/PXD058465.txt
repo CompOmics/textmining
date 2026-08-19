@@ -1,0 +1,23 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Breast cancer cell line; Prostate cancer cell line; Mammary gland cell line
+diseases: Breast cancer; Breast fibrocystic disease; Prostate cancer
+instruments: Q Exactive HF
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Data-independent acquisition
+quantification: label-free quantification
+keywords: Human; 231; Mda-mb; Hs578t; Pc3; Mcf10a
+
+ABSTRACT:
+Liquid Chromatography Electrospray Ionization Tandem Mass Spectrometry (LC/ESI-MS/MS) was used in the human cell lines HS578T, MDA-MB-231, MCF10A, and PC3. Label free quantification of protein abundances enabled comparison of the expression levels of talin 1 and talin 2 within each cell line. Mass spectrometry sample processing and analyses were performed at the Turku Proteomics Facility supported by Biocenter Finland.
+
+PROJECT DESCRIPTION:
+LC-MS/MS from human cell lines PC3, HS578T, MDA-MB-231 and MCF10A
+
+SAMPLE PROCESSING:
+Samples were lysed in 6 M urea in 50 mM Tris-HCl, pH 8.0, reduced with 10 mM D,L-dithiothreitol and alkylated with 40 mM iodoacetamide. Samples were digested overnight with sequencing grade modified trypsin (Promega). After digestion peptide samples were desalted with a Sep-Pak tC18 96-well plate (Waters) and evaporated to dryness. Samples were dissolved in 0.1% formic acid and peptide concentration was determined with a NanoDrop device. For DIA analysis 800 ng of peptides were injected and analyzed in the following order. Wash runs were submitted between each sample to reduce potential carry-over of peptides.  The LC-ESI-MS/MS analysis was performed on a nanoflow HPLC system (Easy-nLC1200, Thermo Fisher Scientific) coupled to the Q Exactive HF mass spectrometer (Thermo Fisher Scientific) equipped with a nano-electrospray ionization source. Peptides were first loaded on a trapping column and subsequently separated inline on a 15 cm C18 column (75 μm x 15 cm, ReproSil-Pur 3 μm 120 Å C18-AQ, Dr. Maisch HPLC GmbH). The mobile phase consisted of water with 0.1% formic acid (solvent A) or acetonitrile/water (80:20 (v/v)) with 0.1% formic acid (solvent B). A 120 min gradient was used to elute peptides (62 min from 3 % to 21 % solvent B followed by 48 min from 21 % to 36 % solvent B and in 5 min from 36% to 100% of solvent B, followed by 5 min wash stage with solvent B).
+
+DATA PROCESSING:
+Samples were analyzed by a data independent acquisition (DIA) LC-MS/MS method. MS data was acquired automatically by using Thermo Xcalibur 4.6 software (Thermo Fisher Scientific). In a DIA method a duty cycle contained one full scan (400 -1000 m/z) and 40 DIA MS/MS scans covering the mass range 400 -1000 with variable width isolation windows. Data analysis consisted of protein identifications and label free quantifications of protein abundances. Data was analyzed by Spectronaut software (Biognosys; version 18.0.2). DirectDIA approach was used to identify proteins and label-free quantifications were performed with MaxLFQ.
+
+Main data analysis parameters in Spectronaut: Enzyme: Trypsin/P; Missed cleavages: 2; Fixed modifications: Carbamidomethyl (peptides were alkylated with iodoacetamide);  Variable modifications: Acetyl (protein N-term) and oxidation (M); Protein database: Swiss-Prot 2023_05 Homo Sapiens; Precursor FDR Cutoff: 0.01; Protein FDR Cutoff: 0.01; Quantification MS level: MS2; Quantification type: Area under the curve within integration boundaries for each targeted ion; Normalization: Local normalization (Based on RT dependent local regression model described by Callister et al., 2006); Differential abundance analysis: Unpaired Student’s t-test with combined MS1 + MS2 statistical model (Huang et al., 2019) and multiple-testing correction of the p-values with Benjamini-Hochberg method (q-values).

@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell
+diseases: Skin cancer
+instruments: Q Exactive HF
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: MS1 intensity based label-free quantification method
+keywords: Kinase inhibitors; Imidazopyrazines; Photoaffinity labeling
+
+ABSTRACT:
+Kinases are attractive drug targets, but the design of highly selective kinase inhibitors remains challenging. Selectivity may be evaluated against a panel of kinases, or – preferred – in a complex proteome. Probes that allow photoaffinity-labeling of their targets can facilitate this process. Here, we report photoaffinity probes based on the imidazopyrazine scaffold, which is found in several kinase inhibitors and drugs or drug candidates. By chemical proteomics experiments, we find a range of off-targets, which vary between the different probes.
+
+PROJECT DESCRIPTION:
+Proteome selectivity profiling of photoaffinity probes derived from imidazopyrazine-kinase inhibitors
+
+SAMPLE PROCESSING:
+750 g total protein from A431 whole cell lysates were normalized to a concentration of 1 mg/mL in reaction buffer. All samples were performed in triplicates. Samples were pre-treated with 100 M of competitor (KIRA6, acalabrutinib or linsitinib) or DMSO and incubated at 37 °C for 1 hour.  Samples were then treated with 100 M probe or DMSO, mixed by vortexing and immediately irradiated for 6 minutes at RT. After irradiation, the probes were clicked onto TAMRA-azide-PEG-biotin as described above. The excess reagents from the sample were then removed by acetone precipitation (twice). Protein pellets were resuspended in 230 L of 6 M urea and 50 mM ammonium bicarbonate, followed by reduction (30 min, 37°C), alkylation (30 min, 37°C, dark) and quenching (30 min, 37°C, dark) in the presence of 10 mM DTT, 25 mM iodoacetamide and 25 mM DTT, respectively.   Samples were diluted to 1M urea using 0.1% SDS in 50 mM ammonium bicarbonate and incubated with 20 L of pre-washed streptavidin beads (ThermoFisher) for 1 hour with mixing at RT. The supernatant was removed and beads were sequentially washed with 0.33% SDS in PBS (2x 1 mL), 1 M NaCl in PBS (2x 1 mL) and 50 mM ammonium bicarbonate (2x 1 mL). Beads were resuspended in 50 L on-beads digestion buffer (50 mM ammonium bicarbonate, 0.01% ProteaseMax (Promega) and 5% (vol/vol) acetonitrile) in the presence of 0.5 µg trypsin (Thermo Scientific).  After overnight digestion, the supernatant was brought to 0.75% TFA and loaded on C18 spin columns (Thermo Scientific) for desalting. The resulting peptide mixture was analyzed by high-resolution LC-MS/MS using an Ultimate 3000 Nano Ultra High Pressure Chromatography (UPLC) system interfaced with a Q Exactive Hybrid Quadrupole-Orbitrap mass spectrometer via an EASY-spray (C-18, 15 cm) column (Thermo Fisher Scientific).
+
+DATA PROCESSING:
+Peptides were identified by MASCOT 2.2.07 (Matrix Science; www.matrixscience.com) using the Homo sapiens database (204052 entries, 21/03/2024), adopting the following MASCOT search parameters: trypsin/P digestion, 2 missed cleavages allowed, carbamidomethyl (C) as fixed modification, oxidation (M) as variable modification. Peptide tolerance was set at 10 ppm for MS and at 20 mmu for MS/MS. Mascot XML output files were further analyzed using Progenesis QI for proteomics (Waters).   Only MS/MS spectra with rank below 8 and PSMs with a score of at least 29 were taken into account.  Relative quantification using Hi3 peptides was adopted. All quantified keratins and albumin were removed.  Probe enriched targets were defined as proteins with a minimum of 2 unique peptides and with a LFQ ratio >2 between probe and DMSO as well as between probe and competition sample, and with a p-value <0.01 by 2-sided Student’s t-test. Statistical analysis was executed by Qlucore software using log2 transformed protein abundances.

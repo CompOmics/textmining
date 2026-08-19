@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Blood; Neutrophil
+diseases: Glioblastoma
+instruments: Orbitrap Exploris 480
+modifications: No PTMs are included in the dataset
+experiment types: Data-independent acquisition
+quantification: Relative quantification
+keywords: Glioblastoma; Gbm; Dia; Blood; Exploris; Neutrophils
+
+ABSTRACT:
+Analysis of low density neutrophils and normal density neutrophils derived from the peripheral blood of GBM patients as well as matched normal density neutrophils from control patients.
+
+PROJECT DESCRIPTION:
+Bulk proteomics peripheral blood neutrophils GBM
+
+SAMPLE PROCESSING:
+Bulk proteomics sample preparation Cell pellets were lysed in 100 µl lysis buffer (5% SDS, 10 mM TCEP, 50 mM TEAB) and were then shaken at room temperature for 5 min at 1000 rpm, followed by boiling at 95 °C for 5 min at 500 rpm. Samples were then shaken again at RT for 5 min at 1000 rpm before being sonicated for 15 cycles of 30 s on/ 30 s off with a BioRuptor (Diagenode). Benzonase was added to each sample and incubated at 37 °C for 15 min to digest DNA. Samples were then alkylated with the addition of iodoacetamide to a final concentration of 20 mM and incubated for 1 h in the dark at 22 °C. Protein concentration was determined using EZQ protein quantitation kit (Invitrogen) as per manufacturer instructions. Protein digestion was performed using S-TRAP micro columns (Protifi). Proteins were digested with trypsin at 1:10 ratio (enzyme:protein) for 2 h at 47 °C. Digested peptides were eluted from S-TRAP columns using 50 mM ammonium bicarbonate, followed by 0.2% aqueous formic acid and with a final elution using 50% aqueous acetonitrile. Eluted peptides were dried overnight before being resuspended in 40 µl 1% formic acid ready for analysis by data independent acquisition mass spectrometry. Bulk proteomics mass spectrometry: The bulk proteomics data was acquired in Data Independent Acquisition (DIA) mode on an Orbitrap Exploris 480 (Thermo Scientific™) coupled with an UltiMate 3000 RSLC nano (Thermo Scientific™). 1.5 µg of peptide per sample were injected. Two buffers were used: buffer A (0.1% formic acid in Milli-Q water (v/v)) and buffer B (80% acetonitrile and 0.1% formic acid in Milli-Q water (v/v). Samples were loaded at 10 μl/min onto a trap column (100 μm × 2 cm, PepMap nanoViper C18 column, 5 μm, 100 Å, Thermo Scientific™) equilibrated in 0.1% trifluoroacetic acid (TFA). The trap column was washed for 3 min at the same flow rate with 0.1% TFA then switched in-line with a Thermo Scientific, resolving C18 column (75 μm × 50 cm, PepMap RSLC C18 column, 2 μm, 100 Å). Peptides were eluted from the column at a constant flow rate of 300 nl/min with a linear gradient from 3% buffer B to 6% buffer B in 5 min, then from 6% buffer B to 35% buffer B in 115 min, and finally to 80% buffer B within 7 min. The column was then washed with 80% buffer B for 4 min and re-equilibrated in 3% buffer B for 15 min. Two blanks were run between each sample to reduce carry-over. The column was kept at a constant temperature of 50 °C. The data was acquired using an easy spray source operated in positive mode with spray voltage at 2.445 kV, and the ion transfer tube temperature at 250 °C. The MS was operated in DIA mode. A scan cycle comprised a full MS scan (m/z range from 350 to 1650), with RF lens at 40%, AGC target set to custom, normalised AGC target at 300%, maximum injection time mode set to custom, maximum injection time at 20 ms, microscan set to 1 and source fragmentation disabled. MS survey scan was followed by MS/MS DIA scan events using the following parameters: multiplex ions set to false, collision energy mode set to stepped, collision energy type set to normalized, HCD collision energies set to 25.5, 27 and 30%, orbitrap resolution 30,000, first mass 200, RF lens 40%, AGC target set to custom, normalized AGC target 3000%, microscan set to 1 and maximum injection time 55 ms. Data for both MS scan and MS/MS DIA scan events were acquired in profile mode.
+
+DATA PROCESSING:
+The data was searched with Spectronaut 19.7 against a human SwissProt and immune cell specific contaminant fasta file. The default parameters were modified to remove the top N and reduce all q-values to 0.01 and PEP to 0.15

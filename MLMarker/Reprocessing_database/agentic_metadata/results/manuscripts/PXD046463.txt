@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Q Exactive HF
+modifications: monohydroxylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Ubiquitinome; Tmtpro; Swi/snf; Dcaf5
+
+ABSTRACT:
+In this study, DCAF5, a substrate receptor that has been shown to modulate the levels of SWI/SNF subunits, which are components of a chromatin remodeling complex. Here we preformed ubiquitinome proteomics to discover the underlying response of DCAF5 loss on ubiquitylation of SWI/SNF subunits. Furthermore, we determine what sites on SWI/SNF components decrease in ubiquitylation upon DCAF5 loss.
+
+PROJECT DESCRIPTION:
+Ubiquitinome of G401 SMARCB1-deficient rhabdoid tumor cells
+
+SAMPLE PROCESSING:
+Proteins in rhabdoid cells were extracted and digested with LysC/trypsin. The di-GG peptides were enriched by PTMScan® HS Ubiquitin/SUMO Remnant Motif (K-GG) Kit followed by 18-plex tandem-mass-tag (TMT) labeling. The non-di-GG containing peptides were also labeled by 18-plex TMT.  The TMT labeled peptides were pooled with an equal amount of each the pooled samples were desalted and fractionated into 40 fractions for whole proteome analysis and 12 fractions for ubiquitinome analysis under basic pH conditions. Each fraction was further separated on a reverse phase columns (20 cm X 75 µm, 1.9 μm C18 resin) during a 1.5h to 2.5 h gradient and analyzed by Q exactive HF (Thermo Scientific) with one MS scan and up to 20 data-dependent high-resolution MS/MS scans.
+
+DATA PROCESSING:
+Acquired MS raw data were processed using the JUMP software suite to improve sensitivity and specificity, which combines the advantages of pattern matching with de novo sequencing tags to score putative peptide-spectrum matches (PSMs).  Searches were performed using 15 ppm mass tolerance for precursor ions due to JUMP’s auto mass correction function and 20ppm for fragment ions, allowing up to two missed trypsin cleavage sites. TMT tags on lysine residues and peptide N termini (+304.2071 Da), cysteine residues (+57.021 Da) and dynamic mass shift for oxidation (+15.99491 on Met), dynamic mass shift for di-GG (+114.04293 Da on Lys) and three maximal dynamic modification sites. The assigned peptides are filtered by minimal peptide length, maximum miscleavages, mass-to-charge accuracy and matching scores. The peptides are then divided into groups according to peptide length, trypticity, modification, miscleavage, and charge and then further filtered by matching scores to reduce protein FDR to below 1%. Proteins were quantified by summing reporter ion counts across all matched PSMs using our in-house software.

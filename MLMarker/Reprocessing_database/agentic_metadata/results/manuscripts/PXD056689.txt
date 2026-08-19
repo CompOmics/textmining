@@ -1,0 +1,24 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Q Exactive HF
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Lactylation; Sf3b1; Methylation; Nsd2; Pkm2
+
+ABSTRACT:
+Hepatocellular carcinoma (HCC) is notorious for its early and frequent metastases. To understand the molecular mechanisms underlying HCC metastasis, we generated a pulmonary metastasis HCC mouse model and performed both time-series transcriptomics and proteomics analysis of protein methylation. We found that methyltransferase NSD2 with significant upregulation in the tipping point for metastasis was closely correlated with high numbers of methylated-proteins in HCC tissues. NSD2 promoted the invasion and metastasis of HCC cells, both in vitro and in vivo. Mechanistically, NSD2 directly bound to PKM2, a glycolysis rate-limiting enzyme, and catalyzed di-methylation of PKM2 at the lysine 336 residue. Further investigation demonstrated that NSD2-mediated di-methylation of PKM2 increased the intracellular glycolytic rate and lactate production by enhancing its pyruvate kinase activity. High-lactate level in HCC cells lead to lactylation of splicing factor 3B subunit 1 (SF3B1) at lysine 333 residue, promoting SF3B1-mediated RNA splicing of several metastasis-related genes. Further, UNC8153, a novel NSD2-targeted degrader, inhibited HCC metastasis in PDX model. Altogether, our study identifies a key methyltransferase NSD2 for HCC metastasis and reveals a protein methylation-mediated molecular mechanism catalyzed by NSD2 integrate glycolysis regulation and alternative splicing.
+
+PROJECT DESCRIPTION:
+NSD2 promotes HCC metastasis through methylating PKM2 and activating SF3B1-dependent alternative splicing
+
+SAMPLE PROCESSING:
+For proteomics analysis the proteins which bind with NSD2. We performed co-immunoprecipitation with anti-NSD2 and anti-IgG antibody in whole cell lysate buffer of NSD2-overexpressing cells by performing western blot, the gels were subjected to mass spectrometry (IP-MS).
+1. In-gel Digestion
+For in-gel tryptic digestion, gel pieces were destained in 50 mM NH4HCO3 in 50% acetonitrile (v/v) until clear. Gel pieces were dehydrated with 100 μl of 100% acetonitrile for 5 min, the liquid removed, and the gel pieces rehydrated in 10 mM dithiothreitol and incubated at 56 °C for 60 min. Gel pieces were again dehydrated in 100% acetonitrile, liquid was removed and gel pieces were rehydrated with 55 mM iodoacetamide. Samples wereincubated at room temperature, in the dark for 45 min. Gel pieces were washed with 50 mM NH4HCO3 and dehydrated with 100% acetonitrile. Gel pieces were rehydrated with 10 ng/μl trypsin resuspended in 50 mM NH4HCO3 on ice for 1 h. Excess liquid was removed and gel pieces were digested with trypsin at 37 °C overnight. Peptides were extracted with 50% acetonitrile/5% formic acid, followed by 100% acetonitrile. Peptides were dried to completion and resuspended in 2% acetonitrile/0.1% formic acid.
+2. LC-MS/MS Analysis
+The tryptic peptides were dissolved in 0.1% formic acid (solvent A), directly loaded onto a home-made reversed-phase analytical column (15-cm length, 75 μm i.d.). The gradient was comprised of an increase from 6% to 23% solvent B (0.1% formic acid in 98% acetonitrile) over 16 min, 23% to 35% in 8 min and climbing to 80% in 3 min then holding at 80% for the last 3 min, all at a constant flow rate of 400 nl/min on an EASY-nLC 1000 UPLC system. The peptides were subjected to NSI source followed by tandem mass spectrometry (MS/MS) in Q ExactiveTM Plus (Thermo) coupled online to the UPLC. The electrospray voltage applied was 2.0 kV. The m/z scan range was 350 to 1800 for full scan, and intact peptides were detected in the Orbitrap at a resolution of 70,000. Peptides were then selected for MS/MS using NCE setting as 28 and the fragments were detected in the Orbitrap at a resolution of 17,500. A data-dependent procedure that alternated between one MS scan followed by 20 MS/MS scans with 15.0s dynamic exclusion. Automatic gain control (AGC) was set at 5E4.
+
+DATA PROCESSING:
+Data Processing
+The resulting MS/MS data were processed using Proteome Discoverer 1.3. Tandem mass spectra were searched against Homo_sapiens_9606_SP_20201214.fasta (20395 entries) concatenated with reverse decoy and contaminants database database. Trypsin/P (or other enzymes if any) was specified as cleavage enzyme allowing up to 2 missing cleavages. Mass error was set to 10 ppm for precursor ions and 0.02 Da for fragmentions. Carbamidomethyl on Cys were specified as fixed modification and oxidation on Met was specified as variable modification.Peptide confidence was set at high, and peptide ion score was set > 20.

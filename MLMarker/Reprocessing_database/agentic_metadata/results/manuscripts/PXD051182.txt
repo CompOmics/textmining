@@ -1,0 +1,31 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Synovia
+diseases: Osteoarthritis
+instruments: Q Exactive HF
+modifications: iodoacetamide derivatized residue
+experiment types: Data-independent acquisition
+quantification: Relative quantification
+keywords: Human; Osteoarthritis; Synovial fluid
+
+ABSTRACT:
+This MS data set was used as validation data for an exploratory proteomics study of biomarkers in osteoarthritis (OA) using SOMAscan assay data. We analyzed human synovial fluid from three groups with the two methods: 1) deceased donors with mildly degenerated cartilage and/or meniscus, which is a well-known characteristic of OA, 2) deceased donors with no degeneration as controls and 3) total knee replacement patients with end-stage knee osteoarthritis.  We conducted gaussian graphical network analyses of proteins from group 1 and 2 using SOMAscan assay data, and included the 800 aptamers/proteins with largest absolute log2 fold changes in the network construction. We found 102 differentially connected proteins, which of 31 were also present in the MS data set. After filtering out non-proteotypic peptides, proteins with only one peptide used for identification across all samples and proteins with more than 50% missing values, we ended up with 21 proteins. We analyzed these proteins by 1) estimating correlation between the methods on log2 standardized data sets and 2) compared log2 fold changes and 95%CIs by linear mixed effect model with quantification on the protein level as the outcome variable, adjusted for age and sex. Most proteins shown a positive correlation for the two methods. The comparison of log2 fold changes and 95%CIs between the methods show similar results for mild degeneration group when compared to healthy controls, whereas the results for the comparison between healthy controls and late stage OA group show dissimilarities for a few proteins.
+<br><br>
+Shared first authors: Martin Rydén, Amanda Sjögren
+<br>
+Authors: Patrik Önnerfjord, Aleksandra Turkiewicz, Jon Tjörnstrand*
+<br>
+Last authors: Neserin Ali (neserin.ali@med.lu.se), Martin Englund (martin.englund@med.lu.se)
+<br>
+Department of Clinical Sciences Lund, Lund University
+<br>
+*Department of Orthopedics, Skåne University Hospital, Sweden
+
+PROJECT DESCRIPTION:
+Exploring the early molecular pathogenesis of osteoarthritis using differential network analysis of human synovial fluid
+
+SAMPLE PROCESSING:
+25 µL synovial fluid were mixed with 10 μL of MS-safe proteinase inhibitor cocktail and 10 µL hyaluronidase (1µL/µg) and incubated at 37°C for 3 hours. The 7 most abundant proteins were depleted with the multiple affinity removal system (MARS Hu7 spin cartridge) according to the manufacturers protocol (Agilent Technologies). Samples were reduced with 4 mM DTT and kept at +56°C for 30 min during shaking. Thereafter, samples were alkylated with 16 mM iodoacetamide and kept in the dark for 1 hour at room temperature. 95% ethanol with 50 mM NaAc was used in a 1:9 volume to precipitate samples. Samples were left at 4°C overnight. The day after, samples were centrifuged at 13000 rpm for 1 hour and the supernatant was removed from the pellets. Pellets were dissolved in 0.1 M ammonium bicarbonate followed by protein digestion overnight at 37°C with sequencing grade trypsin (Promega) at a protease/protein ratio of 1:50. Next, samples were subjected to a 30 kDa filter (Pall Corporation, 96 well) and a vacuum pump (Rocker 400, VacMaster VCU) to remove large compounds from the sample and reduce the risk of clogging the MS column. Additionally, samples were desalted with C18 AssayMAP cartridges using the Bravo platform (Agilent Technologies; Santa Clara, CA, USA). Thereafter, samples were evaporated and dissolved in 20 µL of 0.1% FA. At last, samples were further spiked with iRT peptides before analyses with MS. The samples were run in randomized order with an EASY-nLC 1000 (Thermo Scientific) coupled to a Thermo Scientific Q-Exactive HFX™ mass spectrometer using data-independent acquisition (DIA). The mobile phases A and B were 0.1% formic acid and acetonitrile (ACN) with 0.1% FA respectively. Peptides were loaded on an Acclaim PepMap® 100 nanoViper pre-column (Thermo Scientific, C18, 3 µm particles, 75 µm i.d. 2 cm long) at 5 µL/min mobile phase A. Peptide separation was carried out on a PepMap® RSLC C18 analytical column (Thermo Scientific, C18, 2 µm particles, 75 µm i.d. 25 cm long) at 45°C and 300 nL/min using a gradient. Mobile phase B was initially kept at 5-7% for 5 min followed by 85 min at 7-20%, 20 min at 20-30%, 5 min at 30-90% and finally, held at 90% for 5 min. To equilibrate the column after each gradient, the mobile phase B was kept at 3% for 15 min. Settings for the DIA method was as followed: duration 125 min, full scan resolution 120 000, scan range 350-1650 m/z, AGC target 3.0e6, maximum injection time 100 ms, Orbitrap resolution 45 000, AGC 3.0e5 with a variable isolation window 33/ 26/ 22/ 20x2/ 18/ 20/ 19x4/ 20/ 21x2/ 23x2/ 24/ 26/ 31/ 32/ 37/ 40/ 53/ 66/ 99/ 574 m/z, and normalized collision energy 27 eV, giving a cycle time of 3.3 s.
+
+DATA PROCESSING:
+The raw data were analyzed with Spectronaut™Pulsar software (version 18.4.231017.55695, Biognosys AG, Switzerland) for protein identification and quantification using directDIA (library-free) search, and global normalization (median). We used human protein fasta files from the uniport database (20230913; 20,586 protein entries). In addition to default settings, cysteine carbamidomethylation was used as a fixed modification. Furthermore, acetylation (N-term), oxidation (M) and oxidation (P) were used as variable modifications. Trypsin/P was specified as specific digestion type with a maximum of two missed cleavages. Quantification of MS2 precursor ions was done by area under the curve quantitation. The 3 most abundant proteotypic peptides (mean) and MaxLFQ were used for protein quantification. Default settings were used for MS1 and MS2 mass tolerance (40 ppm). Peptide and protein FDR was 0.01.

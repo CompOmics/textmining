@@ -1,0 +1,36 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Permanent cell line cell; Cell culture; Fibroblast
+diseases: Breast cancer
+instruments: Orbitrap Fusion Lumos
+modifications: iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: label free sample
+keywords: Extracellular vesicles; Extracellular vimentin; Lc-ms/ms
+
+ABSTRACT:
+Vimentin is a well-established intracellular regulator of epithelial-mesenchymal transition (EMT). Recent studies have highlighted the role of extracellular vimentin from fibroblast-derived extracellular vesicles (EVs) in promoting wound healing and other functions. Building on these findings, we investigated the protein cargo of wild-type (WT) and vimentin-knockout (Vim -/-) human dermal fibroblasts (HDFs) and their EVs, aiming to determine whether extracellular vimentin influences EMT. Additionally, we assessed the impact of EVs from WT and Vim -/- HDFs on the proteomes of MCF7 and MCF10A cells
+
+PROJECT DESCRIPTION:
+Mass spectrometry-based profiling of HDF, HDF Vim -/-, and their EVs, and the impact of these EVs on MCF7 and MCF10A proteomes
+
+SAMPLE PROCESSING:
+Samples were lysed in 20 mM HEPES pH 7.4, 0.5 % NP40, 2 mM EDTA, 150 mM NaCl, and 1x protease and phosphatase inhibitors, cleared by centrifugation and protein precipitated using cold acetone. Samples were centrifuged and pellet dissolved in 6 M urea in 25 mM ammonium. In-solution digestion started with 60 µg of protein for whole cell lysates and 30 µg for EV samples. Samples were reduced with DTT and alkylated with iodoacetamide. Prior to trypsin digestion (1:30 ratio), the alkylation was quenched with DTT and urea diluted using ammonium bicarbonate. Digestion as quenched with TFA and samples desalted with Sep Pak C18 columns (Waters). Samples were dried and then dissolved in 0.1% formic acid. Approximately 400 ng of each sample was loaded for LC-MS/MS analysis. The analysis was conducted using an Easy-nLC 1000 liquid chromatograph (Thermo Scientific) coupled to an Orbitrap Fusion Lumos Mass Spectrometer (Thermo Scientific) equipped with a FAIMS Pro interface (Thermo). Compensation voltages of -50 and -70 were used. The peptides were loaded on a pre-column (0.1 × 20 mm), followed by separation in an analytical column (75 μm x 150 mm), both packed with ReproSil-Pur 3 μm 120 Å C18-AQ, (Dr. Maisch HPLC GmbH). The peptides were separated using a 60-minute gradient (5-21 % B in 28 min, 21-36 % B in 22 min, 36-100 % B in 5 min, 100% B for 5 minutes) in which solvent B was acetonitrile/water (80:20), at a flow rate of 300 nl/min. MS/MS data were acquired in positive ionization mode using data-dependent acquisition and 1.5 s cycle time. The MS survey scans were acquired with a resolution of 120,000 across the range of 300–1750 m/z, an AGC target of 700,000, and a maximum injection time of 50 ms. Ions with charge >+2 were selected for HCD fragmentation using an isolation window of 1.6  m/z, dynamic exclusion window of 30 s, and 10 ppm mass tolerance.
+
+DATA PROCESSING:
+Raw LC-MS/MS were processed using Fragpipe software (version 20.0) with msFragger (version 3.8), IonQuant (version 1.9.8), and Philosopher (version 5.0.0). We used the UniProt human protein database with added common contaminants (downloaded on September 5, 2023, total of 40912 entries, with 50% designated as decoys). The LFQ-MBR workflow was used with default settings, using a mass tolerance of 20 ppm for both precursor and fragment ions, along with a 1% false discovery rate at both the peptide and protein levels. Trypsin digestion with a maximum of 2 missed cleavages, cysteine carbamidomethylation as a fixed modification, and methionine oxidation as variable modifications were selected as the parameters of these searches.
+
+SDRF SUMMARY:
+Total runs: 30
+organism: Homo sapiens
+organism part: Breast; Mammary gland; Skin
+disease: Breast Cancer; Non-tumorigenic Breast Epithelium; Normal
+cell type: Human dermal fibroblast; Human dermal fibroblast vim -/-; MCF10A; MCF7
+cell line: epithelial cell; fibroblast
+instrument: Orbitrap Fusion Lumos
+cleavage agent details: Trypsin
+modification parameters: Carbamidomethyl
+label: label free sample
+dissociation method: HCD
+precursor mass tolerance: 20 ppm
+fragment mass tolerance: 20 ppm

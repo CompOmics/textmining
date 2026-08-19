@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Cell culture
+diseases: Breast cancer
+instruments: Orbitrap Fusion
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+quantification: TMT
+keywords: Snf2l-ko; Ms; Mda-mb-231 cell
+
+ABSTRACT:
+To identify SNF2L target proteins involved in GSH homeostasis in cancer cells, we conducted a quantitative proteomic screening of SNF2L-KO and parental MDA-MB-231 cells.
+
+PROJECT DESCRIPTION:
+Identification of differentially expressed proteins in SNF2L-deficient MDA-MB-231 cells using mass spectrometry.
+
+SAMPLE PROCESSING:
+Briefly, cells were lysed by adding five cell pellet volumes of lysis buffer (100 mM triethyl-ammonium bicarbonate and 1% SDS). Lysates were centrifuged at 16,000 × g for 10 minutes at 4°C, and the protein concentration of the supernatant was determined using BCA assays. A total of 100 μg of protein from each sample was precipitated using a 5-fold volume of ice-cold acetone. The pellet was resolved in 100 mM triethyl-ammonium bicarbonate (TEAB) and subjected to tryptic digestion after reduction with dithiothreitol (DTT) (10 mM) at 60°C for 30 minutes and alkylation with iodoacetamide (IAA) (40 mM) in the dark for 10 minutes. Trypsin was added to the proteins at a 1:50 (w:w) ratio, and the mixture was incubated at 37°C overnight. The peptides were labelled with a set of TMT-6plex isobaric tags following the manufacturer's instructions. The sample labels used were as follows: Con_1, 126; Con_2, 127; Con_3, 128; KO_1, 129 N; KO_2, 130; and KO_3, 131. The labelled peptides were then mixed, desalted, and vacuum-dried. Using a high-pH reversed-phase peptide fractionation kit (Thermo Scientific, #84868), the labelled peptides were fractionated into eight fractions and dried by vacuum centrifugation for further processing. For LC‒MS/MS analysis, the prefractionated peptides were dissolved in 0.1% formic acid (solvent A) and directly loaded onto a reversed-phase analytical column (Acclaim PepMap C18, 75 μm × 25 cm). The gradient comprised an increase from 2% to 30% solvent B (0.1% formic acid in 98% acetonitrile) over 50 minutes, 30% to 50% in 5 minutes, and an increase to 80% in 1 minute, followed by holding at 80% for the last 4 minutes, all at a constant flow rate of 200 nl/min on an EASY-nLC 1200 UPLC system. The peptides were subjected to an NSI source followed by tandem mass spectrometry (MS/MS) in an Orbitrap Exploris 480 MS coupled online to the UPLC. The spray voltage was set to 2.3 kV, the funnel RF level was set to 50, and the capillary temperature was heated to 320°C. For the DDA experiments, the full MS resolution was set to 60,000 at m/z 200, and the full MS AGC target was 300% with an IT of 25 ms. The mass range was set to 350–1600. The AGC target value for fragment spectra was set to 200%, with a resolution of 15,000 and injection times of 50 ms and Top12. The intensity threshold was maintained at 2E5. The isolation width was set to 1.6 m/z, and the normalized collision energy was set to 30%.
+
+DATA PROCESSING:
+Mass spectrometric files were processed using MaxQuant 2.0.3.0, and the data were searched against the human UniProt database consisting of reviewed canonical sequences (total entry 20594, downloaded in April 2022). TMT 6-plex-based MS2 reporter ion quantification was chosen, with the reporter mass tolerance set to 0.003 Da and the PIF (precursor intensity fraction) filter value set to 0.5. The tolerances for the parent mass were set to 10 ppm, with the fragment mass tolerance set to 0.02 Da. Specific tryptic cleavages were selected, allowing for a maximum of 2 missed cleavages. A maximum of 5 modifications per peptide were allowed. The minimal peptide length was set to 7. The maximum false discovery rate (FDR) for protein, peptide, and PSM identification was set to <0.01. The protein expression values calculated by MaxQuant were subjected to median normalization by column and log2 transformation prior to differential expression analysis.

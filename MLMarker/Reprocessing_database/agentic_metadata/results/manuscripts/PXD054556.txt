@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: Orbitrap Fusion Lumos
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Human ht1080 cells; Hek293t cells; Ubiquitin
+
+ABSTRACT:
+TMT quantification of UBR5 knockdown HT1080 cells. Label-free quantification of OTUD5-interacting proteins.
+
+PROJECT DESCRIPTION:
+Ubiquitination analysis of OTUD5
+
+SAMPLE PROCESSING:
+For Tandem Mass Tag (TMT) proteomics, peptides (25 µg at 0.5 µg/µL) from each sample were labeled with 0.25 mg of TMTpro mass tag (TMT) labeling reagent (Thermo Fisher Scientific) for 60 min. The combined samples were then fractionated into eight fractions using the High pH Reversed-Phase Peptide Fractionation Kit (Thermo Fisher Scientific). An EASY-nLC 1200 was connected inline to an Orbitrap Fusion Lumos (Thermo Fisher Scientific) equipped with a FAIMS-Pro ion mobility interface (Thermo Fisher Scientific). The peptides were separated on an analytical column (IonOpticks, Aurora Series Emitter Column, AUR2-25075C18A 25 cm × 75 um 1.6 um FSC C18 with a nanoZero fitting) using a 4 h gradient (0–28% acetonitrile over 240 min). Peptide ionization was performed using a Nanospray Flex Ion Source (Thermo Fisher Scientific), and FAIMS-Pro was set to three phases (-40, -60, and -80 CV).
+
+DATA PROCESSING:
+The raw files were analyzed using Sequest HT in Proteome Discoverer 2.4 (Thermo Fisher Scientific). MS/MS spectra were searched against the SwissProt-reviewed Homo sapiens reference proteome (UniProt). The mass tolerances for the precursor and fragment ions were 10 ppm and 0.02 Da, respectively. Maximum missed cleavage sites of trypsin was set to 2. Oxidation (Met) and deamidation (Gln, Asn) were selected as variable modifications. Peptide identification was filtered at FDR< 0.01. TMT-based protein quantification was performed using the Reporter Ion Quantifier node in Proteome Discoverer 2.4.

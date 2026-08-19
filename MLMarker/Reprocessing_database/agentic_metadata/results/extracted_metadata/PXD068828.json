@@ -1,0 +1,610 @@
+{
+  "sample_groups": [
+    {
+      "name": "Mouse Liver MM-TPP",
+      "organism": [
+        {
+          "value": "Mus musculus",
+          "evidence": "derived from the mouse liver",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Liver",
+          "evidence": "Harvest of Mus musculus liver",
+          "ontology_id": "tissues:0003",
+          "ontology_name": "liver",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "membrane",
+          "evidence": "crude membrane fraction was collected",
+          "ontology_id": "cell_parts:0004",
+          "ontology_name": "membrane",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "Orbitrap Exploris mass spectrometer",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmented using normalized collision energy",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin digestion was performed",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "fixed modification of carbamidomethyl cysteine",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "30 NCE",
+          "evidence": "normalized collision energy of 30%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "180",
+          "evidence": "run for 180 minutes"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "custom-made C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "thermal proteome profiling",
+        "evidence": "samples were heated... to facilitate protein denaturation"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "positive nanoelectrospray ionization",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "exposed to a final concentration of 2 mM ATP"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "ATP",
+          "evidence": "exposed to a final concentration of 2 mM ATP"
+        },
+        {
+          "value": "orthovanadate",
+          "evidence": "supplemented with 0.2 mM VO4"
+        },
+        {
+          "value": "2-methylthio-ADP",
+          "evidence": "exposed to 0.5 mM 2-Mes-ADP"
+        },
+        {
+          "value": "AMP-PNP",
+          "evidence": "2 mM AMP-PNP was substituted"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "ATP, orthovanadate, 2-methylthio-ADP, AMP-PNP",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "E. coli MM-TPP",
+      "organism": [
+        {
+          "value": "Escherichia coli",
+          "evidence": "derived from wild-type Escherichia coli",
+          "ontology_id": "organisms:0023",
+          "ontology_name": "Escherichia coli",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "membrane",
+          "evidence": "crude membrane fraction was collected"
+        }
+      ],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "membrane",
+          "evidence": "crude membrane fraction was collected",
+          "ontology_id": "cell_parts:0004",
+          "ontology_name": "membrane",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "Orbitrap Exploris mass spectrometer",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmented using normalized collision energy",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin digestion was performed",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "fixed modification of carbamidomethyl cysteine",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "30 NCE",
+          "evidence": "normalized collision energy of 30%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "180",
+          "evidence": "run for 180 minutes"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "custom-made C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "thermal proteome profiling",
+        "evidence": "samples were heated... to facilitate protein denaturation"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "positive nanoelectrospray ionization",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "exposed to a final concentration of 2 mM ATP"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "ATP",
+          "evidence": "exposed to a final concentration of 2 mM ATP"
+        },
+        {
+          "value": "orthovanadate",
+          "evidence": "supplemented with 0.2 mM VO4"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "ATP, orthovanadate",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "E. coli DIA Validation",
+      "organism": [
+        {
+          "value": "Escherichia coli",
+          "evidence": "derived from wild-type Escherichia coli",
+          "ontology_id": "organisms:0023",
+          "ontology_name": "Escherichia coli",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "membrane",
+          "evidence": "crude membrane fraction was collected"
+        }
+      ],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "membrane",
+          "evidence": "crude membrane fraction was collected",
+          "ontology_id": "cell_parts:0004",
+          "ontology_name": "membrane",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "Orbitrap Exploris mass spectrometer",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmented using normalized collision energy",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin digestion was performed",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "fixed modification of carbamidomethyl cysteine",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "30 NCE",
+          "evidence": "normalized collision energy of 30%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "180",
+          "evidence": "run for 180 minutes"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "custom-made C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "data-independent acquisition (DIA)",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "thermal proteome profiling",
+        "evidence": "samples were heated... to facilitate protein denaturation"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "positive nanoelectrospray ionization",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "exposed to a final concentration of 2 mM ATP"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "ATP",
+          "evidence": "exposed to a final concentration of 2 mM ATP"
+        },
+        {
+          "value": "orthovanadate",
+          "evidence": "supplemented with 0.2 mM VO4"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "ATP, orthovanadate",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Mouse Liver DB-TPP",
+      "organism": [
+        {
+          "value": "Mus musculus",
+          "evidence": "crude membrane fractions from mouse liver",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Liver",
+          "evidence": "Harvest of Mus musculus liver",
+          "ontology_id": "tissues:0003",
+          "ontology_name": "liver",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "membrane",
+          "evidence": "crude membrane fraction was collected",
+          "ontology_id": "cell_parts:0004",
+          "ontology_name": "membrane",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "Orbitrap Exploris mass spectrometer",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmented using normalized collision energy",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin digestion was performed",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "fixed modification of carbamidomethyl cysteine",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "30 NCE",
+          "evidence": "normalized collision energy of 30%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "180",
+          "evidence": "run for 180 minutes"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "custom-made C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "thermal proteome profiling",
+        "evidence": "samples were heated... to facilitate protein denaturation"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "positive nanoelectrospray ionization",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "exposed to a final concentration of 2 mM ATP"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "ATP",
+          "evidence": "exposed to a final concentration of 2 mM ATP"
+        },
+        {
+          "value": "orthovanadate",
+          "evidence": "supplemented with 0.2 mM VO4"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "ATP, orthovanadate",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

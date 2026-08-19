@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Blood; T cell; Primary cell
+instruments: Orbitrap Exploris 480
+modifications: monohydroxylated residue; TMT6plex-126 reporter+balance reagent acylated residue; phosphorylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Human; Phosphoproteomics; Metabolomics; T-cells; Cd4+; Proteomics; T-cell exhaustion
+
+ABSTRACT:
+T-cell exhaustion occurs when T cells are chronically activated, usually in the context of cancer or chronic infection. Exhausted T cells lose effector functions, upregulate inhibitory receptors, and lose proliferation ability. Understanding the mechanisms of T-cell exhaustion is important as it has critical clinical applications, such as checkpoint blockade therapy. CD4+ T cells are understudied in the context of exhaustion, and no large-scale multiomic datasets containing proteomics, phosphoproteomics, or metabolomics exist. We therefor performed a multiomic experiment to profile this cell state using a time course analysis to also capture progression.
+
+PROJECT DESCRIPTION:
+Multiomic profiling of chronically activated CD4+ T cells identifies drivers of exhaustion and metabolic reprogramming
+
+SAMPLE PROCESSING:
+CD4+ memory T cells were isolated from healthy human donors via PBMCs extracted from leukopaks. PBMC extraction was performed using density centrifugation (Histopaque-1077 from Sigma Aldrich). CD4+ memory cells were isolated using “untouched” bead-based isolation kit (Miltenyi). T cells were subject to either acute or chronic stimulation using CD3/CD28 Dynabeads (as described in Lawton et al.) before harvesting. To harvest samples for analysis, T cells were washed 3x with sterile PBS before being snap frozen. A liquid-liquid extraction was performed to precipitate protein pellet and keep metabolites in supernatant. Protein pellets were then subject to denaturing buffer containing either 8M urea or 6M guanidine, 40mM chloroacetamide, 10mM TCEP, 1mM CaCl2, and phosphatase inhibitor (PhosStop). Samples were then sonicated for 3 x 5 second pulses. Samples were diluted to below 0.75M and trypsin was added 1:50 by total protein and incubated at 37 degrees Celsius overnight. Samples were then acidified using formic acid before desalting using SepPak columns. Next, peptide quantification was performed and peptide amounts were normalized before labelling using Tandem Mass Tags (TMT). Once pooled, samples were again desalted before fractionation via high pH reversed phase HPLC, where we collected 48 fractions and pooled strategically into 12 to increase separation during MS. 5% was taken and dried down using a SpeedVac to run for proteomics, while the remaining 95% were subjected to phosphopeptide enrichment using either TiO2 or Fe beads. Once enriched, phosphopeptides were dried down and both proteomics and phosphoproteomics samples were loaded onto a 96-well plate and analyzed via nanoflow-LC/MS-MS.
+
+DATA PROCESSING:
+Raw data was collected and initially processed by splitting the raw files into 3 files based on the 3 voltages set in our methods protocol used by FAIMS, -50, -57, and -64. This step was performed using in-house software. These split raw files were then searched using MaxQuant version 1.6.7.0. For downstream analysis, proteinGroup.txt and phosphopeptides(STY).txt were used for proteomics and phosphoproteomics, respectively.

@@ -1,0 +1,591 @@
+{
+  "sample_groups": [
+    {
+      "name": "SGBS Adipocytes",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Simpson-Golabi-Behmel syndrome type 1",
+          "evidence": "diseases: Simpson-golabi-behmel syndrome type 1"
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "SGBS",
+          "evidence": "SGBS preadipocytes were grown to full confluency"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "instruments: Q Exactive HF",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "fragmentation via collision-induced dissociation (CID)",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "For tryptic digestion, trypsin was added",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 10 mM iodacetamid (IAA)",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-acetylation",
+          "evidence": "Immunoaffinity purification (IAP) of acetylated lysines",
+          "ontology_id": "modifications:0010",
+          "ontology_name": "K-acetylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "normalized collision energy (NCE) of 28"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "170",
+          "evidence": "peptides were eluted over a 170 min three step linear gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "analytical reverse-phase Acclaim PepMap 100 C18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "All label-free SGBS adipocyte samples were analysed in data-dependent acquisition (DDA)",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free SGBS adipocyte samples",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for SGBS samples"
+      },
+      "enrichment": {
+        "value": "acetylation",
+        "method": "Immunoaffinity purification",
+        "evidence": "Immunoaffinity purification (IAP) of acetylated lysines"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nano ultra-performance liquid chromatography system coupled to... Orbitrap",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "exposure to the selective PPAR inhibitor GW9662"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "MINCH",
+          "evidence": "10 µM MINCH exposure"
+        },
+        {
+          "value": "GW9662",
+          "evidence": "exposure to the selective PPAR inhibitor GW9662"
+        },
+        {
+          "value": "rosiglitazone",
+          "evidence": "rosiglitazone differentiated controls"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "MINCH, GW9662, rosiglitazone are small molecules",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Human SVF Adipocytes",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organism: Homo sapiens",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "subcutaneous adipose tissue",
+          "evidence": "human subcutaneous adipose tissue SVF cells",
+          "ontology_id": "tissues:0068",
+          "ontology_name": "adipose tissue",
+          "similarity": 0.8843
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "All murine tissue and human SVF samples were analyzed... on the same instrumental setup",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "via collision-induced dissociation (CID)",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "enzymatically cleaved... using a paramagnetic bead approach",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "proteins were reduced... alkylated with 37.5 mM IAA",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "normalized collision energy (NCE) of 28"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "75",
+          "evidence": "Peptides were eluted over a 75 min three-step linear gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "analytical reverse-phase Acclaim PepMap 100 C18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "All murine tissue and human SVF samples were analyzed in data-independent acquisition (DIA)",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "human SVF data set",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for SVF samples"
+      },
+      "enrichment": {
+        "value": "acetylation",
+        "method": "Immunoaffinity purification",
+        "evidence": "acetylated peptides were enriched using antiacetyl-lysine agarose beads"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Orbitrap positive mode",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "exposure conditions of 10 nM and 10 μM DINCH and MINCH"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "MINCH",
+          "evidence": "SVF cells exposed to MINCH at 10 nM and 10 μM"
+        },
+        {
+          "value": "DINCH",
+          "evidence": "DINCH exposure did not induce lipid accumulation"
+        },
+        {
+          "value": "rosiglitazone",
+          "evidence": "differentiation control containing rosiglitazone"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "MINCH, DINCH, rosiglitazone are small molecules",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Murine Adipose Tissue",
+      "organism": [
+        {
+          "value": "Mus musculus",
+          "evidence": "C57BL/6N mice",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "adipose tissue",
+          "evidence": "visceral and subcutaneous adipose tissue",
+          "ontology_id": "tissues:0068",
+          "ontology_name": "adipose tissue",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "All murine tissue... samples were analyzed... on the same instrumental setup",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "via collision-induced dissociation (CID)",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "enzymatically cleaved... using a paramagnetic bead approach",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "proteins were reduced... alkylated with 37.5 mM IAA",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "normalized collision energy (NCE) of 28"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "75",
+          "evidence": "Peptides were eluted over a 75 min three-step linear gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "analytical reverse-phase Acclaim PepMap 100 C18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "All murine tissue... samples were analyzed in data-independent acquisition (DIA)",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "tissue proteome... data",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for tissue samples"
+      },
+      "enrichment": {
+        "value": "acetylation",
+        "method": "Immunoaffinity purification",
+        "evidence": "acetylated peptides were enriched using antiacetyl-lysine agarose beads"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Orbitrap positive mode",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "diet",
+          "evidence": "provided either a standard chow diet... or a high-fat diet"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "DINCH",
+          "evidence": "HFD supplemented with 4500 (LD) or 15,000 ppm (HD) DINCH"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "environmental",
+          "evidence": "dietary exposure to... DINCH",
+          "ontology_id": "treatments:0003",
+          "ontology_name": "environmental",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "SGBS TPP",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "SGBS cells were differentiated",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Simpson-Golabi-Behmel syndrome type 1",
+          "evidence": "SGBS cells... Simpson–Golabi–Behmel syndrome"
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "SGBS",
+          "evidence": "SGBS cells were differentiated into early (d4) and terminally differentiated (d12)"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "TMT-labeled TPP samples were analyzed as described before",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "NCE of 34 for CID fragmentation",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "cleaved into tryptic peptides at 37 °C overnight",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 37.5 mM IAA",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-TMT",
+          "evidence": "TMT-label at lysine (K) was additionally added as static modification"
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "34 NCE",
+          "evidence": "NCE of 34 for CID fragmentation"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "180",
+          "evidence": "peptides were eluted over a 180 min three-step linear gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "analytical reverse-phase Acclaim PepMap 100 C18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "TMT-labeled TPP samples were analyzed as described before",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "TMT10plex labels",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for TPP samples"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment described for TPP samples"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Orbitrap positive mode",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "supplemented with the respective treatment (solvent or 10 μM MINCH)"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "MINCH",
+          "evidence": "10 μM MINCH"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "MINCH is a small molecule",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "sample_groups": [
+    {
+      "name": "HeLa cells treated with Homo-PROTACs",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "Human cell lines HeLa, U2OS and HEK 293",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "HeLa cells were seeded at 5 × 10^6 on a 10 cm plate",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "Q Exactive HF Hybrid Quadrupole-Orbitrap Mass Spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "normalized collision energy was set at 32%",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin/P",
+          "evidence": "enzyme used Trypsin/P",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 0.9149
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "fixed modifications: Carbamidomethyl (C)",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "32 NCE",
+          "evidence": "normalized collision energy was set at 32%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "60",
+          "evidence": "linear gradient from 5% to 60% buffer B over 60 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "EasySpray column (75 μm × 50 cm, PepMap RSLC C18 column)",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "targeted dd-MS2 scans",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "labeled with TMT 10plex Isobaric Label Reagent Set",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high pH reverse-phase chromatography",
+        "evidence": "fractionated into 20 discrete fractions using high pH reverse-phase chromatography"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for specific modifications"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "HRMS (ESI) m/z",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "Cells were treated with compounds at the desired concentration"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "CM09",
+          "evidence": "treated with CM09, CM10 or CM11"
+        },
+        {
+          "value": "CM10",
+          "evidence": "treated with CM09, CM10 or CM11"
+        },
+        {
+          "value": "CM11",
+          "evidence": "treated with CM09, CM10 or CM11"
+        },
+        {
+          "value": "VH032",
+          "evidence": "VH032 (150 μM) to control for VHL inhibition"
+        },
+        {
+          "value": "DMSO",
+          "evidence": "treated with 0.1% DMSO as vehicle control"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "small-molecule dimerizers of the VHL E3 ubiquitin ligase",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

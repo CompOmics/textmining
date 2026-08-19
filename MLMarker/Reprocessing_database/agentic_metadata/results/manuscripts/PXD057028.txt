@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Orbitrap Fusion Lumos
+modifications: biotinylated residue
+experiment types: Gel-based experiment; Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition
+keywords: Secretome bxpc3 panecreatic ductal adenocarcinoma
+
+ABSTRACT:
+Cells expressing a ER resident biotin trasferase (SEC61 fusion) secreted biotinylated protein in the culture medium. This project nominated bona fide secreted factors.
+
+PROJECT DESCRIPTION:
+BXPC3 and PANC1 secretome analysis (SEC61-biotin transferase system)
+
+SAMPLE PROCESSING:
+All reagents and solvents used were MS grade. Gel lanes were excised and cut in 5 slices each (as consistently as possible) to permit efficient in-gel digestion. A piece of gel from the corner of the gel (“empty”, in the image above) was also cut and processed in parallel as method blank. All gel bands were destained, and cysteine residues were reduced with 3 mM TCEP and alkylated with 10 mM MMTS. After washing, each gel band was incubated overnight with 250 ng sequencing grade modified porcine trypsin, and proteolytic peptides were eluted and lyophilized (detailed protocol for in-gel digestion is included). Peptide pellets were resuspended in 20 μl 5% DMSO/0.1% formic acid/water by sonication, and 2 μl of each sample were used for LC/MS. Samples were injected in the following order: instrument blank, method blank, samples WT 1-5, (column wash), samples SEC 1-5. Peptides were loaded via 10 cm x 100 μm ID trap column packed with 5 μm aqua C18 particles (Phenomenex) onto a 30 cm x 75 μm ID analytical column packed with Reprosil 1.9 μm C18 silica particles (Dr. Maischt), and resolved on an 80 minute 5-35% acetonitrile gradient in water (0.1% formic acid) at 200 nl/min. Eluting peptides were ionized by electrospray (2200V) and transferred into a Thermo Scientific Exploris 480 mass spectrometer. The MS was set to collect 120K resolution precursor scans (m/z 380-2000 Th). Precursor ions were selected from HCD fragmentation at stepped 28,33,38% normalized energy in data-dependent mode. Spectra were collected in the orbitrap at 15K resolution, with first mass locked to 100 Th.
+
+DATA PROCESSING:
+Files were searched using the Mascot scoring function within ProteomeDiscoverer v.2.4, with mass tolerance set at 5 ppm for MS1, and 0.02 Da for MS2. Spectra were matched against the UniProt human reference proteome, and a database of common contaminants (cRAP). M-oxidation and N/Q-deamidation were set as variable modifications, as well as amine biotinylation. Methylthio-Cys was set as fixed modification. Peptide-spectral matches were filtered to maintain FDR<1% using Percolator. Extracted ion chromatograms (XIC) of precursor ions intensities were integrated for label-free quantification across samples and used as quantitative metric for relative protein quantification.

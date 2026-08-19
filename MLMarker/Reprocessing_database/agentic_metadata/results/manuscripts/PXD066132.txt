@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Cell culture
+instruments: Orbitrap Fusion Lumos
+modifications: iodoacetamide derivatized residue
+experiment types: Data-independent acquisition
+keywords: Ubiquitin e3 ligase; Sirna knockdown
+
+ABSTRACT:
+Proteome analysis upon knockdown of UBR1, UBR2, UBR4, UBR5, KCMF1, UBE4B, TRIP12
+
+PROJECT DESCRIPTION:
+Proteome changes upon knockdown of ubiquitin E3 ligases
+
+SAMPLE PROCESSING:
+HCT116 cells expressing Ub-GFP were transfected with siRNA for 72 h. Cells were lysed in radioimmunoprecipitation assay (RIPA) buffer (50 mM Tris-HCl, pH 8.0, 0.1% SDS, 150 mM NaCl, 1% NP-40, 0.5% sodium deoxycholate) containing a complete protease inhibitor cocktail, 10 μM bortezomib and 10 mM iodoacetamide. After incubation on ice for 30 min, the lysate was sonicated using a Handy Sonic (ACTIVE MOTIF) and then clarified by centrifugation at 20,000×g for 15 min at 4°C. Cell lysates denatured in 1× NuPAGE LDS sample buffer,were subjected to trypsin digestion using the SP3 protocol on a KingFisher APEX system. Specifically, for SP3-based digestion, magnetic carboxylate-modified beads (Cytiva Sera-Mag SpeedBead Carboxylate-Modified Magnetic Particles, hydrophilic and hydrophobic, mixed 1:1) were used. Proteins were first reduced and alkylated using 10 mM DTT (10 min, 70 °C) and 15 mM IAA (15 min, room temperature, dark), followed by binding to beads in 50% ethanol. The KingFisher APEX was programmed to perform sequential washing (3× with 80% ethanol) and digestion (37°C, 3.5 h) in 100 μL of TEAB buffer containing 0.5 μg Trypsin Gold (Mass Spectrometry Grade, dissolved in 50 mM triethylammonium bicarbonate (TEAB, Thermo Fisher Scientific)). After digestion, peptides were eluted with 100 μL MS-grade water and acidified with 0.1% TFA. Samples were then centrifuged at 15,000 rpm for 15 min at 4°C, and the supernatants were collected. Desalting was performed using Evotip pure columns (Evosep), involving equilibration with Evosep buffer B (0.1% formic acid in acetonitrile), sample loading, and washing with Evosep buffer A (0.1% formic acid). Finally, samples were separated on a C18 analytical column (1.7 µm particle size, 75 µm diameter × 150 mm length, IonOpticks #3-15075C18-5) using an Evosep One liquid chromatography system (Evosep) with the Whisper Zoom 20SPD program, connected to an Orbitrap Fusion Lumos Tribrid mass spectrometer (Thermo Fisher Scientific) equipped with a Dream Spray ING ion source (AMR). Data were acquired using a data-independent acquisition (DIA) method with FAIMS-pro set to −45 CV. Precursor MS spectra were collected in the range of 484–868 m/z (isolation window: 8 m/z, window overlap: 1 m/z). MS/MS spectra were collected in the range of 200–1800 m/z at a resolution of 50,000. The HCD was set to 28.
+
+DATA PROCESSING:
+Raw files were analyzed using Proteome Discoverer 3.2 software (Thermo Fisher Scientific) with the Chimerys search engine against the Homo sapiens reference proteome (UniProt, version 2024-10-02). The mass tolerance for the fragment ions was set to 20 ppm. Methionine oxidation and diglycine-lysine were set as variable modifications, and cysteine carbamidomethylation was set as a static modification for database searching. Maximum missed cleavage sites of trypsin were set to 2. Peptide identification was filtered at a false discovery rate (FDR) < 0.01. Label-free, intensity-based protein quantification was performed using the Fragment Ions Quantifier node in Proteome Discoverer 3.2.

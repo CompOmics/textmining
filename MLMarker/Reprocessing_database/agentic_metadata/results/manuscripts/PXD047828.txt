@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Blood plasma
+instruments: Q Exactive HF-X
+modifications: iodoacetamide derivatized residue
+experiment types: Data-independent acquisition; Bottom-up proteomics
+quantification: TIC
+keywords: Plasma; Enrichment; Single chain variable fragment
+
+ABSTRACT:
+A semi-automated method for enrichment of groups of peptides using individual or multiplexed combinations of single chain variable fragment antibodies was developed and tested in plasma.
+
+PROJECT DESCRIPTION:
+Affinity-based enrichment of peptides in plasma
+
+SAMPLE PROCESSING:
+Pooled plasma was diluted in 2% SDS in 50mM TrisHCl (pH 8.0) and reduced and alkylated using DDT and iodoacetamide. The plasma was cleaned and digested using trypsin on MagReSyn HILIC beads in a KingFisher Flex. Peptides were eluted and dried. For affinity captures 20 Âµg peptides were resuspended in phosphate buffer and single chain variable fragment antibodies coupled to MagneHis paramagnetic beads were used for the captures in an automated protocol using KingFisher Flex. Captured peptides were dried in a SpeedVac. All peptide samples were resuspended in 0.1% formic acid before loading on Evotips. Peptides were separated on a EvoSep One system using 44 minute 30 SPD method and coupled online to a QExactive HF-X mass spectrometer operating in DIA mode with staggered windows.
+
+DATA PROCESSING:
+The raw mass spectrometry data files were converted to mzML using msconvert of Proteowizard (version 3.0.21266) with vendor peak-picking and demultiplexing. DIA-NN version 1.8.1 was used for identification and quantification. The FASTA databases were Uniprot human proteome as of 2019-04-25 obtained from ProteomicsDB/Prosit and universal protein contaminants (10.1021/acs.jproteome.2c00145). One missed cleavage was allowed and mainly default search settings with quantification using robust LC (high accuracy) were employed. Exact settings are specified in the log files in the respective search results folders (zipped).

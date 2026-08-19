@@ -1,0 +1,155 @@
+{
+  "sample_groups": [
+    {
+      "name": "HeLa/HEK293T MRPS38 IP and TMT Quantification",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "mitochondria",
+          "evidence": "preservation of intact mitochondria",
+          "ontology_id": "cell_parts:0001",
+          "ontology_name": "mitochondria",
+          "similarity": 1.0
+        },
+        {
+          "value": "nucleus",
+          "evidence": "nucleolar MRPS38",
+          "ontology_id": "cell_parts:0002",
+          "ontology_name": "nucleus",
+          "similarity": 1.0
+        },
+        {
+          "value": "cytoplasm",
+          "evidence": "cytosolic MRPS38",
+          "ontology_id": "cell_parts:0003",
+          "ontology_name": "cytoplasm",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "HeLa and HEK293T cells were cultured",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        },
+        {
+          "value": "HEK293T",
+          "evidence": "HeLa and HEK293T cells were cultured",
+          "ontology_name": "HEK293T",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Thermo Scientific Orbitrap Exploris 480",
+          "evidence": "Thermo Scientific Orbitrap Exploris 480 mass spectrometer",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 0.9778
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "HCD fragmentation implied by Orbitrap and TMT",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "using 1 μg of trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "static carbamidomethylation (+57.021 Da on cysteine)",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "N-term-TMT6plex",
+          "evidence": "TMT6plex (+229.163 Da at any N-terminus)"
+        },
+        {
+          "value": "K-TMT6plex",
+          "evidence": "TMT6plex (+229.163 Da on lysine residues)"
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "86",
+          "evidence": "41 minutes + 20 minutes + 10 minutes + 15 minutes"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "PepMap RSLC C18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "TMT10plex Isobaric Labeling Reagent Set",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "High pH Reversed-Phase",
+        "evidence": "Pierce High pH Reversed-Phase Peptide Fractionation Kit"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No phospho-enrichment described; IP used for MRPS38"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "positive ion mode with a spray voltage",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

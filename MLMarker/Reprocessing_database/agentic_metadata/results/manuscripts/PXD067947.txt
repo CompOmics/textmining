@@ -1,0 +1,18 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Escherichia coli
+instruments: Orbitrap Exploris 480
+modifications: iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+keywords: Antibiotics; Ribosome; Ef-g; Translocation; Fidelity; Antibiotic resistance; Protein synthesis; Proteome integrity; Misreading; Translation
+
+ABSTRACT:
+Antibiotic resistance is a growing threat, underscoring the need to understand the underlying mechanisms. Aminoglycosides kill bacteria by disrupting translation fidelity, leading to the synthesis of aberrant proteins. Surprisingly, mutations in fusA, a gene encoding translation elongation factor G (EF-G), frequently confer resistance, even though EF-G neither participates in mRNA decoding nor blocks aminoglycoside binding. Here, we show that EF-G resistance variants selectively slow ribosome movement along mRNA when aminoglycosides are bound. This delay increases the chance that the drug dissociates before misreading occurs. Over several elongation cycles, this selective silencing of drug-bound ribosomes prevents error cluster formation, preserving proteome and membrane integrity. As a result, fusA mutations confer resistance early in treatment by preventing self-promoted aminoglycoside uptake. Translation on drug-free ribosomes remains sufficiently rapid to sustain near-normal bacterial growth. The mechanism of selective silencing of corrupted targets reveals a previously unrecognized antibiotic resistance strategy with potential therapeutic implications.
+
+PROJECT DESCRIPTION:
+Selective silencing of antibiotic-tethered ribosomes as a resistance mechanism against aminoglycosides
+
+SAMPLE PROCESSING:
+Escherichia coli strains (carrying mutations in the translation elongation factor G (EF-G): P610L and wt) were grown in LB medium in the presence and absence of apramycin (16 µM, 60 min). Cells were lysed and proteins were separated using Criterion TGX SDS PAGE gels. Gel lanes were cut into fractions and in-gel proteolysed with trypsin. Tryptic peptides were separated on a Vanquish Neo UHPLC system and data acquisition was performed an Orbitrap Exploris 480 mass spectrometer in positive ion mode using a DDA method with 4 s cycle time.
+
+DATA PROCESSING:
+Using the MaxQuant Dependent Peptide feature, missense peptide candidates were identified by comparing MS/MS spectra of correct and missense peptides ensuring the confident localization of the amino acid substitution. Dependent peptide identifications were subsequently filtered for missense peptides with single amino acid substitutions using a Python script modified from Mordret et al. (2019). Missense peptide identifications in various proteins were counted.

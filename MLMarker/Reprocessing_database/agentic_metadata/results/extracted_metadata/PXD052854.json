@@ -1,0 +1,204 @@
+{
+  "sample_groups": [
+    {
+      "name": "Pancreas-Liver MPS Co-culture",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Liver",
+          "evidence": "organism parts: Liver",
+          "ontology_id": "tissues:0003",
+          "ontology_name": "liver",
+          "similarity": 1.0
+        },
+        {
+          "value": "Pancreas",
+          "evidence": "keywords: Human pancreatic islets",
+          "ontology_id": "tissues:0006",
+          "ontology_name": "pancreas",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "Type 2 diabetes mellitus",
+          "evidence": "keywords: Type 2 diabetes mellitus",
+          "ontology_id": "diseases:0063",
+          "ontology_name": "type 2 diabetes",
+          "similarity": 0.9827
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HepaRG",
+          "evidence": "We used terminally differentiated human HepaRG cells"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos",
+          "evidence": "Fusion™ Lumos™ Tribrid™ mass spectrometer",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 1.0
+        },
+        {
+          "value": "Q Exactive HF",
+          "evidence": "Q Exactive HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "collision induced dissociation (CID)",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        },
+        {
+          "value": "HCD",
+          "evidence": "higher-energy collision dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-methylthiolation",
+          "evidence": "Free cysteine residues were modified using 10 mM methyl methanethiosulfonate (MMTS)",
+          "ontology_id": "modifications:0003",
+          "ontology_name": "M-oxidation",
+          "similarity": 0.7056
+        },
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "free cysteine residues were modified using 100 µl freshly prepared 15 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "N-term-TMT",
+          "evidence": "TMT on peptide N-termini and on lysine side chains were set as fixed modifications"
+        },
+        {
+          "value": "K-TMT",
+          "evidence": "TMT on peptide N-termini and on lysine side chains were set as fixed modifications"
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "32 NCE",
+          "evidence": "collision induced dissociation (CID) at 32 collision energy"
+        },
+        {
+          "value": "35 NCE",
+          "evidence": "collision induced dissociation (CID) at 35 collision energy"
+        },
+        {
+          "value": "65 NCE",
+          "evidence": "higher-energy collision dissociation (HCD) at 65%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "136",
+          "evidence": "using a 136 min gradient"
+        },
+        {
+          "value": "90",
+          "evidence": "gradient from 5% solvent B to 33% solvent B over 77 min followed by an increase to 100% solvent B for 3 min, and 100% solvent B for 10 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Easy Spray PepMap RSLC C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "MS/MS analysis was performed in a data-dependent experiment",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "isobaric labelling was performed using Tandem Mass Tag (TMT-10plex) reagents",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "High pH Reversed-Phase",
+        "evidence": "separated into eight fractions using Pierce™ High pH Reversed-Phase Peptide Fractionation Kit"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for specific modifications"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Nano-liquid chromatography tandem mass spectrometry",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated with 0.3 ng/ml or 30 ng/ml of human recombinant IL-1R2 protein"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "IL-1R2",
+          "evidence": "treated with 0.3 ng/ml or 30 ng/ml of human recombinant IL-1R2 protein"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "human recombinant IL-1R2 protein",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "sample_groups": [
+    {
+      "name": "Cell Lysis and Preparation",
+      "organism": [
+        {
+          "value": "HEK 293 Jump In T-REx",
+          "evidence": "Text: 'stably expressed under a doxycycline-inducible promoter in HEK 293 Jump In T-REx cells'"
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Human Embryonic Kidney",
+          "evidence": "Text: 'human embryonic kidney cells'"
+        }
+      ],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "Whole Cell",
+          "evidence": "Text: 'samples were sonicated... Lysates were clarified'",
+          "ontology_id": "cell_parts:0003",
+          "ontology_name": "cytoplasm",
+          "similarity": 0.7164
+        },
+        {
+          "value": "Mitochondria",
+          "evidence": "Text: 'For SLCs localized to mitochondria, we performed a crude mitochondrial enrichment prior to lysis...'",
+          "ontology_id": "cell_parts:0001",
+          "ontology_name": "mitochondria",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "HEK 293 Jump In T-REx",
+          "evidence": "Text: 'HEK 293 Jump In T-REx cells'"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Covaris S2",
+          "evidence": "Text: 'samples were sonicated (Covaris S2) for 150 s'"
+        },
+        {
+          "value": "Orbitrap Fusion Lumos Tribrid",
+          "evidence": "Text: 'MS data were acquired on an Orbitrap Fusion Lumos Tribrid mass spectrometer'",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 0.9371
+        },
+        {
+          "value": "Dionex Ultimate 3000 RSLCnano",
+          "evidence": "Text: 'coupled to a Dionex Ultimate 3000 RSLCnano system'"
+        },
+        {
+          "value": "Nanospray Flex Ion Source",
+          "evidence": "Text: 'interfaced with a Nanospray Flex Ion Source'"
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Text: 'Peptide precursors were fragmented by high-energy collision-induced fragmentation (HCD)'",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Text: 'Proteins were enzymatically digested to peptides by the addition of 1.5 µg sequencing-grade modified trypsin'",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "Carbamidomethyl (Cysteine)",
+          "evidence": "Text: 'For fixed modifications, carbamidomethyl on cysteine residues was set'",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 0.7831
+        },
+        {
+          "value": "Oxidation (Methionine)",
+          "evidence": "Text: 'for variable modifications, oxidation on methionine... were set'",
+          "ontology_id": "modifications:0003",
+          "ontology_name": "M-oxidation",
+          "similarity": 0.7932
+        },
+        {
+          "value": "N-terminal Acetylation",
+          "evidence": "Text: 'and protein N-terminal acetylation were set'",
+          "ontology_id": "modifications:0004",
+          "ontology_name": "N-term acetylation",
+          "similarity": 0.9231
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "24, 28, 30",
+          "evidence": "Text: 'using a stepped collision energy of 24, 28, and 30%'"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": ", ",
+          "evidence": "Text: 'Peptide separation was achieved by a four-step gradient over 120 min'"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "ReproSil-Pur 120 C18-AQ",
+          "evidence": "Text: 'packed with ReproSil-Pur 120 C18-AQ, 3 µm'",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 0.7215
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "Text: 'The mass spectrometer was operated in positive mode employing a data-independent acquisition (DIA) method.'",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [],
+      "fractionation": {
+        "value": false,
+        "method": "None",
+        "evidence": "Text: 'Peptides were de-salted by C18 spin-columns... vacuum dried... Peptides were resuspended...'"
+      },
+      "enrichment": {
+        "value": "Affinity Purification (AP)",
+        "method": "Strep-tag/HA-epitope",
+        "evidence": "Text: 'codon-optimized consensus sequence of each SLC bait protein was either N- or C-terminally fused to a double-strep-tag and HA-epitope... affinity purification'"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Text: 'fitted to an ESI emitter'",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "RNAi",
+          "evidence": "Text: 'To validate that the RNAi targets were knocked down...'"
+        },
+        {
+          "value": "cDNA Overexpression",
+          "evidence": "Text: 'or cDNA overexpression (gain-of-function) of the interaction'"
+        },
+        {
+          "value": "Pharmacological Inhibition",
+          "evidence": "Text: 'treated 40 of these cell lines with inhibitors of the ubiquitin pathway (TAK-243;...), the neddylation pathway (MLN4924;...), or lysosomal acidification (Bafilomycin A1)'"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "TAK-243",
+          "evidence": "Text: 'inhibitors of the ubiquitin pathway (TAK-243)'"
+        },
+        {
+          "value": "MLN4924",
+          "evidence": "Text: 'neddylation pathway (MLN4924)'"
+        },
+        {
+          "value": "Bafilomycin A1",
+          "evidence": "Text: 'lysosomal acidification (Bafilomycin A1)'"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "Ubiquitin pathway inhibitor",
+          "evidence": "Text: 'inhibitors of the ubiquitin pathway (TAK-243)'"
+        },
+        {
+          "value": "Neddylation pathway inhibitor",
+          "evidence": "Text: 'neddylation pathway (MLN4924)'"
+        },
+        {
+          "value": "Lysosomal acidification inhibitor",
+          "evidence": "Text: 'lysosomal acidification (Bafilomycin A1)'"
+        }
+      ]
+    }
+  ]
+}

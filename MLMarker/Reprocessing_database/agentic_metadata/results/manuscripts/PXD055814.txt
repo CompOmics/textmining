@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture; Adipose tissue; Brain; Heart; Thyroid gland
+instruments: Orbitrap Exploris 480
+modifications: monohydroxylated residue; acetylated residue; amidated residue; iodoacetamide derivatized residue
+experiment types: Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition
+keywords: C-terminal amide; Oxidative stress; Ubiquitin ligase; Fbxo31
+
+ABSTRACT:
+FBXO31 is a substrate adapter for the SCF-type ubiquitin ligase complex SCF/FBXO31 which  ubiquitylates C-terminal amide-bearing proteins (CTAPs), thereby triggering their proteasomal degradation in human cells. CTAPs can arise from internal protein cleavage events during which the N-terminal fragment is left with an amidated C-terminus (-0.984016 Da). We searched for such cleavage events (semi-enzymatic C-terminus and C-terminal amidation) in previously published datasets and in own experimental data. These include:   - Re-analysis of tissue samples from a deep human proteome atlas (PXD010154)  - IP-MS of AARS1, a client of the CTAP reader FBXO31 (MFM-X208)  - In vitro fragmentation of purified hemoglobin (MFM-X294, MFM-X298) and tRNA ligase complex (MFM-X314)  Experiments are labeled with experiment IDs (MFM-X...). PSM tables contain Experiment IDs and interpretable sample aliases.
+
+PROJECT DESCRIPTION:
+C-terminal amides mark proteins for degradation via SCF/FBXO31 – CTAP discovery
+
+SAMPLE PROCESSING:
+For further experimental details, see accompanying publication.  IP-MS of AARS1: Immunoprecipitation followed by MS (IP-MS) was performed on FLAG-tagged AARS1 cDNA from FBXO31 knockout HEK293T cells treated with 200 µM H2O2 and 500 nM epoxomicin in serum-free medium for 1h prior to harvest. Cells were lysed in RIPA buffer. IP was performed using  FLAG-M1 magnetic beads (Merck) at 4°C overnight. Following extensive washes, beads were eluted with competitor FLAG peptide.  In vitro fragmentation assays:  Purified hemoglobin (HBA, HBB) was exposed to 0, 40, 200 or 1000 µM H2O2  in PBS for 1h at 37°C. tRNA ligase complex (tRNA-LC, RTCB, DDX1, RTRAF, FAM98A) was treated with or without 1 µM CuCl2 plus with or without 1000 µM H2O2 in PBS for 30 min at room temperature. Fragmented samples were snap-frozen. Proteins were precipitated upon thawing, resolubilized, reduced and alkylated followed by digestion with indicated enzymes. LC-MS sample acquisition was performed using an Orbitrap Exploris 480 mass spectrometer in DDA mode with fragmentation by HCD, a resolution of 30’000, and 65 minutes runtime.
+
+DATA PROCESSING:
+Raw data was processed with FragPipe (Version 22.0). Search for tryptic peptides was performed using the MSFragger engine (version 4.1) matching spectra against the UniProt human proteome (UP000005640) and common contaminants with default deisotoping, mass calibration, and parameter optimization. For analysis of purified complexes, spectra were matched against the purified protein’s respective sequences and common contaminants. Filtering for FDR ≤ 1% was performed sequentially at the PSM and protein levels through the Philosopher pipeline. Overall workflows (fragpipe.workflow) and detailed search parameters (fragger.params) are included as separate text files for all anayses.

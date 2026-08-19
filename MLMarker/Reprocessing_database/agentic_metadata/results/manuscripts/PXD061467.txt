@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture; Schwann cell
+diseases: Plexiform neurofibroma
+instruments: Orbitrap Exploris 480
+modifications: phosphorylated residue
+experiment types: Data-dependent acquisition
+quantification: label-free quantification
+keywords: Phosphoproteomics; Peripheral neuron cells; Mek
+
+ABSTRACT:
+The goal of the study was to profile the effects of KRAS inhibition in peripheral neuron cells. Phosphoproteomics was performed to profile global changes in phosphorylation after treatment with BI-2865.
+
+PROJECT DESCRIPTION:
+PTM-MS of KRASi treated pNF cells
+
+SAMPLE PROCESSING:
+NF1 mutant NF9511b pNF cells were treated with BI-2865 for 30 minutes. Cells were washed 3x in ice cold PBS, scraped and pelleted, and snap frozen in dry ice until processing for mass spectrometry. To prepare peptides for phosphoenrichment, cell pellets were lysed in 8 M urea + 25 mM ammonium bicarbonate followed by reduction (5 mM DTT for 1 h at 37 °C), alkylation (10 mM iodoacetamide for 30 min at room temperature in the dark) and digestion overnight with mass spectrometry grade Trypsin (Promega, #V5111) and Lysyl Endopeptidase (Fujifilm Wako, #125-02543) at a ratio of 100:1 protein to enzyme. Digested peptides were applied to activated C18 columns and columns were washed three times with 1mL of 0.1% TFA. Peptides were eluted with 600 µl of 50% ACN and 0.25% formic acid (FA). Peptides were quantified using Pierce™ Quantitative Peptide Assay (ThermoFisher Scientific, #23275) and peptide amounts were normalized prior to lyophilization. Phosphoenrichment was performed on peptides using PTMScan® Phospho-Enrichment IMAC Fe-NTA Magnetic Beads (Cell Signaling Technology, #20432) as per manufacturer’s protocol.   Samples were resuspended in 0.1% formic acid and separated by reversed-phase (RP) chromatography using a Vanquish Neo high-performance liquid chromatography (HPLC) instrument (Thermo Fisher Scientific) with a 15-cm PepSep column (150 µm inner diameter) packed with 1.5-µm Reprosil Saphir C18 particles (Bruker). Samples were acquired by data-dependent acquisition (DDA). Mobile phase A consisted of 0.1% FA in water and mobile phase B consisted of 80% ACN and 0.1% FA. Peptides were separated at a flow rate of 600 nl min−1 over the following 80-min gradient: 3–28% B in 67 min, 28–40% B in 5 min and 8 min at 95% B. Eluting peptides were analyzed by an Orbitrap Exploris MS instrument (ThermoFisher Scientific). Data were collected in positive ion mode with MS1 resolution of 120,000, 350–1,250 m/z scan range, auto maximum injection, and radiofrequency lens of 50%. For data-dependent acquisition, MS2 fragmentation was performed on charge states 2–6 with a 20-s dynamic exclusion after a single selection and 10 ppm ± mass tolerance.
+
+DATA PROCESSING:
+Raw mass spectrometry data were searched using Fragpipe (v22) against the human proteome (UniProt canonical protein sequences, downloaded in September 2022) using PhosphoLFQ label-free quantification workflow. Statistical analysis was performed using MSstats (v4.8.7) from the artMS (v1.18.0) R package.

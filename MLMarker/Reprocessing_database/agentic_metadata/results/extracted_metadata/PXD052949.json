@@ -1,0 +1,308 @@
+{
+  "sample_groups": [
+    {
+      "name": "Patient Tumours",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Ovary cancer cell",
+          "evidence": "organism parts: Ovary cancer cell"
+        },
+        {
+          "value": "Breast cancer cell",
+          "evidence": "organism parts: Breast cancer cell"
+        },
+        {
+          "value": "Malignant cell",
+          "evidence": "organism parts: Malignant cell"
+        }
+      ],
+      "disease": [
+        {
+          "value": "Breast cancer",
+          "evidence": "diseases: Breast cancer",
+          "ontology_id": "diseases:0003",
+          "ontology_name": "breast cancer",
+          "similarity": 1.0
+        },
+        {
+          "value": "Female reproductive organ cancer",
+          "evidence": "diseases: Female reproductive organ cancer",
+          "ontology_id": "diseases:0022",
+          "ontology_name": "ovarian cancer",
+          "similarity": 0.7287
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Bruker MicroflexTM LRF benchtop MALDI-TOF-MS",
+          "evidence": "Mass spectra were acquired on a Bruker MicroflexTM LRF benchtop MALDI-TOF-MS"
+        },
+        {
+          "value": "Q-Exactive Plus MS",
+          "evidence": "Mass spectra were acquired on a Q-Exactive Plus MS",
+          "ontology_id": "instruments:0014",
+          "ontology_name": "Q Exactive Plus",
+          "similarity": 0.9326
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "MS2 spectra were acquired following HCD fragmentation",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "Digestion was performed with TCPK-treated trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with iodoacetamide (IAA)",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "normalized CE, 28"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "50",
+          "evidence": "Elution was performed over a 50-minute gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "AcclaimPepMap100 C18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Using a data-dependent acquisition (DDA) method",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "quantification: Label free",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for global proteome analysis"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for global proteome analysis"
+      },
+      "ionization": [
+        {
+          "value": "MALDI",
+          "evidence": "immuno-MALDI-MS",
+          "ontology_id": "ionization:0003",
+          "ontology_name": "MALDI",
+          "similarity": 1.0
+        },
+        {
+          "value": "ESI",
+          "evidence": "Nanospray Flex ion source",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated with capivasertib monotherapy"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "capivasertib",
+          "evidence": "capivasertib monotherapy"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "Capivasertib is a potent selective inhibitor of AKT",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Cell Lines",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Breast cancer",
+          "evidence": "breast cancer cell lines",
+          "ontology_id": "diseases:0003",
+          "ontology_name": "breast cancer",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HCC-1428",
+          "evidence": "HCC-1428 (RRID:CVCL_1252) was purchased"
+        },
+        {
+          "value": "EFM-19",
+          "evidence": "EFM-19 (RRID:CVCL_0253) was purchased"
+        },
+        {
+          "value": "ZR-75-30",
+          "evidence": "ZR-75-30 (RRID:CVCL_1661) ... were gifts"
+        },
+        {
+          "value": "MCF-7",
+          "evidence": "MCF-7 (RRID:CVCL_0031) ... were gifts",
+          "ontology_name": "MCF-7",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Agilent 6495B triple quadrupole mass spectrometer",
+          "evidence": "coupled to a 6495B triple quadrupole mass spectrometer"
+        }
+      ],
+      "fragmentation": [],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "Tryptic digestion was performed",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylation with IAA",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "46",
+          "evidence": "Elution was performed over a 46-minute gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Zorbax Eclipse plus C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification data",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "Solid Phase Extraction",
+        "evidence": "Solid Phase Extraction (Oasis SPE HLB 1 cc cartridges)"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for cell line global proteome"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "positive ion mode",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "capivasertib exposure"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "capivasertib",
+          "evidence": "capivasertib exposure"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "Capivasertib is a potent selective inhibitor of AKT",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

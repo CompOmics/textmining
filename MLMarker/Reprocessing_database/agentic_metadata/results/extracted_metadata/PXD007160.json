@@ -1,0 +1,162 @@
+{
+  "sample_groups": [
+    {
+      "name": "Human Brain Tissue (AD, PD, Co-morbid, Control)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Brain",
+          "evidence": "organism parts: Brain",
+          "ontology_id": "tissues:0001",
+          "ontology_name": "brain",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "Alzheimer's disease",
+          "evidence": "diseases: Parkinson's disease; Alzheimer's disease",
+          "ontology_id": "diseases:0046",
+          "ontology_name": "Alzheimer's disease",
+          "similarity": 1.0
+        },
+        {
+          "value": "Parkinson's disease",
+          "evidence": "diseases: Parkinson's disease; Alzheimer's disease",
+          "ontology_id": "diseases:0047",
+          "ontology_name": "Parkinson's disease",
+          "similarity": 1.0
+        },
+        {
+          "value": "healthy",
+          "evidence": "healthy controls, AD, PD, and co-morbid AD/PD cases",
+          "ontology_id": "diseases:0001",
+          "ontology_name": "healthy",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion",
+          "evidence": "instruments: Orbitrap Fusion",
+          "ontology_id": "instruments:0005",
+          "ontology_name": "Orbitrap Fusion",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "collision-induced dissociation (CID)-MS2 fragmentation",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        },
+        {
+          "value": "HCD",
+          "evidence": "higher-energy collision dissociation (HCD) fragmentation",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin (Promega) was then added",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        },
+        {
+          "value": "Lysyl endopeptidase",
+          "evidence": "Lysyl endopeptidase (Wako) at 1:100 (w/w) was added"
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "5 mM iodoacetamide (IAA) alkylation",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "35% normalized collision energy"
+        },
+        {
+          "value": "65 NCE",
+          "evidence": "normalized collision energy of 65%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "130",
+          "evidence": "gradient of 3 to 30% Buffer B over 105 min, from 30 to 60% B over 20 min, and from 60 to 99% B over 5 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "packed in-house with 1.9 μm Reprosil-Pur C18-AQ resin",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "positive ion data dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "10-plex Tandem Mass Tag (TMT) assays",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "ERLIC",
+        "evidence": "Electrostatic repulsion-hydrophilic interaction chromatography (ERLIC) fractionation"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment strategy described for PTMs; enrichment strategies would provide a more complete PTM profile"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nano-electrospray ion source",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

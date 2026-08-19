@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: Orbitrap Exploris 240
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: Label free
+keywords: S-nitrosylation; Interactome; Gsno; Ezh2
+
+ABSTRACT:
+We wanted to explore the comprehensive interacting partners of EZH2 upon S-nitrosylation to understand the effect of such post-translational modifications. Mass spectrometric analysis revealed the comprehensive association map of EZH2 in control and GSNO-treated cells. Samples are labeled as CHIMS (immunoprecipitation with EZH2 antibody using untreated cells), GS100 (immunoprecipitation with EZH2 antibody using GSNO treated cells), CONTROL (immunoprecipitation with EZH2 antibody using untreated cells), GSNO GS100 (immunoprecipitation with EZH2 antibody using GSNO treated cells). These are two biological replicates from control and GSNO treated cells.   
+
+PROJECT DESCRIPTION:
+Interactome Analysis of EZH2 Protein in Control and GSNO exposed Human Umbilical Vein Endothelial Cells
+
+SAMPLE PROCESSING:
+Sample Preparation—  Protein per sample was used for digestion and reduced with 5 mM TCEP and further alkylated with 50 mM iodoacetamide and then digested with Trypsin (1:50, Trypsin/lysate ratio) for 16 h at 37 °C. Digests were cleaned using a C18 silica cartridge to remove the salt and dried using a speed vac. The dried pellet was resuspended in buffer A (2% acetonitrile, 0.1% formic acid).  Mass Spectrometric Analysis of Peptide Mixtures—  Experiments were performed on an Easy-nlc-1000 system coupled with an Orbitrap Exploris mass spectrometer. 1ug of peptide sample were loaded on C18 column 15 cm, 3.0μm Acclaim PepMap (Thermo Fisher Scientific) and separated with a 0–40% gradient of buffer B (80% acetonitrile, 0.1% formic acid) at a flow rate of 500 nl/min) and injected for MS analysis. LC gradients were run for 110 minutes. MS1 spectra were acquired in the Orbitrap (Max IT = 60ms, AGQ target = 300%; RF Lens = 70%; R=60K, mass range = 375−1500; Profile data). Dynamic exclusion was employed for 30s excluding all charge states for a given precursor. MS2 spectra were collected for top 20 peptides. MS2 (Max IT= 60ms, R= 15K, AGC target 100%).
+
+DATA PROCESSING:
+Data Processing—   All samples were processed and RAW files generated were analyzed with Proteome Discoverer (v2.5) against the Uniprot Human database. For dual Sequest and Amanda search, the precursor and fragment mass tolerances were set at 10 ppm and 0.02 Da, respectively. The protease used to generate peptides, i.e. enzyme specificity was set for trypsin/P (cleavage at the C terminus of “K/R: unless followed by “P”). Carbamidomethyl on cysteine as fixed modification and oxidation of methionine and N-terminal acetylation were considered as variable modifications for database search.  Both peptide spectrum match and protein false discovery rate were set to 0.01 FDR.

@@ -1,0 +1,155 @@
+{
+  "sample_groups": [
+    {
+      "name": "HEK 293T Hsp90beta experiments",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK 293T",
+          "evidence": "HEK 293T-Hsp90β-KO19 cells",
+          "ontology_name": "HEK293T",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion",
+          "evidence": "Orbitrap Fusion Tribrid mass spectrometer",
+          "ontology_id": "instruments:0005",
+          "ontology_name": "Orbitrap Fusion",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmentation done in HCD mode",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "trypsin/LysC mix",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        },
+        {
+          "value": "LysC",
+          "evidence": "trypsin/LysC mix",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylation of cysteines is done by adding 32 mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "32 NCE",
+          "evidence": "fragmentation done in HCD mode with 32% energy"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "injection on an Orbitrap Fusion Tribrid mass spectrometer",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "data-dependent acquisition (DDA) mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC, HEK 293T-Hsp90β -KO19 cells were labelled",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        },
+        {
+          "value": "label-free",
+          "evidence": "quantification: Label free",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SCX",
+        "evidence": "Peptides are washed on MCX Oasis columns thrice... eluted in three steps with first SCX125 buffer"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "affinity purification",
+        "evidence": "co-immunoprecipitation experiments with wild-type and mutant Hsp90beta"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "HEK 293T-Hsp90β-KO19 cells"
+        },
+        {
+          "value": "gene overexpression",
+          "evidence": "transfected with pCMV3-HA-Hsp90βWT"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "Hsp90beta knockout",
+          "evidence": "HEK 293T-Hsp90β-KO19 cells"
+        },
+        {
+          "value": "Hsp90beta wild-type",
+          "evidence": "pCMV3-HA-Hsp90βWT"
+        },
+        {
+          "value": "Hsp90beta S226A/S255A mutant",
+          "evidence": "pCMV3-HA-Hsp90βS226A/S255A"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "transfected using the calcium phosphate method",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

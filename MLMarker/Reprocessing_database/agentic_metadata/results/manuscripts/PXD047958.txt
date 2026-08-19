@@ -1,0 +1,18 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: Q Exactive HF
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+keywords: Pancreatic adenocarcinoma; Proteomics; Amino acid treatment; Cancer therapy
+
+ABSTRACT:
+In this study, we carried out a proteomics analysis of cell and extracellular vesicles from nontumor and pancreatic adenocarcinoma (PDAC) tumor cells. We found out that PDAC cells preferentially excrete some proteins with preference for certain amino acids including isoleucine and histidine. Through in vitro and in vivo results, these amino acids demonstrate selective toxicity to PDAC cells and we subsequently identified XRN1 as a potential target of the amino acids.
+
+PROJECT DESCRIPTION:
+Integrated Proteomic Profiling Identifies Amino Acids Selectively Cytotoxic to Pancreatic Cancer Cells
+
+SAMPLE PROCESSING:
+Four replicates for each group was used. Cell and EV lysates were diluted to 1 μg/μl with 100 mM NH4HCO3 supplemented with 10 mM dithiothreitol, incubated at 37 °C for 1 hr, then mixed with 30 mM iodoacetamide, incubated in the dark for 30 min at room temperature before overnight digestion with 1 μg trypsin at 37 °C. Digestions were terminated by the addition of 0.1% trifluoroacetic acid and diluted to 0.25 μg/μl protein with H2O/acetonitrile (95:5), centrifuged at 21,000 g for 20 min. The digested peptides were cleaned up using StageTips. The dried peptides were reconstituted with H2O/acetonitrile (95:5) before LC-MS/MS analyses that employed about 500 ng peptide/injection. Samples were analyzed using Q Exactive HF-X Quadrupole-Orbitrap MS System (Thermo Fisher Scientific). The peptides were eluted with a linear gradient from 2.5 to 35% buffer B (80% ACN in 0.1% FA) over 45 min. Following the linear separation, the system was ramped up to 75% in the next 10 min followed by 100% in 2 min. Then it was re-equilibrated to 2.5% in 7 min. The MS1 scans were collected from 300–1650 m/z with an AGC target of (3E6), a resolution of 60, 000 at 200 m/z, and followed by a top-15 MS2 loop. MS/MS scans were collected with a resolution of 15, 000 at 200 m/z, with an AGC target of 100 000 (1E5), and a maximum injection time of 118 ms
+
+DATA PROCESSING:
+All LC-MS/MS data were analyzed by label-free quantitation mode and searched using the Sequest HT algorithm within Proteome Discoverer 2.4 (Thermo Fisher Scientific) against Homo sapiens proteome database (UP000005640) to obtain peptide and protein identifications using a mass tolerance of 10 ppm and fragment of 0.02 Da. The intensity ratio and adjusted p-values were calculated and provided in the Excel supplementary data. For all searches, trypsin was specified as the enzyme for protein cleavage, allowing up to two missed cleavages. Oxidation (M) and carbamidomethylation (C) were set as dynamic and fixed modifications, respectively. The peptide spectrum match and protein false discovery rate (FDR) was set to 0.01 and determined using a percolator node. Relative protein quantification of the proteins was performed using the Minora feature detector node with default settings using peptide spectrum matches (PSM). The proteomics data used for uncovering the unbalanced distribution of the amino acids was adopted from our previous research

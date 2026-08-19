@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Embryonic stem cell; Cell culture; Heart
+diseases: Cardiovascular system disease
+instruments: Q Exactive; Q Exactive HF
+modifications: iodoacetamide derivatized residue
+experiment types: Data-independent acquisition
+quantification: TIC
+keywords: Maturation; Cardiac organoids
+
+ABSTRACT:
+Cardiac maturation is an important developmental phase where there are profound biological and functional changes after birth in mammals. Herein, we use our profiling of human heart maturation in vivo to identify key drivers of maturation in our human cardiac organoid (hCO) model. After screening of various metabolism modulating factors, we established a directed maturation (DM) protocol to induce mature cardiac expression and compared the proteomic changes to our original serum free (SF) protocol.  In this dataset, we compared 4 replicates of DM to 4 replicates of SF derived cardiac organoids using global DIA-MS/MS.
+
+PROJECT DESCRIPTION:
+Characterisation of directed maturation in human cardiac organoids
+
+SAMPLE PROCESSING:
+Individual hCOs were harvested for each replicate. Briefly, samples were suspended in sodium deoxycholate containing buffer (4% SDC in tris-buffered saline, pH 7.5) and heated for 5min at 95°C, with 1500rpm agitation, to assist lysis and inhibit endogenous enzymatic activity. This was followed by sonication, using five 30s on/off intervals in a chilled water bath sonicator. Reduction alkylation buffer was added to a final concentration of 10mM TCEP (Sigma-Aldrich) and 40mM 2-CAA (Sigma-Aldrich, equilibrated with KOH to pH 8) and incubated for 10min 45°C with 1500rpm agitation. 1µg Trypsin (ThermoFisher) was added to sample and incubated overnight (17hr) at 37°C, with 1500rpm agitation. The following day, 50μL of 10% Trifluoroacetic acid solution was added to each sample to halt digest, and precipitated sodium deoxycholate was removed by pelleting at 20,000 xg for 30min. Resulting peptides were desalted using SDB-RPS tips, according to standard protocol. Samples were resuspended in 2% ACN/0.3% TFA, with sonication to assist solubility.  For each sample, a uniform volume (3 µl) was resolved across a 55 min gradient in data-independent acquisition mode using a Thermo PepMap100 analytical column equipped on a Thermo Vanquish Neo UHPLC interfaced with a Thermo Exactive HF-X mass spectrometer. Single injection DIA method utilised parameters established previously (PMID: 32312845). Briefly, MS1 included survey scans of 1e6 ions at resolution of 60,000, with a max isolation time of 60ms within the scan range of 390-1010m/z and collision energy of 27. MS2 was performed with isolation windows of 16m/z spanning 400-1000m/z range, AGC target of 1e6 and resolution of 15,000
+
+DATA PROCESSING:
+Raw spectra was analysed using DIA-NN, version 1.8.1 against the human proteome (20,399 sequences, downloaded April 19, 2021 from UniProt) using the library-free method. Carbamidomethylation of cysteines and N-term N excision was set as a fixed modification, matching between runs enabled, cross-run normalisation used RT-dependent method, and small-profiling method was used to generate in silico library from the human proteome.

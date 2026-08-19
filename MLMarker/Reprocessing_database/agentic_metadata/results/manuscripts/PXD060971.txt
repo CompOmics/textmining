@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: Q Exactive
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+quantification: Peptide counting
+keywords: Lc-msms; Rnp granules; Anxa11
+
+ABSTRACT:
+Phase transitions of cellular proteins and lipids play a key role in governing the organisation and coordination of intracellular biology. Recent work has raised the intriguing prospect that phase transitions in proteins and lipids can be co-regulated. Here we investigate this possibility in the ribonucleoprotein (RNP) granule-ANXA11-lysosome ensemble, where ANXA11 tethers RNP granules to lysosomal membranes to enable their co-trafficking. We show that changes to the protein phase state within this system, driven by the low complexity ANXA11 N-terminus, induces a coupled phase state change in the lipids of the underlying membrane. We identify the ANXA11 interacting proteins ALG2 and CALC as potent regulators of ANXA11-based phase coupling and demonstrate their influence on the nanomechanical properties of the ANXA11-lysosome ensemble and its capacity to engage RNP granules. The phenomenon of protein-lipid phase coupling we observe within this system serves as a potential regulatory mechanism in RNA trafficking and offers an important template to understand other examples across the cell whereby biomolecular condensates closely juxtapose organellar membranes.
+
+PROJECT DESCRIPTION:
+ANXA11 biomolecular condensates facilitate protein-lipid phase coupling on lysosomal membranes
+
+SAMPLE PROCESSING:
+Samples were reduced, alkylated and digested using the S-Trap protocol (Protifi, Fairport, NY) with proteins digested o/n using trypsin in 50mM HEPES pH8. Digested peptides were eluted with sequential washes with 50mM HEPES and 0.2% formic acid/acetonitrile and pooled in 0.5ml tubes (Protein LoBind, Eppendorf). Tryptic peptides were dried almost to completion and re-suspended in 15 µl solvent (3% MeCN, 0.1% TFA) with 7µl analysed by LC-MSMS using a Thermo Q Exactive mass spectrometer (Thermo Fischer Scientific) equipped with an EASYspray source and coupled to an RSLC3000 nano UPLC (Thermo Fischer Scientific). Peptides were fractionated using a 50cm C18 PepMap EASYspray column maintained at 40°C with a solvent flow rate of 300nl/min. A gradient was formed using solvent A (0.1% formic acid) and solvent B (80% acetonitrile, 0.1% formic acid) rising from 3% to 40% solvent B by 90 min followed by a 4 min wash at 95% solvent B. MS spectra were acquired at 70,000 resolution between m/z 400 and 1500 with MSMS spectra acquired at 17,500 fwhm following HCD activation.
+
+DATA PROCESSING:
+Data was processed in PEAKS X Pro (Bioinformatics Solutions Inc, Waterloo, Canada). Data was searched against a Uniprot Homo Sapiens database and a database of common contaminants using the PEAKS PTM search engine with 312 built-in modifications and the Spider search engine. PTM searches were performed on spectra with a de novo score greater than 15%.

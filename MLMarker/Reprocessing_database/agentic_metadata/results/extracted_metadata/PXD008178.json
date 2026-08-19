@@ -1,0 +1,143 @@
+{
+  "sample_groups": [
+    {
+      "name": "HeLa cells with siRNA treatment",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "HeLa cells (ATCC no. CCL-2) were cultivated",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "HeLa cells (ATCC no. CCL-2) were cultivated",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "Orbitrap mass spectrometer Q Exactive HF",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmented using higher energy collisional dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "digested for 4 h with endoproteinase lysC",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "followed by the addition of trypsin for overnight digestion",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Cysteine carbamidomethylation was set as the static modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "loaded onto a 50-cm column (inner diameter: 75 microns; packed with 1.9-micron beads)",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "operated in a data-dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantitative proteomics",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SDB-RPS StageTips",
+        "evidence": "peptides were purified via SDB-RPS StageTips, eluted as either one or three fractions"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No PTMs are included in the dataset"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Using the nanoelectrospray interface",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "siRNA-mediated TRAP depletion"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "siRNA targeting TRAPB",
+          "evidence": "TRAPB silencing, the cells were transfected with a final concentration of 10 nM targeting siRNA"
+        },
+        {
+          "value": "siRNA targeting SEC61A1",
+          "evidence": "SEC61A1 silencing was performed using two different siRNAs"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "siRNA-mediated TRAP depletion",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

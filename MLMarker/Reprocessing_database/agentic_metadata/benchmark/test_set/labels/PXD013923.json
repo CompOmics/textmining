@@ -1,0 +1,181 @@
+{
+  "pxd_id": "PXD013923",
+  "sample_groups": [
+    {
+      "name": "melanoma BRAF/MEK/ERK inhibitor phosphoproteomics",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "A375 melanoma cells",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "melanoma",
+          "evidence": "malignant melanoma",
+          "ontology_id": "diseases:0017",
+          "ontology_name": "melanoma",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "A375",
+          "evidence": "A375 cells (ATCC CRL-1619)",
+          "ontology_id": "cell_lines:0005",
+          "ontology_name": "A375",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "HCD fragmentation",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "Lys-C (4h)",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "trypsin",
+          "evidence": "trypsin (overnight)",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Cys carbamidomethylation fixed",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "S-phosphorylation",
+          "evidence": "S/T/Y phosphorylation variable",
+          "ontology_id": "modifications:0005",
+          "ontology_name": "S-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "T-phosphorylation",
+          "evidence": "S/T/Y phosphorylation variable",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "S/T/Y phosphorylation variable",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "250",
+          "evidence": "250 min gradient 5-50% ACN for phospho"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "50 cm C18 EasySpray column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "DDA top 10",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC labeled (heavy/medium/light)",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SCX",
+        "evidence": "SCX fractionation (32 fractions, pooled)",
+        "method_ontology_id": "fractionation_methods:0004",
+        "method_ontology_name": "SCX",
+        "method_similarity": 1.0
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "TiO2",
+        "evidence": "TiO2 phosphopeptide enrichment",
+        "method_ontology_id": "enrichment_methods:0001",
+        "method_ontology_name": "TiO2",
+        "method_similarity": 1.0
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "inhibitor",
+          "evidence": "dabrafenib (BRAF inhibitor), trametinib (MEK inhibitor), SCH772984 (ERK inhibitor)"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "dabrafenib",
+          "evidence": "dabrafenib 500 nM"
+        },
+        {
+          "value": "trametinib",
+          "evidence": "trametinib 100 nM"
+        },
+        {
+          "value": "SCH772984",
+          "evidence": "SCH772984 500 nM"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "kinase inhibitors",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

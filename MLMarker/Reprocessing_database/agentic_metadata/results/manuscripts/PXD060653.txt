@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Liver
+instruments: Q Exactive HF
+modifications: iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: Spectrum counting; Absolute quantification
+keywords: Drug metabolism; human liver microsomes; cytochromes p450; alcohol consumption; tobacco smoking; proteomics; alcohol–drug interactions
+
+ABSTRACT:
+In this study, to better understand the mechanisms of the profound impact of alcohol consumption on drug pharmacokinetics, efficacy, and toxicity, we characterized the alcohol-induced changes in the ensemble of drug-metabolizing enzymes and transporters (DMETs) in the human liver by performing global proteomic analysis of human liver microsomes from 94 donors. DMET protein levels were analyzed concerning alcohol consumption, smoking history, and sex using non-parametric tests, which were further strengthened by correlational analysis. To this end, we used a provisional index of alcohol exposure formulated based on the relative abundances of four marker proteins best correlating with the level of alcohol consumption. Alcohol-induced changes in the cytochrome P450 pool include significant increases in CYP2E1, CYP2B6, CYP2J2, and NADPH-cytochrome P450 reductase levels and the lowering of CYP1A2, CYP2C8, CYP2C9, CYP4A11, and cytochrome b5. Changes in UDP-glucuronosyltransferase (UGT) abundances comprise elevated UGT1A6, UGT1A9, and UGT2A1, and reduced UGT1A3, UGT1A4, UGT2B7, UGT2B10, and UGT2B15 levels. Tobacco smokers showed elevated CYP1A2, UGT1A6, and UGT2B4 and reduced FMO3, FMO4, and FMO5 levels, while in females, CYP1A2, UGT2B17, and UGT2B15 levels were lower, and UGT2A3 and STS were higher compared to males. The alcohol-induced changes in the DMET ensemble at the protein level reported herein provide deep insights into how alcohol impacts drug and xenobiotic metabolism.
+
+PROJECT DESCRIPTION:
+Effects of Chronic Alcohol Intake on the Composition of the Ensemble of Drug-Metabolizing Enzymes and Transporters in the Human Liver
+
+SAMPLE PROCESSING:
+HLMs were analyzed for protein content using a BCA kit according to standard vendor protocols and then digested following an optimized trypsin digestion protocol described previously [32]. Briefly, 1 mg/mL protein samples (80 µg) in 100 mM ammonium bicarbonate, pH of 7.8, were reduced and denatured by adding 250 mM dithiothreitol and incubating at 95 °C for 10 min with gentle shaking. After bringing samples to room temperature, proteins were alkylated by adding 100 mM iodoacetamide (incubated in the dark for 30 min). Protein precipitation was initiated by adding ice-cold acetone at −80 °C for 1 h. Samples were then centrifuged at 16,000× g for 10 min at 4 °C and the supernatant was discarded. Samples were washed with ice-cold methanol followed by another round of high-speed centrifugation at 16,000× g for 10 min at 4 °C. The supernatant was removed, and the pellet was dried for 30 min at room temperature. The pellet was then resuspended in 60 μL ammonium bicarbonate buffer (50 mM, pH of 7.8). Protein digestion occurred by adding 20 μL trypsin (50:1, protein/trypsin ratio) with gentle shaking at 37 °C for 16 h and was quenched with 5 µL of 5% formic acid in water. The sample was then centrifuged at 16,000× g for 10 min at 4 °C and stored at −80 °C until LC-MS analysis.
+
+DATA PROCESSING:
+DIA-NN (version 18.1.1) (https://github.com/vdemichev/DiaNN accessed on 23 January 2025) was used for library-free analysis [33]. Deep learning-based in silico spectral library generation was enabled with the human FASTA database. The identified peptides had a maximum number of missed cleavages set to 1 as the default. Fixed modification included carbamidomethylation and N-terminal methionine excision, while variable modification included the oxidation of methionine residues and acetylation of protein N termini. Peptides were identified with a 1% false discovery rate. An unrelated run was selected, and all other parameters used the default settings.

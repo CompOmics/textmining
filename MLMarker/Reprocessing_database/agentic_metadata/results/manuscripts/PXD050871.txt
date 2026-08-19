@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell
+instruments: Orbitrap Fusion Lumos
+modifications: TMT6plex-126 reporter+balance reagent acylated residue; acetylated residue; carbamoylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Phosphatidylcholine; Endometrial epithelial cells; Proteomics; Liposomes
+
+ABSTRACT:
+The protein profile of Ishikawa cells, a widely used model for uterine lining cell studies, was examined. Additionally, we investigated potential disruptions caused by liposomes containing phosphatidylcholine and phosphatidylethanolamine, serving as models for drug delivery.
+
+PROJECT DESCRIPTION:
+Ishikawa cell line LC-MS/MS analysis
+
+SAMPLE PROCESSING:
+Ishikawa cells were trypsinized, counted, and seeded at 500,000 cells/well in a 6-Well-Plate. After 24h at 37Â°C and reaching 70% confluency, cells were treated with 2% v/v FBS exosome-free MEM containing 100ÂµM liposomes or PBS (control). Following 72h, cells were collected in RIPA-buffer using a scraper, vortexed for 5min, and centrifuged at 12,000G for 30min at 4Â°C. The supernatant was stored at -80Â°C.
+
+DATA PROCESSING:
+FragPipe's raw output files (protein.tsv) were processed using R (ISBN 3-900051-07-0). Log2-transformed TMT reporter ion intensities underwent batch effect removal with limma's 'removeBatchEffects' function (PMID: 25605792) and further normalization using the vsn package (variance stabilization normalization - PMID: 12169536). Limma was employed for differential expression analysis, incorporating replicate information in the design matrix. A protein was considered a hit with an FDR < 5% and a fold-change â‰¥ 100%, and a candidate with an FDR < 20% and a fold-change â‰¥ 50%.

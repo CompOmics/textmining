@@ -1,0 +1,460 @@
+{
+  "sample_groups": [
+    {
+      "name": "ALK Interactome and Phosphoproteome (SILAC)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Neuroblastoma",
+          "evidence": "diseases: Neuroblastoma",
+          "ontology_id": "diseases:0033",
+          "ontology_name": "neuroblastoma",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "NB1",
+          "evidence": "neuroblastoma cell line, NB1"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "Q Exactive orbitrap mass spectrometer",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        },
+        {
+          "value": "Q Exactive Plus",
+          "evidence": "Q Exactive Plus orbitrap mass spectrometer",
+          "ontology_id": "instruments:0014",
+          "ontology_name": "Q Exactive Plus",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "nanoLC-MS/MS on a Q Exactive orbitrap",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "in-gel digested with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        },
+        {
+          "value": "Lys-C",
+          "evidence": "in-solution digested with Lys-C and trypsin",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "in-gel digested with trypsin",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "S-phosphorylation",
+          "evidence": "phosphopeptides were enriched by two sequential incubations with titanium dioxide",
+          "ontology_id": "modifications:0005",
+          "ontology_name": "S-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "T-phosphorylation",
+          "evidence": "phosphopeptides were enriched by two sequential incubations with titanium dioxide",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "Phosphotyrosine enrichment was performed",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "27 NCE",
+          "evidence": "Q Exactive orbitrap mass spectrometer"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "nanoLC-MS/MS",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "nanoLC-MS/MS",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "quantification: SILAC",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SDS-PAGE",
+        "evidence": "Proteins were fractionated by SDS-PAGE"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "TiO2",
+        "evidence": "phosphopeptides were enriched by two sequential incubations with titanium dioxide"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoLC-MS/MS",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated for 30 minutes with each of the following ALK-targeting small-molecule inhibitors"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "TAE684",
+          "evidence": "TAE684 (100 nM)"
+        },
+        {
+          "value": "crizotinib",
+          "evidence": "crizotinib (500 nM)"
+        },
+        {
+          "value": "LDK378",
+          "evidence": "LDK378 (250 nM)"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "ALK-targeting small-molecule inhibitors",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "ALK Phosphotyrosine Interactome (Label-free)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Neuroblastoma",
+          "evidence": "diseases: Neuroblastoma",
+          "ontology_id": "diseases:0033",
+          "ontology_name": "neuroblastoma",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "NB1",
+          "evidence": "NB1 cell lysate"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "Q Exactive HF orbitrap mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "nanoLC-MS/MS on a Q Exactive HF orbitrap",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "on-bead trypsin digestion",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "on-bead trypsin digestion",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "phosphotyrosine-specific interaction partners",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "27 NCE",
+          "evidence": "Q Exactive HF orbitrap mass spectrometer"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "nanoLC-MS/MS",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "nanoLC-MS/MS",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free mass spectrometry-based proteomics approach",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "Peptide pull-downs were performed on NB1 cell lysate"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "antibody-based enrichment",
+        "evidence": "Phosphotyrosine enrichment was performed using antibody-based enrichment"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoLC-MS/MS",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "cells treated for 30 minutes with LDK378"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "LDK378",
+          "evidence": "LDK378 (250 nM)"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "ALK TKI",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Proteome (Label-free)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Neuroblastoma",
+          "evidence": "diseases: Neuroblastoma",
+          "ontology_id": "diseases:0033",
+          "ontology_name": "neuroblastoma",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "NB1",
+          "evidence": "NB1 cell line proteome"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "Q Exactive HF orbitrap mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "nanoLC-MS/MS on a Q Exactive HF orbitrap",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Lys-C",
+          "evidence": "digested with Lys-C and trypsin",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        },
+        {
+          "value": "trypsin",
+          "evidence": "digested with Lys-C and trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "digested with Lys-C and trypsin",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "27 NCE",
+          "evidence": "Q Exactive HF orbitrap mass spectrometer"
+        }
+      ],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "nanoLC-MS/MS",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "nanoLC-MS/MS",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free mass spectrometry-based approach",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high-pH fractionation",
+        "evidence": "Peptides were fractionated by high-pH fractionation"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "Proteome: The NB1 cell line proteome was measured"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoLC-MS/MS",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

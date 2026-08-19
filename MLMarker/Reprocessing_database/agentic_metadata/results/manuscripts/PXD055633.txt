@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Neutrophil; Primary cell
+instruments: Orbitrap Eclipse
+modifications: monohydroxylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: Label free
+keywords: Nets; Ac264613; Neutrophil extracellular traps; Par2-signaling
+
+ABSTRACT:
+Neutrophil extracellular traps (NETs) are associated with diseases linked to aberrant coagulation. The blood clotting cascade involves a series of proteases, some of which induce NETs formation via a yet unknown mechanism. We hypothesized that this formation involves signaling via a factor Xa (FXa) activation of the protease activated receptor 2 (PAR2).  Our findings revealed that NETs can be triggered in vitro by enzymatically active proteases and PAR2 agonists. Intravital microscopy of the liver vasculature revealed that both FXa infusion and activation of endogenous FX promoted NET formation, effects that were prevented by the FXa inhibitor, apixaban. Unlike classical NETs, these protease-induced NETs lacked bactericidal activity and their proteomic signature indicates their role in inflammatory disorders, including autoimmune diseases and carcinogenesis. Our findings suggest a novel mechanism of NET formation under aseptic conditions, potentially contributing to a self-amplifying cycle of clotting and NETs formation. This mechanism may underlie the pathogenesis of disseminated intravascular coagulation and other aseptic conditions.
+
+PROJECT DESCRIPTION:
+Non-classical neutrophil extracellular traps induced by PAR2-signaling proteases
+
+SAMPLE PROCESSING:
+Neutrophils were subjected to AC 264613 or untreated (control) for 3 hours, then treated with MNase (1U/ml) for 15 minutes and centrifuged at 1800×g for 10 minutes. Ice-cold acetone was added to the supernatants containing NET's, then samples were incubated at - 80°C for 60 minutes and centrifuged at 15,000×g for 10 minutes. The supernatant obtained by centrifugation was withdrawn, the protein pellet was dried and dissolved in PBS. Then, samples were lyophilized in a speed vacuum concentrator before resuspension in 8 M urea, 100 mM ammonium bicarbonate. Proteins were reduced with 10 mM dithiothretiol for 30 min, followed by alkylation with 30 mM iodoacetamide for 30 min, in the dark. The urea concentration was lowered by the addition of 100 mM ammonium bicarbonate and then digested with trypsin at a 1:50 (w/w) ratio overnight at 37°C. Digested peptides were acidified with formic acid and desalted on homemade reverse-phase C18 columns packed with Octadecyl C18 Solid Phase Extraction disks (Empore, 3M). The samples were eluted from the columns with 70% acetonitrile in 0.1 % formic acid, lyophilized to near-dryness and redissolved in 0.1 % formic acid. The samples were analyzed on an Orbitrap Eclipse Tribrid mass spectrometer (Thermo Fisher Scientific) coupled to an EASY-nLC 1200 (Thermo Fisher Scientific). 750 ng of each sample was loaded onto a trap column (2 cm x 75 µm inner diameter) and separated on an analytical column (20 cm x 75 µm inner diameter) packed with 1.9 µm C18 beads (Dr. Maisch, GmbH). The samples were eluted at a flow rate of 250 nl/min and with a gradient from 5 to 35% acetonitrile for 80 min, followed by a steep increase to 80% acetonitrile for 10 min.
+
+DATA PROCESSING:
+The MS raw files were processed in Proteome Discoverer 2.5 using the Sequest HT search algorithm. The UniProt human reference proteome was used as a database with the following parameters: 10 ppm precursor mass accuracy, 0.02 Da fragment mass accuracy, trypsin as digestion enzyme, max. 2 missed cleavage sites, Oxidation (M) as variable modification and Acetyl (N-Term), Met-loss (M), and Met-loss+Acetyl (M) as variable protein N-terminus modifications. Carbamidomethyl (C) as fixed modification. Protein abundances were label-free quantified based on precursor area and using only unique peptides. The samples were normalized to the total peptide amount.

@@ -1,0 +1,44 @@
+ollama:
+  base_url: http://localhost:11434
+  model: gurubot/Qwen3.5-35B-A3B-GGUF-unsloth-nothink:UD-Q4_k_XL
+  environment:
+    #OLLAMA_FLASH_ATTENTION: "1"    # flash attention enabled
+    OLLAMA_KV_CACHE_TYPE: q4_0     # compressed kv cache for faster inference
+    OLLAMA_NUM_PARALLEL: "1"       # handle requests concurrently
+  inference:
+    num_ctx: 32768
+    # think: true  # not parsed because of ollama bug, this destroyes the structured output
+    temperature: 0.0
+    timeout: 200
+    max_tries: 2
+    #top_k: 20
+    #top_p: 0.95
+
+data:
+  manuscripts_dir: results/manuscripts  # relative to this config file
+  fetch_manuscripts:
+    enabled: true
+    pxd_source: ../data/pride_quant.parquet  # parquet input (relative to config)
+
+  output_dir: results
+
+benchmark:
+  enabled: true
+  run_name: qwen3.5-35B-A3B-instruct
+
+normalization:
+  enabled: true
+  ontology_dir: ontologies/
+  cache_dir: cache/ontology/
+  similarity_threshold: 0.7
+  use_gpu: true
+
+  # Post-normalization forced mappings
+  # Applied AFTER SapBERT semantic matching to override specific terms.
+  # Use this to collapse subtypes into parent terms or fix known mismatches.
+  # Format: entity_type -> source_term -> target_term (case-insensitive matching)
+  # The source term is matched against the ontology_name returned by SapBERT.
+  post_normalization_map:
+    disease:
+      triple negative breast cancer: breast cancer
+      disease free: healthy

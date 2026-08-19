@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Orbitrap Fusion Lumos
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition
+keywords: Human; Ubiquitin; Rit1
+
+ABSTRACT:
+Human RIT1 was tagged with HA tag + N or C terminal ubiquitin (HA-Ubiqutin-RIT1 and HA-RIT1-Ubiqutin) and compared with empty vector (EV) or S35N/M90I RIT1 mutant (HA-RIT1 S35N/M90I). The constructs were expressed in human 293T cells and affinity purified using HA beads. RIT1 interacting proteins were compared by quantifying MS1 extracted chromatograms of peptides identified in conventional target-decoy database search.
+
+PROJECT DESCRIPTION:
+Affinity purification MS of human Ubiquitin-tagged RIT1
+
+SAMPLE PROCESSING:
+On-bead trypsin digests were performed  as previously described (PMID: 30872527), and digested tryptic peptides were analyzed by LC-MS/MS  on Orbitrap Fusion Lumos Tribrid Mass Spectrometer (Thermo Fisher Scientific) using the same configuration and settings as previously reported (PMID: 37149146).
+
+DATA PROCESSING:
+Acquired MS data were analyzed using a workflow previously described (PMID: 34237269, PMID: 37149146).  Briefly, spectra were searched in Protein Prospector (version 6.2.4; PMID: 27722944) against  human proteome (SwissProt database downloaded on 01/18/2021) and  decoy database of corresponding randomly shuffled peptides. Search engine parameters were as follows: “ESI-Q-high-res” for the instrument, trypsin as the protease,  up to  2 missed cleavages allowed, Carbamidomethyl-C as constant modification, default variable modifications, up to 3 modifications per peptide allowed, 15 ppm precursor mass tolerance, and 25 ppm tolerance for fragment ions. The false discovery rate was set to <1% for peptides, and at least 3 unique peptides per protein were required. Protein Prospector search results formatted as BiblioSpec spectral library were imported into Skyline (v21) to quantify peptide and protein abundances using MS1 extracted chromatograms(PMID: 28691345). Statistical analysis of observed protein abundances was performed using MSstats package integrated in Skyline (PMID: 24794931).

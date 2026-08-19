@@ -1,0 +1,101 @@
+{
+  "sample_groups": [
+    {
+      "name": "Human whole cell lysate with phosphopeptide enrichment",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "tryptic peptides from human whole cell lysate",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "whole cell lysate",
+          "evidence": "human whole cell lysate"
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "Q-Exactive mass spectrometer",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "tryptic peptides",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "no cysteine (to avoid alkylation artifacts)",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "90",
+          "evidence": "separated over a 90-min gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Accucore C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "data-dependent acquisition (DDA) mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "mass-differential tandem mass tag (mTMT)",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "phosphopeptide enrichment",
+        "evidence": "three commercial phosphopeptide enrichment workflows"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "IMAC and TiO2",
+        "evidence": "High-Select Fe-NTA... High-Select TiO2"
+      },
+      "ionization": [],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

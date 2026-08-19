@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Permanent cell line cell
+instruments: Orbitrap Fusion Lumos
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition
+quantification: MS1 intensity based label-free quantification method
+keywords: Crispr; Keap1; Cas9
+
+ABSTRACT:
+As a potent and accurate genome-editing tool, CRISPR-Cas9 has been widely used in biomedical research and evaluated as gene therapy in treating human diseases. Although distinct engineered Cas9s, dCas9s and additional endonucleases have been identified, as these bacterial enzymes do not naturally express in mammalian cells, whether and how bacterial Cas9 proteins are regulated by mammalian hosts remains poorly understood. Here, we identified Keap1 as an endogenous E3 ligase that targets Cas9/dCas9/Fanzor1 for ubiquitination and degradation. Cas9-“ETGE” mutants evading Keap1 recognition displayed enhanced gene editing ability in cells. dCas9-“ETGE” mutants displayed extended protein half-life on chromatin, leading to significantly improved CRISPa and CRISPRi efficacy. Cas9 binding to Keap1 also inactivate Keap1 function via competing with Keap1 substrates or binding partners, while engineered Cas9 mutants showed less perturbation. Thus, our study reveals a mammalian specific Cas9 regulation and provides new Cas9 designs not only with enhanced gene regulatory capacity but also with minimal effects on disrupting endogenous Keap1 signaling.
+
+PROJECT DESCRIPTION:
+Keap1 is an endogenous dCas9 suppressor inhibiting CRISPRa and CRISPRi efficiency
+
+SAMPLE PROCESSING:
+Flag-EV and Flag-SpCas9 was transfected into HEK293T cells respectively and protein samples were harvested after 2 days transfection using EBC buffer. Flag immunoprecipitants were washed with NETN buffer. Following steps were performed and QFP assay (Thermo; 23290) was performed for peptide quantification. Reverse-phase nano-high-performance liquid chromatography (nano-HPLC) coupled with a nanoACQUITY ultraperformance liquid chromatography (UPLC) system (Waters Corporation, Milford, MA) was used to separate trypsinized peptides. Trapping and separation of peptides were performed in a 2-cm column (Pepmap 100; 3-μm particle size and 100-Å pore size), and a 25-cm EASYspray analytical column (75-μm inside diameter [i.d.], 2.0-μm C18 particle size, and 100-Å pore size) at 300 nl/min and 35°C, respectively. Analysis of a 180-min gradient of 2 to 25% buffer B (0.1% formic acid in acetonitrile) was performed on an Orbitrap Elite mass spectrometer (Thermo Scientific)
+
+DATA PROCESSING:
+All raw mass spectrometry data were searched using MaxQuant version 2.4.14. Search parameters were as follows: UniProtKB/Swiss-Prot human canonical sequence database (downloaded Feb 2024), static carbamidomethyl cysteine modification, specific trypsin digestion with up to two missed cleavages, variable protein N-terminal acetylation and methionine oxidation, match between runs, and label-free quantification (LFQ) with a minimum ratio count of 1. Searched files were analyzed using Perseus for data filtering and visualization. Protein identifications were filtered to a 1% false-discovery rate (FDR), and potential contaminants and decoys were removed.

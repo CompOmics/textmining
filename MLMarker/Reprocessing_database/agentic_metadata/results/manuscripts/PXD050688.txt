@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Permanent cell line cell
+instruments: Q Exactive Plus
+modifications: iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: MS1 intensity based label-free quantification method
+keywords: Human; U4 snrna; Spliceosome; Usp39; As oligo pulldown
+
+ABSTRACT:
+RNA splicing and protein degradation systems allow the functional adaptation of the proteome in response to changing cellular contexts. However, the regulatory mechanisms connecting these processes remain poorly understood. Here, we show that impaired spliceosome assembly caused by USP39 deficiency leads to a pathogenic splicing profile characterized by the use of cryptic 5′ splice sites. We performed MS analysis to identify the main interactors of U4 snRNA with and without USP39
+
+PROJECT DESCRIPTION:
+Identification of interacting proteins with U4 snRNA with and without USP39
+
+SAMPLE PROCESSING:
+Twelve 10 cm plates of Scr siRNA HeLa cells and Twelve 10 cm plates of USP39 siRNA HeLa cells were cultured, cross-linked with UV light and harvested for nuclei isolation (6 replicates of each condition). After cell lysis and nuclear isolation, a pulldown of U4snRNA using biotin-ASoligo and streptavidin beads was performed.Beads were supplemented with 6M GdmCl, 50mM Tris/HCl, 10 mM TCEP and incubated at 95°C for 5 min. Reduced thiols were alkylated with 40 mM chloroacetamide and sample were diluted with 25 mM Tris/HCl, pH 8.5, 10% acetonitrile to obtain a final GdmCl concentration of 0.6 M. Proteins were digested with 1 µg Trypsin (sequencing grade, Promega) overnight at 37°C under gentle agitation. Digestion was stopped by adding trifluoroacetic acid to a final concentration of 0.5 %. Peptides were loaded on multi-stop-and-go tip (StageTip) containing three C18-disks and three SCX-disks. Purification and elution of peptides was performed as described in Rappsilber and Mann (2007). Peptides were eluted in microtiter plates, dried and later resuspended in 1% acetonitrile, 0.1 % formic acid. Dissolved peptides were stored at -20°C until MS analysis.  Liquid chromatography / mass spectrometry (LC/MS) was performed on Thermo Scientific™ Q Exactive Plus equipped with an ultra-high performance liquid chromatography unit (Thermo Scientific Dionex Ultimate 3000) and a Nanospray Flex Ion-Source (Thermo Scientific). Peptides were loaded on a C18 reversed-phase precolumn (Thermo Scientific) followed by separation on a with 3 µm Reprosil C18 resin (Dr. Maisch GmbH) in-house packed picotip emitter tip (diameter 100 µm, 15 cm from MSWil) using a gradient from 4% acetonitrile, 0.1% formic acid to 25 % eluent B (99% acetonitrile, 0.1% formic acid) for 35 min followed by additional gradients from 25% to 50% for 5 min and from 50% to 99% for 1 min. Column was washed with 99% acetonitrile for 5 min and then with 4% acetonitrile, 0.1% formic acid for 14 min. All flow rates were set as 300 nl/min.  MS data were recorded by data dependent acquisition. The full MS scan range was 300 to 2000 m/z with resolution of 70000, and an automatic gain control (AGC) value of 3*10E6 total ion counts with a maximal ion injection time of 100 ms. Only charged ions >2 and <8 were selected for MS/MS scans with a resolution of 17500, an isolation window of 2 m/z and an automatic gain control value set to 10E5 ions with a maximal ion injection time of 100 ms. MS1 Data were acquired in profile mode.
+
+DATA PROCESSING:
+For data analysis MaxQuant 2.0.3.0  (Cox and Mann, 2008), Perseus 2.0.7.0 (Tyranova et al 2016) and Excel (Microsoft Office 2021) were used. N-terminal acetylation (+42.01), and oxidation of methionine (+15.99) were selected as variable modifications and carbamidomethylation (+57.02) on cysteines as a fixed modification. The human reference proteome database (Uniprot, August 2023, canonical+isoforms) was used to identify peptides and proteins with a false discovery rate (FDR) less than 1%. Reverse identifications and default contaminants (MaxQuant) were automatically filtered out.

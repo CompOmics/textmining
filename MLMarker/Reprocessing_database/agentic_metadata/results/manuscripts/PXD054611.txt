@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Q Exactive
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+quantification: Spectrum counting
+keywords: Rad52; Ip-mass spec; Human cells
+
+ABSTRACT:
+Collisions of the transcription and replication machineries on the same DNA strand can pose a significant threat to genomic stability. These collisions occur in part due to the formation of RNA-DNA hybrids termed R-loops, in which a newly transcribed RNA molecule hybridizes with the DNA template strand. This study investigated the role of RAD52, a known DNA repair factor, in preventing collisions by directing R-loop formation and resolution. We show that RAD52 deficiency increases R-loop accumulation, exacerbating collisions and resulting in elevated DNA damage. Furthermore, RAD52's ability to interact with the transcription machinery, coupled with its capacity to facilitate R-loop dissolution, highlights its role in preventing collisions. Lastly, we provide evidence of an increased mutational burden from double-strand breaks at conserved R-loop sites in human tumor samples, which is increased in tumors with low RAD52 expression. In summary, this study underscores the importance of RAD52 in orchestrating the balance between replication and transcription processes to prevent collisions and maintain genome stability.
+
+PROJECT DESCRIPTION:
+RAD52 resolves transcription-replication conflicts to mitigate R-loop induced genome instability
+
+SAMPLE PROCESSING:
+HEK293T cells were transfected with the respective plasmids as per the experimental conditions mentioned. Post transfection, the cells were washed with ice cold PBS and resuspended in Lysis buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 1mM EDTA, 1% NP-40, 1X Protease Inhibitor) and incubate for 20 min on rotor at 4°C. After 4 cycles of water-bath sonication for a total of 6 mins, lysates were centrifugation for 10 min at 15000 x g at 4°C. Immunoprecipitation was performed on the supernatants using Pierce Anti-HA Magnetic Beads (Thermo Scientific, #88836) overnight at 4°C on the rotor. Beads were extensively washed in the lysis buffer and stored at -80°C, until ready for mass spectrometry.
+
+DATA PROCESSING:
+Raw data file acquired from each sample was searched against human protein sequences database and target protein sequences provided by the client using the Proteome Discoverer 2.4 software (Thermo Scientific, San Jose, CA) based on the SEQUEST algorithm. Carbamidomethylation (+57.021 Da) of cysteines was fixed modification, and Oxidation Met and Deamidation Q/N-deamidated (+0.98402 Da) were set as dynamic modifications. The minimum peptide length was specified to be five amino acids. The precursor mass tolerance was set to 15 ppm, whereas fragment mass tolerance was set to 0.05 Da. The maximum false peptide discovery rate was specified as 0.01. The resulting Proteome Discoverer Report contains all assembled proteins with peptides sequences and peptide spectrum match counts (PSM#). Protein quantification/normalization used the normalized spectral abundance factors (NSAFs) method to calculate the protein relative abundance.

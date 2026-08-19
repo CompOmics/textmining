@@ -1,0 +1,185 @@
+{
+  "sample_groups": [
+    {
+      "name": "RP11VS and Cas9-corrected retinal organoids and RPE",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Retina",
+          "evidence": "organism parts: Retina",
+          "ontology_id": "tissues:0028",
+          "ontology_name": "retina",
+          "similarity": 1.0
+        },
+        {
+          "value": "Retinal pigment epithelium",
+          "evidence": "RP11VS retinal organoid or RPE cells",
+          "ontology_id": "tissues:0028",
+          "ontology_name": "retina",
+          "similarity": 0.7226
+        }
+      ],
+      "disease": [
+        {
+          "value": "Retinitis pigmentosa",
+          "evidence": "RP11VS retinal organoid or RPE cells"
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion",
+          "evidence": "Orbitrap Fusion or Q Exactive HF-X",
+          "ontology_id": "instruments:0005",
+          "ontology_name": "Orbitrap Fusion",
+          "similarity": 1.0
+        },
+        {
+          "value": "Q Exactive HF-X",
+          "evidence": "Orbitrap Fusion or Q Exactive HF-X",
+          "ontology_id": "instruments:0013",
+          "ontology_name": "Q Exactive HF-X",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "Selected precursors underwent CID fragmentation",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        },
+        {
+          "value": "HCD",
+          "evidence": "MS3 scans were analysed using HCD fragmentation",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digestion with trypsin overnight",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "N-term-TMT",
+          "evidence": "TMT2plex on both peptide N-terminus"
+        },
+        {
+          "value": "K-TMT",
+          "evidence": "TMT2plex on both peptide N-terminus and lysine residue"
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "normalised collision energy (NCE) of 35"
+        },
+        {
+          "value": "65 NCE",
+          "evidence": "HCD fragmentation at NCE of 65"
+        },
+        {
+          "value": "32 NCE",
+          "evidence": "NCE of 32"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "70",
+          "evidence": "eluted with buffer B ... over 70 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "ReproSil-Pur C18 AQ 1.9 μm reversed phase resin",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "data-dependent synchronous precursor selection (SPS)-based MS3",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "isobaric Tandem Mass Tag (TMT) labelling",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "High pH C18",
+        "evidence": "separated in 80 fractions on an XBridge BEH C18 HPLC column"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No phosphopeptide enrichment described"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "UltiMate 3000 RSLCnano HPLC system coupled with mass spectrometer",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene correction",
+          "evidence": "Cas9-corrected cells"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "CRISPR/Cas9",
+          "evidence": "CRISPR/Cas9-corrected cells"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "CRISPR/Cas9 system",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Htert-rpe1 cell
+instruments: Orbitrap Exploris 480
+modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; iodoacetamide derivatized residue; deamidated residue
+experiment types: Data-dependent acquisition
+keywords: Phosphoproteome; Human cell; Lc-ms; Lysosomal damage; Dda
+
+ABSTRACT:
+The lysosomal damage response plays a critical role in the maintenance of cellular homeostasis. While the repair and autophagic elimination mechanisms of damaged lysosomes have been elucidated, the early signal transduction and subsequent gene expression in response to lysosomal damage remain elusive. Here, we employed transcriptome and proteome analyses to demonstrate that the TAB–TAK1–IKK–NF-κB pathway is activated by K63-linked ubiquitin chains that accumulate on damaged lysosomes. This results in the gene expression of a diverse range of transcription factors and cytokines, which subsequently promote anti-apoptosis and intercellular signaling. These findings indicate that the ubiquitin-directed signal transduction and gene expression play a crucial role in cell survival and cell-cell communication in response to lysosomal damage. The results highlight that the ubiquitin system is involved not only in the removal of damaged lysosomes by lysophagy, but also in the activation of cellular signaling for cell survival.
+
+PROJECT DESCRIPTION:
+Phosphoproteome changes of RPE-1 cells in response to lysosomal damage with the TAK1 inhibitor
+
+SAMPLE PROCESSING:
+RPE-1 cells were treated with or without 1 mM LLOMe and 10 µM HS-276 for the indicated times, after which they were lysed, reduced, and alkylated as described above (proteome analysis). 200 µg of lysate were loaded onto S-Trap mini columns (ProtiFi, C02-mini), and the trypsin solution (1:10 (w/w), Cell Signaling Technology, 56296) was added and incubated for 16 h at 37°C. Subsequently. the eluted peptides were dried by a vacuum concentrator. The Phosphopeptides were enriched using the High-Select Fe-NTA Phosphopeptide Enrichment Kit (Thermo Fisher Scientific, A32992) in accordance with the manufacturer’s instructions, and then dried by a vacuum concentrator. The resulting peptides were cleaned using C18 spin tips (Thermo Fisher Scientific, 84850), dried by a vacuum concentrator, and then resuspended in 0.1% TFA. The peptides were loaded onto a Vanquish Neo UHPLC system-connected Orbitrap Exploris 480 mass spectrometer. The peptides were separated on an analytical column (C18, 1.7 µm particle size x 75 µm diameter x 250 mm, IonOpticks, AUR3-25075C18) heated at 55°C by a column oven with a constant flow rate of 250 nl/min. The peptides were eluted using a gradient of 120 min, increasing from 0% to 40% acetonitrile. Peptide ionization was conducted using the Nanospray Flex Ion Source. The Orbitrap Exploris 480 mass spectrometer was operated in data-dependent acquisition (DDA) mode utilizing a full scan (m/z range of 375-1500, nominal resolution of 60,000, target value of 3x106 ions) followed by MS/MS scans (a fixed collision energy of 30%, an isolation width of 1.6 m/z, a nominal resolution of 15,000, and a target value of 1x105 ions). Precursor ions selected for fragmentation (charge state 2-6) were placed on a dynamic exclusion list for 20 s. A “1-s cycle” data-dependent acquisition method was employed, whereby the most intense ions were selected every second for MS/MS fragmentation by higher-energy collisional dissociation (HCD).
+
+DATA PROCESSING:
+The MS raw files were searched against the human UniProt reference proteome (Uniprot ID: UP000005640, reviewed, canonical, 20,563 entries) using the Sequest HT search program in Proteome Discoverer 3.1 (Thermo Fisher Scientific). Intensity-based non-label quantification was conducted using a Precursor Ions Quantifier node in Proteome Discoverer 3.1.

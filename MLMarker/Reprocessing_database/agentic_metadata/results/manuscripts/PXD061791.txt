@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: Orbitrap Ascend
+modifications: TMT6plex-126 reporter+balance reagent acylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Lysosome; Dmxl1; V-atpase; Sidk; U2os
+
+ABSTRACT:
+To assess the effect of SidK expression on DMXL1 interaction with the V1 subunits of the V-ATPase, U2OS cells stably expressing DMXL1 tagged with mNeonGreen (mNG) were infected with lentivirus to express either mCherry or mCherry-SidK. Post-infection, cells were harvested to perform immunoprecipitation (IP) of DMXL1-mNG using magnetic beads coupled with a nanobody against mNG. IP samples were subsequently processed for TMT-MS analysis. As negative control, immunoprecipitation was also performed from parental U2OS cells expressing mCherry. Each condition was performed in triplicate.
+
+PROJECT DESCRIPTION:
+DMXL1 interaction proteomics from U2OS cells infected with SidK
+
+SAMPLE PROCESSING:
+IP samples were reduced with 5mM TCEP, alkylated with 15mM iodoacetamide, and quenched with 10mM DTT. Proteins were digested with Lys-C/Trypsin and digested peptides were labelled with TMTpro reagent for 1h at room temperature and reaction was quenched with hydroxylamine for 15min. Equal amounts of peptide were combined and desalted using C18 StageTip. Mass spectrometric data were collected on an Orbitrap Ascend MultiOmics mass spectrometer coupled to a Vanquish Neo UHPLC. Approximately 1µg of peptide was separated at a flow rate of 450 nL/min across 90 minutes on a 100 µm capillary column that was packed with 35 cm of Accucore 150 resin (2.6 μm, 150Å; ThermoFisher Scientific). The gradient was 7-25% Buffer B (95% acetonitrile, 0.125% formic acid) which was mixed into buffer A (5% acetonitrile, 0.125% formic acid). The scan sequence began with an MS1 spectrum (Orbitrap analysis, resolution 60,000, 350-1350 Th, automatic gain control (AGC) target is set to 100%, maximum injection time set to 50ms). The hrMS2 stage consisted of fragmentation by higher energy collisional dissociation (HCD, normalized collision energy 36%) and analysis using the Orbitrap (AGC 200%, maximum injection time 86 ms, isolation window 0.6 Th, resolution 45,000 with TurboTMT activated). Data were acquired using the FAIMSpro interface the dispersion voltage (DV) set to 5,000V, the compensation voltages (CVs) were set at -30V, -50V, and -70V. The TopN parameter was set at 25 MS/MS scans per CV. The sample was analyzed twice with the second acquisition using a different set of CV (-40V, -60V, and -80V).
+
+DATA PROCESSING:
+Spectra were converted to mzXML via MSconvert and searched using Comet against the human canonical proteome (Uniprot 2020-02). Searches were performed using a 50-ppm precursor ion tolerance for total protein level profiling. The product ion tolerance was set to 0.03 Da. These wide mass tolerance windows were chosen to maximize sensitivity in conjunction with Comet searches and linear discriminant analysis. TMTpro labels on lysine residues and peptide N-termini +304.207 Da), as well as carbamidomethylation of cysteine residues (+57.021 Da) were set as static modifications, while oxidation of methionine residues (+15.995 Da) was set as a variable modification. Linear discriminant analysis was performed and peptide-spectrum matches (PSMs) were filtered to 2% false discovery rate (FDR). TMT-reporter ions were quantified by picking the most intense peaks within 0.003 Da around the theoretical m/z and corrected for isotopic impurity. Data summarization, normalization and statistics were performed using MSstats.

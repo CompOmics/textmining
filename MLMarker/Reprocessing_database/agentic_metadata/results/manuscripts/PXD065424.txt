@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+diseases: Amyotrophic lateral sclerosis
+instruments: Q Exactive Plus
+modifications: monohydroxylated residue
+experiment types: Data-dependent acquisition
+quantification: Label free
+keywords: C9orf72; Stress granules; Als; G3bp1
+
+ABSTRACT:
+Interactome of G3BP1 in C9ORF72 hexanucleotide repeat expansion carrying iPSC derived motor neurons
+
+PROJECT DESCRIPTION:
+Interactome of G3BP1 in C9ORF72-ALS
+
+SAMPLE PROCESSING:
+Protein from neuronal cultures were extracted using SDS-free RIPA buffer (50 mM Tris-Cl pH 7.5, 150 mM NaCl, 1% Triton X-100, 1% sodium deoxycholate, 1 mM EDTA) and protein samples were homogenized using a syringe with a 27-gauge needle. The samples were centrifuged at maximum speed for 10 minutes at 4 °C. Then, 300 µg of protein lysates were incubated with 2 µg monoclonal mouse anti-G3BP1 antibodies (abcam, ab56574) for 1 hour on ice. Then 50 µL of Protein A microbeads (Miltenyi, 130-071-001) were added to the protein-antibody mixture and incubated at 4 °C for 2 hours on rotation. µColumns (Miltenyi, 130-042-701) were placed on magnets and pre-treated with 200 µL SDS-free RIPA. Protein-antibody-bead mixture was then loaded on columns and allowed to pass. The columns were washed 3 times with 200 µL Wash Buffer I (50 mM Tris-Cl pH 7.5, 150 mM NaCl, 0.05% Triton X-100, 5% glycerol) and 5 times with Wash Buffer II (50 mM Tris-Cl pH 7.5, 150 mM NaCl). The proteins loaded on columns were digested with 25 µL of digestion buffer (2 M Urea, 7.5 mM ammonium bicarbonate, 1 mM DTT, 5 ng/mL trypsin) at room temperature for 30 minutes and eluted with 50 µL of elution buffer (2 M Urea, 7.5 mM ammonium bicarbonate, 5 mM CAA). The digestion was allowed to be completed overnight at dark. The following day, formic acid at a final concentration of 4% was added to the digested samples and they were centrifuged for 5 minutes at maximum speed. The supernatant that contains the proteins were then purified and loaded on SDP-RP StageTips. All samples were analyzed at the CECAD proteomics facility using a Q Exactive Plus Orbitrap mass spectrometer connected to an EASY-nLC system (both from Thermo Scientific). Peptides were loaded using in water with 0.1% formic acid, onto a custom-packed columns (50 cm long, 75 μm inner diameter) filled with 2.7 μm Poroshell EC120 C18(Agilent). Separation was performed at a constant flow rate of 250 nL/min with the following gradient: starting at 3% solvent B (0.1% formic acid in 80% acetonitrile), increased to 5% over 1 minute, to 30% over the next 65 minutes, to 50% over the following 13 minutes, and finally to 95% in 1 minute, followed by a wash and re-equilibration step. The mass spectrometer operated in data-dependent acquisition mode. MS1 scans were recorded over a range of 300–1750 m/z at a resolution of 70,000 with a maximum injection time of 20 ms. The top 10 most intense ions were selected for fragmentation in a 1.8 Th isolation window using higher-energy collisional dissociation at 27% normalized collision energy. The automatic gain control target was set to 5 × 10⁵, with a maximum injection time of 110 ms. Fragment ions were analyzed in the Orbitrap at a resolution of 35,000, and previously selected precursors were excluded for 10 seconds to avoid repeated analysis.
+
+DATA PROCESSING:
+All raw mass spectrometry data were analyzed using MaxQuant (version 1.5.3.8) with default settings, according to the Uniprot HUMAN canonical database (UP5640). The "match between runs" feature was activated to allow alignment across replicates. The subsequent data analysis was carried out in Perseus (version 1.6.15). Protein groups identified as potential contaminants were excluded from the dataset. LFQ intensities were log2-transformed, and missing values were statistically replaced by imputation. To identify significant differences between experimental groups, two-sided Student’s t-tests were performed. A false discovery rate (FDR) threshold of 0.05 was applied to determine statistical significance.

@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Diploid cell; Cell culture
+diseases: Disease free
+instruments: Orbitrap Eclipse
+modifications: iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: Label free
+keywords: Senescence; Translation
+
+ABSTRACT:
+To examine senescent translatome, we combined L-azidohomoalanine (AHA)-mediated labeling of newly synthesized proteins followed by click chemistry for biotin conjugation with the DiDBiT in proliferating and senescent cells. Senescence was induced using a stress-induced senescence model (bleomycin-induced senescence). We further examined the effect of EIF4H-S knockdown on the translatome using a shRNA targeting EIF4H-S.
+
+PROJECT DESCRIPTION:
+Proteomic analysis of senescent translatome
+
+SAMPLE PROCESSING:
+Cells were starved by incubation in glutamine, cysteine and methionine-free DMEM for translatome analysis. Subsequently, they were labeled with L-AHA for 8 hours and lysed with RIPA buffer. Residual AHA in the lysates was removed by chloroform-methanol precipitation. The lysates were resuspended and sonicated, followed by a click reaction with biotin-alkyne. For proteomic analysis, samples were digested, enriched for AHA-biotin labeled peptides using streptavidin magnetic beads, and analyzed by LC-MS/MS with a custom-packed column and an Orbitrap Eclipse mass spectrometer. Precursor ions (m/z 300–1500) were acquired at a resolving power of 120K, with a 1.4 Th isolation window. High-energy collisional dissociation (HCD) was performed at a collision energy of 30%, and MS2 scans were acquired at a resolving power of 30K, using an automatic gain control (AGC) target of 1 × 10⁵ and a maximum precursor ion injection time (ITmax) of 54 ms.
+
+DATA PROCESSING:
+The LC-MS/MS data sets were processed by searching all MS/MS data using MaxQuant with the Andromeda search engine, with a mass tolerance of 10 ppm. Label-free quantification (LFQ) was performed for each condition with parameters including trypsin digestion, allowance for 2 missed cleavages, fixed carbamidomethylation on cysteine residues, dynamic AHA-biotinylation (+452.246 Da) on methionine residues, and acetylation at the N-terminus of proteins. The false discovery rate (FDR) was set at less than 1% at the protein identification level. LFQ intensity values were log-transformed, normalized using NormalizeDE for median adjustment, and missing values were imputed using R software. Student's t-test was used to identify differentially translated proteins.

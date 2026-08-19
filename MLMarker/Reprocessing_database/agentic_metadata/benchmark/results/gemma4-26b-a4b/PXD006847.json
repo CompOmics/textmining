@@ -1,0 +1,125 @@
+{
+  "sample_groups": [
+    {
+      "name": "HeLa cell proteomics",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "MS/MS spectra were searched against the UniProtKB/Swiss-Prot human database",
+          "ontology_id": "NCBITaxon:9606",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "HeLa cells (ATCC) were grown in Eagle’s minimum essential medium",
+          "ontology_id": "CLO:0003684",
+          "ontology_name": "HeLa cell",
+          "similarity": 0.942
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos",
+          "evidence": "An Orbitrap Fusion Lumos Tribrid MS (ThermoFisher) was employed for all data collection",
+          "ontology_id": "instruments:0007",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmented by high energy dissociation with a collision energy of 28%",
+          "ontology_id": "MS:1000422",
+          "ontology_name": "beam-type collision-induced dissociation",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "Samples were digested with trypsin, then analyzed by LC-MS/MS",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Carbamidomethylation of cysteine residues was set as a fixed modification",
+          "ontology_id": "UNIMOD:6",
+          "ontology_name": "Carboxymethyl",
+          "similarity": 0.7935
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "2 nl",
+          "evidence": "collision energy of 28%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "150",
+          "evidence": "A linear 150-min gradient of 5–28% Buffer B (0.1% formic acid in acetonitrile) was used for separation"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "The SPE precolumn and LC column were slurry-packed with 3-µm C18 packing material",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition mode was used to trigger precursor isolation and sequencing",
+          "ontology_id": "MS:1003221",
+          "ontology_name": "data-dependent acquisition",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "Protein label-free quantification (LFQ) intensity revealed excellent correlations",
+          "ontology_id": "MS:1002038",
+          "ontology_name": "label free sample",
+          "similarity": 0.8098
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "The SPE precolumn and LC column were slurry-packed with 3-µm C18 packing material"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "The SPE precolumn and LC column were slurry-packed with 3-µm C18 packing material"
+      },
+      "ionization": [
+        {
+          "value": "electrospray",
+          "evidence": "increased ionization efficiency at the nanoelectrospray ion source",
+          "ontology_id": "MS:1000073",
+          "ontology_name": "electrospray ionization",
+          "similarity": 0.8784
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

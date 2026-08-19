@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Brain
+instruments: Orbitrap Eclipse
+modifications: No PTMs are included in the dataset
+experiment types: Data-independent acquisition; Bottom-up proteomics
+keywords: 
+
+ABSTRACT:
+The label free single cell proteome profiling in developing human brain.
+
+PROJECT DESCRIPTION:
+Single-cell proteomic landscape of the developing human brain
+
+SAMPLE PROCESSING:
+Tissue samples for proteomic profiling were dissociated using the Papain Dissociation System (Worthington, LK003150). Neuronal cells were sorted by FACS using a Sony SH800 (100-µm nozzle). Live cells were collected as single cells and deposited into 384-well low-bind PCR plates. Each well was pre-loaded with 1 µL of lysis buffer consisting of 100 mM triethylammonium bicarbonate (TEAB, pH 8.5), 10 mM tris(2-carboxyethyl)phosphine (TCEP), 40 mM chloroacetamide (CAA), and 0.1% n-dodecyl-β-D-maltoside (DDM). After sorting, plates were centrifuged briefly at 1000 × g for 1 min to collect contents at the bottom of the wells, then sealed with a heat-resistant adhesive aluminum film, snap-frozen on dry ice, and stored at −80 °C to preserve protein integrity until processing.
+      For protein extraction, plates were thawed on ice and incubated at 95 °C for 5 min in a Bio-Rad 384-well thermal cycler, with the lid set to 105 °C to minimize condensation and maximize lysis efficiency. After cooling to room temperature, 1 µL of enzyme solution containing 2.5 ng sequencing-grade trypsin was added to each well, bringing the final digestion volume to 2 µL per well.   Digestion was carried out overnight at 37 °C in the thermocycler, with plates continuously sealed using adhesive aluminum film to prevent evaporation during the extended incubation.  Following digestion, reactions were quenched by adding 1 µL of 2% trifluoroacetic acid (TFA) to adjust the pH to approximately 3, thereby inactivating trypsin and stabilizing the peptides for downstream analysis. Samples were then manually loaded onto EvoTip Pure devices using an electronic multichannel pipette in parallel across wells for desalting and sample cleanup. This step was performed according to the Evosep loading protocol with a standardized SOP, which we used to minimize operator variability. The peptides bound to the tips were subsequently subjected to LC-MS/MS analysis using an optimized gradient for low-input proteomics. This workflow enabled robust and reproducible peptide recovery from individual cells, providing the foundation for label-free single-cell proteomic profiling of the developing human brain.
+
+
+DATA PROCESSING:
+Single-cell proteomic data were processed with DIA-NN against the UniProt human reference proteome (Trypsin/P; up to two missed cleavages; peptide length 7–30 aa; precursor charge 1–4). Fixed and variable modifications included carbamidomethylation (C, fixed), methionine oxidation (variable), and allowance for N-terminal methionine excision. Mass accuracy tolerances were set to 5 ppm (MS1) and 10 ppm (MS2). Precursor, peptide, and protein identifications were controlled at 1% FDR. Quantification used fragment-ion peak areas aggregated to precursors and then to proteins, with match-between-runs (MBR) enabled. Protein groups were mapped to UniProt IDs and corresponding gene symbols prior to downstream analysis.

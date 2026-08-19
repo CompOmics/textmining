@@ -1,0 +1,37 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Brain; Testis
+instruments: Orbitrap Eclipse; Q Exactive HF
+modifications: acetylated residue; N6; N6-butanoyl-L-lysine; monomethylated residue; N6; alpha-amino propanoylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Histone h3 variants; Acylations; Overpropionylation; Isobaric peptides
+
+ABSTRACT:
+Mass spectrometry (MS) is now well recognized as a powerful technique to identify and quantify post-translational modifications (PTMs), overcoming many of the limitations of antibody-based methods. Histones, which play a central role in all DNA-templated processes, are regulated by a wealth of dynamic modifications, particularly on their numerous lysine residues. Reliable identification of histone PTMs remains challenging and still requires manual data curation. In this study, we focused on the Lys27-Arg40 stretch of histone H3 and considered four sequence variants, an increasing number of lysine PTMs, and chemical artefacts coming from the specific protocol of histone sample processing, which resulted in many peptides with the same atomic composition. Our analysis revealed the value of low-mass b1 and cyclic immonium fragment ions for validation of the identification of the distinct peptide forms. We examined how MS/MS spectra are transformed by several common software tools during the conversion of raw files into peak lists, and highlighted how some parameters may erase the informative low-mass fragments. We established the fragmentation profiles and retention times for forty H3 K27-R40 variant×PTM combinations, including the mouse-specific variants H3mm7 and H3mm13, and targeted their detection in histone samples extracted from mouse testis and brain via a scheduled parallel reaction monitoring (PRM) analysis. These two mouse-specific variants were reported to be highly abundant at the transcript level in these tissues and may seem to be identified at the protein level by data-dependent MS acquisition. However, we only detected very low levels of the unmodified form of H3mm7 and found no trace of H3mm13 by PRM. Our work contributes to reliably deciphering the histone code shaped by distinct sequence variants and numerous combinations of PTMs.
+
+PROJECT DESCRIPTION:
+Mind Your Spectra: Points to be Aware of when Validating the Identification of Isobaric Histone Peptidoforms
+
+SAMPLE PROCESSING:
+Histones were acid-extracted from mouse brain and testis, and separated by SDS-PAGE. Only bands corresponding to histone H3 were excised. Proteins were propionylated and in-gel digested with trypsin. Peptides were then propionylated to cap free N-termini. Overpropionylation was reversed using hydroxylamine and peptides were desalted using C18 stage tips. Endogenous histones were spiked with synthetic peptides corresponding to the variably modified Lys27-Arg40 stretch from H3.3 and from the mouse-specific H3mm7 and H3mm13 variants, in addition to iRTs, to be subjected to data-dependent acquisition (DDA). This allowed preparing a spectral library. Histone samples from testis and brain were also analyzed using scheduled Parallel Reaction Monitoring (PRM), to target variably modified forms of Lys27-Arg40 from canonical H3 and H3 variants. The bottom-up MS analyses were performed on a QExactive HF mass spectrometer (raw files were uploaded to Panorama Public). For the  middle-down analyses, histones were extracted from mouse testis as described above and digested overnight with Glu-C endoprotease (V1651, New England BioLabs) at 37°C, at an enzyme:protein ratio of 1:20, in 0.05 M ammonium acetate (pH 4). The middle-down MS analyses were performed on an Orbitrap Eclipse mass spectrometer coupled in-line to a Neo Vanquish LC (Thermo Fisher Scientific).
+
+DATA PROCESSING:
+Peak lists (MGF files) were obtained from RAW files of DDA analyses using our in-house developed program MGFBoost. The MGF files were searched using Mascot (v2.8) where propionyl (K) and propionyl (N-term) were set as fixed modifications and acetyl (K), butyryl (K), dimethyl (K) and trimethyl (K) were set as variable modifications. Proline software was used to validate the identifications. The resulting .DAT files from Mascot search were used to create a spectral library in Skyline. Of note, Skyline does not accept two modifications on the same residue, which happens on the lysine at the first position in the H3 K27-R40 stretch. Then, a combination of each side-chain modification with N-terminal propionyl was created to circumvent this restriction. The Skyline library was manually curated for some identifications to only include the MS/MS spectra closest to the apex to be the representative spectra. An iRT calculator was created in Skyline which aids in confirming the identifications. RAW files acquired by a scheduled PRM experiment targeting 40 H3 K27-R40 peptidoforms were imported into Skyline and every identification was manually checked for coherence with the predicted RT and for dotp values (with a minimum of 0.9). Only three fragment ions per identification were retained for quantification, whose summed area was normalized by the TIC of the analysis.
+
+ABSTRACT (PubMed):
+Mass spectrometry has become central to identifying and quantifying histone post-translational modifications (PTMs), surpassing limitations of antibody-based methods. Histones are dynamically modified by multiple structures, especially at lysine residues on their N-terminal tails, to regulate DNA-templated processes. Reliable identification of histone PTMs remains challenging and still requires manual curation. This study focused on the Lys27-Arg40 stretch of histone H3, considered four sequence variants, an increasing number of lysine PTMs and artifacts coming from histone sample processing, which resulted in many isobaric peptides. Our analysis revealed the value of low-mass b1 and cyclic immonium fragment ions to validate identification of the distinct peptidoforms. We examined how MS/MS spectra are transformed by common identification software during the conversion of raw files into peak lists, and highlighted how some parameters may erase the informative low-mass fragments. We targeted the detection of 40 H3 K27-R40 variant × PTM combinations, including the mouse-specific variants H3mm7 and H3mm13, in histone samples extracted from mouse testis and brain via a parallel reaction monitoring analysis. We only detected very low levels of unmodified H3mm7. Our work contributes to reliably deciphering the histone code shaped by distinct sequence variants and numerous combinations of PTMs.
+
+SDRF SUMMARY:
+Total runs: 11
+organism: Mus musculus
+disease: normal
+sex: M
+age: 3M
+instrument: Orbitrap Eclipse; Q Exactive HF
+cleavage agent details: Trypsin; V8-E
+modification parameters: "NT=Propionyl;AC=58;MT=Variable;PP=Any N-term;TA=S,T,Y"; Acetyl; Butyryl; Crotonyl; Dimethyl; Lactyl; Methyl; Propionyl; Trimethyl
+label: label free sample
+dissociation method: beam-type collision-induced dissociation; electron transfer dissociation
+collision energy: "27,32 NCE"; 30 NCE; 60-100 ms
+precursor mass tolerance: 1.03 Da; 5 ppm
+fragment mass tolerance: 20 ppm

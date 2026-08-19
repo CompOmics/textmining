@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Q Exactive
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+keywords: Temozolomide; Gbm cells; Linc01956
+
+ABSTRACT:
+LncRNAs interact with other cellular molecules, such as DNA, RNA and proteins, to regulate various biological processes. In our study, we demonstrated that LINC01956 promoted MGMT mRNA nuclear export and led to TMZ resistance. In order to elucidate the potential molecular mechanism of LINC01956 promoting MGMT mRNA nuclear export, RNA pulldown experiments and quantitative proteomics mass-spectrometry (MS) analysis were performed.
+
+PROJECT DESCRIPTION:
+LC-MS/MS analysis of LINC01956-binding protein in GBM cells
+
+SAMPLE PROCESSING:
+The method for proteolysis refers to FASP [Jacek R Wisniewski, Alexandre Zougman, Nagarjuna Nagaraj, and Matthias Mann. Nature Methods, 2009, 6:359 - 362].The enzyme-digested peptide samples were centrifuged to dryness and then re-dissolved in Nano-LC mobile phase A (0.1% formic acid/water). The re-dissolved samples were loaded into vials and analyzed online by LCMS. An appropriate volume of the re-dissolved sample was loaded onto a nanoViper C18 trap column (3 渭m, 100 脜) and desalted with a 20 渭L volume wash. Liquid chromatography was performed using the Easy nLC 1200 nano-liquid chromatography system (ThermoFisher, USA). After desalting and retention on the trap column, the samples were separated on an analytical column with specifications of a C18 reversed-phase column (Acclaim PepMap RSLC, 75 渭m 脳 25 cm, C18-2 渭m, 100 脜). The gradient used in the experiment was 120 minutes, with mobile phase B (80% acetonitrile, 0.1% formic acid) increasing from 5% to 38%. Mass spectrometry was conducted using a ThermoFisher Q Exactive system (ThermoFisher, USA) combined with a nanospray Nano Flex ion source (ThermoFisher, USA), with a spray voltage of 1.9 kV and an ion transfer tube heating temperature of 275掳C. The mass spectrometry scan mode was data-dependent acquisition (DDA). The first-level mass spectrometry scan had a resolution of 70,000, a scan range of 350-2000 m/z, and a maximum injection time of 100 ms. Up to 20 MS/MS spectra with charge states of 2+ to 5+ were collected in each DDA cycle, with a maximum injection time of 50 ms for MS/MS ions. The collision energy (high-energy collision dissociation, HCD) was set at 28 eV for all precursor ions, with a dynamic exclusion setting of 25 seconds.
+
+DATA PROCESSING:
+The raw data files collected from mass spectrometry were processed and analyzed using PEAKS Online 11 (Bioinformatics Solutions Inc., Waterloo, Canada). The database used was the Homo sapiens protein database downloaded from Uniprot. The search parameters were set as follows: trypsin digestion, precursor mass tolerance of 10 ppm, fragment mass tolerance of 0.05 Da, and a maximum of two missed cleavages. The fixed modification was cysteine carbamidomethylation. The variable modifications included protein N-terminal acetylation (Acetylation (Protein N-term)), asparagine/glutamine deamidation (Deamidation (NQ)), and methionine oxidation (Oxidation (M)).

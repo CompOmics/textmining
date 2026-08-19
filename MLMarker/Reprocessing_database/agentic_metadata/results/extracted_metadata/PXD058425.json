@@ -1,0 +1,485 @@
+{
+  "sample_groups": [
+    {
+      "name": "HEK293 Whole Cell Proteome",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK293",
+          "evidence": "All HEK293 (Invitrogen, R75007) ... used in this study",
+          "ontology_name": "HEK293",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "instruments: Orbitrap Exploris 480",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "The protease LysC was added",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "followed by overnight incubation of trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "addition of chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "100",
+          "evidence": "up to 32% B in 72 min, up to 55% B within 7.0 min and up to 95% solvent B within 2.0 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "filled with 2.7 μm Poroshell EC120 C18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "experiment types: Data-dependent acquisition",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "quantification: Label free",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "gas-phase fractionation",
+        "evidence": "For the Gas-phase fractionated library"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for modifications"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "Knockout of MFN1 and/or MFN2 was performed"
+        },
+        {
+          "value": "gene overexpression",
+          "evidence": "MFN1 KO stably expressing MFN1 or MFN2KO stably expressing MFN2"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "CRISPR-Cas9",
+          "evidence": "double nickase CRISPR-Cas9 strategy"
+        },
+        {
+          "value": "tetracycline",
+          "evidence": "MFN1FLAG expression was induced by tetracycline"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "CRISPR-Cas9 strategy",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "tetracycline",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "HEK293 Interactome",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK293",
+          "evidence": "All HEK293 (Invitrogen, R75007) ... used in this study",
+          "ontology_name": "HEK293",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "instruments: Orbitrap Exploris 480",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "prepared from the eluate, by in-solution digestion",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "addition of chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "100",
+          "evidence": "up to 32% B in 72 min, up to 55% B within 7.0 min and up to 95% solvent B within 2.0 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "filled with 2.7 μm Poroshell EC120 C18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "experiment types: Data-dependent acquisition",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "quantification: Label free",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "immunoprecipitation",
+        "evidence": "FLAG immunoprecipitation was performed"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for modifications"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "gene overexpression",
+          "evidence": "1KO cells stably expressing MFN1FLAG"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "tetracycline",
+          "evidence": "treated with 10 µg/µl of tetracycline"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "tetracycline",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "HeLa Whole Cell Proteome",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "HeLa cells (ATCC, CCL-2) used in this study",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "instruments: Orbitrap Exploris 480",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "The protease LysC was added",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "followed by overnight incubation of trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "addition of chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "100",
+          "evidence": "up to 32% B in 72 min, up to 55% B within 7.0 min and up to 95% solvent B within 2.0 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "filled with 2.7 μm Poroshell EC120 C18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "experiment types: Data-dependent acquisition",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "quantification: Label free",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "gas-phase fractionation",
+        "evidence": "For the Gas-phase fractionated library"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for modifications"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "Knockout of MFN1 and/or MFN2 was performed"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "CRISPR-Cas9",
+          "evidence": "double nickase CRISPR-Cas9 strategy"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "CRISPR-Cas9 strategy",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Primary Human Fibroblasts",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Charcot-Marie-Tooth Type 2 A",
+          "evidence": "3 patients with Charcot-Marie-Tooth Type 2 A"
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [],
+      "fragmentation": [],
+      "enzymes": [],
+      "modifications": [],
+      "collision_energy": [],
+      "gradient_time_min": [],
+      "lc_column": [],
+      "acquisition": [],
+      "labeling": [],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No proteomics analysis described for these samples"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No proteomics analysis described for these samples"
+      },
+      "ionization": [],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    },
+    {
+      "name": "Mouse Cortical Neurons",
+      "organism": [
+        {
+          "value": "Mus musculus",
+          "evidence": "Mus Musculus C57BL/6 N mice",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [],
+      "fragmentation": [],
+      "enzymes": [],
+      "modifications": [],
+      "collision_energy": [],
+      "gradient_time_min": [],
+      "lc_column": [],
+      "acquisition": [],
+      "labeling": [],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No proteomics analysis described for these samples"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No proteomics analysis described for these samples"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "gene overexpression",
+          "evidence": "treated ... with AAV9 viral vectors ... Cre"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "AAV9.CMV.HI.eGFP-Cre.WPRE.SV40",
+          "evidence": "treated ... with AAV9.CMV.HI.eGFP-Cre.WPRE.SV40"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "AAV9 viral vectors",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

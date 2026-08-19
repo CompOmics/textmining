@@ -1,0 +1,132 @@
+{
+  "sample_groups": [
+    {
+      "name": "Human hTERT-RPE1 cells with CAF-1 perturbation",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "chromatin",
+          "evidence": "effects on histone modifications by mass spectrometry"
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "hTERT-RPE1",
+          "evidence": "Human hTERT-RPE1 cells expressing degron-CHAF1A"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 240",
+          "evidence": "Exploris 240 mass spectrometer",
+          "ontology_id": "instruments:0008",
+          "ontology_name": "Orbitrap Exploris 240",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [],
+      "enzymes": [],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "implied by standard proteomics sample preparation",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "35",
+          "evidence": "gradient from 5% B to 25% B ... over 35min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "separated on a C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC peptides (i.e. heavy arginine-labelled peptides)",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "cell cycle enrichment",
+        "evidence": "G1 phase enriched via palbociclib treatment; S/G2 phase enriched via nocodazole"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No specific enrichment method mentioned for histone modifications"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "directly sprayed into a Exploris 240 mass spectrometer",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "addition of dTAGV-1; palbociclib treatment; nocodazole treatment"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "dTAGV-1",
+          "evidence": "Upon addition of dTAGV-1, cells rapidly degrade"
+        },
+        {
+          "value": "palbociclib",
+          "evidence": "G1 phase enriched via palbociclib treatment"
+        },
+        {
+          "value": "nocodazole",
+          "evidence": "S/G2 phase enriched via nocodazole treatment"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "dTAGV-1, palbociclib, nocodazole are small molecules",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

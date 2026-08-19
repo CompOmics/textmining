@@ -1,0 +1,230 @@
+{
+  "sample_groups": [
+    {
+      "name": "Glycocarrier production in HEK293 and CHO cells",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        },
+        {
+          "value": "Canis familiaris",
+          "evidence": "Suspension CHO cells (WT from Sigma-Aldrich no. 85050302)",
+          "ontology_id": "organisms:0016",
+          "ontology_name": "Canis lupus familiaris",
+          "similarity": 0.9402
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK293",
+          "evidence": "Adherent HEK293 cells (WT from ATCC: CRL-1573)",
+          "ontology_name": "HEK293",
+          "similarity": 1.0
+        },
+        {
+          "value": "CHO",
+          "evidence": "Suspension CHO cells (WT from Sigma-Aldrich no. 85050302)"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos",
+          "evidence": "Orbitrap Fusion Lumos MS (ThermoFisher Scientific)",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 1.0
+        },
+        {
+          "value": "Orbitrap Fusion",
+          "evidence": "Orbitrap Fusion Lumos instrument",
+          "ontology_id": "instruments:0005",
+          "ontology_name": "Orbitrap Fusion",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Orbitrap HCD-MS2",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        },
+        {
+          "value": "ETD",
+          "evidence": "ETD-MS2",
+          "ontology_id": "fragmentation:0003",
+          "ontology_name": "ETD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested with MS-grade trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        },
+        {
+          "value": "TEV protease",
+          "evidence": "digested with 2 µg in-house purified TEV protease"
+        },
+        {
+          "value": "PNGase F",
+          "evidence": "incubated with 2 U of PNGase F"
+        },
+        {
+          "value": "Chondroitinase ABC",
+          "evidence": "mixed with 10 mU chondroitinase ABC"
+        },
+        {
+          "value": "Heparinases",
+          "evidence": "heparinases I, II, and III"
+        },
+        {
+          "value": "Neuraminidase",
+          "evidence": "C. perfringens neuraminidase"
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "incubated for 1 h at RT in 20 µL of 100 mM 2-iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "source fragmentation energy 35 V"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "45",
+          "evidence": "eluted in gradients ... in 45 min"
+        },
+        {
+          "value": "25",
+          "evidence": "eluted in gradients from 5 to 30% B in 25 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Reprosil-Pure-AQ C18 phase",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        },
+        {
+          "value": "reverse phase C4",
+          "evidence": "C4-phase"
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "Peptide counting",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "C18 HPLC",
+        "evidence": "separated by C18 HPLC"
+      },
+      "enrichment": {
+        "value": "glycosylation",
+        "method": "Ni-NTA affinity resin",
+        "evidence": "incubated with nickel-nitrilotriacetic acid (Ni-NTA) affinity resin"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoSpray Flex ion source",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "Genetic engineering of HEK293 and CHO cells"
+        },
+        {
+          "value": "gene overexpression",
+          "evidence": "transfected with 30 µg plasmid DNA"
+        },
+        {
+          "value": "gene knockin",
+          "evidence": "site-directed knock-in (KI)"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "gRNA",
+          "evidence": "transfected with 1 µg each of gRNA"
+        },
+        {
+          "value": "Cas9-PBKS",
+          "evidence": "GFP-tagged Cas9-PBKS"
+        },
+        {
+          "value": "ZFN",
+          "evidence": "ZFN tagged with GFP/Crimson"
+        },
+        {
+          "value": "donor plasmid",
+          "evidence": "3 µg donor plasmid"
+        },
+        {
+          "value": "Ac5SiaNAz",
+          "evidence": "100 µM Ac5SiaNAz"
+        },
+        {
+          "value": "Ac5SiaNPOC",
+          "evidence": "Ac5SiaNPOC"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "gRNA and GFP-tagged Cas9-PBKS",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "Ac5SiaNAz or Ac5SiaNPOC",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

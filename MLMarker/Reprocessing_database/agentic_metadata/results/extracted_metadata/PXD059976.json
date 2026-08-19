@@ -1,0 +1,148 @@
+{
+  "sample_groups": [
+    {
+      "name": "PBMC from POAG and Control subjects",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Blood",
+          "evidence": "organism parts: Blood; Blood cell",
+          "ontology_id": "tissues:0049",
+          "ontology_name": "blood",
+          "similarity": 1.0
+        },
+        {
+          "value": "Peripheral blood mononuclear cells",
+          "evidence": "peripheral blood mononuclear cells (PBMC)",
+          "ontology_id": "tissues:0080",
+          "ontology_name": "PBMCs",
+          "similarity": 0.7716
+        }
+      ],
+      "disease": [
+        {
+          "value": "Open-angle glaucoma",
+          "evidence": "diseases: Open-angle glaucoma"
+        },
+        {
+          "value": "healthy",
+          "evidence": "nonglaucomatous controls",
+          "ontology_id": "diseases:0001",
+          "ontology_name": "healthy",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 240",
+          "evidence": "instruments: Orbitrap Exploris 240",
+          "ontology_id": "instruments:0008",
+          "ontology_name": "Orbitrap Exploris 240",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Orbitrap Exploris 240 implies HCD fragmentation",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Lys-C",
+          "evidence": "digested with mass-grade lysil C endopeptidase",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "and then mass-grade trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 10 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "C18 stage-tips",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "Data Independent Acquisition (DIA)",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        },
+        {
+          "value": "DDA",
+          "evidence": "Data Dependent Acquisition (DDA)",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "quantification: label-free quantification",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "Gas Phase Fractionation",
+        "evidence": "generation of an experiment specific DIA library by Gas Phase Fractionation (GPF)"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No phosphopeptide enrichment described; inhibitors used only"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nano ultra-high pressure LC system implies ESI",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

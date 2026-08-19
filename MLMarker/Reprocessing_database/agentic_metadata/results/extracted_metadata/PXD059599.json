@@ -1,0 +1,646 @@
+{
+  "sample_groups": [
+    {
+      "name": "TMT-labelled Peptides (General)",
+      "organism": [
+        {
+          "value": "Human",
+          "evidence": "UniProtKB canonical human protein database",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 0.8253
+        }
+      ],
+      "tissue": [
+        {
+          "value": "K562",
+          "evidence": "Cell line used for lysate preparation"
+        },
+        {
+          "value": "NALM-6",
+          "evidence": "Cell line used for lysate preparation"
+        }
+      ],
+      "disease": [
+        {
+          "value": "Leukemia",
+          "evidence": "K562 (BCR-ABL driven leukaemic cell line) and NALM-6 (B-cell precursor ALL cell line)",
+          "ontology_id": "diseases:0034",
+          "ontology_name": "leukemia",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [
+        {
+          "value": "Whole cell lysate",
+          "evidence": "Cells lysed in HEPES/SDS buffer"
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "K562",
+          "evidence": "20 million cells lysed per condition",
+          "ontology_name": "K-562",
+          "similarity": 1.0
+        },
+        {
+          "value": "NALM-6",
+          "evidence": "20 million cells lysed per condition"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos Tribrid",
+          "evidence": "Mass spectrometer used for data acquisition",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 0.9371
+        },
+        {
+          "value": "Dionex Ultimate 3000 RSLCnano",
+          "evidence": "LC system coupled to MS"
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "Collision-induced dissociation for MS2",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        },
+        {
+          "value": "HCD",
+          "evidence": "High-energy collision-induced dissociation for MS3",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Sequencing-grade trypsin used for digestion",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "Carbamidomethylation (Cysteine)",
+          "evidence": "Static modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 0.9182
+        },
+        {
+          "value": "TMT 18-plex/6-plex labelling (N-terminus, Lysine)",
+          "evidence": "Static modification"
+        },
+        {
+          "value": "Oxidation (Methionine)",
+          "evidence": "Variable modification",
+          "ontology_id": "modifications:0003",
+          "ontology_name": "M-oxidation",
+          "similarity": 0.7932
+        },
+        {
+          "value": "Deamidation",
+          "evidence": "Variable modification",
+          "ontology_id": "modifications:0009",
+          "ontology_name": "N-deamidation",
+          "similarity": 0.9196
+        },
+        {
+          "value": "Phosphorylation (Serine, Threonine, Tyrosine)",
+          "evidence": "Variable modification",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 0.8485
+        },
+        {
+          "value": "N-terminal acetylation",
+          "evidence": "Variable modification",
+          "ontology_id": "modifications:0004",
+          "ontology_name": "N-term acetylation",
+          "similarity": 0.9231
+        },
+        {
+          "value": "Methionine loss",
+          "evidence": "Variable modification"
+        },
+        {
+          "value": "Acetylation with methionine loss",
+          "evidence": "Variable modification"
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35%",
+          "evidence": "CID activation energy for MS2"
+        },
+        {
+          "value": "45%",
+          "evidence": "HCD activation energy for MS3"
+        },
+        {
+          "value": "30%",
+          "evidence": "HCD activation energy for Kinobeads/TAK285 assays"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "190",
+          "evidence": "Analytical gradient duration for BioID/Full proteome"
+        },
+        {
+          "value": "52",
+          "evidence": "Gradient duration for Kinobeads"
+        },
+        {
+          "value": "81",
+          "evidence": "Gradient duration for TAK285 competition assay"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "ReproSil-Pur 120 C18-AQ",
+          "evidence": "In-house packed analytical column (50 cm, 75 µm)",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 0.7215
+        },
+        {
+          "value": "Gemini-NX C18",
+          "evidence": "Commercial column used for fractionation (150 x 2.0 mm)"
+        },
+        {
+          "value": "ReproSil-Gold C18",
+          "evidence": "In-house packed columns for Kinobeads and TAK285",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 0.7806
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        },
+        {
+          "value": "MS3",
+          "evidence": "SPS-MS3 used for TMT quantification"
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMTpro 18-plex",
+          "evidence": "Thermo Fisher Scientific A52045"
+        },
+        {
+          "value": "TMTpro 6-plex",
+          "evidence": "Used for NALM-6 samples"
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "High-pH fractionation on C18 tips",
+        "evidence": "20 mM ammonium formate pH 10 with ACN gradients (16-80%)"
+      },
+      "enrichment": {
+        "value": "C18 desalting",
+        "method": "StageTips and spin-columns",
+        "evidence": "Used for peptide cleanup"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Nanospray Flex Ion Source",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "Kinase Inhibitors",
+          "evidence": "1,570 kinase inhibitors used in screening"
+        },
+        {
+          "value": "SI-3",
+          "evidence": "SRC inhibitor used for LYN degradation study"
+        },
+        {
+          "value": "TAK285",
+          "evidence": "EGFR inhibitor used for BLK degradation study"
+        },
+        {
+          "value": "RI-4",
+          "evidence": "RIPK2 inhibitor used for RIPK2 degradation study"
+        },
+        {
+          "value": "DMSO",
+          "evidence": "Vehicle control"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "SI-3",
+          "evidence": "Compound name"
+        },
+        {
+          "value": "TAK285",
+          "evidence": "Compound name"
+        },
+        {
+          "value": "RI-4",
+          "evidence": "Compound name"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "Kinase Inhibitor",
+          "evidence": "Class of compounds used"
+        }
+      ]
+    },
+    {
+      "name": "Kinobead Profiling",
+      "organism": [
+        {
+          "value": "Human",
+          "evidence": "Cell lines: COLO-205, K562, SK-N-BE(2), MV-4-11, OVCAR-8, Jurkat, MCF7",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 0.8253
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Cell Lysate",
+          "evidence": "Mixtures of cell lysates"
+        }
+      ],
+      "disease": [
+        {
+          "value": "Cancer",
+          "evidence": "Cell lines derived from colorectal, leukemia, neuroblastoma, ovarian, and breast cancers",
+          "ontology_id": "diseases:0002",
+          "ontology_name": "cancer",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [
+        {
+          "value": "Whole cell lysate",
+          "evidence": "Lysed in IGEPAL buffer"
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "COLO-205",
+          "evidence": "Colorectal cancer cell line",
+          "ontology_name": "Colo-205",
+          "similarity": 1.0
+        },
+        {
+          "value": "K562",
+          "evidence": "Leukemia cell line",
+          "ontology_name": "K-562",
+          "similarity": 1.0
+        },
+        {
+          "value": "SK-N-BE(2)",
+          "evidence": "Neuroblastoma cell line",
+          "ontology_name": "SK-N-BE(2)",
+          "similarity": 1.0
+        },
+        {
+          "value": "MV-4-11",
+          "evidence": "Leukemia cell line"
+        },
+        {
+          "value": "OVCAR-8",
+          "evidence": "Ovarian cancer cell line"
+        },
+        {
+          "value": "Jurkat",
+          "evidence": "T-cell leukemia cell line",
+          "ontology_name": "Jurkat",
+          "similarity": 1.0
+        },
+        {
+          "value": "MCF7",
+          "evidence": "Breast cancer cell line",
+          "ontology_name": "MCF-7",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos",
+          "evidence": "Mass spectrometer",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 1.0
+        },
+        {
+          "value": "Dionex Ultimate3000 nano HPLC",
+          "evidence": "LC system"
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "High-energy collision-induced dissociation",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Digestion overnight",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "Carbamidomethylation (Cysteine)",
+          "evidence": "Fixed modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 0.9182
+        },
+        {
+          "value": "Oxidation (Methionine)",
+          "evidence": "Variable modification",
+          "ontology_id": "modifications:0003",
+          "ontology_name": "M-oxidation",
+          "similarity": 0.7932
+        },
+        {
+          "value": "Phosphorylation (Serine, Threonine, Tyrosine)",
+          "evidence": "Variable modification",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 0.8485
+        },
+        {
+          "value": "N-terminal acetylation",
+          "evidence": "Variable modification",
+          "ontology_id": "modifications:0004",
+          "ontology_name": "N-term acetylation",
+          "similarity": 0.9231
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "30%",
+          "evidence": "Normalized collision energy"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "52",
+          "evidence": "Gradient duration"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "Reprosil-Gold C18",
+          "evidence": "In-house packed analytical column (75 µm x 40 cm)",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 0.7806
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "LFQ",
+          "evidence": "Label-free quantification"
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": "None",
+        "evidence": "Direct analysis of desalted peptides"
+      },
+      "enrichment": {
+        "value": "Kinobeads",
+        "method": "Affinity pull-down",
+        "evidence": "Incubation with Kinobeads for 30 min"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Nanospray",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "Kinase Inhibitors",
+          "evidence": "Increasing compound concentrations (DMSO to 30 µM)"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "Various Kinase Inhibitors",
+          "evidence": "Library of compounds"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "Kinase Inhibitor",
+          "evidence": "Class of compounds"
+        }
+      ]
+    },
+    {
+      "name": "TAK285 Competition Assay",
+      "organism": [
+        {
+          "value": "Human",
+          "evidence": "NALM-6 cell line",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 0.8253
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Cell Lysate",
+          "evidence": "NALM-6 lysates"
+        }
+      ],
+      "disease": [
+        {
+          "value": "Leukemia",
+          "evidence": "NALM-6 is a B-cell precursor ALL cell line",
+          "ontology_id": "diseases:0034",
+          "ontology_name": "leukemia",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [
+        {
+          "value": "Whole cell lysate",
+          "evidence": "Lysed in Igepal buffer"
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "NALM-6",
+          "evidence": "Cell line used"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Fusion Lumos",
+          "evidence": "Mass spectrometer"
+        },
+        {
+          "value": "Dionex Ultimate 3000 RSLCnano",
+          "evidence": "LC system"
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "High-energy collision-induced dissociation",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Digestion",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "Carbamidomethylation (Cysteine)",
+          "evidence": "Fixed modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 0.9182
+        },
+        {
+          "value": "Oxidation (Methionine)",
+          "evidence": "Variable modification",
+          "ontology_id": "modifications:0003",
+          "ontology_name": "M-oxidation",
+          "similarity": 0.7932
+        },
+        {
+          "value": "N-terminal acetylation",
+          "evidence": "Variable modification",
+          "ontology_id": "modifications:0004",
+          "ontology_name": "N-term acetylation",
+          "similarity": 0.9231
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "30%",
+          "evidence": "Normalized collision energy"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "81",
+          "evidence": "Gradient duration"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "ReproSil Pur C18-AQ",
+          "evidence": "In-house packed analytical column (500 mm x 75 µm)",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 0.8337
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "LFQ",
+          "evidence": "Label-free quantification"
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": "None",
+        "evidence": "Direct analysis"
+      },
+      "enrichment": {
+        "value": "TAK285 Affinity Matrix",
+        "method": "Competition assay with immobilized TAK285",
+        "evidence": "Incubation with TAK285 affinity matrix"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Nanospray",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "TAK285",
+          "evidence": "Competition with TAK285 at different doses"
+        },
+        {
+          "value": "DMSO",
+          "evidence": "Vehicle control"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "TAK285",
+          "evidence": "Compound name"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "Kinase Inhibitor",
+          "evidence": "Class of compound"
+        }
+      ]
+    }
+  ]
+}

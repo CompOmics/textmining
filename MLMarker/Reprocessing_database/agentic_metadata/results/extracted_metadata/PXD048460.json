@@ -1,0 +1,158 @@
+{
+  "sample_groups": [
+    {
+      "name": "U2OS SILAC Microtubule Proteomics",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "cytosol",
+          "evidence": "selective extraction of cytosolic proteins",
+          "ontology_id": "cell_parts:0003",
+          "ontology_name": "cytoplasm",
+          "similarity": 0.8808
+        },
+        {
+          "value": "microtubule network",
+          "evidence": "leaving behind the microtubule network"
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "U2OS",
+          "evidence": "U2OS cells were cultured",
+          "ontology_name": "U2-OS",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive Plus",
+          "evidence": "instruments: Q Exactive Plus",
+          "ontology_id": "instruments:0014",
+          "ontology_name": "Q Exactive Plus",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "MS2 was acquired... collision energy 28 NCE",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "Peptides were cleaved with 3 μg trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated in 55 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "collision energy 28 NCE"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "100",
+          "evidence": "Total run time was of 100 minutes"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Acclaim PepMap RSLC... peptide separation",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "experiment types: Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "quantification: SILAC",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SDS-PAGE",
+        "evidence": "SDS-PAGE was performed... sample lane was cut into 12 equal slices"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for specific modifications"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoHPLC Ultimate 3000... MS was operated",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "sensitivities to the depolymerising drug nocodazole"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "nocodazole",
+          "evidence": "sensitivities to the depolymerising drug nocodazole"
+        },
+        {
+          "value": "taxol",
+          "evidence": "microtubule stabilising drug, taxol"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "drug nocodazole... drug, taxol",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Early embryonic cell
+instruments: Orbitrap Fusion Lumos
+modifications: acetylated residue; iodoacetamide derivatized residue
+experiment types: Data-independent acquisition
+keywords: Chemical probe; Lip-ms
+
+ABSTRACT:
+Limited proteolysis coupled to mass spectrometry (LiP-MS) is a structural proteomics technique that can be used to identify the targets of small molecules. This is achieved by incubating lysate with the drug of interest, which induces structural changes such as occupation of the binding site or changes and protein-protein interactions. This is followed by a limited proteolysis step in which the unspecific protease proteinase K is added to the treated lysate. The protease preferentially cleaves accessible and flexible regions of the proteins, thus generating peptides that reflect the changes in surface accessibility caused by the treatment with the small molecule. Here we treated CHEK1 Purified from HEK293 cells with the probe Rabusertib and staurosporine to profile structural effects. This project is part of the IMI EUbOPEN project.
+
+PROJECT DESCRIPTION:
+LiP-MS on CHEK1 Purified from HEK293 cells treated with Rabusertib
+
+SAMPLE PROCESSING:
+HEK293 cells that ectopically express pTOSH-CHEK1 were induced with 1.3 mg/ml doxycycline for 24 hours. The cells were harvested at 80% confluence. The cells were lysed in native conditions. To the lysate, 80 µl Strep-tactin beads (IBA Lifesciences) were added, incubated for 1 h. Proteins were eluted with 0.5 mM biotin in LiP-buffer. The total protein concentration of the extract was measured by BCA assay (Thermo) and the enzyme was diluted to add 1:100 enzyme:substrate. We used 50 µl of eluate for each sample. In triplicates, a final concentration of 10 µM of probe, staurosporine, or 2% DMSO was added to the sample for 5 minutes. This was followed by a 5 minute limited proteolysis step in which proteinase K was added. The samples were reduced, alkylated and digested with trypsin in denaturing conditions. The peptides were desalted using a C18 resin and measured using SWATH-MS on a Thermo Orbitrap Fusion Lumos Tribrid mass spectrometer equipped with an Waters Aquity M-Class UPLC System. Peptides were separated using a linear gradient of 3% to 35% acetonitrile in water over the course of 120 minutes. The MS1 spectra were acquired in a scan range of 350-1400 m/z with an Orbitrap resolution of 120000. The normalized AGC target is set to 50% with a maximum injection time of 100 ms. The RF lens was set to 30%. The targeted MS2 spectra are acquired for the desired masses with variable isolation windows listed below and fragmented with a HCD of 28%. The spectra are measured with an Orbitrap resolution of 30000 with variable scan ranges. The AGC target is set to 200% with a maximum injection time of 54 ms. The RF lens was set to 30%.
+
+DATA PROCESSING:
+The raw data was uploaded to the commercial software Spectronaut v. 18. The data was seached using the directDIA pipeline. Factory settings were used, except that the Minor grouping in the Quantification Settings was set to Precursor, and in the Post analysis Settings the Differential abundance grouping was set to Minor group. The data were further analyzed using the R package protti to identify structural changes.

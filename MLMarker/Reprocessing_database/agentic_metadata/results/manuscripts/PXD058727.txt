@@ -1,0 +1,34 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Orbitrap Exploris 480
+modifications: monohydroxylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: label-free quantification
+keywords: Nuclear localization signal; Voltage-gated calcium channels; Cavβ; Plc; Cellular signaling; Nuclear translocation
+
+ABSTRACT:
+Voltage-gated calcium channels (VGCCs) play a crucial role in various cellular processes. These channels consist of different subunits, including the Cavβ subunit. In this study, our focus was to investigate the molecular mechanisms underlying the nuclear trafficking of a specific Cavβ2 splice variant, Cavβ2e, and its potential role in regulating gene expression. Previous reports have demonstrated that electrostatic interactions between positively charged amino acids in the N-terminus of Cavβ2e and negatively charged phospholipids of the plasma membrane facilitate its anchoring to the membrane. Our findings reveal that Cavβ2e can translocate from the plasma membrane to the nucleus upon activation of PLC.  Further analysis identified specific amino acids within the N-terminus of Cavβ2e that are essential for its nuclear targeting, acting as a nuclear localization signal. Mutations in these amino acids resulted in reduced nuclear localization, supporting their involvement in the nuclear translocation of Cavβ2e. We also investigated the presence of a nuclear export signal within Cavβ2e and identified a crucial dileucine motif that is involved in its trafficking between the nucleus and cytosol. Moreover, we studied the function of nuclear Cavβ2e and found that it potentially can regulate gene expression. In conclusion, our study provides insights into the potential regulation of gene expression in native systems through the translocation of Cavβ2e from the plasma membrane to the nucleus upon activation of PLC.
+
+PROJECT DESCRIPTION:
+Cavβ2e translocates from the plasma membrane to the nucleus and potentially regulates gene expression
+
+SAMPLE PROCESSING:
+For mass spectrometry (MS) analysis, two stable Flp-In™ T-REx™-293 lines expressing Cavβ2e-mRFP or Cavβ2e-L9A-mRFP, were used. For MS analysis cell pellets were lysed in urea buffer (7M urea, 2M Thiourea, 50mM Tris, pH 8) in an ultrasonication bath. 10 µg of cell protein (as determined using Bio-Rad Protein Assay Dye Reagent, Bio-Rad Laboratories, USA, Cat# 5000006) were reduced in 10 mM dithiothreitol, alkylated with 15 mM iodoacetamide and digested with trypsin (SERVA Electrophoresis, Heidelberg, Germany) in 1:50 enzyme-to-substrate ratio at 37 °C overnight. The digestion was terminated by the addition of trifluoroacetic acid at a concentration of 0.1%.  200 ng of each cell digest were injected and pre-concentrated using a Vanquish Neo UHPLC system (Thermofisher Scientific, Bremen, Germany) with a trap column (Acclaim PepMap 100, 300 μm × 5 mm, C18, 5 μm, 100 Å). The peptides were then separated on an analytical column (Acclaim PepMap RSLC, 75 μm × 15 cm, nano Viper, C18, 2 μm, 100 Å) at a flow rate of 400 nl/min with the solvent gradient from 1 % B to 21 % B (B: 84 % acetonitrile, 0.1 % FA) for 70 min, with a subsequent increase up to 40% for 25min and washing for 5min with 95% B. The separated peptides were ionized by electrospray ionization (ESI) and subsequently introduced into an Orbitrap Exploris 480 mass spectrometer (Thermofisher Scientific, Bremen, Germany). The capillary temperature was set to 275 °C, the spray voltage to 1550 V and the RF to 50%.  Full MS spectra were acquired in the range from 375 to 1500 m/z with a resolution of 120,000 at 200 m/z (AGC target 250%, maximum injection time 150 ms). The 25 most intense ions (charge state +2 to +7) were selected for fragmentation with high-energy collision-induced dissociation (HCD) employed to generate the MS/MS fragments. The normalized collision energy (NCE) was set at 31. Intensity threshold was set to 1.0e04, dynamic exclusion to 80 s. The fragments were analyzed in an Orbitrap mass analyzer with a 30,000 resolution (isolation window 0.8 m/z, AGC target 150%, maximum injection time 50 ms).
+
+DATA PROCESSING:
+Obtained raw files were analyzed using MaxQuant (v.2.5.1.0, https://maxquant.org/, accessed on 29 October 2024). Spectra were searched against the human reference proteome (UP000005640) of the UniProtKB database (release 2021_11) using the following parameters: enzyme = trypsin, maximum missed cleavages = 2. Methionine oxidation was set as variable modifications; cysteine carbamidomethylation as fixed. Instrument settings were left as default. PSM identification was performed using a reversed decoy-based false discovery rate of 0.01. The minimum number of peptides and razor peptides for protein identification was 1; the minimum number of unique peptides was 0. Protein identification was performed at a protein false discovery rate of 0.01. The “match between runs” option was disabled. Proteins were quantified with MaxQuant label-free quantification (LFQ)], with unique peptides at the minimum ratio count of 2. The “classic” normalization was applied to the LFQs.
+
+SDRF SUMMARY:
+Total runs: 30
+organism: Homo sapiens
+organism part: embryonic kidney
+cell type: embryonic cell (metazoa)
+cell line: Flp-In T-Rex 293
+instrument: Orbitrap Exploris 480
+cleavage agent details: Trypsin
+modification parameters: Carbamidomethyl; Oxidation
+label: label free sample
+dissociation method: collision-induced dissociation
+precursor mass tolerance: 5ppm
+fragment mass tolerance: 0.02 Da

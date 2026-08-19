@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cardiocyte differentiation
+instruments: Orbitrap Exploris 480
+modifications: iodoacetamide derivatized residue
+experiment types: Data-independent acquisition; Bottom-up proteomics
+quantification: label-free quantification
+keywords: Metabolism; Hypoxia; Differentiation; Mitochondria; Ac16 cardiomyocytes
+
+ABSTRACT:
+Cardiovascular diseases are associated with an altered cardiomyocyte metabolism. Due to a shortage of human heart tissue, experimental studies mostly rely on alternative approaches including animal and cell culture models. Since the use of isolated primary cardiomyocytes is limited, immortalized cardiomyocyte cell lines may represent a useful tool as they closely mimic human cardiomyocytes. This study is focused on the AC16 cell line generated from adult human ventricular cardiomyocytes. Despite an increasing number of articles employing AC16 cells, the comprehensive proteomic, bioenergetic and oxygen-sensing characterization of proliferating versus differentiated cells is still lacking. Here, we provide a comparison of these two stages, particularly emphasizing cell metabolism, mitochondrial function, and hypoxic signalling. The label-free quantitative mass spectrometry revealed a decrease in autophagy and cytoplasmic translation in differentiated AC16, confirming their phenotype. Cell differentiation led to the global increase in mitochondrial proteins (e.g. OXPHOS proteins, TFAM, VWA8, etc.) reflected by elevated mitochondrial respiration. Fatty acid oxidation proteins were increased in differentiated cells, while the expression levels of proteins associated with fatty acid synthesis were unchanged, and glycolytic proteins were decreased. There was a profound difference between proliferating and differentiated cells in their response to hypoxia and anoxia/reoxygenation. We conclude that AC16 differentiation leads to proteomic and metabolic shifts and altered cell response to oxygen deprivation. This underscores the requirement for proper selection of particular differentiation state during experimental planning.
+
+PROJECT DESCRIPTION:
+Mitochondrial metabolism and hypoxic signaling in differentiated human cardiomyocyte AC16 cell line
+
+SAMPLE PROCESSING:
+Label-free quantification mass spectrometry analysis (LFQ-MS) of cell pellets was performed in technical triplicates according to the SP4 no glass bead protocol [Solvent Precipitation SP3 (SP4), Anal Chem 2022, PMID: 35848328]. Briefly, cellular pellets (100 µg of protein) were solubilised with SDS (final concentration 1% (w/v)) in 100 mM TEAB (triethylammonium bicarbonate), reduced with TCEP [tris(2-carboxyethyl)phosphine], alkylated with CAA (chloroacetamide), and digested with trypsin (Trypsin Gold, Mass Spectrometry Grade, Promega V5280) over-night at 37°C at 1:50 ratio (trypsin:protein). Samples were desalted on Empore C18 columns, dried in Speedvac and dissolved in 0.1% TFA + 2% acetonitrile. About 500 ng of peptide digests were separated on 25 cm C18 column (Aurora Ultimate TS, Ion Opticks) using 120 min elution gradient (Dionex Ultimate 3000, flowrate 300 nL/min) and analysed in a DIA mode on an Orbitrap Exploris 480 mass spectrometer equipped with a FAIMS unit (Thermo Fisher Scientific) set at CV = -45 V.
+
+DATA PROCESSING:
+DIA MS raw files were processed and visualised in Spectronaut 18.2 (Biognosys) software using the directDIA with the default settings (Precursor and Protein Q-value and PEP cutoff set at 0.01). Proteome fasta sequences file UP000005640_9606.fasta (human, UniProt release 2023_01) was used. Downstream proteomics analysis was performed on the Protein Report using Perseus (version 2.0.11.0), BIOMEX https://www.vibcancer.be/software-tools/biomex and ShinyGO https://bioinformatics.sdstate.edu/go/. The network diagram was modified using Cytoscape (3.10.1) (https://cytoscape.org/). Mitochondrial proteins were cross-referenced with MitoCarta 3.0.

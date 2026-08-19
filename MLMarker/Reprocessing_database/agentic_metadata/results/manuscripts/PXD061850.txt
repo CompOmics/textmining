@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Q Exactive HF
+modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Molecular glue degrader; Cdk12; Ddb1; Cyclin k; Acute myeloid leukemia
+
+ABSTRACT:
+In efforts to identify additional therapeutic targets for Acute Myeloid Leukemia (AML), we performed a high-throughput screen that includes 56 primary specimens tested with 10,000 structurally diverse small molecules. One specific hit, called S656 acts as a molecular glue degrader (MGD), that mediates the CRL4-dependent proteolysis of cyclin K. Structurally, S656 features a moiety that binds to the ATP binding site of cyclin-dependent kinases (CDKs), allowing the recruitment of the CDK12-cyclin K complex, along with a binding site for DDB1 bridging the CRL4 complex. Structure activity relationship studies reveal that minimal modifications to the dimethylaniline moiety of S656 improve its cyclin K MGD function over CDK inhibition by promoting DDB1 engagement. This includes full occupation of the DDB1 pocket, preferably with hydrophobic terminal groups, and cation-π interaction with Arg928. Additionally, we demonstrate that despite structural diversity, cyclin K degraders exhibit similar functional activity in AML which is distinct from direct CDK12 inhibition.
+
+PROJECT DESCRIPTION:
+DDB1 engagement defines the selectivity of S656 analogs for cyclin K degradation over CDK inhibition
+
+SAMPLE PROCESSING:
+Whole proteome was performed as previously described (Moison et al, 2024). We treated 10 million OCI-AML5 cells in triplicate with DMSO or 8 mM S656 for 5 hours. Collected cells were washed in PBS and cell pellets lysed in Triton X-100 buffer (10 mM PIPES pH 7.4, 0.5% Triton X-100, 300 mM Sucrose, 100 mM NaCl, 3 mM MgCl2, 0.5 mM EDTA + protease inhibitors).
+
+DATA PROCESSING:
+Following MS analysis, the data were processed using PEAKS X Pro (Bioinformatics Solutions, Waterloo, ON) and a Uniprot human database (20366 entries) with trypsin as the enzyme. Differential Enrichment analysis of Proteomics data (DEP) package (Zhang et al, 2018) in R was used to analyze the data (excluding proteins identified based on a single peptide), including data filtering, normalization, imputation of missing values and statistical testing of differentially expressed proteins.

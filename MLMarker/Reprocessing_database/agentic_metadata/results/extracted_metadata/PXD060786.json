@@ -1,0 +1,167 @@
+{
+  "sample_groups": [
+    {
+      "name": "HEK293 engineered cell lines",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK293DAX",
+          "evidence": "HEK293DAX and HEK293 Fv2e-PERK cells were previously established"
+        },
+        {
+          "value": "HEK293 Fv2e-PERK",
+          "evidence": "HEK293DAX and HEK293 Fv2e-PERK cells were previously established"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "Exploris480 mass spectrometer (Thermo Fisher)",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "normalized HCD collision energy of 36",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin/Lys-C",
+          "evidence": "Trypsin/Lys-C in a 1:40 protease to protein ratio",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 0.8435
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 20 mM IAA",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "N-term-TMTpro",
+          "evidence": "TMTpro labeling on the N-terminus or lysines"
+        },
+        {
+          "value": "K-TMTpro",
+          "evidence": "TMTpro labeling on the N-terminus or lysines"
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "36 NCE",
+          "evidence": "normalized HCD collision energy of 36"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "130",
+          "evidence": "corresponding 130 min gradient at a flow rate of 500 nl/min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "elute peptides from the first C18 phase to the SCX resin",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        },
+        {
+          "value": "SCX",
+          "evidence": "elute peptides from the first C18 phase to the SCX resin",
+          "ontology_id": "lc_column:0003",
+          "ontology_name": "SCX",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "LC-MS/MS data-dependent analysis was performed",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "TMTPro 18-plex reagent",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "MudPIT",
+        "evidence": "MudPIT columns were made... The sample was fractionated into 11 fractions"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No PTMs are included in the dataset"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "RSLCnano system (Thermo Fisher)",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "incubated with either 10 μM TMP or 1 μg/mL doxycycline"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "TMP",
+          "evidence": "incubated with either 10 μM TMP"
+        },
+        {
+          "value": "doxycycline",
+          "evidence": "or 1 μg/mL doxycycline (DOX)"
+        },
+        {
+          "value": "AP20187",
+          "evidence": "treated with 5 nM of AP20187"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "activated individually with small molecules (trimethoprim (TMP), doxycycline (DOX), AP20187",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

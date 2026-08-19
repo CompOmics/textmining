@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Macrophage; Cell culture; Neoplastic cell
+diseases: Brain glioblastoma multiforme; Brain cancer
+instruments: Orbitrap Exploris 480
+modifications: monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Tumor associated macrophage; Mhc-i restricted peptides; Glioblastoma; Immunopeptidome
+
+ABSTRACT:
+Glioblastoma treatment by immunotherapy is limited by the immunosuppresive tumor microenvironment, in part created by GBM associated macrophages. To uncover targetable MHC-I peptides for targeted immunotherapy, we performed cell type specific immunopeptidome analysis on primary macrophages and GBM tumor cells in a co-culture system to profile antigen presentation at the tumor:macrophage interface. Profiling the MHC-I restricted peptides revealed systematic antigen presentation alteration in both GBM tumors and macrophages during their co-evolution. We selected co-culture induced significantly altered peptides (CIVS peptides) which can serve as potential immunotherapy targets, and developed an mRNA vaccine encoding six selected CIVS peptides from GAMs and GBM tumor cells. Two doses of mRNA vaccination generated antigen specific immune response, significantly delayed GBM tumor growth, and in some cases eradicated tumor, demonstrating the translational potential of CIVS peptides as therapeutic targets for GBM/GAM targeting vaccines.
+
+PROJECT DESCRIPTION:
+Quantitative cell type specific immunopeptidome analysis during macrophage and tumor co-evolution reveals therapeutic MHC-I restricted peptides in glioblastoma
+
+SAMPLE PROCESSING:
+Macrophages and GBM tumor cells after co-culture were separated using CD45 labeled magnetic beads. Each collected cell type was lysed with CHAPs containing lysis buffer and MHC-I complex was enriched with murine anti-H2-Kb and H2-Db antibodies immobilized to ProteinA Sepharose beads. MHC-I associated peptides were eluted from the beads using 10% acetic acid, and separated using size exclusion filters. Samples were lyophilized, TMT labeled and fractionated using homemade fractionation column. Mass spectrometry data was acquired on Orbitrap Exploris 480 mass spectrometer (Thermo Scientific) coupled with an UltiMate 3000 RSLC Nano LC system (Dionex), Nanospray Flex ion source (Thermo Scientific), and column oven heater (Sonation)in data dependent acquisition mode.
+
+DATA PROCESSING:
+All mass spectra from DDA MS were analyzed with Proteome Discoverer (PD, version 3.0), searched using Sequest against the mouse database (v2022-06-14), and rescored using INFERYS. No enzyme was used, variable modifications included oxidized methionine for all analyses, and static modifications included Carbamidomethyl, TMTpro on Lysine and N-terminus. All analyses were filtered with the following criteria: search engine rank = 1, length between 8 and 12 amino acids, q value ≤ 0.05.

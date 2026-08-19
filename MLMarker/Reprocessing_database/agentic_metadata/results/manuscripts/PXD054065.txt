@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Bone marrow
+instruments: Orbitrap Astral
+modifications: No PTMs are included in the dataset
+experiment types: Data-independent acquisition
+keywords: Extracellular vesicles (ev); Cross-slot chip; 3d; 2d; Hmsc; Starvation
+
+ABSTRACT:
+Comparison between extracellular vesicles produced from 2D-cultured human Mesenchymal Stem Cells (hMSC) in starvation, and extracellular vesicles produced from spheroids of hMSC hydrodynamically stimulated in a cross-slot millifluidic chip.
+
+PROJECT DESCRIPTION:
+Human - hMSC Extracellular vesicles produced by starvation (2D) VS in cross-slot chip (3D)
+
+SAMPLE PROCESSING:
+EV conditioned media (EV CM) were collected after production in both conditions, and centrifuged at 2000g for 10 minutes to remove cells and cell debris. EV CM were then concentrated using 100 kDa cut-off centrifugal filters (Sigma, Centricon Plus-70 100 kDa, UFC710008), purified by size exclusion chromatography (Izon Sciences, qEVoriginal/70nm Gen2 SEC columns, ICO-70), and concentrated again using 10kDa cut-off centrifugal filters (Millipore, Amicon Ultra-4, UFC8010) to obtain purified EV pools. 5µg protein pellets from EV pools were then dried under vacuum (Savant Centrifuge SpeedVac concentrator, Thermo Fisher Scientific). Dry pellets were solubilized and reduced successively in 10 µL 8 M urea, 100 mM ammonium bicarbonate, 5 mM dithiothreitol, pH 8.0 at 57 °C for 1 h. The protein mixture was then cooled to room temperature followed by the addition of iodoacetamide to 10 mM. The alkylation of the cysteine residues was continued in the dark for 30 min at room temperature. After diluting to 1 M urea with 100 mM ammonium bicarbonate pH 8.0, samples were trypsine/LysC (1 µg, Promega) digested in a total volume of 100 µL by vortexing at 37 °C overnight. Samples were then loaded onto homemade C18 StageTips for desalting. Peptides were eluted using 40/60 CH3CN/H2O + 0.1% formic acid and vacuum concentrated to dryness. Five independent biological replicates of each sample were analyzed.
+
+DATA PROCESSING:
+For identification, the data were searched against the Homo sapiens (UP000005640) Uniprot database using Pulsar search engine through Spectronaut v19 (Biognosys) by directDIA+ analysis using default search settings. Enzyme specificity was set to trypsin and a maximum of two missed cleavage sites was allowed.  Carbamidomethyl was set as a fixed modification and N-terminal acetylation and oxidation of methionine as variable modifications. The resulting files were further processed using myProMS v3.10. https://github.com/bioinfo-pf-curie/myproms [PMID: 1761030] For protein quantification, ion XICs (sum of fragment peak areas) from proteotypic peptides shared between compared conditions (TopN matching) were used, with missed cleavages and carbamidomethylation allowed. Median and scale normalization at peptide level was applied on the total signal to correct the XICs for each biological replicate (N = 5). To evaluate the statistical significance of the change in protein abundance, a linear model (adjusted on peptides and biological replicates) was performed, and a two-sided T-test was applied on the fold change estimated by the model. The p-values were then adjusted using the Benjamini–Hochberg FDR procedure. LFQ quantification was also performed following the algorithm, as described [PMID: 24942700], with the minimum number of peptide ratios set to 2 and the large ratios stabilization feature.

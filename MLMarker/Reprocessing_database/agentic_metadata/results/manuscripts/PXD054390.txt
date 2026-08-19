@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Lung
+instruments: Orbitrap Fusion
+modifications: monohydroxylated residue; acetylated residue; iodoacetic acid derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Human lung cancer global proteome
+
+ABSTRACT:
+We present data of global proteomes for non-small cell lung cancer for squamous cell and adenocarcinoma, and for normal adjacent tissue.
+
+PROJECT DESCRIPTION:
+Non-small cell lung cancer global proteomics
+
+SAMPLE PROCESSING:
+Tryptic peptides were reconstituted in 0.1% formic acid and applied to an Orbitrap Fusion Tribrid Mass Spectrometer with a nano-electrospray ion source as previously described. Peptides were eluted with a linear gradient of 3-8% buffer B (Acetonitrile and 0.1% Formic acid) at a flow rate of 300 nL/min over 5 minutes and then from 8-30% over a further 192 minutes. Full scans were acquired in the Orbitrap analyser using the Top Speed data dependent mode, preforming a MS scan every 3 second cycle, followed by higher energy collision-induced dissociation (HCD) MS/MS scans. MS spectra were acquired at resolution of 120,000 at 300-1,500 m/z, RF lens 60% and an automatic gain control (AGC) ion target value of 4.0e5 for a maximum of 100 ms and an exclusion duration of 40s. MS/MS data were collected in the Ion trap using a fixed collision energy of 32% with a first mass of 110 and AGC ion target of 5.0e3 for a maximum of 100ms.
+
+DATA PROCESSING:
+Raw data files were analysed using PEAKS Studio 10.6 build 20201221.  Parent ion tolerance was set to 10ppm and fragment ion tolerance set to 0.6Da, and searched against the searched against a Uniprot database (20,348, 2020-04). Fixed carbamidomethylation, variable N-terminal acetylation and oxidation of methionine were specified. Variable modifications were set for N-term Acetylation (42.01 Da), Methionine oxidation (15.99 Da), fixed carboxyamidomethylation modification (57.02 Da) of cysteine was specified.  A maximum of three variable modifications per peptide were set. The false discovery rate (FDR) was estimated with decoy-fusion database searches and were filtered to 1% FDR.

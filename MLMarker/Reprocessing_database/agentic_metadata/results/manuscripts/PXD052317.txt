@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: LTQ Orbitrap Elite; Q Exactive
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+keywords: Pp1; Holoenzyme; Ppp1r2
+
+ABSTRACT:
+Protein Ser/Thr phosphatase PP1 is always associated with one or two regulatory subunits or RIPPOs. One of the earliest evolved RIPPOs is PPP1R2, also known as Inhibitor-2. Since its discovery nearly 5 decades ago, PPP1R2 has been variously described as an inhibitor, activator or (metal) chaperone of PP1, but it is still unknown how PPP1R2 affects the function of PP1 in intact cells. Here, using newly developed research tools, we demonstrate that PPP1R2 stabilizes a subgroup of PP1 holoenzymes, exemplified by PP1:RepoMan, thereby promoting the dephosphorylation of their substrates. Mechanistically, the recruitment of PPP1R2 disrupts the inhibitory, fuzzy interaction between the C-terminal tail and catalytic domain of PP1, and generates an additional C-terminal RepoMan-interaction site. The resulting holoenzyme is further stabilized by a direct PPP1R2:RepoMan interaction, which renders it refractory to competitive disruption by RIPPOs that do not interact with PPP1R2. Our data demonstrate that PPP1R2 modulates the function of PP1 by altering the balance between holoenzymes through stabilisation of specific subunit interactions.
+
+PROJECT DESCRIPTION:
+PPP1R2 (Inhibitor 2) stimulates protein phosphatase PP1 through stabilisation of dynamic subunit interactions
+
+SAMPLE PROCESSING:
+For PP1 and R2 interactomics, traps were processed as described by Cokelaere et al. (2023). PP1 interactomics: M1-M3=GFP-B-GAL; M4-M6=GFP-PP1-WT; M7-M9=GFP-PP1-deltaC; M10-M12=GFP-PP1-4xPR. R2 interactomics: S5_total=parental + nocodazole; S6_total=parental + 4h release from nocodazole; S7_total= R2 degron + nocodazole; S8_total=R2 degron + 4h release from nocodazole.
+
+DATA PROCESSING:
+Peptides were identiﬁed by Mascot (Matrix Science) through Proteome Discoverer (PD) 2.2 (Thermo Fisher) using the Uniprot Homo sapiens database (204,906 entries) and validated using the PD Percolator node (q<0.01). Progenesis (Nonlinear Dynamics) was used for relative quantification of peptides and only unique peptides were taken into account.  For PP1 interactomics, proteins were considered as PP1 interactors if their prevalence (= protein abundance divided by total feature abundance w/o bait) was significantly (2-sided t-test, p<0.05) different in the PP1-WT, PP1-4xPR and PP1-ΔC conditions versus the β-Galactosidase control condition. Proteins were considered to be differential interactors between different PP1-WT, PP1-4xPR and PP1-ΔC conditions if their normalized abundance (=abundance divided by PP1 abundance only taking into account peptides that are common between PP1-WT, PP1-4xPR and PP1-ΔC) was significantly (2-sided t-test, P<0.05) different between the conditions. T-tests using log2 of described metrics were executed by Qlucore software.  For R2 interactomics, proteins were considered as R2 interactors if their prevalence (= protein abundance divided by total feature abundance w/o bait) displayed a fold-change higher than 2 versus the PTN-control condition. The normalized abundance is the abundance of the specific protein divided by the R2 abundance. Keratin proteins were removed from the dataset.

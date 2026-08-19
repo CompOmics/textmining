@@ -1,0 +1,217 @@
+{
+  "sample_groups": [
+    {
+      "name": "HEK293 cell line proximity labeling",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "mitochondrial matrix",
+          "evidence": "mitochondrial matrix proteome via APEX2",
+          "ontology_id": "cell_parts:0001",
+          "ontology_name": "mitochondria",
+          "similarity": 0.8776
+        },
+        {
+          "value": "inner mitochondrial space",
+          "evidence": "SCO1-APEX2 targets the IMS",
+          "ontology_id": "cell_parts:0001",
+          "ontology_name": "mitochondria",
+          "similarity": 0.7618
+        },
+        {
+          "value": "processing body",
+          "evidence": "profile the PB proteome"
+        },
+        {
+          "value": "cytosol",
+          "evidence": "cytosolic APEX2-NES or TurboID-NES",
+          "ontology_id": "cell_parts:0003",
+          "ontology_name": "cytoplasm",
+          "similarity": 0.8808
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "HEK293",
+          "evidence": "HEK293 was obtained from ATCC",
+          "ontology_name": "HEK293",
+          "similarity": 1.0
+        },
+        {
+          "value": "HEK293 Flip-in T-rex",
+          "evidence": "HEK293 Flip-in T-rex was obtained from Thermo Fisher"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos",
+          "evidence": "instruments: Orbitrap Fusion Lumos",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Higher-energy collisional dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "digested with trypsin overnight",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "fixed carbaminomethylation on cysteine",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "30 NCE",
+          "evidence": "30% collision energy"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "120",
+          "evidence": "2 h with a linear gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "3 µm Jupiter C18 particles",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification (LFQ)",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "streptavidin enrichment",
+        "evidence": "biotinylated peptides are enriched with straptavidin"
+      },
+      "enrichment": {
+        "value": "biotinylation",
+        "method": "streptavidin",
+        "evidence": "biotinylated peptides are enriched with straptavidin"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nanoelectrospray ion source",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene overexpression",
+          "evidence": "stably expressed cell line"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "induced by 5 ng/mL doxycycline"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "containing 250 µM desthiobiotin-phenol or biotin-phenol"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "added 1 mM H2O2"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "doxycycline",
+          "evidence": "induced by 5 ng/mL doxycycline"
+        },
+        {
+          "value": "desthiobiotin-phenol",
+          "evidence": "250 µM desthiobiotin-phenol"
+        },
+        {
+          "value": "biotin-phenol",
+          "evidence": "biotin-phenol"
+        },
+        {
+          "value": "H2O2",
+          "evidence": "1 mM H2O2"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "stably expressed cell line",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "doxycycline",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "desthiobiotin-phenol",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "H2O2",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

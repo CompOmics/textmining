@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Macrophage; Cell culture
+diseases: Disease free
+instruments: Orbitrap Fusion Lumos
+modifications: No PTMs are included in the dataset
+experiment types: Data-independent acquisition
+quantification: Relative quantification
+keywords: Innate immunity; Signalling pathways; Phosphoproteomics; Pyroptosis; Inflammasomes
+
+ABSTRACT:
+Innate immune signaling relies on phosphorylation cascades for effective responses. While TLR4 stimulation has been well-studied, research on signaling after inflammasome triggers like nigericin is limited. We performed time-resolved phosphoproteomic profiling to explore kinase signaling downstream of nigericin and discovered rapid changes in phosphorylation, particularly involving immune and MAPK pathways. Notably, we identified fluxes in PKC signaling and calcium-responsive proteins, along with phospho-modified metabolic pathways, indicating a role in immunometabolic regulation. Additionally, significant changes in DNA reorganization and damage response proteins linked to pyknosis were observed. Temporal clustering of phospho-dynamics revealed new shifts in signaling cascades after nigericin treatment, underscoring changes in cellular behavior related to inflammatory events
+
+PROJECT DESCRIPTION:
+Nigericin-Triggered Phosphodynamics in Inflammasome Formation and Pyroptosis
+
+SAMPLE PROCESSING:
+Cells were cultured in 15 cm suspension plates at a density of 2 x 10^6 cells/mL in 5% FBS. After refreshing the medium, PMA was added at 20 ng/mL for 2 days in 6-well plates. A total of four independent replicates, with 6 x 10^6 cells pooled from three wells each, were prepared, along with controls to account for sample drift. Fresh medium was added to samples treated with 200 nM KLA for 18 h, and 10 µM nigericin was added for indicated times (15, 30, 60, 120, 180 mins). Cells were washed in ice-cold PBS and lysed in 200 µL of 8M Urea 50 mM ammonium bicarbonate (ABC) buffer with protease inhibitors. Lysates were sonicated and clarified by centrifugation. Protein concentration was determined using the BCA assay. Protein lysates were reduced (TCEP) and alkylated (CAM) and then trypsin digested for 18 hrs. the peptide samples were then desalted using C18 spin columns. 50 ug of digested desalted peptides was taken for global proteome analysis. For phosphor samples, a two-step Tio2 and FeNTA enrichment was done to enrich the phosphoproteome samples. The enriched fractions was pooled together and 1 ug of the enriched fraction was loaded on the MS instrument
+
+DATA PROCESSING:
+The MS-run raw files for both global and phosphoproteome samples were analyzed in Proteome Discoverer 3.1. Chimerys search engine was used. Data base search was done against Homo sapiens. Data was analyzed with Proteome Discoverer (PD) normalized values, abundance ratio calculations, and statistical significance testing of protein abundances between conditions (Nigericin/KLA). KLA primed for 18 h (KLA ) and then Nigericin treated (15, 30, 60, 120, 180 mins) was normalized against untreated U937 cells to account for base shift. Total ion current (TIC) normalization (PD values) was used to correct technical variability, ensuring comparability across replicates. For statistical comparisons, PD applied two-sample t-tests (for pairwise conditions), calculating p-values and applying the Benjamini-Hochberg adjustment to control the false discovery rate, resulting in q-values/AdjP Values (adjusted P-values). When missing abundance data were seen in the label-free quantification data (LFQ), a criteria was set for at least two out of four values (for both controls and samples respectively) should be present before imputing the missing value (in R through KNN imputation).  We employed post-processing imputation steps outside PD to address this to ensure more robust and interpretable statistical analyses.

@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Orbitrap Eclipse
+modifications: TMT6plex-126 reporter+balance reagent acylated residue
+experiment types: SRM/MRM; Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Isobaric labeling; Intelligent data acquisition; Macroautophagy; Targeted proteomics; Chromatography; Instrument api; Quantitative mass spectrometry; Real-time search; Pathway proteomics; Tandem mass tags
+
+ABSTRACT:
+GoDig, a platform for targeted pathway proteomics without the need for manual assay scheduling or synthetic standards, is a powerful, flexible, and easy-to-use method that uses tandem mass tags (TMT) to increase sample throughput up to 18-fold relative to label-free methods. Though the protein-level success rates of GoDig are high, the peptide-level success rates are more limited, hampering assays of harder-to-quantify proteins and site-specific phenomena. To guide the optimization of GoDig assays as well as improvements to the GoDig platform, we created GoDigViewer, a new stand-alone software that provides detailed visualizations of GoDig runs. GoDigViewer guided the implementation of “priming runs,” an acquisition mode with significantly higher success rates. In this mode, two or more chromatographic priming runs are automatically performed to improve the accuracy and precision of target elution orders, followed by analytical runs which quantify targets. Using priming runs, success rates exceeded 97% for a list of 400 peptide targets and 95% for a list of 200 targets that are usually not quantified using untargeted mass spectrometry. We used priming runs to establish a quantitative assay of 125 macroautophagy proteins that had a >95% success rate and revealed differences in macroautophagy expression profiles across four human cell lines.
+
+PROJECT DESCRIPTION:
+Inserting Pre-Analytical Chromatographic Priming Runs Significantly Improves Targeted Pathway Proteomics With Sample Multiplexing
+
+SAMPLE PROCESSING:
+The 4-cell-line TMTpro 16plex sample was prepared as follows. Human RPE1 (#CRL-4000), U2OS (#HTB-96), HCT116 (#CCL-247) and HEK293T (#CRL-3216) cells were purchased from American Type Culture Collection and grown in DMEM supplemented with 10% fetal bovine serum and 1% penicillin/streptomycin until 80% confluent. Cells were washed twice with ice cold PBS, pelleted, and stored at -80 °C until use. Cell pellets were lysed, and protein was precipitated, reduced, alkylated, digested, labeled with TMTpro reagents, combined, and cleaned as described previously.
+
+DATA PROCESSING:
+Untargeted data were searched using a comet-based in-house pipeline. Cysteine carbamidomethylation and TMT labeling of peptide N-termini and K were set as static modifications and M oxidation was used as a variable modification. The precursor m/z tolerance was 50 ppm. The fragment m/z tolerance was 1.0005 Th for ion trap MS2 and 0.02 Th for orbitrap MS2. Peptide-spectrum matches were adjusted to a 1% false discovery rate (FDR) using a linear discriminant analysis and then assembled further to a final protein-level FDR of 1%.  Precursors (charge state-specific peptide ions) and proteins/genes were counted as being quantified only if the sum of TMT peak signal-to-noise ratios exceeded 160. GoDig data were analyzed with GoDig version 1.2.1.34850 and GoDigViewer version 1.0.0.

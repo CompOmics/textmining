@@ -1,0 +1,18 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+instruments: Orbitrap Fusion Lumos
+modifications: monohydroxylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Emrbyo; Sprtn; Dpc
+
+ABSTRACT:
+DNA-protein crosslinks (DPCs) are severe DNA lesions that disrupt replication, transcription, and genome stability. However, their role in development and aging remains poorly understood. Here, we show that impaired SPRTN function, a metalloprotease essential for DPC repair during replication and mitosis, leads to DNA damage, mitotic abnormalities, and activation of the immune system. Notably, micronuclei formed upon SPRTN deficiency frequently contain DPCs, exhibit nuclear envelope rupture, and accumulate unrepaired DNA, thereby facilitating activation of the cGAS-STING pathway. Using a Sprtn knock-in mouse model of Ruijs Aalfs progeria syndrome, we demonstrate that chronic cGas-Sting activation drives inflammation, innate immune responses, and embryonic lethality. Surviving mice display a continuum of aging phenotypes from embryogenesis into adulthood. Genetic or pharmacological inhibition of cGas-Sting rescues embryonic viability and ameliorates progeroid features, linking DPC-induced innate immune activation to lifespan defects. Our findings uncover a previously unrecognized role for DPCs in coupling early developmental failure to premature aging.
+
+PROJECT DESCRIPTION:
+DNA-Protein Crosslinks Promote cGAS-STING-driven Premature Aging and Embryonic Lethality
+
+SAMPLE PROCESSING:
+Isolated micronuclei were lysed in SDS buffer and concentrated using SP3 beads. Further, proteins were digested using LysC and Trypsin. Digested peptides were cleaned up using Sep-Pak followed by TMTpro labelling. Further TMTpro mix was fractionated and 24 fractions were run on an Orbitrap Lumos coupled to an easy nLC 1200.
+
+DATA PROCESSING:
+MS raw data were analyzed using FragPipe v21.1, with MSFragger v.4.0 (PMID: 28394336) and Philosopher v.5.1.0 (PMID: 32669682). The built-in workflows “TMT16-MS3” were used with a precursor mass tolerance of 20 ppm and fragment mass tolerance of 20 ppm. The mouse proteome database used by FP (ID: UP000000589, 16/07/2025) comprised of 17352 reviewed sequences only and their corresponding decoys, including common contaminant proteins.

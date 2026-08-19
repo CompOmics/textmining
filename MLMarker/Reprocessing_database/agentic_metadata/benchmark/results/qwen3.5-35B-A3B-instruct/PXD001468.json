@@ -1,0 +1,252 @@
+{
+  "sample_groups": [
+    {
+      "name": "HEK293 cells",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "Human HEK293 cell protein extraction",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK293",
+          "evidence": "HEK293 cells were cultured in DMEM media",
+          "ontology_name": "HEK293",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q-Exactive Orbitrap",
+          "evidence": "Basic pH reverse phase fractions from HEK293 cells were analyzed on a Q-Exactive Orbitrap",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "selected for isolation and fragmentation by HCD",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Lys-C",
+          "evidence": "digested overnight at room temperature with Lys-C",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        },
+        {
+          "value": "trypsin",
+          "evidence": "followed by dilution to 1.5M urea and 4 hour digestion with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylation with 10 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "25 NCE",
+          "evidence": "Normalized collision energies were set to 25%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "180",
+          "evidence": "Peptides were separated using a 3 hr gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Maccel C18AQ resin",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "top 20 most abundant ions were selected for isolation",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "No labeling method described; standard shotgun proteomics",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "basic pH reverse phase",
+        "evidence": "HEK293 cell peptides were separated by basic pH reverse phase fractionation"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for sample preparation"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "LC-ESI-MS/MS",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    },
+    {
+      "name": "Mouse brain",
+      "organism": [
+        {
+          "value": "Mus musculus",
+          "evidence": "The mice used in these experiments included a Mus Musculus cross",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Brain",
+          "evidence": "Mouse brain was homogenized",
+          "ontology_id": "tissues:0001",
+          "ontology_name": "brain",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "LTQ Orbitrap Elite",
+          "evidence": "analyzed by LC-ESI-MS/MS on a hybrid dual-pressure linear ion trap/orbitrap mass spectrometer (LTQ Orbitrap Elite)",
+          "ontology_id": "instruments:0002",
+          "ontology_name": "LTQ Orbitrap Elite",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "selected for isolation and fragmentation by HCD-MS2",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Lys-C",
+          "evidence": "Mouse tissue protein pellets were digested with Lys-C",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylation with 10 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "Normalized collision energies were set to 35%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "180",
+          "evidence": "Peptides were separated using a 3 hr gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Maccel C18AQ resin",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "top 10 most abundant ions were selected for isolation",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "No labeling method described; standard shotgun proteomics",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "Mouse whole brain lysate peptides were analysed directly"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for sample preparation"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "LC-ESI-MS/MS",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

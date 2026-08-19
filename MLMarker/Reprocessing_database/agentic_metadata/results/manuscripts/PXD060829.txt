@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: Q Exactive HF
+modifications: phosphorylated residue
+experiment types: Data-independent acquisition; Bottom-up proteomics
+quantification: Relative quantification
+keywords: Lc-msms; Human; Phosphatase; Phosphoproteomics; Signaling
+
+ABSTRACT:
+In this project we performed data-independent acquisition mass spectrometry (DIA-MS) to study the regulation of phosphosites by protein phosphatases.  In in vivo (in cellulo) and in vitro experiments were performed.
+
+PROJECT DESCRIPTION:
+Combination of in vivo and in vitro phosphoproteomics determines the PP2A target repertoire on proteome scale
+
+SAMPLE PROCESSING:
+For in vivo and in vitro phosphoproteome samples, lysates or proteins on beads respectively were reduced with 1 mM DTT for 20 min, alkylated with 5.5 mM iodoacetamide (IAA) and digested with 1:100 Lys-C (Merck, US1324796) for 4h at room temperature on a rotor. After dilution of urea concentration to 1M with 50 mM Tris-HCl pH 8, samples were digested with 1:100 trypsin (Promega, V5113) overnight. Peptides were purified by HR-X SPE columns (Macherey-Nagel, MANA730934P45): washing with 0.1 % formic acid in deionized water, elution in 80 % acetonitrile and 0.1 % formic acid in deionized water. Eluates were frozen in liquid nitrogen and lyophilized overnight. Samples were resuspended in 200 μL 80 % acetonitrile with 0.1 % trifluoroacetic acid in deionized water for phosphopeptides enrichment using Fe(III)-NTA cartridges (Agilent, Post et al, J. Proteome Res. 2017, 16, 2, 728–737 ). Flowthrough for non-phosphopeptides analyses and phosphopeptides enriched samples were lyophilized overnight and stored at -80 °C. Non phosphopeptides were desalted by STAGE tips, all samples were resuspended in 20 μL 0.1 % formic acid for LC-MS/MS analysis.
+
+DATA PROCESSING:
+The MS raw files were analyzed using Spectronaut software version 19 and directDIA workflow against a UniProt full length Homo sapiens database (January 2022) and common contaminants, such as keratins, as reference. Carbamidomethylcysteine was set as fix modification and protein amino terminal acetylation, methionine oxidation and serine-, threonine- and tyrosine phosphorylation were set as variable modifications. Peptide, site and protein FDR were set to 0.01, minimum peptide length was set to 7, a maximum of two missed cleavages were allowed using trypsin/P as enzyme specificity. Cross- Run normalization and imputation were deselected, for PTM consolidation the linear model was chosen. Each set of experimental conditions was analyzed in separate Spectronaut workflows. To avoid mismatching, the replicates in different conditions were searched separately.

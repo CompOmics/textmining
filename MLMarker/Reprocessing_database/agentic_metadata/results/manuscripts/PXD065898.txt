@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Mammary gland epithelial cell
+diseases: Breast cancer
+instruments: Orbitrap Exploris 480
+modifications: monohydroxylated residue; deamidated residue; iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: Label free
+keywords: Stemness; luminal breast cancer; Lc-msms; Er+; Breast cancer; p53; Exploris 480
+
+ABSTRACT:
+Breast cancer is one of the most commonly diagnosed cancers among women and the leading cause of death in women under 50. The majority of breast cancers are estrogen receptor α-positive (ER+) and are most commonly treated with hormonal therapy that inhibits ER activity, such as tamoxifen. The TP53 tumor suppressor gene, encoding the p53 protein, is the most frequently mutated gene in breast cancer, and TP53 mutations are associated with diminished tamoxifen response and worse prognosis for breast cancer patients. Here, we report that in breast cancer cells p53 and ER cooperate to regulate the expression of a set of genes encoding chromatin modifiers. The net result is a global increase in H3K4me3 and decrease in H3K9me3 chromatin marks. The resultant “open” chromatin is associated with increased transcription of luminal cell identity genes and enhanced tamoxifen sensitivity. Conversely, diminished p53 control of these chromatin modulators is associated with the evolution of tamoxifen resistance and cancer stem cell properties.
+
+PROJECT DESCRIPTION:
+P53 orchestrates an epigenetic program that restricts stemness and maintains differentiated luminal identity in breast cancer
+
+SAMPLE PROCESSING:
+For mass spectrometry, peptide mixtures were prepared and measured as previously described [01], with the following exceptions. For #717, the peptides were reconstituted in 0.1% formic acid and 10% of total digest was loaded on the Evotip Pure™ (Evosep). Peptide mixtures were analyzed by nanoLC-MS/MS on an Orbitrap Exploris 480 Mass Spectrometer equipped with an Evosep One LC system. Peptides were separated using the pre-programmed gradient (Extended method, 88 min gradient) on an EV1137 (Evosep) column with an EV1086 (Evosep) emitter.
+
+DATA PROCESSING:
+Raw data were analyzed by MaxQuant (version 2.2.0.0) [02] using standard settings for label-free quantitation (LFQ). MS/MS data were searched against the Swissprot Human database (20,398 entries, release 2022_08) complemented with a list of common contaminants and concatenated with the reversed version of all sequences. The maximum allowed mass tolerance was 4.5ppm in the main search and 0.5Da for fragment ion masses. False discovery rates for peptide and protein identification were set to 1%. Trypsin/P was chosen as cleavage specificity allowing two missed cleavages. Carbamidomethylation was set as a fixed modification, while oxidation and deamidation were used as variable modifications. LFQ intensities were Log2-transformed in Perseus (version 2.0.7.0), after which proteins were filtered for at least 75% valid values in at least one sample group. Missing values were replaced by imputation based on a normal distribution (width: 0.3 and downshift: 1.8). Differentially expressed proteins were determined using a Student's t-test (minimal threshold: FDR: 5% and S0: 0.8 ).

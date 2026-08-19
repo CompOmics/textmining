@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Sperm; Testis
+instruments: Orbitrap Fusion Lumos
+modifications: No PTMs are included in the dataset
+experiment types: Shotgun proteomics
+keywords: Seminal plasma; Glycoproteomics; Glycan structures; Mass spectrometry; Intact glycopeptides
+
+ABSTRACT:
+This study is aimed to comprehensively and globally characterize seminal plasma glycoproteins in a site-specific manner with information of N-glycosites and corresponding glycan structures, as well as glycan isomers using mass spectrometry. Furthermore, the function of specific glycan structures is introduced during human reproduction. In addition, site-specific glycoproteins are compared precisely to explored the sub-glycan structure regulation of glycoprotein in human seminal plasma and spermatozoa.
+
+PROJECT DESCRIPTION:
+Precision structural interpretation of site-specific N-glycans in seminal plasma
+
+SAMPLE PROCESSING:
+Seminal plasma proteins are extracted and digested by trypsin, then IGPs are harvested after C18 desalination and hydrophilic cotton columns enrichment. The IGPs are then fractionated, subjected to LC−MS/MS analysis and followed by IGP identiﬁcation using StrucGP
+
+DATA PROCESSING:
+The “Raw” format LC−MS/MS data of IGPs were was first converted to “mzML” format by Trans-Proteomic Pipeline (TPP, v5.0.0) and analyzed by our recently developed software StrucGP. The built-in glycan branch structure database from StrucGP and the UniProtKB of human protein databases (downloaded from http://www.uniprot.org May 2020) were was used for the analysis. The protein enzymatic digestion was set as trypsin with max 2 missed cleavage sites and potential glycosite-containing peptides were screened with the N-X-S/T motif (X is any amino acid except Proline). The carbamidomethylation (C, +57.0215 Da) was as a fixed modification, and oxidization (M, +15.9949 Da) as a dynamic modification. The mass tolerances for MS1 and MS2 were set at 10 ppm and 20 ppm, respectively. For the Y ions determination, an optional mass shift of ±1 Da or ±2 Da was allowed in addition to the 20 ppm mass tolerance in MS2. Finally, FDR evaluation of peptides and glycans (FDR<1%) was determined by a decoy database and a decoy spectrum, respectively

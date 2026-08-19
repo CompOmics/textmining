@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Embryonic stem cell
+instruments: Orbitrap Eclipse
+modifications: monohydroxylated residue; TMT6plex-126 reporter+balance reagent acylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Mouse; Transposable elements; Tmt; Embryonic stem cells; Lc-ms/ms
+
+ABSTRACT:
+In mouse embryonic stem cells, the regulators of transposable elements are not well known. Here, we studied the proteins regulating mammalian-wide interspersed repeat (MIR), a short-interspersed nuclear elements (SINE) family using the CAPTURE2.0 system. We generated cell lines expressing biotinylated dCas9 protein and MIR-targeting sgRNAs, performed biotin pulldown to isolate MIR-associated proteins, and analyzed them using mass spectrometry.
+
+PROJECT DESCRIPTION:
+CAPTURE2.0 pull-down of SINE-MIR associated proteins in mouse embryonic stem cells
+
+SAMPLE PROCESSING:
+Proteins eluted from CAPTURE2.0 pull-down experiments were digested on S-Trap Micro Columns (ProtiFi) following manufacturer’s protocol. The eluted peptides were dried, redissolved in 100 mM TEAB and labelled with TMTsixplex reagents (Thermo Fisher Scientific) following manufacturer’s protocol. Labelled samples were pooled and analysed by LC-MS/MS using an ACQUITY UPLC Peptide BEH C18 column in a nanoACQUITY UPLC system (Waters) coupled to an Orbitrap Eclipse Tribrid MS (Thermo Fisher Scientific).
+
+DATA PROCESSING:
+Mass spectra were searched against Uniprot Mus musculus Reference proteome (UP000000589, last modified on 3 July 2020) using Proteome Discoverer 2.4 (Thermo Fisher Scientific) with Percolator and the following parameters: MS1 tolerance of 10 ppm; MS2 tolerance of 0.6 Da; full trypsin specificity with a maximum of 2 missed cleavage sites; fixed modifications of carbamidomethyl (C) and TMT6plex (peptide N-terminal and K); variable modifications of oxidation (M). Quantification was performed using unique and razor peptides with correction for isotopic impurity of reporter quant values, no normalization applied to correct for experimental bias, and the use of grouped protein abundances for calculating protein ratios. Results were filtered for proteins identified at FDR not more than 1% with a minimum of 2 unique peptides and quantified in at least one replicate of any samples.

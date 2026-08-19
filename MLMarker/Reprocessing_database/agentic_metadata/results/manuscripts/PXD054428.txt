@@ -1,0 +1,36 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Esophagus
+diseases: Esophagus adenocarcinoma
+instruments: Orbitrap Fusion
+modifications: monohydroxylated residue; acetylated residue; iodoacetic acid derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Human oesophageal adenocarcinoma
+
+ABSTRACT:
+We present data of global proteomes for oesophageal adenocarcinoma and for normal adjacent tissue from seven donors.
+
+PROJECT DESCRIPTION:
+Oesophageal adenocarcinoma global proteomes
+
+SAMPLE PROCESSING:
+Tissue preparation
+
+From 7 donor tumours were excised from resected oesophageal tissue post-operatively by pathologists and processed either for histological evaluation of tumour type and stage, or snap frozen at −80°C.
+
+Protein extraction and digestion
+
+Snap frozen tissue samples were briefly thawed and weighed prior to 30s of mechanical homogenization (Fisher, using disposable probes) in 4mL lysis buffer (0.02M Tris, 0.5% [w/v] IGEPAL, 0.25% [w/v] sodium deoxycholate, 0.15mM NaCl, 1mM ethylenediaminetetraacetic acid (EDTA), 0.2mM iodoacetamide supplemented with EDTA-free protease inhibitor mix). Homogenates were clarified for 10min at 2000g, 4°C and then for a further 60min at 13 500g, 4°C.
+Protein concentration of tissue lysates was determined by BCA assay, and volumes equivalent to 100 mg of protein were precipitated using methanol/chloroform as previously described (1). Pellets were briefly air-dried prior to resuspension in 6 M urea/50 mM Tris-HCl (pH 8.0). Proteins were reduced by the addition of 5 mM (final concentration) DTT and incubated at 37oC for 30 min, then alkylated by the addition of 15 mM (final concentration) iodoacetamide and incubated in the dark at room temperature for 30 min. 4 µg Trypsin/LysC mix (Promega) were added and the sample incubated for 4 h at 37oC, then 6 volumes of 50 mM Tris-HCl pH 8.0 were added to dilute the urea to < 1 M, and the sample was incubated for a further 16 h at 37oC. Digestion was terminated by the addition of 4 µL of TFA, and the sample clarified at 13,000 x g for 10 min at RT. The supernatant was collected and applied to Oasis Prime microelution HLB 96-well plates (Waters, UK) which had been pre-equilibrated with acetonitrile. Peptides were eluted with 50 µL of 70% acetonitrile and dried by vacuum centrifugation prior to resuspension in 0.1% formic acid.
+
+Mass spectrometry proteomics
+
+8 µg of peptides per sample were separated by an Ultimate 3000 RSLC nano system (Thermo Scientific) using a PepMap C18 EASY-Spray LC column, 2 µm particle size, 75 µm x 75 cm column (Thermo Scientific) in buffer A (H2O/0.1% Formic acid) and coupled on-line to an Orbitrap Fusion Tribrid Mass Spectrometer (Thermo Fisher Scientific,UK) with a nano-electrospray ion source.
+Peptides were eluted with a linear gradient of 3-30% buffer B (acetonitrile/0.1% formic acid) at a flow rate of 300 µL/min over 200 min. Full scans were acquired in the Orbitrap analyser in the scan range 300-1,500 m/z using the top speed data dependent mode, performing an MS scan every 3 second cycle, followed by higher energy collision-induced dissociation (HCD) MS/MS scans. MS spectra were acquired at a resolution of 120,000, RF lens 60% and an automatic gain control (AGC) ion target value of 4.0e5 for a maximum of 100 ms. MS/MS scans were performed in the ion trap, higher energy collisional dissociation (HCD) fragmentation was induced at an energy setting of 32% and an AGC ion target value of 5.0e3.
+
+1. Bligh EG, Dyer WJ. A RAPID METHOD OF TOTAL LIPID EXTRACTION AND PURIFICATION. Canadian Journal of Biochemistry and Physiology [Internet]. 1959 Aug 1;37(8):911–7. Available from: http://dx.doi.org/10.1139/o59-099
+
+DATA PROCESSING:
+Raw spectrum files were analysed using Peaks Studio 10.0 build 20190129 (2,3) and the data processed to generate reduced charge state and deisotoped precursor and associated product ion peak lists which were searched against the UniProt database (20,350 entries, 2020-04-07) plus the corresponding mutanome for each sample (~1,000-5,000 sequences) and contaminants list in unspecific digest mode. Parent mass error tolerance was set a 10ppm and fragment mass error tolerance at 0.6 Da. Variable modifications were set for N-term acetylation (42.01 Da), methionine oxidation (15.99 Da), carboxyamidomethylation (57.02 Da) of cysteine. A maximum of three variable modifications per peptide was set. The false discovery rate (FDR) was estimated with decoy-fusion database searches (2) and were filtered to 1% FDR.
+
+2. Zhang J, Xin L, Shan B, Chen W, Xie M, Yuen D, et al. PEAKS DB: De novo sequencing assisted database search for sensitive and accurate peptide identification. Molecular & Cellular Proteomics. 2012;11(4):M111010587

@@ -1,0 +1,23 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Blood; Blood cell
+diseases: Non-small cell lung carcinoma
+instruments: Q Exactive HF
+modifications: iodoacetamide derivatized residue
+experiment types: Data-independent acquisition
+keywords: Human; Nsclc; Vams; Whole blood; Lung cancer
+
+ABSTRACT:
+Frozen whole blood cell pellets from NSCLC patients and healthy controls were processed using novel techniques to produce a unique sample using VAMS devices. Samples were analysed using liquid chromatography mass spectrometry to collectively screen 3914 proteins from the whole blood sample. Analysis of all fractions produced a set of 515 differentially expressed proteins. Boosted regression tree analysis of the differentially expressed proteins produced a panel of 13 proteins that were able to discriminate between controls and NSCLC patients with an area under the ROC curve (AUC) of 0.864 for the set. Our rapid and reproducible blood preparation and analysis methods enabled the production of high-quality data from small volumes of complex samples that are typically require significant fractionation prior to proteomic analysis.
+
+PROJECT DESCRIPTION:
+Human whole blood from patients with NSCLC and matching controls processed using VAMS device.
+
+SAMPLE PROCESSING:
+Whole blood cell pellets were diluted 1:1 in PBS, and 30µL of the samples were applied to 30µL VAMS devices (Mitra, Neoteryx). After drying, VAMS were washed in LiCl and Tris, then reduced and alkylated with a solution containing SDC, TCEP, chloroacetamide and TEAB. Proteins were digested with trypsin and resulting peptides were separated on a nanoLC column (75µm x 50cm) over 62.5 minute gradient. Data was collected by MS/MS using a HF-X Orbitrap system in DIA mode.
+
+DATA PROCESSING:
+Raw data files were processing using DIA-NN (v. 1.8). Deep learning was used to generate a new in silico spectral library from peptides provided. Fragment m/z set to 200-1800; N-terminal methionine excision enabled; In silico digest will involve cuts at K*,R*; Maximum number of missed cleavages set to 2; Peptide length set to 7-30;
+
+ABSTRACT (PubMed):
+Diagnosis of non-small cell lung cancer (NSCLC) currently relies on imaging; however, these methods are not effective for detecting early stage disease. Investigating blood-based protein biomarkers aims to simplify the diagnostic process and identify disease-associated changes before they can be seen by using imaging techniques. In this study, plasma and frozen whole blood cell pellets from NSCLC patients and healthy controls were processed using both classical and novel techniques to produce a unique set of four sample types from a single blood draw. These samples were analyzed using 12 immunoassays and liquid chromatography-mass spectrometry to collectively screen 3974 proteins. Analysis of all fractions produced a set of 522 differentially expressed proteins, with conventional blood analysis (proteomic analysis of plasma) accounting for only 7 of the total. Boosted regression tree analysis of the differentially expressed proteins produced a panel of 13 proteins that were able to discriminate between controls and NSCLC patients, with an area under the ROC curve (AUC) of 0.864 for the set. Our rapid and reproducible (<10% CV for technical replicates) blood preparation and analysis methods enabled the production of high-quality data from only 30 μL of complex samples that typically require significant fractionation prior to proteomic analysis. With our methods, almost 4000 proteins were identified from a single fraction over a 62.5 min gradient by LC-MS/MS.

@@ -1,0 +1,203 @@
+{
+  "sample_groups": [
+    {
+      "name": "Lung Adenocarcinoma Cell Lines (H3255, 11-18, PC9, H1975)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Lung cancer",
+          "evidence": "diseases: Lung cancer",
+          "ontology_id": "diseases:0012",
+          "ontology_name": "lung cancer",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "H3255",
+          "evidence": "H3255, 11-18,PC9, and H1975 cell lines"
+        },
+        {
+          "value": "11-18",
+          "evidence": "H3255, 11-18,PC9, and H1975 cell lines"
+        },
+        {
+          "value": "PC9",
+          "evidence": "H3255, 11-18,PC9, and H1975 cell lines",
+          "ontology_name": "PC-9",
+          "similarity": 1.0
+        },
+        {
+          "value": "H1975",
+          "evidence": "H3255, 11-18,PC9, and H1975 cell lines"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "LTQ Orbitrap Elite",
+          "evidence": "instruments: LTQ Orbitrap Elite",
+          "ontology_id": "instruments:0002",
+          "ontology_name": "LTQ Orbitrap Elite",
+          "similarity": 1.0
+        },
+        {
+          "value": "LTQ Orbitrap XL ETD",
+          "evidence": "LTQ Orbitrap XL ETD (Thermo Scientific)",
+          "ontology_id": "instruments:0004",
+          "ontology_name": "LTQ Orbitrap XL",
+          "similarity": 0.9416
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "data-dependent HCD MS/MS scans",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        },
+        {
+          "value": "ETD",
+          "evidence": "LTQ Orbitrap XL ETD",
+          "ontology_id": "fragmentation:0003",
+          "ontology_name": "ETD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "digested with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 100 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "normalized collision energy of 35%"
+        },
+        {
+          "value": "32 NCE",
+          "evidence": "using 32% collision energy"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "125",
+          "evidence": "from 8 to 32% B in 100min, from 32 to 100% B in 10min"
+        },
+        {
+          "value": "100-130",
+          "evidence": "running time of 100-130 minutes"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Magic C18AQ",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "data dependent analysis",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "quantification: SILAC",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described; direct analysis of enriched peptides"
+      },
+      "enrichment": {
+        "value": "phosphotyrosine",
+        "method": "immobilized anti-phosphotyrosine antibody",
+        "evidence": "Phosphotyrosine peptides were enriched... using PhosphoScan Kit"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "electrospray ionization",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated with erlotinib (100nM) or afatinib (100nM)"
+        },
+        {
+          "value": "cytokine stimulation",
+          "evidence": "stimulated with EGF (100ng/mL)"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "erlotinib",
+          "evidence": "treated with erlotinib (100nM)"
+        },
+        {
+          "value": "afatinib",
+          "evidence": "treated with afatinib (100nM)"
+        },
+        {
+          "value": "EGF",
+          "evidence": "stimulated with EGF (100ng/mL)"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "erlotinib and afatinib are FDA approved... inhibitors",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "stimulated with EGF (100ng/mL)",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "sample_groups": [
+    {
+      "name": "Neuroblastoma cell lines (IMR5, NGP, SKNAS, SH-SY5Y)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Neuroblastoma",
+          "evidence": "diseases: Neuroblastoma",
+          "ontology_id": "diseases:0033",
+          "ontology_name": "neuroblastoma",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [
+        {
+          "value": "nucleus",
+          "evidence": "accumulated inside nuclear foci",
+          "ontology_id": "cell_parts:0002",
+          "ontology_name": "nucleus",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "IMR5",
+          "evidence": "IMR5 cells with MYCN amplification",
+          "ontology_name": "IMR-5",
+          "similarity": 1.0
+        },
+        {
+          "value": "NGP",
+          "evidence": "NGP cell lines with MYCN amplification"
+        },
+        {
+          "value": "SKNAS",
+          "evidence": "SKNAS cell lines without MYCN amplification"
+        },
+        {
+          "value": "SH-SY5Y",
+          "evidence": "SH-SY5Y cell lines without MYCN amplification",
+          "ontology_name": "SH-SY5Y",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "Q Exactive HF instrument (Thermo Fisher Scientific)",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "higher-energy collision-induced dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested at 37°C overnight using trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "addition iodoacetic acid (final conc. 15 mM)",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "S-phosphorylation",
+          "evidence": "Phosphopeptide enrichment... TiO2-beads",
+          "ontology_id": "modifications:0005",
+          "ontology_name": "S-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "T-phosphorylation",
+          "evidence": "Phosphopeptide enrichment... TiO2-beads",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "Phosphopeptide enrichment... TiO2-beads",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "normalized collision energy (NCE) = 28"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "120",
+          "evidence": "gradient from 5%–40% solvent B over 120 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Nano Viper C18 analytical column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "MS/MS spectra were acquired in data-dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification method",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "TiO2 enrichment",
+        "evidence": "Phosphopeptide enrichment... applied to 0.6 mg of TiO2-beads"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "TiO2",
+        "evidence": "Phosphopeptide enrichment... applied to 0.6 mg of TiO2-beads"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Ultimate 3000 RSLCnano HPLC coupled to an Q Exactive HF",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene overexpression",
+          "evidence": "Inducible NTRK1-expression was realized"
+        },
+        {
+          "value": "cytokine stimulation",
+          "evidence": "TrkA was activated by addition of NGF"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "tetracycline",
+          "evidence": "NTRK1/TrkA expression was induced by tetracycline"
+        },
+        {
+          "value": "NGF",
+          "evidence": "TrkA was activated by addition of NGF"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "Inducible NTRK1-expression was realized",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "TrkA was activated by addition of NGF",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

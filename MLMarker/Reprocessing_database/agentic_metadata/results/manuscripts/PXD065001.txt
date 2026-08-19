@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Heart
+instruments: Orbitrap Fusion
+modifications: iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+keywords: Non-vesicular lipid transport; Inflammation; And statins; Rho gtpases; Endothelial barrier
+
+ABSTRACT:
+As an endothelium destabilizer, CD82 facilitates vascular leakage by disrupting endothelial barrier and inhibiting its recovery during inflammation. AC at EC surface primes and promotes vascular leakage, mediates the effect of CD82 or TEMD on inflammation, and can be regulated specifically by i) tetraspanins or TEMDs, ii) ORP-mediated transfer of cholesterol, iii) environmental cholesterol, and iv) statin. Thus, tetraspanin-AC interaction and subcellular cholesterol compartmentalization tune the balances between antagonistic signaling axes of Cdc42 versus RhoA, to alter vascular leakage in inflammation. Equally important, we demonstrated anti-vascular leakage and anti-inflammation roles of i) AC reduction and ii) FARP1-Cdc42 elevation/activation in animal models, with promising translational and clinical prospects.
+
+PROJECT DESCRIPTION:
+Tetraspanin-enriched Membrane Domains Regulate Vascular Leakage by Membrane Cholesterol Accessibility to Balance Antagonistic GTPases.
+
+SAMPLE PROCESSING:
+Proteins in WT and CD82 KO tissues were extracted and digested with LysC/trypsin. Peptides were labeled by 16-plex tandem-mass-tag (TMT) labeling. The TMT labeled peptides were pooled with an equal amount of each the pooled samples were desalted and fractionated into fractions for whole proteome analysis under basic pH conditions. Each fraction was further separated on a reverse phase columns during a 1.5h to 2.5 h gradient and analyzed by Fusion MS (Thermo Scientific) with one MS scan and up to 20 data-dependent high-resolution MS/MS scans.
+
+DATA PROCESSING:
+Acquired MS raw data were processed using the JUMP software suite to improve sensitivity and specificity, which combines the advantages of pattern matching with de novo sequencing tags to score putative peptide-spectrum matches (PSMs).  Searches were performed using 15 ppm mass tolerance for precursor ions due to JUMP’s auto mass correction function and 15ppm for fragment ions, allowing up to two missed trypsin cleavage sites. TMT tags on lysine residues and peptide N termini (+304.2071 Da), cysteine residues (+57.021 Da) and dynamic mass shift for oxidation (+15.99491 on Met),and three maximal dynamic modification sites. The assigned peptides are filtered by minimal peptide length, maximum miscleavages, mass-to-charge accuracy and matching scores. The peptides are then divided into groups according to peptide length, trypticity, modification, miscleavage, and charge and then further filtered by matching scores to reduce protein FDR to below 1%. Proteins were quantified by summing reporter ion counts across all matched PSMs using our in-house software.

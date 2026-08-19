@@ -1,0 +1,542 @@
+{
+  "sample_groups": [
+    {
+      "name": "Mouse Liver Tissue (Diet-induced MASLD Models)",
+      "organism": [
+        {
+          "value": "Mus musculus",
+          "evidence": "Mice (C57BL/6N) were housed and managed",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Liver",
+          "evidence": "Liver samples were consistently collected",
+          "ontology_id": "tissues:0003",
+          "ontology_name": "liver",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "Metabolic dysfunction–associated steatohepatitis",
+          "evidence": "diet-induced mouse models of distinct obesity-associated liver disease stages",
+          "ontology_id": "diseases:0067",
+          "ontology_name": "NASH",
+          "similarity": 0.8015
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Eclipse",
+          "evidence": "analyzed on Orbitrap Eclipse™ Tribrid™ Mass Spectrometer",
+          "ontology_id": "instruments:0020",
+          "ontology_name": "Orbitrap Eclipse",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "high-energy collision dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested using trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylation by incubating the samples with 10 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "32 NCE",
+          "evidence": "normalized collision energy of 32 %"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "90",
+          "evidence": "90 min (for persulfidation) ... linear gradient"
+        },
+        {
+          "value": "120",
+          "evidence": "120 min (for total proteome) linear gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Acclaim™ PepMap™ C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data were acquired in DDA mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SPE",
+        "evidence": "desalted on a on Supel™-Select HLB SPE columns"
+      },
+      "enrichment": {
+        "value": "persulfidation",
+        "method": "NeutrAvidin pulldown",
+        "evidence": "incubating with Pierce™ High Capacity NeutrAvidin™ Agarose"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "flow rate of 250 nl min−1",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "diet",
+          "evidence": "fed a standard control diet, a high-fat diet"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "high-fat diet",
+          "evidence": "high-fat diet (HFD; 60 % kcal fat)"
+        },
+        {
+          "value": "high-fat high-fructose high-cholesterol diet",
+          "evidence": "high-fat high-fructose high-cholesterol diet (HFHFHCD)"
+        },
+        {
+          "value": "choline-deficient high-fat diet",
+          "evidence": "choline-deficient HFD (CDHFD)"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "environmental",
+          "evidence": "fed a standard control diet, a high-fat diet",
+          "ontology_id": "treatments:0003",
+          "ontology_name": "environmental",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Human Liver Tissue (MASLD Patients)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "human liver biopsies at different MASLD stages",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Liver",
+          "evidence": "human liver biopsies at different MASLD stages",
+          "ontology_id": "tissues:0003",
+          "ontology_name": "liver",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "Metabolic dysfunction–associated steatohepatitis",
+          "evidence": "human liver biopsies at different MASLD stages",
+          "ontology_id": "diseases:0067",
+          "ontology_name": "NASH",
+          "similarity": 0.8015
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "Orbitrap Exploris 480 Mass Spectrometer",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "28 % high-energy collision-induced dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin (1:100) overnight",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        },
+        {
+          "value": "Lys-C",
+          "evidence": "digested with Lys-C (1:75)",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "incubating the samples with 10 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "28 % high-energy collision-induced dissociation"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "175",
+          "evidence": "175min gradient from 10 % to 40 % of B"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Acclaim™ Pep-Map™100C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Operated in a Data Dependent Acquisition (DDA) mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "Label-free quantification (LFQ)",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SPE",
+        "evidence": "desalted on reverse-phase Sep-Pak C18 cartridges"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "no enrichment step described for total proteome"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "flow rate of 300 nL min−1",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    },
+    {
+      "name": "HepG2 Cell Line",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "HepG2 cell lines were cultured",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HepG2",
+          "evidence": "HepG2 cell lines were cultured",
+          "ontology_name": "HepG2",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [],
+      "fragmentation": [],
+      "enzymes": [],
+      "modifications": [],
+      "collision_energy": [],
+      "gradient_time_min": [],
+      "lc_column": [],
+      "acquisition": [],
+      "labeling": [],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "no MS analysis described for HepG2 cells in this dataset"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "no MS analysis described for HepG2 cells in this dataset"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "cytokine stimulation",
+          "evidence": "treated with cytokines (IL-6 1000 U/ml, IFN-γ 50 U/ml, TNF-α 50 U/ml)"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "treated with ... insulin (10 nM)"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "palmitate acid (0.4 mM) and oleate acid (0.8 mM)"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "treatment with Na2S or other H2S-releasing donors"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "IL-6",
+          "evidence": "cytokines (IL-6 1000 U/ml"
+        },
+        {
+          "value": "IFN-γ",
+          "evidence": "IFN-γ 50 U/ml"
+        },
+        {
+          "value": "TNF-α",
+          "evidence": "TNF-α 50 U/ml"
+        },
+        {
+          "value": "TGF-β1",
+          "evidence": "TGF-β1 (5 nM)"
+        },
+        {
+          "value": "insulin",
+          "evidence": "insulin (10 nM)"
+        },
+        {
+          "value": "palmitate acid",
+          "evidence": "palmitate acid (0.4 mM)"
+        },
+        {
+          "value": "oleate acid",
+          "evidence": "oleate acid (0.8 mM)"
+        },
+        {
+          "value": "Na2S",
+          "evidence": "treatment with Na2S"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "cytokines (IL-6 1000 U/ml, IFN-γ 50 U/ml, TNF-α 50 U/ml)",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "treated with ... insulin (10 nM)",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "palmitate acid (0.4 mM) and oleate acid (0.8 mM)",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "treatment with Na2S",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Primary Mouse Hepatocytes",
+      "organism": [
+        {
+          "value": "Mus musculus",
+          "evidence": "Mouse primary hepatocytes were isolated",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [],
+      "fragmentation": [],
+      "enzymes": [],
+      "modifications": [],
+      "collision_energy": [],
+      "gradient_time_min": [],
+      "lc_column": [],
+      "acquisition": [],
+      "labeling": [],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "no MS analysis described for primary hepatocytes in this dataset"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "no MS analysis described for primary hepatocytes in this dataset"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "cytokine stimulation",
+          "evidence": "treated with cytokines (IL-6 1000 U/ml, IFN-γ 50 U/ml, TNF-α 50 U/ml)"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "treated with ... insulin (10 nM)"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "palmitate acid (0.4 mM) and oleate acid (0.8 mM)"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "treatment with Na2S or other H2S-releasing donors"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "IL-6",
+          "evidence": "cytokines (IL-6 1000 U/ml"
+        },
+        {
+          "value": "IFN-γ",
+          "evidence": "IFN-γ 50 U/ml"
+        },
+        {
+          "value": "TNF-α",
+          "evidence": "TNF-α 50 U/ml"
+        },
+        {
+          "value": "TGF-β1",
+          "evidence": "treated freshly isolated primary hepatocytes with TGF-β1"
+        },
+        {
+          "value": "insulin",
+          "evidence": "insulin (10 nM)"
+        },
+        {
+          "value": "palmitate acid",
+          "evidence": "palmitate acid (0.4 mM)"
+        },
+        {
+          "value": "oleate acid",
+          "evidence": "oleate acid (0.8 mM)"
+        },
+        {
+          "value": "Na2S",
+          "evidence": "treatment with Na2S"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "cytokines (IL-6 1000 U/ml, IFN-γ 50 U/ml, TNF-α 50 U/ml)",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "treated with ... insulin (10 nM)",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "palmitate acid (0.4 mM) and oleate acid (0.8 mM)",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "treatment with Na2S",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

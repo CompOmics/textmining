@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell
+instruments: Orbitrap Fusion Lumos; Orbitrap Exploris 480
+modifications: farnesylated residue; palmitoylated residue; geranylgeranylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Liquid chromatography; Hydrophobicity; Thioester stability; Tandem mass spectrometry; Long-chain s-acylation
+
+ABSTRACT:
+Long-chain S-acylation is the addition of long-chain fatty acids to cysteine residues on proteins. This lipid modification is essential for protein membrane association and signalling but presents analytical challenges due to both its hydrophobicity and the labile nature of thioester bonds. We developed and optimised a bottom-up mass spectrometry workflow tailored for the detection of long-chain S-acylated peptides. Following liquid chromatography optimisation for improved separation and elution of long-chain S-acylated peptides from a C18 stationary phase, we investigated thioester stability under typical proteomics sample preparation conditions, including variations in pH, reducing agents, and trypsin digestion. Stability analyses revealed that long-chain S-acylated peptides were generally resistant to pH variations and reducing agents, while extended digestion times resulted in a loss of signal from some peptides. For MS/MS analysis, CID, HCD and ETD were applied to analyse long-chain S-acylated peptides. Neutral losses of the modification were observed with all these fragmentation methods. However, HCD proved to be the most effective, as the fragment ions resulting from the neutral losses provided sequence information, unlike those from CID and ETD. Applying this workflow to HEK293T cells overexpressing the long-chain S-acylated proteins GNA13 and RhoB, we detected dual acylation states of GNA13 and observed both long-chain S-acylation and prenylation on RhoB. Our optimised analytical strategy facilitates the identification and analysis of long-chain S-acylation on proteins without the need for chemical derivatization by alkyne-tagged probes or acyl-biotin exchange. Although recombinant overexpression of the long-chain S-acylated proteins was still required for long-chain S-acylation detection, this direct analysis strategy for protein long-chain S-acylation enables the study of lipid modifications with lipid-specific resolution, laying a foundation for deeper insights into the regulatory roles of these hydrophobic modifications in protein function and cellular signalling.
+
+PROJECT DESCRIPTION:
+A mass spectrometry-based proteomics strategy to detect long-chain S-acylated peptides
+
+SAMPLE PROCESSING:
+Synthetic peptides were reacted with palmitoyl chloride to generate S-palmitoylated peptides, which were separated using C4 and C18 reversed-phase liquid chromatography with distinct mobile phases. These peptides underwent tandem mass spectrometry with HCD, CID, and ETD fragmentation methods. Stability was assessed by exposing them to various pH conditions for 2 hours, reducing agents (TCEP/DTT) for 1 hour, or trypsin digestion for 8 or 16 hours. The optimised C18-RP-LC system with HCD was used for detecting endogenous S-acylated peptides in complex proteomes.
+
+DATA PROCESSING:
+Data was processed using Fragpipe. Data was analysed and visualised using FreeStyle, Frag-mentlab, skyline, Rstudio using R and Adobe illustrator.

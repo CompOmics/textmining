@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell
+diseases: Non-small cell lung carcinoma
+instruments: Orbitrap Eclipse
+modifications: acetylated residue; iodoacetamide derivatized residue
+experiment types: Data-independent acquisition; Bottom-up proteomics
+quantification: Label free
+keywords: V600e; Lung; Amino acid metabolism; Nsclc; Braf
+
+ABSTRACT:
+To mimic the naturally occurring BRAF V600E mutation in lung cancer, a BRAF V600E knock-in BEAS-2B cell model was established using CRISPR/Cas9. The proteomics analysis was carried out to evaluate the underlying changes at the proteome level. Proteomics analysis revealed significant changes in the proteins involved in the biological processes including epithelial-mesenchymal transition (EMT), extracellular matrix (ECM)-receptor interaction, cell adhesion, focal adhesion, and cell metabolism upon BRAF V600E mutation. 
+
+PROJECT DESCRIPTION:
+Proteomic analysis of BEAS-2B lung epithelial cells after the introduction of the BRAF V600E mutation using CRISPR/Cas9
+
+SAMPLE PROCESSING:
+Three independent flasks of the cells from the BEAS-2B WT and V600E groups were collected on the same day at similar culture densities. These cells were washed twice with pre-cooled PBS, resuspended with lysis buffer (1% sodium deoxycholate, 8 M urea, 100 mM triethylammonium bicarbonate), and sonicated at 4°C for 30 s (work: 3 s, pause: 7 s) at 25% output, then centrifuged at 12,000 g and 4°C for 20 min. Protein concentrations of the supernatants were determined using a BCA kit (233225, ThermoFisher). Supernatants containing 100 μg of protein were adjusted to the same volume with lysis buffer, then reduced with 20 mM DTT at 56°C for 30 min and alkylated with 40 mM iodoacetamide for 30 min in the dark at room temperature. Proteins in the samples were precipitated with trichloroacetic acid (TCA) at a TCA:sample ratio of 1:9 (v:v) for 1-2 h at -20°C and washed twice with pre-cooled acetone. Proteins were then digested with 100 mM triethylammonium bicarbonate (TEAB) containing 2 μg trypsin (V5111, Promega) and 1 μg LysC (324796-2U, Sigma) at 37°C overnight. The digested samples were acidified with 0.1% formic acid and desalted using Oasis HLB 96-well plates (Waters). The purified peptides were eluted with 60% acetonitrile and 0.1% formic acid and dried by vacuum centrifugation. Finally, the peptides were quantified, resuspended in 2% acetonitrile and 0.1% formic acid at a concentration of 250 ng/μL, and analyzed by LC-MS/MS. The LC-MS/MS analysis was performed on an EASY-nLC 1200 system (Thermo Fisher Scientific) coupled to an Orbitrap Eclipse Tribrid mass spectrometer (Thermo Fisher Scientific) with a nanoelectrospray source. 
+
+DATA PROCESSING:
+All of the LC-MS/MS data were searched by DIA-NN (version1.8.1) against the Human proteome FASTA (protein entries:20401) downloaded from the Swissprot and a universal contaminant FASTA file (contaminant entries:244) downloaded from https://github.com/HaoGroup-ProtContLib. The false discovery rate(FDR) was calculated by a decoy search and the threshold was set at 1%. The carbamidomethylation of cysteines was set as fixed modification, the oxidation of methionine and N-terminal acetylation were set as variable modifications, and N-terminal methionine excision was enabled. The missed cleavages were accepted as one and the maximum number of variable modifications was two.

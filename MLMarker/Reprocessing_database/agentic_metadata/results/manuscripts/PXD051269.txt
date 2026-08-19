@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Macrophage; Cell culture
+diseases: Acute monocytic leukemia
+instruments: Orbitrap Eclipse
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: MS1 intensity based label-free quantification method
+keywords: Ap-ms; E3 ubiquitin ligase; Interactome; Aml
+
+ABSTRACT:
+Interactome analysis via AP-MS identify CatG (Cathepsin G) as a FBXL6 interactor.
+
+PROJECT DESCRIPTION:
+FBXL6 interactome analysis via AP-MS
+
+SAMPLE PROCESSING:
+FLAG-FBXL6 was purified using FLAG-M2 beads (Sigma) and eluted with 1 mg/ml 3XFLAG peptide from AML cells. Eluates were separated via SDS-PAGE and stained with Coomassie prior to in-gel trypsin digestion. Tryptic peptides were extracted, dried, reconstituted in buffer containing 0.1% formic acid (FA) and analyzed by LC-MS/MS. Peptides were chromatographically separated  on a Dionex Ultimate 3000 RSLCnano system equipped with a 2 cm trap column (inner diameter: 75 μm, packed with 5 μm C18 resin; Reprosil PUR AQ, Dr. Maisch GmbH) and with a 40-cm column (inner diameter: 75 μm; packed with ReproSil-Gold C18 3μm beads, Dr. Maisch GmbH), and coupled to an Orbitrap Eclipse mass spectrometer. Peptides were loaded for 10 min (0.1% FA, 5 μL/min) on the trap column, then peptides were transferred to the analytical column and separated at 300 nL/min using a 8 min 2-steps gradient from 4% to 24% to 36% LC solvent B (0.1% FA, 5% dimethyl sulfoxide (DMSO) in acetonitrile) in LC solvent A (0.1% FA in 5% DMSO). To improve chromatographic separation and reduce dead time, the flow was maintained at 500 nL/min for the first 5 min. Total analysis time was 15 min. The Orbitrap Eclipse was operated in data dependent and positive ionization mode. MS1 spectra were recorded in the Orbitrap from 360 to 1300 m/z at a resolution of 60K (automatic gain control (AGC) target value of 100%, maximum injection time (maxIT) of 50 ms). Peptide fragmentation was performed via higher energy collisional dissociation (normalized collision energy of 30%), and MS2 spectra were recorded in the Orbitrap at 30K resolution via sequential isolation of the most abundant precursors within the selected cycle time of 0.9 s (isolation window 1.3 m/z, AGC target value of 100%, maxIT of 54 ms, and dynamic exclusion of 25 s).
+
+DATA PROCESSING:
+Raw mass spectrometry data were processed using the MaxQuant software (version 2.0.3.0). Spectra were searched against the UniProtKB database (Human, UP000005640, 79,759 entries downloaded on 09.2022). Enzyme specificity was set to trypsin, allowing for 2 missed cleavages, and the search included cysteine carbamidomethylation as a fixed modification, and protein N-term acetylation and methionine oxidation as variable modifications. Identifications were adjusted to 1% false discovery rate (FDR) at protein and peptide levels. The match-in-between runs and the second peptide options were enabled. The MaxLFQ algorithm was used for Label Free Quantification (LFQ).

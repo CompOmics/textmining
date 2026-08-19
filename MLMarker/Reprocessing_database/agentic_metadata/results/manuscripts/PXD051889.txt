@@ -1,0 +1,32 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Brain
+instruments: Q Exactive HF-X
+modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: Label free
+keywords: Phosphoproteomics; Data dependent analysis (dda); Proteomics; Amyotrophic lateral sclerosis (als); Multi-omic
+
+ABSTRACT:
+Amyotrophic lateral sclerosis (ALS) is the most common motor neuron disease and still lacks effective disease-modifying treatments. Here, we performed a multiomic analysis of the prefrontal cortex from 51 sporadic ALS patients and 50 control subjects, as well as from four transgenic mouse models of C9orf72-, SOD1-, TDP-43-, and FUS-ALS to characterize early disease mechanisms in ALS. An integrated analysis of transcriptomes, (phospho-)proteomes, and miRNAomes revealed marked sex-specific differences, more pronounced in males. We identified four transcriptome-based sALS-subclusters that are driven by pathways involved in mitochondrial respiration, synaptic function, immune response and transcription. Diffusion pseudo time estimation suggested that these clusters may represent temporal states in disease progression. Individual omics and multifactorial factor analysis revealed the mitogen-activated protein kinase (MAPK) pathway as a disease-relevant mechanism. Its modulation by trametinib in vitro and in vivo validated MEK2 as an auspicious therapeutic target for a subgroup of ALS patients.
+
+PROJECT DESCRIPTION:
+Multiomic Profile Integration Reveals Early Signatures of Amyotrophic Lateral Sclerosis and Suggests the MAPK Pathway as a Therapeutic Target
+
+SAMPLE PROCESSING:
+Phosphoproteomics: starting from the protein extracts from the global proteomics experiments, proteases inhibitors (Sigma, P8340) and phosphatases inhibitors (final concentration in Na3VO4 = 1 mM) were added to all samples. Protein concentration was determined using RC-DC assay (BioRad, Hercules, CA, USA) according to the manufacturer’s instructions. 250 µg of proteins for each sample were reduced and alkylated prior to an in-house optimized single-pot, solid-phase-enhanced sample preparation (SP3) protocol. Briefly, beads A (Sera-Mag Speed beads, Fisher Scientific, Germany, 45152105050250) and beads B (Sera-Mag Speed beads, Fisher Scientific, Germany, 65152105050250) were combined (ratio 1:1) and, after 3 washing steps with H2O, were added to the samples (ratio beads:protein of 10:1 for each type of beads, meaning a 20:1 ratio for the combination of beads). After inducing protein binding to the beads with 100% ACN for 18 minutes, the beads/proteins mixtures were washed twice with 80% EtOH and once with 100% ACN before being resuspended in 95 µL NH4HCO3 prior to overnight on-beads digestion (enzyme:protein ratio of 1:20) at 1 000 rpm at 37°C using modified porcine trypsin/lys-C (Mass Spec Grade mix, Promega, Madison, USA). Digestion was stopped using TFA (final pH < 2). Recovered peptides were resuspended in 170 µL of 80% ACN, 0.1% TFA and phosphomix I light (Sigma Aldrich) was added to each sample (ratio peptide (µg)/mix(fmol) = 1.6). Phosphopeptide enrichment was performed on 5 µL phase Fe(III)-NTA cartridges on an AssayMAP Bravo platform following an IMAC protocol. After the enrichment, FA was added to each sample as well as phosphomix I heavy (Sigma Aldrich) (ratio peptide (µg)/mix(fmol) = 1.6). Dried phosphopeptides were resuspended in 40 µL H2O, 2% ACN, 0.1% FA. Sample preparation steps for C9 & FUS mouse models were identical to those previously described for SOD1 & TDP-43, except that proteins were extracted from new tissue samples just before the ph-proteomics experiment. Nano-LC-MS/MS analyses were performed on a nanoAcquity UPLC devise (Waters) coupled to a Q-Exactive HF-X mass spectrometer (Thermo Scientific, Bremen, Germany) equipped with a Nanospray Flex™ ion source. Phosphopeptides were separated at 400 nL/min with 105 min gradient of ACN. The system was operated in DDA mode and the ten most abundant ions were selected on each MS spectrum for further isolation and HCD, excluding monocharged and unassigned ions.
+
+DATA PROCESSING:
+For phosphoproteomics: raw ph-proteomics data were processed using MaxQuant software (version 2.3.1.0). Peaks were assigned with the Andromeda search engine with trypsin/P specificity against an in-house generated protein sequence database containing all mouse entries extracted from UniProtKB-SwissProt (29th of September 2020, 17 061 entries). The minimal peptide length required was seven amino acids and a maximum of one missed cleavage was allowed. Methionine oxidation, acetylation of proteins’ N-termini and serine, threonine and tyrosine phosphorylation were set as variable modifications and Cysteine carbamidomethylation as a fixed modification. For protein quantification, the “match between runs'' option was enabled. The maximum false discovery rate was set to 1% at peptide and protein levels with the use of a decoy strategy. Intensities were extracted from the Phospho(STY).txt file and processed through Perseus software (version 2.0.7.0) in which contaminants and reversed proteins, as well as proteins with a negative score were removed. Using the “expand sites table” option, the intensities of the different phosphopeptides involved in one phosphosite were summed and phosphosites with a localization probability below 75% were removed. The Perseus output table was then used for further statistical analysis. Only phosphosites that were detected in more than 50% of the mice samples of any combination of sex and condition were kept for each dataset. Intensities were log2-transformed, quantile normalization was applied and missing values were imputed by lowest quartile.
+
+SDRF SUMMARY:
+Total runs: 16
+organism: Mus musculus
+organism part: brain
+sex: F; M
+instrument: Q Exactive HF-X
+cleavage agent details: Trypsin/P
+modification parameters: Acetyl; Carbamidomethyl; Oxidation; Phospho
+label: label free sample
+precursor mass tolerance: 4.5 ppm
+fragment mass tolerance: 20 ppm

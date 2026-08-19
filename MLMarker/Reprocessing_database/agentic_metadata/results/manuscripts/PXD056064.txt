@@ -1,0 +1,22 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Orbitrap Eclipse
+modifications: biotinylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Reactivity; Cysteine; Chemoproteomics; Isotop-abpp
+
+ABSTRACT:
+This study utilizes cysteine chemoproteomics paired with a high-throughput structure-guided in silico approach towards assessing structural motifs of cysteines that are highly reactive towards iodoacetamide alkyne (IAA).
+
+PROJECT DESCRIPTION:
+CIAA: Integrated Proteomics and Structural Modeling for Understanding Cysteine Reactivity with Iodoacetamide Alkyne
+
+SAMPLE PROCESSING:
+Proteome-wide labeling of high (10x) IAA and low (1x) IAA followed by click conjugation of Heavy or Light isotopically labeled biotin enrichment probes with a TEV linker. Samples were taken through SP3 sample cleanup, followed by enrichment of biotinylated cysteine peptides on streptavidin resin and cleavage from resin using TEV protease.
+
+DATA PROCESSING:
+Samples were searched with FragPipe and heavy/light peptide pairs were quantified for the assessment of cysteine reactivity,
+
+ABSTRACT (PubMed):
+Cysteine residues play key roles in protein structure and function and can serve as targets for chemical probes and even drugs. Chemoproteomic studies have revealed that heightened cysteine reactivity toward electrophilic probes, such as iodoacetamide alkyne (IAA), is indicative of likely residue functionality. However, while the cysteine coverage of chemoproteomic studies has increased substantially, these methods still provide only a partial assessment of proteome-wide cysteine reactivity, with cysteines from low-abundance proteins and tough-to-detect peptides still largely refractory to chemoproteomic analysis. Here, we integrate cysteine chemoproteomic reactivity data sets with structure-guided computational analysis to delineate key structural features of proteins that favor elevated cysteine reactivity toward IAA. We first generated and aggregated multiple descriptors of cysteine microenvironment, including amino acid content, solvent accessibility, residue proximity, secondary structure, and predicted p<i>K</i><sub>a</sub>. We find that no single feature is sufficient to accurately predict the reactivity. Therefore, we developed the CIAA (Cysteine reactivity toward IodoAcetamide Alkyne) method, which utilizes a Random Forest model to assess cysteine reactivity by incorporating descriptors that characterize the three-dimensional (3D) structural properties of thiol microenvironments. We trained the CIAA model on existing and newly generated cysteine chemoproteomic reactivity data paired with high-resolution crystal structures from the Protein Data Bank (PDB), with cross-validation against an external data set. CIAA analysis reveals key features driving cysteine reactivity, such as backbone hydrogen bond donor atoms, and reveals still underserved needs in the area of computational predictions of cysteine reactivity, including challenges surrounding protein structure selection data set curation. Thus, our work provides a strong foundation for deploying artificial intelligence (AI) on cysteine chemoproteomic data sets.

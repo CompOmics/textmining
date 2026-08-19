@@ -1,0 +1,716 @@
+{
+  "sample_groups": [
+    {
+      "name": "HAP-1 SILAC Proteome",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "HAP-1 METTL13 KO cells were generated",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Diploid cell",
+          "evidence": "organism parts: Diploid cell"
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HAP-1",
+          "evidence": "HAP-1 METTL13 KO cells were generated"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q-Exactive HF",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "peptides dissociated using HCD",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested using LysC and trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        },
+        {
+          "value": "LysC",
+          "evidence": "digested using LysC and trypsin",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "10 mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "resolution for full scans was set to 120,000 and peptides dissociated using HCD"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "30",
+          "evidence": "Samples were separated using 30 min gradients"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "packed in-house with 1.9 μm C18 beads",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "MS was operated with a top-20-based method",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC labeling and cell extract preparation",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "reversed-phase chromatography",
+        "evidence": "separated into 46 fractions using reversed-phase chromatography"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No PTMs are included in the dataset"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1200 system connected to a Q-Exactive HF",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "METTL13 gene was disrupted using CRISPR-Cas9"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "METTL13 KO",
+          "evidence": "METTL13-deficient cell line used in this study"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "METTL13 gene was disrupted using CRISPR-Cas9",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "HAP-1 Pull-down",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "HAP-1 cells was then added to the beads",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Diploid cell",
+          "evidence": "organism parts: Diploid cell"
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HAP-1",
+          "evidence": "Aliquot of 2 mg of protein extract from HAP-1 cells"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q-Exactive HF",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "peptides dissociated using HCD",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested by adding ... trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "5 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "peptides dissociated using HCD"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "60",
+          "evidence": "peptides were separated using a 60 min LC gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "packed in-house with 1.9 μm C18 beads",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "MS was operated in a data-dependent acquisition mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "Label-free quantification of proteins from pull-down experiment",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "Peptides were then desalted using StageTips"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No PTMs are included in the dataset"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1200 system connected to a Q-Exactive HF",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    },
+    {
+      "name": "HEK-293 eEF1A Interactome",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "overexpressed in HEK-293 cells",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Diploid cell",
+          "evidence": "organism parts: Diploid cell"
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK-293",
+          "evidence": "overexpressed in HEK-293 cells",
+          "ontology_name": "HEK293",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q-Exactive HF",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "peptides dissociated using HCD",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Proteins bound to the bait peptides were eluted and digested by adding ... trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "10 mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "peptides dissociated using HCD"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "60",
+          "evidence": "samples were typically separated on 60-min gradients"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "packed in-house with 1.9 μm C18 beads",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "combination of both targeted and data-dependent MS methods",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "quantified using the MaxLFQ algorithm",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "Peptides were then desalted using StageTips"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No PTMs are included in the dataset"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1200 system connected to a Q-Exactive HF",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene overexpression",
+          "evidence": "FLAG-tagged wild type eEF1A ... were overexpressed"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "eEF1A",
+          "evidence": "FLAG-tagged wild type eEF1A ... were overexpressed"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "FLAG-tagged wild type eEF1A ... were overexpressed",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "HeLa Stress Screen",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "HeLa cells ... were incubated",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Diploid cell",
+          "evidence": "organism parts: Diploid cell"
+        }
+      ],
+      "disease": [
+        {
+          "value": "Cervix carcinoma",
+          "evidence": "diseases: Cervix carcinoma",
+          "ontology_id": "diseases:0024",
+          "ontology_name": "cervix carcinoma",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "HeLa cells (ATCC and CCL-2) were incubated",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q-Exactive HF",
+          "evidence": "Q-Exactive HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "peptides dissociated using HCD",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested by adding ... trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "10 mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "peptides dissociated using HCD"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "60",
+          "evidence": "samples were typically separated on 60-min gradients"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "packed in-house with 1.9 μm C18 beads",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "combination of both targeted and data-dependent MS methods",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "quantified using the MaxLFQ algorithm",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "Peptides were then desalted using StageTips"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No PTMs are included in the dataset"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1200 system connected to a Q-Exactive HF",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "incubated with media containing 4NQO"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "4NQO",
+          "evidence": "incubated with media containing 4NQO"
+        },
+        {
+          "value": "cycloheximide",
+          "evidence": "cycloheximide (50 µg/ml, 1 h)"
+        },
+        {
+          "value": "anisomycin",
+          "evidence": "anisomycin (1 µg/ml, 1 h)"
+        },
+        {
+          "value": "AdOx",
+          "evidence": "AdOx (10 μM, 48 h)"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "incubated with media containing 4NQO",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Rat Tissue eEF1A",
+      "organism": [
+        {
+          "value": "Rattus norvegicus",
+          "evidence": "lysates used as source of eEF1A from rat",
+          "ontology_id": "organisms:0003",
+          "ontology_name": "Rattus norvegicus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "liver",
+          "evidence": "panel of rat organs including liver",
+          "ontology_id": "tissues:0003",
+          "ontology_name": "liver",
+          "similarity": 1.0
+        },
+        {
+          "value": "kidney",
+          "evidence": "panel of rat organs including liver, kidney",
+          "ontology_id": "tissues:0005",
+          "ontology_name": "kidney",
+          "similarity": 1.0
+        },
+        {
+          "value": "intestine",
+          "evidence": "panel of rat organs including liver, kidney, and intestine",
+          "ontology_id": "tissues:0047",
+          "ontology_name": "gut",
+          "similarity": 0.819
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Q-Exactive",
+          "evidence": "analyzed on a standard Q-Exactive instrument",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "peptides dissociated using HCD",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested by adding ... trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "10 mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "peptides dissociated using HCD"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "60",
+          "evidence": "samples were typically separated on 60-min gradients"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "packed in-house with 1.9 μm C18 beads",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "combination of both targeted and data-dependent MS methods",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "quantified using the MaxLFQ algorithm",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "Peptides were then desalted using StageTips"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No PTMs are included in the dataset"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1200 system connected to a Q-Exactive HF",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

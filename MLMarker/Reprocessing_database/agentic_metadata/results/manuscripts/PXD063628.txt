@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Macrophage
+instruments: Orbitrap Exploris 480
+modifications: iodoacetamide derivatized residue
+experiment types: Data-independent acquisition
+quantification: Label free
+keywords: Macrophages; Metformin
+
+ABSTRACT:
+Proteomics of human monocyte-derived macrophages treated with Interferon-gamma (10 ng/ml) with and without Metformin 1 mM
+
+PROJECT DESCRIPTION:
+Metformin inhibits IFN-gamma-mediated activation of macrophages in necrobiotic xanthogranuloma
+
+SAMPLE PROCESSING:
+For proteomics, MDM were treated with respective metformin 1 mM for two hours prior to incubation with additive IFN-gamma for 21 hours. After stimulation, MDM were mechanically detached, and lysed in 8 M Urea (Merck) followed by shearing of nucleic acids using ultrasound and cleared of debris. Samples were reduced using 5 mM cithiothreitol, followed by alkylation using 40 mM chloroacetamide (both Merck). Afterwards, samples were diluted down to 2 M Urea and digested with Trypsin (Serva, ratio 1:75). Finally, samples were acidified using formic acid (Honeywell) and loaded onto SDB-RPS Stage Tips for desalting and washing. All reagents were LC-MS grade. Samples were analyzed by the Proteomics Core Facility on an Orbitrap Exploris 480 (Thermo Scientific) coupled to an Evosep One (Evosep). Samples were separated on the Evosep One using the 15 SPD extended method using a column with recommended specifications (Pepsep). The Exploris was run in data-independent acquisition mode with an MS1 scan from 399 to 1001 m/z in 60k resolution followed by 50 MS2 scans of 12 m/z each, covering the full range from 400 to 1000 m/z with a resolution of 22.5k and 1000% AGC target
+
+DATA PROCESSING:
+The samples were analyzed with directDIA in Spectronaut 19 (Biognosys) using standard settings (non-enriched samples) or the PTM workflow (enriched samples). Afterwards, results were exported into Perseus 1.6.15 [CITE] and filtered for data completeness in at least one replicate group, followed by FDR-controlled paired T-tests analyses.

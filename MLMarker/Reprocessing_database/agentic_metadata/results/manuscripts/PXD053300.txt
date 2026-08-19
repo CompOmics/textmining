@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Embryonic stem cell
+diseases: Acute leukemia
+instruments: Q Exactive HF
+modifications: acetylated residue; monomethylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TIC
+keywords: Parental histones; Pole4; Mcm2; Escs
+
+ABSTRACT:
+We employ inducible mutants to dissect the early and late consequences of impaired histone recycling. We find rapid accumulation of H3K27me3 in response to impaired histone recycling, preceding gene expression changes. Simultaneous disruption of both leading (POLE4) and lagging strand (MCM2-2A) recycling pathways impairs transmission of parental histones to new DNA, with release of parental histones to the soluble pool. This loss of histone inheritance alters gene expression in embryonic stem cells, challenges differentiation programs and compromises cell viability. Our findings demonstrate the importance of efficient transmission of histone-based information during DNA replication for maintaining chromatin landscapes, differentiation potential, and cellular viability.
+
+PROJECT DESCRIPTION:
+Histone dynamics at replication forks in embryonic stem cells
+
+SAMPLE PROCESSING:
+Cell culture: WT, MCM2-2A, POLE4-dTAG and MCM2-2A/POLE4-dTAG mouse ESCs used in this study were derived from the E14JU cell line with a 129/Ola background. Cells were seeded in 15-cm dishes (5 × 106 cells per dish, one dish per cell line) and collected 2 d later by trypsinization and washing in PBS. Cell pellets (31 × 107 106 cells) were snap-frozen. Acid-extracted histones were resuspended in Lämmli buffer and separated by a 14–20% gradient SDS–PAGE, stained with Coomassie (Brilliant blue G-250, 35081.01). Protein bands in the molecular weight range of histones (1523 kDa) were excised as single band/fraction. Gel slices were destained in 50% acetonitrile/50 mM ammonium bicarbonate. Lysine residues were chemically modified by propionylation for 30 min at room temperature with 2.5% propionic anhydride (Sigma-Aldrich, 8.00608) in ammonium bicarbonate, pH 7.5. Subsequently, proteins were digested with 200 ng of trypsin (Promega, V5111) in 50 mM ammonium bicarbonate overnight and the supernatant was desalted by C18-Stagetips (reversed-phase resin) and carbon Top-Tips (Glygen, TT1CAR) according to the manufacturer’s instructions. Peptides were re-suspended in 17 μl of 0.1% TFA. A total of 5.0 μl were injected into a nano-HPLC device (Thermo Fisher Scientific, Ultimate Nano3000) using a gradient from 4% B to 90% B (solvent A 0.1% FA in water, solvent B 80% ACN, 0.1% FA in water) over 90 min at a flow rate of 300 nl/min in a C18 UHPCL column (Thermo Fisher Scientific, 164534). Data was acquired in PRM positive mode using a Q Exactive HF spectrometer (Thermo Fisher Scientific, n.a.) to identify and quantify specific N-terminal peptides of histone H3 and histone H4 proteins and their PTMs. Data analysis has been done in Skyline software.
+
+DATA PROCESSING:
+In order to investigate the effect of the depletion of histone chaperone Pole4 on histone marks on H3 and H4, we created a Pole4 degron cell line that allows us to deplete Pole4 within 2h (with the addition of dTAG). Here we analysed cells that are depleted for Pole4 for 72 h or not. In addition, we also have the Pole4-dTAG integrated in a cell line that contains a recycling deficient MCM2 (MCM2-2A). We used 4 biological replicates in two independent cell lines, thus resulting in 16 samples (Pole4 cell line, untreated vs treated and Pole4-MCM2 cell line, untreated vs treated). Raw files were searched with the Skyline software against histone H3 and H4 peptides and their respective PTMs with a precursor mass tolerance of 5 ppm. The chromatogram boundaries of +2 and +3 charged peaks were validated and the Total Area MS1 under the first 4 isotopomers was extracted and used for relative quantification and comparison between experimental groups.

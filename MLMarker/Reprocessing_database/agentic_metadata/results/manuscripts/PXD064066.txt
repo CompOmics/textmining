@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell
+instruments: Orbitrap Exploris 480
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+quantification: label-free quantification
+keywords: 
+
+ABSTRACT:
+Vocal fold epithelial cells (VFE) serve critical physiologic and immunologic functions at the boundary between the upper and lower airways but are difficult to maintain and expand in primary culture. This technical challenge has impeded progress in VFE biology as well as cell banking for translational applications. Here, using primary human VFE, we show that simultaneous inhibition of TGF-β, ROCK, and Notch signaling with a small-molecule inhibitor cocktail enables rapid proliferation, successful passaging, and long-term expansion while preserving core epithelial phenotype. Under anchorage-independent culture conditions, VFE progenitors generate clonal spheres that can be expanded over multiple generations; sphere-dissociated VFE then revert towards their original phenotype, including the ability to form stratified squamous epithelium in organotypic coculture. Both pathway-inhibited and sphere-cultured VFE exhibit mechanistically appropriate remodeling of the cellular proteome. These advances offer a robust toolkit for upper airway mucosal biology and regenerative medicine.
+
+PROJECT DESCRIPTION:
+Rapid expansion of primary human vocal fold epithelial cells via targeted pathway inhibition and anchorage-independent sphere culture
+
+SAMPLE PROCESSING:
+Proteins were extracted from each sample by first adding 150 μL of 8 M urea and 50 mM Tris-HCl (pH 8), sonicating (alternating 15 s on/off cycles) for 1 min, and then centrifuging at 14,000 × g for 15 min at 4 °C to remove cellular debris. Protein concentration was determined using a bicinchoninic acid assay kit (Pierce). Proteins were reduced to 5 mM dithiothreitol (DTT) for 30 min at 37 °C and then alkylated to 15 mM iodoacetamide for 45 min at RT in the dark; the reaction was quenched by adding DTT to 5 mM for 10 min at room temperature (RT). The protein mixture was diluted with 50 mM Tris-HCl (pH 8) to reduce the urea concentration to ≤ 1 M and then digested with Trypsin/Lys-C (Promega) [50:1 (w/w) protein/enzyme ratio] at 37 °C overnight. Digestion was quenched by acidifying the sample with 10% trifluoroacetic acid to a final pH < 3. The digested sample was desalted using Sep Pak C18 1 cc Vac cartridge (Waters). Peptides were first eluted with 0.1% formic acid (FA) in 50% acetonitrile (ACN) and then with 0.1% FA in 80% ACN. The eluate was evaporated to dryness in a vacuum centrifuge and peptide concentration was determined using a quantitative colorimetric peptide assay (Pierce).
+
+DATA PROCESSING:
+Protein identification and label-free quantification (LFQ) were performed using MaxQuant 2.0.3.0. The raw mass data were searched against the UniProt Homo sapiens reviewed database (downloaded August 2023) with trypsin/P selected as the digestion enzyme. We allowed two missed cleavages, required at least two unique peptides per protein identification, and filtered the results using a 1% peptide false discovery rate (FDR). The first search peptide tolerance was set to 20 ppm, while the main search peptide tolerance was set to 4.5 ppm. Variable methionine oxidation (+15.995 Da), protein N-terminal acetylation (+42.010 Da), and static carbamidomethylation of cysteines (+57.021 Da) were allowed. Match between runs was enabled, and all other parameters were set as default.

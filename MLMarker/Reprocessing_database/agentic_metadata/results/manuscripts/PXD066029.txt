@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Skin
+instruments: Orbitrap Ascend
+modifications: ubiquitinylated lysine
+experiment types: Data-independent acquisition; Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Tape strip; Proteomics; Skin; Speed; Scalable; Ubiquitin
+
+ABSTRACT:
+In this study, we present a robust and scalable sample preparation protocol based on chemical lysis with trifluoroacetic acid (TFA), adapted from the SPEED method and optimized for human skin samples. The protocol simplifies tissue lysis while selectively leaving ECM scaffolds largely insoluble. As a result, abundant collagens and structural proteins are effectively depleted from the soluble fraction, improving the dynamic range of detectable proteins and increasing sensitivity for less abundant species.  Using TFA lysis followed by solid-phase-enhanced sample preparation (SP3), we identified up to 6,200 protein groups from full-thickness human skin punch biopsies. Notably, the protocol enables high-depth proteomic analysis from 2 mm punch biopsies, which are less invasive and more suitable for longitudinal or large-cohort studies. Tape strip samples—commonly used in dermatological research for minimally invasive epidermal sampling—were also compatible with this protocol, yielding up to 2,300 protein groups, representing a two- to threefold increase compared to previously reported studies.
+
+PROJECT DESCRIPTION:
+Scalable Acid-Aided Lysis of Skin Samples Improves Proteome Coverage
+
+SAMPLE PROCESSING:
+Punch Biopsy Sample Processing Protocol Full-thickness human skin punch biopsies (2 or 6 mm) were lysed in 100% trifluoroacetic acid (TFA) at room temperature for 30 minutes. Lysates were neutralized with 2 M Tris-base and subjected to reduction (10 mM TCEP) and alkylation (40 mM CAA) at 60 °C for 20 minutes. Protein concentration was estimated via turbidity at 360 nm and normalized to 1 µg/µl. Proteins were precipitated using the SP3 method with magnetic beads in 70% acetonitrile. After ethanol and ACN washes, proteins were digested overnight in 0.1 M TEABC using MS-grade trypsin (1:50 ratio). Peptides were desalted on C18 stage tips and dried under vacuum. Samples were reconstituted in 0.1% TFA, 2% ACN before LC-MS analysis. Tape Strip Sample Processing Protocol A single D-Squame tape strip was incubated in 2% SDS, 10 mM TCEP, and 40 mM CAA at 60 °C for 2 minutes with agitation. The tape was removed, and keratinocytes pelleted by centrifugation. The pellet was lysed in 20 µl TFA for 1 minute at room temperature. The supernatant was recombined with the lysate and centrifuged again. Clarified samples were loaded onto a C4 stage tip to remove crystals, eluted in 70% ACN, 0.1% TFA, and neutralized with 2 M Tris-base. Proteins were precipitated using the SP3 protocol with 3 µl magnetic beads. After washing, proteins were digested overnight in 0.1 M TEABC buffer with trypsin (1:50 ratio). Peptides were desalted using C18 stage tips, dried under vacuum, and resuspended in 0.1% TFA, 2% ACN for LC-MS.
+
+DATA PROCESSING:
+Raw LC-MS files were analyzed using DIA-NN v2.0 for DIA data and FragPipe v22 for DiGly-enriched samples. For DIA, an in-silico spectral library was generated based on a human UniProt FASTA, and searches were conducted with a 1% FDR at the protein and peptide level. MS1 and MS2 mass accuracy were manually set to 15 ppm. DiGly-TMT data were analyzed using the FragPipe "TMT16-ubiquitination-K_tmt_or_ubiq" workflow with default settings. Processed output files were imported into R (v4.2.2) and structured as QFeatures objects. Intensities were log2-transformed, normalized, and aggregated to the protein level. Statistical analyses were performed using the MsqRob2 package (v1.6.1) to assess differential expression and variability. Coefficients of variation were calculated on log10-transformed intensity data to assess reproducibility. All steps followed standard pipelines with parameter optimization described in the associated publication.

@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell
+instruments: Q Exactive HF
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: A549
+
+ABSTRACT:
+Identification of (off)-targets of HZ052, a new Hla inhibitor using 2-dimensional thermal proteome profiling
+
+PROJECT DESCRIPTION:
+2-dimensional thermal proteome profiling of HZ052
+
+SAMPLE PROCESSING:
+Treatment of A459 cells with different concentrations of HZ052 for 90min followed by thermal treatment. Protein aggregates were removed and soluble proteins were prepared using an adapted SP3 protocol. After TMT18plex labeling pepties were separated into 12 fractions by high pH, followed by LC-MS on a Qexactive.
+
+DATA PROCESSING:
+Mass spectrometry raw files were converted to mzmL format using MSConvert (Proteowizard) using peak picking from the vendor algorithm and keeping the 200 most intense peaks. Files were then searched using MSFragger v13 in Fragpipe v18 against the Homo sapiens proteome, downloaded from Uniprot, identifier UP000005640, including known contaminants and the reversed protein sequences. The search parameters were as followed: tryptic digestion with a maximum of 2 missed cleavages, peptide length = 7-50, peptide tolerance = 20 ppm; MS/MS tolerance = 10 ppm; topN peaks = 300; fixed modifications = carbamidomethyl on cysteine and TMT18plex on lysine; variable modifications = acetylation on protein N termini, oxidation of methionine and TMT18plex on peptide N termini. Peptide Spectrum Matches (PSMs) validation was performed by philosopher version 4.1.0 and the false discovery rate was fixed at 1% at the PSMs, peptides and proteins level. TMT quantification was performed by TMT-Integrator using default settings. Mass spectrometry raw files were converted to mzmL format using MSConvert (Proteowizard) using peak picking from the vendor algorithm and keeping the 200 most intense peaks. Files were then searched using MSFragger v13 in Fragpipe v18 against the Homo sapiens proteome, downloaded from Uniprot, identifier UP000005640, including known contaminants and the reversed protein sequences. The search parameters were as followed: tryptic digestion with a maximum of 2 missed cleavages, peptide length = 7-50, peptide tolerance = 20 ppm; MS/MS tolerance = 10 ppm; topN peaks = 300; fixed modifications = carbamidomethyl on cysteine and TMT18plex on lysine; variable modifications = acetylation on protein N termini, oxidation of methionine and TMT18plex on peptide N termini. Peptide Spectrum Matches (PSMs) validation was performed by philosopher version 4.1.0 and the false discovery rate was fixed at 1% at the PSMs, peptides and proteins level. TMT quantification was performed by TMT-Integrator using default settings.

@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Cerebellum; Purkinje cell
+instruments: Orbitrap Exploris 480
+modifications: monohydroxylated residue
+experiment types: Data-dependent acquisition
+quantification: Label free
+keywords: Apex; Cerebellum; Purkinje cells; Ap-2
+
+ABSTRACT:
+Identification of whole proteome changes in Purkinje cells of the cerebellum of AP-2 cKo and control mice at 2 months of age after APEX AAV injection
+
+PROJECT DESCRIPTION:
+Purkinje cell proteome of the cerebellum of AP-2 cKo
+
+SAMPLE PROCESSING:
+Samples were analyzed by the CECAD Proteomics Facility on an Orbitrap Exploris 480 (Thermo Scientific, granted by the German Research Foundation under INST 216/1163-1 FUGG) mass spectrometer equipped with a FAIMSpro differential ion mobility device that was coupled to an Vanquish neo in trap-and-elute setup (Thermo Scientific). Samples were loaded onto a precolumn (Acclaim 5μm PepMap 300 μ Cartridge) with a flow of 60 μl/min before reverse-flushed onto an in-house packed analytical column (30 cm length, 75 μm inner diameter, filled with 2.7 μm Poroshell EC120 C18, Agilent). Peptides were chromatographically separated with an initial flow rate of 400 nL/min and the following gradient: initial 2% B (0.1% formic acid in 80 % acetonitrile), up to 6 % in 3 min. Then, flow was reduced to 300 nl/min and B increased to 20% B in 26 min, up to 35% B within 15 min and up to 98% solvent B within 1.0 min while again increasing the flow to 400 nl/min, followed by column wash with 95% solvent B and reequilibration to initial condition. The FAIMS pro was operated at -50V compensation voltage and electrode temperatures of 99.5 °C for the inner and 85 °C for the outer electrode. The mass spectrometer was operated in data-dependent acquisition top 24 mode with MS1 scans acquired from 350 m/z to 1400 m/z at 60k resolution and an AGC target of 300%. MS2 scans were acquired at 15 k resolution with a maximum injection time of 22 ms and an AGC target of 300% in a 1.4 Th window and a fixed first mass of 110 m/z.. All MS1 scans were stored as profile, all MS2 scans as centroid.
+
+DATA PROCESSING:
+Sample Processing in MaxQuant All mass spectrometric raw data were processed with Maxquant (version 2.4, Tyanova et al. NatProt) using default parameters against the Uniprot canonical mouse database (UP589, downloaded 04/01/23) with the match-between-runs option enabled between replicates. Follow-up analysis was done in Perseus 1.6.15 (Tyanova et al. NatMet). Protein groups were filtered for potential contaminants and insecure identifications. Remaining IDs were filtered for data completeness in at least one group and missing values imputed by sigma downshift (0.3 σ width, 1.8 σ downshift). Afterwards, FDR-controlled two-sided t-tests were performed.

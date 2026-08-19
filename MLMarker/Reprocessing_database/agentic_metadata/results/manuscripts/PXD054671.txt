@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Blood serum
+instruments: Orbitrap Fusion Lumos
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Lc-msms; Human serum; Aptamer
+
+ABSTRACT:
+Experiments were conducted to confirm SOMAmer® reagent specificity by enrichment in serum from elderly subjects (>65 years, male n=1 and female n=1, purchased from commercial vendor) followed by measurement using data dependent analysis (DDA). Non-specific binding was assessed in the biological matrix by comparing target protein spectral counts in the respective enrichment to pull down using a reagent generated against the bacterial protein CysH. A positive hit was defined as target protein detection with a minimum of 2 spectral counts and signal over CysH background greater than 10X (if applicable).
+
+PROJECT DESCRIPTION:
+Confirmation of SOMAmer® Specificity in Serum using Mass Spectrometry
+
+SAMPLE PROCESSING:
+Target proteins were enriched from human serum using biotinylated SOMAmer reagents bound to strepatvidin agarose resin, eluted and digested using trypsin. Samples (2uL) were injected on a 25 cm x 75 um ID C18 nano UHPLC column (Aurora Ultimate, IonOpticks) operated at 40°C and separated using a multi-step linear gradient over 90 min at 400 nL/min on a Vanquish Neo UHPLC system (Thermo Fisher Scientific). The following gradient conditions were used employing water with 0.1% formic acid as mobile phase A and acetonitrile with 0.1% formic acid as mobile phase B: 3-17%B over 56 min, 17-25%B over 21 min, 25-34%B over 13 min, followed by 85%B wash for four column volumes. Data-dependent analysis was performed on an Orbitrap Eclipse operated in positive ionization mode, with electrospray voltage 1500V and ion transfer tube temperature of 275°C applied. Full MS scans with quadrupole isolation were acquired in the Orbitrap mass analyzer using a scan range of 375-1500 m/z, standard AGC target, and automatic maximum injection time. Data dependent scans were acquired in the Orbitrap with a 0.7 m/z quadrupole isolation window, 50,000 resolution, 50% normalized AGC target, 200 ms maximum injection time, and 38% HCD collision energy over a 2 sec cycle time. Dynamic exclusion of 45 sec relative to +/- 10ppm reference mass tolerance was applied.
+
+DATA PROCESSING:
+Raw data files were processed in Proteome Discoverer v2.5 with SequestHT database search using a canonical human FASTA database (20528 sequences, updated 04/08/22). Search settings include precursor mass tolerance 10 ppm, fragment mass tolerance 0.02 Da and a maximum of 2 missed cleavages. Dynamic modifications of oxidation (+15.995 Da) on M residues and N-terminal acetyl (+42.011 Da) as well as static carbamidomethyl (+57.021 Da) on C residues was allowed. Peptide FDR was determined by target/decoy strategy using Percolator.  Non-specific binding was assessed by using a SOMAmer generated against the bacterial protein phosphoadenosine phosphosulfate reductase (CysH). Target protein spectral counts in the SOMAmer enriched samples were compared to the respective CysH control. A positive hit is defined as target protein detection with a minimum of 2 spectral counts and signal over CysH background greater than 10X.

@@ -1,0 +1,187 @@
+{
+  "sample_groups": [
+    {
+      "name": "Human primary myoblasts and HeLa/HEK293T/C2C12 cell lines",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "Human primary myoblast cultures from SEPN1-RM patients",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        },
+        {
+          "value": "Mus musculus",
+          "evidence": "WT and SEPN1 KD C2C12 were described elsewhere",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "muscle",
+          "evidence": "Myoblasts were obtained from diagnostic muscle biopsies",
+          "ontology_id": "tissues:0043",
+          "ontology_name": "skeletal muscle",
+          "similarity": 0.8978
+        }
+      ],
+      "disease": [
+        {
+          "value": "SEPN1-related myopathy",
+          "evidence": "Human primary myoblast cultures from SEPN1-RM patients"
+        },
+        {
+          "value": "healthy",
+          "evidence": "gender- and age-paired healthy individuals (controls)",
+          "ontology_id": "diseases:0001",
+          "ontology_name": "healthy",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "SEPN1 KO, ERO1 KO and DKO HeLa cells",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        },
+        {
+          "value": "HEK 293T",
+          "evidence": "HEK 293T cells were transfected with ERO1-Lα CRISPR-Cas9 KO plasmids",
+          "ontology_name": "HEK293T",
+          "similarity": 1.0
+        },
+        {
+          "value": "C2C12",
+          "evidence": "WT and SEPN1 KD C2C12 were described elsewhere"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "nLC-ESI-MS/MS quadrupole Orbitrap QExactive-HF mass spectrometer",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "For HCD spectra, resolution was set to 15,000",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "proteins were digested overnight by trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated by 55 mM IAA",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "C-ethylmaleimide",
+          "evidence": "free thiols cysteines were N-ethylmaleimide alkylated"
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "normalized collision energy 28%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "25",
+          "evidence": "Chromatographic peptide analysis was performed using a 25 min gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "packed in-house with 1.9 μm beads ReproSil-Pur C18-AQ",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "MS data were acquired using a DDA top 15 method",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "No labeling method described; samples processed individually",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SDS-PAGE",
+        "evidence": "FLAG-immunoprecipitated proteins were resolved on a non-reducing 10% SDS-PAGE gel"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for specific modifications"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nLC-ESI-MS/MS analysis",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated with increasing TUDCA (0-2mM, Sigma) supplements"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "TUDCA",
+          "evidence": "treated with increasing TUDCA (0-2mM, Sigma) supplements"
+        },
+        {
+          "value": "thapsigargin",
+          "evidence": "cultures were then challenged with thapsigargin (0-400nM)"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "TUDCA (chemical chaperone) and thapsigargin (SERCA inhibitor)",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

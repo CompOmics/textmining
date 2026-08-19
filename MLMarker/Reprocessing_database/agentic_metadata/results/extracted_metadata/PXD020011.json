@@ -1,0 +1,262 @@
+{
+  "sample_groups": [
+    {
+      "name": "Immune cells (Monocytes, DCs, T cells, B cells)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "Fresh peripheral blood mononuclear cells (PBMCs) were obtained from healthy donors",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "T cell",
+          "evidence": "organism parts: T cell",
+          "ontology_id": "tissues:0074",
+          "ontology_name": "T cells",
+          "similarity": 0.9892
+        },
+        {
+          "value": "Dendritic cell",
+          "evidence": "organism parts: Dendritic cell"
+        },
+        {
+          "value": "B cell",
+          "evidence": "organism parts: B cell",
+          "ontology_id": "tissues:0073",
+          "ontology_name": "B cells",
+          "similarity": 0.9891
+        },
+        {
+          "value": "Monocyte",
+          "evidence": "CD14+ monocytes were separately isolated",
+          "ontology_id": "tissues:0077",
+          "ontology_name": "monocytes",
+          "similarity": 0.9632
+        }
+      ],
+      "disease": [
+        {
+          "value": "healthy",
+          "evidence": "Fresh peripheral blood mononuclear cells (PBMCs) were obtained from healthy donors",
+          "ontology_id": "diseases:0001",
+          "ontology_name": "healthy",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "Q Exactive HF or a HFX Orbitrap mass spectrometers",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        },
+        {
+          "value": "HFX Orbitrap",
+          "evidence": "Q Exactive HF or a HFX Orbitrap mass spectrometers",
+          "ontology_id": "instruments:0005",
+          "ontology_name": "Orbitrap Fusion",
+          "similarity": 0.7185
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragments them by higher-energy collision dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digestion was carried out with a mixture of endoproteinase Lys-C and Trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        },
+        {
+          "value": "Lys-C",
+          "evidence": "digestion was carried out with a mixture of endoproteinase Lys-C and Trypsin",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylation with a final concentration of 15 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "27 NCE",
+          "evidence": "normalized collision energy of 27%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "90",
+          "evidence": "85–90 min (2% B)"
+        },
+        {
+          "value": "60",
+          "evidence": "gradient slope was kept the same but with a length of 60 min"
+        },
+        {
+          "value": "270",
+          "evidence": "265–270 min (5% B)"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "analytical columns with ReproSil-Pur C18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "data-dependent “top15” method was used",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification (LFQ) was enabled",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "HLA immunoaffinity purification",
+        "evidence": "high-throughput HLA-I and -II immunoaffinity purification"
+      },
+      "enrichment": {
+        "value": "HLA peptides",
+        "method": "immunoaffinity purification",
+        "evidence": "Anti-pan HLA-I and HLA-II antibodies cross-linked to protein-A sepharose"
+      },
+      "ionization": [
+        {
+          "value": "nanoelectrospray",
+          "evidence": "nanoelectrospray ion source",
+          "ontology_id": "ionization:0002",
+          "ontology_name": "nanoESI",
+          "similarity": 0.7119
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "cytokine stimulation",
+          "evidence": "cultured in the presence of recombinant research grade human granulocyte-macrophage colony stimulating factor"
+        },
+        {
+          "value": "cytokine stimulation",
+          "evidence": "DCs were matured for 24 h with LPS and IFNγ"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "PMA (10 ng/ml) and Ionomycin (1 μg/ml) were added to the medium"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "IL-4 and CD40L-Tri were added to the medium"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "GM-CSF",
+          "evidence": "cultured in the presence of recombinant research grade human granulocyte-macrophage colony stimulating factor"
+        },
+        {
+          "value": "IL-4",
+          "evidence": "interleukin-4 (IL-4; 250 IU/ml)"
+        },
+        {
+          "value": "LPS",
+          "evidence": "DCs were matured for 24 h with LPS"
+        },
+        {
+          "value": "IFNγ",
+          "evidence": "and IFNγ (2,000 IU/ml)"
+        },
+        {
+          "value": "PMA",
+          "evidence": "PMA (10 ng/ml) and Ionomycin (1 μg/ml) were added"
+        },
+        {
+          "value": "Ionomycin",
+          "evidence": "PMA (10 ng/ml) and Ionomycin (1 μg/ml) were added"
+        },
+        {
+          "value": "CD40L-Tri",
+          "evidence": "IL-4 and CD40L-Tri (1 μg/ml) were added"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "recombinant research grade human granulocyte-macrophage colony stimulating factor",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "interleukin-4 (IL-4)",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "environmental",
+          "evidence": "DCs were matured for 24 h with LPS",
+          "ontology_id": "treatments:0003",
+          "ontology_name": "environmental",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "IFNγ (2,000 IU/ml)",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "PMA (10 ng/ml) and Ionomycin (1 μg/ml)",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "CD40L-Tri (1 μg/ml)",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

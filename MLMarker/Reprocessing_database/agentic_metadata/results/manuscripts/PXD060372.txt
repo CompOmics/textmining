@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture; Malignant cell
+diseases: Cervix carcinoma
+instruments: Orbitrap Astral
+modifications: No PTMs are included in the dataset
+experiment types: Data-independent acquisition; Bottom-up proteomics
+quantification: label-free quantification
+keywords: Parp inhibitors; Photoaffinity labeling; Chemical proteomics; Olaparib
+
+ABSTRACT:
+Olaparib is a widely used PARP inhibitor for the treatment of BRCA-mutated cancers. To comprehensively understand the drug's clinical impact, measuring its interactions with intended on- and off-targets is crucial. In this study, olaparib's on- and off-targets were profiled using photoaffinity labeling, a powerful, proteome-wide method for studying the direct interactions between a drug and its protein targets. A novel photoaffinity probe was designed and used in a proteomic screening to discover novel targets of olaparib in the human proteome. The probe, incorporating a pre-installed biotin group, bypasses the limitations of using a copper(I)-catalyzed click reaction in cell lysates for reporter group conjugation and revealed a broad range of olaparib interactors, including previously unreported proteins, in a quantitative mass spectrometry-based proteomic screening using HeLa whole cell lysate. The study contributes to our current understanding of the pharmacology of olaparib and provides a valuable tool for elucidating drug interactors within cell lysates, potentially guiding the development of more targeted therapeutics with fewer off-targets.
+
+PROJECT DESCRIPTION:
+Proteome-wide profiling of olaparib interactors using a biotinylated photoaffinity probe
+
+SAMPLE PROCESSING:
+HeLa whole cell protein extracts were either pre-incubated with olaparib (competition experiments) or immediately incubated with either probe 4 (biotinylated olaparib photoaffinity probe containing a diazirine group), or probe 9 (the used linker from probe 4, with the diazirine and biotin group to serve as a control). Samples are incubated for 70 minutes rotating, followed by UV irradiation at 365nm for 20 minutes. Subsequently the samples were incubated with streptavidin beads for 30 minutes, which was followed by stringent washing (2x 5min rotating at RT) with a buffer containing 8M urea and 1% NP40, then 2x with a wash buffer containing only 0.1% NP40. Finally samples were washed 4x with PBS. Then the samples were on-bead digested and following day samples were acidified and peptide desalting using stagetips. Samples were measured on the Orbitrap Astral, with data-independent acquisition.
+
+DATA PROCESSING:
+Raw data was analyzed using DIA-NN according to developer guidelines. V57: biological replicate 1 Empty beads, no UV Negative control, empty streptavidin beads, no UV irradiation Empty beads, UV Negative control, empty streptavidin beads, UV irradiation linker_diazirine, no UV Probe 9, no UV linker_diazirine, UV Probe 9, UV olap_diazirine, no UV Probe 4, no UV olap_diazirine, UV probe 4, UV V71: biological replicate 2 c_min Negative control, empty streptavidin beads, no UV irradiation c_plus Negative control, empty streptavidin beads, UV irradiation linker_min Probe 9, no UV linker_plus Probe 9, UV probe_min Probe 4, no UV probe_plus Probe 4, UV V115: competitive binding assay 0x No pre-incubation with olaparib, only with 3uM probe 4 1x Pre-incubation with 3uM olaparib followed by incubation with 3uM probe 4 10x Pre-incubation with 30uM olaparib followed by incubation with 3uM probe 4 100x Pre-incubation with 300uM olaparib followed by incubation with 3uM probe 4 C Empty streptavidin beads

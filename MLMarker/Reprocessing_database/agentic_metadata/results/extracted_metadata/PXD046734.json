@@ -1,0 +1,235 @@
+{
+  "sample_groups": [
+    {
+      "name": "Tumor and T cell co-culture (HySic)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Epithelial cell",
+          "evidence": "organism parts: Epithelial cell",
+          "ontology_id": "tissues:0085",
+          "ontology_name": "epithelial cell",
+          "similarity": 1.0
+        },
+        {
+          "value": "T cell",
+          "evidence": "organism parts: T cell",
+          "ontology_id": "tissues:0074",
+          "ontology_name": "T cells",
+          "similarity": 0.9892
+        }
+      ],
+      "disease": [
+        {
+          "value": "Non-small cell lung carcinoma",
+          "evidence": "diseases: Non-small cell lung carcinoma",
+          "ontology_id": "diseases:0013",
+          "ontology_name": "non-small cell lung carcinoma",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "A549",
+          "evidence": "HySic Study I: A549 and NCI-H358 cell lines",
+          "ontology_name": "A549",
+          "similarity": 1.0
+        },
+        {
+          "value": "NCI-H358",
+          "evidence": "HySic Study I: A549 and NCI-H358 cell lines"
+        },
+        {
+          "value": "LCLC-103H",
+          "evidence": "HySic study II: LCLC-103H and EBC-1 cell lines"
+        },
+        {
+          "value": "EBC-1",
+          "evidence": "HySic study II: LCLC-103H and EBC-1 cell lines"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "Orbitrap Exploris 480 MS (Thermo Scientific)",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        },
+        {
+          "value": "Orbitrap Q Exactive H-FX",
+          "evidence": "Orbitrap Q Exactive H-FX MS (Thermo Scientific)",
+          "ontology_id": "instruments:0013",
+          "ontology_name": "Q Exactive HF-X",
+          "similarity": 0.8981
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "HCD-MS2 spectra were collected",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Lys C",
+          "evidence": "digested using Lys C (Wako)",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9104
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "and trypsin (Sigma)",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "fixed modifications were set to carbamidomethylation",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "S-phosphorylation",
+          "evidence": "phosphorylation at STY residues was selected",
+          "ontology_id": "modifications:0005",
+          "ontology_name": "S-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "T-phosphorylation",
+          "evidence": "phosphorylation at STY residues was selected",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "phosphorylation at STY residues was selected",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "27 NCE",
+          "evidence": "NCE of 27"
+        },
+        {
+          "value": "28 NCE",
+          "evidence": "NCE of 28"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "155",
+          "evidence": "eluted over a 155 min gradient"
+        },
+        {
+          "value": "95",
+          "evidence": "elution gradient over 95min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "C18 trapping column... C18 analytical column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "MS data was acquired in Data-Dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC labelling: Tumor cell lines were cultured",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described; samples injected directly"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "Fe(III)-NTA",
+        "evidence": "enriched for phosphopeptides using 5 uL Fe(III)NTA cartridges"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "LC-MS injection (implied by UHPLC-Orbitrap setup)",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene overexpression",
+          "evidence": "transduced with a MART-1 specific TCR"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "Pharmacologic inhibition of PAK1 sensitized tumor cells"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "MART-1 specific TCR",
+          "evidence": "transduced with a MART-1 specific TCR"
+        },
+        {
+          "value": "PAK1 inhibitor",
+          "evidence": "Pharmacologic inhibition of PAK1"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "transduced with a MART-1 specific TCR",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "Pharmacologic inhibition of PAK1",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

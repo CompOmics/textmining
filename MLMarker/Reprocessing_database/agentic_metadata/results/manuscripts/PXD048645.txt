@@ -1,0 +1,18 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Escherichia coli
+instruments: Orbitrap Fusion Lumos
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+keywords: Nascent chain; Ribosomes; Ms; Molecular chaperones; Protein synthesis; Β-galactosidase; Protein folding
+
+ABSTRACT:
+Protein folding is assisted by molecular chaperones that bind nascent polypeptides during mRNA translation. Several structurally-distinct classes of chaperones promote de novo folding, suggesting that their activity is coordinated at the ribosome. Here we use biochemical reconstitution and structural proteomics to explore the molecular basis for cotranslational chaperone action in bacteria. We find that chaperone binding is disfavoured close to the ribosome, allowing folding to precede chaperone recruitment. Trigger factor subsequently recognises compact folding intermediates exposing extensive non-native surface and dictates DnaJ access to nascent chains. DnaJ uses a large surface to bind structurally diverse intermediates, and recruits DnaK to solvent-accessible sites in a sequence non-specific manner. Neither Trigger factor, DnaJ nor DnaK destabilize cotranslational folding intermediates. Instead, the chaperones collaborate to create a protected space for protein maturation that extends well beyond the ribosome exit tunnel. Our findings show how the chaperone network selects and modulates cotranslational folding intermediates.
+
+PROJECT DESCRIPTION:
+Mechanism of chaperone coordination during cotranslational protein folding in bacteria
+
+SAMPLE PROCESSING:
+Samples containing 10 µg of protein complexes were separated in 8 mm on NuPAGE Bis-Tris gels (1.5 mm, 12 wells, 4-12% for dataset A, 1.0 mm, 12 wells, 12% for dataset B and dataset C) followed by Quick Coomassie Stain (Neo Biotech) staining, band excision and destaining in extraction buffer (50% acetonitrile, 100 mM ammonium bicarbonate, 5 mM DTT, 16 h, 4 °C).  Samples were then alkylated (40 mM chloroacetamide, 160 mM ammonium bicarbonate, 10 mM TCEP, 20 min, 70 °C), dehydrated in 100% acetonitrile, and air-dried at 37 °C, followed by digestion with trypsin (Promega). Digested peptides were processed and used to determine the protein content of each corresponding sample. In short, tryptic peptides were loaded onto Evotips (Evosep) and eluted using the 30SPD gradient via an Evosep One HPLC with a 15 cm C18 column into a Lumos Tribrid Orbitrap mass spectrometer (ThermoScientific) via a nanospray emitter (2,200 V).  Acquisition parameters were set to data-dependent mode with precursor ion spectra acquired at 120,000 resolution followed by higher energy collision dissociation. The same protocol (using 1.0 mm, 12 wells, 12% NuPAGE Bis-Tris gels) was followed when quantifying the protein content in resuspended pellets following co-sedimentation assays.
+
+DATA PROCESSING:
+Raw files were processed in MaxQuant and Perseus with Uniprot E. coli reference proteome database and a database for common contaminants. Protein and peptide false detection rates using a decoy reverse database were set to 1%. Quantification of proteins was achieved using iBAQ (intensity-based absolute quantification).

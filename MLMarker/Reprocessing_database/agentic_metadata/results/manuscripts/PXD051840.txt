@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Hela cell
+instruments: Orbitrap Fusion Lumos
+modifications: monohydroxylated residue
+experiment types: Data-dependent acquisition
+keywords: Uvc;gsdme;disulfide bond
+
+ABSTRACT:
+It is widely acknowledged that gasdermin family proteins, which are known as the executors of pyroptosis, undergo protease-mediated cleavage prior to inducing pyroptosis. Here, we unexpectedly discovered a non-canonical form of pyroptosis mediated by full-length GSDME (FL-GSDME) without any proteolytic cleavage. Upon intense ultraviolet (UV) irradiation-triggered DNA damage, hyperactivation of nuclear PARP1 led to extensive formation of poly(ADP-ribose) (PAR) polymers and then release to the cytoplasm.These PAR polymers activate PARP5 to catalyze GSDME PARylation, resulted in a conformational change in GSDME that relieved autoinhibition imposed by its C terminus on the N terminus. On the other hand, intense UV irradiation boosted mitochondrial fission-dependent generation of mitochondrial reactive oxygen species (mito-ROS), further promoting cytochrome c-catalyzed peroxidation of cardiolipin. This lipid-ROS signal was then sensed by PARylated-GSDME and then induced oxidative oligomerization of GSDME, which facilitated FL-GSDME plasma membrane targeting for perforation, eventually inducing pyroptosis. Reagents that concurrently stimulate PARPs activity and lipid-ROS also induced sequential modifications i.e., PARylation and oxidation of FL-GSDME and synergistically promoted pyroptotic cell death. Overall, our findings elucidate a novel mechanism underlying cleavage-independent function of GSDME in executing cell demise, further enriching the paradigms and cognition of FL-GSDME-mediated non-canonical pyroptosis.
+
+PROJECT DESCRIPTION:
+Revealing disulfide bond formation in GSDME upon UVC irradiation under non-reducing conditions
+
+SAMPLE PROCESSING:
+The HeLa cells were transfected with GSDME-strep-Flag, followed by UVC treatment. Subsequently, the cells were lysed using a lysis buffer containing NEM (N-Ethylmaleimide) to block free sulfhydryl groups and subjected to a pull-down assay. The non-reduced protein samples were enzymatically digested with trypsin and analyzed using Orbitrap Fusion Lumos mass spectrometry (Thermo).
+
+DATA PROCESSING:
+MS files (RAW) were searched using the pLink21 software against the human protein database from UniProt (reviewed sequences only; 20481 entries including common contaminants). The searching parameters were set as followed: “Flow Type”-“Disulfide Bond (HCD-SS); “Trypisn-Up to 3 missed cleavages”; “Precursor Tolerance”-“20 ppm”; “Fragment Tolerance”-“20 ppm”, “Separate FDR <5% at PSM level”.  1. Chen, Z.L. et al. A high-speed search engine pLink 2 with systematic evaluation for proteome-scale identification of cross-linked peptides. Nat Commun 10, 3404 (2019).

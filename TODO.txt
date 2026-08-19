@@ -3,13 +3,186 @@ PAPER STRUCTURE — ANALYSIS STATUS
 [x] done  [~] wrong scope/rerun  [ ] not started
 ================================================================================
 
-SECTION 1 — METADATA GAP (M1)
+SECTION 1 — METADATA GAP (M1)   -> executed in "section 1/", self-contained,
+    REORGANIZED: common.py holds all shared loading/kappa/plotting logic;
+    build_section1.py produces only the 6 main figures (A, B, C, D, G, H --
+    plain panel-A heatmap and the mention-rate-vs-presence-kappa scatter (old
+    panel E) were deleted as redundant, see rationale below); everything
+    else (F string-heatmap baseline, outlier screen, threshold sensitivity,
+    bootstrap CIs, HarmonizedHuman verification, manual audit) moved to
+    section 1/supplementary/build_supplementary.py. Panel A and G heatmaps
+    are now lower-triangle-only (matrix is symmetric, upper half was pure
+    redundancy) on a sequential 0-1 scale, not diverging -1..1 -- pooled
+    kappa never goes negative in this dataset (checked: min 0.14-0.18 across
+    A/F/G), so a diverging red/white/blue scale was wasting half its range.
+    reads ONLY EuBIC-annotation/ (no PRIDE census, no external crosswalk file)
 --------------------------------------------------------------------------------
 [x] EuBIC corpus (I2/I7/I8), 27 papers -> EuBIC-annotation/
-[x] Inter-annotator kappa -> output_v2/panel_b_table.csv, per_field_pairwise_kappa.csv
-    [ ] report shared-N per pair (some pairs share only 2-3 papers)
-[x] Text-mention rate (I6) -> field_mentions_lollipop_table.csv
-    [ ] kappa vs mention-rate rank correlation (data exists, stat not run)
+[x] Label/category vocabulary: all 68 raw BRAT/flat labels found directly in
+    SingleHuman/GPT/HarmonizedHuman/MultiHuman, categorized in-script
+    -> section 1/label_category_map.csv (not the external crosswalk table)
+[x] Presence/absence inter-annotator kappa, pooled + per-label
+    -> section 1/figure1_panel_a_kappa_heatmap.png/csv (pooled, 11 identities)
+    -> section 1/figure1_panel_b_kappa_by_label.png/csv (all 68 labels)
+    [ ] report shared-N per pair explicitly in the write-up (some pairs share
+        only 2-3 papers; see figure1_panel_a_kappa_heatmap.csv n_shared_docs)
+[x] Text-mention rate, from HarmonizedHuman consensus tagging (not a cached
+    external CSV) -> section 1/figure1_panel_c_mention_rate.png/csv
+[x] FILTER applied throughout: labels mentioned in < 3/27 papers by
+    HarmonizedHuman are dropped as underpowered (n=1-4 instances tells you
+    nothing) -> kept 49/68. Dropped: AnatomicSiteTumor, AssayName, Bait,
+    BiologicalReplicate, Depletion, DiseaseTreatment, GeneticModification,
+    GrowthRate, MaterialType, OriginSiteDisease, SourceName, Specimen,
+    SpikedCompound, SyntheticPeptide, TechnicalReplicate, TechnologyType,
+    TumorCellularity, TumorGrade, TumorStage. Full list + n_mentions in
+    section 1/label_category_map.csv (kept=True/False column).
+[x] Cross-check vs. agentic-benchmark's actual extraction schema (33 fields
+    across the 3 agents, from agentic-benchmark/benchmark_data/SDRFS_github/
+    *_golden.json): 28/49 kept EuBIC labels correspond to a field the
+    pipeline actually targets (see agentic_benchmark_field column in
+    label_category_map.csv). 2 of the 33 schema fields (BMI, ethnicity) have
+    NO EuBIC-annotation counterpart at all -- can never be checked against
+    this human ground truth. Noted as a known entity mismatch, not treated
+    as an error to fix.
+[x] Kappa vs. mention-rate rank correlation -> section 1/figure1_panel_e_correlation.png,
+    rank_correlation_summary.txt. On the FILTERED 49 labels: rho = -0.05,
+    p = 0.73 -- NOT significant. (On the unfiltered 68 it was rho=0.28,
+    p=0.02; that result was evidently driven by the noisy low-n tail, and
+    does not survive once underpowered labels are excluded. Report the
+    filtered number.)
+[x] Value-level agreement (not just presence/absence) -- exact string match,
+    then a SapBERT pass (cambridgeltl/SapBERT-from-PubMedBERT-fulltext,
+    [CLS], cosine >= 0.70, same threshold as framework/normalization) to catch
+    conceptual matches exact-string comparison misses
+    -> section 1/figure1_panel_d_value_agreement.png/csv
+    Pooled result (49 filtered labels): 72.4% exact match, +16.4% recovered
+    by SapBERT (-> 88.8% effective agreement), 11.3% real mismatch.
+    Threshold calibrated empirically on this dataset: unrelated field-value
+    pairs never exceed cosine 0.49, comfortably below the 0.70 cutoff.
+    Two alternatives were tried and rejected first: raw mean-pooled SciBERT
+    does not separate known synonyms from unrelated pairs for these short
+    domain terms (anisotropy); pritamdeka/S-PubMedBert-MS-MARCO separated
+    them but has no project precedent for a threshold. SapBERT was kept
+    because it is the model already used in framework/normalization/ontology.py.
+[x] NEW: proper value-CATEGORY Cohen's kappa (not just a raw match rate) --
+    each rater's "category" per (doc, label) item is their actual extracted
+    value (or ABSENT), generalizing presence-kappa to real content agreement.
+    Two schemes, each a full pooled 11x11 heatmap + per-label breakdown:
+      -> section 1/supplementary/figure1_panel_f_string_kappa_heatmap.png/csv  (exact string identity)
+      -> section 1/figure1_panel_g_sapbert_kappa_heatmap.png/csv (SapBERT-cluster identity, cos>=0.70; MAIN figure)
+    Pooled mean kappa (mean of per-pair pooled kappas): string = 0.342, SapBERT = 0.440.
+    WHY THE GAIN LOOKS SMALL NEXT TO THE RAW-AGREEMENT GAIN -- diagnosed and
+    saved -> section 1/supplementary/kappa_pooling_diagnostic.csv (single
+    contingency table pooling every pair+label+doc at once, a different but
+    equally valid convention from the mean-of-per-pair-kappas above):
+      scheme    n_items  n_categories   p0(raw)   pe(chance)  kappa
+      string      15456          1158     0.599        0.353   0.380
+      sapbert     15456           364     0.666        0.363   0.476
+      presence    15456             2     0.748        0.514   0.481
+    Collapsing 1158 distinct value strings into 364 SapBERT clusters raises
+    raw agreement (p0: 0.60->0.67, matching panel D's ~16% recovered-by-
+    embedding figure) but ALSO raises chance agreement almost as much
+    (pe: 0.353->0.363), because fewer/bigger categories are also easier to
+    land on by chance. Kappa nets these against each other, so it rises by
+    much less than p0 does -- this is kappa working as designed, not a bug.
+    Reframe: SapBERT-identity kappa (0.476) ends up almost equal to plain
+    presence/absence kappa (0.481) -- forgiving wording gets value-level
+    agreement almost all the way up to the "did anyone mention it at all"
+    floor, without needing exact string matches.
+[x] NEW: movement plot -- per-label kappa under both schemes, x = mention
+    rate, connected by a line; only labels shifting by >= 0.08 kappa are
+    labeled -> section 1/figure1_panel_h_movement.png/csv
+    8/49 labels move that much: AcquisitionMethod (+0.24), Disease (+0.19),
+    Label (+0.19), Modification (+0.19), Organism (+0.15), FractionationMethod
+    (+0.08), IonizationType (+0.08), and one that got WORSE:
+    FragmentationMethod (-0.10) -- likely SapBERT over-merging genuinely
+    distinct techniques (e.g. HCD vs. CID) into one cluster. RESOLVED by
+    check 5 below: this is threshold-dependent, not a fixed error.
+
+[x] ASSESSMENT EXTRAS (5 checks needed to call this solid, not a first pass):
+
+    1. Bootstrap 95% CIs on every pooled kappa (resample papers, 400-1000
+       reps) -> figure1_panel_a_kappa_heatmap_with_ci.csv,
+       figure1_panel_a_kappa_heatmap_Naware.png (N-aware opacity: low-shared-N
+       cells fade out). Mean CI width = 0.25 kappa units -- every point
+       estimate reported anywhere in Section 1 carries real uncertainty of
+       that order; state ranges, not bare numbers, when citing specific pairs.
+
+    2. Outlier-annotator screen (Tukey fence on mean kappa vs. the other 7
+       MultiHuman annotators) -> outlier_annotator_screen.csv/png. NO
+       annotator flagged -- the visible spread (Annotator4 mean=0.31 vs.
+       Annotator2 mean=0.54) does not clear a formal outlier bar. Keep all 8.
+
+    3. HarmonizedHuman vs. a real majority vote from the raw MultiHuman
+       batches -> harmonized_consensus_check.csv, harmonized_vs_true_majority_vote.csv.
+       CORRECTED after two passes (first pass used a naive strict-majority
+       presence rule and got this wrong, see history):
+         - Presence: HarmonizedHuman's real rule is "present if ANY covering
+           annotator mentioned it" (confirmed: all genuine 1-1 ties resolve
+           to PRESENT), not strict majority. Under that corrected rule,
+           agreement = 92.7%, kappa = 0.853 (n=1050, >=2 covering annotators,
+           on the final 42-label set after both filters). The remaining 7.3%
+           gap is consistent with the harmonizer drawing on more than just
+           the visible 2-4-person batch.
+         - Value (using SapBERT-clustered categories, not raw strings): when
+           the covering annotators were UNANIMOUS (n=443), HarmonizedHuman
+           matches that value 88.9% of the time, as expected. When they were
+           SPLIT (n=89, i.e. real disagreement), HarmonizedHuman matches the
+           plurality/most-common value only 23.6% of the time.
+       CONCLUSION: a real majority vote would NOT be better. HarmonizedHuman
+       tracks a simple vote closely on easy, unanimous cases, but on exactly
+       the hard cases where annotators genuinely disagreed, the human
+       harmonizer picked something other than the majority answer ~3 times
+       out of 4 -- consistent with real semantic reconciliation (recognizing
+       differently-worded spans as the same concept, correcting an
+       annotator's error) rather than frequency counting. A mechanical
+       majority vote would systematically get the hard cases wrong in a way
+       the actual curated file does not. Also independently confirmed: 7
+       labels (CellPart, ConcentrationOfCompound, DevelopmentalStage,
+       Experiment, FlowRateChromatogram, Temperature, TumorSite) were tagged
+       by <=1 unique MultiHuman annotator across the ENTIRE corpus yet still
+       appeared in HarmonizedHuman -- a real violation of the outline's
+       documented "exclude single-annotator entities" rule. FIXED: these 7
+       are now excluded by a second filter (MIN_UNIQUE_ANNOTATORS=2 in
+       common.py) applied everywhere, on top of the mention-count filter --
+       49 labels dropped to 42. This also raised check 3's presence-agreement
+       number (67.7% -> 92.7%) since those 7 unverifiable labels were pure
+       noise in the comparison.
+
+    4. Manual-style audit, TWO independent 45-row samples (round 1: pre-
+       single-annotator-filter, 49-label set; round 2: post-filter, 42-label
+       set), both personally classified -> supplementary/
+       audit_sample_for_manual_review.csv (manual_verdict column, latest run).
+       Combined across 30 semantic-match rows: 29/30 correct, 1 clear FALSE
+       POSITIVE (PrecursorMassTolerance "20 ppm" vs "6 ppm", round 1 --
+       matched on units/context not the actual number; SapBERT should not be
+       trusted alone on numeric fields, which is exactly why the full
+       pipeline has a separate deterministic numeric-mismatch detector).
+       Combined across 30 no-match rows: ~14/30 genuine disagreements, ~11
+       likely FALSE NEGATIVES, 3 unrelated data-quality issues. The false-
+       negative pattern is consistent across both rounds: bare numbers ("30;
+       27; 25.5" vs "stepped normalized collision energy (25.5, 27, 30)"),
+       bare abbreviations ("TiO2", "FFPE"), and verbose/hedged phrasing
+       ("not explicitly stated (ZenoTOF implies TOF analyzer)" vs "TOF") all
+       embed poorly and miss the 0.70 cutoff, several by a hair (e.g.
+       "Q-Exactive-HF" vs "...mass spectrometer" at 0.677). Data-quality
+       issues found (not the matcher's fault): a "Strain" value that was
+       literally "Supplementary Table 2"; "HCD" (a technique) tagged under
+       the numeric CollisionEnergy field; an AlkylationReagent value that was
+       just "c". CONCLUSION: SapBERT's recall (not just its precision) has a
+       real, systematic weak spot -- short/bare/abbreviated values need
+       surrounding descriptive words to embed well. Worth a synonym-expansion
+       or abbreviation-dictionary pass for these value types before trusting
+       the "no match" bucket's rate at face value in the manuscript.
+
+    5. Threshold sensitivity, cosine in {0.60...0.85} -> figure1_panel_i_
+       threshold_sensitivity.png, threshold_sensitivity_pooled/per_label.csv.
+       Pooled kappa moves smoothly 0.46 (0.60) -> 0.37 (0.85), never crossing
+       the string baseline (0.34) at any tested threshold -- the headline
+       SapBERT result is not a knife-edge artifact of picking 0.70.
+       FragmentationMethod's kappa RISES at stricter thresholds (0.17 -> 0.26
+       from 0.65 to 0.85), confirming its earlier negative shift was 0.70
+       over-merging it specifically, not a real regression.
 
 SECTION 2 — FRAMEWORK (descriptive)
 --------------------------------------------------------------------------------

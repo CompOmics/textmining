@@ -1,0 +1,229 @@
+{
+  "sample_groups": [
+    {
+      "name": "pRCC and Healthy Kidney Tissues",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "kidney",
+          "evidence": "organism parts: Kidney",
+          "ontology_id": "tissues:0005",
+          "ontology_name": "kidney",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "Papillary renal cell carcinoma",
+          "evidence": "diseases: Papillary renal cell carcinoma",
+          "ontology_id": "diseases:0027",
+          "ontology_name": "papillary renal cell carcinoma",
+          "similarity": 1.0
+        },
+        {
+          "value": "healthy",
+          "evidence": "normal",
+          "ontology_id": "diseases:0001",
+          "ontology_name": "healthy",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Q Exactive HF",
+          "evidence": "instrument: Q Exactive HF",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "normalized collision energy of 27 eV",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "cleavage agent details: Trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Cysteine carbamidomethylation was set as fixed modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "27 NCE",
+          "evidence": "normalized collision energy of 27 eV"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "120",
+          "evidence": "gradient from 3.8 to 40% solvent B ... over 120 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "in-house packed with 3-µm C18 resin",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "16 data-dependent MS/MS scans",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label: label free sample",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SCX",
+        "evidence": "fractionated by strong cation exchange (SCX) chromatography"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No phosphopeptide enrichment described"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Nanoelectrospray was generated",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    },
+    {
+      "name": "pRCC and Healthy Kidney Cell Lines",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "human kidney (HK-2) cell line",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Papillary renal cell carcinoma",
+          "evidence": "pRCC derived cell lines Caki-2 and ACHN",
+          "ontology_id": "diseases:0027",
+          "ontology_name": "papillary renal cell carcinoma",
+          "similarity": 1.0
+        },
+        {
+          "value": "healthy",
+          "evidence": "HK-2 kidney controls",
+          "ontology_id": "diseases:0001",
+          "ontology_name": "healthy",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "Caki-2",
+          "evidence": "pRCC-derived cell lines Caki-2"
+        },
+        {
+          "value": "ACHN",
+          "evidence": "ACHN (ATCC CRL-1611)"
+        },
+        {
+          "value": "HK-2",
+          "evidence": "human kidney (HK-2, cortex/proximal tubule)"
+        }
+      ],
+      "instrument": [],
+      "fragmentation": [],
+      "enzymes": [],
+      "modifications": [],
+      "collision_energy": [],
+      "gradient_time_min": [],
+      "lc_column": [],
+      "acquisition": [],
+      "labeling": [],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for cell lines"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment described for cell lines"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "isotope tracing",
+          "evidence": "isotope tracing experiments were performed"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "13C6 glucose",
+          "evidence": "13C6 labeled glucose"
+        },
+        {
+          "value": "13C515N glutamic acid",
+          "evidence": "13C515N glutamic acid as probe"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "environmental",
+          "evidence": "isotope tracing experiments",
+          "ontology_id": "treatments:0003",
+          "ontology_name": "environmental",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

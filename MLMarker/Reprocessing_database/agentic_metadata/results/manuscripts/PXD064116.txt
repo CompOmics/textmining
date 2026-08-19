@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Escherichia coli
+organism parts: Cell culture
+instruments: Orbitrap Fusion Lumos
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Translation accuracy; E. coli; Translation error
+
+ABSTRACT:
+We present a method that quantifies nearly all pairwise amino acid substitutions, revealing the rates and spectra of mistranslation per amino acid and per codon.
+
+PROJECT DESCRIPTION:
+Translation Accuracy in E. coli
+
+SAMPLE PROCESSING:
+Protein purification began with pelleting the cells via centrifugation (frozen prior to lysis) and incubating the pellet in 25 µL pH 7.5 lysis buffer (pH adjusted with phosphoric acid) consisting of 5% sodium dodecyl sulfate (SDS) and 50 mM triethylammonium bicarbonate (TEAB) at 95°C for 10 minutes. Samples were kept on ice unless otherwise stated. Samples were then clarified by centrifugation for 10 minutes (13,000 RCF). Proteins (the supernatant) were reduced via the addition of dithiothreitol (DTT) to a concentration of 50 mM with a 10-minute incubation at 95°C. Iodoacetamide (IAA) was added to a concentration of 40 mM, and samples were incubated at room temperature, in the dark, for 30 minutes to irreversibly modify cysteines to carbamidomethyl cysteine, preventing them from forming disulfide bonds. Phosphoric acid was added to a final concentration of 5.5%, then 2 µL of 1 µg/µL trypsin was added to the acidified samples. S-trap binding buffer (100 mM TEAB in 90% methanol, pH 7.1) was then added to the peptide samples (volume equal to 6 times the sum total of DTT, IAA, and phosphoric acid). Samples were then transferred to S-trap columns and centrifuged at 4,000 RCF for 1 minute. The column was washed four times with 150 µL of the S-trap binding buffer. On-column trypsin digestion was performed by adding 25 µL of 50 mM TEAB, pH 8, containing 0.5 µg of trypsin to the top of the protein trap. The column was then incubated for 1.5 hours at 47°C. Peptides were finally eluted three times (centrifugation of 4000 RCF for 1 minute), first with 40 µL of 50 mM, pH 8, TEAB, then with 0.2% aqueous formic acid, and then with 35 µL of 50% acetonitrile containing 0.2% formic acid. Peptides were dried in a speed vacuum for two hours, then resuspended in 20-40 µL of 0.1% formic acid. In the mass spec data presented here, 218 refers to the wild-type, 219 refers to the accurate, and 220 refers to the error-prone ribosomal variants.
+
+DATA PROCESSING:
+Approximately 500 ng of peptides were injected onto an Ultimate 3000 HPLC (Thermo Fisher Scientific) at 0.300 nL/min and separated on a 50 cm EASY SPRAY C18 column (Thermo Fisher Scientific) before being analyzed in an Orbitrap Fusion Lumos Tribrid Mass Spectrometer (Thermo Fisher Scientific). Buffer A consisted of 99.9% LC-MS-grade water, Buffer B consisted of 99.9% LC-MS-grade acetonitrile, and both buffers contained 0.1% formic acid. A 5 minute equilibration preceded a 60 minute analytical gradient of 1%-35% B and a 5 minute column wash at 80% B. The mass spectrometer was run in database-dependent acquisition (DDA) mode with both MS1 and MS2 being detected on the Orbitrap. The MS1 full scan resolution was set to 120K, a scan range of 375-1500 m/z, charge states were set to the range of +2 to +7, the AGC target was set to 400K, and maximum injection time was 50ms. Precursor ions were activated by HCD with 30% collision energy, MS2 resolution was set to 30K, the AGC target was set to 50K, and the maximum injection time was 54ms. Raw data files were analyzed in Proteome Discoverer 3.1 (Thermo Fisher Scientific).

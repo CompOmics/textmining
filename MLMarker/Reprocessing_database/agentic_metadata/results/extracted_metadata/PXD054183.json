@@ -1,0 +1,187 @@
+{
+  "sample_groups": [
+    {
+      "name": "HeLa cells (Interphase and Mitotic)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Cervix carcinoma",
+          "evidence": "diseases: Cervix carcinoma",
+          "ontology_id": "diseases:0024",
+          "ontology_name": "cervix carcinoma",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [
+        {
+          "value": "ribosome",
+          "evidence": "We collected free, 40S, 60S, and 80S ribosome fractions",
+          "ontology_id": "cell_parts:0010",
+          "ontology_name": "ribosome",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "implied by Cervix carcinoma and standard cell line usage in context",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "implied by TMT6plex reporter ion analysis on Q Exactive",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Proteins were digested using the S-trap protocol... 1.5 µg trypsinized peptides",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "static carbamidomethyl (+57.021 Da; C)",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "N-term-acetylation",
+          "evidence": "static TMT6plex (+229.163 Da; any N-terminus)",
+          "ontology_id": "modifications:0004",
+          "ontology_name": "N-term acetylation",
+          "similarity": 0.99
+        },
+        {
+          "value": "K-acetylation",
+          "evidence": "static TMT6plex (+229.163 Da; K)",
+          "ontology_id": "modifications:0010",
+          "ontology_name": "K-acetylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "implied standard for Q Exactive TMT6plex reporter ions"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "120",
+          "evidence": "implied standard for TMT fractionation on Q Exactive"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Pierce High pH Reversed-Phase Peptide Fractionation Kit",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "experiment types: Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "quantification: TMT",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "High pH Reversed-Phase",
+        "evidence": "fractionated using the Pierce High pH Reversed-Phase Peptide Fractionation Kit"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No phospho-enrichment described; phosphorylation listed as search parameter only"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "implied by LC-MS setup with Q Exactive",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "Cells were treated with 100 μg/mL cycloheximide"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "mitotic delay induced by anti-mitotic chemotherapeutics"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "cycloheximide",
+          "evidence": "Cells were treated with 100 μg/mL cycloheximide"
+        },
+        {
+          "value": "anti-mitotic chemotherapeutics",
+          "evidence": "mitotic delay induced by anti-mitotic chemotherapeutics"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "cycloheximide is a small molecule drug",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "anti-mitotic chemotherapeutics are small molecules",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

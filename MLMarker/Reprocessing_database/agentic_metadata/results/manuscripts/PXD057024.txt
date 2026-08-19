@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Orbitrap Eclipse
+modifications: No PTMs are included in the dataset
+experiment types: Data-independent acquisition; Bottom-up proteomics
+keywords: Proteomics; Dia; Hiv; Protac
+
+ABSTRACT:
+We have designed and characterised antiviral PROteolysis TArgeting Chimeras (PROTACs) targeting the human protein cyclophilin A (CypA), a host cofactor for unrelated viruses including human immunodeficiency virus (HIV) and hepatitis C virus (HCV). The PROTAC warheads are based on fully synthetic macrocycles derived from sanglifehrin A, which are structurally different from the classical Cyp inhibitor, cyclosporin A. Our Cyp-PROTACs decrease CypA levels in cell lines and primary human cells, and this degradation is via a PROTAC mechanism. These molecules have high specificity for CypA illustrated by proteomics experiments. Critically, CypA degradation facilitates improved antiviral activity against HIV-1 in primary human CD4+ T cells compared to the non-PROTAC parental inhibitor, at limiting inhibitor concentrations. Similarly, we observe antiviral activity against HCV replicon in a hepatoma cell line. We propose that CypA targeting PROTACs inhibit viral replication potently, and anticipate reduced evolution of viral resistance and broad efficacy against unrelated viruses. Furthermore, they provide powerful tools for probing cyclophilin biology.
+
+PROJECT DESCRIPTION:
+Macrocycle-based PROTACs selectively degrade cyclophilin A and inhibit HIV-1 and HCV
+
+SAMPLE PROCESSING:
+THP-1 Dual cells were treated with 5 µM Cyp inhibitor or DMSO for 72 hrs. After washing with PBS, cells were lysed (5 % SDS, 5 mM tris(2-carboxyethyl)phosphine (TCEP), 10 mM chloroacetamide (CAA), 100 mM Tris, 1 % Triton X-100, pH 8.5) and boiled for 10 mins followed by sonication in a water bath for 10 mins. Protein concentration was estimated by BCA assay (Thermo Fisher Scientific). Protein digestion was automated on a KingFisher APEX robot (Thermo Fisher Scientific) in 96-well format using a protocol from Koenig et al (https://star-protocols.cell.com/protocols/29750 with minor modifications. The 96-well comb is stored in plate #1, the sample in plate #2 in a final concentration of 70 % acetonitrile (ACN) and with magnetic MagReSyn Hydroxyl beads (ReSyn Biosciences) in a protein/bead ratio of 1:2. Washing solutions are in plates #3–5 (95 % ACN) and plates #6–7 (70 % ethanol). Plate #8 contains 300 μL digestion solution of 100 mM Tris pH 8.5 and trypsin (Promega) in an enzyme:protein ratio of 1:100. The protein aggregation was carried out in two steps of 1 min mixing at medium mixing speed, each followed by a 10 mins pause. The sequential washes were performed in 2.5 mins with slow speed, without releasing the beads from the magnet. The digestion was set to 16 hrs at 37 °C with slow speed. Protease activity was quenched by acidification with trifluoroacetic acid (TFA) to a final pH of 2, and the resulting peptide mixture was purified on OASIS HLB 96 well plate (Waters). Peptides were eluted twice with 100 µL of 50 % ACN and dried in a Savant DNA120 (Thermo Fisher Scientific).
+
+DATA PROCESSING:
+Peptides were ionized using a spray voltage of 2.1 kV and a capillary heated at 280 °C. The mass spectrometer was set to acquire full-scan MS spectra (350 to 1400 mass/charge ratio) for a maximum injection time set to Auto at a mass resolution of 60,000 and an automated gain control (AGC) target value of 100 %. For MSMS fragmentation we chose the DIA approach: AGC target value for fragment spectra was set at 200 %. 60 windows of 10 Da were used with an overlap of 1 Da (m/z range from 380 to 980). Resolution was set to 15,000 and IT to 40 ms. Normalized collision energy was set at 30 %.

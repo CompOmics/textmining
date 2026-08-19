@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Blood; Blood cell
+diseases: Acute leukemia
+instruments: Orbitrap Fusion Lumos
+modifications: monohydroxylated residue; iodoacetamide derivatized residue; sumoylated lysine
+experiment types: Data-dependent acquisition
+quantification: Label free; Spectrum counting
+keywords: Myelodysplastic neoplasms; Proteomics; Genome-wide crispr-cas9 screen; Sumo
+
+ABSTRACT:
+Hypomethylating agents (HMAs) are frontline therapies effective at altering the natural course of Myelodysplastic Neoplasms (MDS). However, acquired resistance and treatment failure are hallmarks of HMA therapy. Developing effective and rational HMA-focused combinatorial therapies is challenging  as the underlying mechanisms driving HMA efficacy are complex. To address this clinical need, we performed a genome-wide CRISPR-Cas9 screen in a human MDS-derived cell line, MDS-L, and characterized TOPORS as a highly ranked target that synergizes with HMAs to reduce leukemic burden and improve survival in xenograft models. We demonstrated that the depletion of TOPORS mediates sensitivity to HMAs by predisposing leukemic blasts to an impaired DNA damage response (DDR) accompanied by an accumulation of SUMOylated DNMT1 in HMA-treated TOPORS-depleted cells. Importantly, the combination of HMAs with targeting of TOPORS did not functionally impair healthy hematopoiesis. While inhibitors of TOPORS are currently unavailable, we show that inhibition of SUMOylation (upstream of TOPORS functions) with TAK-981 partially phenocopies HMA-sensitivity and DDR impairment. Overall, our data suggest that the combination of HMAs with the inhibition of SUMOylation demonstrates a favourable therapeutic index and represents a rational framework towards the treatment of High-Risk MDS (HR-MDS) or Acute Myeloid Leukemia (AML).
+
+PROJECT DESCRIPTION:
+Genome-Wide CRISPR-Cas9 Screening Identifies a Synergy between Hypomethylating Agents and SUMOylation Blockade in Myelodysplastic Syndromes and Acute Myeloid Leukemia
+
+SAMPLE PROCESSING:
+Experiment P.  Nuclear Protein Isolation.  In solution typsin digest, nanoLC and DDA MS   Experiment C.  SUMO1ylated proteome enrichment using Ni-NTA beads on whole cell proteins from cells expressing SUMO1 N-terminally tagged with 10xHis, followed by in solution typsin digest, nanoLC and DDA MS   The samples (2.5 - 5 µl) were then loaded onto the Fusion Lumos (ThermoFisher) connected to an UltiMate nanoRSLC UPLC and autosampler system (Dionex).  The peptides were initially concentrated and desalted with H2O:CH3CN (98:2, 0.2 % TFA) at 15 µl/min on a micro C18 precolumn (300 µm x 5 mm, Dionex). After a 4 min wash, the micro C18 precolumn was switched (Valco 10 port UPLC valve, Valco) into line to a fritless nano column (75µ x ~25cm) which contained C18AQ media (1.9µ, 120 Å Dr Maisch).  Peptides were then separated on a linear gradient of H2O:CH3CN (98:2, 0.1 % formic acid) to H2O:CH3CN (64:36, 0.1 % formic acid) at 0.2 µl/min over 90 min. Positive ions were generated with electrospray ionisation at 2000V. Data dependent acquisition (DDA) was performed with survey scan from m/z of 350 to 1750, resolution of 120,000 at m/z 200, accumulation target value of 400,000 ions and lockmass enabled (m/z 445.12003). A top-speed approach with a cycle time of 3s was used for data-dependent tandem MS analysis. Ions were fragmented by higher-energy collisional dissociation (HCD) with intensity threshold at 25,000. A mass tolerance of 10 ppm and dynamic exclusion of 20s was set.
+
+DATA PROCESSING:
+Raw data files were processed via Mascot Daemon (v2.5.1) for peak picking and identification with Oxidation (M), Carbamidomethyl (C) and SUMO (K) set as variable modifications. The remaining search parameters were enzyme: Trypsin, max missed cleavage: 3, mass values: monoisotopic, peptide mass tolerance: 4.0 ppm, MS/MS tolerance 0.4 Da and instrument:ESI-TRAP.  The resulting Mascot files were loaded into Scaffold (v4.11.0 or 5.3.2) for verification using the ProteinProphet algorithm with protein probability: 98%, peptide probability: 95% and minimum number of peptides.  MaxQuant searches (v 2.4.14.0) were also performed.

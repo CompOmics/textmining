@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+diseases: Melanoma; Lymphoma
+instruments: Orbitrap Eclipse
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: MS1 intensity based label-free quantification method
+keywords: Immunopeptidomics; Hla-class i; Hla
+
+ABSTRACT:
+The abundance of the mutated peptide KIF2C (P13L; peptide sequence:  RLFLGLAIK) on peptide-pulsed (0.1 and 1µM) versus transgenic minigene-expressing cell lines (U698M, A2058, Mel15 LCL) was assessed using HLA class I immunoprecipitation followed by mass spectrometry analysis of the HLA peptides.
+
+PROJECT DESCRIPTION:
+Surface expression of mutated HLA peptide (KIF2C - P13L) in lymphoma, melanoma and LCL cell lines
+
+SAMPLE PROCESSING:
+For each condition 1.5x10^8 cells were lysed and immunoprecipitation was performed o/n at 4°C using 1 mg mouse IgG2a W6/32 antibodies coupled to 0.5 mL Pierce Protein G Agarose beads. After performing subsequent washes with 20 mM Tris-HCl buffer, pH 8, containing 150 mM, 400 mM, 150 mM and 0 mM NaCl, respectively, the peptides were eluted using 3x 1mL 200 mM Glycine buffer, pH 2.5, at RT. Peptides were separated from proteins through 10 kDA molecular weight cut-off columns and were further purified using C18 SPE-StageTips. HLA peptides were re-suspended in 0.1% FA and analyzed by LC-MS/MS. Peptides were chromatographically separated using a Dionex Ultimate 3000 RSLCnano system coupled to an Orbitrap Eclipse mass spectrometer. Peptides were loaded to a trap column (75 μm i.d. × 2 cm, packed in-house with 5 μm of ReproSil-Pur 120 ODS-3 beads) using 0.1% FA at a flow rate of 5 μL/min for 10 minutes. Subsequently, peptides were transferred to an analytical column (75 μm i.d. × 40 cm, packed in-house with 1.9 μm ReproSil-Pur C18-AQ beads) at a flow rate of 300 nL/min and chromatographically separated using a 80 min linear gradient from 4% to 32% of solvent B (0.1% FA, 5% DMSO in ACN) and solvent A (0.1% FA, 5% DMSO in water). The Orbitrap Eclipse was operated in data dependent mode. MS1 survey spectra were recorded in the Orbitrap from 360 to 1800 m/z at a resolution of 120K (AGC target value of 100%, maxIT of 50 ms). Peptide fragmentation was performed via higher energy collisional dissociation (normalized collision energy of 30%), and MS2 spectra were recorded in the Orbitrap at 30K resolution (isolation window 1.3 m/z, AGC target value of 400%, maxIT of 54 ms, and dynamic exclusion of 35 s). The acquisition method also integrated an “inclusion list” containing the theoretical mass of the doubly charged HLA peptide RLFLGLAIK, 515.8422 m/z.
+
+DATA PROCESSING:
+Raw mass spectrometry data were processed using the FragPipe software (version 21.1) with its built-in search engine MSFragger version 4.0. Spectra were searched against the human UniProtKB database UP000005640, supplemented with the translated open reading frame of the KIF2C gene, containing the mutated sequence RLFLGLAIK. Default parameters for a nonspecific-HLA search were employed, with a defined precursor tolerance of 20 ppm and no enzyme specificity for database digest. Identifications were adjusted to 1% false discovery rate at the peptide and PSM levels, whereas protein FDR was not applied.

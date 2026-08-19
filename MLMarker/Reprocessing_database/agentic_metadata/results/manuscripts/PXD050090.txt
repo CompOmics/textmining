@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Cerebellum
+instruments: Q Exactive Plus
+modifications: monohydroxylated residue
+experiment types: Data-dependent acquisition
+quantification: Label free
+keywords: Cerebellum; Ap-2
+
+ABSTRACT:
+Identification of interaction partners of the alpha adaptin 2 in the cerebellum of 8 weeks old WT mice
+
+PROJECT DESCRIPTION:
+AP-2 alpha interaction partners in WT cerebellum
+
+SAMPLE PROCESSING:
+All samples were analyzed by the CECAD proteomics facility on a Q Exactive Plus Orbitrap mass spectrometer that was coupled to an EASY nLC (both Thermo Scientific). Peptides were loaded with solvent A (0.1% formic acid in water) onto an in-house packed analytical column (50 cm length, 75 μm inner diameter, filled with 2.7 μm Poroshell EC120 C18, Agilent). Peptides were chromatographically separated at a constant flow rate of 250 nL/min using the following gradient: initial 3 % solvent B (0.1% formic acid in 80 % acetonitrile), 3- 5% B within 1.0 min, 5-30% solvent B within 65.0 min, 30-50% solvent B within 13.0 min, 50-95% solvent B within 1.0 min, followed by washing and column equilibration. The mass spectrometer was operated in data-dependent acquisition mode. The MS1 survey scan was acquired from 300-1750 m/z at a resolution of 70,000 and 20 ms maximum injection time. The top 10 most abundant peptides were isolated within a 1.8 Th window and subjected to HCD fragmentation at a normalized collision energy of 27%. The AGC target was set to 5e5 charges, allowing a maximum injection time of 110 ms. Product ions were detected in the Orbitrap at a resolution of 35,000.
+
+DATA PROCESSING:
+All mass spectrometric raw data were processed with Maxquant (version 1.5.3.8, Tyanova et al. NatProt) using default parameters against the Uniprot canonical mouse database with the match-between-runs option enabled between replicates. Follow-up analysis was done in Perseus 1.6.1.1 (Tyanova et al. NatMet). Protein groups were filtered for potential contaminants and insecure identifications. Remaining IDs were filtered for data completeness in at least one group and missing values imputed by sigma downshift (0.3 σ width, 1.8 σ downshift). Afterwards, FDR-controlled two-sided t-tests were performed

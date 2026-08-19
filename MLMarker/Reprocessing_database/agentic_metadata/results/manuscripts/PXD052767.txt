@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Orbitrap Fusion Lumos
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Nucleoporins
+
+ABSTRACT:
+Nuclear pore complexes (NPCs) are the multiprotein channels that control the access to the genome. Because of their critical functions, the number of NPCs that cells assemble is tightly controlled and varies between different cell types, cellular states, and in diseases. However, the mechanisms that regulate NPC formation and numbers in mammalian cells remain largely unclear. Using a genome-wide siRNA screen for modulators of NPC assembly, we identified translation-related factors, proteasome components, and the CCR4-NOT mRNA deadenylase complex as the top regulators of NPC numbers. We found that stabilization of nucleoporin mRNAs by inhibition of the CCR4-NOT stoichiometrically increases nucleoporin protein levels and enhances NPC assembly in normal and cancer cells. Inhibiting protein translation in CCR4-NOT defective cells blocks the increase in NPC numbers, indicating that nucleoporin mRNA levels are rate-limiting for NPC biogenesis. We found that inhibiting proteasome activity also promotes NPC biogenesis, indicating that nucleoporins required for nuclear pore formation are normally produced in excess. Our findings show that nucleoporin mRNA and protein degradation restrict NPC assembly and indicate nucleoporin homeostasis is the main mechanism regulating NPC numbers in mammalian cells.
+
+PROJECT DESCRIPTION:
+Homeostatic Regulation of Nucleoporins is the Primary Driver of Nuclear Pore Biogenesis
+
+SAMPLE PROCESSING:
+For proteomics experiments, 0.5 million A375 cells were transfected with siRNA 48 hours before collection. Cells were collected by rinsing with PBS and treating with trypsin for 5 minutes at 37°C. Cells were pelleted by centrifugation and supernatants were removed before liquid nitrogen snap freezing of the pellets. Protein extracts were made by resuspending pellets in 8 M Urea, 50 mM ammonium bicarbonate, benzonase buffer. Proteins were digested with trypsin and column purified. Peptides were then eluted in 2% ACN and 0.1% Formic Acid. To label peptides, tandem mass tag 10plex kits (Thermo Fisher Scientiﬁc) were used following the manufacturer’s protocol. LC−MS/MS analysis was performed on a Thermo Orbitrap Fusion Lumos Tribrid.
+
+DATA PROCESSING:
+Proteomics data normalization and group comparisons were performed using MSstatsTMT R package. Data was converted from SpectroMine to MSstatsTMT format using SpectroMinetoMSstatsTMTFormat. Peptide level quantifications were summarized to protein level and data normalized using proteinSummarization with the following options: method="msstats", global_norm=TRUE, reference_norm=TRUE, remove_norm_channel = TRUE, and remove_empty_channel = TRUE. Pairwise group comparisons were performed using groupComparisonTMT and parameter moderated = TRUE.

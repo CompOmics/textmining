@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+diseases: Lung cancer
+instruments: Q Exactive HF
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: label free sample
+keywords: Ubiquitin; hect e3 ligases; structure-based drug design
+
+ABSTRACT:
+In this study, we elucidated the mode of action of a class of drugs as NEDD4 inhibitors. These first-in-class NEDD4 inhibitors demonstrated exceptional specificity and selectivity, leaving the other family members unaffected.
+
+PROJECT DESCRIPTION:
+Structure-based design of potent and selective inhibitors of the HECT ligase NEDD4
+
+SAMPLE PROCESSING:
+Entire gel lanes were processed using the STAGE-digestion protocol{ (J Proteomics. 2016 May 17;140:48-54}. Peptides were resuspended in 10 μL of solvent A (2% acetonitrile, 0.1% formic acid), and 3 μL of each sample were injected into a quadrupole Orbitrap Q-Exactive mass spectrometer (Thermo Scientific) coupled to a UHPLC Easy-nLC 1000 system (Thermo Scientific). The LC system was connected to a 25 cm fused-silica emitter (75 μm inner diameter; New Objective), packed in-house with ReproSil-Pur C18-AQ resin (1.9 μm; Dr. Maisch GmbH, Ammerbuch, Germany) using a high-pressure bomb loader (Proxeon, Odense, Denmark). Mass spectrometry analysis was performed using LC–MS/MS on a quadrupole Orbitrap Q-Exactive HF mass spectrometer (Thermo Scientific). Peptide separation was carried out on a linear gradient from 95% solvent A to 50% solvent B (80% acetonitrile, 0.1% formic acid) over 33 min, followed by an increase to 100% solvent B in 2 min, at a constant flow rate of 0.25 μL/min. MS data were acquired in data-dependent acquisition (DDA) mode using a top-15 method for HCD fragmentation. Survey full-scan MS spectra (m/z 300–1750) were acquired in the Orbitrap at a resolution of 60,000, with an AGC target of 1e6 and a maximum injection time (IT) of 120 ms. For HCD MS/MS scans, resolution was set to 15,000, with an AGC target of 1e5, IT of 120 ms, normalized collision energy (NCE) of 28, and an isolation window of 3.0 m/z. Each sample was analyzed in two technical replicates.
+
+DATA PROCESSING:
+Raw data were processed with MaxQuant version 1.5.2.8. Peptides were identified from the MS–MS spectra searched against the uniprot_cp_Human_2020 using the Andromeda search engine, in which trypsin specificity was used with up to two missed cleavages allowed. Cysteine carbamidomethylation was used as a fixed modification, methionine oxidation and protein amino-terminal acetylation as variable modifications. The mass deviation for MS and MS–MS peaks was set at 5 and 20 ppm respectively. The peptide and protein false discovery rates (FDRs) were set to 0.01; minimum peptides 2, at least 1 unique, minimum length peptide 6 aminoacids. The lists of identified proteins were filtered to eliminate reverse hits and known contaminants. Label-free quantification (LFQ) was performed using the 'match between runs' feature (time window: 5 min), and only proteins with a minimum ratio count of two were retained. LFQ intensity values were used for quantitation after normalization across the dataset. Proteins were manually curated to remove nonspecific binders detected also in biotin-only samples, and proteins not identified in both technical replicates.

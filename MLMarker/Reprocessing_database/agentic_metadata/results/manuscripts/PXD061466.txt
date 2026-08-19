@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Breast cancer cell line
+diseases: Breast cancer
+instruments: LTQ Orbitrap Elite; Orbitrap Eclipse
+modifications: monohydroxylated residue; TMT6plex-126 reporter+balance reagent acylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Non-allosteric inhibition; Eno1; Aza-podophyllotoxin derivative; Enolase; Triple-negative breast cancer
+
+ABSTRACT:
+1. Cellular Thermal Shift Assay (CETSA): MDA-MB-231 cells were treated for 6h with DMSO or SU212 and incubated at different temperatures and protein differences in the soluble fractions were determined.  2. Quantitative Proteomics: MDA-MB-231, MDA-MB-468, and BT549 cells were treated with DMSO (vehicle control) or SU212 (novel small molecule drug candidate).  Quantitative proteomics analysis was performed on cell lysates.
+
+PROJECT DESCRIPTION:
+Non-allosteric Inhibition of Enolase 1 Impedes Growth of Triple-Negative Breast Cancer
+
+SAMPLE PROCESSING:
+1. CETSA: MDA-MB-231 cells were treated with vehicle control (DMSO) or SU212, washed, incubated at different temperatures (37, 41, 44, 47, 50, 53, 56, 59, 63, 67 deg C), and lysed.  Equal amounts protein in the soluble fraction was aliquoted and labeled using ten-plex TMT tags. Peptides were separated by reversed phase chromatography (C18 column) and analyzed on an Orbitrap Elite mass spectrometer. Data dependent acquisition was performed with dynamic exclusion was enabled for 30 s with a mass tolerance set to 10 ppm. Data dependent acquisition was performed on the top eight most abundant ions using HCD.  Mass resolution was set to 30,000. Dynamic exclusion was enabled for 30 s.  2. Quantitative Proteomics: Cells were lysed and centrifuged to remove debris.  50 ug of each sample was used for analysis.  Proteins were reduced with TCEP, alkylated with iodoacetamide, precipitated with acetone, and digested with trypsin.  Tryptic peptides were labeled with six-plex TMT tags.  Peptides were separated by reversed phase chromatography (C18 column) and analyzed on a Orbitrap Eclipse mass spectrometer.  Data dependent acquisition was performed on Cycle Time of 1s using HCD.  Mass resolution was set to 50,000.  Dynamic exclusion was enabled for 60s.
+
+DATA PROCESSING:
+1. CETSA: MaxQuant was used to search the data against the Swiss-Prot human database 2020.  Two missed cleavages were allowed and mass tolerances were set to 10 ppm for precursor masses and 0.5 Da for fragment masses. Fixed modification of cysteine carbamidomethylation and lysine and N-terminal TMT6plex, and variable modification of methionine oxidation were specified.  2. Quantitative Proteomics: Proteome Discoverer 2.4 was used to identify and quantify peptides. Raw data was searched against the Swiss-Prot human database 2022. Search parameters included up to two missed cleavages and a mass tolerance of up to 10 ppm for precursor ions and 0.5 Da for fragment ions. Fixed cysteine carbamidomethylation and lysine and N-terminal TMT6plex were selected, as well as variable modification of methionine oxidation.

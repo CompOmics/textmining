@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Placenta
+instruments: Q Exactive
+modifications: iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+keywords: Human placenta tissue; Lc-ms/ms
+
+ABSTRACT:
+Ribosome profiling and mass spectrometry have revealed thousands of previously unannotated small and alternative open reading frames (sm/alt-ORFs) that are translated into micro-/alt-proteins in mammalian cells. However, their prevalence across human tissues and biological roles remain largely unexplored. The placenta is an ideal model for identifying unannotated microproteins and alt-proteins due to its considerable protein diversity that is required to sustain fetal development during pregnancy. Here, we profiled unannotated microproteins and alt-proteins in human placenta tissues from preeclampsia patients or healthy individuals by mass spectrometry, identified 66 unannotated microproteins or alt-proteins, and validated the expression of five microproteins biochemically. We further demonstrated that one microprotein, XRCC6P1, associates with translation initiation complex eIF3, and negatively regulates translation. Thus, we revealed a hidden sm/alt-ORF-encoded proteome in the human placenta, which may advance the mechanism studies for placenta development, as well as placental disorders such as preeclampsia.
+
+PROJECT DESCRIPTION:
+Proteomic profiling of unannotated microproteins in human placenta reveals XRCC6P1 as a negative regulator of translation
+
+SAMPLE PROCESSING:
+Gel slices containing entire lanes or corresponding to 5-25 kDa were reduced and alkylated, then digested with trypsin at 37℃ for 14-16 h. The resulting peptide mixtures were extracted from the gel, dried, subjected to ethyl acetate extraction to remove residual detergent, de-salted with peptide cleanup C18 spin column (Agilent Technologies, 5188-2750), then re-suspended in 35 µL 0.1% formic acid (FA), followed by centrifugation at 21,130 g, 4℃, 30 min. A 2 μL aliquot of each sample was injected onto a pre-packed column attached to an EASY-nLC 1000 (Thermo Scientific) in-line with a Thermo Scientific™ Q Exactive™ Hybrid QuadrupoleOrbitrap™ mass spectrometer  (Thermo Scientific).
+
+DATA PROCESSING:
+For identification of unannotated microproteins and alt-proteins, ProteoWizard MS Convert was used for peak picking and files were analyzed using Mascot (version 2.5.1). N-terminal acetylation and oxidation of methionine were set as variable modifications, carbamidomethyl of cysteine was set as fixed modification, and a previously reported three-frame translation of assembled transcripts from HEK 293T mRNA-seq was used as the database (ref. ). For co-IP proteomics searches and quantitative analysis, files were analyzed using MaxQuant (version 1.6.8.0), oxidation of methionine and N-terminal acetylation were set as variable modifications, carbamidomethyl of cysteine was set as fixed modification, and human UniProt plus XRCC6P1 was used as the database for searching. For all analysis, a mass deviation of 20 p.p.m. was set for MS1 peaks, and 0.02 Da was set as for MS/MS peaks with a maximum of two missed cleavages. Maximum false discovery rates (FDR) were set to 1% both on peptide and protein levels. Minimum required peptide length was five amino acids. Protein quantitation was accomplished by calculating the LFQ intensity ratio of pulldown to negative control samples using MaxQuant with standard parameters. And p values (t-test) were calculated using Perseus (version 1.5.8.5) with standard parameters.

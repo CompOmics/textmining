@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Jurkat cell; T cell
+diseases: Acute leukemia
+instruments: Orbitrap Fusion Lumos
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: Label free
+keywords: Caspase-10; Hts; Isotop-abpp
+
+ABSTRACT:
+Caspases are cysteine proteases that play a critical role in inflammation and apoptosis. Caspases have a functional role in either the intrinsic apoptotic pathway as initiators of apoptosis or in the extrinsic apoptotic pathway as executioners of apoptosis. Caspase-10 has been speculated to play a principal role as an initiator of apoptosis but the absence of adequate tools, i.e. selective probes, have hindered our understanding of this enzyme as well as the other caspases. Here, we engineered a tobacco etch virus (TEV)-cleavable construct that is compatible with high-throughput screening to identify selective caspase-10 inhibitors. We identified a set of promiscuous caspase inhibitors, including pifithrin-µ (PFT), an inhibitor of p53 transcriptional activity, as well as promising selective pro-caspase-10 and TEV protease inhibitors.
+
+PROJECT DESCRIPTION:
+A high-throughput screening approach identified a selective pro-caspase-10 probe that can inhibit its activity
+
+SAMPLE PROCESSING:
+isoTOP-ABPP analysis was performed as reported previously {Castellon 2024}. In brief Jurkat cells (XXX mL of 1.0 x106 cells/mL) were treated with the pifithrin-µ (10 µM) or vehicle (DMSO) in situ for 1h after which cells were harvested by centrifugation (1,400 x g), washed twice in cold PBS (10 mL, 1,400 x g) and cell pellets reconstituted in 500 µL of cold PBS and subjected to Ultrasonic Probe Sonicator lysis (Power 2, 10x pulses; 1 second pulse, 1 second off) on ice. Lysate concentrations were then adjusted to 2 mg/mL. 200 µL lysates (2 mg/mL) were then labeled with 100 µM iodoacetamide alkyne (IAA) for 1h at ambient temperature. Samples were subjected to bioorthogonal copper(I)-catalyzed azide-alkyne cycloaddition (CuAAC)11 or “click'' conjugation to biotin azide. To 200  µL cell lysates (2 mg/mL), samples were combined with a premixed cocktail of click reagents consisting of TEV tags (4µl of 5 mM stock), TCEP (4 µl of fresh 50 mM stock in water), TBTA (12 µl of 1.7 mM stock in DMSO/t-butanol 1:4), and CuSO4 (4 µl of 50 mM stock in water). After 1h, the samples were then combined pairwise (400 µL total) and treated with 40 µL of 10% SDS (1% SDS final) followed by 0.5 µL of benzonase (Fisher Scientific, 707464). Samples were left to incubate for 30 min at 37 ℃. Following benzonase treatment, samples were subjected to Single-Pot Solid-Phase-enhanced sample-preparation (SP3), as reported previously{Yan 2021}{Desai 2022}.
+
+DATA PROCESSING:
+Data were analyzed using FragPipe V19.0. Raw data collected by LC–MS/MS were searched with MSFragger (version 3.8). The Proteomic workflow of FragPipe and its collection of tools were set as default. MS data of isoTOP-ABPP was searched using the ProLuCID algorithm.

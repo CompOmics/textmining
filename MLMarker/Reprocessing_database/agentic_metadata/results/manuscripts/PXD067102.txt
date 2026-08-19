@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Spleen; T cell
+instruments: Q Exactive HF-X
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: MS1 intensity based label-free quantification method; Relative quantification
+keywords: Heme; Aging; Mouse; Lymph nodes; Spleen
+
+ABSTRACT:
+Naïve T cells (CD4+CD62LhiCD44loCD25-) were purified from spleens of young (2 months; n=3) and aged (22 months; n=3 pools of five mice) mice and were either frozen or activated for 24 hrs.
+
+PROJECT DESCRIPTION:
+Young and aged T cells LC-MS/MS
+
+SAMPLE PROCESSING:
+Proteins were extracted in 9M Urea, 400mM Ammonium bicarbonate and 10mM DTT following two cycles of sonication, reduced with 3mM DTT (60ºC for 30 min), modified with 9mM iodoacetamide in 400mM ammonium bicarbonate (in the dark, room temperature for 30 min) and digested in 1M Urea, 50mM ammonium bicarbonate with modified trypsin (Promega) at a 1:50 enzyme-to-substrate ratio, overnight at 37oC. An additional second trypsinization was done for 4 hours. Tryptic peptides were desalted using C18 stagetips, dried and re-suspended in 0.1% Formic acid. Peptides were resolved by reverse-phase chromatography on 0.075 X 180-mm fused silica capillaries (J&W) packed with Reprosil reversed phase material (Dr Maisch GmbH, Germany). The peptides were eluted with different concentration of Acetonitrile with 0.1% of formic acid: a linear 180 minute gradient of 5 to 28% acetonitrile followed by a 15 minutes gradient of 28 to 95% and 25 minutes at 95% acetonitrile with 0.1% formic acid in water at flow rates of 0.15 μl/min. Mass spectrometry was performed by Q Executive HFX mass spectrometer (ThermoFisher) in a positive mode (m/z 350–1200, resolution 120,000 for MS1 and 15,000 for MS2) using repetitively full MS scan followed by collision induced dissociation (HCD, at 27 normalized collision energy) of the 30 most dominant ions (>1 charges) selected from the first MS scan. The AGC settings were 3x106 for the full MS and 1x105 for the MS/MS scans. A dynamic exclusion list was enabled with exclusion duration of 20 s
+
+DATA PROCESSING:
+The mass spectrometry data was analyzed using the MaxQuant software 1.5.2.863 for peak picking and identification using the Andromeda search engine, searching against the mouse proteome from the Uniprot database with mass tolerance of 6 ppm for the precursor masses and the fragment ions. Oxidation on methionine and protein N-terminus acetylation were accepted as variable modifications and carbamidomethyl on cysteine was accepted as static modifications. Minimal peptide length was set to seven amino acids and a maximum of two miscleavages was allowed.  The data was quantified by label free analysis using the same software. Peptide- and protein-level false discovery rates (FDRs) were filtered to 1% using the target-decoy strategy. Protein tables were filtered to eliminate the identifications from the reverse database, and common contaminants and single peptide identifications. The data was quantified by label free analysis using the same software.

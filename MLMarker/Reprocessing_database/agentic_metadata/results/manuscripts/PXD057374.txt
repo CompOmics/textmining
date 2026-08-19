@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Blood; Saliva; Semen
+instruments: Q Exactive
+modifications: monohydroxylated residue; deamidated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Source level attribution; Forensic; Body fluid identification; Proteomics; Biomarkers
+
+ABSTRACT:
+Biological traces recovered from crime scenes serve as vital evidence in forensic investigations. While DNA evidence is frequently used to address the sub-source level of the hierarchy of propositions, the biological source of the DNA can be highly probative at the source level. Current body fluid detection methods pose certain limitations, such as reports of false positive results from some of the presumptive and/or confirmatory tests in current use. These tests are also individual tests for the detection of one body fluid, meaning that if the sample is suspected to be a mixture of multiple body fluids, then different tests would need to be conducted to confirm the body fluid(s) present, which may exhaust small amounts of available biological trace. Proteomics applications for the identification of body fluids have been previously explored, and potential biomarkers indicative of body fluids discovered from liquid-chromatography tandem mass spectrometry (LC-MS/MS) methods have been reported. This work focuses on developing a mass spectrometry-based proteomics approach for the identification of body fluids by targeting discriminating peptide biomarkers from the non-DNA component left over after DNA extraction of samples. The non-DNA component is typically a waste product but with unappreciated evidential value.   Our methodology for the purification of proteins from the post-DNA extraction waste includes an acetone precipitation and single-pot solid-phase-enhanced sample preparation (SP3) technique, microwave-assisted trypsin digestion, and LC-MS/MS analysis of the resultant peptides. Preliminary results from this proof-of-concept study include a list of potentially discriminating proteins and peptides for blood, saliva, and semen developed from the analysis of post-DNA extraction waste. Our method allows for multiple analytes to be targeted simultaneously from a DNA profiling waste stream and we anticipate that it could eventually be incorporated into standard forensic laboratory workflows.
+
+PROJECT DESCRIPTION:
+Mass spectrometry-based proteomics for source-level attribution after DNA extraction
+
+SAMPLE PROCESSING:
+Samples included human blood, saliva, and semen, typical of forensically relevant traces. The sample preparation method includes acetone precipitation, protein isolation using the single-pot solid-phase-enhanced sample preparation (SP3) technique, peptide digestion, and separation and analysis by nanoflow liquid chromatography coupled to a hybrid quadrupole-orbitrap mass spectrometer.
+
+DATA PROCESSING:
+The raw data files obtained after the instrument run were searched using the software PEAKS® Studio 11 (Bioinformatics Solutions Inc.) against the Human Proteome database (download date: 23/3/23). A common contaminant database was also added to the search. Search parameters were set as follows: parent mass error tolerance: 10.0 pp; fragment mass error tolerance: 0.02 Da; precursor mass search type: monoisotopic; maximum missed cleavages: 3; enzyme: trypsin; enzyme digest mode: semi-specific; peptide length range: 6-45; Variable Modifications: Carbamidomethylation (+57.02), Deamidation (NQ) (+0.98), Oxidation (M) (+15.99); Max Variable Post-translational modification (PTM) Per Peptide: 3; Database: Human; Taxon: all species; Searched Entries: 103789; Contaminant Database: Contaminants; Deep Learning Boost: Yes; False Discovery Rate (FDR) Estimation: Enabled.

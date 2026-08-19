@@ -1,0 +1,204 @@
+{
+  "sample_groups": [
+    {
+      "name": "M10G cells proximity labeling and phosphoproteomics",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "M10G cells stably expressing pLV APEX2 constructs",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "meningioma",
+          "evidence": "M10G cells were isolated from a primary human meningioma"
+        }
+      ],
+      "disease": [
+        {
+          "value": "meningioma",
+          "evidence": "M10G cells were isolated from a primary human meningioma"
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "M10G",
+          "evidence": "M10G cells stably expressing pLV APEX2 constructs"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos",
+          "evidence": "Mass spectrometry scans were acquired in a data-dependent manner using a trybrid Orbitrap Fusion Lumos",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 1.0
+        },
+        {
+          "value": "Q Exactive Plus",
+          "evidence": "Mass spectrometry scans were acquired in a data-dependent manner using Orbitrap Q-Exactive Plus",
+          "ontology_id": "instruments:0014",
+          "ontology_name": "Q Exactive Plus",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmented using HCD with a normalized collision energy",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Lys-C",
+          "evidence": "Proteolytic cleavage was then performed by the addition of Lys-C",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "proteins alkylated by the addition of 10mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "S-phosphorylation",
+          "evidence": "enriched for phosphorylated peptides by incubation with Ni-NTA Superflow beads",
+          "ontology_id": "modifications:0005",
+          "ontology_name": "S-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "T-phosphorylation",
+          "evidence": "enriched for phosphorylated peptides by incubation with Ni-NTA Superflow beads",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "enriched for phosphorylated peptides by incubation with Ni-NTA Superflow beads",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "32 NCE",
+          "evidence": "normalized collision energy of 32%"
+        },
+        {
+          "value": "27 NCE",
+          "evidence": "normalized collision energy of 27%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "90",
+          "evidence": "The entire gradient required 90 minutes"
+        },
+        {
+          "value": "120",
+          "evidence": "The entire gradient required 120 minutes"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "desalted on a 50mg C18 SepPak cartridge",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Mass spectrometry scans were acquired in a data-dependent manner",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "searched in MaxQuant using label free quantitation",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation method described for MS analysis"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "Ni-NTA",
+        "evidence": "enriched for phosphorylated peptides by incubation with Ni-NTA Superflow beads"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "gene overexpression",
+          "evidence": "M10G cells stably expressing pLV APEX2 constructs encoding wildtype or variant Merlin constructs"
+        },
+        {
+          "value": "gene knockdown",
+          "evidence": "transduced with non-targeted control sgRNAs or sgRNAs suppressing endogenous NF2"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "doxycycline",
+          "evidence": "Cells were treated with 0.1mg/ml doxycycline to induce Merlin expression"
+        },
+        {
+          "value": "sgNF2",
+          "evidence": "sgRNAs suppressing endogenous NF2"
+        },
+        {
+          "value": "Wnt3a",
+          "evidence": "treatment with recombinant Wnt3a or vehicle control"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "environmental",
+          "evidence": "Cells were treated with 0.1mg/ml doxycycline",
+          "ontology_id": "treatments:0003",
+          "ontology_name": "environmental",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "sgRNAs suppressing endogenous NF2",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "treatment with recombinant Wnt3a",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

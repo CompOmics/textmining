@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Colon; Colon
+diseases: Colorectal cancer
+instruments: Orbitrap Exploris 480
+modifications: oxidized residue; iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: MS1 intensity based label-free quantification method
+keywords: Polyamines; hypusine; translation; colorectal cancer; apc; tumorigenesis; proteomics
+
+ABSTRACT:
+C57BL/6 mice with a tamoxifen (TAM)-inducible disruption of Apc (CDX2P-CreERT2;Apc fl/fl) or Apc and Dhps (CDX2P-CreERT2;Apc fl/fl;Dhps fl/fl) were injected or not with one intraperitoneal injection 4.5 mg/kg TAM. After 35 days, the following colon biopsies were harvested: normal tissues from mice that did not receive TAM, non-tumor tissues from mice treated with TAM, and tumors from mice treated with TAM. Biopsies from 5 mice were collected for the following sample groups: (1) Apc Control; (2) Apc/Dhps Control; (3) Apc+TAM non-tumor; (4) Apc/Dhps+TAM non-tumor; (5) Apc+TAM tumor; (6) Apc/Dhps+TAM tumor
+
+PROJECT DESCRIPTION:
+Proteomic changes in the colon of mice with epithelial specific deletion of Apc or Apc/Dhps
+
+SAMPLE PROCESSING:
+Protein extracts from homogenized tissues were digested with trypsin using S-trap micro spin columns (ProtiFi) according to manufacturer’s instructions. Peptides were eluted, dried in a speed vac concentrator, and resuspended in 0.2% aqueous formic acid for analysis by LC-coupled tandem mass spectrometry (LC-MS/MS).
+
+DATA PROCESSING:
+LC-MS/MS analysis was performed using a Dionex Ultimate 3000 nanoLC and an Exploris 480 Orbitrap mass spectrometer. Peptides were analyzed using a 90-minute LC gradient and a data-dependent (top 20) acquisition method. For identification of peptides, mass spectra were searched with MaxQuant version 2.0.3.0 against a mouse database created from the UniprotKB protein database. Variable modifications included methionine oxidation and N-terminal acetylation, and carbamidomethyl cysteine was selected as a fixed modification. The false discovery rate was set to 0.01 for peptide and protein identifications. Label-free quantitative analysis of identified proteins was performed with the MSstats R package.

@@ -1,0 +1,156 @@
+{
+  "sample_groups": [
+    {
+      "name": "Human Plasma AAA and Controls",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Blood plasma",
+          "evidence": "organism parts: Blood plasma",
+          "ontology_id": "tissues:0050",
+          "ontology_name": "blood plasma",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "Aortic aneurysm",
+          "evidence": "diseases: Aortic aneurysm",
+          "ontology_id": "diseases:0061",
+          "ontology_name": "aortic aneurysm",
+          "similarity": 1.0
+        },
+        {
+          "value": "healthy",
+          "evidence": "eight matched controls without aneurysm",
+          "ontology_id": "diseases:0001",
+          "ontology_name": "healthy",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "stepped higher energy collisional dissociation regime",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "sequencing grade modified porcine trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "0.1 mM DTT",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "N-term TMT6plex",
+          "evidence": "fixed modifications of N-terminal TMT6plex"
+        },
+        {
+          "value": "K-TMT6plex",
+          "evidence": "fixed modifications of lysine TMT6plex"
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "stepped HCD, NCE 35 +/− 25%"
+        },
+        {
+          "value": "30 NCE",
+          "evidence": "stepped HCD, NCE 30 +/− 25%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "95",
+          "evidence": "7–27% B over 60 min, 27–40% B over 10 min, 40–80% B over 5 min with a final hold at 80% B for 10 min"
+        },
+        {
+          "value": "125",
+          "evidence": "7–25% B over 90 min, 25–40% B over 10 min, 40–80% B over 10 min with a final hold at 80% B for 15 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "packed with 3 μm Reprosil-Pur C18-AQ particles",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Top10 data acquisition approach",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "performed using 6-plex TMT-labeling",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SCX",
+        "evidence": "prior to SCX-fractionation"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "Samples were depleted of high abundance plasma proteins"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nano LC-MS/MS",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

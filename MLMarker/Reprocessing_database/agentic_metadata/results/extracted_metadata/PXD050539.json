@@ -1,0 +1,185 @@
+{
+  "sample_groups": [
+    {
+      "name": "MDS-L Cell Line Proteomics",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "Acute leukemia",
+          "evidence": "diseases: Acute leukemia",
+          "ontology_id": "diseases:0035",
+          "ontology_name": "acute leukemia",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [
+        {
+          "value": "nucleus",
+          "evidence": "Experiment P. Nuclear Protein Isolation",
+          "ontology_id": "cell_parts:0002",
+          "ontology_name": "nucleus",
+          "similarity": 1.0
+        },
+        {
+          "value": "whole cell",
+          "evidence": "whole cell proteins from cells expressing SUMO1",
+          "ontology_id": "cell_parts:0003",
+          "ontology_name": "cytoplasm",
+          "similarity": 0.7164
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "MDS-L",
+          "evidence": "human MDS-derived cell line, MDS-L"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos",
+          "evidence": "Fusion Lumos (ThermoFisher)",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmented by higher-energy collisional dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "in solution typsin digest",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "iodoacetamide derivatized residue",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-sumoylation",
+          "evidence": "SUMO1ylated proteome enrichment",
+          "ontology_id": "modifications:0011",
+          "ontology_name": "K-ubiquitination",
+          "similarity": 0.8124
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "25 NCE",
+          "evidence": "intensity threshold at 25,000"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "90",
+          "evidence": "over 90 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "C18AQ media",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data dependent acquisition (DDA)",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "quantification: Label free",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "Ni-NTA beads",
+        "evidence": "SUMO1ylated proteome enrichment using Ni-NTA beads"
+      },
+      "enrichment": {
+        "value": "sumoylation",
+        "method": "Ni-NTA beads",
+        "evidence": "SUMO1ylated proteome enrichment using Ni-NTA beads"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "electrospray ionisation",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "genome-wide CRISPR-Cas9 screen"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "inhibition of SUMOylation with TAK-981"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "CRISPR-Cas9",
+          "evidence": "genome-wide CRISPR-Cas9 screen"
+        },
+        {
+          "value": "TAK-981",
+          "evidence": "inhibition of SUMOylation with TAK-981"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "genome-wide CRISPR-Cas9 screen",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "inhibition of SUMOylation with TAK-981",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

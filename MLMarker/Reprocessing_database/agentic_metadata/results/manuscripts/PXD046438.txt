@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Blood serum
+diseases: Pancreatic ductal carcinoma
+instruments: Q Exactive
+modifications: monohydroxylated residue; iodoacetamide derivatized residue
+experiment types: Data-independent acquisition
+quantification: Peptide counting
+keywords: Pancreatic cancer; serum; diagnostic biomarkers
+
+ABSTRACT:
+Pancreatic ductal adenocarcinoma (PDAC) is one of the deadliest cancers. Late presentation of disease at the time of diagnosis is one of the major reasons for dismal prognostic outcomes for PDAC patients. Currently, there is a lack of clinical biomarkers which can be used to diagnose PDAC patients at an early resectable stage. This study performed proteomic mass spectrometry to identify novel blood-based biomarkers for early diagnosis of PDAC.
+
+PROJECT DESCRIPTION:
+Serum Protein Biomarkers for Early Diagnosis of Pancreatic Cancer
+
+SAMPLE PROCESSING:
+1 μl of serum samples was incubated with 25 μl of digestion buffer (1% sodium deoxycholate, 10 mM tris(2-carboxyethyl)phosphine , 40 mM 2-chloroacetamide , 100 mM tris) at 95 °C for 15 min. The samples were then diluted with 225 μl of milliQ H2O followed by addition of 1 μg of sequencing grade trypsin and digested at 37 °C overnight. Once digested, 250 μl of 99% ethyl acetate, 1% trifluoroacetic acid  were added to each sample and vortexed for 10 s. Samples were then desalted using Stage-tips.  Peptide digests were run using an in-house packed 75 μm × 50 cm column, with 1.9 μm C18 beads (ReproSil-Pur C18-AQ). LC-MS was conducted over a 75-minute gradient to a maximum of 40% B (80% acetonitrile, 0.1% formic acid).   Data Independent Acquisition (DIA) was performed on a Q Exactive HF Hybrid Quadrupole-Orbitrap Mass Spectrometer with an initial full MS scan with the following: AGC 3e6, resolution 30 K, scan range 300–1600 m/z, followed by three DIA events containing a total of 35 mass windows and the following settings: Resolution 15 K, AGC 1e6, maximum injection time 25ms. Normalised collision energy was 27 and default charge state +2.
+
+DATA PROCESSING:
+Protein identification and label-free quantification was performed using the library-free mode in DIA-NN (v1.8.1) using a Human FASTA library retrieved from UniProt. The match-between-runs function was used with the following settings: (i) maximum of 2 missed tryptic cleavages and (ii) 3 allowed variable modifications (N-term M excision, carbamidomethylation, and methionine oxidation). Peptides considered were (i) between 7 and 30 amino acids with (ii) precursor charge between 1 and 4, (iii) mass range of 300 – 1,800 m/z, and (iv) product ion mass range of 200 – 1,800 m/z. Peptides were identified at 1.0% FDR confidence based on the deep-learning spectra and retention time generated from the UniProt dataset. Protein quantification was assessed using Perseus (v.1.6.5.0) including statistical analysis (two-sided t-test, significance threshold of P < 0.05) performed following log2 transformation of peak areas and imputation of n/a values from the normal distribution following analysis with DIA-NN.

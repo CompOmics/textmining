@@ -1,0 +1,353 @@
+{
+  "sample_groups": [
+    {
+      "name": "HEK293DAX and Fv2e-PERK UPR activation",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK293DAX",
+          "evidence": "pharmacologically activated HEK293DAX and Fv2e-PERK"
+        },
+        {
+          "value": "Fv2e-PERK",
+          "evidence": "pharmacologically activated HEK293DAX and Fv2e-PERK"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "instruments: Orbitrap Exploris 480",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "normalized HCD collision energy of 36",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin/Lys-C",
+          "evidence": "digested with 0.5 μg of Trypsin/Lys-C",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 0.8435
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "cysteine carbamidomethylation was included as a fixed modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "27 NCE",
+          "evidence": "27% normalized collision energy (NCE)"
+        },
+        {
+          "value": "36 NCE",
+          "evidence": "normalized HCD collision energy of 36"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "120",
+          "evidence": "eluted and separated on a 2 h gradient"
+        },
+        {
+          "value": "140",
+          "evidence": "Fractions were collected using the following 140 min gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Aqua C18, 3 μm, 100 Å resin",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        },
+        {
+          "value": "SCX",
+          "evidence": "Luna 5 μm SCX resin",
+          "ontology_id": "lc_column:0003",
+          "ontology_name": "SCX",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "data-independent acquisition (DIA) liquid-chromatography mass spectrometry",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        },
+        {
+          "value": "DDA",
+          "evidence": "MudPIT-TMT-DDA experiments",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label free DIA analysis",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        },
+        {
+          "value": "TMT",
+          "evidence": "18-plex TMT labeled peptides",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "MudPIT",
+        "evidence": "MudPIT trap column... sequentially eluted from the SCX stationary phase"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for specific modifications"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Electrospray ionization was performed directly from the analytical column",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated with either dimethyl sulfoxide... trimethoprim... doxycycline"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "DMSO",
+          "evidence": "treated with either dimethyl sulfoxide (0.1% v/v; DMSO)"
+        },
+        {
+          "value": "trimethoprim",
+          "evidence": "trimethoprim (TMP; 10 μM; Fischer)"
+        },
+        {
+          "value": "doxycycline",
+          "evidence": "doxycycline (DOX; 1 μg/ml; Sigma)"
+        },
+        {
+          "value": "AP20187",
+          "evidence": "treated with AP20187 (5 nM; Sigma)"
+        },
+        {
+          "value": "thapsigargin",
+          "evidence": "Thapsigargin (Tg; 500 nM; Cayman Chemical)"
+        },
+        {
+          "value": "tunicamycin",
+          "evidence": "Tunicamycin (Tm; 500 nM; Cayman Chemical)"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "trimethoprim (TMP; 10 μM; Fischer)",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "BRAF-mutant melanoma cell lines",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "A375",
+          "evidence": "BRAF-mutant melanoma cell lines (A375, SKMEL5, SKMEL28, and WM88)",
+          "ontology_name": "A375",
+          "similarity": 1.0
+        },
+        {
+          "value": "SKMEL5",
+          "evidence": "BRAF-mutant melanoma cell lines (A375, SKMEL5, SKMEL28, and WM88)"
+        },
+        {
+          "value": "SKMEL28",
+          "evidence": "BRAF-mutant melanoma cell lines (A375, SKMEL5, SKMEL28, and WM88)",
+          "ontology_name": "SK-MEL-28",
+          "similarity": 1.0
+        },
+        {
+          "value": "WM88",
+          "evidence": "BRAF-mutant melanoma cell lines (A375, SKMEL5, SKMEL28, and WM88)"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "instruments: Orbitrap Exploris 480",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "normalized HCD collision energy of 36",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin/Lys-C",
+          "evidence": "digested with 0.5 μg of Trypsin/Lys-C",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 0.8435
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "cysteine carbamidomethylation was included as a fixed modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "27 NCE",
+          "evidence": "27% normalized collision energy (NCE)"
+        },
+        {
+          "value": "36 NCE",
+          "evidence": "normalized HCD collision energy of 36"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "120",
+          "evidence": "eluted and separated on a 2 h gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Aqua C18, 3 μm, 100 Å resin",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "measured via DIA LC-MS/MS",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label free DIA analysis",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "unfractionated DIA"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for specific modifications"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Electrospray ionization was performed directly from the analytical column",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated with either vehicle (0.1% DMSO) or PLX4720"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "DMSO",
+          "evidence": "vehicle (0.1% DMSO)"
+        },
+        {
+          "value": "PLX4720",
+          "evidence": "PLX4720 (10 μM)"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "PLX4720 (10 μM)",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

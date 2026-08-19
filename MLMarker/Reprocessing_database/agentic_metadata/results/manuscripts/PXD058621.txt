@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Blood plasma
+instruments: Orbitrap Fusion
+modifications: iodoacetamide derivatized residue
+experiment types: Data-independent acquisition
+keywords: Cerebral malaria; Severe malarial anemia; L-arginine; Matrix metalloprotease 8; Il2r1
+
+ABSTRACT:
+Proteome data from cerebral malaria cases and uncomplicated malaria controls in a case-control study in Mali.
+
+PROJECT DESCRIPTION:
+Proteomic data from a cerebral malaria case-control study in Mali
+
+SAMPLE PROCESSING:
+The protein concentration in each of the samples was estimated to be 70ug/ul for protein content. A volume corresponding to 100 ug of each sample was removed. The disulphides were reduced in 100mM dithiothreitol for 30 minutes at 37°C. The free sulphydryls were then alkylated with 240mM iodoacetamide for 30 minutes at room temperature in the dark. The proteins were then digest with Trypsin (Promega) at a protein:enzyme ratio of 10:1 overnight at 37°C. 10% formic acid was then added to halt the digestion. The peptides were then cleaned using a Water Oasis HLB plate and eluted in 60% acetonitrile/0.1% formic acid and brought to dryness on a speedvac. The peptides were then resuspended at a concentration of 1ug/ul in 0.1% formic acid. A DIA Chromatogram Library sample was created from a pooled aliquot of the samples.
+
+DATA PROCESSING:
+A human FASTA database was downloaded from Uniprot (http://uniprot.org). This file were used with the 6 gas phase fraction files from the analysis of the chromatogram library sample to create a human plasma specific chromatogram library using the DIA-NN (v 1.8) software package2. This chromatogram library file was then used to perform identification and quantitation of the proteins in the 108 samples again using DIA-NN as the acquisition type, trypsin used as the enzyme, CID/HCD as the fragmentation, 10ppm mass tolerances for the precursor, fragment, and library mass tolerances. The precursor FDR rate was set to 1%.

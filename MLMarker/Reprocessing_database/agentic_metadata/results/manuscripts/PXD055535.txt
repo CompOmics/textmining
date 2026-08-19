@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Orbitrap Exploris 480
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Affinity proteomics; Data-dependent acquisition
+keywords: Ap-ms; Fbxo31; Ip-ms; Oxidative stress; Ubiquitin ligase
+
+ABSTRACT:
+FBXO31 is a substrate adapter for the SCF-type ubiquitin ligase complex SCF/FBXO31 which  ubiquitylates C-terminal amide-bearing proteins (CTAPs), thereby triggering their proteasomal degradation in human cells. Immunoprecipitation followed by MS (IP-MS) was performed on HA-tagged cDNA-expressed variants of FBXO31 from HEK293T cells to identify putative clients.
+
+PROJECT DESCRIPTION:
+C-terminal amides mark proteins for degradation via SCF/FBXO31 - Interaction Proteomics of FBXO31 in HEK293T cells
+
+SAMPLE PROCESSING:
+IP-MS of FBXO31(ΔFbox) or FBXO31(ΔFbox, D334N) stably expressed as HA-tagged cDNAs in HEK293T cells previously engineered to have an FBXO31 KO. Deletion of the Fbox motif (Δfbox) prevents assembly of enzymatically active SCF complexes, but preserves client binding, therefore allowing to enrich clients by co-IP. For each experiments, three separate cell treatments and IPs were performed as experimental replicates. Parallel to each cDNA-expressing sample, cells lacking HA-tagged cDNA were processed as negative controls.  This project contains three experiments.  - wt_untreated: IP-MS of HA-FBXO31(ΔFbox) from untreated cells. Raw sample series MFM-X216.  - wt_h2o2: IP-MS of HA-FBXO31(ΔFbox) from cells treated with 200 µM H2O2 and 500 nM epoxomicin for 20 minutes in PBS prior to harvest. Raw sample series MFM-X227.  - d334n_untreated: IP-MS of HA-FBXO31(ΔFbox, D334N) from untreated cells. Raw sample series MC-X051.  IP was performed on 1 mg total protein in lysis buffer (300 mM NaCl, 50 mM Tris-HCl, 0.5% (v/v) IGEPAL CA-630, 1x Thermo Halt protease inhibitor cocktail) at a final concentration of 2 g/l using 80 µl Pirece anti-HA magnetic bead slurry (Thermo 88836) for 4h at 4°C. Beads were washed four times in lysis buffer and twice in PBS before eluting twice in 0.1 M Glycine pH 2 followed by neutralization and snap-freezing. Samples were processed by reducing and alkylation with TCEP and chloroacetamide, followed by tryptic digest. Acquisition was performed by LC-MS/MS using an Orbitrap Exploris 480 mass spectrometer in DDA mode with fragmentation by HCD, a resolution of 30’000, and 65 minutes runtime.
+
+DATA PROCESSING:
+Raw data was processed with FragPipe (Version 22.0). Search for tryptic peptides was performed using the MSFragger engine (version 4.1) matching spectra against the UniProt human proteome (UP000005640) and common contaminants with default deisotoping, mass calibration, and parameter optimization. Filtering for FDR ≤ 1% was performed sequentially at the PSM and protein levels through the Philosopher pipeline. Overall workflows (fragpipe.workflow) and detailed search parameters (fragger.params) are included as separate text files.

@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Bone marrow; Blood cell
+diseases: Multiple myeloma
+instruments: Orbitrap Exploris 480
+modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; monomethylated residue; deamidated residue; iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: Label free
+keywords: Dcaf1; Proteomics; Myeloma
+
+ABSTRACT:
+Multiple myeloma is a plasma cell malignancy that is susceptible to drugs targeting protein homeostasis such as thalidomide analogues and proteasome inhibitors. Thalidomide analogues modulate the activity of DDB1/CUL4 E3-ligase complexes to perturb substrate recognition and proteasomal degradation thereof. We hypothesised that the cellular pool of DDB1/CUL4 associated factors (DCAFs) may mediate other essential plasma cell processes and offer new targets for therapeutic intervention. Utilising B32B3, a previously disclosed DCAF1 kinase inhibitor as a template, we developed a series of analogues with enhanced anti-myeloma potency.
+
+PROJECT DESCRIPTION:
+Characterisation of VPRBP/DCAF1 kinase inhibitor analogues
+
+SAMPLE PROCESSING:
+Inhibitor treated JJN3 cells were snap frozen and processed for proteome and phosphoproteome analysis using the EasyPhos protocol (Humphrey, 2018). LC-MS/MS analyses were carried out using an Orbitrap Exploris 480 MS and a Dionex Ultimate 3000RSLC nanoflow HPLC (Thermofisher). Samples were loaded through a trap column for preconcentration (Acclaim PepMap 100 C18 75 μm × 20 mm, Thermofisher). Samples were separated using an EASY-Spray PepMap C18 75 μm × 250 mm column (Thermofisher) and a linear gradient of 5%-32% acetonitrile over 70min for phosphoproteome samples, 5%-35% acetonitrile over 90min for proteome samples. For phosphoproteome samples, full MS/data dependent acquisition MS/MS mode was utilized on Xcalibur (Thermofisher), with a resolution of 60000, normalized automatic gain control target of 300% and maximum fill times of 50 ms. The 20 most intense multiply charged precursors were selected for higher-energy collision dissociation fragmentation with a stepped collisional energy of 30 and 36%. MS/MS scans used a resolution of 15000, standard mode for automatic gain control target and automatic maximum fill times. For proteome samples, full MS/data dependent acquisition MS/MS mode was utilized on Xcalibur (Thermofisher), with a resolution of 60000, normalized automatic gain control target of 300% and maximum fill times of 100 ms. The 20 most intense multiply charged precursors were selected or higher-energy collision dissociation fragmentation with a stepped collisional energy of 30 and 36%. MS/MS scans used a resolution of 15000, standard mode for automatic gain control target and automatic maximum fill times.
+
+DATA PROCESSING:
+Raw files were analysed using Proteome Discoverer 2.5 (Thermo Fisher). SEQUEST HT was used to search against the UniProt Homo Sapiens proteome (42,3262 sequences, downloaded May 3rd, 2023). Search parameters included: precursor mass tolerance of 10 ppm, fragment mass tolerance of 0.02 Da, and trypsin digestion with up to two missed cleavages allowed. Cysteine carbamidomethylation was set as a fixed modification, whereas dynamic modifications were phosphorylation (S/T/Y), acetylation (N terminus, K), oxidation (M), deamidation (N/Q), and N-terminal methionine loss. For the proteome, methylation (R/K) was also an allowed dynamic modification. A site probability threshold of 75/100 was used. Percolator was used to filter the results to a 1% false discovery rate at the peptide level. Label-free quantification was performed using Minora Feature Detector.

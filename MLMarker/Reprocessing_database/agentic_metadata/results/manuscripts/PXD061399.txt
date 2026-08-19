@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Breast cancer cell line; Cell culture
+diseases: Breast cancer
+instruments: LTQ Orbitrap Velos
+modifications: monohydroxylated residue; iodoacetamide derivatized residue; acetate labeling reagent (N-term) (heavy form
+experiment types: Gel-based experiment; Bottom-up proteomics; Data-dependent acquisition
+quantification: Spectrum counting
+keywords: Apoptotic caspases; Gel-based proteomics; Shedding; Mda-mb-231 cells; Degradomics
+
+ABSTRACT:
+Investigate whether apoptotic caspases-3 and -7 can cleave membrane-bound proteins from breast cancer MDA-MB-231 cells.
+
+PROJECT DESCRIPTION:
+Identification of extracellular substrates of apoptotic caspases-3 and -7 cleaved from cell membrane of MDA-MB-231 cells
+
+SAMPLE PROCESSING:
+MDA-MB-231 cells were exogenously treated with apoptotic caspases-3 and -7 with and without pan-caspase inhibitor zVAD-FMK. Afterwards sheddomes were collected and separated using SDS-PAGE. Each lane was then further cut into 18 bands (18 samples) and bands were then destained, reduced, and alkylated prior to trypsinzation. After trypsin digestion, peptides were extracted and prepared for LC-MS/MS analysis using EASY-nanoLC II HPLC unit (Thermo Fischer Scientific, USA) coupled to an Orbitrap LTQ Velos mass spectrometer (Thermo Fischer Scientific, USA) and operated via Xcalibur software version 2.2 SP1.48 (Thermo Fischer Scientific, USA).
+
+DATA PROCESSING:
+Acquired data were analyzed performed using MaxQuant proteomics software (version 1.5.2.8, Max Planck Institute, Germany) with embedded Andromeda search engine [81,82]. Searches were performed against the canonical database of human reference pro-teome derived from the UniProt database (UniProtKB, Homo Sapiens, canonical database containing 16.670 entries, released in July 2014) with the exclusion of protein isoforms. Additional parameters were set as follows, trypsin cleavage specificity with maximum two missed cleavages, carbamidomethylation of cysteines was set as static, methionine oxidation and N-terminal acetylation were set as dynamic modifications, precursor and fragment mass tolerances were set at 6 and 20 ppm, reversed database search was performed and false discovery rate (FDR), was set at 1% for peptide and protein identifications. All the protein groups with at least two identified peptides in the MaxQuant search were considered as a positive identification and their relative abundance in the treated sample as compared to the control was calculated using the Perseus software. Spectral counting of their razor and unique peptides was used as a semiquantitative measure of protein abundance in sheddomes collected from caspase-treated cells, with the threshold for relative abundance in treated samples set as at least a threefold increase in the spectral counts for selected protein. Additionally, only proteins with known localization at the cell membrane were considered as potential extracellular targets of caspases.

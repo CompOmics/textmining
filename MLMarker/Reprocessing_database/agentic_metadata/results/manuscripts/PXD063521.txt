@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Cell culture
+instruments: Orbitrap Fusion Lumos
+modifications: iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+keywords: Vcp; Ufd1; Npl4; P97
+
+ABSTRACT:
+GST pull-down assay using crude extracts from HCT116 cells to analyze the selectivity of the UFD1-NBM peptide in a cellular context.
+
+PROJECT DESCRIPTION:
+Interactome analysis of GST-UFD1-NBM
+
+SAMPLE PROCESSING:
+To prepare cell extracts, HCT116 cells were sonicated in lysis buffer (50 mM HEPES [pH 7.4], 100 mM NaCl, 10% glycerol, 1 mM DTT, and 0.2% NP-40) and lysates were clarified by centrifugation at 20,000 × g for 10 min at 4 ℃. Protein concentration was measured using a BCA assay (Thermo Fisher Scientific). 250 µL of cell extracts (500 µg of protein) and 250 µL of binding buffer (50 mM HEPES [pH 7.4], 100 mM NaCl, 10% glycerol, 1 mM DTT, and 0.1% Triton X-100) were mixed. Then 4 µg of GST or GST-UFD1-NBM was added to the mixture and incubated for 1 h at 4 ℃ . After incubation, 10 µL of Glutathione Se-pharose 4B (Cytiva) was added and further incubated for 1 h at 4 ℃. The beads were washed with 400 µL of binding buffer five times. Precipitates were eluted with 100 µL of 1×NuPAGE LDS Sample Buffer (Invitrogen) supplemented with 5% 2-mercaptoethanol. For on-beads tryptic digestion based on a single-pot solid-phase-enhanced sample prepa-ration (SP3) method using a KingFisher APEX (Thermo Fisher Scientific)44, 1 µL of elute were reduced in 10 mM dithiothreitol (DTT) for 10 min at 70 ℃ and then alkylated with 15 mM iodoacetamide (IAA) for 15 min at room temperature. Alkylated proteins were denatured in 200 µL of 50% EtOH and conjugated to 40 µg of an equal mixture of hydrophobic and hydrophilic SeraMag SpeedBead carboxylate-modified magnetic particles (Cytiva), followed by desalting thrice with 400 µL of 80% EtOH. The magnetic beads were subjected to enzymatic digestion in 100 µL of 5 ng/µL Trypsin Gold (Promega) in 50 mM triethylammonium bicarbonate (TEAB) for 3.5 h at 37 ℃ and rinsed out with 100 µL of pure water. Digested peptides were acidified with a final concentration of 0.1% trifluoroacetic acid and loaded into Evotip Pure (Evosep) according to the manufacturer’s instruction. Desalted tryptic digests were analyzed by Evosep One (Evosep) coupled to an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific). Peptides were separated on a C18 analytical column (Aurora ELITE (1.7 µm, 75-µm i.d., and 15-cm length); IonOpticks) using the defined Zoom 40SPD program. The Orbitrap Fusion Lumos mass spectrometer was operated in the data-dependent MS/MS mode with a mass range of 350–1300 m/z and resolution of 120,000 using Xcalibur software (Thermo Fisher Scientific). The most intense ions (cycle time 3 s) were selected for MS/MS fragmentation with the HCD of 30, isolation window at 1.6 m/z and maximum injection time at 22 ms in the centroid mode.
+
+DATA PROCESSING:
+The MS/MS spectra were searched against a UniProt Knowledgebase (Homo sapiens sp_canonical (TaxID=9609), version 2024-10-02) using the Sequest HT search engine in the Proteome Discoverer software (version 3.2; Thermo Fisher Scientific). The precursor and fragment mass tolerances were set to 10 ppm and 0.02 Da, respectively. Methionine oxidation, protein amino-terminal acety-lation, diglycyl-Lys, and Gln/Asn deamidation were set as variable modifications, and Cys carbamidomethylation modification was set as a static modification for database searching. Peptide identification was filtered at a 1% false discovery rate. To identify targets of UFD1-NBM, the results of three individual samples were assembled into one multi-consensus report using Proteome Discoverer software.

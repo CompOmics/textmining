@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Prostate cancer cell line
+diseases: Prostate cancer
+instruments: Orbitrap Eclipse
+modifications: monohydroxylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: Label free; Relative quantification
+keywords: Trop2; tecd; prostate cancer; egfr; metastasis
+
+ABSTRACT:
+Pull-down experiments were performed to characterize the interactome of the shed extracellular domain of TROP2 (TECD) in prostate cancer. Two independent strategies were used: (1) immunoprecipitation of TROP2 from patient sera, and (2) immunoprecipitation of DU145 cell lines treated with TECD.  Proteins were analyzed by shotgun proteomics.
+
+PROJECT DESCRIPTION:
+Extracellular Domain Shedding of TROP2 Activates EGFR Signaling to Drive Prostate Cancer Metastasis
+
+SAMPLE PROCESSING:
+Pulldown experiments were performed to characterize proteins interacting with TROP2 extracellular domain (TECD) using two approaches. Proteins from the pull-downs were reduced with 200 mM TCEP at 65 °C for 1 hour, alkylated with 200 mM iodoacetamide at room temperature in the dark, and digested with trypsin overnight at 37 °C. Tryptic peptides were separated from the magnetic beads, dried down, and reconstituted in 0.1% formic acid.  Tryptic peptides were analyzed using an Orbitrap Tribrid Eclipse mass spectrometer. Peptides were separated on a C18 column. MS1 scans were acquired at 240,000 resolution. MS2 scans were performed using HCD (28% CE). Dynamic exclusion was set to 30 s. Each condition was analyzed in triplicate.
+
+DATA PROCESSING:
+Raw LC-MS/MS files were analyzed using Byonic (Protein Metrics) against the Swiss-Prot human database (2020, 20,626 entries). Trypsin digestion was specified with up to two missed cleavages. Precursor mass tolerance was set to 10 ppm and fragment mass tolerance to 0.5 Da. Fixed modification: cysteine carbamidomethylation; variable modifications: methionine oxidation and asparagine deamidation. Peptides with a false discovery rate (FDR) above 1% were excluded. Protein abundances were normalized (Z-score), and significant proteins were selected using Student’s t-test (p < 0.01).

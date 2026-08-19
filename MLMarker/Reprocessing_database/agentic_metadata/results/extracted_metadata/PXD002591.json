@@ -1,0 +1,150 @@
+{
+  "sample_groups": [
+    {
+      "name": "HeLa Nuclear Proteome",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "nucleus",
+          "evidence": "extracted from HeLa nuclei",
+          "ontology_id": "cell_parts:0002",
+          "ontology_name": "nucleus",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "extracted from HeLa nuclei",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragment mass tolerance of 0.02 Da for HCD",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        },
+        {
+          "value": "ETD",
+          "evidence": "fragment mass tolerance of 0.02 Da for HCD and ETD",
+          "ontology_id": "fragmentation:0003",
+          "ontology_name": "ETD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Lys-C",
+          "evidence": "digested overnight with endoproteinase Lys-C",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        },
+        {
+          "value": "trypsin",
+          "evidence": "digested overnight with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Cysteine carbamidomethylation was set as fixed modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "O-GlcNAc",
+          "evidence": "enrichment method for O-GlcNAc peptides"
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [],
+      "lc_column": [],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "keeping top-6 peaks in every 100 m/z window",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "replaced with same amount of lysine(13C6, 15N2) and arginine(13C6, 15N4)",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "nuclear isolation",
+        "evidence": "Whole nuclei were isolated and washed"
+      },
+      "enrichment": {
+        "value": "O-GlcNAc",
+        "method": "phenylboronic acid solid-phase extraction",
+        "evidence": "enrichment method for O-GlcNAc peptides was developed with the use of phenylboronic acid"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "metabolic labeling",
+          "evidence": "isotopically label O-GlcNAc modifications... via the hexosamine biosynthetic pathway"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "13C6-glucose",
+          "evidence": "producing 13C-labeled UDP-GlcNAc from 13C6-glucose"
+        },
+        {
+          "value": "13C6, 15N2-lysine",
+          "evidence": "replaced with same amount of lysine(13C6, 15N2)"
+        },
+        {
+          "value": "13C6, 15N4-arginine",
+          "evidence": "replaced with same amount of arginine(13C6, 15N4)"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "environmental",
+          "evidence": "producing 13C-labeled UDP-GlcNAc from 13C6-glucose",
+          "ontology_id": "treatments:0003",
+          "ontology_name": "environmental",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

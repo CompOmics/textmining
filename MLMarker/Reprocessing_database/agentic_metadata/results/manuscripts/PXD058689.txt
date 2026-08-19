@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Stroma; Prostate gland
+diseases: Prostate adenocarcinoma
+instruments: Orbitrap Fusion Lumos; Q Exactive HF-X
+modifications: monohydroxylated residue; TMT6plex-126 reporter+balance reagent acylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Laser microdissection; Prostate cancer; Tumor; Gleason; Stroma
+
+ABSTRACT:
+Prostate cancer is one of the most frequently diagnosed cancers in men. Prostate tumor staging and disease aggressiveness are evaluated based on the Gleason scoring system, which is further used to direct clinical intervention. The Gleason scoring system provides an estimate of tumor aggressiveness through quantitation of the serum level of prostate specific antigen (PSA) and histologic assessment of Grade Group, determined by the Gleason Grade of the tumor specimen. To improve our understanding of the proteomic characteristics differentiating low- versus high-grade prostate cancer tumors, we performed a deep proteomic characterization of laser microdissected epithelial and stromal subpopulations from surgically resected tissue specimens from patients with Gleason 6 (n=23 specimens from n=15 patients) and Gleason 9 (n=15 specimens from n=15 patients) prostate cancer via quantitative high-resolution liquid chromatography-tandem mass spectrometry analysis.
+
+PROJECT DESCRIPTION:
+Histology-Resolved Proteomics Identifies Tumor and Stromal Proteome Profiles Associated with Low- and High-Grade Prostate Cancer
+
+SAMPLE PROCESSING:
+Glandular tumor epithelium with associated intraluminal proteomic secretions (LMD enriched tumor; ET), benign epithelium (BE) and stroma surrounding the tumor and benign epithelium (tumor-involved stroma (ES) and benign stroma (BS), respectively) were harvested using laser microdissection. Samples were digested, quantitated, and labeled using TMT11 isobaric tandem mass tags. Multiplexes were fractionated by basic reversed-phase liquid chromatography, pooled into 24 concatenated fractions and each resuspended pooled fraction was analyzed by LC-MS/MS with either an Orbitrap Fusion Lumos Tribrid (epithelial sample set) or a Q Exactive HF-X Orbitrap (stromal sample set).
+
+DATA PROCESSING:
+Unsupervised hierarchical clustering was performed using 100 proteins with the highest median absolute deviation (MAD) across all samples and clustered using pheatmap (version 1.0.12) in R (version 4.3.2) using a “correlation” distance metric and “ward.D” clustering. Differential analyses were performed using limma (version 3.58.1) in R. Proteins passing a limma adjusted p<0.05 were prioritized for downstream comparative and pathway analyses. Functional pathway annotation was performed using Ingenuity Pathway Analysis. Immune cell type deconvolution was performed using xCell and ProteoMixture. Fold-change values of differentially enriched xCell signature types in Gleason 6 versus Gleason 9 samples were calculated using Welch’s two sample t-test.

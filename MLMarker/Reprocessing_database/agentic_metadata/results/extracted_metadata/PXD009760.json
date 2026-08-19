@@ -1,0 +1,123 @@
+{
+  "sample_groups": [
+    {
+      "name": "HeLa cells with PRMT5 knockdown and arsenite treatment",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "organism parts: Hela cell",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "Enzyme specificity was set to trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Cysteine carbamidomethylation was selected as a fixed modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [],
+      "lc_column": [],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Shotgun proteomics",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "Razor and unique peptides were used for LFQ quantitation",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SDS-PAGE",
+        "evidence": "run on a precast protein gel and processed for silver staining"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment method described for arginine methylation"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "stably expressing shRNA targeting PRMT5"
+        },
+        {
+          "value": "chemical treatment",
+          "evidence": "treated or not with 0.5 mM sodium arsenite"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "shRNA targeting PRMT5",
+          "evidence": "stably expressing shRNA targeting PRMT5"
+        },
+        {
+          "value": "sodium arsenite",
+          "evidence": "treated or not with 0.5 mM sodium arsenite"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "stably expressing shRNA targeting PRMT5",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "treated or not with 0.5 mM sodium arsenite",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

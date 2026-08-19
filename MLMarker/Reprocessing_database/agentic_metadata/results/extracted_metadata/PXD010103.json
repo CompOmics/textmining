@@ -1,0 +1,390 @@
+{
+  "sample_groups": [
+    {
+      "name": "HeLa cells (AP-4 pathway study)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "cell culture",
+          "evidence": "HeLa M cells and HEK 293ET cells were from ECACC"
+        }
+      ],
+      "disease": [
+        {
+          "value": "AP-4 deficiency",
+          "evidence": "AP-4 deficiency causes a severe neurological disorder"
+        }
+      ],
+      "cell_part": [
+        {
+          "value": "vesicle",
+          "evidence": "vesicle-enriched fractions were prepared"
+        },
+        {
+          "value": "membrane",
+          "evidence": "membrane fractions were obtained",
+          "ontology_id": "cell_parts:0004",
+          "ontology_name": "membrane",
+          "similarity": 1.0
+        },
+        {
+          "value": "cytosol",
+          "evidence": "cytosol buffer and scraped in a total volume",
+          "ontology_id": "cell_parts:0003",
+          "ontology_name": "cytoplasm",
+          "similarity": 0.8808
+        },
+        {
+          "value": "whole cell lysate",
+          "evidence": "whole cell lysate full proteome analysis"
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "HeLa M cells and HEK 293ET cells were from ECACC",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        },
+        {
+          "value": "SH-SY5Y",
+          "evidence": "human neuroblastoma cell line SH-SY5Y was from Sigma-Aldrich",
+          "ontology_name": "SH-SY5Y",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q-Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        },
+        {
+          "value": "Q-Exactive HF",
+          "evidence": "Two different mass spectrometers were used (Q-Exactive HF and Q-Exactive)",
+          "ontology_id": "instruments:0012",
+          "ontology_name": "Q Exactive HF",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Q-Exactive instruments typically use HCD; collision energy reported as NCE",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "enzymatically digested by addition of LysC... before addition of Trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        },
+        {
+          "value": "LysC",
+          "evidence": "enzymatically digested by addition of LysC",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Protein was alkylated by addition of 5 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "Q-Exactive standard collision energy is 28 NCE"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "null",
+          "evidence": "gradient time not explicitly stated in text"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "SDB-RPS stage tips used for peptide purification",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        },
+        {
+          "value": "SCX",
+          "evidence": "six-fold fractionation, peptides were processed by strong cation exchange (SCX)",
+          "ontology_id": "lc_column:0003",
+          "ontology_name": "SCX",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Shotgun proteomics; MaxQuant processing implies DDA",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "For SILAC experiments... multiplicity was set to 2",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        },
+        {
+          "value": "label-free",
+          "evidence": "For label-free experiments... multiplicity was set to 1",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SDB-RPS stage tips; SCX; SDS-PAGE",
+        "evidence": "peptides were purified and fractionated on SDB-RPS... six-fold fractionation... processed by strong cation exchange (SCX)... separated by SDS-PAGE"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No phosphopeptide enrichment described; only general fractionation"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Q-Exactive instruments use ESI",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "AP-4 knockdown... achieved by combined siRNA targeting"
+        },
+        {
+          "value": "gene knockout",
+          "evidence": "AP4B1 knockout HeLa cells... AP4E1 knockout HeLa cell line"
+        },
+        {
+          "value": "gene overexpression",
+          "evidence": "HeLa cells stably overexpressing SERINC3-HA-mCherry"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "cells were treated with 10 μg mL−1 nocodazole... 100 nM Bafilomycin A1... rapamycin"
+        },
+        {
+          "value": "starvation",
+          "evidence": "For starvation during autophagy assays, cells were washed... and incubated in EBSS"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "nocodazole",
+          "evidence": "cells were treated with 10 μg mL−1 nocodazole"
+        },
+        {
+          "value": "Bafilomycin A1",
+          "evidence": "cells were treated with 100 nM Bafilomycin A1"
+        },
+        {
+          "value": "rapamycin",
+          "evidence": "cells were treated with rapamycin at 200 ng mL−1"
+        },
+        {
+          "value": "siRNA targeting AP4E1 and AP4M1",
+          "evidence": "combined siRNA targeting of AP4E1 and AP4M1"
+        },
+        {
+          "value": "siRNA targeting RUSC1",
+          "evidence": "For knockdown of RUSC1 an ON-TARGETplus SMARTpool was used"
+        },
+        {
+          "value": "siRNA targeting RUSC2",
+          "evidence": "For knockdown of RUSC2 two independent GeneSolution siRNAs were used"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "nocodazole, Bafilomycin A1, rapamycin are small molecules",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "siRNA targeting AP4E1 and AP4M1",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Patient fibroblasts (AP-4 deficiency)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "fibroblast",
+          "evidence": "human fibroblasts from AP-4 deficient patients",
+          "ontology_id": "tissues:0084",
+          "ontology_name": "fibroblast",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "AP-4 deficiency",
+          "evidence": "human fibroblasts from AP-4 deficient patients"
+        }
+      ],
+      "cell_part": [
+        {
+          "value": "whole cell lysate",
+          "evidence": "whole cell lysates from all four patient cell lines"
+        }
+      ],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Q-Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Q-Exactive instruments typically use HCD",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "enzymatically digested by addition of LysC... before addition of Trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        },
+        {
+          "value": "LysC",
+          "evidence": "enzymatically digested by addition of LysC",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Protein was alkylated by addition of 5 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "Q-Exactive standard collision energy is 28 NCE"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "null",
+          "evidence": "gradient time not explicitly stated in text"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "SDB-RPS stage tips used for peptide purification",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Shotgun proteomics",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "For label-free experiments... multiplicity was set to 1",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SDB-RPS stage tips",
+        "evidence": "peptides were purified and fractionated on SDB-RPS"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No phosphopeptide enrichment described"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Q-Exactive instruments use ESI",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+diseases: Colon cancer
+instruments: Orbitrap Exploris 480
+modifications: phosphorylated residue; ubiquitination signature dipeptidyl lysine
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: Label free
+keywords: Fbxw7; Ubiquitination; Phosphorylation; R505c; Organoid; Lc–ms/ms
+
+ABSTRACT:
+FBXW7 mutations reduce EGF-dependency and drive CRC tumorigenesis
+
+PROJECT DESCRIPTION:
+Analysis of FBXW7 mutants in colon organoids
+
+SAMPLE PROCESSING:
+Organoid material were lysed in 8 M urea, 50 mM ammonium bicarbonate, with protease and phosphatase inhibitors. Proteins were reduced in 10 mM dithiothreitol and then alkylated in 20 mM iodoacetamide. The samples were digested with Lys-C and trypsin, then split into two parts: for ubiquitination analysis and phosphoproteome with subsequent proteome analysis. Digested peptides were purified using C18 cartridges. Immuno-affinity purification with ubiquitin branch motif (K-ε-GG) antibody bead conjugate was used for ubiquitinated peptide enrichment, IMAC - for phosphopeptide enrichment. Peptides were analysed on an Orbitrap Exploris 480 mass spectrometer operated in data-dependent acquisition mode, coupled to an UltiMate 3000 UHPLC system. Multiply charged precursor ions were fragmented using higher energy collisional dissociation.
+
+DATA PROCESSING:
+Raw files were processed using MaxQuant software with the integrated Andromeda search engine. Data were searched against the human UniProt database. For all files standard parameter settings were used with enabled the label-free quantification (LFQ) algorithm. Cysteine carbamidomethylation was included as a fixed modification. Protein N-terminal acetylation and methionine oxidation were allowed as variable modifications for all searches, while GlyGly (K) was also included for ubiquitinome, Phospho (STY) – for phosphoproteome. Trypsin/P was set as the digestion enzyme and up to two missed cleavages were tolerated. The match-between-run feature was enabled for identification. A false discovery rate (FDR) of 1% was used for peptide and protein identification. Data were analyzed using Perseus software. FDR-corrected p-values (q-values) were calculated from 250 randomisations and considered significant if they were 0.05 or less.

@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: B cell; Cell culture
+diseases: Lymphoma
+instruments: Q Exactive
+modifications: iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: TMT
+keywords: N-myristoyltransferase; Proteomics; Mitochondrial fractionation; N-myristoylation
+
+ABSTRACT:
+Human N-myristoyltransferases (NMTs) catalyze N-terminal protein N myristoylation and are promising targets in cancer, with an emerging mechanistic rationale for targeted therapy. Here, we screened 245 cancer cell lines against IMP-1320, a potent NMT inhibitor (NMTi), and conduced pathway-level analyses to identify that deregulated MYC increases cancer cell sensitivity to NMTi. Proteomics on detergent enriched membrane fractions in MYC or MYCN deregulated cancer cell models revealed that cell death is associated at least in part with loss of membrane association of mitochondrial respiratory complex I. This is concurrent with loss of myristoylation and degradation of the complex I assembly factor NDUFAF4, and induction of mitochondrial dysfunction, driven by MYC or MYCN deregulation. NMTi eliminated or suppressed MYC and MYCN-driven tumors in vivo without overt toxicity, suggesting that this constitutive co translational protein modification can be targeted in MYC driven cancers.
+
+PROJECT DESCRIPTION:
+MYC deregulation sensitizes cancer cells to N-myristoyltransferase inhibition - Mitochondrial fractionation
+
+SAMPLE PROCESSING:
+P493-6 cells were cultured for 18 h in the respective MYC conditions at 1x106 cells/ml in 10 mL in 10-cm diameter dishes. The high-MYC and low-MYC cells were subsequently treated with 100 nM IMP-1088 or DMSO for 18 h, with each condition performed in biological triplicate. Cells were harvested, centrifuged and washed with PBS. Cell pellets were then processed using the Mitochondria Isolation Kit for Cultured Cells (ThermoFisher Scientific, 89874) following the manufacturer’s instructions. The mitochondrial pellets were homogenized by sonication in lysis buffer containing 1% (v/v) Triton X-100, 0.1% (w/v) SDS and EDTA-free protease inhibitor cocktail in PBS, pH 7.4. Protein concentrations were determined and lysate (50 μg) was precipitated by chloroform methanol, washed with MeOH, and resuspended in 50 μL HEPES, pH 8.0. Proteins were reduced and alkylated using 5 mM TCEP and 15 mM CAA for 45 min at rt with vortexing, and subsequently digested by trypsin for 18 h at 37 °C and shaking at 1,100 rpm. Peptides were then labelled with TMT10plex Isobaric Label Reagent (ThermoFisher Scientific, 90111), fractionated and analyzed by nanoLC-MS/MS on a Thermo Q-Exactive instrument as described previously (Kallemeijn, et al. (2019) Cell Chem. Biol. 26, 892; Mousnier et al. (2018). Nat. Chem. 10, 599)
+
+DATA PROCESSING:
+The data were processed using MaxQuant (version 1.5.6.5) using the built-in Andromeda search engine. The MS/MS spectra were matched against the human reference proteome with isoforms (UniProt, accessed December 2020). TMT10plex was set per sample group, and the reporter ion MS2 correction factors were included as supplied by the manufacturer. Cysteine carbamidomethylation, methionine oxidation and N-terminal acylation were set as variable modifications. As digestion mode ‘Trypsin/P’ was chosen, and a maximum of two missed cleavages allowed. Both the options ‘match between runs’ and ‘unique and razor peptides’ for protein quantifications were selected. The processed data was then further analyzed with Perseus (version 1.5.6.0). Protein groups were filtered against contaminants, reverse and proteins identified by site, and TMT intensities transformed using a base 2 logarithm. Proteins involved in mitochondrial respiratory complex 1 (mtRC1, with proteins reported in (Guerrero-Castillo et al. (2017). Cell Metab. 25, 128) annotated in the plots. The log2 fold changes observed for the mtRC1 proteins identified were plotted, Tukey box-plots were generated and the significance was calculated using Student t-test (two-tailed, heteroscedastic). Differences between responses of individual mtRC1 proteins in high- and low MYC to IMP-1088 were calculated by subtracting the log2 fold changes, then ranked and color-graded by difference.

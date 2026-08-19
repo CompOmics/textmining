@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Colon
+instruments: Q Exactive; Q Exactive HF
+modifications: monohydroxylated residue; 6x(13)C labeled residue; iodoacetamide derivatized residue
+experiment types: Data-independent acquisition; Bottom-up proteomics
+quantification: Label free
+keywords: Caco-2 cells; Cross-linking; Co-immunoprecipitation; Lfq proteomics; Silac
+
+ABSTRACT:
+Proteomic analysis of the MUC17(7TR) interactome using SILAC coupled to the reversible cross-linker DSP in Caco-2 cells by two independent methods identified the novel interaction partners SNX27 and MYO1B.
+
+PROJECT DESCRIPTION:
+Proteomic analysis of co-immunoprecipitation of MUC17(7TR) in Caco- cells using SILAC
+
+SAMPLE PROCESSING:
+Eluates from light and heavy samples prepared with method 1 were mixed at a 1:1 ratio and eluates from method 2 were directly added onto 10 kDa-cutoff filter (OD010C33, Pall life sciences). Proteins on the filter were alkylated and sequentially digested with trypsin(Promega) using filter-aided sample preparation (FASP). Released peptides were then cleaned with StageTip C18 columns. NanoLC–MS/MS was performed on an EASY-nLC 1000 system (ThermoFisher), connected to a QExactive Mass Spectrometer (ThermoFisher) via a nanoelectrospray ion source.
+
+DATA PROCESSING:
+Proteins were identified using MaxQuant (v.1.5.7.4) searching the human UniProt protein database (downloaded 2019/04/) supplemented with human mucin sequences database version 2.0 (http://www.medkem.gu.se/mucinbiology/databases/). Searches used full tryptic specificity, maximum 2 missed cleavages, 20 ppm precursor tolerance for recalibration search followed by 7 ppm for the final search, and 0.5 Da for fragment ions. Modifications were set as carbamidomethylation of cysteine (fixed), methionine oxidation (variable), protein N-terminal (variable) and 3-(carbamidomethylthio)propanoyl (DSP-crosslinker) (variable). The FDR was set to 1% both for peptide and protein levels and minimum peptide length was set to 7 amino acids. Proteins were quantified using label-free quantification (LFQ) using at least two peptides for quantification.

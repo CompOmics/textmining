@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Macrophage
+instruments: Q Exactive HF
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: SILAC
+keywords: Macrophage; Lps; Mouse; Lc-ms; Rna-binding protein; Proteomics
+
+ABSTRACT:
+SILAC-labeled immortalized mouse macrophages (IMMs) were LPS-stimulated.  RNA-associated proteins were crosslinked to RNA using UV.  RNA crosslinked proteins were purified, trypsin + Lys-C digested, and analyzed using LC-MS proteomics.
+
+PROJECT DESCRIPTION:
+Lipopolysaccharide-induced changes in the RNA-binding proteome of mouse macrophages
+
+SAMPLE PROCESSING:
+SILAC-labeled (light, medium, heavy) IMMs were LPS stimulated for 0, 30, and 60 min.  The cells underwent UV irradiation; negative control cells were not exposed to UV.  The cells were lysed using guanidine thiocyanate lysis buffer and bead-beating.  RNA and RNA-crosslinked proteins were purified using silica spin columns.  Proteins on the column were digested with trypsin + Lys-C.  The samples underwent DTT reduction, iodoacetamide alkylation, and a second round of digestion using trypsin + Lys-C.  The samples were analyzed by LC-MS using a Thermo UltiMate 3000 - Q Exactive HF.
+
+DATA PROCESSING:
+The resulting LC-MS spectra were analyzed using MaxQuant v.2.1.4.0.  The search used a mouse FASTA protein database downloaded from UniProt on 2021-JUN-11.  The PSM and protein FDR were set to 0.01, and the Minimum Ratio Count was 2.  Common contaminants were included, and Match Between Runs was used.  The dynamic modifications were Oxidation (M) and Acetyl (Protein N-term), and Carbamidomethyl (C) was a static modification.

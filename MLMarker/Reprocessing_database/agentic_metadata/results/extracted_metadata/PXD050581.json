@@ -1,0 +1,584 @@
+{
+  "sample_groups": [
+    {
+      "name": "MDA-MB-231 Secretome TAILS",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "human UniProt database (taxonomy ID: 9606)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "secretome",
+          "evidence": "MDA‐MB‐231 secretomes"
+        }
+      ],
+      "disease": [
+        {
+          "value": "Breast cancer",
+          "evidence": "Breast cancer",
+          "ontology_id": "diseases:0003",
+          "ontology_name": "breast cancer",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "MDA-MB-231",
+          "evidence": "MDA‐MB‐231 cells",
+          "ontology_name": "MDA-MB-231",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive HF-X",
+          "evidence": "Q Exactive HF‐X mass spectrometer",
+          "ontology_id": "instruments:0013",
+          "ontology_name": "Q Exactive HF-X",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "higher‐energy collision‐induced dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 5 mM of chloroacetamide (CAA)",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "30 NCE",
+          "evidence": "normalized collision energy (NCE) of 30%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "44",
+          "evidence": "pre‐programmed 44 min gradient per injection"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Acclaim™ PepMap™ RSLC C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "data‐dependent acquisition (DDA) mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "16plexTMT‐TAILS workflow",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "SCX",
+        "evidence": "fractionated using a Dionex UltiMate 3000 UHPLC... Acclaim™ PA2 nano HPLC column"
+      },
+      "enrichment": {
+        "value": "N-terminus",
+        "method": "TAILS",
+        "evidence": "N‐terminal enrichment... HPG‐ALD polymer"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "coupled with an LC Evosep One system",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "COSMC knockout"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "COSMC",
+          "evidence": "COSMC knockout"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "CRISPR/Cas9 genome editing",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "MDA-MB-231 Secretome DIA",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "human UniProt database (taxonomy ID: 9606)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "secretome",
+          "evidence": "MDA‐MB‐231 secretomes"
+        }
+      ],
+      "disease": [
+        {
+          "value": "Breast cancer",
+          "evidence": "Breast cancer",
+          "ontology_id": "diseases:0003",
+          "ontology_name": "breast cancer",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "MDA-MB-231",
+          "evidence": "MDA‐MB‐231 cells",
+          "ontology_name": "MDA-MB-231",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "Orbitrap Exploris™ 480 mass spectrometer",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "HCD at an NCE of 32%",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 40 mM CAA",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "32 NCE",
+          "evidence": "NCE of 32%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "100",
+          "evidence": "Whisper100 10SPD method"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Acclaim™ PepMap™ RSLC C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "data‐independent acquisition (DIA)",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification method",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "samples were prepared for analysis by loading them onto Evotips"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "no enrichment step described for DIA samples"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "coupled with an LC Evosep One system",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "COSMC knockout"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "COSMC",
+          "evidence": "COSMC knockout"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "CRISPR/Cas9 genome editing",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "CD74 PRM",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "recombinant human CD74 protein",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "recombinant protein",
+          "evidence": "recombinant human CD74 protein"
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK",
+          "evidence": "glycosylated version from HEK cells"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "Q Exactive mass spectrometer",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmented by HCD with an NCE of 28%",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylation with 40 mM CAA",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "NCE of 28%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "70",
+          "evidence": "70 min gradient was employed"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Acclaim™ PepMap™ RSLC C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "unscheduled PRM mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "no labeling mentioned",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "peptide samples were desalted using SOLAμ™ SPE Plates"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "no enrichment step described for PRM samples"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "coupled to an EASY‐nLC™ 1200 chromatography system",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "enzyme treatment",
+          "evidence": "incubated with activated recombinant Cathepsin S"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "Cathepsin S",
+          "evidence": "activated recombinant Cathepsin S"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "recombinant Cathepsin S",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "CD74 Glycoproteomics",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "human recombinant CD74 protein",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "recombinant protein",
+          "evidence": "human recombinant CD74 protein"
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK",
+          "evidence": "expressed in HEK cells"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Tribrid",
+          "evidence": "Orbitrap Fusion Tribrid Mass Spectrometer",
+          "ontology_id": "instruments:0005",
+          "ontology_name": "Orbitrap Fusion",
+          "similarity": 0.9288
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "HCD with an NCE of 30%",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        },
+        {
+          "value": "ETD",
+          "evidence": "electron transfer dissociation (ETD)",
+          "ontology_id": "fragmentation:0003",
+          "ontology_name": "ETD",
+          "similarity": 1.0
+        },
+        {
+          "value": "CID",
+          "evidence": "collision‐induced dissociation (CID)",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "digested with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated with 40 mM CAA",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "30 NCE",
+          "evidence": "NCE of 30%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "70",
+          "evidence": "70‐min gradient was employed"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Acclaim™ PepMap™ RSLC C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data acquisition was performed in DDA mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "no labeling mentioned",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "peptide mixture was desalted using SOLAμ™ SPE Plates"
+      },
+      "enrichment": {
+        "value": "O-glycosylation",
+        "method": "product ion-triggered re-isolation",
+        "evidence": "product ion‐triggered re‐isolation... if HexNAc oxonium ions were identified"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "coupled to an EASY‐nLC™ 1200 chromatography system",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

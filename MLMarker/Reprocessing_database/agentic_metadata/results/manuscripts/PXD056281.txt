@@ -1,0 +1,33 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Kidney
+diseases: Polycystic kidney disease
+instruments: Q Exactive HF
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Kidney; Adpkd; Global proteomics; Human; 3d cyst cultures
+
+ABSTRACT:
+Autosomal dominant polycystic kidney disease (ADPKD) is the most common hereditary kidney disease. Its progressively expanding, fluid-filled renal cysts eventually lead to end-stage renal disease. Despite the relatively high prevalence, treatment options are currently limited to a single drug approved by the FDA and EMA. Here, we investigated human ADPKD patient-derived three-dimensional cyst cultures (3DCC) as an in vitro model for ADPKD and drug repurposing research. First, we analyzed the proteomes of 3DCC derived from healthy and diseased tissues. We then compared the protein expression profiles with those of reference tissues, mainly from the same patients. We quantified 290 proteins affecting drug disposition and proposed target proteins for drug treatment. Lastly, we investigated the functional response of the quantified target proteins after exposure to repurposing candidates in the 3DCC. Proteomic profiling of human 3DCC reflected previously reported pathophysiological alterations, including aberrant protein expression in inflammation and metabolic reprogramming. While the 3DCCs largely recapitulated the disease phenotype in vitro, drug transporter expression was reduced compared to in vivo conditions. Target proteins for proposed repurposing candidates showed similar expression in vitro and in tissues. Exposure to these repurposing candidates inhibited cyst swelling in vitro, supporting the suitability of the 3DCC for ADPKD drug screening. In summary, our results provide new insights into the ADPKD proteome and offer a starting point for further research to improve treatment options for affected individuals.
+
+PROJECT DESCRIPTION:
+A patient-derived 3D cyst model of polycystic kidney disease that mimics disease development, expresses relevant drug targets and responds to repurposing candidates
+
+SAMPLE PROCESSING:
+The cryopreserved tissues were thawed, homogenized and lysed in 25 mM HEPES buffer, pH 7.6, containing 4% sodium dodecyl sulfate and 1 mM DTT with a homogenizer (T10 basic ULTRA TURRAX, IKA, Staufen, Germany). 3D cyst cultures were thawed and lysed in the same buffer. Proteins in the lysate were denatured at 95 °C for 5 min. Samples were prepared for proteomic analysis using a modified sp3 protocol, where simultaneous proteolytic overnight digestion was performed with endoproteinase LysC (FUJIFILM Wako Pure Chemical Corporation, Richmond, USA) and trypsin (Promega, Madison, USA). Protein and peptide amounts were determined by fluorometric quantification using the Protein Broad Range Assay on the Qubit 4 Fluorometer (Thermo Fisher Scientific, Waltham, USA). Peptides were separated on an EASY-spray C18-column (50 cm, 75 μm inner diameter; Thermo Fisher Scientific, Waltham, USA), using an acetonitrile/water gradient (0.1% formic acid) at 300 nL/min. Eluted peptides where analysed using the TopN method (full MS followed by ddMS2 scans) on an Orbitrap Q Exactive HF mass spectrometer (Thermo Fisher Scientific, Waltham, USA), operating in a data dependent mode with survey scans at a resolution of 120,000, AGC target of 3 x 106 and maximum injection time of 120 ms. The top 15 most abundant isotope patterns were selected from the survey scan with an isolation window of 1.7 m/z and fragmented with nCE at 26. The MS/MS analysis was performed with a resolution of 30,000, AGC target of 1 x 105 and maximum injection time of 50 ms. Each sample was injected in triplicate. The experimental metadata has been generated using lesSDRF.
+
+DATA PROCESSING:
+The raw MS data files were processed with MaxQuant version 2.4.2.0 (https://www.maxquant.org/), where proteins were identified by searching MS and MS/MS data of peptides against a reference human proteome database retrieved from the UniProtKB/Swiss-Prot curated database on 2023-07-18.4 Carboamidomethylation was set as fixed modification and oxidation and acetylation as variable modifications.
+
+SDRF SUMMARY:
+Total runs: 81
+organism: Homo sapiens
+organism part: cortex of kidney
+disease: Autosomal dominant polycystic kidney disease; normal
+cell type: primary cultured cell
+instrument: Q Exactive HF
+cleavage agent details: Lys-C; Trypsin/P
+modification parameters: Acetyl; Carbamidomethyl; Oxidation
+label: label free sample
+precursor mass tolerance: 8 ppm
+fragment mass tolerance: 20 ppm

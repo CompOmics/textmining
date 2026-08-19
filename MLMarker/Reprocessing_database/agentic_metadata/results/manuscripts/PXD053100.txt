@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Hek-293t cell; Kidney cell
+instruments: Orbitrap Fusion Lumos; Orbitrap Eclipse
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: Label free
+keywords: Dsrna; Dsrbp; Interferon response; Viral infection; Mass spectrometry; Rna sensing; Crispr-cas9 screening; Lc-ms/ms
+
+ABSTRACT:
+We developed an anti-dsRNA antibody co-immunoprecipitation coupled with quantitative mass spectrometry to comprehensively identify RBPs bound to cellular dsRNAs. To minimize false positives, we conducted a quantitative mass spectrometry analysis under two additional conditions: first, by treating the samples with RNase T1 to degrade single-stranded RNAs, and second, by performing a pull-down using synthetic double-stranded RNA, poly(I:C). The interactomes through these three methods provide an unbiased and thorough characterization of potential dsRBPs bound to cellular dsRNAs.
+
+PROJECT DESCRIPTION:
+Cellular dsRNA interactome captured by K1 antibody reveals the regulatory map of exogenous RNA sensing
+
+SAMPLE PROCESSING:
+In this study, we used anti-dsRNA antibody immunoprecipitation followed by mass spectrometry to identify RNA-binding proteins. HEK293T cells were lysed and the lysate incubated with anti-dsRNA antibody-coated beads. Samples were processed for either Western blot or mass spectrometry analysis. For RNase T1-treated co-immunoprecipitation, cells were lysed and treated with RNase T1 followed by incubation with anti-dsRNA antibody-coated beads. For poly(I:C)-biotin pull-down, lysates were prepared and incubated with streptavidin beads coated with biotin-poly(I:C) conjugates. After elution, proteins were denatured in 8 M urea in 50 mM ABC buffer at 37°C, reduced with 10 mM dithiothreitol, alkylated with 40 mM iodoacetamide, and diluted. Proteins were digested with MS grade trypsin at a 1:50 ratio overnight at 37°C, purified with a C18 cartridge, dried, and reconstituted in 50 mM ABC for LC-MS/MS analysis. Analytical capillary columns (100 cm×75 μm i.d.) and trap columns (2 cm×150 μm i.d.) were packed with 3 μm Jupiter C18 particles, with the column temperature at 45°C. Chromatographic elution was performed on a NanoAcquity UPLC system at 300 nl/min for 150 min, including a 100 min gradient from 95% solvent A to 40% solvent B. LC-MS/MS analysis was performed on two Orbitrap mass spectrometers: the Orbitrap Eclipse, which detects precursor ions in the m/z range of 300-1500 at a resolution of 120K, and the Orbitrap Fusion Lumos, with a m/z range of 300-1800 at a resolution of 60K.
+
+DATA PROCESSING:
+Protein identification of the dsRNA interactome was performed using MaxQuant software (version 2.0.3.0) with the Andromeda search engine against the SwissProt Homo sapiens proteome database (version 2023.01). Mass tolerances were set to 10 ppm for precursor ions and 20 ppm for fragmentation ions. Search parameters included trypsin digestion allowing up to 2 missed cleavages, fixed modification of carbamidomethylation at cysteine sites, and variable modifications of acetylation at protein N-terminus and oxidation at methionine. Label-free quantification (LFQ) and matching between runs were performed. Data were analyzed using PERSEUS software, with LFQ intensities log-transformed and missing values imputed from a normal distribution. Statistical evaluation was performed using Student's t-test with Benjamini-Hochberg FDR adjustments at a 0.05 threshold to identify differentially detected protein groups.

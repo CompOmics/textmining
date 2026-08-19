@@ -1,0 +1,49 @@
+# Run-level metadata extraction configuration
+# Each pipeline can be enabled/disabled independently
+
+# Input: protein quantification data (provides the list of all pxd+run pairs)
+input:
+  quant_parquet: ../data/pride_quant.parquet  # relative to this config file
+
+# Output directory for individual pipeline results + combined output
+output_dir: ../data/run_metadata/
+
+# --- Individual pipelines ---
+
+# Extract metadata from run filenames using regex patterns
+run_name:
+  enabled: true
+  output: run_meta_name.tsv
+
+# Extract metadata from PRIDE SDRF files
+sdrf:
+  enabled: true
+  output: run_metadata_sdrf.tsv
+  sdrf_cache_dir: ../agentic_metadata/cache/sdrf/
+  sample_name_mapping: ../data/sample_name_mapping.tsv
+  # Normalization (reuses agentic_metadata ontologies)
+  normalization:
+    enabled: true
+    ontology_dir: ../agentic_metadata/ontologies/
+    cache_dir: ../agentic_metadata/cache/ontology/
+    similarity_threshold: 0.7
+    use_gpu: true
+
+# Predict tissue from protein abundance using MLMarker
+mlmarker:
+  enabled: true
+  output: run_meta_mlmarker.tsv
+  confidence_threshold: 0.3
+
+# Combine all sources into unified run-level metadata
+combine:
+  enabled: true
+  output: run_metadata_combined.tsv
+  # Agent metadata from agentic pipeline
+  agent_metadata: ../agentic_metadata/results/agent_metadata.tsv
+  # Priority order: first source listed has highest priority
+  priority:
+    - sdrf
+    - name
+    - agent
+    - MLM

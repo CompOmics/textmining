@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Liver
+diseases: Metabolic dysfunction-associated steatotic liver disease
+instruments: Orbitrap Exploris 480
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: label-free quantification
+keywords: Phosphoproteomics; Cxcr4 oligomerization; Apoptosis; Lc-ms/ms
+
+ABSTRACT:
+Metabolic dysfunction–associated steatohepatitis (MASH), marked by hepatic steatosis and inflammation, is a major risk for cirrhosis and liver cancer. Obesity-induced oxidative stress plays a central role in MASH promoting protein damage and dysfunction. Cysteine persulfidation (PSSH), a post-translational modification regulated by hydrogen sulfide (H2S), is involved in protein stability and cellular protection. However, the role of PSSH in MASH is poorly understood. We found that H2S-producing enzymes are downregulated in livers with fibrosis and inflammation, leading to decreased hepatic PSSH. Using dimedone-switch-based mass spectrometry, we mapped the alterations in the liver persulfidome during diet-induced fibrosis and inflammation. While the levels of H2S-producing enzymes dropped, some proteins, including protein tyrosine phosphatases (PTPs) and redox regulators, showed increased PSSH. This change suggests that H2S-mediated persulfidation helps protect proteins from oxidative damage. Overall, decreased H2S enzyme expression and reduced PSSH may impair protection against oxidative stress, contributing to liver dysfunction in obesity.
+
+PROJECT DESCRIPTION:
+Lower H2S-generating enzyme levels and persulfidation-mediated protein protection characterize metabolic dysfunction-associated steatohepatitis
+
+SAMPLE PROCESSING:
+The cells originating from hepatocytes  were lysed in lysis buffer (8M Urea, 50mM ammonium  bicarbonate) supplemented with  PhosSTOP (Roche) and cOmplete™, EDTA-free Protease Inhibitor Cocktail (Roche). Lysates were centrifuged at 15060 rpm at 16°C for 1 hour and protein concentration was determined with Quick Start™ Bradford (Cat NO. 5000205, BioRad). A total amount of protein was subjected to reduction and alkylation by incubating the samples with 5mM DTT for 1 h, followed by incubation with 10Mm iodoacetamide for 30min in the dark at room temperature. Proteins were digested with Lys-C (1:75) for 4h and Trypsin (1:100) overnight. Peptides were desalted on a reverse-phase Sep-Pak C18 cartridges (Cat. No. 045132007A, Waters). Eluates were vacuum dried and stored till further use.
+
+DATA PROCESSING:
+MS raw files were searched with MaxQuant (2.1.0.0) againsed the mouse UniProt database (downloaded in March 2021), using the integrated Andromeda search engines. Cysteine carbamidomethylation was added to fixed modification, while N-terminal acetylation and methionine oxidation were added as variable modifications. Trypsin/P was set as the enzyme for digestion and a maximum of 2 missed cleavages were allowed. Label-free quantification (LFQ) and the match-between-runs were enabled for protein identification. False discovery rate (FDR) of 1% was set for both peptide spectrum match (PSM) and protein.

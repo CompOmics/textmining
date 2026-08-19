@@ -1,0 +1,213 @@
+{
+  "sample_groups": [
+    {
+      "name": "Human Biopsies and PDX Tumors (HLA Peptidome)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "human tumor biopsies and PDX tumors",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        },
+        {
+          "value": "Mus musculus",
+          "evidence": "grafted to immunodeficient mice",
+          "ontology_id": "organisms:0002",
+          "ontology_name": "Mus musculus",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "tumor",
+          "evidence": "human tumor biopsies and PDX tumors"
+        }
+      ],
+      "disease": [
+        {
+          "value": "Bladder carcinoma",
+          "evidence": "diseases: Bladder carcinoma",
+          "ontology_id": "diseases:0025",
+          "ontology_name": "invasive bladder transitional cell carcinoma",
+          "similarity": 0.7152
+        },
+        {
+          "value": "Stomach carcinoma",
+          "evidence": "diseases: Stomach carcinoma",
+          "ontology_id": "diseases:0007",
+          "ontology_name": "stomach carcinoma",
+          "similarity": 1.0
+        },
+        {
+          "value": "Cholangiocarcinoma",
+          "evidence": "diseases: Cholangiocarcinoma"
+        },
+        {
+          "value": "Pancreas adenocarcinoma",
+          "evidence": "diseases: Pancreas adenocarcinoma",
+          "ontology_id": "diseases:0010",
+          "ontology_name": "pancreatic ductal adenocarcinoma",
+          "similarity": 0.8348
+        },
+        {
+          "value": "Lung cancer",
+          "evidence": "diseases: Lung cancer",
+          "ontology_id": "diseases:0012",
+          "ontology_name": "lung cancer",
+          "similarity": 1.0
+        },
+        {
+          "value": "Head and neck squamous cell carcinoma",
+          "evidence": "diseases: Head and neck squamous cell carcinoma",
+          "ontology_id": "diseases:0044",
+          "ontology_name": "head and neck squamous cell carcinoma",
+          "similarity": 1.0
+        },
+        {
+          "value": "Neck carcinoma",
+          "evidence": "diseases: Neck carcinoma",
+          "ontology_id": "diseases:0024",
+          "ontology_name": "cervix carcinoma",
+          "similarity": 0.7197
+        },
+        {
+          "value": "Vascular cancer",
+          "evidence": "diseases: Vascular cancer"
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Q-Exactive-Plus",
+          "evidence": "Q-Excative-Plus mass spectrometer",
+          "ontology_id": "instruments:0014",
+          "ontology_name": "Q Exactive Plus",
+          "similarity": 0.9944
+        },
+        {
+          "value": "LTQ OrbitrapXL",
+          "evidence": "LTQ OrbitrapXL mass spectrometer",
+          "ontology_id": "instruments:0004",
+          "ontology_name": "LTQ Orbitrap XL",
+          "similarity": 0.9803
+        },
+        {
+          "value": "Q-Exactive HFX",
+          "evidence": "Q-Exactive HFX mass spectrometer",
+          "ontology_id": "instruments:0013",
+          "ontology_name": "Q Exactive HF-X",
+          "similarity": 0.9826
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "higher energy collision dissociation (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        },
+        {
+          "value": "CID",
+          "evidence": "collision-induced disassociation (CID)",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "trypsin digest",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "iodoacetamide derivatized residue",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "25 NCE",
+          "evidence": "relative energy of 25"
+        },
+        {
+          "value": "35 NCE",
+          "evidence": "relative collision energy of 35"
+        },
+        {
+          "value": "27 NCE",
+          "evidence": "relative collision energy of 27"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "120",
+          "evidence": "two-hour, 5–28% acetonitrile gradient"
+        },
+        {
+          "value": "180",
+          "evidence": "linear 3 h gradient of 5–28% acetonitrile"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "reversed-phase fractionation, using disposable MicroTip Columns C-18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "10 most intense ions... selected for fragmentation",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "MS1 intensity based label-free quantification method",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "reversed-phase C18",
+        "evidence": "reversed-phase fractionation, using disposable MicroTip Columns C-18"
+      },
+      "enrichment": {
+        "value": "HLA peptides",
+        "method": "immunoaffinity",
+        "evidence": "purified by immunoaffinity using the W6/32 pan-HLA mAb"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "electrospray interface",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

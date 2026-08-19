@@ -1,0 +1,32 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: Orbitrap Fusion Lumos
+modifications: monohydroxylated residue; iodoacetamide derivatized residue; L-citrulline
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TIC
+keywords: Proteomics; Prosit; Mass spectrometry; Citrullination; Proteometools; Deep learning
+
+ABSTRACT:
+The ProteomeTools project aims to derive molecular and digital tools from the human proteome to facilitate biomedical and life science research. Here, we describe the the generation and multimodal LC-MS/MS analysis of ~4200 tryptic and non-tryptic synthetic citrullinated peptides.
+
+PROJECT DESCRIPTION:
+ProteomeTools Part VI - Citrullinated peptides
+
+SAMPLE PROCESSING:
+Citrullinated peptides were individually synthesized by solid phase synthesis, combined into pools of ~150 peptides. The data was aquired on an Oribtrap Fusion ETD mass spectrometer. For each peptide pool, an inclusion list was generated based on the expected modified peptide masses to target peptides for fragmentation using five fragmentation methods (HCD, CID) with ion trap or Orbitrap readout and HCD spectra were recorded at 6 different collision energies.
+
+DATA PROCESSING:
+LC-MS runs were individually anaysed using MaxQuant 1.5.3.30 and searched against a protein consisting out of concatenated peptide sequences. Citrullination on Arginine was searched as varaible modification to obtain data on both the unmodified retention time standards and the citrullinated peptides
+
+SDRF SUMMARY:
+Total runs: 70
+organism: Homo sapiens
+instrument: Orbitrap Fusion Lumos
+cleavage agent details: Trypsin
+modification parameters: Carbamidomethyl
+label: label free sample
+fractionation method: no fractionation
+dissociation method: CID; HCD
+precursor mass tolerance: 4.5 ppm
+fragment mass tolerance: 20 ppm
+MS2 mass analyzer: IonTrap; Orbitrap

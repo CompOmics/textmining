@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Q Exactive HF
+modifications: iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Mass spectrometry; Immunoprecipitation; Cas9
+
+ABSTRACT:
+In this study, we conducted liquid chromatography-tandem mass spectrometry (LC-MS/MS) analysis to identify Cas9-interacting proteins specific to the autophagic condition.
+
+PROJECT DESCRIPTION:
+Cas9 immunoprecipatation-mass spectrometry (IP-MS)
+
+SAMPLE PROCESSING:
+The proteins were eluted from beads by incubation for 15 min with 8 M urea at room temperature (RT). Proteins were reduced with 10 mM dithiothreitol for 2 h at 37 °C and alkylated with 20 mM iodoacetamide for 30 min at RT in the dark. The alkylation reaction was stopped with 20 mM L-cysteine for 30 min at RT. Samples were diluted with 50 mM ammonium bicarbonate buffer to a final concentration of 1 M urea, and further incubated with trypsin for 18 h at 37 °C. The digested peptides were desalted on OASIS HLB cartridge (Waters Corporation, Milford, MA, USA). The resulting peptides were dried in a vacuum concentrator and resuspended in 0.1% FA.  Liquid chromatography-tandem mass spectrometry (LC-MS/MS) analyses were performed with Agilent 1290 infinity capillary LC system (Agilent Technologies, Santa Clara, CA, USA) coupled to Q-Exactive Hybrid-Quadrupole-Orbitrap MS (Thermo Fisher Scientific, Inc.). The digested peptides were separated on reverse phase column (150 cm in length, 75 μm I.D) packed with C18 resin (3 μm-100Å) at a flow rate 200 nL/min for 120 min. The mass spectrometer operated in a data-dependent mode. Full-scan mass spectra were collected at a resolution of 70,000 with automatic gain control target of 3E6, and within scan mass range of 300 to 1800 m/z. Tandem mass spectra were acquired at a resolution of 17,500. The 12 most intense precursor ions were isolated for fragmentation. The normalized collision energy was set to 27%. Dynamic exclusion was set to 30 s.
+
+DATA PROCESSING:
+Mass spectrometry raw data files were analyzed using MaxQuant (version 1.6.6.0) against a database of UniProt Homo sapiens database (release version of Mar 2021 containing 78,120 entries). The mass tolerance was 4.5 ppm and 20 ppm for precursor and fragment ions, respectively. The 1% false discovery rate was applied at both the protein and peptide levels. Enzyme specificity was set to trypsin, allowing up to two missed cleavages Carbamidomethylation of cysteine was set as a fixed modification, and methionine oxidation and N-terminal acetylation were set as variable modifications. Protein identifications were filtered with at least two unique peptides per protein. Relative abundance of identified proteins were estimated from the iBAQ (intensity based absolute quantitation) values. Statistical analysis was performed using the Perseus software (version 1.6.14.0). The iBAQ values were log2 transformed. Proteins quantified in at least three out of six replicates (three technical replicate LC-MS/MS runs per biological replicate) were considered for the analysis. The two-sample t-test was performed to determine significance.

@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: LTQ Orbitrap Elite
+modifications: acetylated residue; iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: Spectrum counting
+keywords: Human; Liver; Shotgun proteomics
+
+ABSTRACT:
+We have identified CL26 as a covalent inhibitor against AGPAT4, an aberrant protein complicated in hepatocellular carcinoma (HCC). CL26 treatment reversed HCC stemness and resistance to the first-line medication sorafenib. This experiment was conducted to investigate the covalent binding of CL26 onto AGPAT4 in vitro.
+
+PROJECT DESCRIPTION:
+Investigation of CL26 binding on AGPAT4 protein
+
+SAMPLE PROCESSING:
+1 µL of CL26 (1 mM in DMSO) was added to 100 µL His-AGPAT4 (10 µg in PBS). After incubation for 1 h at room temperature, proteins were precipitated with pre-chilled acetone (600 µL) at -20 °C overnight. Proteins were pelleted by centrifugation at maximum speed at 4 °C for 10 min, then washed with 200 µL pre-chilled 0.01M HCl/90% acetone. The samples were pelleted and resuspended in 15 µL urea solution (8M in PBS) followed by addition of 20 µL 1X ProteaseMax (Promega) and 58.5 µL NH4HCO3 (0.1 M). The samples were reduced by 10 mM TCEP at 60 °C for 30 min then alkylated by 12.5 mM iodoacetamide at 37 °C for 30 min. Afterwards, 1.2 µL 5X ProteaseMax were added and mixed well by vortexing. 1.5 µL sequence-grade trypsin (20 µg reconstituted in 40 µL buffer; Promega) was added to the samples. Samples were incubated at 37 °C overnight with constant agitation for digestion. Digested samples were acidified with 5% formic acid and clarified by centrifugation at 13,000 rpm for 30 min. Clarified samples were dried and desalted by Pierce C18 tips (ThermoFisher Scientific) for LC-MS/MS analysis.  Digested peptides resuspended in 0.1% formic acid were analyzed with Dionex Ultimate3000 nanoRSLC system coupled to Thermo Fisher Orbitrap Fusion Tribid Lumos mass spectrometer. Peptides were separated on a commercial C18 column (75 μm i.d. × 50cm length  × 2μm particle size) coupled to a NanoTrap column (75 μm i.d. × 2cm length  × 3μm particle size) (Thermo Fisher). Separation was attained using a linear gradient of increasing buﬀer B (80% MeCN and 0.1% FA) and declining buﬀer (0.1% FA) at 300 nL/min. Buﬀer B was increased to 27.5% B in 88 min and ramped to 44% B in the next 16 min followed by a quick ramp to 95% B in 1 min, where it was held for 5 min before a quick ramp back to 3% B, where it was held and the column was re-equilibrated. Mass spectrometer was operated in positive polarity mode with capillary temperature of 300 °C. Full MS survey scan resolution was set to 120 000 with an automatic gain control (AGC) target value of 4 × 105, maximum ion injection time (IT) of 30 ms, and for a scan range of 350−1500 m/z. A data-dependent top speed method with a time interval of 3s between every survey scan was operated during which higher-energy collisional dissociation (HCD) was used. Spectra were obtained at 30000 MS2 resolution with AGC target of 1 × 105 and maximum ion injection time (IT) of 60 ms, 1.6 m/z isolation width, and normalized collisional energy of 30. Preceding precursor ions targeted for HCD were dynamically excluded of 20 s.
+
+DATA PROCESSING:
+The data was searched against the Uniprot human proteome (UP000005640) using MaxQuant 2.4.2.0. The search was specified with trypsin digestion (allowed up to 3 missed cleavages) and peptide false discovery rate (FDR) was set to 1%. Cysteine carbamidomethylation (+57.02146) was included as a static modification whereas methionine oxidation (+15.99491), N-terminal acetylation (+42.01056) and CL26 modification (+213.0249) were included as variable modification.

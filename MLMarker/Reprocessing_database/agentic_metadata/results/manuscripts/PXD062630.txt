@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Urine
+diseases: Non-small cell lung carcinoma
+instruments: Q Exactive
+modifications: iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: label-free quantification
+keywords: Urine; Proteomics; Nsclc; Lc-ms; Extracellular vesicles; Immunotherapy; Host-microbiome
+
+ABSTRACT:
+Urine extracellular vesicles from NSCLC patients were analyzed via LC-MS/MS to identify host and microbial proteins associated with progression-free survival. The study included 33 baseline urine samples and follow-up data. Samples were processed using EVtrap and analyzed on a Q-Exactive HF-X using a 60-minute gradient.
+
+PROJECT DESCRIPTION:
+Host and Bacterial Urine Proteomics Might Predict Treatment Outcomes for Immunotherapy in Advanced NSCLC
+
+SAMPLE PROCESSING:
+Urine samples were collected from patients with advanced NSCLC and processed to isolate extracellular vesicles (EVs). Each 5 mL aliquot was centrifuged at 2,000 × g for 10 minutes to remove debris, followed by filtration through 0.22 µm PVDF filters. EVs were isolated using EVtrap magnetic beads according to the manufacturer’s protocol. The isolated EVs were lysed using a Phase Transfer Surfactant (PTS)-based method containing 12 mM sodium deoxycholate and 12 mM sodium lauroyl sarcosinate in 50 mM Tris pH 8.5. Protein digestion was performed using Lys-C and trypsin. Peptides were desalted using GL-Tip SDB columns, dried, and resuspended in 0.1% formic acid for LC-MS/MS analysis.
+
+DATA PROCESSING:
+Peptides were analyzed on a Thermo Scientific Q-Exactive HF-X mass spectrometer coupled to an Ultimate 3000 nano UHPLC system. Samples were separated over a 60-minute gradient at 300 nL/min using a 25 cm C18 column. Mass spectrometry data were acquired in DDA mode with a resolution of 60,000 for MS1 and 15,000 for MS2. Raw data were processed using Proteome Discoverer v2.3 with Byonic and Sequest HT search engines. Searches were conducted against a combined UniProt database containing human, bacterial, viral, and fungal proteins. Search parameters included a 10 ppm precursor tolerance, 20 ppm fragment tolerance, and allowed up to 2 missed cleavages. Carbamidomethylation (C) was set as a fixed modification; oxidation (M) and acetyl (protein N-term) were variable. False discovery rate (FDR) was set to 1% at both peptide and protein levels. Label-free quantification was performed using the Precursor Ions Quantifier node, with normalization based on total peptide amount.

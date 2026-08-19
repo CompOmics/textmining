@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Cell culture; Cerebrospinal fluid; Blood plasma
+instruments: Q Exactive HF-X
+modifications: phosphorylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: label-free quantification
+keywords: Kinobeads; Lc-ms; Phospho-proteomics; Capillary-flow chromatography
+
+ABSTRACT:
+In this study, we systematically evaluated the performance of μLC (50, 10 μL/min), capLC (5, and 1.5 μL/min), and nLC (0.3 μL/min ) flow-rates for proteome analysis  using a Vanquish Neo HPLC coupled with a Q Exactive HF-X mass spectrometer. Serial dilutions of HeLa cell line digests were used for benchmarking the different setups and we intentionally fixed the total analysis time from injection-to-injection time of 60 minutes (24 samples per day). Showcase studies were also done on lable-free phospo-proteomics and kinobeads pull-down experiments.
+
+PROJECT DESCRIPTION:
+High-performance proteomics using nano-, capillary- and micro-flow chromatographic separations
+
+SAMPLE PROCESSING:
+CSF and Hela cell digests were prepared using SP3 protocol and human plasma was digested employing urea based protocol. All analyses were performed on a Vanquish Neo LC system coupled to a Q Exactive HF-X mass spectrometer operating in positive polarity mode. Reverse-phase chromatography was used with 150 mm long and varying i.d. Acclaim PepMap Neo C18 columns (2 μm particle size, 100 Å pore size, Thermo Fisher Scientific). Solvent A was 0.1% FA/3% DMSO (v/v) in water; solvent B was 0.1% FA/3% DMSO (v/v) in 100% ACN.  DMSO was increased to 5% for flow rates <1.5 μL/min.  The column temperature was maintained at 55 °C unless otherwise stated. Between runs columns were equilibrated with 1% solvent A for 3 column volumes. A 25 μL sample loop was used for all direct injection setups and 10 μL volume was injected. Data-dependent acquisition (DDA) was employed using a Full MS-ddMS2 method (S-lens RF level 40, 360-1300 m/z MS1 scan range, full MS AGC target 3E6, max injection time (IT) of 50 ms, for MS2 scans: 1.3 m/z isolation width, 100 m/z fixed first mass, max IT 22 ms, higher-energy collisional dissociation (HCD) fragmentation with a normalized collision energy (NCE) of 28, charge states from +2 to +5, peptide match set to preferred, isotope exclusion on). MS1 and MS2 spectra were acquired in profile and centroid mode, respectively.
+
+DATA PROCESSING:
+Raw data files were processed using MaxQuant (v1.6.2.10) [17] and searched against a human FASTA database (UniProtKB release 07.2019, UP000005640_74349) using default settings. Briefly, trypsin was set as the enzyme with up to two missed cleavages. Cysteine carbamidomethylation was configured as a fixed modification, while N-terminal acetylation and methionine oxidation were specified as variable modifications. The false discovery rate (FDR) was maintained at 1% at the site, peptide-spectrum match (PSM), and protein levels. Chromatographic full width at half-maximum (FWHM) information was extracted from the MaxQuant output file “allPeptides.txt”. Andromeda scores and retention times were taken from the “evidence.txt” file, after excluding all reverse sequences and potential contaminants. Peptide intensity boost comparisons were evaluated from “peptides.txt” using the Benjamini-Hochberg multiple testing correction procedure [18] set to 0.05 FDR. For analyzing kinobeads pulldown data, the CurveCurator pipeline [19] was employed, permitting up to six missing values, using fold change limit of 0.5 and 0.01 alpha value cutoff.

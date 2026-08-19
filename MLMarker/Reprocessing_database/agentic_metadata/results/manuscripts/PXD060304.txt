@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Urine
+diseases: Prostate adenocarcinoma
+instruments: Q Exactive HF
+modifications: monohydroxylated residue; acetylated residue; iodoacetic acid derivatized residue
+experiment types: Data-independent acquisition
+keywords: Protein; Co-extraction; Extracellular vesicles; Rna; Automation; Urine
+
+ABSTRACT:
+Extracellular vesicles (EVs) cargoes have great potential as promising biomarkers for disease diagnosis. However, traditional methods for EV enrichment and cargo extraction are inefficient, limiting the accessibility of valuable biological information. Here, we present a bead-based pipeline, designed to efficiently enrich EVs from urine while simultaneously extracting both EV protein and RNA. Compared to traditional methods involving ultracentrifugation (UC) for EV isolation, acetone precipita-tion for protein extraction, and TRIzol for RNA extraction, the new pipeline achieved over a 5-fold improvement in EV protein and RNA yield. Additionally, it reduced the whole duration from approximately 2 days to just 1 h. When applied to the non-invasive diagnosis of prostate cancer (PCa), the pipeline demonstrated excellent diagnostic performance, with a panel of EV protein and RNA markers achieving an AUC of 0.82. This efficient and streamlined pipeline provides a robust tool for com-prehensive EV cargo analysis and holds great potential for advancing non-invasive diagnostics in clinical settings.
+
+PROJECT DESCRIPTION:
+Automated enrichment and co-extraction pipeline for efficient analysis of urinary extracellular vesicle protein and RNA
+
+SAMPLE PROCESSING:
+EV protein was extracted from 10 mL urine of each cases using the automated pipeline. After denatured reduction and alkylation, the protein was enzymolized with Lys-C enzyme in a mass ratio of 50:1, which lasted for 3 h. Then, according to the mass ratio of 20:1, pancreatic enzymes were added and allowed to further digest for 16 h. After digestion, the resulting polypeptide mixture is demineralized by C18 "spin tips" to obtain pure peptide samples. 1 μg peptide was injected into the EASY-nLC 1200 system (Thermo Fisher Scientific, USA). The peptides were isolated and analyzed on columns containing C18 fillers (2.2 μm, 100 A; Michrom Bioresources). The mobile phase buffer used consists of 0.1% formic acid in HPLC-grade water (A) and 0.1% formic acid in 80% acetonitrile (B). The LC system was run in a linear gradient of 10% to 32% buffer B for 52 min at a flow rate of 300 nL/min. LC and Q Exactive HF-X mass spectrometer (Thermo Fisher Scientific, USA) were coupled online by nanospray. We run the mass spectrometer in data-independent acquisition (DIA) mode and set the parameters as follows: 1. Full MS: Polarity: positive; Scan range :390 ~ 1210 m/z, Resolution 120,000; Automatic gain control (AGC) target: 5E6; Maximum injection time (IT): 60 ms; 2. DIA: Polarity: positive; Resolution: 15000; AGC target: 3E6, Maximum IT: 20ms; Loop count :75; Isolation window: 16m/z; (N)CE / stepped nce :27%: Centroid.
+
+DATA PROCESSING:
+The raw files were processed using the Direct-DIA analysis function of Spectronaut software 18 (Biognosys, Switzerland). The analysis was performed using the version of the human UniProt database downloaded on June 20, 2024. The default parameters were set except the following: Enzymes /Cleavage Rules: Trypsin/P; A maximum of 3 missing cuts were allowed; Carbamyl methylation (+57.02 Da) was selected as the fixed modification; Methionine oxidation (+15.99 Da), acetylation (+42.01 Da) and phosphorylation (+79.966 Da, selected for phosphopeptide analysis) were selected as variable modifications; The false discovery rate (FDR) for proteins and peptides was set to 1% for quantitative analysis using MS2.

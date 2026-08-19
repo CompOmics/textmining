@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Orbitrap Astral
+modifications: No PTMs are included in the dataset
+experiment types: SWATH MS; Data-independent acquisition
+keywords: Osteoarthritis; Il-1β
+
+ABSTRACT:
+Osteoarthritis (OA) is a chronic, degenerative whole-joint disorder that interferes with quality of life in older individuals. Here, we report a high expression of ZDHHC11 in articular chondrocytes, which is downregulated in the degenerated cartilage of aged mice and OA patients. ZDHHC11 prevents chondrocyte senescence and fosters cartilage anabolism, culminating in an improved OA phenotype. Mice with Zdhhc11 deletion (Zdhhc11fl/fl) exacerbate OA progression in a destabilized medial meniscus (DMM) model. Specifically, we identify ZDHHC11 as a key palmitoyltransferase, the depletion of which leads to GNB2-dependent E3 ubiquitin ligase-mediated proteasomal degradation of APOD.
+
+PROJECT DESCRIPTION:
+ZDHHC11-mediated palmitoylation alleviates chondrocyte senescence and serves as a therapeutic target for osteoarthritis [II]
+
+SAMPLE PROCESSING:
+The IL-1β-treated cell samples were suspended in protein lysis buffer (8M urea,1% SDS) which included appropriate protease inhibitor to inhibit protease activity. 100 μg protein re-suspended with Triethylammonium bicarbonate buffer (TEAB) which with the final concentration of 100mM. The mixture was reduced with Tris (2-carboxyethyl) phosphine (TCEP) which with the final concentration of 10 mM at 37 ℃ for 60 mins and alkylated with iodoacetamide (IAM) which with the final concentration of 40 mM at room temperature for 40 mins in darkness. After centrifugation at 10000 g at 4 ℃ for 20 mins, the pellet was collected, which re-suspended with 100 μL Triethylammonium bicarbonate buffer (TEAB) which with the final concentration of 100 mM. Trypsin was added at 1:50 trypsin-to-protein mass ratio and incubated at 37 ℃ overnight. Based on peptide quantification results, the peptides were analyzed by an VanquishNeo coupled with an Orbitrap Astral mass spectrometer (Thermo, USA) at Majorbio Bio-Pharm Technology Co. Ltd. (Shanghai, China). Spectronaut software (Version 18) was used to search the DIA raw data. 6 peptides per protein and 3 daughter ions per peptide were selected for quantitative analysis. Bioinformatic analysis of proteomic data was performed with the Majorbio Cloud platform (https://cloud.majorbio.com).
+
+DATA PROCESSING:
+Spectronaut software (Version 18) was used to search the DIA raw data. 6 peptides per protein and 3 daughter ions per peptide were selected for quantitative analysis. The parameters are as follows up: Protein FDR≤0.01, Peptide FDR≤0.01, Peptide Confidence ≥99%, XIC width≤75ppm. The shared peptides and modified peptides were excluded, and the peak areas were calculated and summed to give the quantitative results. Only the proteins which has at least one unique peptides were used for protein identifications. Bioinformatic analysis of proteomic data was performed with the Majorbio Cloud platform (https://cloud.majorbio.com). P-values and Fold change (FC) for the proteins between the two groups were calculated using R package “t-test”. The thresholds of fold change (>1.2 or <0.83) and P-value <0.05 were used to identify differentially expressed proteins (DEPs). Functional annotation of all identified proteins was performed using GO (http://geneontology.org/) and KEGG pathway (http://www.genome.jp/kegg/). DEPs were further used to for GO and KEGG enrichment analysis. Protein-protein interaction analysis was performed using the String v11.5 .

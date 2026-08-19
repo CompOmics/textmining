@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: T cell
+diseases: Covid-19
+instruments: Q Exactive HF
+modifications: complex glycosylation
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: MaxQuant
+keywords: Glycosylation; T cell receptor
+
+ABSTRACT:
+This study investigates the structural and biochemical characteristics of T cell receptors (TCRs) involved in immune recognition. Using mass spectrometry-based proteomics, we analyzed post-translational modifications (PTMs), including glycosylation patterns, of different TCR variants. These modifications provide insight into the molecular regulation of TCR function and their interaction with peptide-MHC complexes. Complementary biophysical analyses, such as mass photometry, were performed to understand the oligomeric states of TCR-pMHC complexes. The findings contribute to a deeper understanding of TCR regulation and immune signaling mechanisms.
+
+PROJECT DESCRIPTION:
+Post-Translational Modification Analysis in TCR Complexes Using Mass Spectrometry
+
+SAMPLE PROCESSING:
+Post-translational modifications (PTMs) of TCRα and TCRβ chains were analyzed by nano-liquid chromatography coupled to high-resolution tandem mass spectrometry (LC-MS/MS). Samples were first treated with PNGase F for deglycosylation, then denatured in urea and reduced with TCEP before alkylation with 2-chloroacetamide. Proteins were digested overnight with trypsin, acidified, and desalted on C18 columns. Peptides were separated using a Thermo Scientific Easy-nLC 1000 system coupled to a Q Exactive mass spectrometer operating in data-dependent acquisition mode. Full MS scans were acquired at high resolution in the Orbitrap, and the top 10 ions were selected for higher-energy collision dissociation fragmentation. Raw data were processed with MaxQuant software, searching against the human UniProt database supplemented with custom TCR sequences. Variable modifications including oxidation and deamidation were considered. Peptides with localization probabilities above 0.75 were confidently assigned as modified. Quantitative analyses were performed to compare modification occupancy between TCR variants.
+
+DATA PROCESSING:
+Raw LC-MS/MS data were processed using MaxQuant (version 1.6.3.4) with the integrated Andromeda search engine. The search was performed against the UniProt human proteome database supplemented with the specific TCR sequences. Variable modifications included methionine oxidation and asparagine/glutamine deamidation. A false discovery rate (FDR) of 1% was applied at peptide and protein levels. Modification site localization probabilities were calculated using MaxQuant’s site localization algorithm, and only peptides with localization probabilities above 0.75 were considered confidently modified. Quantitative intensities for modified peptides were extracted and compared across experimental conditions.

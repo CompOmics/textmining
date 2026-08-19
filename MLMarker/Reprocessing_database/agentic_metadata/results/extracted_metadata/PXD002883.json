@@ -1,0 +1,256 @@
+{
+  "sample_groups": [
+    {
+      "name": "Human Platelets (Scott Syndrome and Healthy Controls)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Platelet",
+          "evidence": "organism parts: Platelet; Blood platelet",
+          "ontology_id": "tissues:0079",
+          "ontology_name": "platelets",
+          "similarity": 0.9711
+        }
+      ],
+      "disease": [
+        {
+          "value": "Scott syndrome",
+          "evidence": "Scott syndrome is a rare bleeding disorder",
+          "ontology_id": "diseases:0123",
+          "ontology_name": "Scott syndrome",
+          "similarity": 1.0
+        },
+        {
+          "value": "healthy",
+          "evidence": "healthy volunteers and a diagnosed patient",
+          "ontology_id": "diseases:0001",
+          "ontology_name": "healthy",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion",
+          "evidence": "online-coupled to an Orbitrap Fusion mass spectrometer",
+          "ontology_id": "instruments:0005",
+          "ontology_name": "Orbitrap Fusion",
+          "similarity": 1.0
+        },
+        {
+          "value": "Q-Exactive",
+          "evidence": "online-coupled to a Q-Exactive mass spectrometer",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        },
+        {
+          "value": "Orbitrap Velos",
+          "evidence": "online coupled to an Orbitrap Velos mass spectrometer",
+          "ontology_id": "instruments:0003",
+          "ontology_name": "LTQ Orbitrap Velos",
+          "similarity": 0.9488
+        },
+        {
+          "value": "Q-Exactive Plus",
+          "evidence": "online-coupled to a Q-Exactive Plus",
+          "ontology_id": "instruments:0014",
+          "ontology_name": "Q Exactive Plus",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmented using HCD with a collision energy",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "in the presence of trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "carbamidomethylation of Cys residues as fixed modifications",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "normalized collision energy of 35"
+        },
+        {
+          "value": "27 NCE",
+          "evidence": "collision energy of 27"
+        },
+        {
+          "value": "50 NCE",
+          "evidence": "normalized collision energy of 50"
+        },
+        {
+          "value": "30 NCE",
+          "evidence": "normalized collision energy of 30"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "70",
+          "evidence": "binary gradient ... in 70 min"
+        },
+        {
+          "value": "100",
+          "evidence": "binary gradient ... in 100 min"
+        },
+        {
+          "value": "75",
+          "evidence": "binary gradient ... in 75 min"
+        },
+        {
+          "value": "40",
+          "evidence": "binary gradient ... within 40 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "C18 column (BioBasic-18)",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        },
+        {
+          "value": "HILIC",
+          "evidence": "hydrophilic interaction liquid chromatography (HILIC) mode",
+          "ontology_id": "lc_column:0002",
+          "ontology_name": "HILIC",
+          "similarity": 1.0
+        },
+        {
+          "value": "SCX",
+          "evidence": "polysulfoethyl A column",
+          "ontology_id": "lc_column:0003",
+          "ontology_name": "SCX",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "data-dependent acquisition (DDA) mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "iTRAQ",
+          "evidence": "iTRAQ 8-plex solution buffer",
+          "ontology_id": "labeling:0003",
+          "ontology_name": "iTRAQ",
+          "similarity": 1.0
+        },
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification workflow",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high-pH Reversed phase; HILIC; SCX",
+        "evidence": "20 concatenated fractions were collected; 9 fractions were collected; Five fractions were collected"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "TiO2",
+        "evidence": "TiO2-based phosphopeptide enrichment protocol"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nano-LC-MS/MS",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "stimulated with thrombin, convulxin/thrombin and ionomycin"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "stimulated with ionomycin + calpain inhibitor calpeptin"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "stimulated with ionomycin + caspase inhibitor QVD-OPh"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "stimulated with pro-apoptotic agent ABT-7373"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "thrombin",
+          "evidence": "stimulated with thrombin"
+        },
+        {
+          "value": "convulxin",
+          "evidence": "stimulated with convulxin/thrombin"
+        },
+        {
+          "value": "ionomycin",
+          "evidence": "stimulated with ionomycin"
+        },
+        {
+          "value": "calpeptin",
+          "evidence": "calpain inhibitor calpeptin"
+        },
+        {
+          "value": "QVD-OPh",
+          "evidence": "caspase inhibitor QVD-OPh"
+        },
+        {
+          "value": "ABT-7373",
+          "evidence": "pro-apoptotic agent ABT-7373"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "thrombin, convulxin, ionomycin, calpeptin, QVD-OPh, ABT-7373",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

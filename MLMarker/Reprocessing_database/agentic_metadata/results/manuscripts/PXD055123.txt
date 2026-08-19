@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Epithelial cell; Cell culture
+instruments: Orbitrap Fusion Lumos
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Lc-ms/ms; Irradiation; Human; Subcellular fractionation; A549 cells
+
+ABSTRACT:
+Cells have many protective mechanisms against background levels of ionising radiation (IR) orchestrated by molecular changes in expression, post-translation modifications and subcellular localisation. Radiotherapeutic treatment in oncology attempts to overwhelm such mechanisms, but radio-resistance is an ongoing challenge. Here, global subcellular proteomics combined with Bayesian modelling identified 544 differentially localised proteins in A549 cells upon 6 Gy x-ray exposure, revealing subcellular-specific changes of proteins involved in ferroptosis, an iron-dependent cell death, suggestive of potential radio-resistance mechanisms. These observations were independent of expression changes, emphasizing the utility of global subcellular proteomics and the promising prospect of ferroptosis-inducing therapies for combatting radioresistance.
+
+PROJECT DESCRIPTION:
+Global proteomics indicates subcellular-specific anti-ferroptotic responses to ionizing radiation
+
+SAMPLE PROCESSING:
+A549 cell line samples were sham irradiated versus irradiated with 6Gy X-rays, then underwent differential centrifugation, followed by trypsin digestion and labelling with TMT 16-plex. Offline fractionation was performed on a Waters UPLC system before LC-MS/MS analysis on a ThermoFisher Orbitrap Fusion Lumos Tribrid.
+
+DATA PROCESSING:
+Raw MS files were processed using Proteome Discoverer 2.4 (ThermoFisher) and a Mascot server (Matrix Science) v2.6. SwissProt Homo sapiens database (no isoforms, downloaded 09/04/2018) and the common repository of adventitious proteins (cRAP, v1.0) were used. Fixed modifications were set to carbamidomethyl(C) and TMT 10-plex or TMTpro(K, peptide N termini), and variable modifications were set to carbamyl(N-term), carbamyl(K), carbamyl(R) and deamidation(N,Q).

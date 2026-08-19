@@ -1,0 +1,172 @@
+{
+  "sample_groups": [
+    {
+      "name": "Human Epithelial Cell Line (SILAC & AE-MS)",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "mitochondria",
+          "evidence": "keywords: Mitochondria",
+          "ontology_id": "cell_parts:0001",
+          "ontology_name": "mitochondria",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos",
+          "evidence": "instruments: Orbitrap Fusion Lumos",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 1.0
+        },
+        {
+          "value": "LTQ Orbitrap Elite",
+          "evidence": "instruments: LTQ Orbitrap Elite",
+          "ontology_id": "instruments:0002",
+          "ontology_name": "LTQ Orbitrap Elite",
+          "similarity": 1.0
+        },
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "rCID for MS/MS of the 20 most intense ions",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        },
+        {
+          "value": "HCD",
+          "evidence": "fragmented with high energy collision (HCD) mode",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "iodoacetamide derivatized residue",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "30 NCE",
+          "evidence": "CID at 30% energy"
+        },
+        {
+          "value": "30 NCE",
+          "evidence": "stepped collision energy of 30 ±5%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "90",
+          "evidence": "90 min non-linear ACN gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "PepMap C18 analytical column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data Dependent Acquisition (DDA) mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "Stable isotope labelling of amino acids in cell culture (SILAC)",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described; direct online nano-HPLC"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "Affinity enrichment proteomic analysis performed, but no specific modification enrichment (e.g. phospho) described"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "electrospray ionization-MS/MS",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "Cell knockout studies"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "NDUFAF1",
+          "evidence": "NDUFAF1BirA*"
+        },
+        {
+          "value": "TMEM186",
+          "evidence": "TMEM186Flag"
+        },
+        {
+          "value": "COA1",
+          "evidence": "COA1Flag"
+        },
+        {
+          "value": "COA1",
+          "evidence": "COA1KO mitochondria"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "Cell knockout studies",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

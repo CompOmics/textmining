@@ -1,0 +1,316 @@
+{
+  "sample_groups": [
+    {
+      "name": "HeLa WT and SKO LD/ER fractions",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Cell culture",
+          "evidence": "organism parts: Cell culture"
+        }
+      ],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "Lipid droplets",
+          "evidence": "Lipid droplet and ER fractions from WT or SKO cells"
+        },
+        {
+          "value": "Endoplasmic reticulum",
+          "evidence": "Lipid droplet and ER fractions from WT or SKO cells",
+          "ontology_id": "cell_parts:0006",
+          "ontology_name": "endoplasmic reticulum",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "HeLa WT and SKO cells",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive Plus",
+          "evidence": "Q Exactive PLUS mass spectrometer",
+          "ontology_id": "instruments:0014",
+          "ontology_name": "Q Exactive Plus",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "fragmented using higher-energy collision dissociation",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Peptides were generated using trypsin digestion",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "iodoacetamide derivatized residue",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "27 NCE",
+          "evidence": "normalized collision energies of 27"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "110",
+          "evidence": "linear gradient... over 80 min... increase to 60% over 20 min, and lastly to 90% over 10 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "reversed-phase chromatography... PepMap C18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "acquired... in data-dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "sucrose density centrifugation",
+        "evidence": "LD floatation was done... by sucrose density centrifugation"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for specific modifications"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "nano-electrospray ion source",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "incubated... with DMEM supplemented with fatty acids... OA"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "Oleic acid",
+          "evidence": "200 μM OA"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "fatty acids conjugated to bovine serum albumin",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    },
+    {
+      "name": "3T3-L1 preadipocytes and adipocytes LD/PNS fractions",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Cell culture",
+          "evidence": "organism parts: Cell culture"
+        }
+      ],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "Lipid droplets",
+          "evidence": "LD-enriched fraction"
+        },
+        {
+          "value": "Postnuclear supernatant",
+          "evidence": "corresponding PNS (input)"
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "3T3-L1",
+          "evidence": "3T3-L1 preadipocytes"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "TimsTOF HT",
+          "evidence": "TimsTOF HT mass spectrometer",
+          "ontology_id": "instruments:0023",
+          "ontology_name": "timsTOF HT",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "PASEF",
+          "evidence": "Parallel Accumulation–Serial Fragmentation (PASEF) scan mode"
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin/LysC",
+          "evidence": "samples were digested by trypsin/LysC",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 0.8542
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "iodoacetamide derivatized residue",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "55",
+          "evidence": "linear acetonitrile gradient from 10 to 35%... for 44 min... increased to 50%... for 7 min, followed by a 4-min increase to 85%"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Aurora Gen3 C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DIA",
+          "evidence": "PASEF scan mode",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "sucrose density centrifugation",
+        "evidence": "LD floatation was done... by sucrose density centrifugation"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described for specific modifications"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Captive Spray Ion source",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "loaded with 500 μM sodium oleate"
+        },
+        {
+          "value": "gene overexpression",
+          "evidence": "transfected with EGFP-DGAT2"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "Oleic acid",
+          "evidence": "500 μM sodium oleate"
+        },
+        {
+          "value": "EGFP-DGAT2",
+          "evidence": "transfected with EGFP-DGAT2"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "sodium oleate",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "transfected with EGFP-DGAT2",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

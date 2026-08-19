@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Forelimb muscle
+instruments: Orbitrap Exploris 480
+modifications: iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Mouse; Proteomics; Muscle
+
+ABSTRACT:
+Sedentary mice were fed either control or high ergothioniene diets. Their muscles were used for bottom up proteomics.
+
+PROJECT DESCRIPTION:
+Mouse muscle proteomics following ergothioniene diet
+
+SAMPLE PROCESSING:
+To isolate the soluble fraction from muscle tissue, 1% NP-40 lysis buffer (1% NP-40, 50 mM Tris pH 8.0, 5 mM EDTA, Phosphatase Inhibitor (Sigma Aldrich, 04906837001), Protease Inhibitor (Sigma Aldrich, 11836170001)) was added to gastrocnemius muscles and tissues were homogenized using a bead homogenizer for 2 min at max speed (Bertin Technologies, Cryolys Evolution). Subsequently, homogenates were centrifuged at 17,000 g at 4 ̊C for 10 min to pellet the muscle contractile fraction. The supernatant was transferred into a new tube and the protein concentration was determined using bicinchoninic acid assay (Fisher Scientific, 23225). Samples were then digested with trypsin and labeled with TMT.
+
+DATA PROCESSING:
+Raw files were first converted to mzXML, and monoisotopic peaks were re-assigned using Monocle 74. Database searching included all mouse entries from Uniprot (downloaded in July, 2014). The database was concatenated with one composed of all protein sequences in the reversed order. Sequences of common contaminant proteins (e.g., trypsin, keratins, etc.) were appended as well. Searches were performed using the comet search algorithm. Searches were performed using a 50-ppm precursor ion tolerance and 1.0005 Da fragment ion tolerance. TMTpro on lysine residues and peptide N termini (+304.2071 Da) and carbamidomethylation of cysteine residues (+57.0215 Da) were set as static modifications, while oxidation of methionine residues (+15.9949 Da) was set as a variable modification. Peptide-spectrum matches (PSMs) were adjusted to a 1% false discovery rate (FDR) 75. PSM filtering was performed using linear discriminant analysis (LDA) as described previously 76, while considering the following parameters: comet log expect, different sequence delta comet log expect (percent difference between the first hit and the next hit with a different peptide sequence), missed cleavages, peptide length, charge state, precursor mass accuracy, and fraction of ions matched. Each run was filtered separately. Protein-level FDR was subsequently estimated at a data set level. For each protein across all samples, the posterior probabilities reported by the LDA model for each peptide were multiplied to give a protein-level probability estimate. Using the Picked FDR method 77, proteins were filtered to the target 1% FDR level. For reporter ion quantification, a 0.003 Da window around the theoretical m/z of each reporter ion was scanned, and the most intense m/z was used. Reporter ion intensities were adjusted to correct for the isotopic impurities of the different TMTpro reagents according to manufacturer specifications. Peptides were filtered to include only those with a summed signal-to-noise (SN) of 160 or greater across all channels. For each protein, the filtered peptide TMTpro SN values were summed to generate protein quantification.

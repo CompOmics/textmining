@@ -1,0 +1,195 @@
+{
+  "sample_groups": [
+    {
+      "name": "HEK293T Heat Stress and Controls",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "soluble fraction",
+          "evidence": "soluble fraction was collected as the soluble fraction"
+        },
+        {
+          "value": "pellet fraction",
+          "evidence": "insoluble pellet... was washed and resolubilized"
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "HEK293T",
+          "evidence": "HEK293T cells were grown to ~80% confluency",
+          "ontology_name": "HEK293T",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion",
+          "evidence": "detected by an in-line Orbitrap Fusion mass spectrometer",
+          "ontology_id": "instruments:0005",
+          "ontology_name": "Orbitrap Fusion",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "MS/MS spectra were searched... (implied HCD for Orbitrap Fusion)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "samples were further digested with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        },
+        {
+          "value": "LysC",
+          "evidence": "Cells were lysed, immediately digested with LysC",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "followed by Cys reduction, alkylation",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-ubiquitination",
+          "evidence": "incubated with di-GLY antibody beads",
+          "ontology_id": "modifications:0011",
+          "ontology_name": "K-ubiquitination",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "collision energy 28 NCE (standard for Orbitrap Fusion)"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "120",
+          "evidence": "analytical gradient time not explicitly stated, inferred from standard protocol"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "acidic pH reverse phase LC-MS/MS",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data-dependent acquisition",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "differentially labeled with 11-plex TMT reagents",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "basic pH reverse phase liquid chromatography",
+        "evidence": "fractionated on an offline HPLC using basic pH reverse phase liquid chromatography"
+      },
+      "enrichment": {
+        "value": "ubiquitination",
+        "method": "TUBE pulldown",
+        "evidence": "incubated with His-Halo-TUBE beads overnight"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "Peptides were eluted, ionized by electrospray ionization",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "heat shock",
+          "evidence": "For heat shock treatment, cell culture media was replaced with fresh media prewarmed to 42°C"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "0.5 µM bortezomib was added to the media"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "1 μM TAK243 was added directly to cell culture media"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "42°C heat",
+          "evidence": "placed at 42°C for the indicated time"
+        },
+        {
+          "value": "bortezomib",
+          "evidence": "0.5 µM bortezomib was added to the media"
+        },
+        {
+          "value": "TAK243",
+          "evidence": "1 μM TAK243 was added directly to cell culture media"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "environmental",
+          "evidence": "placed at 42°C for the indicated time",
+          "ontology_id": "treatments:0003",
+          "ontology_name": "environmental",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "0.5 µM bortezomib was added to the media",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "1 μM TAK243 was added directly to cell culture media",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "sample_groups": [
+    {
+      "name": "HEK293 OXPHOS deficiency models",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "mitochondria",
+          "evidence": "keywords: Mitochondria; Oxphos; Complex i",
+          "ontology_id": "cell_parts:0001",
+          "ontology_name": "mitochondria",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "HEK293",
+          "evidence": "HEK293 (ATCC CRL-1573) cells",
+          "ontology_name": "HEK293",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Exploris 480",
+          "evidence": "instruments: Orbitrap Exploris 480",
+          "ontology_id": "instruments:0009",
+          "ontology_name": "Orbitrap Exploris 480",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [],
+      "enzymes": [
+        {
+          "value": "Lys-C",
+          "evidence": "digested sequentially with Lys-C and trypsin",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 0.9328
+        },
+        {
+          "value": "trypsin",
+          "evidence": "digested sequentially with Lys-C and trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-methylthiolation",
+          "evidence": "MMTS alkylated cysteine was selected as a fixed modification",
+          "ontology_id": "modifications:0003",
+          "ontology_name": "M-oxidation",
+          "similarity": 0.7056
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "150",
+          "evidence": "2.5 h elution gradient"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "50 cm C18 column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "analyzed in a data dependent acquisition (DDA) mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "Label-free quantification mass spectrometry analysis",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "No fractionation described for MS samples"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment step described"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "knock-out (KO) cells were generated"
+        },
+        {
+          "value": "gene overexpression",
+          "evidence": "pcDNA3.1+ mammalian expression vector... containing the coding sequence of full-length AOX"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "cells were treated with either ISRIB"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "ISRIB",
+          "evidence": "cells were treated with either ISRIB (1 μM)"
+        },
+        {
+          "value": "DMSO",
+          "evidence": "or DMSO as a vehicle control"
+        },
+        {
+          "value": "siRNA targeting eIF4EBP1",
+          "evidence": "To silence the expression of eIF4EBP1, siRNA... was used"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "ISRIB (1 μM, Merck)",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "siRNA... was used",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

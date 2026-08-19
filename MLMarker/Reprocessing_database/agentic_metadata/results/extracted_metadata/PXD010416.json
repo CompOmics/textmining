@@ -1,0 +1,179 @@
+{
+  "sample_groups": [
+    {
+      "name": "IMiD-treated cell lines",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "H9 hESC, Kelly, SK-N-DZ and MM1s cells",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "H9 hESC",
+          "evidence": "H9 hESC, Kelly, SK-N-DZ and MM1s cells"
+        },
+        {
+          "value": "Kelly",
+          "evidence": "H9 hESC, Kelly, SK-N-DZ and MM1s cells"
+        },
+        {
+          "value": "SK-N-DZ",
+          "evidence": "H9 hESC, Kelly, SK-N-DZ and MM1s cells"
+        },
+        {
+          "value": "MM1s",
+          "evidence": "H9 hESC, Kelly, SK-N-DZ and MM1s cells"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Fusion Lumos",
+          "evidence": "Data were collected using an Orbitrap Fusion Lumos",
+          "ontology_id": "instruments:0006",
+          "ontology_name": "Orbitrap Fusion Lumos",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "MS3 scans were acquired in the Orbitrap with a HCD collision energy",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "digestion with LysC (1:50; enzyme:protein)",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "digested with trypsin (1:50; enzyme:protein)",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "static alkylation of cysteine",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-TMT6plex",
+          "evidence": "static TMT labeling of lysine residues"
+        },
+        {
+          "value": "N-term-TMT6plex",
+          "evidence": "static TMT labeling of N-termini of peptides"
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "normalized collision energy (NCE) set at 35%"
+        },
+        {
+          "value": "55 NCE",
+          "evidence": "HCD collision energy set to 55%"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "180",
+          "evidence": "3 hour gradient of 6 – 27% acetonitrile"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Easyspray column (ES803, Thermo Fisher Scientific)",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data dependent MS2 spectra were acquired",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "TMT",
+          "evidence": "Tandem mass tag (TMT) reagents",
+          "ontology_id": "labeling:0002",
+          "ontology_name": "TMT",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high pH reverse-phase HPLC",
+        "evidence": "offline fractionated into 96 fractions by high pH reverse-phase HPLC"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No phosphopeptide enrichment described"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "coupled with a Proxeon EASY-nLC 1200 LC pump",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "drug treatment",
+          "evidence": "treated with DMSO, 1 µM pomalidomide, 5 µM lenalidomide or 10 µM thalidomide"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "pomalidomide",
+          "evidence": "treated with DMSO, 1 µM pomalidomide"
+        },
+        {
+          "value": "lenalidomide",
+          "evidence": "5 µM lenalidomide"
+        },
+        {
+          "value": "thalidomide",
+          "evidence": "10 µM thalidomide"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "small molecule",
+          "evidence": "IMiDs disrupt a broad transcriptional network",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

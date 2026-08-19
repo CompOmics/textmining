@@ -1,0 +1,34 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Malignant cell; Breast epithelium
+diseases: Breast cancer
+instruments: Orbitrap Exploris 480
+modifications: monohydroxylated residue; iodoacetamide derivatized residue
+experiment types: Data-dependent acquisition
+quantification: Label free
+keywords: Mda-mb-231; Breast cancer; Physiological medium; 3d culture; Mcf-7
+
+ABSTRACT:
+Emerging evidence suggests that the nutrient availability in the tumour cell microenvironment and the dimensionality of in vitro tumour cells impact cell proteome and drug responsiveness. An improved physiological medium, called Melbourne Medium (MM), has been developed most recently by our research group. MM was designed to emulate low molecular weight components of human plasma, so it is a more physiologically relevant medium compared to conventional medium such as DMEM (CM). Global proteomics experiments were conducted to compare the protein profiles of MCF-7 and MDA-MB-231 breast cancer cells cultured in MM versus CM and in different experimental conditions (3D versus 2D).
+
+PROJECT DESCRIPTION:
+Influence of nutritionally physiological medium and 3D culture on breast cancer pharmacoproteomics
+
+SAMPLE PROCESSING:
+Protein samples (20 μg) were processed using the S-Trap micro protocol. Samples were lysed using a buffer containing 5% SDS and 50 mM TEAB (pH 8.5) or 10% SDS and 100 mM TEAB for liquid samples. Proteins were reduced with 500 mM TCEP (pH 7.0) at 37°C for 45 minutes and alkylated with 500 mM iodoacetamide (IAA) in 50 mM TEAB at room temperature in the dark for 45 minutes. The samples were acidified with 2.5% phosphoric acid and then diluted with 90% methanol in 100 mM TEAB. Proteins were trapped on S-Trap micro columns by centrifugation at 4,000 g. Columns were washed with binding buffer and proteins were digested with Trypsin/Lys-C (Promega) (1:25 wt:wt) in 50 mM TEAB overnight at 37°C. Peptides were eluted sequentially with 50 mM TEAB, 0.2% formic acid, and 50% acetonitrile/0.2% formic acid, then lyophilized and stored at -80°C until further analysis. Peptides were reconstituted in 2% acetonitrile/0.05% trifluoroacetic acid prior to LC-MS/MS analysis.
+
+DATA PROCESSING:
+The Proteomics data analyses were conducted using Maxquant (version No.2.1.1.0) and Perseus (version No.1.6.15.0) software.        MaxQuant was used to set up a label-free analysis for unfractionated samples. In MaxQuant, the raw data files were searched against the inhouse Dunnarts reference proteomes using MaxQuant-Andromeda (version 1.6.17.0). The false discovery rate (FDR) was set at 0.01 for both peptides and proteins. Search parameters were set as follows: variable modifications: methionine oxidation; fixed modifications: cysteine carbamidomethylation; trypsin digestion with a maximum of 2 missed cleavages.       Raw data files were searched against the Human protein reference proteomes (UniProt Proteome ID: UP000005640, Swiss-Prot, Reviewed) using MaxQuant-Andromeda (version 2.1.1.0). The false discovery rate (FDR) was set at 0.01 for both peptides and proteins. Search parameters were set as follows: variable modifications: Oxidation (M), Acetyl (Protein N-term); fixed modifications: cysteine carbamidomethylation, LysC/P and trypsin digestion with a maximum of 2 missed cleavages. The false discovery rate (FDR) was set at 0.01 for both peptides and proteins. The analysis of the samples was based on the label-free quantification (LFQ) intensities with match between runs. The data was statistically evaluated using Perseus software (version 1.6.15.0). The protein data was filtered categorically by row for reverse identifications (false positives), contaminants, and proteins “only identified by site”. The fold changes in the protein levels were evaluated by comparing the mean LFQ intensities amid all experimental groups. A protein was considered to be differentially expressed if the difference was statistically significant (p < 0.05), the fold change >1.2 and < 0.8 was identified with a minimum of 2 peptides. And permutation-based FDR was used in the Perseus data analysis with the cut-off value of 0.01.       After processing with MaxQuant, Perseus was used to apply two-way t tests and multi-tests to find differentially abundant proteins in two-way or multi-factor comparisons. Two-way t tests were conducted between 2 groups for MDA-MB-231 and MCF-7 cells to identify the differentially expressed proteins. Permutation-based false discovery rate approach was used. The false discovery rate (FDR) was set to 0.05 for peptide and protein identification. Comparisons included: CM2D/MM2D, CM3D/MM3D, CM2D/CM3D, MM2D/MM3D. Z-transformation was also done after filtering for proteins that were detectable in every sample in each experiment group. Heat maps of the Z-transformed LFQ intensity were generated. Unsupervised hierarchical clustering based on Euclidean distance and principal component analyses (PCA) were also run on Perseus.
+
+SDRF SUMMARY:
+Total runs: 40
+organism: Homo sapiens
+organism part: 2D_CM; 2D_HPLM; 2D_MM; 3D_CM; 3D_HPLM; 3D_MM
+disease: breast cancer
+cell type: MCF-7; MDA-MB-231
+instrument: Orbitrap Exploris 480
+cleavage agent details: Trypsin
+modification parameters: Carbamidomethyl; Oxidation
+label: label free sample
+precursor mass tolerance: 20 ppm
+fragment mass tolerance: 20 ppm

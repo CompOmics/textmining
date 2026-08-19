@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Escherichia coli
+organism parts: Cell culture
+instruments: Orbitrap Eclipse
+modifications: monohydroxylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: E. coli; X-ray footprinting; Covalent labeling; Methionine sulfoxide
+
+ABSTRACT:
+Reactive oxygen species play a crucial role in cellular processes, but their effects on protein structure and function in vivo remain challenging to study. Here, we used  synchrotron-based X-ray footprinting to probe protein structure in live E. coli, using quantitative LC-coupled mass spectrometry of methionine oxidation (MSox) with X-ray dose as a variable.  A label-free proteomic analysis identified 2104 proteins from E. coli, with 465 proteins exhibiting MSox modifications distributed across multiple cellular compartments. Changes in MSox modification with increasing X-ray dose revealed a correlation between rates of modification and solvent-accessible surface area in vivo for selected proteins, providing a direct probe of protein structure and its conformational plasticity in the cell.
+
+PROJECT DESCRIPTION:
+Quantitative Readout of Methionine Residue Solvent Accessibility in E. coli cells Using Radiolytic Hydroxyl Radical Labeling and Mass Spectrometry
+
+SAMPLE PROCESSING:
+E. coli cultures were grown to stationary phase and resuspended in 1X PBS. Samples were exposed to synchrotron X-ray radiation at the NSLS-II 17-BM beamline at 25 °C and 400 mA ring current for 0 ms (no-dose control), 20 ms, or 50 ms, at a fixed attenuation of 76 µm thick aluminum. Following irradiation, 1 µL of a 120 mM solution of the cell permeable quencher reagent N-tert-butyl-α-phenylnitrone was added to each PCR tube to quench any post exposure radical reactions. The samples were then frozen in liquid nitrogen and stored at -80 °C. Thermo Scientific EasyPep Mini MS Sample Prep kits were used for protein extraction, digestion, and peptide clean-up. The protein concentration of the cell lysate was determined using the Pierce BCA Protein Assay Kit. Identification and quantification of methionine oxidation sites were performed using LC-MS/MS on an Orbitrap Eclipse mass spectrometer (ThermoFisher Scientific) coupled to a Waters nanoAcquity UPLC system. Proteolytic peptides (700 ng) were separated on a reverse-phase column (75 μm x 150 mm, Easy Spray PepMap 2 μm, ThermoFisher). Elution used a linear gradient of 2-40% mobile phase B (acetonitrile/0.1% formic acid) vs A (water/0.1% formic acid) over 180 min at 40 °C at 300 nL/min flowrate. Peptides were introduced via nano electrospray source at a capillary voltage of 2.1 kV. MS1 spectra were acquired in the Orbitrap (R = 120K, AGC target = 400,000, MaxIT = 50 ms, mass range 350-1500 m/z). MS2 spectra were collected in the linear ion trap (AGC target 10,000, MaxIT = 35 ms, NCECID = 35%).
+
+DATA PROCESSING:
+Raw LC-MS/MS data was processed using PeaksStudio 10.6 build 20201015 (Bioinformatics Solutions, Waterloo, ON, Canada).  The data was searched against an E. coli database (Uniprot 8939 sequences). Search parameters included a mass error tolerance of 10 ppm for precursor ions, mass tolerance for fragment ions of 0.6 Da, trypsin enzyme specificity, carbamidomethylation of cysteine as fixed modification, oxidation of methionine as variable modification, and allowance for up to one missed cleavage. Label-free peptide identification was performed using the default target decoy approach with a FDR threshold of 1% for proteins. The abundance of individual peptides was determined by calculating the area under the curve (AUC). 

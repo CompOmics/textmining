@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Brain
+instruments: Orbitrap Eclipse
+modifications: No PTMs are included in the dataset
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: A fully automated enrichment and separation system for highly-reproducible and in-depth analysis of intact glycopeptide
+
+ABSTRACT:
+A fully automated HILIC-based enrichment and separation system for glycopeptide (AutoGP), which needs no sample collection, was developed in this study.
+
+PROJECT DESCRIPTION:
+A Fully Automated Enrichment and Separation System for Highly-reproducible and In-depth Analysis of Intact Glycopeptide
+
+SAMPLE PROCESSING:
+The AutoGP system used in this study was developed by integrating a HILIC column, a C18 trap column and a C18 separation column in an Ultimate 3000 RSLCnano ultra high-performance liquid chromatography (UHPLC) system (Thermo Fisher Scientific). The HILIC column, made by packing the ZIC-HILIC particles into a fused silica capillary tubing (530 μm i.d. x 15 cm), can be used to load the analysis sample. Then the non-glycopeptides in HILIC column can be washed by using the loading buffer (80% ACN, 19.9% water and 0.1%TFA) and the glycopeptides can be eluted by the elution buffer (0.1% TFA + 99.9% water) and trapped in the C18 trap column, thus achieve the automated glycopeptide enrichment. The automatically and manually enriched glycopeptides were separated using the same LC gradient and MS data acquisition parameters. An Orbitrap Eclipse mass spectrometer (Thermo Fisher Scientific) was used for intact glycopeptides separation and data acquisition. Glycopeptides were loaded on a C18 trap column (PepMap Neo C18, 5 μm, 300 μm x 5 mm, Thermo Fisher Scientific) and separated by a 75 cm length capillary column (Acclaim PepMap, C18, 2μm, 100 Å, 75 μm i.d., Thermo Fisher Scientific). The mobile phase consisted of two parts: 0.1% FA in H2O (buffer A) and 0.1% FA in 80% ACN/19.9% water (buffer B). During 180-min gradient elution, samples were loaded for 10 min with 2.5% B and separated with a gradient profile set as 2.5% - 50% buffer B,10 - 130 min; 50% - 90% buffer B, 130 - 140 min; 90% buffer B for 10 min; 90% - 2.5% buffer B for 5 min; 2.5% buffer B, last for 20 min to equilibrate column until gradient end. The flow rate of separation was 200 nL/min. The MS parameters were set as following: electrospray voltage 2.1 kV, ion transfer capillary temperature 250 ℃. Data acquisition was performed in top speed data-dependent acquisition (DDA) mode with a cycle time of 3 s. Full scan MS spectra of precursors were collected from m/z range 700 to 2000 with orbitrap resolution 120 k, AGC target of 100% and maximum injection time of 50 ms. Tandem MS acquisition parameters were set as follows: the precursors with 2-6 charges were dissociated by stepped HCD collision energy of 20%, 30% and 40%. Orbitrap resolution 15 k, AGC target of 1000%, maximum injection time of 250 ms, define first mass of 120 m/z, isolation window of 3 m/z and dynamic exclusion of 15 s with a 10-ppm mass tolerance. During the experiments, each set of experimental data was repeated three times.
+
+DATA PROCESSING:
+The raw data acquired by using the Orbitrap Eclipse MS were further processed using pGlyco 3 software (version: build20231220). The parameters were set as follows: fixed protein modification, carbamidomethyl [C, +57.022 Da]; variable protein modification, oxidation [M, +15.995 Da], acetyl [ProteinN-term, +42.011 Da]; trypsin was selected as the enzyme to cleave C-term of arginine (Arg, R) and lysine (Lys, K); two max miss cleavage was allowed; The mouse protein database was downloaded from UniProt (January 2023, Mus musculus). The pGlyco glycan database named “pGlyco-N-Mouse.gdb” was used for glycopeptides identification. A false discovery rate (FDR) of 1% was estimated and applied to all data. The other parameters were kept at default values.

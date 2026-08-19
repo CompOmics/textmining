@@ -1,0 +1,47 @@
+Extract proteomics metadata from the manuscript below into the exact JSON structure shown. Every field must be present.
+
+Before generating the JSON, carefully analyze the manuscript:
+1. Identify how many distinct sample groups exist — different organisms, instruments, or MS methods require separate groups. Primary tissues/cells and established cell lines must also be separate groups.
+2. For each group, go through every field and determine the correct value from the text, SDRF, or PRIDE properties. Do not leave fields empty if the information is available.
+3. Then output the complete JSON.
+
+Important context:
+- One paper can describe multiple PXD datasets. This text is for a SINGLE PXD accession.
+- If SDRF data is provided, it is the most reliable source for what samples are in THIS specific PXD. The manuscript may describe broader experiments that span multiple PXDs.
+- If PRIDE PROJECT PROPERTIES are provided, they describe what was deposited in this PXD.
+- When SDRF/PRIDE properties conflict with the manuscript text, prefer SDRF/PRIDE for sample-level info (tissue, disease, organism).
+
+Rules:
+- Only extract samples that were analyzed by mass spectrometry (proteomics). Do NOT include samples used only for other experiments (e.g. Western blot, isotope tracing, RNA-seq, cell viability assays). The PRIDE/SDRF metadata is the most reliable indicator of what was actually in the MS dataset.
+- Group by distinct experimental setups (different organism, instrument, or MS method = separate group). Do NOT split groups based on biological variables like disease state, treatment condition, or individual donors — list all values within the same group instead.
+- Primary patient cells/tissues and established cell lines must be separate sample groups.
+- If one sample contains multiple species, list all organisms in one group.
+- Evidence must be a short direct quote from the text (max 15 words). Do NOT explain or reason in the evidence field.
+- Only include information explicitly stated in the text, SDRF, or PRIDE properties. If not mentioned, do not include it.
+- Do not list duplicate values. Each unique value should appear only once per field.
+- disease: include "healthy" if the text mentions healthy controls, normal subjects, or non-diseased samples. Use the broad disease name, not histological subtypes or specific diagnoses from individual patients (e.g. "colorectal cancer", not "rectal mucinous adenocarcinoma" or "rectum adenocarcinoma"). Do not split compound diseases into sub-terms (e.g. use "colorectal cancer", not "colon cancer" and "rectal cancer" separately). Report only the actual clinical disease, not anatomical descriptions or keyword synonyms (e.g. "mitral valve regurgitation", not "dilated left atria" or "mitral valve prolapse" alongside it).
+- Use empty arrays [] for fields not mentioned.
+- fractionation: value is true/false, method is the technique or null.
+- enrichment: value is the target (e.g. "phosphorylation") or null, method is the technique or null.
+
+Field definitions:
+- tissue: the organ, body fluid, biological material, OR primary cell type that was analyzed (e.g. brain, liver, blood plasma, saliva, B cells, monocytes, T cells, NK cells, platelets). Use the broad organ name, not specific sub-regions (e.g. "heart", not "left ventricle", "left cardiac atrium", "right cardiac atrium"). If the SDRF lists it as "organism part", it goes in tissue. Do NOT include cell type descriptors like "epithelial" or "mesenchymal" — these describe cell morphology, not tissue origin. Do NOT put established cell lines here (e.g. HEK293, HeLa, A375) — those go in cell_line. "Cell culture" is NOT a tissue — it is a growth method, not an anatomical origin. Ignore it if it appears as an organism part in the SDRF.
+- cell_part: subcellular compartment only (e.g. mitochondria, nucleus, cytoplasm, membrane, extracellular matrix). Do NOT put whole cells or cell types here. Do NOT put sample preparation fractions here (e.g. "soluble fraction", "particulate fraction", "supernatant") — these are fractionation steps, not subcellular locations.
+- cell_line: established immortalized cell lines only (e.g. HeLa, HEK293, A375). Do NOT put primary cells or cell types here.
+- fragmentation: the ion fragmentation method only (e.g. "HCD", "CID", "ETD", "EThcD", "UVPD"). Do NOT put acquisition methods here (DDA, DIA, top-N methods go in acquisition, not fragmentation).
+- lc_column: use only the high-level chromatography type: "reverse phase C18", "HILIC", "SCX", "SAX", or "mixed-mode". Do not include column dimensions or brand names.
+- gradient_time_min: report only the analytical LC-MS gradient time, NOT the offline fractionation gradient. The analytical gradient is the one used during MS data acquisition.
+- acquisition: use "DDA" for data-dependent acquisition (including top-N methods) or "DIA" for data-independent acquisition.
+- labeling: use "label-free", "TMT", "iTRAQ", or "SILAC".
+- modifications: format as "residue-modification" (e.g. "C-carbamidomethylation"). Always include the target residue or position. For phosphorylation, list each residue separately: "S-phosphorylation", "T-phosphorylation", "Y-phosphorylation" (not "STY-phosphorylation"). Only include modifications from sample preparation (e.g. carbamidomethylation from alkylation) or enriched biological modifications (e.g. phosphorylation ONLY when phospho-enrichment was performed in the sample preparation). If there is no enrichment step for a modification, do NOT include it — even if it appears in the PRIDE properties, SDRF, or search engine settings. For example, do NOT list phosphorylation modifications unless the manuscript explicitly describes phosphopeptide enrichment (e.g. TiO2, IMAC). Do NOT include ANY modifications that were only configured as search engine parameters — this includes fixed AND variable search settings. For example, N-term acetylation set as a "variable modification" in MaxQuant/Sequest is a search parameter, NOT an experimental modification. Only include C-carbamidomethylation (from alkylation) and modifications that were physically enriched for (e.g. phosphorylation after IMAC/TiO2 enrichment).
+- ionization: the ionization method used at the MS source (e.g. "ESI", "MALDI", "APCI"). Only include if explicitly stated. LC system names (e.g. "Easy-nLC", "Dionex UltiMate") are NOT ionization methods — they describe the liquid chromatography setup, not how ions are generated.
+- collision_energy: ALWAYS format as number followed by "NCE" (e.g. "28 NCE"). Convert any unit (eV, %, V) to NCE format. If the text says "27 eV" or "27%", report as "27 NCE".
+- treatment_type: the category of perturbation applied to the samples (e.g. "drug treatment", "gene knockdown", "gene overexpression", "cytokine stimulation", "heat shock", "hypoxia", "starvation", "radiation"). Only include if samples were experimentally treated — disease states or patient conditions are NOT treatments.
+- treatment_name: the specific name of the treatment agent (e.g. "vemurafenib", "trametinib", "TNF-alpha", "IFN-gamma", "siRNA targeting BRAF"). Use the exact compound or reagent name as stated in the text.
+- treatment_class: use one of "small molecule", "biologics", or "environmental". Small molecules include drugs, inhibitors, metabolites. Biologics include siRNA, shRNA, CRISPR, overexpression, cytokines. Environmental includes diet, radiation, hypoxia, heat shock, starvation.
+
+Required JSON structure:
+{schema}
+
+Manuscript:
+{manuscript}

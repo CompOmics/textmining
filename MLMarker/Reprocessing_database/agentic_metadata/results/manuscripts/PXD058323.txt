@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Liver; Cell culture; Hepatocyte
+instruments: Orbitrap Exploris 480
+modifications: iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Human; Cmvs; Liver; Acs; Hepg2
+
+ABSTRACT:
+The integration of artificial and mammalian cells into semi-synthetic aggregates remains a challenge in bottom-up synthetic biology. Here, we demonstrate the fabrication of cell membrane vesicles (CMV) from HepG2 cells and their use as coating for alginate microgels to produce camouflaged artificial cells (ACs). These ACs are used for the assembly of either synthetic aggregates or semi-synthetic aggregates. On the one hand, a predator-defendant and a liver-like synthetic aggregates are investigated, showing promising initial steps towards complex synthetic aggregates. On the other hand, the camouflaged ACs show enhanced integration with HepG2 cells. The encapsulation of a reactive oxygen species (ROS) scavenger artificial enzyme in the ACs shows protection against tert-butyl hydroperoxide in terms of HepG2 cell viability, proliferation, and mitochondrial health in semisynthetic aggregates. Taken together, this effort is a step forward in combining both mammalian cells and ACs in the same aggregate where the latter act as support unit.
+
+PROJECT DESCRIPTION:
+HepG2-derived Cell Membrane Vesicle Camouflaged Artificial Cells
+
+SAMPLE PROCESSING:
+HepG2-derived Cell membrane vesicles (CMVs) were purified and lysed in 1% Triton X-100, 50 mM Tris-HCl pH 8.0, 150 mM NaCl, complemented with protease inhitor cocktail (Roche). Protein homogenates were carbamidomethylated with 10 mM DTT (56 °C, 30 min), 50 mM CAA (RT, 30 min) and subsequent quenched with 50 mM DTT (RT, 20 min). Proteins were purified with paramagnetic, mixed 1:1 hydrophobic:hydrophilic SP3 beads (Weng, Demir et al., MCP, 2019) and resuspended in 50 mM HEPES, pH 7.4 and digested over night at 37 °C with trypsin (Serva) in a 1:50 (w/w) ratio. Samples were acidified with 1% formic acid and peptides were purified using in-house made stage-tips. Purified peptides were measured on an Thermo Ultimate3000 RSLC/Thermo Exploris480 Orbitrap setup equipped with the FAIMS device in a 2h/3 compensation voltage (-70/55/40V, cycle times 0.75/1/1.25s) DDA method with a 2-35% B (A=H2O+0.1%FA, B=ACN+0.1%FA) effective separation gradient over 90 min and a flow of 400 nL/min.
+
+DATA PROCESSING:
+Raw FAIMS data was converted into MzXML files with the FAIMS_MzXML_Generator tool (v1.0.7639, Hebert et al., 2018, Anal Chem) and queried with MaxQuant v 1.6.17.0 (FDR = 1%, match between runs = on) using the UniProt reference proteome database for human from may 2020 (canonical only, 20612 entries) and default settings for orbitraps. Enzyme specificity was set to Trypsin/P, cysteine carbamidomethylation was set as a fixed modification (+57.021464) and methionine oxidation (+15.994914) as well as protein N-terminal acetylation (+42.010565) were set as variable modifications. Data analysis was performed using Perseus software suite.

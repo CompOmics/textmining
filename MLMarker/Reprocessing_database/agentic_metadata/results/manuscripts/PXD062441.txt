@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: Orbitrap Ascend
+modifications: iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: ICPL
+keywords: Translocase of the outer mitochondrial membrane; Mitochondria; Protein import; Quantitative mass spectrometry; Hek293t cells; Sirna
+
+ABSTRACT:
+The mitochondrial proteome arises from dual genetic origin. Nuclear-encoded proteins need to be transported across or inserted into two distinguished membranes, and the TOM complex represents the main translocase in the outer mitochondrial membrane. Its composition and regulations have been extensively investigated within yeast cells. However, we have little knowledge of the TOM complex composition within human cells. Here, we have defined the TOM interactome in a comprehensive manner using biochemical approaches to isolate the TOM complex in combination with quantitative mass spectrometry analyses. Within these studies, we defined the pleiotropic nature of the human TOM complex, including new interactors, such as TRABD. Our studies provide a framework to understand the various biogenesis pathways that merge at the TOM complex within human cells.
+
+PROJECT DESCRIPTION:
+Definition of the human mitochondrial TOM interactome reveals TRABD as new interacting protein (TRABD siRNA data)
+
+SAMPLE PROCESSING:
+SILAC labeling of cells: HEK293 Flp-In T-Rex cells were cultured in SILAC-DMEM high glucose medium (AC-LM-0065, Anprotec) supplemented with 10% dialyzed FBS, 2 mM L-glutamine, 1 mM sodium pyruvate and 50 µg/ml uridine and either heavy or light amino acids of L-arginine (100 mg/l) and L-lysine (140 mg/l). siRNA transfection: HEK293 Flp-In T-Rex cells were transiently transfected with TRABD siRNA (33 nM, GUG-UGU-CCA-UGC-UGA-AGA-U) or NT siRNA (control) using RNAiMAX (Invitrogen) following the manufacturer's protocol. After culturing for 72 hours, cells were harvested with PBS and pelleted at 1250 rpm (5 min, 4°C).  Quantitative mass spectrometry: To analyze the effect of TRABD knockdown on the cellular proteome, equal amounts of cell lysates (based on protein concentration) generated from differentially SILAC labeled cells treated with TRABD siRNA or NT siRNA as control were mixed. Cells were lysed in urea buffer (8 M urea in 50 mM ammonium bicarbonate). Cysteine residues were reduced and alkylated, followed by tryptic in-solution digestion as described before (Peikert et al. 2017, Nat Commun 8). Peptide mixtures were analyzed using a Vanquish Neo UHPLC system (Thermo Fisher Scientific) connected to an Orbitrap Ascend Tribrid instrument (Thermo Fisher Scientific). Experiments were performed in four biological replicates including a SILAC label switch.
+
+DATA PROCESSING:
+The MaxQuant/Andromeda software package was used for protein identification and SILAC-based relative protein quantification (version 2.6.6.0) applying MaxQuant default parameters and setting Arg10/Lys8 as heavy labels; the option "requantify" was enabled. Tandem MS data were searched against the UniProt human reference proteome, including isoforms. The mean of log2-transformed normalized protein abundance ratios (TRABD siRNA/control) was determined. P-values were calculated using the “linear models for microarray data” (limma) approach (Schwämmle et al. 2013, Proteome Res 12; Smyth 2004, Stat Appl Genet Mol Biol 3) and corrected for multiple testing following the Benjamini-Hochberg method (Benjamini and Hochberg 1995, Journal of the Royal Statistical Society Series B 57).

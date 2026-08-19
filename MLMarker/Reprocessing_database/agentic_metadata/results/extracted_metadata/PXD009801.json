@@ -1,0 +1,149 @@
+{
+  "sample_groups": [
+    {
+      "name": "RPMI8226, U937, and JY cell lines",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "RPMI8226",
+          "evidence": "tryptic peptides from the RPMI8226 and U937 cells",
+          "ontology_name": "RPMI-8226",
+          "similarity": 1.0
+        },
+        {
+          "value": "U937",
+          "evidence": "tryptic peptides from the RPMI8226 and U937 cells"
+        },
+        {
+          "value": "JY",
+          "evidence": "HLA class I peptides and tryptic peptides from the JY cells"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "LTQ Orbitrap XL",
+          "evidence": "LTQ Orbitrap XL mass spectrometer",
+          "ontology_id": "instruments:0004",
+          "ontology_name": "LTQ Orbitrap XL",
+          "similarity": 1.0
+        },
+        {
+          "value": "Q Exactive",
+          "evidence": "Q Exactive mass spectrometer",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        },
+        {
+          "value": "Q Exactive Plus",
+          "evidence": "Q Exactive Plus mass spectrometer",
+          "ontology_id": "instruments:0014",
+          "ontology_name": "Q Exactive Plus",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "collision-induced disintegration (CID)",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        },
+        {
+          "value": "HCD",
+          "evidence": "higher-energy collision dissociation fragmentations (HCD)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "digested with modified trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "carbamidomethylated with 100 mM iodoacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "25 NCE",
+          "evidence": "normalized collision energy was set to 25 eV"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "120",
+          "evidence": "7–40% acetonitrile gradients ... for 2 h"
+        },
+        {
+          "value": "240",
+          "evidence": "4-h gradients for tryptic peptides"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "packed with Reprosil C18-Aqua",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "top seven most intense precursor ions",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "dynamic stable isotope labeling by amino acids in cell culture",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "in-gel digestion",
+        "evidence": "Protein digestion from gel slices was performed by running the proteins in 10% acrylamide gel"
+      },
+      "enrichment": {
+        "value": "MHC class I peptides",
+        "method": "affinity purification",
+        "evidence": "Affinity Purification of the HLA Complexes"
+      },
+      "ionization": [],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

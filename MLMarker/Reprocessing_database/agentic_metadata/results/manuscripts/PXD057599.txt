@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Arabidopsis thaliana (mouse-ear cress)
+organism parts: Cell culture
+instruments: Orbitrap Exploris 480
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+keywords: Arabidopsis thaliana; Ribosome; Mitochondria; Opnr
+
+ABSTRACT:
+Eukaryotic ribosome biogenesis proceeds from nucleolus to cytosol assisted by various assembly factors. The process is evolutionarily conserved across eukaryotes but differences between kingdoms are emerging. Here, we describe how the OPENER (OPNR) protein complex is required for 60S ribosome assembly in the model plant Arabidopsis thaliana. The complex was observed on both nuclear envelope and mitochondria, and contains OPNR, OPENER ASSOCIATED PROTEIN 1 (OAP1), OAP2, Cell Division Cycle 48 D (CDC48D) and Calmodulin-interacting protein 111 (CIP111). Depletion of the OPNR complex components resulted in reproductive lethality and cytoplasmic retention of assembly factors on 60S ribosomes. Subsequent biochemical analyses and structural modelling suggested that OPNR, OAP1 and OAP2 form a claw-like trimer which grabs the ribosome assembly factor RPL24C on the pre-60S ribosome. Our results reveal previously unrecognised subcellular complexity of ribosome biogenesis in plants, and point to mitochondria association as a feature to ensure sufficient translational capacity.
+
+PROJECT DESCRIPTION:
+Ribosome biogenesis in plants reqRibosome biogenesis in plants requires the nuclear envelope and mitochondria localized OPENER complexuires the nuclear envelope and mitochondria localized OPENER complex
+
+SAMPLE PROCESSING:
+SpeedBeads A andB magnetic carboxylate modified particles (beads A hydrophylic, GE45152105050250; beads B hydrophobic, GE65152105050250, Sigma Aldrich, St. Louis, MO) were mixed at a 1:1 (v/v) ratio and washed four times using LC-MS grade water. Then, the beads were added to each sample, contained in the binding buffer (50% ethanol and 2.5% formic acid as final concentration), and incubated at 500 rpm for 15min at room temperature. The samples were then transferred into a filter plate (0.22 µm, MSGVN2210, Sigma Aldrich). The unbound fraction was discarded by centrifugation at 1000 g for 5 min. Beads retained on the filter were washed four times with 70% ethanol. Then digestion buffer (100 mM HEPES pH7.5, 5 mM chloroacetamide, 1.2 mM TCEP) with trypsin was added to each sample (0.2 µg trypsin) on the plate. Digestions were performed at room temperature with shaking at 500 rpm overnight. Flowthrough was collected in collection plate with centrifugation at 1000 g for 5 min. Beads were washed and eluted again with 10 µl 2% DMSO and the flowthrough was pooled with the previous fraction. Peptides in the solution were desalted by on a Oasis HLB plate (cat. No.186001828BA, Waters Corporation, Milford, MA) according to the manufacturer’s instructions and then dried by speed vac.
+
+DATA PROCESSING:
+The raw data resulting from the MS runs were searched against the Arabidopsis thaliana UniProt FASTA data using FragPipe (version 18); label-free quantification was performed using LFQ-MBR workflow 93. Proteins from contaminants and decoys were removed from the results. Furthermore, only proteins that that were quantified in at least one replicate in each group were kept for further analysis. The peptide enrichments were analyzed using Perseus 94 and presented as a volcano plot. The log2 fold change of peptide intensity is depicted on the x-axis of the volcano plots, and the -log10 P-value of the difference between the two data sets is shown on the y-axis. These differences were calculated using the Student’s t-test, moderated by Benjamini–Hochberg’s method. FDR was set to 0.05 or 0.1 and S0 was set to 0.1 or 0.5.

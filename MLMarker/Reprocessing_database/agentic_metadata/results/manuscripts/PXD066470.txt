@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Stem cell
+instruments: Q Exactive HF-X
+modifications: monohydroxylated residue; acetylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: label free sample
+keywords: Lc-msms; Stem cells; Mouse; Telomere
+
+ABSTRACT:
+The aim of the project is to characterize the composition of telomere purified from wild-type and Tels1 KO mouse stem cells. Purification of mouse telomeres is done by Proteomics of Isolated Chromatin segments approach (PICh) (Déjardin et al. Cell 2009).
+
+PROJECT DESCRIPTION:
+Telomere composition of wild-type and Tels1 knock-out (KO) mouse stem cells
+
+SAMPLE PROCESSING:
+Mouse ES cells were grown on gelatinized plates before treatment with formaldehyde (3.7%) for 1h. Cells were harvested, washed with PBS before lysis in sucrose buffer with a dounce homogenizer (0.3 M Sucrose, 10 mM HEPES-NaOH pH 7.9, 1% Triton-X100, 2 mM MgOAc, 1 mM PMSF). After washing with PBS 0.5% Tirton, the sample is incubated with RNAseA overnight. Pellets were then resuspended in high salt containing buffer (10 mM HEPES-NaOH pH 7.9, 100 mM NaCl, 2 mM EDTA pH 8, 1 mM EGTA pH 8, 0.2% SDS, 0.1% Sodium Sarkosyl) before sonication with a Misonix S-4000 sonicator. Samples are cleared first by centrifugation and then pre cleared overnight with Ultralink Streptavidin beads. Samples are then processed through a Sephacryl S-400-HR column before hybridization with telomere specific FluoroRNA probes. Chromatin bound to the FluoroRNA probe is then recovered with MyONE C1 magnetic streptavidin beads. After several washes with high and low salt buffer, samples are eluted with biotin. Eluted proteins are precipitated with trichloroacetic acid and resuspended in 50 mM Tris pH 8.8, 2% SDS, 0.1 M 2-Mercaptoethanol. Samples are boiled at 99°C for 5 minutes before processing to mass spectrometry. Samples were then digested with trypsin (STRAP, PROTIFI) prior to fractionation (8 fractions) on a basic RP column (Thermo Fisher Scientific). Peptides from each sample were resuspended in A buffer (0.1% formic acid) and injected for on-line analysis using a nano flow HPLC (RSLC U3000, Thermo Fisher Scientific) coupled to a mass spectrometer (Qexactive HFX, Thermo Fisher Scientific). Peptides were separated on a capillary column (0.075mmx 250mm, Acclaim Pepmap 100, reversed-phase C18, NanoViper, Thermo Fisher Scientific) following a gradient of 2-40% B buffer in 120 min (A=0.1% Formic Acid B=0.1% Formic Acid, 80% Acetonitrile) at a flow rate of 300 nl/min.
+
+DATA PROCESSING:
+The spectral data were analysed using MaxQuant 2.0.3.0 using the FPP v3.4 leading script. The following databases were used: " RefProteome_MOUSE-cano_2022_01_UP000000589.fasta and contaminants_fpp_180320.fasta with the following fixed modification: Carbamidomethylation (C) and the following variable modifications: Oxidation (M), Acetyl (Protein N-term). Data validation was performed with the following filters: 1% FDR at the protein and peptide level for identification.

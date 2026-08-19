@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Epithelial cell; Cell culture
+diseases: Head and neck squamous cell carcinoma
+instruments: Orbitrap Exploris 480
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+quantification: TMT
+keywords: Tumor cell; Mouse; Lc-ms; Scc7; Scc7-m
+
+ABSTRACT:
+To identify the downstream targets of macrophages that mediate tumor metastasis, we first established a highly metastatic cell line, named SCC7-M, then we performed proteomics analysis using the tumor tissue from mice bearing SCC7 and SCC7-M tumors.
+
+PROJECT DESCRIPTION:
+Mouse tumor cell SCC7/SCC7-M LC-MS
+
+SAMPLE PROCESSING:
+The samples were added with 4 times the volume of cracking buffer (8 M urea, 1% protease inhibitor, 1% phosphatase inhibitor), respectively. Then the samples were cracked by ultrasound, and the protein concentration was determined by BCA kit. The protein of each sample was enzymolized in equal quantity and appropriate amount of standard protein was added. Slowly add the final concentration of 20% TCA, swirl well, and precipitate at 4℃ for 2h. 4500g, centrifuge for 5min, discard the supernatant, wash and precipitate with pre-cooled acetone for 2-3 times. After drying and precipitation, TEAB with a final concentration of 200 mM was added, the precipitation was dispersed by ultrasound, and trypsin was added at a ratio of 1:50. Dithiothreitol (DTT) was added to the final concentration of 5 mM and reduced at 56℃ for 30 min. Then iodoacetamide (IAA) was added to make its final concentration 11 mM, and incubated at room temperature for 15 min away from light. The enzymic peptides were desalted with Strata X C18 (Phenomenex) and vacuum freeze-dried. Dissolve the peptide with 0.5 M TEAB and label the peptide according to the instructions of the TMT kit. The peptides were fractified by high pH reverse-phase HPLC with Agilent 300Extend C18 column. The peptides were dissolved in mobile phase A by liquid chromatography and separated by EASY-nLC 1200 ultra-high performance liquid phase system. Mobile phase A is an aqueous solution containing 0.1% formic acid and 2% acetonitrile. Mobile phase B is an aqueous solution containing 0.1% formic acid and 90% acetonitrile. Liquid phase gradient setting: 0-68 min, 4%~20%B; 68-82 min, 20%~32%B; 82-85 min, 32%-80% B; 85-88 min, 80%B, the flow rate was maintained at 500 nL/min. The peptides were separated by an ultra-high performance liquid phase system and injected into an NSI ion source for ionization and then analyzed by Orbitrap Exploris™ 480 mass spectrometry. The ion source voltage was set to 2.3kV, the FAIMS compensation voltage (CV) was set to -45V, and the parent peptide ions and their secondary fragments were detected and analyzed using high-resolution Orbitrap. The scanning range of primary mass spectrometry is set to 400-1200 m/z, and the scanning resolution is set to 60,000. The scanning range of the secondary mass spectrometry is fixed at 110 m/z, the secondary scanning resolution is set to 15000, and the TurboTMT is set to Off. The data acquisition mode uses data-dependent scanning (DDA) procedure, that is, the first 25 peptide parent ions with the highest signal intensity are selected to enter the HCD collision pool successively after the primary scanning, and the fragmentation energy is 35% for fragmentation, and the secondary mass spectrometry is also performed successively. In order to improve the effective utilization of mass spectrum, the automatic gain control (AGC) is set to 100%, the signal threshold is set to 5E4 ions/s, the maximum injection time is set to Auto, and the dynamic exclusion time of series mass spectrum scanning is set to 30 s to avoid repeated scanning of parent ions.
+
+DATA PROCESSING:
+The ratio of the mean relative quantitative value of each protein was taken as the fold chage. In order to judge the significance of the difference, the relative quantitative value of each protein was tested by T test. The differential proteins were screened for Gene Ontology (GO), Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment.

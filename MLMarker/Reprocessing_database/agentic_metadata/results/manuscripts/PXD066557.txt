@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Lung
+diseases: Severe acute respiratory syndrome
+instruments: Orbitrap Fusion Lumos
+modifications: monohydroxylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+keywords: Fibrin clotting; Bal; Covid; Pulmonary disease; Bronchi alveolar lavage; Sars-covid-2
+
+ABSTRACT:
+Our recent work showed COVID BALF from vaccinated individuals contained significantly lower concentration of fibrinogen and prothrombin, suggesting a potential benefit of vaccination being lower risk of fibrin clotting and acute lung injury. As our previous mass spec-based proteomic ID approach showed the presence over 500 proteins in BALF, we propose to compare the presence of various inflammatory, coagulation factors between vaccinated and unvaccinated BALF through proteomic approach. The research has potential to reveal the benefit of vaccination to prevent lung fibrosis.
+
+PROJECT DESCRIPTION:
+vaccination protects against COVID-associated pulmonary fibrin deposition
+
+SAMPLE PROCESSING:
+Twenty microliter aliquots of BALF samples were dissolved in SDS-sample buffer and applied onto a 4-12% Nupage gel with MOPs running buffer. The run stopped after the samples migrated approximately ¼ distance into the gel. Each lane of the gel was sliced into smaller pieces, and subjected to destaining, reducing/alkylation, and in-gel trypsin digestion. The extracted peptides were applied for LC-MS/MS analysis using a Thermo Orbitrap Fusion Lumos operated with an in-line Thermo nLC 1200 and an EASY-Spray ion source. Peptides were separated using a 2 cm Pepmap 100 C18 trap column and a 25 cm Easy-spray Pepmap 100 C18 analytical column. MS/MS data acquisitions were operated at a 120,000 resolution (m/z 200) with a scan range of 400-1600 m/z and HCD fragmentation.
+
+DATA PROCESSING:
+All data was processed using Proteome Discoverer v2.4 (Thermo Scientific) with a SEQUEST HT search against the Uniprot KB/Swiss-Prot Human Proteome (02/2021) and common contaminants (theGPM.org) using a 5ppm precursor mass tolerance and a 0.5 Da fragment tolerance. Dynamic modifications included in the search were limited to oxidation [M], deamidation [NQ], and acetylation [Protein N-terminal] while carbamidomethylation [C] was the only static modification utilized. Peptides and proteins were filtered at a 1% FDR (False Discovery Rate) using a target-decoy approach with a 2 peptide per protein minimum.

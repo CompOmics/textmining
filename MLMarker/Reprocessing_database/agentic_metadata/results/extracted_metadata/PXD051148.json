@@ -1,0 +1,455 @@
+{
+  "sample_groups": [
+    {
+      "name": "Expi293F Cell Lysate",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "human cell lysate digest",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Cell culture",
+          "evidence": "human cell lysate digest"
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "Expi293F",
+          "evidence": "Expi293F cell (Gibco) lysate"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Ascend",
+          "evidence": "Orbitrap Ascend Tribrid mass spectrometer",
+          "ontology_id": "instruments:0001",
+          "ontology_name": "Orbitrap Elite",
+          "similarity": 0.865
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Orbitrap Ascend Tribrid",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "in-solution LysC/trypsin digestion",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "in-solution LysC/trypsin digestion",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "cysteine carbamidomethylation as fixed modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "standard parameters"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "30",
+          "evidence": "gradients of 30 min for samples below 1 ng"
+        },
+        {
+          "value": "60",
+          "evidence": "60 min for the rest"
+        },
+        {
+          "value": "15",
+          "evidence": "preferred 15 min for the analysis of peptide amounts below 1 ng"
+        },
+        {
+          "value": "30",
+          "evidence": "30 min for the rest"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "in-house packed C-18 Reprosil-Gold column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data Dependent (DDA)",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        },
+        {
+          "value": "DIA",
+          "evidence": "Data Independent (DIA)",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        },
+        {
+          "value": "WWA",
+          "evidence": "Wide Window Acquisition (WWA)"
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label free analysis",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high-pH chromatography",
+        "evidence": "high-pH chromatography using an Evosep One LC system"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No enrichment described for Expi293F samples"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "electro sprayed",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    },
+    {
+      "name": "HeLa Cell Lysate",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "HeLa cell lysate",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Cell culture",
+          "evidence": "HeLa cell lysate"
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "HeLa cell lysate",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Ascend",
+          "evidence": "Orbitrap Ascend Tribrid mass spectrometer",
+          "ontology_id": "instruments:0001",
+          "ontology_name": "Orbitrap Elite",
+          "similarity": 0.865
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Orbitrap Ascend Tribrid",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "on-bead digestion using a solid-phase enhanced sample-preparation (SP3) method",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "cysteine carbamidomethylation as fixed modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "standard parameters"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "30",
+          "evidence": "30 min gradient"
+        },
+        {
+          "value": "60",
+          "evidence": "single-shot (60 min gradient)"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "in-house packed 50μm ID x 50cm L Reprosil-Gold C-18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data Dependent (DDA)",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        },
+        {
+          "value": "DIA",
+          "evidence": "Data Independent (DIA)",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        },
+        {
+          "value": "WWA",
+          "evidence": "Wide Window Acquisition (WWA)"
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label free analysis",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high-pH chromatography",
+        "evidence": "high-pH chromatography using an Evosep One LC system"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "Zr-IMAC",
+        "evidence": "phosphopeptide Zr-IMAC enrichment protocol"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "electro sprayed",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    },
+    {
+      "name": "HEK293 Cell Lysate",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "HEK293 cells",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Cell culture",
+          "evidence": "HEK293 cells"
+        }
+      ],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HEK293",
+          "evidence": "HEK293 cells",
+          "ontology_name": "HEK293",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Ascend",
+          "evidence": "Orbitrap Ascend Tribrid mass spectrometer",
+          "ontology_id": "instruments:0001",
+          "ontology_name": "Orbitrap Elite",
+          "similarity": 0.865
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Orbitrap Ascend Tribrid",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "on-bead digestion as described before",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "cysteine carbamidomethylation as fixed modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "standard parameters"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "30",
+          "evidence": "30 min gradient"
+        },
+        {
+          "value": "60",
+          "evidence": "single-shot (60 min gradient)"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "in-house packed 50μm ID x 50cm L Reprosil-Gold C-18",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Data Dependent (DDA)",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        },
+        {
+          "value": "DIA",
+          "evidence": "Data Independent (DIA)",
+          "ontology_id": "acquisition:0002",
+          "ontology_name": "DIA",
+          "similarity": 1.0
+        },
+        {
+          "value": "WWA",
+          "evidence": "Wide Window Acquisition (WWA)"
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label free analysis",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high-pH chromatography",
+        "evidence": "high-pH chromatography using an Evosep One LC system"
+      },
+      "enrichment": {
+        "value": "RNA-binding proteins",
+        "method": "RNA interactome capture",
+        "evidence": "RNA interactome capture (RIC) approach"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "electro sprayed",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "radiation",
+          "evidence": "irradiation of cell monolayers with ultraviolet (UV) light"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "UV light",
+          "evidence": "irradiation of cell monolayers with ultraviolet (UV) light"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "environmental",
+          "evidence": "irradiation of cell monolayers with ultraviolet (UV) light",
+          "ontology_id": "treatments:0003",
+          "ontology_name": "environmental",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "sample_groups": [
+    {
+      "name": "HCT116 CRC cells",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "human Uniprot database",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "colorectal cancer",
+          "evidence": "CRC cells originated from the ATCC",
+          "ontology_id": "diseases:0004",
+          "ontology_name": "colorectal cancer",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HCT116",
+          "evidence": "HCT116.625 and HCT116.ctrl cells",
+          "ontology_name": "HCT-116",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "Q Exactive mass spectrometer",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "normalized collision energy (NCE)",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "pre-digested with LysC",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "trypsin",
+          "evidence": "digested overnight with trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylation with 5 mM chloroacetamide",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "S-phosphorylation",
+          "evidence": "enriched with TiO2 beads",
+          "ontology_id": "modifications:0005",
+          "ontology_name": "S-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "T-phosphorylation",
+          "evidence": "enriched with TiO2 beads",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "enriched with TiO2 beads",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "NCE 28 for phospho enriched samples"
+        },
+        {
+          "value": "25 NCE",
+          "evidence": "25 NCE for proteome samples"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "250",
+          "evidence": "total gradient was 250 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Reprosil-Pur C18 beads",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "data dependent method using Top10",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC RPMI 1640 medium",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "TiO2 enrichment",
+        "evidence": "enriched with TiO2 beads"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "TiO2",
+        "evidence": "enriched with TiO2 beads"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "EASY-nLC 1000 system",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene overexpression",
+          "evidence": "Ectopic expression of miR-625-3p"
+        },
+        {
+          "value": "drug treatment",
+          "evidence": "exposed to 16 μM oxPt"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "doxycycline",
+          "evidence": "induced with DOX"
+        },
+        {
+          "value": "oxaliplatin",
+          "evidence": "exposed to 16 μM oxPt"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "environmental",
+          "evidence": "doxycycline hyclate",
+          "ontology_id": "treatments:0003",
+          "ontology_name": "environmental",
+          "similarity": 1.0
+        },
+        {
+          "value": "small molecule",
+          "evidence": "oxaliplatin (oxPt)",
+          "ontology_id": "treatments:0001",
+          "ontology_name": "small molecule",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

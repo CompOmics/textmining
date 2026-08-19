@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Cell culture
+instruments: Orbitrap Astral
+modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue
+experiment types: Data-independent acquisition
+keywords: K29; Epigenome maintenance; Trip12; Ubiquitylation
+
+ABSTRACT:
+Linkage-specific ubiquitin chains govern the outcome of numerous critical ubiquitin-dependent signaling processes. However, the targets and functional impacts of linkage-specific ubiquitin modifications remain incompletely understood, due to a paucity of tools for their specific detection and manipulation. Here, we applied a cell-based ubiquitin replacement strategy enabling targeted conditional abrogation of each of the seven lysine-based ubiquitin linkages in human cells to profile system-wide impacts of disabling formation of individual chain types. This revealed proteins and processes regulated by each of these poly-ubiquitin topologies and established indispensable roles of K48-, K63- and K27-linkages, but not K6-, K11-, K29- and K33-linkages, in cell proliferation. We show that K29-linked ubiquitylation is strongly associated with chromosome biology, and that the H3K9me3 methyltransferase SUV39H1 is a prominent cellular target of this modification. K29-linked ubiquitylation catalyzed by TRIP12 and reversed by TRABID constitutes the essential degradation signal for SUV39H1 and is primed and extended by Cullin-RING ubiquitin ligase activity. Preventing K29-linked ubiquitylation-mediated control of SUV39H1 stability deregulates H3K9me3 homeostasis but not other histone modifications. Collectively, these data resources illuminate cellular functions of linkage-specific ubiquitin chains and establish a key role of K29-linked ubiquitylation in epigenome integrity.
+
+PROJECT DESCRIPTION:
+Functional landscape of ubiquitin linkages couples K29-linked ubiquitylation to epigenome integrity
+
+SAMPLE PROCESSING:
+HA-tag affinity purification was performed using Anti-HA Affinity Matrix (Roche). Partial on‐bead digest was performed with buffer (2 M urea; 2 mM DTT; 20 µg/ml Trypsin; 50 mM Tris, pH 7.5) incubated at 37°C for 30 min at 1,400 rpm. Supernatants were transferred to new tubes, alkylated with 25 mM chloroacetamide (CAA) and further digested overnight at RT and 1,000 rpm. Digestion was terminated with 1% trifluoroacetic acid (TFA). Peptides were desalted and purified using styrenedivinylbenzene‐reversed phase sulfonate (SDB‐RPS) StageTips prepared in 0.2% TFA. Peptides were washed and eluted with elution buffer (80% acetonitrile (ACN); 1% ammonia) prior to vacuum‐drying. Dried peptides were reconstituted in 2% ACN and 0.1% TFA.
+
+DATA PROCESSING:
+Raw files were analyzed with directDIA workflow in Spectronaut v.18.6[4]. Default settings were used. Data filtering was set to ‘Qvalue’. ‘Cross run normalization’ was enabled with the strategy of ‘local normalization’ based on rows with ‘Qvalue complete’. FDR was set to 1% at both the protein and peptide precursor levels. Raw data was searched against the human proteome reference database, including isoform information (Uniprot March 2023). Data was filtered for 60% valid values across WT or Mutant samples (protein groups with >40% missing values were excluded from downstream statistical analysis). Protein intensities were then log2 transformed for downstream statistical and bioinformatics analysis. Imputation of missing data was performed by random numbers drawn from a normal distribution with a width of 0.3 and downshift of 1.8 applied to each sample. Significance was determined through unpaired two-sided t-test corrected by Benjamini–Hochberg at FDR of 0.1 and fold change of 1.5[5], [6]. Go-term enrichment was performed with ClusterProfiler[7]. Data analysis and visualization were performed using Jupyter Notebook (Python 3.9) and RStudio (v2023.03.1+446) with R (v4.3.0) for ClusterProfiler-based analysis.

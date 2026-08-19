@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: Orbitrap Exploris 480
+modifications: phosphorylated residue
+experiment types: Affinity purification coupled with mass spectrometry proteomics; Bottom-up proteomics; Data-dependent acquisition
+quantification: TIC
+keywords: Elys; Ffat-motif; Nuclear envelope; Vapb; Mitosis; Ahctf1
+
+ABSTRACT:
+ELYS is a nucleoporin that localizes to the nuclear side of the nuclear envelope in interphase cells. In mitosis, it serves as an assembly platform that interacts with chromatin and then with nucleoporin subcomplexes to initiate the formation of novel nuclear pore complexes. Here we describe the interaction of ELYS with the membrane protein VAPB. In mitosis, ELYS becomes phosphorylated at many sites, including a predicted FFAT (two phenylalanines in an acidic tract) motif, which is shown to mediate interaction with the MSP (major sperm protein)-domain of VAPB. Phosphorylation-dependent binding of VAPB to ELYS is demonstrated by peptide binding assays and co-immunoprecipitation experiments. In anaphase, the two proteins co-localize to the non-core region of the newly forming nuclear envelope. Depletion of VAPB resulted in prolonged mitosis and slow progression from meta- to anaphase and also to chromosome segregation defects. Together, our results suggest an active role of VAPB in recruiting membrane fragments to chromatin and in the biogenesis of a novel nuclear envelope during mitosis.
+
+PROJECT DESCRIPTION:
+VAPB interacts with phosphorylated ELYS at decondensing chromosomes during mitosis - phosphorylation analysis
+
+SAMPLE PROCESSING:
+Proteins co-purified from asynchronous or mitotic HeLa cell lysates with a GST-MSP-VAPB fusion protein immobilized on GST-selector beads were eluted and in-solution digested with trypsin using the SP3 protocol (Hughes  et al., 2019, Nature Protocols, vol. 14, p. 68–85). Phosphopeptides were enriched by TiO2 chromatography as described (Oellerich et al., 2009, Mol Cell Proteomics, vol. 8, p. 1738-1750). In brief, tryptic peptides were dissolved in 60 µl of the buffer A (5% (v/v) glycerol, 80% (v/v) acetonitrile (ACN), 5% (v/v) trifluoroacetic acid) and bound to a self-packed TiO2 tip-column (Titansphere 5 µm, GL Sciences Inc.). The column was washed 3 times with 60 µl of the buffer A, 3 times with 60 µl of the buffer B (80% (v/v) ACN, 5% (v/v) trifluoroacetic acid) and once with the buffer B2 (60% (v/v) ACN, 0.1% (v/v) trifluoroacetic acid). Phosphopeptides were eluted from the TiO2 column by incubating it 3 times with 40 µl of 1.18% ammonia in water, pH ≥ 10.5.  The samples were analyzed using an Orbitrap Exploris 480 mass spectrometer coupled to a Dionex Ultimate 3000 UHPLC system (both Thermo Fisher Scientific) equipped with a PEPMAP100 C18 nano-trap column (Thermo Fisher Scientific) and an in-house-packed 30 cm analytical C18 capillary column (360 μm outer diameter, 75 μm inner diameter, ReproSil-Pur 120 C18-AQ 3 µm beads, Dr. Maisch GmbH). Peptides were separated using a linear gradient from 7.2 to 30% (v/v) ACN in 0.1% (v/v) formic acid for 70 min. The mass spectrometers were operated in a data-dependent acquisition mode using a cycle time of 3 seconds at a resolution of 120,000 and 30,000 for MS1 and MS2 scans, respectively.
+
+DATA PROCESSING:
+Raw files were searched with MaxQuant software (version 1.6.17.0) against a database containing a GST-fusion of truncated VAPB protein, the UniProt human reference proteome (release 2023-06-28, 20598 entries) and protein contaminants commonly found in MS samples. Phosphorylation of serine, threonine and tyrosine residues as well as methionine oxidation and protein N-terminal acetylation were considered as variable modifications. Cysteine carbamidomethylation was set as a fixed modification. The precursor tolerance was set to 10 ppm and the MS/MS tolerance to 20 ppm. Results were filtered to FDR 1%.

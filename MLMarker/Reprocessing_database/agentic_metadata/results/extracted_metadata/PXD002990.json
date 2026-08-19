@@ -1,0 +1,191 @@
+{
+  "sample_groups": [
+    {
+      "name": "Kit225 cells IL-23 stimulation",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "Lymph node",
+          "evidence": "organism parts: Leukocyte; Lymph node",
+          "ontology_id": "tissues:0070",
+          "ontology_name": "lymph node",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "Crohn's disease",
+          "evidence": "diseases: Crohn's disease",
+          "ontology_id": "diseases:0070",
+          "ontology_name": "Crohn's disease",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [
+        {
+          "value": "nucleus",
+          "evidence": "translocation of STAT3 and PKM2 to the nucleus",
+          "ontology_id": "cell_parts:0002",
+          "ontology_name": "nucleus",
+          "similarity": 1.0
+        },
+        {
+          "value": "cytosol",
+          "evidence": "separation of cytosolic and nuclear enriched protein fractions",
+          "ontology_id": "cell_parts:0003",
+          "ontology_name": "cytoplasm",
+          "similarity": 0.8808
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "Kit225",
+          "evidence": "stimulating 50 x 106 cells Kit225 cells"
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive",
+          "evidence": "instruments: Q Exactive",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Q Exactive typically uses HCD; not explicitly stated",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "digested with trypsin (KR not P) overnight",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylated using 100 mM iodoacetamide (IAA)",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "S-phosphorylation",
+          "evidence": "Phosphopeptides were enriched... TiO2 enrichment",
+          "ontology_id": "modifications:0005",
+          "ontology_name": "S-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "T-phosphorylation",
+          "evidence": "Phosphopeptides were enriched... TiO2 enrichment",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "Phosphopeptides were enriched... TiO2 enrichment",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [
+        {
+          "value": "30",
+          "evidence": "fractions between 10 and 70 minutes... pooled to 10 fractions"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "clearing over a C8 tip",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        },
+        {
+          "value": "HILIC",
+          "evidence": "HILIC column (Amide 80...)",
+          "ontology_id": "lc_column:0002",
+          "ontology_name": "HILIC",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "Shotgun proteomics",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "dimethyl",
+          "evidence": "labeled on column with dimethyl and 2H4 dimethyl"
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "HILIC",
+        "evidence": "HILIC column... used to enrich and separate hydrophilic peptides into 30 fractions"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "HILIC; IMAC; TiO2",
+        "evidence": "Phosphopeptides were enriched in a 2-step procedure (HILIC followed by IMAC)... TiO2 enrichment"
+      },
+      "ionization": [
+        {
+          "value": "ESI",
+          "evidence": "UHPLC system... typically ESI; not explicitly stated",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 1.0
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "cytokine stimulation",
+          "evidence": "activation of T lymphocytes by IL-23"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "IL-23",
+          "evidence": "stimulation with IL-23"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "IL-23 is a cytokine",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

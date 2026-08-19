@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Monocyte
+diseases: Japanese encephalitis
+instruments: Q Exactive HF
+modifications: monohydroxylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: label free sample
+keywords: Thp-1; Jev; Human
+
+ABSTRACT:
+Japanese Encephalitis Virus (JEV) modulates different proteins at different time points of infection to favour its propagation in the host cells. The dysregulation of intertwined pathways in the host has implications for virus pathogenesis. This study aims to decipher the global proteome of Japanese encephalitis infected THP-1 derived macrophages at 24 hours post-infection and 48 hours post-infection, which will further help to deduce the interwoven pathways regulated upon JEV infection.
+
+PROJECT DESCRIPTION:
+Proteome profiling of JEV infected THP-1 derived macrophages
+
+SAMPLE PROCESSING:
+The infected (infection at MOI of 7) and control cells were collected and washed with PBS before pelleting down. The pelleted samples were stored at -80°C before processing. Ammonium bicarbonate(50mM) with 1% Sodium deoxycholate was added to the cell pellet, followed by sonication and centrifugation. After quantifying the protein concentration with BCA protein assay kit (Pierce, Thermo Scientific), Dithiothreitol (DTT, Sigma) was added to the protein solution and kept at 56°C for 1h. This was followed by the addition of Iodoacetamide (IAA, Sigma) and kept at room temperature in the dark for 1h. Trypsin (Pierce, Thermo Scientific) was added to protein at 1:20 (trypsin:protein) and kept at 37°C, overnight. The enzymatic lysis was stopped by adding 2.5% formic acid. Then, the samples were purified using protein concentrators, 10K MWCO (Pierce, Thermo Scientific), followed by C18 column (Pierce, Thermo Scientific) purification. The digested and purified peptides were vacuum-dried and kept at -80°C for further running in LCMS/MS. The vacuum-dried peptides were mixed in 0.3% formic acid, injected into LCMS (Q Exactive, Thermo Scientific), and run for 180 min. The MS scan was done with a scan range of 375 to 1600 m/z and a resolution of 60000. The dd-MS scan was done with a resolution of 15000.
+
+DATA PROCESSING:
+The raw data was processed using Proteome Discoverer (v2.4.1.14) using standard pipeline and parameters with slight modifications. The reference for this analysis was set to Homo sapiens. For selecting proteins, FDR was set to less than 0.01 for high confidence. Label-free quantification based on abundance ratio was calculated by taking the ratio of the abundance of infected to the abundance of control. The proteins with a cut-off of adjusted p-value < 0.05 for the abundance ratio were considered as the Differentially Expressed Proteins (DEPs).

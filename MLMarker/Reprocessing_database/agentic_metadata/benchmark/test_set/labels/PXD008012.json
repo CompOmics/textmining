@@ -1,0 +1,402 @@
+{
+  "sample_groups": [
+    {
+      "name": "TNBC patient tumor phosphoproteomes",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organism: Homo sapiens",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [
+        {
+          "value": "breast",
+          "evidence": "organism part: breast",
+          "ontology_id": "tissues:0048",
+          "ontology_name": "breast",
+          "similarity": 1.0
+        }
+      ],
+      "disease": [
+        {
+          "value": "triple-negative breast cancer",
+          "evidence": "disease: Triple-negative breast cancer",
+          "ontology_id": "diseases:0004",
+          "ontology_name": "triple-negative breast cancer",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [],
+      "instrument": [
+        {
+          "value": "LTQ Orbitrap Elite",
+          "evidence": "instrument: LTQ Orbitrap Elite",
+          "ontology_id": "instruments:0002",
+          "ontology_name": "LTQ Orbitrap Elite",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "dissociation method: CID",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        },
+        {
+          "value": "ETD",
+          "evidence": "decision-tree-based ion trap CID or ETD fragmentation",
+          "ontology_id": "fragmentation:0003",
+          "ontology_name": "ETD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "digested with endoproteinase Lys-C at a 1:50 ratio",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin was added at a 1:50 enzyme-to-protein ratio",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Carbamidomethylation of cysteine was considered as fixed",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "S-phosphorylation",
+          "evidence": "phosphorylation of serine, theronine and tyrosine as variable modifications",
+          "ontology_id": "modifications:0005",
+          "ontology_name": "S-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "T-phosphorylation",
+          "evidence": "phosphorylation of serine, theronine and tyrosine as variable modifications",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "phosphorylation of serine, theronine and tyrosine as variable modifications",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "collision energy: 35% NCE"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "60",
+          "evidence": "60 min effective curved gradient"
+        },
+        {
+          "value": "90",
+          "evidence": "90-min gradient from 7 to 30% solvent B"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Poroshell 120 EC-C18, 2.7 µm",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "data-dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label: label free sample",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "label-free single-shot strategy"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "IMAC",
+        "evidence": "Phosphopeptide enrichment was performed using Ti4+-IMAC",
+        "method_ontology_id": "enrichment_methods:0002",
+        "method_ontology_name": "IMAC",
+        "method_similarity": 1.0
+      },
+      "ionization": [
+        {
+          "value": "Electrospray",
+          "evidence": "Peptides were electrosprayed (1.9 kV)",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 0.7329
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    },
+    {
+      "name": "TNBC cell line phosphoproteomes",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organism: Homo sapiens",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [
+        {
+          "value": "triple-negative breast cancer",
+          "evidence": "disease: Triple-negative breast cancer",
+          "ontology_id": "diseases:0004",
+          "ontology_name": "triple-negative breast cancer",
+          "similarity": 1.0
+        }
+      ],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "BT483",
+          "evidence": "cell line: BT483",
+          "ontology_id": "cell_lines:0042",
+          "ontology_name": "BT483",
+          "similarity": 1.0
+        },
+        {
+          "value": "HCC1143",
+          "evidence": "cell line: HCC1143",
+          "ontology_id": "cell_lines:0043",
+          "ontology_name": "HCC1143",
+          "similarity": 1.0
+        },
+        {
+          "value": "HCC1937",
+          "evidence": "cell line: HCC1937",
+          "ontology_id": "cell_lines:0044",
+          "ontology_name": "HCC1937",
+          "similarity": 1.0
+        },
+        {
+          "value": "HCC38",
+          "evidence": "cell line: HCC38",
+          "ontology_id": "cell_lines:0045",
+          "ontology_name": "HCC38",
+          "similarity": 1.0
+        },
+        {
+          "value": "Hs578T",
+          "evidence": "cell line: Hs578T",
+          "ontology_id": "cell_lines:0046",
+          "ontology_name": "Hs578T",
+          "similarity": 1.0
+        },
+        {
+          "value": "MDA-MB-157",
+          "evidence": "cell line: MDA-MB-157",
+          "ontology_id": "cell_lines:0047",
+          "ontology_name": "MDA-MB-157",
+          "similarity": 1.0
+        },
+        {
+          "value": "MDA-MB-231",
+          "evidence": "cell line: MDA-MB-231",
+          "ontology_id": "cell_lines:0048",
+          "ontology_name": "MDA-MB-231",
+          "similarity": 1.0
+        },
+        {
+          "value": "MDA-MB-415",
+          "evidence": "cell line: MDA-MB-415",
+          "ontology_id": "cell_lines:0049",
+          "ontology_name": "MDA-MB-415",
+          "similarity": 1.0
+        },
+        {
+          "value": "MDA-MB-468",
+          "evidence": "cell line: MDA-MB-468",
+          "ontology_id": "cell_lines:0050",
+          "ontology_name": "MDA-MB-468",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "LTQ Orbitrap Elite",
+          "evidence": "instrument: LTQ Orbitrap Elite",
+          "ontology_id": "instruments:0002",
+          "ontology_name": "LTQ Orbitrap Elite",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "CID",
+          "evidence": "dissociation method: CID",
+          "ontology_id": "fragmentation:0002",
+          "ontology_name": "CID",
+          "similarity": 1.0
+        },
+        {
+          "value": "ETD",
+          "evidence": "decision-tree-based ion trap CID or ETD fragmentation",
+          "ontology_id": "fragmentation:0003",
+          "ontology_name": "ETD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "LysC",
+          "evidence": "cleavage agent details: Lys-C",
+          "ontology_id": "enzymes:0001",
+          "ontology_name": "LysC",
+          "similarity": 1.0
+        },
+        {
+          "value": "Trypsin",
+          "evidence": "cleavage agent details: Trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Carbamidomethylation of cysteine was considered as fixed",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "S-phosphorylation",
+          "evidence": "TA=S,T,Y; phosphorylation of serine, theronine and tyrosine",
+          "ontology_id": "modifications:0005",
+          "ontology_name": "S-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "T-phosphorylation",
+          "evidence": "TA=S,T,Y; phosphorylation of serine, theronine and tyrosine",
+          "ontology_id": "modifications:0006",
+          "ontology_name": "T-phosphorylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "Y-phosphorylation",
+          "evidence": "TA=S,T,Y; phosphorylation of serine, theronine and tyrosine",
+          "ontology_id": "modifications:0007",
+          "ontology_name": "Y-phosphorylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "35 NCE",
+          "evidence": "collision energy: 35% NCE"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "60",
+          "evidence": "60 min effective curved gradient"
+        },
+        {
+          "value": "90",
+          "evidence": "90-min gradient from 7 to 30% solvent B"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "Poroshell 120 EC-C18, 2.7 µm",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "data-dependent mode",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label: label free sample",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "label-free single-shot strategy"
+      },
+      "enrichment": {
+        "value": "phosphorylation",
+        "method": "IMAC",
+        "evidence": "Phosphopeptide enrichment was performed using Ti4+-IMAC",
+        "method_ontology_id": "enrichment_methods:0002",
+        "method_ontology_name": "IMAC",
+        "method_similarity": 1.0
+      },
+      "ionization": [
+        {
+          "value": "Electrospray",
+          "evidence": "The eluent was sprayed via a distal coated fused silica emitter",
+          "ontology_id": "ionization:0001",
+          "ontology_name": "ESI",
+          "similarity": 0.7329
+        }
+      ],
+      "treatment_type": [],
+      "treatment_name": [],
+      "treatment_class": []
+    }
+  ]
+}

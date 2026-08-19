@@ -1,0 +1,168 @@
+{
+  "sample_groups": [
+    {
+      "name": "HeLa cells CDYL depletion",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "organisms: Homo sapiens (human)",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [
+        {
+          "value": "nucleus",
+          "evidence": "pellet was collected as nuclear fraction samples",
+          "ontology_id": "cell_parts:0002",
+          "ontology_name": "nucleus",
+          "similarity": 1.0
+        },
+        {
+          "value": "cytoplasm",
+          "evidence": "Roughly equal amounts of Kcr were found in the cytoplasm",
+          "ontology_id": "cell_parts:0003",
+          "ontology_name": "cytoplasm",
+          "similarity": 1.0
+        },
+        {
+          "value": "mitochondria",
+          "evidence": "about 18% of Kcr were found in the mitochondria",
+          "ontology_id": "cell_parts:0001",
+          "ontology_name": "mitochondria",
+          "similarity": 1.0
+        }
+      ],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "HeLa cells were maintained in Dulbecco's modified Eagle's medium",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Q Exactive Plus",
+          "evidence": "instruments: Q Exactive Plus",
+          "ontology_id": "instruments:0014",
+          "ontology_name": "Q Exactive Plus",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [
+        {
+          "value": "HCD",
+          "evidence": "Peptides were then selected for MS/MS using NCE setting as 28",
+          "ontology_id": "fragmentation:0001",
+          "ontology_name": "HCD",
+          "similarity": 1.0
+        }
+      ],
+      "enzymes": [
+        {
+          "value": "Trypsin",
+          "evidence": "Trypsin/P was specified as cleavage enzyme",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "Carbamidomethyl on Cys was specified as fixed modification",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        },
+        {
+          "value": "K-crotonylation",
+          "evidence": "Kcr modification and oxidation on Met were specified as variable modifications",
+          "ontology_id": "modifications:0010",
+          "ontology_name": "K-acetylation",
+          "similarity": 0.7823
+        }
+      ],
+      "collision_energy": [
+        {
+          "value": "28 NCE",
+          "evidence": "Peptides were then selected for MS/MS using NCE setting as 28"
+        }
+      ],
+      "gradient_time_min": [
+        {
+          "value": "40",
+          "evidence": "gradient was comprised of an increase from 6% to 23% solvent B over 26 min, 23% to 35% in 8 min and climbing to 80% in 3 min then holding at 80% for the last 3 min"
+        }
+      ],
+      "lc_column": [
+        {
+          "value": "reverse phase C18",
+          "evidence": "directly loaded onto a home-made reversed-phase analytical column",
+          "ontology_id": "lc_column:0001",
+          "ontology_name": "reverse phase C18",
+          "similarity": 1.0
+        }
+      ],
+      "acquisition": [
+        {
+          "value": "DDA",
+          "evidence": "A data-dependent procedure that alternated between one MS scan followed by 20 MS/MS scans",
+          "ontology_id": "acquisition:0001",
+          "ontology_name": "DDA",
+          "similarity": 1.0
+        }
+      ],
+      "labeling": [
+        {
+          "value": "SILAC",
+          "evidence": "SILAC labeling and quantitative proteomics analysis were performed",
+          "ontology_id": "labeling:0004",
+          "ontology_name": "SILAC",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": true,
+        "method": "high pH reverse-phase HPLC",
+        "evidence": "peptides were fractionated into fractions by high pH reverse-phase HPLC"
+      },
+      "enrichment": {
+        "value": "K-crotonylation",
+        "method": "antibody beads",
+        "evidence": "Kcr peptides were enriched with immobilized anti-Kcr"
+      },
+      "ionization": [
+        {
+          "value": "NSI",
+          "evidence": "The peptides were subjected to NSI source"
+        }
+      ],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "Upon depletion of CDYL"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "CDYL siRNA",
+          "evidence": "CDYL siRNA, 5′-CAGAGAAUAACUCACUAAATT-3′"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "siRNAs were purchased from the GenePharma Company",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}

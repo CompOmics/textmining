@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+diseases: Lysosomal storage disease
+instruments: Orbitrap Fusion Lumos
+modifications: No PTMs are included in the dataset
+experiment types: Data-dependent acquisition
+quantification: TMT
+keywords: Lysosomes; Lysosomal storage disorders; Cryo-electron tomografy; Protein structures
+
+ABSTRACT:
+Dysfunction in lysosomal membrane proteins and their associated complexes impairs the lysosome's essential role as a key signaling hub within the cell. This disruption underlies severe neurological disorders, such as lysosomal storage diseases and cancer. While direct visualization of the proteomic membrane environment of isolated lysosomes is crucial for advancing our understanding of its functions, it remains a significant challenge. To overcome this, we developed a method to enrich intact lysosomes using the essential lysosomal ion channel, transient receptor potential mucolipin 1. This enabled us to employ cryo electron tomography to reveal the heterogeneous molecular landscape of lysosomes. Notably, in concordance with quantitative mass spectrometry we identified protein densities on lysosomal membranes consistent with V-ATPase, Flotillin, clathrin-coated vesicles, mTORC1, HOPS, VPS13C, and dynein-dynactin. These findings demonstrate that our method offers a robust platform for advancing the structural and functional understanding of individual lysosomes, facilitating the visualization and resolution of endogenous protein complexes.
+
+PROJECT DESCRIPTION:
+Visualization of lysosomal membrane proteins by cryo-electron tomography
+
+SAMPLE PROCESSING:
+Quantitative mass spectrometry analysis was described recently (Gallo PN, Mihelc E, Eisert R, Bradshaw GA, Dimek F, Leffler A, Kalocsay M, Moiseenkova-Bell V. The dynamic TRPV2 ion channel proximity proteome reveals functional links of calcium flux with cellular adhesion factors NCAM and L1CAM in neurite outgrowth. Cell Calcium. 2024 Jul;121:102894. doi: 10.1016/j.ceca.2024.102894. Epub 2024 May 4. PMID: 38728789.) with following modifications: Protein preparations were dissolved in SDS lysis buffer (10 mM (tris(2-carboxyethyl)phosphine) (TCEP), 2% SDS, 150 mM NaCl, 50 mM Tris, pH 8.5, 50mM ammoniumbiocarbonate) and reduced cysteine residues were alkylated with iodoacetamide at a final concentration of 20 mM and incubation at room temperature in the dark for 25 minutes. Alkylation was quenched with 50 mM freshly prepared DTT. SDS was removed by SP3 protein cleanup (Hughes CS, Moggridge S, Müller T, Sorensen PH, Morin GB, Krijgsveld J. Single-pot, solid-phase-enhanced sample preparation for proteomics experiments. Nat Protoc. 2019 Jan;14(1):68-85. doi: 10.1038/s41596-018-0082-x. PMID: 30464214.) and proteins were digested with Lys-C protease (Wako, Catalog Number 129–02541) and trypsin (Promega Catalog Number V5113). Control samples were labelled with TMTpro channels 126, 127N and 127C; TRPML1-1D4 channels with 128N, 128C and 129N. Mixed TMT labelled peptides were subjected to bench-top alkaline reversed phase fractionation as described (Pierce High pH Reversed-Phase Peptide Fractionation Kit, Thermo Fisher Scientific) and run as 6 combined (1+7, 2+8, 3+9, 4+10, 5+11 and 6+12) fractions. Data were recorded on an Orbitrap Ascend instrument (Thermo Fisher Scientific) with a MS2 method using 90 minute FAIMS runs (CVs -40V, -60V, -80V, cycle time 1.5s) at an MS1 resolution of 120,000 in the orbitrap. After HCD fragmentation (25% collision energy), MS2 scans were collected at 45,000 resolution in the orbitrap with a maximal injection time of 250 ms.
+
+DATA PROCESSING:
+Data were searched with COMET (Eng JK, Hoopmann MR, Jahan TA, Egertson JD, Noble WS, MacCoss MJ. A deeper look into Comet--implementation and features. J Am Soc Mass Spectrom. 2015 Nov;26(11):1865-74. doi: 10.1007/s13361-015-1179-x. Epub 2015 Jun 27. PMID: 26115965; PMCID: PMC4607604.) using additional masses of +15.994914 Da for oxidized methionine modification dynamically and +304.207145 Da on peptide N-termini and lysine residues as static modification.

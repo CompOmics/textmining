@@ -1,0 +1,19 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+instruments: Q Exactive HF
+modifications: phosphorylated residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TIC
+keywords: Glioblastoma; Humanin; Brain tumour
+
+ABSTRACT:
+Humanin (HN) is a 24 amino acid peptide encoded by mitochondrial DNA MT-RNR2 (16S ribosomal RNA [rRNA]). It was previously shown, that HN protects tumor cells from damage during chemotherapy. To get mechanistic insight of HN induced singaling cascades involved in brain tumor growth, we performed a global phosphoproteomic analysis total and phosphorylated proteins on human brain tumor cells after treatment with the peptide Humanin.
+
+PROJECT DESCRIPTION:
+Phosphoproteomic study of Humanin treatment on human brain tumour cells
+
+SAMPLE PROCESSING:
+Glioblastoma cell cultures were derived from human glioblastoma biopsies and were maintained under stem cell cultivation conditions in DMEM-F12 with 1× B27, supplemented with 5% penicillin-streptomycin, 10 ng/ml epidermal growth factor and 10 ng/ml fibroblast growth factor. All cells were maintained at 37°C in a humidified atmosphere of 95% O2 and 5% CO2. The glioblastoma derived primary cell line was left untreated or was treated with 200 nM Humanin peptides for 15 minutes or 12 hours under the described culture condition. Cells were collected followed by the phosphoproteomics EasyPhos procedure (as described by Humphrey SJ, et al. Nat Protoc. 2018).
+
+DATA PROCESSING:
+MaxQuant 2.4.14.0 was used to identify and quantify proteins and phosphopeptides with the following parameters: Database, Uniprot_UP000005640_Hsapiens_20231219; MS tol, 10ppm; MS/MS tol, 20ppm; Peptide FDR, 0.1; Protein FDR, 0.01 Min. peptide Length, 5; Variable modifications, Oxidation (M), Phosphorylation (ST); Fixed modifications, Carbamidomethyl (C); Peptides for protein quantitation, razor and unique; Min. peptides, 1; Min. ratio count, 2. For proteomic analysis, identified proteins were considered as statistically significant with FDR:0.05 and s0:1 (Two sample-test adjusted for multiple comparisons, Perseus). Phosphopeptide analysis was carried in Perseus as suggested by Humphrey et al [1]. Comment: experimental infos are comparable to our RNA-seq experiment E-MTAB-13225 E-MTAB-13225 < ArrayExpress < BioStudies < EMBL-EBI   1. Humphrey SJ, Karayel O, James DE, Mann M. High-throughput and high-sensitivity phosphoproteomics with the EasyPhos platform. 2018;13(9):1897-916.

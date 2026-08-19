@@ -1,0 +1,20 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Permanent cell line cell; Cell culture
+instruments: Orbitrap Fusion Lumos
+modifications: monohydroxylated residue; deamidated residue
+experiment types: Data-dependent acquisition
+quantification: TIC
+keywords: Bioid srsf1 interactome ddx23 affinity proteomics
+
+ABSTRACT:
+Here we characterized SRSF1’s interactome using proximity labeling and mass spectrometry. This approach yielded 190 proteins enriched in the SRSF1 samples, independently of the N- or C-terminal location of the biotin-labeling domain. The detected proteins reflect established functions of SRSF1 in pre-mRNA splicing and reveal   additional connections to spliceosome proteins, in addition to other recently identified functions. We validated a robust interaction with the spliceosomal RNA helicase DDX23/PRP28 using bimolecular fluorescence complementation and in vitro binding assays. The interaction is mediated by the N-terminal RS-like domain of DDX23 and both RRM1 and the RS domain of SRSF1.
+
+PROJECT DESCRIPTION:
+SRSF1 interactome determined by proximity labeling reveals direct interaction with spliceosomal RNA helicase DDX23
+
+SAMPLE PROCESSING:
+Biotinylated proteins were enriched by streptavidin affinity capture, and proteolyzed on-beads using trypsin. Peptides were resolved by nano-scale reversed phase chromatogrpahy, ionized by online elctrospray, and analyzed by LC-MSMS using a Thermo Lumos Fusion mass spectrometer operated in data dependent mode.
+
+DATA PROCESSING:
+We searched the mass spectra using the Mascot scoring function within ProteomeDiscoverer (v.2.4), with the mass tolerance set at 5 ppm for MS1, and 0.5 Da for MS2. We matched the spectra against the UniProt human database and a database of common contaminants (Crap). We set K and N-terminus biotinylation, M-oxidation and N/Q-deamidation as variable modifications. We set CEMTS adducts on C as a fixed modification. We filtered peptide-spectral matches to maintain FDR<1% using Percolator.

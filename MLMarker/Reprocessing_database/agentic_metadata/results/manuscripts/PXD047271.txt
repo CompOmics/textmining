@@ -1,0 +1,21 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Homo sapiens (human)
+organism parts: Motor neuron
+diseases: Amyotrophic lateral sclerosis
+instruments: Q Exactive Plus
+modifications: monohydroxylated residue
+experiment types: Data-dependent acquisition
+quantification: Label free
+keywords: Motor neurons; Ipscs; Immunoprecipitation; Als; Stem cells; Fus
+
+ABSTRACT:
+FUS Immunoprecipitation in human induced pluripotent stem cells and human motor neurons
+
+PROJECT DESCRIPTION:
+Changes in FUS interactome in motor neurons upon ALS-related mutation
+
+SAMPLE PROCESSING:
+Cells were lysed in modified Radioimmunoprecipitation assay (RIPA) buffer (50 mM Tris–HCl (pH 7.4), 150 mM NaCl, 0.25% sodium deoxycholate, 1% Triton, 1 mM PMSF, and 1 mM EDTA) supplemented with protease inhibitor (Roche). Lysates were centrifuged at 8,000g for 5 min at 4°C. Then, the supernatant was collected and incubated with total anti-FUS antibody (Abcam, ab154141), (1μg) overnight at 4°C. Subsequently with 100 μl Protein A beads (Miltenyi) for 1 h on the overhead shaker at 4°C. As a control, the same amount of protein was incubated with anti-Flag antibody (Sigma, F1804) (1μg) in parallel. After this incubation, supernatants were subjected to magnetic column purification. We then performed three washes using wash buffer 1 (50 mM Tris–HCl (pH 7.4), 150 mM NaCl, 0.05% Triton, and 5% glycerol). Next, columns were washed five times with wash buffer 2 (50 mM Tris–HCl (pH 7.4), 150 mM NaCl). Then, we subjected the columns to in-column tryptic digestion containing 7.5 mM ammonium bicarbonate (Ambic), 2 M urea, 1 mM DTT and 5 ng ml-1 trypsin. Digested peptides were eluted using two times 50 μl of elution buffer 1 containing 2 M urea, 7.5 mM Ambic and 15 m CAA. Digests were incubated overnight at room temperature with mild shaking in the dark. The next day, samples were stage-tipped for label-free quantification.  All samples were analyzed by the CECAD proteomics facility on a Q Exactive Plus Orbitrap mass spectrometer that was coupled to an EASY nLC (both Thermo Scientific). Peptides were loaded with solvent A (0.1% formic acid in water) onto an in-house packed analytical column (50 cm length, 75 μm inner diameter, filled with 2.7 μm Poroshell EC120 C18, agilent). Peptides were chromatographically separated at a constant flow rate of 250 nL/min using the following gradient: initial 3 % solvent B (0.1% formic acid in 80 % acetonitrile), 3-5% B within 1.0 min, 5-30% solvent B within 65.0 min, 30-50% solvent B within 13.0 min, 50-95% solvent B within 1.0 min, followed by washing and column equilibration. The mass spectrometer was operated in data-dependent acquisition mode. The MS1 survey scan was acquired from 300-1750 m/z at a resolution of 70,000 and 20 ms maximum injection time. The top 10 most abundant peptides were isolated within a 1.8 Th window and subjected to HCD fragmentation at a normalized collision energy of 27%. The AGC target was set to 5e5 charges, allowing a maximum injection time of 110 ms. Product ions were detected in the Orbitrap at a resolution of 35,000. Precursors were dynamically excluded for 10.0 s.
+
+DATA PROCESSING:
+All mass spectrometric raw data were processed with Maxquant (Version 1.5.3.8) using default parameters against the Uniprot HUMAN canonical database (UP5640) with the match-between-runs option enabled between replicates. Follow-up analysis was done in Perseus 1.6.15. Protein groups flagged as ‘potential contaminants’ were removed. LFQ values were log2-transformed and missing values were replaced using an imputation-based approach. Significant differences between the experimental groups were assessed by two-sided Student’s t-test for samples. FDR <0.05 was used for significance.

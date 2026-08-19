@@ -1,0 +1,25 @@
+PRIDE PROJECT PROPERTIES:
+organisms: Mus musculus (mouse)
+organism parts: Mammary gland
+instruments: Q Exactive HF
+modifications: monohydroxylated residue; TMT6plex-126 reporter+balance reagent acylated residue; phosphorylated residue; iodoacetamide derivatized residue
+experiment types: Bottom-up proteomics; Data-dependent acquisition
+quantification: TMT
+keywords: Everolimus; Brca1; Lc-ms/ms
+
+ABSTRACT:
+We conducted global proteome and phosphoproteome profiling of vehicle- and everolimus-treated tumors from 17 mice that were allografted with spontaneously developed mammary tumors from Brca1co/coMMTV-Cre mice using LC-MS/MS. The Proteome Discoverer analysis identified 9,625 proteins having two unique sibling peptides and more and 35,142 phosphopeptides with a peptide- and protein-level FDR of 1% using SEQUEST-HT algorithm. We defined everolimus-sensitive and resistant tumors based on proteome and phosphoproteome data, and identified protein and phosphopeptide signatures defining each cluster. Pathway enrichment analysis of these signatures further revealed that leukotriene-neutrophil activation pathways were upregulated in everolimus-resistant tumors.
+
+PROJECT DESCRIPTION:
+Inhibition of mTOR attenuates the initiation and progression of BRCA1-associated mammary tumors
+
+SAMPLE PROCESSING:
+Frozen tissue samples were weighed and washed with cold Phosphate-Buffered Saline (PBS) to remove blood contamination, put into tissueTUBE (Covaris, Woburn, MA), snap-frozen in liquid nitrogen, and pulverized using cryoPREP Tissue Disruption system (CP02, Covaris, MA, USA). The pulverized tissue powder was aliquoted from 10-20mg for protein extraction. For TMTpro18-plex proteomic and phosphoproteomic analyses, cryopulverized tissue powder samples were solubilized in SDS solubilization buffer (5% SDS, 50mM TEAB pH 8.5) using S220 Focused-ultrasonicator (Covaris). Proteins were tryptic-digested using S-Trap™ spin columns (Protifi, Huntington, NY) following the manufacturer’s instructions. The samples were reduced by DTT and alkylated by iodoacetamide (IAA). After quenching the alkylation reaction, additional SDS and phosphoric acid were added for the final concentration to be 5% SDS and 1.2% phosphoric acid. Acidified samples were mixed with 90% methanol in 100mM TEAB, loaded into the S-Trap micro columns, and incubated with mass spec grade trypsin/LysC (Promega) for 3 hours at 47°C. Eluted peptides were evaporated using a vacuum concentrator and cleaned up using C18 spin columns (Thermo Fisher Scientific, Rockford, IL). Desalted peptide samples were reconstituted in 100mM TEAB and labeled using TMTpro 18plex reagents (Thermo Fisher Scientific). Each prepared TMT reagent was transferred to the peptide sample, the mixture was incubated for 1 hour, quenched by the addition of 8 mL of 5% hydroxylamine, and incubated for 15 minutes at room temperature. Differently labeled 18-plex peptides were pooled and dried using a vacuum concentrator.
+
+DATA PROCESSING:
+The raw MS files were processed using Proteome Discoverer version 3.0 (Thermo Fisher Scientific, Waltham, MA). The tandem mass spectra search was conducted using the SEQUEST HT algorithm against the Mus musculus SwissProt protein sequence data (v.2022.05) downloaded from the Uniprot database with the following parameters: full enzyme digest using trypsin (After KR/−) up to 2 missed cleavages; a precursor ion mass tolerance of 10 ppm (monoisotopic mass); a fragment ion mass tolerance of 0.02 Da (monoisotopic mass); static modifications of 304.2071 Da on lysine residues and peptide N-termini for TMT labeling and 57.02 Da on cysteine residues for carbamidomethylation; and variable modifications of 15.99 Da for methionine oxidation and 79.97 Da on serine, threonine, or tyrosine residues for phosphorylation in the search of phosphoproteomes. In accordance with the established target-decoy search strategy [26], the search results were filtered at a false discovery rate (FDR) < 1% for identifying peptides and proteins. Using the “Reporter Ions Quantifier” node in Proteome Discoverer, peptides were first quantified by calculating reporter ion relative intensities, and after selecting the peptides with co-isolation interference < 50%, proteins were then quantified by summing relative abundances of their sibling peptides, followed by normalizing the summed relative abundances of all proteins across the samples.
+
+SUPPLEMENTARY:
+Supporting information
+DATA AVAILABILITY STATEMENT
+All generated global and phosphoproteomic data have been deposited in the ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the PRIDE partner repository, with PXD054301 as the identifier.

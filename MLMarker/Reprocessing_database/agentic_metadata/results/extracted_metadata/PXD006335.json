@@ -1,0 +1,119 @@
+{
+  "sample_groups": [
+    {
+      "name": "HeLa APC/C SUMOylation and Binding Analysis",
+      "organism": [
+        {
+          "value": "Homo sapiens",
+          "evidence": "human cell lines",
+          "ontology_id": "organisms:0001",
+          "ontology_name": "Homo sapiens",
+          "similarity": 1.0
+        }
+      ],
+      "tissue": [],
+      "disease": [],
+      "cell_part": [],
+      "cell_line": [
+        {
+          "value": "HeLa",
+          "evidence": "HeLa cells expressing GFP-APC WT",
+          "ontology_name": "HeLa",
+          "similarity": 1.0
+        }
+      ],
+      "instrument": [
+        {
+          "value": "Orbitrap Q-Exactive",
+          "evidence": "Orbitrap Q-Exactive (Thermo)",
+          "ontology_id": "instruments:0011",
+          "ontology_name": "Q Exactive",
+          "similarity": 1.0
+        }
+      ],
+      "fragmentation": [],
+      "enzymes": [
+        {
+          "value": "trypsin",
+          "evidence": "incubated with 2 µg of trypsin",
+          "ontology_id": "enzymes:0002",
+          "ontology_name": "trypsin",
+          "similarity": 1.0
+        }
+      ],
+      "modifications": [
+        {
+          "value": "C-carbamidomethylation",
+          "evidence": "alkylation implied by standard proteomics workflow",
+          "ontology_id": "modifications:0001",
+          "ontology_name": "C-carbamidomethylation",
+          "similarity": 1.0
+        }
+      ],
+      "collision_energy": [],
+      "gradient_time_min": [],
+      "lc_column": [],
+      "acquisition": [],
+      "labeling": [
+        {
+          "value": "label-free",
+          "evidence": "label-free quantification (LFQ) analysis",
+          "ontology_id": "labeling:0001",
+          "ontology_name": "label-free",
+          "similarity": 1.0
+        }
+      ],
+      "fractionation": {
+        "value": false,
+        "method": null,
+        "evidence": "no fractionation described for MS samples"
+      },
+      "enrichment": {
+        "value": null,
+        "method": null,
+        "evidence": "No PTMs are included in the dataset"
+      },
+      "ionization": [],
+      "treatment_type": [
+        {
+          "value": "gene knockdown",
+          "evidence": "inducible knockdown constructs for SAE1 and SAE2"
+        },
+        {
+          "value": "gene knockdown",
+          "evidence": "knockdown of APC4 via shRNA"
+        }
+      ],
+      "treatment_name": [
+        {
+          "value": "shRNA targeting SAE1",
+          "evidence": "ishSAE1"
+        },
+        {
+          "value": "shRNA targeting SAE2",
+          "evidence": "ishSAE2.1"
+        },
+        {
+          "value": "shRNA targeting APC4",
+          "evidence": "shRNA against APC4"
+        }
+      ],
+      "treatment_class": [
+        {
+          "value": "biologics",
+          "evidence": "shRNA targeting SAE1",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        },
+        {
+          "value": "biologics",
+          "evidence": "shRNA targeting APC4",
+          "ontology_id": "treatments:0002",
+          "ontology_name": "biologics",
+          "similarity": 1.0
+        }
+      ]
+    }
+  ]
+}
