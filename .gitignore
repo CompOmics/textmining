@@ -1,2 +1,63 @@
 ontology_refs/taxonomy/
 corpus/Figure1_source/data/GoldenAnnotations/Representative20/PDFs/
+
+# Python and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editor and operating-system files
+.DS_Store
+*.swp
+*.swo
+
+# Prepared manuscript corpora and sharded run inputs
+/docetl_inputs_abstract_methods/
+/docetl_inputs_abstract_methods_pride/
+/production_inputs/
+/repair_inputs/
+/smoke_inputs/
+/multivalue_inputs/
+/pride_descriptor_test/
+
+# Downloaded ontology assets, indexes, and runtime products
+/framework/ontologies/
+/framework/ontology_cache/
+/framework/logs/
+/framework/production_outputs/
+/framework/repair_outputs/
+/framework/smoke_outputs/
+/framework/multivalue_outputs/
+/framework/normalization_audits/
+/framework/runtime_checks/
+
+# Scientific-generalization runtime data; keep prompts, scripts, and summaries
+/final_analyses/ScientificGeneralizationV2/inputs/
+/final_analyses/ScientificGeneralizationV2/outputs/
+/final_analyses/ScientificGeneralizationV2/logs/
+
+# Staircase runtime data; keep arms, scripts, figures, and benchmark results
+/final_analyses/Staircase/inputs/
+/final_analyses/Staircase/outputs/
+/final_analyses/Staircase/logs/
+/final_analyses/Staircase/runtime/
+/final_analyses/Staircase/benchmark_inputs/
+/final_analyses/Staircase/benchmark_runs/
+/final_analyses/_exercise_archive/
+
+# EuBIC model-IAA runtime data; keep workflow scripts and compact result tables
+/EuBIC-annotation/s0_model_iaa_27/inputs/
+/EuBIC-annotation/s0_model_iaa_27/logs/
+/EuBIC-annotation/s0_model_iaa_27/runs/
+/EuBIC-annotation/s0_model_iaa_27/results/
+/EuBIC-annotation/s0_model_iaa_27/chunked_full/
+/EuBIC-annotation/s0_model_iaa_27/chunked_smoke/runs/
+/EuBIC-annotation/s0_model_iaa_27/diagnostics/runs/
+/EuBIC-annotation/s0_model_iaa_27/glm_repetition_smoke/runs/
+/EuBIC-annotation/s0_model_iaa_27/PLOTS_COMPLETE
+/EuBIC-annotation/s0_model_iaa_27/CHUNKED_PLOTS_COMPLETE
+/EuBIC-annotation/s0_model_iaa_27/MODELS_READY
