@@ -1,0 +1,117 @@
+datasets:
+  manuscripts:
+    type: file
+    path: "{{ input_path }}"
+
+default_model: "openai/llama-4-scout"
+
+operations:
+  - name: annotate_brat
+    type: map
+    prompt: |
+      Purpose
+      You are designed to extract SDRF-Proteomics metadata from scientific manuscripts. Your output consists of BRAT-style annotation content, identifying entity spans and their character offsets in the provided text.
+
+      Note: No prior annotation examples are provided — this is a zero-shot run.
+
+      Sectional Scope
+      You must only extract metadata entities from the following sections:
+
+      - Title
+      - Abstract
+      - Materials & Methods
+
+      Tip: The Materials & Methods section includes both explicitly labeled sections and unlabeled paragraphs describing experimental procedures. If not labeled, use keywords such as `digested`, `mass spectrometry`, `sample preparation`, `digestion`, `peptides`, `enrichment`, etc., to heuristically infer inclusion.
+
+      Do not extract from:
+      - Introduction
+      - Results
+      - Discussion
+      - Supplementary Data Descriptions
+      - Tables or Figures (including captions)
+      - Acknowledgments or References
+      - Any other non-specified sections
+
+      Output Format
+      Produce BRAT-format annotations. Each annotation line must follow:
+        T<ID>	<EntityType> <StartOffset> <EndOffset>	<ExactMatchedText>
+
+      Example:
+        T1	Organism 25 30	mouse
+        T2	OrganismPart 102 107	liver
+        T3	Instrument 344 360	Orbitrap mass spectrometer
+
+      Entity List
+      Use ONLY the following predefined SDRF-Proteomics labels:
+
+      AcquisitionMethod, Age, AlkylationReagent, AnatomicSiteTumor, AncestryCategory, AssayName, Bait, BMI, BiologicalReplicate, CellLine, CellPart, CellType, CleavageAgent, CollisionEnergy, Compound, ConcentrationOfCompound, Depletion, DevelopmentalStage, Disease, DiseaseTreatment, EnrichmentMethod, Experiment, FactorValue, FlowRateChromatogram, FractionationMethod, FractionIdentifier, FractionationFraction, FragmentationMethod, FragmentMassTolerance, GeneticModification, Genotype, GradientTime, GrowthRate, Instrument, IonizationType, Label, MaterialType, Modification, MS2MassAnalyzer, NumberOfMissedCleavages, NumberOfFractions, NumberOfTechnicalReplicates, NumberOfSamples, NumberOfBiologicalReplicates, Organism, OrganismPart, OriginSiteDisease, PrecursorMassTolerance, PooledSample, ReductionReagent, SamplingTime, SampleTreatment, Separation, Sex, SourceName, Specimen, SpikedCompound, Staining, Strain, SupplementaryFile, SyntheticPeptide, TumorCellularity, TumorGrade, TumorSize, TumorSite, TumorStage, Time, Temperature, Treatment, TechnicalReplicate
+
+      Entity Extraction Guidelines
+      - Match only explicit mentions of metadata. Avoid general paraphrases unless they are semantically and contextually precise.
+      - Use the most specific label available. For example, annotate "trypsin" as CleavageAgent, not Compound.
+      - If a term maps to multiple possible labels, apply prioritization:
+        1. Use context to disambiguate the correct SDRF role.
+        2. If ambiguity remains, choose the narrower/more informative label over general ones.
+        3. If still uncertain, do not annotate.
+
+      Do not invent or normalize terms. Annotate as-is from the text.
+
+      Span Matching and Validity
+      - Annotate only contiguous spans of text.
+      - Do not annotate overlapping or nested spans.
+      - Annotated spans must correspond to complete grammatical units (no partial words, broken expressions).
+      - Allow both singular and plural mentions, case-insensitively.
+
+      Redundancy and Frequency
+      - Annotate every occurrence of an entity that meets criteria, even if repeated.
+      - Do not deduplicate or collapse mentions.
+
+      Character Offset Rules
+      - Offsets must be character-level indexes corresponding to the provided text.
+      - Ensure offset boundaries match the exact characters in the matched string.
+
+      Post-Processing Checks
+      After generating annotations:
+
+      1. Grammatical Validity Check
+      - Confirm that the span represents a grammatically valid and meaningful phrase.
+
+      2. Offset Validation
+      - Check that text[start:end] from the provided text exactly matches the extracted span.
+      - If the match fails, attempt automatic correction by expanding to nearest whitespace.
+      - If correction fails, discard the annotation.
+
+      3. Context Validation
+      - Check if the context of the entity supports the choice of label and if the biological context supports said label.
+
+      4. Go back to the text and check the context in which you annotated each entity to check for biological relevance with the associated label.
+
+      If one of the tests fails, remove the annotation from the final output.
+
+      TEXT:
+      {{ input.text }}
+
+      IMPORTANT JSON FORMATTING RULE:
+      BRAT format normally uses tab characters between fields. Since tabs are invalid in JSON strings, use the literal string "|||" (three pipe characters) as a tab substitute between annotation fields.
+
+      Example annotation line format (using ||| as tab):
+        T1|||Organism 25 30|||mouse
+        T2|||OrganismPart 102 107|||liver
+
+      Return a JSON object with a single field `ann_output` containing the complete annotation content as a multi-line string (one annotation per line, using ||| as field separator). If no entities are found, return an empty string.
+    output:
+      schema:
+        ann_output: "str"
+    validate:
+      - "isinstance(output['ann_output'], str)"
+    num_retries_on_validate_failure: 1
+
+pipeline:
+  steps:
+    - name: master_prompt_annotation
+      input: manuscripts
+      operations:
+        - annotate_brat
+  output:
+    type: file
+    path: "{{ output_path }}"

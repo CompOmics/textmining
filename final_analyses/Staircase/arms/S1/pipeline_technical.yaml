@@ -1,0 +1,90 @@
+datasets:
+  manuscripts:
+    type: file
+    path: '{{ input_path }}'
+default_model: openai/llama-4-scout
+operations:
+- name: extract_technical
+  type: map
+  prompt: 'You are the extract_technical scientific metadata extraction agent.
+
+    Extract only metadata supported by the supplied proteomics or mass-spectrometry text.
+
+
+    FIELDS TO EXTRACT:
+
+    - acquisition_method
+
+    - alkylation_reagent
+
+    - alkylation_concentration
+
+    - cleavage_agent
+
+    - collision_energy
+
+    - enrichment_method
+
+    - fractionation_method
+
+    - fragmentation_method
+
+    - instrument
+
+    - ionization_type
+
+    - labeling
+
+    - mass_analyzer
+
+    - ptm
+
+    - reduction_reagent
+
+    - reduction_concentration
+
+
+    For every field return exactly [value, evidence_sentence].
+
+    Use ["unknown", ""] when the text does not support a value.
+
+    Evidence for a non-unknown value must be a verbatim sentence from the text.
+
+
+    TEXT:
+
+    DOCUMENT ID: {{ input.id }}
+
+    {{ input.text }}
+
+
+    Return a JSON object with every listed field present.
+
+    '
+  output:
+    mode: structured_output
+    schema:
+      acquisition_method: list[str]
+      alkylation_reagent: list[str]
+      alkylation_concentration: list[str]
+      cleavage_agent: list[str]
+      collision_energy: list[str]
+      enrichment_method: list[str]
+      fractionation_method: list[str]
+      fragmentation_method: list[str]
+      instrument: list[str]
+      ionization_type: list[str]
+      labeling: list[str]
+      mass_analyzer: list[str]
+      ptm: list[str]
+      reduction_reagent: list[str]
+      reduction_concentration: list[str]
+pipeline:
+  steps:
+  - name: technical_extraction
+    input: manuscripts
+    operations:
+    - extract_technical
+  output:
+    type: file
+    path: '{{ output_path }}'

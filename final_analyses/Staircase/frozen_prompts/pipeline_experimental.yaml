@@ -1,0 +1,105 @@
+datasets:
+  manuscripts:
+    type: file
+    path: "{{ input_path }}"
+
+default_model: "openai/llama-4-scout"
+
+operations:
+  - name: extract_experimental
+    type: map
+    prompt: |
+      You are a scientific metadata extraction agent specializing in experimental design. Extract values from the text, using inference ONLY where indicated.
+
+      This paper may describe multiple experimental techniques. Extract ONLY from sections describing the proteomics or mass spectrometry experiment. Ignore all other experimental contexts.
+
+      FIELDS TO EXTRACT:
+      - biological_replicate: Description of distinct biological units (can INFER from "3 mice", "n=5 patients")
+      - technical_replicate: Repeated measurements of same material (can INFER from "triplicate injections")
+      - experimental_design: Study structure (INFER from "treated vs control", "time course")
+      - factor_value: Variables defining groups (treatment, genotype, condition)
+      - number_of_fractions: Total fractions if fractionation applied
+      - number_of_technical_replicates: Count of technical replicates
+      - number_of_biological_replicates: Count of biological replicates
+      - number_of_samples: Total biological samples
+      - technology_type: Proteomics technology used (e.g. "bottom-up proteomics", "shotgun proteomics", "top-down proteomics", "targeted proteomics", "affinity purification coupled with mass spectrometry proteomics")
+
+      For EACH field output EXACTLY a 2-element list: [single_value, single_evidence_sentence].
+      - The list MUST have exactly 2 elements. NEVER return more than 2 elements per field.
+      - Element 0: a SHORT, CLEAN value ONLY — no reasoning, no qualifications, no "not mentioned", no "but". Max ~5 words.
+        BAD: "treated vs control not mentioned, but time course evaluated"
+        GOOD: "time course"
+        BAD: "triplicate not mentioned, but samples randomized into batches of 20"
+        GOOD: "unknown"
+      - Element 1: a single evidence sentence (put reasoning/explanation HERE, not in element 0).
+      - VERBATIM values (number_of_*, number counts): element 0 must be a plain number (e.g. "6", "3", "1"). Evidence MUST contain the exact value.
+      - INFERRED values (experimental_design, factor_value, biological_replicate, technical_replicate):
+        prefix evidence with "inferred: " followed by the verbatim quote that supports the inference.
+        Example: ["treated vs control", "inferred: Samples from treated mice were compared to controls."]
+      - experimental_design must be ONE of: "treated vs control", "case vs control", "time course", "dose response", "cross-sectional", "longitudinal", "unknown"
+      - biological_replicate and technical_replicate: element 0 must be a plain number or "unknown". NEVER a description.
+      - If unclear → ["unknown", ""]
+      - Complete ALL fields systematically.
+
+      DEFAULT VALUE RULES:
+      - If no fractionation or pre-fractionation is described → number_of_fractions = "1"
+      - If no biological replicates are described or implied → number_of_biological_replicates = "1"
+
+      MULTI-COHORT STUDIES:
+      - If the paper describes multiple cohorts (discovery + validation, different patient sets), report values for the PRIMARY proteomics experiment (the main LC-MS/MS cohort), not the total across all cohorts.
+      - For number_of_biological_replicates: use the count from the main LC-MS/MS experiment.
+      - For number_of_samples: count only the samples run on the mass spectrometer (not IHC validation cohorts).
+      - For factor_value: summarize the primary contrast (e.g., "tumor vs non-tumor") rather than listing all individual conditions.
+
+      TEXT:
+      {{ input.text }}
+
+      Return a JSON object with ALL fields present.
+    output:
+      mode: structured_output
+      schema:
+        biological_replicate: "list[str]"
+        technical_replicate: "list[str]"
+        experimental_design: "list[str]"
+        factor_value: "list[str]"
+        number_of_fractions: "list[str]"
+        number_of_technical_replicates: "list[str]"
+        number_of_biological_replicates: "list[str]"
+        number_of_samples: "list[str]"
+        technology_type: "list[str]"
+    validate:
+      - "len(output['experimental_design']) == 2"
+      - "len(output['number_of_biological_replicates']) == 2"
+      - "len(output['number_of_samples']) == 2"
+      - "len(output['factor_value']) == 2"
+    num_retries_on_validate_failure: 2
+    gleaning:
+      num_rounds: 2
+      # Only glean when a non-unknown field has empty evidence (fix missing evidence, not verify good extractions)
+      if: "any(isinstance(v, list) and len(v) == 2 and v[0] not in ('unknown', '') and v[1] == '' for v in output.values())"
+      validation_prompt: |
+        You just extracted experimental design metadata. Review your extraction:
+        {{ output }}
+
+        For EACH field with a non-unknown value, check against the paper text you saw:
+        CRITICAL RULE: Evidence MUST NEVER be empty ("") for a non-unknown value. NEVER clear evidence during correction — use "inferred: <supporting sentence>" instead.
+
+        1. Evidence starting with "inferred: ": is the quoted text a VERBATIM quote that reasonably supports the synthesized value? (e.g., "inferred: mice were treated with..." → experimental_design "treated vs control" ✓)
+        2. Evidence NOT starting with "inferred: ": does it contain the extracted value as a substring? If NO: add "inferred: " prefix — do NOT clear to "".
+        3. For number_of_* fields: does the number exactly match what the evidence quote states?
+        4. For inferred fields WITHOUT an "inferred: " prefix: add it.
+        5. For default value "1" (no fractionation / no replicates): is the text truly silent?
+        6. Does every field contain EXACTLY 2 elements? A field with more than 2 elements is invalid — collapse multiple conditions into a single concise value in element 0.
+        7. Is evidence "" for any non-unknown field? Fix it — "inferred: <best supporting sentence>".
+
+        List each failing field and the specific issue. If ALL fields pass, say "VALID".
+
+pipeline:
+  steps:
+    - name: experimental_extraction
+      input: manuscripts
+      operations:
+        - extract_experimental
+  output:
+    type: file
+    path: "{{ output_path }}"

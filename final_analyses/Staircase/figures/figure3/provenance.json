@@ -1,0 +1,38 @@
+{
+  "benchmark": "SDRF benchmark",
+  "semantic_classification_threshold": 0.7,
+  "effective_final_metric_threshold": 0.5,
+  "models": [
+    "qwen3_8_27b",
+    "gemma4_31b",
+    "glm4_7"
+  ],
+  "arms": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+  ],
+  "replicates": [
+    {
+      "label": "replicate_1",
+      "index": "/data/groups/cmb/lennart.martens/HAMLET/textmining/final_analyses/Staircase/benchmark_runs/index.json",
+      "adapted_outputs": "/data/groups/cmb/lennart.martens/HAMLET/textmining/final_analyses/Staircase/benchmark_inputs"
+    },
+    {
+      "label": "replicate_2",
+      "index": "/data/groups/cmb/lennart.martens/HAMLET/textmining/final_analyses/Staircase/benchmark_runs/replicate_2/index.json",
+      "adapted_outputs": "/data/groups/cmb/lennart.martens/HAMLET/textmining/final_analyses/Staircase/benchmark_inputs/replicate_2"
+    },
+    {
+      "label": "replicate_3",
+      "index": "/data/groups/cmb/lennart.martens/HAMLET/textmining/final_analyses/Staircase/benchmark_runs/replicate_3/index.json",
+      "adapted_outputs": "/data/groups/cmb/lennart.martens/HAMLET/textmining/final_analyses/Staircase/benchmark_inputs/replicate_3"
+    }
+  ],
+  "panel_e_status": "not generated: S5 leave-one-out inference arms are unavailable",
+  "consistency_definition": "fraction of PXD-agent-field units with identical normalized values in all three runs, excluding units unknown in all runs",
+  "unknown_definition": "missing, empty, null/none, or literal unknown across the frozen union schema"
+}

@@ -1,0 +1,87 @@
+datasets:
+  manuscripts:
+    type: file
+    path: '{{ input_path }}'
+default_model: openai/llama-4-scout
+operations:
+- name: extract_biological
+  type: map
+  prompt: 'You are the extract_biological scientific metadata extraction agent.
+
+    Extract only metadata supported by the supplied proteomics or mass-spectrometry text.
+
+
+    FIELDS TO EXTRACT:
+
+    - species
+
+    - tissue
+
+    - cell_type
+
+    - disease_state
+
+    - sample_source
+
+    - age
+
+    - anatomic_site_tumor
+
+    - BMI
+
+    - cell_line
+
+    - sex
+
+    - strain
+
+    - material_type
+
+    - developmental_stage
+
+    - ethnicity
+
+
+    For every field return exactly [value, evidence_sentence].
+
+    Use ["unknown", ""] when the text does not support a value.
+
+    Evidence for a non-unknown value must be a verbatim sentence from the text.
+
+
+    TEXT:
+
+    DOCUMENT ID: {{ input.id }}
+
+    {{ input.text }}
+
+
+    Return a JSON object with every listed field present.
+
+    '
+  output:
+    mode: structured_output
+    schema:
+      species: list[str]
+      tissue: list[str]
+      cell_type: list[str]
+      disease_state: list[str]
+      sample_source: list[str]
+      age: list[str]
+      anatomic_site_tumor: list[str]
+      BMI: list[str]
+      cell_line: list[str]
+      sex: list[str]
+      strain: list[str]
+      material_type: list[str]
+      developmental_stage: list[str]
+      ethnicity: list[str]
+pipeline:
+  steps:
+  - name: biological_extraction
+    input: manuscripts
+    operations:
+    - extract_biological
+  output:
+    type: file
+    path: '{{ output_path }}'

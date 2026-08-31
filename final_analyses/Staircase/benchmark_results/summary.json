@@ -1,0 +1,608 @@
+{
+  "method": "mean, sample standard deviation, and two-sided 95% Student-t confidence interval across independent full inference runs",
+  "ddof": 1,
+  "n_replicates": 3,
+  "confidence_interval": {
+    "level": 0.95,
+    "method": "Student-t interval for the mean",
+    "degrees_of_freedom": 2,
+    "critical_value": 4.302652729911275
+  },
+  "matcher_behavior": {
+    "semantic_threshold": 0.7,
+    "effective_final_metric_threshold": 0.5,
+    "source_modified": false
+  },
+  "replicates": [
+    {
+      "label": "replicate_1",
+      "index": "/data/groups/cmb/lennart.martens/HAMLET/textmining/final_analyses/Staircase/benchmark_runs/index.json"
+    },
+    {
+      "label": "replicate_2",
+      "index": "/data/groups/cmb/lennart.martens/HAMLET/textmining/final_analyses/Staircase/benchmark_runs/replicate_2/index.json"
+    },
+    {
+      "label": "replicate_3",
+      "index": "/data/groups/cmb/lennart.martens/HAMLET/textmining/final_analyses/Staircase/benchmark_runs/replicate_3/index.json"
+    }
+  ],
+  "results": [
+    {
+      "model": "gemma4_31b",
+      "arm": "S0",
+      "n": 3,
+      "precision_mean": 0.9934666666666667,
+      "precision_sd": 0.011316065276116637,
+      "precision_ci95_low": 0.9653560021645798,
+      "precision_ci95_high": 1.0215773311687537,
+      "precision_values": [
+        1.0,
+        0.9804,
+        1.0
+      ],
+      "recall_mean": 0.5552333333333334,
+      "recall_sd": 0.001550268793897817,
+      "recall_ci95_low": 0.5513822521589172,
+      "recall_ci95_high": 0.5590844145077495,
+      "recall_values": [
+        0.5546,
+        0.5541,
+        0.557
+      ],
+      "f1_mean": 0.7004,
+      "f1_sd": 0.005046781152378248,
+      "f1_ci95_low": 0.6878631006159549,
+      "f1_ci95_high": 0.7129368993840451,
+      "f1_values": [
+        0.7022,
+        0.6947,
+        0.7043
+      ]
+    },
+    {
+      "model": "gemma4_31b",
+      "arm": "S1",
+      "n": 3,
+      "precision_mean": 1.0,
+      "precision_sd": 0.0,
+      "precision_ci95_low": 1.0,
+      "precision_ci95_high": 1.0,
+      "precision_values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_mean": 0.8190666666666667,
+      "recall_sd": 0.0019399312702602092,
+      "recall_ci95_low": 0.8142476102398284,
+      "recall_ci95_high": 0.823885723093505,
+      "recall_values": [
+        0.8178,
+        0.8213,
+        0.8181
+      ],
+      "f1_mean": 0.8977666666666666,
+      "f1_sd": 0.0013868429375143315,
+      "f1_ci95_low": 0.8943215578251831,
+      "f1_ci95_high": 0.9012117755081501,
+      "f1_values": [
+        0.8974,
+        0.8993,
+        0.8966
+      ]
+    },
+    {
+      "model": "gemma4_31b",
+      "arm": "S2",
+      "n": 3,
+      "precision_mean": 0.9977333333333334,
+      "precision_sd": 0.003925981830489472,
+      "precision_ci95_low": 0.9879806538122011,
+      "precision_ci95_high": 1.0074860128544656,
+      "precision_values": [
+        1.0,
+        1.0,
+        0.9932
+      ],
+      "recall_mean": 0.9372333333333334,
+      "recall_sd": 0.005831237718815219,
+      "recall_ci95_low": 0.9227477358092987,
+      "recall_ci95_high": 0.951718930857368,
+      "recall_values": [
+        0.9406,
+        0.9406,
+        0.9305
+      ],
+      "f1_mean": 0.9662,
+      "f1_sd": 0.005022947341949704,
+      "f1_ci95_low": 0.9537223070832573,
+      "f1_ci95_high": 0.9786776929167426,
+      "f1_values": [
+        0.9691,
+        0.9691,
+        0.9604
+      ]
+    },
+    {
+      "model": "gemma4_31b",
+      "arm": "S3",
+      "n": 3,
+      "precision_mean": 1.0,
+      "precision_sd": 0.0,
+      "precision_ci95_low": 1.0,
+      "precision_ci95_high": 1.0,
+      "precision_values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_mean": 0.9382666666666667,
+      "recall_sd": 0.0020207259421636597,
+      "recall_ci95_low": 0.933246905148437,
+      "recall_ci95_high": 0.9432864281848964,
+      "recall_values": [
+        0.9371,
+        0.9406,
+        0.9371
+      ],
+      "f1_mean": 0.9677666666666667,
+      "f1_sd": 0.0011547005383792525,
+      "f1_ci95_low": 0.9648982315133925,
+      "f1_ci95_high": 0.9706351018199408,
+      "f1_values": [
+        0.9671,
+        0.9691,
+        0.9671
+      ]
+    },
+    {
+      "model": "gemma4_31b",
+      "arm": "S4",
+      "n": 3,
+      "precision_mean": 1.0,
+      "precision_sd": 0.0,
+      "precision_ci95_low": 1.0,
+      "precision_ci95_high": 1.0,
+      "precision_values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_mean": 0.9394333333333333,
+      "recall_sd": 0.0020207259421636597,
+      "recall_ci95_low": 0.9344135718151036,
+      "recall_ci95_high": 0.944453094851563,
+      "recall_values": [
+        0.9406,
+        0.9371,
+        0.9406
+      ],
+      "f1_mean": 0.9684333333333333,
+      "f1_sd": 0.0011547005383792525,
+      "f1_ci95_low": 0.9655648981800591,
+      "f1_ci95_high": 0.9713017684866074,
+      "f1_values": [
+        0.9691,
+        0.9671,
+        0.9691
+      ]
+    },
+    {
+      "model": "gemma4_31b",
+      "arm": "S5",
+      "n": 3,
+      "precision_mean": 0.9612,
+      "precision_sd": 0.0020784609690826803,
+      "precision_ci95_low": 0.9560368167241065,
+      "precision_ci95_high": 0.9663631832758937,
+      "precision_values": [
+        0.9624,
+        0.9588,
+        0.9624
+      ],
+      "recall_mean": 0.9372,
+      "recall_sd": 0.0033511192160232267,
+      "recall_ci95_low": 0.9288753583785925,
+      "recall_ci95_high": 0.9455246416214076,
+      "recall_values": [
+        0.9339,
+        0.9371,
+        0.9406
+      ],
+      "f1_mean": 0.9490333333333333,
+      "f1_sd": 0.002050203241957601,
+      "f1_ci95_low": 0.9439403461430421,
+      "f1_ci95_high": 0.9541263205236244,
+      "f1_values": [
+        0.9479,
+        0.9478,
+        0.9514
+      ]
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S0",
+      "n": 3,
+      "precision_mean": 0.9777666666666667,
+      "precision_sd": 0.038509262954948026,
+      "precision_ci95_low": 0.8821043543049727,
+      "precision_ci95_high": 1.0734289790283607,
+      "precision_values": [
+        0.9333,
+        1.0,
+        1.0
+      ],
+      "recall_mean": 0.1715,
+      "recall_sd": 0.04087064961558601,
+      "recall_ci95_low": 0.06997167798237044,
+      "recall_ci95_high": 0.2730283220176296,
+      "recall_values": [
+        0.1314,
+        0.17,
+        0.2131
+      ],
+      "f1_mean": 0.2876333333333333,
+      "f1_sd": 0.059711165901641314,
+      "f1_ci95_low": 0.13930257429890733,
+      "f1_ci95_high": 0.43596409236775924,
+      "f1_values": [
+        0.2286,
+        0.2863,
+        0.348
+      ]
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S1",
+      "n": 3,
+      "precision_mean": 1.0,
+      "precision_sd": 0.0,
+      "precision_ci95_low": 1.0,
+      "precision_ci95_high": 1.0,
+      "precision_values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_mean": 0.6910666666666666,
+      "recall_sd": 0.010132291613121548,
+      "recall_ci95_low": 0.6658966589631132,
+      "recall_ci95_high": 0.71623667437022,
+      "recall_values": [
+        0.7007,
+        0.692,
+        0.6805
+      ],
+      "f1_mean": 0.8058666666666666,
+      "f1_sd": 0.007150058274820785,
+      "f1_ci95_low": 0.7881049372643039,
+      "f1_ci95_high": 0.8236283960690294,
+      "f1_values": [
+        0.813,
+        0.8059,
+        0.7987
+      ]
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S2",
+      "n": 3,
+      "precision_mean": 1.0,
+      "precision_sd": 0.0,
+      "precision_ci95_low": 1.0,
+      "precision_ci95_high": 1.0,
+      "precision_values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_mean": 0.9255333333333333,
+      "recall_sd": 0.004041451884327384,
+      "recall_ci95_low": 0.9154938102968737,
+      "recall_ci95_high": 0.9355728563697929,
+      "recall_values": [
+        0.9232,
+        0.9232,
+        0.9302
+      ],
+      "f1_mean": 0.9604666666666666,
+      "f1_sd": 0.0023671361036774613,
+      "f1_ci95_low": 0.9545863746024545,
+      "f1_ci95_high": 0.9663469587308786,
+      "f1_values": [
+        0.9591,
+        0.9591,
+        0.9632
+      ]
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S3",
+      "n": 3,
+      "precision_mean": 1.0,
+      "precision_sd": 0.0,
+      "precision_ci95_low": 1.0,
+      "precision_ci95_high": 1.0,
+      "precision_values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_mean": 0.9278666666666666,
+      "recall_sd": 0.002020725942163724,
+      "recall_ci95_low": 0.9228469051484367,
+      "recall_ci95_high": 0.9328864281848965,
+      "recall_values": [
+        0.9302,
+        0.9267,
+        0.9267
+      ],
+      "f1_mean": 0.9618666666666666,
+      "f1_sd": 0.0011547005383791885,
+      "f1_ci95_low": 0.9589982315133926,
+      "f1_ci95_high": 0.9647351018199407,
+      "f1_values": [
+        0.9632,
+        0.9612,
+        0.9612
+      ]
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S4",
+      "n": 3,
+      "precision_mean": 1.0,
+      "precision_sd": 0.0,
+      "precision_ci95_low": 1.0,
+      "precision_ci95_high": 1.0,
+      "precision_values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_mean": 0.9278666666666666,
+      "recall_sd": 0.002020725942163724,
+      "recall_ci95_low": 0.9228469051484367,
+      "recall_ci95_high": 0.9328864281848965,
+      "recall_values": [
+        0.9302,
+        0.9267,
+        0.9267
+      ],
+      "f1_mean": 0.9618666666666666,
+      "f1_sd": 0.0011547005383791885,
+      "f1_ci95_low": 0.9589982315133926,
+      "f1_ci95_high": 0.9647351018199407,
+      "f1_values": [
+        0.9632,
+        0.9612,
+        0.9612
+      ]
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S5",
+      "n": 3,
+      "precision_mean": 0.9566666666666667,
+      "precision_sd": 0.004445597072760142,
+      "precision_ci95_low": 0.945623191326561,
+      "precision_ci95_high": 0.9677101420067723,
+      "precision_values": [
+        0.9618,
+        0.9541,
+        0.9541
+      ],
+      "recall_mean": 0.9289000000000001,
+      "recall_sd": 0.009872689603142602,
+      "recall_ci95_low": 0.9043748794395058,
+      "recall_ci95_high": 0.9534251205604943,
+      "recall_values": [
+        0.9403,
+        0.9232,
+        0.9232
+      ],
+      "f1_mean": 0.9425333333333333,
+      "f1_sd": 0.00715914333795134,
+      "f1_ci95_low": 0.9247490353830334,
+      "f1_ci95_high": 0.9603176312836332,
+      "f1_values": [
+        0.9508,
+        0.9384,
+        0.9384
+      ]
+    },
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S0",
+      "n": 3,
+      "precision_mean": 0.9977333333333334,
+      "precision_sd": 0.003925981830489472,
+      "precision_ci95_low": 0.9879806538122011,
+      "precision_ci95_high": 1.0074860128544656,
+      "precision_values": [
+        1.0,
+        0.9932,
+        1.0
+      ],
+      "recall_mean": 0.39176666666666665,
+      "recall_sd": 0.018838612829328312,
+      "recall_ci95_low": 0.34496895809850864,
+      "recall_ci95_high": 0.43856437523482467,
+      "recall_values": [
+        0.4125,
+        0.3757,
+        0.3871
+      ],
+      "f1_mean": 0.5429666666666666,
+      "f1_sd": 0.034020630995519954,
+      "f1_ci95_low": 0.458454734229975,
+      "f1_ci95_high": 0.6274785991033582,
+      "f1_values": [
+        0.579,
+        0.5114,
+        0.5385
+      ]
+    },
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S1",
+      "n": 3,
+      "precision_mean": 1.0,
+      "precision_sd": 0.0,
+      "precision_ci95_low": 1.0,
+      "precision_ci95_high": 1.0,
+      "precision_values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_mean": 0.7551,
+      "recall_sd": 0.010778218776773815,
+      "recall_ci95_low": 0.7283254202701137,
+      "recall_ci95_high": 0.7818745797298863,
+      "recall_values": [
+        0.7542,
+        0.7663,
+        0.7448
+      ],
+      "f1_mean": 0.8560666666666666,
+      "f1_sd": 0.007201620188078013,
+      "f1_ci95_low": 0.8381768503710868,
+      "f1_ci95_high": 0.8739564829622465,
+      "f1_values": [
+        0.8535,
+        0.8642,
+        0.8505
+      ]
+    },
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S2",
+      "n": 3,
+      "precision_mean": 0.9977333333333334,
+      "precision_sd": 0.003925981830489472,
+      "precision_ci95_low": 0.9879806538122011,
+      "precision_ci95_high": 1.0074860128544656,
+      "precision_values": [
+        1.0,
+        1.0,
+        0.9932
+      ],
+      "recall_mean": 0.9477333333333333,
+      "recall_sd": 0.006537838582691793,
+      "recall_ci95_low": 0.9314924419561216,
+      "recall_ci95_high": 0.9639742247105451,
+      "recall_values": [
+        0.9465,
+        0.9548,
+        0.9419
+      ],
+      "f1_mean": 0.9719333333333333,
+      "f1_sd": 0.00511598801145324,
+      "f1_ci95_low": 0.9592245145807418,
+      "f1_ci95_high": 0.9846421520859249,
+      "f1_values": [
+        0.9724,
+        0.9768,
+        0.9666
+      ]
+    },
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S3",
+      "n": 3,
+      "precision_mean": 0.9954666666666666,
+      "precision_sd": 0.003925981830489472,
+      "precision_ci95_low": 0.9857139871455344,
+      "precision_ci95_high": 1.005219346187799,
+      "precision_values": [
+        1.0,
+        0.9932,
+        0.9932
+      ],
+      "recall_mean": 0.9447,
+      "recall_sd": 0.008835722947218292,
+      "recall_ci95_low": 0.9227508474154118,
+      "recall_ci95_high": 0.9666491525845882,
+      "recall_values": [
+        0.9409,
+        0.9548,
+        0.9384
+      ],
+      "f1_mean": 0.9692000000000001,
+      "f1_sd": 0.004403407771260815,
+      "f1_ci95_low": 0.9582613286947852,
+      "f1_ci95_high": 0.9801386713052149,
+      "f1_values": [
+        0.9694,
+        0.9735,
+        0.9647
+      ]
+    },
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S4",
+      "n": 3,
+      "precision_mean": 1.0,
+      "precision_sd": 0.0,
+      "precision_ci95_low": 1.0,
+      "precision_ci95_high": 1.0,
+      "precision_values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "recall_mean": 0.9574666666666667,
+      "recall_sd": 0.007538125319556149,
+      "recall_ci95_low": 0.938740925283753,
+      "recall_ci95_high": 0.9761924080495804,
+      "recall_values": [
+        0.9488,
+        0.9611,
+        0.9625
+      ],
+      "f1_mean": 0.9781666666666666,
+      "f1_sd": 0.0038888730158406137,
+      "f1_ci95_low": 0.9685061705514454,
+      "f1_ci95_high": 0.9878271627818879,
+      "f1_values": [
+        0.9737,
+        0.98,
+        0.9808
+      ]
+    },
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S5",
+      "n": 3,
+      "precision_mean": 0.9733333333333333,
+      "precision_sd": 0.0038083242158899176,
+      "precision_ci95_low": 0.9638729315297133,
+      "precision_ci95_high": 0.9827937351369532,
+      "precision_values": [
+        0.9692,
+        0.9741,
+        0.9767
+      ],
+      "recall_mean": 0.9491666666666667,
+      "recall_sd": 0.007677456175930454,
+      "recall_ci95_low": 0.9300948082490101,
+      "recall_ci95_high": 0.9682385250843233,
+      "recall_values": [
+        0.9441,
+        0.9454,
+        0.958
+      ],
+      "f1_mean": 0.9610666666666666,
+      "f1_sd": 0.005519359866264647,
+      "f1_ci95_low": 0.9473558166776417,
+      "f1_ci95_high": 0.9747775166556916,
+      "f1_values": [
+        0.9565,
+        0.9595,
+        0.9672
+      ]
+    }
+  ]
+}
