@@ -1,0 +1,70 @@
+{
+  "acquisition_method": [
+    "data dependent mode",
+    "Data acquisition was executed in data dependent mode with full MS scans acquired in the Orbitrap mass analyzer and selection of top 20 ions with dynamic exclusion"
+  ],
+  "alkylation_concentration": [
+    "50 mM",
+    "Gel bands containing proteins were cut, treated with 10 mM DTT and alkylated with 50 mM iodoacetamide before trypsin (Promega) digestion."
+  ],
+  "alkylation_reagent": [
+    "iodoacetamide",
+    "Gel bands containing proteins were cut, treated with 10 mM DTT and alkylated with 50 mM iodoacetamide before trypsin (Promega) digestion."
+  ],
+  "cleavage_agent": [
+    "trypsin",
+    "Gel bands containing proteins were cut, treated with 10 mM DTT and alkylated with 50 mM iodoacetamide before trypsin (Promega) digestion."
+  ],
+  "collision_energy": [
+    "unknown",
+    ""
+  ],
+  "enrichment_method": [
+    "unknown",
+    ""
+  ],
+  "fractionation_method": [
+    "unknown",
+    ""
+  ],
+  "fragmentation_method": [
+    "collision induced dissociation",
+    "followed by collision induced dissociation (CID) analysis of fragment ions in the ion trap with rapid scan rate."
+  ],
+  "ionization_type": [
+    "unknown",
+    ""
+  ],
+  "labeling": [
+    "SILAC",
+    "For stable isotope labeling, Hela cells were cultured in DMEM medium for SILAC (Thermo fisher, cat # 88364) supplemented with 10% dialyzed FBS (Sigma, F0392) and stable isotope labeled lysine and arginine"
+  ],
+  "mass_analyzer": [
+    "Orbitrap",
+    "full MS scans acquired in the Orbitrap mass analyzer and selection of top 20 ions with dynamic exclusion followed by collision induced dissociation (CID) analysis of fragment ions in the ion trap"
+  ],
+  "reduction_concentration": [
+    "10 mM",
+    "Gel bands containing proteins were cut, treated with 10 mM DTT and alkylated with 50 mM iodoacetamide before trypsin (Promega) digestion."
+  ],
+  "reduction_reagent": [
+    "DTT",
+    "Gel bands containing proteins were cut, treated with 10 mM DTT and alkylated with 50 mM iodoacetamide before trypsin (Promega) digestion."
+  ],
+  "instrument": {
+    "value": "Orbitrap Elite",
+    "is_normalized": true,
+    "evidence": "Peptides were separated by high pressure liquid chromatography (HPLC) using an Dionex Ultimate 3000 LC-system (Thermo Scientific) and analyzed with an Orbitrap Elite mass spectrometer (Thermo Scientific).",
+    "ontology_id": "MS:1001910",
+    "ontology_name": "Orbitrap Elite",
+    "similarity": 1.0
+  },
+  "ptm": {
+    "value": "carbamidomethylation, oxidation",
+    "is_normalized": true,
+    "evidence": "inferred: No explicit list of variable modifications is provided in the text, but standard MaxQuant parameters (implied by 'MaxQuant version 1.5.2.8') and the mention of 'carbamidomethylation' (from iodoacetamide alkylation) and 'oxidation' (common default) are typical; however, the text only explicitly mentions alkylation with iodoacetamide and reduction with DTT. The prompt asks to list modifications *searched*. The text does not explicitly state the search parameters for PTMs like oxidation or phosphorylation. It mentions 'Covalent post-translational modification (PTM) of proteins with acyl groups' in the abstract, but the MS section describes a SILAC pull-down for identification/quantification, not a targeted PTM search. However, iodoacetamide alkylation results in carbamidomethylation. Let's look closer. The text says 'alkylated with 50 mM iodoacetamide'. This creates carbamidomethyl cysteine. It does not mention searching for oxidation or other PTMs. I will extract carbamidomethylation as it is a fixed modification resulting from the stated procedure, but often 'unknown' is safer if not explicitly listed as a search term. Wait, the instruction says 'List all fixed and variable modifications mentioned'. Iodoacetamide alkylation is mentioned. The resulting modification is carbamidomethylation. Is it explicitly mentioned? No, the reagent is. I will mark as unknown to be safe as 'carbamidomethylation' is not a substring. Let's re-read: 'Extract ONLY values EXPLICITLY stated'. The text says 'alkylated with 50 mM iodoacetamide'. It does not say 'searched for carbamidomethylation'. Therefore, ptm should be unknown unless a specific PTM name is in the text. The abstract mentions 'acyl groups', 'acetylation', 'myristoylation'. But the MS section is for the pull-down experiment. Did they search for acylation? No, they searched for proteins enriched. They did not do a PTM search. So ptm is unknown.",
+    "ontology_id": "MOD:01679",
+    "ontology_name": "alpha-aminocarbamoylated residue",
+    "similarity": 0.796
+  }
+}

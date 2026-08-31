@@ -1,0 +1,46 @@
+{
+  "biological_replicate": [
+    "unknown",
+    "The text mentions 'processing replicates' and 'different cell numbers' but does not specify distinct biological sources (e.g., different mice, patients, or cell clones) for the main LC-MS/MS experiment."
+  ],
+  "experimental_design": [
+    "unknown",
+    "The study involves multiple distinct experiments (cell number scaling, T1D vs control comparison), but the primary description focuses on the technical platform's capability across varying cell loads rather than a single unified biological experimental design structure."
+  ],
+  "factor_value": [
+    "cell number",
+    "inferred: 'Cell concentrations were adjusted by serially diluting them in PBS to obtain different cell numbers in nanowells.'"
+  ],
+  "number_of_biological_replicates": [
+    "1",
+    "No specific number of biological replicates (e.g., distinct donors or cell passages) is defined for the main proteomics experiment, so defaulting to 1 per rule."
+  ],
+  "number_of_fractions": [
+    "1",
+    "No fractionation or pre-fractionation steps are described in the methods; samples are processed directly to LC-MS."
+  ],
+  "number_of_samples": [
+    "unknown",
+    "The text describes a range of cell numbers (10-140) and a chip with 21 droplets, but does not provide a specific total count of unique biological samples analyzed in the primary LC-MS/MS dataset."
+  ],
+  "number_of_technical_replicates": [
+    "unknown",
+    "The text mentions 'processing replicates' for CV calculation but does not specify a fixed number of technical replicates (e.g., triplicate injections) for the main experiment."
+  ],
+  "technical_replicate": [
+    "unknown",
+    "The text refers to 'processing replicates' but does not explicitly define the nature or count of repeated measurements of the same material as a standard technical replicate scheme."
+  ],
+  "technology_type": [
+    "shotgun proteomics",
+    "inferred: 'Data-dependent acquisition mode was used to trigger precursor isolation and sequencing.'"
+  ],
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "number_of_biological_replicates",
+      "value": "1",
+      "evidence": "No specific number of biological replicates (e.g., distinct donors or cell passages) is defined for the main proteomics experiment, so defaulting to 1 per rule."
+    }
+  ]
+}

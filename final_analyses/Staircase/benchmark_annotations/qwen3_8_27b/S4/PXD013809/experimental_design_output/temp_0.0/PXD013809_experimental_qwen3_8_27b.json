@@ -1,0 +1,38 @@
+{
+  "biological_replicate": [
+    "unknown",
+    "inferred: The text mentions 'biological replicate' in the context of shotgun proteomics and 'three replicates' in PCP analysis, but does not explicitly define the distinct biological units (e.g., independent cell culture experiments) for the primary LC-MS/MS cohorts."
+  ],
+  "experimental_design": [
+    "time course",
+    "inferred: Cells were stimulated with IFN\u03b2 for 'the designated length of time' and specifically harvested at 4 h and 24 h for SILAC labeling."
+  ],
+  "factor_value": [
+    "time",
+    "inferred: The experimental groups are defined by stimulation duration: control (light), 4 h IFN\u03b2 (medium), and 24 h IFN\u03b2 (heavy)."
+  ],
+  "number_of_biological_replicates": [
+    "3",
+    "inferred: Autocorrelations were ... aggregated across all three replicates using Stouffer\u2019s method."
+  ],
+  "number_of_fractions": [
+    "60",
+    "Every eighth fraction was then concatenated... (implying 40 fractions run, but 'Fractions were collected every 40 s for 60 min' implies 90 fractions collected; however, for SEC-PCP-SILAC, 'fractions 6\u201365... were submitted' implies 60 fractions. The primary proteomics experiment described as 'shotgun mass spectrometry' involves fractionation into 60-minute runs with fractions collected every 40s. 60 min / 40 s = 90 fractions. However, the SEC-PCP-SILAC experiment, which is the main focus for network analysis, uses 60 fractions (6-65). The prompt asks for the primary proteomics experiment. The shotgun SILAC is described first. Let's look at the shotgun fractionation: 'Fractions were collected every 40 s for 60 min.' That is 90 fractions. 'Every eighth fraction was then concatenated'. 90/8 is not an integer. Let's re-read carefully. 'Fractions were collected every 40 s for 60 min.' 3600s / 40s = 90 fractions. If every 8th is concatenated, 90/8 = 11.25. This is ambiguous. Let's look at the SEC-PCP-SILAC section: 'only fractions 6\u201365... were submitted for LC-MS/MS'. That is 60 fractions. The title is 'Dynamic rewiring... by interferon signaling'. The abstract mentions 'protein correlation profiling' (PCP). PCP relies on SEC fractions. The shotgun SILAC is likely for differential expression. The SEC-PCP-SILAC is the interaction mapping. The prompt says 'primary proteomics experiment (the main LC-MS/MS cohort)'. The SEC-PCP-SILAC is the most complex and central to the 'interactome' claim. 60 fractions are used there. Let's check the shotgun fractionation again. Maybe 'every 40s' is for the entire run? No, 'collected every 40 s for 60 min'. It's likely 90 fractions. But 'every eighth' suggests a total divisible by 8? 80 fractions? If the gradient is 60 min, and fractions are 40s, maybe the run is 53.3 min? No, 53-60 min gradient. It's safer to use the SEC-PCP-SILAC count if that is considered the 'main' one for the interaction network, or if the shotgun count is unclear. However, the SEC-PCP-SILAC section explicitly states 'fractions 6\u201365... were submitted'. That is 60 fractions. The shotgun section is less explicit about the final number analyzed due to concatenation. I will use 60 from the SEC-PCP-SILAC section as it is the distinct 'PCP' experiment highlighted in the abstract."
+  ],
+  "number_of_samples": [
+    "3",
+    "inferred: Three distinct SILAC conditions (light, medium, heavy) correspond to three biological samples (control, 4h, 24h) which are the units of biological replication."
+  ],
+  "number_of_technical_replicates": [
+    "unknown",
+    "The text mentions replicates for PCP but does not explicitly state the number of independent LC-MS/MS injections for the shotgun or IP-MS experiments per fraction/sample."
+  ],
+  "technical_replicate": [
+    "unknown",
+    "inferred: No explicit mention of repeated injections or technical replicates for the LC-MS/MS runs."
+  ],
+  "technology_type": [
+    "shotgun proteomics",
+    "For shotgun proteomic analysis, ~ 1.0 \u00d7 10^7 cells were harvested from control (light), 4 h IFN\u03b2 stimulation (medium), and 24 h IFN\u03b2 stimulation (heavy)."
+  ]
+}

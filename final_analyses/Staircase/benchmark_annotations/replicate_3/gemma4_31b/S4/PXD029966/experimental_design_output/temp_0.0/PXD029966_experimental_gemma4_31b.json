@@ -1,0 +1,52 @@
+{
+  "biological_replicate": [
+    "unknown",
+    "The text specifies n=5 or n=3 mice for various figures, but does not explicitly state the number of biological replicates specifically for the LC-MS/MS plasma analysis."
+  ],
+  "experimental_design": [
+    "treated vs control",
+    "inferred: Mouse plasma was collected from virgin and xmOVA-pregnant mice."
+  ],
+  "factor_value": [
+    "pregnant vs virgin",
+    "inferred: Mouse plasma was collected from virgin and xmOVA-pregnant mice."
+  ],
+  "number_of_biological_replicates": [
+    "1",
+    "No specific biological replicate count is provided for the mass spectrometry experiment; defaulting to 1 per instructions."
+  ],
+  "number_of_fractions": [
+    "1",
+    "No pre-fractionation of peptides is described before LC-MS/MS; defaulting to 1."
+  ],
+  "number_of_samples": [
+    "unknown",
+    "The text describes the processing of samples from pregnant and virgin mice but does not give a final total count of samples analyzed by MS."
+  ],
+  "number_of_technical_replicates": [
+    "2",
+    "analysed by liquid chromatography with tandem mass spectrometry (LC\u2013MS/MS; described below) in duplicate 2 \u03bcl injections."
+  ],
+  "technical_replicate": [
+    "2",
+    "analysed by liquid chromatography with tandem mass spectrometry (LC\u2013MS/MS; described below) in duplicate 2 \u03bcl injections."
+  ],
+  "technology_type": [
+    "bottom-up proteomics",
+    "inferred: Samples were digested with trypsin and analyzed by LC-MS/MS using a TripleTOF 6600 mass spectrometer."
+  ],
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "number_of_biological_replicates",
+      "value": "1",
+      "evidence": "No specific biological replicate count is provided for the mass spectrometry experiment; defaulting to 1 per instructions."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "number_of_fractions",
+      "value": "1",
+      "evidence": "No pre-fractionation of peptides is described before LC-MS/MS; defaulting to 1."
+    }
+  ]
+}

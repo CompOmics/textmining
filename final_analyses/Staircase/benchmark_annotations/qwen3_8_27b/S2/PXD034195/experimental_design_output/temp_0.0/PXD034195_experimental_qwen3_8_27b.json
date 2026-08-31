@@ -1,0 +1,38 @@
+{
+  "biological_replicate": [
+    "3",
+    "inferred: Three biological replicates were used for electrochemical, differential transcriptomic, and proteomic experiments."
+  ],
+  "experimental_design": [
+    "treated vs control",
+    "inferred: Differential protein expression levels were evaluated by comparing D. acetexigens cultures incubated with iron oxide minerals... against cultures grown with a soluble electron acceptor (i.e. fumarate)."
+  ],
+  "factor_value": [
+    "electron acceptor type",
+    "inferred: cultures incubated with iron oxide minerals (i.e. hematite, goethite, magnetite) and D. acetexigens biofilm on the electrode of MECs, against cultures grown with a soluble electron acceptor (i.e. fumarate)."
+  ],
+  "number_of_biological_replicates": [
+    "3",
+    "Three biological replicates were used for electrochemical, differential transcriptomic, and proteomic experiments."
+  ],
+  "number_of_fractions": [
+    "1",
+    ""
+  ],
+  "number_of_samples": [
+    "12",
+    "inferred: D. acetexigens cultures were incubated in triplicate... with hematite, goethite, or magnetite (9 samples) and Triplicate MECs... (3 samples) against fumarate controls, totaling 12 experimental samples plus controls described as 'cultures grown with a soluble electron acceptor' without specified replicate count for the control group in the proteomics section, but 'Three biological replicates were used for... proteomic experiments' implies 3 controls, making it ambiguous between 12 and 15. However, usually 'treated vs control' with 3 replicates per group means 3 treatments * 3 reps + 3 control reps = 12 total biological samples if fumarate is the single control group. Let's re-read: 'comparing D. acetexigens cultures incubated with iron oxide minerals (i.e. hematite, goethite, magnetite) and D. acetexigens biofilm on the electrode of MECs, against cultures grown with a soluble electron acceptor (i.e. fumarate)'. This lists 4 distinct conditions: Hematite, Goethite, Magnetite, Electrode Biofilm. Each likely has 3 biological replicates based on 'Three biological replicates were used... for proteomic experiments'. 4 conditions * 3 reps = 12 samples. If fumarate is the control, it is also 3 reps. So 5 conditions? 'against cultures grown with a soluble electron acceptor'. Usually controls are matched. If 4 treatments + 1 control = 5 groups * 3 = 15. Or if the text implies the 4 listed are the treatments and fumarate is the control. Let's look at the 'triplicate' mentions. 'cultures were incubated in triplicate' for the minerals. 'Triplicate MECs' for the electrode. Fumarate control count is not explicitly stated as triplicate in the proteomics section, but the statistics section says 'Three biological replicates were used for... proteomic experiments'. This suggests every condition had 3 replicates. Conditions: Hematite, Goethite, Magnetite, Electrode. That's 4 conditions. Plus Fumarate control. Total 5 conditions * 3 = 15? Or is 'treated vs control' implying the 4 insoluble/insoluble-like are treated and fumarate is control. Let's assume 3 replicates per group. How many groups? Hematite, Goethite, Magnetite, Electrode, Fumarate. That is 5 groups. 5 * 3 = 15. However, often 'triplicate' refers to the biological unit. Let's look closer. 'D. acetexigens cultures were incubated in triplicate... with hematite, goethite, or magnetite'. This implies 3 vials for each mineral? Or 3 vials total? 'incubated in triplicate' usually means 3 independent cultures. 'with hematite, goethite, or magnetite' suggests each mineral has triplicates. So 3 minerals * 3 = 9. 'Triplicate MECs' = 3. Total treated = 12. Control 'cultures grown with a soluble electron acceptor'. Did they do triplicate for control? 'Three biological replicates were used for... proteomic experiments'. This general statement likely applies to all groups. So 3 controls. Total 15. However, if I must be precise and the text doesn't explicitly say 'triplicate fumarate', but the stats section generalizes it. I will infer 15 based on 'Three biological replicates' applying to all conditions in the proteomics experiment. Wait, if I count 'number_of_samples', it is the total biological samples. If there are 5 groups (Hematite, Goethite, Magnetite, Electrode, Fumarate) and 3 reps each, it is 15. If 'treated vs control' simplifies it, maybe the 4 insoluble/insoluble are grouped? No, they are distinct minerals. Let's stick to the explicit 'triplicate' mentions for the treatments (9 + 3 = 12) and assume the control is also triplicate based on the stats section. 12 + 3 = 15. But is 'Electrode' a separate group from minerals? Yes. So 15 is the most defensible inference for total samples. However, if the question implies 'primary proteomics experiment' and I must be careful. Let's look at the 'biological_replicate' field. It asks for description of distinct units? No, 'element 0 must be a plain number'. The prompt says 'biological_replicate: Description of distinct biological units... element 0 must be a plain number or unknown'. This is contradictory to the field name usually being descriptive, but the rule is strict: 'plain number'. Okay. So biological_replicate = 3. number_of_biological_replicates = 3. number_of_samples: Total biological samples. If 3 reps per group, and 5 groups, 15. If 3 reps total? Unlikely for 'D. acetexigens cultures were incubated in triplicate... with hematite, goethite, or magnetite'. This phrasing strongly implies 3 replicates *per* condition for the minerals. Same for MECs. So 9 + 3 = 12 treated. Control: 'cultures grown with a soluble electron acceptor'. Stats: 'Three biological replicates were used for... proteomic experiments'. This implies the whole experiment adheres to 3 reps. So 3 controls. Total 15. I will use 15. Evidence: inferred from 'cultures were incubated in triplicate' for each of the 3 minerals and 'Triplicate MECs', plus 'Three biological replicates were used for... proteomic experiments' for the control."
+  ],
+  "number_of_technical_replicates": [
+    "unknown",
+    ""
+  ],
+  "technical_replicate": [
+    "unknown",
+    ""
+  ],
+  "technology_type": [
+    "shotgun proteomics",
+    "inferred: The proteome of the samples was characterized by nano-liquid chromatography\u2013tandem mass spectrometry (LC\u2013MS/MS) analysis. Data analysis was conducted using Spectronaut software... in directDIA mode."
+  ]
+}

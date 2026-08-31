@@ -1,0 +1,52 @@
+{
+  "biological_replicate": [
+    "unknown",
+    ""
+  ],
+  "experimental_design": [
+    "cross-sectional",
+    "inferred: The study combines comparative proteomics and genomics analysis of chromatin in eukaryotes and archaea across various species."
+  ],
+  "factor_value": [
+    "species",
+    "inferred: The proteomics analysis was performed on 26 species to identify histone post-translational modifications."
+  ],
+  "number_of_biological_replicates": [
+    "1",
+    "DEFAULT VALUE RULES: If no biological replicates are described or implied \u2192 number_of_biological_replicates = \"1\""
+  ],
+  "number_of_fractions": [
+    "1",
+    "DEFAULT VALUE RULES: If no fractionation or pre-fractionation is described \u2192 number_of_fractions = \"1\""
+  ],
+  "number_of_samples": [
+    "26",
+    "inferred: We retrieved the protein sequences of the canonical histones identified in each of the 26 species and we used them for the proteomic analysis of hPTMs"
+  ],
+  "number_of_technical_replicates": [
+    "unknown",
+    ""
+  ],
+  "technical_replicate": [
+    "unknown",
+    ""
+  ],
+  "technology_type": [
+    "bottom-up proteomics",
+    "inferred: Histones samples were... digested with trypsin... analyzed using a LTQ-Orbitrap Fusion Lumos mass spectrometer"
+  ],
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "number_of_biological_replicates",
+      "value": "1",
+      "evidence": "DEFAULT VALUE RULES: If no biological replicates are described or implied \u2192 number_of_biological_replicates = \"1\""
+    },
+    {
+      "type": "negated_evidence",
+      "field": "number_of_fractions",
+      "value": "1",
+      "evidence": "DEFAULT VALUE RULES: If no fractionation or pre-fractionation is described \u2192 number_of_fractions = \"1\""
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "biological_replicate": [
+    "21",
+    "inferred: a subset of 21 frozen breast tissue specimens was collected for this study"
+  ],
+  "experimental_design": [
+    "treated vs control",
+    "inferred: A set of four normal breast tissues was also collected ... and used to generate the DIA spectral library. (Note: While the primary analysis is case vs control within tumors, the inclusion of normal tissue for library generation and subsequent comparison of tumor subgroups against a baseline fits 'treated vs control' or 'case vs control'. Given the options, 'case vs control' is not an option, but 'treated vs control' is often used for disease vs normal. However, the text explicitly contrasts ER+ vs ER- and Spiculated vs Non-spiculated. Let's look at the allowed values: \"treated vs control\", \"case vs control\", \"time course\", \"dose response\", \"cross-sectional\", \"longitudinal\", \"unknown\". The study compares different tumor types/states. 'Cross-sectional' is a strong candidate for a snapshot analysis of different patient groups. However, usually 'case vs control' implies disease vs healthy. Here, the main contrast is tumor subtype/appearance. Let's re-evaluate. The prompt asks for ONE of the specific strings. The study is a comparison of different clinical groups (ER status, appearance). This is a cross-sectional study of cohorts. But 'case vs control' is often used for tumor vs normal. The text says 'differentially regulated protein networks in clinically relevant tumor subgroups'. It also uses normal tissues for library. The main differential analysis is between tumor subgroups. 'Cross-sectional' fits the design of taking a snapshot from a cohort. However, in proteomics metadata, 'case vs control' is often the catch-all for disease vs non-disease or subtype A vs subtype B. Let's look at the evidence: 'ER positive vs ER negative', 'spiculated and nonspiculated'. This is a comparative study. 'Cross-sectional' is technically correct. Let's check if 'case vs control' is better. The normal tissues are used for library, not necessarily for differential analysis against tumors in the main stats (GSEA is done on ER+ vs ER-). The main differential analyses are within the cancer cohort. Thus, 'cross-sectional' is the most accurate descriptor of the study structure (observing variables at one point in time across a population)."
+  ],
+  "factor_value": [
+    "ER status, appearance",
+    "inferred: DESeq analysis was performed with the ER status ... as the explanatory variable ... A separate DESeq analysis was also performed using the mammographic appearance ... as the explanatory variable."
+  ],
+  "number_of_biological_replicates": [
+    "21",
+    "inferred: a subset of 21 frozen breast tissue specimens was collected for this study"
+  ],
+  "number_of_fractions": [
+    "6",
+    "inferred: For DDA MS analysis ... strong anion-exchange fractionation ... peptides were eluted serially at different pHs: 8, 6, 5, 4, and 3. (Plus the load fraction, total 6 as stated in 'n of fractions: 6')"
+  ],
+  "number_of_samples": [
+    "21",
+    "inferred: a subset of 21 frozen breast tissue specimens was collected for this study ... Two samples sets ... set 1: 21 samples ... were analyzed by ... MS analyses."
+  ],
+  "number_of_technical_replicates": [
+    "1",
+    "unknown"
+  ],
+  "technical_replicate": [
+    "1",
+    "unknown"
+  ],
+  "technology_type": [
+    "data-independent acquisition",
+    "inferred: Here, we improved a data-independent acquisition mass spectrometry proteogenomic workflow"
+  ]
+}

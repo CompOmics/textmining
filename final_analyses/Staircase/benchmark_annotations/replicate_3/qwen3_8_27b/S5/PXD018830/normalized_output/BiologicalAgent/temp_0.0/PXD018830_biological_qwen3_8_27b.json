@@ -1,0 +1,84 @@
+{
+  "BMI": [
+    "below 30",
+    "This subset of samples was selected based on the following clinical criteria: a breast volume of more than 800 mL, no previous case nor familial history of breast or ovarian cancer, nonsmoker, no diabetes mellitus, and a body mass index below 30."
+  ],
+  "age": [
+    "unknown",
+    ""
+  ],
+  "anatomic_site_tumor": [
+    "unknown",
+    ""
+  ],
+  "cell_line": {
+    "value": "unknown",
+    "evidence": "",
+    "is_normalized": false
+  },
+  "developmental_stage": [
+    "adult",
+    "inferred: The samples are from \"primary breast cancer\" patients undergoing surgery, which implies adult patients, and \"breast volume of more than 800 mL\" indicates mature development."
+  ],
+  "ethnicity": [
+    "unknown",
+    ""
+  ],
+  "material_type": [
+    "tissue",
+    "All breast cancer specimens and normal tissues were processed through an AllPrep (Qiagen) protocol for the lysis and extraction of RNA and proteins (Figure 1E)."
+  ],
+  "sex": [
+    "female",
+    "All specimens were collected from women with primary breast cancer, who underwent tumor resection between 1991 and 2004."
+  ],
+  "strain": [
+    "unknown",
+    ""
+  ],
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "BMI",
+      "value": "below 30",
+      "evidence": "This subset of samples was selected based on the following clinical criteria: a breast volume of more than 800 mL, no previous case nor familial history of breast or ovarian cancer, nonsmoker, no diabetes mellitus, and a body mass index below 30."
+    }
+  ],
+  "cell_type": {
+    "value": "breast epithelial cells",
+    "is_normalized": true,
+    "evidence": "inferred: The text mentions \"epithelial-to-mesenchymal activity\" and \"breast cancer\", implying the tissue is of epithelial origin, though no specific cell line name is used for the primary samples.",
+    "ontology_id": "CL:0002327",
+    "ontology_name": "mammary gland epithelial cell",
+    "similarity": 0.988
+  },
+  "disease_state": {
+    "value": "breast cancer",
+    "is_normalized": true,
+    "evidence": "Here, we improved a data-independent acquisition mass spectrometry proteogenomic workflow to reveal distinct molecular features related to mammographic appearances in breast cancer.",
+    "ontology_id": "MONDO:0007254",
+    "ontology_name": "breast cancer",
+    "similarity": 1.0
+  },
+  "sample_source": {
+    "value": "tumor resection",
+    "is_normalized": false,
+    "evidence": "All specimens were collected from women with primary breast cancer, who underwent tumor resection between 1991 and 2004."
+  },
+  "species": {
+    "value": "Homo sapiens",
+    "is_normalized": true,
+    "evidence": "inferred: The text mentions \"human proteome database\" and \"human reference genome\", and the samples are from \"women\" and \"patients\".",
+    "ontology_id": "NCBITaxon:9606",
+    "ontology_name": "Homo sapiens",
+    "similarity": 1.0
+  },
+  "tissue": {
+    "value": "breast",
+    "is_normalized": true,
+    "evidence": "Here, we improved a data-independent acquisition mass spectrometry proteogenomic workflow to reveal distinct molecular features related to mammographic appearances in breast cancer.",
+    "ontology_id": "UBERON:0000310",
+    "ontology_name": "breast",
+    "similarity": 1.0
+  }
+}
