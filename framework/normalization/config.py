@@ -133,8 +133,8 @@ class NormalizationConfig:
         'fractionation': 'psi-ms',
         'pride_cv': 'pride-cv',
         # Modifications
-        'modification': 'unimod',
-        'ptm': 'unimod',
+        'modification': 'psimod',
+        'ptm': 'psimod',
         'psimod': 'psimod',
         # Other
         'experimental_factor': 'experimentalfactor',

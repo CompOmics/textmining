@@ -1,0 +1,130 @@
+datasets:
+  manuscripts:
+    type: file
+    path: "{{ input_path }}"
+
+default_model: "openai/llama-4-scout"  # DocETL uses litellm; openai-compat via base_url
+
+operations:
+  - name: extract_biological
+    type: map
+    # Jinja2 template — 'text' is the key our runner writes to each document
+    prompt: |
+      You are a scientific metadata extraction agent. Extract ONLY values EXPLICITLY stated in the text.
+
+      This paper may describe multiple experimental techniques. Extract ONLY from sections describing the proteomics or mass spectrometry experiment. Ignore all other experimental contexts.
+
+      FIELDS TO EXTRACT:
+      - species: Scientific organism name (e.g., Homo sapiens, Mus musculus, E. coli)
+      - tissue: Primary tissue/organ type (e.g., liver, brain, blood). For cancer studies use the organ of origin, NOT "tumor" or "tumorous tissue".
+      - cell_type: Cell type (e.g., T cells, hepatocytes, neurons)
+      - disease_state: Disease name if mentioned
+      - sample_source: SHORT biological origin phrase (2–5 words max: "cell culture", "tumor biopsy", "patient serum", "surgical resection"). NEVER copy a full sentence.
+      - age: Numerical age or age range
+      - anatomic_site_tumor: Specific tumor anatomical sub-location WITHIN the tissue (e.g., "bile ducts" within liver, "frontal lobe" within brain). Leave unknown if the paper only names the organ.
+      - BMI: Body mass index
+      - cell_line: Cell line name (e.g., HeLa, HEK293, MCF7)
+      - sex: Biological sex — report ALL groups (e.g., "48 females and 29 males"), not just one
+      - strain: Organism strain name
+      - material_type: Type of biological material (e.g., "cell line", "primary cells", "tissue", "biofluid", "organoid")
+      - developmental_stage: Developmental stage if stated (e.g., "embryonic", "fetal", "adult", "neonatal")
+      - ethnicity: Ethnic/ancestry group if stated (e.g., "Caucasian", "East Asian")
+
+      For EACH field output a 2-element list: [value, evidence_sentence].
+      - Element 0 (value): concise extracted or inferred term.
+      - Element 1 (evidence): a FULL verbatim sentence from the text — this CAN and SHOULD be a complete sentence. Never leave it empty for a non-unknown value.
+      - If not explicitly stated → ["unknown", ""]
+      - VERBATIM values: the evidence sentence MUST contain the exact extracted value as a substring.
+      - INFERRED values (e.g., species from "patient", disease from cell line): prefix evidence with
+        "inferred: " followed by the verbatim quote that supports the inference.
+        Example: ["Homo sapiens", "inferred: patient samples were collected from donors"]
+      - The "SHORT phrase" rule for sample_source applies ONLY to element 0 (value), NOT to element 1 (evidence). Evidence is always a full sentence.
+
+      SPECIES INFERENCE RULES:
+      - If the text mentions "human", "patient", "donor", "clinical samples", "biopsy" → species = "Homo sapiens"
+      - If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = "Homo sapiens"
+      - If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = "Mus musculus"
+      - If "mice" or "mouse" → "Mus musculus". If "rat" → "Rattus norvegicus". If "yeast" → "Saccharomyces cerevisiae"
+      - NEVER put a cell line name in the species field.
+
+      TISSUE INFERENCE RULES:
+      - HeLa → "cervix", HEK293 → "kidney", MCF-7 → "breast", A549 → "lung", Jurkat → "blood"
+      - If a cancer type names an organ ("gastric cancer", "lung adenocarcinoma") → infer tissue as that organ
+
+      DISEASE INFERENCE RULES:
+      - Healthy/control/normal samples with NO disease → disease_state = "normal"
+      - HeLa → "cervical adenocarcinoma", MCF-7 → "breast carcinoma", A549 → "lung adenocarcinoma"
+      - K562 → "chronic myeloid leukemia", Jurkat → "T-cell lymphoma"
+
+      CELL TYPE RULES:
+      - Extract the BIOLOGICAL cell type, not the cell line name.
+      - MCF-7 → "epithelial cell", Jurkat → "T cell", K562 → "myeloid cell", HepG2 → "hepatocyte"
+
+      SAMPLE SOURCE RULES:
+      - Must be a SHORT phrase (2–5 words) describing BIOLOGICAL origin: "healthy donors", "tumor biopsy", "cell culture", "patient serum", "surgical resection"
+      - NEVER copy a full sentence as the value — that belongs in the evidence field.
+      - NEVER extract institutional names or supplier names as sample source.
+
+      TEXT:
+      DOCUMENT ID: {{ input.id }}
+      {{ input.text }}
+
+      Return a JSON object with ALL fields present.
+    output:
+      mode: structured_output
+      schema:
+        species: "list[str]"
+        tissue: "list[str]"
+        cell_type: "list[str]"
+        disease_state: "list[str]"
+        sample_source: "list[str]"
+        age: "list[str]"
+        anatomic_site_tumor: "list[str]"
+        BMI: "list[str]"
+        cell_line: "list[str]"
+        sex: "list[str]"
+        strain: "list[str]"
+        material_type: "list[str]"
+        developmental_stage: "list[str]"
+        ethnicity: "list[str]"
+    # Validate the 2-element [value, evidence] structure for key fields
+    validate:
+      - "len(output['species']) == 2"
+      - "len(output['tissue']) == 2"
+      - "len(output['cell_type']) == 2"
+      - "len(output['disease_state']) == 2"
+      - "output['species'][0] == 'unknown' or output['species'][1] != ''"
+      - "output['cell_line'][0] == 'unknown' or output['cell_line'][1] != ''"
+      - "output['cell_type'][0] == 'unknown' or output['cell_type'][1] != ''"
+      - "output['sample_source'][0] == 'unknown' or output['sample_source'][1] != ''"
+    num_retries_on_validate_failure: 2
+    gleaning:
+      num_rounds: 2
+      # Only glean when a non-unknown field has empty evidence (fix missing evidence, not verify good extractions)
+      if: "any(isinstance(v, list) and len(v) == 2 and v[0] not in ('unknown', '') and v[1] == '' for v in output.values())"
+      validation_prompt: |
+        You just extracted biological metadata. Review your extraction:
+        {{ output }}
+
+        CRITICAL RULE: Evidence MUST NEVER be empty ("") for a non-unknown value. If you are about to set evidence to "", STOP — use "inferred: <best supporting quote>" instead.
+
+        For EACH field with a non-unknown value, check against the paper text you saw:
+        1. Evidence starting with "inferred: ": is the quoted text a VERBATIM quote that reasonably supports the inferred value? ✓
+        2. Evidence NOT starting with "inferred: ": does it contain the extracted value as a substring?
+           - If NO: do NOT clear the evidence. Instead add "inferred: " prefix → e.g. ["WEHI-231", "WEHI-231 cells were obtained..."] stays as-is if "WEHI-231" is in it; if not, change to ["WEHI-231", "inferred: WEHI-231 cells were obtained..."].
+           - WRONG correction: ["WEHI-231", ""] ← NEVER do this.
+           - RIGHT correction: ["WEHI-231", "inferred: WEHI-231 cells were obtained from ATCC."] ✓
+        3. For any "unknown" value: evidence should be "".
+        4. Is evidence "" for any non-unknown field? Fix it — find any sentence from the text that supports the value and use "inferred: <that sentence>".
+
+        List each failing field and the specific issue. If ALL fields pass, say "VALID".
+
+pipeline:
+  steps:
+    - name: biological_extraction
+      input: manuscripts
+      operations:
+        - extract_biological
+  output:
+    type: file
+    path: "{{ output_path }}"

@@ -5,6 +5,7 @@ Embedding-based index for ontology term search.
 import os
 import pickle
 import logging
+import threading
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional, Any
 
@@ -59,21 +60,38 @@ class OntologyIndex:
         except ImportError:
             raise ImportError("transformers and torch required for embeddings")
         
-        logger.info(f"Loading embedding model: {self.config.embedding_model}")
-        
-        self.tokenizer = AutoTokenizer.from_pretrained(self.config.embedding_model)
-        self.model = AutoModel.from_pretrained(self.config.embedding_model)
-        
-        # Set device
+        # Resolve the device before cache lookup so CPU and GPU models are not
+        # accidentally shared with one another.
         if self.config.use_gpu and torch.cuda.is_available():
             self._device = torch.device('cuda')
-            self.model = self.model.to(self._device)
-            logger.info("Using GPU for embeddings")
         else:
             self._device = torch.device('cpu')
-            logger.info("Using CPU for embeddings")
-        
-        self.model.eval()
+
+        cache_key = (self.config.embedding_model, str(self._device))
+        with self._model_cache_lock:
+            cached = self._model_cache.get(cache_key)
+            if cached is None:
+                logger.info(
+                    "Loading shared embedding model: %s on %s",
+                    self.config.embedding_model,
+                    self._device,
+                )
+                tokenizer = AutoTokenizer.from_pretrained(
+                    self.config.embedding_model
+                )
+                model = AutoModel.from_pretrained(self.config.embedding_model)
+                model = model.to(self._device)
+                model.eval()
+                self._model_cache[cache_key] = (tokenizer, model)
+                cached = (tokenizer, model)
+            else:
+                logger.debug(
+                    "Reusing shared embedding model: %s on %s",
+                    self.config.embedding_model,
+                    self._device,
+                )
+
+        self.tokenizer, self.model = cached
     
     def _embed_texts(self, texts: List[str]) -> np.ndarray:
         """
@@ -273,6 +291,24 @@ class OntologyIndex:
         results = self._search_index(query_emb, top_k)
         
         return results
+
+    def search_many(
+        self,
+        queries: List[str],
+        top_k: Optional[int] = None,
+    ) -> List[List[Tuple[str, str, float]]]:
+        """Search several query strings using one batched embedding pass."""
+        if self.embeddings is None:
+            raise ValueError("Index not built. Call build() first.")
+        if not queries:
+            return []
+
+        resolved_top_k = top_k or self.config.top_k
+        query_embeddings = self._embed_texts(queries)
+        return [
+            self._search_index(query_embedding, resolved_top_k)
+            for query_embedding in query_embeddings
+        ]
     
     def _search_index(self, 
                       query_emb: np.ndarray,
@@ -448,3 +484,8 @@ class OntologyIndex:
         
         index.build(graph, save_path=cache_path)
         return index
+    # All ontology indexes in a normalization process use the same embedding
+    # model.  Keeping a cache here avoids loading and copying SapBERT to the GPU
+    # once per ontology (up to 19 times in the full pipeline).
+    _model_cache: Dict[Tuple[str, str], Tuple[Any, Any]] = {}
+    _model_cache_lock = threading.Lock()
