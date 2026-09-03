@@ -1,0 +1,180 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The QExactive was operated in data-dependent mode with survey scans acquired at a resolution of 70,000 at m/z 200."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mm",
+      "evidence": "in the presence of 5 mm TCEP and 10 mm chloroacetamide."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "chloroacetamide",
+      "evidence": "in the presence of 5 mm TCEP and 10 mm chloroacetamide."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "LysC",
+      "evidence": "Bound proteins were partially digested by incubation with 0.4 μg LysC (Promega, WI, V1671) in 50 mm Tris pH 8.0 for 1h at 37 °C."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "The supernatant containing the cleaved proteins was then transferred to a new tube for full digestion of the proteins with 0.5 μg trypsin (Promega, V5111) overnight at 37 °C in the presence of 5 mm TCEP and 10 mm chloroacetamide."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "31",
+      "evidence": "fragmented by HCD with normalized collision energy of 31."
+    },
+    {
+      "value": "25",
+      "evidence": "fragmented by HCD with normalized collision energy of 25."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "NeutrAvidin agarose",
+      "evidence": "NeutrAvidin agarose beads (1 μl per μg of SrtA-labeled protein) were washed five times with 5-bead volumes of 100 mm TEAB pH 8.0 to remove all traces of possible free-amines"
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "loaded into a second stage tip containing SCX polystyrene-divinylbenzene copolymer modified with sulfonic acid (Supelco) and separated into six fractions as reported previously with slight modification in the composition of the fraction solutions"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "fragmented by HCD with normalized collision energy of 31."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "QExactive",
+      "evidence": "Peptide samples were measured on a QExactive mass spectrometer coupled to an easy-spray source and an easy-nLC system (all Thermo Fisher Scientific).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "ExionLC",
+      "normalization_candidate_ids": [
+        "MS:1003651",
+        "MS:1001806",
+        "MS:1001911",
+        "MS:1003245",
+        "MS:1000657"
+      ]
+    },
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "coupled to a QExactive mass spectrometer via an easy-spray source"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Peptide samples were measured on a QExactive mass spectrometer coupled to an easy-spray source and an easy-nLC system"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "myristoylated residue",
+      "evidence": "modifications: myristoylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00438",
+      "ontology_name": "myristoylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "myristoylated residue"
+    },
+    {
+      "value": "Cysteine carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation was selected as a fixed modification and methionine oxidation and acetylation of protein N terminus as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "Cysteine carbamidomethylation was selected as a fixed modification and methionine oxidation and acetylation of protein N terminus as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "acetylation of protein N terminus",
+      "evidence": "Cysteine carbamidomethylation was selected as a fixed modification and methionine oxidation and acetylation of protein N terminus as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.856,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "biotin modification",
+      "evidence": "We further allowed a biotin modification at the N terminus of any protein (formula: H14O2C10N2S; exact mass: 226.0776 Da) that we set as a variable modification to act as an internal control",
+      "is_normalized": true,
+      "ontology_id": "MOD:01885",
+      "ontology_name": "biotinylated residue",
+      "similarity": 0.909,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Biotinylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mm",
+      "evidence": "in the presence of 5 mm TCEP and 10 mm chloroacetamide."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "in the presence of 5 mm TCEP and 10 mm chloroacetamide."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.952,
+    "evidence_score": 0.905,
+    "completeness": 1.0,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "enrichment_method[0]",
+      "value": "NeutrAvidin agarose",
+      "evidence": "NeutrAvidin agarose beads (1 μl per μg of SrtA-labeled protein) were washed five times with 5-bead volumes of 100 mm TEAB pH 8.0 to remove all traces of possible free-amines"
+    }
+  ]
+}

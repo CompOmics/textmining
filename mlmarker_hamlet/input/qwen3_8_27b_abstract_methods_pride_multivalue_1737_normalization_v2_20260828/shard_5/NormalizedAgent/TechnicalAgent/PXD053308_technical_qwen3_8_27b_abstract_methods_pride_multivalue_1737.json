@@ -1,0 +1,186 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Data was acquired in the data-dependent mode, automatically switching between MS1 and MS2 acquisition."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "Next, the proteins within the gel pieces were alkylated with 20 mM iodoacetamide (IAA) in 50 mM Tris-HCl pH 8.0 for 20 min at room temperature in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Next, the proteins within the gel pieces were alkylated with 20 mM iodoacetamide (IAA) in 50 mM Tris-HCl pH 8.0 for 20 min at room temperature in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Gel pieces were then shrunk again in can for 5 min, dried and re-swollen in 50 μL of 50 mM triethylammonium bicarbonate (TEAB) pH 8.0 containing 5 mg/mL trypsin."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "32%",
+      "evidence": "The precursor ions for MS2 were isolated using a Quadrupole mass filter at a 0.7 Da isolation width, fragmented using a normalized 32% HCD of ion routing multipole and analyzed using ion trap."
+    },
+    {
+      "value": "65%",
+      "evidence": "The top 10 MS2 fragment ions in a subsequent scan were isolated and fragmented using HCD at a 65% normalized collision energy and analyzed using an Orbitrap mass analyser at a 50,000 resolution, in the scan range of 100–500 m/z."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "IMAC",
+      "evidence": "90% sample was used for immobilized metal affinity chromatography (IMAC)-based phospho-peptide enrichment and pooled in to 12 fractions."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "basic reverse phase chromatography",
+      "evidence": "Pooled peptides were resolved by basic reverse phase chromatography fractionation on a C18, 250 × 4.6 mm column, 5 μm, XBridge (Waters, Milford, MA) with flow rate at 500 μL/min with two buffers: buffer A (10 mM ammonium formate, pH 10) and buffer B (80% ACN, 10 mM ammonium formate, pH 10)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The top 10 MS2 fragment ions in a subsequent scan were isolated and fragmented using HCD at a 65% normalized collision energy and analyzed using an Orbitrap mass analyser at a 50,000 resolution, in the scan range of 100–500 m/z."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Tribrid",
+      "evidence": "Digested peptides were reconstituted in HPLC-grade 5% (v/v) ACN containing 0.1% (v/v) formic acid (FA) and into Orbitrap Fusion Tribrid mass spectrometer interfaced with Dionex Ultimate 3000 nanoflow liquid chromatography system.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002416",
+      "ontology_name": "Orbitrap Fusion",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Fusion"
+    },
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Digested peptides were reconstituted in HPLC-grade 5% (v/v) ACN containing 0.1% (v/v) formic acid (FA) and into Orbitrap Fusion Tribrid mass spectrometer interfaced with Dionex Ultimate 3000 nanoflow liquid chromatography system."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "Peptides were dissolved in 100 mM TEAB and labeled using TMT labels as per the manufacturer’s instructions."
+    },
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Full scan spectra (m/z 375-1,500) were acquired in the orbitrap with resolution set to 120,000 at m/z 400."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "oxidation",
+      "evidence": "Data was searched against the SwissProt human database with variable modifications allowing for oxidation of Met, phosphorylation of Ser/Thr or Tyr residues, along with oxidation or dioxidation modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "phosphorylation",
+      "evidence": "Data was searched against the SwissProt human database with variable modifications allowing for oxidation of Met, phosphorylation of Ser/Thr or Tyr residues, along with oxidation or dioxidation modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:21",
+      "ontology_name": "Phospho",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Phospho"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Carbamidomethylation of Cys was set as a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: phosphorylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: phosphorylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "the proteins within the gel pieces were reduced with 5 mM DTT in 50 mM Tris-HCl pH 8.0 for 20 min at 65°C."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "the proteins within the gel pieces were reduced with 5 mM DTT in 50 mM Tris-HCl pH 8.0 for 20 min at 65°C."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.946,
+    "evidence_score": 0.891,
+    "completeness": 1.0,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "20 mM",
+      "evidence": "Next, the proteins within the gel pieces were alkylated with 20 mM iodoacetamide (IAA) in 50 mM Tris-HCl pH 8.0 for 20 min at room temperature in the dark."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM",
+      "evidence": "the proteins within the gel pieces were reduced with 5 mM DTT in 50 mM Tris-HCl pH 8.0 for 20 min at 65°C."
+    }
+  ]
+}

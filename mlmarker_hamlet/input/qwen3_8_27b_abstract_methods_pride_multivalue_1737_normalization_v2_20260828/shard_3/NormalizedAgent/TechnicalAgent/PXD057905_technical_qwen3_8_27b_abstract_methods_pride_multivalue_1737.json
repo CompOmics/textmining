@@ -1,0 +1,192 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-dependent acquisition",
+      "evidence": "The Q-Exactive was operated in a data-dependent acquisition mode to automatically switch between full MS scan and MS/MS acquisition."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Smart trypsin",
+      "evidence": "After the immunoprecipitation, beads were subjected to two additional washes with water before performing an on-bead digest using Smart trypsin (Thermo Fisher Scientific)."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "The data were searched against the Human SwissProt database using a peptide mass tolerance of 10 parts per million, an MS/MS mass tolerance of 0.05, selecting trypsin as an enzyme (1 missed cleavage allowed), and oxidation of methionine, deamidation of NQ, phosphorylation of ST and acetylation of K, as variable modifications."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "normalized collision energy of 28%",
+      "evidence": "Before MSMS acquisition, the top 15 most intense precursor ions (charge state ≥2) were sequentially isolated in the Quad (m/z 1.6 window) and fragmented in the HCD collision cell (normalized collision energy of 28%)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "Antibody",
+      "evidence": "Total protein lysate (10 mg) was incubated for 3 hours with protein A Dynabeads (Invitrogen) and 10 μg of RASSF1A antibody (Atlas, #HPA040735) or rIgG at 4°C."
+    },
+    {
+      "value": "Affinity purification coupled with mass spectrometry proteomics",
+      "evidence": "experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition"
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Before MSMS acquisition, the top 15 most intense precursor ions (charge state ≥2) were sequentially isolated in the Quad (m/z 1.6 window) and fragmented in the HCD collision cell (normalized collision energy of 28%)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q-Exactive",
+      "evidence": "Seven percent of the sample was analyzed by liquid chromatography–tandem mass spectrometry (LC-MS/MS) using a Dionex UltiMate 3000 UPLC coupled to a Q-Exactive mass spectrometer (Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 0.98,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive"
+    },
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "LC-MS/MS raw files were label-free quantified using the Progenesis QI for proteomics software (v4. Non-linear dynamics, Waters)."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Survey-full MS scans were acquired in the Orbitrap mass analyzer over a mass/charge ratio (m/z) window of 380 to 1800 and at a resolution of 70 k (AGC target at 3 × 106 ions)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "The data were searched against the Human SwissProt database using a peptide mass tolerance of 10 parts per million, an MS/MS mass tolerance of 0.05, selecting trypsin as an enzyme (1 missed cleavage allowed), and oxidation of methionine, deamidation of NQ, phosphorylation of ST and acetylation of K, as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "deamidation of NQ",
+      "evidence": "The data were searched against the Human SwissProt database using a peptide mass tolerance of 10 parts per million, an MS/MS mass tolerance of 0.05, selecting trypsin as an enzyme (1 missed cleavage allowed), and oxidation of methionine, deamidation of NQ, phosphorylation of ST and acetylation of K, as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00565",
+      "ontology_name": "deglycosylated asparagine",
+      "similarity": 0.773,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation"
+    },
+    {
+      "value": "phosphorylation of ST",
+      "evidence": "The data were searched against the Human SwissProt database using a peptide mass tolerance of 10 parts per million, an MS/MS mass tolerance of 0.05, selecting trypsin as an enzyme (1 missed cleavage allowed), and oxidation of methionine, deamidation of NQ, phosphorylation of ST and acetylation of K, as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01318",
+      "ontology_name": "phosphorylation to amine thiol - site S",
+      "similarity": 0.778,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "phosphorylation to amine thiol - site S"
+    },
+    {
+      "value": "acetylation of K",
+      "evidence": "The data were searched against the Human SwissProt database using a peptide mass tolerance of 10 parts per million, an MS/MS mass tolerance of 0.05, selecting trypsin as an enzyme (1 missed cleavage allowed), and oxidation of methionine, deamidation of NQ, phosphorylation of ST and acetylation of K, as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00394",
+      "ontology_name": "monoacetylated residue",
+      "similarity": 0.788,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Acetylation (N terminus, N epsilon of Lysine, O of Serine) (Ac)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.952,
+    "evidence_score": 1.0,
+    "completeness": 0.76,
+    "format_score": 1.0
+  }
+}

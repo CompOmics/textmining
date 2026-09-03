@@ -1,0 +1,152 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The Orbitrap Fusion was operated in positive ion data-dependent mode for both MS2 and SPS-MS3 methods."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "375 mM iodoacetamide",
+      "evidence": "followed by alkylation of cysteine residues with 5 μl of 375 mM iodoacetamide, 30 min at room temperature."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "followed by alkylation of cysteine residues with 5 μl of 375 mM iodoacetamide, 30 min at room temperature."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Samples were then diluted tenfold with 25 mM TEAB and digested with sequencing grade trypsin (Promega) for 1 h with a 1:40 enzyme:protein ratio, 37 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "40% normalized collision energy",
+      "evidence": "HCD fragmentation was performed with 40% normalized collision energy, followed by analysis of fragment ions in the Orbitrap with nominal resolution of 6 × 104."
+    },
+    {
+      "value": "35% normalized collision energy",
+      "evidence": "SPS was applied to co-select 10 fragment ions for HCD-MS3 analysis."
+    },
+    {
+      "value": "55% normalized collision energy",
+      "evidence": "Co-selected precursors for SPS-MS3 underwent HCD fragmentation with 55% normalized collision energy, and were analysed in the Orbitrap with nominal resolution of 6 × 104."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "bRP",
+      "evidence": "The eluate was again reduced to dryness by vacuum centrifugation, and resuspended in 20 mM ammonium formate (pH 10.0), for high pH reversed-phase liquid chromatography."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "followed by selection of the most intense ions above an intensity threshold of 2 × 104 for high-energy collisional dissociation (HCD)-MS2 fragmentation."
+    },
+    {
+      "value": "CID",
+      "evidence": "The most intense ions above a threshold of 2 × 104 were selected for collision induced dissociation (CID)-MS2 fragmentation, with an AGC target and maximum accumulation time of 1 × 104 and 70 ms."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion",
+      "evidence": "instruments: Orbitrap Fusion",
+      "is_normalized": true,
+      "ontology_id": "MS:1002416",
+      "ontology_name": "Orbitrap Fusion",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "An electrospray voltage of 1.8 kV was applied to the eluent via the EASY-Spray column electrode."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "All mass spectrometry experiments were performed on an Orbitrap Fusion coupled with a Proxeon EASY-nLC 1000 (Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "TMT6plex-126 reporter+balance reagent acylated residue",
+      "evidence": "modifications: TMT6plex-126 reporter+balance reagent acylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:01720",
+      "ontology_name": "TMT6plex-126 reporter+balance reagent acylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "TMT6plex-126 reporter+balance reagent acylated residue"
+    },
+    {
+      "value": "carbamidomethylation of cysteine",
+      "evidence": "Mascot searches were performed against SwissProt mouse database (March 2013, 24,481 sequences), with carbamidomethylation of cysteine, and TMT 10-plex modification of lysine and peptide N termini set as modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01061",
+      "ontology_name": "S-carboxymethyl-L-cysteine",
+      "similarity": 0.803,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl cysteine"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "200 mM tris(2-carboxyethyl)phosphine",
+      "evidence": "Disulfide bonds were reduced with 5 μl of 200 mM tris(2-carboxyethyl)phosphine, 1 h at 37 °C"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "tris(2-carboxyethyl)phosphine",
+      "evidence": "Disulfide bonds were reduced with 5 μl of 200 mM tris(2-carboxyethyl)phosphine, 1 h at 37 °C"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.889,
+    "evidence_score": 0.8,
+    "completeness": 0.947,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "375 mM iodoacetamide",
+      "evidence": "followed by alkylation of cysteine residues with 5 μl of 375 mM iodoacetamide, 30 min at room temperature."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "collision_energy[1]",
+      "value": "35% normalized collision energy",
+      "evidence": "SPS was applied to co-select 10 fragment ions for HCD-MS3 analysis."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "200 mM tris(2-carboxyethyl)phosphine",
+      "evidence": "Disulfide bonds were reduced with 5 μl of 200 mM tris(2-carboxyethyl)phosphine, 1 h at 37 °C"
+    }
+  ]
+}

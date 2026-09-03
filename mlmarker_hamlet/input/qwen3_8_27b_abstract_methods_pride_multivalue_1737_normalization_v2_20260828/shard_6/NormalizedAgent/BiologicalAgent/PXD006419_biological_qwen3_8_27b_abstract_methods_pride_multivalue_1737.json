@@ -1,0 +1,170 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "mesenchymal stromal cells",
+      "evidence": "Mesenchymal stromal cells (MSC) are ideal candidates for cell therapies, due to their immune-regulatory and regenerative properties.",
+      "is_normalized": false,
+      "normalization_method": "related_synonym_requires_context",
+      "normalization_matched_text": "mesenchymal stromal cells",
+      "normalization_candidate_ids": [
+        "CL:0000134"
+      ],
+      "normalization_qc_flags": [
+        "related_synonym_requires_context"
+      ]
+    },
+    {
+      "value": "stem cell",
+      "evidence": "organism parts: Bone marrow; Cell culture; Lung; Stem cell",
+      "is_normalized": true,
+      "ontology_id": "CL:0000034",
+      "ontology_name": "stem cell",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "stem cell"
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "normal",
+      "evidence": "Lung function was measured by standard spirometry and only patients that did not have Bronchiolitis Obliterans Syndrome (according to the International Society for Heart and Lung Transplantation guidelines) i.e. normal lung function were included in this study.",
+      "is_normalized": true,
+      "ontology_id": "PATO:0000461",
+      "ontology_name": "normal",
+      "similarity": 0.999,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "normal"
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell culture",
+      "evidence": "organism parts: Bone marrow; Cell culture; Lung; Stem cell"
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "lung biopsy",
+      "evidence": "Lung-MSC were isolated from transbronchial biopsies (parenchymal tissue, biopsies were taken at Skåne University Hospital, Lund, Sweden) from lung-transplanted patients as previously described.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "bronchioalveolar lavage ",
+      "normalization_candidate_ids": [
+        "BTO:0000155",
+        "BTO:0001340",
+        "BTO:0001643",
+        "BTO:0000136"
+      ]
+    },
+    {
+      "value": "healthy donors",
+      "evidence": "Bone marrow-MSC were isolated from healthy donors as previously described.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "whole blood",
+      "normalization_candidate_ids": [
+        "BTO:0000089",
+        "BTO:0000131",
+        "BTO:0000572",
+        "BTO:0000570"
+      ]
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "lung",
+      "evidence": "organism parts: Bone marrow; Cell culture; Lung; Stem cell",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0002048",
+      "ontology_name": "lung",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "lung"
+    },
+    {
+      "value": "bone marrow",
+      "evidence": "organism parts: Bone marrow; Cell culture; Lung; Stem cell",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0002371",
+      "ontology_name": "bone marrow",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "bone marrow"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.882,
+    "evidence_score": 0.953,
+    "completeness": 0.529,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "disease_state[0]",
+      "value": "normal",
+      "evidence": "Lung function was measured by standard spirometry and only patients that did not have Bronchiolitis Obliterans Syndrome (according to the International Society for Heart and Lung Transplantation guidelines) i.e. normal lung function were included in this study."
+    }
+  ]
+}

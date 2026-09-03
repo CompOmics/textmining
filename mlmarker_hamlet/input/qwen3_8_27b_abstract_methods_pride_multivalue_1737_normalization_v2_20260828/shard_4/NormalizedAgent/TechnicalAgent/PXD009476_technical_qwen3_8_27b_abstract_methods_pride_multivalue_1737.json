@@ -1,0 +1,213 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "data‐dependent HCD MS/MS"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Proteins were alkylated in 10 mM iodoacetamide"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Proteins were alkylated in 10 mM iodoacetamide"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "adding trypsin (enzyme/protein ratio of 1/40 w/w)"
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "29",
+      "evidence": "collision energy of 29"
+    },
+    {
+      "value": "36%",
+      "evidence": "collision energy was 36%"
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "SAX HyperSep™ Retain AX Columns",
+      "evidence": "Intact glycopeptides were enriched using a SAX HyperSep™ Retain AX Columns (RAX; Yang et al, 2017)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "Peptides (100 μg) were split into 96 fractions using a 1220 Series HPLC"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "data‐dependent HCD MS/MS"
+    },
+    {
+      "value": "ETD",
+      "evidence": "sequential ETD/HCD‐MS2"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Fusion Lumos",
+      "evidence": "Fusion Lumos mass spectrometer",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Fusion Lumos",
+      "normalization_candidate_ids": [
+        "MS:1002732",
+        "MS:1003088",
+        "MS:1001109",
+        "MS:1001158",
+        "MS:1003577"
+      ]
+    },
+    {
+      "value": "Q-Exactive HF",
+      "evidence": "Q‐Exactive HF mass spectrometer",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 0.984,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive HF"
+    },
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: analyzed on a Fusion Lumos mass spectrometer with an EASY‐nLC 1200 system"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "Label‐free quantification using spectral counting"
+    },
+    {
+      "value": "Spectrum counting",
+      "evidence": "quantification: Spectrum counting"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Orbitrap Fusion Lumos"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "complex glycosylation",
+      "evidence": "modifications: complex glycosylation",
+      "is_normalized": true,
+      "ontology_id": "MOD:00725",
+      "ontology_name": "complex glycosylation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "complex glycosylation"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Static modification was carbamidomethylation (C).",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "oxidation (M), guanidination (K), Hex(1)HexNAc(1) (S/T), and HexNAc (S/T) as the variable modifications",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "guanidination",
+      "evidence": "oxidation (M), guanidination (K), Hex(1)HexNAc(1) (S/T), and HexNAc (S/T) as the variable modifications",
+      "is_normalized": false,
+      "normalization_method": "related_synonym_requires_context",
+      "normalization_matched_text": "guanidination",
+      "normalization_candidate_ids": [
+        "MOD:00445"
+      ],
+      "normalization_qc_flags": [
+        "related_synonym_requires_context"
+      ]
+    },
+    {
+      "value": "Hex(1)HexNAc(1)",
+      "evidence": "oxidation (M), guanidination (K), Hex(1)HexNAc(1) (S/T), and HexNAc (S/T) as the variable modifications",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:793",
+      "ontology_name": "Hex(1)HexNAc(1)",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Hex(1)HexNAc(1)"
+    },
+    {
+      "value": "HexNAc",
+      "evidence": "oxidation (M), guanidination (K), Hex(1)HexNAc(1) (S/T), and HexNAc (S/T) as the variable modifications",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:43",
+      "ontology_name": "HexNAc",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "HexNAc"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "reduced in 5 mM DTT at 37°C"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "reduced in 5 mM DTT at 37°C"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.892,
+    "evidence_score": 0.784,
+    "completeness": 1.0,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "10 mM",
+      "evidence": "Proteins were alkylated in 10 mM iodoacetamide"
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM",
+      "evidence": "reduced in 5 mM DTT at 37°C"
+    }
+  ]
+}

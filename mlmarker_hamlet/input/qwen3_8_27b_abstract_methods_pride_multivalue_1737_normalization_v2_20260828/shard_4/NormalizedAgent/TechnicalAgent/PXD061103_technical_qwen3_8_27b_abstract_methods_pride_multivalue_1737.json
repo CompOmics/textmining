@@ -1,0 +1,171 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "MS analysis was operated in data-dependent acquisition mode with a full MS scan between m/z 410–1200 at R = 60000 (m/z = 200), followed by 10 MS/MS scans at R = 60000 (m/z = 200) with an isolation width of 1.0 m/z."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "2 mM",
+      "evidence": "Purified MDK (350 μg/mL, 50 mM Tris-HCl, pH 8.0) was alkylated with 2 mM iodoacetamide for 1 h at RT in the dark to block any potential free thiols."
+    },
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Cys residues were reduced and alkylated by iodoacetamide."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "Quantified protein samples (~0.1 mg per TMT channel) were digested with Lys-C (1:100 w/w, Wako, distributor, #121–05063) for 2 h at 21 °C, followed by dilution to decrease urea to 2 M and trypsin digestion (1:50 w/w, Promega, #V5113) overnight at 21 °C."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Quantified protein samples (~0.1 mg per TMT channel) were digested with Lys-C (1:100 w/w, Wako, distributor, #121–05063) for 2 h at 21 °C, followed by dilution to decrease urea to 2 M and trypsin digestion (1:50 w/w, Promega, #V5113) overnight at 21 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30%",
+      "evidence": "The precursors with charge states of 2 to 7 were selected for HCD fragmentation with normalized collision energy set to 30%."
+    },
+    {
+      "value": "32–35%",
+      "evidence": "The settings of Q Exactive HF Orbitrap MS (Thermo Fisher Scientific) included the MS1 scan (~410–1600 m/z, 60,000 resolution, 1 × 106 AGC and 50 ms maximal ion time) and 20 data-dependent MS2 scans (fixed first mass of 120 m/z, 60,000 resolution, 1 × 105 AGC, ~110 ms maximal ion time, HCD, 32–35% normalized collision energy, ~1.0 m/z isolation window with 0.3 m/z offset, and ~15 s dynamic exclusion)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "basic pH reverse phase LC",
+      "evidence": "The pooled peptides were resolved by basic pH reverse phase LC on an XBridge C18 column (3.5 μm beads, 4.6 mm × 25 cm, Waters; buffer A: 10 mM ammonium formate, pH 8.0; buffer B: 95% acetonitrile, 10 mM ammonium formate, pH 8.0, ~2 h gradient, 40-concatenated fractions collected)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The precursors with charge states of 2 to 7 were selected for HCD fragmentation with normalized collision energy set to 30%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF Orbitrap MS",
+      "evidence": "LC-MS/MS acquisition was performed using an Ultimate 3000 RSLCnano System coupled to a Q Exactive HF Orbitrap MS (Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1003395",
+      "ontology_name": "Q Exactive GC Orbitrap",
+      "similarity": 0.933,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive GC Orbitrap"
+    },
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: LC-MS/MS acquisition was performed using an Ultimate 3000 RSLCnano System coupled to a Q Exactive HF Orbitrap MS (Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "We used an optimized protocol of TMT-LC/LC-MS/MS for deep proteome profiling."
+    },
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: LC-MS/MS acquisition was performed using an Ultimate 3000 RSLCnano System coupled to a Q Exactive HF Orbitrap MS (Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Cys carbamidomethylation",
+      "evidence": "Search parameters included precursor/product ion mass tolerance (± 10 ppm), full trypticity, static mass shift (TMT tags of 229.16293 304.2071453 and Cys carbamidomethylation of 57.02146 on cysteine), dynamic mass shift (Met oxidation of 15.99492), two maximal miscleavage sites, and three maximal modification sites.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "Met oxidation",
+      "evidence": "Search parameters included precursor/product ion mass tolerance (± 10 ppm), full trypticity, static mass shift (TMT tags of 229.16293 304.2071453 and Cys carbamidomethylation of 57.02146 on cysteine), dynamic mass shift (Met oxidation of 15.99492), two maximal miscleavage sites, and three maximal modification sites.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.848,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.943,
+    "evidence_score": 0.957,
+    "completeness": 0.826,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "alkylation_concentration[0]",
+      "value": "2 mM",
+      "evidence": "Purified MDK (350 μg/mL, 50 mM Tris-HCl, pH 8.0) was alkylated with 2 mM iodoacetamide for 1 h at RT in the dark to block any potential free thiols."
+    }
+  ]
+}

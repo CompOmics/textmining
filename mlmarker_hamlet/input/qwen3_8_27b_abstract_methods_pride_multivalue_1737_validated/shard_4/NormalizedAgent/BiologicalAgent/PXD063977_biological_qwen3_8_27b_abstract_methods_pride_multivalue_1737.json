@@ -1,0 +1,126 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "SH-SY5Y",
+      "is_normalized": true,
+      "evidence": "We quantified over 10,000 proteins and 19,000 phosphorylation events in SH-SY5Y cells, revealing concentration-dependent changes in protein abundance and phosphorylation status.",
+      "ontology_id": "CLO:0009015",
+      "ontology_name": "SH-SY5Y cell",
+      "similarity": 0.965
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "neuron",
+      "is_normalized": true,
+      "evidence": "inferred: We quantified over 10,000 proteins and 19,000 phosphorylation events in SH-SY5Y cells, revealing concentration-dependent changes in protein abundance and phosphorylation status.",
+      "ontology_id": "CL:0000540",
+      "ontology_name": "neuron",
+      "similarity": 1.0
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell line",
+      "evidence": "inferred: We investigated the dose-dependent effect of Pla-B on human cell lines using isobaric tag-based quantitative proteomics and phosphoproteomics techniques."
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "cell culture",
+      "is_normalized": true,
+      "evidence": "inferred: We investigated the dose-dependent effect of Pla-B on human cell lines using isobaric tag-based quantitative proteomics and phosphoproteomics techniques.",
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "is_normalized": true,
+      "evidence": "organisms: Homo sapiens (human)",
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "brain",
+      "is_normalized": true,
+      "evidence": "inferred: We quantified over 10,000 proteins and 19,000 phosphorylation events in SH-SY5Y cells, revealing concentration-dependent changes in protein abundance and phosphorylation status.",
+      "ontology_id": "UBERON:6110636",
+      "ontology_name": "insect adult cerebral ganglion",
+      "similarity": 1.0
+    }
+  ],
+  "_confidence": {
+    "overall": 0.829,
+    "evidence_score": 0.886,
+    "completeness": 0.429,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "cell_line_tissue_mismatch",
+      "field_a": "cell_line",
+      "value_a": "SH-SY5Y",
+      "ontology_id_a": "CLO:0009015",
+      "field_b": "tissue",
+      "value_b": "brain",
+      "ontology_id_b": "UBERON:6110636",
+      "expected_b": "UBERON:0001021",
+      "source": "CLO derives_from"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Data was acquired in data dependent acquisition (DDA) mode, using a Top10 method."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "a total of 120 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "a total of 120 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Each sample was then loaded onto S-Trap microcolumns (Protifi, USA). Samples were digested with trypsin (1:50 trypsin/protein) for 1.5 h at 47 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "IMAC",
+      "evidence": "Phosphopeptides were enriched from the total protein digest using a ProPac IMAC-10 column (4 × 50 mm) (Thermo Scientific, P.N. 063276)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    },
+    {
+      "value": "Q Exactive HFX",
+      "evidence": "The nanoUPLC was coupled online through a nanoESI emitter (10 μm tip; New Objective; Woburn, MA, USA) to a quadrupole orbitrap mass spectrometer (Q Exactive HFX, Thermo Scientific) using a FlexIon nanospray apparatus (Proxeon).",
+      "is_normalized": true,
+      "ontology_id": "MS:1002877",
+      "ontology_name": "Q Exactive HF-X",
+      "similarity": 0.983,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive HF-X"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "The nanoUPLC was coupled online through a nanoESI emitter (10 μm tip; New Objective; Woburn, MA, USA) to a quadrupole orbitrap mass spectrometer (Q Exactive HFX, Thermo Scientific) using a FlexIon nanospray apparatus (Proxeon)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Searches were performed with the label-free quantification option selected."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: The nanoUPLC was coupled online through a nanoESI emitter (10 μm tip; New Objective; Woburn, MA, USA) to a quadrupole orbitrap mass spectrometer (Q Exactive HFX, Thermo Scientific) using a FlexIon nanospray apparatus (Proxeon)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Fixed modification was set to carbamidomethylation of cysteines.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation of methionines",
+      "evidence": "For global proteomics variable modifications were set to oxidation of methionines, asparagine and glutamine deamidation, and protein N-terminal acetylation.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.931,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "deamidation",
+      "evidence": "For global proteomics variable modifications were set to oxidation of methionines, asparagine and glutamine deamidation, and protein N-terminal acetylation.",
+      "is_normalized": false,
+      "normalization_method": "ambiguous_exact_synonym",
+      "normalization_matched_text": "deamidation",
+      "normalization_candidate_ids": [
+        "MOD:00137",
+        "MOD:00219",
+        "MOD:00400",
+        "MOD:00565"
+      ],
+      "normalization_qc_flags": [
+        "ambiguous_ontology_match"
+      ]
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "For global proteomics variable modifications were set to oxidation of methionines, asparagine and glutamine deamidation, and protein N-terminal acetylation.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "phosphorylation",
+      "evidence": "For phosphoproteomics, phosphorylation of S, T, or Y were additionally included as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:21",
+      "ontology_name": "Phospho",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Phospho"
+    },
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "deamidated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "deamidated residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "a total of 120 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "a total of 120 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "cleavage_agent",
+      "value": "trypsin",
+      "evidence": "Each sample was then loaded onto S-Trap microcolumns (Protifi, USA). Samples were digested with trypsin (1:50 trypsin/protein) for 1.5 h at 47 °C.",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "trypsin",
+      "evidence": "Each sample was then loaded onto S-Trap microcolumns (Protifi, USA). Samples were digested with trypsin (1:50 trypsin/protein) for 1.5 h at 47 °C.",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.933,
+    "evidence_score": 0.917,
+    "completeness": 0.875,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "10 mM",
+      "evidence": "a total of 120 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM",
+      "evidence": "a total of 120 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    }
+  ]
+}

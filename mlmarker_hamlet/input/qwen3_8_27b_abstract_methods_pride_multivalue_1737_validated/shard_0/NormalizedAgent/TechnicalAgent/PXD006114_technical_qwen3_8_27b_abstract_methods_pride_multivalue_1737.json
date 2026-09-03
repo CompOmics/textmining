@@ -1,0 +1,202 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The Q Exactive was operated in data-dependent acquisition mode."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "50 mM iodoacetamide",
+      "evidence": "alkylated with 50 mM iodoacetamide for 1 h at room temperature"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "alkylated with 50 mM iodoacetamide for 1 h at room temperature"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Proteins were digested using trypsin (sequencing-grade, Promega); 1 \u00b5g trypsin per 50 \u00b5g protein overnight at room temperature."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "32%",
+      "evidence": "fragmented (collision energy (CE): 32%) by higher-energy collisional dissociation (HCD)"
+    },
+    {
+      "value": "75%",
+      "evidence": "fragmented by HCD (CE: 75%) in the HCD cell"
+    },
+    {
+      "value": "35%",
+      "evidence": "re-isolated and fragmeted by collision-induced dissociation (CID) in the LTQ ion trap at CE: 35%"
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "IMAC",
+      "evidence": "Phosphopeptides were sequentially enriched using phosphotyrosine immunoprecipitation (IP) and immobilized metal ion chromatography (IMAC)."
+    },
+    {
+      "value": "immunoprecipitation",
+      "evidence": "Phosphopeptides were sequentially enriched using phosphotyrosine immunoprecipitation (IP) and immobilized metal ion chromatography (IMAC)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "fragmented (collision energy (CE): 32%) by higher-energy collisional dissociation (HCD)"
+    },
+    {
+      "value": "CID",
+      "evidence": "re-isolated and fragmeted by collision-induced dissociation (CID) in the LTQ ion trap at CE: 35%"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "is_normalized": true,
+      "evidence": "instruments: Q Exactive",
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "with an integrated electrospray tip (~1 \u00b5m orifice)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Phosphopeptides were analyzed using a Thermo Q Exactive Hybrid Quadrupole-Orbitrap Plus mass spectrometer."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "TMT6plex-126 reporter+balance reagent acylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: TMT6plex-126 reporter+balance reagent acylated residue; monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:01720",
+      "ontology_name": "TMT6plex-126 reporter+balance reagent acylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "monohydroxylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: TMT6plex-126 reporter+balance reagent acylated residue; monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "phosphorylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: TMT6plex-126 reporter+balance reagent acylated residue; monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "evidence": "modifications: TMT6plex-126 reporter+balance reagent acylated residue; monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "Cysteine carbamidomethylation",
+      "is_normalized": true,
+      "evidence": "Cysteine carbamidomethylation, TMT-labeled lysine and protein N-terminal were searched as fixed modifications.",
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817
+    },
+    {
+      "value": "TMT-labeled lysine",
+      "is_normalized": true,
+      "evidence": "Cysteine carbamidomethylation, TMT-labeled lysine and protein N-terminal were searched as fixed modifications.",
+      "ontology_id": "MOD:00855",
+      "ontology_name": "N6,N6,N6-trimethyl-L-lysine (from L-lysinium residue)",
+      "similarity": 0.77
+    },
+    {
+      "value": "protein N-terminal",
+      "is_normalized": true,
+      "evidence": "Cysteine carbamidomethylation, TMT-labeled lysine and protein N-terminal were searched as fixed modifications.",
+      "ontology_id": "MOD:01456",
+      "ontology_name": "N-phosphorylated residue",
+      "similarity": 0.705
+    },
+    {
+      "value": "Oxidized methionine",
+      "is_normalized": true,
+      "evidence": "Oxidized methionine, and phosphorylation of serine, threonine, and tyrosine were searched as variable modifications.",
+      "ontology_id": "MOD:00719",
+      "ontology_name": "L-methionine sulfoxide",
+      "similarity": 0.852
+    },
+    {
+      "value": "phosphorylation of serine",
+      "is_normalized": true,
+      "evidence": "Oxidized methionine, and phosphorylation of serine, threonine, and tyrosine were searched as variable modifications.",
+      "ontology_id": "MOD:00046",
+      "ontology_name": "O-phospho-L-serine",
+      "similarity": 0.774
+    },
+    {
+      "value": "phosphorylation of threonine",
+      "is_normalized": true,
+      "evidence": "Oxidized methionine, and phosphorylation of serine, threonine, and tyrosine were searched as variable modifications.",
+      "ontology_id": "MOD:00047",
+      "ontology_name": "O-phospho-L-threonine",
+      "similarity": 0.766
+    },
+    {
+      "value": "phosphorylation of tyrosine",
+      "is_normalized": true,
+      "evidence": "Oxidized methionine, and phosphorylation of serine, threonine, and tyrosine were searched as variable modifications.",
+      "ontology_id": "MOD:00048",
+      "ontology_name": "O4'-phospho-L-tyrosine",
+      "similarity": 0.755
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM dithiothreitol (DTT)",
+      "evidence": "proteins were reduced with 10 mM dithiothreitol (DTT) for 1 h at 56\u00b0C"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol (DTT)",
+      "evidence": "proteins were reduced with 10 mM dithiothreitol (DTT) for 1 h at 56\u00b0C"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.945,
+    "evidence_score": 0.903,
+    "completeness": 0.966,
+    "format_score": 1.0
+  }
+}

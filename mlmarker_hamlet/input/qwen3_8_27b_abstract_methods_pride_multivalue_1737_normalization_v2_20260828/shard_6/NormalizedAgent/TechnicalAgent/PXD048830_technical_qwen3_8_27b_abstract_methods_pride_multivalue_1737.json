@@ -1,0 +1,158 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Mass spectra were acquired in data-dependent acquisition mode with a TOP15 method."
+    },
+    {
+      "value": "DIA",
+      "evidence": "Mass spectra were acquired in a data-independent manner using the MaxQuant.Live application."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "14 mm final concentration",
+      "evidence": "The protein solution was alkylated with chloroacetamide (CAA) (550 mm stock, 14 mm final concentration) for 30 min at room temperature in the dark, after which an aliquot corresponding to 20 mg total protein was subjected to filter-assisted digestion."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "chloroacetamide",
+      "evidence": "The protein solution was alkylated with chloroacetamide (CAA) (550 mm stock, 14 mm final concentration) for 30 min at room temperature in the dark, after which an aliquot corresponding to 20 mg total protein was subjected to filter-assisted digestion."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "After dilution (8 mL 100 mm Tris, pH 8.5) samples were digested with 200 µg trypsine (1:100) o/n at 37 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "25",
+      "evidence": "HCD fragmentation was performed at a normalized collision energy of 25."
+    },
+    {
+      "value": "27",
+      "evidence": "The 5 most abundant ions from each BoxCar scan were selected for HCD fragmentation at a normalized collision energy of 27."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "PTMScan Ubiquitin Remnant Motif (K-ε-GG) Kit (Cell Signaling)",
+      "evidence": "Ubiquitinated peptides were enriched by using the PTMScan Ubiquitin Remnant Motif (K-ε-GG) Kit (Cell Signaling)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "Strong CationExchange (SCX) fractionation",
+      "evidence": "Next, an aliquot was diluted 1:100 with A* and submitted to MS analysis using BoxCar methodology. For library measurement, 23 µL of diluted peptides from each condition (grouped by replicate) were combined and 169 µL of this mixture was submitted to Strong CationExchange (SCX) fractionation."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "HCD fragmentation was performed at a normalized collision energy of 25."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive Plus",
+      "evidence": "instruments: Q Exactive Plus",
+      "is_normalized": true,
+      "ontology_id": "MS:1002634",
+      "ontology_name": "Q Exactive Plus",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive Plus"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "quantification: MS1 intensity based label-free quantification method"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "MS spectra were acquired in the Orbitrap analyzer with a mass range of 300 to 1750 m/z at a resolution of 70,000 FWHM and a target value of 3 × 106 ions."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "ubiquitinylated lysine",
+      "evidence": "modifications: ubiquitinylated lysine",
+      "is_normalized": true,
+      "ontology_id": "MOD:01148",
+      "ontology_name": "ubiquitinylated lysine",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "ubiquitinylated lysine"
+    },
+    {
+      "value": "Carbamidomethylation",
+      "evidence": "Carbamidomethylation of cysteine residues was set as fixed, oxidation of methionine and protein N-terminal acetylation were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Carbamidomethylation of cysteine residues was set as fixed, oxidation of methionine and protein N-terminal acetylation were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "GlyGly modification of the lysine sidechain",
+      "evidence": "Carbamidomethylation of cysteine residues was set as fixed, GlyGly modification of the lysine sidechain, oxidation of methionine and protein N-terminal acetylation were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00908",
+      "ontology_name": "modified glycine residue",
+      "similarity": 0.718,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified glycine residue"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "Carbamidomethylation of cysteine residues was set as fixed, oxidation of methionine and protein N-terminal acetylation were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mm DTT",
+      "evidence": "The samples were quickly frozen in liquid nitrogen, ground to a fine powder, and resuspended in urea lysis buffer (8 m urea in 100 mm Tris-HCl, pH 8.5; 5 mm DTT)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "The samples were quickly frozen in liquid nitrogen, ground to a fine powder, and resuspended in urea lysis buffer (8 m urea in 100 mm Tris-HCl, pH 8.5; 5 mm DTT)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.964,
+    "evidence_score": 0.948,
+    "completeness": 0.952,
+    "format_score": 1.0
+  }
+}

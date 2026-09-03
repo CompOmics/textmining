@@ -1,0 +1,96 @@
+{
+  "biological_replicate": [
+    {
+      "value": "2",
+      "evidence": "inferred: Log2 IP over control ratios for three replicates were used for linear modeling with the R package limma, using empirical Bayes fit and calculating Benjamini–Hochberg adjusted P-values and FDR."
+    },
+    {
+      "value": "2",
+      "evidence": "inferred: The LFQ intensity ratios between sample versus control were used to calculate the log2 fold changes between auxin and control conditions in triplicates using the with limma package, using empirical Bayes fit."
+    }
+  ],
+  "experimental_design": [
+    {
+      "value": "treated vs control",
+      "evidence": "inferred: U2OS cells expressing no HA-tagged protein were used for comparison."
+    },
+    {
+      "value": "treated vs control",
+      "evidence": "inferred: The LFQ intensity ratios between sample versus control were used to calculate the log2 fold changes between auxin and control conditions in triplicates using the with limma package, using empirical Bayes fit."
+    }
+  ],
+  "factor_value": [
+    {
+      "value": "V5-RPB3 vs HA-RPB3",
+      "evidence": "inferred: V5-tagged RPB3-expressing U2OSSCAF1-AID or HA-tagged RPB3 expressing U2OS wild-type cells were used."
+    },
+    {
+      "value": "auxin vs control",
+      "evidence": "inferred: SCAF1 degradation in V5-RPB3-expressing U2OSSCAF1-AID was induced by adding auxin to the medium for 6 h prior to harvesting."
+    }
+  ],
+  "number_of_biological_replicates": [
+    {
+      "value": "2",
+      "evidence": "inferred: Log2 IP over control ratios for three replicates were used for linear modeling with the R package limma, using empirical Bayes fit and calculating Benjamini–Hochberg adjusted P-values and FDR."
+    },
+    {
+      "value": "2",
+      "evidence": "inferred: The LFQ intensity ratios between sample versus control were used to calculate the log2 fold changes between auxin and control conditions in triplicates using the with limma package, using empirical Bayes fit."
+    }
+  ],
+  "number_of_fractions": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "number_of_samples": [
+    {
+      "value": "4",
+      "evidence": "inferred: For each condition, 200 million cells were washed twice with sterile ice-cold PBS and then harvested in sterile ice-cold PBS containing phosphatase and protease inhibitor cocktails (Sigma), followed by centrifugation at 300 × g for 15 min at 4°C to collect cells."
+    }
+  ],
+  "number_of_technical_replicates": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "technical_replicate": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "technology_type": [
+    {
+      "value": "affinity purification coupled with mass spectrometry proteomics",
+      "evidence": "inferred: HA-RPB3 was immunoprecipitated and interacting proteins analyzed by quantitative mass spectrometry."
+    },
+    {
+      "value": "bottom-up proteomics",
+      "evidence": "inferred: NanoLC-MS/MS analyses were performed on an Orbitrap Fusion (Thermo Scientific) equipped with a PicoView Ion Source (New Objective) and coupled to an EASY-nLC 1000 (Thermo Scientific)."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "experimental_design",
+      "value": "treated vs control",
+      "evidence": "inferred: U2OS cells expressing no HA-tagged protein were used for comparison.",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    },
+    {
+      "field": "factor_value",
+      "value": "auxin vs control",
+      "evidence": "inferred: SCAF1 degradation in V5-RPB3-expressing U2OSSCAF1-AID was induced by adding auxin to the medium for 6 h prior to harvesting.",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.832,
+    "evidence_score": 0.75,
+    "completeness": 0.786,
+    "format_score": 1.0
+  }
+}

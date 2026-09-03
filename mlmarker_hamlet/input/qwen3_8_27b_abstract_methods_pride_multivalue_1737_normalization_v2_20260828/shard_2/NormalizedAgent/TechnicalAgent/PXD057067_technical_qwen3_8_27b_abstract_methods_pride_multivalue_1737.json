@@ -1,0 +1,187 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DIA",
+      "evidence": "experiment types: Data-independent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Free cysteine residues were alkylated with iodoacetamide at a final concentration of 10 mM for 20 min in the dark at RT."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Free cysteine residues were alkylated with iodoacetamide at a final concentration of 10 mM for 20 min in the dark at RT."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "the samples were digested with Lys-C (Wako) at a 1:100 enzyme-to-protein ratio and trypsin (Promega) at a 1:100 enzyme-to-protein ratio at 37°C for overnight incubation with shaking (1200 rpm) on a thermomixer (Thermo Fisher Scientific)."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "the samples were digested with Lys-C (Wako) at a 1:100 enzyme-to-protein ratio and trypsin (Promega) at a 1:100 enzyme-to-protein ratio at 37°C for overnight incubation with shaking (1200 rpm) on a thermomixer (Thermo Fisher Scientific)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "25%",
+      "evidence": "Mass spectrometry (MS) data were acquired on an Orbitrap Astral mass spectrometer (Thermo Fisher Scientific) in a data-independent acquisition mode, with a normalized collision energy of 25%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Mass spectrometry (MS) data were acquired on an Orbitrap Astral mass spectrometer (Thermo Fisher Scientific) in a data-independent acquisition mode, with a normalized collision energy of 25%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Astral",
+      "evidence": "Mass spectrometry (MS) data were acquired on an Orbitrap Astral mass spectrometer (Thermo Fisher Scientific) in a data-independent acquisition mode, with a normalized collision energy of 25%.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003378",
+      "ontology_name": "Orbitrap Astral",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Astral"
+    },
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "MS1 spectra were acquired in the Orbitrap at a resolution of 240 K, with a normalized automated gain control target 200%, a custom maximum injection time, and a scan range of 380–980 m/z."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation was specified as fixed modifications, while methionine oxidation, acetylation of the protein N-terminus, and deamidation (NQ) were set as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Cysteine carbamidomethylation was specified as fixed modifications, while methionine oxidation, acetylation of the protein N-terminus, and deamidation (NQ) were set as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "acetylation",
+      "evidence": "Cysteine carbamidomethylation was specified as fixed modifications, while methionine oxidation, acetylation of the protein N-terminus, and deamidation (NQ) were set as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:1",
+      "ontology_name": "Acetyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Acetyl"
+    },
+    {
+      "value": "deamidation",
+      "evidence": "Cysteine carbamidomethylation was specified as fixed modifications, while methionine oxidation, acetylation of the protein N-terminus, and deamidation (NQ) were set as variable modification.",
+      "is_normalized": false,
+      "normalization_method": "ambiguous_exact_synonym",
+      "normalization_matched_text": "deamidation",
+      "normalization_candidate_ids": [
+        "MOD:00137",
+        "MOD:00219",
+        "MOD:00400",
+        "MOD:00565"
+      ],
+      "normalization_qc_flags": [
+        "ambiguous_ontology_match"
+      ]
+    },
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "the proteins were reduced with tris (2-carboxyethyl) phosphine to a final concentration of 5 mM for 20 min at RT."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "tris (2-carboxyethyl) phosphine",
+      "evidence": "the proteins were reduced with tris (2-carboxyethyl) phosphine to a final concentration of 5 mM for 20 min at RT."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "labeling",
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study.",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study.",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.921,
+    "evidence_score": 0.9,
+    "completeness": 0.857,
+    "format_score": 1.0
+  }
+}

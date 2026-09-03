@@ -1,0 +1,166 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DIA",
+      "evidence": "Eluted peptides were analyzed using data-independent acquisition mode on the mass spectrometer."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "In a low-binding tube, reduce the proteins by adding 100 mM TCEP (final concentration, 5 mM) and incubate at 56\u00b0C for 30 min on a ThermoMixer."
+    },
+    {
+      "value": "20 mM",
+      "evidence": "Alkylate nonoxidized sulfhydryl groups with 100 mM indole-3-acetic acid [IAA; final concentration, 20 mM; prepared in 40 mM triethylammonium bicarbonate (TEABC) (pH 8.5)] in the dark at room temperature with shaking at 1000 rpm."
+    },
+    {
+      "value": "20 mM",
+      "evidence": "After cooling to room temperature, 20 mM IAA (10 \u03bcl of 100 mM stock made in milli-Q water) was added and incubated at room temperature for 30 min at 1200 rpm on a ThermoMixer."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "indole-3-acetic acid",
+      "evidence": "Alkylate nonoxidized sulfhydryl groups with 100 mM indole-3-acetic acid [IAA; final concentration, 20 mM; prepared in 40 mM triethylammonium bicarbonate (TEABC) (pH 8.5)] in the dark at room temperature with shaking at 1000 rpm."
+    },
+    {
+      "value": "IAA",
+      "evidence": "After cooling to room temperature, 20 mM IAA (10 \u03bcl of 100 mM stock made in milli-Q water) was added and incubated at room temperature for 30 min at 1200 rpm on a ThermoMixer."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin Lys-C",
+      "evidence": "Digest with 200 ng of trypsin Lys-C and incubate at 30\u00b0C for 16 hours without shaking."
+    },
+    {
+      "value": "trypsin/LysC",
+      "evidence": "Briefly, 20 \u03bcg of trypsin/LysC mix (MS grade; Pierce, 1863520) was reconstituted in 200 \u03bcl of 100 mM TEAB to a stock solution of 0.1 \u03bcg/ml."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30%",
+      "evidence": "Set HCD normalized collision energy to 30%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "streptavidin",
+      "evidence": "For LC-MS analysis, 3.5 mg of cell lysate was used for immunoprecipitation with 25 \u03bcl of streptavidin magnetic beads (Pierce, 88817) for 2 hours at 4\u00b0C with gentle rotation."
+    },
+    {
+      "value": "GFP-Trap",
+      "evidence": "Around 4 mg of the lysate in 1 ml of lysis buffer [20 mM Hepes (pH 7.5),150 mM NaCl,1 mM EDTA, 1 mM EGTA, 0.5% (by volume) NP-40, 1 mM NaVO4, 5 mM Na pyrophosphate, 50 mM sodium fluoride, 10 mM \u03b2-glycerophosphate, and a protease inhibitor mini tab] was immunoprecipitated using GFP magnetic beads (GFP-Trap Magnetic Particles M-270 Kit)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Select the most intense ions above an intensity threshold of 5000 for higher-energy collision dissociation (HCD) fragmentation."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Lumos",
+      "evidence": "Analyze the eluted peptides using an Orbitrap Lumos (Thermo Fisher Scientific) mass spectrometer."
+    },
+    {
+      "value": "Orbitrap Astral",
+      "evidence": "Peptides were analyzed by injecting 200 ng onto a Vanquish Neo UHPLC System operating in trap and elute mode coupled with an Orbitrap Astral Mass Spectrometer (Thermo Fisher Scientific)."
+    },
+    {
+      "value": "Orbitrap Fusion Lumos Tribrid",
+      "evidence": "Peptides were analyzed by injecting 2 \u03bcg onto an UltiMate 3000 RSLCnano System coupled with an Orbitrap Fusion Lumos Tribrid Mass Spectrometer (Thermo Fisher Scientific)."
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nano-electrospray",
+      "evidence": "Separate peptides on an EASY-Spray column (C18, 2 \u03bcM, 75 \u03bcm by 50 cm) with an integrated nano-electrospray emitter at a flow rate of 300 nl/min."
+    },
+    {
+      "value": "EASY-Spray",
+      "evidence": "Peptides were loaded onto a PepMap Neo Trap Cartridge (Thermo Fisher Scientific, no. 174500) and analyzed on a C18 EASY-Spray HPLC Column (Thermo Fisher Scientific, no. ES906) with a 11.8-min gradient from 1 to 55% Buffer B (Buffer A, 0.1% formic acid in water; Buffer B, 0.08% formic acid in 80:20 acetonitrile:water; 0.7 min at 1.8 \u03bcl/min from 1 to 4% B, 0.3 min at 1.8 \u03bcl/min from 4 to 8% B, 6.7 min at 1.8 \u03bcl/min from 8 to 22.5% B, 3.7 min at 1.8 \u03bcl/min from 22.5 to 35% B, and 0.4 min at 2.5 \u03bcl/min from 35 to 55% B)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Peptides were searched against the UniProt SwissProt Human database (released on 5 October 2021) using DiaNN (v1.8.1) in library-free mode."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Orbitrap Lumos"
+    },
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Orbitrap Astral"
+    },
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Orbitrap Fusion Lumos Tribrid"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "oxidation",
+      "evidence": "Configure variable modifications to include oxidation and dioxidation of methionine and phosphorylation of serine, threonine, and tyrosine."
+    },
+    {
+      "value": "dioxidation",
+      "evidence": "Configure variable modifications to include oxidation and dioxidation of methionine and phosphorylation of serine, threonine, and tyrosine."
+    },
+    {
+      "value": "phosphorylation",
+      "evidence": "Configure variable modifications to include oxidation and dioxidation of methionine and phosphorylation of serine, threonine, and tyrosine."
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Set carbamidomethylation of cysteine as a fixed modification."
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "In a low-binding tube, reduce the proteins by adding 100 mM TCEP (final concentration, 5 mM) and incubate at 56\u00b0C for 30 min on a ThermoMixer."
+    },
+    {
+      "value": "5 mM",
+      "evidence": "For reduction, the bead pellet was resuspended in 50 \u03bcl of 5% SDS-TEABC (12.5 \u03bcl of 20% SDS and 40 \u03bcl of 50 mM TEABC) and 5 mM TCEP [2.5 \u03bcl of 100 mM stock prepared in 50 mM TEAB (pH 8.5)] and incubated at 60\u00b0C for 30 min at 1200 rpm on a ThermoMixer with lid."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "In a low-binding tube, reduce the proteins by adding 100 mM TCEP (final concentration, 5 mM) and incubate at 56\u00b0C for 30 min on a ThermoMixer."
+    },
+    {
+      "value": "TCEP",
+      "evidence": "For reduction, the bead pellet was resuspended in 50 \u03bcl of 5% SDS-TEABC (12.5 \u03bcl of 20% SDS and 40 \u03bcl of 50 mM TEABC) and 5 mM TCEP [2.5 \u03bcl of 100 mM stock prepared in 50 mM TEAB (pH 8.5)] and incubated at 60\u00b0C for 30 min at 1200 rpm on a ThermoMixer with lid."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.975,
+    "evidence_score": 0.963,
+    "completeness": 0.967,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "ionization_type[1]",
+      "value": "EASY-Spray",
+      "evidence": "Peptides were loaded onto a PepMap Neo Trap Cartridge (Thermo Fisher Scientific, no. 174500) and analyzed on a C18 EASY-Spray HPLC Column (Thermo Fisher Scientific, no. ES906) with a 11.8-min gradient from 1 to 55% Buffer B (Buffer A, 0.1% formic acid in water; Buffer B, 0.08% formic acid in 80:20 acetonitrile:water; 0.7 min at 1.8 \u03bcl/min from 1 to 4% B, 0.3 min at 1.8 \u03bcl/min from 4 to 8% B, 6.7 min at 1.8 \u03bcl/min from 8 to 22.5% B, 3.7 min at 1.8 \u03bcl/min from 22.5 to 35% B, and 0.4 min at 2.5 \u03bcl/min from 35 to 55% B)."
+    }
+  ]
+}

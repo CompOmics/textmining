@@ -1,0 +1,148 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Data were acquired in automatic data-dependent switching mode, with a high-resolution MS scan (300-1600 m/z) selecting the 12 most intense ions prior to tandem MS (MS/MS) analysis."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "0.05 M",
+      "evidence": "Iodoacetamide (100\u00a0\u03bcl, 0.05\u00a0M prepared in UA buffer) was added to the filter units, incubated for 1\u00a0min on a thermomixer at 600\u00a0rpm and subsequently incubated in darkness for 20\u00a0min."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "Iodoacetamide",
+      "evidence": "Iodoacetamide (100\u00a0\u03bcl, 0.05\u00a0M prepared in UA buffer) was added to the filter units, incubated for 1\u00a0min on a thermomixer at 600\u00a0rpm and subsequently incubated in darkness for 20\u00a0min."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "In the first instance, proteins were digested in a wet chamber overnight at 37\u00b0C using a solution containing Lys-C (Lysl Endopeptidase, Wako) and ABC buffer (1:50, enzyme to protein ratio)."
+    },
+    {
+      "value": "Trypsin",
+      "evidence": "Meanwhile, remaining proteins on the filter unit were digested using a solution containing Sequencing Grade Modified Trypsin (Promega) and ABC buffer in a wet chamber at 37\u00b0C for a minimum of 4\u00a0hr."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27.0",
+      "evidence": "Scan parameters for MS2 were as follows: Resolution 17,500, AGC 5e4, MIT 250ms, NCE 27.0, Isolation window 1.6m/z."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "NCE 27.0"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "is_normalized": true,
+      "evidence": "instruments: Q Exactive",
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "Mass spectrometry analysis was performed on a Q-Exactive mass spectrometer (Thermo Scientific), connected to a Dionex Ultimate 3000 (RSLCnano) chromatography system (Thermo Scientific) incorporating an autosampler. Five microliters of Lys-C/tryptic peptides was loaded onto a fused silica emitter (75\u03bcm ID, pulled using a laser puller (Sutter Instruments P2000)), packed with 1.8\u03bc 120\u00c5 UChrom C18 packing material (NanoLCMS Solutions) and separated using an increasing acetonitrile gradient of 2 \u2013 35%, with a 180\u00a0min reverse phase gradient at a flow rate of 250 nl/min."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Label free quantification with a minimum ratio count of 2 was selected, the maximum number of missed cleavages was set at 2 and minimum peptide length was set to 7 amino acids."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Mass spectrometry analysis was performed on a Q-Exactive mass spectrometer (Thermo Scientific), connected to a Dionex Ultimate 3000 (RSLCnano) chromatography system (Thermo Scientific) incorporating an autosampler."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Carbamidomethyl (C)",
+      "is_normalized": true,
+      "evidence": "The search included a fixed modification of Carbamidomethyl (C) and variable modifications of Oxidation (M);Acetyl (Protein N-term).",
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.965
+    },
+    {
+      "value": "Oxidation (M)",
+      "is_normalized": true,
+      "evidence": "The search included a fixed modification of Carbamidomethyl (C) and variable modifications of Oxidation (M);Acetyl (Protein N-term).",
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 0.925
+    },
+    {
+      "value": "Acetyl (Protein N-term)",
+      "is_normalized": true,
+      "evidence": "The search included a fixed modification of Carbamidomethyl (C) and variable modifications of Oxidation (M);Acetyl (Protein N-term).",
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.796
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "0.1 M",
+      "evidence": "Once quantified, DL-DTT (DTT) was added to the lysates at a final concentration of 0.1\u00a0M DTT."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Once quantified, DL-DTT (DTT) was added to the lysates at a final concentration of 0.1\u00a0M DTT."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "collision_energy",
+      "value": "27.0",
+      "evidence": "Scan parameters for MS2 were as follows: Resolution 17,500, AGC 5e4, MIT 250ms, NCE 27.0, Isolation window 1.6m/z.",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.847,
+    "evidence_score": 0.739,
+    "completeness": 0.889,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "0.05 M",
+      "evidence": "Iodoacetamide (100\u00a0\u03bcl, 0.05\u00a0M prepared in UA buffer) was added to the filter units, incubated for 1\u00a0min on a thermomixer at 600\u00a0rpm and subsequently incubated in darkness for 20\u00a0min."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "0.1 M",
+      "evidence": "Once quantified, DL-DTT (DTT) was added to the lysates at a final concentration of 0.1\u00a0M DTT."
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "enterocyte",
+      "evidence": "Differential expression of proteins in particular from mature enterocytes, neutrophils, and plasma cells could distinguish untreated from treated CD mucosa, and Ig variable region IGHV5-51 expression was found to serve as a CD-specific marker of ongoing immune activation.",
+      "is_normalized": true,
+      "ontology_id": "CL:0000584",
+      "ontology_name": "enterocyte",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "enterocyte"
+    },
+    {
+      "value": "neutrophil",
+      "evidence": "Differential expression of proteins in particular from mature enterocytes, neutrophils, and plasma cells could distinguish untreated from treated CD mucosa, and Ig variable region IGHV5-51 expression was found to serve as a CD-specific marker of ongoing immune activation.",
+      "is_normalized": true,
+      "ontology_id": "CL:0000775",
+      "ontology_name": "neutrophil",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "neutrophil"
+    },
+    {
+      "value": "plasma cell",
+      "evidence": "Differential expression of proteins in particular from mature enterocytes, neutrophils, and plasma cells could distinguish untreated from treated CD mucosa, and Ig variable region IGHV5-51 expression was found to serve as a CD-specific marker of ongoing immune activation.",
+      "is_normalized": true,
+      "ontology_id": "CL:0000786",
+      "ontology_name": "plasma cell",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "plasma cell"
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "Celiac disease",
+      "evidence": "diseases: Celiac disease",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0005130",
+      "ontology_name": "celiac disease",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "celiac disease"
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "formalin-fixed, paraffin-embedded material",
+      "evidence": "In this study, differences in global protein expression of small intestinal biopsy specimens from CD patients were quantified by analyzing formalin-fixed, paraffin-embedded material using liquid chromatography-mass spectrometry and label-free protein quantitation."
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "small intestinal biopsy",
+      "evidence": "In this study, differences in global protein expression of small intestinal biopsy specimens from CD patients were quantified by analyzing formalin-fixed, paraffin-embedded material using liquid chromatography-mass spectrometry and label-free protein quantitation.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "small intestine",
+      "normalization_candidate_ids": [
+        "BTO:0000651",
+        "BTO:0000620",
+        "BTO:0000657"
+      ]
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "Small intestine",
+      "evidence": "organism parts: Small intestine",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0002108",
+      "ontology_name": "small intestine",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "small intestine"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.9,
+    "evidence_score": 1.0,
+    "completeness": 0.5,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "material_type[0]",
+      "value": "formalin-fixed, paraffin-embedded material",
+      "evidence": "In this study, differences in global protein expression of small intestinal biopsy specimens from CD patients were quantified by analyzing formalin-fixed, paraffin-embedded material using liquid chromatography-mass spectrometry and label-free protein quantitation."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "sample_source[0]",
+      "value": "small intestinal biopsy",
+      "evidence": "In this study, differences in global protein expression of small intestinal biopsy specimens from CD patients were quantified by analyzing formalin-fixed, paraffin-embedded material using liquid chromatography-mass spectrometry and label-free protein quantitation."
+    }
+  ]
+}

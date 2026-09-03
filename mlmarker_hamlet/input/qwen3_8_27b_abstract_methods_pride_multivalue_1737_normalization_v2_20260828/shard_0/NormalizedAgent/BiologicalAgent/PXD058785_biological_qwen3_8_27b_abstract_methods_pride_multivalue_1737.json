@@ -1,0 +1,140 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "myofibers",
+      "evidence": "Myofibers and progenitors were grown in 6-well plates.",
+      "is_normalized": true,
+      "ontology_id": "CL:0002372",
+      "ontology_name": "myotube",
+      "similarity": 0.995,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "myofiber"
+    },
+    {
+      "value": "progenitors",
+      "evidence": "Myofibers and progenitors were grown in 6-well plates.",
+      "is_normalized": true,
+      "ontology_id": "CL:0011026",
+      "ontology_name": "progenitor cell",
+      "similarity": 0.945,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "progenitor cell"
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "MELAS",
+      "evidence": "The m.3243A>G mutation is the major cause of Mitochondrial Encephalomyopathy Lactic Acidosis and Stroke Like episodes (MELAS).",
+      "is_normalized": false,
+      "normalization_method": "related_synonym_requires_context",
+      "normalization_matched_text": "MELAS",
+      "normalization_candidate_ids": [
+        "MONDO:0010789"
+      ],
+      "normalization_qc_flags": [
+        "related_synonym_requires_context"
+      ]
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell culture",
+      "evidence": "inferred: Myofibers and progenitors were grown in 6-well plates."
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "cell culture",
+      "evidence": "inferred: Myofibers and progenitors were grown in 6-well plates.",
+      "is_normalized": true,
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cell culture"
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "muscle",
+      "evidence": "inferred: We have therefore generated hiPSC-derived muscle fibres with variable heteroplasmic mtDNA mutation load without significantly affecting muscle differentiation potential.",
+      "is_normalized": false,
+      "normalization_method": "ambiguous_exact_synonym",
+      "normalization_matched_text": "muscle",
+      "normalization_candidate_ids": [
+        "UBERON:0001630",
+        "UBERON:0005090"
+      ],
+      "normalization_qc_flags": [
+        "ambiguous_ontology_match"
+      ]
+    }
+  ],
+  "_confidence": {
+    "overall": 0.857,
+    "evidence_score": 0.927,
+    "completeness": 0.467,
+    "format_score": 1.0
+  }
+}

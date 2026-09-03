@@ -1,0 +1,94 @@
+{
+  "biological_replicate": [
+    {
+      "value": "3",
+      "evidence": "inferred: In order to classify the clustered peptides into HLA alleles, we first identified for each allele its motif. For that we retrieved all HLA-I epitopes registered under this allele from the Immune epitope database (IEDB, www.iedb.org, as of July 2019)."
+    },
+    {
+      "value": "unknown",
+      "evidence": "For the HLA peptidomics analysis we used three experimental replicates per each cell line and each condition (empty vector/ overexpression and treated/ non-treated cells)."
+    },
+    {
+      "value": "unknown",
+      "evidence": "12T and 108T cells were treated with 250\u2009U/ml IFN\u03b3 (Peprotech) for 48\u2009h to induce a maximal expression of HLA molecules with minimal cell mortality. Three different experimental replicates of treated and non-treated cells were collected to cell pellets of 2\u2009\u00d7\u2009108 cells."
+    }
+  ],
+  "experimental_design": [
+    {
+      "value": "treated vs control",
+      "evidence": "inferred: Volcano plots which show differentially presented peptides of the relative intensities of HLA peptides between cells with overexpression of immunoproteasome subunits and empty vectors were created, as well as cells that were treated and non-treated with IFN\u03b3."
+    }
+  ],
+  "factor_value": [
+    {
+      "value": "empty vector vs PSMB8/PSMB9 overexpression; IFN\u03b3 treated vs non-treated",
+      "evidence": "inferred: For the HLA peptidomics analysis we used three experimental replicates per each cell line and each condition (empty vector/ overexpression and treated/ non-treated cells)."
+    }
+  ],
+  "number_of_biological_replicates": [
+    {
+      "value": "unknown",
+      "evidence": "inferred: For the HLA peptidomics analysis we used three experimental replicates per each cell line and each condition (empty vector/ overexpression and treated/ non-treated cells)."
+    }
+  ],
+  "number_of_fractions": [
+    {
+      "value": "unknown",
+      "evidence": "The HLA peptides and HLA molecules were eluted with 1% TFA followed by separation of the peptides from the proteins by binding the eluted fraction to disposable reversed-phase C18 columns (Harvard Apparatus) as in ref."
+    }
+  ],
+  "number_of_samples": [
+    {
+      "value": "unknown",
+      "evidence": "We downloaded TCGA gene expression and clinical profiles of 472 melanoma patients from the Genomic Data Common (GDC) TCGA data portal (https://portal.gdc.cancer.gov)."
+    },
+    {
+      "value": "unknown",
+      "evidence": "We downloaded transcriptomics data of 469 TCGA melanoma patients and 517 GTEx skin samples via UCSC Xena browser (http://xena.ucsc.edu), where the transcriptomics data was normalized with the exact same pipeline to facilitate the comparison between cancer vs healthy tissues."
+    }
+  ],
+  "number_of_technical_replicates": [
+    {
+      "value": "3",
+      "evidence": "For the HLA peptidomics analysis we used three experimental replicates per each cell line and each condition (empty vector/ overexpression and treated/ non-treated cells)."
+    }
+  ],
+  "technical_replicate": [
+    {
+      "value": "3",
+      "evidence": "inferred: For the HLA peptidomics analysis we used three experimental replicates per each cell line and each condition (empty vector/ overexpression and treated/ non-treated cells)."
+    },
+    {
+      "value": "unknown",
+      "evidence": "inferred: Each measurement was performed in four replicates."
+    }
+  ],
+  "technology_type": [
+    {
+      "value": "shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics"
+    },
+    {
+      "value": "unknown",
+      "evidence": "instruments: Q Exactive"
+    },
+    {
+      "value": "unknown",
+      "evidence": "organisms: Homo sapiens (human)"
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "experimental_design",
+      "value": "treated vs control",
+      "evidence": "inferred: Volcano plots which show differentially presented peptides of the relative intensities of HLA peptides between cells with overexpression of immunoproteasome subunits and empty vectors were created, as well as cells that were treated and non-treated with IFN\u03b3.",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.43,
+    "evidence_score": 0.46,
+    "completeness": 0.4,
+    "format_score": 0.4
+  }
+}

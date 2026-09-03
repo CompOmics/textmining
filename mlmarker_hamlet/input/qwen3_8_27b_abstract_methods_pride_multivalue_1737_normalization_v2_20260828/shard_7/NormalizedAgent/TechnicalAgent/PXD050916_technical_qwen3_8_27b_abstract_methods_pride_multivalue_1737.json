@@ -1,0 +1,165 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-dependent acquisition",
+      "evidence": "MS/MS spectra were acquired in data-dependent acquisition mode at top speed for 3 s per cycle; the AGC target was set to 1E4 with a maximum injection time of 35 ms."
+    },
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "Proteins were reduced with 10 mM DTT for 1 h at 56 °C and alkylated with 20 mM iodoacetic acid for 30 min at RT in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetic acid",
+      "evidence": "Proteins were reduced with 10 mM DTT for 1 h at 56 °C and alkylated with 20 mM iodoacetic acid for 30 min at RT in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Free trypsin was added to the protein solution at a trypsin:protein ratio of 1:50 and incubated overnight at 37 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "20 ± 5%",
+      "evidence": "Ions were subjected to stepped-energy higher-energy collision dissociation fragmentation at a normalized collision energy of 20 ± 5%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "higher-energy collision dissociation",
+      "evidence": "Ions were subjected to stepped-energy higher-energy collision dissociation fragmentation at a normalized collision energy of 20 ± 5%."
+    },
+    {
+      "value": "HCD",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "Proteomics data were acquired via LC-MS/MS using an UltiMate 3000 UHPLC (Thermo Fisher Scientific), coupled in line with an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific) with an ESI nanospray source.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "Proteomics data were acquired via LC-MS/MS using an UltiMate 3000 UHPLC (Thermo Fisher Scientific), coupled in line with an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific) with an ESI nanospray source."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: After the label-free quantification analysis, proteins that exhibited significant changes (with criteria set at q < 0.05 and ∣log2FC∣ ≥ 0.585) were selected for further analysis."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Proteomics data were acquired via LC-MS/MS using an UltiMate 3000 UHPLC (Thermo Fisher Scientific), coupled in line with an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific) with an ESI nanospray source."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Cysteine residues",
+      "evidence": "Cysteine residues were set as static modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00014",
+      "ontology_name": "L-cysteine residue",
+      "similarity": 0.898,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "L-cysteine residue"
+    },
+    {
+      "value": "Oxidation of methionine",
+      "evidence": "Oxidation of methionine was set as the variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Proteins were reduced with 10 mM DTT for 1 h at 56 °C and alkylated with 20 mM iodoacetic acid for 30 min at RT in the dark."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Proteins were reduced with 10 mM DTT for 1 h at 56 °C and alkylated with 20 mM iodoacetic acid for 30 min at RT in the dark."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.888,
+    "evidence_score": 0.815,
+    "completeness": 0.9,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "20 mM",
+      "evidence": "Proteins were reduced with 10 mM DTT for 1 h at 56 °C and alkylated with 20 mM iodoacetic acid for 30 min at RT in the dark."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "10 mM",
+      "evidence": "Proteins were reduced with 10 mM DTT for 1 h at 56 °C and alkylated with 20 mM iodoacetic acid for 30 min at RT in the dark."
+    }
+  ]
+}

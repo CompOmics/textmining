@@ -1,0 +1,162 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "For the mass spectrometry analysis, a data-dependent top-20 method was used for data acquisition in full scan positive mode, scanning 375 to 1200 m/z."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Before digestion, proteins were reduced and alkylated by adding 5 mM TCEP (tris(2-carboxyethyl) phosphine) and 10 mM chloroacetamide for 30 min at 60 °C."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "chloroacetamide",
+      "evidence": "Before digestion, proteins were reduced and alkylated by adding 5 mM TCEP (tris(2-carboxyethyl) phosphine) and 10 mM chloroacetamide for 30 min at 60 °C."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Finally, MS-grade trypsin (Thermo-Fisher Scientific) was added to each sample in a ratio of 1:20 (trypsin/protein) in 20 μL of 100 mM TEAB."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30",
+      "evidence": "HCD collision energy, 30."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high pH reversed-phase peptide prefractionation",
+      "evidence": "To increase the protein coverage, high pH reversed-phase peptide prefractionation was performed with sulfonated divinylbenzene (CDS Empore™ SDB-RPS, Sigma-Aldrich) using a step gradient elution with increasing acetonitrile concentrations (0–60% ACN) in a 10 mM ammonium formate (NH4HCO2, pH 10.0), as described previously"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "fragmentation, top 20 most intense ions from each MS1 scan via higher-energy collisional dissociation (HCD); resolution for HCD spectra, 45,000 at m/z 100; AGC target, 50; maximum ion injection time, AUTO; isolation window of precursors, 0.7 m/z; exclusion duration, 45 s; HCD collision energy, 30."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 240",
+      "evidence": "instruments: Orbitrap Exploris 240",
+      "is_normalized": true,
+      "ontology_id": "MS:1003094",
+      "ontology_name": "Orbitrap Exploris 240",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 240"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "For analysis, 1 µg of each fraction in 5 µL was injected into a nano-LC ESI-MS/MS (Liquid Chromatography Electrospray Ionization Tandem Mass Spectrometry)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "The amount of 25 μg of the resulting peptide mixtures was then labeled using TMT-11plex Isobaric Mass Tagging Kit (Thermo Scientific, Rockford, IL, USA) according to the manufacturer’s instructions in four parallel labeling reactions, as shown in Table 2."
+    },
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "The system consisted of an Ultimate 3000 nano HPLC system (Thermo Fisher Scientific) coupled to an Orbitrap Exploris 240 (Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "pyrrolidone from Q",
+      "evidence": "Posttranslational modifications for the searches were set as follows: dynamic modifications for pyrrolidone from Q (−17.027 Da) and oxidation of methionine residues (+15.9949 Da) and static modification for TMT reagents (+229.163 Da) on lysine and N-term of the peptide, as well as carbamidomethyl (+57.021 Da) on cysteine.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00477",
+      "ontology_name": "2-pyrrolidone",
+      "similarity": 0.801,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "2-pyrrolidone"
+    },
+    {
+      "value": "oxidation of methionine residues",
+      "evidence": "Posttranslational modifications for the searches were set as follows: dynamic modifications for pyrrolidone from Q (−17.027 Da) and oxidation of methionine residues (+15.9949 Da) and static modification for TMT reagents (+229.163 Da) on lysine and N-term of the peptide, as well as carbamidomethyl (+57.021 Da) on cysteine.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.881,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "TMT reagents",
+      "evidence": "Posttranslational modifications for the searches were set as follows: dynamic modifications for pyrrolidone from Q (−17.027 Da) and oxidation of methionine residues (+15.9949 Da) and static modification for TMT reagents (+229.163 Da) on lysine and N-term of the peptide, as well as carbamidomethyl (+57.021 Da) on cysteine.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "TMT6plex",
+      "normalization_candidate_ids": [
+        "MOD:01720",
+        "MOD:01719",
+        "MOD:01718",
+        "MOD:01717",
+        "MOD:01715"
+      ]
+    },
+    {
+      "value": "carbamidomethyl",
+      "evidence": "Posttranslational modifications for the searches were set as follows: dynamic modifications for pyrrolidone from Q (−17.027 Da) and oxidation of methionine residues (+15.9949 Da) and static modification for TMT reagents (+229.163 Da) on lysine and N-term of the peptide, as well as carbamidomethyl (+57.021 Da) on cysteine.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Before digestion, proteins were reduced and alkylated by adding 5 mM TCEP (tris(2-carboxyethyl) phosphine) and 10 mM chloroacetamide for 30 min at 60 °C."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Before digestion, proteins were reduced and alkylated by adding 5 mM TCEP (tris(2-carboxyethyl) phosphine) and 10 mM chloroacetamide for 30 min at 60 °C."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.971,
+    "evidence_score": 0.962,
+    "completeness": 0.952,
+    "format_score": 1.0
+  }
+}

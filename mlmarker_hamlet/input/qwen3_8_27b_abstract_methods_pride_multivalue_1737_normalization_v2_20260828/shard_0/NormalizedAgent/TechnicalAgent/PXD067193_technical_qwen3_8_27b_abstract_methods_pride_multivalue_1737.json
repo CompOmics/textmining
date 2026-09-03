@@ -1,0 +1,211 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "operated in data-dependent acquisition mode using an SPS-MS3 workflow."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "18.75 mM iodoacetamide",
+      "evidence": "Samples were reduced (10 mM TCEP, 55 °C for 1 h), alkylated (18.75 mM iodoacetamide, room temperature for 30 min) and digested from the beads with trypsin (1.25 µg trypsin; 37 °C, overnight)."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Samples were reduced (10 mM TCEP, 55 °C for 1 h), alkylated (18.75 mM iodoacetamide, room temperature for 30 min) and digested from the beads with trypsin (1.25 µg trypsin; 37 °C, overnight)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Samples were reduced (10 mM TCEP, 55 °C for 1 h), alkylated (18.75 mM iodoacetamide, room temperature for 30 min) and digested from the beads with trypsin (1.25 µg trypsin; 37 °C, overnight)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "35%",
+      "evidence": "ITMS2 spectra were collected with an AGC target of 10,000, max injection time of 70 ms and CID collision energy of 35%."
+    },
+    {
+      "value": "60%",
+      "evidence": "Precursors were fragmented by high energy collision dissociation (HCD) at a normalised collision energy of 60% to ensure maximal TMT reporter ion yield."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high pH reversed-phase chromatography",
+      "evidence": "Eluate from the SepPak cartridge was evaporated to dryness and resuspended in buffer A (20 mM ammonium hydroxide, pH 10) prior to fractionation by high pH reversed-phase chromatography using an Ultimate 3000 liquid chromatography system (Thermo Scientific)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "CID",
+      "evidence": "ITMS2 spectra were collected with an AGC target of 10,000, max injection time of 70 ms and CID collision energy of 35%."
+    },
+    {
+      "value": "HCD",
+      "evidence": "Precursors were fragmented by high energy collision dissociation (HCD) at a normalised collision energy of 60% to ensure maximal TMT reporter ion yield."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion",
+      "evidence": "instruments: Orbitrap Fusion; Xcalibur; Proteome Discoverer",
+      "is_normalized": true,
+      "ontology_id": "MS:1002416",
+      "ontology_name": "Orbitrap Fusion",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion"
+    },
+    {
+      "value": "Orbitrap Fusion Tribrid mass spectrometer",
+      "evidence": "All spectra were acquired using an Orbitrap Fusion Tribrid mass spectrometer controlled by Xcalibur 2.1 software (Thermo Scientific) and operated in data-dependent acquisition mode using an SPS-MS3 workflow.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003953",
+      "ontology_name": "orbitrap instrument",
+      "similarity": 0.9,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "orbitrap instrument"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nano-electrospray ionisation",
+      "evidence": "Peptides were ionised by nano-electrospray ionisation at 2.0 kV using a stainless-steel emitter with an internal diameter of 30 μm (Thermo Scientific) and a capillary temperature of 275 °C."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    },
+    {
+      "value": "TMT 10plex or TMTpro16Plex",
+      "evidence": "The resulting peptides were labelled with TMT 10plex or TMTpro16Plex reagents according to the manufacturer’s protocol (Thermo Fisher Scientific, Loughborough, LE11 5RG, UK) and the labelled samples pooled and desalted using a SepPak cartridge according to the manufacturer’s instructions (Waters, Milford, Massachusetts, USA)."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: All spectra were acquired using an Orbitrap Fusion Tribrid mass spectrometer controlled by Xcalibur 2.1 software (Thermo Scientific) and operated in data-dependent acquisition mode using an SPS-MS3 workflow."
+    },
+    {
+      "value": "Ion Trap",
+      "evidence": "inferred: ITMS2 spectra were collected with an AGC target of 10,000, max injection time of 70 ms and CID collision energy of 35%."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    },
+    {
+      "value": "oxidation of methionine (+15.995 Da)",
+      "evidence": "Search criteria included oxidation of methionine (+15.995 Da), acetylation of the protein N-terminus (+42.011 Da) and methionine loss plus acetylation of the protein N-terminus (−89.03 Da) as variable modifications and carbamidomethylation of cysteine (+57.021 Da) and the addition of the TMT mass tag (+229.163 Da for experiments using 10Plex tags or +304.207 Da for experiments using 16Plex tags) to peptide N-termini and lysine as fixed modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00768",
+      "ontology_name": "methionine oxidation with neutral loss of 80 Da",
+      "similarity": 0.821,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "methionine oxidation with neutral loss of 80 Da"
+    },
+    {
+      "value": "acetylation of the protein N-terminus (+42.011 Da)",
+      "evidence": "Search criteria included oxidation of methionine (+15.995 Da), acetylation of the protein N-terminus (+42.011 Da) and methionine loss plus acetylation of the protein N-terminus (−89.03 Da) as variable modifications and carbamidomethylation of cysteine (+57.021 Da) and the addition of the TMT mass tag (+229.163 Da for experiments using 10Plex tags or +304.207 Da for experiments using 16Plex tags) to peptide N-termini and lysine as fixed modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00394",
+      "ontology_name": "monoacetylated residue",
+      "similarity": 0.751,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Acetylation (N terminus, N epsilon of Lysine, O of Serine) (Ac)"
+    },
+    {
+      "value": "methionine loss plus acetylation of the protein N-terminus (−89.03 Da)",
+      "evidence": "Search criteria included oxidation of methionine (+15.995 Da), acetylation of the protein N-terminus (+42.011 Da) and methionine loss plus acetylation of the protein N-terminus (−89.03 Da) as variable modifications and carbamidomethylation of cysteine (+57.021 Da) and the addition of the TMT mass tag (+229.163 Da for experiments using 10Plex tags or +304.207 Da for experiments using 16Plex tags) to peptide N-termini and lysine as fixed modifications.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "methionine oxidation with neutral loss of 80 Da",
+      "normalization_candidate_ids": [
+        "MOD:00768",
+        "MOD:00935",
+        "MOD:00431",
+        "MOD:00058",
+        "MOD:00408"
+      ]
+    },
+    {
+      "value": "carbamidomethylation of cysteine (+57.021 Da)",
+      "evidence": "Search criteria included oxidation of methionine (+15.995 Da), acetylation of the protein N-terminus (+42.011 Da) and methionine loss plus acetylation of the protein N-terminus (−89.03 Da) as variable modifications and carbamidomethylation of cysteine (+57.021 Da) and the addition of the TMT mass tag (+229.163 Da for experiments using 10Plex tags or +304.207 Da for experiments using 16Plex tags) to peptide N-termini and lysine as fixed modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.719,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxamidomethyl (on Cysteine)"
+    },
+    {
+      "value": "TMT mass tag (+229.163 Da for experiments using 10Plex tags or +304.207 Da for experiments using 16Plex tags) to peptide N-termini and lysine",
+      "evidence": "Search criteria included oxidation of methionine (+15.995 Da), acetylation of the protein N-terminus (+42.011 Da) and methionine loss plus acetylation of the protein N-terminus (−89.03 Da) as variable modifications and carbamidomethylation of cysteine (+57.021 Da) and the addition of the TMT mass tag (+229.163 Da for experiments using 10Plex tags or +304.207 Da for experiments using 16Plex tags) to peptide N-termini and lysine as fixed modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01737",
+      "ontology_name": "TMT6plex-128 reporter+balance reagent acylated N-terminal",
+      "similarity": 0.712,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "TMT6plex-128 reporter+balance reagent acylated N-terminal"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM TCEP",
+      "evidence": "Samples were reduced (10 mM TCEP, 55 °C for 1 h), alkylated (18.75 mM iodoacetamide, room temperature for 30 min) and digested from the beads with trypsin (1.25 µg trypsin; 37 °C, overnight)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Samples were reduced (10 mM TCEP, 55 °C for 1 h), alkylated (18.75 mM iodoacetamide, room temperature for 30 min) and digested from the beads with trypsin (1.25 µg trypsin; 37 °C, overnight)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.858,
+    "evidence_score": 0.731,
+    "completeness": 0.962,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "18.75 mM iodoacetamide",
+      "evidence": "Samples were reduced (10 mM TCEP, 55 °C for 1 h), alkylated (18.75 mM iodoacetamide, room temperature for 30 min) and digested from the beads with trypsin (1.25 µg trypsin; 37 °C, overnight)."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "10 mM TCEP",
+      "evidence": "Samples were reduced (10 mM TCEP, 55 °C for 1 h), alkylated (18.75 mM iodoacetamide, room temperature for 30 min) and digested from the beads with trypsin (1.25 µg trypsin; 37 °C, overnight)."
+    }
+  ]
+}

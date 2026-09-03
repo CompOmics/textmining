@@ -1,0 +1,177 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Data were acquired using data-dependent acquisition (DDA) set in 3 field asymmetry ion mobility spectrometry (FAIMS) experiments of − 40, − 55 and − 70."
+    },
+    {
+      "value": "DIA",
+      "evidence": "For the DIA acquisitions of the individual sample with a FAIMS voltage at − 50, the peptides were injected using the same chromatography setup and column as mentioned above."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "25 mM (final concentration) iodoacetamide",
+      "evidence": "This step is followed by alkylation with 25 mM (final concentration) iodoacetamide by incubating for 20 min in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "This step is followed by alkylation with 25 mM (final concentration) iodoacetamide by incubating for 20 min in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "The mixture was added with 50 µl of 25 mM ammonium bicarbonate and digested by trypsin at an enzyme to protein mass ratio of 1:50 overnight at 37 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "NCE of 30",
+      "evidence": "MS/MS scans were collected using ion trap (with a dynamic IT) with an isolation width of 1.6 m/z and a NCE of 30."
+    },
+    {
+      "value": "the stepped NCE was set to 25, 27, 30, and + 2H was assumed as the default charge state",
+      "evidence": "The AGC target was set to 3000, with auto IT, the stepped NCE was set to 25, 27, 30, and + 2H was assumed as the default charge state."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "Strong cation exchange (SCX) fractionation"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "unknown"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Eclipse",
+      "evidence": "instruments: Orbitrap Eclipse",
+      "is_normalized": true,
+      "ontology_id": "MS:1003029",
+      "ontology_name": "Orbitrap Eclipse",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Eclipse"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nano-electrospray ion source",
+      "evidence": "coupled via a nano-electrospray ion source (Thermo Fisher Scientific) to Orbitrap Eclipse™ Tribrid™ MS (Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: and subsequently analyzed by label-free quantitative proteomics."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "The orbitrap was set to acquire 33 scan events of a biological sample pool using 120,000 precursor resolution and 30,000 fragment resolution."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "cysteine carbamidomethylation",
+      "evidence": "The search engine set cysteine carbamidomethylation as a fixed modification and N-acetylation and oxidation of methionine as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "N-acetylation",
+      "evidence": "The search engine set cysteine carbamidomethylation as a fixed modification and N-acetylation and oxidation of methionine as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_synonym",
+      "normalization_matched_text": "N-acetylation",
+      "synonym_scope": "EXACT"
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "The search engine set cysteine carbamidomethylation as a fixed modification and N-acetylation and oxidation of methionine as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM Dithiothreitol",
+      "evidence": "tissues were mixed with 10 µl lysis buffer (50% Trifluroethanol (TFE), 25 mM ammonium bicarbonate and 5 mM Dithiothreitol) and then reduced at 91 °C for 10 min in a Thermomixer (Eppendorf) and 5 min sonication."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "Dithiothreitol",
+      "evidence": "tissues were mixed with 10 µl lysis buffer (50% Trifluroethanol (TFE), 25 mM ammonium bicarbonate and 5 mM Dithiothreitol) and then reduced at 91 °C for 10 min in a Thermomixer (Eppendorf) and 5 min sonication."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "fragmentation_method",
+      "value": "HCD",
+      "evidence": "unknown",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "HCD",
+      "evidence": "unknown",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.909,
+    "evidence_score": 0.838,
+    "completeness": 0.95,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "25 mM (final concentration) iodoacetamide",
+      "evidence": "This step is followed by alkylation with 25 mM (final concentration) iodoacetamide by incubating for 20 min in the dark."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM Dithiothreitol",
+      "evidence": "tissues were mixed with 10 µl lysis buffer (50% Trifluroethanol (TFE), 25 mM ammonium bicarbonate and 5 mM Dithiothreitol) and then reduced at 91 °C for 10 min in a Thermomixer (Eppendorf) and 5 min sonication."
+    }
+  ]
+}

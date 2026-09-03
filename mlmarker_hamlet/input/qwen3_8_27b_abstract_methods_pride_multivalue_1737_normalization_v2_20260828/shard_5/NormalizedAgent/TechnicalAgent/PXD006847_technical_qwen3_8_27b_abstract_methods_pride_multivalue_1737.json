@@ -1,0 +1,178 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "Data-dependent acquisition mode was used to trigger precursor isolation and sequencing."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "30 mM",
+      "evidence": "Five microliters of IAA solution (30 mM in 50 mM ABC) was dispensed to alkylate sulfhydryl groups by incubating the vials in the dark for 30 min at room temperature."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "DTT and iodoacetamide (IAA) were purchased from Thermo Scientific (St. Louis, MO, USA) and freshly prepared in 50 mM ammonium bicarbonate buffer each day before use."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "Five microliters of Lys-C (0.25 ng in 50 mM ABC) was added and incubated at 37 °C for 4 h."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Five microliters of trypsin (0.25 ng in 50 mM ABC) was added and incubated overnight at 37 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28%",
+      "evidence": "Precursor ions with charges of +2 to +7 were isolated with an m/z window of 2 and fragmented by high energy dissociation with a collision energy of 28%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "high energy dissociation",
+      "evidence": "Precursor ions with charges of +2 to +7 were isolated with an m/z window of 2 and fragmented by high energy dissociation with a collision energy of 28%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos Tribrid MS",
+      "evidence": "An Orbitrap Fusion Lumos Tribrid MS (ThermoFisher) was employed for all data collection.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 0.896,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "Electrospray",
+      "evidence": "Electrospray voltage of 1.9 kV was applied at the source."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: LFQ calculations were performed separately in each parameter group containing similar cell loading."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: An Orbitrap Fusion Lumos Tribrid MS (ThermoFisher) was employed for all data collection."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "N-terminal protein acetylation",
+      "evidence": "N-terminal protein acetylation and methionine oxidation were selected as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.888,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "N-terminal protein acetylation and methionine oxidation were selected as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "Carbamidomethylation",
+      "evidence": "Carbamidomethylation of cysteine residues was set as a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "Carbamidomethyl",
+      "evidence": "modifications: Carbamidomethyl; Oxidation",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "Oxidation",
+      "evidence": "modifications: Carbamidomethyl; Oxidation",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Cells were lysed at a concentration of 5 × 105/mL in 0.1% RapiGest and 5 mM DTT in 50 mM ammonium bicarbonate (ABC)."
+    },
+    {
+      "value": "10 mM",
+      "evidence": "For sample preparation of cultured cells, 50-nL RapiGest (0.2%) solution with 10 mM DTT in 50 mM ABC was added to the nanodroplets that had been preloaded with cells."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Cells were lysed at a concentration of 5 × 105/mL in 0.1% RapiGest and 5 mM DTT in 50 mM ammonium bicarbonate (ABC)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.91,
+    "evidence_score": 0.857,
+    "completeness": 0.905,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "30 mM",
+      "evidence": "Five microliters of IAA solution (30 mM in 50 mM ABC) was dispensed to alkylate sulfhydryl groups by incubating the vials in the dark for 30 min at room temperature."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM",
+      "evidence": "Cells were lysed at a concentration of 5 × 105/mL in 0.1% RapiGest and 5 mM DTT in 50 mM ammonium bicarbonate (ABC)."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[1]",
+      "value": "10 mM",
+      "evidence": "For sample preparation of cultured cells, 50-nL RapiGest (0.2%) solution with 10 mM DTT in 50 mM ABC was added to the nanodroplets that had been preloaded with cells."
+    }
+  ]
+}

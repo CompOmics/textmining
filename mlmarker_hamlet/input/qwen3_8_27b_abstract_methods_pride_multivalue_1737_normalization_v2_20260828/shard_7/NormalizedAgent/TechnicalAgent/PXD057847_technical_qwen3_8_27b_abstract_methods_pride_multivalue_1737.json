@@ -1,0 +1,171 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-dependent acquisition mode",
+      "evidence": "The mass spectrometer operated in a data-dependent acquisition mode, automatically switching between one Orbitrap full scan and ten ion trap tandem mass spectra."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "14 mM",
+      "evidence": "followed by alkylation with 14 mM iodoacetamide in the dark for 30 min"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "followed by alkylation with 14 mM iodoacetamide in the dark for 30 min"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Subsequently, protein extracts were digested overnight with 1 μg of trypsin (Promega, Madison, Wisconsin) in a solution containing 10 mM Tris-HCl at pH 8.0 and 2 mM CaCl2, maintained at 37 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "35%",
+      "evidence": "MS/MS spectra were obtained at a normalized collision energy of 35%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "reversed-phase",
+      "evidence": "Peptide fractionation was performed on a custom 10 cm reversed-phase capillary emitter column (inner diameter 75 μm, filled with 5 μm C18 Aqua resins - Phenomenex) using a gradient of 3–35% acetonitrile in 0.1% formic acid over 45 min, followed by a gradient of 35–95% for 5 min, maintained at 95% for 8 min and, 95–5% for 2 min at a flow rate of 300 nL/min."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "inferred: MS/MS spectra were obtained at a normalized collision energy of 35%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "LTQ-Orbitrap Velos",
+      "evidence": "The eluted peptides were directly analyzed using an LTQ-Orbitrap Velos mass spectrometer (Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1001742",
+      "ontology_name": "LTQ Orbitrap Velos",
+      "similarity": 0.983,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "LTQ Orbitrap Velos"
+    },
+    {
+      "value": "LTQ Orbitrap Velos",
+      "evidence": "instruments: LTQ Orbitrap Velos",
+      "is_normalized": true,
+      "ontology_id": "MS:1001742",
+      "ontology_name": "LTQ Orbitrap Velos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "LTQ Orbitrap Velos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: Peptides were resuspended in 0.1% formic acid and injected into a custom-made 5 cm reversed-phase pre-column (inner diameter 100 μm, filled with 10 μm C18 Jupiter resins - Phenomenex, Torrance, California) connected to a nano HPLC system (NanoLC-1DPlus, Proxeon, Thermo Fisher Scientific, Waltham, Massachusetts)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Relative protein quantification was carried out using the LFQ algorithm of MaxQuant, with a minimum ratio count of two."
+    },
+    {
+      "value": "Label free",
+      "evidence": "quantification: Label free"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: The eluted peptides were directly analyzed using an LTQ-Orbitrap Velos mass spectrometer (Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Carbamidomethylation (C)",
+      "evidence": "Carbamidomethylation (C) was set as a fixed modification, while oxidation (M) and acetylation (N-terminal) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01679",
+      "ontology_name": "alpha-aminocarbamoylated residue",
+      "similarity": 0.873,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carbamylation"
+    },
+    {
+      "value": "oxidation (M)",
+      "evidence": "Carbamidomethylation (C) was set as a fixed modification, while oxidation (M) and acetylation (N-terminal) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 0.925,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "acetylation (N-terminal)",
+      "evidence": "Carbamidomethylation (C) was set as a fixed modification, while oxidation (M) and acetylation (N-terminal) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.951,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Proteins were reduced with 5 mM DTT for 30 min at room temperature, followed by alkylation with 14 mM iodoacetamide in the dark for 30 min."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Proteins were reduced with 5 mM DTT for 30 min at room temperature, followed by alkylation with 14 mM iodoacetamide in the dark for 30 min."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.91,
+    "evidence_score": 0.84,
+    "completeness": 0.95,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "14 mM",
+      "evidence": "followed by alkylation with 14 mM iodoacetamide in the dark for 30 min"
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM",
+      "evidence": "Proteins were reduced with 5 mM DTT for 30 min at room temperature, followed by alkylation with 14 mM iodoacetamide in the dark for 30 min."
+    }
+  ]
+}

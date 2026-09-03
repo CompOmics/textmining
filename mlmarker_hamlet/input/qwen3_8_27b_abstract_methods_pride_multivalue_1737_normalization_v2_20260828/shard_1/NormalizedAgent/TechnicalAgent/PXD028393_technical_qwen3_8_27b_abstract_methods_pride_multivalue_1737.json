@@ -1,0 +1,170 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DIA",
+      "evidence": "Analysis was performed in SWATH DIA (data-independent acquisitions) mode, in positive ESI mode."
+    },
+    {
+      "value": "Shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "100 mM",
+      "evidence": "For the alkylation of cysteine residues, 30 µL of 100 mM iodoacetamide (in 50 mM NH4HCO3, pH 8) were added and the samples were incubated at RT for 20 min in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "For the alkylation of cysteine residues, 30 µL of 100 mM iodoacetamide (in 50 mM NH4HCO3, pH 8) were added and the samples were incubated at RT for 20 min in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "After vortexing for 1 h at RT, 2 µL of trypsin (0.5 µg/µL) were added."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "CE = 0.063 (m/z)–3.24",
+      "evidence": "The collision energy for each SWATH experiment was automatically calculated by the acquisition software using the equation: CE = 0.063 (m/z)–3.24."
+    },
+    {
+      "value": "35",
+      "evidence": "Activation type: CID —CID collision energy (%): 35"
+    },
+    {
+      "value": "65",
+      "evidence": "Activation type: HCD —Collision energy (%): 65"
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high-pH",
+      "evidence": "Dried TMT-labelled peptides were resuspended in 1.8 mL of 0.1% TFA (trifluoroacetic acid) and half the solution was pre-fractionated using the Pierce High pH Reversed-Phase Peptide Fractionation Kit (Thermo Fisher Scientific) due to the binding capacity of the columns and according to manufacturer’s protocol."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "CID",
+      "evidence": "Activation type: CID —CID collision energy (%): 35"
+    },
+    {
+      "value": "HCD",
+      "evidence": "Activation type: HCD —Collision energy (%): 65"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Eclipse",
+      "evidence": "instruments: Orbitrap Eclipse",
+      "is_normalized": true,
+      "ontology_id": "MS:1003029",
+      "ontology_name": "Orbitrap Eclipse",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Eclipse"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "Analysis was performed in SWATH DIA (data-independent acquisitions) mode, in positive ESI mode."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Eclipse"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "deamidated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "deamidated residue"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Static modification: carbamidomethylation on cysteine and TMT-10plex on lysine and peptide N terminus; variable modifications: oxidation of methionine.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "Static modification: carbamidomethylation on cysteine and TMT-10plex on lysine and peptide N terminus; variable modifications: oxidation of methionine.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "100 mM",
+      "evidence": "Disulfide bonds were reduced with 10 µL dithiothreitol (DTT) 100 mM at 56 °C for 30 min; the corresponding cysteine residues were then alkylated with 30 µL of iodoacetamide (IAA) 100 mM for 20 min in the dark."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "Disulfide bonds were reduced with 10 µL dithiothreitol (DTT) 100 mM at 56 °C for 30 min; the corresponding cysteine residues were then alkylated with 30 µL of iodoacetamide (IAA) 100 mM for 20 min in the dark."
+    },
+    {
+      "value": "DTT",
+      "evidence": "Disulfide bonds were reduced with 10 µL dithiothreitol (DTT) 100 mM at 56 °C for 30 min; the corresponding cysteine residues were then alkylated with 30 µL of iodoacetamide (IAA) 100 mM for 20 min in the dark."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.973,
+    "evidence_score": 0.963,
+    "completeness": 0.958,
+    "format_score": 1.0
+  }
+}

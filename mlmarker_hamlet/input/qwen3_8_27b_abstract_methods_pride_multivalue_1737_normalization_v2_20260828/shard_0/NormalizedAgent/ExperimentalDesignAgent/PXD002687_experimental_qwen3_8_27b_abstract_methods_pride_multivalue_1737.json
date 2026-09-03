@@ -1,0 +1,102 @@
+{
+  "biological_replicate": [
+    {
+      "value": "5",
+      "evidence": "inferred: each replicate (five biological replicates) were determined by MaxQuant as explained above."
+    },
+    {
+      "value": "3",
+      "evidence": "inferred: Ratios H/L (heavy/light) were determined for each protein in three biological replicates (cells harvested from separate plates) with MaxQuant 1.3.0.5 following LC-MS/MS analyses."
+    },
+    {
+      "value": "4",
+      "evidence": "inferred: The experiment comprised four biological replicates treated with Myr and four biological replicates treated with YnMyr."
+    }
+  ],
+  "experimental_design": [
+    {
+      "value": "dose response",
+      "evidence": "inferred: To compare the six conditions (six concentrations of inhibitor), an analysis of variance was performed with Benjamini Hochberg correction at an FDR of 0.05."
+    },
+    {
+      "value": "treated vs control",
+      "evidence": "inferred: Modified t-tests with permutation-based FDR statistics were applied (250 permutation, 5%, two tailed, s0=0) between the two groups."
+    }
+  ],
+  "factor_value": [
+    {
+      "value": "inhibitor concentration",
+      "evidence": "inferred: Cells were incubated with inhibitor 1 (0, 0.08, 0.2, 0.4, 1 or 5 μM) for 30 min."
+    },
+    {
+      "value": "apoptosis vs normal growth",
+      "evidence": "inferred: Global quantification of N-myristoylation during normal growth or apoptosis allowed the identification of >100 N-myristoylated proteins, >95% of which are identified for the first time at endogenous levels."
+    }
+  ],
+  "number_of_biological_replicates": [
+    {
+      "value": "5",
+      "evidence": "inferred: each replicate (five biological replicates) were determined by MaxQuant as explained above."
+    },
+    {
+      "value": "3",
+      "evidence": "inferred: Ratios H/L (heavy/light) were determined for each protein in three biological replicates (cells harvested from separate plates) with MaxQuant 1.3.0.5 following LC-MS/MS analyses."
+    },
+    {
+      "value": "4",
+      "evidence": "inferred: The experiment comprised four biological replicates treated with Myr and four biological replicates treated with YnMyr."
+    }
+  ],
+  "number_of_fractions": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "number_of_samples": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "number_of_technical_replicates": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "technical_replicate": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "technology_type": [
+    {
+      "value": "Shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics"
+    },
+    {
+      "value": "spike-in SILAC",
+      "evidence": "inferred: For quantitative proteomics (spike-in SILAC and SILAC), R10K8 and R0K0 Dulbecco's modified Eagle's medium (DMEM) media were purchased from Dundee Cell Products."
+    },
+    {
+      "value": "SILAC",
+      "evidence": "inferred: For quantitative proteomics (spike-in SILAC and SILAC), R10K8 and R0K0 Dulbecco's modified Eagle's medium (DMEM) media were purchased from Dundee Cell Products."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "experimental_design",
+      "value": "treated vs control",
+      "evidence": "inferred: Modified t-tests with permutation-based FDR statistics were applied (250 permutation, 5%, two tailed, s0=0) between the two groups.",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.882,
+    "evidence_score": 0.859,
+    "completeness": 0.765,
+    "format_score": 1.0
+  }
+}

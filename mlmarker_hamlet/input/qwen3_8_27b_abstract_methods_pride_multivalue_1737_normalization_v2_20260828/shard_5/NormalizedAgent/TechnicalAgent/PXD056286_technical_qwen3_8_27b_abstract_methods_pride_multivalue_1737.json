@@ -1,0 +1,140 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-dependent acquisition mode (DDA)",
+      "evidence": "MS was operated in data-dependent acquisition mode (DDA) with full MS scans from 300 to 1600 m/z (resolution 60,000) with the polysiloxane ion at 371.10124 m/z as lock mass."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "15 mM IAA",
+      "evidence": "Disulfide bonds were reduced by adding 10 mM TCEP at 37 °C for 30 min, and free sulfhydryl groups were alkylated using 15 mM IAA at room temperature, in the dark, for 30 min."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "IAA",
+      "evidence": "Disulfide bonds were reduced by adding 10 mM TCEP at 37 °C for 30 min, and free sulfhydryl groups were alkylated using 15 mM IAA at room temperature, in the dark, for 30 min."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "For proteolysis, 100 µg of protein from each sample was processed using the S-Trap protocol (Protifi) with a 20:1 protein-to-trypsin ratio."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27%",
+      "evidence": "For fragmentation, the 15 most intense ions (above the threshold ion count of 5E3) were chosen at a normalized collision energy (nCE) of 27% in each cycle, following each survey scan."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "inferred: normalized collision energy (nCE) of 27%"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "QExactive HF",
+      "evidence": "All samples were analyzed using an UltiMate 3000 RSLC nano-UHPLC system coupled to a QExactive HF mass spectrometer, with 1 µg of peptide used for each analysis.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 0.763,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive HF"
+    },
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Z-scoring was performed with the raw abundance values obtained and normalized by the Proteome Discoverer 2.5 software (Thermo Scientific) to create and visualize the heatmap."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: All samples were analyzed using an UltiMate 3000 RSLC nano-UHPLC system coupled to a QExactive HF mass spectrometer, with 1 µg of peptide used for each analysis."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM TCEP",
+      "evidence": "Disulfide bonds were reduced by adding 10 mM TCEP at 37 °C for 30 min, and free sulfhydryl groups were alkylated using 15 mM IAA at room temperature, in the dark, for 30 min."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Disulfide bonds were reduced by adding 10 mM TCEP at 37 °C for 30 min, and free sulfhydryl groups were alkylated using 15 mM IAA at room temperature, in the dark, for 30 min."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.866,
+    "evidence_score": 0.806,
+    "completeness": 0.812,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "reduction_reagent[0]",
+      "value": "TCEP",
+      "evidence": "Disulfide bonds were reduced by adding 10 mM TCEP at 37 °C for 30 min, and free sulfhydryl groups were alkylated using 15 mM IAA at room temperature, in the dark, for 30 min."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "15 mM IAA",
+      "evidence": "Disulfide bonds were reduced by adding 10 mM TCEP at 37 °C for 30 min, and free sulfhydryl groups were alkylated using 15 mM IAA at room temperature, in the dark, for 30 min."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "10 mM TCEP",
+      "evidence": "Disulfide bonds were reduced by adding 10 mM TCEP at 37 °C for 30 min, and free sulfhydryl groups were alkylated using 15 mM IAA at room temperature, in the dark, for 30 min."
+    }
+  ]
+}

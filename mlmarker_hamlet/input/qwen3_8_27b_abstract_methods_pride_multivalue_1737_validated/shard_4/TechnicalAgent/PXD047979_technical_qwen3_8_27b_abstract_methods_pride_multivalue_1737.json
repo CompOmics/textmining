@@ -1,0 +1,132 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "40 mM",
+      "evidence": "The samples were alkylated by adding iodoacetamide (Sigma-Aldrich, I1149) of 40\u2009mM to the final concentration and mixed at 650\u2009rpm for 1\u2009h at 37\u2009\u00b0C."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "The samples were alkylated by adding iodoacetamide (Sigma-Aldrich, I1149) of 40\u2009mM to the final concentration and mixed at 650\u2009rpm for 1\u2009h at 37\u2009\u00b0C."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "~2\u2009mg of protein sample was digested by adding trypsin (Thermoscientific, 20233, 50:1 w/w) and incubated at 650\u2009rpm for 6\u201318\u2009h at 37\u2009\u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30% collision energy",
+      "evidence": "Higher-energy collisional dissociation (HCD) with 30% collision energy was used for sequencing with an auto gain control (AGC) target of 1e5."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "streptavidin magnetic bead",
+      "evidence": "prewashed streptavidin magnetic bead was incubated with sample for at least 1\u2009h with end-to-end rotation."
+    },
+    {
+      "value": "anti-biotin antibody",
+      "evidence": "samples were dissolved in 50\u2009mM MOPS (pH 7.2), 10\u2009mM sodium phosphate, and 50\u2009mM NaCl, then incubated with anti-biotin antibody (ImmuneChem Pharmaceuticals Inc, ICP0615)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Higher-energy collisional dissociation (HCD) with 30% collision energy was used for sequencing with an auto gain control (AGC) target of 1e5."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: The enriched samples were analyzed on an Orbitrap Fusion Lumos mass spectrometer (Thermo Scientific) equipped with an in-house customized nanoelectrospray ion source."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: The label-free quantification (LFQ) and match between runs were used with the following search parameters for the TurboID experiment: semi-trypic digestion, fixed carbaminomethylation on cysteine, dynamic oxidation of methionine, protein N-terminal acetylation with biotin (+226.0775) labels of lysine residue."
+    },
+    {
+      "value": "MS1 intensity based label-free quantification method",
+      "evidence": "quantification: MS1 intensity based label-free quantification method"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: The enriched samples were analyzed on an Orbitrap Fusion Lumos mass spectrometer (Thermo Scientific) equipped with an in-house customized nanoelectrospray ion source."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "biotinylated residue",
+      "evidence": "modifications: biotinylated residue"
+    },
+    {
+      "value": "carbaminomethylation",
+      "evidence": "The label-free quantification (LFQ) and match between runs were used with the following search parameters for the TurboID experiment: semi-trypic digestion, fixed carbaminomethylation on cysteine, dynamic oxidation of methionine, protein N-terminal acetylation with biotin (+226.0775) labels of lysine residue."
+    },
+    {
+      "value": "oxidation",
+      "evidence": "The label-free quantification (LFQ) and match between runs were used with the following search parameters for the TurboID experiment: semi-trypic digestion, fixed carbaminomethylation on cysteine, dynamic oxidation of methionine, protein N-terminal acetylation with biotin (+226.0775) labels of lysine residue."
+    },
+    {
+      "value": "acetylation",
+      "evidence": "The label-free quantification (LFQ) and match between runs were used with the following search parameters for the TurboID experiment: semi-trypic digestion, fixed carbaminomethylation on cysteine, dynamic oxidation of methionine, protein N-terminal acetylation with biotin (+226.0775) labels of lysine residue."
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "After denaturation, the samples were reduced with the final concentration of 10\u2009mM dithiothreitol (Sigma-Aldrich, 43816) and incubated at 650\u2009rpm for 1\u2009h at 37\u2009\u00b0C."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "After denaturation, the samples were reduced with the final concentration of 10\u2009mM dithiothreitol (Sigma-Aldrich, 43816) and incubated at 650\u2009rpm for 1\u2009h at 37\u2009\u00b0C."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.932,
+    "evidence_score": 0.885,
+    "completeness": 0.95,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "40 mM",
+      "evidence": "The samples were alkylated by adding iodoacetamide (Sigma-Aldrich, I1149) of 40\u2009mM to the final concentration and mixed at 650\u2009rpm for 1\u2009h at 37\u2009\u00b0C."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "10 mM",
+      "evidence": "After denaturation, the samples were reduced with the final concentration of 10\u2009mM dithiothreitol (Sigma-Aldrich, 43816) and incubated at 650\u2009rpm for 1\u2009h at 37\u2009\u00b0C."
+    }
+  ]
+}

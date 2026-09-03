@@ -1,0 +1,214 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "inferred: LC-MS/MS data-dependent analysis was performed using an Exploris480 mass spectrometer (Thermo Fisher Scientific) equipped with a Dionex Ultimate 3000 RSLCnano system (Thermo Fisher Scientific)."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM iodoacetamide",
+      "evidence": "Samples were reduced with 5 mM tris(2-carboxyethyl)phosphine (Sigma) and alkylated with 10 mM iodoacetamide (Sigma)."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Samples were reduced with 5 mM tris(2-carboxyethyl)phosphine (Sigma) and alkylated with 10 mM iodoacetamide (Sigma)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Next, 0.5 μg of trypsin (Sequencing Grade, Promega, or Pierce) was added and incubated for 16 to 18 h at 37 °C with shaking at 700 rpm."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "36",
+      "evidence": "MS/MS spectra were collected with a normalized higher energy collisional dissociation of 36, 0.7 m/z isolation window, 150 ms maximum injection time, a normalized automatic gain control target of 200%, at a MS2 orbitrap resolution of 45,000 with a defined first mass of 110 m/z to ensure measurement of TMTPro reporter ions."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "the multidimensional protein identification technology (MudPIT) column was packed with 1.5 cm of Aqua 5 μm C18 resin (Phenomenex # 04A-4299), 1.5 cm Luna 5 μm strong cation exchange (SCX) resin (Phenomenex # 04A-4398), and 1.5 cm 5 μm C18 resin."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "inferred: MS/MS spectra were collected with a normalized higher energy collisional dissociation of 36, 0.7 m/z isolation window, 150 ms maximum injection time, a normalized automatic gain control target of 200%, at a MS2 orbitrap resolution of 45,000 with a defined first mass of 110 m/z to ensure measurement of TMTPro reporter ions."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    },
+    {
+      "value": "Exploris480 mass spectrometer",
+      "evidence": "LC-MS/MS data-dependent analysis was performed using an Exploris480 mass spectrometer (Thermo Fisher Scientific) equipped with a Dionex Ultimate 3000 RSLCnano system (Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 0.742,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Electrospray ionization was performed directly from the analytical column by applying a voltage of 2.2 kV with an MS inlet capillary temperature of 275 °C and a RF lens of 40%."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    },
+    {
+      "value": "TMT 16/18-plex reagents",
+      "evidence": "Peptide samples were then reacted with TMT 16/18-plex reagents (Thermo Fisher Scientific) in 40% vol/vol acetonitrile and incubated for 1 h at room temperature."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Exploris 480"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Met oxidation",
+      "evidence": "Searches were carried out according to the following parameters: 20 ppm peptide precursor tolerance, 0.02 Da fragment mass tolerance, minimum peptide length of 6 AAs, trypsin cleavage with a maximum of two missed cleavages, dynamic modifications of Met oxidation (+15.995 Da), protein N-terminal Met loss (−131.040 Da), protein N-terminal acetylation (+42.011 Da), protein N-terminal Met loss and acetylation (+89.030), and static modifications of Cys carbamidomethylation (+57.021 Da), and TMTPro (N terminus/Lys, + 304.207 Da).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.848,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "protein N-terminal Met loss",
+      "evidence": "Searches were carried out according to the following parameters: 20 ppm peptide precursor tolerance, 0.02 Da fragment mass tolerance, minimum peptide length of 6 AAs, trypsin cleavage with a maximum of two missed cleavages, dynamic modifications of Met oxidation (+15.995 Da), protein N-terminal Met loss (−131.040 Da), protein N-terminal acetylation (+42.011 Da), protein N-terminal Met loss and acetylation (+89.030), and static modifications of Cys carbamidomethylation (+57.021 Da), and TMTPro (N terminus/Lys, + 304.207 Da).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Met-loss",
+      "normalization_candidate_ids": [
+        "MOD:01643",
+        "MOD:00431",
+        "MOD:00427",
+        "MOD:00432",
+        "MOD:00625"
+      ]
+    },
+    {
+      "value": "protein N-terminal acetylation",
+      "evidence": "Searches were carried out according to the following parameters: 20 ppm peptide precursor tolerance, 0.02 Da fragment mass tolerance, minimum peptide length of 6 AAs, trypsin cleavage with a maximum of two missed cleavages, dynamic modifications of Met oxidation (+15.995 Da), protein N-terminal Met loss (−131.040 Da), protein N-terminal acetylation (+42.011 Da), protein N-terminal Met loss and acetylation (+89.030), and static modifications of Cys carbamidomethylation (+57.021 Da), and TMTPro (N terminus/Lys, + 304.207 Da).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.895,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "protein N-terminal Met loss and acetylation",
+      "evidence": "Searches were carried out according to the following parameters: 20 ppm peptide precursor tolerance, 0.02 Da fragment mass tolerance, minimum peptide length of 6 AAs, trypsin cleavage with a maximum of two missed cleavages, dynamic modifications of Met oxidation (+15.995 Da), protein N-terminal Met loss (−131.040 Da), protein N-terminal acetylation (+42.011 Da), protein N-terminal Met loss and acetylation (+89.030), and static modifications of Cys carbamidomethylation (+57.021 Da), and TMTPro (N terminus/Lys, + 304.207 Da).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Methylation (N terminus, N epsilon of Lysine, O of Serine, Threonine or C terminus, N of Asparagine)",
+      "normalization_candidate_ids": [
+        "MOD:00427",
+        "MOD:01337",
+        "MOD:01369",
+        "MOD:00657",
+        "MOD:00394"
+      ]
+    },
+    {
+      "value": "Cys carbamidomethylation",
+      "evidence": "Searches were carried out according to the following parameters: 20 ppm peptide precursor tolerance, 0.02 Da fragment mass tolerance, minimum peptide length of 6 AAs, trypsin cleavage with a maximum of two missed cleavages, dynamic modifications of Met oxidation (+15.995 Da), protein N-terminal Met loss (−131.040 Da), protein N-terminal acetylation (+42.011 Da), protein N-terminal Met loss and acetylation (+89.030), and static modifications of Cys carbamidomethylation (+57.021 Da), and TMTPro (N terminus/Lys, + 304.207 Da).",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "TMTPro (N terminus/Lys, + 304.207 Da)",
+      "evidence": "Searches were carried out according to the following parameters: 20 ppm peptide precursor tolerance, 0.02 Da fragment mass tolerance, minimum peptide length of 6 AAs, trypsin cleavage with a maximum of two missed cleavages, dynamic modifications of Met oxidation (+15.995 Da), protein N-terminal Met loss (−131.040 Da), protein N-terminal acetylation (+42.011 Da), protein N-terminal Met loss and acetylation (+89.030), and static modifications of Cys carbamidomethylation (+57.021 Da), and TMTPro (N terminus/Lys, + 304.207 Da).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "TMT6plex-127 reporter+balance reagent O3-acylated threonine",
+      "normalization_candidate_ids": [
+        "MOD:01734",
+        "MOD:01735",
+        "MOD:01728",
+        "MOD:01766",
+        "MOD:01491"
+      ]
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM tris(2-carboxyethyl)phosphine",
+      "evidence": "Samples were reduced with 5 mM tris(2-carboxyethyl)phosphine (Sigma) and alkylated with 10 mM iodoacetamide (Sigma)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "tris(2-carboxyethyl)phosphine",
+      "evidence": "Samples were reduced with 5 mM tris(2-carboxyethyl)phosphine (Sigma) and alkylated with 10 mM iodoacetamide (Sigma)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.917,
+    "evidence_score": 0.85,
+    "completeness": 0.958,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "10 mM iodoacetamide",
+      "evidence": "Samples were reduced with 5 mM tris(2-carboxyethyl)phosphine (Sigma) and alkylated with 10 mM iodoacetamide (Sigma)."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM tris(2-carboxyethyl)phosphine",
+      "evidence": "Samples were reduced with 5 mM tris(2-carboxyethyl)phosphine (Sigma) and alkylated with 10 mM iodoacetamide (Sigma)."
+    }
+  ]
+}

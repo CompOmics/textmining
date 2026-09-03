@@ -1,0 +1,173 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "coupled to an Ultimate 3000 RSLC (ThermoFisher Scientific) in data\u2010dependent acquisition (DDA) mode."
+    },
+    {
+      "value": "DIA",
+      "evidence": "data acquisition was performed in data\u2010independent acquisition (DIA) mode."
+    },
+    {
+      "value": "SWATH MS",
+      "evidence": "experiment types: SWATH MS; Data-independent acquisition"
+    },
+    {
+      "value": "Data-independent acquisition",
+      "evidence": "experiment types: SWATH MS; Data-independent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "then reduced and alkylated with 5\u2009mM iodoacetamide (Sigma\u2010Aldrich) for 45 min."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "then reduced and alkylated with 5\u2009mM iodoacetamide (Sigma\u2010Aldrich) for 45 min."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "The samples were then digested with 0.2 \u03bcg/\u03bcl trypsin (Promega, Madison, USA) overnight at 30\u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28% HCD",
+      "evidence": "The peptides were fragmented with fixed HCD as activation type at 28% HCD Collision Energy."
+    },
+    {
+      "value": "HCD",
+      "evidence": "The tMS2 scan uses HCD as activation energy with fragments detected in the Orbitrap at 30 000\u2010resolution."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "XBridge C18 column",
+      "evidence": "Peptides were then fractionated on a XBridge C18 column (4.6\u2009\u00d7\u2009100\u2009mm, 5 \u03bcm, Waters) at 1 mL/min"
+    },
+    {
+      "value": "SCX",
+      "evidence": "unknown"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The peptides were fragmented with fixed HCD as activation type at 28% HCD Collision Energy."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Fusion Lumos Tribrid MS",
+      "is_normalized": false,
+      "evidence": "resuspended in 0.1% formic acid (FA) (ThermoFisher Scientific) and then individually analysed on a Fusion Lumos Tribrid MS with a high\u2010field asymmetric waveform ion mobility spectrometry (FAIMS) interface (ThermoFisher Scientific)"
+    },
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "Liquid chromatography\u2010electrospray ionisation\u2010tandem mass spectrometry (LC\u2010ESI\u2010MSMS) analysis for spectral library generation"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "quantification: label-free quantification"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Ion Trap",
+      "evidence": "The iontrap was selected for data\u2010dependent MS2 fragmentation with an isolation window of m/z 1.2 and no isolation offset."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "carbamidomethylation",
+      "is_normalized": true,
+      "evidence": "Variable modifications were set to N\u2010terminal methionine excision, carbamidomethylation of cysteine residues and oxidation of methionine.",
+      "ontology_id": "MOD:01679",
+      "ontology_name": "alpha-aminocarbamoylated residue",
+      "similarity": 0.88
+    },
+    {
+      "value": "oxidation",
+      "is_normalized": true,
+      "evidence": "Variable modifications were set to N\u2010terminal methionine excision, carbamidomethylation of cysteine residues and oxidation of methionine.",
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 1.0
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "The reaction was quenched with 10\u2009mM dithiothreitol (ThermoFisher Scientific, Paisley, UK) for 30 min"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "The reaction was quenched with 10\u2009mM dithiothreitol (ThermoFisher Scientific, Paisley, UK) for 30 min"
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "fractionation_method",
+      "value": "SCX",
+      "evidence": "unknown",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.921,
+    "evidence_score": 0.858,
+    "completeness": 0.958,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "5 mM",
+      "evidence": "then reduced and alkylated with 5\u2009mM iodoacetamide (Sigma\u2010Aldrich) for 45 min."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "10 mM",
+      "evidence": "The reaction was quenched with 10\u2009mM dithiothreitol (ThermoFisher Scientific, Paisley, UK) for 30 min"
+    }
+  ]
+}

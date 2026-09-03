@@ -1,0 +1,144 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The mass spectrometer was operated in “top-15” data-dependent mode, collecting MS spectra in the Orbitrap mass analyzer (60,000 resolution, 300–1650 m/z range) with an automatic gain control (AGC) target of 3E6 and a maximum ion injection time of 15 ms."
+    },
+    {
+      "value": "inferred: DDA",
+      "evidence": "inferred: For clinical AFib samples, a “top-5” data-dependent acquisition method as described above was modified to increase the dynamic range on the MS1 level by including three segmented MS scans (12 segments each; total AGC target 1E6), covering a m/z range of 400–1200."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C and trypsin",
+      "evidence": "Protein concentration was measured using the Tryptophan assay and 300 µg were further processed for overnight digestion by adding Lys-C and trypsin in a 1:50 ratio (µg of enzyme to µg of protein) at 37 °C and 1700 rpm."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "NCE of 27%",
+      "evidence": "Following higher-energy collisional dissociation (HCD) with a normalized collision energy (NCE) of 27%, MS/MS spectra were collected in the Orbitrap (15,000 resolution) with an AGC target of 5E4 and a maximum ion injection time of 25 ms."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high-pH reversed-phase fractionation",
+      "evidence": "About 30 µg of peptides of each sample were further fractionated into 54 fractions and concatenated into 8 fractions by high-pH reversed-phase fractionation using the recently described “loss-less” nano-fractionator."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Following higher-energy collisional dissociation (HCD) with a normalized collision energy (NCE) of 27%, MS/MS spectra were collected in the Orbitrap (15,000 resolution) with an AGC target of 5E4 and a maximum ion injection time of 25 ms."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "Nanoflow LC–MS/MS analysis of tryptic peptides was conducted on a quadrupole Orbitrap mass spectrometer (Q Exactive HF, Thermo Fisher Scientific, Rockford, IL, USA) coupled to an EASYnLC 1200 ultra-high-pressure system (Thermo Fisher Scientific) via a nano-electrospray ion source.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    },
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nano-electrospray",
+      "evidence": "Nanoflow LC–MS/MS analysis of tryptic peptides was conducted on a quadrupole Orbitrap mass spectrometer (Q Exactive HF, Thermo Fisher Scientific, Rockford, IL, USA) coupled to an EASYnLC 1200 ultra-high-pressure system (Thermo Fisher Scientific) via a nano-electrospray ion source."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "Label-free quantification was performed with the MaxLFQ algorithm using a minimum ratio count of 1."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Nanoflow LC–MS/MS analysis of tryptic peptides was conducted on a quadrupole Orbitrap mass spectrometer (Q Exactive HF, Thermo Fisher Scientific, Rockford, IL, USA) coupled to an EASYnLC 1200 ultra-high-pressure system (Thermo Fisher Scientific) via a nano-electrospray ion source."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Tandem mass spectra were searched against the 2015 Uniprot human databases (UP000005640_9606 and UP000005640_9606_additional) using MaxQuant version 1.5.5.6 with a 1% FDR at the peptide and protein level, peptides with a minimum length of seven amino acids with carbamidomethylation as a fixed modification, and N-terminal acetylation and methionine oxidations as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "Tandem mass spectra were searched against the 2015 Uniprot human databases (UP000005640_9606 and UP000005640_9606_additional) using MaxQuant version 1.5.5.6 with a 1% FDR at the peptide and protein level, peptides with a minimum length of seven amino acids with carbamidomethylation as a fixed modification, and N-terminal acetylation and methionine oxidations as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "methionine oxidations",
+      "evidence": "Tandem mass spectra were searched against the 2015 Uniprot human databases (UP000005640_9606 and UP000005640_9606_additional) using MaxQuant version 1.5.5.6 with a 1% FDR at the peptide and protein level, peptides with a minimum length of seven amino acids with carbamidomethylation as a fixed modification, and N-terminal acetylation and methionine oxidations as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.908,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "SDC",
+      "evidence": "Powdered samples were then resupended in 500 µl of SDC reduction and alkylation buffer and boiled for 10 min to denature proteins."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.9,
+    "evidence_score": 0.884,
+    "completeness": 0.789,
+    "format_score": 1.0
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Data-dependent acquisition (DDA) was performed with the resolution of the Orbitrap set to 35,000, with a fill time of 120 ms and a limitation of 2 × 105 ions."
+    },
+    {
+      "value": "Shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "55 mM",
+      "evidence": "Dehydration of gel pieces by acetonitrile enabled buffer exchange prior and after the reduction and alkylation of cysteine-containing proteins, which was carried out using the following conditions: dithiothreitol (56 °C, 30 min, 10 mM) and iodacetamide (room temperature, in the dark, 20 min, 55 mM), in 100 mM ammonium bicarbonate."
+    },
+    {
+      "value": "10 mM",
+      "evidence": "Subsequently, reduced cysteines were alkylated with iodacetamide (room temperature, in the dark, 30 min, 10 mM)."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Subsequently, reduced cysteines were alkylated with iodacetamide (room temperature, in the dark, 30 min, 10 mM)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "For digestion, trypsin (sequencing grade, Promega) was added in an enzyme to protein ratio 1:50, and incubated overnight at 37 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "40%",
+      "evidence": "A normalised collision energy of 40% was used, and the fragmentation was performed after accumulation of 3 × 104 ions or after filling time of 100 ms for each precursor ion."
+    },
+    {
+      "value": "32",
+      "evidence": "A normalised collision energy of 32 was applied."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high-pH reverse phase fractionation",
+      "evidence": "An Agilent 1200 Infinity high-performance liquid chromatography system, equipped with a Gemini C18 column (3 μm, 100 × 3.0 mm, 110 Å, Phenomenex), was used to perform offline high pH reverse phase fractionation."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    },
+    {
+      "value": "QExactive Plus",
+      "evidence": "The outlet of the analytical column was coupled directly to a QExactive Plus (Thermo Fisher Scientific) mass spectrometer using the ProXeon nanoflow source in positive ion mode.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002634",
+      "ontology_name": "Q Exactive Plus",
+      "similarity": 0.702,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive Plus"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    },
+    {
+      "value": "TMT10plex",
+      "evidence": "Resulting peptides were labelled with TMT10plex (DOI: 10.1021/ac500140s) Isobaric Label Reagent (Thermo Fisher Scientific) according the manufacturer’s instructions."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Data-dependent acquisition (DDA) was performed with the resolution of the Orbitrap set to 35,000, with a fill time of 120 ms and a limitation of 2 × 105 ions."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    },
+    {
+      "value": "Carbamidomethyl (C)",
+      "evidence": "The data was searched with the following modifications: Carbamidomethyl (C) and TMT10 (K) (fixed modification), Acetyl (N-term), Oxidation (M) and TMT10 (N-term) (variable modifications).",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.965,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "carbamidomethylc"
+    },
+    {
+      "value": "TMT10 (K)",
+      "evidence": "The data was searched with the following modifications: Carbamidomethyl (C) and TMT10 (K) (fixed modification), Acetyl (N-term), Oxidation (M) and TMT10 (N-term) (variable modifications).",
+      "is_normalized": true,
+      "ontology_id": "MOD:01720",
+      "ontology_name": "TMT6plex-126 reporter+balance reagent acylated residue",
+      "similarity": 0.718,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "TMT6plex"
+    },
+    {
+      "value": "Acetyl (N-term)",
+      "evidence": "The data was searched with the following modifications: Carbamidomethyl (C) and TMT10 (K) (fixed modification), Acetyl (N-term), Oxidation (M) and TMT10 (N-term) (variable modifications).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00061",
+      "ontology_name": "N-acetyl-L-threonine",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-acetyl-L-threonine"
+    },
+    {
+      "value": "Oxidation (M)",
+      "evidence": "The data was searched with the following modifications: Carbamidomethyl (C) and TMT10 (K) (fixed modification), Acetyl (N-term), Oxidation (M) and TMT10 (N-term) (variable modifications).",
+      "is_normalized": true,
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 0.925,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "TMT10 (N-term)",
+      "evidence": "The data was searched with the following modifications: Carbamidomethyl (C) and TMT10 (K) (fixed modification), Acetyl (N-term), Oxidation (M) and TMT10 (N-term) (variable modifications).",
+      "is_normalized": true,
+      "ontology_id": "MOD:01716",
+      "ontology_name": "TMT6plex reporter fragment",
+      "similarity": 0.722,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "TMT6plex reporter fragment"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Samples were treated with dithiothreitol (56 °C, 30 min, 10 mM) to reduce disulphide bridges in cysteine containing proteins."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "Samples were treated with dithiothreitol (56 °C, 30 min, 10 mM) to reduce disulphide bridges in cysteine containing proteins."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.896,
+    "evidence_score": 0.84,
+    "completeness": 0.88,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "55 mM",
+      "evidence": "Dehydration of gel pieces by acetonitrile enabled buffer exchange prior and after the reduction and alkylation of cysteine-containing proteins, which was carried out using the following conditions: dithiothreitol (56 °C, 30 min, 10 mM) and iodacetamide (room temperature, in the dark, 20 min, 55 mM), in 100 mM ammonium bicarbonate."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[1]",
+      "value": "10 mM",
+      "evidence": "Subsequently, reduced cysteines were alkylated with iodacetamide (room temperature, in the dark, 30 min, 10 mM)."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "10 mM",
+      "evidence": "Samples were treated with dithiothreitol (56 °C, 30 min, 10 mM) to reduce disulphide bridges in cysteine containing proteins."
+    }
+  ]
+}

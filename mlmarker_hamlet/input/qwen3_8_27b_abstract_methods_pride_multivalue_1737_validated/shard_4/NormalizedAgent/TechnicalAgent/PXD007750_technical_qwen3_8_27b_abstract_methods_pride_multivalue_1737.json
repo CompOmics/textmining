@@ -1,0 +1,150 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The Q Exactive mass spectrometer was operated in data-dependent mode using a full scan (m/z range 350\u20131650Th, nominal resolution of 70 000, target value 1E6) followed by MS/MS scans of the 12 most abundant ions."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "5 \u03bcg per 20 \u03bcg protein",
+      "evidence": "Samples were reduced and alkylated using dithiothreotiol (1 \u03bcg DTT per 20 \u03bcg protein) and iodacetamide (5 \u03bcg per 20 \u03bcg protein)."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Samples were reduced and alkylated using dithiothreotiol (1 \u03bcg DTT per 20 \u03bcg protein) and iodacetamide (5 \u03bcg per 20 \u03bcg protein)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "Proteins were predigested with Lys-C at 30 \u00b0C for 2 h (1 \u03bcg Lys-C per 50 \u03bcg protein in 6 M urea and 12 mM Triethylammonium bicarbonate buffer (100 mM Ammonium bicarbonate (ABC) buffer for mouse samples)) and digested overnight with trypsin (Promega, Trypsin Gold, Mass spectrometry grade) at 37 \u00b0C (1 \u03bcg trypsin per 30 \u03bcg protein, 0.8 M urea in 45 mM Triethylammonium bicarbonate buffer (mouse: 2 M urea with 100 mM ABC buffer));"
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Proteins were predigested with Lys-C at 30 \u00b0C for 2 h (1 \u03bcg Lys-C per 50 \u03bcg protein in 6 M urea and 12 mM Triethylammonium bicarbonate buffer (100 mM Ammonium bicarbonate (ABC) buffer for mouse samples)) and digested overnight with trypsin (Promega, Trypsin Gold, Mass spectrometry grade) at 37 \u00b0C (1 \u03bcg trypsin per 30 \u03bcg protein, 0.8 M urea in 45 mM Triethylammonium bicarbonate buffer (mouse: 2 M urea with 100 mM ABC buffer));"
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30%",
+      "evidence": "MS/MS spectra were acquired at a resolution of 17 500 using normalized collision energy 30%, isolation widths of 2, 4, or 8, and the target value was set to 5E4."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "TiO2",
+      "evidence": "Phosphorylated peptides were enriched following the in-house TiO2 enrichment protocol, HeLa peptides were obtained following the in-house HeLa protocol."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "We introduce a combined consecutive sequence of N- and C-terminal ions as additional feature for validation, namely the sequence of a, b, and y ions, which typically constitute HCD/CID spectra."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "is_normalized": true,
+      "evidence": "instruments: Q Exactive",
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: The HPLC system used was an UltiMate 3000 HPLC RSLC nano system coupled to an Q Exactive mass spectrometer (Thermo Fisher Scientific, Bremen, Germany), equipped with a Proxeon nanospray source (Proxeon, Odense, Denmark)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: The eluting peptides were directly analyzed using hybrid quadrupole-orbitrap mass spectrometers (Q Exactive or Q Exactive Hybrid, Thermo Fisher)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "is_normalized": true,
+      "evidence": "The following parameter settings have been used for MS Amanda, Mascot, and MaxQuant: swissprot database 2016\u201306 (human/mouse) including the \u201ccRAP\u201d contaminants database; trypsin as enzyme; 2 missed cleavages; Carbamidomethyl(C) as fixed PTM; Oxidation(M) and (for the phosphorylated data set) Phospho(S,T) as variable modifications.",
+      "ontology_id": "MOD:01679",
+      "ontology_name": "alpha-aminocarbamoylated residue",
+      "similarity": 0.88
+    },
+    {
+      "value": "oxidation",
+      "is_normalized": true,
+      "evidence": "The following parameter settings have been used for MS Amanda, Mascot, and MaxQuant: swissprot database 2016\u201306 (human/mouse) including the \u201ccRAP\u201d contaminants database; trypsin as enzyme; 2 missed cleavages; Carbamidomethyl(C) as fixed PTM; Oxidation(M) and (for the phosphorylated data set) Phospho(S,T) as variable modifications.",
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 1.0
+    },
+    {
+      "value": "phosphorylation",
+      "is_normalized": true,
+      "evidence": "The following parameter settings have been used for MS Amanda, Mascot, and MaxQuant: swissprot database 2016\u201306 (human/mouse) including the \u201ccRAP\u201d contaminants database; trypsin as enzyme; 2 missed cleavages; Carbamidomethyl(C) as fixed PTM; Oxidation(M) and (for the phosphorylated data set) Phospho(S,T) as variable modifications.",
+      "ontology_id": "MOD:00046",
+      "ontology_name": "O-phospho-L-serine",
+      "similarity": 1.0
+    },
+    {
+      "value": "phosphorylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: phosphorylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "evidence": "modifications: phosphorylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "1 \u03bcg DTT per 20 \u03bcg protein",
+      "evidence": "Samples were reduced and alkylated using dithiothreotiol (1 \u03bcg DTT per 20 \u03bcg protein) and iodacetamide (5 \u03bcg per 20 \u03bcg protein)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Samples were reduced and alkylated using dithiothreotiol (1 \u03bcg DTT per 20 \u03bcg protein) and iodacetamide (5 \u03bcg per 20 \u03bcg protein)."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "labeling",
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study.",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.893,
+    "evidence_score": 0.805,
+    "completeness": 0.95,
+    "format_score": 1.0
+  }
+}

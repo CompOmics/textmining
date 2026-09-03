@@ -1,0 +1,154 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The MS was operated in data dependent mode and each MS scan was followed by a maximum of ten MS/MS scans."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "30 mM",
+      "evidence": "followed by 30 mM iodacetamide (Sigma-Aldrich, St. Louis, USA) for 15 min at 37 °C"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodacetamide",
+      "evidence": "followed by 30 mM iodacetamide (Sigma-Aldrich, St. Louis, USA) for 15 min at 37 °C"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Sequencing grade trypsin (Worthington, Lakewood, NJ, USA) was added in a ratio of at least 2 µg per mm3 tissue."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "5 µl of each sample were analyzed by an Orbitrap Q-Exactive plus (Thermo Scientific) mass spectrometer coupled to an Easy nanoLC 1000 (Thermo Scientific) with a flow rate of 300 nl/min."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "quantification: Label free"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "5 µl of each sample were analyzed by an Orbitrap Q-Exactive plus (Thermo Scientific) mass spectrometer"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Carbamidomethyl at cysteines was the only fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "1 mM",
+      "evidence": "0.1 M HEPES pH 8 (AppliChem, Darmstadt, Germany) and 1 mM dithiothreitol (DTT) (AppliChem, Darmstadt, Germany) were added"
+    },
+    {
+      "value": "10 mM",
+      "evidence": "The cysteine residues of the peptides in the supernatant were then reduced and alkylated by incubation in 10 mM DTT for 15 min at 37 °C"
+    },
+    {
+      "value": "0.1 M",
+      "evidence": "0.1 M Tris–HCl pH 7.6 and 0.1 M DTT for 4 h at 95 °C and 750 rpm."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "1 mM dithiothreitol (DTT) (AppliChem, Darmstadt, Germany) were added to each reaction tube"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.792,
+    "evidence_score": 0.672,
+    "completeness": 0.778,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "30 mM",
+      "evidence": "followed by 30 mM iodacetamide (Sigma-Aldrich, St. Louis, USA) for 15 min at 37 °C"
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "1 mM",
+      "evidence": "0.1 M HEPES pH 8 (AppliChem, Darmstadt, Germany) and 1 mM dithiothreitol (DTT) (AppliChem, Darmstadt, Germany) were added"
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[1]",
+      "value": "10 mM",
+      "evidence": "The cysteine residues of the peptides in the supernatant were then reduced and alkylated by incubation in 10 mM DTT for 15 min at 37 °C"
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[2]",
+      "value": "0.1 M",
+      "evidence": "0.1 M Tris–HCl pH 7.6 and 0.1 M DTT for 4 h at 95 °C and 750 rpm."
+    }
+  ]
+}

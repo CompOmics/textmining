@@ -1,0 +1,240 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The samples were acquired in DDA mode using a maximum of ten dependent scans (TopN approach) with synchronous precursor selection (SPS) enabled."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "50 mM final concentration",
+      "evidence": "Proteins were alkylated by addition of iodoacetamide (50\u2009mM final concentration) and incubated for 30\u2009min at room temperature in the dark."
+    },
+    {
+      "value": "55 mM",
+      "evidence": "After alkylation with 55\u2009mM CAA, proteins were digested with trypsin overnight at 37\u2009\u00b0C."
+    },
+    {
+      "value": "55 mM",
+      "evidence": "the captured proteins were denatured with 8\u2009M urea buffer, alkylated with 55\u2009mM iodoacetamide and digested with trypsin according to standard procedures."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Proteins were alkylated by addition of iodoacetamide (50\u2009mM final concentration) and incubated for 30\u2009min at room temperature in the dark."
+    },
+    {
+      "value": "CAA",
+      "evidence": "After alkylation with 55\u2009mM CAA, proteins were digested with trypsin overnight at 37\u2009\u00b0C."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Proteins were digested by addition of sequencing-grade trypsin at a ratio of 1:50 at 37\u2009\u00b0C overnight."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "35%",
+      "evidence": "Fragmentation was achieved by collision-induced dissociation (CID) with a fixed normalized collision energy of 35% and an CID activation time of 10\u2009ms."
+    },
+    {
+      "value": "45%",
+      "evidence": "Fragment ions were further fragmented by high-energy collision-induced dissociation (HCD) at a fixed activation energy at 45% collision energy."
+    },
+    {
+      "value": "30%",
+      "evidence": "Peptide fragmentation was performed using HCD and a normalized collision energy of 30%."
+    },
+    {
+      "value": "30% normalized collision energy",
+      "evidence": "fragmented by HCD using 30% normalized collision energy and analysed in the Orbitrap at a resolution of 15,000"
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "streptavidin",
+      "evidence": "Pierce Streptavidin Agarose (Thermo Fisher Scientific, 20353) resin was prepared by centrifugation for 30\u2009s followed by two PBS washes."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high-pH fractionation",
+      "evidence": "Subsequently, labelled peptides were pooled and fractionated using on-tip high-pH fractionation."
+    },
+    {
+      "value": "time-window-based fractions",
+      "evidence": "Peptides were separated on an C18 reversed-phase column (150\u2009\u00d7\u20092.0\u2009mm Gemini-NX, 3\u2009\u00b5m C18 110\u2009\u00c5, Phenomenex) by liquid chromatography (LC) into 96 time-window-based fractions operating at 50\u2009\u00b5l\u2009min\u22121 constant flow rate."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "collision-induced dissociation (CID)",
+      "evidence": "Fragmentation was achieved by collision-induced dissociation (CID) with a fixed normalized collision energy of 35% and an CID activation time of 10\u2009ms."
+    },
+    {
+      "value": "high-energy collision-induced dissociation (HCD)",
+      "evidence": "Fragment ions were further fragmented by high-energy collision-induced dissociation (HCD) at a fixed activation energy at 45% collision energy."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "evidence": "MS data were acquired on the Orbitrap Fusion Lumos Tribrid mass spectrometer (Thermo Fisher Scientific) coupled to the Dionex Ultimate 3000 RSLCnano system (Thermo Fisher Scientific) interfaced with the Nanospray Flex Ion Source (Thermo Fisher Scientific).",
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "peptides were separated on an analytical column (50\u2009cm, 75\u2009mm inner diameter) in-house packed with ReproSil-Pur 120 C18-AQ, 3\u2009\u00b5m (Dr. Maisch HPLC) fitted to an ESI emitter fused silica (20\u2009\u03bcm inner diameter\u2009\u00d7\u20097\u2009cm\u2009length\u2009\u00d7\u2009365\u2009\u03bcm outer diameter; orifice inner diameter, 10\u2009\u03bcm; CoAnn Technologies) kept at 50\u2009\u00b0C."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "Next, the samples were TMT-labelled with the TMTpro 18-plex Label Reagent Set (Thermo Fisher Scientific, A52045) according to the manufacturer\u2019s instructions."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "This test mix was measured by data-dependent acquisition (DDA) in the\u00a0Orbitrap\u00a0for both MS1 and MS2."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "methionine oxidation (+15.994 Da)",
+      "is_normalized": true,
+      "evidence": "As variable modification methionine oxidation (+15.994\u2009Da), deamidation (0.984\u2009Da), phosphorylation on serine, threonine and tyrosine (+79.966\u2009Da), N-terminal specific acetylation (+42.011\u2009Da), methionine loss (\u2212131.040\u2009Da) and acetylation with methionine loss (\u221289.030\u2009Da) with a maximum number of three variable modification of the same type per peptide.",
+      "ontology_id": "MOD:00768",
+      "ontology_name": "methionine oxidation with neutral loss of 80 Da",
+      "similarity": 0.837
+    },
+    {
+      "value": "deamidation (0.984 Da)",
+      "is_normalized": true,
+      "evidence": "As variable modification methionine oxidation (+15.994\u2009Da), deamidation (0.984\u2009Da), phosphorylation on serine, threonine and tyrosine (+79.966\u2009Da), N-terminal specific acetylation (+42.011\u2009Da), methionine loss (\u2212131.040\u2009Da) and acetylation with methionine loss (\u221289.030\u2009Da) with a maximum number of three variable modification of the same type per peptide.",
+      "ontology_id": "MOD:00219",
+      "ontology_name": "L-citrulline",
+      "similarity": 0.785
+    },
+    {
+      "value": "phosphorylation on serine, threonine and tyrosine (+79.966 Da)",
+      "is_normalized": true,
+      "evidence": "As variable modification methionine oxidation (+15.994\u2009Da), deamidation (0.984\u2009Da), phosphorylation on serine, threonine and tyrosine (+79.966\u2009Da), N-terminal specific acetylation (+42.011\u2009Da), methionine loss (\u2212131.040\u2009Da) and acetylation with methionine loss (\u221289.030\u2009Da) with a maximum number of three variable modification of the same type per peptide.",
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 0.708
+    },
+    {
+      "value": "N-terminal specific acetylation (+42.011 Da)",
+      "is_normalized": true,
+      "evidence": "As variable modification methionine oxidation (+15.994\u2009Da), deamidation (0.984\u2009Da), phosphorylation on serine, threonine and tyrosine (+79.966\u2009Da), N-terminal specific acetylation (+42.011\u2009Da), methionine loss (\u2212131.040\u2009Da) and acetylation with methionine loss (\u221289.030\u2009Da) with a maximum number of three variable modification of the same type per peptide.",
+      "ontology_id": "MOD:00394",
+      "ontology_name": "monoacetylated residue",
+      "similarity": 0.773
+    },
+    {
+      "value": "methionine loss (\u2212131.040 Da)",
+      "is_normalized": true,
+      "evidence": "As variable modification methionine oxidation (+15.994\u2009Da), deamidation (0.984\u2009Da), phosphorylation on serine, threonine and tyrosine (+79.966\u2009Da), N-terminal specific acetylation (+42.011\u2009Da), methionine loss (\u2212131.040\u2009Da) and acetylation with methionine loss (\u221289.030\u2009Da) with a maximum number of three variable modification of the same type per peptide.",
+      "ontology_id": "MOD:00768",
+      "ontology_name": "methionine oxidation with neutral loss of 80 Da",
+      "similarity": 0.723
+    },
+    {
+      "value": "acetylation with methionine loss (\u221289.030 Da)",
+      "is_normalized": false,
+      "evidence": "As variable modification methionine oxidation (+15.994\u2009Da), deamidation (0.984\u2009Da), phosphorylation on serine, threonine and tyrosine (+79.966\u2009Da), N-terminal specific acetylation (+42.011\u2009Da), methionine loss (\u2212131.040\u2009Da) and acetylation with methionine loss (\u221289.030\u2009Da) with a maximum number of three variable modification of the same type per peptide."
+    },
+    {
+      "value": "carbamidomethylation (+57.021 Da)",
+      "is_normalized": false,
+      "evidence": "Carbamidomethylation (+57.021\u2009Da) of cysteine residues and TMT 18-plex labelling of peptide N termini and lysine residues (+304.207\u2009Da) were used as static modifications."
+    },
+    {
+      "value": "monohydroxylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue",
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "phosphorylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue",
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "83.3 mM",
+      "evidence": "In brief, proteins were reduced by addition of DTT (final concentration 83.3\u2009mM), followed by incubation at 95\u2009\u00b0C for 5\u2009min."
+    },
+    {
+      "value": "50 mM",
+      "evidence": "The beads were washed and bound proteins were reduced with 50\u2009mM DTT in 8\u2009M urea, 40\u2009mM Tris HCl (pH\u20097.4) for 30\u2009min at room temperature."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "In brief, proteins were reduced by addition of DTT (final concentration 83.3\u2009mM), followed by incubation at 95\u2009\u00b0C for 5\u2009min."
+    },
+    {
+      "value": "TCEP",
+      "evidence": "Next, 30\u2009\u00b5l of 50\u2009mM TCEP (Sigma-Aldrich, 75259, diluted in H2O) was added, the samples were vortexed and incubated for 1\u2009h at 56\u2009\u00b0C with shaking at 300\u2009rpm."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.859,
+    "evidence_score": 0.718,
+    "completeness": 1.0,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "50 mM final concentration",
+      "evidence": "Proteins were alkylated by addition of iodoacetamide (50\u2009mM final concentration) and incubated for 30\u2009min at room temperature in the dark."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[1]",
+      "value": "55 mM",
+      "evidence": "After alkylation with 55\u2009mM CAA, proteins were digested with trypsin overnight at 37\u2009\u00b0C."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[2]",
+      "value": "55 mM",
+      "evidence": "the captured proteins were denatured with 8\u2009M urea buffer, alkylated with 55\u2009mM iodoacetamide and digested with trypsin according to standard procedures."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "83.3 mM",
+      "evidence": "In brief, proteins were reduced by addition of DTT (final concentration 83.3\u2009mM), followed by incubation at 95\u2009\u00b0C for 5\u2009min."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[1]",
+      "value": "50 mM",
+      "evidence": "The beads were washed and bound proteins were reduced with 50\u2009mM DTT in 8\u2009M urea, 40\u2009mM Tris HCl (pH\u20097.4) for 30\u2009min at room temperature."
+    }
+  ]
+}

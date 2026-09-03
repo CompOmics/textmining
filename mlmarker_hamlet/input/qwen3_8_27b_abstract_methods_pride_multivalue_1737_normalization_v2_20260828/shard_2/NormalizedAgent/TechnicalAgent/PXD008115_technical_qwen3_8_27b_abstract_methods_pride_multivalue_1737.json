@@ -1,0 +1,158 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "the MS was operated in a data-dependent acquisition mode using a top-10 method"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "lysates were digested using LysC and trypsin whereafter the resulting peptides mixture was desalted using Sep-Pak columns (Waters). Aliquots of 2 mg of desalted peptides were separated into 46 fractions using reversed-phase chromatography with alkaline running buffers and a Ultimate 3000 high-pressure liquid chromatography (HPLC) system (Dionex) as outlined previously. Each fraction was acidified by adding formic acid to a final concentration of 0.1% and subsequently concentrated by vacuum centrifugation. The concentration of peptides was spectrophotometrically determined at 280 nm using a NanoDrop instrument (Thermo Scientific). Peptides were then diluted in 5% acetonitrile and 0.1% trifluoroacetic acid, whereafter 1 µg of peptide was loaded for LC-MS/MS analysis."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "chloroacetamide",
+      "evidence": "For specific analysis of the methylation status of Lys55 and the N terminus of eEF1A samples were diluted in 2 M guanidine hydrochloride, 5 mM tris(2-carboxyethyl)phosphine, 10 mM chloroacetamide, 100 mM Tris pH 8.5 and digested with with endoproteinase Glu-C (Roche) or Chymotrypsin (Roche), respectively."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Proteins bound to the bait peptides were eluted and digested by adding 25 μl 2 M urea, 1 mM DTT and 5 ng/μl trypsin to each well."
+    },
+    {
+      "value": "LysC",
+      "evidence": "For analysis of peptides and proteins from SILAC-labeled cells, lysates were digested using LysC and trypsin whereafter the resulting peptides mixture was desalted using Sep-Pak columns (Waters)."
+    },
+    {
+      "value": "Glu-C",
+      "evidence": "For specific analysis of the methylation status of Lys55 and the N terminus of eEF1A samples were diluted in 2 M guanidine hydrochloride, 5 mM tris(2-carboxyethyl)phosphine, 10 mM chloroacetamide, 100 mM Tris pH 8.5 and digested with with endoproteinase Glu-C (Roche) or Chymotrypsin (Roche), respectively."
+    },
+    {
+      "value": "Chymotrypsin",
+      "evidence": "For specific analysis of the methylation status of Lys55 and the N terminus of eEF1A samples were diluted in 2 M guanidine hydrochloride, 5 mM tris(2-carboxyethyl)phosphine, 10 mM chloroacetamide, 100 mM Tris pH 8.5 and digested with with endoproteinase Glu-C (Roche) or Chymotrypsin (Roche), respectively."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "IMAC",
+      "evidence": "unknown"
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "bRP",
+      "evidence": "Aliquots of 2 mg of desalted peptides were separated into 46 fractions using reversed-phase chromatography with alkaline running buffers and a Ultimate 3000 high-pressure liquid chromatography (HPLC) system (Dionex) as outlined previously."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "peptides dissociated using HCD were analyzed at a resolution of 60,000"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q-Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 0.984,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: All samples were analyzed using an EASY-nLC 1200 system connected to a Q-Exactive HF mass spectrometer (Thermo Fisher Scientific)"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "SILAC",
+      "evidence": "HAP-1 WT and METTL13 KO cells were subjected to stable isotope labeling of amino acids in cell culture (SILAC) for quantitative MS analysis of peptides and proteins."
+    },
+    {
+      "value": "label-free",
+      "evidence": "Label-free quantification of proteins from pull-down experiment was performed using the MaxLFQ algorithm embedded in MaxQuant with predefined settings."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: All samples were analyzed using an EASY-nLC 1200 system connected to a Q-Exactive HF mass spectrometer (Thermo Fisher Scientific)"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "methylated residue",
+      "evidence": "modifications: methylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00427",
+      "ontology_name": "methylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "methylated residue"
+    },
+    {
+      "value": "methylation of lysine (mono, di, and tri) and arginine (mono and di)",
+      "evidence": "methylation of lysine (mono, di, and tri) and arginine (mono and di) as well as cyclization of N-terminal glutamine to pyro-glutamate were included as variable modifications",
+      "is_normalized": true,
+      "ontology_id": "MOD:00427",
+      "ontology_name": "methylated residue",
+      "similarity": 0.815,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Methylation (N terminus, N epsilon of Lysine, O of Serine, Threonine or C terminus, N of Asparagine)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "For specific analysis of the methylation status of Lys55 and the N terminus of eEF1A samples were diluted in 2 M guanidine hydrochloride, 5 mM tris(2-carboxyethyl)phosphine, 10 mM chloroacetamide, 100 mM Tris pH 8.5 and digested with with endoproteinase Glu-C (Roche) or Chymotrypsin (Roche), respectively."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "enrichment_method",
+      "value": "IMAC",
+      "evidence": "unknown",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "IMAC",
+      "evidence": "unknown",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.871,
+    "evidence_score": 0.782,
+    "completeness": 0.9,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "10 mM",
+      "evidence": "lysates were digested using LysC and trypsin whereafter the resulting peptides mixture was desalted using Sep-Pak columns (Waters). Aliquots of 2 mg of desalted peptides were separated into 46 fractions using reversed-phase chromatography with alkaline running buffers and a Ultimate 3000 high-pressure liquid chromatography (HPLC) system (Dionex) as outlined previously. Each fraction was acidified by adding formic acid to a final concentration of 0.1% and subsequently concentrated by vacuum centrifugation. The concentration of peptides was spectrophotometrically determined at 280 nm using a NanoDrop instrument (Thermo Scientific). Peptides were then diluted in 5% acetonitrile and 0.1% trifluoroacetic acid, whereafter 1 µg of peptide was loaded for LC-MS/MS analysis."
+    }
+  ]
+}

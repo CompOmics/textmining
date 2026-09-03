@@ -1,0 +1,100 @@
+{
+  "biological_replicate": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    },
+    {
+      "value": "K562 cells were cultured in RPMI-1640 medium supplemented with 10% fetal bovine serum.",
+      "evidence": "inferred: The text describes K562 and HCT116 cell lines used for PISA experiments but does not explicitly state the number of biological replicates."
+    },
+    {
+      "value": "HCT116 cell were cultured in Dulbecco\u2019s Modified Eagle\u2019s Medium supplemented with 10% fetal bovine serum and 1 X penicillin-streptomycin.",
+      "evidence": "inferred: The text describes HCT116 cell line used for PISA experiments but does not explicitly state the number of biological replicates."
+    }
+  ],
+  "experimental_design": [
+    {
+      "value": "dose response",
+      "evidence": "inferred: Each compound was added to fresh media at a 3 X concentration (30 \u03bcM). In order to initiate the experiment, 500 \u03bcL of cell suspension was mixed with 1 mL of 3 X treatment media and plated in a 24-well untreated tissue culture plate to achieve a final cell concentration of 2x106 cells/mL and a compound concentration of 10 \u03bcM."
+    }
+  ],
+  "factor_value": [
+    {
+      "value": "compound treatment",
+      "evidence": "inferred: We considered proteins to engage a compound if both replicates of the compound treatments resulted when the thermal stability fold change compared to DMSO greater than an absolute value of log20.2 and an absolute z-score greater than 3.5."
+    }
+  ],
+  "number_of_biological_replicates": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "number_of_fractions": [
+    {
+      "value": "24",
+      "evidence": "A total of 96 Fractions were consolidated into 24 samples in a checkerboard fashion and vacuum dried to completion."
+    }
+  ],
+  "number_of_samples": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "number_of_technical_replicates": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "technical_replicate": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "technology_type": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    },
+    {
+      "value": "bottom-up proteomics",
+      "evidence": "inferred: Samples (20 \u00b5g protein) were diluted in prep buffer (400 mM EPPS pH 8.5, 1% SDS, 10 mM tris(2-carboxyethyl)phosphine hydrochloride) and incubated at room temperature for 10 min. Iodoacetimide was added to a final concentration of 10 mM to each sample and incubated for 25 min in the dark. Finally, DTT was added to each sample to a final concentration of 10 mM. A buffer exchange was carried out using a modified SP3 protocol."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "biological_replicate",
+      "value": "K562 cells were cultured in RPMI-1640 medium supplemented with 10% fetal bovine serum.",
+      "evidence": "inferred: The text describes K562 and HCT116 cell lines used for PISA experiments but does not explicitly state the number of biological replicates.",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "biological_replicate",
+      "value": "HCT116 cell were cultured in Dulbecco\u2019s Modified Eagle\u2019s Medium supplemented with 10% fetal bovine serum and 1 X penicillin-streptomycin.",
+      "evidence": "inferred: The text describes HCT116 cell line used for PISA experiments but does not explicitly state the number of biological replicates.",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "K562 cells were cultured in RPMI-1640 medium supplemented with 10% fetal bovine serum.",
+      "evidence": "inferred: The text describes K562 and HCT116 cell lines used for PISA experiments but does not explicitly state the number of biological replicates.",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "HCT116 cell were cultured in Dulbecco\u2019s Modified Eagle\u2019s Medium supplemented with 10% fetal bovine serum and 1 X penicillin-streptomycin.",
+      "evidence": "inferred: The text describes HCT116 cell line used for PISA experiments but does not explicitly state the number of biological replicates.",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.821,
+    "evidence_score": 0.808,
+    "completeness": 0.583,
+    "format_score": 1.0
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "inferred: The top 10 peptide signals (charge‐states 2+ and higher) were submitted to MS/MS in the HCD (higher‐energy collision) cell (1.6 amu isolation width, 25% normalized collision energy)."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Subsequently, the gels were washed and proteins reduced and alkylated by incubating the whole gel in dithiothreitol and iodoacetamide, respectively."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "The gel cubes from one band were transferred into an eppendorf tube and incubated with trypsin o/n."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "25% normalized collision energy",
+      "evidence": "The top 10 peptide signals (charge‐states 2+ and higher) were submitted to MS/MS in the HCD (higher‐energy collision) cell (1.6 amu isolation width, 25% normalized collision energy)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "inferred: The peptides from each gel band were extracted and stored at − 20 °C until LC-MS/MS analysis."
+    },
+    {
+      "value": "bRP",
+      "evidence": "inferred: The peptides from each gel band were extracted and stored at − 20 °C until LC-MS/MS analysis."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The top 10 peptide signals (charge‐states 2+ and higher) were submitted to MS/MS in the HCD (higher‐energy collision) cell (1.6 amu isolation width, 25% normalized collision energy)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Eluting peptides were ionized at a potential of + 2 kVa into a Q Exactive mass spectrometer (Thermo Fisher)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Searches were performed with the label‐free quantification option selected."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Intact masses were measured at resolution 70,000 (at m/z 200) in the orbitrap using an AGC target value of 3E6 charges."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Cysteine carboxamidomethylation",
+      "evidence": "Cysteine carboxamidomethylation (Cys, + 57.021464 Da) was treated as fixed modification and methionine oxidation (Met, + 15.994915 Da) and N‐terminal acetylation (N‐terminal, + 42.010565 Da) as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.862,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxamidomethyl (on Cysteine)"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "Cysteine carboxamidomethylation (Cys, + 57.021464 Da) was treated as fixed modification and methionine oxidation (Met, + 15.994915 Da) and N‐terminal acetylation (N‐terminal, + 42.010565 Da) as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "N‐terminal acetylation",
+      "evidence": "Cysteine carboxamidomethylation (Cys, + 57.021464 Da) was treated as fixed modification and methionine oxidation (Met, + 15.994915 Da) and N‐terminal acetylation (N‐terminal, + 42.010565 Da) as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.928,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "inferred: Subsequently, the gels were washed and proteins reduced and alkylated by incubating the whole gel in dithiothreitol and iodoacetamide, respectively."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "acquisition_method",
+      "value": "DDA",
+      "evidence": "inferred: The top 10 peptide signals (charge‐states 2+ and higher) were submitted to MS/MS in the HCD (higher‐energy collision) cell (1.6 amu isolation width, 25% normalized collision energy).",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "collision_energy",
+      "value": "25% normalized collision energy",
+      "evidence": "The top 10 peptide signals (charge‐states 2+ and higher) were submitted to MS/MS in the HCD (higher‐energy collision) cell (1.6 amu isolation width, 25% normalized collision energy).",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "fragmentation_method",
+      "value": "HCD",
+      "evidence": "The top 10 peptide signals (charge‐states 2+ and higher) were submitted to MS/MS in the HCD (higher‐energy collision) cell (1.6 amu isolation width, 25% normalized collision energy).",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "DDA",
+      "evidence": "inferred: The top 10 peptide signals (charge‐states 2+ and higher) were submitted to MS/MS in the HCD (higher‐energy collision) cell (1.6 amu isolation width, 25% normalized collision energy).",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "25% normalized collision energy",
+      "evidence": "The top 10 peptide signals (charge‐states 2+ and higher) were submitted to MS/MS in the HCD (higher‐energy collision) cell (1.6 amu isolation width, 25% normalized collision energy).",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "HCD",
+      "evidence": "The top 10 peptide signals (charge‐states 2+ and higher) were submitted to MS/MS in the HCD (higher‐energy collision) cell (1.6 amu isolation width, 25% normalized collision energy).",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.884,
+    "evidence_score": 0.832,
+    "completeness": 0.842,
+    "format_score": 1.0
+  }
+}

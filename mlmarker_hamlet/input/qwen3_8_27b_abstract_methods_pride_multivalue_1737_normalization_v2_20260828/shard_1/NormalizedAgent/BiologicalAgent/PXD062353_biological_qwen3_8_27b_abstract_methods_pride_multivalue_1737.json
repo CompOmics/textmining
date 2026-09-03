@@ -1,0 +1,146 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "3T3-F442A",
+      "evidence": "However, contrary to earlier studies, we demonstrate that highly purified ISM1 does not stimulate AKT phosphorylation in 3T3-F442A pre-adipocytes.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "NIH-3T3D4 cell",
+      "normalization_candidate_ids": [
+        "CLO:0008174",
+        "CLO:0001347",
+        "CLO:0001346",
+        "CLO:0001348",
+        "CLO:0037261"
+      ]
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "Epithelial cell",
+      "evidence": "organism parts: Epithelial cell",
+      "is_normalized": true,
+      "ontology_id": "CL:0000066",
+      "ontology_name": "epithelial cell",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "epithelial cell"
+    },
+    {
+      "value": "pre-adipocytes",
+      "evidence": "However, contrary to earlier studies, we demonstrate that highly purified ISM1 does not stimulate AKT phosphorylation in 3T3-F442A pre-adipocytes.",
+      "is_normalized": true,
+      "ontology_id": "CL:0002334",
+      "ontology_name": "preadipocyte",
+      "similarity": 0.878,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "preadipocyte"
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell line",
+      "evidence": "inferred: However, contrary to earlier studies, we demonstrate that highly purified ISM1 does not stimulate AKT phosphorylation in 3T3-F442A pre-adipocytes."
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "cell culture",
+      "evidence": "inferred: However, contrary to earlier studies, we demonstrate that highly purified ISM1 does not stimulate AKT phosphorylation in 3T3-F442A pre-adipocytes.",
+      "is_normalized": true,
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cell culture"
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "_confidence": {
+    "overall": 0.847,
+    "evidence_score": 0.933,
+    "completeness": 0.4,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "cell_line[0]",
+      "value": "3T3-F442A",
+      "evidence": "However, contrary to earlier studies, we demonstrate that highly purified ISM1 does not stimulate AKT phosphorylation in 3T3-F442A pre-adipocytes."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "cell_type[1]",
+      "value": "pre-adipocytes",
+      "evidence": "However, contrary to earlier studies, we demonstrate that highly purified ISM1 does not stimulate AKT phosphorylation in 3T3-F442A pre-adipocytes."
+    }
+  ]
+}

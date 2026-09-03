@@ -1,0 +1,168 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-independent acquisition",
+      "evidence": "experiment types: Data-independent acquisition; Data-dependent acquisition"
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-independent acquisition; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "30 mM",
+      "evidence": "alkylated with 30\u2009mM iodoacetamide (IAA) (Sigma-Aldrich, 16125-25\u2009G) in the dark at room temperature for 30\u2009min"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "alkylated with 30\u2009mM iodoacetamide (IAA) (Sigma-Aldrich, 16125-25\u2009G) in the dark at room temperature for 30\u2009min"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "digested overnight at 37\u2009\u00b0C using sequencing-grade porcine trypsin (Promega, V511A) at a 1:30 enzyme-to-substrate ratio"
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27%",
+      "evidence": "HCD collision energy of 27%"
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high-pH reversed-phase C18",
+      "evidence": "Peptide mixtures (~150\u2009\u00b5g) were fractionated employing the high-pH reversed-phase C18 (HpH) peptide fractionation method"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Product ions were generated via higher-energy collisional dissociation (HCD) mode"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "is_normalized": true,
+      "evidence": "instruments: Orbitrap Exploris 480",
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "Relative quantification",
+      "evidence": "quantification: Relative quantification"
+    },
+    {
+      "value": "label-free",
+      "evidence": "inferred: Raw DIA-MS datasets were processed using DIA-NN (version 1.8.1) with the following search settings"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: The samples were acquired using two modes: Data Independent Acquisition (DIA) for individual sample analysis and Data Dependent Acquisition (DDA) for library construction. A Vanquish UHPLC system coupled to an Orbitrap Exploris 480 mass spectrometer (Thermo Fisher Scientific, MA, USA) was used in this study."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "acetylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "Carbamidomethyl of cysteine",
+      "is_normalized": true,
+      "evidence": "Carbamidomethyl of cysteine was set as a fixed modification",
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.903
+    },
+    {
+      "value": "oxidation of methionine",
+      "is_normalized": true,
+      "evidence": "oxidation of methionine and acetylation of the protein N-termini were set as variable modifications",
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934
+    },
+    {
+      "value": "acetylation of the protein N-termini",
+      "is_normalized": true,
+      "evidence": "oxidation of methionine and acetylation of the protein N-termini were set as variable modifications",
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.873
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "15 mM",
+      "evidence": "Proteins were reduced with 15\u2009mM dithiothreitol (DTT) (Sigma-Aldrich, D0632-5G) at 60\u2009\u00b0C for 30\u2009min"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "Proteins were reduced with 15\u2009mM dithiothreitol (DTT) (Sigma-Aldrich, D0632-5G) at 60\u2009\u00b0C for 30\u2009min"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.932,
+    "evidence_score": 0.9,
+    "completeness": 0.909,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "30 mM",
+      "evidence": "alkylated with 30\u2009mM iodoacetamide (IAA) (Sigma-Aldrich, 16125-25\u2009G) in the dark at room temperature for 30\u2009min"
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "15 mM",
+      "evidence": "Proteins were reduced with 15\u2009mM dithiothreitol (DTT) (Sigma-Aldrich, D0632-5G) at 60\u2009\u00b0C for 30\u2009min"
+    }
+  ]
+}

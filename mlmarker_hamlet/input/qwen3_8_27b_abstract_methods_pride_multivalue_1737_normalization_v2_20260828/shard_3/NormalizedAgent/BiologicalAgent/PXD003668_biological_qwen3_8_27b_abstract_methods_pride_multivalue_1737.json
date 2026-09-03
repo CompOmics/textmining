@@ -1,0 +1,729 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "ovary",
+      "evidence": "Ovarian tumours from five chemo-naive patients with serous-papillary high-grade, FIGO Stage IIIB/C, OvCa were collected by EL under an IRB-approved protocol at the University of Chicago during the primary debulking surgery or laparoscopy before neo-adjuvant treatment."
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "HeLa",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "is_normalized": true,
+      "ontology_id": "CLO:0003684",
+      "ontology_name": "HeLa cell",
+      "similarity": 0.942,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "HeLa cell"
+    },
+    {
+      "value": "HEK293",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "is_normalized": true,
+      "ontology_id": "CLO:0001230",
+      "ontology_name": "HEK293",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "HEK293"
+    },
+    {
+      "value": "MCF-7",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "is_normalized": true,
+      "ontology_id": "CLO:0007605",
+      "ontology_name": "obsolete MCF-7 cell",
+      "similarity": 0.882,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "obsolete MCF-7 cell"
+    },
+    {
+      "value": "A549",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "A498 cell",
+      "normalization_candidate_ids": [
+        "CLO:0009974",
+        "CLO:0008089",
+        "CLO:0003601",
+        "CLO:0001591",
+        "CLO:0008090"
+      ]
+    },
+    {
+      "value": "Jurkat",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "is_normalized": true,
+      "ontology_id": "CLO:0007043",
+      "ontology_name": "JURKAT cell",
+      "similarity": 0.956,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "JURKAT cell"
+    },
+    {
+      "value": "K562",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "is_normalized": true,
+      "ontology_id": "CLO:0007060",
+      "ontology_name": "K562 cl.6 cell",
+      "similarity": 0.89,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "K562 cl.6 cell"
+    },
+    {
+      "value": "NIH3T3",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "is_normalized": true,
+      "ontology_id": "CLO:0009227",
+      "ontology_name": "Swiss-3T3 cell",
+      "similarity": 0.764,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Swiss-3T3 cell"
+    },
+    {
+      "value": "MEF",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "MEF-1 cell",
+      "normalization_candidate_ids": [
+        "CLO:0007667",
+        "CLO:0007665",
+        "CLO:0007666",
+        "CLO:0002361",
+        "CLO:0004337"
+      ]
+    },
+    {
+      "value": "RAW264.7",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "is_normalized": true,
+      "ontology_id": "CLO:0008753",
+      "ontology_name": "RAW 264.7 cell",
+      "similarity": 0.865,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "RAW 264.7 cell"
+    },
+    {
+      "value": "WEHI-231",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "is_normalized": true,
+      "ontology_id": "CLO:0009575",
+      "ontology_name": "WEHI-231 cell",
+      "similarity": 0.869,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "WEHI-231 cell"
+    },
+    {
+      "value": "SNU119",
+      "evidence": "The following cell lines were treated (or untreated) with 7 μM ATRA daily for 7 days in 96-well plates: SNU119, TYKNU, KURAMOCHI, HEYA8, PEO4, 59M, SKOV3IP1 and COV318.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "SNU-16 cell",
+      "normalization_candidate_ids": [
+        "CLO:0009095",
+        "CLO:0009100",
+        "CLO:0009094",
+        "CLO:0037283",
+        "CLO:0009102"
+      ]
+    },
+    {
+      "value": "TYKNU",
+      "evidence": "The following cell lines were treated (or untreated) with 7 μM ATRA daily for 7 days in 96-well plates: SNU119, TYKNU, KURAMOCHI, HEYA8, PEO4, 59M, SKOV3IP1 and COV318.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Coturnix",
+      "normalization_candidate_ids": [
+        "NCBITaxon:9090",
+        "NCBITaxon:9091",
+        "NCBITaxon:93934"
+      ],
+      "normalization_qc_flags": [
+        "cross_namespace_mapping"
+      ]
+    },
+    {
+      "value": "KURAMOCHI",
+      "evidence": "The following cell lines were treated (or untreated) with 7 μM ATRA daily for 7 days in 96-well plates: SNU119, TYKNU, KURAMOCHI, HEYA8, PEO4, 59M, SKOV3IP1 and COV318.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "o.kisutch",
+      "normalization_candidate_ids": [
+        "NCBITaxon:8019",
+        "NCBITaxon:8022",
+        "NCBITaxon:74940",
+        "NCBITaxon:8018"
+      ],
+      "normalization_qc_flags": [
+        "cross_namespace_mapping"
+      ]
+    },
+    {
+      "value": "HEYA8",
+      "evidence": "The following cell lines were treated (or untreated) with 7 μM ATRA daily for 7 days in 96-well plates: SNU119, TYKNU, KURAMOCHI, HEYA8, PEO4, 59M, SKOV3IP1 and COV318.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "multiple endocrine neoplasia type 1",
+      "normalization_candidate_ids": [
+        "DOID:10017",
+        "DOID:3125",
+        "DOID:10016",
+        "DOID:14731",
+        "DOID:0070656"
+      ],
+      "normalization_qc_flags": [
+        "cross_namespace_mapping"
+      ]
+    },
+    {
+      "value": "PEO4",
+      "evidence": "The following cell lines were treated (or untreated) with 7 μM ATRA daily for 7 days in 96-well plates: SNU119, TYKNU, KURAMOCHI, HEYA8, PEO4, 59M, SKOV3IP1 and COV318.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "oculocutaneous albinism type VI",
+      "normalization_candidate_ids": [
+        "DOID:0080614",
+        "CLO:0037368",
+        "DOID:10584",
+        "DOID:5230",
+        "DOID:3263"
+      ],
+      "normalization_qc_flags": [
+        "cross_namespace_mapping"
+      ]
+    },
+    {
+      "value": "59M",
+      "evidence": "The following cell lines were treated (or untreated) with 7 μM ATRA daily for 7 days in 96-well plates: SNU119, TYKNU, KURAMOCHI, HEYA8, PEO4, 59M, SKOV3IP1 and COV318.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "MN-60 cell",
+      "normalization_candidate_ids": [
+        "CLO:0007808",
+        "CLO:0007812",
+        "CLO:0003775",
+        "CLO:0008495",
+        "CLO:0037170"
+      ]
+    },
+    {
+      "value": "SKOV3IP1",
+      "evidence": "The following cell lines were treated (or untreated) with 7 μM ATRA daily for 7 days in 96-well plates: SNU119, TYKNU, KURAMOCHI, HEYA8, PEO4, 59M, SKOV3IP1 and COV318.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "hip",
+      "normalization_candidate_ids": [
+        "UBERON:0001464",
+        "UBERON:0009856",
+        "CLO:0037218",
+        "DOID:10908",
+        "UBERON:0002607"
+      ],
+      "normalization_qc_flags": [
+        "cross_namespace_mapping"
+      ]
+    },
+    {
+      "value": "COV318",
+      "evidence": "The following cell lines were treated (or untreated) with 7 μM ATRA daily for 7 days in 96-well plates: SNU119, TYKNU, KURAMOCHI, HEYA8, PEO4, 59M, SKOV3IP1 and COV318.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "SPEV-13-D5-TK- cell",
+      "normalization_candidate_ids": [
+        "CLO:0009121",
+        "CLO:0001365",
+        "CLO:0001315",
+        "CLO:0001366",
+        "CLO:0008813"
+      ]
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "Epithelial cell",
+      "evidence": "organism parts: Epithelial cell; Cell culture",
+      "is_normalized": true,
+      "ontology_id": "CL:0000066",
+      "ontology_name": "epithelial cell",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "epithelial cell"
+    },
+    {
+      "value": "immortalized ovarian surface epithelial cells",
+      "evidence": "Here we report the integrated proteomic analysis of 26 ovarian cancer cell lines, HGSOC tumors, immortalized ovarian surface epithelial cells, and fallopian tube epithelial cells via a single-run mass spectrometric workflow.",
+      "is_normalized": true,
+      "ontology_id": "CL:4033014",
+      "ontology_name": "peg cell",
+      "similarity": 0.719,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "fallopian tube epithelial stem-like cell"
+    },
+    {
+      "value": "fallopian tube epithelial cells",
+      "evidence": "Here we report the integrated proteomic analysis of 26 ovarian cancer cell lines, HGSOC tumors, immortalized ovarian surface epithelial cells, and fallopian tube epithelial cells via a single-run mass spectrometric workflow.",
+      "is_normalized": true,
+      "ontology_id": "CL:4052018",
+      "ontology_name": "fallopian tube epithelial cell",
+      "similarity": 0.993,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "fallopian tube epithelial cell"
+    },
+    {
+      "value": "fallopian tube secretory epithelial cells",
+      "evidence": "Primary fallopian tube secretory epithelial cells (FTECs) were isolated and cultured as previously described.",
+      "is_normalized": true,
+      "ontology_id": "CL:4030006",
+      "ontology_name": "fallopian tube secretory epithelial cell",
+      "similarity": 0.993,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "fallopian tube secretory epithelial cell"
+    },
+    {
+      "value": "epithelial cell",
+      "evidence": "The in-depth quantitation of > 10,000 proteins results in three distinct cell line categories: epithelial (group I), clear cell (group II), and mesenchymal (group III).",
+      "is_normalized": true,
+      "ontology_id": "CL:0000066",
+      "ontology_name": "epithelial cell",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "epithelial cell"
+    },
+    {
+      "value": "clear cell",
+      "evidence": "The in-depth quantitation of > 10,000 proteins results in three distinct cell line categories: epithelial (group I), clear cell (group II), and mesenchymal (group III).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "reticular cell",
+      "normalization_candidate_ids": [
+        "CL:0000432",
+        "CL:0002293",
+        "CL:0009106",
+        "CL:0009102",
+        "CL:0009101"
+      ]
+    },
+    {
+      "value": "mesenchymal",
+      "evidence": "The in-depth quantitation of > 10,000 proteins results in three distinct cell line categories: epithelial (group I), clear cell (group II), and mesenchymal (group III).",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0003104",
+      "ontology_name": "mesenchyme",
+      "similarity": 0.916,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "mesenchymal tissue",
+      "normalization_qc_flags": [
+        "cross_namespace_mapping"
+      ]
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "Malignant neoplasm of ovary",
+      "evidence": "diseases: Malignant neoplasm of ovary",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0008170",
+      "ontology_name": "ovarian cancer",
+      "similarity": 1.0,
+      "normalization_method": "exact_synonym",
+      "normalization_matched_text": "Malignant neoplasm of ovary",
+      "synonym_scope": "EXACT"
+    },
+    {
+      "value": "high-grade serous ovarian cancer",
+      "evidence": "A cell line representative of human high-grade serous ovarian cancer (HGSOC) should not only resemble its tumor of origin at the molecular level, but also demonstrate functional utility in pre-clinical investigations.",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0005211",
+      "ontology_name": "ovarian serous adenocarcinoma",
+      "similarity": 0.911,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "serous ovarian cancer"
+    },
+    {
+      "value": "serous-papillary high-grade, FIGO Stage IIIB/C, OvCa",
+      "evidence": "Ovarian tumours from five chemo-naive patients with serous-papillary high-grade, FIGO Stage IIIB/C, OvCa were collected by EL under an IRB-approved protocol at the University of Chicago during the primary debulking surgery or laparoscopy before neo-adjuvant treatment.",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0003874",
+      "ontology_name": "ovarian serous surface papillary adenocarcinoma",
+      "similarity": 0.745,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "serous surface papillary carcinoma of the ovary"
+    },
+    {
+      "value": "benign gynaecological conditions",
+      "evidence": "Fallopian tubes were removed from three patients with benign gynaecological conditions not affecting the fallopian tube.",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0000624",
+      "ontology_name": "benign female reproductive system neoplasm",
+      "similarity": 0.789,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "benign gynecologic neoplasm"
+    },
+    {
+      "value": "cervical adenocarcinoma",
+      "evidence": "HeLa → \"cervical adenocarcinoma\", MCF-7 → \"breast carcinoma\", A549 → \"lung adenocarcinoma\"",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0005153",
+      "ontology_name": "cervical adenocarcinoma",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cervical adenocarcinoma"
+    },
+    {
+      "value": "breast carcinoma",
+      "evidence": "HeLa → \"cervical adenocarcinoma\", MCF-7 → \"breast carcinoma\", A549 → \"lung adenocarcinoma\"",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0004989",
+      "ontology_name": "breast carcinoma",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "breast carcinoma"
+    },
+    {
+      "value": "lung adenocarcinoma",
+      "evidence": "HeLa → \"cervical adenocarcinoma\", MCF-7 → \"breast carcinoma\", A549 → \"lung adenocarcinoma\"",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0005061",
+      "ontology_name": "lung adenocarcinoma",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "lung adenocarcinoma"
+    },
+    {
+      "value": "chronic myeloid leukemia",
+      "evidence": "K562 → \"chronic myeloid leukemia\", Jurkat → \"T-cell lymphoma\"",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0011996",
+      "ontology_name": "chronic myeloid leukemia",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "chronic myeloid leukemia"
+    },
+    {
+      "value": "T-cell lymphoma",
+      "evidence": "K562 → \"chronic myeloid leukemia\", Jurkat → \"T-cell lymphoma\"",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0015760",
+      "ontology_name": "T-cell non-Hodgkin lymphoma",
+      "similarity": 1.0,
+      "normalization_method": "exact_synonym",
+      "normalization_matched_text": "T-cell lymphoma",
+      "synonym_scope": "EXACT"
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "Cell culture",
+      "evidence": "organism parts: Epithelial cell; Cell culture"
+    },
+    {
+      "value": "cell line",
+      "evidence": "Thirty cell lines were included in this study; their sources and respective media are detailed in Supplementary Data 3."
+    },
+    {
+      "value": "primary cells",
+      "evidence": "Primary fallopian tube secretory epithelial cells (FTECs) were isolated and cultured as previously described."
+    },
+    {
+      "value": "tissue",
+      "evidence": "Frozen tumour samples"
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "cell culture",
+      "evidence": "organism parts: Epithelial cell; Cell culture",
+      "is_normalized": true,
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cell culture"
+    },
+    {
+      "value": "tumor biopsy",
+      "evidence": "Ovarian tumours from five chemo-naive patients with serous-papillary high-grade, FIGO Stage IIIB/C, OvCa were collected by EL under an IRB-approved protocol at the University of Chicago during the primary debulking surgery or laparoscopy before neo-adjuvant treatment.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "blood",
+      "normalization_candidate_ids": [
+        "BTO:0000089",
+        "BTO:0000134",
+        "BTO:0000553",
+        "BTO:0000679"
+      ]
+    },
+    {
+      "value": "healthy donors",
+      "evidence": "Fallopian tubes were removed from three patients with benign gynaecological conditions not affecting the fallopian tube.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "whole blood",
+      "normalization_candidate_ids": [
+        "BTO:0000089",
+        "BTO:0000131",
+        "BTO:0000572",
+        "BTO:0000570"
+      ]
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "ovary",
+      "evidence": "A cell line representative of human high-grade serous ovarian cancer (HGSOC) should not only resemble its tumor of origin at the molecular level, but also demonstrate functional utility in pre-clinical investigations.",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0000992",
+      "ontology_name": "ovary",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "ovary"
+    },
+    {
+      "value": "fallopian tube",
+      "evidence": "Fallopian tubes were removed from three patients with benign gynaecological conditions not affecting the fallopian tube.",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0003889",
+      "ontology_name": "fallopian tube",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "fallopian tube"
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "cell_line",
+      "value": "HeLa",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "cell_line",
+      "value": "HEK293",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "cell_line",
+      "value": "MCF-7",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "cell_line",
+      "value": "A549",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "cell_line",
+      "value": "Jurkat",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "cell_line",
+      "value": "K562",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "cell_line",
+      "value": "NIH3T3",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "cell_line",
+      "value": "MEF",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "cell_line",
+      "value": "RAW264.7",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "cell_line",
+      "value": "WEHI-231",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "disease_state",
+      "value": "cervical adenocarcinoma",
+      "evidence": "HeLa → \"cervical adenocarcinoma\", MCF-7 → \"breast carcinoma\", A549 → \"lung adenocarcinoma\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "disease_state",
+      "value": "breast carcinoma",
+      "evidence": "HeLa → \"cervical adenocarcinoma\", MCF-7 → \"breast carcinoma\", A549 → \"lung adenocarcinoma\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "disease_state",
+      "value": "lung adenocarcinoma",
+      "evidence": "HeLa → \"cervical adenocarcinoma\", MCF-7 → \"breast carcinoma\", A549 → \"lung adenocarcinoma\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "disease_state",
+      "value": "chronic myeloid leukemia",
+      "evidence": "K562 → \"chronic myeloid leukemia\", Jurkat → \"T-cell lymphoma\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "disease_state",
+      "value": "T-cell lymphoma",
+      "evidence": "K562 → \"chronic myeloid leukemia\", Jurkat → \"T-cell lymphoma\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "HeLa",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "HEK293",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "MCF-7",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "A549",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "Jurkat",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "K562",
+      "evidence": "If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) → species = \"Homo sapiens\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "NIH3T3",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "MEF",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "RAW264.7",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "WEHI-231",
+      "evidence": "If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) → species = \"Mus musculus\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "cervical adenocarcinoma",
+      "evidence": "HeLa → \"cervical adenocarcinoma\", MCF-7 → \"breast carcinoma\", A549 → \"lung adenocarcinoma\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "breast carcinoma",
+      "evidence": "HeLa → \"cervical adenocarcinoma\", MCF-7 → \"breast carcinoma\", A549 → \"lung adenocarcinoma\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "lung adenocarcinoma",
+      "evidence": "HeLa → \"cervical adenocarcinoma\", MCF-7 → \"breast carcinoma\", A549 → \"lung adenocarcinoma\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "chronic myeloid leukemia",
+      "evidence": "K562 → \"chronic myeloid leukemia\", Jurkat → \"T-cell lymphoma\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "T-cell lymphoma",
+      "evidence": "K562 → \"chronic myeloid leukemia\", Jurkat → \"T-cell lymphoma\"",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.843,
+    "evidence_score": 0.733,
+    "completeness": 0.882,
+    "format_score": 1.0
+  }
+}

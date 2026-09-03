@@ -1,0 +1,134 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "SH-SY5Y",
+      "is_normalized": true,
+      "evidence": "Human neuroblastoma SH\u2010SY5Y cells purchased from ATCC were maintained in the high\u2010glucose Dulbecco's Modified Eagle's Medium (DMEM; MilliporeSigma) supplemented with 10% fetal bovine serum (FBS; MilliporeSigma) at 37\u00b0C in 5% CO2.",
+      "ontology_id": "CLO:0009015",
+      "ontology_name": "SH-SY5Y cell",
+      "similarity": 0.965
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "neuroblastoma cells",
+      "is_normalized": false,
+      "evidence": "Human neuroblastoma SH\u2010SY5Y cells purchased from ATCC were maintained in the high\u2010glucose Dulbecco's Modified Eagle's Medium (DMEM; MilliporeSigma) supplemented with 10% fetal bovine serum (FBS; MilliporeSigma) at 37\u00b0C in 5% CO2."
+    },
+    {
+      "value": "neuronal cells",
+      "is_normalized": true,
+      "evidence": "neurodegeneration, yet it remains poorly understood how the global cysteine (Cys) proteome is remodeled in such conditions. Proteins with aberrantly modified Cys in response to oxidative stress can induce and exacerbate neurodegeneration. In this study, we induced oxidative stress by treating SH-SY5Y neuronal cells with the neurotoxin 6-hydroxydopamine (6-OHDA).",
+      "ontology_id": "CL:0002319",
+      "ontology_name": "neural cell",
+      "similarity": 0.947
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "normal",
+      "is_normalized": true,
+      "evidence": "inferred: In this study, we induced oxidative stress by treating SH-SY5Y neuronal cells with the neurotoxin 6-hydroxydopamine (6-OHDA).",
+      "ontology_id": "PATO:0000461",
+      "ontology_name": "normal",
+      "similarity": 0.999
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell line",
+      "evidence": "organisms: Homo sapiens (human)"
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "cell culture",
+      "is_normalized": true,
+      "evidence": "inferred: Human neuroblastoma SH\u2010SY5Y cells purchased from ATCC were maintained in the high\u2010glucose Dulbecco's Modified Eagle's Medium (DMEM; MilliporeSigma) supplemented with 10% fetal bovine serum (FBS; MilliporeSigma) at 37\u00b0C in 5% CO2.",
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "is_normalized": true,
+      "evidence": "organisms: Homo sapiens (human)",
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "brain",
+      "is_normalized": true,
+      "evidence": "inferred: Human neuroblastoma SH\u2010SY5Y cells purchased from ATCC were maintained in the high\u2010glucose Dulbecco's Modified Eagle's Medium (DMEM; MilliporeSigma) supplemented with 10% fetal bovine serum (FBS; MilliporeSigma) at 37\u00b0C in 5% CO2.",
+      "ontology_id": "UBERON:6110636",
+      "ontology_name": "insect adult cerebral ganglion",
+      "similarity": 1.0
+    }
+  ],
+  "_confidence": {
+    "overall": 0.837,
+    "evidence_score": 0.86,
+    "completeness": 0.533,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "cell_line_tissue_mismatch",
+      "field_a": "cell_line",
+      "value_a": "SH-SY5Y",
+      "ontology_id_a": "CLO:0009015",
+      "field_b": "tissue",
+      "value_b": "brain",
+      "ontology_id_b": "UBERON:6110636",
+      "expected_b": "UBERON:0001021",
+      "source": "CLO derives_from"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Peptide ions were selected for fragmentation by tandem MS as the 10 most intense peaks of a full-scan mass spectrum."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "Proteins were alkylated in a final concentration of 20\u00a0mM iodoacetamide in the dark at room temperature for 30\u00a0min."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Proteins were alkylated in a final concentration of 20\u00a0mM iodoacetamide in the dark at room temperature for 30\u00a0min."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "For the digestion step, 1\u00a0\u00b5g trypsin was added per 40\u00a0\u00b5g of protein and digestion was carried overnight at 37\u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "reversed phase chromatography",
+      "evidence": "A total of 2\u00a0\u00b5g of protein was loaded on the column and the peptide mixture was separated by reversed phase chromatography on a nano acquity system (Waters, Milford, MA)"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Full scan spectrum (350 to 1850\u00a0m/z, resolution 70,000, automatic gain control 3E6, maximum injection time 100\u00a0ms) was followed by high-energy collision-induced dissociation (HCD) tandem mass spectra with a run time of 90\u00a0min."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q-Exactive plus",
+      "is_normalized": true,
+      "evidence": "Liquid chromatography was followed by tandem MS (LC-MS/MS) and was performed on a Q-Exactive plus mass spectrometer (Thermo Fisher).",
+      "ontology_id": "MS:1002634",
+      "ontology_name": "Q Exactive Plus",
+      "similarity": 0.982
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanospray",
+      "evidence": "A nanospray ion source (Thermo Scientific) was used."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "HCD scans were acquired in the Orbitrap (resolution 17,500, automatic gain control 1E5, maximum injection time 80\u00a0ms)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethyl",
+      "is_normalized": true,
+      "evidence": "Carbamidomethyl modifications were defined as fixed modifications and phosphorylations (S,T,Y) and oxidations (of methionine) were dynamic modifications.",
+      "ontology_id": "MOD:01216",
+      "ontology_name": "iodoacetamide derivatized glutamic acid",
+      "similarity": 1.0
+    },
+    {
+      "value": "phosphorylations (S,T,Y)",
+      "is_normalized": true,
+      "evidence": "Carbamidomethyl modifications were defined as fixed modifications and phosphorylations (S,T,Y) and oxidations (of methionine) were dynamic modifications.",
+      "ontology_id": "MOD:00046",
+      "ontology_name": "O-phospho-L-serine",
+      "similarity": 0.916
+    },
+    {
+      "value": "oxidations (of methionine)",
+      "is_normalized": true,
+      "evidence": "Carbamidomethyl modifications were defined as fixed modifications and phosphorylations (S,T,Y) and oxidations (of methionine) were dynamic modifications.",
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.91
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Proteins were reduced in a final concentration of 5\u00a0mM dithiothreitol at 60\u00b0C for 30\u00a0min."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "Proteins were reduced in a final concentration of 5\u00a0mM dithiothreitol at 60\u00b0C for 30\u00a0min."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "labeling",
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study.",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.876,
+    "evidence_score": 0.8,
+    "completeness": 0.882,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "20 mM",
+      "evidence": "Proteins were alkylated in a final concentration of 20\u00a0mM iodoacetamide in the dark at room temperature for 30\u00a0min."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM",
+      "evidence": "Proteins were reduced in a final concentration of 5\u00a0mM dithiothreitol at 60\u00b0C for 30\u00a0min."
+    }
+  ]
+}

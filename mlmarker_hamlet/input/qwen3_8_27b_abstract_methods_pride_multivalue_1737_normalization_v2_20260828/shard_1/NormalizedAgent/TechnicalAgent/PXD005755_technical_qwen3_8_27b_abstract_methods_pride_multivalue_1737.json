@@ -1,0 +1,268 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "MS/MS spectra were collected in data-dependent acquisition mode for the 12 most abundant product ions within m/z 110–2000 with an isolation window of 2.0 ± 0.4 m/z and 17,500 resolution (200 m/z)."
+    },
+    {
+      "value": "Shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "45 mM",
+      "evidence": "An aliquot equivalent to 10 µg protein (BCA assay) was reduced (15 mM dithiothreitol, 30 min, 60 °C), alkylated (45 mM 2-iodoacetamide, 30 min, 25 °C, in the dark) and digested by trypsin at a 1:40 w/w enzyme-to-protein ratio at 37 °C overnight."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "2-iodoacetamide",
+      "evidence": "An aliquot equivalent to 10 µg protein (BCA assay) was reduced (15 mM dithiothreitol, 30 min, 60 °C), alkylated (45 mM 2-iodoacetamide, 30 min, 25 °C, in the dark) and digested by trypsin at a 1:40 w/w enzyme-to-protein ratio at 37 °C overnight."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "An aliquot equivalent to 10 µg protein (BCA assay) was reduced (15 mM dithiothreitol, 30 min, 60 °C), alkylated (45 mM 2-iodoacetamide, 30 min, 25 °C, in the dark) and digested by trypsin at a 1:40 w/w enzyme-to-protein ratio at 37 °C overnight."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "25%",
+      "evidence": "Higher-energy collisional dissociation (HCD) was performed at normalized collision energy of 25%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Higher-energy collisional dissociation (HCD) was performed at normalized collision energy of 25%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: A volume approximately equivalent to 0.1 µg protein was injected into a Q Exactive Plus hybrid quadrupole-Orbitrap mass spectrometer (Thermo Fisher Scientific) using an UltiMate 3000 RSLC nano-HPLC system (Dionex, Sunnyvale, CA)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "2H2O metabolic labeling",
+      "evidence": "A 2H2O metabolic labeling approach was used to assess Trf and Cp turnover in human serum (Fig. 1)."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: A volume approximately equivalent to 0.1 µg protein was injected into a Q Exactive Plus hybrid quadrupole-Orbitrap mass spectrometer (Thermo Fisher Scientific) using an UltiMate 3000 RSLC nano-HPLC system (Dionex, Sunnyvale, CA)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Carbamidomethyl",
+      "evidence": "modifications: Carbamidomethyl; Oxidation",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "Oxidation",
+      "evidence": "modifications: Carbamidomethyl; Oxidation",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "Cysteine carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation was added as a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "Methionine oxidation",
+      "evidence": "Methionine oxidation, lysine early glycation and the most common AGEs including carboxymethyl lysine, carboxyethyl lysine, lysine pyrraline, arginine pyrimidine and arginine hydroimidazolone derivatives (G-H1, MG-H1, 3DG-H1) were also set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "lysine early glycation",
+      "evidence": "Methionine oxidation, lysine early glycation and the most common AGEs including carboxymethyl lysine, carboxyethyl lysine, lysine pyrraline, arginine pyrimidine and arginine hydroimidazolone derivatives (G-H1, MG-H1, 3DG-H1) were also set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00929",
+      "ontology_name": "lactose glycated lysine",
+      "similarity": 0.769,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "lactose glycated lysine"
+    },
+    {
+      "value": "carboxymethyl lysine",
+      "evidence": "Methionine oxidation, lysine early glycation and the most common AGEs including carboxymethyl lysine, carboxyethyl lysine, lysine pyrraline, arginine pyrimidine and arginine hydroimidazolone derivatives (G-H1, MG-H1, 3DG-H1) were also set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01094",
+      "ontology_name": "N6-carboxymethyl-L-lysine",
+      "similarity": 0.937,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl Lysyl"
+    },
+    {
+      "value": "carboxyethyl lysine",
+      "evidence": "Methionine oxidation, lysine early glycation and the most common AGEs including carboxymethyl lysine, carboxyethyl lysine, lysine pyrraline, arginine pyrimidine and arginine hydroimidazolone derivatives (G-H1, MG-H1, 3DG-H1) were also set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00124",
+      "ontology_name": "N6-1-carboxyethyl-L-lysine",
+      "similarity": 0.901,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N6-1-carboxyethyl-L-lysine"
+    },
+    {
+      "value": "lysine pyrraline",
+      "evidence": "Methionine oxidation, lysine early glycation and the most common AGEs including carboxymethyl lysine, carboxyethyl lysine, lysine pyrraline, arginine pyrimidine and arginine hydroimidazolone derivatives (G-H1, MG-H1, 3DG-H1) were also set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00292",
+      "ontology_name": "N6-pyruvic acid 2-iminyl-L-lysine",
+      "similarity": 0.765,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N6-pyruvic acid 2-iminyl-L-lysine"
+    },
+    {
+      "value": "arginine pyrimidine",
+      "evidence": "Methionine oxidation, lysine early glycation and the most common AGEs including carboxymethyl lysine, carboxyethyl lysine, lysine pyrraline, arginine pyrimidine and arginine hydroimidazolone derivatives (G-H1, MG-H1, 3DG-H1) were also set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00091",
+      "ontology_name": "L-arginine amide",
+      "similarity": 0.745,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "argininamide"
+    },
+    {
+      "value": "arginine hydroimidazolone derivatives",
+      "evidence": "Methionine oxidation, lysine early glycation and the most common AGEs including carboxymethyl lysine, carboxyethyl lysine, lysine pyrraline, arginine pyrimidine and arginine hydroimidazolone derivatives (G-H1, MG-H1, 3DG-H1) were also set as variable modifications.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "hydroxylated arginine",
+      "normalization_candidate_ids": [
+        "MOD:00682",
+        "MOD:01882",
+        "MOD:00091",
+        "MOD:00691",
+        "MOD:00443"
+      ]
+    },
+    {
+      "value": "4-hydroxynonenal and/or 4-oxononenal addition to arginine and lysine residues",
+      "evidence": "Other searched PTMs were 4-hydroxynonenal and/or 4-oxononenal addition to arginine and lysine residues, lysine acetylation and acetoacetylation, tyrosine and tryptophan nitration, tyrosine chlorination, and asparagine/glutamine deamidation.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01238",
+      "ontology_name": "lysine 4-hydroxynonenal adduct",
+      "similarity": 0.824,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "lysine 4-hydroxynonenal adduct"
+    },
+    {
+      "value": "lysine acetylation",
+      "evidence": "Other searched PTMs were 4-hydroxynonenal and/or 4-oxononenal addition to arginine and lysine residues, lysine acetylation and acetoacetylation, tyrosine and tryptophan nitration, tyrosine chlorination, and asparagine/glutamine deamidation.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00394",
+      "ontology_name": "monoacetylated residue",
+      "similarity": 0.816,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Acetylation (N terminus, N epsilon of Lysine, O of Serine) (Ac)"
+    },
+    {
+      "value": "lysine acetoacetylation",
+      "evidence": "Other searched PTMs were 4-hydroxynonenal and/or 4-oxononenal addition to arginine and lysine residues, lysine acetylation and acetoacetylation, tyrosine and tryptophan nitration, tyrosine chlorination, and asparagine/glutamine deamidation.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00130",
+      "ontology_name": "L-allysine",
+      "similarity": 0.788,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Lysine oxidation to aminoadipic semialdehyde"
+    },
+    {
+      "value": "tyrosine and tryptophan nitration",
+      "evidence": "Other searched PTMs were 4-hydroxynonenal and/or 4-oxononenal addition to arginine and lysine residues, lysine acetylation and acetoacetylation, tyrosine and tryptophan nitration, tyrosine chlorination, and asparagine/glutamine deamidation.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01352",
+      "ontology_name": "nitrated L-tyrosine",
+      "similarity": 0.705,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "nitrated L-tyrosine"
+    },
+    {
+      "value": "tyrosine chlorination",
+      "evidence": "Other searched PTMs were 4-hydroxynonenal and/or 4-oxononenal addition to arginine and lysine residues, lysine acetylation and acetoacetylation, tyrosine and tryptophan nitration, tyrosine chlorination, and asparagine/glutamine deamidation.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00987",
+      "ontology_name": "chlorinated tyrosine",
+      "similarity": 0.779,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "chlorinated tyrosine"
+    },
+    {
+      "value": "asparagine/glutamine deamidation",
+      "evidence": "Other searched PTMs were 4-hydroxynonenal and/or 4-oxononenal addition to arginine and lysine residues, lysine acetylation and acetoacetylation, tyrosine and tryptophan nitration, tyrosine chlorination, and asparagine/glutamine deamidation.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 0.93,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation of Asparagine and Glutamine to Aspartate and Glutamate"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "15 mM",
+      "evidence": "An aliquot equivalent to 10 µg protein (BCA assay) was reduced (15 mM dithiothreitol, 30 min, 60 °C), alkylated (45 mM 2-iodoacetamide, 30 min, 25 °C, in the dark) and digested by trypsin at a 1:40 w/w enzyme-to-protein ratio at 37 °C overnight."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "An aliquot equivalent to 10 µg protein (BCA assay) was reduced (15 mM dithiothreitol, 30 min, 60 °C), alkylated (45 mM 2-iodoacetamide, 30 min, 25 °C, in the dark) and digested by trypsin at a 1:40 w/w enzyme-to-protein ratio at 37 °C overnight."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.958,
+    "evidence_score": 0.942,
+    "completeness": 0.935,
+    "format_score": 1.0
+  }
+}

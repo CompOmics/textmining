@@ -1,0 +1,162 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "40 mM",
+      "evidence": "The samples were alkylated by adding iodoacetamide (Sigma-Aldrich, I1149) of 40 mM to the final concentration and mixed at 650 rpm for 1 h at 37 °C."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "The samples were alkylated by adding iodoacetamide (Sigma-Aldrich, I1149) of 40 mM to the final concentration and mixed at 650 rpm for 1 h at 37 °C."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "~2 mg of protein sample was digested by adding trypsin (Thermoscientific, 20233, 50:1 w/w) and incubated at 650 rpm for 6–18 h at 37 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30% collision energy",
+      "evidence": "Higher-energy collisional dissociation (HCD) with 30% collision energy was used for sequencing with an auto gain control (AGC) target of 1e5."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "streptavidin magnetic bead",
+      "evidence": "prewashed streptavidin magnetic bead was incubated with sample for at least 1 h with end-to-end rotation."
+    },
+    {
+      "value": "anti-biotin antibody",
+      "evidence": "samples were dissolved in 50 mM MOPS (pH 7.2), 10 mM sodium phosphate, and 50 mM NaCl, then incubated with anti-biotin antibody (ImmuneChem Pharmaceuticals Inc, ICP0615)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Higher-energy collisional dissociation (HCD) with 30% collision energy was used for sequencing with an auto gain control (AGC) target of 1e5."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: The enriched samples were analyzed on an Orbitrap Fusion Lumos mass spectrometer (Thermo Scientific) equipped with an in-house customized nanoelectrospray ion source."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: The label-free quantification (LFQ) and match between runs were used with the following search parameters for the TurboID experiment: semi-trypic digestion, fixed carbaminomethylation on cysteine, dynamic oxidation of methionine, protein N-terminal acetylation with biotin (+226.0775) labels of lysine residue."
+    },
+    {
+      "value": "MS1 intensity based label-free quantification method",
+      "evidence": "quantification: MS1 intensity based label-free quantification method"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: The enriched samples were analyzed on an Orbitrap Fusion Lumos mass spectrometer (Thermo Scientific) equipped with an in-house customized nanoelectrospray ion source."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "biotinylated residue",
+      "evidence": "modifications: biotinylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:01885",
+      "ontology_name": "biotinylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "biotinylated residue"
+    },
+    {
+      "value": "carbaminomethylation",
+      "evidence": "The label-free quantification (LFQ) and match between runs were used with the following search parameters for the TurboID experiment: semi-trypic digestion, fixed carbaminomethylation on cysteine, dynamic oxidation of methionine, protein N-terminal acetylation with biotin (+226.0775) labels of lysine residue.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01679",
+      "ontology_name": "alpha-aminocarbamoylated residue",
+      "similarity": 0.879,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carbamylation"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "The label-free quantification (LFQ) and match between runs were used with the following search parameters for the TurboID experiment: semi-trypic digestion, fixed carbaminomethylation on cysteine, dynamic oxidation of methionine, protein N-terminal acetylation with biotin (+226.0775) labels of lysine residue.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "acetylation",
+      "evidence": "The label-free quantification (LFQ) and match between runs were used with the following search parameters for the TurboID experiment: semi-trypic digestion, fixed carbaminomethylation on cysteine, dynamic oxidation of methionine, protein N-terminal acetylation with biotin (+226.0775) labels of lysine residue.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:1",
+      "ontology_name": "Acetyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Acetyl"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "After denaturation, the samples were reduced with the final concentration of 10 mM dithiothreitol (Sigma-Aldrich, 43816) and incubated at 650 rpm for 1 h at 37 °C."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "After denaturation, the samples were reduced with the final concentration of 10 mM dithiothreitol (Sigma-Aldrich, 43816) and incubated at 650 rpm for 1 h at 37 °C."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.932,
+    "evidence_score": 0.885,
+    "completeness": 0.95,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "40 mM",
+      "evidence": "The samples were alkylated by adding iodoacetamide (Sigma-Aldrich, I1149) of 40 mM to the final concentration and mixed at 650 rpm for 1 h at 37 °C."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "10 mM",
+      "evidence": "After denaturation, the samples were reduced with the final concentration of 10 mM dithiothreitol (Sigma-Aldrich, 43816) and incubated at 650 rpm for 1 h at 37 °C."
+    }
+  ]
+}

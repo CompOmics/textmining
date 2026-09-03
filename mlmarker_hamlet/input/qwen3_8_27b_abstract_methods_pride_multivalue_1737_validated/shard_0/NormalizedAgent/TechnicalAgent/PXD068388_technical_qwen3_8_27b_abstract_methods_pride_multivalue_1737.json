@@ -1,0 +1,211 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-independent acquisition",
+      "evidence": "experiment types: Data-independent acquisition; Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-independent acquisition; Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "15 mM",
+      "evidence": "Proteins were reduced with 5 mM dithiothreitol for 30 minutes at 55\u00b0C, alkylated with 15 mM iodoacetamide for 30 minutes at room temperature in the dark, and quenched with an additional 5 mM dithiothreitol for 30 minutes at room temperature."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Proteins were reduced with 5 mM dithiothreitol for 30 minutes at 55\u00b0C, alkylated with 15 mM iodoacetamide for 30 minutes at room temperature in the dark, and quenched with an additional 5 mM dithiothreitol for 30 minutes at room temperature."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "samples prepared for whole proteome and phosphoproteome analysis were digested with a combination of 5 ng/\u03bcL trypsin (Promega) with 5 ng/\u03bcL LysC."
+    },
+    {
+      "value": "LysC",
+      "evidence": "samples prepared for whole proteome and phosphoproteome analysis were digested with a combination of 5 ng/\u03bcL trypsin (Promega) with 5 ng/\u03bcL LysC."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "33% normalized collision energy (NCE)",
+      "evidence": "One DIA cycle contained 30 windows of 24 m/z size at 30,000 resolution, 33% normalized collision energy (NCE) higher-energy collisional dissociation (HCD), default charge state 3 and AGC target of 1000%."
+    },
+    {
+      "value": "30% NCE HCD",
+      "evidence": "MS2 scans were recorded at 30,000 resolution, 30% NCE HCD, 1.6 m/z isolation window, standard AGC target and automatic IT."
+    },
+    {
+      "value": "31% NCE HCD",
+      "evidence": "One DIA cycle contained 30 windows of 24 m/z size at 50,000 resolution, 31% NCE HCD, default charge state 3 and AGC target of 1000%."
+    },
+    {
+      "value": "30% NCE HCD",
+      "evidence": "MS2 scans were recorded at 50,000 resolution, 30% NCE HCD, 1.6 m/z isolation window, standard AGC target and automatic IT."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "Fe3+-NTA magnetic beads",
+      "evidence": "phosphopeptides were enriched with Fe3+-NTA magnetic beads (PureCube Fe-NTA MagBeads, Cube Biotech), washed three times with 80% ACN, 0.1% TFA and eluted in 50% ACN, 2.5% NH4OH."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "higher-energy collisional dissociation (HCD)",
+      "evidence": "One DIA cycle contained 30 windows of 24 m/z size at 30,000 resolution, 33% normalized collision energy (NCE) higher-energy collisional dissociation (HCD), default charge state 3 and AGC target of 1000%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Eclipse",
+      "is_normalized": true,
+      "evidence": "instruments: Orbitrap Eclipse",
+      "ontology_id": "MS:1003029",
+      "ontology_name": "Orbitrap Eclipse",
+      "similarity": 1.0
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "Label free",
+      "evidence": "quantification: Label free"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Peptides were resuspended in 4% ACN, 3% FA and analyzed on an Orbitrap Eclipse Mass Spectrometer (ThermoFisher Scientific) equipped with an Easy1200 nanoLC system (ThermoFisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "methionine oxidation",
+      "is_normalized": true,
+      "evidence": "DDA files were searched with default settings for LysC and high resolution MS data with variable modifications of methionine oxidation (15.9949 Da), protein N-terminal acetylation (42.0106 Da), proline to alanine (\u221226.0156 Da), proline to serine (\u221210.0207 Da) and arginine to serine (\u221269.0690 Da).",
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918
+    },
+    {
+      "value": "protein N-terminal acetylation",
+      "is_normalized": true,
+      "evidence": "DDA files were searched with default settings for LysC and high resolution MS data with variable modifications of methionine oxidation (15.9949 Da), protein N-terminal acetylation (42.0106 Da), proline to alanine (\u221226.0156 Da), proline to serine (\u221210.0207 Da) and arginine to serine (\u221269.0690 Da).",
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.895
+    },
+    {
+      "value": "proline to alanine",
+      "is_normalized": true,
+      "evidence": "DDA files were searched with default settings for LysC and high resolution MS data with variable modifications of methionine oxidation (15.9949 Da), protein N-terminal acetylation (42.0106 Da), proline to alanine (\u221226.0156 Da), proline to serine (\u221210.0207 Da) and arginine to serine (\u221269.0690 Da).",
+      "ontology_id": "MOD:00024",
+      "ontology_name": "L-proline residue",
+      "similarity": 0.795
+    },
+    {
+      "value": "proline to serine",
+      "is_normalized": true,
+      "evidence": "DDA files were searched with default settings for LysC and high resolution MS data with variable modifications of methionine oxidation (15.9949 Da), protein N-terminal acetylation (42.0106 Da), proline to alanine (\u221226.0156 Da), proline to serine (\u221210.0207 Da) and arginine to serine (\u221269.0690 Da).",
+      "ontology_id": "MOD:00024",
+      "ontology_name": "L-proline residue",
+      "similarity": 0.765
+    },
+    {
+      "value": "arginine to serine",
+      "is_normalized": true,
+      "evidence": "DDA files were searched with default settings for LysC and high resolution MS data with variable modifications of methionine oxidation (15.9949 Da), protein N-terminal acetylation (42.0106 Da), proline to alanine (\u221226.0156 Da), proline to serine (\u221210.0207 Da) and arginine to serine (\u221269.0690 Da).",
+      "ontology_id": "MOD:00011",
+      "ontology_name": "L-arginine residue",
+      "similarity": 0.723
+    },
+    {
+      "value": "serine, threonine and tyrosine phosphorylation",
+      "is_normalized": true,
+      "evidence": "DDA files from phospho-enriched proteome samples were searched with default settings for trypsin and high resolution MS data with variable modifications of serine, threonine and tyrosine phosphorylation (79.9663 Da), proline to alanine (\u221226.0156 Da), proline to serine (\u221210.0207 Da), arginine to serine (\u221269.0690 Da), proline to phosphoserine (69.9456 Da) and arginine to phosphoserine (10.8972 Da).",
+      "ontology_id": "MOD:00046",
+      "ontology_name": "O-phospho-L-serine",
+      "similarity": 0.793
+    },
+    {
+      "value": "proline to phosphoserine",
+      "is_normalized": true,
+      "evidence": "DDA files from phospho-enriched proteome samples were searched with default settings for trypsin and high resolution MS data with variable modifications of serine, threonine and tyrosine phosphorylation (79.9663 Da), proline to alanine (\u221226.0156 Da), proline to serine (\u221210.0207 Da), arginine to serine (\u221269.0690 Da), proline to phosphoserine (69.9456 Da) and arginine to phosphoserine (10.8972 Da).",
+      "ontology_id": "MOD:00046",
+      "ontology_name": "O-phospho-L-serine",
+      "similarity": 0.725
+    },
+    {
+      "value": "arginine to phosphoserine",
+      "is_normalized": false,
+      "evidence": "DDA files from phospho-enriched proteome samples were searched with default settings for trypsin and high resolution MS data with variable modifications of serine, threonine and tyrosine phosphorylation (79.9663 Da), proline to alanine (\u221226.0156 Da), proline to serine (\u221210.0207 Da), arginine to serine (\u221269.0690 Da), proline to phosphoserine (69.9456 Da) and arginine to phosphoserine (10.8972 Da)."
+    },
+    {
+      "value": "phosphorylation on STY residues",
+      "is_normalized": true,
+      "evidence": "DIA and DDA files were combined with raw files from the deep yeast phosphoproteome samples generated by to create a spectral library in Fragpipe as above but including variable modification of phosphorylation on STY residues (79.9663 Da).",
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 0.721
+    },
+    {
+      "value": "monohydroxylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "phosphorylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Proteins were reduced with 5 mM dithiothreitol for 30 minutes at 55\u00b0C, alkylated with 15 mM iodoacetamide for 30 minutes at room temperature in the dark, and quenched with an additional 5 mM dithiothreitol for 30 minutes at room temperature."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "Proteins were reduced with 5 mM dithiothreitol for 30 minutes at 55\u00b0C, alkylated with 15 mM iodoacetamide for 30 minutes at room temperature in the dark, and quenched with an additional 5 mM dithiothreitol for 30 minutes at room temperature."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.985,
+    "evidence_score": 0.997,
+    "completeness": 0.935,
+    "format_score": 1.0
+  }
+}

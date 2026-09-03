@@ -1,0 +1,158 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "NEM",
+      "evidence": "N\u2010ethylmaleimide (NEM) and DTDP were used to block free sulfhydryl groups on the proteins."
+    },
+    {
+      "value": "DTDP",
+      "evidence": "N\u2010ethylmaleimide (NEM) and DTDP were used to block free sulfhydryl groups on the proteins."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Two trypsin miss\u2010cleavage sites were allowed, and precursor ion and fragment ion tolerances were set to 10\u2009ppm and 0.02\u2009Da, respectively."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "normalised collision energy of 25",
+      "evidence": "the three most intense ions were selected for MS/MS performed with high\u2010energy collision dissociation (HCD) with normalised collision energy of 25 at a resolution of 17,500 (at 200\u2009m/z)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "streptavidin affinity agarose",
+      "evidence": "biotinylated peptides\u2014representing previously S\u2010acylated proteins\u2014were selectively enriched using streptavidin affinity agarose."
+    },
+    {
+      "value": "streptavidin agarose",
+      "evidence": "the labelled cellular proteins were enriched using streptavidin agarose (Beyotime, China) at room temperature with rotation for 2\u2009h."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "the three most intense ions were selected for MS/MS performed with high\u2010energy collision dissociation (HCD) with normalised collision energy of 25 at a resolution of 17,500 (at 200\u2009m/z)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "is_normalized": true,
+      "evidence": "instruments: Q Exactive HF",
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Peptide samples were loaded onto a 20\u2009cm long, 75\u2009\u03bcm I.D fused silica capillary columns packed with Reprosil\u2010Pur C18\u2010AQ resin (3\u2009mm; Dr. Maisch GmbH, Germany) and resolved by an EASY\u2010nLC 1000 HPLC system (Thermo Fisher Scientific), coupled in\u2010line with a Q\u2010Exactive HF (Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "quantification: label-free quantification"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Peptide samples were loaded onto a 20\u2009cm long, 75\u2009\u03bcm I.D fused silica capillary columns packed with Reprosil\u2010Pur C18\u2010AQ resin (3\u2009mm; Dr. Maisch GmbH, Germany) and resolved by an EASY\u2010nLC 1000 HPLC system (Thermo Fisher Scientific), coupled in\u2010line with a Q\u2010Exactive HF (Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; N-ethylmaleimide derivatized cysteine",
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "N-ethylmaleimide derivatized cysteine",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; N-ethylmaleimide derivatized cysteine",
+      "ontology_id": "MOD:00483",
+      "ontology_name": "N-ethylmaleimide derivatized cysteine",
+      "similarity": 1.0
+    },
+    {
+      "value": "oxidation",
+      "is_normalized": true,
+      "evidence": "Oxidation (+15.9949) on methionine and N\u2010ethylmaleimide (125.0477) on cysteine were set as dynamic modifications.",
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 1.0
+    },
+    {
+      "value": "N\u2010ethylmaleimide",
+      "is_normalized": true,
+      "evidence": "Oxidation (+15.9949) on methionine and N\u2010ethylmaleimide (125.0477) on cysteine were set as dynamic modifications.",
+      "ontology_id": "MOD:01259",
+      "ontology_name": "N-methylmaleimide modified L-lysine",
+      "similarity": 0.879
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "TCEP was applied to reduce disulfide bonds, and all free thiol groups were irreversibly blocked using NEM and DTDP."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.935,
+    "evidence_score": 0.93,
+    "completeness": 0.85,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "alkylation_reagent[0]",
+      "value": "NEM",
+      "evidence": "N\u2010ethylmaleimide (NEM) and DTDP were used to block free sulfhydryl groups on the proteins."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "alkylation_reagent[1]",
+      "value": "DTDP",
+      "evidence": "N\u2010ethylmaleimide (NEM) and DTDP were used to block free sulfhydryl groups on the proteins."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "reduction_reagent[0]",
+      "value": "TCEP",
+      "evidence": "TCEP was applied to reduce disulfide bonds, and all free thiol groups were irreversibly blocked using NEM and DTDP."
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The mass spectrometer was operated using a top 17 data-dependent acquisition mode."
+    },
+    {
+      "value": "Shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "200 mM",
+      "evidence": "Samples were reduced with 5 \u03bcL of 100 mM tris(2-carboxyethyl)phosphine (TCEP) at room temperature for 30 min and alkylated with 5 \u03bcL of 200 mM of iodoacetamide in the dark at room temperature for 30 min."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Samples were reduced with 5 \u03bcL of 100 mM tris(2-carboxyethyl)phosphine (TCEP) at room temperature for 30 min and alkylated with 5 \u03bcL of 200 mM of iodoacetamide in the dark at room temperature for 30 min."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Rapid-Digestion Trypsin/Lys-C",
+      "evidence": "For digestion, 65 \u03bcL of Rapid Trypsin Digestion Buffer (Promega) was added to each sample followed by 5 \u03bcL of Rapid-Digestion Trypsin/Lys-C (Promega) at 0.4 \u03bcg/\u03bcL for an enzyme/protein ratio of 1:50."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "35%",
+      "evidence": "Precursor ions for tandem mass spectrometry (MS/MS) analysis were isolated using a 2 m/z quadrupole mass filter window and then fragmented in the ion-routing multipole via higher energy dissociation (HCD) using a normalized collision energy of 35%."
+    },
+    {
+      "value": "27%",
+      "evidence": "Dynamic exclusion was set to 30 s; high energy collision dissociation was set to 27% of the normalized collision energy, and peptide match and isotope exclusion were enabled."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "MudPIT column",
+      "evidence": "Phosphopeptides were loaded on a MudPIT column."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "For the last fraction, the peptides were eluted from the reverse-phase analytical column using a gradient of 2\u201398% solvent B in 83 min."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Precursor ions for tandem mass spectrometry (MS/MS) analysis were isolated using a 2 m/z quadrupole mass filter window and then fragmented in the ion-routing multipole via higher energy dissociation (HCD) using a normalized collision energy of 35%."
+    },
+    {
+      "value": "high energy collision dissociation",
+      "evidence": "Dynamic exclusion was set to 30 s; high energy collision dissociation was set to 27% of the normalized collision energy, and peptide match and isotope exclusion were enabled."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Thermo Scientific Orbitrap Fusion Tribrid",
+      "is_normalized": true,
+      "evidence": "Label-free proteomic samples were analyzed on a Thermo Scientific Orbitrap Fusion Tribrid mass spectrometer in line with a Thermo Scientific Easy-nLC 1000 UHPLC system.",
+      "ontology_id": "MS:1002416",
+      "ontology_name": "Orbitrap Fusion",
+      "similarity": 0.934
+    },
+    {
+      "value": "Q Exactive",
+      "is_normalized": true,
+      "evidence": "instruments: Q Exactive",
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0
+    },
+    {
+      "value": "QExactive HF",
+      "is_normalized": true,
+      "evidence": "were analyzed on a QExactive HF mass spectrometer (Thermo Scientific) in line with a Dionex Ultimate 3000 NanoLC and autosampler equipped with a nanoelectrospray ionization source.",
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 0.763
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "positive mode nanoelectrospray ionization (nESl)",
+      "evidence": "Eluted peptides were ionized via positive mode nanoelectrospray ionization (nESl) using a Nanospray Flex ion source (Thermo Fisher Scientific)."
+    },
+    {
+      "value": "nanoelectrospray ionization",
+      "evidence": "were analyzed on a QExactive HF mass spectrometer (Thermo Scientific) in line with a Dionex Ultimate 3000 NanoLC and autosampler equipped with a nanoelectrospray ionization source."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "Label-free proteomic samples were analyzed on a Thermo Scientific Orbitrap Fusion Tribrid mass spectrometer in line with a Thermo Scientific Easy-nLC 1000 UHPLC system."
+    },
+    {
+      "value": "SILAC",
+      "evidence": "As a supplement to the label-free data, results from the analysis of 1 and 24 h Zn-treated SILAC labeled and phosphopeptide-enriched HL-60 cells were incorporated into the computational network analysis."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Label-free proteomic samples were analyzed on a Thermo Scientific Orbitrap Fusion Tribrid mass spectrometer in line with a Thermo Scientific Easy-nLC 1000 UHPLC system."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamido-methyl",
+      "is_normalized": true,
+      "evidence": "Search parameters were set to include carbamido- methyl, phosphorylation, and oxidation modifications as well as methionine-containing and miscleaved peptides (maximum of two miscleavages).",
+      "ontology_id": "MOD:01216",
+      "ontology_name": "iodoacetamide derivatized glutamic acid",
+      "similarity": 0.932
+    },
+    {
+      "value": "phosphorylation",
+      "is_normalized": true,
+      "evidence": "Search parameters were set to include carbamido- methyl, phosphorylation, and oxidation modifications as well as methionine-containing and miscleaved peptides (maximum of two miscleavages).",
+      "ontology_id": "MOD:00046",
+      "ontology_name": "O-phospho-L-serine",
+      "similarity": 1.0
+    },
+    {
+      "value": "oxidation",
+      "is_normalized": true,
+      "evidence": "Search parameters were set to include carbamido- methyl, phosphorylation, and oxidation modifications as well as methionine-containing and miscleaved peptides (maximum of two miscleavages).",
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 1.0
+    },
+    {
+      "value": "monohydroxylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "phosphorylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "acetylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "100 mM",
+      "evidence": "Samples were reduced with 5 \u03bcL of 100 mM tris(2-carboxyethyl)phosphine (TCEP) at room temperature for 30 min and alkylated with 5 \u03bcL of 200 mM of iodoacetamide in the dark at room temperature for 30 min."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "tris(2-carboxyethyl)phosphine (TCEP)",
+      "evidence": "Samples were reduced with 5 \u03bcL of 100 mM tris(2-carboxyethyl)phosphine (TCEP) at room temperature for 30 min and alkylated with 5 \u03bcL of 200 mM of iodoacetamide in the dark at room temperature for 30 min."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.966,
+    "evidence_score": 0.932,
+    "completeness": 1.0,
+    "format_score": 1.0
+  }
+}

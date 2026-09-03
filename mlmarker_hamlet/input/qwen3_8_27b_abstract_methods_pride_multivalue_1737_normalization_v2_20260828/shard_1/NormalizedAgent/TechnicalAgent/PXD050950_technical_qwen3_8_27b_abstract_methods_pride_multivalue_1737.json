@@ -1,0 +1,198 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Data were acquired in DDA and DIA modes."
+    },
+    {
+      "value": "DIA",
+      "evidence": "Data were acquired in DDA and DIA modes."
+    },
+    {
+      "value": "Data-independent acquisition",
+      "evidence": "experiment types: Data-independent acquisition; Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "300 mM",
+      "evidence": "For protein alkylation, 100 µl of urea buffer and 20 µl of 300 mM iodoacetamide were applied and mixed for 1 min at 20 °C, 600 rpm."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "For protein alkylation, 100 µl of urea buffer and 20 µl of 300 mM iodoacetamide were applied and mixed for 1 min at 20 °C, 600 rpm."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Proteins were digested with 3 µl of 1 µg/µl trypsin in 100 µl of 50 mM ammonium bicarbonate and incubated overnight at 37 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30%",
+      "evidence": "MS2 was set to perform 15 fragmentation scans, m/z isolation window was set as 2, HCD collision energy 30% with max. injection time of 40 ms and Orbitrap resolution of 15,000."
+    },
+    {
+      "value": "30%",
+      "evidence": "M/z isolation window was set to 12 and m/z window overlap to 1, HCD collision energy was 30% and in normalized mode, Orbitrap resolution 3000, AGC in custom mode and normalized AGC target set to 1000%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "affinity",
+      "evidence": "The PD-1 interacting proteins were isolated through PD-1 pull-down performed in U2OS cells overexpressing PD-1 protein fused with V5 and Twin-Strep tags."
+    },
+    {
+      "value": "Affinity purification coupled with mass spectrometry proteomics",
+      "evidence": "experiment types: Data-independent acquisition; Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics"
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Precursor ion selection for higher-energy C-trap dissociation (HCD) and MS2 scan was based on the precursor charge state set between + 2 and + 6, intensity threshold higher than 5.0e3."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "Peptides were ionized with Nanospray Flex Ion Source and analyzed by mass spectrometer operating in a high voltage (2500 V) resolution positive ion mode, ion transfer tube temp. set to 250 °C."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "SWATH MS",
+      "evidence": "quantification: SWATH MS"
+    },
+    {
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "In the full-scan settings, DIA was set as the acquisition method and Orbitrap as the mass analyzer with resolving power 30,000 at 200 m/z."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Fixed modifications comprised carbamidomethylation of cysteine residues and variable modifications included methionine oxidization and N-terminal acetylation.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Fixed modifications comprised carbamidomethylation of cysteine residues and variable modifications included methionine oxidization and N-terminal acetylation.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "Fixed modifications comprised carbamidomethylation of cysteine residues and variable modifications included methionine oxidization and N-terminal acetylation.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "100 mM",
+      "evidence": "Protein reduction was performed using 100 µl of urea buffer and 20 µl of 100 mM Tris (2-carboxyethyl) phosphine hydrochloride."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "Tris (2-carboxyethyl) phosphine hydrochloride",
+      "evidence": "Protein reduction was performed using 100 µl of urea buffer and 20 µl of 100 mM Tris (2-carboxyethyl) phosphine hydrochloride."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "labeling",
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study.",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "_evidence_grounding_flags",
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study.",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.908,
+    "evidence_score": 0.833,
+    "completeness": 0.958,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "300 mM",
+      "evidence": "For protein alkylation, 100 µl of urea buffer and 20 µl of 300 mM iodoacetamide were applied and mixed for 1 min at 20 °C, 600 rpm."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "100 mM",
+      "evidence": "Protein reduction was performed using 100 µl of urea buffer and 20 µl of 100 mM Tris (2-carboxyethyl) phosphine hydrochloride."
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Iodoacetimide was added to a final concentration of 10 mM to each sample and incubated for 25 min in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetimide",
+      "evidence": "Iodoacetimide was added to a final concentration of 10 mM to each sample and incubated for 25 min in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Protein was eluted from SP3 beads using 200 mM EPPS pH 8.5 containing trypsin (Thermo Fisher Scientific, 90305R20) and Lys-C (Wako, 129–02541)."
+    },
+    {
+      "value": "Lys-C",
+      "evidence": "Protein was eluted from SP3 beads using 200 mM EPPS pH 8.5 containing trypsin (Thermo Fisher Scientific, 90305R20) and Lys-C (Wako, 129–02541)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "36",
+      "evidence": "Normalized collision energy – 36; Isolation window – 0.5 Th; Maximum ion injection time – 86ms)."
+    },
+    {
+      "value": "36%",
+      "evidence": "collision energy – 36%; maximum injection time – 250ms; AGC – 1.5×105; Normalized AGC target – 300%)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "High Select Phosphopeptide Enrichment Kit",
+      "evidence": "Phosphopeptides were enriched using a High Select Phosphopeptide Enrichment Kit (Thermo Fisher Scientific, A32992)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "basic pH reverse phase HPLC",
+      "evidence": "The peptides were resuspended in 10 mM ammonium bicarbonate pH 8, 5% acetonitrile and fractionated by basic pH reverse phase HPLC."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "MS2 scans were collected in the orbitrap after high-energy collision dissociation (HCD) fragmentation (Resolution – 50,000; AGC target – 1×105; Normalized AGC target – 200%; Normalized collision energy – 36; Isolation window – 0.5 Th; Maximum ion injection time – 86ms)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Eclipse",
+      "evidence": "Total proteome data were collected on Orbitrap Eclipse mass spectrometer (ThermoFisher Scientific) coupled to a Proxeon EASY-nLC 1000 (or 1200) LC pump (ThermoFisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1003029",
+      "ontology_name": "Orbitrap Eclipse",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Eclipse"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: Total proteome data were collected on Orbitrap Eclipse mass spectrometer (ThermoFisher Scientific) coupled to a Proxeon EASY-nLC 1000 (or 1200) LC pump (ThermoFisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Total proteome data were collected on Orbitrap Eclipse mass spectrometer (ThermoFisher Scientific) coupled to a Proxeon EASY-nLC 1000 (or 1200) LC pump (ThermoFisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: phosphorylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: phosphorylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "carbamidomethylation of cysteine residues",
+      "evidence": "TMT on lysine residues and peptide N termini (+304.207 Da) and carbamidomethylation of cysteine residues (+57.0215 Da) were set as static modifications, while oxidation of methionine residues (+15.9949 Da) was set as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.788,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "oxidation of methionine residues",
+      "evidence": "TMT on lysine residues and peptide N termini (+304.207 Da) and carbamidomethylation of cysteine residues (+57.0215 Da) were set as static modifications, while oxidation of methionine residues (+15.9949 Da) was set as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.881,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Finally, DTT was added to each sample to a final concentration of 10 mM."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Finally, DTT was added to each sample to a final concentration of 10 mM."
+    },
+    {
+      "value": "tris(2-carboxyethyl)phosphine hydrochloride",
+      "evidence": "Samples (20 µg protein) were diluted in prep buffer (400 mM EPPS pH 8.5, 1% SDS, 10 mM tris(2-carboxyethyl)phosphine hydrochloride) and incubated at room temperature for 10 min."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.967,
+    "evidence_score": 0.933,
+    "completeness": 1.0,
+    "format_score": 1.0
+  }
+}

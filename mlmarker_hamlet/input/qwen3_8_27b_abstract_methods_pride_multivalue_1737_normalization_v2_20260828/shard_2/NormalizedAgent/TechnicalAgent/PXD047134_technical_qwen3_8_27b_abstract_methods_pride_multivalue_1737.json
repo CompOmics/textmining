@@ -1,0 +1,212 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-dependent acquisition (DDA)",
+      "evidence": "Data was acquired in data-dependent acquisition (DDA) mode using the Top20 method."
+    },
+    {
+      "value": "parallel reaction monitoring (PRM)",
+      "evidence": "Data was acquired in parallel reaction monitoring (PRM) mode, where MS2 resolution was set to 15,000, AGC target 2e5 and the maximum injection time set to 200 msec."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM iodoacetamide",
+      "evidence": "100 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "100 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Samples were then digested with trypsin (1:50 trypsin/protein) for 1.5 h at 47 °C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HFX",
+      "evidence": "The nanoUPLC was coupled online through a nanoESI emitter (10 μm tip; New Objective; Woburn, MA, USA) to a quadrupole orbitrap mass spectrometer (Q Exactive HFX, Thermo Scientific) using a FlexIon nanospray apparatus (Proxeon).",
+      "is_normalized": true,
+      "ontology_id": "MS:1002877",
+      "ontology_name": "Q Exactive HF-X",
+      "similarity": 0.983,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive HF-X"
+    },
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "The nanoUPLC was coupled online through a nanoESI emitter (10 μm tip; New Objective; Woburn, MA, USA) to a quadrupole orbitrap mass spectrometer (Q Exactive HFX, Thermo Scientific) using a FlexIon nanospray apparatus (Proxeon)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: LFQ intensities values from the protein groups file were used for analysis."
+    },
+    {
+      "value": "heavy labeled synthetic peptides",
+      "evidence": "Targeted analysis was conducted on the same samples, which were spiked with heavy labeled synthetic peptides (see list of peptides and final concentrations in Supplementary Data 2)."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "The nanoUPLC was coupled online through a nanoESI emitter (10 μm tip; New Objective; Woburn, MA, USA) to a quadrupole orbitrap mass spectrometer (Q Exactive HFX, Thermo Scientific) using a FlexIon nanospray apparatus (Proxeon)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Carbamidomethylation of C",
+      "evidence": "The data was searched with the Andromeda search engine against the Uniprot human proteome database (November 2018 version) appended with common laboratory protein contaminants and the following modifications: Carbamidomethylation of C as a fixed modification and oxidation of M, deamidation of N or Q and N-terminal acetylation as variables.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01679",
+      "ontology_name": "alpha-aminocarbamoylated residue",
+      "similarity": 0.808,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carbamylation"
+    },
+    {
+      "value": "oxidation of M",
+      "evidence": "The data was searched with the Andromeda search engine against the Uniprot human proteome database (November 2018 version) appended with common laboratory protein contaminants and the following modifications: Carbamidomethylation of C as a fixed modification and oxidation of M, deamidation of N or Q and N-terminal acetylation as variables.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.784,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "deamidation of N or Q",
+      "evidence": "The data was searched with the Andromeda search engine against the Uniprot human proteome database (November 2018 version) appended with common laboratory protein contaminants and the following modifications: Carbamidomethylation of C as a fixed modification and oxidation of M, deamidation of N or Q and N-terminal acetylation as variables.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00565",
+      "ontology_name": "deglycosylated asparagine",
+      "similarity": 0.85,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "The data was searched with the Andromeda search engine against the Uniprot human proteome database (November 2018 version) appended with common laboratory protein contaminants and the following modifications: Carbamidomethylation of C as a fixed modification and oxidation of M, deamidation of N or Q and N-terminal acetylation as variables.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "deamidated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "deamidated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM dithiothreitol",
+      "evidence": "100 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "100 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.926,
+    "evidence_score": 0.916,
+    "completeness": 0.84,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "10 mM iodoacetamide",
+      "evidence": "100 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM dithiothreitol",
+      "evidence": "100 μg protein was reduced with 5 mM dithiothreitol and alkylated with 10 mM iodoacetamide in the dark."
+    }
+  ]
+}

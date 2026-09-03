@@ -1,0 +1,162 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "T cell",
+      "is_normalized": true,
+      "evidence": "organism parts: Blood; T cell",
+      "ontology_id": "CL:0000084",
+      "ontology_name": "T cell",
+      "similarity": 1.0
+    },
+    {
+      "value": "CD8+ T-lymphocytes",
+      "is_normalized": true,
+      "evidence": "Peripheral blood CD8+ T-lymphocytes play a crucial role in cell-mediated immunity and tumour-related immune responses in breast cancer.",
+      "ontology_id": "CL:0000795",
+      "ontology_name": "CD8-positive, alpha-beta regulatory T cell",
+      "similarity": 0.935
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "Female breast cancer",
+      "is_normalized": true,
+      "evidence": "diseases: Female breast cancer",
+      "ontology_id": "MONDO:0004379",
+      "ontology_name": "female breast carcinoma",
+      "similarity": 1.0
+    },
+    {
+      "value": "breast cancer",
+      "is_normalized": true,
+      "evidence": "Peripheral blood CD8+ T-lymphocytes play a crucial role in cell-mediated immunity and tumour-related immune responses in breast cancer.",
+      "ontology_id": "MONDO:0007254",
+      "ontology_name": "breast cancer",
+      "similarity": 1.0
+    },
+    {
+      "value": "triple-negative breast cancer (TNBC)",
+      "is_normalized": true,
+      "evidence": "The protein profile analysis of CD8+ T-lymphocytes in benign, Luminal A, Luminal B and triple-negative breast cancer (TNBC) patients in comparison to healthy control via a label-free proteomic quantification and gene set enrichment analysis (GSEA) were performed.",
+      "ontology_id": "MONDO:0005494",
+      "ontology_name": "triple-negative breast carcinoma",
+      "similarity": 0.915
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "tissue",
+      "evidence": "inferred: organism parts: Blood; T cell"
+    },
+    {
+      "value": "biofluid",
+      "evidence": "inferred: Peripheral blood CD8+ T-lymphocytes play a crucial role in cell-mediated immunity and tumour-related immune responses in breast cancer."
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "patient serum",
+      "is_normalized": true,
+      "evidence": "inferred: Peripheral blood CD8+ T-lymphocytes play a crucial role in cell-mediated immunity and tumour-related immune responses in breast cancer.",
+      "ontology_id": "BTO:0001239",
+      "ontology_name": "serum",
+      "similarity": 0.891
+    },
+    {
+      "value": "healthy donors",
+      "is_normalized": false,
+      "evidence": "inferred: The protein profile analysis of CD8+ T-lymphocytes in benign, Luminal A, Luminal B and triple-negative breast cancer (TNBC) patients in comparison to healthy control via a label-free proteomic quantification and gene set enrichment analysis (GSEA) were performed."
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "is_normalized": true,
+      "evidence": "organisms: Homo sapiens (human)",
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "Blood",
+      "is_normalized": true,
+      "evidence": "organism parts: Blood; T cell",
+      "ontology_id": "UBERON:0000178",
+      "ontology_name": "blood",
+      "similarity": 1.0
+    },
+    {
+      "value": "breast",
+      "is_normalized": true,
+      "evidence": "inferred: Peripheral blood CD8+ T-lymphocytes play a crucial role in cell-mediated immunity and tumour-related immune responses in breast cancer.",
+      "ontology_id": "UBERON:0000310",
+      "ontology_name": "breast",
+      "similarity": 1.0
+    }
+  ],
+  "_confidence": {
+    "overall": 0.867,
+    "evidence_score": 0.895,
+    "completeness": 0.6,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "disease_state[2]",
+      "value": "triple-negative breast cancer (TNBC)",
+      "evidence": "The protein profile analysis of CD8+ T-lymphocytes in benign, Luminal A, Luminal B and triple-negative breast cancer (TNBC) patients in comparison to healthy control via a label-free proteomic quantification and gene set enrichment analysis (GSEA) were performed."
+    }
+  ]
+}

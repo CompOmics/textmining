@@ -1,0 +1,145 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "SH-SY5Y",
+      "is_normalized": true,
+      "evidence": "SH-SY5Y cells were exposed to DMSO (Control group) or PoTX at concentrations of 1 \u00b5M (Low group), 10 \u00b5M (High group) for a duration of 24\u00a0h.",
+      "ontology_id": "CLO:0009015",
+      "ontology_name": "SH-SY5Y cell",
+      "similarity": 0.965
+    },
+    {
+      "value": "HEK293",
+      "is_normalized": true,
+      "evidence": "HEK293 cells stably expressing the human hNaV1.2 or hNaV1.3 were cultured on DMEM supplemented with 10% heatinactivated FBS, 50\u00a0\u00b5g/mL Hygromycin B in an incubator at 37 \u2103 with 5% CO2.",
+      "ontology_id": "CLO:0001230",
+      "ontology_name": "HEK293",
+      "similarity": 1.0
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "neural cell",
+      "is_normalized": true,
+      "evidence": "inferred: SH-SY5Y cells were exposed to DMSO (Control group) or PoTX at concentrations of 1 \u00b5M (Low group), 10 \u00b5M (High group) for a duration of 24\u00a0h.",
+      "ontology_id": "CL:0002319",
+      "ontology_name": "neural cell",
+      "similarity": 1.0
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "Brain glioblastoma multiforme",
+      "is_normalized": true,
+      "evidence": "diseases: Brain glioblastoma multiforme; Brain cancer",
+      "ontology_id": "MONDO:0002501",
+      "ontology_name": "brain glioblastoma",
+      "similarity": 1.0
+    },
+    {
+      "value": "Brain cancer",
+      "is_normalized": true,
+      "evidence": "diseases: Brain glioblastoma multiforme; Brain cancer",
+      "ontology_id": "MONDO:0001657",
+      "ontology_name": "brain cancer",
+      "similarity": 1.0
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell culture",
+      "evidence": "organism parts: Neutrophil; Cell culture"
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "cell culture",
+      "is_normalized": true,
+      "evidence": "organism parts: Neutrophil; Cell culture",
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "is_normalized": true,
+      "evidence": "organisms: Homo sapiens (human)",
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "brain",
+      "is_normalized": true,
+      "evidence": "diseases: Brain glioblastoma multiforme; Brain cancer",
+      "ontology_id": "UBERON:6110636",
+      "ontology_name": "insect adult cerebral ganglion",
+      "similarity": 1.0
+    }
+  ],
+  "_confidence": {
+    "overall": 0.897,
+    "evidence_score": 0.969,
+    "completeness": 0.562,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "cell_line_tissue_mismatch",
+      "field_a": "cell_line",
+      "value_a": "SH-SY5Y",
+      "ontology_id_a": "CLO:0009015",
+      "field_b": "tissue",
+      "value_b": "brain",
+      "ontology_id_b": "UBERON:6110636",
+      "expected_b": "UBERON:0001021",
+      "source": "CLO derives_from"
+    }
+  ]
+}

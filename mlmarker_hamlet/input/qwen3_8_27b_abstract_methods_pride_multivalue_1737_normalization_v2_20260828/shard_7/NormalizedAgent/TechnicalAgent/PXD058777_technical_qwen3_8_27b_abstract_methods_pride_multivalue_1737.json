@@ -1,0 +1,162 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "data-dependent acquisition (Top12)",
+      "evidence": "measured with data-dependent acquisition (Top12) using the following settings"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM final",
+      "evidence": "alkylated for 1 h at RT using iodacetamide (10 mM final)"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodacetamide",
+      "evidence": "alkylated for 1 h at RT using iodacetamide (10 mM final)"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "trypsin/LysC (Promega) was added in a ratio of 50:1 (protein-to-enzyme) and digested overnight at 37 °C"
+    },
+    {
+      "value": "LysC",
+      "evidence": "trypsin/LysC (Promega) was added in a ratio of 50:1 (protein-to-enzyme) and digested overnight at 37 °C"
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "NCE 25",
+      "evidence": "MS2 (resolution 35,000, AGC target 1e6, maximum IT 120 ms, isolation window 1.6 m/z, NCE 25, dynamic exclusion 40 s)"
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "inferred: measured with data-dependent acquisition (Top12) using the following settings"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "QExactive",
+      "evidence": "Peptides were infused into a QExactive mass spectrometer with a Nanospray Flex Ion source (Thermo)",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "ExionLC",
+      "normalization_candidate_ids": [
+        "MS:1003651",
+        "MS:1001806",
+        "MS:1001911",
+        "MS:1003245",
+        "MS:1000657"
+      ]
+    },
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "Nanospray Flex Ion",
+      "evidence": "Peptides were infused into a QExactive mass spectrometer with a Nanospray Flex Ion source (Thermo)"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: For quantification, the MaxLFQ algorithm was used."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Peptides were infused into a QExactive mass spectrometer with a Nanospray Flex Ion source (Thermo)"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "N-terminal acetylation and methionine oxidation were set as variable modifications",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "N-terminal acetylation and methionine oxidation were set as variable modifications",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "carbamidomethylation on cysteine residues as fixed modification",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM final",
+      "evidence": "reduced for 30 min at 60 °C using TCEP (5 mM final)"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "reduced for 30 min at 60 °C using TCEP (5 mM final)"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.945,
+    "evidence_score": 0.929,
+    "completeness": 0.905,
+    "format_score": 1.0
+  }
+}

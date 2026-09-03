@@ -1,0 +1,203 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "18 to 75 years old",
+      "evidence": "The age range was from 18 to 75 years old, and gender was not restricted;"
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "rectum",
+      "evidence": "we collected paired colonoscopy biopsy specimens and radical resection specimens from 22 patients with locally advanced rectal cancer (LARC)."
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "HCT116",
+      "evidence": "EVs samples were isolated from senescent HCT116 cells and non-senescent HCT116 cells.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "HCT 116 cell",
+      "normalization_candidate_ids": [
+        "CLO:0003665",
+        "CLO:0003666",
+        "CLO:0037350",
+        "CLO:0003667",
+        "CLO:0002785"
+      ]
+    },
+    {
+      "value": "RKO",
+      "evidence": "CRC cells were simultaneously treated with CPT-11 and TPX (20 µM) for 96 h.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "kidney cell",
+      "normalization_candidate_ids": [
+        "CL:1000497",
+        "CL:0002518",
+        "CL:0002584",
+        "CL:0002522",
+        "UBERON:0005159"
+      ],
+      "normalization_qc_flags": [
+        "cross_namespace_mapping"
+      ]
+    },
+    {
+      "value": "293T",
+      "evidence": "Human CRC cell lines HCT116 and RKO, and human embryonic kidney cell line 293T were purchased from Procell Life Science & Technology Company (Wuhan, China).",
+      "is_normalized": true,
+      "ontology_id": "CLO:0001235",
+      "ontology_name": "293T/17 cell",
+      "similarity": 0.844,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "293T/17 cell"
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "colorectal cancer cell",
+      "evidence": "we assessed the protein cargos inside EVs secreted from colorectal cancer cells",
+      "is_normalized": true,
+      "ontology_id": "CL:1000347",
+      "ontology_name": "colonocyte",
+      "similarity": 0.76,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "colonocyte"
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "Colon cancer",
+      "evidence": "diseases: Colon cancer",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0021063",
+      "ontology_name": "malignant colon neoplasm",
+      "similarity": 1.0,
+      "normalization_method": "exact_synonym",
+      "normalization_matched_text": "Colon cancer",
+      "synonym_scope": "EXACT"
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell culture",
+      "evidence": "organism parts: Colon; Cell culture"
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "cell culture",
+      "evidence": "organism parts: Colon; Cell culture",
+      "is_normalized": true,
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cell culture"
+    },
+    {
+      "value": "tumor biopsy",
+      "evidence": "we collected paired colonoscopy biopsy specimens and radical resection specimens from 22 patients with locally advanced rectal cancer (LARC).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "blood",
+      "normalization_candidate_ids": [
+        "BTO:0000089",
+        "BTO:0000134",
+        "BTO:0000553",
+        "BTO:0000679"
+      ]
+    }
+  ],
+  "sex": [
+    {
+      "value": "male",
+      "evidence": "5-week-old male BALB/c nude mice were housed and fed in specific pathogen free conditions."
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    },
+    {
+      "value": "Mus musculus",
+      "evidence": "inferred: 5-week-old male BALB/c nude mice were housed and fed in specific pathogen free conditions.",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:10090",
+      "ontology_name": "Mus musculus",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Mus musculus"
+    }
+  ],
+  "strain": [
+    {
+      "value": "BALB/c",
+      "evidence": "5-week-old male BALB/c nude mice were housed and fed in specific pathogen free conditions."
+    }
+  ],
+  "tissue": [
+    {
+      "value": "Colon",
+      "evidence": "organism parts: Colon; Cell culture",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0001155",
+      "ontology_name": "colon",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "colon"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.9,
+    "evidence_score": 0.867,
+    "completeness": 0.833,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "age[0]",
+      "value": "18 to 75 years old",
+      "evidence": "The age range was from 18 to 75 years old, and gender was not restricted;"
+    },
+    {
+      "type": "negated_evidence",
+      "field": "sex[0]",
+      "value": "male",
+      "evidence": "5-week-old male BALB/c nude mice were housed and fed in specific pathogen free conditions."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "strain[0]",
+      "value": "BALB/c",
+      "evidence": "5-week-old male BALB/c nude mice were housed and fed in specific pathogen free conditions."
+    }
+  ]
+}

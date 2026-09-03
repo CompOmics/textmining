@@ -1,0 +1,175 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Mass spectrometry data were collected using either: (1) an Exploris 480 mass spectrometer (Thermo Fisher Scientific, San Jose, CA) coupled with a Proxeon 1200 Liquid Chromatograph (Thermo Fisher Scientific) in DDA (data dependent acquisition) mode."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Samples were reduced with 5 mM of neutralized TCEP (Pierce 77720) for 15 min at room temperature and alkylated with 10 mM of iodoacetamide for 30 min in the dark at room temperature, followed by quenching with 5 mM DTT for 15 min at room temperature."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Samples were reduced with 5 mM of neutralized TCEP (Pierce 77720) for 15 min at room temperature and alkylated with 10 mM of iodoacetamide for 30 min in the dark at room temperature, followed by quenching with 5 mM DTT for 15 min at room temperature."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "For protein digestion and preparation of mass spectrometry analysis, the samples were resuspended in 100 µL of 100 mM EPPS, pH 8.5 and digested at 37°C with trypsin at a 100:1 protein‐to‐protease ratio overnight."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28",
+      "evidence": "We selected the top twenty precursors for MS2 analysis which consisted of HCD high‐energy collision dissociation with the following parameters: resolution 30,000, AGC was set at “standard”, maximum injection time: 60 ms, isolation window: 1.2 Th, normalized collision energy (NCE) 28 and centroid spectrum data type."
+    },
+    {
+      "value": "30%",
+      "evidence": "The hrMS2 stage consisted of fragmentation by higher energy collisional dissociation (HCD, normalized collision energy 30%) and analysis using the Orbitrap (AGC 200%, maximum injection time 22 ms, isolation window 1.3 Th, resolution 15K)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "We selected the top twenty precursors for MS2 analysis which consisted of HCD high‐energy collision dissociation with the following parameters: resolution 30,000, AGC was set at “standard”, maximum injection time: 60 ms, isolation window: 1.2 Th, normalized collision energy (NCE) 28 and centroid spectrum data type."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Exploris 480",
+      "evidence": "Mass spectrometry data were collected using either: (1) an Exploris 480 mass spectrometer (Thermo Fisher Scientific, San Jose, CA) coupled with a Proxeon 1200 Liquid Chromatograph (Thermo Fisher Scientific) in DDA (data dependent acquisition) mode.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 0.785,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    },
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "(2) an Orbitrap Fusion Lumos instrument coupled to a Proxeon NanoLC‐1200 UHPLC.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos; Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Fusion Lumos; Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    },
+    {
+      "value": "label-free",
+      "evidence": "inferred: For quantification and downstream data analysis, spectral counts were extracted and the subsequently converted to Normalized spectral counts abundance factors, as outlined previously (Paoletti et al.)."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "The scan sequence began with an Orbitrap MS1 spectrum with the following parameters: resolution 120,000, scan range 350−1200 Th, automatic gain control (AGC) target: 300%, maximum injection time: 25 ms, RF lens setting :50%, and centroid spectrum data type."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "oxidation",
+      "evidence": "Oxidation of methionine residues (+15.9949 Da) was set as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Samples were reduced with 5 mM of neutralized TCEP (Pierce 77720) for 15 min at room temperature and alkylated with 10 mM of iodoacetamide for 30 min in the dark at room temperature, followed by quenching with 5 mM DTT for 15 min at room temperature."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Samples were reduced with 5 mM of neutralized TCEP (Pierce 77720) for 15 min at room temperature and alkylated with 10 mM of iodoacetamide for 30 min in the dark at room temperature, followed by quenching with 5 mM DTT for 15 min at room temperature."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.921,
+    "evidence_score": 0.9,
+    "completeness": 0.857,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "10 mM",
+      "evidence": "Samples were reduced with 5 mM of neutralized TCEP (Pierce 77720) for 15 min at room temperature and alkylated with 10 mM of iodoacetamide for 30 min in the dark at room temperature, followed by quenching with 5 mM DTT for 15 min at room temperature."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM",
+      "evidence": "Samples were reduced with 5 mM of neutralized TCEP (Pierce 77720) for 15 min at room temperature and alkylated with 10 mM of iodoacetamide for 30 min in the dark at room temperature, followed by quenching with 5 mM DTT for 15 min at room temperature."
+    }
+  ]
+}

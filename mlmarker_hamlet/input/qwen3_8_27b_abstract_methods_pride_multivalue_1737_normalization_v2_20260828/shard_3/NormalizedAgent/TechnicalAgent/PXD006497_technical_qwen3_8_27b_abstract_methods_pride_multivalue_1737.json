@@ -1,0 +1,144 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "data-dependent MS/MS acquisition consisting of 1 full MS1 (R = 70 K) scan acquisition from 350 to 1500 m/z and 10 HCD type MS2 scans (R = 15 K)."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "55 mM",
+      "evidence": "followed by alkylation with 55 mM iodoacetamide for 20 min at room temperature in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "followed by alkylation with 55 mM iodoacetamide for 20 min at room temperature in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "incubated at 37°C overnight with 0.2 µg of trypsin."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "10 HCD type MS2 scans (R = 15 K)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "electrospray ionisation",
+      "evidence": "A gradient from 5 to 40% acetonitrile over 120 min was used to elute peptides for ionisation by electrospray ionisation"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "Dimethyl labelling",
+      "evidence": "Dimethyl labelling was performed exactly as described in Boersema et al."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Samples were analysed using an EASY-nLC 1000 liquid chromatography system coupled to a Q-Exactive mass spectrometer (LC–MS)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation (C)",
+      "evidence": "fixed modifications of carbamidomethylation (C) and variable modification of oxidation (M), acetylation (N-term, Protein).",
+      "is_normalized": true,
+      "ontology_id": "MOD:01679",
+      "ontology_name": "alpha-aminocarbamoylated residue",
+      "similarity": 0.873,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carbamylation"
+    },
+    {
+      "value": "oxidation (M)",
+      "evidence": "fixed modifications of carbamidomethylation (C) and variable modification of oxidation (M), acetylation (N-term, Protein).",
+      "is_normalized": true,
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 0.925,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "acetylation (N-term, Protein)",
+      "evidence": "fixed modifications of carbamidomethylation (C) and variable modification of oxidation (M), acetylation (N-term, Protein).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.895,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "1 mM",
+      "evidence": "Denatured protein was reduced by the addition of 1 mM DTT for 30 min at room temperature"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Denatured protein was reduced by the addition of 1 mM DTT for 30 min at room temperature"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.879,
+    "evidence_score": 0.829,
+    "completeness": 0.824,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "55 mM",
+      "evidence": "followed by alkylation with 55 mM iodoacetamide for 20 min at room temperature in the dark."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "1 mM",
+      "evidence": "Denatured protein was reduced by the addition of 1 mM DTT for 30 min at room temperature"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "MS data was acquired using a data-dependent top10 method, dynamically choosing the most abundant precursor ions from the survey scan (250–1250 m/z) in positive mode."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "40 mM",
+      "evidence": "Iodoacetamide (40 mM) was then added to alkylate for 45 minutes at room temperature until quenching by a second addition of DTT."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "Iodoacetamide",
+      "evidence": "Iodoacetamide (40 mM) was then added to alkylate for 45 minutes at room temperature until quenching by a second addition of DTT."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin/lysozyme C",
+      "evidence": "A mixture of trypsin/lysozyme C (2 µg) was added and digestion was performed at 37 °C for 2 hours."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30 eV",
+      "evidence": "Resolution for HCD spectra was set to 17,500 and the Normalized collision energy was 30 eV."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Resolution for HCD spectra was set to 17,500 and the Normalized collision energy was 30 eV."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "A nanoflow HPLC instrument (Dionex ultimate 3000) was coupled in-line with a Q Exactive mass spectrometer (Thermo Fisher Scientific) with a nano-electrospray Flex ion source (Proxeon, Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "A nanoflow HPLC instrument (Dionex ultimate 3000) was coupled in-line with a Q Exactive mass spectrometer (Thermo Fisher Scientific) with a nano-electrospray Flex ion source (Proxeon, Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: MS data was acquired using a data-dependent top10 method, dynamically choosing the most abundant precursor ions from the survey scan (250–1250 m/z) in positive mode."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: A nanoflow HPLC instrument (Dionex ultimate 3000) was coupled in-line with a Q Exactive mass spectrometer (Thermo Fisher Scientific) with a nano-electrospray Flex ion source (Proxeon, Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "oxidation of methionine",
+      "evidence": "One miss-cleavage was tolerated, oxidation of methionine was set as a dynamic modification and carbamidomethylation of cysteine residues was a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "carbamidomethylation of cysteine residues",
+      "evidence": "One miss-cleavage was tolerated, oxidation of methionine was set as a dynamic modification and carbamidomethylation of cysteine residues was a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.788,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "To 5 µg of protein per sample, DTT (20 mM) was added and incubated at room temperature for 45 minutes."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "To 5 µg of protein per sample, DTT (20 mM) was added and incubated at room temperature for 45 minutes."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.844,
+    "evidence_score": 0.735,
+    "completeness": 0.882,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "40 mM",
+      "evidence": "Iodoacetamide (40 mM) was then added to alkylate for 45 minutes at room temperature until quenching by a second addition of DTT."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "collision_energy[0]",
+      "value": "30 eV",
+      "evidence": "Resolution for HCD spectra was set to 17,500 and the Normalized collision energy was 30 eV."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "20 mM",
+      "evidence": "To 5 µg of protein per sample, DTT (20 mM) was added and incubated at room temperature for 45 minutes."
+    }
+  ]
+}

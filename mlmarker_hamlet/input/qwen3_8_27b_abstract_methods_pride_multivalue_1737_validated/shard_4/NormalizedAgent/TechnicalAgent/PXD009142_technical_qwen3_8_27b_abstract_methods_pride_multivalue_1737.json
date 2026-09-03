@@ -1,0 +1,168 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Mass spectrometry analysis was completed in a data-dependent manner with a full scan in the mass-to-charge ratio (m/z) range of 350 to 1800 in the \u201ctop speed\u201d setting, 3 seconds per cycle."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "30 mM",
+      "evidence": "The protein sample was digested with LysC (1:100; Wako Chemicals, Inc., Richmond, VA, USA) by incubating at room temperature for 3 hours followed by an overnight digestion at 37\u2009\u00b0C using sequencing-grade trypsin (1:50; Promega Corp., Madison, WI, USA) and finally desalted with C18 Sep-Pak (Waters Corp., Milford, MA, USA)."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "The protein sample was digested with LysC (1:100; Wako Chemicals, Inc., Richmond, VA, USA) by incubating at room temperature for 3 hours followed by an overnight digestion at 37\u2009\u00b0C using sequencing-grade trypsin (1:50; Promega Corp., Madison, WI, USA) and finally desalted with C18 Sep-Pak (Waters Corp., Milford, MA, USA)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "The protein sample was digested with LysC (1:100; Wako Chemicals, Inc., Richmond, VA, USA) by incubating at room temperature for 3 hours followed by an overnight digestion at 37\u2009\u00b0C using sequencing-grade trypsin (1:50; Promega Corp., Madison, WI, USA) and finally desalted with C18 Sep-Pak (Waters Corp., Milford, MA, USA)."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "The protein sample was digested with LysC (1:100; Wako Chemicals, Inc., Richmond, VA, USA) by incubating at room temperature for 3 hours followed by an overnight digestion at 37\u2009\u00b0C using sequencing-grade trypsin (1:50; Promega Corp., Madison, WI, USA) and finally desalted with C18 Sep-Pak (Waters Corp., Milford, MA, USA)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "32",
+      "evidence": "A maximum ion injection time was set to 50 milliseconds for MS1 and 100 milliseconds for MS2 (HCD was set to 32 with stepped collision energy of 5% for MS2)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "bRP",
+      "evidence": "The peptides were fractionated by basic pH reversed-phase liquid chromatography (Waters Corp.) into 96 fractions, followed by concatenation into 24 fractions by combining every 24th fraction."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "An MS2 scan was acquired by fragmenting precursor ions using a higher-energy collisional dissociation (HCD) method and detected at a mass resolution of 30,000 at an m/z of 200."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos Tribrid",
+      "is_normalized": true,
+      "evidence": "The fractionated peptides were analyzed on a mass spectrometer coupled with a nano-flow liquid chromatography system (Orbitrap Fusion Lumos Tribrid and EASY-nLC 1200 system, respectively; Thermo Fisher Scientific).",
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 0.937
+    },
+    {
+      "value": "LTQ Orbitrap Elite",
+      "is_normalized": true,
+      "evidence": "instruments: LTQ Orbitrap Elite",
+      "ontology_id": "MS:1001910",
+      "ontology_name": "Orbitrap Elite",
+      "similarity": 1.0
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "The fractionated peptides were analyzed on a mass spectrometer coupled with a nano-flow liquid chromatography system (Orbitrap Fusion Lumos Tribrid and EASY-nLC 1200 system, respectively; Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "Human iPSC-derived CECs at day 20 from two 35-mm culture plates were harvested, pooled together, and subjected to a mass spectrometry\u2013based label-free quantitative proteomics."
+    },
+    {
+      "value": "Label free",
+      "evidence": "quantification: Label free"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "The fractionated peptides were analyzed on a mass spectrometer coupled with a nano-flow liquid chromatography system (Orbitrap Fusion Lumos Tribrid and EASY-nLC 1200 system, respectively; Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "is_normalized": true,
+      "evidence": "Search parameters included (1) trypsin as a proteolytic enzyme with up to two missed cleavages; (2) first search peptide mass error tolerance of 20 ppm and the main search peptide mass error tolerance of 4 ppm; (3) fragment mass error tolerance of 20 ppm; (4) carbamidomethylation of cysteine (+57.02146\u2009Da) as a fixed modification; and (5) oxidation of methionine (+15.99492\u2009Da) and protein acetyl (+ 42.01056 Da) on N-terminus as a dynamic modifications.",
+      "ontology_id": "MOD:01679",
+      "ontology_name": "alpha-aminocarbamoylated residue",
+      "similarity": 0.88
+    },
+    {
+      "value": "oxidation",
+      "is_normalized": true,
+      "evidence": "Search parameters included (1) trypsin as a proteolytic enzyme with up to two missed cleavages; (2) first search peptide mass error tolerance of 20 ppm and the main search peptide mass error tolerance of 4 ppm; (3) fragment mass error tolerance of 20 ppm; (4) carbamidomethylation of cysteine (+57.02146\u2009Da) as a fixed modification; and (5) oxidation of methionine (+15.99492\u2009Da) and protein acetyl (+ 42.01056 Da) on N-terminus as a dynamic modifications.",
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 1.0
+    },
+    {
+      "value": "N-terminal acetylation",
+      "is_normalized": true,
+      "evidence": "Search parameters included (1) trypsin as a proteolytic enzyme with up to two missed cleavages; (2) first search peptide mass error tolerance of 20 ppm and the main search peptide mass error tolerance of 4 ppm; (3) fragment mass error tolerance of 20 ppm; (4) carbamidomethylation of cysteine (+57.02146\u2009Da) as a fixed modification; and (5) oxidation of methionine (+15.99492\u2009Da) and protein acetyl (+ 42.01056 Da) on N-terminus as a dynamic modifications.",
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929
+    },
+    {
+      "value": "acetylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: acetylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "evidence": "modifications: acetylated residue; iodoacetamide derivatized residue",
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Total protein sample (2600 \u03bcg) was reduced with 10\u2009mM dithiothreitol (MilliporeSigma) at room temperature for 1 hour and alkylated with 30\u2009mM iodoacetamide (MilliporeSigma) for 20\u2009minutes (in dark)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "Total protein sample (2600 \u03bcg) was reduced with 10\u2009mM dithiothreitol (MilliporeSigma) at room temperature for 1 hour and alkylated with 30\u2009mM iodoacetamide (MilliporeSigma) for 20\u2009minutes (in dark)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.857,
+    "evidence_score": 0.732,
+    "completeness": 0.955,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "30 mM",
+      "evidence": "The protein sample was digested with LysC (1:100; Wako Chemicals, Inc., Richmond, VA, USA) by incubating at room temperature for 3 hours followed by an overnight digestion at 37\u2009\u00b0C using sequencing-grade trypsin (1:50; Promega Corp., Madison, WI, USA) and finally desalted with C18 Sep-Pak (Waters Corp., Milford, MA, USA)."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "10 mM",
+      "evidence": "Total protein sample (2600 \u03bcg) was reduced with 10\u2009mM dithiothreitol (MilliporeSigma) at room temperature for 1 hour and alkylated with 30\u2009mM iodoacetamide (MilliporeSigma) for 20\u2009minutes (in dark)."
+    }
+  ]
+}

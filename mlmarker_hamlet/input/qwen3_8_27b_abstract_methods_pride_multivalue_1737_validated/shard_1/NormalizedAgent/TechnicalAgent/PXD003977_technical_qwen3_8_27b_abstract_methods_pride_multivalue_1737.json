@@ -1,0 +1,188 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "50 \u03bcg of trypsin (Promega, no. V5111) or 50 \u03bcg of elastase (Worthington Biochemical, no. LS006365)."
+    },
+    {
+      "value": "elastase",
+      "evidence": "50 \u03bcg of trypsin (Promega, no. V5111) or 50 \u03bcg of elastase (Worthington Biochemical, no. LS006365)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "35%",
+      "evidence": "MS/MS spectra were acquired in the linear ion trap (rapid scan mode) after collision-induced dissociation (CID) fragmentation at a collision energy of 35% and an AGC target of 4.0E3 for up to 250 ms, employing a maximal duty cycle of 3 s, prioritizing the most intense ions and injecting ions for all available parallelizable time."
+    },
+    {
+      "value": "32% instead of 25%",
+      "evidence": "In the CHOPIN method we added a fourth scan event for singly charged precursor ions to be scanned with a HCD/FT scan, increased collision energy (32% instead of 25%), and a longer injection time (100 ms instead of 40 ms)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high-pH",
+      "evidence": "Off-line high-pH reverse-phase prefractionation was performed on 800 \u03bcg of digested material using the loading pump of a Dionex Ultimate 3000 HPLC with an automated fraction collector and a XBridge BEH C18 XP column (3 \u00d7 150 mm, 2.5 \u03bcm pore size, Waters no. 186006710) over a 100 min gradient using basic pH reverse-phase buffers (A: water, pH 10 with ammonium hydroxide; B: 90% acetonitrile, pH 10 with ammonium hydroxide)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "CID",
+      "evidence": "MS/MS spectra were acquired in the linear ion trap (rapid scan mode) after collision-induced dissociation (CID) fragmentation at a collision energy of 35% and an AGC target of 4.0E3 for up to 250 ms, employing a maximal duty cycle of 3 s, prioritizing the most intense ions and injecting ions for all available parallelizable time."
+    },
+    {
+      "value": "HCD",
+      "evidence": "Because only high abundant precursors with higher charge states are analyzed in the Orbitrap after high collision energy dissociation (HCD) fragmentation, the success rate of these scans is very high."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "evidence": "MS data were acquired with an Orbitrap Fusion Lumos instrument using the methods described below.",
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0
+    },
+    {
+      "value": "Orbitrap Fusion ETD",
+      "is_normalized": true,
+      "evidence": "instruments: Orbitrap Fusion ETD",
+      "ontology_id": "MS:1002417",
+      "ontology_name": "Orbitrap Fusion ETD",
+      "similarity": 1.0
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Peptide fractions were analyzed by nano-UPLC\u2013MS/MS using a Dionex Ultimate 3000 nano-UPLC with EASY-Spray column (75 \u03bcm \u00d7 500 mm, 2 \u03bcm particle size, Thermo Scientific) with a 60 min gradient of 0.1% formic acid in 5% DMSO to 0.1% formic acid to 35% acetonitrile in 5% DMSO."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "Spectrum counting",
+      "evidence": "quantification: Spectrum counting"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "- available on an Orbitrap Fusion (Lumos) mass spectrometer- to achieve 57% median protein sequence coverage in 13,728 protein groups (8,949 Unigene IDs) in a single cell line."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "propionamide",
+      "is_normalized": true,
+      "evidence": "We allowed up to four missed cleavage sites and no nonspecific cleavage for tryptic samples and set propionamide as fixed cysteine modification and variable modification on lysine and N-termini as well as Deamidation (N,Q) and Oxidation (M) and maximal 1 variable modification per peptide in the de novo and database searches (three variable PTMs for PTM search nodes).",
+      "ontology_id": "MOD:00417",
+      "ontology_name": "S-carboxamidoethyl-L-cysteine",
+      "similarity": 1.0
+    },
+    {
+      "value": "Deamidation (N,Q)",
+      "is_normalized": true,
+      "evidence": "We allowed up to four missed cleavage sites and no nonspecific cleavage for tryptic samples and set propionamide as fixed cysteine modification and variable modification on lysine and N-termini as well as Deamidation (N,Q) and Oxidation (M) and maximal 1 variable modification per peptide in the de novo and database searches (three variable PTMs for PTM search nodes).",
+      "ontology_id": "MOD:00219",
+      "ontology_name": "L-citrulline",
+      "similarity": 0.932
+    },
+    {
+      "value": "Oxidation (M)",
+      "is_normalized": true,
+      "evidence": "We allowed up to four missed cleavage sites and no nonspecific cleavage for tryptic samples and set propionamide as fixed cysteine modification and variable modification on lysine and N-termini as well as Deamidation (N,Q) and Oxidation (M) and maximal 1 variable modification per peptide in the de novo and database searches (three variable PTMs for PTM search nodes).",
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 0.925
+    },
+    {
+      "value": "monohydroxylated residue",
+      "is_normalized": true,
+      "evidence": "modifications: monohydroxylated residue",
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "100 mM",
+      "evidence": "The frozen cells were lysed on ice for 30 min in 5 mL of RIPA lysis buffer (Thermo Pierce, no. 89901) supplemented with 4% SDS, 6 M urea, 2 M thiourea, 100 mM DTT, protease, and phosphatase inhibitors (Roche nos. 11836170001 and 04906837001)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "The frozen cells were lysed on ice for 30 min in 5 mL of RIPA lysis buffer (Thermo Pierce, no. 89901) supplemented with 4% SDS, 6 M urea, 2 M thiourea, 100 mM DTT, protease, and phosphatase inhibitors (Roche nos. 11836170001 and 04906837001)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.97,
+    "evidence_score": 0.995,
+    "completeness": 0.864,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "cleavage_agent[1]",
+      "value": "elastase",
+      "evidence": "50 \u03bcg of trypsin (Promega, no. V5111) or 50 \u03bcg of elastase (Worthington Biochemical, no. LS006365)."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "ptm[0]",
+      "value": "propionamide",
+      "evidence": "We allowed up to four missed cleavage sites and no nonspecific cleavage for tryptic samples and set propionamide as fixed cysteine modification and variable modification on lysine and N-termini as well as Deamidation (N,Q) and Oxidation (M) and maximal 1 variable modification per peptide in the de novo and database searches (three variable PTMs for PTM search nodes)."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "ptm[1]",
+      "value": "Deamidation (N,Q)",
+      "evidence": "We allowed up to four missed cleavage sites and no nonspecific cleavage for tryptic samples and set propionamide as fixed cysteine modification and variable modification on lysine and N-termini as well as Deamidation (N,Q) and Oxidation (M) and maximal 1 variable modification per peptide in the de novo and database searches (three variable PTMs for PTM search nodes)."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "ptm[2]",
+      "value": "Oxidation (M)",
+      "evidence": "We allowed up to four missed cleavage sites and no nonspecific cleavage for tryptic samples and set propionamide as fixed cysteine modification and variable modification on lysine and N-termini as well as Deamidation (N,Q) and Oxidation (M) and maximal 1 variable modification per peptide in the de novo and database searches (three variable PTMs for PTM search nodes)."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "reduction_concentration[0]",
+      "value": "100 mM",
+      "evidence": "The frozen cells were lysed on ice for 30 min in 5 mL of RIPA lysis buffer (Thermo Pierce, no. 89901) supplemented with 4% SDS, 6 M urea, 2 M thiourea, 100 mM DTT, protease, and phosphatase inhibitors (Roche nos. 11836170001 and 04906837001)."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "reduction_reagent[0]",
+      "value": "DTT",
+      "evidence": "The frozen cells were lysed on ice for 30 min in 5 mL of RIPA lysis buffer (Thermo Pierce, no. 89901) supplemented with 4% SDS, 6 M urea, 2 M thiourea, 100 mM DTT, protease, and phosphatase inhibitors (Roche nos. 11836170001 and 04906837001)."
+    }
+  ]
+}

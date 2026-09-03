@@ -1,0 +1,177 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "MS2 spectra were gathered in a data-dependent mode using a monoisotopic peak selection: peptide, including charge state 2 to 7, TopSpeed method (3 s cycle time), isolation window 0.4 m/z, HCD fragmentation using a normalized collision energy of 32 (TMTpro), resolution 45k, AGC target of 200%, and dynamic exclusion (20 ppm window) for 60 s."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Proteins were reduced using TCEP for 30 min and alkylated with iodoacetamide for 30 min before digesting with 0.5 μg trypsin/Lys-C (Thermo, Waltham, MA, USA) overnight at 37 °C with agitation."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin/Lys-C",
+      "evidence": "Proteins were reduced using TCEP for 30 min and alkylated with iodoacetamide for 30 min before digesting with 0.5 μg trypsin/Lys-C (Thermo, Waltham, MA, USA) overnight at 37 °C with agitation."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "32",
+      "evidence": "MS2 spectra were gathered in a data-dependent mode using a monoisotopic peak selection: peptide, including charge state 2 to 7, TopSpeed method (3 s cycle time), isolation window 0.4 m/z, HCD fragmentation using a normalized collision energy of 32 (TMTpro), resolution 45k, AGC target of 200%, and dynamic exclusion (20 ppm window) for 60 s."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "affinity",
+      "evidence": "Using affinity-purification mass spectrometry (AP-MS), we identify differential protein interactions caused by mutations in nsp3."
+    },
+    {
+      "value": "G1 anti-DYKDDDDK resin",
+      "evidence": "After centrifugation at 400× g for 10 min, the supernatant was combined with 15 µL G1 anti-DYKDDDDK resin (GenScript) and incubated overnight at 4 °C while rocking."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "MudPIT columns were prepared as described previously, in triphasic layers of 1.5 cm C18/SCX/C18 resins."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "MS2 spectra were gathered in a data-dependent mode using a monoisotopic peak selection: peptide, including charge state 2 to 7, TopSpeed method (3 s cycle time), isolation window 0.4 m/z, HCD fragmentation using a normalized collision energy of 32 (TMTpro), resolution 45k, AGC target of 200%, and dynamic exclusion (20 ppm window) for 60 s."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    },
+    {
+      "value": "Exploris480",
+      "evidence": "MudPIT columns were prepared as described previously, in triphasic layers of 1.5 cm C18/SCX/C18 resins. TMT-labeled samples were loaded onto the columns using a high-pressure chamber and washed with buffer A (95% water, 5% acetonitrile, 0.1% formic acid) for 30 min. Online fractionation by liquid chromatography was carried out using an Ultimate 3000 nanoLC and analyzed using an Exploris480 mass spectrometer (Thermo).",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 0.725,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "ESI was performed from the tip of the microcapillary column using 2.2 kV for spray voltage, 275 °C for the ion transfer tube, and RF lens of 40%."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Exploris 480"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    },
+    {
+      "value": "Met oxidation",
+      "evidence": "Searches used Sequest HT: trypsin cleavage (maximum two missed cleavages), minimum peptide length of 6 AAs, precursor mass tolerance of 20 ppm, fragment mass tolerance of 0.02 Da, dynamic modifications of Met oxidation (+15.995 Da), protein N-terminal Met loss (−131.040 Da), and protein N-terminal acetylation (+42.011 Da), static modifications of TMTpro (+304.207 Da) at Lys, and N-termini and Cys carbamidomethylation (+57.021 Da).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.848,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "protein N-terminal Met loss",
+      "evidence": "Searches used Sequest HT: trypsin cleavage (maximum two missed cleavages), minimum peptide length of 6 AAs, precursor mass tolerance of 20 ppm, fragment mass tolerance of 0.02 Da, dynamic modifications of Met oxidation (+15.995 Da), protein N-terminal Met loss (−131.040 Da), and protein N-terminal acetylation (+42.011 Da), static modifications of TMTpro (+304.207 Da) at Lys, and N-termini and Cys carbamidomethylation (+57.021 Da).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Met-loss",
+      "normalization_candidate_ids": [
+        "MOD:01643",
+        "MOD:00431",
+        "MOD:00427",
+        "MOD:00432",
+        "MOD:00625"
+      ]
+    },
+    {
+      "value": "protein N-terminal acetylation",
+      "evidence": "Searches used Sequest HT: trypsin cleavage (maximum two missed cleavages), minimum peptide length of 6 AAs, precursor mass tolerance of 20 ppm, fragment mass tolerance of 0.02 Da, dynamic modifications of Met oxidation (+15.995 Da), protein N-terminal Met loss (−131.040 Da), and protein N-terminal acetylation (+42.011 Da), static modifications of TMTpro (+304.207 Da) at Lys, and N-termini and Cys carbamidomethylation (+57.021 Da).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.895,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "TMTpro",
+      "evidence": "Searches used Sequest HT: trypsin cleavage (maximum two missed cleavages), minimum peptide length of 6 AAs, precursor mass tolerance of 20 ppm, fragment mass tolerance of 0.02 Da, dynamic modifications of Met oxidation (+15.995 Da), protein N-terminal Met loss (−131.040 Da), and protein N-terminal acetylation (+42.011 Da), static modifications of TMTpro (+304.207 Da) at Lys, and N-termini and Cys carbamidomethylation (+57.021 Da).",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:2016",
+      "ontology_name": "TMTpro",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "TMTpro"
+    },
+    {
+      "value": "Cys carbamidomethylation",
+      "evidence": "Searches used Sequest HT: trypsin cleavage (maximum two missed cleavages), minimum peptide length of 6 AAs, precursor mass tolerance of 20 ppm, fragment mass tolerance of 0.02 Da, dynamic modifications of Met oxidation (+15.995 Da), protein N-terminal Met loss (−131.040 Da), and protein N-terminal acetylation (+42.011 Da), static modifications of TMTpro (+304.207 Da) at Lys, and N-termini and Cys carbamidomethylation (+57.021 Da).",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Proteins were reduced using TCEP for 30 min and alkylated with iodoacetamide for 30 min before digesting with 0.5 μg trypsin/Lys-C (Thermo, Waltham, MA, USA) overnight at 37 °C with agitation."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.957,
+    "evidence_score": 0.965,
+    "completeness": 0.87,
+    "format_score": 1.0
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "top-10 data-dependent acquisition in positive ionization"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "100 mM",
+      "evidence": "Alkylation was performed using 50µL of 100 mM iodoacetamide in the dark for 1 h."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Alkylation was performed using 50µL of 100 mM iodoacetamide in the dark for 1 h."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Samples were digested with a trypsin-to-protein ratio of 1:50 for 18 h at 37 °C in 150µL of AmBIC."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28%",
+      "evidence": "Peptides with ≥ 2 charges in the 300–2000 m/z range were fragmented at normalized collision energy of 28% using higher energy collisional dissociation (HCD)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Peptides with ≥ 2 charges in the 300–2000 m/z range were fragmented at normalized collision energy of 28% using higher energy collisional dissociation (HCD)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Exploris 480 Orbitrap",
+      "evidence": "Mass spectrometry analysis was performed using Exploris 480 Orbitrap (ThermoFisher) with top-10 data-dependent acquisition in positive ionization at MS resolution of 70,000 and MS/MS of 17,500.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 0.931,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    },
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "positive ionization",
+      "evidence": "Mass spectrometry analysis was performed using Exploris 480 Orbitrap (ThermoFisher) with top-10 data-dependent acquisition in positive ionization at MS resolution of 70,000 and MS/MS of 17,500."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Using qualitative, quantitative, profile and ROC analysis, a set of four proteins (i.e., GNB4, PDK1, AGXT and CD73) was chosen for further validation using immunohistochemical (IHC) methods."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Mass spectrometry analysis was performed using Exploris 480 Orbitrap (ThermoFisher) with top-10 data-dependent acquisition in positive ionization at MS resolution of 70,000 and MS/MS of 17,500."
+    },
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Exploris 480"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "methionine oxidation",
+      "evidence": "Methionine oxidation, carbamidomethylation, and two missed digestion sites were allowed.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Methionine oxidation, carbamidomethylation, and two missed digestion sites were allowed.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "50 mM",
+      "evidence": "Next, 50µL of 50 mM dithiothreitol in 25 mM AmBIC was added, and the samples were incubated at 37 °C for 1 h with 950 rpm mixing."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "Next, 50µL of 50 mM dithiothreitol in 25 mM AmBIC was added, and the samples were incubated at 37 °C for 1 h with 950 rpm mixing."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.903,
+    "evidence_score": 0.847,
+    "completeness": 0.895,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "100 mM",
+      "evidence": "Alkylation was performed using 50µL of 100 mM iodoacetamide in the dark for 1 h."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "50 mM",
+      "evidence": "Next, 50µL of 50 mM dithiothreitol in 25 mM AmBIC was added, and the samples were incubated at 37 °C for 1 h with 950 rpm mixing."
+    }
+  ]
+}
