@@ -59,6 +59,25 @@ class TestOntologyLoader:
         assert "Homo sapiens" in all_names
         assert "human" in all_names
 
+    def test_synonym_scope_and_taxon_constraint_are_preserved(self, tmp_path):
+        """OBO synonym scope and in_taxon metadata survive parsing."""
+        from normalization.ontology import OntologyLoader
+
+        path = tmp_path / "scope.obo"
+        path.write_text(
+            "format-version: 1.2\n\n"
+            "[Term]\n"
+            "id: TEST:1\n"
+            "name: canonical label\n"
+            "synonym: \"alias\" RELATED []\n"
+            "relationship: in_taxon NCBITaxon:50557 ! Insecta\n"
+        )
+
+        node = OntologyLoader().load(str(path)).get_node("TEST:1")
+
+        assert node.synonym_scopes["alias"] == "RELATED"
+        assert node.taxon_ids == ["NCBITaxon:50557"]
+
 
 class TestNormalizationResult:
     """Tests for NormalizationResult dataclass."""
@@ -155,6 +174,180 @@ class TestTermNormalizer:
         
         # Without entity type or ontology_id, should return not normalized
         assert result.is_normalized == False
+
+    def test_exact_primary_name_beats_identical_synonym(self):
+        """A canonical label must beat the same text on another node."""
+        from normalization.normalizer import TermNormalizer
+        from normalization.ontology import OntologyGraph, OntologyNode
+
+        class WrongFirstIndex:
+            def search(self, query, top_k=None):
+                raise AssertionError("exact primary matches must bypass embeddings")
+
+        graph = OntologyGraph("uberon")
+        graph.add_node(OntologyNode(id="UBERON:0000955", name="brain"))
+        graph.add_node(OntologyNode(
+            id="UBERON:6110636",
+            name="insect adult cerebral ganglion",
+            synonyms=["brain"],
+        ))
+        normalizer = TermNormalizer()
+        normalizer.graphs["uberon"] = graph
+        normalizer.indices["uberon"] = WrongFirstIndex()
+
+        result = normalizer.normalize(" Brain ", ontology_id="uberon")
+
+        assert result.ontology_id == "UBERON:0000955"
+        assert result.ontology_name == "brain"
+        assert result.matched_text == "brain"
+        assert result.similarity == 1.0
+        assert result.is_normalized is True
+
+    def test_batch_exact_primary_names_bypass_embeddings(self):
+        """Batch normalization applies the same primary-name precedence."""
+        from normalization.normalizer import TermNormalizer
+        from normalization.ontology import OntologyGraph, OntologyNode
+
+        class NoSearchIndex:
+            def search_many(self, queries, top_k=None):
+                raise AssertionError("all exact primary matches should skip embeddings")
+
+        graph = OntologyGraph("uberon")
+        graph.add_node(OntologyNode(id="UBERON:0000955", name="brain"))
+        graph.add_node(OntologyNode(
+            id="UBERON:6110636",
+            name="insect adult cerebral ganglion",
+            synonyms=["brain"],
+        ))
+        graph.add_node(OntologyNode(id="UBERON:0000948", name="heart"))
+        normalizer = TermNormalizer()
+        normalizer.graphs["uberon"] = graph
+        normalizer.indices["uberon"] = NoSearchIndex()
+
+        results = normalizer.normalize_batch(
+            ["brain", "HEART"], ontology_id="uberon"
+        )
+
+        assert [result.ontology_id for result in results] == [
+            "UBERON:0000955",
+            "UBERON:0000948",
+        ]
+
+    def test_imported_primary_name_does_not_bypass_target_ontology(self):
+        """A primary label imported from HP must not override MONDO search."""
+        from normalization.normalizer import TermNormalizer
+        from normalization.ontology import OntologyGraph, OntologyNode
+
+        class MondoIndex:
+            def search(self, query, top_k=None):
+                return [("MONDO:0011122", "obesity", 1.0)]
+
+        graph = OntologyGraph("mondo")
+        graph.add_node(OntologyNode(id="HP:0001513", name="obesity"))
+        graph.add_node(OntologyNode(
+            id="MONDO:0011122",
+            name="obsolete morbid obesity",
+        ))
+        normalizer = TermNormalizer()
+        normalizer.graphs["mondo"] = graph
+        normalizer.indices["mondo"] = MondoIndex()
+
+        result = normalizer.normalize("obesity", ontology_id="mondo")
+
+        assert result.ontology_id == "MONDO:0011122"
+
+    def test_ambiguous_related_synonym_is_not_auto_normalized(self):
+        """FAISS ordering must not resolve an exact-string synonym tie."""
+        from normalization.normalizer import TermNormalizer
+        from normalization.ontology import OntologyGraph, OntologyNode
+
+        class NoSearchIndex:
+            def search(self, query, top_k=None):
+                raise AssertionError("ambiguous synonym must bypass FAISS")
+
+        graph = OntologyGraph("uberon")
+        graph.add_node(OntologyNode(
+            id="UBERON:1", name="first", synonyms=["skin"],
+            synonym_scopes={"skin": "RELATED"},
+        ))
+        graph.add_node(OntologyNode(
+            id="UBERON:2", name="second", synonyms=["skin"],
+            synonym_scopes={"skin": "RELATED"},
+        ))
+        normalizer = TermNormalizer()
+        normalizer.graphs["uberon"] = graph
+        normalizer.indices["uberon"] = NoSearchIndex()
+
+        result = normalizer.normalize("skin", ontology_id="uberon")
+
+        assert result.is_normalized is False
+        assert result.normalization_method == "ambiguous_exact_synonym"
+        assert result.qc_flags == ["ambiguous_ontology_match"]
+        assert {candidate[0] for candidate in result.candidates} == {
+            "UBERON:1", "UBERON:2"
+        }
+
+    def test_unique_exact_synonym_is_accepted(self):
+        """An unambiguous OBO EXACT synonym remains a deterministic match."""
+        from normalization.normalizer import TermNormalizer
+        from normalization.ontology import OntologyGraph, OntologyNode
+
+        class NoSearchIndex:
+            def search(self, query, top_k=None):
+                raise AssertionError("exact synonym should bypass embeddings")
+
+        graph = OntologyGraph("species")
+        graph.add_node(OntologyNode(
+            id="NCBITaxon:9606", name="Homo sapiens",
+            synonyms=["human"], synonym_scopes={"human": "EXACT"},
+        ))
+        normalizer = TermNormalizer()
+        normalizer.graphs["species"] = graph
+        normalizer.indices["species"] = NoSearchIndex()
+
+        result = normalizer.normalize("human", ontology_id="species")
+
+        assert result.ontology_id == "NCBITaxon:9606"
+        assert result.normalization_method == "exact_synonym"
+        assert result.synonym_scope == "EXACT"
+
+    def test_generic_ptm_uses_unimod_primary_name(self):
+        """Generic search-engine modification labels route to Unimod."""
+        from normalization.normalizer import TermNormalizer
+        from normalization.ontology import OntologyGraph, OntologyNode
+
+        class NoSearchIndex:
+            def search(self, query, top_k=None):
+                raise AssertionError("generic PTM should bypass PSI-MOD search")
+
+        psimod = OntologyGraph("psimod")
+        unimod = OntologyGraph("unimod")
+        unimod.add_node(OntologyNode(id="UNIMOD:35", name="Oxidation"))
+        normalizer = TermNormalizer()
+        normalizer.graphs.update({"psimod": psimod, "unimod": unimod})
+        normalizer.indices["psimod"] = NoSearchIndex()
+
+        result = normalizer.normalize(
+            "oxidation", entity_type="modification", ontology_id="psimod"
+        )
+
+        assert result.ontology_id == "UNIMOD:35"
+        assert result.normalization_method == "exact_primary_unimod"
+
+    def test_graph_primary_lookup_is_not_overwritten_by_synonym(self):
+        """The graph-level exact lookup also prefers canonical labels."""
+        from normalization.ontology import OntologyGraph, OntologyNode
+
+        graph = OntologyGraph("uberon")
+        canonical = OntologyNode(id="UBERON:0000955", name="brain")
+        graph.add_node(canonical)
+        graph.add_node(OntologyNode(
+            id="UBERON:6110636",
+            name="insect adult cerebral ganglion",
+            synonyms=["brain"],
+        ))
+
+        assert graph.get_by_name("brain") is canonical
 
 
 class TestTermExpansion:

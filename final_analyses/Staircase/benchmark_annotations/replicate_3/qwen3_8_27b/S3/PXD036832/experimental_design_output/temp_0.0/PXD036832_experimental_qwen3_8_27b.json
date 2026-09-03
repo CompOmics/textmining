@@ -1,0 +1,38 @@
+{
+  "biological_replicate": [
+    "unknown",
+    "inferred: The text states 'n biological replicates = 1' for the DIA data files analyzed, indicating no biological replicates were run for the main quantification experiment. Although mice were sacrificed in cohorts, the proteomics analysis pooled samples per timepoint (time-course) or the explicit metadata for the main DIA runs indicates n=1 biological replicate per condition/group in the mass spectrometry workflow."
+  ],
+  "experimental_design": [
+    "time course",
+    "inferred: The study explicitly mentions 'time-dependent treatment impact' and 'Mice were sacrificed at 0-, 6-, 12-, and 18 h post-infection... for the time course' as well as separate intervention experiments. The primary proteomics analysis described includes a time-course cohort (180805) and intervention cohorts. Given the explicit mention of 'time course' as a major component and the variable window, 'time course' is a dominant design element, though 'treated vs control' is also present. However, looking at the specific DIA analysis description: 'DIA data files... were analyzed... The proteomic DIA data was subdivided into three batches corresponding to mouse experiments consisting of time course... Intervention I... and intervention II'. The prompt asks for ONE value. 'treated vs control' is often the default for intervention studies, but 'time course' is explicitly named. Let's look at the factors. The interventions are Meropenem and Methylprednisolone. This is a treated vs control design for the intervention experiments. The time course is also a major part. Usually, 'treated vs control' is the broader category for drug intervention. However, the text highlights 'time-dependent treatment impact'. Let's look at the factor values. Factor values are treatment and time. 'treated vs control' fits the intervention aspect. 'time course' fits the temporal aspect. Given the explicit label 'time course' in the cohort description ('180805... time course'), and the focus on 'time-dependent' impact, 'time course' is a strong candidate. But 'treated vs control' is also valid for the intervention cohorts. Let's check the number of replicates. 'n biological replicates = 1'. This suggests pooling or single runs. If n=1, standard 'treated vs control' with replicates isn't possible in the traditional sense, but the design is still structured that way. Let's stick to the most explicit structural descriptor. The text says 'for the time course'. It also says 'treatment experiments'. I will select 'treated vs control' as it encompasses the intervention validation which is the core of the 'pharmacoproteomics' scoring of treatment impact, but 'time course' is also very strong. Let's look at the evidence. 'Mice were sacrificed at 0-, 6-, 12-, and 18 h... for the time course'. 'Interventions were validated...'. The prompt allows inference. I will choose 'treated vs control' because the primary novel contribution is the scoring of *treatment* impact (Meropenem/Gcc) compared to sepsis controls, and 'time course' is a subset of the conditions. Actually, 'time course' is safer if the question implies the temporal design. However, most 'treated vs control' studies include time points. Let's look at the `factor_value`. It will include time and treatment. I will use 'treated vs control' as it is the standard classification for drug efficacy studies with controls. Wait, the text says 'pharmacoproteomics to score time-dependent treatment impact'. This combines both. I will pick 'treated vs control' as it is the fundamental comparison (Sepsis vs Sepsis+Drug, Sepsis+Drug1 vs Sepsis+Drug2, etc)."
+  ],
+  "factor_value": [
+    "treatment, time",
+    "inferred: The experiments involved 'administering beta-lactam antibiotic meropenem (Mem) and/or the immunomodulatory glucocorticoid methylprednisolone (Gcc)' (treatment factor) and animals were sacrificed at '0-, 6-, 12-, and 18 h post-infection' (time factor)."
+  ],
+  "number_of_biological_replicates": [
+    "1",
+    "DIA data files (n = 568, n biological replicates = 1) were analyzed against the RT and main spectral libraries with OpenSwathWorkflow (v2.4)."
+  ],
+  "number_of_fractions": [
+    "96",
+    "Mouse peptide samples... from the time-course experiment were pooled... and then fractionated with High pH Reversed-Phase (Pierce) into a total of 96 samples."
+  ],
+  "number_of_samples": [
+    "96",
+    "Mouse peptide samples... from the time-course experiment were pooled... and then fractionated with High pH Reversed-Phase (Pierce) into a total of 96 samples."
+  ],
+  "number_of_technical_replicates": [
+    "unknown",
+    ""
+  ],
+  "technical_replicate": [
+    "unknown",
+    ""
+  ],
+  "technology_type": [
+    "shotgun proteomics",
+    "Peptide analyses... were performed on a Q Exactive HF-X mass spectrometer... The data dependent acquisition (DDA) method was the manufacturer\u2019s default... The variable window data in-dependent acquisition (DIA) method is described..."
+  ]
+}

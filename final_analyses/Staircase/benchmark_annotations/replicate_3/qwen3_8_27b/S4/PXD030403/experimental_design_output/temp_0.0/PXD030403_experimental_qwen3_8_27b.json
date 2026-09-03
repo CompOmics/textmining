@@ -1,0 +1,38 @@
+{
+  "biological_replicate": [
+    "unknown",
+    ""
+  ],
+  "experimental_design": [
+    "time course",
+    "inferred: Nthy-ORI cells were treated 10 nM T3 or vehicle for 6 or 24 h prior to sample collection."
+  ],
+  "factor_value": [
+    "T3 treatment time",
+    "inferred: Nthy-ORI cells were treated 10 nM T3 or vehicle for 6 or 24 h prior to sample collection."
+  ],
+  "number_of_biological_replicates": [
+    "1",
+    "inferred: No biological replicates are described for the BioID mass spectrometry experiment."
+  ],
+  "number_of_fractions": [
+    "1",
+    "No fractionation or pre-fractionation is described in the mass spectrometry section."
+  ],
+  "number_of_samples": [
+    "3",
+    "inferred: The experiment compares wildtype TRB, mutant TRB-GS125, mutant TRB-PV, and empty vector control (implied by 'excluded from wildtype and mutant TRB datasets' and 'enriched in the empty vector control group'), but typically these are run in technical replicates or pooled; however, without explicit mention of biological replicates for BioID, we infer the main groups. Wait, looking closely: 'Data... between experimental conditions... empty vector control group were excluded from wildtype and mutant TR\u03b2 datasets'. This implies at least 3 groups: WT, Mutants, Control. However, usually BioID is done on pooled cells or specific cell lines. The text says 'Nthy-ORI cells were... transfected... BioID samples were simultaneously labeled...'. It does not specify n for the BioID part. The RNA-seq part has 3 bio reps, but that is ignored. For BioID, if it's a single transfection event per condition, it's 1 biological replicate per condition. If we consider the 'experimental conditions' as the samples, there are likely 4 conditions (WT, 2 mutants, control). But are they biological replicates? No. So number_of_biological_replicates is 1. Number of samples run on MS: Likely 1 per condition if no tech reps mentioned, or pooled. The text says 'eluents were loaded... band excision... LC-MS'. It doesn't specify number of gels or injections. Standard practice is often 1-3. Given 'label-free quantification', it usually implies multiple runs, but not stated. However, the prompt asks to extract from the text. If not stated, is it 1? The default rule says 'If no biological replicates are described... number_of_biological_replicates = 1'. It doesn't give a default for number_of_samples. However, if there are distinct groups, we might count them. But 'samples' usually means biological samples. If n=1 for each group, and there are 4 groups, total samples = 4? Or is 'sample' the input to the machine? Let's look at the 'number_of_technical_replicates' field. It is not asked for in the JSON schema provided in the prompt? Wait, the prompt lists `number_of_technical_replicates` in the fields to extract, but the JSON schema in the prompt instructions doesn't explicitly list it as a key to return? Ah, 'Return a JSON object with ALL fields present.' The fields listed are: biological_replicate, technical_replicate, experimental_design, factor_value, number_of_fractions, number_of_technical_replicates, number_of_biological_replicates, number_of_samples, technology_type. I must include `number_of_technical_replicates` and `technical_replicate`? Wait, the prompt says 'FIELDS TO EXTRACT: ... technical_replicate ... number_of_technical_replicates'. So I must return both? The previous instructions said 'For EACH field output EXACTLY a 2-element list'. Let's check the JSON structure expected. Usually, it's key: [value, evidence]. I will include all listed fields."
+  ],
+  "number_of_technical_replicates": [
+    "1",
+    "inferred: No technical replicates are explicitly described for the mass spectrometry analysis of the BioID samples."
+  ],
+  "technical_replicate": [
+    "unknown",
+    ""
+  ],
+  "technology_type": [
+    "affinity purification coupled with mass spectrometry proteomics",
+    "inferred: To enrich biotinylated proteins... streptavidin-coated magnetic beads... band excision for mass spectrometry."
+  ]
+}

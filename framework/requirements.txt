@@ -3,6 +3,7 @@
 
 # LLM Client
 openai>=1.0
+anthropic>=0.25.0  # required when provider=anthropic (Claude models)
 
 # Embeddings and ML
 transformers>=4.30.0
@@ -26,3 +27,11 @@ faiss-cpu>=1.7.4  # GPU support unavailable on PyPI for this env
 # Testing
 pytest>=7.0.0
 pytest-cov>=4.0.0
+
+# DocETL integration
+docetl>=0.2.6
+pyrate-limiter>=3.9,<4.0  # pinned for docetl compatibility
+
+# Three-step post-extraction QC (negation detector)
+spacy>=3.7
+negspacy>=1.0.4

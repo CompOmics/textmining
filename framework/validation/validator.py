@@ -254,38 +254,65 @@ class ValidationAgent:
             if val == "unknown" and not evidence:
                 scores[field_name] = 1.0
                 continue
-            
+
+            # ── Inferred evidence: "inferred: <verbatim quote>" ──────────────
+            # The value is synthesised (e.g. "Homo sapiens" from "patient"),
+            # so we DON'T check value-in-evidence.  Instead we check that:
+            #   (a) the supporting quote exists verbatim in the source text, and
+            #   (b) the value itself is grounded in the source (fuzzy ok).
+            if self._is_inferred(evidence):
+                quote = self._inferred_quote(evidence)
+                score = 0.0
+                # Quote verbatim in source text
+                if quote and quote.lower() in text_lower:
+                    score += 0.5
+                # Value grounded in source (fuzzy — covers abbreviation mapping)
+                if self._text_contains(val, text_lower):
+                    score += 0.4
+                elif self._fuzzy_match_text(val, text_lower) > 0.6:
+                    score += 0.3
+                # Bonus: resolved value agrees
+                if resolved and val and self._fuzzy_match(val, resolved) > 0.8:
+                    score += 0.1
+                scores[field_name] = min(score, 1.0)
+                continue
+            # ─────────────────────────────────────────────────────────────────
+
             score = 0.0
-            
-            # Check 1: Value appears in source text (exact or fuzzy)
+            numeric = self._is_numeric_value(val)
+
+            # Check 1: Value appears in source text
+            # For numerics: exact only ("5" is a substring of "50", fuzzy would pass)
+            # For text:     fuzzy ok (handles abbreviations like "P. falciparum")
             if self._text_contains(val, text_lower):
                 score += 0.5
-            elif self._fuzzy_match_text(val, text_lower) > 0.7:
-                score += 0.4  # Slightly lower for fuzzy match
-            
-            # Check 2: Value appears in evidence (exact or fuzzy)
+            elif not numeric and self._fuzzy_match_text(val, text_lower) > 0.7:
+                score += 0.4
+
+            # Check 2: Value appears in evidence
+            # For numerics: exact substring only — no fuzzy fallback
+            # For text:     fuzzy fallback at 0.6 threshold
             if evidence and isinstance(val, str) and isinstance(evidence, str):
                 if val.lower() in evidence.lower():
                     score += 0.3
-                elif self._fuzzy_match(val, evidence) > 0.6:
+                elif not numeric and self._fuzzy_match(val, evidence) > 0.6:
                     score += 0.25
-            
+
             # Check 3: Evidence appears in source text
             if evidence and isinstance(evidence, str) and evidence.lower() in text_lower:
                 score += 0.2
-            
+
             # Fallback: If evidence is empty but value is grounded in source text,
             # the extraction is objectively correct — don't penalize missing quote.
-            # Source text grounding is a stronger signal than an LLM-generated quote.
             if not evidence and score >= 0.4:
                 score = max(score, 0.7)
-            
+
             # Bonus: If resolved matches LLM value (fuzzy)
             if resolved and val:
                 match_score = self._fuzzy_match(val, resolved)
                 if match_score > 0.8:
                     score += 0.1  # Bonus for agreement
-            
+
             scores[field_name] = min(score, 1.0)
         
         return scores
@@ -325,21 +352,31 @@ class ValidationAgent:
             # Check: empty evidence
             if not evidence:
                 field_problems.append("no supporting evidence quote provided")
-            
-            # Check: value not grounded in source text
-            if isinstance(val, str) and not self._text_contains(val, text_lower):
-                if not (self._fuzzy_match_text(val, text_lower) > 0.7):
+
+            if self._is_inferred(evidence):
+                # Inferred evidence — check the verbatim quote is in source text
+                quote = self._inferred_quote(evidence)
+                if quote and quote.lower() not in text_lower:
                     field_problems.append(
-                        f"value '{val}' not found in source text"
+                        f"inferred evidence quote not found in source text: '{quote}'"
                     )
-            
-            # Check: evidence not in source text (possible fabrication)
-            if evidence and isinstance(evidence, str):
-                if evidence.lower() not in text_lower:
-                    field_problems.append(
-                        "evidence quote not found in source text"
-                    )
-            
+                # Don't flag value-not-in-text for inferred values (by design)
+            else:
+                # Verbatim evidence — standard checks
+                # Check: value not grounded in source text
+                if isinstance(val, str) and not self._text_contains(val, text_lower):
+                    if not (self._fuzzy_match_text(val, text_lower) > 0.7):
+                        field_problems.append(
+                            f"value '{val}' not found in source text"
+                        )
+
+                # Check: evidence not in source text (possible fabrication)
+                if evidence and isinstance(evidence, str):
+                    if evidence.lower() not in text_lower:
+                        field_problems.append(
+                            "evidence quote not found in source text"
+                        )
+
             if field_problems:
                 field_issues[field_name] = field_problems
                 for p in field_problems:
@@ -360,7 +397,36 @@ class ValidationAgent:
         if not isinstance(needle, str) or not isinstance(haystack, str):
             return False
         return needle.lower() in haystack.lower()
-    
+
+    def _is_inferred(self, evidence: str) -> bool:
+        """Return True if evidence is an 'inferred: ...' annotation."""
+        return isinstance(evidence, str) and evidence.lower().startswith("inferred: ")
+
+    def _inferred_quote(self, evidence: str) -> str:
+        """Strip 'inferred: ' prefix and return the verbatim quote portion."""
+        return evidence[len("inferred: "):]
+
+    # Numeric value pattern: digit(s) + optional space + unit.
+    # e.g. "50 mM", "25%", "25 NCE", "1.6 amu", "10 ng/ml", "+2 kVa"
+    # Note: \b fails after non-word chars like %; use a lookahead instead.
+    _NUMERIC_RE = re.compile(
+        r'^[+\-]?\d+\.?\d*\s*'
+        r'(?:mm|\xb5m|\u03bcm|nm|mg/ml|\xb5g/ml|ng/ml|mg|\xb5g|ng'
+        r'|%|nce|ev|kv|kva|amu|da|kda|rpm'
+        r'|(?:ms|min|h|x|m|n|p|u|k|g)(?=$|\s|,|;|\.))',
+        re.IGNORECASE,
+    )
+
+    def _is_numeric_value(self, val: str) -> bool:
+        """
+        Return True if *val* looks like a numeric measurement.
+
+        Applied to suppress fuzzy matching for concentrations, energies,
+        and other numeric values where a one-digit difference (5 mM vs
+        50 mM) would otherwise score > 0.6 in SequenceMatcher.
+        """
+        return bool(self._NUMERIC_RE.match(val.strip()))
+
     def _fuzzy_match(self, s1: str, s2: str) -> float:
         """
         Fuzzy string similarity using SequenceMatcher.

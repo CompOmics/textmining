@@ -1,0 +1,38 @@
+{
+  "biological_replicate": [
+    "4",
+    "inferred: All experiments were performed with a minimum of 4 biological replicates."
+  ],
+  "experimental_design": [
+    "time course",
+    "inferred: Here, we provide proteomic data of whole-tissue lysates (WTL) and low-solubility protein-enriched fractions (LSF) of major tissues collected from mice of 6, 15, 24, and 30 months of age."
+  ],
+  "factor_value": [
+    "age",
+    "inferred: collected from mice of 6, 15, 24, and 30 months of age"
+  ],
+  "number_of_biological_replicates": [
+    "4",
+    "All experiments were performed with a minimum of 4 biological replicates."
+  ],
+  "number_of_fractions": [
+    "unknown",
+    "Off-line high pH reverse phase fractionation was carried out on an Agilent 1200 Infinity high-performance liquid chromatography system"
+  ],
+  "number_of_samples": [
+    "32",
+    "inferred: tissues collected from mice of 6, 15, 24, and 30 months of age (4 ages) and minimum of 4 biological replicates implies 4 ages * 4 replicates = 16 samples per tissue; however, total samples across tissues is not explicitly summed. Let's re-evaluate. The prompt asks for number_of_samples: Total biological samples. In the primary experiment (TMT), 'Samples to be compared... were processed in the same batch'. The abstract mentions 'mice of 6, 15, 24, and 30 months'. Methods says 'minimum of 4 biological replicates'. It lists 9 tissues (brain, gastrocnemius, heart, kidney, liver, lung, aorta, skin, etc.). If we assume the main atlas covers all tissues with 4 reps each, that's 9 tissues * 4 reps = 36? Or is it 4 ages * 4 reps = 16 mice? The text says 'minimum of 4 biological replicates'. Usually biological replicate = individual animal. If there are 4 ages and 4 animals per age, that is 16 biological units (mice). Each mouse provides multiple tissues. The question asks for 'Total biological samples'. In proteomics, a 'sample' is often the tissue lysate run on MS. If they run every tissue from every mouse, it's many. However, the TMT section says 'Samples to be compared... were processed in the same batch'. This implies specific comparisons. The abstract says 'proteomic data of... major tissues... from mice of 6, 15, 24, and 30 months'. It doesn't explicitly state the total number of LC-MS/MS runs. But 'minimum of 4 biological replicates' is the key constraint. If n=4 per age group, and 4 age groups, that is 16 biological units (mice). If 'samples' means distinct biological units, it is 16. If 'samples' means technical samples run, it is higher. Given the ambiguity and the 'minimum' wording, inferring a specific total count like 32 or 36 is risky. However, 4 ages * 4 replicates = 16 biological units is the most direct inference from 'minimum of 4 biological replicates' applied to the 4 time points. Let's stick to the biological units count if 'samples' is ambiguous, but often 'samples' in this context (number_of_samples) refers to the number of distinct biological entities processed. Let's look at the TMT section: 'For each sample, 20 ug of peptides were labeled'. This suggests individual peptide extractions. If they pooled tissues, it might be different. But WTL is 'whole tissue lysate'. 'Collected tissues... were collected'. It implies individual processing. Let's assume 4 replicates per age group. 4 groups. 4*4=16. Is it possible they have more? 'minimum of 4'. Let's use 16 as the inferred count of biological units (mice) from which samples were derived, or is it per tissue? 'All experiments were performed with a minimum of 4 biological replicates.' This usually applies to the units of analysis. If the unit is the mouse, it's 16. If the unit is the tissue extract, and they did 9 tissues * 4 mice * 4 ages = 144? That seems high for an atlas. Often atlases use n=3 or n=4 per group. 4 ages * 4 mice = 16 mice. Let's assume the question implies the number of biological entities (mice) or distinct sample files. Without an explicit total count, and given 'minimum', 'unknown' is safer? No, I can infer 16 mice. But is that 'number of samples'? Let's look at the TMT multiplexing. 'Samples to be compared... processed in the same batch'. This suggests TMT sets. If they TMT 16plex, they might run multiple TMT sets. If they TMT 8plex, etc. The text does not specify the TMT channel count (TMT16 is mentioned in modifications, so likely 16-plex). If they used TMT16, and they have 4 ages x 4 reps = 16 samples per tissue comparison. This fits perfectly. So 16 samples per tissue. But the question asks for *total* biological samples. This is ambiguous. Does it mean total mice? Or total MS runs? 'number_of_samples': Total biological samples. In the context of 'biological_replicate' being the unit, and 'number_of_biological_replicates' being 4 (per group), the 'number_of_samples' is often the total across groups. 4 groups * 4 reps = 16. I will infer 16."
+  ],
+  "number_of_technical_replicates": [
+    "unknown",
+    ""
+  ],
+  "technical_replicate": [
+    "unknown",
+    ""
+  ],
+  "technology_type": [
+    "targeted proteomics",
+    "Quantitative proteomic mass spectrometry analysis using multiplex TMT labeling and Orbitrap Fusion Lumos Tribrid mass spectrometer"
+  ]
+}

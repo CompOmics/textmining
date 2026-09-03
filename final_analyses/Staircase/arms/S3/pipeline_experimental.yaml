@@ -1,0 +1,39 @@
+datasets:
+  manuscripts:
+    type: file
+    path: '{{ input_path }}'
+default_model: openai/llama-4-scout
+operations:
+- name: extract_experimental
+  type: map
+  prompt: "You are a scientific metadata extraction agent specializing in experimental design. Extract values from the text, using inference ONLY where indicated.\n\nThis paper may describe multiple experimental techniques. Extract ONLY from sections describing the proteomics or mass spectrometry experiment. Ignore all other experimental contexts.\n\nFIELDS TO EXTRACT:\n- biological_replicate: Description of distinct biological units (can INFER from \"3 mice\", \"n=5 patients\")\n- technical_replicate: Repeated measurements of same material (can INFER from \"triplicate injections\")\n- experimental_design: Study structure (INFER from \"treated vs control\", \"time course\")\n- factor_value: Variables defining groups (treatment, genotype, condition)\n- number_of_fractions: Total fractions if fractionation applied\n- number_of_technical_replicates: Count of technical replicates\n- number_of_biological_replicates: Count of biological replicates\n- number_of_samples: Total biological samples\n\
+    - technology_type: Proteomics technology used (e.g. \"bottom-up proteomics\", \"shotgun proteomics\", \"top-down proteomics\", \"targeted proteomics\", \"affinity purification coupled with mass spectrometry proteomics\")\n\nFor EACH field output EXACTLY a 2-element list: [single_value, single_evidence_sentence].\n- The list MUST have exactly 2 elements. NEVER return more than 2 elements per field.\n- Element 0: a SHORT, CLEAN value ONLY \u2014 no reasoning, no qualifications, no \"not mentioned\", no \"but\". Max ~5 words.\n  BAD: \"treated vs control not mentioned, but time course evaluated\"\n  GOOD: \"time course\"\n  BAD: \"triplicate not mentioned, but samples randomized into batches of 20\"\n  GOOD: \"unknown\"\n- Element 1: a single evidence sentence (put reasoning/explanation HERE, not in element 0).\n- VERBATIM values (number_of_*, number counts): element 0 must be a plain number (e.g. \"6\", \"3\", \"1\"). Evidence MUST contain the exact value.\n- INFERRED values (experimental_design,\
+    \ factor_value, biological_replicate, technical_replicate):\n  prefix evidence with \"inferred: \" followed by the verbatim quote that supports the inference.\n  Example: [\"treated vs control\", \"inferred: Samples from treated mice were compared to controls.\"]\n- experimental_design must be ONE of: \"treated vs control\", \"case vs control\", \"time course\", \"dose response\", \"cross-sectional\", \"longitudinal\", \"unknown\"\n- biological_replicate and technical_replicate: element 0 must be a plain number or \"unknown\". NEVER a description.\n- If unclear \u2192 [\"unknown\", \"\"]\n- Complete ALL fields systematically.\n\nDEFAULT VALUE RULES:\n- If no fractionation or pre-fractionation is described \u2192 number_of_fractions = \"1\"\n- If no biological replicates are described or implied \u2192 number_of_biological_replicates = \"1\"\n\nMULTI-COHORT STUDIES:\n- If the paper describes multiple cohorts (discovery + validation, different patient sets), report values for the PRIMARY\
+    \ proteomics experiment (the main LC-MS/MS cohort), not the total across all cohorts.\n- For number_of_biological_replicates: use the count from the main LC-MS/MS experiment.\n- For number_of_samples: count only the samples run on the mass spectrometer (not IHC validation cohorts).\n- For factor_value: summarize the primary contrast (e.g., \"tumor vs non-tumor\") rather than listing all individual conditions.\n\nTEXT:\n{{ input.text }}\n\nReturn a JSON object with ALL fields present.\n"
+  output:
+    mode: structured_output
+    schema:
+      biological_replicate: list[str]
+      technical_replicate: list[str]
+      experimental_design: list[str]
+      factor_value: list[str]
+      number_of_fractions: list[str]
+      number_of_technical_replicates: list[str]
+      number_of_biological_replicates: list[str]
+      number_of_samples: list[str]
+      technology_type: list[str]
+  validate:
+  - len(output['experimental_design']) == 2
+  - len(output['number_of_biological_replicates']) == 2
+  - len(output['number_of_samples']) == 2
+  - len(output['factor_value']) == 2
+  num_retries_on_validate_failure: 2
+pipeline:
+  steps:
+  - name: experimental_extraction
+    input: manuscripts
+    operations:
+    - extract_experimental
+  output:
+    type: file
+    path: '{{ output_path }}'

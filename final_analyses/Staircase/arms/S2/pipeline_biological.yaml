@@ -1,0 +1,39 @@
+datasets:
+  manuscripts:
+    type: file
+    path: '{{ input_path }}'
+default_model: openai/llama-4-scout
+operations:
+- name: extract_biological
+  type: map
+  prompt: "You are a scientific metadata extraction agent. Extract ONLY values EXPLICITLY stated in the text.\n\nThis paper may describe multiple experimental techniques. Extract ONLY from sections describing the proteomics or mass spectrometry experiment. Ignore all other experimental contexts.\n\nFIELDS TO EXTRACT:\n- species: Scientific organism name (e.g., Homo sapiens, Mus musculus, E. coli)\n- tissue: Primary tissue/organ type (e.g., liver, brain, blood). For cancer studies use the organ of origin, NOT \"tumor\" or \"tumorous tissue\".\n- cell_type: Cell type (e.g., T cells, hepatocytes, neurons)\n- disease_state: Disease name if mentioned\n- sample_source: SHORT biological origin phrase (2\u20135 words max: \"cell culture\", \"tumor biopsy\", \"patient serum\", \"surgical resection\"). NEVER copy a full sentence.\n- age: Numerical age or age range\n- anatomic_site_tumor: Specific tumor anatomical sub-location WITHIN the tissue (e.g., \"bile ducts\" within liver, \"frontal lobe\" within\
+    \ brain). Leave unknown if the paper only names the organ.\n- BMI: Body mass index\n- cell_line: Cell line name (e.g., HeLa, HEK293, MCF7)\n- sex: Biological sex \u2014 report ALL groups (e.g., \"48 females and 29 males\"), not just one\n- strain: Organism strain name\n- material_type: Type of biological material (e.g., \"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\")\n- developmental_stage: Developmental stage if stated (e.g., \"embryonic\", \"fetal\", \"adult\", \"neonatal\")\n- ethnicity: Ethnic/ancestry group if stated (e.g., \"Caucasian\", \"East Asian\")\n\nFor EACH field output a 2-element list: [value, evidence_sentence].\n- Element 0 (value): concise extracted or inferred term.\n- Element 1 (evidence): a FULL verbatim sentence from the text \u2014 this CAN and SHOULD be a complete sentence. Never leave it empty for a non-unknown value.\n- If not explicitly stated \u2192 [\"unknown\", \"\"]\n- VERBATIM values: the evidence sentence MUST contain the exact\
+    \ extracted value as a substring.\n- INFERRED values (e.g., species from \"patient\", disease from cell line): prefix evidence with\n  \"inferred: \" followed by the verbatim quote that supports the inference.\n  Example: [\"Homo sapiens\", \"inferred: patient samples were collected from donors\"]\n- The \"SHORT phrase\" rule for sample_source applies ONLY to element 0 (value), NOT to element 1 (evidence). Evidence is always a full sentence.\n\nSPECIES INFERENCE RULES:\n- If the text mentions \"human\", \"patient\", \"donor\", \"clinical samples\", \"biopsy\" \u2192 species = \"Homo sapiens\"\n- If a well-known HUMAN cell line is mentioned (HeLa, HEK293, MCF-7, A549, Jurkat, K562...) \u2192 species = \"Homo sapiens\"\n- If a well-known MOUSE cell line is mentioned (NIH3T3, MEF, RAW264.7, WEHI-231) \u2192 species = \"Mus musculus\"\n- If \"mice\" or \"mouse\" \u2192 \"Mus musculus\". If \"rat\" \u2192 \"Rattus norvegicus\". If \"yeast\" \u2192 \"Saccharomyces cerevisiae\"\n- NEVER put\
+    \ a cell line name in the species field.\n\nTISSUE INFERENCE RULES:\n- HeLa \u2192 \"cervix\", HEK293 \u2192 \"kidney\", MCF-7 \u2192 \"breast\", A549 \u2192 \"lung\", Jurkat \u2192 \"blood\"\n- If a cancer type names an organ (\"gastric cancer\", \"lung adenocarcinoma\") \u2192 infer tissue as that organ\n\nDISEASE INFERENCE RULES:\n- Healthy/control/normal samples with NO disease \u2192 disease_state = \"normal\"\n- HeLa \u2192 \"cervical adenocarcinoma\", MCF-7 \u2192 \"breast carcinoma\", A549 \u2192 \"lung adenocarcinoma\"\n- K562 \u2192 \"chronic myeloid leukemia\", Jurkat \u2192 \"T-cell lymphoma\"\n\nCELL TYPE RULES:\n- Extract the BIOLOGICAL cell type, not the cell line name.\n- MCF-7 \u2192 \"epithelial cell\", Jurkat \u2192 \"T cell\", K562 \u2192 \"myeloid cell\", HepG2 \u2192 \"hepatocyte\"\n\nSAMPLE SOURCE RULES:\n- Must be a SHORT phrase (2\u20135 words) describing BIOLOGICAL origin: \"healthy donors\", \"tumor biopsy\", \"cell culture\", \"patient serum\", \"surgical\
+    \ resection\"\n- NEVER copy a full sentence as the value \u2014 that belongs in the evidence field.\n- NEVER extract institutional names or supplier names as sample source.\n\nTEXT:\n{{ input.text }}\n\nReturn a JSON object with ALL fields present.\n"
+  output:
+    mode: structured_output
+    schema:
+      species: list[str]
+      tissue: list[str]
+      cell_type: list[str]
+      disease_state: list[str]
+      sample_source: list[str]
+      age: list[str]
+      anatomic_site_tumor: list[str]
+      BMI: list[str]
+      cell_line: list[str]
+      sex: list[str]
+      strain: list[str]
+      material_type: list[str]
+      developmental_stage: list[str]
+      ethnicity: list[str]
+pipeline:
+  steps:
+  - name: biological_extraction
+    input: manuscripts
+    operations:
+    - extract_biological
+  output:
+    type: file
+    path: '{{ output_path }}'

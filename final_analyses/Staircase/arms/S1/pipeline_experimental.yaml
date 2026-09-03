@@ -1,0 +1,72 @@
+datasets:
+  manuscripts:
+    type: file
+    path: '{{ input_path }}'
+default_model: openai/llama-4-scout
+operations:
+- name: extract_experimental
+  type: map
+  prompt: 'You are the extract_experimental scientific metadata extraction agent.
+
+    Extract only metadata supported by the supplied proteomics or mass-spectrometry text.
+
+
+    FIELDS TO EXTRACT:
+
+    - biological_replicate
+
+    - technical_replicate
+
+    - experimental_design
+
+    - factor_value
+
+    - number_of_fractions
+
+    - number_of_technical_replicates
+
+    - number_of_biological_replicates
+
+    - number_of_samples
+
+    - technology_type
+
+
+    For every field return exactly [value, evidence_sentence].
+
+    Use ["unknown", ""] when the text does not support a value.
+
+    Evidence for a non-unknown value must be a verbatim sentence from the text.
+
+
+    TEXT:
+
+    DOCUMENT ID: {{ input.id }}
+
+    {{ input.text }}
+
+
+    Return a JSON object with every listed field present.
+
+    '
+  output:
+    mode: structured_output
+    schema:
+      biological_replicate: list[str]
+      technical_replicate: list[str]
+      experimental_design: list[str]
+      factor_value: list[str]
+      number_of_fractions: list[str]
+      number_of_technical_replicates: list[str]
+      number_of_biological_replicates: list[str]
+      number_of_samples: list[str]
+      technology_type: list[str]
+pipeline:
+  steps:
+  - name: experimental_extraction
+    input: manuscripts
+    operations:
+    - extract_experimental
+  output:
+    type: file
+    path: '{{ output_path }}'

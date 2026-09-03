@@ -1,0 +1,20 @@
+llm:
+  provider: openai
+  base_url: "http://127.0.0.1:8000/v1"
+  model: "Qwen/Qwen3.8-27B"
+  api_key: "local-vllm"
+paths:
+  ontology_dir: "ontologies"
+  cache_dir: "ontology_cache"
+normalization:
+  backend: "faiss"
+  use_gpu: true
+  use_quantization: true
+  similarity_threshold: 0.7
+  top_k: 5
+concurrency:
+  max_workers: 1
+  request_timeout: 600
+reproducibility:
+  seed: 42
+  log_info: true

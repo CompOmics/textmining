@@ -38,6 +38,9 @@ class NormalizationResult:
     entity_type: str = ""
     is_normalized: bool = False
     expanded_term: Optional[str] = None  # Non-None when abbreviation was expanded
+    normalization_method: Optional[str] = None
+    synonym_scope: Optional[str] = None
+    qc_flags: List[str] = field(default_factory=list)
     
     @property
     def confidence(self) -> str:
@@ -64,6 +67,12 @@ class NormalizationResult:
         }
         if self.expanded_term:
             d['expanded_term'] = self.expanded_term
+        if self.normalization_method:
+            d['normalization_method'] = self.normalization_method
+        if self.synonym_scope:
+            d['synonym_scope'] = self.synonym_scope
+        if self.qc_flags:
+            d['normalization_qc_flags'] = self.qc_flags
         return d
 
 
@@ -83,6 +92,30 @@ class TermNormalizer:
     # Regex for standard scientific binomial names (e.g. "Plasmodium falciparum")
     _BINOMIAL_RE = re.compile(r'^([A-Z][a-z]+) ([a-z][a-z0-9_-]+)$')
 
+    # Several source ontologies include imported nodes from other namespaces.
+    # Exact-name precedence must stay within the requested ontology namespace;
+    # e.g. a MONDO disease lookup must not resolve to an imported HP term.
+    _ONTOLOGY_ID_PREFIXES: Dict[str, Tuple[str, ...]] = {
+        'bto': ('BTO:',),
+        'cl': ('CL:',),
+        'clo': ('CLO:',),
+        'doid': ('DOID:',),
+        'mondo': ('MONDO:',),
+        'pride-cv': ('PRIDE:',),
+        'psi-ms': ('MS:',),
+        'psimod': ('MOD:',),
+        'species': ('NCBITaxon:',),
+        'uberon': ('UBERON:',),
+        'unimod': ('UNIMOD:',),
+    }
+
+    _PTM_UNIMOD_ALIASES: Dict[str, str] = {
+        'acetylation': 'acetyl',
+        'carbamidomethylation': 'carbamidomethyl',
+        'oxidized': 'oxidation',
+        'phosphorylation': 'phospho',
+    }
+
     def __init__(self, config: Optional[NormalizationConfig] = None):
         """
         Initialize normalizer.
@@ -94,6 +127,171 @@ class TermNormalizer:
         self.loader = OntologyLoader()
         self.graphs: Dict[str, OntologyGraph] = {}
         self.indices: Dict[str, OntologyIndex] = {}
+
+    def _exact_primary_candidates(
+        self,
+        graph: OntologyGraph,
+        term: str,
+        ontology_id: str,
+    ) -> List[OntologyNode]:
+        """Return exact primary matches belonging to the target namespace."""
+        candidates = graph.get_primary_candidates(term)
+        prefixes = self._ONTOLOGY_ID_PREFIXES.get(ontology_id.lower())
+        if not prefixes:
+            return candidates
+        return [node for node in candidates if node.id.startswith(prefixes)]
+
+    @staticmethod
+    def _add_graph_synonym(
+        graph: Any,
+        node: OntologyNode,
+        synonym: str,
+        scope: str,
+    ) -> None:
+        """Add a synonym, retaining compatibility with lightweight test graphs."""
+        if hasattr(graph, 'add_synonym'):
+            graph.add_synonym(node.id, synonym, scope=scope)
+            return
+        if synonym not in node.synonyms:
+            node.synonyms.append(synonym)
+        node.synonym_scopes[synonym] = scope.upper()
+
+    def _exact_lexical_result(
+        self,
+        graph: OntologyGraph,
+        term: str,
+        ontology_id: str,
+        entity_type: str,
+    ) -> Optional[NormalizationResult]:
+        """Resolve deterministic primary/synonym matches without embeddings."""
+        primary_matches = self._exact_primary_candidates(
+            graph, term, ontology_id
+        )
+        if len(primary_matches) == 1:
+            node = primary_matches[0]
+            return NormalizationResult(
+                original_term=term,
+                ontology_id=node.id,
+                ontology_name=node.name,
+                similarity=1.0,
+                matched_text=node.name,
+                candidates=[(node.id, node.name, 1.0)],
+                entity_type=entity_type,
+                is_normalized=True,
+                normalization_method='exact_primary',
+            )
+        if len(primary_matches) > 1:
+            candidates = [
+                (node.id, node.name, 1.0) for node in primary_matches
+            ]
+            logger.warning(
+                "Ambiguous exact primary label %r in %s: %s",
+                term,
+                ontology_id,
+                [node.id for node in primary_matches],
+            )
+            return NormalizationResult(
+                original_term=term,
+                matched_text=term,
+                candidates=candidates,
+                entity_type=entity_type,
+                is_normalized=False,
+                normalization_method='ambiguous_exact_primary',
+                qc_flags=['ambiguous_ontology_match'],
+            )
+
+        prefixes = self._ONTOLOGY_ID_PREFIXES.get(ontology_id.lower())
+        raw_matches = graph.get_synonym_matches(term)
+        if prefixes:
+            raw_matches = [
+                (node, scope) for node, scope in raw_matches
+                if node.id.startswith(prefixes)
+            ]
+        if not raw_matches:
+            return None
+
+        by_id: Dict[str, Tuple[OntologyNode, set]] = {}
+        for node, scope in raw_matches:
+            if node.id not in by_id:
+                by_id[node.id] = (node, set())
+            by_id[node.id][1].add(scope.upper())
+        exact_ids = [
+            node_id for node_id, (_node, scopes) in by_id.items()
+            if scopes & {'EXACT', 'CUSTOM'}
+        ]
+        if len(exact_ids) == 1:
+            node, scopes = by_id[exact_ids[0]]
+            scope = 'CUSTOM' if 'CUSTOM' in scopes else 'EXACT'
+            return NormalizationResult(
+                original_term=term,
+                ontology_id=node.id,
+                ontology_name=node.name,
+                similarity=1.0,
+                matched_text=term,
+                candidates=[(node.id, term, 1.0)],
+                entity_type=entity_type,
+                is_normalized=True,
+                normalization_method='exact_synonym',
+                synonym_scope=scope,
+            )
+
+        candidates = [
+            (node.id, node.name, 1.0) for node, _scopes in by_id.values()
+        ]
+        if len(exact_ids) > 1 or len(by_id) > 1:
+            method = 'ambiguous_exact_synonym'
+            flag = 'ambiguous_ontology_match'
+        else:
+            method = 'related_synonym_requires_context'
+            flag = 'related_synonym_requires_context'
+        logger.warning(
+            "Unresolved exact synonym %r in %s (%s): %s",
+            term,
+            ontology_id,
+            method,
+            list(by_id),
+        )
+        return NormalizationResult(
+            original_term=term,
+            matched_text=term,
+            candidates=candidates,
+            entity_type=entity_type,
+            is_normalized=False,
+            normalization_method=method,
+            qc_flags=[flag],
+        )
+
+    def _ptm_unimod_result(
+        self, term: str, entity_type: str
+    ) -> Optional[NormalizationResult]:
+        """Resolve generic modification labels against canonical Unimod names."""
+        if entity_type.lower() not in {'modification', 'ptm', 'psimod'}:
+            return None
+        graph = self.graphs.get('unimod')
+        if graph is None:
+            return None
+        lookup_term = self._PTM_UNIMOD_ALIASES.get(
+            " ".join(term.casefold().split()), term
+        )
+        matches = self._exact_primary_candidates(graph, lookup_term, 'unimod')
+        if len(matches) != 1:
+            return None
+        node = matches[0]
+        method = (
+            'exact_primary_unimod'
+            if lookup_term == term else 'alias_to_unimod'
+        )
+        return NormalizationResult(
+            original_term=term,
+            ontology_id=node.id,
+            ontology_name=node.name,
+            similarity=1.0,
+            matched_text=node.name,
+            candidates=[(node.id, node.name, 1.0)],
+            entity_type=entity_type,
+            is_normalized=True,
+            normalization_method=method,
+        )
     
     def _inject_abbreviated_synonyms(self, graph: OntologyGraph) -> int:
         """
@@ -135,7 +333,9 @@ class TermNormalizer:
             added = False
             for form in (f"{genus[0].lower()}.{epithet}", f"{genus}.{epithet}"):
                 if form.lower() not in existing_lower:
-                    node.synonyms.append(form)
+                    self._add_graph_synonym(
+                        graph, node, form, scope="EXACT"
+                    )
                     existing_lower.add(form.lower())
                     added = True
             if added:
@@ -313,7 +513,9 @@ class TermNormalizer:
             existing_lower = {s.lower() for s in node.synonyms} | {node.name.lower()}
             for syn in synonyms:
                 if syn.lower() not in existing_lower:
-                    node.synonyms.append(syn)
+                    self._add_graph_synonym(
+                        graph, node, syn, scope="CUSTOM"
+                    )
                     existing_lower.add(syn.lower())
                     injected += 1
 
@@ -393,7 +595,9 @@ class TermNormalizer:
             return True  # Already registered — idempotent
 
         # 1. Update graph node
-        target_node.synonyms.append(synonym)
+        self._add_graph_synonym(
+            graph, target_node, synonym, scope="CUSTOM"
+        )
         logger.info(
             f"Registered synonym '{synonym}' → '{target_node.name}' "
             f"[{ontology_id}] (node id: {target_node.id})"
@@ -498,6 +702,19 @@ class TermNormalizer:
         index = self.indices[ontology_id]
         graph = self.graphs.get(ontology_id)
 
+        unimod_result = self._ptm_unimod_result(term, entity_type or '')
+        if unimod_result is not None:
+            return unimod_result
+
+        # Deterministic lexical precedence avoids arbitrary FAISS tie ordering
+        # and bypasses embeddings for resolved exact matches.
+        if graph:
+            lexical_result = self._exact_lexical_result(
+                graph, term, ontology_id, entity_type or ''
+            )
+            if lexical_result is not None:
+                return lexical_result
+
         def _search_and_build(query: str) -> Optional[NormalizationResult]:
             """Run index search for a single query string."""
             candidates = index.search(query, top_k=top_k)
@@ -515,6 +732,7 @@ class TermNormalizer:
                 candidates=candidates,
                 entity_type=entity_type or '',
                 is_normalized=best_sim >= self.config.similarity_threshold,
+                normalization_method='semantic',
             )
 
         # --- Search original term ---
@@ -564,10 +782,111 @@ class TermNormalizer:
         Returns:
             List of NormalizationResult objects
         """
-        return [
-            self.normalize(term, entity_type, ontology_id)
-            for term in terms
-        ]
+        if not terms:
+            return []
+
+        resolved_ontology = ontology_id
+        if resolved_ontology is None and entity_type:
+            resolved_ontology = self.get_ontology_for_entity(entity_type)
+
+        if resolved_ontology is None or resolved_ontology not in self.indices:
+            return [
+                NormalizationResult(
+                    original_term=term,
+                    entity_type=entity_type or '',
+                    is_normalized=False,
+                )
+                for term in terms
+            ]
+
+        index = self.indices[resolved_ontology]
+        graph = self.graphs.get(resolved_ontology)
+        top_k = self.config.top_k
+
+        # Resolve unique exact primary labels without embeddings. Embed only
+        # the unresolved original and expanded queries in one model call.
+        exact_results: List[Optional[NormalizationResult]] = []
+        queries: List[str] = []
+        query_positions: List[Optional[Tuple[int, Optional[int], Optional[str]]]] = []
+        for term in terms:
+            lexical_result = self._ptm_unimod_result(
+                term, entity_type or ''
+            )
+            if lexical_result is None and graph:
+                lexical_result = self._exact_lexical_result(
+                    graph, term, resolved_ontology, entity_type or ''
+                )
+            if lexical_result is not None:
+                exact_results.append(lexical_result)
+                query_positions.append(None)
+                continue
+            exact_results.append(None)
+            original_pos = len(queries)
+            queries.append(term)
+            expanded = self._expand_term(term)
+            expanded_pos: Optional[int] = None
+            if expanded:
+                expanded_pos = len(queries)
+                queries.append(expanded)
+            query_positions.append((original_pos, expanded_pos, expanded))
+
+        all_candidates = (
+            index.search_many(queries, top_k=top_k) if queries else []
+        )
+
+        def build_result(
+            term: str,
+            candidates: List[Tuple[str, str, float]],
+        ) -> Optional[NormalizationResult]:
+            if not candidates:
+                return None
+            best_id, best_text, best_sim = candidates[0]
+            node = graph.get_node(best_id) if graph else None
+            return NormalizationResult(
+                original_term=term,
+                ontology_id=best_id,
+                ontology_name=node.name if node else best_text,
+                similarity=best_sim,
+                matched_text=best_text,
+                candidates=candidates,
+                entity_type=entity_type or '',
+                is_normalized=best_sim >= self.config.similarity_threshold,
+                normalization_method='semantic',
+            )
+
+        results: List[NormalizationResult] = []
+        for term, exact_result, positions in zip(
+            terms, exact_results, query_positions
+        ):
+            if exact_result is not None:
+                results.append(exact_result)
+                continue
+            assert positions is not None
+            original_pos, expanded_pos, expanded = positions
+            original = build_result(term, all_candidates[original_pos])
+            expanded_result = (
+                build_result(term, all_candidates[expanded_pos])
+                if expanded_pos is not None
+                else None
+            )
+            if expanded_result and (
+                original is None
+                or expanded_result.similarity > original.similarity
+            ):
+                expanded_result.expanded_term = expanded
+                results.append(expanded_result)
+            elif original is not None:
+                results.append(original)
+            else:
+                results.append(
+                    NormalizationResult(
+                        original_term=term,
+                        entity_type=entity_type or '',
+                        is_normalized=False,
+                    )
+                )
+
+        return results
     
     def get_parent_terms(self,
                         term_id: str,

@@ -1,0 +1,52 @@
+{
+  "biological_replicate": [
+    "1",
+    "inferred: The text does not specify biological replicates for the BioID/proteomics experiment, and the default rule states 'If no biological replicates are described or implied \u2192 number_of_biological_replicates = 1'."
+  ],
+  "experimental_design": [
+    "unknown",
+    "inferred: The text describes a comparison of different TR\u03b2 variants (wildtype vs mutants) and T3 treatments, but does not explicitly use standard experimental design terminology like 'treated vs control' in a way that maps clearly to a single predefined option without ambiguity regarding the primary contrast for the proteomics section."
+  ],
+  "factor_value": [
+    "TR\u03b2 genotype and T3 treatment",
+    "inferred: 'Nthy-ORI cells were grown... Cells were transfected... with 20 \u03bcg of plasmid DNA... Cells were transfected at \u223c80% confluency... treated with 10 nM T3 or vehicle' indicating genotype (vector/mutants) and treatment (T3/vehicle) as variables."
+  ],
+  "number_of_biological_replicates": [
+    "1",
+    "The text does not specify the number of biological replicates for the BioID proteomics experiment, so the default value of 1 is applied."
+  ],
+  "number_of_fractions": [
+    "1",
+    "No fractionation or pre-fractionation step is described in the proteomics methods; proteins were separated by SDS-PAGE and excised, but not fractionated for the MS analysis in a way that implies multiple LC-MS fractions."
+  ],
+  "number_of_samples": [
+    "1",
+    "The text does not specify the total number of biological samples run on the mass spectrometer for the BioID experiment, so the default value of 1 is applied based on the biological replicates."
+  ],
+  "number_of_technical_replicates": [
+    "unknown",
+    "The text does not mention any technical replicates for the mass spectrometry runs."
+  ],
+  "technical_replicate": [
+    "unknown",
+    "The text does not mention any repeated measurements or technical replicates for the same material in the proteomics section."
+  ],
+  "technology_type": [
+    "affinity purification coupled with mass spectrometry proteomics",
+    "The text describes using BioID (biotin labeling), streptavidin bead enrichment (affinity purification), and subsequent LC-MS/MS analysis ('Gels were then silver stained... prior to band excision for mass spectrometry... LC\u2013MS was performed')."
+  ],
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "number_of_biological_replicates",
+      "value": "1",
+      "evidence": "The text does not specify the number of biological replicates for the BioID proteomics experiment, so the default value of 1 is applied."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "number_of_samples",
+      "value": "1",
+      "evidence": "The text does not specify the total number of biological samples run on the mass spectrometer for the BioID experiment, so the default value of 1 is applied based on the biological replicates."
+    }
+  ]
+}

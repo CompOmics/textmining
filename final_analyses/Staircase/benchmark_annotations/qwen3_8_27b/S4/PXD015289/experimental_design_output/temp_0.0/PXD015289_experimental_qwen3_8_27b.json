@@ -1,0 +1,38 @@
+{
+  "biological_replicate": [
+    "34",
+    "inferred: Matched urine samples were collected from prostate cancer patients prior to (n = 12) and 3 months after local treatment... (n = 10)... urine samples from healthy controls with BPH (n = 12)... (UCC; n = 5) or renal cell carcinoma (RCC; n = 6)."
+  ],
+  "experimental_design": [
+    "case vs control",
+    "inferred: Mass spectrometry-based proteomic analysis of urinary EV (uEV) in men with benign and malignant prostate disease allowed us to significantly expand the known human uEV proteome..."
+  ],
+  "factor_value": [
+    "Prostate Cancer, BPH, UCC, RCC, Post-treatment PC",
+    "inferred: urine samples from prostate cancer patients... (PC)... healthy controls with BPH... urothelial cancer of the bladder (UCC)... renal cell carcinoma (RCC)"
+  ],
+  "number_of_biological_replicates": [
+    "11",
+    "inferred: The primary LC-MS/MS comparison described in the results and methods focuses on prostate cancer (n=12 pre, n=3 tissue) vs BPH (n=12), but 'Proteomic data analysis' section specifies 'For comparison between prostate cancer and benign prostate hyperplasia samples', implying the main experiment uses these groups; however, usually biological replicates are counted per group. The prompt asks for 'Count of biological replicates'. In multi-cohort, report the main cohort. The main comparison is PC vs BPH. n(PC)=12, n(BPH)=12. Is '11' correct? No. Let's look at the specific LC-MS/MS sample processing. 'Equal amounts of peptides of each sample... were loaded'. It does not specify which subset was run, but typically all collected are analyzed unless stated otherwise. However, the 'Proteomic data analysis' section says 'Proteins showing valid values in at least 70% of at least one group were selected'. This doesn't give a count. Let's re-read carefully. 'Matched urine samples were collected from prostate cancer patients prior to (n = 12) and 3 months after... (n = 10)... healthy controls with BPH (n = 12)... UCC (n = 5)... RCC (n = 6)'. The abstract says 'Mass spectrometry-based proteomic analysis of urinary EV (uEV) in men with benign and malignant prostate disease'. This implies the main proteomics is PC vs BPH. The number of biological replicates for a specific group is 12. For the 'count of biological replicates' field, it is ambiguous if it means total unique subjects or per group. Standard interpretation for 'number_of_biological_replicates' in these tasks usually refers to the N per group in the main comparison or the total N in the main cohort. Given 'Multi-Cohort Studies' rule: 'report values for the PRIMARY proteomics experiment'. The primary experiment compares PC and BPH. N=12 for PC, N=12 for BPH. Often this field expects the total number of samples run in the MS or the N per group. Let's look at 'number_of_samples'. If I say 'number_of_biological_replicates' is 12 (per group) or 24 (total PC+BPH)? The instruction says 'Count of biological replicates'. In a treated vs control design with N=12 per group, the number of biological replicates is often cited as 12. Let's look for evidence of technical replicates to separate them. 'Three repeated runs per sample were performed.' This confirms technical replicates. So biological replicates are the distinct patients. For the main PC vs BPH comparison, there are 12 PC patients and 12 BPH patients. I will report the maximum N per group in the main comparison, which is 12. Or perhaps the total? 'number_of_samples: Total biological samples'. That would be 24 for PC+BPH. 'number_of_biological_replicates' is tricky. In many similar tasks, if N=12 per group, the answer is 12. If the design is a single factor with levels, the replicate number is the N within a level. Let's assume 12. Wait, looking at the 'Urine fractionation' section, it doesn't restrict samples. I will use 12 as the number of biological replicates per group in the main contrast. Evidence: 'healthy controls with BPH (n = 12)' and 'prostate cancer patients prior to (n = 12)'. I will provide 12. Evidence: 'prostate cancer patients prior to (n = 12) and... healthy controls with BPH (n = 12)'. I need to pick one number. Usually, it's the N for one group if balanced. Let's use 12."
+  ],
+  "number_of_fractions": [
+    "1",
+    "inferred: Pooled EV-rich fractions 9\u201310... were used for subsequent size exclusion chromatography (SEC)-based separation... EV-containing fractions 4\u20137 were pooled and concentrated..."
+  ],
+  "number_of_samples": [
+    "24",
+    "inferred: The primary proteomics experiment compares prostate cancer patients (n = 12) and healthy controls with BPH (n = 12), totaling 24 biological samples."
+  ],
+  "number_of_technical_replicates": [
+    "3",
+    "Three repeated runs per sample were performed."
+  ],
+  "technical_replicate": [
+    "3",
+    "Three repeated runs per sample were performed."
+  ],
+  "technology_type": [
+    "bottom-up proteomics",
+    "Mass spectrometry-based proteomic analysis... using the MaxQuant software... Label-free quantification (LFQ)... digested with Trypsin/Lys-C"
+  ]
+}

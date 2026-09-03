@@ -28,9 +28,11 @@ class OntologyNode:
     id: str
     name: str
     synonyms: List[str] = field(default_factory=list)
+    synonym_scopes: Dict[str, str] = field(default_factory=dict)
     definition: str = ""
     parents: List[str] = field(default_factory=list)
     children: List[str] = field(default_factory=list)
+    taxon_ids: List[str] = field(default_factory=list)
     is_obsolete: bool = False
     
     @property
@@ -55,13 +57,32 @@ class OntologyGraph:
         self.ontology_id = ontology_id
         self.nodes: Dict[str, OntologyNode] = {}
         self._name_to_id: Dict[str, str] = {}
+        # Keep primary labels and synonyms separate. A single combined mapping
+        # is not sufficient because a later synonym can otherwise overwrite a
+        # canonical label (for example UBERON's related synonym "brain").
+        self._primary_name_to_ids: Dict[str, List[str]] = {}
+        self._synonym_to_ids: Dict[str, List[str]] = {}
+        self._synonym_matches: Dict[str, List[Tuple[str, str]]] = {}
+
+    @staticmethod
+    def _lookup_key(name: str) -> str:
+        """Return the conservative key used for exact ontology lookups."""
+        return " ".join(name.casefold().split())
         
     def add_node(self, node: OntologyNode) -> None:
         """Add node to graph."""
         self.nodes[node.id] = node
+        primary_key = self._lookup_key(node.name)
+        self._primary_name_to_ids.setdefault(primary_key, []).append(node.id)
         # Index by name (lowercase)
         self._name_to_id[node.name.lower()] = node.id
         for syn in node.synonyms:
+            synonym_key = self._lookup_key(syn)
+            self._synonym_to_ids.setdefault(synonym_key, []).append(node.id)
+            scope = node.synonym_scopes.get(syn, "UNSPECIFIED").upper()
+            self._synonym_matches.setdefault(synonym_key, []).append(
+                (node.id, scope)
+            )
             self._name_to_id[syn.lower()] = node.id
     
     def get_node(self, node_id: str) -> Optional[OntologyNode]:
@@ -69,11 +90,67 @@ class OntologyGraph:
         return self.nodes.get(node_id)
     
     def get_by_name(self, name: str) -> Optional[OntologyNode]:
-        """Get node by name or synonym (case insensitive)."""
-        node_id = self._name_to_id.get(name.lower())
-        if node_id:
-            return self.nodes.get(node_id)
+        """Get an unambiguous node, preferring primary names over synonyms."""
+        primary = self.get_primary_candidates(name)
+        if len(primary) == 1:
+            return primary[0]
+        if primary:
+            return None
+        synonyms = self.get_synonym_candidates(name)
+        if len(synonyms) == 1:
+            return synonyms[0]
         return None
+
+    def get_primary_candidates(self, name: str) -> List[OntologyNode]:
+        """Return all nodes whose primary label exactly matches ``name``."""
+        ids = self._primary_name_to_ids.get(self._lookup_key(name), [])
+        return [self.nodes[node_id] for node_id in ids if node_id in self.nodes]
+
+    def get_synonym_candidates(self, name: str) -> List[OntologyNode]:
+        """Return all nodes having a synonym that exactly matches ``name``."""
+        ids = self._synonym_to_ids.get(self._lookup_key(name), [])
+        return [self.nodes[node_id] for node_id in ids if node_id in self.nodes]
+
+    def get_synonym_matches(
+        self, name: str
+    ) -> List[Tuple[OntologyNode, str]]:
+        """Return exact synonym matches together with their OBO scope."""
+        matches = self._synonym_matches.get(self._lookup_key(name), [])
+        return [
+            (self.nodes[node_id], scope)
+            for node_id, scope in matches
+            if node_id in self.nodes
+        ]
+
+    def add_synonym(
+        self,
+        node_id: str,
+        synonym: str,
+        scope: str = "UNSPECIFIED",
+    ) -> bool:
+        """Add a synonym while keeping all exact-lookup indexes in sync."""
+        node = self.nodes.get(node_id)
+        if node is None:
+            return False
+        key = self._lookup_key(synonym)
+        existing = {
+            (candidate_id, candidate_scope)
+            for candidate_id, candidate_scope in self._synonym_matches.get(key, [])
+        }
+        normalized_scope = scope.upper()
+        if (node_id, normalized_scope) in existing:
+            return False
+        if synonym not in node.synonyms:
+            node.synonyms.append(synonym)
+        node.synonym_scopes[synonym] = normalized_scope
+        self._synonym_to_ids.setdefault(key, []).append(node_id)
+        self._synonym_matches.setdefault(key, []).append(
+            (node_id, normalized_scope)
+        )
+        # Retained for backward compatibility; get_by_name uses the separated
+        # primary/synonym maps and is not vulnerable to this overwrite.
+        self._name_to_id[synonym.lower()] = node_id
+        return True
     
     def get_ancestors(self, node_id: str, max_depth: int = 10) -> List[str]:
         """
@@ -245,8 +322,10 @@ class OntologyLoader:
         node_id = None
         name = None
         synonyms = []
+        synonym_scopes: Dict[str, str] = {}
         definition = ""
         parents = []
+        taxon_ids = []
         is_obsolete = False
         
         for line in lines:
@@ -260,7 +339,17 @@ class OntologyLoader:
                 # Extract synonym text from quotes
                 match = re.search(r'"([^"]+)"', line)
                 if match:
-                    synonyms.append(match.group(1))
+                    synonym = match.group(1)
+                    synonyms.append(synonym)
+                    scope_match = re.search(
+                        r'"[^\"]+"\s+(EXACT|RELATED|BROAD|NARROW)\b',
+                        line,
+                        re.IGNORECASE,
+                    )
+                    synonym_scopes[synonym] = (
+                        scope_match.group(1).upper()
+                        if scope_match else "UNSPECIFIED"
+                    )
             elif line.startswith('def:'):
                 match = re.search(r'"([^"]+)"', line)
                 if match:
@@ -271,6 +360,12 @@ class OntologyLoader:
                 if '{' in parent_id:
                     parent_id = parent_id.split('{')[0].strip()
                 parents.append(parent_id)
+            elif line.startswith('relationship:'):
+                taxon_match = re.match(
+                    r'relationship:\s+in_taxon\s+(NCBITaxon:\d+)', line
+                )
+                if taxon_match:
+                    taxon_ids.append(taxon_match.group(1))
             elif line.startswith('is_obsolete:') and 'true' in line.lower():
                 is_obsolete = True
         
@@ -279,8 +374,10 @@ class OntologyLoader:
                 id=node_id,
                 name=name,
                 synonyms=synonyms,
+                synonym_scopes=synonym_scopes,
                 definition=definition,
                 parents=parents,
+                taxon_ids=taxon_ids,
                 is_obsolete=is_obsolete
             )
         return None

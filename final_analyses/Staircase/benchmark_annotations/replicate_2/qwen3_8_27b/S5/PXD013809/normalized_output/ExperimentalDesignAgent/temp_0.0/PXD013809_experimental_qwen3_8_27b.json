@@ -1,0 +1,38 @@
+{
+  "biological_replicate": [
+    "3",
+    "inferred: The analysis of the siRPL28 SILAC proteomics dataset required proteins to be quantified in both the heavy and medium channels in at least two of three replicates."
+  ],
+  "experimental_design": [
+    "treated vs control",
+    "inferred: HeLa cells were harvested from control (light), 4 h IFN\u03b2 stimulation (medium), and 24 h IFN\u03b2 stimulation (heavy) for shotgun proteomic analysis."
+  ],
+  "factor_value": [
+    "IFN stimulation time",
+    "inferred: The experimental conditions are defined by control versus 4 h and 24 h IFN\u03b2 stimulation, using light, medium, and heavy SILAC labels respectively."
+  ],
+  "number_of_biological_replicates": [
+    "3",
+    "inferred: The text states that proteins were required to be quantified in at least two of three replicates for the analysis, implying three biological replicates were performed."
+  ],
+  "number_of_fractions": [
+    "8",
+    "inferred: For the shotgun proteomics experiment, fractions were collected every 40 s for 60 min (90 total) and every eighth fraction was concatenated, resulting in 11 fractions, but for SEC-PCP (the main interaction experiment described as identifying >26,000 interactions), 60 fractions were used (6-65). However, the prompt asks for the primary experiment. The abstract emphasizes the interaction map (SEC-PCP). The methods for SEC-PCP state 'fractions 6\u201365... were submitted for LC-MS/MS'. This is 60 fractions. Let's re-read carefully. 'We identify > 26,000 protein interactions in IFN-stimulated and unstimulated cells... apply protein correlation profiling'. This is the SEC-PCP experiment. The shotgun experiment is for differential expression. The SEC-PCP experiment is the 'interactome' one. In the SEC-PCP section: 'fractions 6\u201365... were submitted for LC-MS/MS analysis and utilized for PCP.' 6 to 65 inclusive is 60 fractions. Let's check the shotgun experiment again. 'Every eighth fraction was then concatenated'. 60 min / 40s = 90 fractions. 90/8 is not integer. 11 or 12 fractions. The SEC-PCP is the main 'interactome' paper focus. Let's look at the evidence for number of fractions in the context of the 'primary' experiment. The abstract highlights the interaction map. The methods describe SEC-PCP-SILAC in detail. The number of fractions for SEC-PCP is 60 (6-65). For shotgun, it's ~11-12. The prompt asks for 'number_of_fractions'. If I must choose one, the SEC-PCP is the distinctive technique. However, 'shotgun mass spectrometry' is also a major part. Let's look at the 'technology_type'. It lists 'shotgun proteomics' and 'affinity purification...' (IP) and SEC-PCP. The abstract says 'combination of quantitative proteomic approaches'. The most complex and central to the 'interactome' title is SEC-PCP. But often 'number of fractions' refers to pre-fractionation before MS. In SEC-PCP, the SEC is the fractionation. 60 fractions. In shotgun, RP fractionation into ~12 fractions. Let's look at the evidence sentence requirement. If I pick 60, I cite the SEC section. If I pick 12, I cite the shotgun section. The prompt says 'Extract ONLY from sections describing the proteomics or mass spectrometry experiment'. Both are valid. However, the title is 'Dynamic rewiring of the human interactome'. The interaction data comes from SEC-PCP. The differential expression comes from shotgun. Usually, in these extraction tasks, if multiple are present, the one most central to the primary finding or the one with explicit fraction counts is preferred. The SEC-PCP has an explicit range 6-65. The shotgun has a concatenation rule. 60 is a clearer number. Let's assume the question refers to the fractionation step described. 'Fractions (750 \u03bcL)... were pooled' in the polysome section (not MS/MS for whole interactome, just ribosome fraction). Wait, the polysome fractions were analyzed by LC-MS/MS. 'Resulting protein pellets... subjected to trypsin digestion before being analyzed by LC-MS/MS.' How many fractions? 'Fractions corresponding to free ribosomes (40S, 60S, and 80S monosomes) and polysomes were pooled'. This implies a few fractions. The SEC-PCP is the main network. I will use the SEC-PCP count of 60 as it is the most distinct 'fractionation' for the main result. Or perhaps the shotgun's ~12. Let's look at the 'number_of_technical_replicates'. The text mentions 'three replicates' in the analysis section for siRPL28. It implies 3 biological replicates for SILAC. Does it mention technical replicates? No explicit 'technical replicate' mention. In SILAC, each biological replicate is a sample. No mention of injecting the same sample multiple times as technical replicates. So technical replicates might be 1. Let's re-evaluate 'number_of_fractions'. If the 'primary' experiment is the shotgun (often the baseline), it's ~12. If SEC-PCP, it's 60. The abstract says 'apply a combination of quantitative proteomic approaches... and apply protein correlation profiling'. The PCP is the novel part. I will bet on the SEC-PCP fraction count of 60 being the intended 'fractionation' if the question implies pre-fractionation for the main network data. However, 'shotgun proteomics' is a standard field. Let's look for 'pre-fractionation'. 'subjected to high pH reverse-phase (RP) fractionation... Every eighth fraction was then concatenated'. 90 fractions collected. 90/8 = 11.25. So 11 or 12. The SEC-PCP uses 60 fractions directly. I will provide 60 and cite the SEC-PCP section as it is the specific 'interactome' method. Wait, looking at the instruction: 'Extract ONLY from sections describing the proteomics...'. The SEC-PCP section is a proteomics section. The shotgun section is a proteomics section. I will select the SEC-PCP value because it is the defining method of the paper (Interactome/PCP). Value: 60. Evidence: 'fractions 6\u201365... were submitted for LC-MS/MS analysis'. 65-6+1 = 60.], "
+  ],
+  "number_of_samples": [
+    "3",
+    "inferred: The SILAC experiment uses three conditions (light, medium, heavy) corresponding to control, 4h IFN, and 24h IFN, and the analysis requires quantification in at least two of three replicates, indicating 3 biological samples/conditions were run in the main comparison, though strictly 'samples' might refer to the number of runs. In SILAC, 1 biological replicate = 1 run containing 3 channels. If 3 biological replicates were done, there are 3 runs. The text says 'at least two of three replicates'. So 3 biological samples/runs."
+  ],
+  "number_of_technical_replicates": [
+    "unknown",
+    ""
+  ],
+  "technical_replicate": [
+    "unknown",
+    ""
+  ],
+  "technology_type": [
+    "shotgun proteomics",
+    "inferred: The paper describes 'shotgun proteomic analysis' using SILAC and 'SEC-PCP-SILAC' (Size Exclusion Chromatography Protein Correlation Profiling) which is a form of affinity/co-fractionation proteomics. The abstract mentions 'quantitative proteomic approaches'. 'Shotgun proteomics' is explicitly named in the methods header."
+  ]
+}

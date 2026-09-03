@@ -1,0 +1,40 @@
+{
+  "biological_replicate": [
+    "4",
+    "inferred: All experiments were performed with a minimum of 4 biological replicates."
+  ],
+  "experimental_design": [
+    "time course",
+    "inferred: Here, we provide proteomic data of whole-tissue lysates (WTL) and low-solubility protein-enriched fractions (LSF) of major tissues collected from mice of 6, 15, 24, and 30 months of age."
+  ],
+  "factor_value": [
+    "age",
+    "inferred: collected from mice of 6, 15, 24, and 30 months of age"
+  ],
+  "number_of_biological_replicates": [
+    "4",
+    "All experiments were performed with a minimum of 4 biological replicates."
+  ],
+  "number_of_fractions": [
+    "1",
+    "inferred: no fractionation or pre-fractionation is described for the primary LC-MS/MS experiment (note: TMT fractionation is mentioned in methods but typically 20-40 fractions, however primary design often assumes whole sample or specific count; here only 1 implied as default if not specified count, but wait, the TMT section mentions 'Off-line high pH reverse phase fractionation was carried out'. It does not state the number. Default rule: If no fractionation or pre-fractionation is described \u2192 number_of_fractions = '1'. While fractionation IS described, the count is not. However, usually '1' is for no fractionation. If fractionation is described but count unknown, strict instruction says 'If no fractionation... described -> 1'. Since it IS described, I should look for the count. No count is given. The prompt says 'Total fractions if fractionation applied'. If not given, is it unknown or 1? The default rule specifically targets 'no fractionation described'. Here it is described. But no number. I will assume 'unknown' or '1' is safer? Let's re-read: 'DEFAULT VALUE RULES: If no fractionation or pre-fractionation is described \u2192 number_of_fractions = '1''. It doesn't say what to do if described but count missing. However, in many metadata schemas, if the exact number isn't in the text, it's often not extractable. But looking at the TMT section, it says 'Off-line high pH reverse phase fractionation was carried out'. It doesn't say 'into 20 fractions'. Without a specific number, I cannot provide a verbatim number. The instruction for VERBATIM values says 'element 0 must be a plain number'. I cannot infer the number of fractions without more context (usually 20 or 40). I will output 'unknown' for the value if I can't find the number, but the schema says 'If unclear -> [\"unknown\", \"\"]'. Wait, the prompt says 'number_of_fractions: Total fractions if fractionation applied'. If I don't know the number, I should probably put 'unknown'. However, often in these tasks, if the text mentions fractionation but not the number, '1' is incorrect because fractionation happened. But 'unknown' is the fallback for unclear. Let's check the TMT section again. No number. I will use 'unknown'.",
+    "No specific number of fractions is stated in the text for the off-line high pH reverse phase fractionation."
+  ],
+  "number_of_samples": [
+    "16",
+    "inferred: 4 age groups (6, 15, 24, 30 months) x 4 biological replicates (minimum stated) = 16 samples per tissue type, but total across tissues is higher; however, the prompt asks for 'Total biological samples' for the PRIMARY proteomics experiment. The primary experiment runs TMT batches. 'Samples to be compared (Supplementary Data 1) were processed in the same batch.' TMT allows multiplexing. The total biological samples across all tissues and ages: 4 ages * 4 replicates * 7 tissues (brain, gastrocnemius, heart, kidney, liver, lung, aorta) + skin? 'abdominal skin, brain... heart... kidney, liver, lung, and thoracic aorta' (8 tissues). 4 ages * 4 replicates * 8 tissues = 128 samples. This is too many for a single inference. Usually, 'number_of_samples' refers to the distinct biological units run. If TMT is used, samples are pooled. The text says 'Samples to be compared... were processed in the same batch'. It doesn't give the total count of samples run on the MS. The default rule for number_of_biological_replicates is 1 if not described, but here it is 4. For number_of_samples, if unclear, use unknown. The text does not explicitly state the total number of samples analyzed by MS in the main results. I will use 'unknown'.",
+    "The text does not explicitly state the total number of biological samples analyzed in the primary mass spectrometry experiment."
+  ],
+  "number_of_technical_replicates": [
+    "1",
+    "inferred: No technical replicates are mentioned; typically in TMT shotgun proteomics, samples are injected once unless stated otherwise, and 'triplicate injections' is not present."
+  ],
+  "technical_replicate": [
+    "1",
+    "inferred: No technical replicates are mentioned; samples were labeled and run, implying single injection per sample pool."
+  ],
+  "technology_type": [
+    "shotgun proteomics",
+    "inferred: Quantitative proteomic mass spectrometry analysis using multiplex TMT labeling and Orbitrap Fusion Lumos Tribrid mass spectrometer"
+  ]
+}

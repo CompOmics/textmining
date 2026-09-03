@@ -1,0 +1,38 @@
+{
+  "biological_replicate": [
+    "unknown",
+    ""
+  ],
+  "experimental_design": [
+    "treated vs control",
+    "inferred: The study compares immunoprecipitated (IP) or affinity-purified (AP) samples against wild-type mitoribosomes or input references to identify specific interactions and enrichments."
+  ],
+  "factor_value": [
+    "tagged bait vs wild-type",
+    "inferred: Distinct cell lines expressing PrA-tagged mitoribosomal subunits (MRPS49, MRPS63, MRPL46, MRPL76) were compared to wild-type mitoribosomes and input controls."
+  ],
+  "number_of_biological_replicates": [
+    "1",
+    "inferred: The text describes a single source organism (Diplonema papillatum ATCC 50162) and does not specify multiple independent biological preparations or strains for the proteomics runs, only technical replicates of purification."
+  ],
+  "number_of_fractions": [
+    "1",
+    ""
+  ],
+  "number_of_samples": [
+    "8",
+    "inferred: The text specifies that Single-step affinity purification was performed in quadruplicate (4 replicates) and Immunoprecipitation experiments were performed in triplicate (3 replicates), plus input references are implied, but strictly counting the distinct MS samples described as 'analyzed' involves the quadruplicate AP and triplicate IP sets. However, typically 'samples' refers to the biological entities run. Given the ambiguity and the instruction to count samples run on MS, and the explicit mention of 'quadruplicate' AP and 'triplicate' IP, the total number of independent MS runs (technical replicates of the biological state) is 4+3=7 or more if inputs are counted. However, without explicit 'n=' for biological units, and noting 'Mass spectrometry of immunoprecipitated (IP) samples and wild-type mitoribosomes was outsourced', it is safest to rely on the explicit replication counts for the main AP experiment which is the primary focus. The prompt asks for 'number_of_samples' as 'Total biological samples'. Since biological replicates are 1, the number of biological samples is 1. But often in these extraction tasks, if technical replicates are high, they might be conflated. Let's look at 'number_of_technical_replicates' first. The AP was in quadruplicate (4). The IP was in triplicate (3). The primary proteomics experiment is the AP (affinity purification). So number_of_samples for the primary experiment is 4."
+  ],
+  "number_of_technical_replicates": [
+    "4",
+    "Single-step affinity purification (AP) was performed in quadruplicate as previously described for humans, with slight modifications."
+  ],
+  "technical_replicate": [
+    "4",
+    "Single-step affinity purification (AP) was performed in quadruplicate as previously described for humans, with slight modifications."
+  ],
+  "technology_type": [
+    "affinity purification coupled with mass spectrometry proteomics",
+    "Affinity pulldown of mitoribosomal complexes... demonstrates that they have a mass of > 5 MDa... Single-step affinity purification (AP) was performed... Over-night on-bead digestion of affinity-purified (AP) complexes... The HPLC system was coupled to Orbitrap Fusion mass spectrometer"
+  ]
+}

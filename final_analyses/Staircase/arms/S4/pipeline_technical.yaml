@@ -1,0 +1,53 @@
+datasets:
+  manuscripts:
+    type: file
+    path: '{{ input_path }}'
+default_model: openai/llama-4-scout
+operations:
+- name: extract_technical
+  type: map
+  prompt: "You are a scientific metadata extraction agent specializing in mass spectrometry. Extract ONLY values EXPLICITLY stated in the text.\n\nThis paper may describe multiple experimental techniques. Extract ONLY from sections describing the proteomics or mass spectrometry experiment. Ignore all other experimental contexts.\n\nFIELDS TO EXTRACT:\n- acquisition_method: MS acquisition strategy (DDA, DIA, PRM, SRM, targeted)\n- alkylation_reagent: Cysteine alkylation chemical in LC-MS sample prep ONLY (iodoacetamide, chloroacetamide, NEM). NOT fluorescent dyes (Cy2/Cy3/Cy5) used in 2D-DIGE \u2014 those are NOT alkylation reagents.\n- alkylation_concentration: Concentration of alkylation_reagent in LC-MS sample prep ONLY\n- cleavage_agent: Protease(s) used (trypsin, Lys-C, chymotrypsin, GluC)\n- collision_energy: Fragmentation energy (NCE, eV values)\n- enrichment_method: Enrichment technique (IMAC, TiO2, antibody, affinity)\n- fractionation_method: Pre-MS fractionation approach (SCX, high-pH,\
+    \ bRP, gel). 2D-DIGE gel separation is NOT LC-MS fractionation.\n- fragmentation_method: MS fragmentation type (HCD, CID, ETD, EThcD)\n- instrument: The PRIMARY LC-MS/MS mass spectrometer model (Q Exactive, Orbitrap Fusion, timsTOF, LTQ). NOT secondary instruments used for validation (e.g., MALDI-TOF used only for spot verification).\n- ionization_type: Ionization source of the primary LC-MS instrument (ESI, nanoESI, MALDI)\n- labeling: Quantification method (TMT, iTRAQ, SILAC, label-free)\n- mass_analyzer: Mass analyser type in the primary MS instrument (Orbitrap, Ion Trap, QTOF, Triple Quadrupole). Infer from instrument model if not stated explicitly (e.g. Q Exactive \u2192 Orbitrap).\n- ptm: Post-translational modifications searched (e.g. carbamidomethylation, oxidation, phosphorylation). List all fixed and variable modifications mentioned.\n- reduction_reagent: Disulfide reduction chemical (DTT, TCEP, BME)\n- reduction_concentration: Concentration of reduction reagent\n\nFor EACH\
+    \ field output a 2-element list: [extracted_value, evidence_sentence].\n- Copy values EXACTLY as written in text\n- If not explicitly stated \u2192 [\"unknown\", \"\"]\n- VERBATIM values: the evidence sentence MUST contain the extracted value as a substring.\n- INFERRED values (e.g., labeling inferred as label-free when no labels are mentioned):\n  prefix evidence with \"inferred: \" followed by a verbatim quote supporting the inference.\n  Example: [\"label-free\", \"inferred: No isobaric labels were used in this study.\"]\n- Complete ALL fields systematically.\n\nLABELING INFERENCE RULE:\nIf no labeling or quantification strategy is mentioned anywhere in the text (no TMT, iTRAQ, SILAC, dimethyl labeling, ICAT, or other isobaric/metabolic labels), then the experiment is label-free. Extract \"label-free\" with evidence from any sentence describing the quantification or MS analysis approach. Do NOT leave labeling as \"unknown\".\nAlso extract \"label-free\" if the text explicitly mentions\
+    \ \"label-free\", \"LFQ\", \"spectral counting\", \"emPAI\", or \"intensity-based\" quantification.\n\nTEXT:\n{{ input.text }}\n\nReturn a JSON object with ALL fields present.\n"
+  output:
+    mode: structured_output
+    schema:
+      acquisition_method: list[str]
+      alkylation_reagent: list[str]
+      alkylation_concentration: list[str]
+      cleavage_agent: list[str]
+      collision_energy: list[str]
+      enrichment_method: list[str]
+      fractionation_method: list[str]
+      fragmentation_method: list[str]
+      instrument: list[str]
+      ionization_type: list[str]
+      labeling: list[str]
+      mass_analyzer: list[str]
+      ptm: list[str]
+      reduction_reagent: list[str]
+      reduction_concentration: list[str]
+  validate:
+  - len(output['instrument']) == 2
+  - len(output['cleavage_agent']) == 2
+  - len(output['labeling']) == 2
+  - len(output['fragmentation_method']) == 2
+  - output['instrument'][0] == 'unknown' or output['instrument'][1] != ''
+  - output['cleavage_agent'][0] == 'unknown' or output['cleavage_agent'][1] != ''
+  - output['labeling'][0] == 'unknown' or output['labeling'][1] != ''
+  num_retries_on_validate_failure: 2
+  gleaning:
+    num_rounds: 2
+    if: any(isinstance(v, list) and len(v) == 2 and v[0] not in ('unknown', '') and v[1] == '' for v in output.values())
+    validation_prompt: "You just extracted technical mass spectrometry metadata. Review your extraction:\n{{ output }}\n\nCRITICAL RULE: Evidence MUST NEVER be empty (\"\") for a non-unknown value. If you are about to set evidence to \"\", STOP \u2014 use \"inferred: <best supporting quote>\" instead.\n\nFor EACH field with a non-unknown value, check against the paper text you saw:\n1. Evidence starting with \"inferred: \": is the quoted text a VERBATIM quote that reasonably supports the inferred value? (e.g., \"inferred: no labels used\" \u2192 labeling \"label-free\" \u2713)\n2. Evidence NOT starting with \"inferred: \": does it contain the extracted value as a substring?\n   - For concentrations/energies: the exact number and unit must appear verbatim.\n   - If NO: add \"inferred: \" prefix to existing evidence. NEVER clear evidence to \"\".\n   - WRONG: [\"trypsin\", \"\"] \u2190 NEVER do this.\n   - RIGHT: [\"trypsin\", \"inferred: Samples were digested overnight with 1:100 trypsin.\"\
+      ] \u2713\n3. For \"unknown\" values: evidence should be \"\".\n4. Is evidence \"\" for any non-unknown field? Fix it using \"inferred: <supporting sentence>\".\n\nList each failing field and the specific issue. If ALL fields pass, say \"VALID\".\n"
+pipeline:
+  steps:
+  - name: technical_extraction
+    input: manuscripts
+    operations:
+    - extract_technical
+  output:
+    type: file
+    path: '{{ output_path }}'

@@ -57,7 +57,7 @@ ONTOLOGY_SOURCES: Dict[str, Dict[str, str]] = {
         'description': 'Mass Spectrometry Ontology',
     },
     'unimod': {
-        'url': 'https://raw.githubusercontent.com/HUPO-PSI/psi-mod-CV/master/unimod.obo',
+        'url': 'https://www.unimod.org/obo/unimod.obo',
         'filename': 'unimod.obo',
         'description': 'Unimod PTM Ontology',
     },
@@ -83,7 +83,7 @@ ONTOLOGY_SOURCES: Dict[str, Dict[str, str]] = {
         'description': 'PSI-Mod Ontology',
     },
     'experimentalfactor': {
-        'url': 'http://purl.obolibrary.org/obo/efo.obo',
+        'url': 'https://github.com/EBISPOT/efo/releases/download/current/efo.obo',
         'filename': 'experimentalfactor.obo',
         'description': 'Experimental Factor Ontology (EFO)',
     },
