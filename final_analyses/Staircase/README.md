@@ -29,9 +29,14 @@ The supported Figure 3 panels and their source tables are under
 
 ## SDRF benchmark
 
-The matcher is located at `agentic-metadata/benchmark/semantic_matcher.py`. The
+The matcher is located at `framework/benchmark/semantic_matcher.py`. The
 benchmark uses a semantic classification threshold of 0.70 and a final metric threshold
-of 0.50. Compatibility inputs are generated as relative symlinks (plus small S0
+of 0.50. Tier 5 of the matcher embeds with SapBERT
+(`cambridgeltl/SapBERT-from-PubMedBERT-fulltext`, `[CLS]`, L2-normalised), the same
+model `framework/normalization` uses. It used SciBERT until 2026-09-04; on 88,226
+value pairs drawn from unrelated annotation fields, where no true match is possible,
+SciBERT reached the 0.70 threshold on 18.2% of pairs and SapBERT on 0.00%, so every
+arm was re-scored with `scripts/rescore_staircase.py`. No inference was re-run. Compatibility inputs are generated as relative symlinks (plus small S0
 agent adapters) under `benchmark_inputs/`. Per-run reports are retained
 under `benchmark_runs/`, while presentation-ready aggregate
 results and figures are written to `benchmark_results/`.

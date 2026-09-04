@@ -150,13 +150,23 @@ def panel_b(ax, m):
     ax.set_ylim(0, 1.05)
     arm_axis(ax, "Weighted F1", "Overall performance", "b")
     ax.legend(frameon=False, fontsize=8.5, loc="lower right")
-    spread = series(m, "gemma4_31b", "overall_f1_mean")[0] - \
-        series(m, "glm4_7", "overall_f1_mean")[0]
-    ax.annotate(f"{spread:.2f} F1 spread\nat S0", xy=(0, 0.49), xytext=(0.55, 0.30),
+    per_arm = np.array([series(m, key, "overall_f1_mean") for key, *_ in MODELS])
+    spread_by_arm = per_arm.max(axis=0) - per_arm.min(axis=0)
+
+    lowest_at_s0 = per_arm[:, 0].min()
+    ax.annotate(f"{spread_by_arm[0]:.2f} F1 spread\nat S0",
+                xy=(0, lowest_at_s0 + 0.02), xytext=(0.55, 0.30),
                 fontsize=8, style="italic", color="0.35",
                 arrowprops=dict(arrowstyle="-", color="0.6", lw=0.9))
-    ax.text(3.5, 0.86, "models converge from S2 on", fontsize=8,
-            style="italic", color="0.35", ha="center")
+
+    # Read the convergence arm off the data rather than hardcoding it: the
+    # first arm from which the between-model spread never again exceeds 0.05.
+    converged = next((i for i in range(len(ARMS))
+                      if all(s <= 0.05 for s in spread_by_arm[i:])), None)
+    if converged is not None:
+        ax.text((converged + len(ARMS) - 1) / 2, 0.99,
+                f"models converge from {ARMS[converged]} on", fontsize=8,
+                style="italic", color="0.35", ha="center", va="top")
 
 
 def panel_c(axes, m):

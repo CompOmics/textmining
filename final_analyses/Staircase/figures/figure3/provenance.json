@@ -1,5 +1,8 @@
 {
   "benchmark": "SDRF benchmark",
+  "semantic_matcher": "framework/benchmark/semantic_matcher.py",
+  "semantic_tier_embedding_model": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+  "semantic_tier_embedding_note": "Tier 5 used allenai/scibert_scivocab_uncased until 2026-09-04. SciBERT scored 18.2% of 88,226 value pairs drawn from unrelated annotation fields at or above the 0.70 threshold, where no true match is possible; SapBERT scored 0.00%. All arms were re-scored from the preserved extractions in benchmark_annotations/ with scripts/rescore_staircase.py. No inference was re-run.",
   "semantic_classification_threshold": 0.7,
   "effective_final_metric_threshold": 0.5,
   "models": [

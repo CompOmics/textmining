@@ -3,6 +3,11 @@
 This directory contains the currently supported Figure 3 panels. All
 gold-standard performance panels use the SDRF benchmark.
 
+`benchmark_metrics.csv` was re-scored on 2026-09-04 after tier 5 of
+`framework/benchmark/semantic_matcher.py` moved from SciBERT to SapBERT. No
+inference was re-run; `scripts/rescore_staircase.py` re-scores the preserved
+extractions in `benchmark_annotations/`. Full reasoning in `provenance.json`.
+
 ## Completed panels
 
 - **a — Overall F1:** weighted F1 by arm and model, mean and sample
