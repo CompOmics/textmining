@@ -2,6 +2,19 @@
 Pytest configuration and shared fixtures for the extraction framework tests.
 """
 
+import sys
+from pathlib import Path
+
+# Some tests exercise helpers that live in the sibling agentic-benchmark tree
+# (benchmark_data.run_sdrf_benchmark), so it has to be importable alongside
+# framework/ itself. framework/ is added too, so `benchmark.semantic_matcher`
+# and `core.*` resolve the same way they do when run_sdrf_benchmark.py runs.
+_FRAMEWORK = Path(__file__).resolve().parents[1]
+_REPO = _FRAMEWORK.parent
+for _p in (_FRAMEWORK, _REPO / "agentic-benchmark"):
+    if str(_p) not in sys.path:
+        sys.path.insert(0, str(_p))
+
 import json
 import pytest
 from pathlib import Path
