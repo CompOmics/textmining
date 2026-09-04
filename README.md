@@ -36,20 +36,3 @@ what the outline's scope decision keeps IN.
 - `outline.txt` -- the reduced manuscript outline (moved, not copied, from
   the agentic-metadata submodule).
 
-## Explicitly NOT copied (per outline's scope decision, OUT)
-
-- METI / raw-data-derived technical pipeline: RunAssessor, Casanovo,
-  Cascadia, Peptonizer2000, Sage, PTM-Shepherd, the Nextflow workflow
-  (`main.nf`, `nextflow.config`, `assets/nextflow_configs`,
-  `assets/casanovo_*`, `assets/default_sage.config`,
-  `submodules/runassessor`).
-- LLM-as-a-judge evaluation (`src/python/sdrf_judge.py`,
-  `src/analysis/Figure4/*llm_judge*`, `LLm_as_judge.py`) -- replaced in the
-  new outline by blinded manual adjudication (Section 5.5).
-- The repository-scale resource (15,000-dataset run), `store/` contents,
-  and ProteomeXchange integration code.
-- The three discovery use cases (biological reanalysis / AI training-data
-  selection / technical benchmarking query demos).
-- `src/python/sdrf_builder.py` / `finalize_sdrf.py` -- these write final
-  HAMLET SDRF files using METI output; out of scope now that SDRF-Proteomics
-  is evaluation ground truth only, not a build target.
