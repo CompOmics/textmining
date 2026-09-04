@@ -1,0 +1,8 @@
+Metric	Strengths	Weaknesses	Best Use-Case
+Lin Semantic (IC-based)	Normalizes by term specificity; sharp separation of cross-organ jumps; immune to path redundancy.	Sensitive to leafward DAG completeness; assumes uniform biological depth across systems.	Primary metric for matching cross-system automated tissue annotations.
+Lin Proteomic (Corpus-based)	Reflects empirical mass spectrometry data abundance; balances over-represented tissues.	Reflects sampling bias in public repositories; rare tissues get artificially inflated IC.	Proteomics-specific metadata QC where experimental frequency matters.
+Mazandu & Mulder TI (GO-Universal)	Rigorous top-down parent transmission; weights local branching factors and multi-parentage.	Dramatically inflates distance between generic organs and hyper-dense brain subregions.	Fine-grained discrimination between terms of identical granularity.
+Normalized Shortest Path	Intuitive graph geodesic; zero IC precomputations required.	Distorts similarity in densely annotated organs; treats all relationship hops equally.	Rapid baseline graph connectivity checks.
+Normalized Resnik	Directly reflects MICA informativeness; immune to term-level leafward density imbalances.	Does not penalize distance between a specific term and a broad ancestor.	Cluster discovery across organ lineages.
+Wu-Palmer (WUP)	Simple depth-based formulation; fast computation.	Overestimates similarity for shallow general concepts; sensitive to arbitrary root selection.	Coarse-grained hierarchical clustering.
+Ancestral Jaccard	Direct set overlap; independent of Information Content definitions.	Heavily biased by asymmetric ancestral depth; leaves high residual distance for direct parts.	Taxonomic lineage consensus validation.
