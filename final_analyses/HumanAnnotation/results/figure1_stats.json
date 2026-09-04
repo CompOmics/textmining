@@ -1,0 +1,242 @@
+{
+  "n_labels": 42,
+  "n_docs": 27,
+  "n_identities": 13,
+  "prevalence": {
+    "human_min": 0.16666666666666666,
+    "human_max": 0.4393939393939394,
+    "human_fold": 2.6363636363636367,
+    "model_min": 0.4091710758377425,
+    "model_max": 0.43386243386243384,
+    "model_fold": 1.0603448275862069
+  },
+  "decomposition": {
+    "human-human": {
+      "kappa": 0.4274794541178061,
+      "raw_agreement": 0.7471878650450078,
+      "chance_agreement": 0.5558322556433769,
+      "positive_agreement": 0.6045189539979315,
+      "both_absent_share": 0.542742389885247,
+      "n_pairs": 35
+    },
+    "model-human": {
+      "kappa": 0.399906059752044,
+      "raw_agreement": 0.7160775895343796,
+      "chance_agreement": 0.5256130162075665,
+      "positive_agreement": 0.6121694735334864,
+      "both_absent_share": 0.48177097251171325,
+      "n_pairs": 27
+    },
+    "model-model": {
+      "kappa": 0.6900912098866815,
+      "raw_agreement": 0.84891240446796,
+      "chance_agreement": 0.5124021869073799,
+      "positive_agreement": 0.8204075629190752,
+      "both_absent_share": 0.5035273368606702,
+      "n_pairs": 3
+    }
+  },
+  "tests": {
+    "raw_vs_chance": {
+      "human-human": {
+        "n": 35,
+        "n_positive": 35,
+        "mean_excess": 0.19135560940163085,
+        "wilcoxon_p": 2.9103830456733704e-11
+      },
+      "model-human": {
+        "n": 27,
+        "n_positive": 27,
+        "mean_excess": 0.19046457332681324,
+        "wilcoxon_p": 2.8008809414833275e-06
+      },
+      "model-model": {
+        "n": 3,
+        "n_positive": 3,
+        "mean_excess": 0.33651021756058,
+        "sign_test_p": 0.125
+      }
+    },
+    "kruskal": {
+      "kappa": {
+        "H": 8.456315333231343,
+        "p": 0.014579225615324796,
+        "n_per_group": [
+          35,
+          27,
+          3
+        ]
+      },
+      "positive_agreement": {
+        "H": 8.549068739350076,
+        "p": 0.013918528099084383,
+        "n_per_group": [
+          35,
+          27,
+          3
+        ]
+      },
+      "chance_agreement": {
+        "H": 10.97643859540795,
+        "p": 0.004135201184232416,
+        "n_per_group": [
+          35,
+          27,
+          3
+        ]
+      },
+      "both_absent_share": {
+        "H": 14.189126241856567,
+        "p": 0.0008296031359940377,
+        "n_per_group": [
+          35,
+          27,
+          3
+        ]
+      }
+    },
+    "permutation": {
+      "kappa": {
+        "metric": "kappa",
+        "observed_diff": 0.26261175576887547,
+        "n_permutations": 220,
+        "p_two_sided": 0.01818181818181818
+      },
+      "positive_agreement": {
+        "metric": "positive_agreement",
+        "observed_diff": 0.2158886089211438,
+        "n_permutations": 220,
+        "p_two_sided": 0.022727272727272728
+      },
+      "chance_agreement": {
+        "metric": "chance_agreement",
+        "observed_diff": -0.043430068735997085,
+        "n_permutations": 220,
+        "p_two_sided": 0.2636363636363636
+      },
+      "both_absent_share": {
+        "metric": "both_absent_share",
+        "observed_diff": -0.03921505302457684,
+        "n_permutations": 220,
+        "p_two_sided": 0.5454545454545454
+      },
+      "raw_agreement": {
+        "metric": "raw_agreement",
+        "observed_diff": 0.10172453942295201,
+        "n_permutations": 220,
+        "p_two_sided": 0.01818181818181818
+      }
+    }
+  },
+  "value_match": {
+    "n_instances": 8286,
+    "exact_pct": 73.43712285783249,
+    "semantic_pct": 14.965001206854936,
+    "no_match_pct": 11.597875935312572
+  },
+  "movement": {
+    "biological": {
+      "n_labels": 12,
+      "n_pairs": 35,
+      "string_kappa": 0.3725956132576253,
+      "sapbert_kappa": 0.4563783931108019,
+      "shift": 0.08378277985317661
+    },
+    "experimental_design": {
+      "n_labels": 10,
+      "n_pairs": 35,
+      "string_kappa": 0.22429572066846018,
+      "sapbert_kappa": 0.2766903535451151,
+      "shift": 0.05239463287665489
+    },
+    "technical": {
+      "n_labels": 20,
+      "n_pairs": 35,
+      "string_kappa": 0.31555456145612415,
+      "sapbert_kappa": 0.4423012537863256,
+      "shift": 0.12674669233020147
+    }
+  },
+  "movement_pooled": {
+    "string_kappa": 0.30414863179406987,
+    "sapbert_kappa": 0.3917900001474142
+  },
+  "rarity_vs_difficulty": {
+    "rho": 0.07103702683463185,
+    "p": 0.6548428094252716,
+    "n_labels": 42
+  },
+  "presence_kappa": {
+    "human_human": {
+      "mean": 0.4274794541178061,
+      "min": 0.16803278688524595,
+      "max": 0.7083333333333334,
+      "n": 35
+    },
+    "model_human": {
+      "mean": 0.399906059752044,
+      "min": 0.1969507623094226,
+      "max": 0.5593018643395479,
+      "n": 27
+    },
+    "model_model": {
+      "mean": 0.6900912098866815,
+      "min": 0.6766394545617654,
+      "max": 0.7152963160704751,
+      "n": 3
+    }
+  },
+  "value_kappa_string": {
+    "human_human": {
+      "mean": 0.33588989339820896,
+      "min": 0.14042069357589532,
+      "max": 0.5551071878940731,
+      "n": 35
+    },
+    "model_human": {
+      "mean": 0.2800044047953891,
+      "min": 0.11640953716690045,
+      "max": 0.3690851735015773,
+      "n": 30
+    },
+    "model_model": {
+      "mean": 0.44683569367191245,
+      "min": 0.4404230141394486,
+      "max": 0.45334388612258003,
+      "n": 3
+    }
+  },
+  "value_kappa": {
+    "human_human": {
+      "mean": 0.44233901836718587,
+      "min": 0.18236472945891785,
+      "max": 0.656967840735069,
+      "n": 35
+    },
+    "model_human": {
+      "mean": 0.3922065112111197,
+      "min": 0.2490909090909091,
+      "max": 0.5255136856471302,
+      "n": 30
+    },
+    "model_model": {
+      "mean": 0.5759919152441465,
+      "min": 0.570196943891381,
+      "max": 0.5808840611338341,
+      "n": 3
+    }
+  },
+  "value_kappa_gain": {
+    "n_pairs": 77,
+    "n_up": 77,
+    "n_down": 0,
+    "mean_gain": 0.1095206910954776,
+    "min_gain": 0.041944035883022535,
+    "max_gain": 0.2038718793085767
+  },
+  "movement_direction": {
+    "n_category_pairs": 231,
+    "n_down": 15,
+    "worst_down": -0.027705627705627726
+  }
+}
