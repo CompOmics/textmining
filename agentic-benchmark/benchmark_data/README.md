@@ -40,7 +40,7 @@ CUDA_VISIBLE_DEVICES="" python benchmark_data/run_sdrf_benchmark.py \
   --model-label gpt
 ```
 
-> **Note:** `CUDA_VISIBLE_DEVICES=""` forces the semantic matcher (SciBERT) to use CPU, which avoids conflicts if GPU is running the LLM server.
+> **Note:** `CUDA_VISIBLE_DEVICES=""` forces the semantic matcher (SapBERT) to use CPU, which avoids conflicts if GPU is running the LLM server.
 
 ## Pipeline Steps
 
@@ -126,4 +126,4 @@ The evaluator uses a 5-tier matching hierarchy:
 2. **Normalized** — After removing common suffixes, abbreviation expansion
 3. **Ontology** — Accession-based lookup (e.g., `CL:0000084` matches `T cell`)
 4. **Hierarchical** — Parent/child ontology relationships (e.g., `HeLa` is-a `cell line`)
-5. **Semantic** — SciBERT cosine similarity above threshold
+5. **Semantic** — SapBERT cosine similarity above threshold

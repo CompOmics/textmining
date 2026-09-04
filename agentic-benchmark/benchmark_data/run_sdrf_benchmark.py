@@ -395,7 +395,7 @@ def step_compare(golden_dir: Path, extraction_dir: Path, reports_dir: Path,
         term_normalizer = None
     
     # Initialize matcher
-    print("\n  Loading SciBERT for semantic matching...")
+    print("\n  Loading SapBERT for semantic matching...")
     matcher = HierarchicalMatcher(
         semantic_threshold=0.70,
         term_normalizer=term_normalizer,

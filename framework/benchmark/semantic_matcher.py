@@ -1,13 +1,23 @@
 #!/usr/bin/env python3
 """
-Semantic Matching Module using SciBERT embeddings.
+Semantic Matching Module using SapBERT embeddings.
 
 Provides hierarchical matching strategy for comparing LLM output to golden annotations:
 1. Exact match
 2. Normalized match (case-insensitive)
 3. Ontology match (via existing normalization)
 4. Hierarchical match (parent-child in ontology hierarchy)
-5. Semantic match (SciBERT embedding similarity)
+5. Semantic match (SapBERT embedding similarity)
+
+The semantic tier used SciBERT (allenai/scibert_scivocab_uncased) until
+2026-09-04. It was replaced because SciBERT scores topical relatedness rather
+than synonymy on short domain terms: on 88,226 value pairs drawn from
+genuinely unrelated annotation fields (Organism against CleavageAgent and
+similar), where no true match is possible, SciBERT had a median cosine of
+0.631 and 18.2% of pairs reached the 0.70 threshold. SapBERT, trained on UMLS
+synonymy, never exceeded 0.49 on the same control. SapBERT is also what
+framework/normalization already uses, so the whole pipeline now shares one
+embedding model.
 """
 
 import logging
@@ -85,49 +95,85 @@ CELL_LINE_TO_CELL_TYPE = {
 
 
 class SemanticMatcher:
-    """SciBERT-based semantic similarity matcher."""
+    """SapBERT-based semantic similarity matcher."""
     
     def __init__(
         self, 
-        model_name: str = 'allenai/scibert_scivocab_uncased',
-        threshold: float = 0.75,
+        model_name: str = 'cambridgeltl/SapBERT-from-PubMedBERT-fulltext',
+        threshold: float = 0.70,
         device: str = None
     ):
         """
         Initialize the semantic matcher.
         
         Args:
-            model_name: HuggingFace model name (default: SciBERT)
-            threshold: Similarity threshold for semantic match (0-1)
+            model_name: HuggingFace model name (default: SapBERT)
+            threshold: Similarity threshold for semantic match (0-1).
+                0.70 is the project-wide "accepted as normalised" cutoff used
+                in framework/normalization, reused here rather than tuned
+                separately.
             device: 'cuda', 'cpu', or None for auto-detect
         """
         self.threshold = threshold
         self.model_name = model_name
         self._model = None
+        self._tokenizer = None
         self._device = device
+        self._torch_device = None
         self._cache: Dict[str, np.ndarray] = {}
     
     @property
     def model(self):
-        """Lazy load the model."""
+        """Lazy load the tokenizer and model.
+
+        Uses transformers directly with [CLS] pooling rather than
+        SentenceTransformer mean pooling, so this tier embeds text exactly the
+        way framework/normalization/index.py does. Mixing pooling strategies
+        would put the same string at two different points in the space.
+        """
         if self._model is None:
-            from sentence_transformers import SentenceTransformer
-            self._model = SentenceTransformer(self.model_name, device=self._device)
-            print(f"Loaded semantic model: {self.model_name}")
+            import torch
+            from transformers import AutoModel, AutoTokenizer
+
+            device = self._device
+            if device is None:
+                device = 'cuda' if torch.cuda.is_available() else 'cpu'
+            self._torch_device = torch.device(device)
+
+            self._tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+            model = AutoModel.from_pretrained(self.model_name)
+            model = model.to(self._torch_device)
+            model.eval()
+            self._model = model
+            logger.info("Loaded semantic model: %s on %s", self.model_name, self._torch_device)
         return self._model
     
     def get_embedding(self, text: str) -> np.ndarray:
-        """Get embedding for a text string (cached)."""
+        """Get embedding for a text string (cached).
+
+        [CLS] token, L2-normalised, max 128 tokens: the same encoding as
+        framework/normalization/index.py._embed_texts.
+        """
         if not text:
-            return np.zeros(768)  # SciBERT embedding dimension
+            return np.zeros(768)  # SapBERT embedding dimension
         
         text_key = text.lower().strip()
         if text_key not in self._cache:
-            self._cache[text_key] = self.model.encode(
-                text_key, 
-                normalize_embeddings=True,
-                show_progress_bar=False
+            import torch
+
+            model = self.model  # triggers lazy load of tokenizer too
+            inputs = self._tokenizer(
+                [text_key],
+                padding=True,
+                truncation=True,
+                max_length=128,
+                return_tensors='pt',
             )
+            inputs = {k: v.to(self._torch_device) for k, v in inputs.items()}
+            with torch.no_grad():
+                cls = model(**inputs).last_hidden_state[:, 0, :]
+                cls = torch.nn.functional.normalize(cls, dim=1)
+            self._cache[text_key] = cls[0].cpu().numpy()
         return self._cache[text_key]
     
     def cosine_similarity(self, text1: str, text2: str) -> float:
@@ -162,7 +208,7 @@ class HierarchicalMatcher:
     2. NORMALIZED: Same after normalization
     3. ONTOLOGY: Same ontology term resolution
     4. HIERARCHICAL: Parent-child relationship in ontology
-    5. SEMANTIC: SciBERT similarity above threshold
+    5. SEMANTIC: SapBERT similarity above threshold
     """
     
     MATCH_SCORES = {
