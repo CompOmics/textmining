@@ -1,0 +1,227 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "inferred: experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "40 mM",
+      "evidence": "50 \u00b5g of protein was reduced and alkylated with 10 mM TCEP (5 min, 80 \u00b0C) and 40 mM 2-chloroacetamide (15 min, room temperature)"
+    },
+    {
+      "value": "20 mM",
+      "evidence": "For poly-ubiquitylome sample preparation, 100 \u03bcg of cell lysate were reduced and alkylated (10 mM TCEP and 20 mM 2-chloroacetamide)"
+    },
+    {
+      "value": "40 mM",
+      "evidence": "40 mM 2-chloroacetamide, 10 \u00b5M PR-619"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "2-chloroacetamide",
+      "evidence": "50 \u00b5g of protein was reduced and alkylated with 10 mM TCEP (5 min, 80 \u00b0C) and 40 mM 2-chloroacetamide (15 min, room temperature)"
+    },
+    {
+      "value": "iodoacetamide",
+      "evidence": "modifications: iodoacetamide derivatized residue"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "sequencing-grade modified trypsin",
+      "evidence": "The eluate was digested with 50 ng of sequencing-grade modified trypsin (2 h, 1,000 rpm, 47 \u00b0C)."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Magne HaloTag beads (Promega, Cat# G7281) conjugated to a custom-made trypsin-resistant Tandem-Ubiquitin-Binding-Entity (trTUBE) with an N-terminal HaloTag separated by a tobacco-etch-virus protease cleavage site (HaloTag\u2014[tev]\u2014trTUBE)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "35%",
+      "evidence": "MS2 \u2014 IW 0.7 CID fragmentation, CE 35%, max IT 35 ms, ion trap rapid scan rate, AGC target 10,000;"
+    },
+    {
+      "value": "55%",
+      "evidence": "MS3 reporter quantitation \u2014 10 2 m/z notches, HCD fragmentation, CE 55%, 50k resolution, max IT 86 ms, AGC target 100,000."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "trypsin-resistant Tandem-Ubiquitin-Binding-Entity (trTUBE)",
+      "evidence": "Magne HaloTag beads (Promega, Cat# G7281) conjugated to a custom-made trypsin-resistant Tandem-Ubiquitin-Binding-Entity (trTUBE) with an N-terminal HaloTag separated by a tobacco-etch-virus protease cleavage site (HaloTag\u2014[tev]\u2014trTUBE)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "Pierce High pH Reversed-Phase Peptide Fractionation Kit",
+      "evidence": "Peptides were dried and resolubilised in 5 % acetonitrile and 0.1 % formic acid in LC-MS-grade water, for LC-MS injection."
+    },
+    {
+      "value": "high-pH",
+      "evidence": "TMT-labelled high-pH peptide fractions were analysed by Orbitrap Eclipse MS (Thermo Scientific)"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "CID",
+      "evidence": "MS2 \u2014 IW 0.7 CID fragmentation, CE 35%, max IT 35 ms, ion trap rapid scan rate, AGC target 10,000;"
+    },
+    {
+      "value": "HCD",
+      "evidence": "MS3 reporter quantitation \u2014 10 2 m/z notches, HCD fragmentation, CE 55%, 50k resolution, max IT 86 ms, AGC target 100,000."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Eclipse",
+      "evidence": "TMT-labelled high-pH peptide fractions were analysed by Orbitrap Eclipse MS (Thermo Scientific)",
+      "is_normalized": true,
+      "ontology_id": "MS:1003029",
+      "ontology_name": "Orbitrap Eclipse",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Eclipse"
+    },
+    {
+      "value": "Orbitrap Fusion",
+      "evidence": "instruments: Orbitrap Fusion",
+      "is_normalized": true,
+      "ontology_id": "MS:1002416",
+      "ontology_name": "Orbitrap Fusion",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: TMT-labelled high-pH peptide fractions were analysed by Orbitrap Eclipse MS (Thermo Scientific) with on-line separation on a reversed-phase nanoLC column"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    },
+    {
+      "value": "TMTpro",
+      "evidence": "Digested peptides were labelled with TMTpro 18-plex in 50 mM HEPES pH 8.0"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Fusion"
+    },
+    {
+      "value": "Ion Trap",
+      "evidence": "MS2 \u2014 IW 0.7 CID fragmentation, CE 35%, max IT 35 ms, ion trap rapid scan rate, AGC target 10,000;"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "carbamidomethyl (Cys)",
+      "evidence": "fixed modification was carbamidomethyl (Cys) and TMTpro (Lys, peptide N-term)",
+      "is_normalized": true,
+      "ontology_id": "MOD:01216",
+      "ontology_name": "iodoacetamide derivatized glutamic acid",
+      "similarity": 0.894,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "TMTpro (Lys, peptide N-term)",
+      "evidence": "fixed modification was carbamidomethyl (Cys) and TMTpro (Lys, peptide N-term)",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "TMT6plex reporter fragment",
+      "normalization_candidate_ids": [
+        "MOD:01716",
+        "MOD:01719",
+        "MOD:01718",
+        "MOD:01717",
+        "MOD:01715"
+      ]
+    },
+    {
+      "value": "acetyl, Met-loss, or Met-loss+acetyl (protein N-term)",
+      "evidence": "variable modifications were acetyl, Met-loss, or Met-loss+acetyl (protein N-term)",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "mono N-acetylated residue",
+      "normalization_candidate_ids": [
+        "MOD:00408",
+        "MOD:00394",
+        "MOD:00449",
+        "MOD:00058"
+      ]
+    },
+    {
+      "value": "Oxidation (Met)",
+      "evidence": "variable modifications were acetyl, Met-loss, or Met-loss+acetyl (protein N-term), Oxidation (Met).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.766,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "TMTpro (Lys)",
+      "evidence": "For poly-ubiquitylomics, TMTpro (Lys) and GlyGly+TMTpro (Lys) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01602",
+      "ontology_name": "S-(L-lysyl)-L-methionine sulfilimine",
+      "similarity": 0.711,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "S-lysyl-methionine"
+    },
+    {
+      "value": "GlyGly+TMTpro (Lys)",
+      "evidence": "For poly-ubiquitylomics, TMTpro (Lys) and GlyGly+TMTpro (Lys) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01982",
+      "ontology_name": "N,N,N-trimethylglycine",
+      "similarity": 0.709,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N2Me3+Gly"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "50 \u00b5g of protein was reduced and alkylated with 10 mM TCEP (5 min, 80 \u00b0C) and 40 mM 2-chloroacetamide (15 min, room temperature)"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "50 \u00b5g of protein was reduced and alkylated with 10 mM TCEP (5 min, 80 \u00b0C) and 40 mM 2-chloroacetamide (15 min, room temperature)"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.986,
+    "evidence_score": 0.972,
+    "completeness": 1.0,
+    "format_score": 1.0
+  }
+}

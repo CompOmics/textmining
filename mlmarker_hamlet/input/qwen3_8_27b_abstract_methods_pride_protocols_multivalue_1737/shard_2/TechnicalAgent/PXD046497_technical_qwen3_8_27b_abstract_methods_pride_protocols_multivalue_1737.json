@@ -1,0 +1,160 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The mass spectrometer was configured for data-dependent acquisition mode using the full MS/DD\u2013MS/MS setup."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Gel-based experiment; Affinity purification coupled with mass spectrometry proteomics; Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "followed by 20\u00a0mM iodoacetamide treatment for another 1.5\u00a0h in the dark."
+    },
+    {
+      "value": "50 mM",
+      "evidence": "subjected to in-gel reduction and alkylation with 20\u00a0mM DTT for 30\u00a0min and 50\u00a0mM iodoacetamide for another 30\u00a0min."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "followed by 20\u00a0mM iodoacetamide treatment for another 1.5\u00a0h in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "digested with 130\u00a0ng of trypsin (Promega) in ABC buffer (100\u00a0\u03bcl) at 37 \u00b0C overnight."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28%",
+      "evidence": "The normalized collision energy was set at 28%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "antibody",
+      "evidence": "affinity purification was performed as described above for co-immunoprecipitation."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "subjected to fractionation with SCX StageTips for LC-MS/MS analysis."
+    },
+    {
+      "value": "Gel-based",
+      "evidence": "experiment types: Gel-based experiment; Affinity purification coupled with mass spectrometry proteomics; Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "inferred: The normalized collision energy was set at 28%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: The mass spectrometer was configured for data-dependent acquisition mode using the full MS/DD\u2013MS/MS setup."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "Label-free quantification (LFQ) was performed with the label-free MaxLFQ algorithm in the MaxQuant software as described."
+    },
+    {
+      "value": "Normalized Spectral Abundance Factor - NSAF",
+      "evidence": "quantification: Normalized Spectral Abundance Factor - NSAF"
+    },
+    {
+      "value": "SILAC",
+      "evidence": "For SILAC experiments, arginine- and lysine-deficient DMEM (ThermoFisher) supplemented with 10% dialyzed FBS (ThermoFisher) was used."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: The LC-MS/MS analysis was conducted using an EASY-nLC 1200 system (ThermoFisher) coupled to a Q Exactive HF-X Hybrid Quadrupole-Orbitrap mass spectrometer (ThermoFisher)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Carbamidomethylation of cysteine was selected as a fixed modification, while methionine oxidation and N-terminal acetylation were set as variable modifications."
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Carbamidomethylation of cysteine was selected as a fixed modification, while methionine oxidation and N-terminal acetylation were set as variable modifications."
+    },
+    {
+      "value": "acetylation",
+      "evidence": "Carbamidomethylation of cysteine was selected as a fixed modification, while methionine oxidation and N-terminal acetylation were set as variable modifications."
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "treated with 10\u00a0mM DTT for 1.5\u00a0h, followed by 20\u00a0mM iodoacetamide treatment for another 1.5\u00a0h in the dark."
+    },
+    {
+      "value": "20 mM",
+      "evidence": "subjected to in-gel reduction and alkylation with 20\u00a0mM DTT for 30\u00a0min and 50\u00a0mM iodoacetamide for another 30\u00a0min."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "treated with 10\u00a0mM DTT for 1.5\u00a0h, followed by 20\u00a0mM iodoacetamide treatment for another 1.5\u00a0h in the dark."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.927,
+    "evidence_score": 0.854,
+    "completeness": 1.0,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "20 mM",
+      "evidence": "followed by 20\u00a0mM iodoacetamide treatment for another 1.5\u00a0h in the dark."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[1]",
+      "value": "50 mM",
+      "evidence": "subjected to in-gel reduction and alkylation with 20\u00a0mM DTT for 30\u00a0min and 50\u00a0mM iodoacetamide for another 30\u00a0min."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "10 mM",
+      "evidence": "treated with 10\u00a0mM DTT for 1.5\u00a0h, followed by 20\u00a0mM iodoacetamide treatment for another 1.5\u00a0h in the dark."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[1]",
+      "value": "20 mM",
+      "evidence": "subjected to in-gel reduction and alkylation with 20\u00a0mM DTT for 30\u00a0min and 50\u00a0mM iodoacetamide for another 30\u00a0min."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The mass spectrometer was operated in the data-dependent mode to automatically switch between MS and MS/MS acquisition."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "50 \u00b5l of ammonium bicarbonate buffer with 1 \u00b5g trypsin (Promega) was added to each sample and samples were incubated overnight at 37\u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "25%",
+      "evidence": "General mass spectrometry conditions were: electrospray voltage 2.1 kV; no sheath and auxiliary gas flow, heated capillary temperature of 250oC, normalized HCD collision energy 25%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "affinity",
+      "evidence": "Each GelFree fraction was subsequently bound to 15 \u00b5l streptavidin-sepharose beads and processed in a 96-well PCR plate."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "gel",
+      "evidence": "The samples were fractionated using GelFree 8100 instrument in 5, 8 and 10% gel cassettes."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The method used allowed sequential isolation of the most intense multiply-charged ions, up to ten, depending on signal intensity, for fragmentation on the HCD cell using high-energy collision dissociation at a target value of 100,000 charges or maximum acquisition time of 100 ms."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "General mass spectrometry conditions were: electrospray voltage 2.1 kV; no sheath and auxiliary gas flow, heated capillary temperature of 250oC, normalized HCD collision energy 25%."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "SILAC",
+      "evidence": "Cell lines used in this project were labeled with SILAC amino acids."
+    },
+    {
+      "value": "Spectrum counting",
+      "evidence": "quantification: Spectrum counting"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Q Exactive"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "protein N-acetylation",
+      "evidence": "Parameters were set as follows: no fixed modification; protein N-acetylation and methionine oxidation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.945,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "Parameters were set as follows: no fixed modification; protein N-acetylation and methionine oxidation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "isotope labeled residue",
+      "evidence": "modifications: isotope labeled residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00702",
+      "ontology_name": "isotope labeled residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "isotope labeled residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.894,
+    "evidence_score": 0.878,
+    "completeness": 0.778,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "collision_energy[0]",
+      "value": "25%",
+      "evidence": "General mass spectrometry conditions were: electrospray voltage 2.1 kV; no sheath and auxiliary gas flow, heated capillary temperature of 250oC, normalized HCD collision energy 25%."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "ptm[0]",
+      "value": "protein N-acetylation",
+      "evidence": "Parameters were set as follows: no fixed modification; protein N-acetylation and methionine oxidation as variable modifications."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "ptm[1]",
+      "value": "methionine oxidation",
+      "evidence": "Parameters were set as follows: no fixed modification; protein N-acetylation and methionine oxidation as variable modifications."
+    }
+  ]
+}

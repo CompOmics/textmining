@@ -1,0 +1,88 @@
+{
+  "acquisition_method": [
+    "Data-independent acquisition",
+    "experiment types: Data-independent acquisition; Bottom-up proteomics"
+  ],
+  "alkylation_concentration": [
+    "unknown",
+    ""
+  ],
+  "alkylation_reagent": [
+    "unknown",
+    ""
+  ],
+  "cleavage_agent": [
+    "lysyl endopeptidase and 20 ng/\u00b5l trypsin56",
+    "fresh medium was added to dilute the tryplE and cells were centrifuged at 400 x g for 3 min then washed twice with Phosphate Buffered Saline (PBS) (Gibco) with centrifugation in-between, before being resuspended in degassed PBS with thorough pipetting."
+  ],
+  "collision_energy": [
+    "27% NCE",
+    "The isolated ions were fragmented using HCD with 27% NCE."
+  ],
+  "enrichment_method": [
+    "unknown",
+    ""
+  ],
+  "fractionation_method": [
+    "unknown",
+    ""
+  ],
+  "fragmentation_method": [
+    "HCD",
+    "The isolated ions were fragmented using HCD with 27% NCE."
+  ],
+  "ionization_type": [
+    "EASY-Spray\u2122 source",
+    "Samples were analyzed in 40SPD (31-min gradient) using a commercial analytical column (Aurora Elite TS, IonOpticks) interfaced online using an EASY-Spray\u2122 source."
+  ],
+  "labeling": [
+    "SILAC",
+    "In this study, we employed a pulsed stable isotope labeling by amino acids in cell culture (SILAC) approach to simultaneously evaluate protein abundance and turnover in single cells (SC-pSILAC)."
+  ],
+  "mass_analyzer": [
+    "Orbitrap",
+    "Evotips containing the samples were loaded on an Evosep One (EvoSep Biosystems) LC system connected to an Orbitrap Astral MS (ThermoFischer Scientific)."
+  ],
+  "reduction_concentration": [
+    "unknown",
+    ""
+  ],
+  "reduction_reagent": [
+    "unknown",
+    ""
+  ],
+  "_confidence": {
+    "overall": 0.91,
+    "evidence_score": 0.98,
+    "completeness": 0.6,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "ptm",
+      "value": "Lys8 and Arg10",
+      "evidence": "Default settings were used, except that \u201cchannel1\u201d was added with no modification and \u201cchannel2\u201d with Lys8 and Arg10 and that carbamidomethylation was not included in the fixed modifications."
+    }
+  ],
+  "instrument": {
+    "value": "Orbitrap Astral",
+    "evidence": "Evotips containing the samples were loaded on an Evosep One (EvoSep Biosystems) LC system connected to an Orbitrap Astral MS (ThermoFischer Scientific).",
+    "is_normalized": true,
+    "ontology_id": "MS:1003378",
+    "ontology_name": "Orbitrap Astral",
+    "similarity": 1.0,
+    "normalization_method": "exact_primary",
+    "normalization_matched_text": "Orbitrap Astral"
+  },
+  "ptm": {
+    "value": "Lys8 and Arg10",
+    "evidence": "Default settings were used, except that \u201cchannel1\u201d was added with no modification and \u201cchannel2\u201d with Lys8 and Arg10 and that carbamidomethylation was not included in the fixed modifications.",
+    "is_normalized": true,
+    "ontology_id": "MOD:00283",
+    "ontology_name": "N6-propylamino-poly(propylmethylamino)-propyldimethylamine-L-lysine",
+    "similarity": 0.703,
+    "normalization_method": "semantic",
+    "normalization_matched_text": "lysine derivative Lys(x)"
+  }
+}

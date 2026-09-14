@@ -1,0 +1,219 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "40 mM",
+      "evidence": "resuspended in ice-cold lysis buffer containing 0.2 M EPPS (pH 8.0), 6 M guanidine, 10 mM TCEP (Thermo Fisher Scientific), and 40 mM 2-chloroacetamide (Sigma-Aldrich)."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "2-chloroacetamide",
+      "evidence": "resuspended in ice-cold lysis buffer containing 0.2 M EPPS (pH 8.0), 6 M guanidine, 10 mM TCEP (Thermo Fisher Scientific), and 40 mM 2-chloroacetamide (Sigma-Aldrich)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Labeled proteins in samples were digested by adding trypsin or chymotrypsin (Promega, 1:50 enzyme-to-substrate ratio) and incubating overnight at 25C with end-over-end rotation."
+    },
+    {
+      "value": "chymotrypsin",
+      "evidence": "Labeled proteins in samples were digested by adding trypsin or chymotrypsin (Promega, 1:50 enzyme-to-substrate ratio) and incubating overnight at 25C with end-over-end rotation."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27% normalized collision energy",
+      "evidence": "Up to 12 of the most abundant precursors (topN) were selected for HCD fragmentation at 27% normalized collision energy (NCE)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "iNrich method",
+      "evidence": "N-terminal enrichment was performed by iNrich method (10.1021/acs.analchem.9b05653)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "bRPLC",
+      "evidence": "For basic reversed phase liquid chromatography (bRPLC) of N-terminal peptide samples, 100 \u03bcg peptides were reconstituted in bRPLC solvent A (10 mM ammonium formate, pH 10) and loaded onto a XBridge BEH C18 RPLC column, 130\u00c5, 3.5 \u03bcm (4.6 * 250 mm) and coupled to a 1290 UHPLC system (Agilent)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Up to 12 of the most abundant precursors (topN) were selected for HCD fragmentation at 27% normalized collision energy (NCE)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TIC",
+      "evidence": "quantification: TIC"
+    },
+    {
+      "value": "label-free",
+      "evidence": "Minora feature detector module was used to perform an LFQ."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: MS1 spectra were recorded in the Orbitrap from 400 to 1800 m/z at a resolution of 70,000 and using an automatic gain control (AGC) target value of 1e6 charges and a maximum injection time (maxIT) of 30 ms."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "These included for all searches: carbamidomethylation of cysteine and D3\uf02dacetylation of lysine as fixed modification, oxidation of methionine; cleavage specificity was set to amino terminal specific; precursor tolerance was set to \u00b110 ppm and fragment ion tolerance to \u00b10.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "D3acetylation",
+      "evidence": "These included for all searches: carbamidomethylation of cysteine and D3\uf02dacetylation of lysine as fixed modification, oxidation of methionine; cleavage specificity was set to amino terminal specific; precursor tolerance was set to \u00b110 ppm and fragment ion tolerance to \u00b10.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Acetylation",
+      "normalization_candidate_ids": [
+        "MOD:00369",
+        "MOD:00394",
+        "MOD:00065",
+        "MOD:00064",
+        "MOD:00061"
+      ]
+    },
+    {
+      "value": "oxidation",
+      "evidence": "These included for all searches: carbamidomethylation of cysteine and D3\uf02dacetylation of lysine as fixed modification, oxidation of methionine; cleavage specificity was set to amino terminal specific; precursor tolerance was set to \u00b110 ppm and fragment ion tolerance to \u00b10.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "For Parameters included for the first search part of tandem database searching: N-terminal acetylation and N-terminal D3\uf02dacetylation as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "N-terminal D3acetylation",
+      "evidence": "For Parameters included for the first search part of tandem database searching: N-terminal acetylation and N-terminal D3\uf02dacetylation as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00592",
+      "ontology_name": "sulfonation of N-terminal",
+      "similarity": 0.74,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "sulfonation of N-terminal"
+    },
+    {
+      "value": "pyro-glutamation",
+      "evidence": "Parameters included for the second search part of tandem database searching: pyro-glutamation at N-terminal glutamate, D3-acetyl-arginylation (+201.1305 Da) at N-terminal aspartate and glutamate, and D3-acetyl-arginylation-deamidation (+202.1145 Da) at N-terminal asparagine and glutamine as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00040",
+      "ontology_name": "2-pyrrolidone-5-carboxylic acid (Gln)",
+      "similarity": 0.758,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Pyroglutamic Acid formed from Gln"
+    },
+    {
+      "value": "D3-acetyl-arginylation",
+      "evidence": "Parameters included for the second search part of tandem database searching: pyro-glutamation at N-terminal glutamate, D3-acetyl-arginylation (+201.1305 Da) at N-terminal aspartate and glutamate, and D3-acetyl-arginylation-deamidation (+202.1145 Da) at N-terminal asparagine and glutamine as variable modification.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Arginine oxidation to glutamic semialdehyde",
+      "normalization_candidate_ids": [
+        "MOD:00479",
+        "MOD:00429",
+        "MOD:00177",
+        "MOD:00242"
+      ]
+    },
+    {
+      "value": "D3-acetyl-arginylation-deamidation",
+      "evidence": "Parameters included for the second search part of tandem database searching: pyro-glutamation at N-terminal glutamate, D3-acetyl-arginylation (+201.1305 Da) at N-terminal aspartate and glutamate, and D3-acetyl-arginylation-deamidation (+202.1145 Da) at N-terminal asparagine and glutamine as variable modification.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation followed by a methylation",
+      "normalization_candidate_ids": [
+        "MOD:01337",
+        "MOD:01369",
+        "MOD:00657",
+        "MOD:00400",
+        "MOD:00791"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "resuspended in ice-cold lysis buffer containing 0.2 M EPPS (pH 8.0), 6 M guanidine, 10 mM TCEP (Thermo Fisher Scientific), and 40 mM 2-chloroacetamide (Sigma-Aldrich)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "resuspended in ice-cold lysis buffer containing 0.2 M EPPS (pH 8.0), 6 M guanidine, 10 mM TCEP (Thermo Fisher Scientific), and 40 mM 2-chloroacetamide (Sigma-Aldrich)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.944,
+    "evidence_score": 0.904,
+    "completeness": 0.962,
+    "format_score": 1.0
+  }
+}

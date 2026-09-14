@@ -1,0 +1,186 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "data-dependent acquisition",
+      "evidence": "Peptides were analysed on an Orbitrap Exploris 480 mass spectrometer operated in data-dependent acquisition mode, coupled to an UltiMate 3000 UHPLC system."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "Proteins were reduced in 10 mM dithiothreitol and then alkylated in 20 mM iodoacetamide."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Proteins were reduced in 10 mM dithiothreitol and then alkylated in 20 mM iodoacetamide."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "The samples were digested with Lys-C and trypsin, then split into two parts: for ubiquitination analysis and phosphoproteome with subsequent proteome analysis."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "The samples were digested with Lys-C and trypsin, then split into two parts: for ubiquitination analysis and phosphoproteome with subsequent proteome analysis."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "antibody",
+      "evidence": "Immuno-affinity purification with ubiquitin branch motif (K-\u03b5-GG) antibody bead conjugate was used for ubiquitinated peptide enrichment, IMAC - for phosphopeptide enrichment."
+    },
+    {
+      "value": "IMAC",
+      "evidence": "Immuno-affinity purification with ubiquitin branch motif (K-\u03b5-GG) antibody bead conjugate was used for ubiquitinated peptide enrichment, IMAC - for phosphopeptide enrichment."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "higher energy collisional dissociation",
+      "evidence": "Multiply charged precursor ions were fragmented using higher energy collisional dissociation."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "Label free",
+      "evidence": "quantification: Label free"
+    },
+    {
+      "value": "label-free",
+      "evidence": "For all files standard parameter settings were used with enabled the label-free quantification (LFQ) algorithm."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Exploris 480"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: phosphorylated residue; ubiquitination signature dipeptidyl lysine",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "ubiquitination signature dipeptidyl lysine",
+      "evidence": "modifications: phosphorylated residue; ubiquitination signature dipeptidyl lysine",
+      "is_normalized": true,
+      "ontology_id": "MOD:00492",
+      "ontology_name": "ubiquitination signature dipeptidyl lysine",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "ubiquitination signature dipeptidyl lysine"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation was included as a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "acetylation",
+      "evidence": "Protein N-terminal acetylation and methionine oxidation were allowed as variable modifications for all searches, while GlyGly (K) was also included for ubiquitinome, Phospho (STY) \u2013 for phosphoproteome.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:1",
+      "ontology_name": "Acetyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Acetyl"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "Protein N-terminal acetylation and methionine oxidation were allowed as variable modifications for all searches, while GlyGly (K) was also included for ubiquitinome, Phospho (STY) \u2013 for phosphoproteome.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "Phospho (STY)",
+      "evidence": "Protein N-terminal acetylation and methionine oxidation were allowed as variable modifications for all searches, while GlyGly (K) was also included for ubiquitinome, Phospho (STY) \u2013 for phosphoproteome.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00048",
+      "ontology_name": "O4'-phospho-L-tyrosine",
+      "similarity": 0.761,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Phospho Tyrosinyl"
+    },
+    {
+      "value": "GlyGly (K)",
+      "evidence": "Protein N-terminal acetylation and methionine oxidation were allowed as variable modifications for all searches, while GlyGly (K) was also included for ubiquitinome, Phospho (STY) \u2013 for phosphoproteome.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00492",
+      "ontology_name": "ubiquitination signature dipeptidyl lysine",
+      "similarity": 0.836,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "GlyGly"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Proteins were reduced in 10 mM dithiothreitol and then alkylated in 20 mM iodoacetamide."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "Proteins were reduced in 10 mM dithiothreitol and then alkylated in 20 mM iodoacetamide."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.958,
+    "evidence_score": 0.964,
+    "completeness": 0.88,
+    "format_score": 1.0
+  }
+}

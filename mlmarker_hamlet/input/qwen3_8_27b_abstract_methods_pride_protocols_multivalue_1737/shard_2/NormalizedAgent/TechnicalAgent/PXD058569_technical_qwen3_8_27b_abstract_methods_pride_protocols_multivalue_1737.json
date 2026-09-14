@@ -1,0 +1,180 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "55 mM",
+      "evidence": "Sample preparation for Proteome analysis  Proteins were reduced with 10mM DTT and subsequently alkylated in the dark with 55 mM Iodoacetamide, both reactions were  carried out at room temperature."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "Iodoacetamide",
+      "evidence": "Sample preparation for Proteome analysis  Proteins were reduced with 10mM DTT and subsequently alkylated in the dark with 55 mM Iodoacetamide, both reactions were  carried out at room temperature."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Endoproteinase Lys-C",
+      "evidence": "Washed  pellets were reconstituted in 50 \u00b5l of HEPES 200 mM and digested first with Endoproteinase Lys-C (ratio 1:33 enzyme:lysate) for  one hour, followed by a trypsin, overnight (ratio 1:33 enzyme:lysate)."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Washed  pellets were reconstituted in 50 \u00b5l of HEPES 200 mM and digested first with Endoproteinase Lys-C (ratio 1:33 enzyme:lysate) for  one hour, followed by a trypsin, overnight (ratio 1:33 enzyme:lysate)."
+    },
+    {
+      "value": "Lys-C",
+      "evidence": "Three biological replicates were digested with Lys-C (Alpha Laboratories) and trypsin (Promega) on beads as previously described (Hubner, N.C. et al. J Cell Biol - 2010) and desalted using StageTip."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high pH reverse phase chromatography",
+      "evidence": "TMT-labelled peptides were fractionated using high pH reverse phase chromatography on a C18 column (150 \u00d7 2.1 mm i.d. - Kinetex  EVO (5 \u03bcm, 100 \u00c5)) on a HPLC system (Agilent, LC 1260 Infinity II, Agilent)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "Higher energy collisional dissociation",
+      "evidence": "Higher energy collisional dissociation  fragmentation was performed on the 20 most intense ions selected within an isolation window of 0.8 m/z."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoelectrospray ion",
+      "evidence": "For both systems the packed emitter was kept at 50\u2009\u00b0C by means of a column oven (Sonation) integrated into the  nanoelectrospray ion source (Thermo Scientific), and the Xcalibur software (Thermo Scientific) was used for data acquisition."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    },
+    {
+      "value": "TMT10-plex reagent",
+      "evidence": "The digested peptides from each experiment were differentially labelled using TMT10-plex reagent (Thermo Scientific)."
+    },
+    {
+      "value": "TMT10plex",
+      "evidence": "For the proteome  analysis, MaxQuant was set to quantify on \u201cReporter ion MS2\u201d, and TMT10plex was chose as Isobaric label."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: UHPLC-MS/MS analysis Peptides resulting from all samples were separated by nanoscale C18 reverse-phase liquid chromatography using an EASY-nLC II  1200 (Thermo Scientific) coupled to an Orbitrap Q-Exactive HF (Thermo Scientific) for proteome samples, or to an Orbitrap  Fusion Lumos (Thermo Scientific) for the IP-MS samples."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "Carbamidomethylation",
+      "evidence": "Modification by iodoacetamide on Cysteine residues (Carbamidomethylation) were specified  as fixed, whereas Methionine oxidation and N-terminal acetylation modifications were specified as variable.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "Methionine oxidation",
+      "evidence": "Modification by iodoacetamide on Cysteine residues (Carbamidomethylation) were specified  as fixed, whereas Methionine oxidation and N-terminal acetylation modifications were specified as variable.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "Modification by iodoacetamide on Cysteine residues (Carbamidomethylation) were specified  as fixed, whereas Methionine oxidation and N-terminal acetylation modifications were specified as variable.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10mM",
+      "evidence": "Sample preparation for Proteome analysis  Proteins were reduced with 10mM DTT and subsequently alkylated in the dark with 55 mM Iodoacetamide, both reactions were  carried out at room temperature."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Sample preparation for Proteome analysis  Proteins were reduced with 10mM DTT and subsequently alkylated in the dark with 55 mM Iodoacetamide, both reactions were  carried out at room temperature."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.966,
+    "evidence_score": 0.964,
+    "completeness": 0.92,
+    "format_score": 1.0
+  }
+}

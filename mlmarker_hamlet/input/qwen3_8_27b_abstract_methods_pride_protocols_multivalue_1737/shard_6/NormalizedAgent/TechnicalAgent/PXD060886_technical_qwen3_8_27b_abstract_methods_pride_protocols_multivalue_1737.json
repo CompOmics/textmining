@@ -1,0 +1,152 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DIA",
+      "evidence": "Data were acquired using the data-independent acquisition (DIA) mode."
+    },
+    {
+      "value": "Data-independent acquisition",
+      "evidence": "experiment types: Data-independent acquisition; Bottom-up proteomics"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "The default search parameters included an allowance for one missed cleavage by trypsin/P, with fixed modifications for N-terminal methionine excision and carbamidomethylation of cysteine residues."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "normalized collision energy of 28%",
+      "evidence": "Ions were fragmented in the higher-energy collisional dissociation (HCD) cell with a normalized collision energy of 28%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "antibody",
+      "evidence": "unknown"
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Ions were fragmented in the higher-energy collisional dissociation (HCD) cell with a normalized collision energy of 28%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q-Exactive",
+      "evidence": "10% of the sample was analyzed by LC\u2013MS/MS using Dionex Ultimate 3000 Ultra-Performance Liquid Chromatography (UPLC) coupled to a Q-Exactive mass spectrometer (Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 0.98,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive"
+    },
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "unknown"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "quantification: label-free quantification"
+    },
+    {
+      "value": "label-free",
+      "evidence": "inferred: Data were analyzed using DIA-NN 1.8.2 in a library-free mode, employing the UniProt Homo sapiens FASTA database (20,370 entries, retrieved on April 16, 2021)."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Full MS scans were acquired in the Orbitrap mass analyzer over an m/z scan range between 495 and 995 at a resolution of 35 K with an AGC target at 3e6 ions and a maximum injection time of 55 msec."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "The default search parameters included an allowance for one missed cleavage by trypsin/P, with fixed modifications for N-terminal methionine excision and carbamidomethylation of cysteine residues.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "Biotinylated proteins were eluted by boiling the beads in 100 \u03bcL of 3X NuPAGE\u2122 LDS Sample Buffer (Thermo) supplemented with 2 mM biotin (Sigma) and 20 mM DTT (Thermo) at 98 \u00b0C for 10 min."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Biotinylated proteins were eluted by boiling the beads in 100 \u03bcL of 3X NuPAGE\u2122 LDS Sample Buffer (Thermo) supplemented with 2 mM biotin (Sigma) and 20 mM DTT (Thermo) at 98 \u00b0C for 10 min."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "enrichment_method",
+      "value": "antibody",
+      "evidence": "unknown",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "ionization_type",
+      "value": "ESI",
+      "evidence": "unknown",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.939,
+    "evidence_score": 0.942,
+    "completeness": 0.842,
+    "format_score": 1.0
+  }
+}

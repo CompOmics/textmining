@@ -1,0 +1,147 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "After 30 minutes, iodoacetamide (IAA) was added to a final concentration of 10 mM and incubated at room temperature in the dark while shaking moderately."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide (IAA)",
+      "evidence": "After 30 minutes, iodoacetamide (IAA) was added to a final concentration of 10 mM and incubated at room temperature in the dark while shaking moderately."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Beads were resuspended in80 \u03bcL of 2M urea in 50 mM Tris-HCl (pH 8.0), containing 1 mM DTT and 0.4 \u03bcg trypsin at room temperature while shaking moderately."
+    },
+    {
+      "value": "Trypsin/P",
+      "evidence": "Trypsin/P was set as the digestion enzyme, and up to two missed cleavages were permitted."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28",
+      "evidence": "Up to 12 MS2 spectra per duty cycle were triggered at a resolution of 60,000, an AGC target of 1e5, an isolation window of 0.8 m/z, a normalized collision energy of 28, a scan range of 200 to 2000 m/z, and a fixed first mass of 110 m/z."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "antibody",
+      "evidence": "1500 \u00b5g of protein was used in an immuno-precipitation using 75 \u00b5L of magnetic anti-Streptavidin beads."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "inferred: Up to 12 MS2 spectra per duty cycle were triggered at a resolution of 60,000, an AGC target of 1e5, an isolation window of 0.8 m/z, a normalized collision energy of 28, a scan range of 200 to 2000 m/z, and a fixed first mass of 110 m/z."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: All raw data were analyzed with SpectroMine software version 4.2.230428 using a UniProt database (Homo sapiens, UP000005640)."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Q Exactive HF"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    },
+    {
+      "value": "Carbamidomethylation on cysteines",
+      "evidence": "Carbamidomethylation on cysteines was set as a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.775,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "Oxidation of methionine",
+      "evidence": "Oxidation of methionine and protein N-terminal acetylation were set as variable modifications, with a maximum of 5 variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "protein N-terminal acetylation",
+      "evidence": "Oxidation of methionine and protein N-terminal acetylation were set as variable modifications, with a maximum of 5 variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.895,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "4 mM",
+      "evidence": "Dithiothreitol (DTT) was added to a final concentration of 4 mM, and incubated at room temperature while shaking moderately."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "Dithiothreitol (DTT)",
+      "evidence": "Dithiothreitol (DTT) was added to a final concentration of 4 mM, and incubated at room temperature while shaking moderately."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.929,
+    "evidence_score": 0.9,
+    "completeness": 0.895,
+    "format_score": 1.0
+  }
+}

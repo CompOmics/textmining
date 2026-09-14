@@ -1,0 +1,176 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data dependent acquisition",
+      "evidence": "Mass spectrometry data was acquired on Orbitrap Exploris 480 mass spectrometer (Thermo Scientific) coupled with an UltiMate 3000 RSLC Nano LC system (Dionex), Nanospray Flex ion source (Thermo Scientific), and column oven heater (Sonation)in data dependent acquisition mode."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "antibody",
+      "evidence": "MHC-I complex was enriched with murine anti-H2-Kb and H2-Db antibodies immobilized to ProteinA Sepharose beads."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "fractionation column",
+      "evidence": "Samples were lyophilized, TMT labeled and fractionated using homemade fractionation column."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "Nanospray Flex ion source",
+      "evidence": "Mass spectrometry data was acquired on Orbitrap Exploris 480 mass spectrometer (Thermo Scientific) coupled with an UltiMate 3000 RSLC Nano LC system (Dionex), Nanospray Flex ion source (Thermo Scientific), and column oven heater (Sonation)in data dependent acquisition mode."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Exploris 480"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "oxidized methionine",
+      "evidence": "No enzyme was used, variable modifications included oxidized methionine for all analyses, and static modifications included Carbamidomethyl, TMTpro on Lysine and N-terminus.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00719",
+      "ontology_name": "L-methionine sulfoxide",
+      "similarity": 0.852,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "L-methionine S-oxide"
+    },
+    {
+      "value": "Carbamidomethyl",
+      "evidence": "No enzyme was used, variable modifications included oxidized methionine for all analyses, and static modifications included Carbamidomethyl, TMTpro on Lysine and N-terminus.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "cleavage_agent",
+      "value": "unknown",
+      "evidence": "",
+      "reason": "evidence was cleared from an unknown value"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.918,
+    "evidence_score": 0.955,
+    "completeness": 0.7,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "ptm[3]",
+      "value": "oxidized methionine",
+      "evidence": "No enzyme was used, variable modifications included oxidized methionine for all analyses, and static modifications included Carbamidomethyl, TMTpro on Lysine and N-terminus."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "ptm[4]",
+      "value": "Carbamidomethyl",
+      "evidence": "No enzyme was used, variable modifications included oxidized methionine for all analyses, and static modifications included Carbamidomethyl, TMTpro on Lysine and N-terminus."
+    }
+  ]
+}

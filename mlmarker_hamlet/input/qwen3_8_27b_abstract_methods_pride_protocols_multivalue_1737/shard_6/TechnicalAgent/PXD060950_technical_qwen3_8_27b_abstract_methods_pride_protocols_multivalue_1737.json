@@ -1,0 +1,162 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Proteome MS data were collected with an Orbitrap Exploris 480 instrument (Thermo) using high-energy collisional dissociation (HCD) fragmentation in data-dependent acquisition (DDA) mode."
+    },
+    {
+      "value": "DIA",
+      "evidence": "Phosphoproteome analysis was performed using data-independent acquisition (DIA) with HCD fragmentation, in positive polarity mode with spray voltage at 1.8 kV, RF level at 40, and heated capillary temperature at 275 \u00b0C."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "with denaturing guanidinium-HCl lysis buffer (6M guanidine-HCl (G3272; Sigma Aldrich), 50 mM Tris pH 8.5) supplemented with 5 mM tris(2-carboxyethyl)phosphine (TCEP; C4706, Sigma Aldrich) and 10 mM chloroacetamide (CAA; 22790, Sigma Aldrich)."
+    },
+    {
+      "value": "5 mM",
+      "evidence": "Lysates were slowly thawed at room temperature, treated with 5 mM TCEP (C4706, Sigma Aldrich) and 5 mM CAA (22790, Sigma Aldrich), and sonicated on ice for 45 s at 60% amplitude."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "chloroacetamide",
+      "evidence": "with denaturing guanidinium-HCl lysis buffer (6M guanidine-HCl (G3272; Sigma Aldrich), 50 mM Tris pH 8.5) supplemented with 5 mM tris(2-carboxyethyl)phosphine (TCEP; C4706, Sigma Aldrich) and 10 mM chloroacetamide (CAA; 22790, Sigma Aldrich)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "Lys-C endopeptidase (1:200 w/w; Wako Chemicals) was added to lysates for 3 h, followed by overnight incubation with modified sequencing-grade Trypsin (1:200 w/w; Sigma Aldrich) after diluting to 1.5 M GndHCl with 25 mM Tris pH 8.5."
+    },
+    {
+      "value": "Trypsin",
+      "evidence": "Lys-C endopeptidase (1:200 w/w; Wako Chemicals) was added to lysates for 3 h, followed by overnight incubation with modified sequencing-grade Trypsin (1:200 w/w; Sigma Aldrich) after diluting to 1.5 M GndHCl with 25 mM Tris pH 8.5."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "25%",
+      "evidence": "For proteome samples, the precursor isolation width was set to 1.3 m/z, normalized AGC target set to \u201c200\u201d, and precursors were fragmented using HCD with a normalized collision energy (NCE) of 25%."
+    },
+    {
+      "value": "20%",
+      "evidence": "Precursor isolation width for ADPr samples was 1.3 m/z, normalized AGC target was \u201c400\u201d, and precursors were fragmented using EThcD with 20% NCE."
+    },
+    {
+      "value": "27%",
+      "evidence": "Resolution was set to 30,000 with an injection time of 54 ms, and normalized collision energy was set to 27%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "ZrIMAC-HP",
+      "evidence": "using 5 \u03bcl of ZrIMAC-HP beads (MagResyn, Resyn BioSciences) per sample."
+    },
+    {
+      "value": "GST-tagged Af1521 macrodomain beads",
+      "evidence": "GST-tagged Af1521 macrodomain beads, produced in-house using BL21(DE3) bacteria and coupled to glutathione Sepharose 4B beads (Sigma-Aldrich), essentially as previously described, were added to peptides (100 \u03bcl dry beads per 10 mg sample) and incubated in a head-over-tail mixer at 4 \u00b0C for 3 h to enrich for ADPr peptides."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high-pH",
+      "evidence": "Peptides were reconstituted in 50 mM Ammonium bicarbonate (ABC) and separated on an Acuity UPLC Peptide CSH C18 1.7 \u03bcm reversed-phase column (186006935; Waters) under basic conditions."
+    },
+    {
+      "value": "high pH",
+      "evidence": "Peptides were desalted and fractionated on stage tips at high pH into two fractions."
+    },
+    {
+      "value": "low pH",
+      "evidence": "After loading onto stage tips for high pH fractionations, the flowthrough was collected and subjected to low pH stage tip purification."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Proteome MS data were collected with an Orbitrap Exploris 480 instrument (Thermo) using high-energy collisional dissociation (HCD) fragmentation in data-dependent acquisition (DDA) mode."
+    },
+    {
+      "value": "EThcD",
+      "evidence": "ADPr MS data was collected with an Orbitrap Fusion Lumos Tribrid MS (Thermo) using electron-transfer/higher-energy collision dissociation (EThcD) fragmentation in DDA mode."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "Proteome MS data were collected with an Orbitrap Exploris 480 instrument (Thermo) using high-energy collisional dissociation (HCD) fragmentation in data-dependent acquisition (DDA) mode."
+    },
+    {
+      "value": "Orbitrap Fusion Lumos Tribrid MS",
+      "evidence": "ADPr MS data was collected with an Orbitrap Fusion Lumos Tribrid MS (Thermo) using electron-transfer/higher-energy collision dissociation (EThcD) fragmentation in DDA mode."
+    },
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "Electrospray ionization",
+      "evidence": "Electrospray ionization (ESI) was achieved using a NanoSpray Flex NG ion source (Thermo)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "To quantify peptide and protein amounts, label-free quantification (LFQ) via Fast LFQ was enabled with normalization type set to classic."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Proteome MS data were collected with an Orbitrap Exploris 480 instrument (Thermo) using high-energy collisional dissociation (HCD) fragmentation in data-dependent acquisition (DDA) mode."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation was set as a fixed modification, Methionine oxidation and N-terminal acetylation were set as variable modifications, and the maximum modifications per peptide was 5."
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Cysteine carbamidomethylation was set as a fixed modification, Methionine oxidation and N-terminal acetylation were set as variable modifications, and the maximum modifications per peptide was 5."
+    },
+    {
+      "value": "acetylation",
+      "evidence": "Cysteine carbamidomethylation was set as a fixed modification, Methionine oxidation and N-terminal acetylation were set as variable modifications, and the maximum modifications per peptide was 5."
+    },
+    {
+      "value": "ADPr",
+      "evidence": "Methionine oxidation, N-terminal acetylation, cysteine carbamidomethylation, and ADPr on cysteine, aspartic acid, glutamic acid, histidine, lysine, arginine, serine, threonine, and tyrosine residues were set as variable modifications, and the maximum number of modifications per peptide was set to 5."
+    },
+    {
+      "value": "phosphorylation",
+      "evidence": "Cysteine carbamidomethylation was set as a fixed modification, Methionine oxidation, N-terminal acetylation, and phosphorylation on Serine, Threonine, and Tyrosine were set as variable modifications, and up to five modifications per peptide were allowed."
+    },
+    {
+      "value": "adenosine diphosphoribosyl (ADP-ribosyl) modified residue",
+      "evidence": "modifications: adenosine diphosphoribosyl (ADP-ribosyl) modified residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "with denaturing guanidinium-HCl lysis buffer (6M guanidine-HCl (G3272; Sigma Aldrich), 50 mM Tris pH 8.5) supplemented with 5 mM tris(2-carboxyethyl)phosphine (TCEP; C4706, Sigma Aldrich) and 10 mM chloroacetamide (CAA; 22790, Sigma Aldrich)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "tris(2-carboxyethyl)phosphine (TCEP)",
+      "evidence": "with denaturing guanidinium-HCl lysis buffer (6M guanidine-HCl (G3272; Sigma Aldrich), 50 mM Tris pH 8.5) supplemented with 5 mM tris(2-carboxyethyl)phosphine (TCEP; C4706, Sigma Aldrich) and 10 mM chloroacetamide (CAA; 22790, Sigma Aldrich)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.982,
+    "evidence_score": 0.965,
+    "completeness": 1.0,
+    "format_score": 1.0
+  }
+}

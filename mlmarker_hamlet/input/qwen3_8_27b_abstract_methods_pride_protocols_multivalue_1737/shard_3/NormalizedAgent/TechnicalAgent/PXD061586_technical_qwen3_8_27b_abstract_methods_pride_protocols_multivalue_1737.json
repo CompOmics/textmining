@@ -1,0 +1,218 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "25mM iodoacetamide",
+      "evidence": "Reduced disulfide bonds were then alkylated with 25mM iodoacetamide for 30-minute at room temperature in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Reduced disulfide bonds were then alkylated with 25mM iodoacetamide for 30-minute at room temperature in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "The urea concentration was brought to 2M, and proteins were then deglycosylated with PNGaseF for 2 hours at 37\u00b0C and digested sequentially, first with Lys-C for 2 hours at 37\uf0b0C, and then with trypsin, overnight at 37\uf0b0C."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "The urea concentration was brought to 2M, and proteins were then deglycosylated with PNGaseF for 2 hours at 37\u00b0C and digested sequentially, first with Lys-C for 2 hours at 37\uf0b0C, and then with trypsin, overnight at 37\uf0b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28%",
+      "evidence": "The 20 most intense peaks with charge states 2, 3, 4, 5 were fragmented in the HCD collision cell with a normalized collision energy of 28%, these peaks were then excluded for the 45s within a mass window of 1.2 m/z."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The 20 most intense peaks with charge states 2, 3, 4, 5 were fragmented in the HCD collision cell with a normalized collision energy of 28%, these peaks were then excluded for the 45s within a mass window of 1.2 m/z."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: on a quadrupole Orbitrap mass spectrometer Q Exactive HF mass spectrometer coupled to an UltiMate 3000 RSLC nano system with a Nanospray Frex Ion Source (Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: quantification: Relative quantification"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: on a quadrupole Orbitrap mass spectrometer Q Exactive HF mass spectrometer coupled to an UltiMate 3000 RSLC nano system with a Nanospray Frex Ion Source (Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; 2-pyrrolidone-5-carboxylic acid (Gln); deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "2-pyrrolidone-5-carboxylic acid (Gln)",
+      "evidence": "modifications: monohydroxylated residue; 2-pyrrolidone-5-carboxylic acid (Gln); deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00040",
+      "ontology_name": "2-pyrrolidone-5-carboxylic acid (Gln)",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "2-pyrrolidone-5-carboxylic acid (Gln)"
+    },
+    {
+      "value": "deamidated residue",
+      "evidence": "modifications: monohydroxylated residue; 2-pyrrolidone-5-carboxylic acid (Gln); deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "deamidated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; 2-pyrrolidone-5-carboxylic acid (Gln); deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "constant modification on cysteine alkylation",
+      "evidence": "Spectra were searched against the UniProt human database using MaXQuant (version 2.0.3.0)  with the following parameters; parent mass tolerance of 20 ppm, fragment ion mass tolerance of 20ppm, and constant modification on cysteine alkylation, variable modifications on methionine oxidation, deamidation of asparagine, glutamine, N-terminal glutamine to pyroglutamate, and hydroxylation of lysine and proline, the latter two being characteristic post-translational modifications of ECM proteins, in particular collagens and collagen-domain-containing proteins, as we previously reported.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "MOD_RES CysO-cysteine adduct",
+      "normalization_candidate_ids": [
+        "MOD:01778",
+        "MOD:01777",
+        "MOD:00114",
+        "MOD:00110",
+        "MOD:01060"
+      ]
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "Spectra were searched against the UniProt human database using MaXQuant (version 2.0.3.0)  with the following parameters; parent mass tolerance of 20 ppm, fragment ion mass tolerance of 20ppm, and constant modification on cysteine alkylation, variable modifications on methionine oxidation, deamidation of asparagine, glutamine, N-terminal glutamine to pyroglutamate, and hydroxylation of lysine and proline, the latter two being characteristic post-translational modifications of ECM proteins, in particular collagens and collagen-domain-containing proteins, as we previously reported.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "deamidation of asparagine",
+      "evidence": "Spectra were searched against the UniProt human database using MaXQuant (version 2.0.3.0)  with the following parameters; parent mass tolerance of 20 ppm, fragment ion mass tolerance of 20ppm, and constant modification on cysteine alkylation, variable modifications on methionine oxidation, deamidation of asparagine, glutamine, N-terminal glutamine to pyroglutamate, and hydroxylation of lysine and proline, the latter two being characteristic post-translational modifications of ECM proteins, in particular collagens and collagen-domain-containing proteins, as we previously reported.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00684",
+      "ontology_name": "deamidated L-asparagine",
+      "similarity": 0.873,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "deamidated L-asparagine"
+    },
+    {
+      "value": "deamidation of glutamine",
+      "evidence": "Spectra were searched against the UniProt human database using MaXQuant (version 2.0.3.0)  with the following parameters; parent mass tolerance of 20 ppm, fragment ion mass tolerance of 20ppm, and constant modification on cysteine alkylation, variable modifications on methionine oxidation, deamidation of asparagine, glutamine, N-terminal glutamine to pyroglutamate, and hydroxylation of lysine and proline, the latter two being characteristic post-translational modifications of ECM proteins, in particular collagens and collagen-domain-containing proteins, as we previously reported.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 0.86,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation of Asparagine and Glutamine to Aspartate and Glutamate"
+    },
+    {
+      "value": "N-terminal glutamine to pyroglutamate",
+      "evidence": "Spectra were searched against the UniProt human database using MaXQuant (version 2.0.3.0)  with the following parameters; parent mass tolerance of 20 ppm, fragment ion mass tolerance of 20ppm, and constant modification on cysteine alkylation, variable modifications on methionine oxidation, deamidation of asparagine, glutamine, N-terminal glutamine to pyroglutamate, and hydroxylation of lysine and proline, the latter two being characteristic post-translational modifications of ECM proteins, in particular collagens and collagen-domain-containing proteins, as we previously reported.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00040",
+      "ontology_name": "2-pyrrolidone-5-carboxylic acid (Gln)",
+      "similarity": 0.807,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Pyroglutamic Acid formed from Gln"
+    },
+    {
+      "value": "hydroxylation of lysine",
+      "evidence": "Spectra were searched against the UniProt human database using MaXQuant (version 2.0.3.0)  with the following parameters; parent mass tolerance of 20 ppm, fragment ion mass tolerance of 20ppm, and constant modification on cysteine alkylation, variable modifications on methionine oxidation, deamidation of asparagine, glutamine, N-terminal glutamine to pyroglutamate, and hydroxylation of lysine and proline, the latter two being characteristic post-translational modifications of ECM proteins, in particular collagens and collagen-domain-containing proteins, as we previously reported.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00681",
+      "ontology_name": "hydroxylated lysine",
+      "similarity": 0.858,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "hydroxylated lysine"
+    },
+    {
+      "value": "hydroxylation of proline",
+      "evidence": "Spectra were searched against the UniProt human database using MaXQuant (version 2.0.3.0)  with the following parameters; parent mass tolerance of 20 ppm, fragment ion mass tolerance of 20ppm, and constant modification on cysteine alkylation, variable modifications on methionine oxidation, deamidation of asparagine, glutamine, N-terminal glutamine to pyroglutamate, and hydroxylation of lysine and proline, the latter two being characteristic post-translational modifications of ECM proteins, in particular collagens and collagen-domain-containing proteins, as we previously reported.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00287",
+      "ontology_name": "(2S,3R,4S)-3,4-dihydroxyproline",
+      "similarity": 0.864,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "3,4-Dihydroxylation (of Proline)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10mM dithiothreitol",
+      "evidence": "In brief, proteins were solubilized in an 8M urea solution prepared in 100mM NH4HCO3, and protein disulfide bonds were reduced using 10mM dithiothreitol."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "In brief, proteins were solubilized in an 8M urea solution prepared in 100mM NH4HCO3, and protein disulfide bonds were reduced using 10mM dithiothreitol."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.925,
+    "evidence_score": 0.881,
+    "completeness": 0.923,
+    "format_score": 1.0
+  }
+}

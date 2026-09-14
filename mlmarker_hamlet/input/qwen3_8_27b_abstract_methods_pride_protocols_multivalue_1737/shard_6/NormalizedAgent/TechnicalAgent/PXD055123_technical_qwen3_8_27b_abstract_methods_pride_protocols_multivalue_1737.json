@@ -1,0 +1,121 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "inferred: Fixed modifications were set to carbamidomethyl(C) and TMT 10-plex or TMTpro(K, peptide N termini), and variable modifications were set to carbamyl(N-term), carbamyl(K), carbamyl(R) and deamidation(N,Q)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "A549 cell line samples were sham irradiated versus irradiated with 6Gy X-rays, then underwent differential centrifugation, followed by trypsin digestion and labelling with TMT 16-plex."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "Offline fractionation was performed on a Waters UPLC system before LC-MS/MS analysis on a ThermoFisher Orbitrap Fusion Lumos Tribrid."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Fusion Lumos"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.86,
+    "evidence_score": 0.907,
+    "completeness": 0.533,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "cleavage_agent[0]",
+      "value": "trypsin",
+      "evidence": "A549 cell line samples were sham irradiated versus irradiated with 6Gy X-rays, then underwent differential centrifugation, followed by trypsin digestion and labelling with TMT 16-plex."
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM chloroacetamide",
+      "evidence": "After reduction with 5 mM DTT and alkylation with 10 mM chloroacetamide, lysates were digested with 5 ng/\u00b5l Lys-C (Wako) for 1 h at RT."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "chloroacetamide",
+      "evidence": "After reduction with 5 mM DTT and alkylation with 10 mM chloroacetamide, lysates were digested with 5 ng/\u00b5l Lys-C (Wako) for 1 h at RT."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "After reduction with 5 mM DTT and alkylation with 10 mM chloroacetamide, lysates were digested with 5 ng/\u00b5l Lys-C (Wako) for 1 h at RT."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Subsequent digestion of peptides with trypsin (Promega) in 1:200 enzyme: peptide ratio was performed as described in Vill\u00e9n and Gygi."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "antibody",
+      "evidence": "The residual supernatant was incubated with anti-diGly antibody (32 \u00b5g/IP) conjugated to protein A agarose beads (PTMScan\u00ae Ub Remnant Motif Kit, Cell Signaling) for 1 h at 4 \u00b0C."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "inferred: identified in fullMS / ddMS\u00b2 mode."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "Peptides were ionized using a Nanospray Flex Ion Source (Thermo Scientific) and identified in fullMS / ddMS\u00b2 mode."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "Label-free quantification (with a minimum ratio count set to 2), re-quantification and match-between runs was selected."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Q Exactive HF"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: acetylated residue; carbamoylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "carbamoylated residue",
+      "evidence": "modifications: acetylated residue; carbamoylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00398",
+      "ontology_name": "carbamoylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "carbamoylated residue"
+    },
+    {
+      "value": "Methionine oxidation (15.994946)",
+      "evidence": "Methionine oxidation (15.994946), N-terminal protein acetylation (42.010565) and diGly remnant (114.042927; excluded from the C terminus) were set as variable modifications and carbamidomethylation of cysteine as fixed modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00768",
+      "ontology_name": "methionine oxidation with neutral loss of 80 Da",
+      "similarity": 0.838,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "methionine oxidation with neutral loss of 80 Da"
+    },
+    {
+      "value": "N-terminal protein acetylation (42.010565)",
+      "evidence": "Methionine oxidation (15.994946), N-terminal protein acetylation (42.010565) and diGly remnant (114.042927; excluded from the C terminus) were set as variable modifications and carbamidomethylation of cysteine as fixed modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00394",
+      "ontology_name": "monoacetylated residue",
+      "similarity": 0.769,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Acetylation (N terminus, N epsilon of Lysine, O of Serine) (Ac)"
+    },
+    {
+      "value": "diGly remnant (114.042927; excluded from the C terminus)",
+      "evidence": "Methionine oxidation (15.994946), N-terminal protein acetylation (42.010565) and diGly remnant (114.042927; excluded from the C terminus) were set as variable modifications and carbamidomethylation of cysteine as fixed modifications.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "diglutamyl",
+      "normalization_candidate_ids": [
+        "MOD:00873",
+        "MOD:01147",
+        "MOD:02032",
+        "MOD:02034",
+        "MOD:02035"
+      ]
+    },
+    {
+      "value": "carbamidomethylation of cysteine",
+      "evidence": "Methionine oxidation (15.994946), N-terminal protein acetylation (42.010565) and diGly remnant (114.042927; excluded from the C terminus) were set as variable modifications and carbamidomethylation of cysteine as fixed modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01061",
+      "ontology_name": "S-carboxymethyl-L-cysteine",
+      "similarity": 0.803,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl cysteine"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM DTT",
+      "evidence": "After reduction with 5 mM DTT and alkylation with 10 mM chloroacetamide, lysates were digested with 5 ng/\u00b5l Lys-C (Wako) for 1 h at RT."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "After reduction with 5 mM DTT and alkylation with 10 mM chloroacetamide, lysates were digested with 5 ng/\u00b5l Lys-C (Wako) for 1 h at RT."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.931,
+    "evidence_score": 0.9,
+    "completeness": 0.905,
+    "format_score": 1.0
+  }
+}

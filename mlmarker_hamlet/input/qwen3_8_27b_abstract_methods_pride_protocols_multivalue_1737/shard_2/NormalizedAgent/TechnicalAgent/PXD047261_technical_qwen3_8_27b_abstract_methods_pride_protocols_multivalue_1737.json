@@ -1,0 +1,282 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "Both experiments were analyzed in DDA mode."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "40 mM",
+      "evidence": "samples were reduced and alkylated with 10 mm tris(2-carboxyethyl)phosphine (TCEP) and 40 mM 2-Chloroacetamide (CAA), respectively."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "2-Chloroacetamide",
+      "evidence": "samples were reduced and alkylated with 10 mm tris(2-carboxyethyl)phosphine (TCEP) and 40 mM 2-Chloroacetamide (CAA), respectively."
+    },
+    {
+      "value": "iodoacetamide",
+      "evidence": "modifications: monohydroxylated residue; dimethylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "harvested with trypsin (ThermoFisher Scientific, cat. no. 252000560) and pelleted with centrifugation at 800 x g for 5 minutes."
+    },
+    {
+      "value": "GluC",
+      "evidence": "We demonstrate our tool by analyzing GluC and MMP9 cleavages in HeLa lysates."
+    },
+    {
+      "value": "MMP9",
+      "evidence": "We demonstrate our tool by analyzing GluC and MMP9 cleavages in HeLa lysates."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "34% NCE",
+      "evidence": "MS/MS scans were acquired in DDA as centroids in the Orbitrap was operated at 60,000 resolution and isolation window of 0.7 m/z, first mass at 110, HCD fragmentation at 34% NCE,  maximum injection time of 118 ms, and normalized AGC target at 75%."
+    },
+    {
+      "value": "27%",
+      "evidence": "MS/MS scans were acquired with a resolution of 17,500 and isolation window of 1.6 m/z, fixed first mass at 120, and NCE of 27% in profile mode."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "HPG-ALD polymer",
+      "evidence": "To deplete tryptic peptides, the remaining sample was incubated overnight with 50mM sodium cyanoborohydride and HPG-ALD (https://ubc.flintbox.com/technologies/888fc51c-36c0-40dc-a5c9-0f176ba68293) polymer at 1:4 peptide: polymer (w/w)."
+    },
+    {
+      "value": "undecanal",
+      "evidence": "The notable differences were starting with 20 \u03bcg of proteome digested with activated MMP9, the use of using 60 mM formaldehyde and 50 mM sodium cyanoborohydride instead of TMTpro to label protein termini and lysines, and the depletion of tryptic peptides with undecanal instead of the HPG-ALD polymer."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "MS/MS scans were acquired in DDA as centroids in the Orbitrap was operated at 60,000 resolution and isolation window of 0.7 m/z, first mass at 110, HCD fragmentation at 34% NCE,  maximum injection time of 118 ms, and normalized AGC target at 75%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480; Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    },
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Orbitrap Exploris 480; Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "positive ion spray",
+      "evidence": "injected to the mass spectrometer with a PepSep emitter (Bruker Daltonics, cat. no. 1893519) with a positive ion spray voltage of 2300 V, ion transfer tube temperature of 240 \u0366 C."
+    },
+    {
+      "value": "spray voltage",
+      "evidence": "Peptides were ionized with spray voltage of 2000 V and transfer tube temperature of 275 \u0366 C."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TIC; TMT"
+    },
+    {
+      "value": "TMTpro",
+      "evidence": "TMTpro reagents (ThermoFisher Scientific, cat. no. A52045) were used to label protein termini and lysines in each sample at 1:4 protein: label (w/w) ratio."
+    },
+    {
+      "value": "dimethylation",
+      "evidence": "The same settings were also applied to the MMP9 dataset, with the exception of dimethylation (+28.031) modification in place of TMTpro labeling, and quantification based on MS1 precursor signal with the Minora Feature Detector and the Precursor Ions Quantifier nodes."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Exploris 480; Q Exactive"
+    },
+    {
+      "value": "Q Exactive",
+      "evidence": "inferred: instruments: Orbitrap Exploris 480; Q Exactive"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; dimethylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "dimethylated residue",
+      "evidence": "modifications: monohydroxylated residue; dimethylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00429",
+      "ontology_name": "dimethylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "dimethylated residue"
+    },
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: monohydroxylated residue; dimethylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "deamidated residue",
+      "evidence": "modifications: monohydroxylated residue; dimethylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "deamidated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; dimethylated residue; acetylated residue; deamidated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "oxidation (+15.995)",
+      "evidence": "For the GluC dataset, oxidation (+15.995) and deamidation (+0.984) were set as dynamic modifications.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation",
+      "normalization_candidate_ids": [
+        "MOD:02116",
+        "MOD:01688",
+        "MOD:01047",
+        "MOD:00478",
+        "MOD:00210"
+      ]
+    },
+    {
+      "value": "deamidation (+0.984)",
+      "evidence": "For the GluC dataset, oxidation (+15.995) and deamidation (+0.984) were set as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00791",
+      "ontology_name": "1x(18)O labeled deamidated L-glutamine",
+      "similarity": 0.738,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation in presence of O18"
+    },
+    {
+      "value": "TMTpro (+304.207)",
+      "evidence": "TMTpro (+304.207) and acetylation (+42.011) were added as dynamic modifications on the peptide and protein terminus, respectively.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "iTRAQ4plex-114 reporter+balance reagent O3-acylated threonine",
+      "normalization_candidate_ids": [
+        "MOD:01491",
+        "MOD:01734",
+        "MOD:01505",
+        "MOD:01512",
+        "MOD:01758"
+      ]
+    },
+    {
+      "value": "acetylation (+42.011)",
+      "evidence": "TMTpro (+304.207) and acetylation (+42.011) were added as dynamic modifications on the peptide and protein terminus, respectively.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00394",
+      "ontology_name": "monoacetylated residue",
+      "similarity": 0.749,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Acetylation (N terminus, N epsilon of Lysine, O of Serine) (Ac)"
+    },
+    {
+      "value": "Cysteine carbamidomethylation (+57.021)",
+      "evidence": "Cysteine carbamidomethylation (+57.021) and lysine TMTpro labeling were added as static modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.713,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxamidomethyl (on Cysteine)"
+    },
+    {
+      "value": "lysine TMTpro labeling",
+      "evidence": "Cysteine carbamidomethylation (+57.021) and lysine TMTpro labeling were added as static modifications.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "TMT6plex-127 reporter+balance reagent N6-acylated lysine",
+      "normalization_candidate_ids": [
+        "MOD:01730",
+        "MOD:01494",
+        "MOD:01754",
+        "MOD:01487",
+        "MOD:01738"
+      ]
+    },
+    {
+      "value": "dimethylation (+28.031)",
+      "evidence": "The same settings were also applied to the MMP9 dataset, with the exception of dimethylation (+28.031) modification in place of TMTpro labeling, and quantification based on MS1 precursor signal with the Minora Feature Detector and the Precursor Ions Quantifier nodes.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00429",
+      "ontology_name": "dimethylated residue",
+      "similarity": 0.768,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "dimethylated residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mm",
+      "evidence": "samples were reduced and alkylated with 10 mm tris(2-carboxyethyl)phosphine (TCEP) and 40 mM 2-Chloroacetamide (CAA), respectively."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "tris(2-carboxyethyl)phosphine",
+      "evidence": "samples were reduced and alkylated with 10 mm tris(2-carboxyethyl)phosphine (TCEP) and 40 mM 2-Chloroacetamide (CAA), respectively."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.988,
+    "evidence_score": 0.986,
+    "completeness": 0.973,
+    "format_score": 1.0
+  }
+}

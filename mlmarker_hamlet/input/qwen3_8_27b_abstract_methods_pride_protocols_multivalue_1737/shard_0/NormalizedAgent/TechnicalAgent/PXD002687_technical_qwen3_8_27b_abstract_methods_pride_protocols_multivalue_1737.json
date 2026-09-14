@@ -1,0 +1,148 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The Q Exactive was operated in data-dependent mode with survey scans acquired at a resolution of 75,000 at m/z 200 (transient time 256\u2009ms)."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "100 mM iodoacetamide",
+      "evidence": "Cysteines were alkylated (2.5\u2009\u03bcl of 100\u2009mM iodoacetamide in 50\u2009mM AMBIC) at RT for 30\u2009min in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Cysteines were alkylated (2.5\u2009\u03bcl of 100\u2009mM iodoacetamide in 50\u2009mM AMBIC) at RT for 30\u2009min in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Trypsin (2\u2009\u03bcg Sequencing Grade Modified Trypsin (Promega) dissolved in 50\u2009mM AMBIC) was added to the beads and the samples were placed on a shaker and digested overnight at 37\u2009\u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "25",
+      "evidence": "Up to 10 of the most abundant isotope patterns with charge +2 or higher from the survey scan were selected with an isolation window of 3.0\u2009m/z and fragmented by higher-energy collision dissociation (HCD) with normalized collision energies of 25."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "affinity",
+      "evidence": "NeutrAvidin agarose resin (Thermo Scientific) was washed with 0.2% SDS in PBS (3 \u00d7 )."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Up to 10 of the most abundant isotope patterns with charge +2 or higher from the survey scan were selected with an isolation window of 3.0\u2009m/z and fragmented by higher-energy collision dissociation (HCD) with normalized collision energies of 25."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "Easy nLC-1000 was coupled to a Q Exactive mass spectrometer via an easy-spray source (all Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "Easy nLC-1000 was coupled to a Q Exactive mass spectrometer via an easy-spray source (all Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "SILAC",
+      "evidence": "For quantitative proteomics (spike-in SILAC and SILAC), R10K8 and R0K0 Dulbecco's modified Eagle's medium (DMEM) media were purchased from Dundee Cell Products."
+    },
+    {
+      "value": "label-free",
+      "evidence": "LFQ experiments in MaxQuant were performed using the built-in LFQ algorithm enabling the \u2018match between runs\u2019 option (time window 2\u2009min), and were processed with Perseus version 1.3.0.4."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Easy nLC-1000 was coupled to a Q Exactive mass spectrometer via an easy-spray source (all Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation was used as a fixed modification and methionine oxidation as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Cysteine carbamidomethylation was used as a fixed modification and methionine oxidation as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "myristoylated residue",
+      "evidence": "modifications: myristoylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00438",
+      "ontology_name": "myristoylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "myristoylated residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "100 mM DTT",
+      "evidence": "For a 50\u2009\u03bcl bed of beads, samples were reduced (2.5\u2009\u03bcl of 100\u2009mM DTT in 50\u2009mM AMBIC) at 60\u2009\u00b0C for 30\u2009min and allowed to cool to RT."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "For a 50\u2009\u03bcl bed of beads, samples were reduced (2.5\u2009\u03bcl of 100\u2009mM DTT in 50\u2009mM AMBIC) at 60\u2009\u00b0C for 30\u2009min and allowed to cool to RT."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.861,
+    "evidence_score": 0.744,
+    "completeness": 0.944,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "100 mM iodoacetamide",
+      "evidence": "Cysteines were alkylated (2.5\u2009\u03bcl of 100\u2009mM iodoacetamide in 50\u2009mM AMBIC) at RT for 30\u2009min in the dark."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "100 mM DTT",
+      "evidence": "For a 50\u2009\u03bcl bed of beads, samples were reduced (2.5\u2009\u03bcl of 100\u2009mM DTT in 50\u2009mM AMBIC) at 60\u2009\u00b0C for 30\u2009min and allowed to cool to RT."
+    }
+  ]
+}

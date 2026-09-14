@@ -1,0 +1,187 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "Mass spectrometry scans were acquired in a data-dependent manner using a trybrid Orbitrap Fusion Lumos from Thermo Scientific."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10mM",
+      "evidence": "Lysates were then cleared by centrifugation, and proteins alkylated by the addition of 10mM iodoacetamide for 30min at RT in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Lysates were then cleared by centrifugation, and proteins alkylated by the addition of 10mM iodoacetamide for 30min at RT in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "Proteolytic cleavage was then performed by the addition of Lys-C in a 1:50 enzyme to substrate and incubation at 37C overnight with agitation."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "32%",
+      "evidence": "Ions with a charge state of 2-5 were isolated using a 0.7 m/z window and fragmented using HCD with a normalized collision energy of 32% and dynamic exclusion within a 10 ppm range for 30 seconds to prevent repeat sequencing."
+    },
+    {
+      "value": "27%",
+      "evidence": "Ions with a charge state >1 were isolated using a 2.2 m/z window and fragmented using HCD with a normalized collision energy of 27% and an automatic dynamic exclusion."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "Ni-NTA",
+      "evidence": "Next, the dried peptides were enriched for phosphorylated peptides by incubation with Ni-NTA Superflow beads (Qiagen cat. no. 30210) that had been stripped with EDTA and loaded with iron chloride."
+    },
+    {
+      "value": "biotin/streptavidin precipitation",
+      "evidence": "For mass spectrometry, cells were scraped and pelleted for biotin/streptavidin precipitation as previously described."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Ions with a charge state of 2-5 were isolated using a 0.7 m/z window and fragmented using HCD with a normalized collision energy of 32% and dynamic exclusion within a 10 ppm range for 30 seconds to prevent repeat sequencing."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos; Q Exactive Plus",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Q Exactive Plus",
+      "evidence": "instruments: Orbitrap Fusion Lumos; Q Exactive Plus",
+      "is_normalized": true,
+      "ontology_id": "MS:1002634",
+      "ontology_name": "Q Exactive Plus",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive Plus"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: MS1 scans were taken at a resolution of 120,000 with a maximum injection time of 50 ms and a normalized AGC target of 250% over a scan range of 350-1350 m/z."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Raw files were searched in MaxQuant using label free quantitation with match between runs against the reviewed human proteome including isoforms, downloaded from Uniprot on October 22, 2020."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Mass spectrometry scans were acquired in a data-dependent manner using a trybrid Orbitrap Fusion Lumos from Thermo Scientific."
+    },
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Mass spectrometry scans were acquired in a data-dependent manner using Orbitrap Q-Exactive Plus from Thermo Scientific."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "phosphorylation",
+      "evidence": "modifications: phosphorylated residue",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:21",
+      "ontology_name": "Phospho",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Phospho"
+    },
+    {
+      "value": "carbamiidomethylation",
+      "evidence": "Carbamidomethylation of cysteines was included as a fixed modification, with oxidation of methionine and n-terminal acetylation included as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01679",
+      "ontology_name": "alpha-aminocarbamoylated residue",
+      "similarity": 0.84,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carbamylation"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Carbamidomethylation of cysteines was included as a fixed modification, with oxidation of methionine and n-terminal acetylation included as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "n-terminal acetylation",
+      "evidence": "Carbamidomethylation of cysteines was included as a fixed modification, with oxidation of methionine and n-terminal acetylation included as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "phosphorylation at STY",
+      "evidence": "Carbamidomethylation of cysteines was included as a fixed modification, with oxidation of methionine, n-terminal acetylation, and phosphorylation at STY included as variable modifications.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "phosphorylation to amine thiol - site S",
+      "normalization_candidate_ids": [
+        "MOD:01318",
+        "MOD:01317",
+        "MOD:00696",
+        "MOD:00048"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "4 mM",
+      "evidence": "Cell pellets were resuspended in 8 M urea, 0.1 M ammonium bicarbonate (ABC), 150 mM NaCl, 1x mini-cOmplete protease inhibitors (Roche), 1x phosSTOP phosphatase inhibitor (Roche), 4 mM TCEP."
+    },
+    {
+      "value": "10mM",
+      "evidence": "The akylation reaction was quenched by the addition of 10mM DTT for 30min at RT in the dark."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Cell pellets were resuspended in 8 M urea, 0.1 M ammonium bicarbonate (ABC), 150 mM NaCl, 1x mini-cOmplete protease inhibitors (Roche), 1x phosSTOP phosphatase inhibitor (Roche), 4 mM TCEP."
+    },
+    {
+      "value": "DTT",
+      "evidence": "The akylation reaction was quenched by the addition of 10mM DTT for 30min at RT in the dark."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.94,
+    "evidence_score": 0.896,
+    "completeness": 0.962,
+    "format_score": 1.0
+  }
+}

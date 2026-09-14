@@ -1,0 +1,179 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics; Affinity purification coupled with mass spectrometry proteomics"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "On-bead purified complexes were digested with trypsin, reduced, alkylated, and desalted, and two runs of each sample were analyzed by liquid chromatography tandem mass spectrometry as described previously."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "affinity",
+      "evidence": "experiment types: Shotgun proteomics; Affinity purification coupled with mass spectrometry proteomics"
+    },
+    {
+      "value": "antibody",
+      "evidence": "For KDM3A interactome, RPE1WT (in duplicate), RPE1WTcr, and KDM3Anull (line 2, in triplicate) cells were plated the day before and grown in the absence of serum for 3 h, lysed in 50 mM Tris-HCl, pH 7.5, 100 mM NaCl, 10% glycerol, 5 mM EDTA, 0.5% IGEPAL, and protease inhibitors and incubated with N-KDM3A antibody (12835; Proteintech) for 2 h at 4\u00b0C followed by 15-min incubation with PureProteome magnetic beads (EMD Millipore) to concentrate the immunoglobulin complexes."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "Peptide counting",
+      "evidence": "quantification: Peptide counting"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Q Exactive"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "acetylation",
+      "evidence": "In the search for posttranslational modifications, databases were also searched for peptides with mass modifications as follows: mono-, di-, and trimethylation (delta mass of 14.0157, 28.0313, and 42.04695 D, respectively).",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:1",
+      "ontology_name": "Acetyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Acetyl"
+    },
+    {
+      "value": "methylation",
+      "evidence": "In the search for posttranslational modifications, databases were also searched for peptides with mass modifications as follows: mono-, di-, and trimethylation (delta mass of 14.0157, 28.0313, and 42.04695 D, respectively).",
+      "is_normalized": false,
+      "normalization_method": "ambiguous_exact_synonym",
+      "normalization_matched_text": "methylation",
+      "normalization_candidate_ids": [
+        "MOD:00070",
+        "MOD:00072",
+        "MOD:00073",
+        "MOD:00074",
+        "MOD:00078",
+        "MOD:00079",
+        "MOD:00080",
+        "MOD:00081",
+        "MOD:00082",
+        "MOD:00085",
+        "MOD:00114",
+        "MOD:00239",
+        "MOD:00277",
+        "MOD:00278",
+        "MOD:00304",
+        "MOD:00310",
+        "MOD:00322",
+        "MOD:00323",
+        "MOD:00341",
+        "MOD:00342",
+        "MOD:00599",
+        "MOD:01680",
+        "MOD:01681",
+        "MOD:01682",
+        "MOD:01683"
+      ],
+      "normalization_qc_flags": [
+        "ambiguous_ontology_match"
+      ]
+    },
+    {
+      "value": "carbamylation C",
+      "evidence": "Databases were searched with MaxQuant/Andromeda, with mas modifications, carbamylation C (fixed) and M oxidation",
+      "is_normalized": true,
+      "ontology_id": "MOD:01679",
+      "ontology_name": "alpha-aminocarbamoylated residue",
+      "similarity": 0.868,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carbamylation"
+    },
+    {
+      "value": "M oxidation",
+      "evidence": "Databases were searched with MaxQuant/Andromeda, with mas modifications, carbamylation C (fixed) and M oxidation",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.758,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.882,
+    "evidence_score": 0.932,
+    "completeness": 0.579,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "enrichment_method[1]",
+      "value": "antibody",
+      "evidence": "For KDM3A interactome, RPE1WT (in duplicate), RPE1WTcr, and KDM3Anull (line 2, in triplicate) cells were plated the day before and grown in the absence of serum for 3 h, lysed in 50 mM Tris-HCl, pH 7.5, 100 mM NaCl, 10% glycerol, 5 mM EDTA, 0.5% IGEPAL, and protease inhibitors and incubated with N-KDM3A antibody (12835; Proteintech) for 2 h at 4\u00b0C followed by 15-min incubation with PureProteome magnetic beads (EMD Millipore) to concentrate the immunoglobulin complexes."
+    }
+  ]
+}

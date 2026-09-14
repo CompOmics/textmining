@@ -1,0 +1,169 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "Rectal cancer cell",
+      "evidence": "organism parts: Rectal cancer cell; Colonic cancer cell",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "rectum epithelial tissue",
+      "normalization_candidate_ids": [
+        "UBERON:0003354",
+        "UBERON:0016885"
+      ],
+      "normalization_qc_flags": [
+        "cross_namespace_mapping"
+      ]
+    },
+    {
+      "value": "Colonic cancer cell",
+      "evidence": "organism parts: Rectal cancer cell; Colonic cancer cell",
+      "is_normalized": true,
+      "ontology_id": "CL:0011108",
+      "ontology_name": "colon epithelial cell",
+      "similarity": 0.793,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "colonic epithelial cell"
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "Rectum adenocarcinoma",
+      "evidence": "diseases: Rectum adenocarcinoma; Colon adenocarcinoma",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0002169",
+      "ontology_name": "rectum adenocarcinoma",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "rectum adenocarcinoma"
+    },
+    {
+      "value": "Colon adenocarcinoma",
+      "evidence": "diseases: Rectum adenocarcinoma; Colon adenocarcinoma",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0002271",
+      "ontology_name": "colon adenocarcinoma",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "colon adenocarcinoma"
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "tissue",
+      "evidence": "inferred: Ninety-five TCGA tumor samples were used in this study."
+    },
+    {
+      "value": "tissue",
+      "evidence": "inferred: Normal colon biopsies were obtained from screening colonoscopies performed between July 2006 and October 2010 under Vanderbilt University IRB approval #061096."
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "TCGA tumor samples",
+      "evidence": "Ninety-five TCGA tumor samples were used in this study.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "compost",
+      "normalization_candidate_ids": [
+        "BTO:0004070",
+        "BTO:0000288",
+        "BTO:0001301",
+        "BTO:0001010",
+        "BTO:0004292"
+      ]
+    },
+    {
+      "value": "normal colon biopsies",
+      "evidence": "Normal colon biopsies were obtained from screening colonoscopies performed between July 2006 and October 2010 under Vanderbilt University IRB approval #061096.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "colon",
+      "normalization_candidate_ids": [
+        "BTO:0000269",
+        "BTO:0000646",
+        "BTO:0001380",
+        "BTO:0000166",
+        "BTO:0000645"
+      ]
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "colon",
+      "evidence": "inferred: The goal of the CPTAC, TCGA Cancer Proteome Study of Colorectal Tissue is to analyze the proteomes of TCGA tumor samples that have been comprehensively characterized by molecular methods.",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0001155",
+      "ontology_name": "colon",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "colon"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.903,
+    "evidence_score": 0.983,
+    "completeness": 0.556,
+    "format_score": 1.0
+  }
+}

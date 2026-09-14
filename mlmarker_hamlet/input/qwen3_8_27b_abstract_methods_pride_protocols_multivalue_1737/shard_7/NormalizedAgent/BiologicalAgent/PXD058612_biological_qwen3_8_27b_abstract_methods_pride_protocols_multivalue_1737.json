@@ -1,0 +1,154 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "HSkMCs",
+      "evidence": "On day six of the differentiation, human myotubes (HSkMCs) were washed three times with Dulbecco\u2019s phosphate-buffered saline (DPBS) and medium was changed to serum- and phenol-free Dulbecco\u00b4s Modified Eagle Medium (DMEM 1x).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "m.syndrome",
+      "normalization_candidate_ids": [
+        "DOID:14323",
+        "DOID:13501",
+        "DOID:0050144",
+        "DOID:14692",
+        "DOID:905"
+      ],
+      "normalization_qc_flags": [
+        "cross_namespace_mapping"
+      ]
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "Myotube",
+      "evidence": "organism parts: Skeletal muscle; Myotube",
+      "is_normalized": true,
+      "ontology_id": "CL:0002372",
+      "ontology_name": "myotube",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "myotube"
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "Type 2 diabetes mellitus",
+      "evidence": "diseases: Type 2 diabetes mellitus",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0005148",
+      "ontology_name": "type 2 diabetes mellitus",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "type 2 diabetes mellitus"
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell culture",
+      "evidence": "inferred: On day six of the differentiation, human myotubes (HSkMCs) were washed three times with Dulbecco\u2019s phosphate-buffered saline (DPBS) and medium was changed to serum- and phenol-free Dulbecco\u00b4s Modified Eagle Medium (DMEM 1x)."
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "human myotubes",
+      "evidence": "On day six of the differentiation, human myotubes (HSkMCs) were washed three times with Dulbecco\u2019s phosphate-buffered saline (DPBS) and medium was changed to serum- and phenol-free Dulbecco\u00b4s Modified Eagle Medium (DMEM 1x).",
+      "is_normalized": true,
+      "ontology_id": "BTO:0001760",
+      "ontology_name": "myotube",
+      "similarity": 0.867,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "myotube"
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "Skeletal muscle",
+      "evidence": "organism parts: Skeletal muscle; Myotube",
+      "is_normalized": false,
+      "normalization_method": "ambiguous_exact_synonym",
+      "normalization_matched_text": "Skeletal muscle",
+      "normalization_candidate_ids": [
+        "UBERON:0001134",
+        "UBERON:0014892",
+        "UBERON:0014895"
+      ],
+      "normalization_qc_flags": [
+        "ambiguous_ontology_match"
+      ]
+    }
+  ],
+  "_confidence": {
+    "overall": 0.882,
+    "evidence_score": 0.964,
+    "completeness": 0.5,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "cell_line[0]",
+      "value": "HSkMCs",
+      "evidence": "On day six of the differentiation, human myotubes (HSkMCs) were washed three times with Dulbecco\u2019s phosphate-buffered saline (DPBS) and medium was changed to serum- and phenol-free Dulbecco\u00b4s Modified Eagle Medium (DMEM 1x)."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "sample_source[0]",
+      "value": "human myotubes",
+      "evidence": "On day six of the differentiation, human myotubes (HSkMCs) were washed three times with Dulbecco\u2019s phosphate-buffered saline (DPBS) and medium was changed to serum- and phenol-free Dulbecco\u00b4s Modified Eagle Medium (DMEM 1x)."
+    }
+  ]
+}

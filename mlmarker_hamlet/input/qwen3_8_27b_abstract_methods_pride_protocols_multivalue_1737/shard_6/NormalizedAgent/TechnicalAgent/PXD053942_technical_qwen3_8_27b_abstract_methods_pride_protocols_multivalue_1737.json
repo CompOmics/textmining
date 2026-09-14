@@ -1,0 +1,137 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "30 mM IAA",
+      "evidence": "Digested peptides were alkylatedwith 30 mM IAA and desalted prior to LC\u2013MS analysis."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "IAA",
+      "evidence": "Digested peptides were alkylatedwith 30 mM IAA and desalted prior to LC\u2013MS analysis."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "Beads were washed threetimes with 50 mM NH 4HCO3 and incubated with 0.5 \u03bcg/\u03bcl Lys-C and 20 U ben-zonase in 6 M urea, 50 mM NH 4HCO 3 pH 7.5 for 90 min at 28 \u00b0C, washed with50 mM NH 4HCO3 , and the combined supernatants were digested overnight with0.2 \u03bcg/\u03bcl of trypsin in presence of 10 mM DTT."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Beads were washed threetimes with 50 mM NH 4HCO3 and incubated with 0.5 \u03bcg/\u03bcl Lys-C and 20 U ben-zonase in 6 M urea, 50 mM NH 4HCO 3 pH 7.5 for 90 min at 28 \u00b0C, washed with50 mM NH 4HCO3 , and the combined supernatants were digested overnight with0.2 \u03bcg/\u03bcl of trypsin in presence of 10 mM DTT."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27% normalized collision energy",
+      "evidence": "The 10 most intense peptide ions with chargestates between 2 and 5 were sequentially isolated to a target value of 1 \u00d7 105 andfragmented at 27% normalized collision energy."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "inferred: The 10 most intense peptide ions with chargestates between 2 and 5 were sequentially isolated to a target value of 1 \u00d7 105 andfragmented at 27% normalized collision energy."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: The effluent from the HPLC was directlyelectrosprayed into a Qexactive HF (Thermo) operated in data-dependent mode toautomatically switch between full-scan MS and MS/MS acquisition."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "MaxQuant (1.6.6.0) was used to identify proteins andquantify by LFQ with the following parameters: Database,uniprot_P000005640_Hsapiens_190109; MS tol, 10 ppm; MS/MS tol, 20 ppm Da;Peptide FDR, 0.1; Protein FDR, 0.01 Min. peptide Length, 7; Variable modifica-tions, Oxidation (M); Fixed modifications, Carbamidomethyl (C); Peptides forprotein quantitation, razor and unique; Min. peptides, 1; Min. ratio count, 2."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Q Exactive HF"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    },
+    {
+      "value": "Oxidation (M)",
+      "evidence": "MaxQuant (1.6.6.0) was used to identify proteins andquantify by LFQ with the following parameters: Database,uniprot_P000005640_Hsapiens_190109; MS tol, 10 ppm; MS/MS tol, 20 ppm Da;Peptide FDR, 0.1; Protein FDR, 0.01 Min. peptide Length, 7; Variable modifica-tions, Oxidation (M); Fixed modifications, Carbamidomethyl (C); Peptides forprotein quantitation, razor and unique; Min. peptides, 1; Min. ratio count, 2.",
+      "is_normalized": true,
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 0.925,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "Carbamidomethyl (C)",
+      "evidence": "MaxQuant (1.6.6.0) was used to identify proteins andquantify by LFQ with the following parameters: Database,uniprot_P000005640_Hsapiens_190109; MS tol, 10 ppm; MS/MS tol, 20 ppm Da;Peptide FDR, 0.1; Protein FDR, 0.01 Min. peptide Length, 7; Variable modifica-tions, Oxidation (M); Fixed modifications, Carbamidomethyl (C); Peptides forprotein quantitation, razor and unique; Min. peptides, 1; Min. ratio count, 2.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.965,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "carbamidomethylc"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM DTT",
+      "evidence": "Beads were washed threetimes with 50 mM NH 4HCO3 and incubated with 0.5 \u03bcg/\u03bcl Lys-C and 20 U ben-zonase in 6 M urea, 50 mM NH 4HCO 3 pH 7.5 for 90 min at 28 \u00b0C, washed with50 mM NH 4HCO3 , and the combined supernatants were digested overnight with0.2 \u03bcg/\u03bcl of trypsin in presence of 10 mM DTT."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Beads were washed threetimes with 50 mM NH 4HCO3 and incubated with 0.5 \u03bcg/\u03bcl Lys-C and 20 U ben-zonase in 6 M urea, 50 mM NH 4HCO 3 pH 7.5 for 90 min at 28 \u00b0C, washed with50 mM NH 4HCO3 , and the combined supernatants were digested overnight with0.2 \u03bcg/\u03bcl of trypsin in presence of 10 mM DTT."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.925,
+    "evidence_score": 0.894,
+    "completeness": 0.889,
+    "format_score": 1.0
+  }
+}

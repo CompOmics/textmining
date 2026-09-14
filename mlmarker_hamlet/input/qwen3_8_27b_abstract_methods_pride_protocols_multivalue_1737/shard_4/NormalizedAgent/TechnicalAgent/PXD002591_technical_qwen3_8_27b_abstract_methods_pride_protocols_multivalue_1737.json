@@ -1,0 +1,194 @@
+{
+  "acquisition_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "After DTT reduction and akylation with iodoacetamide, nuclear proteins were digested overnight with endoproteinase Lys-C (1:50 ratio) in 4M urea 25 mM Tris pH 8 buffer at room temperature overnight."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "After DTT reduction and akylation with iodoacetamide, nuclear proteins were digested overnight with endoproteinase Lys-C (1:50 ratio) in 4M urea 25 mM Tris pH 8 buffer at room temperature overnight."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Proteins for turnover measurement were digested overnight with trypsin (1:50 ratio) instead."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "phenylboronic acid solid-phase extraction",
+      "evidence": "First, an efficient enrichment method for O-GlcNAc peptides was developed with the use of phenylboronic acid solid-phase extraction and anhydrous DMSO."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Search parameters were set with the database search engine pFind 2.8 (42), including precursor mass tolerance of 5 ppm, fragment mass tolerance of 0.02 Da for HCD and ETD, Lys-C cleavage and up to 2 mis-cleavage."
+    },
+    {
+      "value": "ETD",
+      "evidence": "Search parameters were set with the database search engine pFind 2.8 (42), including precursor mass tolerance of 5 ppm, fragment mass tolerance of 0.02 Da for HCD and ETD, Lys-C cleavage and up to 2 mis-cleavage."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: RAW files were converted to MS1 and MS2 files by xtract 1.0.0.8 in pFind Studio 2.8 (pfind.ict.ac.cn) and converted to MGF files by pParse to calibrate the precursor isotopic mass to the monoisotopic mass and export co-eluted precursors, which could increase the identification rate.(41)"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Q Exactive"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue; deamidated residue; N-acetylaminoglucosylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue; deamidated residue; N-acetylaminoglucosylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "deamidated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue; deamidated residue; N-acetylaminoglucosylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "deamidated residue"
+    },
+    {
+      "value": "N-acetylaminoglucosylated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue; deamidated residue; N-acetylaminoglucosylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00733",
+      "ontology_name": "N-acetylaminoglucosylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "N-acetylaminoglucosylated residue"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation was set as fixed modification, while methionine oxidation, asparagine and glutamine deamidation, serine, threonine and asparagine (Asn) N-acetylhexosamine (HexNAc) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Cysteine carbamidomethylation was set as fixed modification, while methionine oxidation, asparagine and glutamine deamidation, serine, threonine and asparagine (Asn) N-acetylhexosamine (HexNAc) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "deamidation",
+      "evidence": "Cysteine carbamidomethylation was set as fixed modification, while methionine oxidation, asparagine and glutamine deamidation, serine, threonine and asparagine (Asn) N-acetylhexosamine (HexNAc) were set as variable modifications.",
+      "is_normalized": false,
+      "normalization_method": "ambiguous_exact_synonym",
+      "normalization_matched_text": "deamidation",
+      "normalization_candidate_ids": [
+        "MOD:00137",
+        "MOD:00219",
+        "MOD:00400",
+        "MOD:00565"
+      ],
+      "normalization_qc_flags": [
+        "ambiguous_ontology_match"
+      ]
+    },
+    {
+      "value": "N-acetylhexosamine (HexNAc)",
+      "evidence": "Cysteine carbamidomethylation was set as fixed modification, while methionine oxidation, asparagine and glutamine deamidation, serine, threonine and asparagine (Asn) N-acetylhexosamine (HexNAc) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00436",
+      "ontology_name": "N-acetylhexosaminylated residue",
+      "similarity": 0.965,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylhexosamine"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "After DTT reduction and akylation with iodoacetamide, nuclear proteins were digested overnight with endoproteinase Lys-C (1:50 ratio) in 4M urea 25 mM Tris pH 8 buffer at room temperature overnight."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.929,
+    "evidence_score": 0.958,
+    "completeness": 0.75,
+    "format_score": 1.0
+  }
+}

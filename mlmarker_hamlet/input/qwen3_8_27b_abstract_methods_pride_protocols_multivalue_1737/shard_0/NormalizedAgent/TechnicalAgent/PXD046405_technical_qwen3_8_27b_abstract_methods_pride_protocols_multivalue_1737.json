@@ -1,0 +1,206 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "DDA was used to generate MS/MS data following precursor ion selection and isolation of the 10 most abundant precursors in each MS1 scan using a quadrupole isolation window of m/z 2.0."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "Serum CBG was reduced using 5 mM aqueous DTT for 45 min at 56\u00b0C and then carbamidomethylated using 20 mM IAA (final concentrations stated) for 30 min in dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "IAA",
+      "evidence": "Serum CBG was reduced using 5 mM aqueous DTT for 45 min at 56\u00b0C and then carbamidomethylated using 20 mM IAA (final concentrations stated) for 30 min in dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "In solution trypsin digestion was performed using a substrate (CBG) / enzyme (trypsin) ratio 20:1 (w/w) overnight in 100 mM aqueous ammonium bicarbonate, 37\u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30% NCE",
+      "evidence": "Higher-energy collision-induced dissociation (HCD)-MS/MS was performed at top speed with 30% NCE with fragment ions detected in the Orbitrap using standard AGC, and 200 ms maximum injection time."
+    },
+    {
+      "value": "15% NCE",
+      "evidence": "electron transfer higher collision dissociation (EThcD)-MS/MS with Orbitrap detection of fragment ions using standard AGC target and a supplemental activation energy of 15% NCE and 2) ion trap CID-MS/MS with standard AGC target and 35% NCE."
+    },
+    {
+      "value": "35% NCE",
+      "evidence": "electron transfer higher collision dissociation (EThcD)-MS/MS with Orbitrap detection of fragment ions using standard AGC target and a supplemental activation energy of 15% NCE and 2) ion trap CID-MS/MS with standard AGC target and 35% NCE."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Higher-energy collision-induced dissociation (HCD)-MS/MS was performed at top speed with 30% NCE with fragment ions detected in the Orbitrap using standard AGC, and 200 ms maximum injection time."
+    },
+    {
+      "value": "EThcD",
+      "evidence": "1) electron transfer higher collision dissociation (EThcD)-MS/MS with Orbitrap detection of fragment ions using standard AGC target and a supplemental activation energy of 15% NCE"
+    },
+    {
+      "value": "CID",
+      "evidence": "2) ion trap CID-MS/MS with standard AGC target and 35% NCE."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Eclipse Tribrid Mass Spectrometer",
+      "evidence": "For the RCL glycoprofiling and O-glycosylation site assignment, mixtures of (glyco)peptides and de-N-glycosylated peptides from isolated serum CBG were analysed on an Orbitrap Eclipse Tribrid Mass Spectrometer (Thermo Fisher Scientific, San Jose, CA) coupled to a Dionex 3500RS UPLC system.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003953",
+      "ontology_name": "orbitrap instrument",
+      "similarity": 0.893,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "orbitrap instrument"
+    },
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: The mass spectrometer was operated in positive ion polarity mode."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: The relative abundance of observed (glyco)peptides was quantified using AUC measurements based on EICs generated from the monoisotopic precursor ions of all observed glycopeptide species in all detected charge states with assistance from the Skyline software."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: For the RCL glycoprofiling and O-glycosylation site assignment, mixtures of (glyco)peptides and de-N-glycosylated peptides from isolated serum CBG were analysed on an Orbitrap Eclipse Tribrid Mass Spectrometer (Thermo Fisher Scientific, San Jose, CA) coupled to a Dionex 3500RS UPLC system."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Searches were performed with carbamidomethylation of Cys (+57.021 Da) as a fixed modification, and strict trypsin specific cleavage (C-terminal to R/K) with a maximum of two missed tryptic cleavages per peptide.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Searches also included oxidation of Met (+15.994 Da) and Asn/Gln deamidation (+0.9840 Da) that were both considered \u2018common\u2019 variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "deamidation",
+      "evidence": "Searches also included oxidation of Met (+15.994 Da) and Asn/Gln deamidation (+0.9840 Da) that were both considered \u2018common\u2019 variable modifications.",
+      "is_normalized": false,
+      "normalization_method": "ambiguous_exact_synonym",
+      "normalization_matched_text": "deamidation",
+      "normalization_candidate_ids": [
+        "MOD:00137",
+        "MOD:00219",
+        "MOD:00400",
+        "MOD:00565"
+      ],
+      "normalization_qc_flags": [
+        "ambiguous_ontology_match"
+      ]
+    },
+    {
+      "value": "complex glycosylation",
+      "evidence": "modifications: complex glycosylation",
+      "is_normalized": true,
+      "ontology_id": "MOD:00725",
+      "ontology_name": "complex glycosylation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "complex glycosylation"
+    },
+    {
+      "value": "N-glycosylation",
+      "evidence": "keywords: Glycosylation; O-glycosylation; Corticosteroid-binding globulin; Cortisol; N-glycosylation; Proteolysis; Reactive centre loop; Neutrophil elastase",
+      "is_normalized": true,
+      "ontology_id": "MOD:00006",
+      "ontology_name": "N-glycosylated residue",
+      "similarity": 0.833,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-glycosylated residue"
+    },
+    {
+      "value": "O-glycosylation",
+      "evidence": "keywords: Glycosylation; O-glycosylation; Corticosteroid-binding globulin; Cortisol; N-glycosylation; Proteolysis; Reactive centre loop; Neutrophil elastase",
+      "is_normalized": true,
+      "ontology_id": "MOD:00396",
+      "ontology_name": "O-glycosylated residue",
+      "similarity": 0.826,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "O-glycosylated residue"
+    },
+    {
+      "value": "glycosylation",
+      "evidence": "keywords: Glycosylation; O-glycosylation; Corticosteroid-binding globulin; Cortisol; N-glycosylation; Proteolysis; Reactive centre loop; Neutrophil elastase",
+      "is_normalized": true,
+      "ontology_id": "MOD:00725",
+      "ontology_name": "complex glycosylation",
+      "similarity": 0.861,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "complex glycosylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Serum CBG was reduced using 5 mM aqueous DTT for 45 min at 56\u00b0C and then carbamidomethylated using 20 mM IAA (final concentrations stated) for 30 min in dark."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Serum CBG was reduced using 5 mM aqueous DTT for 45 min at 56\u00b0C and then carbamidomethylated using 20 mM IAA (final concentrations stated) for 30 min in dark."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.972,
+    "evidence_score": 0.974,
+    "completeness": 0.926,
+    "format_score": 1.0
+  }
+}

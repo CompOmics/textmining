@@ -1,0 +1,138 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-independent acquisition",
+      "evidence": "experiment types: Data-independent acquisition; Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "30 mM chloroacetamide",
+      "evidence": "Subsequently, approximately 10\u00a0\u03bcg of protein was denatured, reduced, and alkylated by adding 100\u00a0\u03bcl of 150\u00a0mM Tris, 5\u00a0mM Tris(2-carboxyethyl) phosphine, 30\u00a0mM chloroacetamide, and 1% sodium deoxycholate of pH 8.5."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "chloroacetamide",
+      "evidence": "Subsequently, approximately 10\u00a0\u03bcg of protein was denatured, reduced, and alkylated by adding 100\u00a0\u03bcl of 150\u00a0mM Tris, 5\u00a0mM Tris(2-carboxyethyl) phosphine, 30\u00a0mM chloroacetamide, and 1% sodium deoxycholate of pH 8.5."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "LysC",
+      "evidence": "Then, 100\u00a0ng of LysC (Wako) and 100\u00a0ng of trypsin (Promega) were added, and the sample was incubated and digested overnight at 37 \u00b0C."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Then, 100\u00a0ng of LysC (Wako) and 100\u00a0ng of trypsin (Promega) were added, and the sample was incubated and digested overnight at 37 \u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "high collision dissociation",
+      "evidence": "The DIA method consisted of MS1 scans at 60,000 resolution, and scan ranges between 375 and 1600, followed by 50 scan windows with 12\u00a0m/z and one window overlap in the high collision dissociation MS/MS."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: As it is well established in plasma proteomics to use the intensity of a protein in label-free quantification (LFQ) as a proxy for protein concentrations, MaxLFQ values were selected to determine protein abundances and calculated together with the number of unique peptides per protein in each sample using the diann_maxlfq function of the DIAgui package (https://github.com/mgerault/DIAgui)."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: All spectra were acquired on an Orbitrap Exploris 480 mass spectrometer (Thermo Fisher Scientific) operated in data-independent mode coupled to an Evosep One liquid chromatography system, using the Endurance column (EV1106) at 30SPD method (44\u00a0min gradient)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation and methionine oxidation were allowed.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Cysteine carbamidomethylation and methionine oxidation were allowed.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM Tris(2-carboxyethyl) phosphine",
+      "evidence": "Subsequently, approximately 10\u00a0\u03bcg of protein was denatured, reduced, and alkylated by adding 100\u00a0\u03bcl of 150\u00a0mM Tris, 5\u00a0mM Tris(2-carboxyethyl) phosphine, 30\u00a0mM chloroacetamide, and 1% sodium deoxycholate of pH 8.5."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "Tris(2-carboxyethyl) phosphine",
+      "evidence": "Subsequently, approximately 10\u00a0\u03bcg of protein was denatured, reduced, and alkylated by adding 100\u00a0\u03bcl of 150\u00a0mM Tris, 5\u00a0mM Tris(2-carboxyethyl) phosphine, 30\u00a0mM chloroacetamide, and 1% sodium deoxycholate of pH 8.5."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.915,
+    "evidence_score": 0.924,
+    "completeness": 0.765,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "30 mM chloroacetamide",
+      "evidence": "Subsequently, approximately 10\u00a0\u03bcg of protein was denatured, reduced, and alkylated by adding 100\u00a0\u03bcl of 150\u00a0mM Tris, 5\u00a0mM Tris(2-carboxyethyl) phosphine, 30\u00a0mM chloroacetamide, and 1% sodium deoxycholate of pH 8.5."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM Tris(2-carboxyethyl) phosphine",
+      "evidence": "Subsequently, approximately 10\u00a0\u03bcg of protein was denatured, reduced, and alkylated by adding 100\u00a0\u03bcl of 150\u00a0mM Tris, 5\u00a0mM Tris(2-carboxyethyl) phosphine, 30\u00a0mM chloroacetamide, and 1% sodium deoxycholate of pH 8.5."
+    }
+  ]
+}

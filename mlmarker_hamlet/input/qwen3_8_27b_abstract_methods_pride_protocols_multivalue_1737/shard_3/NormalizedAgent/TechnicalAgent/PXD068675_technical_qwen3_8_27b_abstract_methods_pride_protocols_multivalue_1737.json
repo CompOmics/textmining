@@ -1,0 +1,214 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Gel-based experiment; Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Gel-based experiment; Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "Carbamidomethylation of cysteine (C)",
+      "evidence": "Carbamidomethylation of cysteine (C) was set as fixed modification."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Proteins were in-gel digested with\u2009trypsin and desalted as described in https://doi.org/10.1021/pr500164j."
+    },
+    {
+      "value": "Trypsin/P",
+      "evidence": "the enzyme specificity was set to Trypsin/P and two missed cleavages were tolerated."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30% NCE",
+      "evidence": "A targeted mass exclusion list containing the most prominent peptide m/z ratios for the GST-Af1521 Macro domains was used."
+    },
+    {
+      "value": "HCD at 30% NCE",
+      "evidence": "For MS/MS peptides were selected for a 1 s time window in between master scans in a data-dependent mode with HCD at 30% NCE, to be detected in the Orbitrap with a resolution of 30000."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "affinity enrichment",
+      "evidence": "The affinity enrichment was performed using the enhanced Af1521 Macro domain versus a G42E mutant variant as control."
+    },
+    {
+      "value": "ADPr-enrichment",
+      "evidence": "The protein fraction was subjected to ADPr-enrichment with the enhanced Af1521 Macro domain (https://doi.org/10.1038/s41467-020-18981-w)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "Protein samples were separated by 12% SDS-PAGE until the running front had migrated 1 cm into the separating gel."
+    },
+    {
+      "value": "12% SDS-PAGE",
+      "evidence": "Protein samples were separated by 12% SDS-PAGE until the running front had migrated 1 cm into the separating gel."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "For MS/MS peptides were selected for a 1 s time window in between master scans in a data-dependent mode with HCD at 30% NCE, to be detected in the Orbitrap with a resolution of 30000."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Fusion Lumos Tribrid mass spectrometer",
+      "evidence": "Peptides were analyzed on a Fusion Lumos Tribrid mass spectrometer (Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 0.822,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Fusion Lumos Tribrid",
+      "evidence": "Eluted peptides were electrosprayed on-line into the Fusion Lumos Tribrid with a spray voltage of 2.0 kV and capillary temperature of 305\u00b0C.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Fusion Lumos",
+      "normalization_candidate_ids": [
+        "MS:1002732",
+        "MS:1003088",
+        "MS:1003090",
+        "MS:1000521",
+        "MS:1000784"
+      ]
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "electrosprayed",
+      "evidence": "Eluted peptides were electrosprayed on-line into the Fusion Lumos Tribrid with a spray voltage of 2.0 kV and capillary temperature of 305\u00b0C."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free quantification",
+      "evidence": "quantification: label-free quantification; Spectrum counting"
+    },
+    {
+      "value": "Spectrum counting",
+      "evidence": "quantification: label-free quantification; Spectrum counting"
+    },
+    {
+      "value": "LFQ",
+      "evidence": "Proteins were quantified by LFQ as implemented in MaxQuant with default settings."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Peptides (MS1) were detected in the Orbitrap with the following settings: resolving power: 120,000; scan range m/z 300\u20131500; S-Lens RF 30%; AGC target Standard, max injection time (IT) on Auto mode, microscans: 1."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "adenosine diphosphoribosyl (ADP-ribosyl) modified residue",
+      "evidence": "modifications: adenosine diphosphoribosyl (ADP-ribosyl) modified residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02087",
+      "ontology_name": "adenosine diphosphoribosyl (ADP-ribosyl) modified residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "adenosine diphosphoribosyl (ADP-ribosyl) modified residue"
+    },
+    {
+      "value": "Carbamidomethylation of cysteine (C)",
+      "evidence": "Carbamidomethylation of cysteine (C) was set as fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00419",
+      "ontology_name": "(R)-5-oxo-1,4-tetrahydrothiazine-3-carboxylic acid",
+      "similarity": 0.804,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "S-carbamoylmethylcysteine cyclization (N-terminus)"
+    },
+    {
+      "value": "oxidation of methionine (M)",
+      "evidence": "Variable modifications were oxidation of methionine (M), acetylated protein N-termini and ADP-ribosylation of aspartic acid (D), glutamic acid (E), asparagine (N), glutamine (Q), lysine (K), arginine (R), serine (S), cysteine (C), and histidine (H).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.922,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "acetylated protein N-termini",
+      "evidence": "Variable modifications were oxidation of methionine (M), acetylated protein N-termini and ADP-ribosylation of aspartic acid (D), glutamic acid (E), asparagine (N), glutamine (Q), lysine (K), arginine (R), serine (S), cysteine (C), and histidine (H).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00059",
+      "ontology_name": "N-acetyl-L-proline",
+      "similarity": 0.728,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-acetylated L-proline"
+    },
+    {
+      "value": "ADP-ribosylation of aspartic acid (D), glutamic acid (E), asparagine (N), glutamine (Q), lysine (K), arginine (R), serine (S), cysteine (C), and histidine (H)",
+      "evidence": "Variable modifications were oxidation of methionine (M), acetylated protein N-termini and ADP-ribosylation of aspartic acid (D), glutamic acid (E), asparagine (N), glutamine (Q), lysine (K), arginine (R), serine (S), cysteine (C), and histidine (H).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00236",
+      "ontology_name": "N4-(ADP-ribosyl)-L-asparagine",
+      "similarity": 0.819,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "MOD_RES ADP-ribosylasparagine"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM DTT",
+      "evidence": "Protein extracts were prepared by grinding plant leaf material in liquid N2 to a fine powder followed by resuspension in extraction buffer [50 mM Tris-HCl, 150 mM NaCl, 10% (v/v) glycerol, 1 mM EDTA, 5 mM DTT, 1\u00d7 protease inhibitor cocktail (Sigma-Aldrich #P9599), 10 uM MG132 (Merck), 0.2% NP 40, pH 7.4] at a ratio of 2 mL buffer per 1 g leaf material."
+    },
+    {
+      "value": "1 mM DTT",
+      "evidence": "Per affinity purification 15 uL Glutathione-Sepharose 4B resin (Merck) was washed in 50 mM Tris-HCl pH 7.5, 50 mM NaCl, 1 mM DTT and pelleted by centrifugation (500 x g, RT, 1 min)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Protein extracts were prepared by grinding plant leaf material in liquid N2 to a fine powder followed by resuspension in extraction buffer [50 mM Tris-HCl, 150 mM NaCl, 10% (v/v) glycerol, 1 mM EDTA, 5 mM DTT, 1\u00d7 protease inhibitor cocktail (Sigma-Aldrich #P9599), 10 uM MG132 (Merck), 0.2% NP 40, pH 7.4] at a ratio of 2 mL buffer per 1 g leaf material."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.96,
+    "evidence_score": 0.934,
+    "completeness": 0.966,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "collision_energy[0]",
+      "value": "30% NCE",
+      "evidence": "A targeted mass exclusion list containing the most prominent peptide m/z ratios for the GST-Af1521 Macro domains was used."
+    }
+  ]
+}

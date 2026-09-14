@@ -1,0 +1,174 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "500 \u00b5M",
+      "evidence": "5 \u00b5L of DBIA solution in lysis buffer was added to a concentration of 500 \u00b5M and incubated in dark for 1 hour at r.t.."
+    },
+    {
+      "value": "20 mM",
+      "evidence": "Beads were washed once with 200 \u00b5L 80% ethanol and resuspended in 25 \u00b5L lysis buffer supplemented with 20 mM IAA and incubated in dark for 30 minutes with vigorous shaking."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "DBIA",
+      "evidence": "5 \u00b5L of DBIA solution in lysis buffer was added to a concentration of 500 \u00b5M and incubated in dark for 1 hour at r.t.."
+    },
+    {
+      "value": "IAA",
+      "evidence": "Beads were washed once with 200 \u00b5L 80% ethanol and resuspended in 25 \u00b5L lysis buffer supplemented with 20 mM IAA and incubated in dark for 30 minutes with vigorous shaking."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "The remaining beads was added 30 \u00b5L 200 mM EPPS buffer (pH 8.5) containing 0.3 \u00b5g Lys-C."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "After 3-hour incubation at room temperature, 5 \u00b5L EPPS buffer containing 0.3 \u00b5g trypsin was added and incubated with beads at 37 \u00b0C overnight."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "36",
+      "evidence": "Peptide precursors were selected and fragmented using HCD with a collision energy of 36."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "antibody",
+      "evidence": "Desalted TMT-labeled peptides were resuspended in 460 \u00b5L100 mM HEPES buffer (pH 7.4) and added 80 \u00b5L Pierce\u2122 High Capacity Streptavidin Agarose (Cat. #20359) and incubated at r.t. for 3 hours."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Peptide precursors were selected and fragmented using HCD with a collision energy of 36."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Eclipse",
+      "evidence": "instruments: Orbitrap Eclipse",
+      "is_normalized": true,
+      "ontology_id": "MS:1003029",
+      "ontology_name": "Orbitrap Eclipse",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Eclipse"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "TMT6plex-126",
+      "evidence": "modifications: TMT6plex-126 reporter+balance reagent acylated residue"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Eclipse"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "TMT6plex-126 reporter+balance reagent acylated residue",
+      "evidence": "modifications: TMT6plex-126 reporter+balance reagent acylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:01720",
+      "ontology_name": "TMT6plex-126 reporter+balance reagent acylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "TMT6plex-126 reporter+balance reagent acylated residue"
+    },
+    {
+      "value": "Cys carboxyamidomethylation (+57.0215)",
+      "evidence": "Static modifications include Cys carboxyamidomethylation (+57.0215) and TMTpro18 (+304.2071) on Lys side chains and peptide N-termini.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.725,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxyamidomethyl Cystenyl"
+    },
+    {
+      "value": "TMTpro18 (+304.2071)",
+      "evidence": "Static modifications include Cys carboxyamidomethylation (+57.0215) and TMTpro18 (+304.2071) on Lys side chains and peptide N-termini.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "TMT6plex-128 reporter+balance reagent O3-acylated threonine",
+      "normalization_candidate_ids": [
+        "MOD:01742",
+        "MOD:01766",
+        "MOD:00546",
+        "MOD:01734",
+        "MOD:01569"
+      ]
+    },
+    {
+      "value": "Methionine oxidation (+15.9949)",
+      "evidence": "Methionine oxidation (+15.9949) and DBIA-modification on cysteine residues (+239.1628) were allowed as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00768",
+      "ontology_name": "methionine oxidation with neutral loss of 80 Da",
+      "similarity": 0.787,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "methionine oxidation with neutral loss of 80 Da"
+    },
+    {
+      "value": "DBIA-modification on cysteine residues (+239.1628)",
+      "evidence": "Methionine oxidation (+15.9949) and DBIA-modification on cysteine residues (+239.1628) were allowed as variable modifications.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Dabsyl chloride derivatized residue",
+      "normalization_candidate_ids": [
+        "MOD:01656",
+        "MOD:00401",
+        "MOD:00413",
+        "MOD:00405",
+        "MOD:00406"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "3 \u00b5L SP3 beads (1:1 mixture of hydrophobic and hydrophilic type, 50 mg/mL, Cat. #45152105050250 and Cat. #65152105050250,) and 30 \u00b5L ~98% ethanol supplemented with 20 mM DTT was added to plate and incubated for 15 minutes with mild shaking before placing the plate on a magnetic stand and aspiration of the liquid."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "3 \u00b5L SP3 beads (1:1 mixture of hydrophobic and hydrophilic type, 50 mg/mL, Cat. #45152105050250 and Cat. #65152105050250,) and 30 \u00b5L ~98% ethanol supplemented with 20 mM DTT was added to plate and incubated for 15 minutes with mild shaking before placing the plate on a magnetic stand and aspiration of the liquid."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.957,
+    "evidence_score": 0.948,
+    "completeness": 0.913,
+    "format_score": 1.0
+  }
+}

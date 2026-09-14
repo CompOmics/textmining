@@ -1,0 +1,186 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "Lyme neuroborreliosis",
+      "evidence": "Lyme neuroborreliosis (LNB) is a nervous system infection caused by tick-borne spirochetes of the Borrelia burgdorferi sensu lato complex and is one of the most frequent bacterial infections of the nervous system in Europe.",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0019632",
+      "ontology_name": "Lyme disease",
+      "similarity": 0.87,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Lyme borreliosis"
+    },
+    {
+      "value": "viral meningitis",
+      "evidence": "patients with LNB, viral meningitis, other manifestations of Lyme borreliosis without central nervous system involvement, and controls with normal CSF findings",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0007015",
+      "ontology_name": "viral meningitis",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "viral meningitis"
+    },
+    {
+      "value": "Lyme borreliosis",
+      "evidence": "patients with LNB, viral meningitis, other manifestations of Lyme borreliosis without central nervous system involvement, and controls with normal CSF findings",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0019632",
+      "ontology_name": "Lyme disease",
+      "similarity": 1.0,
+      "normalization_method": "exact_synonym",
+      "normalization_matched_text": "Lyme borreliosis",
+      "synonym_scope": "EXACT"
+    },
+    {
+      "value": "normal",
+      "evidence": "patients with LNB, viral meningitis, other manifestations of Lyme borreliosis without central nervous system involvement, and controls with normal CSF findings",
+      "is_normalized": true,
+      "ontology_id": "PATO:0000461",
+      "ontology_name": "normal",
+      "similarity": 0.999,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "normal"
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "biofluid",
+      "evidence": "Cerebrospinal fluid (CSF) and plasma samples were thawed and aliquoted into 96-well plates."
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "patient samples",
+      "evidence": "In this study, we used bottom-up proteomics to analyze 308 cerebrospinal fluid (CSF) samples and 207 plasma samples from well-characterized cohorts, including patients with LNB, viral meningitis, other manifestations of Lyme borreliosis without central nervous system involvement, and controls with normal CSF findings.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "polyp",
+      "normalization_candidate_ids": [
+        "BTO:0006350",
+        "BTO:0001965",
+        "BTO:0001490",
+        "BTO:0000278"
+      ]
+    },
+    {
+      "value": "healthy controls",
+      "evidence": "patients with LNB, viral meningitis, other manifestations of Lyme borreliosis without central nervous system involvement, and controls with normal CSF findings",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "whole blood",
+      "normalization_candidate_ids": [
+        "BTO:0000089",
+        "BTO:0006181",
+        "BTO:0000572",
+        "BTO:0000131"
+      ]
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "cerebrospinal fluid",
+      "evidence": "organism parts: Cerebrospinal fluid",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0001359",
+      "ontology_name": "cerebrospinal fluid",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cerebrospinal fluid"
+    },
+    {
+      "value": "plasma",
+      "evidence": "In this study, we used bottom-up proteomics to analyze 308 cerebrospinal fluid (CSF) samples and 207 plasma samples from well-characterized cohorts, including patients with LNB, viral meningitis, other manifestations of Lyme borreliosis without central nervous system involvement, and controls with normal CSF findings.",
+      "is_normalized": false,
+      "normalization_method": "related_synonym_requires_context",
+      "normalization_matched_text": "plasma",
+      "normalization_candidate_ids": [
+        "UBERON:0001969"
+      ],
+      "normalization_qc_flags": [
+        "related_synonym_requires_context"
+      ]
+    }
+  ],
+  "_confidence": {
+    "overall": 0.842,
+    "evidence_score": 0.874,
+    "completeness": 0.526,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "disease_state[3]",
+      "value": "normal",
+      "evidence": "patients with LNB, viral meningitis, other manifestations of Lyme borreliosis without central nervous system involvement, and controls with normal CSF findings"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "targeted",
+      "evidence": "For the targeted phosphoproteomics experiment, spectra were searched against a custom database containing the phosphopeptide sequences that were specifically targeted for acquisition, with no enzymatic digestion, and with a precursor ion mass tolerance of 3 ppm."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "55 mM iodoacetamide",
+      "evidence": "followed by cysteine alkylation in 55 mM iodoacetamide at room temperature for one hour in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "followed by cysteine alkylation in 55 mM iodoacetamide at room temperature for one hour in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "samples were incubated with sequencing-grade modified trypsin (Promega) for 18 hours at a trypsin:protein ratio of 1:50 (w/w)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "antibody",
+      "evidence": "For IP of tyrosine phosphorylated peptides, samples were incubated with 24 \u03bcg of anti-phosphotyrosine 4G10 antibody (BioXCell) and 12 \u03bcg of anti-phosphotyrosine PT-66 antibody (Sigma-Aldrich) conjugated to protein G agarose beads (Sigma-Aldrich)."
+    },
+    {
+      "value": "IMAC",
+      "evidence": "subjected to an additional phosphopeptide enrichment step using High-Select\u2122 Fe-NTA spin columns (Thermo Fisher Scientific) to reduce the abundance of non-phosphorylated peptides which may have bound nonspecifically to the IP beads."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: M397 cells were lysed in 8M urea and total protein was quantified by bicinchoninic acid assay (Pierce)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Exploris 480"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: phosphorylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "Cysteine carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation, TMT-labeled lysine, and TMT-labeled peptide N-termini were set as static modifications; phosphorylation of tyrosine, serine, and threonine, and oxidation of methionine were set as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "TMT-labeled lysine",
+      "evidence": "Cysteine carbamidomethylation, TMT-labeled lysine, and TMT-labeled peptide N-termini were set as static modifications; phosphorylation of tyrosine, serine, and threonine, and oxidation of methionine were set as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00855",
+      "ontology_name": "N6,N6,N6-trimethyl-L-lysine (from L-lysinium residue)",
+      "similarity": 0.77,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N6,N6,N6-trimethyl-L-lysine (from L-lysinium residue)"
+    },
+    {
+      "value": "TMT-labeled peptide N-termini",
+      "evidence": "Cysteine carbamidomethylation, TMT-labeled lysine, and TMT-labeled peptide N-termini were set as static modifications; phosphorylation of tyrosine, serine, and threonine, and oxidation of methionine were set as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01717",
+      "ontology_name": "TMT6plex reporter+balance reagent N-acylated residue",
+      "similarity": 0.742,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "TMT6plex reporter+balance reagent N-acylated residue"
+    },
+    {
+      "value": "phosphorylation of tyrosine",
+      "evidence": "Cysteine carbamidomethylation, TMT-labeled lysine, and TMT-labeled peptide N-termini were set as static modifications; phosphorylation of tyrosine, serine, and threonine, and oxidation of methionine were set as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00048",
+      "ontology_name": "O4'-phospho-L-tyrosine",
+      "similarity": 0.755,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Phospho Tyrosinyl"
+    },
+    {
+      "value": "phosphorylation of serine",
+      "evidence": "Cysteine carbamidomethylation, TMT-labeled lysine, and TMT-labeled peptide N-termini were set as static modifications; phosphorylation of tyrosine, serine, and threonine, and oxidation of methionine were set as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00046",
+      "ontology_name": "O-phospho-L-serine",
+      "similarity": 0.774,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Phospho Seryl"
+    },
+    {
+      "value": "phosphorylation of threonine",
+      "evidence": "Cysteine carbamidomethylation, TMT-labeled lysine, and TMT-labeled peptide N-termini were set as static modifications; phosphorylation of tyrosine, serine, and threonine, and oxidation of methionine were set as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00047",
+      "ontology_name": "O-phospho-L-threonine",
+      "similarity": 0.766,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "O-phosphorylated L-threonine"
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "Cysteine carbamidomethylation, TMT-labeled lysine, and TMT-labeled peptide N-termini were set as static modifications; phosphorylation of tyrosine, serine, and threonine, and oxidation of methionine were set as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM dithiothreitol",
+      "evidence": "700 \u03bcg of protein was subjected to reduction in 10 mM dithiothreitol at 56\u00b0C for one hour, followed by cysteine alkylation in 55 mM iodoacetamide at room temperature for one hour in the dark."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "700 \u03bcg of protein was subjected to reduction in 10 mM dithiothreitol at 56\u00b0C for one hour, followed by cysteine alkylation in 55 mM iodoacetamide at room temperature for one hour in the dark."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.913,
+    "evidence_score": 0.875,
+    "completeness": 0.875,
+    "format_score": 1.0
+  }
+}

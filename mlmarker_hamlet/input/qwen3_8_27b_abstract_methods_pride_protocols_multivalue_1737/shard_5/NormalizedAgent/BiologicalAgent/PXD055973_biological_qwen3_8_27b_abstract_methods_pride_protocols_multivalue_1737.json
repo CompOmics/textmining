@@ -1,0 +1,193 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "normal",
+      "evidence": "inferred: Plasma samples were collected within four days of admission to measure a panel of innate and complement system immune markers.",
+      "is_normalized": true,
+      "ontology_id": "PATO:0000461",
+      "ontology_name": "normal",
+      "similarity": 0.999,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "normal"
+    },
+    {
+      "value": "cancer",
+      "evidence": "inferred: In this study, we investigated immune responses in a prospective cohort of hospitalized COVID-19 patients (derivation cohort, DC; n = 126) during the spring of 2020.",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0004992",
+      "ontology_name": "cancer",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cancer"
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell line",
+      "evidence": "inferred: Plasma samples were collected within four days of admission to measure a panel of innate and complement system immune markers."
+    },
+    {
+      "value": "tissue",
+      "evidence": "inferred: In this study, we investigated immune responses in a prospective cohort of hospitalized COVID-19 patients (derivation cohort, DC; n = 126) during the spring of 2020."
+    },
+    {
+      "value": "biofluid",
+      "evidence": "inferred: From a subset of this cohort (n = 80), we performed plasma proteomics and developed a predictive survival model based on proteins differentially expressed between survivors (n = 60) and non-survivors (n = 20)."
+    },
+    {
+      "value": "primary cells",
+      "evidence": "inferred: Sample preparation was performed on an Agilent Bravo Liquid Handling Platform according to the previously published method described in (Geyer et al. 2016)."
+    },
+    {
+      "value": "organoid",
+      "evidence": "inferred: The MS raw files were processed with Spectronaut version 17 (Biognosys, Zurich, Switzerland)."
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "tumor biopsy",
+      "evidence": "inferred: In this study, we investigated immune responses in a prospective cohort of hospitalized COVID-19 patients (derivation cohort, DC; n = 126) during the spring of 2020.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "blood",
+      "normalization_candidate_ids": [
+        "BTO:0000089",
+        "BTO:0000134",
+        "BTO:0000553",
+        "BTO:0000679"
+      ]
+    },
+    {
+      "value": "patient serum",
+      "evidence": "inferred: Plasma samples were collected within four days of admission to measure a panel of innate and complement system immune markers.",
+      "is_normalized": true,
+      "ontology_id": "BTO:0001239",
+      "ontology_name": "serum",
+      "similarity": 0.891,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "serum"
+    },
+    {
+      "value": "surgical resection",
+      "evidence": "inferred: From a subset of this cohort (n = 80), we performed plasma proteomics and developed a predictive survival model based on proteins differentially expressed between survivors (n = 60) and non-survivors (n = 20).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "cadaver",
+      "normalization_candidate_ids": [
+        "BTO:0001965",
+        "BTO:0000278",
+        "BTO:0005516",
+        "BTO:0006350"
+      ]
+    },
+    {
+      "value": "cell culture",
+      "evidence": "inferred: Sample preparation was performed on an Agilent Bravo Liquid Handling Platform according to the previously published method described in (Geyer et al. 2016).",
+      "is_normalized": true,
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cell culture"
+    },
+    {
+      "value": "healthy donors",
+      "evidence": "inferred: The MS raw files were processed with Spectronaut version 17 (Biognosys, Zurich, Switzerland).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "whole blood",
+      "normalization_candidate_ids": [
+        "BTO:0000089",
+        "BTO:0000131",
+        "BTO:0000572",
+        "BTO:0000570"
+      ]
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "inferred: organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "blood",
+      "evidence": "inferred: organism parts: Blood serum; Blood plasma",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0000178",
+      "ontology_name": "blood",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "blood"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.796,
+    "evidence_score": 0.748,
+    "completeness": 0.609,
+    "format_score": 1.0
+  }
+}

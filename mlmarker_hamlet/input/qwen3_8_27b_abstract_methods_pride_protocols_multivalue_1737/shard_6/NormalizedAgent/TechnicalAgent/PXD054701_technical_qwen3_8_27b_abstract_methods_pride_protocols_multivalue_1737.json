@@ -1,0 +1,155 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-dependent acquisition",
+      "evidence": "A top speed data-dependent MS/MS method with a fixed cycle time of 3 s was used."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "50 mM iodoacetamide",
+      "evidence": "Alkylation was performed with 50 mM iodoacetamide."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Alkylation was performed with 50 mM iodoacetamide."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "Digest was performed on beads with 0.25\u03bcg Trypsin (Gold, Mass Spectrometry Grade, Promega) and 0.25 \u03bcg Lys-C (Wako) in 100 \u03bcl 100 mM ammonium bicarbonate at 37\u00b0C overnight."
+    },
+    {
+      "value": "Trypsin",
+      "evidence": "Digest was performed on beads with 0.25\u03bcg Trypsin (Gold, Mass Spectrometry Grade, Promega) and 0.25 \u03bcg Lys-C (Wako) in 100 \u03bcl 100 mM ammonium bicarbonate at 37\u00b0C overnight."
+    },
+    {
+      "value": "LysC protease",
+      "evidence": "Digest was done with LysC protease in 0.5% sodium deoxycholate for 2 h at 30 C followed by the addition of trypsin at 37 C overnight (enzyme/protein 1/200)."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Digest was done with LysC protease in 0.5% sodium deoxycholate for 2 h at 30 C followed by the addition of trypsin at 37 C overnight (enzyme/protein 1/200)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "35% normalized collision energy",
+      "evidence": "Higher\u00a0energy collisional dissociation (HCD) fragmentation with 35% normalized collision energy was applied."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Higher\u00a0energy collisional dissociation (HCD) fragmentation with 35% normalized collision energy was applied."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion",
+      "evidence": "NanoLC-MS/MS analyses were performed on an Orbitrap Fusion (Thermo Scientific) equipped with a PicoView Ion Source (New Objective) and coupled to an EASY-nLC 1000 (Thermo Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1002416",
+      "ontology_name": "Orbitrap Fusion",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "PicoView Ion Source",
+      "evidence": "NanoLC-MS/MS analyses were performed on an Orbitrap Fusion (Thermo Scientific) equipped with a PicoView Ion Source (New Objective) and coupled to an EASY-nLC 1000 (Thermo Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "Label-free quantification (LFQ) intensities were used for protein quantitation."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Both MS and MS/MS scans were acquired in the Orbitrap analyzer with a resolution of 60 000 for MS scans and 30 000 for MS/MS scans."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Protein N-terminal acetylation",
+      "evidence": "In addition to MaxQuant default settings, the search was performed against following variable modifications: Protein N-terminal acetylation, Gln to pyro-Glu formation (N-term. Gln) and oxidation (Met).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.895,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "Gln to pyro-Glu formation (N-term. Gln)",
+      "evidence": "In addition to MaxQuant default settings, the search was performed against following variable modifications: Protein N-terminal acetylation, Gln to pyro-Glu formation (N-term. Gln) and oxidation (Met).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "L-glutamine removal",
+      "normalization_candidate_ids": [
+        "MOD:01637",
+        "MOD:00883",
+        "MOD:00040",
+        "MOD:00016"
+      ]
+    },
+    {
+      "value": "oxidation (Met)",
+      "evidence": "In addition to MaxQuant default settings, the search was performed against following variable modifications: Protein N-terminal acetylation, Gln to pyro-Glu formation (N-term. Gln) and oxidation (Met).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.766,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "Carbamidomethyl (Cys)",
+      "evidence": "Carbamidomethyl (Cys) was set as fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01216",
+      "ontology_name": "iodoacetamide derivatized glutamic acid",
+      "similarity": 0.894,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carbamidomethyl"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "Briefly, reconstitution solution was added to the sample up to 250 \u03bcl resulting in a DTT concentration of 20 mM."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "To the eluates, 50 mM of DTT was added and the samples were heated at 95\u00b0C for 5 min."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.974,
+    "evidence_score": 0.986,
+    "completeness": 0.905,
+    "format_score": 1.0
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Trypsin was specified as cleavage enzyme allowing up to 2 missed cleavages, 4 modifications per peptide and up to 5 charges."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30",
+      "evidence": "Peptides were selected for MS/MS using HCD setting at 30, ion fragments were detected in the Orbitrap at a resolution of 30,000 (Exeploris240) or in the linear ion trap (LUMOS)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Peptides were selected for MS/MS using HCD setting at 30, ion fragments were detected in the Orbitrap at a resolution of 30,000 (Exeploris240) or in the linear ion trap (LUMOS)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "NSI",
+      "evidence": "The peptides were subjected to NSI source followed by tandem mass spectrometry (MS/MS) in Fusion Lumos or Exploris240 coupled online to the nano-LC."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "Spectrum counting",
+      "evidence": "quantification: Spectrum counting"
+    },
+    {
+      "value": "Label Free Quantification",
+      "evidence": "For abundance comparison, abundance ratios were calculated by Label Free Quantification (LFQ) of the precursor intensities within Proteome Discoverer 2.5 SP1."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "linear ion trap",
+      "evidence": "ion fragments were detected in the Orbitrap at a resolution of 30,000 (Exeploris240) or in the linear ion trap (LUMOS)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "Oxidation on Met (+15.995 Da)",
+      "evidence": "Oxidation on Met (+15.995 Da), conversion of Gln (-17.027 Da) or Glu (- 18.011 Da) to pyro-Glu at the peptide N-term were considered as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00935",
+      "ontology_name": "methionine oxidation with neutral loss of 64 Da",
+      "similarity": 0.767,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "methionine oxidation with neutral loss of 64 Da"
+    },
+    {
+      "value": "conversion of Gln (-17.027 Da) or Glu (- 18.011 Da) to pyro-Glu at the peptide N-term",
+      "evidence": "Oxidation on Met (+15.995 Da), conversion of Gln (-17.027 Da) or Glu (- 18.011 Da) to pyro-Glu at the peptide N-term were considered as variable modifications.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation in presence of O18",
+      "normalization_candidate_ids": [
+        "MOD:00791",
+        "MOD:01293",
+        "MOD:00040",
+        "MOD:00400"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "1mM",
+      "evidence": "Cells were lysed with 800\u00b5L/dish of stringent lysis buffer (50mM Tris-HCl pH 7.6, 500mM NaCl, 0.4% SDS, 1mM DTT, 1 tablet of Pierce phosphatase/protease inhibitor (Thermo Scientific) per 10ml of lysis buffer) for 15 min at room temperature (RT)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Cells were lysed with 800\u00b5L/dish of stringent lysis buffer (50mM Tris-HCl pH 7.6, 500mM NaCl, 0.4% SDS, 1mM DTT, 1 tablet of Pierce phosphatase/protease inhibitor (Thermo Scientific) per 10ml of lysis buffer) for 15 min at room temperature (RT)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.967,
+    "evidence_score": 0.995,
+    "completeness": 0.85,
+    "format_score": 1.0
+  }
+}

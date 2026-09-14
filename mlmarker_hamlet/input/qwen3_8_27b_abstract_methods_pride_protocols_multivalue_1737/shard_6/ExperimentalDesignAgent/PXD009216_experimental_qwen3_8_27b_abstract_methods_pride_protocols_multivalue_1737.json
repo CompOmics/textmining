@@ -1,0 +1,86 @@
+{
+  "biological_replicate": [
+    {
+      "value": "3",
+      "evidence": "inferred: Similarly, SILAC datasets were filtered to exclude proteins with H/M ratios detected in only one of the biological replicates. Detection in a biological replicate required identification in at least two of the three technical replicates that were done for each biological replicate; median values from the technical replicates were used for subsequent analyses."
+    }
+  ],
+  "experimental_design": [
+    {
+      "value": "treated vs control",
+      "evidence": "inferred: Moderated t-test with a paired design was used to compare the log2 transformed iBAQ values between S1 and S3, S1 and S2, and S2 and S3 using limma package."
+    }
+  ],
+  "factor_value": [
+    {
+      "value": "S1 vs S2 vs S3",
+      "evidence": "inferred: Data was first filtered to exclude proteins detected in only one of the dCas9-mCherry-APEX2/sgTelo (+BP, +H2O2) (\u201cS1\u201d) replicates, followed by log2 transformation."
+    },
+    {
+      "value": "H vs M vs L",
+      "evidence": "inferred: Similarly, SILAC datasets were filtered to exclude proteins with H/M ratios detected in only one of the biological replicates."
+    }
+  ],
+  "number_of_biological_replicates": [
+    {
+      "value": "3",
+      "evidence": "inferred: Similarly, SILAC datasets were filtered to exclude proteins with H/M ratios detected in only one of the biological replicates."
+    }
+  ],
+  "number_of_fractions": [
+    {
+      "value": "5",
+      "evidence": "inferred: The coomassie-stained protein bands were excised and cut to five slices for in-gel digestion and LC-MS/MS analysis."
+    }
+  ],
+  "number_of_samples": [
+    {
+      "value": "9",
+      "evidence": "inferred: Data was first filtered to exclude proteins detected in only one of the dCas9-mCherry-APEX2/sgTelo (+BP, +H2O2) (\u201cS1\u201d) replicates"
+    }
+  ],
+  "number_of_technical_replicates": [
+    {
+      "value": "3",
+      "evidence": "inferred: Similarly, SILAC datasets were filtered to exclude proteins with H/M ratios detected in only one of the biological replicates. Detection in a biological replicate required identification in at least two of the three technical replicates that were done for each biological replicate; median values from the technical replicates were used for subsequent analyses."
+    }
+  ],
+  "technical_replicate": [
+    {
+      "value": "3",
+      "evidence": "inferred: Detection in a biological replicate required identification in at least two of the three technical replicates that were done for each biological replicate; median values from the technical replicates were used for subsequent analyses."
+    }
+  ],
+  "technology_type": [
+    {
+      "value": "Shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics"
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "experimental_design",
+      "value": "treated vs control",
+      "evidence": "inferred: Moderated t-test with a paired design was used to compare the log2 transformed iBAQ values between S1 and S3, S1 and S2, and S2 and S3 using limma package.",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    },
+    {
+      "field": "factor_value",
+      "value": "S1 vs S2 vs S3",
+      "evidence": "inferred: Data was first filtered to exclude proteins detected in only one of the dCas9-mCherry-APEX2/sgTelo (+BP, +H2O2) (\u201cS1\u201d) replicates, followed by log2 transformation.",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    },
+    {
+      "field": "factor_value",
+      "value": "H vs M vs L",
+      "evidence": "inferred: Similarly, SILAC datasets were filtered to exclude proteins with H/M ratios detected in only one of the biological replicates.",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.895,
+    "evidence_score": 0.79,
+    "completeness": 1.0,
+    "format_score": 1.0
+  }
+}

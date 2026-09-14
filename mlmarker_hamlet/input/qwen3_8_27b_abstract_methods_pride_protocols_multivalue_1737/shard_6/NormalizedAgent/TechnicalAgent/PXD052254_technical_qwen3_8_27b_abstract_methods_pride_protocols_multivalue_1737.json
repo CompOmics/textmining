@@ -1,0 +1,148 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "The mass spectrometer was operated in data-dependent mode using the Top-speed setting with 2 s cycle time."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "0.05 M",
+      "evidence": "alkylated with 0.05 M iodoacetamide in 8 M urea in 0.1 M Tris*HCl, pH 8.5 and washed again"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "alkylated with 0.05 M iodoacetamide in 8 M urea in 0.1 M Tris*HCl, pH 8.5 and washed again"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Trypsin was added at a protein-to-trypsin (m/m) ratio of 50:1 and digested for 18\u00a0h at 30\u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30% normalized collision energy (NCE)",
+      "evidence": "Precursor ions passing a 5e3 intensity cut-off and fulfilling monoisotopic precursors filter with z = 2-6+ were selected for fragmentation by higher-energy collision-induced dissociation (HCD) with 30% normalized collision energy (NCE) followed by detection in the Ion trap operated in rapid scan mode at a maximum injection time setting of \u201cdynamic\u201d and the normalized AGC target set to 200%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "higher-energy collision-induced dissociation (HCD)",
+      "evidence": "Precursor ions passing a 5e3 intensity cut-off and fulfilling monoisotopic precursors filter with z = 2-6+ were selected for fragmentation by higher-energy collision-induced dissociation (HCD) with 30% normalized collision energy (NCE) followed by detection in the Ion trap operated in rapid scan mode at a maximum injection time setting of \u201cdynamic\u201d and the normalized AGC target set to 200%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Orbitrap Fusion Lumos Tribrid mass spectrometer",
+      "evidence": "LC-MS/MS analyses were performed using an Orbitrap Fusion Lumos Tribrid mass spectrometer (Thermo Fisher Scientific, Germany) connected to an Ultimate 3000 RSLC nano system (Dionex, Thermo Fisher Scientific, Germany).",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 0.872,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: LC-MS/MS analyses were performed using an Orbitrap Fusion Lumos Tribrid mass spectrometer (Thermo Fisher Scientific, Germany) connected to an Ultimate 3000 RSLC nano system (Dionex, Thermo Fisher Scientific, Germany)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "Label Free Quantification (LFQ)",
+      "evidence": "Label Free Quantification (LFQ) values from the proteinGroups.txt file from MaxQuant were used for differential protein expression analysis."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: LC-MS/MS analyses were performed using an Orbitrap Fusion Lumos Tribrid mass spectrometer (Thermo Fisher Scientific, Germany) connected to an Ultimate 3000 RSLC nano system (Dionex, Thermo Fisher Scientific, Germany)."
+    },
+    {
+      "value": "Ion trap",
+      "evidence": "followed by detection in the Ion trap operated in rapid scan mode at a maximum injection time setting of \u201cdynamic\u201d and the normalized AGC target set to 200%."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "iodoacetamide",
+      "evidence": "alkylated with 0.05 M iodoacetamide in 8 M urea in 0.1 M Tris*HCl, pH 8.5 and washed again",
+      "is_normalized": true,
+      "ontology_id": "MOD:01090",
+      "ontology_name": "iodoacetamide derivatized amino-terminal residue",
+      "similarity": 0.916,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Iodoacetamide derivative"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "0.1 M",
+      "evidence": "proteome-extracted in 0.5 % SDS, 0.1 M Tris*HCl pH 8.5, 0.1 M DTT at 90\u00b0C for 5 min followed by centrifugation at 20,000 g for 30 min."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "proteome-extracted in 0.5 % SDS, 0.1 M Tris*HCl pH 8.5, 0.1 M DTT at 90\u00b0C for 5 min followed by centrifugation at 20,000 g for 30 min."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.955,
+    "evidence_score": 0.95,
+    "completeness": 0.9,
+    "format_score": 1.0
+  }
+}

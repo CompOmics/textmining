@@ -1,0 +1,180 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "The Orbitrap Fusion\u2122 Tribrid\u2122 mass spectrometer was operated in DDA mode using the vendor-supplied default settings for synchronous precursor selection (SPS) MS3 fragmentation (McAlister et al, 2014)."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "15 mM",
+      "evidence": "Disulfide bonds of proteins were reduced with 5 mM DTT for 30 min at 60 \u00b0C, followed by alkylation of free SH-groups with 15 mM CAA for 30 min at RT."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "CAA",
+      "evidence": "Disulfide bonds of proteins were reduced with 5 mM DTT for 30 min at 60 \u00b0C, followed by alkylation of free SH-groups with 15 mM CAA for 30 min at RT."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "modified trypsin",
+      "evidence": "For proteolytic digestion sequencing grade modified trypsin (Promega) was used in a 1:50 (w/w) protease-to-protein ratio, incubating overnight at 37 \u00b0C, shaking at 700 rpm."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "65%",
+      "evidence": "The HCD collision energy for fragmentation was set to 65% and the scans were acquired in the orbitrap at a resolution of 60 000 at 200 m/z."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high pH- reverse-phase liquid chromatography fractionation",
+      "evidence": "For sample fractionation prior to LC-MS analysis, high pH- reverse-phase liquid chromatography fractionation (hpH-RPLC) was performed using a 1260 Infinity HPLC system (Agilent) with a Gemini C18 column (3 \u03bcm, 110 \u00c5, 100 \u00d7 1.0 mm; Phenomenex)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "collision-induced dissociation",
+      "evidence": "The most intense precursors with a threshold of 5x103 were selected for MS2 analysis in the ion trap with collision-induced dissociation (CID), fragmenting in the Top Speed mode, with an isolation width of 0.5 Da."
+    },
+    {
+      "value": "higher-energy collision dissociation (HCD)",
+      "evidence": "The selected ions were transferred into the higher-energy collision dissociation (HCD) cell using the SPS waveform with an isolation width of 2.0 Da and AGC target of 1x 105."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion",
+      "evidence": "instruments: Orbitrap Fusion",
+      "is_normalized": true,
+      "ontology_id": "MS:1002416",
+      "ontology_name": "Orbitrap Fusion",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion"
+    },
+    {
+      "value": "Orbitrap Fusion\u2122 Tribrid\u2122",
+      "evidence": "Eluting peptides were electro-sprayed by applying 2 kV on a 10 \u00b5m Picotip coated emitter (New Objective) into an Orbitrap Fusion\u2122 Tribrid\u2122 (Thermo Fisher Scientific) mass spectrometer operated in data dependent mode of acquisition using the vendor supplied default settings for synchronous precursor selection (SPS) MS3 fragmentation.",
+      "is_normalized": true,
+      "ontology_id": "MS:1001910",
+      "ontology_name": "Orbitrap Elite",
+      "similarity": 0.854,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Elite"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "electro-sprayed",
+      "evidence": "Eluting peptides were electro-sprayed by applying 2 kV on a 10 \u00b5m Picotip coated emitter (New Objective) into an Orbitrap Fusion\u2122 Tribrid\u2122 (Thermo Fisher Scientific) mass spectrometer operated in data dependent mode of acquisition using the vendor supplied default settings for synchronous precursor selection (SPS) MS3 fragmentation."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    },
+    {
+      "value": "TMTproTM 16plex",
+      "evidence": "For isobaric labeling of peptides, Thermo ScientificTM TMTproTM 16plex label reagents were used according to the manufacturer\u2019s instructions."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: For each cycle, one full MS spectrum was acquired in the orbitrap with a mass range of 380-1500 m/z and a resolution of 120000 FWHM at 200 m/z."
+    },
+    {
+      "value": "ion trap",
+      "evidence": "The most intense precursors with a threshold of 5x103 were selected for MS2 analysis in the ion trap with collision-induced dissociation (CID), fragmenting in the Top Speed mode, with an isolation width of 0.5 Da."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "TMT6plex-126 reporter+balance reagent acylated residue",
+      "evidence": "modifications: TMT6plex-126 reporter+balance reagent acylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:01720",
+      "ontology_name": "TMT6plex-126 reporter+balance reagent acylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "TMT6plex-126 reporter+balance reagent acylated residue"
+    },
+    {
+      "value": "Carbamidomethylation of cysteine",
+      "evidence": "Carbamidomethylation of cysteine was set as a fixed modification, oxidation of methionine and acetylation of the peptide N-term were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01061",
+      "ontology_name": "S-carboxymethyl-L-cysteine",
+      "similarity": 0.803,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl cysteine"
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "Carbamidomethylation of cysteine was set as a fixed modification, oxidation of methionine and acetylation of the peptide N-term were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "acetylation of the peptide N-term",
+      "evidence": "Carbamidomethylation of cysteine was set as a fixed modification, oxidation of methionine and acetylation of the peptide N-term were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00394",
+      "ontology_name": "monoacetylated residue",
+      "similarity": 0.818,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Acetylation (N terminus, N epsilon of Lysine, O of Serine) (Ac)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Disulfide bonds of proteins were reduced with 5 mM DTT for 30 min at 60 \u00b0C, followed by alkylation of free SH-groups with 15 mM CAA for 30 min at RT."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Disulfide bonds of proteins were reduced with 5 mM DTT for 30 min at 60 \u00b0C, followed by alkylation of free SH-groups with 15 mM CAA for 30 min at RT."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.989,
+    "evidence_score": 0.996,
+    "completeness": 0.957,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM",
+      "evidence": "Disulfide bonds of proteins were reduced with 5 mM DTT for 30 min at 60 \u00b0C, followed by alkylation of free SH-groups with 15 mM CAA for 30 min at RT."
+    },
+    {
+      "type": "negated_evidence",
+      "field": "reduction_reagent[0]",
+      "value": "DTT",
+      "evidence": "Disulfide bonds of proteins were reduced with 5 mM DTT for 30 min at 60 \u00b0C, followed by alkylation of free SH-groups with 15 mM CAA for 30 min at RT."
+    }
+  ]
+}

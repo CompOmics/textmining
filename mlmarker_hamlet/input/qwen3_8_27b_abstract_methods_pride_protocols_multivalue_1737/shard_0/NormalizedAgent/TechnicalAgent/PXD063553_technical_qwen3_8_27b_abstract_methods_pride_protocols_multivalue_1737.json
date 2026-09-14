@@ -1,0 +1,160 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-dependent acquisition"
+    },
+    {
+      "value": "DIA",
+      "evidence": "inferred: FAIMS device enabled during data acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM iodoacetimide",
+      "evidence": "Cysteine residues were alkylated using 10 mM iodoacetimide for 20 minutes at RT in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetimide",
+      "evidence": "Cysteine residues were alkylated using 10 mM iodoacetimide for 20 minutes at RT in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "Protein was eluted from SP3 beads using 200 mM EPPS pH 8.5 containing Lys-C (Wako, 129-02541)."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "The next morning trypsin (ThermoFisher Scientific) was added to each sample and further incubated for 6 hours at 37\u00ba C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "NCE 35%",
+      "evidence": "Top 10 MS2 scans were performed in the ion trap with CID fragmentation (isolation window 0.5 Da; Rapid; NCE 35%; maximum injection time 50 ms; AGC 2 \u00d7 104)."
+    },
+    {
+      "value": "NCE of 55%",
+      "evidence": "MS3 scans were collected in the Orbitrap using a resolution of 50,000, NCE of 55%, maximum injection time of 200 ms, and AGC of 3.0 \u00d7 105."
+    },
+    {
+      "value": "NCE 36%",
+      "evidence": "MS2 scans were performed in the Orbitrap with HCD fragmentation (isolation window 0.5 Da; 50,000 resolution; NCE 36%; maximum injection time 300 ms; AGC 2 \u00d7 105)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "IMAC",
+      "evidence": "A phosphopeptide enrichment was performed using a High-Select Fe-NTA Phosphopeptide Enrichment Kit (ThermoFisher Scientific)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "inferred: TMT labeled peptides were solubilized in 5% acetonitrile/10 mM ammonium bicarbonate, pH 8.0 and ~300 \u00b5g of TMT labeled peptides were separated by an Agilent 300 Extend C18 column (3.5 um particles, 4.6 mm ID and 250 mm in length)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "CID",
+      "evidence": "Top 10 MS2 scans were performed in the ion trap with CID fragmentation (isolation window 0.5 Da; Rapid; NCE 35%; maximum injection time 50 ms; AGC 2 \u00d7 104)."
+    },
+    {
+      "value": "HCD",
+      "evidence": "MS2 scans were performed in the Orbitrap with HCD fragmentation (isolation window 0.5 Da; 50,000 resolution; NCE 36%; maximum injection time 300 ms; AGC 2 \u00d7 105)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos; Orbitrap Eclipse",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Orbitrap Eclipse",
+      "evidence": "instruments: Orbitrap Fusion Lumos; Orbitrap Eclipse",
+      "is_normalized": true,
+      "ontology_id": "MS:1003029",
+      "ontology_name": "Orbitrap Eclipse",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Eclipse"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: Proteome data were collected on an Orbitrap Fusion Lumos mass spectrometer (ThermoFisher Scientific) coupled to a Proxeon EASY-nLC 1000 LC pump (ThermoFisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Proteome data were collected on an Orbitrap Fusion Lumos mass spectrometer (ThermoFisher Scientific) coupled to a Proxeon EASY-nLC 1000 LC pump (ThermoFisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: phosphorylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "TMTpro on lysine residues and peptide N-termini (+304.2071 Da) and carbamidomethylation of cysteine residues (+57.0215 Da) were set as static modifications, while oxidation of methionine residues (+15.9949 Da) was set as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "TMTpro on lysine residues and peptide N-termini (+304.2071 Da) and carbamidomethylation of cysteine residues (+57.0215 Da) were set as static modifications, while oxidation of methionine residues (+15.9949 Da) was set as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM TCEP",
+      "evidence": "Following lysis, 150 \u00b5g of each proteome was reduced with 5 mM TCEP."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Following lysis, 150 \u00b5g of each proteome was reduced with 5 mM TCEP."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.948,
+    "evidence_score": 0.896,
+    "completeness": 1.0,
+    "format_score": 1.0
+  }
+}

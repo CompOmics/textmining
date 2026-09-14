@@ -1,0 +1,177 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DIA",
+      "evidence": "experiment types: Data-independent acquisition"
+    },
+    {
+      "value": "DIA",
+      "evidence": "Data independent acquisition (DIA) mass spectrometer settings were as follows: one 120,000 resolution full MS scan with a scan range of 350-1200 m/z, normalized automatic gain control (AGC) target of 300%, and automatic maximum inject time."
+    },
+    {
+      "value": "DDA",
+      "evidence": "we injected standard E. coli protein digest in between samples (one injection after every four biological samples) and collected the data in data dependent acquisition (DDA) mode."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "20mM",
+      "evidence": "alkylated in 20mM iodoacetamide (Sigma)"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "alkylated in 20mM iodoacetamide (Sigma)"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Trypsin",
+      "evidence": "A 1:10 ratio (enzyme: protein) of Trypsin (Promega) and LysC (Wako) suspended in 20\u00b5L 50mM TEAB was added"
+    },
+    {
+      "value": "LysC",
+      "evidence": "A 1:10 ratio (enzyme: protein) of Trypsin (Promega) and LysC (Wako) suspended in 20\u00b5L 50mM TEAB was added"
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27",
+      "evidence": "the normalized collision energy for each window was set at 27"
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    },
+    {
+      "value": "Exploris 480",
+      "evidence": "Samples were randomized and analyzed on an Exploris 480 mass spectrometer (Thermofisher Scientific San Jose, CA) coupled with an Ultimate 3000 nano UPLC system and an EasySpray source.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 0.785,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "coupled with an Ultimate 3000 nano UPLC system and an EasySpray source"
+    },
+    {
+      "value": "ESI",
+      "evidence": "coupled with an Ultimate 3000 nano UPLC system and an EasySpray source"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: The default settings in Spectronaut were used for peptide and protein quantification with cysteine carbamidomethylation as fixed modification and methionine oxidation and protein N-terminal Acetylation as variable modifications."
+    },
+    {
+      "value": "Relative quantification",
+      "evidence": "quantification: Relative quantification"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Samples were randomized and analyzed on an Exploris 480 mass spectrometer (Thermofisher Scientific San Jose, CA) coupled with an Ultimate 3000 nano UPLC system and an EasySpray source."
+    },
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Q Exactive HF"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    },
+    {
+      "value": "cysteine carbamidomethylation",
+      "evidence": "The default settings in Spectronaut were used for peptide and protein quantification with cysteine carbamidomethylation as fixed modification and methionine oxidation and protein N-terminal Acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "The default settings in Spectronaut were used for peptide and protein quantification with cysteine carbamidomethylation as fixed modification and methionine oxidation and protein N-terminal Acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "protein N-terminal Acetylation",
+      "evidence": "The default settings in Spectronaut were used for peptide and protein quantification with cysteine carbamidomethylation as fixed modification and methionine oxidation and protein N-terminal Acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.895,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5mM",
+      "evidence": "proteins were reduced in 5mM TCEP (Thermo)"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "proteins were reduced in 5mM TCEP (Thermo)"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.918,
+    "evidence_score": 0.884,
+    "completeness": 0.88,
+    "format_score": 1.0
+  }
+}

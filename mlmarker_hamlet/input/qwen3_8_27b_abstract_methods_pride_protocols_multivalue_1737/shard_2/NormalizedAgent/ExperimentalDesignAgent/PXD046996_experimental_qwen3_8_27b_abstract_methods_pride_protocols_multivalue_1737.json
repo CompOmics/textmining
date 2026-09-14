@@ -1,0 +1,86 @@
+{
+  "biological_replicate": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "experimental_design": [
+    {
+      "value": "treated vs control",
+      "evidence": "inferred: Lysates of MCF-7 RB1-knockout cells were pulled down with a PRMT5 antibody or IgG control."
+    },
+    {
+      "value": "case vs control",
+      "evidence": "inferred: MCF-7 RB1-knockout cells were transfected with a PRMT5 siRNA or a control siRNA."
+    }
+  ],
+  "factor_value": [
+    {
+      "value": "PRMT5 antibody vs IgG control",
+      "evidence": "inferred: Lysates of MCF-7 RB1-knockout cells were pulled down with a PRMT5 antibody or IgG control."
+    },
+    {
+      "value": "GSK inhibitor vs DMSO",
+      "evidence": "inferred: QEX2_981011, QEX2_981012, QEX2_981013, GSK, IgG QEX2_981014, QEX2_981015, QEX2_981016, GSK, PRMT5 antibody"
+    },
+    {
+      "value": "PRMT5 siRNA vs control siRNA",
+      "evidence": "inferred: MCF-7 RB1-knockout cells were transfected with a PRMT5 siRNA or a control siRNA."
+    }
+  ],
+  "number_of_biological_replicates": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "number_of_fractions": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "number_of_samples": [
+    {
+      "value": "12",
+      "evidence": "QEX2_981005, QEX2_981006, QEX2_981007: DMSO, IgG QEX2_981008, QEX2_981009, QEX2_981010: DMSO, PRMT5 antibody QEX2_981011, QEX2_981012, QEX2_981013, GSK, IgG QEX2_981014, QEX2_981015, QEX2_981016, GSK, PRMT5 antibody SDMA PTM analysis: MCF-7 RB1-knockout cells were transfected with a PRMT5 siRNA or a control siRNA. Lysates were collected three days after transfection and subjected to mass spectrometry analysis. LUM1_1000791, LUM1_1000792, LUM1_1000793: control SiRNA LUM1_1000794, LUM1_1000795, LUM1_1000796: PRMT5 siRNA"
+    }
+  ],
+  "number_of_technical_replicates": [
+    {
+      "value": "3",
+      "evidence": "QEX2_981005, QEX2_981006, QEX2_981007: DMSO, IgG"
+    }
+  ],
+  "technical_replicate": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "technology_type": [
+    {
+      "value": "affinity purification coupled with mass spectrometry proteomics",
+      "evidence": "For Co-IP MS analysis, immunoprecipitated proteins were further processed by running in a SDS-PAGE gel followed by Coomassie blue staining, tryptic digestion, reduction with DTT, alkylation with iodoacetamide, and finally cleanup with Oasis MCX solid-phase extraction cartridges (Waters)."
+    },
+    {
+      "value": "targeted proteomics",
+      "evidence": "Next, lysates were subjected to tryptic digestion, solid-phase cleanup and SDMA enrichment following the manual instruction of PTMScan\u00ae Symmetric Di-Methyl Arginine Motif [sdme-RG] Kit (Cell Signaling)."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "factor_value",
+      "value": "GSK inhibitor vs DMSO",
+      "evidence": "inferred: QEX2_981011, QEX2_981012, QEX2_981013, GSK, IgG QEX2_981014, QEX2_981015, QEX2_981016, GSK, PRMT5 antibody",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.769,
+    "evidence_score": 0.662,
+    "completeness": 0.692,
+    "format_score": 1.0
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "inferred: Twenty most intense multiply-charged ions were selected for HCD fragmentation with a dynamic exclusion period of 30 seconds and tandem MS (MS/MS) spectra were acquired at resolution of 30.000."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "55 mM",
+      "evidence": "alkylated with 55 mM iodoacetamide for one hour"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "alkylated with 55 mM iodoacetamide for one hour"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C (Lysyl Endopeptidase, Wako Chemicals)",
+      "evidence": "digested with Lys-C (Lysyl Endopeptidase, Wako Chemicals) for three hours at RT."
+    },
+    {
+      "value": "trypsin (Promega Corporation)",
+      "evidence": "proteins were digested with trypsin (Promega Corporation) overnight."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "Pierce\u2122 High pH Reversed-Phase Peptide Fractionation Kit (Thermo Fisher Scientific, Kit #84868)",
+      "evidence": "Samples were fractionated with the Pierce\u2122 High pH Reversed-Phase Peptide Fractionation Kit (Thermo Fisher Scientific, Kit #84868)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Twenty most intense multiply-charged ions were selected for HCD fragmentation with a dynamic exclusion period of 30 seconds"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    },
+    {
+      "value": "Exploris 480 mass spectrometer (Thermo Fisher Scientific)",
+      "evidence": "Peptide samples were measured on an Exploris 480 mass spectrometer (Thermo Fisher Scientific) online-coupled to an Easy-nLC 1200 UHPLC (Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 0.821,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanospray ionization",
+      "evidence": "Peptides were ionized using nanospray ionization; the source temperature was set to 275\u00b0C."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "SILAC",
+      "evidence": "quantification: SILAC"
+    },
+    {
+      "value": "dynamic SILAC",
+      "evidence": "We use dynamic SILAC to measure the half-life of more than 4,300 proteins."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Exploris 480"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    },
+    {
+      "value": "Carbamidomethylation on cysteine",
+      "evidence": "Carbamidomethylation on cysteine was set as a fixed modification",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.808,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxamidomethyl (on Cysteine)"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "N-terminal acetylation and methionine oxidation were selected as variable modifications",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "N-terminal acetylation and methionine oxidation were selected as variable modifications",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Proteins were reduced with 10 mM of dithiothreitol (DTT) for one hour"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol (DTT)",
+      "evidence": "Proteins were reduced with 10 mM of dithiothreitol (DTT) for one hour"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.968,
+    "evidence_score": 0.973,
+    "completeness": 0.909,
+    "format_score": 1.0
+  }
+}

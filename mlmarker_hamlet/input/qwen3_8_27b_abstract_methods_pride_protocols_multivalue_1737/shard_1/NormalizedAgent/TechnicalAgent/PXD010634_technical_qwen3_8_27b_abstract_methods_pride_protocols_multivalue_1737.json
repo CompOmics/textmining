@@ -1,0 +1,168 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-dependent mode",
+      "evidence": "The QExactive was operated in data-dependent mode with survey scans acquired at a resolution of 70,000 at m/z 200."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mm chloroacetamide",
+      "evidence": "The supernatant containing the cleaved proteins was then transferred to a new tube for full digestion of the proteins with 0.5 \u03bcg trypsin (Promega, V5111) overnight at 37 \u00b0C in the presence of 5 mm TCEP and 10 mm chloroacetamide."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "chloroacetamide",
+      "evidence": "The supernatant containing the cleaved proteins was then transferred to a new tube for full digestion of the proteins with 0.5 \u03bcg trypsin (Promega, V5111) overnight at 37 \u00b0C in the presence of 5 mm TCEP and 10 mm chloroacetamide."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "LysC",
+      "evidence": "Bound proteins were partially digested by incubation with 0.4 \u03bcg LysC (Promega, WI, V1671) in 50 mm Tris pH 8.0 for 1h at 37 \u00b0C."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "The supernatant containing the cleaved proteins was then transferred to a new tube for full digestion of the proteins with 0.5 \u03bcg trypsin (Promega, V5111) overnight at 37 \u00b0C in the presence of 5 mm TCEP and 10 mm chloroacetamide."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "normalized collision energy of 31",
+      "evidence": "Up to 10 of the most abundant isotope patterns with charge +2 or higher from the survey scan were selected with an isolation window of 1.6 m/z and fragmented by HCD with normalized collision energy of 31."
+    },
+    {
+      "value": "normalized collision energy of 25",
+      "evidence": "Up to 10 of the most abundant isotope patterns with charge +2 or higher from the survey scan were selected with an isolation window of 2.0 m/z and fragmented by HCD with normalized collision energy of 25."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "affinity",
+      "evidence": "Proteins derived from cells not subjected to the YnMyr treatment were reacted with a biotinylated depsipeptide via SrtA-catalyzed ligation reaction, and affinity enriched."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "Samples were resuspended in 150 \u03bcl 1% (v/v) TFA/H2O and loaded into a second stage tip containing SCX polystyrene-divinylbenzene copolymer modified with sulfonic acid (Supelco) and separated into six fractions as reported previously with slight modification in the composition of the fraction solutions (supplemental Table S1)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Up to 10 of the most abundant isotope patterns with charge +2 or higher from the survey scan were selected with an isolation window of 1.6 m/z and fragmented by HCD with normalized collision energy of 31."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "QExactive",
+      "evidence": "Easy nLC-1000 was coupled to a QExactive mass spectrometer via an easy-spray source (all Thermo Fisher Scientific).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "ExionLC",
+      "normalization_candidate_ids": [
+        "MS:1003651",
+        "MS:1001806",
+        "MS:1001911",
+        "MS:1003245",
+        "MS:1000657"
+      ]
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: Easy nLC-1000 was coupled to a QExactive mass spectrometer via an easy-spray source (all Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "Each set of 9 samples was multiplexed by TMT labeling (using nine out of the ten channels of 10-plex TMT) and fractionated into 6 different fractions."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Peptide samples were measured on a QExactive mass spectrometer coupled to an easy-spray source and an easy-nLC system (all Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "myristoylated residue",
+      "evidence": "modifications: myristoylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00438",
+      "ontology_name": "myristoylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "myristoylated residue"
+    },
+    {
+      "value": "Cysteine carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation was selected as a fixed modification and methionine oxidation and acetylation of protein N terminus as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "Cysteine carbamidomethylation was selected as a fixed modification and methionine oxidation and acetylation of protein N terminus as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "acetylation of protein N terminus",
+      "evidence": "Cysteine carbamidomethylation was selected as a fixed modification and methionine oxidation and acetylation of protein N terminus as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.856,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "1 mm DTT",
+      "evidence": "Protein samples were resuspended in 0.2% SDS, 1 mm DTT, 50 mm Tris pH 8.0 to 1 mg/ml."
+    },
+    {
+      "value": "5 mm TCEP",
+      "evidence": "The supernatant containing the cleaved proteins was then transferred to a new tube for full digestion of the proteins with 0.5 \u03bcg trypsin (Promega, V5111) overnight at 37 \u00b0C in the presence of 5 mm TCEP and 10 mm chloroacetamide."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Protein samples were resuspended in 0.2% SDS, 1 mm DTT, 50 mm Tris pH 8.0 to 1 mg/ml."
+    },
+    {
+      "value": "TCEP",
+      "evidence": "The supernatant containing the cleaved proteins was then transferred to a new tube for full digestion of the proteins with 0.5 \u03bcg trypsin (Promega, V5111) overnight at 37 \u00b0C in the presence of 5 mm TCEP and 10 mm chloroacetamide."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.977,
+    "evidence_score": 0.955,
+    "completeness": 1.0,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "enrichment_method[0]",
+      "value": "affinity",
+      "evidence": "Proteins derived from cells not subjected to the YnMyr treatment were reacted with a biotinylated depsipeptide via SrtA-catalyzed ligation reaction, and affinity enriched."
+    }
+  ]
+}

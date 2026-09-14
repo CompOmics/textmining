@@ -1,0 +1,142 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "CA A",
+      "evidence": "After tissue crashing to the powder level in liquid nitrogen, samples are normalized per weight using precise scale. Approx. 20ug per sample was processed further for Tissue Lysis in MS Lysis Buffer (2% SDS, 50mM Tris pH 8.5, 10mM TCEP, 40mM CAA, supplemented with protease inhibitor cocktail and phosphatase inhibitors) sonicated in ice and boiled at 95 \u00b0C for 10 min."
+    },
+    {
+      "value": "iodoacetamide",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "LysC",
+      "evidence": "Proteins were digested with 1:50 w/w LysC (Wako Chemicals, cleaves at the carboxylic side of lysine residue) and 1:100 w/w trypsin (Promega, Sequencing-grade) overnight at 37 \u00b0C after dilution to a final urea concentration of 1 M using 50 mM Tris pH 8.5."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Proteins were digested with 1:50 w/w LysC (Wako Chemicals, cleaves at the carboxylic side of lysine residue) and 1:100 w/w trypsin (Promega, Sequencing-grade) overnight at 37 \u00b0C after dilution to a final urea concentration of 1 M using 50 mM Tris pH 8.5."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "35%",
+      "evidence": "MS2 scans were performed in the Ion trap (Turbo) using a maximum injection time of 50ms, AGC target value of 15000 and fragmented using CID with a normalized collision energy (NCE) of 35%."
+    },
+    {
+      "value": "65%",
+      "evidence": "Ions were fragmented using HCD with an NCE of 65% and analysed in the Orbitrap with a resolution of 15,000 at m/z 200, scan range of 110-500 m/z, AGC target value of 1x105 and a maximum injection time of 50 ms."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high pH reversed phase",
+      "evidence": "For high pH reversed phase fractionation on a Dionex analytical HPLC, 50\u00b5g of pooled and purified TMT labelled samples were resuspended in 10mM ammonium-bicarbonate (ABC), 5%ACN, and separated on a 250mm long C18 column (Aeris Peptide XB-C18, 4.6mm ID, 2.6 \u00b5m particle size; Phenomenex) using a multistep gradient from 100% Solvent A (5% ACN, 10mM ABC in water) to 60% Solvent B (90% ACN, 10mM ABC in water) over 70 minutes."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "CID",
+      "evidence": "MS2 scans were performed in the Ion trap (Turbo) using a maximum injection time of 50ms, AGC target value of 15000 and fragmented using CID with a normalized collision energy (NCE) of 35%."
+    },
+    {
+      "value": "HCD",
+      "evidence": "Ions were fragmented using HCD with an NCE of 65% and analysed in the Orbitrap with a resolution of 15,000 at m/z 200, scan range of 110-500 m/z, AGC target value of 1x105 and a maximum injection time of 50 ms."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Orbitrap Lumos",
+      "evidence": "Tryptic peptides were analyzed on an Orbitrap Lumos coupled to an easy nLC 1200 (ThermoFisher Scientific) using a 35 cm long, 75\u00b5m ID fused-silica column packed in house with 1.9 \u00b5m C18 particles (Reprosil pur, Dr. Maisch), and kept at 50\u00b0C using an integrated column oven (Sonation)."
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Tryptic peptides were analyzed on an Orbitrap Lumos coupled to an easy nLC 1200 (ThermoFisher Scientific) using a 35 cm long, 75\u00b5m ID fused-silica column packed in house with 1.9 \u00b5m C18 particles (Reprosil pur, Dr. Maisch), and kept at 50\u00b0C using an integrated column oven (Sonation)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "Desalted peptides were dried and resuspended in TMT-labeling buffer (200 mM EPPS pH 8.2, 20% acetonitrile)."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Ion trap",
+      "evidence": "MS2 scans were performed in the Ion trap (Turbo) using a maximum injection time of 50ms, AGC target value of 15000 and fragmented using CID with a normalized collision energy (NCE) of 35%."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue"
+    },
+    {
+      "value": "Carbamidomethylated cysteine",
+      "evidence": "Spectra were searched with a mass tolerance of 6 ppm in MS mode, 20 ppm in HCD MS2 mode, strict trypsin specificity, and allowing up to 2 miscleavages. Carbamidomethylated cysteine was set as a fixed modification and oxidation of methionine and N-terminal protein acetylation as variable modifications with allowing up to 5 modifications per peptide."
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "Spectra were searched with a mass tolerance of 6 ppm in MS mode, 20 ppm in HCD MS2 mode, strict trypsin specificity, and allowing up to 2 miscleavages. Carbamidomethylated cysteine was set as a fixed modification and oxidation of methionine and N-terminal protein acetylation as variable modifications with allowing up to 5 modifications per peptide."
+    },
+    {
+      "value": "N-terminal protein acetylation",
+      "evidence": "Spectra were searched with a mass tolerance of 6 ppm in MS mode, 20 ppm in HCD MS2 mode, strict trypsin specificity, and allowing up to 2 miscleavages. Carbamidomethylated cysteine was set as a fixed modification and oxidation of methionine and N-terminal protein acetylation as variable modifications with allowing up to 5 modifications per peptide."
+    },
+    {
+      "value": "Phosphorylation of serine, threonine and tyrosine",
+      "evidence": "Phosphorylation of serine, threonine and tyrosine were set as variable modification in the case of the phospho proteomics."
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10mM",
+      "evidence": "After tissue crashing to the powder level in liquid nitrogen, samples are normalized per weight using precise scale. Approx. 20ug per sample was processed further for Tissue Lysis in MS Lysis Buffer (2% SDS, 50mM Tris pH 8.5, 10mM TCEP, 40mM CAA, supplemented with protease inhibitor cocktail and phosphatase inhibitors) sonicated in ice and boiled at 95 \u00b0C for 10 min."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "After tissue crashing to the powder level in liquid nitrogen, samples are normalized per weight using precise scale. Approx. 20ug per sample was processed further for Tissue Lysis in MS Lysis Buffer (2% SDS, 50mM Tris pH 8.5, 10mM TCEP, 40mM CAA, supplemented with protease inhibitor cocktail and phosphatase inhibitors) sonicated in ice and boiled at 95 \u00b0C for 10 min."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.95,
+    "evidence_score": 0.931,
+    "completeness": 0.923,
+    "format_score": 1.0
+  }
+}

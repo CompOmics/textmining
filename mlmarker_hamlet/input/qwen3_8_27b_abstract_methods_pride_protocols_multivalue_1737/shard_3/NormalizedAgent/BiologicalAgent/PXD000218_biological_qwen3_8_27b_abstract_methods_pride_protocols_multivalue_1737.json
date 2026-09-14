@@ -1,0 +1,184 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "Dld-1 cells",
+      "evidence": "keywords: Dld-1 cells; Proteomics; Phosphoproteomics",
+      "is_normalized": true,
+      "ontology_id": "CLO:0002785",
+      "ontology_name": "DLD-1 cell",
+      "similarity": 0.988,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "DLD-1 cell"
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "Epithelial cell",
+      "evidence": "organism parts: Epithelial cell; Colon",
+      "is_normalized": true,
+      "ontology_id": "CL:0000066",
+      "ontology_name": "epithelial cell",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "epithelial cell"
+    },
+    {
+      "value": "stromal cells",
+      "evidence": "We designed an analytical strategy that allows differential analysis of signaling between cancer and stromal cells present in tumor xenografts.",
+      "is_normalized": true,
+      "ontology_id": "CL:0000499",
+      "ontology_name": "stromal cell",
+      "similarity": 0.991,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "stromal cell"
+    },
+    {
+      "value": "cancer cells",
+      "evidence": "We designed an analytical strategy that allows differential analysis of signaling between cancer and stromal cells present in tumor xenografts.",
+      "is_normalized": true,
+      "ontology_id": "CL:0001064",
+      "ontology_name": "malignant cell",
+      "similarity": 0.988,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "cancer cell"
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "cancer",
+      "evidence": "The tumor microenvironment plays key roles in cancer biology, but its impact on the regulation of signaling pathway activity in cancer cells has not been systemically investigated.",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0004992",
+      "ontology_name": "cancer",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cancer"
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell line",
+      "evidence": "inferred: keywords: Dld-1 cells; Proteomics; Phosphoproteomics"
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "cell culture",
+      "evidence": "As a result, different sets of phosphorylation sites were modulated by PI3K inhibitors in cancer cells growing in tumors relative to when these cells were in culture.",
+      "is_normalized": true,
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cell culture"
+    },
+    {
+      "value": "tumor xenografts",
+      "evidence": "We designed an analytical strategy that allows differential analysis of signaling between cancer and stromal cells present in tumor xenografts.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "polyp",
+      "normalization_candidate_ids": [
+        "BTO:0006350",
+        "BTO:0001965",
+        "BTO:0001010",
+        "BTO:0004070"
+      ]
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human); Mus musculus (mouse)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    },
+    {
+      "value": "Mus musculus",
+      "evidence": "organisms: Homo sapiens (human); Mus musculus (mouse)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:10090",
+      "ontology_name": "Mus musculus",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Mus musculus"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "Colon",
+      "evidence": "organism parts: Epithelial cell; Colon",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0001155",
+      "ontology_name": "colon",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "colon"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.878,
+    "evidence_score": 0.911,
+    "completeness": 0.611,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "cell_line_tissue_mismatch",
+      "field_a": "cell_line",
+      "value_a": "Dld-1 cells",
+      "ontology_id_a": "CLO:0002785",
+      "field_b": "tissue",
+      "value_b": "Colon",
+      "ontology_id_b": "UBERON:0001155",
+      "expected_b": "UBERON:0000160",
+      "source": "CLO derives_from"
+    }
+  ]
+}

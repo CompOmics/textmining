@@ -1,0 +1,172 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Peptides were separated from magnetic microspheres using 0.45 um filter spin columns, and peptides were reduced and alkylated by adding TCEP and chloroacetamide to 5 mM for 30 min prior to peptide clean-up via low-pH C18 StageTip procedure."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "chloroacetamide",
+      "evidence": "Peptides were separated from magnetic microspheres using 0.45 um filter spin columns, and peptides were reduced and alkylated by adding TCEP and chloroacetamide to 5 mM for 30 min prior to peptide clean-up via low-pH C18 StageTip procedure."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "Frozen beads were thawed on ice, supplemented with 100 \u00b5L ice-cold 50 mM TRIS pH 8.5 buffer supplemented with 2.5 ng/\u00b5L Lys-C, and gently mixed (on ice) every 5 min for 30 min."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Following this, beads were chilled on ice, and 250 ng of sequencing-grade trypsin was added, after which samples were gently mixed (on ice) every 5 min for 30 min."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "normalized collision energy of 25",
+      "evidence": "Precursors were analyzed in data-dependent acquisition (DDA) mode, with charges 2-6 selected for fragmentation using an isolation width of 1.3 m/z and fragmented using higher-energy collision disassociation (HCD) with normalized collision energy of 25."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "higher-energy collision disassociation (HCD)",
+      "evidence": "Precursors were analyzed in data-dependent acquisition (DDA) mode, with charges 2-6 selected for fragmentation using an isolation width of 1.3 m/z and fragmented using higher-energy collision disassociation (HCD) with normalized collision energy of 25."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Astral",
+      "evidence": "instruments: Orbitrap Astral",
+      "is_normalized": true,
+      "ontology_id": "MS:1003378",
+      "ontology_name": "Orbitrap Astral",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Astral"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Ionization was achieved using a NanoSpray Flex NG ion source (Thermo), with spray voltage set at 2 kV, ion transfer tube temperature to 275 \u00b0C, and RF funnel level to 50%."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "Label free",
+      "evidence": "quantification: Label free"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: All full precursor (MS1) scans were acquired using the Orbitrap\u2122 mass analyzer, while all tandem fragment (MS2) scans acquired in parallel using the Astral\u2122 mass analyzer."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of carbon dioxide",
+      "normalization_candidate_ids": [
+        "MOD:00957",
+        "MOD:00032",
+        "MOD:00432",
+        "MOD:00651",
+        "MOD:00599"
+      ]
+    },
+    {
+      "value": "protein N-terminal acetylation",
+      "evidence": "For the MS/MS main search a maximum allowance of 3 variable modifications per peptide was set, including protein N-terminal acetylation (default), oxidation of methionine (default), deamidation of asparagine, peptide N-terminal glutamine to pyroglutamate, and replacement of three protons by iron (cation Fe[III]) on aspartate and glutamate.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.895,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "For the MS/MS main search a maximum allowance of 3 variable modifications per peptide was set, including protein N-terminal acetylation (default), oxidation of methionine (default), deamidation of asparagine, peptide N-terminal glutamine to pyroglutamate, and replacement of three protons by iron (cation Fe[III]) on aspartate and glutamate.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "deamidation of asparagine",
+      "evidence": "For the MS/MS main search a maximum allowance of 3 variable modifications per peptide was set, including protein N-terminal acetylation (default), oxidation of methionine (default), deamidation of asparagine, peptide N-terminal glutamine to pyroglutamate, and replacement of three protons by iron (cation Fe[III]) on aspartate and glutamate.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00684",
+      "ontology_name": "deamidated L-asparagine",
+      "similarity": 0.873,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "deamidated L-asparagine"
+    },
+    {
+      "value": "peptide N-terminal glutamine to pyroglutamate",
+      "evidence": "For the MS/MS main search a maximum allowance of 3 variable modifications per peptide was set, including protein N-terminal acetylation (default), oxidation of methionine (default), deamidation of asparagine, peptide N-terminal glutamine to pyroglutamate, and replacement of three protons by iron (cation Fe[III]) on aspartate and glutamate.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00040",
+      "ontology_name": "2-pyrrolidone-5-carboxylic acid (Gln)",
+      "similarity": 0.816,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Gln->pyro-Glu"
+    },
+    {
+      "value": "replacement of three protons by iron (cation Fe[III]) on aspartate and glutamate",
+      "evidence": "For the MS/MS main search a maximum allowance of 3 variable modifications per peptide was set, including protein N-terminal acetylation (default), oxidation of methionine (default), deamidation of asparagine, peptide N-terminal glutamine to pyroglutamate, and replacement of three protons by iron (cation Fe[III]) on aspartate and glutamate.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "METAL Iron-sulfur (2Fe-2S); via pros nitrogen",
+      "normalization_candidate_ids": [
+        "MOD:00864",
+        "MOD:00230",
+        "MOD:00273",
+        "MOD:00294",
+        "MOD:00290"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Peptides were separated from magnetic microspheres using 0.45 um filter spin columns, and peptides were reduced and alkylated by adding TCEP and chloroacetamide to 5 mM for 30 min prior to peptide clean-up via low-pH C18 StageTip procedure."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Peptides were separated from magnetic microspheres using 0.45 um filter spin columns, and peptides were reduced and alkylated by adding TCEP and chloroacetamide to 5 mM for 30 min prior to peptide clean-up via low-pH C18 StageTip procedure."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.976,
+    "evidence_score": 0.99,
+    "completeness": 0.905,
+    "format_score": 1.0
+  }
+}

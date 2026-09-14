@@ -1,0 +1,166 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "The DDA method used a precursor ion window of 375 \u2013 1650 m/z at 70\u2019000 resolution (at 200 Da)."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Next IAA (final concentration 10 mM) was added, and samples were incubated in the dark for 30 min."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "IAA",
+      "evidence": "Next IAA (final concentration 10 mM) was added, and samples were incubated in the dark for 30 min."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Finally, proteins were resuspended in 100 \u00b5L of 50 mM Tris-HCl containing 1 \u00b5g of a trypsin/Lys-C mix and incubated overnight at 37 \u00b0C at 600 rpm."
+    },
+    {
+      "value": "Lys-C",
+      "evidence": "Finally, proteins were resuspended in 100 \u00b5L of 50 mM Tris-HCl containing 1 \u00b5g of a trypsin/Lys-C mix and incubated overnight at 37 \u00b0C at 600 rpm."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28% at a normalized collision energy",
+      "evidence": "The TOP10 highest intense peptides were selected for HCD based fragmentation (28% at a normalized collision energy), with an isolation window of 1.6 Da and a dynamic exclusion of 40 s."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "StrepTactin Sepharose beads",
+      "evidence": "After clarification of the lysate, 150 \u00b5L of 50 % slurry of equilibrated StrepTactin Sepharose beads (IBA) were added to each sample."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The TOP10 highest intense peptides were selected for HCD based fragmentation (28% at a normalized collision energy), with an isolation window of 1.6 Da and a dynamic exclusion of 40 s."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    },
+    {
+      "value": "Q Exactive\u2122 hybrid quadrupole-Orbitrap mass spectrometer",
+      "evidence": "MS data were acquired on a Q Exactive\u2122 hybrid quadrupole-Orbitrap mass spectrometer (ThermoFisher Scientific) coupled to an Dionex Ultimate 3000 RSLC nano system (ThermoFisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1003395",
+      "ontology_name": "Q Exactive GC Orbitrap",
+      "similarity": 0.885,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive GC Orbitrap"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "The MS was operated in positive and the ESI was set to 1.8 kV."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "MS1 intensity based label-free quantification method",
+      "evidence": "quantification: MS1 intensity based label-free quantification method; Spectrum counting"
+    },
+    {
+      "value": "Spectrum counting",
+      "evidence": "quantification: MS1 intensity based label-free quantification method; Spectrum counting"
+    },
+    {
+      "value": "label-free",
+      "evidence": "inferred: Next, the LFQ intensities were log2 transformed, intensities were quantile normalized, and missing values were imputed sampling from a normal distribution around the lowest 5 % quantile of all intensity values."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: MS data were acquired on a Q Exactive\u2122 hybrid quadrupole-Orbitrap mass spectrometer (ThermoFisher Scientific) coupled to an Dionex Ultimate 3000 RSLC nano system (ThermoFisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "oxidation (M)",
+      "evidence": "As variable modification oxidation (M) and acetylation (Protein N-term) were set and up to 5 variable modifications were allowed per peptide sequence.",
+      "is_normalized": true,
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 0.925,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "acetylation (Protein N-term)",
+      "evidence": "As variable modification oxidation (M) and acetylation (Protein N-term) were set and up to 5 variable modifications were allowed per peptide sequence.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.902,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "carbamidomethyl",
+      "evidence": "As static modification, carbamidomethyl at the C-terminus was set.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "To the eluted proteins a final concentration of 10 mM DTT was added, and samples were incubated for 1 h at 56 \u00b0C."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "To the eluted proteins a final concentration of 10 mM DTT was added, and samples were incubated for 1 h at 56 \u00b0C."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.987,
+    "evidence_score": 0.991,
+    "completeness": 0.957,
+    "format_score": 1.0
+  }
+}

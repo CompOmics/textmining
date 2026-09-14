@@ -1,0 +1,184 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM CAA",
+      "evidence": "5 mM TCEP and 10 mM CAA were added to lysates for reduction of disulfide bonds and methionine alkylation."
+    },
+    {
+      "value": "5 mM CAA",
+      "evidence": "Lysates were thawed at RT, treated with 5 mM TCEP and 5 mM CAA, and sonicated on ice for 45s at 60% amplitude."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "CAA",
+      "evidence": "5 mM TCEP and 10 mM CAA were added to lysates for reduction of disulfide bonds and methionine alkylation."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C endopeptidase",
+      "evidence": "After 1h incubation at RT, proteins were digested with 1:200 w/w Lys-C endopeptidase for 3h, followed by overnight digestion with Trypsin (1:200 w/w) after diluting to 1.5M GndHCl with 25 mM Tris pH 8.5."
+    },
+    {
+      "value": "Trypsin",
+      "evidence": "After 1h incubation at RT, proteins were digested with 1:200 w/w Lys-C endopeptidase for 3h, followed by overnight digestion with Trypsin (1:200 w/w) after diluting to 1.5M GndHCl with 25 mM Tris pH 8.5."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "25% normalized collision energy (NCE)",
+      "evidence": "Proteome precursors were fragmented using HCD with 25% normalized collision energy (NCE), a precursor isolation width of 1.3 m/z and normalized AGC target of 200."
+    },
+    {
+      "value": "NCE of 20",
+      "evidence": "ADPr precursor isolation was performed at 1.3 m/z width, normalized AGC target of 400, and EThcD fragmented with NCE of 20."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "GST-tagged Af1521 macrodomain beads",
+      "evidence": "Peptides were incubated with GST-tagged Af1521 macrodomain beads (100 \u00b5L dry beads/10 mg sample, produced in-house using BL21(DE3) bacteria) in a head-over-tail mixer at 4\u00b0C for 3h."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "reversed-phase",
+      "evidence": "Peptides were reconstituted in 50 mM Ammonium bicarbonate (ABC) and separated on an Acuity UPLC Peptide CSH C18 1.7 \u00b5m reversed-phase column under basic conditions, concatenation into 12 fractions (Batth and Olsen, 2016)."
+    },
+    {
+      "value": "high pH",
+      "evidence": "Peptides were purified and fractionated on stage tips at high pH into 2 fractions."
+    },
+    {
+      "value": "low pH",
+      "evidence": "After loading samples for high pH fractionation, the flowthrough was collected and subjected to low pH stage tip purification."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Proteome samples were measured on Orbitrap Exploris 480 MS using HCD fragmentation."
+    },
+    {
+      "value": "EThcD",
+      "evidence": "ADPr samples were measured on Orbitrap Fusion Lumos\u2122 Tribrid\u2122 MS using EThcD fragmentation."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos; Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Fusion Lumos; Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "Electrospray ionization",
+      "evidence": "Electrospray ionization was achieved using a NanoSpray Flex NG ion source."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "Label free",
+      "evidence": "quantification: Label free"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Orbitrap Fusion Lumos"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "adenosine diphosphoribosyl (ADP-ribosyl) modified residue",
+      "evidence": "modifications: adenosine diphosphoribosyl (ADP-ribosyl) modified residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02087",
+      "ontology_name": "adenosine diphosphoribosyl (ADP-ribosyl) modified residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "adenosine diphosphoribosyl (ADP-ribosyl) modified residue"
+    },
+    {
+      "value": "Methionine oxidation",
+      "evidence": "Methionine oxidation, N-terminal acetylation, cysteine carbamidomethylation, and ADP-ribosylation on cysteine, aspartic acid, glutamic acid, histidine, lysine, arginine, serine, threonine, and tyrosine residues were set as variable modifications, and the maximum number of modifications per peptide was set to 5.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "Methionine oxidation, N-terminal acetylation, cysteine carbamidomethylation, and ADP-ribosylation on cysteine, aspartic acid, glutamic acid, histidine, lysine, arginine, serine, threonine, and tyrosine residues were set as variable modifications, and the maximum number of modifications per peptide was set to 5.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "cysteine carbamidomethylation",
+      "evidence": "Methionine oxidation, N-terminal acetylation, cysteine carbamidomethylation, and ADP-ribosylation on cysteine, aspartic acid, glutamic acid, histidine, lysine, arginine, serine, threonine, and tyrosine residues were set as variable modifications, and the maximum number of modifications per peptide was set to 5.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "ADP-ribosylation on cysteine, aspartic acid, glutamic acid, histidine, lysine, arginine, serine, threonine, and tyrosine residues",
+      "evidence": "Methionine oxidation, N-terminal acetylation, cysteine carbamidomethylation, and ADP-ribosylation on cysteine, aspartic acid, glutamic acid, histidine, lysine, arginine, serine, threonine, and tyrosine residues were set as variable modifications, and the maximum number of modifications per peptide was set to 5.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00177",
+      "ontology_name": "omega-N-(ADP-ribosyl)-L-arginine",
+      "similarity": 0.779,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-(ADP-ribosyl)- (on Arginine)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM TCEP",
+      "evidence": "5 mM TCEP and 10 mM CAA were added to lysates for reduction of disulfide bonds and methionine alkylation."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "5 mM TCEP and 10 mM CAA were added to lysates for reduction of disulfide bonds and methionine alkylation."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.998,
+    "evidence_score": 0.996,
+    "completeness": 1.0,
+    "format_score": 1.0
+  }
+}

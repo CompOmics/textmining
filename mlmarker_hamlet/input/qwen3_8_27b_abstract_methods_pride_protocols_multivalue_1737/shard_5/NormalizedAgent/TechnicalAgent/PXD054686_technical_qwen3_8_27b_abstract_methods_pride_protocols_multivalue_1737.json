@@ -1,0 +1,206 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "Data was collected on an Orbitrap Eclipse (Thermo Scientific) equipped with an EASY-Spray Source operated using intensity dependent CID MS/MS to generate peptide ID\u2019s."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "This assay utilized an isotopically labeled biotin-azide to click the free thiols of reduced Cys modified with alkynyl iodoacetamide."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Acetyl BSA internal standard was added followed by reduction, alkylation, and 18 h trypsin digestion."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "CID= 35%",
+      "evidence": "MS2 spectra were collected using CID in the linear ion trap (Isolation window = 1.2 m/z [quadrupole], rate = rapid; AGQ target = Standard; MaxIT = Dynamic; CID= 35%)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "antibody",
+      "evidence": "One aliquot was used for general protein quantitation and another aliquot was used for immunoaffinity enrichment (IP) of acetyl Lys peptides."
+    },
+    {
+      "value": "immunoaffinity",
+      "evidence": "One aliquot was used for general protein quantitation and another aliquot was used for immunoaffinity enrichment (IP) of acetyl Lys peptides."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "CID",
+      "evidence": "Data was collected on an Orbitrap Eclipse (Thermo Scientific) equipped with an EASY-Spray Source operated using intensity dependent CID MS/MS to generate peptide ID\u2019s."
+    },
+    {
+      "value": "MS/MS",
+      "evidence": "Cysteine proteomic analysis  The click chemistry Cys redox assay used was adapted from Yang et al.(16) and Pertova et al.(17) to quantify protein Cys residues that underwent a redox change due to alcohol metabolism by nHPLC-MS/MS."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Eclipse",
+      "evidence": "instruments: Orbitrap Eclipse",
+      "is_normalized": true,
+      "ontology_id": "MS:1003029",
+      "ontology_name": "Orbitrap Eclipse",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Eclipse"
+    },
+    {
+      "value": "Orbitrap Eclipse (Thermo Scientific)",
+      "evidence": "Data was collected on an Orbitrap Eclipse (Thermo Scientific) equipped with an EASY-Spray Source operated using intensity dependent CID MS/MS to generate peptide ID\u2019s.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003029",
+      "ontology_name": "Orbitrap Eclipse",
+      "similarity": 0.937,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Eclipse"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "EASY-Spray Source",
+      "evidence": "Data was collected on an Orbitrap Eclipse (Thermo Scientific) equipped with an EASY-Spray Source operated using intensity dependent CID MS/MS to generate peptide ID\u2019s."
+    },
+    {
+      "value": "EASY-Spray",
+      "evidence": "Samples were then loaded onto a 2 cm PepMap 100, nanoviper trapping column and chromatographically resolved on-line using a 0.075 x 150 mm, 3.0 \u00b5m EASY-Spray PepMap RSLC C18 reverse phase nano column (Thermo Scientific) using an Ultimate 3000 RSCLnano LC system (Thermo Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "Data were searched and extracted using SEQUEST HT and the label-free quantitation workflow in Proteome Discover (PD) software version 2.5.0.400 utilizing the minora feature detector, feature mapper,  and precursor ions quantifier algorithms."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Eclipse"
+    },
+    {
+      "value": "linear ion trap",
+      "evidence": "MS2 spectra were collected using CID in the linear ion trap (Isolation window = 1.2 m/z [quadrupole], rate = rapid; AGQ target = Standard; MaxIT = Dynamic; CID= 35%)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "deamidated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "deamidated residue"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Spectra were searched against a combined Procal Retention Time (RT) standard peptide database and the SwissProt Mus musculus database downloaded July 17th, 2023, allowing up to 2 missed tryptic cleavages with fixed carbamidomethyl (C) and dynamic deamidated (N,Q) and oxidation (M) modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Spectra were searched against a combined Procal Retention Time (RT) standard peptide database and the SwissProt Mus musculus database downloaded July 17th, 2023, allowing up to 2 missed tryptic cleavages with fixed carbamidomethyl (C) and dynamic deamidated (N,Q) and oxidation (M) modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "deamidation",
+      "evidence": "oxidation, deamidation and carbamidomethylation were fixed",
+      "is_normalized": false,
+      "normalization_method": "ambiguous_exact_synonym",
+      "normalization_matched_text": "deamidation",
+      "normalization_candidate_ids": [
+        "MOD:00137",
+        "MOD:00219",
+        "MOD:00400",
+        "MOD:00565"
+      ],
+      "normalization_qc_flags": [
+        "ambiguous_ontology_match"
+      ]
+    },
+    {
+      "value": "Lys acetylation",
+      "evidence": "Lys acetylation was an allowed dynamic modification",
+      "is_normalized": true,
+      "ontology_id": "MOD:00394",
+      "ontology_name": "monoacetylated residue",
+      "similarity": 0.823,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Acetylation (N terminus, N epsilon of Lysine, O of Serine) (Ac)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.935,
+    "evidence_score": 0.93,
+    "completeness": 0.852,
+    "format_score": 1.0
+  }
+}

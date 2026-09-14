@@ -1,0 +1,181 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "40 mM",
+      "evidence": "Cell pellets were resuspended in 400 \u00b5L of SDC buffer containing 1% sodium deoxycholate (SDC, Sigma-Aldrich), 40 mM 2-chloroacetamide (CAA, Sigma-Aldrich), 10 mM tris(2-carboxyethyl)phosphine (TCEP, Thermo Fisher Scientific), and 100 mM Tris, pH 8.0."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "2-chloroacetamide",
+      "evidence": "Cell pellets were resuspended in 400 \u00b5L of SDC buffer containing 1% sodium deoxycholate (SDC, Sigma-Aldrich), 40 mM 2-chloroacetamide (CAA, Sigma-Aldrich), 10 mM tris(2-carboxyethyl)phosphine (TCEP, Thermo Fisher Scientific), and 100 mM Tris, pH 8.0."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Lys-C",
+      "evidence": "The samples were then diluted 1:1 with MS-grade water (VWR), and proteins were digested with 1 \u00b5g Lys-C (Wako) for 4 hours, followed by an overnight digestion at 37\u00b0C with 2 \u00b5g trypsin (Promega)."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "The samples were then diluted 1:1 with MS-grade water (VWR), and proteins were digested with 1 \u00b5g Lys-C (Wako) for 4 hours, followed by an overnight digestion at 37\u00b0C with 2 \u00b5g trypsin (Promega)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30",
+      "evidence": "Up to 10 of the top precursors were selected and fragmented using higher-energy collisional dissociation (HCD) with a normalized collision energy of 30."
+    },
+    {
+      "value": "28",
+      "evidence": "and up to 15 of the top precursors were selected and fragmented using higher energy collisional dissociation (HCD with a normalized collision energy of value of 28)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "The resulting peptide solution was acidified with trifluoroacetic acid (TFA, Merck) to a final concentration of 1%, and then desalted using SCX-stage tips."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Up to 10 of the top precursors were selected and fragmented using higher-energy collisional dissociation (HCD) with a normalized collision energy of 30."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480; Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    },
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Orbitrap Exploris 480; Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: LC-MS/MS analysis was performed using an Easy-nLC 1200 (Thermo Fisher Scientific) nanoflow system coupled with a QExactive HF mass spectrometer (Thermo Fisher Scientific)or an Exploris 480."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "quantification: MS1 intensity based label-free quantification method"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Exploris 480; Q Exactive HF"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    },
+    {
+      "value": "Cysteine carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation was set as a static modification, while methionine oxidation, N-terminal acetylation was set as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "Cysteine carbamidomethylation was set as a static modification, while methionine oxidation, N-terminal acetylation was set as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "Cysteine carbamidomethylation was set as a static modification, while methionine oxidation, N-terminal acetylation was set as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "deamidation on asparagine",
+      "evidence": "For total proteome measurements of cell pellets, deamidation on asparagine and glutamine was additionallz set as variable modificaton.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00684",
+      "ontology_name": "deamidated L-asparagine",
+      "similarity": 0.881,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "deamidated L-asparagine"
+    },
+    {
+      "value": "deamidation on glutamine",
+      "evidence": "For total proteome measurements of cell pellets, deamidation on asparagine and glutamine was additionallz set as variable modificaton.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 0.867,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation of Asparagine and Glutamine to Aspartate and Glutamate"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Cell pellets were resuspended in 400 \u00b5L of SDC buffer containing 1% sodium deoxycholate (SDC, Sigma-Aldrich), 40 mM 2-chloroacetamide (CAA, Sigma-Aldrich), 10 mM tris(2-carboxyethyl)phosphine (TCEP, Thermo Fisher Scientific), and 100 mM Tris, pH 8.0."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Cell pellets were resuspended in 400 \u00b5L of SDC buffer containing 1% sodium deoxycholate (SDC, Sigma-Aldrich), 40 mM 2-chloroacetamide (CAA, Sigma-Aldrich), 10 mM tris(2-carboxyethyl)phosphine (TCEP, Thermo Fisher Scientific), and 100 mM Tris, pH 8.0."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.97,
+    "evidence_score": 0.957,
+    "completeness": 0.957,
+    "format_score": 1.0
+  }
+}

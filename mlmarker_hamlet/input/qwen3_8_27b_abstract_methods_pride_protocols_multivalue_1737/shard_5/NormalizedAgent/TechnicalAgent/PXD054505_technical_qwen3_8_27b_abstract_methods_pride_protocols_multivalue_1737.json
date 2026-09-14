@@ -1,0 +1,149 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-dependent acquisition",
+      "evidence": "experiment types: Gel-based experiment; Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "The eluent was analyzed on a Q Exactive hybrid quadrupole/orbitrap mass spectrometer (ThermoFisher Scientific, Dreieich, Germany) equipped with a FlexIon nanoSpray source and operated under Excalibur 2.5 software using a data-dependent acquisition method."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "2-iodoacetamide",
+      "evidence": "After washing, gel slices were reduced with dithiothreitol (DTT), alkylated with 2-iodoacetamide and digested with Endopeptidase Trypsin (sequencing grade, Promega) overnight."
+    },
+    {
+      "value": "iodoacetamide",
+      "evidence": "The search was performed with trypsine as enzyme and iodoacetamide as cysteine blocking agent."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Endopeptidase Trypsin",
+      "evidence": "After washing, gel slices were reduced with dithiothreitol (DTT), alkylated with 2-iodoacetamide and digested with Endopeptidase Trypsin (sequencing grade, Promega) overnight."
+    },
+    {
+      "value": "trypsine",
+      "evidence": "The search was performed with trypsine as enzyme and iodoacetamide as cysteine blocking agent."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "25%",
+      "evidence": "fragmented with nitrogen at a normalized collision energy setting of 25%, and the resulting product ion spectra recorded at a resolution setting of 17,500 FWHM, and AGC target of 2*10e5 and a maximum fill time of 60 ms."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "normalized collision energy",
+      "evidence": "fragmented with nitrogen at a normalized collision energy setting of 25%, and the resulting product ion spectra recorded at a resolution setting of 17,500 FWHM, and AGC target of 2*10e5 and a maximum fill time of 60 ms."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "The eluent was analyzed on a Q Exactive hybrid quadrupole/orbitrap mass spectrometer (ThermoFisher Scientific, Dreieich, Germany) equipped with a FlexIon nanoSpray source and operated under Excalibur 2.5 software using a data-dependent acquisition method."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "SILAC",
+      "evidence": "quantification: SILAC"
+    },
+    {
+      "value": "triplex SILAC",
+      "evidence": "The Arginine R6/R10 and Lysine K4/K8 labels including the \u2018Re-quantify\u2019 option were specified for relative protein quantitation by triplex SILAC."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "The instrument type \u2018Orbitrap\u2019 was selected to adjust for MS acquisition specifics."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "The search was performed with trypsine as enzyme and iodoacetamide as cysteine blocking agent. Up to two missed tryptic cleavages and methionine oxidation as a variable modification were allowed for.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "iodoacetamide",
+      "evidence": "The search was performed with trypsine as enzyme and iodoacetamide as cysteine blocking agent.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01090",
+      "ontology_name": "iodoacetamide derivatized amino-terminal residue",
+      "similarity": 0.916,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Iodoacetamide derivative"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "After washing, gel slices were reduced with dithiothreitol (DTT), alkylated with 2-iodoacetamide and digested with Endopeptidase Trypsin (sequencing grade, Promega) overnight."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.924,
+    "evidence_score": 0.924,
+    "completeness": 0.81,
+    "format_score": 1.0
+  }
+}

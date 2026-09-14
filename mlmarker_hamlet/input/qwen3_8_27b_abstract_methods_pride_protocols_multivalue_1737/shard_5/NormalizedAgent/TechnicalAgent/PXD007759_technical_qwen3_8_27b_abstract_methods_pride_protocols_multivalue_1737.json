@@ -1,0 +1,138 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "inferred: MS data was acquired using a data-dependent top-10 method dynamically choosing the most abundant precursor ions from the survey scan (300\u20131800 m/z) for HCD fragmentation."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "The resultant peptides of trypsin digestion were desalted by solid phase extraction using C18 Empore disc cartridges (Supelco/Sigma-Aldrich, Taufkirchen, Germany) and then concentrated by vacuum centrifugation and reconstituted in 40\u2009\u03bcl of 0.1% trifluoroacetic acid."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30 eV",
+      "evidence": "Normalized collision energy was 30\u2009eV and the underfill ratio, which specifies the minimum percentage of the target value likely to be reached at maximum fill time, was defined as 0.1%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "MS data was acquired using a data-dependent top-10 method dynamically choosing the most abundant precursor ions from the survey scan (300\u20131800 m/z) for HCD fragmentation."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "MS experiments were performed on a Q Exactive mass spectrometer that was coupled to Easy nLC (Proxeon Biosystems, Thermo Fisher Scientific, Bremen, Germany).",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Liquid Chromatography\u2013Electrospray Ionization\u2013Tandem Mass Spectrometry (LC\u2013ESI\u2013MS/MS)"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "The MaxLFQ label-free quantification method, a retention time alignment and identification transfer protocol (\u201cmatch-between-runs\u201d feature in MaxQuant) described in, was applied and a novel algorithm was used to extract the maximum possible quantification information."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: MS experiments were performed on a Q Exactive mass spectrometer that was coupled to Easy nLC (Proxeon Biosystems, Thermo Fisher Scientific, Bremen, Germany)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Carbamidomethylation of cysteines was defined as fixed modification, while protein N-terminal acetylation and methionine oxidation were defined as variable modifications for database searching.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "acetylation",
+      "evidence": "Carbamidomethylation of cysteines was defined as fixed modification, while protein N-terminal acetylation and methionine oxidation were defined as variable modifications for database searching.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:1",
+      "ontology_name": "Acetyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Acetyl"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "Carbamidomethylation of cysteines was defined as fixed modification, while protein N-terminal acetylation and methionine oxidation were defined as variable modifications for database searching.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.888,
+    "evidence_score": 0.918,
+    "completeness": 0.647,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "collision_energy[0]",
+      "value": "30 eV",
+      "evidence": "Normalized collision energy was 30\u2009eV and the underfill ratio, which specifies the minimum percentage of the target value likely to be reached at maximum fill time, was defined as 0.1%."
+    }
+  ]
+}

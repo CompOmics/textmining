@@ -1,0 +1,187 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "LC-MS/MS using data dependent acquisition, data-independent acquisition (pSMART), parallel reaction monitoring, and selected reaction monitoring (or multiple reaction monitoring) mass spectrometry were used to detect and relatively quantify the desthiobiotinylated kinase peptides."
+    },
+    {
+      "value": "DIA",
+      "evidence": "LC-MS/MS using data dependent acquisition, data-independent acquisition (pSMART), parallel reaction monitoring, and selected reaction monitoring (or multiple reaction monitoring) mass spectrometry were used to detect and relatively quantify the desthiobiotinylated kinase peptides."
+    },
+    {
+      "value": "PRM",
+      "evidence": "LC-MS/MS using data dependent acquisition, data-independent acquisition (pSMART), parallel reaction monitoring, and selected reaction monitoring (or multiple reaction monitoring) mass spectrometry were used to detect and relatively quantify the desthiobiotinylated kinase peptides."
+    },
+    {
+      "value": "SRM",
+      "evidence": "LC-MS/MS using data dependent acquisition, data-independent acquisition (pSMART), parallel reaction monitoring, and selected reaction monitoring (or multiple reaction monitoring) mass spectrometry were used to detect and relatively quantify the desthiobiotinylated kinase peptides."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "40 mM",
+      "evidence": "Labeled lysates were denatured in 5 M urea and 5 mM DTT for 30 minutes at 65\u00b0 C, and then alkylated with 40 mM iodoacetamide (Sigma)."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Labeled lysates were denatured in 5 M urea and 5 mM DTT for 30 minutes at 65\u00b0 C, and then alkylated with 40 mM iodoacetamide (Sigma)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Trypsin",
+      "evidence": "Samples were desalted again into a HEPES digestion buffer and digested overnight with 20 \u03bcg Trypsin (Worthington) at 37\u00b0 C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30 normalized collision energy value (NCE)",
+      "evidence": "A DDA \u201ctop 16\u201d method with an isolation window of 2 Th around the precursor (0.5 Th offset) and 30 normalized collision energy value (NCE) were used."
+    },
+    {
+      "value": "30 normalized collision energy value (NCE)",
+      "evidence": "A data-dependent \u201ctop 16\u201d method with an isolation window of 2 m/z and 30 normalized collision energy value (NCE) were used."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "streptavidin beads",
+      "evidence": "Digested lysates were incubated for 2 hours at room temperature with high-capacity streptavidin beads to enrich for desthiobiotinylated peptides."
+    },
+    {
+      "value": "high-capacity streptavidin beads",
+      "evidence": "Enrichment was achieved by incubation for 2 hours at room temperature with high-capacity streptavidin beads."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    },
+    {
+      "value": "Q-Exactive Plus",
+      "evidence": "DDA, pSMART/DIA, and PRM samples were analyzed using a Q-Exactive Plus MS with a capillary temperature of 250\u00b0 C and spray voltage of 2400 V.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002634",
+      "ontology_name": "Q Exactive Plus",
+      "similarity": 0.982,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive Plus"
+    },
+    {
+      "value": "TSQ Quantiva",
+      "evidence": "MRM analysis was performed on a TSQ Quantiva (Thermo) with a capillary temperature of 275\u00b0 C and a spray voltage of 2100 V.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002418",
+      "ontology_name": "TSQ Quantiva",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "TSQ Quantiva"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TIC",
+      "evidence": "quantification: TIC"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: A longer column (50 cm) is used for discovery data acquisition on the Q Exactive, compared to the 25 cm column used for LC-MRM."
+    },
+    {
+      "value": "Triple Quadrupole",
+      "evidence": "MRM analysis was performed on a TSQ Quantiva (Thermo) with a capillary temperature of 275\u00b0 C and a spray voltage of 2100 V."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "DDA LC-MS/MS analysis was carried out using Andromeda and MaxQuant for peptide identification and quantification searching data against human entries in UniProt (downloaded December 2015) with the following dynamic modifications: methionine oxidation, cysteine carbamidomethylation, and lysine desthiobiotinylation (+196.121178 Da).",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "DDA LC-MS/MS analysis was carried out using Andromeda and MaxQuant for peptide identification and quantification searching data against human entries in UniProt (downloaded December 2015) with the following dynamic modifications: methionine oxidation, cysteine carbamidomethylation, and lysine desthiobiotinylation (+196.121178 Da).",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "desthiobiotinylation",
+      "evidence": "DDA LC-MS/MS analysis was carried out using Andromeda and MaxQuant for peptide identification and quantification searching data against human entries in UniProt (downloaded December 2015) with the following dynamic modifications: methionine oxidation, cysteine carbamidomethylation, and lysine desthiobiotinylation (+196.121178 Da).",
+      "is_normalized": true,
+      "ontology_id": "MOD:01272",
+      "ontology_name": "iminobiotinylation - site K",
+      "similarity": 0.733,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Iminobiotinylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Labeled lysates were denatured in 5 M urea and 5 mM DTT for 30 minutes at 65\u00b0 C, and then alkylated with 40 mM iodoacetamide (Sigma)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Labeled lysates were denatured in 5 M urea and 5 mM DTT for 30 minutes at 65\u00b0 C, and then alkylated with 40 mM iodoacetamide (Sigma)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.929,
+    "evidence_score": 0.904,
+    "completeness": 0.885,
+    "format_score": 1.0
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10mM",
+      "evidence": "Samples were then treated with 10mM iodoacetamide for 30 min in the dark at room temperature followed by precipitation using chloroform/methanol as previously described1."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Samples were then treated with 10mM iodoacetamide for 30 min in the dark at room temperature followed by precipitation using chloroform/methanol as previously described1."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "LysC",
+      "evidence": "After precipitation, samples were digested overnight using LysC and trypsin (1:100 enzyme/protein ratio) at 37\u2009\u00b0C using a ThermoMixer set to 1,200 rpm."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "After precipitation, samples were digested overnight using LysC and trypsin (1:100 enzyme/protein ratio) at 37\u2009\u00b0C using a ThermoMixer set to 1,200 rpm."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "35%",
+      "evidence": "The hrMS2 stage consisted of fragmentation by higher energy collisional dissociation (HCD, normalized collision energy 35%) and analysis using the Orbitrap (AGC 200%, maximum injection time 120\u202fms, isolation window 0.6 Th, resolution 50,000)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "basic pH reversed-phase HPLC",
+      "evidence": "After drying down the desalted sample in the Speedvac, the peptides were resuspended in 10\u2009mM ammonium bicarbonate, 5% acetonitrile, pH\u20098.0 buffer, fractionated with basic pH reversed-phase HPLC using an Agilent 300 extend C18 column, and collected into a 96-deep-well plate."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The hrMS2 stage consisted of fragmentation by higher energy collisional dissociation (HCD, normalized collision energy 35%) and analysis using the Orbitrap (AGC 200%, maximum injection time 120\u202fms, isolation window 0.6 Th, resolution 50,000)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "Mass spectrometric data were collected on Orbitrap Fusion Lumos instruments coupled to a Proxeon NanoLC-1200 UHPLC."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: The scan sequence began with an MS1 spectrum (Orbitrap analysis, resolution 60,000, 350-1350 Th, automatic gain control (AGC) target 100%, maximum injection time 118ms)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "TMTPro16 (+304.2071 Da)",
+      "evidence": "Spectral searches were performed using a custom FASTA-formatted database that included common contaminants, reversed sequences (Uniprot Human, 2021) and the following parameters: 50 PPM precursor tolerance, fully tryptic peptides, fragment ion tolerance of 0.02\u2009Da and a static modification by TMTPro16 (+304.2071\u2009Da) on lysine and peptide N-termini.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "iTRAQ4plex-116 reporter+balance reagent O3-acylated threonine",
+      "normalization_candidate_ids": [
+        "MOD:01505",
+        "MOD:01760",
+        "MOD:01734",
+        "MOD:01766",
+        "MOD:01742"
+      ]
+    },
+    {
+      "value": "Carbamidomethylation of cysteine residues (+57.0214 Da)",
+      "evidence": "Carbamidomethylation of cysteine residues (+57.0214\u2009Da) was set as a static modification, while oxidation of methionine residues (+15.9949\u2009Da) was set as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.712,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "oxidation of methionine residues (+15.9949 Da)",
+      "evidence": "Carbamidomethylation of cysteine residues (+57.0214\u2009Da) was set as a static modification, while oxidation of methionine residues (+15.9949\u2009Da) was set as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00768",
+      "ontology_name": "methionine oxidation with neutral loss of 80 Da",
+      "similarity": 0.823,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "methionine oxidation with neutral loss of 80 Da"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Protein extracts were reduced using 5-Tris (2-carboxyethyl) phosphine hydrochloride (TCEP) for 15\u2009min at room temperature."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.892,
+    "evidence_score": 0.826,
+    "completeness": 0.895,
+    "format_score": 1.0
+  }
+}

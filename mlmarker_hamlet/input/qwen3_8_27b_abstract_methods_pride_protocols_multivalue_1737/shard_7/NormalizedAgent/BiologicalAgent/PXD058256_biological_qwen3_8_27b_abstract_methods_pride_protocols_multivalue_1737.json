@@ -1,0 +1,172 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "SH-SY5Y",
+      "evidence": "SH-SY5Y cells expressing hTauP301L-GFP were plated in 18 x 10 cm dishes at 5\u00d7106 per dish in 10 mL of growth media.",
+      "is_normalized": true,
+      "ontology_id": "CLO:0009015",
+      "ontology_name": "SH-SY5Y cell",
+      "similarity": 0.965,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "SH-SY5Y cell"
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "neuron",
+      "evidence": "An optimized analogue derived from this effort induced tau aggregate clearance in both SH-SY5Y and iPSC-derived human neuron models of hTauP301L aggregation at nanomolar concentrations and led to the activation of the ERAD pathway.",
+      "is_normalized": true,
+      "ontology_id": "CL:0000540",
+      "ontology_name": "neuron",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "neuron"
+    },
+    {
+      "value": "neuron",
+      "evidence": "Cell culture",
+      "is_normalized": true,
+      "ontology_id": "CL:0000540",
+      "ontology_name": "neuron",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "neuron"
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "tauopathy",
+      "evidence": "keywords: Fragment; Tauopathy; Screening; Chemoproteomics; Photoactivation",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0005574",
+      "ontology_name": "tauopathy",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "tauopathy"
+    },
+    {
+      "value": "Alzheimer's disease",
+      "evidence": "Tauopathies are characterized by the formation of tau protein-based neurofibrillary tangles which impede neuronal function and contribute to the pathology of highly prevalent neurodegenerative disorders such as Alzheimer\u2019s and Pick\u2019s diseases.",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0004975",
+      "ontology_name": "Alzheimer disease",
+      "similarity": 1.0,
+      "normalization_method": "exact_synonym",
+      "normalization_matched_text": "Alzheimer's disease",
+      "synonym_scope": "EXACT"
+    },
+    {
+      "value": "Pick's disease",
+      "evidence": "Tauopathies are characterized by the formation of tau protein-based neurofibrillary tangles which impede neuronal function and contribute to the pathology of highly prevalent neurodegenerative disorders such as Alzheimer\u2019s and Pick\u2019s diseases.",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0008243",
+      "ontology_name": "Pick disease",
+      "similarity": 0.983,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Pick disease"
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell culture",
+      "evidence": "organism parts: Cell culture"
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "cell culture",
+      "evidence": "organism parts: Cell culture",
+      "is_normalized": true,
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cell culture"
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "brain",
+      "evidence": "inferred: An optimized analogue derived from this effort induced tau aggregate clearance in both SH-SY5Y and iPSC-derived human neuron models of hTauP301L aggregation at nanomolar concentrations and led to the activation of the ERAD pathway.",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0000955",
+      "ontology_name": "brain",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "brain"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.847,
+    "evidence_score": 0.859,
+    "completeness": 0.588,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "cell_line_tissue_mismatch",
+      "field_a": "cell_line",
+      "value_a": "SH-SY5Y",
+      "ontology_id_a": "CLO:0009015",
+      "field_b": "tissue",
+      "value_b": "brain",
+      "ontology_id_b": "UBERON:0000955",
+      "expected_b": "UBERON:0001021",
+      "source": "CLO derives_from"
+    }
+  ]
+}

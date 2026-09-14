@@ -1,0 +1,150 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-independent acquisition",
+      "evidence": "experiment types: Data-independent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "200 mM iodoacetamide",
+      "evidence": "The lysed samples were processed according to the Sp3 protocol(23) including an alkylation step in 200 mM iodoacetamide (Acros Organics)."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "The lysed samples were processed according to the Sp3 protocol(23) including an alkylation step in 200 mM iodoacetamide (Acros Organics)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Trypsin/LysC",
+      "evidence": "Proteins captured on beads were digested overnight at 37oC under vigorous shaking (1200 rpm, Eppendorf Thermomixer) supplemented with 0.5 \u00b5g Trypsin/LysC (MS grade, Promega) prepared in 25 mM ammonium bicarbonate."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "26",
+      "evidence": "A full MS was acquired in profile mode using a Q Exactive HF-X Hybrid Quadrupole-Orbitrap mass spectrometer, operating in the scan range of 375-1400 m/z using 120K resolving power with an AGC of 3x 106 and max IT of 60ms followed by data independent analysis using 8 Th windows (39 loop counts) with 15K resolving power with an AGC of 3x 105 and max IT of 22ms and a normalised collision energy (NCE) of 26."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "normalised collision energy",
+      "evidence": "A full MS was acquired in profile mode using a Q Exactive HF-X Hybrid Quadrupole-Orbitrap mass spectrometer, operating in the scan range of 375-1400 m/z using 120K resolving power with an AGC of 3x 106 and max IT of 60ms followed by data independent analysis using 8 Th windows (39 loop counts) with 15K resolving power with an AGC of 3x 105 and max IT of 22ms and a normalised collision energy (NCE) of 26."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF-X",
+      "evidence": "instruments: Q Exactive HF-X",
+      "is_normalized": true,
+      "ontology_id": "MS:1002877",
+      "ontology_name": "Q Exactive HF-X",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF-X"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Samples were processed on a liquid chromatography tandem mass spectrometry (LC-MS/MS) setup consisting of a Dionex Ultimate 3000RSLC online with a Thermo Q Exactive HF-X Orbitrap mass spectrometer."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Orbitrap raw data was analysed in DIA-NN 1.8 (Data-Independent Acquisition by Neural Networks)(24) through searching against the reviewed Human Uniprot database containing 27246 proteins  (retrieved 4/2021) in the library free  mode of the software, allowing up to two tryptic missed cleavages."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Samples were processed on a liquid chromatography tandem mass spectrometry (LC-MS/MS) setup consisting of a Dionex Ultimate 3000RSLC online with a Thermo Q Exactive HF-X Orbitrap mass spectrometer."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "oxidation of methionine residues",
+      "evidence": "DIA-NN default settings have been used with oxidation of methionine residues and acetylation of the protein N-termini set as variable modifications and carbamidomethylation of cysteine residues as fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.881,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "acetylation of the protein N-termini",
+      "evidence": "DIA-NN default settings have been used with oxidation of methionine residues and acetylation of the protein N-termini set as variable modifications and carbamidomethylation of cysteine residues as fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.873,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "carbamidomethylation of cysteine residues",
+      "evidence": "DIA-NN default settings have been used with oxidation of methionine residues and acetylation of the protein N-termini set as variable modifications and carbamidomethylation of cysteine residues as fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.788,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "0.1M DTT",
+      "evidence": "and subsequently lysed in a lysis buffer consisting of 4% SDS, 0.1M DTT, 0.1M Tris pH 7.4."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "and subsequently lysed in a lysis buffer consisting of 4% SDS, 0.1M DTT, 0.1M Tris pH 7.4."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.961,
+    "evidence_score": 0.963,
+    "completeness": 0.895,
+    "format_score": 1.0
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The Q-Exactive mass spectrometer was operated in the data-dependent mode, with survey scans acquired for the mass range of 450\u20132000 Thomsons (Th) at a resolution of 70,000 (at m/z 200)."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "1M iodoacetamide",
+      "evidence": "followed by addition of 1.5\u2009\u00b5l of 1\u2009M iodoacetamide and incubation in the dark for 30\u2009min at room temperature for alkylation"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "followed by addition of 1.5\u2009\u00b5l of 1\u2009M iodoacetamide and incubation in the dark for 30\u2009min at room temperature for alkylation"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "The resulting sample was subjected to in-solution tryptic digestion (1:50 enzyme-to-protein ratio (w/w), Promega, Madison, WI, USA) and then incubated at 37\u2009\u00b0C overnight."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "normalized collision energies of 25",
+      "evidence": "fragmented by the higher energy collisional dissociation (HCD) with the normalized collision energies of 25 and the exclusion duration of 10\u2009s."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "fragmented by the higher energy collisional dissociation (HCD) with the normalized collision energies of 25 and the exclusion duration of 10\u2009s."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "The eluted peptides from LC were analyzed using the Q-Exactive\u2122 hybrid quadrupole-Orbitrap mass spectrometer (Thermo Scientific) equipped with the nanoelectrospray source."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "To assign an MS intensity to peptide identification, an MS intensity-based label-free quantification method was applied to 24 LC-MS/MS datasets as described previously."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "The eluted peptides from LC were analyzed using the Q-Exactive\u2122 hybrid quadrupole-Orbitrap mass spectrometer (Thermo Scientific) equipped with the nanoelectrospray source."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation of cysteine",
+      "evidence": "MS/MS spectra were searched against a composite database containing UniProtKB/Swiss-Prot entries of the human reference proteome (UniProtKB release 2015_11, 42,123 entries) and 179 common contaminants in the target-decoy setting using the MS-GF\u2009+\u2009Beta (v10089) search engine under the following parameters: semitryptic, precursor mass tolerance of 10 p.p.m., carbamidomethylation of cysteine as a fixed modification and oxidation of methionine as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01061",
+      "ontology_name": "S-carboxymethyl-L-cysteine",
+      "similarity": 0.803,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl cysteine"
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "MS/MS spectra were searched against a composite database containing UniProtKB/Swiss-Prot entries of the human reference proteome (UniProtKB release 2015_11, 42,123 entries) and 179 common contaminants in the target-decoy setting using the MS-GF\u2009+\u2009Beta (v10089) search engine under the following parameters: semitryptic, precursor mass tolerance of 10 p.p.m., carbamidomethylation of cysteine as a fixed modification and oxidation of methionine as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "0.5 M DTT",
+      "evidence": "The protein sample was then reduced in 0.5\u2009M DTT (100\u2009\u00b5l) for 50\u2009min at 37\u2009\u00b0C, followed by addition of 1.5\u2009\u00b5l of 1\u2009M iodoacetamide and incubation in the dark for 30\u2009min at room temperature for alkylation."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "The protein sample was then reduced in 0.5\u2009M DTT (100\u2009\u00b5l) for 50\u2009min at 37\u2009\u00b0C, followed by addition of 1.5\u2009\u00b5l of 1\u2009M iodoacetamide and incubation in the dark for 30\u2009min at room temperature for alkylation."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.881,
+    "evidence_score": 0.812,
+    "completeness": 0.875,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "1M iodoacetamide",
+      "evidence": "followed by addition of 1.5\u2009\u00b5l of 1\u2009M iodoacetamide and incubation in the dark for 30\u2009min at room temperature for alkylation"
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "0.5 M DTT",
+      "evidence": "The protein sample was then reduced in 0.5\u2009M DTT (100\u2009\u00b5l) for 50\u2009min at 37\u2009\u00b0C, followed by addition of 1.5\u2009\u00b5l of 1\u2009M iodoacetamide and incubation in the dark for 30\u2009min at room temperature for alkylation."
+    }
+  ]
+}

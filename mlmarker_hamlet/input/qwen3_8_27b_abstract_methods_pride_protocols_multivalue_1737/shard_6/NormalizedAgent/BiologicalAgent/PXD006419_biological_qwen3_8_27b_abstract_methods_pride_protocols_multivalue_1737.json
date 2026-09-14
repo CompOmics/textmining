@@ -1,0 +1,162 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "mesenchymal stromal cells",
+      "evidence": "Mesenchymal stromal cells (MSC) are ideal candidates for cell therapies, due to their immune-regulatory and regenerative properties.",
+      "is_normalized": false,
+      "normalization_method": "related_synonym_requires_context",
+      "normalization_matched_text": "mesenchymal stromal cells",
+      "normalization_candidate_ids": [
+        "CL:0000134"
+      ],
+      "normalization_qc_flags": [
+        "related_synonym_requires_context"
+      ]
+    },
+    {
+      "value": "mesenchymal stromal cells",
+      "evidence": "Cultured MSC (passage 3) from lung tissue and bone marrow aspirates were seeded into 6-well plates and cultured in StemMACS MSC expansion medium (MACS Miltenyi Biotec) supplemented with 1% antibiotic antimycotic solution (Sigma Aldrich) under standard culture conditions (37\u2009\u00b0C and 5% CO2).",
+      "is_normalized": false,
+      "normalization_method": "related_synonym_requires_context",
+      "normalization_matched_text": "mesenchymal stromal cells",
+      "normalization_candidate_ids": [
+        "CL:0000134"
+      ],
+      "normalization_qc_flags": [
+        "related_synonym_requires_context"
+      ]
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "normal",
+      "evidence": "Lung function was measured by standard spirometry and only patients that did not have Bronchiolitis Obliterans Syndrome (according to the International Society for Heart and Lung Transplantation guidelines) i.e. normal lung function were included in this study.",
+      "is_normalized": true,
+      "ontology_id": "PATO:0000461",
+      "ontology_name": "normal",
+      "similarity": 0.999,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "normal"
+    },
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell culture",
+      "evidence": "Cultured MSC (passage 3) from lung tissue and bone marrow aspirates were seeded into 6-well plates and cultured in StemMACS MSC expansion medium (MACS Miltenyi Biotec) supplemented with 1% antibiotic antimycotic solution (Sigma Aldrich) under standard culture conditions (37\u2009\u00b0C and 5% CO2)."
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "cell culture",
+      "evidence": "Cultured MSC (passage 3) from lung tissue and bone marrow aspirates were seeded into 6-well plates and cultured in StemMACS MSC expansion medium (MACS Miltenyi Biotec) supplemented with 1% antibiotic antimycotic solution (Sigma Aldrich) under standard culture conditions (37\u2009\u00b0C and 5% CO2).",
+      "is_normalized": true,
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cell culture"
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "lung",
+      "evidence": "organism parts: Bone marrow; Cell culture; Lung; Stem cell",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0002048",
+      "ontology_name": "lung",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "lung"
+    },
+    {
+      "value": "bone marrow",
+      "evidence": "organism parts: Bone marrow; Cell culture; Lung; Stem cell",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0002371",
+      "ontology_name": "bone marrow",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "bone marrow"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.868,
+    "evidence_score": 0.947,
+    "completeness": 0.471,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "disease_state[0]",
+      "value": "normal",
+      "evidence": "Lung function was measured by standard spirometry and only patients that did not have Bronchiolitis Obliterans Syndrome (according to the International Society for Heart and Lung Transplantation guidelines) i.e. normal lung function were included in this study."
+    }
+  ]
+}

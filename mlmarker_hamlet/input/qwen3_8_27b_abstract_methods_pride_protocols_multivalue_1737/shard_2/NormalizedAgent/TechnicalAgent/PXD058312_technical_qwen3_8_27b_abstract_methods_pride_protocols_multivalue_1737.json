@@ -1,0 +1,172 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "Data-dependent acquisition was used in positive ion mode."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "The samples were alkylated by the addition of 100\u2009\u00b5L 10\u2009mM iodoacetamide (IAA) in 50\u2009mM ABC with incubation at room temperature in the dark for 20\u2009min."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "The samples were alkylated by the addition of 100\u2009\u00b5L 10\u2009mM iodoacetamide (IAA) in 50\u2009mM ABC with incubation at room temperature in the dark for 20\u2009min."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "The gels were resuspended in 100 \u00b5L of 50 mM ABC containing 500 ng of digestion grade trypsin (Promega, V5111), and incubated at 370C for 16 hours."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    },
+    {
+      "value": "Q Exactive Plus",
+      "evidence": "The data acquisition was performed on a Thermo Scientific Q Exactive Plus equipped with a Waters nanoAcquity UPLC system utilizing a binary solvent system (A: 100% water, 0.1% formic acid; B: 100% ACN, 0.1% formic acid).",
+      "is_normalized": true,
+      "ontology_id": "MS:1002634",
+      "ontology_name": "Q Exactive Plus",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive Plus"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "The data acquisition was performed on a Thermo Scientific Q Exactive Plus equipped with a Waters nanoAcquity UPLC system utilizing a binary solvent system (A: 100% water, 0.1% formic acid; B: 100% ACN, 0.1% formic acid)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Protein quantification was performed using the LFQ algorithm and 7 min window for match between run in MaxQuant software."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: The data acquisition was performed on a Thermo Scientific Q Exactive Plus equipped with a Waters nanoAcquity UPLC system utilizing a binary solvent system (A: 100% water, 0.1% formic acid; B: 100% ACN, 0.1% formic acid)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "Carbamidomethylation",
+      "evidence": "Carbamidomethylation was set as fixed modification, and N-terminal acetylation and oxidation of methionine were used as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "Carbamidomethylation was set as fixed modification, and N-terminal acetylation and oxidation of methionine were used as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "Carbamidomethylation was set as fixed modification, and N-terminal acetylation and oxidation of methionine were used as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "4.5 mM",
+      "evidence": "Proteins were reduced by the addition of 100 \u00b5L 4.5 mM dithiothreitol (DTT) in 50 mM ABC and incubated at 370C for 45 min."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "Proteins were reduced by the addition of 100 \u00b5L 4.5 mM dithiothreitol (DTT) in 50 mM ABC and incubated at 370C for 45 min."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.924,
+    "evidence_score": 0.924,
+    "completeness": 0.81,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[0]",
+      "value": "10 mM",
+      "evidence": "The samples were alkylated by the addition of 100\u2009\u00b5L 10\u2009mM iodoacetamide (IAA) in 50\u2009mM ABC with incubation at room temperature in the dark for 20\u2009min."
+    }
+  ]
+}
