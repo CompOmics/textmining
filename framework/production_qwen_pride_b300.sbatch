@@ -7,17 +7,17 @@
 #SBATCH --cpus-per-task=32
 #SBATCH --mem=256G
 #SBATCH --time=06:00:00
-#SBATCH --output=/data/groups/cmb/lennart.martens/HAMLET/textmining/framework/logs/%x-%A_%a.out
+#SBATCH --output=%x-%A_%a.out
 
 set -euo pipefail
 
-PROJECT=/data/groups/cmb/lennart.martens/HAMLET
+PROJECT="${HAMLET_ROOT:?Set HAMLET_ROOT to the HAMLET project directory}"
 FRAMEWORK="$PROJECT/textmining/framework"
 MODEL_ID=Qwen/Qwen3.8-27B
-MODEL_TAG=qwen3_8_27b_abstract_methods_pride_1737
+MODEL_TAG="${MODEL_TAG:-qwen3_8_27b_abstract_methods_pride_1737}"
 MODEL_CONFIG="$FRAMEWORK/configs/qwen3_8_27b_vllm.yaml"
 SIF="$PROJECT/containers/vllm-openai-v0.27.1.sif"
-INPUT_ROOT="$PROJECT/textmining/production_inputs/abstract_methods_pride_1737_8shards"
+INPUT_ROOT="${INPUT_ROOT:-$PROJECT/textmining/production_inputs/abstract_methods_pride_1737_8shards}"
 OUTPUT_ROOT="$FRAMEWORK/production_outputs/$MODEL_TAG"
 INPUT="$INPUT_ROOT/shard_$SLURM_ARRAY_TASK_ID"
 OUTPUT="$OUTPUT_ROOT/shard_$SLURM_ARRAY_TASK_ID"

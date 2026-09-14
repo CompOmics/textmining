@@ -1,0 +1,211 @@
+{
+  "experiment": "Single-run SapBERT re-scoring of the primary Staircase annotations",
+  "inference_replicate": 1,
+  "embedding_model": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
+  "annotations": "${HAMLET_ROOT}/textmining/final_analyses/Staircase/benchmark_inputs",
+  "gold": "${HAMLET_ROOT}/textmining/agentic-benchmark/benchmark_data/SDRFS_github",
+  "benchmark_runner": "${HAMLET_ROOT}/textmining/agentic-benchmark/benchmark_data/run_sdrf_benchmark.py",
+  "semantic_threshold": 0.7,
+  "final_metric_threshold": 0.5,
+  "filter_extractable": true,
+  "runs": [
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S0",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/qwen3_8_27b/S0/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.8222,
+        "recall": 0.3483,
+        "f1": 0.4855,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S1",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/qwen3_8_27b/S1/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.8767,
+        "recall": 0.6586,
+        "f1": 0.7466,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S2",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/qwen3_8_27b/S2/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.9171,
+        "recall": 0.8681,
+        "f1": 0.8918,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S3",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/qwen3_8_27b/S3/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.9245,
+        "recall": 0.8697,
+        "f1": 0.8962,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S4",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/qwen3_8_27b/S4/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.9137,
+        "recall": 0.8673,
+        "f1": 0.8898,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "qwen3_8_27b",
+      "arm": "S5",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/qwen3_8_27b/S5/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.8705,
+        "recall": 0.8479,
+        "f1": 0.859,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "gemma4_31b",
+      "arm": "S0",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/gemma4_31b/S0/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.8668,
+        "recall": 0.4901,
+        "f1": 0.6169,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "gemma4_31b",
+      "arm": "S1",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/gemma4_31b/S1/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.8386,
+        "recall": 0.6899,
+        "f1": 0.7551,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "gemma4_31b",
+      "arm": "S2",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/gemma4_31b/S2/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.9275,
+        "recall": 0.8726,
+        "f1": 0.8989,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "gemma4_31b",
+      "arm": "S3",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/gemma4_31b/S3/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.9271,
+        "recall": 0.8692,
+        "f1": 0.8968,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "gemma4_31b",
+      "arm": "S4",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/gemma4_31b/S4/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.9275,
+        "recall": 0.8726,
+        "f1": 0.8989,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "gemma4_31b",
+      "arm": "S5",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/gemma4_31b/S5/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.8993,
+        "recall": 0.8726,
+        "f1": 0.8857,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S0",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/glm4_7/S0/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 1.0,
+        "recall": 0.1381,
+        "f1": 0.2407,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S1",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/glm4_7/S1/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.9056,
+        "recall": 0.6299,
+        "f1": 0.7326,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S2",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/glm4_7/S2/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.9188,
+        "recall": 0.8486,
+        "f1": 0.8814,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S3",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/glm4_7/S3/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.9156,
+        "recall": 0.8521,
+        "f1": 0.8821,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S4",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/glm4_7/S4/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.9156,
+        "recall": 0.8521,
+        "f1": 0.8821,
+        "method": "macro-average across agents"
+      }
+    },
+    {
+      "model": "glm4_7",
+      "arm": "S5",
+      "report": "${HAMLET_ROOT}/textmining/final_analyses/SapBERTStaircase/benchmark_runs/glm4_7/S5/sdrf_benchmark_summary.json",
+      "overall": {
+        "precision": 0.8819,
+        "recall": 0.8622,
+        "f1": 0.8719,
+        "method": "macro-average across agents"
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "projects": 1737,
+  "totals": {
+    "old_fields": 21997,
+    "new_fields": 37026,
+    "shared_fields": 20169,
+    "earlier_only_fields": 1828,
+    "expanded_only_fields": 16857,
+    "old_values": 27755,
+    "new_values": 49791,
+    "equivalent_pairs": 16227,
+    "hierarchical_inclusive_pairs": 16463,
+    "semantic_inclusive_pairs": 19505
+  },
+  "domains": {
+    "BiologicalAgent": {
+      "old_fields": 9233,
+      "new_fields": 10751,
+      "shared_fields": 8447,
+      "earlier_only_fields": 786,
+      "expanded_only_fields": 2304,
+      "old_values": 12125,
+      "new_values": 13759
+    },
+    "TechnicalAgent": {
+      "old_fields": 7504,
+      "new_fields": 18700,
+      "shared_fields": 7305,
+      "earlier_only_fields": 199,
+      "expanded_only_fields": 11395,
+      "old_values": 9907,
+      "new_values": 27436
+    },
+    "ExperimentalDesignAgent": {
+      "old_fields": 5260,
+      "new_fields": 7575,
+      "shared_fields": 4417,
+      "earlier_only_fields": 843,
+      "expanded_only_fields": 3158,
+      "old_values": 5723,
+      "new_values": 8596
+    }
+  },
+  "field_value_categories": {
+    "equivalent_value_sets": 11122,
+    "partial_overlap": 3834,
+    "expanded_only_field": 16857,
+    "no_accepted_overlap_review": 3329,
+    "semantic_candidate_value_sets": 1749,
+    "earlier_only_field": 1828,
+    "hierarchically_related_value_sets": 135
+  },
+  "selected_pair_categories": {
+    "EXACT_LEXICAL": 15951,
+    "SEMANTIC_CANDIDATE": 3044,
+    "EXPANDED_BROADER": 122,
+    "EXPANDED_NARROWER": 115,
+    "ONTOLOGY_EQUIVALENT": 271,
+    "NUMERIC_EQUIVALENT": 2
+  },
+  "same_field_count_projects": 92,
+  "same_value_count_projects": 28,
+  "helper_sha256": {
+    "matcher": "185210a69d2d2f77760bc2fed2d282b612397486f49821ab16964d91a4bc49a9",
+    "ontology": "0ed3aaaa5548b131b6e29386884961fb689cc2acb19b34c0b6fde1603bc444ec"
+  },
+  "ontology_sha256": {
+    "bto": "500afcf71227fbb897f691e0a6dffee24f5ae853682444dccbe01ad13bd2d2fe",
+    "chebi": "dabc949efd44a9778307ff76cefa227cf0c8ec4e0dcb83c15dc9fb2bbac6703f",
+    "cl": "7e19b4aef8e7fe7720b0c4474c6a5b8713c904ea9ab7b7d5d96f2cb28b8fc51f",
+    "clo": "64b8167d3bdf789d902906053fcec29c0644d34e22378032fa0d2e03915d8920",
+    "mondo": "fce4bccd97c4eb66161e88272ca0bd6ecd28c003afa878bbec8eae0ceb78fba8",
+    "psi-ms": "4a615f3bf11685c7225b83bf0e182fc7591065dc5c241c22e5777fb3ccc7b532",
+    "psimod": "fcbef7529c5e155ebd1eb0c13d90c239f84f531e9ef5aafc9ef7c4a019df094a",
+    "species": "54ac223c51dc34d7fd4a0f49c8b34a30bcae816a3bf3954c29b975964112bb55",
+    "uberon": "7f06d8e8442008a67132a1599b652e86fe0c52d75c8d6bc5b0cc36a0031e6b3f"
+  },
+  "source_sha256": "46089ca83d7c22f632b21c4f9893f9aa48d60b3e2bd0fd54a901a78b4f768d93",
+  "semantic_threshold": 0.7,
+  "limitations": [
+    "Abstract + available methods versus abstract + available methods + PRIDE properties/protocols; production multi-value prompts matched",
+    "Casefolded values and semicolon splitting inherited from previous audit",
+    "Counts include schema aliases; lexical values are not independent scientific facts",
+    "Ontology equivalence restricted to unique primary names/EXACT synonyms; no fuzzy mapping",
+    "Hierarchy uses HAMLET is_a traversal, maximum four hops; part_of not modelled",
+    "Semantic candidates are not proven equivalence; unmatched values are not contradictions",
+    "Scalar differences flag review, not errors; numeric definitions and scope may differ",
+    "No precision/recall/F1: neither extraction is ground truth",
+    "Both sides use final production prompts, but are separate stochastic generations",
+    "Full-context run includes timeout repairs; control includes nine exact-cache recoveries",
+    "CPU thread allocation differs; raw values are compared before normalization"
+  ],
+  "comparison": "Abstract + available methods versus abstract + available methods + PRIDE properties/protocols; production multi-value prompts matched"
+}

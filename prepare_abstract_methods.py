@@ -22,6 +22,24 @@ BOUNDARIES = {
     "SDRF SUMMARY:",
 }
 
+MISSING_TEXT_VALUES = {
+    "",
+    "n/a",
+    "na",
+    "none",
+    "not available",
+    "not provided",
+    "unknown",
+}
+
+
+def available_text(value: str) -> str:
+    """Return depositor text, or an empty string for explicit missing markers."""
+    value = value.strip()
+    if value.casefold().rstrip(".") in MISSING_TEXT_VALUES:
+        return ""
+    return value
+
 
 def section(lines: list[str], heading: str) -> str:
     """Return text after an exact generated heading up to the next boundary."""
@@ -40,6 +58,7 @@ def prepare(
     destination: Path,
     *,
     include_pride_always: bool = False,
+    include_pride_protocols: bool = False,
 ) -> dict[str, object]:
     raw = source.read_text(encoding="utf-8", errors="replace")
     lines = [line.rstrip() for line in raw.replace("\r\n", "\n").split("\n")]
@@ -50,6 +69,10 @@ def prepare(
     abstract_source = "pubmed" if pubmed_abstract else "pride" if pride_abstract else "missing"
     methods = section(lines, "METHODS:")
     pride_properties = section(lines, "PRIDE PROJECT PROPERTIES:")
+    pride_sample_processing_raw = section(lines, "SAMPLE PROCESSING:")
+    pride_data_processing_raw = section(lines, "DATA PROCESSING:")
+    pride_sample_processing = available_text(pride_sample_processing_raw)
+    pride_data_processing = available_text(pride_data_processing_raw)
     use_pride_fallback = not methods and bool(pride_properties)
     include_pride = bool(pride_properties) and (include_pride_always or use_pride_fallback)
 
@@ -60,6 +83,14 @@ def prepare(
         parts.append(f"=== MATERIALS AND METHODS ===\n{methods}")
     if include_pride:
         parts.append(f"=== PRIDE PROJECT PROPERTIES ===\n{pride_properties}")
+    if include_pride_protocols and pride_sample_processing:
+        parts.append(
+            f"=== PRIDE SAMPLE PROCESSING PROTOCOL ===\n{pride_sample_processing}"
+        )
+    if include_pride_protocols and pride_data_processing:
+        parts.append(
+            f"=== PRIDE DATA PROCESSING PROTOCOL ===\n{pride_data_processing}"
+        )
     destination.write_text("\n\n".join(parts) + "\n", encoding="utf-8")
 
     return {
@@ -75,6 +106,26 @@ def prepare(
         "abstract_chars": len(abstract),
         "methods_chars": len(methods),
         "pride_properties_chars": len(pride_properties) if include_pride else 0,
+        "has_pride_sample_processing": bool(pride_sample_processing),
+        "pride_sample_processing_status": (
+            "available" if pride_sample_processing else "unavailable"
+        ),
+        "includes_pride_sample_processing": bool(
+            include_pride_protocols and pride_sample_processing
+        ),
+        "pride_sample_processing_chars": (
+            len(pride_sample_processing) if include_pride_protocols else 0
+        ),
+        "has_pride_data_processing": bool(pride_data_processing),
+        "pride_data_processing_status": (
+            "available" if pride_data_processing else "unavailable"
+        ),
+        "includes_pride_data_processing": bool(
+            include_pride_protocols and pride_data_processing
+        ),
+        "pride_data_processing_chars": (
+            len(pride_data_processing) if include_pride_protocols else 0
+        ),
         "output_chars": destination.stat().st_size,
     }
 
@@ -88,6 +139,11 @@ def main() -> None:
         "--include-pride-always",
         action="store_true",
         help="Include PRIDE project properties even when manuscript Methods are present",
+    )
+    parser.add_argument(
+        "--include-pride-protocols",
+        action="store_true",
+        help="Include PRIDE sample- and data-processing protocol text",
     )
     args = parser.parse_args()
 
@@ -107,6 +163,7 @@ def main() -> None:
             src,
             args.output / src.name,
             include_pride_always=args.include_pride_always,
+            include_pride_protocols=args.include_pride_protocols,
         )
         for src in sources
     ]
@@ -126,6 +183,14 @@ def main() -> None:
     print(
         "PRIDE properties fallback: "
         f"{sum(bool(row['has_pride_properties_fallback']) for row in rows)}"
+    )
+    print(
+        "PRIDE sample-processing protocols included: "
+        f"{sum(bool(row['includes_pride_sample_processing']) for row in rows)}"
+    )
+    print(
+        "PRIDE data-processing protocols included: "
+        f"{sum(bool(row['includes_pride_data_processing']) for row in rows)}"
     )
     print(f"Manifest: {manifest}")
 
