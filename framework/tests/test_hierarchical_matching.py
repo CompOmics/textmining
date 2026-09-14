@@ -471,3 +471,26 @@ class TestHierarchicalScoring:
         from benchmark.semantic_matcher import HierarchicalMatcher
         for hops, score in HierarchicalMatcher.HIERARCHICAL_SCORE_BY_HOPS.items():
             assert score >= 0.75, f"Score at {hops} hops ({score}) is below 0.75"
+
+
+class TestNumericEquality:
+    """Numbers are compared as numbers, never by embedding similarity."""
+
+    def setup_method(self):
+        from benchmark.semantic_matcher import HierarchicalMatcher
+        self.m = HierarchicalMatcher()
+
+    def test_different_numbers_do_not_match(self):
+        assert self.m._compare_values("16", "26") == ("NO_MATCH", 0.0)
+        assert self.m._compare_values("3", "5") == ("NO_MATCH", 0.0)
+        assert self.m._compare_values("50 mM", "5 mM") == ("NO_MATCH", 0.0)
+
+    def test_equal_numbers_in_different_forms_match(self):
+        assert self.m._compare_values("3", "three") == ("NORMALIZED", 0.95)
+        assert self.m._compare_values("3.0", "3") == ("NORMALIZED", 0.95)
+        assert self.m._compare_values("40 samples", "40") == ("NORMALIZED", 0.95)
+        assert self.m._compare_values("50 mM", "50 mm") == ("NORMALIZED", 0.95)
+
+    def test_non_numeric_strings_are_untouched(self):
+        assert self.m._parse_number("trypsin") == (None, "")
+        assert self.m._parse_number("Q Exactive HF") == (None, "")
