@@ -1,0 +1,161 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Data-dependent acquisition"
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Subsequent alkylation process involved the addition of 10 mM 2-iodoacetamide (Sigma-Aldrich) and the incubation of samples at room temperature for 30 min."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "2-iodoacetamide",
+      "evidence": "Subsequent alkylation process involved the addition of 10 mM 2-iodoacetamide (Sigma-Aldrich) and the incubation of samples at room temperature for 30 min."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Protein digestion was achieved by the addition of sequencing grade modified trypsin (Promega Biotech Ib\u00e9rica, Madrid, Spain) and overnight standing of the samples at 37 \u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28",
+      "evidence": "in which the 15 most abundant ions in each MS scan underwent MS/MS in the higher-energy collisional dissociation (HCD) cell under normalized collision energy of 28 and 17,500 resolution with dynamic exclusion of 40 s."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "in which the 15 most abundant ions in each MS scan underwent MS/MS in the higher-energy collisional dissociation (HCD) cell under normalized collision energy of 28 and 17,500 resolution with dynamic exclusion of 40 s."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: All analyses were performed by a Q-Exactive-Orbitrap mass spectrometer (Thermo Fisher Scientific) equipped with a Nanospray Flex Ion Source and EASY-nLC 1200 peptide separation system (Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Only the areas of peptides that are not shared between different proteins or protein groups were used for the protein quantification."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: All analyses were performed by a Q-Exactive-Orbitrap mass spectrometer (Thermo Fisher Scientific) equipped with a Nanospray Flex Ion Source and EASY-nLC 1200 peptide separation system (Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "methionine oxidation",
+      "evidence": "methionine oxidation (+15.995 Da), cysteine carbamidomethylation (+57.021 Da), acetyl (+42.01 Da, N termini), met-loss (\u2212131.040 Da, N termini), and met-loss + acetyl (\u221289.030 Da, N termini) as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "cysteine carbamidomethylation",
+      "evidence": "methionine oxidation (+15.995 Da), cysteine carbamidomethylation (+57.021 Da), acetyl (+42.01 Da, N termini), met-loss (\u2212131.040 Da, N termini), and met-loss + acetyl (\u221289.030 Da, N termini) as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "acetyl",
+      "evidence": "methionine oxidation (+15.995 Da), cysteine carbamidomethylation (+57.021 Da), acetyl (+42.01 Da, N termini), met-loss (\u2212131.040 Da, N termini), and met-loss + acetyl (\u221289.030 Da, N termini) as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:1",
+      "ontology_name": "Acetyl",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Acetyl"
+    },
+    {
+      "value": "met-loss",
+      "evidence": "methionine oxidation (+15.995 Da), cysteine carbamidomethylation (+57.021 Da), acetyl (+42.01 Da, N termini), met-loss (\u2212131.040 Da, N termini), and met-loss + acetyl (\u221289.030 Da, N termini) as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:765",
+      "ontology_name": "Met-loss",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Met-loss"
+    },
+    {
+      "value": "met-loss + acetyl",
+      "evidence": "methionine oxidation (+15.995 Da), cysteine carbamidomethylation (+57.021 Da), acetyl (+42.01 Da, N termini), met-loss (\u2212131.040 Da, N termini), and met-loss + acetyl (\u221289.030 Da, N termini) as dynamic modifications.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Acetyl:2H(3)",
+      "normalization_candidate_ids": [
+        "MOD:01233",
+        "MOD:00449",
+        "MOD:00058",
+        "MOD:00369"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Protein reduction was conducted by adding 10 mM 4-dithiothreitol (Roche) and incubating the samples for 30 min at 58 \u00b0C under agitation."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "1,4-dithiothreitol",
+      "evidence": "Protein disulfide bridges were reduced by adding 1,4-dithiothreitol (Roche, Basel, Switzerland) for 30 min at 98 \u00b0C."
+    },
+    {
+      "value": "4-dithiothreitol",
+      "evidence": "Protein reduction was conducted by adding 10 mM 4-dithiothreitol (Roche) and incubating the samples for 30 min at 58 \u00b0C under agitation."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.945,
+    "evidence_score": 0.929,
+    "completeness": 0.905,
+    "format_score": 1.0
+  }
+}

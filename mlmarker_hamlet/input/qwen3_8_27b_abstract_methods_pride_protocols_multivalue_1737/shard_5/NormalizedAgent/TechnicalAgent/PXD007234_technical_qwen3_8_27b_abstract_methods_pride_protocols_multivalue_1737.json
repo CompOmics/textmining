@@ -1,0 +1,182 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The Q-Exactive was operated in a data-dependent mode, switching automatically between one full-scan and subsequent MS/MS scans of the ten most abundant peaks."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "inferred: modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "The database search was performed using the Ludwig NR non-redundant protein database (version Q113, http://www.wehi.edu.au/faculty/advanced_research_technologies/proteomics/wehi_systems_biology_mascot_server/) with strict trypsin specificity allowing up to 4 missed cleavages."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27",
+      "evidence": "The 10 most intense ions were sequentially isolated with a target value of 10000 ions and an isolation width of 3 m/z and fragmented using HCD with normalized collision energy of 27 and stepped collision energy of 15%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "MARS-human 14 column",
+      "evidence": "Samples were applied to a MARS-human 14 column (Agilent Technologies) to remove high abundance proteins (albumin, IgG, anti-trypsin, IgA, transferrin, haptoglobin, fibrinogen, alpha2-macroglobulin, alpha1 acid-glycoprotein, IgM, apolipoprotein AI, apolipoprotein AII, complement C3, transthyretin)19."
+    },
+    {
+      "value": "CPLL",
+      "evidence": "A combinatorial peptide ligand library (CPLL, ProteoMiner, BioRad) technology was used to enrich low abundance proteins using a large diverse library of combinatorial peptide ligands conjugated to beads to reduce the dynamic range of proteins concentrations, but maintaining representatives of all proteins within the original sample."
+    },
+    {
+      "value": "gelatin-agarose",
+      "evidence": "100\u00b5l each of gelatin-agarose (fibronectin binding, Sigma-Aldrich) or heparin-agarose (Sigma-Aldrich) slurry was added to spin columns."
+    },
+    {
+      "value": "heparin-agarose",
+      "evidence": "100\u00b5l each of gelatin-agarose (fibronectin binding, Sigma-Aldrich) or heparin-agarose (Sigma-Aldrich) slurry was added to spin columns."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The 10 most intense ions were sequentially isolated with a target value of 10000 ions and an isolation width of 3 m/z and fragmented using HCD with normalized collision energy of 27 and stepped collision energy of 15%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: 5 \u00b5l of each sample were analyzed by nanoflow liquid chromatography tandem-mass spectrometry (LC-MS/MS) on a nanoAcquity system (Waters, Milford, MA, USA) coupled to a Q-Exactive mass spectrometer (Thermo Fisher Scientific, Bremen, Germany) through a nanoelectrospray ion source (Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: To correct for injection volume variability, feature intensities were normalized by converting to base 10 logarithms and then multiplying each value by the ratio of maximum median intensity of all replicates over median replicate intensity."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Q Exactive"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "carbamidomethylation of cysteine",
+      "evidence": "Carbamidomethylation of cysteine was set as a fixed modification while N-acetylation of proteins N-termini, oxidation of methionine and pyroglutamate at peptides N-termini Glu and Gln were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01061",
+      "ontology_name": "S-carboxymethyl-L-cysteine",
+      "similarity": 0.803,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl cysteine"
+    },
+    {
+      "value": "N-acetylation of proteins N-termini",
+      "evidence": "Carbamidomethylation of cysteine was set as a fixed modification while N-acetylation of proteins N-termini, oxidation of methionine and pyroglutamate at peptides N-termini Glu and Gln were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.884,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "Carbamidomethylation of cysteine was set as a fixed modification while N-acetylation of proteins N-termini, oxidation of methionine and pyroglutamate at peptides N-termini Glu and Gln were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "pyroglutamate at peptides N-termini Glu and Gln",
+      "evidence": "Carbamidomethylation of cysteine was set as a fixed modification while N-acetylation of proteins N-termini, oxidation of methionine and pyroglutamate at peptides N-termini Glu and Gln were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00571",
+      "ontology_name": "2-pyrrolidone-5-carboxylic acid (Pro)",
+      "similarity": 0.856,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "pyroglutamicp"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.925,
+    "evidence_score": 0.917,
+    "completeness": 0.833,
+    "format_score": 1.0
+  }
+}

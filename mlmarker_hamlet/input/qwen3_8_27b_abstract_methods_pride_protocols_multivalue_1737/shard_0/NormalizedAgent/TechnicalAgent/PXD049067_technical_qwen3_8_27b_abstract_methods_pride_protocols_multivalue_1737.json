@@ -1,0 +1,162 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-dependent acquisition mode",
+      "evidence": "The peptides were separated using an analytical column (75\u00a0\u03bcm\u00a0\u00d7\u00a025\u00a0cm, Acclaim PepMap RSLC C18 column, 2\u00a0\u03bcm, 100\u00a0\u00c5; DIONEX) with a linear 95\u00a0min gradient (3%\u20135% B for 5\u00a0s, 5%\u201315% B for 40\u00a0min, 15%\u201328% B for 34\u00a0min and 50\u00a0s, 28%\u201338% B for 12\u00a0min, 30%\u2013100% B for 5\u00a0s, and 100% B for 8\u00a0min) in data-dependent acquisition mode."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "The resulting supernatant was quantified using the Bradford assay, and then subjected to reduction, alkylation, and trypsin digestion."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "immobilized metal affinity chromatography",
+      "evidence": "Phosphopeptides from each fraction were enriched using immobilized metal affinity chromatography (Ti4+-IMAC, JK Chemical) following a previously described method with adaptations."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high-pH reverse phase fractionation",
+      "evidence": "For proteomics quantification, the TMT-labeled peptide mixture was fractionated on a nanoEase M/Z Peptide BEH C18 column (300\u00a0\u03bcm\u00a0\u00d7\u00a0150\u00a0mm, 1.7\u00a0\u03bcm; 130\u00a0\u00c5, Waters) as previously described with a 128-min gradient (3% buffer B for 14\u00a0min, 3% to 8% B for 1\u00a0min, 8% to 29% B for 71\u00a0min, 29% to 41% B for 12\u00a0min, 41% to 100% B for 1\u00a0min, 100% B for 8\u00a0min, and 100% to 3% B for 1\u00a0min followed by 20\u00a0min at 3% B)."
+    },
+    {
+      "value": "high-pH reverse phase fractionation",
+      "evidence": "For phosphoproteomic quantification, the TMT-labeled peptide mixture was fractionated on an XBridge Peptide BEH C18 column (2.1\u00a0mm\u00a0\u00d7\u00a0150\u00a0mm, 3.5\u00a0\u03bcm; 130\u00a0\u00c5, Waters) using a 34-min gradient (0%\u201310% buffer B for 3\u00a0min, 10%\u201327% B for 16\u00a0min, 27%\u201331% B for 1\u00a0min, 31%\u201339% B for 4\u00a0min, and 39%\u201360% B for 4\u00a0min, followed by 6\u00a0min at 60% B)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "For LC-MS/MS analysis, peptides or phosphopeptides were dissolved in a solution of 0.1% formic acid (FA) and subjected to analysis using an Orbitrap Fusion Lumos mass spectrometry system (ThermoFisher) coupled with the Easy-nLC 1200 (ThermoFisher).",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: For LC-MS/MS analysis, peptides or phosphopeptides were dissolved in a solution of 0.1% formic acid (FA) and subjected to analysis using an Orbitrap Fusion Lumos mass spectrometry system (ThermoFisher) coupled with the Easy-nLC 1200 (ThermoFisher)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Carbamidomethylation (Cys) was set as a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Variable modifications considered in the search included oxidation (M) and acetylation (protein N-terminus) with phosphorylation (STY) for phosphopeptides.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "acetylation",
+      "evidence": "Variable modifications considered in the search included oxidation (M) and acetylation (protein N-terminus) with phosphorylation (STY) for phosphopeptides.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:1",
+      "ontology_name": "Acetyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Acetyl"
+    },
+    {
+      "value": "phosphorylation",
+      "evidence": "Variable modifications considered in the search included oxidation (M) and acetylation (protein N-terminus) with phosphorylation (STY) for phosphopeptides.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:21",
+      "ontology_name": "Phospho",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Phospho"
+    },
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: phosphorylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "1 mM",
+      "evidence": "Sperm samples were lysed using sonication in a lysis buffer composed of 8\u00a0M Urea, 1\u00a0mM DTT, 75\u00a0mM NaCl, and 50\u00a0mM Tris (pH 8.2), supplemented with a protease and phosphatase cocktail."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Sperm samples were lysed using sonication in a lysis buffer composed of 8\u00a0M Urea, 1\u00a0mM DTT, 75\u00a0mM NaCl, and 50\u00a0mM Tris (pH 8.2), supplemented with a protease and phosphatase cocktail."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.925,
+    "evidence_score": 0.95,
+    "completeness": 0.75,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "1 mM",
+      "evidence": "Sperm samples were lysed using sonication in a lysis buffer composed of 8\u00a0M Urea, 1\u00a0mM DTT, 75\u00a0mM NaCl, and 50\u00a0mM Tris (pH 8.2), supplemented with a protease and phosphatase cocktail."
+    }
+  ]
+}

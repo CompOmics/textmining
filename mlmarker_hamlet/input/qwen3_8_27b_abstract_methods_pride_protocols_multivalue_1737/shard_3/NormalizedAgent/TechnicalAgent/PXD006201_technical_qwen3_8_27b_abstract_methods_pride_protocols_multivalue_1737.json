@@ -1,0 +1,244 @@
+{
+  "acquisition_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "11mM",
+      "evidence": "Proteins were reduced with DTT at room temperature (2 mM for 30 min) and alkylated with CAA at RT (Chloroacetamide 11mM 30 min)."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "CAA",
+      "evidence": "Proteins were reduced with DTT at room temperature (2 mM for 30 min) and alkylated with CAA at RT (Chloroacetamide 11mM 30 min)."
+    },
+    {
+      "value": "Chloroacetamide",
+      "evidence": "Proteins were reduced with DTT at room temperature (2 mM for 30 min) and alkylated with CAA at RT (Chloroacetamide 11mM 30 min)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "LysC",
+      "evidence": "Endopeptidase LysC were added for digestion in a 1:100 protein ratio for incubation overnight at room temperature."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Pooled elutions LysC-digested peptides were either neutralized with 1 M Ammonium Bicarbonate solution to 25 mM and subjected to trypsin digestion overnight at 37\u00b0C or used directly for fractionation and LC-MS/MS analysis."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "UbiSite",
+      "evidence": "We present a novel immune-affinity-based method UbiSite for capture and further identification of ubiquitination sites by MS for any cell line or tissue sample."
+    },
+    {
+      "value": "immunoaffinity",
+      "evidence": "We present a novel immune-affinity-based method UbiSite for capture and further identification of ubiquitination sites by MS for any cell line or tissue sample."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high pH",
+      "evidence": "The tryptic peptide mixture was subjected to a stepwise high pH fractionation(HpH)."
+    },
+    {
+      "value": "HpH",
+      "evidence": "The tryptic peptide mixture was subjected to a stepwise high pH fractionation(HpH)."
+    },
+    {
+      "value": "increasing concentration of acetonitrile",
+      "evidence": "Samples of LysC-digested peptides were fractionated with increasing concentration of acetonitrile into 4 fractions."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Q Exactive HF"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: The analysis was carried out with the match-between-run feature enabled and using the label-free quantitation (LFQ) algorithm for proteome expression analysis."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Q Exactive HF"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "ubiquitinylated lysine",
+      "evidence": "modifications: ubiquitinylated lysine; ubiquitination signature dipeptidyl lysine",
+      "is_normalized": true,
+      "ontology_id": "MOD:01148",
+      "ontology_name": "ubiquitinylated lysine",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "ubiquitinylated lysine"
+    },
+    {
+      "value": "ubiquitination signature dipeptidyl lysine",
+      "evidence": "modifications: ubiquitinylated lysine; ubiquitination signature dipeptidyl lysine",
+      "is_normalized": true,
+      "ontology_id": "MOD:00492",
+      "ontology_name": "ubiquitination signature dipeptidyl lysine",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "ubiquitination signature dipeptidyl lysine"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation was searched as a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "Protein N-terminal acetylation and pyroglutamate formation from glutamine were searched as variable modifications for all files.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "pyroglutamate formation from glutamine",
+      "evidence": "Protein N-terminal acetylation and pyroglutamate formation from glutamine were searched as variable modifications for all files.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00040",
+      "ontology_name": "2-pyrrolidone-5-carboxylic acid (Gln)",
+      "similarity": 0.764,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Pyroglutamic Acid formed from Gln"
+    },
+    {
+      "value": "ubiquitylation",
+      "evidence": "Furthermore, ubiquitylation of lysines and N-termini was searched as variable modifications for all experiments; for trypsin digested peptides this was done in the form of GG-remnants on lysine as well as N-termini, whereas for LysC-digested peptides ubiquitylation was searched as ESTLHLVLRLRGG-remnants on lysine and N-termini.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01240",
+      "ontology_name": "ubiquitination signature tetrapeptidyl lysine",
+      "similarity": 0.805,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Ubiquitination"
+    },
+    {
+      "value": "deamidation",
+      "evidence": "The following extra variable modifications were also considered: deamidation of asparagine and glutamine, oxidation of methionine and phosphorylation of serine, threonine and tyrosine residues.",
+      "is_normalized": false,
+      "normalization_method": "ambiguous_exact_synonym",
+      "normalization_matched_text": "deamidation",
+      "normalization_candidate_ids": [
+        "MOD:00137",
+        "MOD:00219",
+        "MOD:00400",
+        "MOD:00565"
+      ],
+      "normalization_qc_flags": [
+        "ambiguous_ontology_match"
+      ]
+    },
+    {
+      "value": "oxidation",
+      "evidence": "The following extra variable modifications were also considered: deamidation of asparagine and glutamine, oxidation of methionine and phosphorylation of serine, threonine and tyrosine residues.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "phosphorylation",
+      "evidence": "The following extra variable modifications were also considered: deamidation of asparagine and glutamine, oxidation of methionine and phosphorylation of serine, threonine and tyrosine residues.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:21",
+      "ontology_name": "Phospho",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Phospho"
+    },
+    {
+      "value": "ISGylation",
+      "evidence": "In addition, conjugation of ISG15 (ISGylation) and Nedd8 to lysine residues were searched as additional modifications  to LysC-digested peptides.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Ubiquitination",
+      "normalization_candidate_ids": [
+        "MOD:01240",
+        "MOD:00467",
+        "MOD:01272",
+        "MOD:00492",
+        "MOD:00445"
+      ]
+    },
+    {
+      "value": "Nedd8",
+      "evidence": "In addition, conjugation of ISG15 (ISGylation) and Nedd8 to lysine residues were searched as additional modifications  to LysC-digested peptides.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "neddylated lysine",
+      "normalization_candidate_ids": [
+        "MOD:01150",
+        "MOD:01026",
+        "MOD:00750",
+        "MOD:00104",
+        "MOD:00518"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "2 mM",
+      "evidence": "Proteins were reduced with DTT at room temperature (2 mM for 30 min) and alkylated with CAA at RT (Chloroacetamide 11mM 30 min)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Proteins were reduced with DTT at room temperature (2 mM for 30 min) and alkylated with CAA at RT (Chloroacetamide 11mM 30 min)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.955,
+    "evidence_score": 0.95,
+    "completeness": 0.9,
+    "format_score": 1.0
+  }
+}

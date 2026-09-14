@@ -1,0 +1,188 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "GluC",
+      "evidence": "For analysis of podocalyxin, NeuGc structures (H1N1G1, H1N1G2, and H1N1A1G1) were included. Files generated using an O-glycoprotease and additional GluC or trypsin digestion were searched with fully specific cleavage N-terminal to Ser and Thr and C-terminal to Arg and Lys and 6 allowed missed cleavages. Samples treated with only GluC and/or trypsin were searched with fully specific cleavage C-terminal to Arg or Lys and 2 missed cleavages."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "For analysis of podocalyxin, NeuGc structures (H1N1G1, H1N1G2, and H1N1A1G1) were included. Files generated using an O-glycoprotease and additional GluC or trypsin digestion were searched with fully specific cleavage N-terminal to Ser and Thr and C-terminal to Arg and Lys and 6 allowed missed cleavages. Samples treated with only GluC and/or trypsin were searched with fully specific cleavage C-terminal to Arg or Lys and 2 missed cleavages."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30% normalized collision energy",
+      "evidence": "HCD was performed on all selected precursor masses with the following parameters: isolation window of 2\u2009m/z, 30% normalized collision energy, orbitrap detection (resolution of 7,500), maximum inject time of 50\u2009ms, and a standard AGC target."
+    },
+    {
+      "value": "15% nCE",
+      "evidence": "For precursors between 850-1500 m/z with an intensity greater than 1e5, supplemental activation (EThcD) was also applied at 15% nCE and read out in the Orbitrap at 7500 resolution."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "HCD was performed on all selected precursor masses with the following parameters: isolation window of 2\u2009m/z, 30% normalized collision energy, orbitrap detection (resolution of 7,500), maximum inject time of 50\u2009ms, and a standard AGC target."
+    },
+    {
+      "value": "ETD",
+      "evidence": "An additional ETD fragmentation of the same precursor was triggered if 1) 3 of 8 HexNAc or NeuAc fingerprint ions (126.055, 138.055, 144.07, 168.065, 186.076, 204.086, 274.092, and 292.103) were present at \u00b1 0.1 m/z and greater than 5% relative intensity, 2) the precursors were present at a sufficient abundance for localization using ETD."
+    },
+    {
+      "value": "EThcD",
+      "evidence": "For precursors between 850-1500 m/z with an intensity greater than 1e5, supplemental activation (EThcD) was also applied at 15% nCE and read out in the Orbitrap at 7500 resolution."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion",
+      "evidence": "instruments: Orbitrap Fusion",
+      "is_normalized": true,
+      "ontology_id": "MS:1002416",
+      "ontology_name": "Orbitrap Fusion",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion"
+    },
+    {
+      "value": "Orbitrap Eclipse Tribrid mass spectrometer",
+      "evidence": "Samples were analyzed by online nanoflow liquid chromatography-tandem mass spectrometry using an Orbitrap Eclipse Tribrid mass spectrometer (Thermo Fisher Scientific) coupled to a Dionex UltiMate 3000 HPLC (Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1003953",
+      "ontology_name": "orbitrap instrument",
+      "similarity": 0.893,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "orbitrap instrument"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Samples were analyzed by online nanoflow liquid chromatography-tandem mass spectrometry using an Orbitrap Eclipse Tribrid mass spectrometer (Thermo Fisher Scientific) coupled to a Dionex UltiMate 3000 HPLC (Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "Relative quantification",
+      "evidence": "quantification: Relative quantification"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Full scan MS1 spectra were collected at a resolution of 60,000, an automatic gain control (AGC) target of 3e5, and a mass range from 300 to 1500\u2009m/z."
+    },
+    {
+      "value": "ion trap",
+      "evidence": "If the precursor was between 300-850 m/z and over 3e4 intensity, an ETD scan was triggered and read out using the ion trap at a normal scan rate."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "complex glycosylation",
+      "evidence": "modifications: complex glycosylation",
+      "is_normalized": true,
+      "ontology_id": "MOD:00725",
+      "ontology_name": "complex glycosylation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "complex glycosylation"
+    },
+    {
+      "value": "carbamidomethyl Cys",
+      "evidence": "For EndoH and EndoF2-treated samples, carbamidomethyl Cys was set as a fixed modification and N1 and N1F1 were added as rare N-glycan modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.906,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "S-carbamoylmethyl-L-cysteine"
+    },
+    {
+      "value": "N1",
+      "evidence": "For EndoH and EndoF2-treated samples, carbamidomethyl Cys was set as a fixed modification and N1 and N1F1 were added as rare N-glycan modifications.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "C1OMeRes",
+      "normalization_candidate_ids": [
+        "MOD:01689",
+        "MOD:00506",
+        "MOD:01026",
+        "MOD:01994",
+        "MOD:00092"
+      ]
+    },
+    {
+      "value": "N1F1",
+      "evidence": "For EndoH and EndoF2-treated samples, carbamidomethyl Cys was set as a fixed modification and N1 and N1F1 were added as rare N-glycan modifications.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N1'FoTrp",
+      "normalization_candidate_ids": [
+        "MOD:01994",
+        "MOD:00070",
+        "MOD:01910",
+        "MOD:01026",
+        "MOD:00341"
+      ]
+    },
+    {
+      "value": "Asn deamidation",
+      "evidence": "Asn deamidation was added as a variable modification for PNGaseF-treated samples.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00684",
+      "ontology_name": "deamidated L-asparagine",
+      "similarity": 0.824,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "deamidated L-asparagine"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.94,
+    "evidence_score": 0.976,
+    "completeness": 0.76,
+    "format_score": 1.0
+  }
+}

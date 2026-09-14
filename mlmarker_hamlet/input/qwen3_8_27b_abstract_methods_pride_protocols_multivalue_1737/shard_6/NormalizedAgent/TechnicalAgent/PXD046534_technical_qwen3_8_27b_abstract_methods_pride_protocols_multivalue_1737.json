@@ -1,0 +1,204 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "5 mM iodoacetamide (IAA)",
+      "evidence": "dithiothreitol (DTT) was added to a concentration of 2 mM and allowed to react at 65 \u00b0C for 20 min followed by alkylation in 5 mM iodoacetamide (IAA) for 15 min in the dark at RT."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "dithiothreitol (DTT) was added to a concentration of 2 mM and allowed to react at 65 \u00b0C for 20 min followed by alkylation in 5 mM iodoacetamide (IAA) for 15 min in the dark at RT."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "mucinase SmE",
+      "evidence": "mucinase SmE was added at an enzyme:substrate (E:S) ratio of 1:20 and allowed to react overnight at 37 \u00b0C"
+    },
+    {
+      "value": "trypsin",
+      "evidence": "The latter was subjected to an additional digestion with trypsin at a 1:50 E:S ratio for 6 hours at 37 \u00b0C"
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "29% normalized collision energy",
+      "evidence": "Higher-energy collisional dissociation (HCD) was performed on all selected precursor masses with the following parameters: isolation window of 2 m/z, 29% normalized collision energy, orbitrap detection (resolution of 7,500), maximum inject time of 50 ms, and a standard AGC target."
+    },
+    {
+      "value": "15% nCE for HCD",
+      "evidence": "EThcD parameters were as follows: Orbitrap detection (resolution 7,500), calibrated charge-dependent ETD times, 15% nCE for HCD, maximum inject time of 150 ms, and a standard precursor injection target."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "mucinase",
+      "evidence": "While this method was effective, it suffered from low throughput and high sample requirements. Further, we recently introduced a new mucinase (SmE) and demonstrated it has complementary recognition patterns to StcE."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Higher-energy collisional dissociation (HCD) was performed on all selected precursor masses with the following parameters: isolation window of 2 m/z, 29% normalized collision energy, orbitrap detection (resolution of 7,500), maximum inject time of 50 ms, and a standard AGC target."
+    },
+    {
+      "value": "ETD",
+      "evidence": "An additional electron transfer dissociation (ETD) fragmentation of the same precursor was triggered if 1) the precursor mass was between 300 and 1,500 m/z"
+    },
+    {
+      "value": "EThcD",
+      "evidence": "the first collected an ETD scan with supplemental energy (EThcD) while the second method collected a scan without supplemental energy."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Eclipse Tribrid mass spectrometer",
+      "evidence": "Samples were analyzed by online nanoflow liquid chromatography-tandem mass spectrometry using an Orbitrap Eclipse Tribrid mass spectrometer (Thermo Fisher Scientific) coupled to a Dionex UltiMate 3000 HPLC (Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1003953",
+      "ontology_name": "orbitrap instrument",
+      "similarity": 0.893,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "orbitrap instrument"
+    },
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "Samples were analyzed by online nanoflow liquid chromatography-tandem mass spectrometry using an Orbitrap Eclipse Tribrid mass spectrometer (Thermo Fisher Scientific) coupled to a Dionex UltiMate 3000 HPLC (Thermo Fisher Scientific)."
+    },
+    {
+      "value": "ESI",
+      "evidence": "Samples were analyzed by online nanoflow liquid chromatography-tandem mass spectrometry using an Orbitrap Eclipse Tribrid mass spectrometer (Thermo Fisher Scientific) coupled to a Dionex UltiMate 3000 HPLC (Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Relative abundances were obtained by generating extracted ion chromatograms and determining area under the curve."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Samples were analyzed by online nanoflow liquid chromatography-tandem mass spectrometry using an Orbitrap Eclipse Tribrid mass spectrometer (Thermo Fisher Scientific) coupled to a Dionex UltiMate 3000 HPLC (Thermo Fisher Scientific)."
+    },
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Fusion Lumos"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "O-glycosyl-L-threonine",
+      "evidence": "modifications: O-glycosyl-L-threonine; N-glycosylated residue; iodoacetamide derivatized residue; O-glycosyl-L-serine",
+      "is_normalized": true,
+      "ontology_id": "MOD:00005",
+      "ontology_name": "O-glycosyl-L-threonine",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "O-glycosyl-L-threonine"
+    },
+    {
+      "value": "N-glycosylated residue",
+      "evidence": "modifications: O-glycosyl-L-threonine; N-glycosylated residue; iodoacetamide derivatized residue; O-glycosyl-L-serine",
+      "is_normalized": true,
+      "ontology_id": "MOD:00006",
+      "ontology_name": "N-glycosylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "N-glycosylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: O-glycosyl-L-threonine; N-glycosylated residue; iodoacetamide derivatized residue; O-glycosyl-L-serine",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "O-glycosyl-L-serine",
+      "evidence": "modifications: O-glycosyl-L-threonine; N-glycosylated residue; iodoacetamide derivatized residue; O-glycosyl-L-serine",
+      "is_normalized": true,
+      "ontology_id": "MOD:00002",
+      "ontology_name": "O-glycosyl-L-serine",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "O-glycosyl-L-serine"
+    },
+    {
+      "value": "Met oxidation",
+      "evidence": "Met oxidation was set as a variable modification and carbamidomethyl Cys was  set as a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.848,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "carbamidomethyl Cys",
+      "evidence": "Met oxidation was set as a variable modification and carbamidomethyl Cys was  set as a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.906,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "S-carbamoylmethyl-L-cysteine"
+    },
+    {
+      "value": "Asn deamidation",
+      "evidence": "For samples treated with PNGaseF, Asn deamidation was added as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00684",
+      "ontology_name": "deamidated L-asparagine",
+      "similarity": 0.824,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "deamidated L-asparagine"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "2 mM",
+      "evidence": "dithiothreitol (DTT) was added to a concentration of 2 mM and allowed to react at 65 \u00b0C for 20 min followed by alkylation in 5 mM iodoacetamide (IAA) for 15 min in the dark at RT."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol (DTT)",
+      "evidence": "dithiothreitol (DTT) was added to a concentration of 2 mM and allowed to react at 65 \u00b0C for 20 min followed by alkylation in 5 mM iodoacetamide (IAA) for 15 min in the dark at RT."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.964,
+    "evidence_score": 0.943,
+    "completeness": 0.964,
+    "format_score": 1.0
+  }
+}

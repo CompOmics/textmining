@@ -1,0 +1,195 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DIA",
+      "evidence": "For DIA LC-MS/MS measurements, 3.5\u2009\u00b5g of peptides per sample were injected into an in-house packed reversed phase column"
+    },
+    {
+      "value": "targeted",
+      "evidence": "To implement this method, the custom SureQuant acquisition template available in the Thermo Orbitrap Exploris was utilized."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Samples were prepared for LC-MS/MS according to Biognosys\u2019 SOP which includes reduction, alkylation and digestion to peptides using trypsin (Promega, 1:50 protease to total protein ratio) per sample overnight at 37 \u00b0C."
+    },
+    {
+      "value": "LysC",
+      "evidence": "Proteins were subsequently denatured, reduced, alkylated and subjected to proteolytic digestion (trypsin and LysC)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27%",
+      "evidence": "This was followed by the recognition of heavy peptide precursors and fragments from the list at a low resolution of 7.5k, with HCD collision energy set to 27% and a maximum injection time of 10\u2009ms."
+    },
+    {
+      "value": "25%",
+      "evidence": "Two-hundred fixed window MS2 DIA scans were collected at the Astral detector per cycle with 3 Th precursor isolation windows, 25% normalized collision energy, and 5\u2009ms ion injection times with a 500% (50,000 ion) active gain control maximum."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "This was followed by the recognition of heavy peptide precursors and fragments from the list at a low resolution of 7.5k, with HCD collision energy set to 27% and a maximum injection time of 10\u2009ms."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    },
+    {
+      "value": "Orbitrap Astral",
+      "evidence": "Each sample was analyzed with a VanquishTM Neo UHPLC system coupled with a OrbitrapTM AstralTM (Thermo Fisher, Germany) mass spectrometer using a trap-and-elute configuration.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003378",
+      "ontology_name": "Orbitrap Astral",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Astral"
+    },
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "The volume corresponding to 1\u2009\u00b5g of the digest was injected for LC-MS/MS analyses on an Orbitrap Exploris 480 mass spectrometer (Thermo Fisher Scientific) coupled with a Vanquish Neo UHPLC system (Thermo Fisher Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "NanosprayFlex",
+      "evidence": "mass spectrometer equipped with a NanosprayFlex\u2122 ion source and a FAIMS Pro\u2122 ion mobility device (ThermoScientific\u2122)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free quantification",
+      "evidence": "quantification: label-free quantification"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Exploris 480"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "N-term acetylation",
+      "evidence": "A human UniProt. Fasta database (Homo sapiens, 2022-07-01) was used for the search engine, allowing for 2 missed cleavages and variable modifications (N-term acetylation, methionine oxidation, deamidation (NQ) and ammonia-loss).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.88,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "A human UniProt. Fasta database (Homo sapiens, 2022-07-01) was used for the search engine, allowing for 2 missed cleavages and variable modifications (N-term acetylation, methionine oxidation, deamidation (NQ) and ammonia-loss).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "deamidation (NQ)",
+      "evidence": "A human UniProt. Fasta database (Homo sapiens, 2022-07-01) was used for the search engine, allowing for 2 missed cleavages and variable modifications (N-term acetylation, methionine oxidation, deamidation (NQ) and ammonia-loss).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00565",
+      "ontology_name": "deglycosylated asparagine",
+      "similarity": 0.949,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation"
+    },
+    {
+      "value": "ammonia-loss",
+      "evidence": "A human UniProt. Fasta database (Homo sapiens, 2022-07-01) was used for the search engine, allowing for 2 missed cleavages and variable modifications (N-term acetylation, methionine oxidation, deamidation (NQ) and ammonia-loss).",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:385",
+      "ontology_name": "Ammonia-loss",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Ammonia-loss"
+    },
+    {
+      "value": "N-term M excision",
+      "evidence": "DIA-NN search parameters included N-term M excision fixed modification, C carbamidomethylation fixed modification, minimum Peptide Length 7, maximum Peptide Length 30, minimum Precursor Charge 1, maximum Precursor Charge 4, minimum Precursor m/z 300, maximum Precursor m/z 1800, minimum Fragmentation Ion m/z 200, and maximum Fragment Ion m/z 1800.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Methylation (N terminus, N epsilon of Lysine, O of Serine, Threonine or C terminus, N of Asparagine)",
+      "normalization_candidate_ids": [
+        "MOD:00427",
+        "MOD:00939",
+        "MOD:00592",
+        "MOD:01643"
+      ]
+    },
+    {
+      "value": "C carbamidomethylation",
+      "evidence": "DIA-NN search parameters included N-term M excision fixed modification, C carbamidomethylation fixed modification, minimum Peptide Length 7, maximum Peptide Length 30, minimum Precursor Charge 1, maximum Precursor Charge 4, minimum Precursor m/z 300, maximum Precursor m/z 1800, minimum Fragmentation Ion m/z 200, and maximum Fragment Ion m/z 1800.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.806,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "carbamidomethylc"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.93,
+    "evidence_score": 0.956,
+    "completeness": 0.76,
+    "format_score": 1.0
+  }
+}

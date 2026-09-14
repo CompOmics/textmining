@@ -1,0 +1,204 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Mass spectra were acquired on the Q Exactive Plus (Thermo Scientific) with data-dependent acquisition (DDA) using a 32 min gradient from 2% buffer B at 4 min to 45% buffer B at 36 min."
+    },
+    {
+      "value": "PRM",
+      "evidence": "Mass spectra were acquired on the Q Exactive Plus (Thermo Scientific) with DDA followed by parallel reaction monitoring (PRM) using a 32 min gradient from 2% buffer B at 4 min to 45% buffer B at 36 min."
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Proteins were subsequently reduced with 5 mM dithiothreitol (DTT) for 30 min at 37 \u00b0C and alkylated with 10 mM iodoacetamide (IAA) for 30 min in the dark at room temperature."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Proteins were subsequently reduced with 5 mM dithiothreitol (DTT) for 30 min at 37 \u00b0C and alkylated with 10 mM iodoacetamide (IAA) for 30 min in the dark at room temperature."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Trypsin",
+      "evidence": "In-gel proteolytic digestion of proteins was conducted with 50 ng Trypsin (sequencing grade, Promega) in 20 mM NH4HCO3 overnight at 37 \u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30 eV",
+      "evidence": "precursor ions were isolated in the quadrupole (isolation window = 2.5 m/z) and fragmented by higher-energy collisional dissociation (HCD) (normalized collision energy (NCE) = 30 eV)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "Peptides were fractionated using the Agilent 1260 Infinity II HPLC system or Agilent 1290 Infinity ultra-performance liquid chromatography system coupled to a Phenomenex Luna five \u03bcm SCX 100 \u00c5 (250 x 100 mm) liquid chromatography column"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "precursor ions were isolated in the quadrupole (isolation window = 2.5 m/z) and fragmented by higher-energy collisional dissociation (HCD) (normalized collision energy (NCE) = 30 eV)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive Plus",
+      "evidence": "Mass spectra were acquired on the Q Exactive Plus (Thermo Scientific) with data-dependent acquisition (DDA) using a 32 min gradient from 2% buffer B at 4 min to 45% buffer B at 36 min.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002634",
+      "ontology_name": "Q Exactive Plus",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive Plus"
+    },
+    {
+      "value": "Fusion Lumos Tribrid",
+      "evidence": "Mass spectra of fractionated peptides were acquired on the Fusion Lumos Tribrid (Thermo Scientific) with DDA using a 125 min gradient from 2% buffer B at 4 min to 45% buffer B at 36 min.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Fusion Lumos",
+      "normalization_candidate_ids": [
+        "MS:1002732",
+        "MS:1003088",
+        "MS:1003090",
+        "MS:1000521",
+        "MS:1000784"
+      ]
+    },
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Peptides were vacuum dried and resuspended in 0.1% (v/v) formic acid for injection onto the mass spectrometer."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "XIC peak boundaries were manually curated based on retention time and MS2 profile and label-free quantification performed using the area under the curve."
+    },
+    {
+      "value": "SILAC",
+      "evidence": "Stable isotope labeling by amino acids in cell culture (SILAC) was used for proteome profiling of S. cerevisiae strains of interest."
+    },
+    {
+      "value": "SILAC",
+      "evidence": "quantification: SILAC"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Mass spectra were acquired on the Q Exactive Plus (Thermo Scientific) with data-dependent acquisition (DDA) using a 32 min gradient from 2% buffer B at 4 min to 45% buffer B at 36 min."
+    },
+    {
+      "value": "Ion Trap",
+      "evidence": "The resulting fragment ions were analyzed in the Linear Ion Trap with a rapid scan rate."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "inferred: variable modifications (carbamindomethyl (C), oxidation (M), phospho (S/T), phospho (Y))",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "inferred: variable modifications (carbamindomethyl (C), oxidation (M), phospho (S/T), phospho (Y))",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "phosphorylation",
+      "evidence": "inferred: variable modifications (carbamindomethyl (C), oxidation (M), phospho (S/T), phospho (Y))",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:21",
+      "ontology_name": "Phospho",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Phospho"
+    },
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Proteins were subsequently reduced with 5 mM dithiothreitol (DTT) for 30 min at 37 \u00b0C and alkylated with 10 mM iodoacetamide (IAA) for 30 min in the dark at room temperature."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Proteins were subsequently reduced with 5 mM dithiothreitol (DTT) for 30 min at 37 \u00b0C and alkylated with 10 mM iodoacetamide (IAA) for 30 min in the dark at room temperature."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.976,
+    "evidence_score": 0.967,
+    "completeness": 0.963,
+    "format_score": 1.0
+  }
+}

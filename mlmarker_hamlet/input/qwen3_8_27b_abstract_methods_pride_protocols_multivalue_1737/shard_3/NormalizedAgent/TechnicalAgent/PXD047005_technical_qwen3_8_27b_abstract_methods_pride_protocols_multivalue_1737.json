@@ -1,0 +1,176 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-dependent acquisition"
+    },
+    {
+      "value": "DDA",
+      "evidence": "Product ion spectra were recorded in a data dependent fashion in the OT at resolution 30000."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Andromeda searches allowed oxidation of methionine residues (16 Da) and acetylation of the protein N-terminus (42 Da) as dynamic modifications and the static modification of cysteine (57 Da, alkylation with iodoacetamide)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Tryptic digests",
+      "evidence": "Tryptic digests were then desalted on Pierce\u2122 C18 Spin columns according to the manufacturer\u2019s guidelines."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "32%",
+      "evidence": "fragmentation was achieved by Higher-energy C-trap dissociation (HCD) (normalized collision energy set to 32%)."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "phospho peptide enrichment",
+      "evidence": "Phospho peptide enrichment for Mass Spectrometry Protein samples were first digested following the SP3 (single-pot, solid-phase-enhanced sample-preparation) protocol published by Hughes et al in 2019 (doi: 10.1038/s41596-018-0082-x)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "Higher-energy C-trap dissociation (HCD)",
+      "evidence": "fragmentation was achieved by Higher-energy C-trap dissociation (HCD) (normalized collision energy set to 32%)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    },
+    {
+      "value": "Orbitrap LUMOS",
+      "evidence": "MS Experiments were performed on an Orbitrap LUMOS instrument (Thermo) coupled to an EASY-nLC 1200 ultra-performance liquid chromatography (UPLC) system (Thermo).",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 0.921,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "attached to a nanospray flex ion source (Thermo)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: The quantification is based on the \u201cvalue at maximum\u201d of the extracted ion current."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "The instrument type in Andromeda searches was set to Orbitrap and the precursor mass tolerance was set to \u00b120 ppm (first search) and \u00b14.5 ppm (main search)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "cysteine (57 Da, alkylation with iodoacetamide)",
+      "evidence": "the static modification of cysteine (57 Da, alkylation with iodoacetamide).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-isoaspartyl cysteine",
+      "normalization_candidate_ids": [
+        "MOD:00221",
+        "MOD:00397",
+        "MOD:01090"
+      ]
+    },
+    {
+      "value": "oxidation of methionine residues (16 Da)",
+      "evidence": "Andromeda searches allowed oxidation of methionine residues (16 Da) and acetylation of the protein N-terminus (42 Da) as dynamic modifications",
+      "is_normalized": true,
+      "ontology_id": "MOD:00935",
+      "ontology_name": "methionine oxidation with neutral loss of 64 Da",
+      "similarity": 0.835,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "methionine oxidation with neutral loss of 64 Da"
+    },
+    {
+      "value": "acetylation of the protein N-terminus (42 Da)",
+      "evidence": "Andromeda searches allowed oxidation of methionine residues (16 Da) and acetylation of the protein N-terminus (42 Da) as dynamic modifications",
+      "is_normalized": true,
+      "ontology_id": "MOD:00394",
+      "ontology_name": "monoacetylated residue",
+      "similarity": 0.778,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Acetylation (N terminus, N epsilon of Lysine, O of Serine) (Ac)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.916,
+    "evidence_score": 0.905,
+    "completeness": 0.818,
+    "format_score": 1.0
+  }
+}

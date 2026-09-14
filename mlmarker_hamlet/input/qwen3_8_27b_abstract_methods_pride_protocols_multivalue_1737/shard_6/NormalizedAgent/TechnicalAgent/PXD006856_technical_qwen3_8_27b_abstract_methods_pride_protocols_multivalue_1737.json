@@ -1,0 +1,161 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The mass spectrometer was operated in data-dependent mode, automatically switching between MS and MS/MS acquisition for the 16 most abundant ion peaks per MS spectrum."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "After trypsin digestion, N-terminally blocked peptides were enriched by Strong Cation Echange (SCX) as such peptides will not bind to the SCX resin at low pH."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "normalized collision energy of 28%",
+      "evidence": "The 16 most intense ions above a threshold value of 13,000 were isolated (window of 1.5 Th) for fragmentation at a normalized collision energy of 28% after filling the trap at a target value of 100,000 for maximum 80 ms."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "SCX enrichment",
+      "evidence": "SCX enrichment of N-terminal peptides from Naa80 WT and KO cells was performed as described previously (PMID: 28315243)."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The 16 most intense ions above a threshold value of 13,000 were isolated (window of 1.5 Th) for fragmentation at a normalized collision energy of 28% after filling the trap at a target value of 100,000 for maximum 80 ms."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "The instrument setting was set to ESI-QUAD."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "MS1 based isotope labeling",
+      "evidence": "quantification: MS1 based isotope labeling"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Full-scan MS spectra (375-1500 m/z) were acquired at a resolution of 60,000 in the orbitrap analyser after accumulation to a target value of 3,000,000."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "oxidation of methionine residues",
+      "evidence": "Heavy acetylation (13C2D3) of lysine residues and carbamidomethylation of cysteine residues were set as fixed modifications, while oxidation of methionine residues was set as a variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.881,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "cyclization of N-terminal glutamine residues to pyroglutamine residues",
+      "evidence": "In a second search, peptides without N-terminal acetylation were identified using a similar search parameter set, including the cyclization of N-terminal glutamine residues to pyroglutamine residues as a variable modification.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "S-carbamoylmethylcysteine cyclization (N-terminus)",
+      "normalization_candidate_ids": [
+        "MOD:01872",
+        "MOD:01871",
+        "MOD:00419",
+        "MOD:00883"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.916,
+    "evidence_score": 0.916,
+    "completeness": 0.789,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "ptm[4]",
+      "value": "cyclization of N-terminal glutamine residues to pyroglutamine residues",
+      "evidence": "In a second search, peptides without N-terminal acetylation were identified using a similar search parameter set, including the cyclization of N-terminal glutamine residues to pyroglutamine residues as a variable modification."
+    }
+  ]
+}

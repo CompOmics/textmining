@@ -1,0 +1,90 @@
+{
+  "biological_replicate": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "experimental_design": [
+    {
+      "value": "treated vs control",
+      "evidence": "inferred: proteins were considered as PP1 interactors if their prevalence (= protein abundance divided by total feature abundance w/o bait) was significantly (2-sided t-test, p<0.05) different in the PP1-WT, PP1-4xPR and PP1-\u0394C conditions versus the \u03b2-Galactosidase control condition."
+    },
+    {
+      "value": "treated vs control",
+      "evidence": "inferred: For R2 interactomics, proteins were considered as R2 interactors if their prevalence (= protein abundance divided by total feature abundance w/o bait) displayed a fold-change higher than 2 versus the PTN-control condition."
+    }
+  ],
+  "factor_value": [
+    {
+      "value": "PP1-WT, PP1-4xPR, PP1-\u0394C vs \u03b2-Galactosidase",
+      "evidence": "inferred: M1-M3=GFP-B-GAL; M4-M6=GFP-PP1-WT; M7-M9=GFP-PP1-deltaC; M10-M12=GFP-PP1-4xPR."
+    },
+    {
+      "value": "parental vs R2 degron",
+      "evidence": "inferred: S5_total=parental + nocodazole; S6_total=parental + 4h release from nocodazole; S7_total= R2 degron + nocodazole; S8_total=R2 degron + 4h release from nocodazole."
+    }
+  ],
+  "number_of_biological_replicates": [
+    {
+      "value": "3",
+      "evidence": "M1-M3=GFP-B-GAL; M4-M6=GFP-PP1-WT; M7-M9=GFP-PP1-deltaC; M10-M12=GFP-PP1-4xPR."
+    },
+    {
+      "value": "1",
+      "evidence": "S5_total=parental + nocodazole; S6_total=parental + 4h release from nocodazole; S7_total= R2 degron + nocodazole; S8_total=R2 degron + 4h release from nocodazole."
+    }
+  ],
+  "number_of_fractions": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "number_of_samples": [
+    {
+      "value": "12",
+      "evidence": "M1-M3=GFP-B-GAL; M4-M6=GFP-PP1-WT; M7-M9=GFP-PP1-deltaC; M10-M12=GFP-PP1-4xPR."
+    },
+    {
+      "value": "4",
+      "evidence": "S5_total=parental + nocodazole; S6_total=parental + 4h release from nocodazole; S7_total= R2 degron + nocodazole; S8_total=R2 degron + 4h release from nocodazole."
+    }
+  ],
+  "number_of_technical_replicates": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "technical_replicate": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "technology_type": [
+    {
+      "value": "bottom-up proteomics",
+      "evidence": "inferred: Peptides were identi\ufb01ed by Mascot (Matrix Science) through Proteome Discoverer (PD) 2.2 (Thermo Fisher) using the Uniprot Homo sapiens database (204,906 entries) and validated using the PD Percolator node (q<0.01)."
+    },
+    {
+      "value": "affinity purification coupled with mass spectrometry proteomics",
+      "evidence": "inferred: For PP1 and R2 interactomics, traps were processed as described by Cokelaere et al. (2023)."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "factor_value",
+      "value": "PP1-WT, PP1-4xPR, PP1-\u0394C vs \u03b2-Galactosidase",
+      "evidence": "inferred: M1-M3=GFP-B-GAL; M4-M6=GFP-PP1-WT; M7-M9=GFP-PP1-deltaC; M10-M12=GFP-PP1-4xPR.",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.825,
+    "evidence_score": 0.764,
+    "completeness": 0.714,
+    "format_score": 1.0
+  }
+}

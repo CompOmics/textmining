@@ -1,0 +1,147 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-independent acquisition",
+      "evidence": "experiment types: Data-independent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "5mM",
+      "evidence": "Alkylation was performed with iodoacetamide (final concentration of 5mM in 50mM ammonium bicarbonate) for 30 minutes in the dark at room temperature."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Alkylation was performed with iodoacetamide (final concentration of 5mM in 50mM ammonium bicarbonate) for 30 minutes in the dark at room temperature."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Trypsin",
+      "evidence": "Trypsin/Lys-C mix (mass spectrometry grade; Promega) was added (0.5ug) and incubated overnight at 37\u00b0C."
+    },
+    {
+      "value": "Lys-C",
+      "evidence": "Trypsin/Lys-C mix (mass spectrometry grade; Promega) was added (0.5ug) and incubated overnight at 37\u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27",
+      "evidence": "The maximum injection time was set to 200ms for full MS scans, with a normalized collision energy set to 27 for MS/MS scans."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "normalized collision energy",
+      "evidence": "The maximum injection time was set to 200ms for full MS scans, with a normalized collision energy set to 27 for MS/MS scans."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    },
+    {
+      "value": "Q exactive Plus",
+      "evidence": "The Q exactive Plus instrument was used for DIA MS data acquisition.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002634",
+      "ontology_name": "Q Exactive Plus",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive Plus"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TIC",
+      "evidence": "quantification: TIC"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Q Exactive"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "We used the DIA-NN 1.81 software to search RAW files, specifically using an in silico spectral library with canonical and isoform protein sequence FASTA files from UNIPROT (UP000005640_9606, February 2021 release), permitting a maximum of one missed cleavage and one variable modification (methionine oxidation), where carbamidomethylation of cysteines was set as a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "carbamidomethylation of cysteines",
+      "evidence": "We used the DIA-NN 1.81 software to search RAW files, specifically using an in silico spectral library with canonical and isoform protein sequence FASTA files from UNIPROT (UP000005640_9606, February 2021 release), permitting a maximum of one missed cleavage and one variable modification (methionine oxidation), where carbamidomethylation of cysteines was set as a fixed modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00419",
+      "ontology_name": "(R)-5-oxo-1,4-tetrahydrothiazine-3-carboxylic acid",
+      "similarity": 0.785,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "S-carbamoylmethylcysteine cyclization (N-terminus)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "2.5mM",
+      "evidence": "Samples were reduced with DTT (final concentration 2.5mM in 50mM ammonium bicarbonate) for 1 hour at 37\u00b0C."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Samples were reduced with DTT (final concentration 2.5mM in 50mM ammonium bicarbonate) for 1 hour at 37\u00b0C."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.955,
+    "evidence_score": 0.974,
+    "completeness": 0.842,
+    "format_score": 1.0
+  }
+}

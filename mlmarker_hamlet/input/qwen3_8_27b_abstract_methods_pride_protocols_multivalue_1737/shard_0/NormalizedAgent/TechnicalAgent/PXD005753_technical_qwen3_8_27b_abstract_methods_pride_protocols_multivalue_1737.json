@@ -1,0 +1,202 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics"
+    },
+    {
+      "value": "DDA",
+      "evidence": "inferred: Survey scans (full MS) were acquired from 350 to 1800 m/z with up to 15 peptide masses (precursor ions) individually isolated with a 1.2-Da window and fragmented (MS/MS) using collision energy based on dynamic exclusion times of 31 and 30 s."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Normal and polyQ-expanded Htt protein bands were cut out of the gel and subjected to in-gel digestion with trypsin, chymotrypsin, or Lys C, as previously described."
+    },
+    {
+      "value": "chymotrypsin",
+      "evidence": "Normal and polyQ-expanded Htt protein bands were cut out of the gel and subjected to in-gel digestion with trypsin, chymotrypsin, or Lys C, as previously described."
+    },
+    {
+      "value": "Lys C",
+      "evidence": "Normal and polyQ-expanded Htt protein bands were cut out of the gel and subjected to in-gel digestion with trypsin, chymotrypsin, or Lys C, as previously described."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "titanium dioxide (TiO2)",
+      "evidence": "For phosphopeptide mapping, 50% of the extracted peptides were enriched for phosphopeptides using titanium dioxide (TiO2) according to Larsen et al."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "basic reverse phase (bRP) liquid chromatography",
+      "evidence": "After labeling, all samples were mixed, dried to a volume of 200 \u00b5L, and fractionated into three fractions by basic reverse phase (bRP) liquid chromatography (LC) on an Agilent 1200 Capillary HPLC system using an XBridge C18 5 \u00b5m 100 \u00d7 2.1 mm analytical column."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q-Exactive Orbitrap mass spectrometer",
+      "evidence": "A gradient of 0\u201360% acetonitrile/0.1% formic acid was applied over 70 min at 300 nL/min on a NanoAcquity UPLC (Waters) interfaced with a Q-Exactive Orbitrap mass spectrometer (ThermoScientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1003395",
+      "ontology_name": "Q Exactive GC Orbitrap",
+      "similarity": 0.896,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive GC Orbitrap"
+    },
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Eluting peptides were sprayed directly into the Q-Exactive at 2.0 kV."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "For peptide quantification, extracted peptides were labeled with TMT reagents (ThermoScientific) according to the manufacturer\u2019s instructions."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: A gradient of 0\u201360% acetonitrile/0.1% formic acid was applied over 70 min at 300 nL/min on a NanoAcquity UPLC (Waters) interfaced with a Q-Exactive Orbitrap mass spectrometer (ThermoScientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "methionine oxidation",
+      "evidence": "Mascot software (Version 2.2 www.matrixscience.com/) interfaced with Proteome Discoverer 1.4 (http://portal.thermo-brims.com/) was used to identify and quantify peptides by searching the MS data against the Refseq mouse 2012 database (concatenated with the reverse database) using the following criteria: sample species; trypsin chymotrypsin or Lys C as the enzyme allowing one missed cleavage; methionine oxidation, asparagine, and glutamine deamidation; serine, threonine, and tyrosin phosphorylation; and lysine acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "asparagine deamidation",
+      "evidence": "Mascot software (Version 2.2 www.matrixscience.com/) interfaced with Proteome Discoverer 1.4 (http://portal.thermo-brims.com/) was used to identify and quantify peptides by searching the MS data against the Refseq mouse 2012 database (concatenated with the reverse database) using the following criteria: sample species; trypsin chymotrypsin or Lys C as the enzyme allowing one missed cleavage; methionine oxidation, asparagine, and glutamine deamidation; serine, threonine, and tyrosin phosphorylation; and lysine acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00684",
+      "ontology_name": "deamidated L-asparagine",
+      "similarity": 0.848,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "deamidated L-asparagine"
+    },
+    {
+      "value": "glutamine deamidation",
+      "evidence": "Mascot software (Version 2.2 www.matrixscience.com/) interfaced with Proteome Discoverer 1.4 (http://portal.thermo-brims.com/) was used to identify and quantify peptides by searching the MS data against the Refseq mouse 2012 database (concatenated with the reverse database) using the following criteria: sample species; trypsin chymotrypsin or Lys C as the enzyme allowing one missed cleavage; methionine oxidation, asparagine, and glutamine deamidation; serine, threonine, and tyrosin phosphorylation; and lysine acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 0.853,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation of Asparagine and Glutamine to Aspartate and Glutamate"
+    },
+    {
+      "value": "serine phosphorylation",
+      "evidence": "Mascot software (Version 2.2 www.matrixscience.com/) interfaced with Proteome Discoverer 1.4 (http://portal.thermo-brims.com/) was used to identify and quantify peptides by searching the MS data against the Refseq mouse 2012 database (concatenated with the reverse database) using the following criteria: sample species; trypsin chymotrypsin or Lys C as the enzyme allowing one missed cleavage; methionine oxidation, asparagine, and glutamine deamidation; serine, threonine, and tyrosin phosphorylation; and lysine acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00046",
+      "ontology_name": "O-phospho-L-serine",
+      "similarity": 0.755,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Phospho Seryl"
+    },
+    {
+      "value": "threonine phosphorylation",
+      "evidence": "Mascot software (Version 2.2 www.matrixscience.com/) interfaced with Proteome Discoverer 1.4 (http://portal.thermo-brims.com/) was used to identify and quantify peptides by searching the MS data against the Refseq mouse 2012 database (concatenated with the reverse database) using the following criteria: sample species; trypsin chymotrypsin or Lys C as the enzyme allowing one missed cleavage; methionine oxidation, asparagine, and glutamine deamidation; serine, threonine, and tyrosin phosphorylation; and lysine acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 0.766,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Phosphorylation (O of Serine, Threonine, Tyrosine and Aspartate, N epsilon of Lysine)"
+    },
+    {
+      "value": "tyrosin phosphorylation",
+      "evidence": "Mascot software (Version 2.2 www.matrixscience.com/) interfaced with Proteome Discoverer 1.4 (http://portal.thermo-brims.com/) was used to identify and quantify peptides by searching the MS data against the Refseq mouse 2012 database (concatenated with the reverse database) using the following criteria: sample species; trypsin chymotrypsin or Lys C as the enzyme allowing one missed cleavage; methionine oxidation, asparagine, and glutamine deamidation; serine, threonine, and tyrosin phosphorylation; and lysine acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00048",
+      "ontology_name": "O4'-phospho-L-tyrosine",
+      "similarity": 0.771,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Phospho Tyrosinyl"
+    },
+    {
+      "value": "lysine acetylation",
+      "evidence": "Mascot software (Version 2.2 www.matrixscience.com/) interfaced with Proteome Discoverer 1.4 (http://portal.thermo-brims.com/) was used to identify and quantify peptides by searching the MS data against the Refseq mouse 2012 database (concatenated with the reverse database) using the following criteria: sample species; trypsin chymotrypsin or Lys C as the enzyme allowing one missed cleavage; methionine oxidation, asparagine, and glutamine deamidation; serine, threonine, and tyrosin phosphorylation; and lysine acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00394",
+      "ontology_name": "monoacetylated residue",
+      "similarity": 0.816,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Acetylation (N terminus, N epsilon of Lysine, O of Serine) (Ac)"
+    },
+    {
+      "value": "cysteine methylthiomethane",
+      "evidence": "For TMT-labeled samples, cysteine methylthiomethane and 10-plex TMT on lysine and N-terminus were also included as fixed modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00110",
+      "ontology_name": "L-cysteine methyl disulfide",
+      "similarity": 0.838,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "methyl methanethiolsulfonate derivatized cysteine"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.894,
+    "evidence_score": 0.881,
+    "completeness": 0.769,
+    "format_score": 1.0
+  }
+}

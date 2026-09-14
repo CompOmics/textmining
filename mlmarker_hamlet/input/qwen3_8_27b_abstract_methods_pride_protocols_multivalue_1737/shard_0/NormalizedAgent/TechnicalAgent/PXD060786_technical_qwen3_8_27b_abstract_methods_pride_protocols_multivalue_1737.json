@@ -1,0 +1,177 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "For TMT-DDA acquisition, a 3 s duty cycle was utilized consisting of a full scan (400\u20131600 m/z, 120,000 resolution) and subsequent MS/MS spectra collected in TopSpeed acquisition mode."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "Briefly, proteins were first reduced with 5 mM DTT at 60 \u00b0C/700 rpm for 30 min then alkylated with 20 mM IAA for 30 min at RT in the dark."
+    },
+    {
+      "value": "10 mM",
+      "evidence": "Reduction of proteins was carried out with 5 mM TCEP (30 min at RT) followed by protein alkylation (30 min, dark at RT) using 10 mM iodoacetamide."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "IAA",
+      "evidence": "Briefly, proteins were first reduced with 5 mM DTT at 60 \u00b0C/700 rpm for 30 min then alkylated with 20 mM IAA for 30 min at RT in the dark."
+    },
+    {
+      "value": "iodoacetamide",
+      "evidence": "Reduction of proteins was carried out with 5 mM TCEP (30 min at RT) followed by protein alkylation (30 min, dark at RT) using 10 mM iodoacetamide."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Trypsin/Lys-C",
+      "evidence": "Proteins were digested on 8 \u03bcL total of SP3 beads (Cytiva; 1:1 hydrophilic to hydrophobic beads; 50 mg/mL) in 50 \u03bcL of 50 mM HEPES (pH 8) with Trypsin/Lys-C in a 1:40 protease to protein ratio for 10 h at 37 \u00b0C/700 rpm."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "36",
+      "evidence": "MS/MS spectra were collected with a normalized HCD collision energy of 36, 0.4 m/z isolation window, auto selected for maximum injection time mode, a normalized AGC target of 100%, at a MS2 orbitrap resolution of 45,000 with a defined first mass of 110 m/z to ensure measurement of TMTPro reporter ions."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SCX",
+      "evidence": "To elute peptides from the first C18 phase to the SCX resin of the MudPIT column, 10 \u03bcL of Buffer A was injected and the following 90 min gradient was utilized: 2% B (5 min hold) ramped to a mobile phase concentration of 40% B over 35 min, ramped to 80% B over 15 min, held at 80% B for 5 min, then returned to 2% B in 5 min and then held at 2% B for the remainder of the analysis at a constant flow rate 500 nL/min."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "MS/MS spectra were collected with a normalized HCD collision energy of 36, 0.4 m/z isolation window, auto selected for maximum injection time mode, a normalized AGC target of 100%, at a MS2 orbitrap resolution of 45,000 with a defined first mass of 110 m/z to ensure measurement of TMTPro reporter ions."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Exploris 480",
+      "evidence": "LC-MS/MS data-dependent analysis was performed using an Exploris 480 mass spectrometer (Thermo Fisher) equipped with a Dionex Ultimate 3000 RSLCnano system (Thermo Fisher).",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 0.785,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: LC-MS/MS data-dependent analysis was performed using an Exploris 480 mass spectrometer (Thermo Fisher) equipped with a Dionex Ultimate 3000 RSLCnano system (Thermo Fisher)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "We compared our automated and manual 18-plex TMT-Pro labeling workflows by monitoring select protein markers of the Unfolded Protein Response (UPR) in pharmacologically activatable, engineered cell lines."
+    },
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: For TMT-DDA acquisition, a 3 s duty cycle was utilized consisting of a full scan (400\u20131600 m/z, 120,000 resolution) and subsequent MS/MS spectra collected in TopSpeed acquisition mode."
+    },
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Exploris 480"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "oxidation of methionine",
+      "evidence": "Dynamic modifications included oxidation of methionine (+15.995 Da), protein N-terminal methionine loss (\u2212131.040 Da), protein N-terminal acetylation (+42.011 Da), and a combination of N-terminal methionine loss and acetylation (+89.030 Da).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "protein N-terminal methionine loss",
+      "evidence": "Dynamic modifications included oxidation of methionine (+15.995 Da), protein N-terminal methionine loss (\u2212131.040 Da), protein N-terminal acetylation (+42.011 Da), and a combination of N-terminal methionine loss and acetylation (+89.030 Da).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "sulfonation of N-terminus",
+      "normalization_candidate_ids": [
+        "MOD:00592",
+        "MOD:00431",
+        "MOD:00427",
+        "MOD:00768"
+      ]
+    },
+    {
+      "value": "protein N-terminal acetylation",
+      "evidence": "Dynamic modifications included oxidation of methionine (+15.995 Da), protein N-terminal methionine loss (\u2212131.040 Da), protein N-terminal acetylation (+42.011 Da), and a combination of N-terminal methionine loss and acetylation (+89.030 Da).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.895,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "cysteine carbamidomethylation",
+      "evidence": "Static modifications included cysteine carbamidomethylation (+57.021 Da) and TMTpro labeling (+304.207 Da) on the N-terminus and lysine.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "TMTpro labeling",
+      "evidence": "Static modifications included cysteine carbamidomethylation (+57.021 Da) and TMTpro labeling (+304.207 Da) on the N-terminus and lysine.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01498",
+      "ontology_name": "iTRAQ4plex-115 reporter+balance reagent O3-acylated threonine",
+      "similarity": 0.709,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "iTRAQ4plex-115 reporter+balance reagent O3-acylated threonine"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Briefly, proteins were first reduced with 5 mM DTT at 60 \u00b0C/700 rpm for 30 min then alkylated with 20 mM IAA for 30 min at RT in the dark."
+    },
+    {
+      "value": "5 mM",
+      "evidence": "Reduction of proteins was carried out with 5 mM TCEP (30 min at RT) followed by protein alkylation (30 min, dark at RT) using 10 mM iodoacetamide."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Briefly, proteins were first reduced with 5 mM DTT at 60 \u00b0C/700 rpm for 30 min then alkylated with 20 mM IAA for 30 min at RT in the dark."
+    },
+    {
+      "value": "TCEP",
+      "evidence": "Reduction of proteins was carried out with 5 mM TCEP (30 min at RT) followed by protein alkylation (30 min, dark at RT) using 10 mM iodoacetamide."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.98,
+    "evidence_score": 0.976,
+    "completeness": 0.96,
+    "format_score": 1.0
+  }
+}

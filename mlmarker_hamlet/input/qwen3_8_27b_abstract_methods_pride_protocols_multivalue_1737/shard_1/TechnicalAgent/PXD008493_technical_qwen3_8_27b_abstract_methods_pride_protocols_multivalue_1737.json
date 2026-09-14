@@ -1,0 +1,142 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "Shotgun proteomics analyses were performed using an UltiMate 3000 RSLC UHPLC system connected to an Orbitrap Q Exactive Plus mass spectrometer operating in the data-dependent acquisition (DDA) mode."
+    },
+    {
+      "value": "MRM",
+      "evidence": "Targeted proteomics analyses were performed using a TSQ Vantage Triple Quadrupole mass spectrometer using multiple reaction monitoring (MRM) transitions and settings that have been described previously."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "Proteins were reduced in 10 mM dithiothreitol (DTT) (30 min; 60 \u00b0C) and alkylated in the dark in 20 mM iodoacetamide (IAM) (30 min; 25 \u00b0C)."
+    },
+    {
+      "value": "100 mM",
+      "evidence": "Next, 100 \u03bcL of 50 mM IAM in urea solution was added to the concentrate, the sample was mixed briefly (1 min; 25 \u00b0C), and proteins were alkylated in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Proteins were reduced in 10 mM dithiothreitol (DTT) (30 min; 60 \u00b0C) and alkylated in the dark in 20 mM iodoacetamide (IAM) (30 min; 25 \u00b0C)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "After quenching unreacted IAM with a 0.5 molar excess of DTT (30 min; 25 \u00b0C), trypsin was added in a final proteinase-to-protein ratio of 1:20, and the proteins were digested overnight (37 \u00b0C)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28%",
+      "evidence": "From the survey scan, a maximum number of 12 of the most abundant precursor ions with a charge state of 2+ to 6+ were selected for higher energy collisional dissociation (HCD) fragment analysis between 200 and 2000 m/z at a resolution of 17\u202f500 (at 200 m/z) with an AGC target value of 5 \u00d7 104, a maximum ion injection time of 50 ms, a normalized collision energy of 28%, an isolation window of 1.6 m/z, an underfill ratio of 1%, an intensity threshold of 1 \u00d7 104, and the dynamic exclusion parameter set at 20 s."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "From the survey scan, a maximum number of 12 of the most abundant precursor ions with a charge state of 2+ to 6+ were selected for higher energy collisional dissociation (HCD) fragment analysis between 200 and 2000 m/z at a resolution of 17\u202f500 (at 200 m/z) with an AGC target value of 5 \u00d7 104, a maximum ion injection time of 50 ms, a normalized collision energy of 28%, an isolation window of 1.6 m/z, an underfill ratio of 1%, an intensity threshold of 1 \u00d7 104, and the dynamic exclusion parameter set at 20 s."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Q Exactive Plus",
+      "evidence": "Shotgun proteomics analyses were performed using an UltiMate 3000 RSLC UHPLC system connected to an Orbitrap Q Exactive Plus mass spectrometer operating in the data-dependent acquisition (DDA) mode."
+    },
+    {
+      "value": "TSQ Vantage Triple Quadrupole",
+      "evidence": "Targeted proteomics analyses were performed using a TSQ Vantage Triple Quadrupole mass spectrometer using multiple reaction monitoring (MRM) transitions and settings that have been described previously."
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Shotgun proteomics analyses were performed using an UltiMate 3000 RSLC UHPLC system connected to an Orbitrap Q Exactive Plus mass spectrometer operating in the data-dependent acquisition (DDA) mode."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "Label-free quantification using ion counts was performed on the basis of the results of the principal PEAKS search followed by further filtering and processing of the data using an in-house developed script in R and R Studio."
+    },
+    {
+      "value": "TIC",
+      "evidence": "quantification: TIC"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "Shotgun proteomics analyses were performed using an UltiMate 3000 RSLC UHPLC system connected to an Orbitrap Q Exactive Plus mass spectrometer operating in the data-dependent acquisition (DDA) mode."
+    },
+    {
+      "value": "Triple Quadrupole",
+      "evidence": "Targeted proteomics analyses were performed using a TSQ Vantage Triple Quadrupole mass spectrometer using multiple reaction monitoring (MRM) transitions and settings that have been described previously."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Carbamidomethyl",
+      "evidence": "modifications: Carbamidomethyl; Oxidation"
+    },
+    {
+      "value": "Oxidation",
+      "evidence": "modifications: Carbamidomethyl; Oxidation"
+    },
+    {
+      "value": "cysteine carbamidomethylation",
+      "evidence": ", and peak lists were searched against the UniProtKB homo sapiens \u2018UP000005640\u2019 reference proteome (canonical; 70956 entries; downloaded on December 15, 2016) with trypsin selected as proteinase (\u2264 3 missed cleavages), cysteine carbamidomethylation as fixed modification, methionine oxidation as variable oxidation, and allowing \u2264 6 modifications per peptide, \u2264 10.0 ppm precursor mass deviation (using monoisotopic mass), \u2264 0.2 Da fragment ion deviation, and \u2264 1.0% false discovery rates (FDR) for peptide-spectrum matches (PSMs), proteins and peptides for the principal analyses."
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": ", and peak lists were searched against the UniProtKB homo sapiens \u2018UP000005640\u2019 reference proteome (canonical; 70956 entries; downloaded on December 15, 2016) with trypsin selected as proteinase (\u2264 3 missed cleavages), cysteine carbamidomethylation as fixed modification, methionine oxidation as variable oxidation, and allowing \u2264 6 modifications per peptide, \u2264 10.0 ppm precursor mass deviation (using monoisotopic mass), \u2264 0.2 Da fragment ion deviation, and \u2264 1.0% false discovery rates (FDR) for peptide-spectrum matches (PSMs), proteins and peptides for the principal analyses."
+    },
+    {
+      "value": "asparagine and glutamine deamidation",
+      "evidence": "for assessment of protocol-induced asparagine and glutamine deamidation, the corresponding modification was added as variable modification"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Proteins were reduced in 10 mM dithiothreitol (DTT) (30 min; 60 \u00b0C) and alkylated in the dark in 20 mM iodoacetamide (IAM) (30 min; 25 \u00b0C)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "Proteins were reduced in 10 mM dithiothreitol (DTT) (30 min; 60 \u00b0C) and alkylated in the dark in 20 mM iodoacetamide (IAM) (30 min; 25 \u00b0C)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.975,
+    "evidence_score": 0.983,
+    "completeness": 0.917,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration[1]",
+      "value": "100 mM",
+      "evidence": "Next, 100 \u03bcL of 50 mM IAM in urea solution was added to the concentrate, the sample was mixed briefly (1 min; 25 \u00b0C), and proteins were alkylated in the dark."
+    }
+  ]
+}

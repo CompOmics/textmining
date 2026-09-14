@@ -1,0 +1,184 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "55 mM CAA",
+      "evidence": "Proteins bound to kinobeads were eluted with LDS sample buffer (NuPAGE, Thermo Fisher Scientific) containing 50 mM DTT and alkylated with 55 mM CAA."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "CAA",
+      "evidence": "Proteins bound to kinobeads were eluted with LDS sample buffer (NuPAGE, Thermo Fisher Scientific) containing 50 mM DTT and alkylated with 55 mM CAA."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Kinobead pulldown eluates were purified by short SDS-PAGE (ca. 1 cm; Thermo Fisher Scientific) and were subsequently subjected to in-gel tryptic digestion according to standard procedures."
+    },
+    {
+      "value": "Trypsin/P",
+      "evidence": "Trypsin/P was specified as the proteolytic enzyme and up to two missed cleavage sites were allowed."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28% normalized collision energy (NCE)",
+      "evidence": "Up to 12 peptide precursors were selected for fragmentation by higher energy collision-induced dissociation (HCD; 1.3 m/z isolation window, AGC value of 1 x e5, maximum injection time of 22 ms) using 28% normalized collision energy (NCE) and analyzed at a resolution of 15,000 in the Orbitrap."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "higher energy collision-induced dissociation (HCD",
+      "evidence": "Up to 12 peptide precursors were selected for fragmentation by higher energy collision-induced dissociation (HCD; 1.3 m/z isolation window, AGC value of 1 x e5, maximum injection time of 22 ms) using 28% normalized collision energy (NCE) and analyzed at a resolution of 15,000 in the Orbitrap."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF-X",
+      "evidence": "instruments: Q Exactive HF-X",
+      "is_normalized": true,
+      "ontology_id": "MS:1002877",
+      "ontology_name": "Q Exactive HF-X",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF-X"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "Label-free quantification and data matching were enabled within MaxQuant."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "quadrupole-Orbitrap",
+      "evidence": "LC-MS/MS measurement of peptides in eluates was performed using an UltiMate 3000 (Thermo Fisher Scientific) coupled to a quadrupole-Orbitrap Q Exactive HF-X mass spectrometer (Thermo Fisher Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "acetylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:02078",
+      "ontology_name": "acetylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "acetylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; acetylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "Carbamidomethylated cysteine",
+      "evidence": "Carbamidomethylated cysteine was set as fixed modification and oxidation of methionine and N-terminal protein acetylation as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01061",
+      "ontology_name": "S-carboxymethyl-L-cysteine",
+      "similarity": 0.883,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl cysteine"
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "Carbamidomethylated cysteine was set as fixed modification and oxidation of methionine and N-terminal protein acetylation as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "N-terminal protein acetylation",
+      "evidence": "Carbamidomethylated cysteine was set as fixed modification and oxidation of methionine and N-terminal protein acetylation as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.888,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "phosphorylation of serine, threonine and tyrosine",
+      "evidence": "In addition, phosphorylation of serine, threonine and tyrosine was set as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00046",
+      "ontology_name": "O-phospho-L-serine",
+      "similarity": 0.815,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "phosphorylations"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "50 mM DTT",
+      "evidence": "Proteins bound to kinobeads were eluted with LDS sample buffer (NuPAGE, Thermo Fisher Scientific) containing 50 mM DTT and alkylated with 55 mM CAA."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Proteins bound to kinobeads were eluted with LDS sample buffer (NuPAGE, Thermo Fisher Scientific) containing 50 mM DTT and alkylated with 55 mM CAA."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.95,
+    "evidence_score": 0.952,
+    "completeness": 0.87,
+    "format_score": 1.0
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "followed by alkylation with 20 mM iodoacetamide for 1 hr."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "followed by alkylation with 20 mM iodoacetamide for 1 hr."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "digested overnight at 37\u00b0C with sequencing-grade modified porcine trypsin (Promega) at a trypsin:protein ratio of 1:50."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "28",
+      "evidence": "High-energy collision-induced dissociation fragmentation of the top eight strongest peaks was performed with a normalized collision energy of 28, an intensity threshold of 4 x 104 counts, and an isolation window of 3.0 m/z; the process excluded precursors that had unassigned or +1 to +7 charge states."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "High-energy collision-induced dissociation",
+      "evidence": "High-energy collision-induced dissociation fragmentation of the top eight strongest peaks was performed with a normalized collision energy of 28, an intensity threshold of 4 x 104 counts, and an isolation window of 3.0 m/z; the process excluded precursors that had unassigned or +1 to +7 charge states."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    },
+    {
+      "value": "Q-Exactive Plus",
+      "evidence": "Eluted peptides were analyzed online by a Q-Exactive Plus spectrometer (ThermoFisher Scientific) in the positive electrospray ionization mode at a capillary voltage of 2.1 kV.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002634",
+      "ontology_name": "Q Exactive Plus",
+      "similarity": 0.982,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive Plus"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "electrospray ionization",
+      "evidence": "Eluted peptides were analyzed online by a Q-Exactive Plus spectrometer (ThermoFisher Scientific) in the positive electrospray ionization mode at a capillary voltage of 2.1 kV."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "quantification: MS1 intensity based label-free quantification method"
+    },
+    {
+      "value": "label-free",
+      "evidence": "Label-free quantification as previously described76 was performed in Proteome Discoverer with a minimum Quan value threshold of 0.0001 using unique peptides, and \u20183 Top N\u2019 peptides used for area calculation."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Q Exactive HF"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; carbamoylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "carbamoylated residue",
+      "evidence": "modifications: monohydroxylated residue; carbamoylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00398",
+      "ontology_name": "carbamoylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "carbamoylated residue"
+    },
+    {
+      "value": "Carbamidomethylation of cysteines",
+      "evidence": "Carbamidomethylation of cysteines was specified as a static modification, while oxidation of methionines and N-terminal acetylation were specified as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00419",
+      "ontology_name": "(R)-5-oxo-1,4-tetrahydrothiazine-3-carboxylic acid",
+      "similarity": 0.785,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "S-carbamoylmethylcysteine cyclization (N-terminus)"
+    },
+    {
+      "value": "oxidation of methionines",
+      "evidence": "Carbamidomethylation of cysteines was specified as a static modification, while oxidation of methionines and N-terminal acetylation were specified as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.931,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "Carbamidomethylation of cysteines was specified as a static modification, while oxidation of methionines and N-terminal acetylation were specified as dynamic modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "reduced for 1 hr at room temperature with 10 mM dithiothreitol, followed by alkylation with 20 mM iodoacetamide for 1 hr."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "reduced for 1 hr at room temperature with 10 mM dithiothreitol, followed by alkylation with 20 mM iodoacetamide for 1 hr."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.969,
+    "evidence_score": 0.976,
+    "completeness": 0.905,
+    "format_score": 1.0
+  }
+}

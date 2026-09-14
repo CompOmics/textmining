@@ -1,0 +1,176 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Chemical cross-linking coupled with mass spectrometry proteomics; Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "The protein was then reduced with tris(2-carboxyethyl)phosphine (TCEP) for 30 min at RT and alkylated with iodoacetamide in the dark at RT for 30 min."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "LysC",
+      "evidence": "Cross-linked proteins were then digested in 8M urea buffer using LysC for 4 hrs at 37 \u00b0C, followed by trypsin digestion at 37 \u00b0C overnight after diluting urea concentration to < 1.5 M."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Cross-linked proteins were then digested in 8M urea buffer using LysC for 4 hrs at 37 \u00b0C, followed by trypsin digestion at 37 \u00b0C overnight after diluting urea concentration to < 1.5 M."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "NCE 23%",
+      "evidence": "Ions detected in MS1 with 4+ or greater charge were selected and subjected to CID fragmentation (NCE 23%) in MS2 and resulting ions were detected in the Orbitrap (resolution 30,000)."
+    },
+    {
+      "value": "NCE 35%",
+      "evidence": "Ions observed in MS2 spectra with charge 2+ or greater were selected and fragmented in MS3 using CID (NCE 35%) and detected in the linear ion trap in \u2018Rapid\u2019 mode."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "SEC",
+      "evidence": "Peptide separation by SEC was performed similarly as described."
+    },
+    {
+      "value": "HpHt",
+      "evidence": "For high-pH separation, HpHt tips were prepared as described, and SEC-separated fractions were vacuum dried and resuspended in ammonium water (pH 10)."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "CID",
+      "evidence": "Ions detected in MS1 with 4+ or greater charge were selected and subjected to CID fragmentation (NCE 23%) in MS2 and resulting ions were detected in the Orbitrap (resolution 30,000)."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Spectrometric data were extracted from .raw files using PAVA."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: LC-MSn analysis of cross-linked peptides was performed using an UltiMate 3000 UPLC (Thermo Fisher Scientific) liquid chromatograph coupled on-line to an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific)."
+    },
+    {
+      "value": "linear ion trap",
+      "evidence": "For each MSn acquisition, duty cycles consisted of one full Fourier transform scan mass spectrum (375\u20131500 m/z, resolution of 60,000 at m/z 400) followed by data-dependent MS2 and MS3 acquired at top speed in the Orbitrap and linear ion trap, respectively."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "Cysteine carbamidomethylation",
+      "evidence": "Cysteine carbamidomethylation was selected as a constant modification, while protein N-terminal acetylation, methionine oxidation, and N-terminal conversion of glutamine to pyroglutamic acid were selected as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "protein N-terminal acetylation",
+      "evidence": "Cysteine carbamidomethylation was selected as a constant modification, while protein N-terminal acetylation, methionine oxidation, and N-terminal conversion of glutamine to pyroglutamic acid were selected as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.895,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "Cysteine carbamidomethylation was selected as a constant modification, while protein N-terminal acetylation, methionine oxidation, and N-terminal conversion of glutamine to pyroglutamic acid were selected as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "N-terminal conversion of glutamine to pyroglutamic acid",
+      "evidence": "Cysteine carbamidomethylation was selected as a constant modification, while protein N-terminal acetylation, methionine oxidation, and N-terminal conversion of glutamine to pyroglutamic acid were selected as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 0.752,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation of Asparagine and Glutamine to Aspartate and Glutamate"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "tris(2-carboxyethyl)phosphine (TCEP)",
+      "evidence": "The protein was then reduced with tris(2-carboxyethyl)phosphine (TCEP) for 30 min at RT and alkylated with iodoacetamide in the dark at RT for 30 min."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.954,
+    "evidence_score": 0.975,
+    "completeness": 0.833,
+    "format_score": 1.0
+  }
+}

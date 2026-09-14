@@ -1,0 +1,169 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DIA",
+      "evidence": "In this dataset, we compared 4 replicates of DM to 4 replicates of SF derived cardiac organoids using global DIA-MS/MS."
+    },
+    {
+      "value": "Data-independent acquisition",
+      "evidence": "experiment types: Data-independent acquisition"
+    },
+    {
+      "value": "data-independent acquisition mode",
+      "evidence": "For each sample, a uniform volume (3 \u00b5l) was resolved across a 55 min gradient in data-independent acquisition mode using a Thermo PepMap100 analytical column equipped on a Thermo Vanquish Neo UHPLC interfaced with a Thermo Exactive HF-X mass spectrometer."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "40mM",
+      "evidence": "Reduction alkylation buffer was added to a final concentration of 10mM TCEP (Sigma-Aldrich) and 40mM 2-CAA (Sigma-Aldrich, equilibrated with KOH to pH 8) and incubated for 10min 45\u00b0C with 1500rpm agitation."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "2-CAA",
+      "evidence": "Reduction alkylation buffer was added to a final concentration of 10mM TCEP (Sigma-Aldrich) and 40mM 2-CAA (Sigma-Aldrich, equilibrated with KOH to pH 8) and incubated for 10min 45\u00b0C with 1500rpm agitation."
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Trypsin",
+      "evidence": "1\u00b5g Trypsin (ThermoFisher) was added to sample and incubated overnight (17hr) at 37\u00b0C, with 1500rpm agitation."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27",
+      "evidence": "Briefly, MS1 included survey scans of 1e6 ions at resolution of 60,000, with a max isolation time of 60ms within the scan range of 390-1010m/z and collision energy of 27."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "inferred: MS1 included survey scans of 1e6 ions at resolution of 60,000, with a max isolation time of 60ms within the scan range of 390-1010m/z and collision energy of 27."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive; Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    },
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive; Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    },
+    {
+      "value": "Thermo Exactive HF-X mass spectrometer",
+      "evidence": "For each sample, a uniform volume (3 \u00b5l) was resolved across a 55 min gradient in data-independent acquisition mode using a Thermo PepMap100 analytical column equipped on a Thermo Vanquish Neo UHPLC interfaced with a Thermo Exactive HF-X mass spectrometer.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003395",
+      "ontology_name": "Q Exactive GC Orbitrap",
+      "similarity": 0.832,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive GC Orbitrap"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: Samples were resuspended in 2% ACN/0.3% TFA, with sonication to assist solubility."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Raw spectra was analysed using DIA-NN, version 1.8.1 against the human proteome (20,399 sequences, downloaded April 19, 2021 from UniProt) using the library-free method."
+    },
+    {
+      "value": "TIC",
+      "evidence": "quantification: TIC"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Q Exactive; Q Exactive HF"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "Carbamidomethylation of cysteines",
+      "evidence": "Carbamidomethylation of cysteines and N-term N excision was set as a fixed modification, matching between runs enabled, cross-run normalisation used RT-dependent method, and small-profiling method was used to generate in silico library from the human proteome.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00419",
+      "ontology_name": "(R)-5-oxo-1,4-tetrahydrothiazine-3-carboxylic acid",
+      "similarity": 0.785,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "S-carbamoylmethylcysteine cyclization (N-terminus)"
+    },
+    {
+      "value": "N-term N excision",
+      "evidence": "Carbamidomethylation of cysteines and N-term N excision was set as a fixed modification, matching between runs enabled, cross-run normalisation used RT-dependent method, and small-profiling method was used to generate in silico library from the human proteome.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "sulfonation of N-terminus",
+      "normalization_candidate_ids": [
+        "MOD:00592",
+        "MOD:00427",
+        "MOD:00408",
+        "MOD:00939"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10mM",
+      "evidence": "Reduction alkylation buffer was added to a final concentration of 10mM TCEP (Sigma-Aldrich) and 40mM 2-CAA (Sigma-Aldrich, equilibrated with KOH to pH 8) and incubated for 10min 45\u00b0C with 1500rpm agitation."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Reduction alkylation buffer was added to a final concentration of 10mM TCEP (Sigma-Aldrich) and 40mM 2-CAA (Sigma-Aldrich, equilibrated with KOH to pH 8) and incubated for 10min 45\u00b0C with 1500rpm agitation."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.948,
+    "evidence_score": 0.93,
+    "completeness": 0.913,
+    "format_score": 1.0
+  }
+}

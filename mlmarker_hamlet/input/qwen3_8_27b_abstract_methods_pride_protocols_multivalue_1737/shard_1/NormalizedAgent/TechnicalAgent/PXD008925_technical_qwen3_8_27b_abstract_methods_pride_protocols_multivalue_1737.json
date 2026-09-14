@@ -1,0 +1,140 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "inferred: The mass spectrometer was operated in the positive ion mode performing a survey MS (range 300 to 1800 m/z) and data-dependent MS/MS scans performed on the six most intense precursors with dynamic exclusion window of 40 s."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "20 mM IAA",
+      "evidence": "The protein samples for phosphoproteomic analyses were diluted in lysis buffer and reduced with 10 mM DTT, alkylated with 20 mM IAA (both Sigma-Aldrich, St. Louis, MO, USA), and digested with trypsin (Sequencing grade modified, Promega Corporation, Madison, WI, USA) overnight at an enzyme-to-substrate ratio of 1:60 (sequence grade modified trypsin)."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "IAA",
+      "evidence": "The protein samples for phosphoproteomic analyses were diluted in lysis buffer and reduced with 10 mM DTT, alkylated with 20 mM IAA (both Sigma-Aldrich, St. Louis, MO, USA), and digested with trypsin (Sequencing grade modified, Promega Corporation, Madison, WI, USA) overnight at an enzyme-to-substrate ratio of 1:60 (sequence grade modified trypsin)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "The protein samples for phosphoproteomic analyses were diluted in lysis buffer and reduced with 10 mM DTT, alkylated with 20 mM IAA (both Sigma-Aldrich, St. Louis, MO, USA), and digested with trypsin (Sequencing grade modified, Promega Corporation, Madison, WI, USA) overnight at an enzyme-to-substrate ratio of 1:60 (sequence grade modified trypsin)."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27",
+      "evidence": "Precursor ions were accumulated with AGC of 1 \u00d7 10 (maximum fill time was 100 ms) and the normalized collisional energy for HCD fragmentation was 27 units."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "titanium dioxide chromatography",
+      "evidence": "Each HILIC fraction was enriched for phosphopeptides using titanium dioxide chromatography using a protocol optimized in previous experiments."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "HILIC",
+      "evidence": "Dried peptide samples were fractionated by HILIC according to a protocol that has been published previously using a 4.6 \u00d7 25 cm TSKgel\u00ae Amide-80 HR 5 \u03bcm particle column with a TSKgel\u00ae Amide-80 HR 5 \u03bcm 4.6 \u00d7 1 cm guard column (Tosoh Biosciences, Stuttgart, Germany) operated with Waters Separations Module e2695 (Waters, Milford, MA, USA) at 0.5 mL/min."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Precursor ions were accumulated with AGC of 1 \u00d7 10 (maximum fill time was 100 ms) and the normalized collisional energy for HCD fragmentation was 27 units."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "Nanospray Flex ion source",
+      "evidence": "LC-MS/MS analyses were performed on a Thermo Scientific Dionex Ultimate\u2122 3000 RSLCnano system (Thermo Scientific, Bremen, Germany) coupled through Nanospray Flex ion source with Q Exactive mass spectrometer (Thermo Scientific, Bremen, Germany)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "SILAC",
+      "evidence": "quantification: SILAC"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: LC-MS/MS analyses were performed on a Thermo Scientific Dionex Ultimate\u2122 3000 RSLCnano system (Thermo Scientific, Bremen, Germany) coupled through Nanospray Flex ion source with Q Exactive mass spectrometer (Thermo Scientific, Bremen, Germany)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "phosphorylation of serine, threonine, and tyrosine residues",
+      "evidence": "Carbamidomethylation of cysteine was set as a fixed modification while oxidation of methionine, protein N-terminal acetylation, and phosphorylation of serine, threonine, and tyrosine residues were used as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 0.81,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Phosphorylation (O of Serine, Threonine, Tyrosine and Aspartate, N epsilon of Lysine)"
+    },
+    {
+      "value": "carbamydomethylation of cysteine",
+      "evidence": "Carbamidomethylation of cysteine was set as a fixed modification while oxidation of methionine, protein N-terminal acetylation, and phosphorylation of serine, threonine, and tyrosine residues were used as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00419",
+      "ontology_name": "(R)-5-oxo-1,4-tetrahydrothiazine-3-carboxylic acid",
+      "similarity": 0.783,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "S-carbamoylmethylcysteine cyclization (N-terminus)"
+    },
+    {
+      "value": "oxidation of methionine",
+      "evidence": "Carbamidomethylation of cysteine was set as a fixed modification while oxidation of methionine, protein N-terminal acetylation, and phosphorylation of serine, threonine, and tyrosine residues were used as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.934,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "protein N-terminal acetylation",
+      "evidence": "Carbamidomethylation of cysteine was set as a fixed modification while oxidation of methionine, protein N-terminal acetylation, and phosphorylation of serine, threonine, and tyrosine residues were used as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.895,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM DTT",
+      "evidence": "The protein samples for phosphoproteomic analyses were diluted in lysis buffer and reduced with 10 mM DTT, alkylated with 20 mM IAA (both Sigma-Aldrich, St. Louis, MO, USA), and digested with trypsin (Sequencing grade modified, Promega Corporation, Madison, WI, USA) overnight at an enzyme-to-substrate ratio of 1:60 (sequence grade modified trypsin)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "The protein samples for phosphoproteomic analyses were diluted in lysis buffer and reduced with 10 mM DTT, alkylated with 20 mM IAA (both Sigma-Aldrich, St. Louis, MO, USA), and digested with trypsin (Sequencing grade modified, Promega Corporation, Madison, WI, USA) overnight at an enzyme-to-substrate ratio of 1:60 (sequence grade modified trypsin)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.95,
+    "evidence_score": 0.9,
+    "completeness": 1.0,
+    "format_score": 1.0
+  }
+}

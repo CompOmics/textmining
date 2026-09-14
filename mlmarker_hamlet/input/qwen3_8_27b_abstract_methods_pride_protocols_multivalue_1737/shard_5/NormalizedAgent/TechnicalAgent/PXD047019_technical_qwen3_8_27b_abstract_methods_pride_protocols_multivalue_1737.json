@@ -1,0 +1,94 @@
+{
+  "acquisition_method": [
+    "Data-dependent acquisition",
+    "experiment types: Bottom-up proteomics; Affinity purification coupled with mass spectrometry proteomics; Data-dependent acquisition"
+  ],
+  "alkylation_concentration": [
+    "5 mM",
+    "lysates were centrifuged for 30 min at 3,000g in a swing-out centrifuge with delayed deceleration, carefully decanted into new tubes, and subsequently passed through 0.45 \u03bcm disc filters in order to clarify them."
+  ],
+  "alkylation_reagent": [
+    "chloroacetamide",
+    "in addition to 10 \u03bcL of 0.5 M freshly dissolved chloroacetamide (CAA)."
+  ],
+  "cleavage_agent": [
+    "Lys-C",
+    "peptides were purified on C8 SepPak and lyophilized, after which they were dissolved in IAP buffer and immunoprecipitated using (per sample) ~7 \u03bcL of 8A2 anti-SUMO2/3 antibody coupled to (per sample) 25 \u03bcL Protein G Agarose beads."
+  ],
+  "collision_energy": [
+    "normalized collision energy of 25",
+    "fragmented using higher-energy collision disassociation (HCD) with normalized collision energy of 25."
+  ],
+  "enrichment_method": [
+    "antibody",
+    "immunoprecipitated using (per sample) ~7 \u03bcL of 8A2 anti-SUMO2/3 antibody coupled to (per sample) 25 \u03bcL Protein G Agarose beads."
+  ],
+  "fractionation_method": [
+    "High-pH fractionation",
+    "High-pH fractionation of SUMOylated peptides was performed on StageTip"
+  ],
+  "fragmentation_method": [
+    "HCD",
+    "fragmented using higher-energy collision disassociation (HCD) with normalized collision energy of 25."
+  ],
+  "ionization_type": [
+    "nanoESI",
+    "ionization was achieved using a NanoSpray Flex\u2122 NG (Thermo) with the spray voltage set at 2 kV"
+  ],
+  "labeling": [
+    "Label free",
+    "quantification: Label free"
+  ],
+  "mass_analyzer": [
+    "Orbitrap",
+    "All samples were analyzed using an EASY-nLC 1200 system (Thermo) coupled to an Orbitrap Exploris\u2122 480 mass spectrometer (Thermo)."
+  ],
+  "reduction_concentration": [
+    "5 mM",
+    "lysates were centrifuged for 30 min at 3,000g in a swing-out centrifuge with delayed deceleration, carefully decanted into new tubes, and subsequently passed through 0.45 \u03bcm disc filters in order to clarify them."
+  ],
+  "reduction_reagent": [
+    "TCEP",
+    "supplemented with 5 mM CAA and 5 mM TCEP, and incubated at 37 \u00b0C for 30 minutes."
+  ],
+  "_confidence": {
+    "overall": 0.933,
+    "evidence_score": 0.867,
+    "completeness": 1.0,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "alkylation_concentration",
+      "value": "5 mM",
+      "evidence": "lysates were centrifuged for 30 min at 3,000g in a swing-out centrifuge with delayed deceleration, carefully decanted into new tubes, and subsequently passed through 0.45 \u03bcm disc filters in order to clarify them."
+    },
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration",
+      "value": "5 mM",
+      "evidence": "lysates were centrifuged for 30 min at 3,000g in a swing-out centrifuge with delayed deceleration, carefully decanted into new tubes, and subsequently passed through 0.45 \u03bcm disc filters in order to clarify them."
+    }
+  ],
+  "instrument": {
+    "value": "Orbitrap Exploris 480",
+    "evidence": "All samples were analyzed using an EASY-nLC 1200 system (Thermo) coupled to an Orbitrap Exploris\u2122 480 mass spectrometer (Thermo).",
+    "is_normalized": true,
+    "ontology_id": "MS:1003028",
+    "ontology_name": "Orbitrap Exploris 480",
+    "similarity": 1.0,
+    "normalization_method": "exact_primary",
+    "normalization_matched_text": "Orbitrap Exploris 480"
+  },
+  "ptm": {
+    "value": "Lys SUMOylation",
+    "evidence": "Variable modifications used were protein N-terminal acetylation, methionine oxidation, peptide N-terminal pyroglutamate, and Lys SUMOylation, with a maximum of 3 modifications per peptide.",
+    "is_normalized": true,
+    "ontology_id": "MOD:01149",
+    "ontology_name": "sumoylated lysine",
+    "similarity": 0.841,
+    "normalization_method": "semantic",
+    "normalization_matched_text": "sumoylated lysine"
+  }
+}

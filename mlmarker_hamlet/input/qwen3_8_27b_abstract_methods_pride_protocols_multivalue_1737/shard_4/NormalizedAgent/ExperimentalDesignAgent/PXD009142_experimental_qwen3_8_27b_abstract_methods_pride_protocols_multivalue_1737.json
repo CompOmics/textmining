@@ -1,0 +1,92 @@
+{
+  "biological_replicate": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "experimental_design": [
+    {
+      "value": "treated vs control",
+      "evidence": "inferred: Mass spectrometry-based proteome profiling identified 10,575 proteins in iPSCs-derived CECs. In parallel, we completed proteome profiling of the human CE identifying 6345 proteins."
+    }
+  ],
+  "factor_value": [
+    {
+      "value": "iPSCs-derived CECs vs human CE",
+      "evidence": "inferred: Mass spectrometry-based proteome profiling identified 10,575 proteins in iPSCs-derived CECs. In parallel, we completed proteome profiling of the human CE identifying 6345 proteins."
+    }
+  ],
+  "number_of_biological_replicates": [
+    {
+      "value": "2",
+      "evidence": "Human iPSC-derived CECs at day 20 from two 35-mm culture plates were harvested, pooled together, and subjected to a mass spectrometry\u2013based label-free quantitative proteomics."
+    },
+    {
+      "value": "1",
+      "evidence": "A pair of corneas from a 62-year-old female donor (postmortem) was obtained from Eversight Eye Bank (available in the public domain, http://eversightvision.org) for proteome profiling of hCE."
+    }
+  ],
+  "number_of_fractions": [
+    {
+      "value": "24",
+      "evidence": "The peptides were fractionated by basic pH reversed-phase liquid chromatography (Waters Corp.) into 96 fractions, followed by concatenation into 24 fractions by combining every 24th fraction."
+    }
+  ],
+  "number_of_samples": [
+    {
+      "value": "2",
+      "evidence": "inferred: Human iPSC-derived CECs at day 20 from two 35-mm culture plates were harvested, pooled together, and subjected to a mass spectrometry\u2013based label-free quantitative proteomics. A pair of corneas from a 62-year-old female donor (postmortem) was obtained from Eversight Eye Bank (available in the public domain, http://eversightvision.org) for proteome profiling of hCE."
+    }
+  ],
+  "number_of_technical_replicates": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "technical_replicate": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "technology_type": [
+    {
+      "value": "Shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics"
+    },
+    {
+      "value": "label-free quantitative proteomics",
+      "evidence": "The differentiated CECs were harvested on day 20 for mass spectrometry\u2013based proteome sequencing."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "number_of_samples",
+      "value": "2",
+      "evidence": "inferred: Human iPSC-derived CECs at day 20 from two 35-mm culture plates were harvested, pooled together, and subjected to a mass spectrometry\u2013based label-free quantitative proteomics. A pair of corneas from a 62-year-old female donor (postmortem) was obtained from Eversight Eye Bank (available in the public domain, http://eversightvision.org) for proteome profiling of hCE.",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "experimental_design",
+      "value": "treated vs control",
+      "evidence": "inferred: Mass spectrometry-based proteome profiling identified 10,575 proteins in iPSCs-derived CECs. In parallel, we completed proteome profiling of the human CE identifying 6345 proteins.",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.845,
+    "evidence_score": 0.8,
+    "completeness": 0.727,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "number_of_biological_replicates[0]",
+      "value": "2",
+      "evidence": "Human iPSC-derived CECs at day 20 from two 35-mm culture plates were harvested, pooled together, and subjected to a mass spectrometry\u2013based label-free quantitative proteomics."
+    }
+  ]
+}

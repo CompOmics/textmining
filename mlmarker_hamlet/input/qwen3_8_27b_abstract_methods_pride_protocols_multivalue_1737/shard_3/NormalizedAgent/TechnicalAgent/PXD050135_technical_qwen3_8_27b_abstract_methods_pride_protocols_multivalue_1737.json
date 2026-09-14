@@ -1,0 +1,167 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "11 mM",
+      "evidence": "Then, iodoacetamide was incorporated to achieve a final concentration of 11 mM and incubated at room temperature for 15 min in a dark environment."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Then, iodoacetamide was incorporated to achieve a final concentration of 11 mM and incubated at room temperature for 15 min in a dark environment."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Subsequently, trypsin was added at a 1:50 ratio (protease: protein, w/w) to enzymatically hydrolyze overnight."
+    },
+    {
+      "value": "Trypsin/P",
+      "evidence": "Trypsin/P (or other enzymes if any) was specified as cleavage enzyme allowing up to 2 missing cleavages."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    },
+    {
+      "value": "Thermo QE PLUS OBRITRAP",
+      "evidence": "The LC\u2013MS/MS analysis was performed by Jingjie Biological Co., LTD using a Thermo QE PLUS OBRITRAP high-resolution mass spectrometer.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Thermo Finnigan instrument model",
+      "normalization_candidate_ids": [
+        "MS:1000125",
+        "MS:1003145",
+        "MS:1002877",
+        "MS:1000693",
+        "MS:1000703"
+      ]
+    },
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "After separation, peptides were injected into an nanospray flex (NSI) ion source for electrification and then loaded into the Orbitrap Exploris 480 mass spectrometer for analysis.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanospray flex (NSI) ion source",
+      "evidence": "After separation, peptides were injected into an nanospray flex (NSI) ion source for electrification and then loaded into the Orbitrap Exploris 480 mass spectrometer for analysis."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Q Exactive"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "unknown",
+      "evidence": "",
+      "is_normalized": false
+    },
+    {
+      "value": "Carbamidomethyl on Cys",
+      "evidence": "Carbamidomethyl on Cys were specified as fixed modification and oxidation on Met was specified as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.886,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxamidomethyl (on Cysteine)"
+    },
+    {
+      "value": "oxidation on Met",
+      "evidence": "Carbamidomethyl on Cys were specified as fixed modification and oxidation on Met was specified as variable modification.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.827,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Dithiothreitol was added to a final concentration of 5 mM to deoxidize at 56 \u00b0C for 30 min."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "Dithiothreitol",
+      "evidence": "Dithiothreitol was added to a final concentration of 5 mM to deoxidize at 56 \u00b0C for 30 min."
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "labeling",
+      "value": "label-free",
+      "evidence": "inferred: No isobaric labels were used in this study.",
+      "reason": "evidence could not be grounded to an exact source span"
+    },
+    {
+      "field": "ptm",
+      "value": "unknown",
+      "evidence": "",
+      "reason": "evidence was cleared from an unknown value"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.897,
+    "evidence_score": 0.895,
+    "completeness": 0.75,
+    "format_score": 1.0
+  }
+}

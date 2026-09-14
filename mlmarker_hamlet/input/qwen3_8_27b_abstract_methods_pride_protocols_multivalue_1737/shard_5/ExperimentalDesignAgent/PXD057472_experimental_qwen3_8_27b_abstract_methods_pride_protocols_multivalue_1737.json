@@ -1,0 +1,84 @@
+{
+  "biological_replicate": [
+    {
+      "value": "4",
+      "evidence": "inferred: The biological and technical replicates were assigned accordingly in the \u201cStudy Factors\u201d tab (WT_1, WT_2, WT_3, WT_4, KO_1, KO_2, KO_3, KO_4) and \u201cSamples\u201d tab, respectively in the Proteome Discoverer."
+    }
+  ],
+  "experimental_design": [
+    {
+      "value": "treated vs control",
+      "evidence": "inferred: Proteomic analysis of native MO3.13 cells (WT) and GALC-KO cells (KO) using isobaric tandem mass tags (TMT)"
+    }
+  ],
+  "factor_value": [
+    {
+      "value": "WT vs KO",
+      "evidence": "inferred: Proteomic analysis of native MO3.13 cells (WT) and GALC-KO cells (KO) using isobaric tandem mass tags (TMT)"
+    }
+  ],
+  "number_of_biological_replicates": [
+    {
+      "value": "4",
+      "evidence": "inferred: Non-nested design was used to analyze biological replicates (two technical replicates for each of the 4 biological replicates)."
+    }
+  ],
+  "number_of_fractions": [
+    {
+      "value": "8",
+      "evidence": "The labeled peptides were fractionated using the high-pH reversed-phase spin column (Cat. No.: 84868; Thermo Scientific) into 8 fractions."
+    }
+  ],
+  "number_of_samples": [
+    {
+      "value": "8",
+      "evidence": "inferred: The biological and technical replicates were assigned accordingly in the \u201cStudy Factors\u201d tab (WT_1, WT_2, WT_3, WT_4, KO_1, KO_2, KO_3, KO_4) and \u201cSamples\u201d tab, respectively in the Proteome Discoverer."
+    }
+  ],
+  "number_of_technical_replicates": [
+    {
+      "value": "2",
+      "evidence": "inferred: Non-nested design was used to analyze biological replicates (two technical replicates for each of the 4 biological replicates)."
+    }
+  ],
+  "technical_replicate": [
+    {
+      "value": "2",
+      "evidence": "inferred: The samples were injected twice as technical replicates."
+    }
+  ],
+  "technology_type": [
+    {
+      "value": "bottom-up proteomics",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "experimental_design",
+      "value": "treated vs control",
+      "evidence": "inferred: Proteomic analysis of native MO3.13 cells (WT) and GALC-KO cells (KO) using isobaric tandem mass tags (TMT)",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    },
+    {
+      "field": "factor_value",
+      "value": "WT vs KO",
+      "evidence": "inferred: Proteomic analysis of native MO3.13 cells (WT) and GALC-KO cells (KO) using isobaric tandem mass tags (TMT)",
+      "reason": "comparison claimed without an explicit control or untreated proteomics sample in its evidence"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.917,
+    "evidence_score": 0.833,
+    "completeness": 1.0,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "number_of_fractions[0]",
+      "value": "8",
+      "evidence": "The labeled peptides were fractionated using the high-pH reversed-phase spin column (Cat. No.: 84868; Thermo Scientific) into 8 fractions."
+    }
+  ]
+}

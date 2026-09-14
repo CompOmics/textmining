@@ -1,0 +1,194 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "Precursor ions were measured in data-dependent mode at a resolution of 70,000 and AGC target value of 3 \u00d7 106 ions using a top10 method.",
+      "evidence": "Precursor ions were measured in data-dependent mode at a resolution of 70,000 and AGC target value of 3\u2009\u00d7\u2009106 ions using a top10 method."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Proteins were reduced using 5 mM TCEP in 50 mM TEAB at 37\u00b0C for 20 minutes, and alkylated using 5 mM CAM in TEAB at room temperature in the dark for 20 minutes."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "CAM",
+      "evidence": "Proteins were reduced using 5 mM TCEP in 50 mM TEAB at 37\u00b0C for 20 minutes, and alkylated using 5 mM CAM in TEAB at room temperature in the dark for 20 minutes."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Trypsin",
+      "evidence": "Proteins were digested using Trypsin."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Enzyme specificity was set to trypsin with maximally 2 missed cleavages allowed."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "32",
+      "evidence": "The precursor ions were isolated with 0.7 m/z isolation window and fragmented with a Normalised Collision Energy (NCE) of 32."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "Zr-IMAC HP beads",
+      "evidence": "Phosphopeptide enrichment was performed using Zr-IMAC HP beads (MagReSyn), according to the manufacturer's instructions, with the only exception that TFA was used instead of FA to acidify the sample after elution."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "inferred: The precursor ions were isolated with 0.7 m/z isolation window and fragmented with a Normalised Collision Energy (NCE) of 32."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive",
+      "evidence": "instruments: Orbitrap Exploris 480; Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1001911",
+      "ontology_name": "Q Exactive",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive"
+    },
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480; Q Exactive",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    },
+    {
+      "value": "Q-Exactive Plus",
+      "evidence": "All label-free experiments evaluating lysis and digestion conditions were performed on a Q-Exactive Plus coupled to Easy-nLC 1200.",
+      "is_normalized": true,
+      "ontology_id": "MS:1002634",
+      "ontology_name": "Q Exactive Plus",
+      "similarity": 0.982,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive Plus"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: All experiments with TMTpro zero/TMTpro were analysed in DDA mode on an Orbitrap Exploris 480 interfaced coupled to Easy-nLC 1200 (Thermo Scientific, USA)."
+    },
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: All label-free experiments evaluating lysis and digestion conditions were performed on a Q-Exactive Plus coupled to Easy-nLC 1200."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    },
+    {
+      "value": "TMTpro",
+      "evidence": "For In-solution TMTpro labelling, peptides were labelled with 3\u201324 \u03bcg of TMTpro zero reagent (resuspended in acetonitrile) for 1 hour at room temperature."
+    },
+    {
+      "value": "label-free",
+      "evidence": "inferred: All label-free experiments evaluating lysis and digestion conditions were performed on a Q-Exactive Plus coupled to Easy-nLC 1200."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Exploris 480; Q Exactive"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: phosphorylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "Oxidation (M)",
+      "evidence": "For LFQ data, Oxidation (M), Carbamidomethyl (C) and Acetylation (protein N-term) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 0.925,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "Carbamidomethyl (C)",
+      "evidence": "For LFQ data, Oxidation (M), Carbamidomethyl (C) and Acetylation (protein N-term) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.965,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "carbamidomethylc"
+    },
+    {
+      "value": "Acetylation (protein N-term)",
+      "evidence": "For LFQ data, Oxidation (M), Carbamidomethyl (C) and Acetylation (protein N-term) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.902,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "Phosphorylation (S, T, Y)",
+      "evidence": "For TMT-pro zero data with phosphopeptide enrichment, TMTpro zero (K), TMTpro zero (peptide N-term), TMTpro zero (H), Phosphorylation (S, T, Y), Oxidation (M) and Acetylation (protein N-term) were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00046",
+      "ontology_name": "O-phospho-L-serine",
+      "similarity": 0.916,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "phosphorylations"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Proteins were reduced using 5 mM TCEP in 50 mM TEAB at 37\u00b0C for 20 minutes, and alkylated using 5 mM CAM in TEAB at room temperature in the dark for 20 minutes."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "TCEP",
+      "evidence": "Proteins were reduced using 5 mM TCEP in 50 mM TEAB at 37\u00b0C for 20 minutes, and alkylated using 5 mM CAM in TEAB at room temperature in the dark for 20 minutes."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.953,
+    "evidence_score": 0.92,
+    "completeness": 0.963,
+    "format_score": 1.0
+  }
+}

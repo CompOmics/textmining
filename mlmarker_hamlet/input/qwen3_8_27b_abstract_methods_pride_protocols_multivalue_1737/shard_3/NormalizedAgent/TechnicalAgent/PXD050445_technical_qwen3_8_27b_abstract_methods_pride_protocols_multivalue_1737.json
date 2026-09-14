@@ -1,0 +1,204 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "10mM",
+      "evidence": "followed by alkylation of cysteines by the addition of 10mM IAA for 30min in the dark"
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "followed by alkylation of cysteines by the addition of 10mM IAA for 30min in the dark"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "LysC",
+      "evidence": "with 1\u03bcg each of LysC (Wako 129-02541) and trypsin (Pierce 90305)"
+    },
+    {
+      "value": "trypsin",
+      "evidence": "with 1\u03bcg each of LysC (Wako 129-02541) and trypsin (Pierce 90305)"
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "NCE (normalized collision energy) of 36",
+      "evidence": "NCE (normalized collision energy) of 36, q-value 0.25, maximum injection time 200 ms, and isolation window of 0.5 Da using a Top10 method."
+    },
+    {
+      "value": "NCE 35",
+      "evidence": "NCE 35, q-value 0.25, maximum injection time 35 ms, and isolation window of 0.7 Da using a Top10 method."
+    },
+    {
+      "value": "NCE of 65%",
+      "evidence": "NCE of 65%, maximum injection time of 100 ms, and AGC of 1.5e5."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "IMAC",
+      "evidence": "Phosphopeptides were enriched using a Fe-NTA spin column (Thermo A32992)"
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "bRP",
+      "evidence": "fractionated using basic pH reversed phase chromatography"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "MS2 scans consisted of HCD fragmentation, orbitrap analysis"
+    },
+    {
+      "value": "CID",
+      "evidence": "MS2 scans consisted of collision-induced dissociation (CID), quadrupole ion trap analysis"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "coupled to a nanoEASY-nLC 1200 LC pump"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Fusion Lumos"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; deaminated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; deaminated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "deaminated residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; deaminated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:01160",
+      "ontology_name": "deaminated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "deaminated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; phosphorylated residue; deaminated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "TMTpro and carbamidomethylation of cysteine were set as static modifications",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "while methionine oxidation, asparagine/glutamine deamidation, and serine/threonine/tyrosine phosphorylation (for phosphopeptide enriched runs) as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "asparagine/glutamine deamidation",
+      "evidence": "while methionine oxidation, asparagine/glutamine deamidation, and serine/threonine/tyrosine phosphorylation (for phosphopeptide enriched runs) as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 0.93,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation of Asparagine and Glutamine to Aspartate and Glutamate"
+    },
+    {
+      "value": "serine/threonine/tyrosine phosphorylation",
+      "evidence": "while methionine oxidation, asparagine/glutamine deamidation, and serine/threonine/tyrosine phosphorylation (for phosphopeptide enriched runs) as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 0.784,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Phosphorylation (O of Serine, Threonine, Tyrosine and Aspartate, N epsilon of Lysine)"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10mM",
+      "evidence": "quenching with 10mM DTT for 10min"
+    },
+    {
+      "value": "10mM",
+      "evidence": "PISA preparation buffer (400mM EPPS, 1% SDS, 10mM TCEP)"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "quenching with 10mM DTT for 10min"
+    },
+    {
+      "value": "TCEP",
+      "evidence": "PISA preparation buffer (400mM EPPS, 1% SDS, 10mM TCEP)"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.952,
+    "evidence_score": 0.904,
+    "completeness": 1.0,
+    "format_score": 1.0
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DIA",
+      "evidence": "DIA was performed using an MS1 full scan (380 m/z to 980 m/z) followed by 200 sequential DIA windows with a 3 m/z without overlap."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "50 mM",
+      "evidence": "The proteins were then alkylated with 50 mM iodoacetamide (Thermo Fischer Scientific) for 5 min at room temperature and washed twice in 100 mM Tris\u2013HCl, 8 M urea pH 8.0 at 14,000g for 30 min."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "The proteins were then alkylated with 50 mM iodoacetamide (Thermo Fischer Scientific) for 5 min at room temperature and washed twice in 100 mM Tris\u2013HCl, 8 M urea pH 8.0 at 14,000g for 30 min."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "LysC",
+      "evidence": "Next, proteins were digested overnight with 0.2 \u03bcg LysC (Promega) in 25 mM Tris\u2013HCl, 2 M urea pH 8.0, followed by digestion with 0.1 \u03bcg trypsin (Promega) in 50 mM ammonium bicarbonate for 4 h."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Next, proteins were digested overnight with 0.2 \u03bcg LysC (Promega) in 25 mM Tris\u2013HCl, 2 M urea pH 8.0, followed by digestion with 0.1 \u03bcg trypsin (Promega) in 50 mM ammonium bicarbonate for 4 h."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "25%",
+      "evidence": "Scan range (m/z) was set at 100 to 1000 and higher energy collision dissociation collision energy set at 25%."
+    },
+    {
+      "value": "30%",
+      "evidence": "Collision induced dissociation fragmentation was achieved with 30% normalized HCD collision energy."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "Scan range (m/z) was set at 100 to 1000 and higher energy collision dissociation collision energy set at 25%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Astral",
+      "evidence": "instruments: Orbitrap Astral",
+      "is_normalized": true,
+      "ontology_id": "MS:1003378",
+      "ontology_name": "Orbitrap Astral",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Astral"
+    },
+    {
+      "value": "Astral",
+      "evidence": "Peptides from each sample were separated by HPLC, ionized through electrospray ionization and analyzed using a Vanquish Neo coupled online with an Astral mass spectrometer.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003379",
+      "ontology_name": "asymmetric track lossless time-of-flight analyzer",
+      "similarity": 1.0,
+      "normalization_method": "exact_synonym",
+      "normalization_matched_text": "Astral",
+      "synonym_scope": "EXACT"
+    },
+    {
+      "value": "Exploris 480",
+      "evidence": "however, unlike the discovery cohort, they were analyzed using an Exploris 480 mass spectrometer.",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 0.785,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "electrospray ionization",
+      "evidence": "Peptides from each sample were separated by HPLC, ionized through electrospray ionization and analyzed using a Vanquish Neo coupled online with an Astral mass spectrometer."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free quantification",
+      "evidence": "quantification: label-free quantification"
+    },
+    {
+      "value": "LFQ",
+      "evidence": "Protein identification and LFQ were performed using DIA, and raw spectra were processed with the DIA-NN software."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Astral"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    },
+    {
+      "value": "cysteine carbamidomethylation",
+      "evidence": "N-terminal methionine excision and cysteine carbamidomethylation were enabled as fixed modifications, while methionine oxidation and N-terminal acetylation were enabled as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "methionine oxidation",
+      "evidence": "N-terminal methionine excision and cysteine carbamidomethylation were enabled as fixed modifications, while methionine oxidation and N-terminal acetylation were enabled as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "N-terminal methionine excision and cysteine carbamidomethylation were enabled as fixed modifications, while methionine oxidation and N-terminal acetylation were enabled as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "20 mM",
+      "evidence": "Briefly, 10 \u03bcg of proteins were reduced by the addition of 20 mM DTT (Thermo Fischer Scientific) in 100 mM Tris\u2013HCl, 8 M urea pH 8.5 for 30 min at 37 \u00b0C."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Briefly, 10 \u03bcg of proteins were reduced by the addition of 20 mM DTT (Thermo Fischer Scientific) in 100 mM Tris\u2013HCl, 8 M urea pH 8.5 for 30 min at 37 \u00b0C."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.976,
+    "evidence_score": 0.987,
+    "completeness": 0.913,
+    "format_score": 1.0
+  }
+}

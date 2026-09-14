@@ -1,0 +1,149 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    },
+    {
+      "value": "data-dependent acquisition",
+      "evidence": "Data acquisition was performed in top speed data-dependent acquisition (DDA) mode with a cycle time of 3 s."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "inferred: fixed protein modification, carbamidomethyl [C, +57.022 Da]"
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "trypsin was selected as the enzyme to cleave C-term of arginine (Arg, R) and lysine (Lys, K);"
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "20%, 30% and 40%",
+      "evidence": "the precursors with 2-6 charges were dissociated by stepped HCD collision energy of 20%, 30% and 40%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "HILIC",
+      "evidence": "A fully automated HILIC-based enrichment and separation system for glycopeptide (AutoGP), which needs no sample collection, was developed in this study."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "the precursors with 2-6 charges were dissociated by stepped HCD collision energy of 20%, 30% and 40%."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Eclipse",
+      "evidence": "instruments: Orbitrap Eclipse",
+      "is_normalized": true,
+      "ontology_id": "MS:1003029",
+      "ontology_name": "Orbitrap Eclipse",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Eclipse"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: electrospray voltage 2.1 kV"
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: no quantification method or labeling strategy is stated in the manuscript text or PRIDE properties."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Orbitrap Eclipse"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethyl [C, +57.022 Da]",
+      "evidence": "fixed protein modification, carbamidomethyl [C, +57.022 Da];",
+      "is_normalized": true,
+      "ontology_id": "MOD:01215",
+      "ontology_name": "iodoacetamide derivatized aspartic acid",
+      "similarity": 0.799,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "carbamidomethyld"
+    },
+    {
+      "value": "oxidation [M, +15.995 Da]",
+      "evidence": "variable protein modification, oxidation [M, +15.995 Da], acetyl [ProteinN-term, +42.011 Da];",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "methionine oxidation with neutral loss of 80 Da",
+      "normalization_candidate_ids": [
+        "MOD:00768",
+        "MOD:00935",
+        "MOD:01293",
+        "MOD:00791",
+        "MOD:00675"
+      ]
+    },
+    {
+      "value": "acetyl [ProteinN-term, +42.011 Da]",
+      "evidence": "variable protein modification, oxidation [M, +15.995 Da], acetyl [ProteinN-term, +42.011 Da];",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-acetyl-L-leucine",
+      "normalization_candidate_ids": [
+        "MOD:00782",
+        "MOD:00061",
+        "MOD:00050",
+        "MOD:00369"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_evidence_grounding_flags": [
+    {
+      "field": "labeling",
+      "value": "label-free",
+      "evidence": "inferred: no quantification method or labeling strategy is stated in the manuscript text or PRIDE properties.",
+      "reason": "evidence could not be grounded to an exact source span"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.889,
+    "evidence_score": 0.867,
+    "completeness": 0.778,
+    "format_score": 1.0
+  }
+}

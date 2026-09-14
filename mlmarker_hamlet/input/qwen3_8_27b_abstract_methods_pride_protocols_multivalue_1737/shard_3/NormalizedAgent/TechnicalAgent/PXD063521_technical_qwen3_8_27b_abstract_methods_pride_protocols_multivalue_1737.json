@@ -1,0 +1,160 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "experiment types: Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "15 mM",
+      "evidence": "1 \u00b5L of elute were reduced in 10 mM dithiothreitol (DTT) for 10 min at 70 \u2103 and then alkylated with 15 mM iodoacetamide (IAA) for 15 min at room temperature."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "1 \u00b5L of elute were reduced in 10 mM dithiothreitol (DTT) for 10 min at 70 \u2103 and then alkylated with 15 mM iodoacetamide (IAA) for 15 min at room temperature."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Trypsin Gold",
+      "evidence": "The magnetic beads were subjected to enzymatic digestion in 100 \u00b5L of 5 ng/\u00b5L Trypsin Gold (Promega) in 50 mM triethylammonium bicarbonate (TEAB) for 3.5 h at 37 \u2103 and rinsed out with 100 \u00b5L of pure water."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30",
+      "evidence": "The most intense ions (cycle time 3 s) were selected for MS/MS fragmentation with the HCD of 30, isolation window at 1.6 m/z and maximum injection time at 22 ms in the centroid mode."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The most intense ions (cycle time 3 s) were selected for MS/MS fragmentation with the HCD of 30, isolation window at 1.6 m/z and maximum injection time at 22 ms in the centroid mode."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: Desalted tryptic digests were analyzed by Evosep One (Evosep) coupled to an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: To identify targets of UFD1-NBM, the results of three individual samples were assembled into one multi-consensus report using Proteome Discoverer software."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: Orbitrap Fusion Lumos"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Methionine oxidation",
+      "evidence": "Methionine oxidation, protein amino-terminal acety-lation, diglycyl-Lys, and Gln/Asn deamidation were set as variable modifications, and Cys carbamidomethylation modification was set as a static modification for database searching.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.918,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "protein amino-terminal acety-lation",
+      "evidence": "Methionine oxidation, protein amino-terminal acety-lation, diglycyl-Lys, and Gln/Asn deamidation were set as variable modifications, and Cys carbamidomethylation modification was set as a static modification for database searching.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00061",
+      "ontology_name": "N-acetyl-L-threonine",
+      "similarity": 0.719,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-acetylated L-threonine"
+    },
+    {
+      "value": "diglycyl-Lys",
+      "evidence": "Methionine oxidation, protein amino-terminal acety-lation, diglycyl-Lys, and Gln/Asn deamidation were set as variable modifications, and Cys carbamidomethylation modification was set as a static modification for database searching.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01608",
+      "ontology_name": "N2-(L-isoglutamyl)-L-lysine",
+      "similarity": 0.77,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "gamma-glutamyl N2-lysine"
+    },
+    {
+      "value": "Gln/Asn deamidation",
+      "evidence": "Methionine oxidation, protein amino-terminal acety-lation, diglycyl-Lys, and Gln/Asn deamidation were set as variable modifications, and Cys carbamidomethylation modification was set as a static modification for database searching.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 0.873,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Deamidation of Asparagine and Glutamine to Aspartate and Glutamate"
+    },
+    {
+      "value": "Cys carbamidomethylation",
+      "evidence": "Methionine oxidation, protein amino-terminal acety-lation, diglycyl-Lys, and Gln/Asn deamidation were set as variable modifications, and Cys carbamidomethylation modification was set as a static modification for database searching.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01084",
+      "ontology_name": "iodoacetic acid derivatized amino-terminal residue",
+      "similarity": 0.817,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carboxymethyl (on Cysteine)"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "1 \u00b5L of elute were reduced in 10 mM dithiothreitol (DTT) for 10 min at 70 \u2103 and then alkylated with 15 mM iodoacetamide (IAA) for 15 min at room temperature."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "1 \u00b5L of elute were reduced in 10 mM dithiothreitol (DTT) for 10 min at 70 \u2103 and then alkylated with 15 mM iodoacetamide (IAA) for 15 min at room temperature."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.932,
+    "evidence_score": 0.905,
+    "completeness": 0.9,
+    "format_score": 1.0
+  }
+}

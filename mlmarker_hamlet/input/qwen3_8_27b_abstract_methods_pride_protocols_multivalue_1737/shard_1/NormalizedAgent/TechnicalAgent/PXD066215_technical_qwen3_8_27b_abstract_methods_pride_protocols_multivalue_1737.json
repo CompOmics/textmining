@@ -1,0 +1,164 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DDA",
+      "evidence": "The mass spectrometers were operated in data-dependent acquisition mode (DDA)."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "25 mM",
+      "evidence": "Disulfide bonds were reduced with 10 mM dithiothreitol for 30 min at room temperature before adding 25 mM iodoacetamide and incubating for another 30 min at room temperature in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Disulfide bonds were reduced with 10 mM dithiothreitol for 30 min at room temperature before adding 25 mM iodoacetamide and incubating for another 30 min at room temperature in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Remaining iodoacetamide was quenched by adding 5 mM DTT and the proteins were digested with 150 ng trypsin (Trypsin Gold, Promega) at room temperature for 2 hours."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27%",
+      "evidence": "The 10 most intense ions were selected with an isolation width of 2.0 m/z, for max. 250 ms at a target value of 1E5 and then fragmented in the HCD cell at 27% collision energy."
+    },
+    {
+      "value": "28%",
+      "evidence": "Precursors of charge 2+ to 6+ were isolated in a 1 m/z window, with a maximum injection time of 100 ms for an AGC target of 100%, and subsequently fragmented applying a normalized collision energy of 28%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "anti-GFP magnetic beads",
+      "evidence": "2mg of protein extract were subjected to immunoprecipitation using anti-GFP magnetic beads ."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The 10 most intense ions were selected with an isolation width of 2.0 m/z, for max. 250 ms at a target value of 1E5 and then fragmented in the HCD cell at 27% collision energy."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Exploris 480",
+      "evidence": "instruments: Orbitrap Exploris 480; Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1003028",
+      "ontology_name": "Orbitrap Exploris 480",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Exploris 480"
+    },
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Orbitrap Exploris 480; Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "Eluting peptides were analyzed on a Q Exactive HF-X Orbitrap mass spectrometer coupled to the LC via the Proxeon nanospray source, respectively on an Orbitrap Exploris 480 with the FAIMS Pro interface coupled to the LC via the Nanospray Flex ion source (all Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "For label-free quantification the \u201cmatch between runs\u201d feature and the LFQ function were activated - all other parameters were left at default."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Exploris 480; Q Exactive HF"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "phosphorylated residue",
+      "evidence": "modifications: phosphorylated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00696",
+      "ontology_name": "phosphorylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "phosphorylated residue"
+    },
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Carbamidomethylation of cysteine residues were set as fixed, oxidation of methionine, phosphorylation of serine, threonine and tyrosine, and N-terminal acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "Carbamidomethylation of cysteine residues were set as fixed, oxidation of methionine, phosphorylation of serine, threonine and tyrosine, and N-terminal acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "phosphorylation",
+      "evidence": "Carbamidomethylation of cysteine residues were set as fixed, oxidation of methionine, phosphorylation of serine, threonine and tyrosine, and N-terminal acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:21",
+      "ontology_name": "Phospho",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Phospho"
+    },
+    {
+      "value": "N-terminal acetylation",
+      "evidence": "Carbamidomethylation of cysteine residues were set as fixed, oxidation of methionine, phosphorylation of serine, threonine and tyrosine, and N-terminal acetylation as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.929,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Disulfide bonds were reduced with 10 mM dithiothreitol for 30 min at room temperature before adding 25 mM iodoacetamide and incubating for another 30 min at room temperature in the dark."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "Disulfide bonds were reduced with 10 mM dithiothreitol for 30 min at room temperature before adding 25 mM iodoacetamide and incubating for another 30 min at room temperature in the dark."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.971,
+    "evidence_score": 0.962,
+    "completeness": 0.952,
+    "format_score": 1.0
+  }
+}

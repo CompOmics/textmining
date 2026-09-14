@@ -1,0 +1,172 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DIA",
+      "evidence": "Analysis was performed in SWATH DIA (data-independent acquisitions) mode, in positive ESI mode."
+    },
+    {
+      "value": "Shotgun proteomics",
+      "evidence": "experiment types: Shotgun proteomics"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "100 mM",
+      "evidence": "For the alkylation of cysteine residues, 30 \u00b5L of 100 mM iodoacetamide (in 50 mM NH4HCO3, pH 8) were added and the samples were incubated at RT for 20 min in the dark."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "For the alkylation of cysteine residues, 30 \u00b5L of 100 mM iodoacetamide (in 50 mM NH4HCO3, pH 8) were added and the samples were incubated at RT for 20 min in the dark."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "After vortexing for 1 h at RT, 2 \u00b5L of trypsin (0.5 \u00b5g/\u00b5L) were added."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "35",
+      "evidence": "Activation type: CID \u2014CID collision energy (%): 35\u2014Activation Q: 0.25"
+    },
+    {
+      "value": "65",
+      "evidence": "Activation type: HCD \u2014Collision energy (%): 65\u2014Detector type: Orbitrap"
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "high-pH",
+      "evidence": "Dried TMT-labelled peptides were resuspended in 1.8 mL of 0.1% TFA (trifluoroacetic acid) and half the solution was pre-fractionated using the Pierce High pH Reversed-Phase Peptide Fractionation Kit (Thermo Fisher Scientific)"
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "CID",
+      "evidence": "Activation type: CID \u2014CID collision energy (%): 35\u2014Activation Q: 0.25"
+    },
+    {
+      "value": "HCD",
+      "evidence": "Activation type: HCD \u2014Collision energy (%): 65\u2014Detector type: Orbitrap"
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Eclipse",
+      "evidence": "instruments: Orbitrap Eclipse",
+      "is_normalized": true,
+      "ontology_id": "MS:1003029",
+      "ontology_name": "Orbitrap Eclipse",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Eclipse"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "All MS runs were performed on an Orbitrap Eclipse Tribrid Mass Spectrometer coupled to a Dionex Ultimate TM 3000 RSLnano system (Thermo Fisher Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "instruments: Orbitrap Eclipse"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "Static modification: carbamidomethylation on cysteine and TMT-10plex on lysine and peptide N terminus",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "variable modifications: oxidation of methionine",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "TMT-10plex",
+      "evidence": "Static modification: carbamidomethylation on cysteine and TMT-10plex on lysine and peptide N terminus",
+      "is_normalized": true,
+      "ontology_id": "MOD:01720",
+      "ontology_name": "TMT6plex-126 reporter+balance reagent acylated residue",
+      "similarity": 0.813,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "TMT6plex"
+    },
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "deamidated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue; deamidated residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00400",
+      "ontology_name": "deamidated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "deamidated residue"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "100 mM",
+      "evidence": "ide bonds were reduced with 10 \u00b5L of 100 mM dithiothreitol (in 50 mM NH4HCO3, pH 8) for 30 min at 56 \u00b0C."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "dithiothreitol",
+      "evidence": "ide bonds were reduced with 10 \u00b5L of 100 mM dithiothreitol (in 50 mM NH4HCO3, pH 8) for 30 min at 56 \u00b0C."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.957,
+    "evidence_score": 0.93,
+    "completeness": 0.957,
+    "format_score": 1.0
+  }
+}

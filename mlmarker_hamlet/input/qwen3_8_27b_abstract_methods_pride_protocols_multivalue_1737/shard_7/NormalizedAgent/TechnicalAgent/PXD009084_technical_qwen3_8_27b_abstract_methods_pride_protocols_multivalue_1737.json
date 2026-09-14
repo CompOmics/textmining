@@ -1,0 +1,162 @@
+{
+  "acquisition_method": [
+    {
+      "value": "SWATH MS",
+      "evidence": "experiment types: SWATH MS"
+    },
+    {
+      "value": "Data Dependent Acquisition (DDA)",
+      "evidence": "and measured in Data Dependent Acquisition (DDA) mode."
+    },
+    {
+      "value": "Data Independent Acquisition (DIA)",
+      "evidence": "For the Data Independent Acquisition (DIA) data the same gradient conditions were applied to the LC as for the DDA and the MS conditions were varied as follows:"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "200 mM",
+      "evidence": "Reduction was performed with 2.9 \u03bcL DTT (200 mM) for 15 min at 45\u00b0C before alkylation with 200 mM IAA (5 \u03bcL, 30 minutes, room temperature, in the dark)."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "IAA",
+      "evidence": "Reduction was performed with 2.9 \u03bcL DTT (200 mM) for 15 min at 45\u00b0C before alkylation with 200 mM IAA (5 \u03bcL, 30 minutes, room temperature, in the dark)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "LysC",
+      "evidence": "The pellets were then allowed to air-dry before being dissolved in digestion buffer (50 \u03bcL, 3M urea in 0.1 M HEPES, pH 8) containing 0.1 \u03bcg of LysC (Wako), and incubated for 4 h at 37\u00b0C with shaking at 600 rpm."
+    },
+    {
+      "value": "trypsin",
+      "evidence": "Then the samples were diluted 1:1 with milliQ water (to reach 1.5 M urea) and incubated with 0.1 \u03bcg trypsin (Promega) for 16 h at 37 \u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30%",
+      "evidence": "from the full scan MS for fragmentation (using HCD collision energy, 30%) and quadrupole isolation (1.4 Da window) and measurement in the Orbitrap (resolution 15000, fixed first mass 120 m/z), with a cycle time of 3 seconds."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "from the full scan MS for fragmentation (using HCD collision energy, 30%) and quadrupole isolation (1.4 Da window) and measurement in the Orbitrap (resolution 15000, fixed first mass 120 m/z), with a cycle time of 3 seconds."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Fusion Lumos",
+      "evidence": "instruments: Orbitrap Fusion Lumos",
+      "is_normalized": true,
+      "ontology_id": "MS:1002732",
+      "ontology_name": "Orbitrap Fusion Lumos",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Fusion Lumos"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "nanoESI",
+      "evidence": "inferred: The outlet of the analytical column was coupled directly to an Orbitrap Fusion Lumos (Thermo Fisher Scientific) using the Proxeon nanospray source."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Precursor matching, protein inference and quantification was performed in Spectronaut (version 11) using default settings(44)."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: The outlet of the analytical column was coupled directly to an Orbitrap Fusion Lumos (Thermo Fisher Scientific) using the Proxeon nanospray source."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "Carbamidomethyl (C)",
+      "evidence": "The data were searched with the Biognosys default settings with the following modifications: Carbamidomethyl (C) and Oxidation (M)/ Acetyl (Protein N-term) (Variable).",
+      "is_normalized": true,
+      "ontology_id": "MOD:01060",
+      "ontology_name": "S-carboxamidomethyl-L-cysteine",
+      "similarity": 0.965,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "carbamidomethylc"
+    },
+    {
+      "value": "Oxidation (M)",
+      "evidence": "The data were searched with the Biognosys default settings with the following modifications: Carbamidomethyl (C) and Oxidation (M)/ Acetyl (Protein N-term) (Variable).",
+      "is_normalized": true,
+      "ontology_id": "MOD:02116",
+      "ontology_name": "monohydroxylated phenylalanine",
+      "similarity": 0.925,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "Acetyl (Protein N-term)",
+      "evidence": "The data were searched with the Biognosys default settings with the following modifications: Carbamidomethyl (C) and Oxidation (M)/ Acetyl (Protein N-term) (Variable).",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.796,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetyl"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "200 mM",
+      "evidence": "Reduction was performed with 2.9 \u03bcL DTT (200 mM) for 15 min at 45\u00b0C before alkylation with 200 mM IAA (5 \u03bcL, 30 minutes, room temperature, in the dark)."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Reduction was performed with 2.9 \u03bcL DTT (200 mM) for 15 min at 45\u00b0C before alkylation with 200 mM IAA (5 \u03bcL, 30 minutes, room temperature, in the dark)."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.957,
+    "evidence_score": 0.95,
+    "completeness": 0.909,
+    "format_score": 1.0
+  }
+}

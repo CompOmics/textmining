@@ -1,0 +1,168 @@
+{
+  "acquisition_method": [
+    {
+      "value": "Data-dependent acquisition",
+      "evidence": "experiment types: Bottom-up proteomics; Data-dependent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "LysC/trypsin",
+      "evidence": "Proteins in rhabdoid cells were extracted and digested with LysC/trypsin."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "PTMScan\u00ae HS Ubiquitin/SUMO Remnant Motif (K-GG) Kit",
+      "evidence": "The di-GG peptides were enriched by PTMScan\u00ae HS Ubiquitin/SUMO Remnant Motif (K-GG) Kit followed by 18-plex tandem-mass-tag (TMT) labeling."
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "basic pH conditions",
+      "evidence": "The TMT labeled peptides were pooled with an equal amount of each the pooled samples were desalted and fractionated into 40 fractions for whole proteome analysis and 12 fractions for ubiquitinome analysis under basic pH conditions."
+    },
+    {
+      "value": "reverse phase columns (20 cm X 75 \u00b5m, 1.9 \u03bcm C18 resin)",
+      "evidence": "Each fraction was further separated on a reverse phase columns (20 cm X 75 \u00b5m, 1.9 \u03bcm C18 resin) during a 1.5h to 2.5 h gradient and analyzed by Q exactive HF (Thermo Scientific) with one MS scan and up to 20 data-dependent high-resolution MS/MS scans."
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "TMT",
+      "evidence": "quantification: TMT"
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: instruments: Q Exactive HF"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "monohydroxylated residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00425",
+      "ontology_name": "monohydroxylated residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "monohydroxylated residue"
+    },
+    {
+      "value": "iodoacetamide derivatized residue",
+      "evidence": "modifications: monohydroxylated residue; iodoacetamide derivatized residue",
+      "is_normalized": true,
+      "ontology_id": "MOD:00397",
+      "ontology_name": "iodoacetamide derivatized residue",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "iodoacetamide derivatized residue"
+    },
+    {
+      "value": "cysteine residues (+57.021 Da)",
+      "evidence": "TMT tags on lysine residues and peptide N termini (+304.2071\u2009Da), cysteine residues (+57.021\u2009Da) and dynamic mass shift for oxidation (+15.99491 on Met), dynamic mass shift for di-GG (+114.04293 Da on Lys) and three maximal dynamic modification sites.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00014",
+      "ontology_name": "L-cysteine residue",
+      "similarity": 0.702,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "L-cysteine residue"
+    },
+    {
+      "value": "oxidation (+15.99491 on Met)",
+      "evidence": "TMT tags on lysine residues and peptide N termini (+304.2071\u2009Da), cysteine residues (+57.021\u2009Da) and dynamic mass shift for oxidation (+15.99491 on Met), dynamic mass shift for di-GG (+114.04293 Da on Lys) and three maximal dynamic modification sites.",
+      "is_normalized": true,
+      "ontology_id": "MOD:00768",
+      "ontology_name": "methionine oxidation with neutral loss of 80 Da",
+      "similarity": 0.72,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "methionine oxidation with neutral loss of 80 Da"
+    },
+    {
+      "value": "di-GG (+114.04293 Da on Lys)",
+      "evidence": "TMT tags on lysine residues and peptide N termini (+304.2071\u2009Da), cysteine residues (+57.021\u2009Da) and dynamic mass shift for oxidation (+15.99491 on Met), dynamic mass shift for di-GG (+114.04293 Da on Lys) and three maximal dynamic modification sites.",
+      "is_normalized": true,
+      "ontology_id": "MOD:01589",
+      "ontology_name": "O-(2,4-diacetamido-2,4-dideoxyglucosyl)-L-serine",
+      "similarity": 0.709,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "DADDGlc"
+    },
+    {
+      "value": "TMT tags on lysine residues and peptide N termini (+304.2071 Da)",
+      "evidence": "TMT tags on lysine residues and peptide N termini (+304.2071\u2009Da), cysteine residues (+57.021\u2009Da) and dynamic mass shift for oxidation (+15.99491 on Met), dynamic mass shift for di-GG (+114.04293 Da on Lys) and three maximal dynamic modification sites.",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "TMT6plex-127 reporter+balance reagent acylated residue",
+      "normalization_candidate_ids": [
+        "MOD:01728",
+        "MOD:01729",
+        "MOD:01762",
+        "MOD:01730",
+        "MOD:01508"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "_confidence": {
+    "overall": 0.883,
+    "evidence_score": 0.9,
+    "completeness": 0.667,
+    "format_score": 1.0
+  }
+}

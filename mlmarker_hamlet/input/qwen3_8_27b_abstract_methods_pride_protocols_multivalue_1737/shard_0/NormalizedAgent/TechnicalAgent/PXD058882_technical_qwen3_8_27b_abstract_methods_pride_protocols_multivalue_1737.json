@@ -1,0 +1,166 @@
+{
+  "acquisition_method": [
+    {
+      "value": "DIA",
+      "evidence": "Data\u2010Independent Acquisition (DIA) Mass Spectrometry (MS)"
+    },
+    {
+      "value": "Data-independent acquisition",
+      "evidence": "experiment types: Data-independent acquisition"
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "Methyl methanethiosulfonate",
+      "evidence": "and alkylated using Methyl methanethiosulfonate (final concentration 20\u00a0mM)."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "Sequencing Grade Modified Trypsin",
+      "evidence": "proteins were digested with Sequencing Grade Modified Trypsin (Promega) at a ratio of 1:10 (w/w) trypsin:protein for 2 h at 47\u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "30%",
+      "evidence": "The normalised collision energy was set at 30%."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Orbitrap Ascend",
+      "evidence": "tandem mass spectrometry (MS/MS) was carried out using an Orbitrap Ascend mass spectrometer (Thermo Fisher Scientific)",
+      "is_normalized": true,
+      "ontology_id": "MS:1003356",
+      "ontology_name": "Orbitrap Ascend",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Orbitrap Ascend"
+    },
+    {
+      "value": "LTQ Orbitrap Elite",
+      "evidence": "instruments: LTQ Orbitrap Elite",
+      "is_normalized": true,
+      "ontology_id": "MS:1001910",
+      "ontology_name": "Orbitrap Elite",
+      "similarity": 1.0,
+      "normalization_method": "exact_synonym",
+      "normalization_matched_text": "LTQ Orbitrap Elite",
+      "synonym_scope": "EXACT"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Label-free proteomics identified 4137 proteins with high confidence."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: tandem mass spectrometry (MS/MS) was carried out using an Orbitrap Ascend mass spectrometer (Thermo Fisher Scientific)"
+    }
+  ],
+  "ptm": [
+    {
+      "value": "Carbamidomethyl (Cys)",
+      "evidence": "Carbamidomethyl (Cys) was defined as the fixed modification",
+      "is_normalized": true,
+      "ontology_id": "MOD:01216",
+      "ontology_name": "iodoacetamide derivatized glutamic acid",
+      "similarity": 0.894,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "acetylation (protein N\u2010term)",
+      "evidence": "while acetylation (protein N\u2010term) and oxidation (Met) were defined as variable modifications",
+      "is_normalized": true,
+      "ontology_id": "MOD:00408",
+      "ontology_name": "mono N-acetylated residue",
+      "similarity": 0.906,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "N-Acetylation"
+    },
+    {
+      "value": "oxidation (Met)",
+      "evidence": "while acetylation (protein N\u2010term) and oxidation (Met) were defined as variable modifications",
+      "is_normalized": true,
+      "ontology_id": "MOD:00256",
+      "ontology_name": "L-methionine sulfone",
+      "similarity": 0.766,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Oxidation of Methionine (to Sulphone)"
+    },
+    {
+      "value": "No PTMs are included in the dataset",
+      "evidence": "modifications: No PTMs are included in the dataset",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "modified residue with neutral loss of phosphate",
+      "normalization_candidate_ids": [
+        "MOD:00432",
+        "MOD:00431",
+        "MOD:00444",
+        "MOD:00957"
+      ]
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "5 mM",
+      "evidence": "Disulphide bonds of the proteins were reduced using tris\u2010(2\u2010carboxyethyl)phosphine (final concentration 5\u00a0mM) (Thermo Fisher Scientific)"
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "tris\u2010(2\u2010carboxyethyl)phosphine",
+      "evidence": "Disulphide bonds of the proteins were reduced using tris\u2010(2\u2010carboxyethyl)phosphine (final concentration 5\u00a0mM) (Thermo Fisher Scientific)"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.925,
+    "evidence_score": 0.95,
+    "completeness": 0.75,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration[0]",
+      "value": "5 mM",
+      "evidence": "Disulphide bonds of the proteins were reduced using tris\u2010(2\u2010carboxyethyl)phosphine (final concentration 5\u00a0mM) (Thermo Fisher Scientific)"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "BMI": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "age": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "anatomic_site_tumor": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "cell_line": [
+    {
+      "value": "MDA-MB-231",
+      "evidence": "1. Cellular Thermal Shift Assay (CETSA): MDA-MB-231 cells were treated for 6h with DMSO or SU212 and incubated at different temperatures and protein differences in the soluble fractions were determined.",
+      "is_normalized": true,
+      "ontology_id": "CLO:0007634",
+      "ontology_name": "MDA-MB-231 cell",
+      "similarity": 0.951,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "MDA-MB-231 cell"
+    },
+    {
+      "value": "MDA-MB-468",
+      "evidence": "2. Quantitative Proteomics: MDA-MB-231, MDA-MB-468, and BT549 cells were treated with DMSO (vehicle control) or SU212 (novel small molecule drug candidate).",
+      "is_normalized": true,
+      "ontology_id": "CLO:0007641",
+      "ontology_name": "MDA-MB-468 cell",
+      "similarity": 0.936,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "MDA-MB-468 cell"
+    },
+    {
+      "value": "BT549",
+      "evidence": "2. Quantitative Proteomics: MDA-MB-231, MDA-MB-468, and BT549 cells were treated with DMSO (vehicle control) or SU212 (novel small molecule drug candidate).",
+      "is_normalized": false,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "BT-549 cell",
+      "normalization_candidate_ids": [
+        "CLO:0002044",
+        "CLO:0002042",
+        "CLO:0007544",
+        "CLO:0037291",
+        "CLO:0007640"
+      ]
+    }
+  ],
+  "cell_type": [
+    {
+      "value": "epithelial cell",
+      "evidence": "inferred: 2. Quantitative Proteomics: MDA-MB-231, MDA-MB-468, and BT549 cells were treated with DMSO (vehicle control) or SU212 (novel small molecule drug candidate).",
+      "is_normalized": true,
+      "ontology_id": "CL:0000066",
+      "ontology_name": "epithelial cell",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "epithelial cell"
+    },
+    {
+      "value": "cancer cell",
+      "evidence": "organism parts: Breast cancer cell line",
+      "is_normalized": false,
+      "normalization_method": "related_synonym_requires_context",
+      "normalization_matched_text": "cancer cell",
+      "normalization_candidate_ids": [
+        "CL:0001064"
+      ],
+      "normalization_qc_flags": [
+        "related_synonym_requires_context"
+      ]
+    }
+  ],
+  "developmental_stage": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "disease_state": [
+    {
+      "value": "Breast cancer",
+      "evidence": "diseases: Breast cancer",
+      "is_normalized": true,
+      "ontology_id": "MONDO:0007254",
+      "ontology_name": "breast cancer",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "breast cancer"
+    }
+  ],
+  "ethnicity": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "material_type": [
+    {
+      "value": "cell line",
+      "evidence": "organism parts: Breast cancer cell line"
+    }
+  ],
+  "sample_source": [
+    {
+      "value": "cell culture",
+      "evidence": "inferred: 1. Cellular Thermal Shift Assay (CETSA): MDA-MB-231 cells were treated for 6h with DMSO or SU212 and incubated at different temperatures and protein differences in the soluble fractions were determined.",
+      "is_normalized": true,
+      "ontology_id": "BTO:0000214",
+      "ontology_name": "cell culture",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "cell culture"
+    },
+    {
+      "value": "cell line",
+      "evidence": "organism parts: Breast cancer cell line",
+      "is_normalized": true,
+      "ontology_id": "BTO:0002322",
+      "ontology_name": "cell property",
+      "similarity": 0.727,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "cell property"
+    }
+  ],
+  "sex": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "species": [
+    {
+      "value": "Homo sapiens",
+      "evidence": "organisms: Homo sapiens (human)",
+      "is_normalized": true,
+      "ontology_id": "NCBITaxon:9606",
+      "ontology_name": "Homo sapiens",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Homo sapiens"
+    }
+  ],
+  "strain": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "tissue": [
+    {
+      "value": "breast",
+      "evidence": "organism parts: Breast cancer cell line",
+      "is_normalized": true,
+      "ontology_id": "UBERON:0000310",
+      "ontology_name": "breast",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "breast"
+    }
+  ],
+  "_confidence": {
+    "overall": 0.894,
+    "evidence_score": 0.944,
+    "completeness": 0.611,
+    "format_score": 1.0
+  }
+}

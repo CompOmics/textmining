@@ -1,0 +1,163 @@
+{
+  "acquisition_method": [
+    {
+      "value": "data-dependent mode",
+      "evidence": "The QExactive HF was operated in data-dependent mode where the 15 most intense precursors were selected for subsequent fragmentation."
+    }
+  ],
+  "alkylation_concentration": [
+    {
+      "value": "100 mM",
+      "evidence": "Gel bands were washed with ACN, reduced with 10 mM DTT, alkylated with 100 mM iodoacetamide, and digested in-gel with 0.5 ug/uL trypsin overnight at 37 \u00b0C."
+    }
+  ],
+  "alkylation_reagent": [
+    {
+      "value": "iodoacetamide",
+      "evidence": "Gel bands were washed with ACN, reduced with 10 mM DTT, alkylated with 100 mM iodoacetamide, and digested in-gel with 0.5 ug/uL trypsin overnight at 37 \u00b0C."
+    }
+  ],
+  "cleavage_agent": [
+    {
+      "value": "trypsin",
+      "evidence": "Gel bands were washed with ACN, reduced with 10 mM DTT, alkylated with 100 mM iodoacetamide, and digested in-gel with 0.5 ug/uL trypsin overnight at 37 \u00b0C."
+    }
+  ],
+  "collision_energy": [
+    {
+      "value": "27%",
+      "evidence": "The normalized collision energy was set to 27% for HCD."
+    }
+  ],
+  "enrichment_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fractionation_method": [
+    {
+      "value": "unknown",
+      "evidence": ""
+    }
+  ],
+  "fragmentation_method": [
+    {
+      "value": "HCD",
+      "evidence": "The normalized collision energy was set to 27% for HCD."
+    }
+  ],
+  "instrument": [
+    {
+      "value": "Q Exactive HF",
+      "evidence": "instruments: Q Exactive HF",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary",
+      "normalization_matched_text": "Q Exactive HF"
+    },
+    {
+      "value": "QExactive HF",
+      "evidence": "The peptide samples were analyzed by LC/MS/MS using an Easy nLC 1200 coupled to a QExactive HF mass spectrometer (ThermoFischer Scientific).",
+      "is_normalized": true,
+      "ontology_id": "MS:1002523",
+      "ontology_name": "Q Exactive HF",
+      "similarity": 0.763,
+      "normalization_method": "semantic",
+      "normalization_matched_text": "Q Exactive HF"
+    }
+  ],
+  "ionization_type": [
+    {
+      "value": "ESI",
+      "evidence": "inferred: The peptide samples were analyzed by LC/MS/MS using an Easy nLC 1200 coupled to a QExactive HF mass spectrometer (ThermoFischer Scientific)."
+    }
+  ],
+  "labeling": [
+    {
+      "value": "label-free",
+      "evidence": "inferred: Peptide false discovery rates (FDR) were calculated by the Percolator node using a decoy database search and data were filtered using a 1% FDR cutoff."
+    }
+  ],
+  "mass_analyzer": [
+    {
+      "value": "Orbitrap",
+      "evidence": "inferred: The peptide samples were analyzed by LC/MS/MS using an Easy nLC 1200 coupled to a QExactive HF mass spectrometer (ThermoFischer Scientific)."
+    }
+  ],
+  "ptm": [
+    {
+      "value": "carbamidomethylation",
+      "evidence": "(C) carbamidomethylation was set as a fixed modification; (M) oxidation, (K) Acetylation, (K) Ubiquitination, and (S/T/Y) phosphorylation were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:4",
+      "ontology_name": "Carbamidomethyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Carbamidomethyl"
+    },
+    {
+      "value": "oxidation",
+      "evidence": "(C) carbamidomethylation was set as a fixed modification; (M) oxidation, (K) Acetylation, (K) Ubiquitination, and (S/T/Y) phosphorylation were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:35",
+      "ontology_name": "Oxidation",
+      "similarity": 1.0,
+      "normalization_method": "exact_primary_unimod",
+      "normalization_matched_text": "Oxidation"
+    },
+    {
+      "value": "Acetylation",
+      "evidence": "(C) carbamidomethylation was set as a fixed modification; (M) oxidation, (K) Acetylation, (K) Ubiquitination, and (S/T/Y) phosphorylation were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:1",
+      "ontology_name": "Acetyl",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Acetyl"
+    },
+    {
+      "value": "Ubiquitination",
+      "evidence": "(C) carbamidomethylation was set as a fixed modification; (M) oxidation, (K) Acetylation, (K) Ubiquitination, and (S/T/Y) phosphorylation were set as variable modifications.",
+      "is_normalized": false,
+      "normalization_method": "related_synonym_requires_context",
+      "normalization_matched_text": "Ubiquitination",
+      "normalization_candidate_ids": [
+        "MOD:01240"
+      ],
+      "normalization_qc_flags": [
+        "related_synonym_requires_context"
+      ]
+    },
+    {
+      "value": "phosphorylation",
+      "evidence": "(C) carbamidomethylation was set as a fixed modification; (M) oxidation, (K) Acetylation, (K) Ubiquitination, and (S/T/Y) phosphorylation were set as variable modifications.",
+      "is_normalized": true,
+      "ontology_id": "UNIMOD:21",
+      "ontology_name": "Phospho",
+      "similarity": 1.0,
+      "normalization_method": "alias_to_unimod",
+      "normalization_matched_text": "Phospho"
+    }
+  ],
+  "reduction_concentration": [
+    {
+      "value": "10 mM",
+      "evidence": "Gel bands were washed with ACN, reduced with 10 mM DTT, alkylated with 100 mM iodoacetamide, and digested in-gel with 0.5 ug/uL trypsin overnight at 37 \u00b0C."
+    }
+  ],
+  "reduction_reagent": [
+    {
+      "value": "DTT",
+      "evidence": "Gel bands were washed with ACN, reduced with 10 mM DTT, alkylated with 100 mM iodoacetamide, and digested in-gel with 0.5 ug/uL trypsin overnight at 37 \u00b0C."
+    }
+  ],
+  "_confidence": {
+    "overall": 0.953,
+    "evidence_score": 0.945,
+    "completeness": 0.9,
+    "format_score": 1.0
+  }
+}
