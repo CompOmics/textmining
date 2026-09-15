@@ -37,22 +37,21 @@ OUT = FIGDIR / "figure1.png"
 PANELS = FIGDIR / "panels"
 
 sys.path.insert(0, str(REPO))
-from plot_style import COLORS, clean_axes, save_fig  # noqa: E402
+sys.path.insert(0, str(REPO / "final_analyses"))
+from plot_style import clean_axes  # noqa: E402
+from figure_style import (AGENT, NEUTRAL, LIN_KIND, style, panel_title, legend_outside,  # noqa: E402
+                          save_composite, save_panels)
 
-INK = "#1b2422"
+style()
 MUTED = "#6b7a76"
 GRID = "#e4e9e7"
 
-plt.rcParams.update({
-    "font.family": "DejaVu Sans", "axes.edgecolor": "#c7d0cd", "axes.labelcolor": INK,
-    "text.color": INK, "xtick.color": INK, "ytick.color": INK,
-    "figure.facecolor": "white", "axes.facecolor": "white",
-})
-
+# categories use the agent palette, so biological / technical / experimental
+# design look the same as in every other figure
 CAT_COLOR = {
-    "biological": COLORS["green"],
-    "technical": COLORS["blue"],
-    "experimental_design": COLORS["purple"],
+    "biological": AGENT["BiologicalAgent"],
+    "technical": AGENT["TechnicalAgent"],
+    "experimental_design": AGENT["ExperimentalDesignAgent"],
 }
 CAT_LABEL = {"biological": "biological", "technical": "technical",
              "experimental_design": "exp. design"}
@@ -60,8 +59,7 @@ CAT_ORDER = ["biological", "technical", "experimental_design"]
 
 # the three groups of the decomposition panel, in the order they are argued
 GROUP_ORDER = ["human-human", "model-human", "model-model"]
-GROUP_COLOR = {"human-human": "0.62", "model-human": COLORS["blue"],
-               "model-model": COLORS["orange"]}
+GROUP_COLOR = {"human-human": NEUTRAL, "model-human": "#7a9cc6", "model-model": "#b8866b"}
 
 # human-versus-human is every pair of human annotators, the single expert
 # included. See the note in build_tables.py.
@@ -154,9 +152,7 @@ def panel_a(ax, cbar_lower=None, cbar_upper=None):
         cm.set_bad(alpha=0)
     im_p = ax.imshow(lower, cmap=cm_s, vmin=0, vmax=1)
     im_v = ax.imshow(upper, cmap=cm_b, vmin=0, vmax=1)
-    # imshow defaults to a square aspect, which centres a small matrix in a
-    # tall gridspec cell and leaves most of the panel blank
-    ax.set_aspect("auto")
+    ax.set_aspect("equal")
 
     for i in range(n):
         for j in range(n):
@@ -199,26 +195,7 @@ def panel_a(ax, cbar_lower=None, cbar_upper=None):
         cb.set_label(lab, fontsize=6.6)
         cb.ax.tick_params(labelsize=6)
 
-    s = stats()["value_kappa_string"]
-    ax.set_title("a  Pairwise value-level agreement, all 13 identities", loc="left",
-                 fontsize=10.5, fontweight="bold", pad=36)
-    v = stats()["value_kappa"]
-    g = stats()["value_kappa_gain"]
-    # positioned in offset points, not axes fractions: the panel is far taller
-    # in the composite than standalone, and a fractional offset collides with
-    # the title there
-    for dy, line in (
-        (20, "lower triangle: exact string identity"
-             f"   (human-human {s['human_human']['mean']:.2f}, "
-             f"model-model {s['model_model']['mean']:.2f})"),
-        (9, "upper triangle: SapBERT clusters"
-            f"   ({v['human_human']['mean']:.2f}, {v['model_model']['mean']:.2f})"
-            f"  -  higher in {g['n_up']}/{g['n_pairs']} pairs, "
-            f"mean {g['mean_gain']:+.2f}"),
-    ):
-        ax.annotate(line, xy=(0, 1), xytext=(0, dy), xycoords="axes fraction",
-                    textcoords="offset points", ha="left", va="bottom",
-                    fontsize=7.0, color="0.32")
+    panel_title(ax, "a")
     return im_p, im_v
 
 
@@ -320,41 +297,11 @@ def panel_b(ax):
                              edgecolor=GROUP_COLOR[g],
                              label=f"{g} (n={len(by_group[g]['kappa'])})")
                for g in groups]
-    ax.legend(handles=handles, frameon=False, fontsize=6.9, ncol=3,
-              loc="lower left", bbox_to_anchor=(-0.02, 1.0),
-              handlelength=1.1, columnspacing=1.2)
+    ax.legend(handles=handles, frameon=False, fontsize=7.5, ncol=1,
+              loc="upper left", bbox_to_anchor=(1.02, 1.0), handlelength=1.1)
 
-    # the denominator changes here, so the rows below cannot be read against
-    # the rows above
     ax.axhline(SPLIT - 0.5, color="0.45", lw=0.9, ls=(0, (4, 3)), zorder=4)
-    ax.annotate("share of all document-field slots", xy=(0.0, SPLIT - 0.55),
-                xytext=(2, 2), textcoords="offset points", ha="left",
-                va="bottom", fontsize=6.2, color="0.45", style="italic")
-    ax.annotate("other denominators, not comparable to the three above",
-                xy=(0.0, SPLIT - 0.45), xytext=(2, -2), textcoords="offset points",
-                ha="left", va="top", fontsize=6.2, color="0.45", style="italic")
-
-    rvc = tests.get("raw_vs_chance", {})
-    hh, mm = rvc.get("human-human"), rvc.get("model-model")
-    note = []
-    if hh:
-        note.append(f"raw > chance in every pair: {hh['n_positive']}/{hh['n']} human "
-                    f"(+{hh['mean_excess']:.2f}, p = {hh.get('wilcoxon_p', float('nan')):.0e}),")
-    if mm:
-        note.append(f"{mm['n_positive']}/{mm['n']} model-model (+{mm['mean_excess']:.2f}; "
-                    "n = 3 limits the p value)")
-    p = stats()["prevalence"]
-    note.append(f"present-slot share: humans "
-                f"{100*p['human_min']:.0f}-{100*p['human_max']:.0f}% "
-                f"({p['human_fold']:.1f}x), models "
-                f"{100*p['model_min']:.0f}-{100*p['model_max']:.0f}% "
-                f"({p['model_fold']:.2f}x)")
-    ax.annotate("\n".join(note), xy=(0, 0), xytext=(0, -34),
-                xycoords="axes fraction", textcoords="offset points",
-                ha="left", va="top", fontsize=5.9, style="italic", color="0.35")
-
-    ax.set_title("b  Model agreement is not shared silence", loc="left",
-                 fontsize=10.5, fontweight="bold", pad=20)
+    panel_title(ax, "b")
 
 
 # -----------------------------------------------------------------------------
@@ -376,8 +323,6 @@ def panel_c(ax):
     sd_y = float(np.std(ys))
     ax.axhspan(mean_y - sd_y, mean_y + sd_y, color=GRID, alpha=0.75, zorder=0)
     ax.axhline(mean_y, color="0.55", lw=1.0, ls=(0, (4, 3)), zorder=1)
-    ax.text(103, mean_y, f" mean {mean_y:.2f}", va="center", ha="left",
-            fontsize=6.6, color="0.4")
 
     for cat in CAT_ORDER:
         sel = [p for p in pts if p[2] == cat]
@@ -405,58 +350,37 @@ def panel_c(ax):
     ax.set_xlim(0, 108)
     ax.set_ylim(-0.04, 1)
     clean_axes(ax, grid_axis="both")
-    ax.legend(frameon=False, fontsize=6.9, loc="upper left", handletextpad=0.3)
+    ax.legend(frameon=False, fontsize=7.5, loc="upper left", bbox_to_anchor=(1.02, 1.0), handletextpad=0.3)
 
-    s = stats()["rarity_vs_difficulty"]
-    ax.text(0.98, 0.97,
-            f"Spearman rho = {s['rho']:+.2f}, p = {s['p']:.2f}\n"
-            f"rarity does not explain difficulty",
-            transform=ax.transAxes, ha="right", va="top", fontsize=7.0,
-            style="italic", color="0.35")
-    ax.set_title("c  Difficulty is not a function of rarity", loc="left",
-                 fontsize=10.5, fontweight="bold", pad=8)
+    panel_title(ax, "c")
 
 
 # -----------------------------------------------------------------------------
 def panel_d(ax):
     """Where both annotators tagged a field, did they write the same thing?"""
     rows = load("value_match_by_label.csv")
-    rows.sort(key=lambda r: float(r["exact_pct"]) + float(r["semantic_pct"]))
+    rows.sort(key=lambda r: -(float(r["exact_pct"]) + float(r["semantic_pct"])))
     labels = [r["label"] for r in rows]
     exact = np.array([float(r["exact_pct"]) for r in rows])
     sem = np.array([float(r["semantic_pct"]) for r in rows])
     none = np.array([float(r["no_match_pct"]) for r in rows])
-    y = np.arange(len(rows))
+    x = np.arange(len(rows))
 
-    ax.barh(y, exact, color=COLORS["dark_blue"], height=0.76, zorder=2,
-            label="exact string")
-    ax.barh(y, sem, left=exact, color=COLORS["orange"], height=0.76, zorder=2,
-            label="SapBERT only (cos >= 0.70)")
-    ax.barh(y, none, left=exact + sem, color="0.85", height=0.76, zorder=2,
-            label="residual mismatch")
-    for yi, r in zip(y, rows):
-        ax.text(101.5, yi, f"n={r['n']}", va="center", fontsize=5.2, color=MUTED)
+    ax.bar(x, exact, color=LIN_KIND["same term"], width=0.78, zorder=2, label="exact string")
+    ax.bar(x, sem, bottom=exact, color=LIN_KIND["related (Lin 0.5-0.99)"], width=0.78, zorder=2,
+           label="SapBERT only (cos ≥ 0.70)")
+    ax.bar(x, none, bottom=exact + sem, color="#d9d9d9", width=0.78, zorder=2, label="residual mismatch")
 
-    ax.set_yticks(y)
-    ax.set_yticklabels(labels, fontsize=5.6)
-    for tick, r in zip(ax.get_yticklabels(), rows):
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels, fontsize=6.4, rotation=90)
+    for tick, r in zip(ax.get_xticklabels(), rows):
         tick.set_color(CAT_COLOR.get(r["category"], "0.3"))
-    ax.set_xlim(0, 112)
-    ax.set_ylim(-0.7, len(rows) - 0.3)
-    ax.set_xlabel("both-tagged annotator-pair-document instances (%)", fontsize=8.5)
-    clean_axes(ax, grid_axis="x")
-    ax.legend(frameon=False, fontsize=6.9, ncol=3, loc="upper center",
-              bbox_to_anchor=(0.5, -0.045), handlelength=1.1, columnspacing=1.4)
-
-    s = stats()["value_match"]
-    ax.set_title("d  Value-level agreement: exact string vs conceptual match",
-                 loc="left", fontsize=10.5, fontweight="bold", pad=20)
-    ax.text(0, 1.004,
-            f"pooled over {s['n_instances']:,} both-tagged instances: "
-            f"{s['exact_pct']:.0f}% exact, {s['semantic_pct']:.0f}% wording only, "
-            f"{s['no_match_pct']:.0f}% genuine disagreement",
-            transform=ax.transAxes, ha="left", va="bottom", fontsize=7.0,
-            style="italic", color="0.35")
+    ax.set_xlim(-0.7, len(rows) - 0.3)
+    ax.set_ylim(0, 100)
+    ax.set_ylabel("both-tagged instances (%)", fontsize=8.5)
+    clean_axes(ax, grid_axis="y")
+    ax.legend(frameon=False, fontsize=7.5, ncol=3, loc="lower center", bbox_to_anchor=(0.5, 1.0), handlelength=1.1)
+    panel_title(ax, "d")
 
 
 # -----------------------------------------------------------------------------
@@ -514,70 +438,34 @@ def panel_e(ax):
         plt.Line2D([0], [0], marker="o", color="none", markerfacecolor="0.35",
                    markersize=7, label="SapBERT clusters"),
     ]
-    ax.legend(handles=handles, frameon=False, fontsize=6.9, loc="lower right")
+    ax.legend(handles=handles, frameon=False, fontsize=7.5, loc="upper left", bbox_to_anchor=(1.02, 1.0))
 
-    s = stats()["movement_pooled"]
-    ax.text(0.985, 0.94,
-            f"pooled {s['string_kappa']:.2f} -> {s['sapbert_kappa']:.2f}",
-            transform=ax.transAxes, ha="right", va="top", fontsize=7.0,
-            style="italic", color="0.35")
-    ax.set_title("e  Forgiving wording lifts technical fields most", loc="left",
-                 fontsize=10.5, fontweight="bold", pad=8)
+    panel_title(ax, "e")
 
 
 # -----------------------------------------------------------------------------
 def main():
-    fig = plt.figure(figsize=(17, 13.5))
-    gs = fig.add_gridspec(6, 3, width_ratios=[1.32, 1.0, 1.0],
-                          hspace=1.9, wspace=0.34)
+    fig = plt.figure(figsize=(17, 10))
+    gs = fig.add_gridspec(2, 3, width_ratios=[1.15, 1.0, 1.0], height_ratios=[1.0, 0.9],
+                          hspace=0.28, wspace=0.55)
 
-    ax_a = fig.add_subplot(gs[0:6, 0])
+    ax_a = fig.add_subplot(gs[0, 0])
     panel_a(ax_a,
-            cbar_lower=ax_a.inset_axes([1.020, 0.04, 0.018, 0.19]),
-            cbar_upper=ax_a.inset_axes([1.020, 0.29, 0.018, 0.19]))
+            cbar_lower=ax_a.inset_axes([1.03, 0.05, 0.03, 0.38]),
+            cbar_upper=ax_a.inset_axes([1.03, 0.55, 0.03, 0.38]))
+    panel_b(fig.add_subplot(gs[0, 1]))
+    panel_c(fig.add_subplot(gs[0, 2]))
+    panel_d(fig.add_subplot(gs[1, 0:2]))
+    panel_e(fig.add_subplot(gs[1, 2]))
 
-    panel_b(fig.add_subplot(gs[0:3, 1]))
-    panel_c(fig.add_subplot(gs[3:6, 1]))
-    panel_d(fig.add_subplot(gs[0:4, 2]))
-    panel_e(fig.add_subplot(gs[4:6, 2]))
-
-    s = stats()
-    fig.suptitle(
-        "Expert annotators agree only partially, and the three models agree with each other "
-        "more than with the experts\n"
-        f"{s['n_docs']} manuscripts, nine human annotators, the harmonised consensus, "
-        f"three models, {s['n_labels']} fields",
-        fontsize=12.5, fontstyle="italic", y=0.985)
-
-    save_fig(fig, OUT)
-    build_individual_panels()
-
-
-def build_individual_panels():
-    """Each panel on its own as well.
-
-    The composite is the manuscript figure; the standalone panels are what goes
-    into a talk or gets sent to a co-author who wants one result rather than
-    five. Same styling, so a panel lifted out looks the same.
-    """
-    PANELS.mkdir(parents=True, exist_ok=True)
-    specs = [
-        ("a_pairwise_agreement", (8.4, 8.0), lambda ax: panel_a(
-            ax, cbar_lower=ax.inset_axes([1.03, 0.06, 0.022, 0.20]),
-            cbar_upper=ax.inset_axes([1.03, 0.32, 0.022, 0.20]))),
-        ("b_agreement_decomposition", (7.0, 5.6), panel_b),
-        ("c_difficulty_vs_rarity", (6.4, 5.0), panel_c),
-        ("d_value_level_agreement", (7.2, 9.0), panel_d),
-        ("e_forgiving_wording", (6.4, 4.0), panel_e),
-    ]
-    for name, size, fn in specs:
-        f = plt.figure(figsize=size)
-        fn(f.add_subplot(111))
-        out = PANELS / f"figure1_panel_{name}.png"
-        f.tight_layout()
-        f.savefig(out, dpi=200, bbox_inches="tight")
-        plt.close(f)
-        print(f"Saved: {out}")
+    save_composite(fig, FIGDIR, "figure1")
+    plt.close(fig)
+    save_panels(plt, FIGDIR, "figure1", {
+        "a": lambda ax: panel_a(ax, cbar_lower=ax.inset_axes([1.03, 0.05, 0.03, 0.38]),
+                                cbar_upper=ax.inset_axes([1.03, 0.55, 0.03, 0.38])),
+        "b": panel_b, "c": panel_c, "d": panel_d, "e": panel_e,
+    }, {"a": (7.5, 7.5), "b": (6.5, 4.6), "c": (6, 4.6), "d": (11, 4.2), "e": (6, 3.6)})
+    print(f"Saved: {FIGDIR / 'figure1.png'}")
 
 
 if __name__ == "__main__":
