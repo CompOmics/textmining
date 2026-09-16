@@ -21,6 +21,7 @@ embedding model.
 """
 
 import logging
+import re
 import numpy as np
 from typing import Tuple, Optional, Dict, Any, List
 from functools import lru_cache
@@ -429,6 +430,19 @@ class HierarchicalMatcher:
         golden_norm = self.normalize_text(golden_val)
         if llm_norm == golden_norm:
             return 'NORMALIZED', 0.95
+
+        # Numbers: equality, never embedding similarity. SapBERT puts "16"
+        # and "26" at cosine 0.84 and "2" and "3" at 0.77, above both the
+        # semantic threshold and the 0.5 F1 acceptance, so without this
+        # every wrong count was scored as a match (2026-09-14, matcher
+        # calibration). A different number is NO_MATCH at 0.0 so it cannot
+        # be rescued by the F1 threshold either.
+        llm_num, llm_unit = self._parse_number(llm_norm)
+        golden_num, golden_unit = self._parse_number(golden_norm)
+        if llm_num is not None and golden_num is not None:
+            if llm_num == golden_num and llm_unit == golden_unit:
+                return 'NORMALIZED', 0.95
+            return 'NO_MATCH', 0.0
         
         # Level 3: Ontology match (if enabled)
         if self.use_ontology and self.normalizer:
@@ -456,6 +470,42 @@ class HierarchicalMatcher:
         
         return 'NO_MATCH', similarity
     
+    _NUMBER_WORDS = {w: i for i, w in enumerate(
+        ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
+         "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen",
+         "nineteen", "twenty"])}
+    # a number (digits or a number word) optionally followed by one unit /
+    # noun token: "3", "3.0", "three", "40 samples", "50 mM", "2x"
+    _NUMERIC_VALUE_RE = re.compile(
+        r'^\s*(?P<num>[+-]?\d+(?:[.,]\d+)?|[a-z]+)\s*(?P<unit>[a-zµ%/°]+)?\s*$', re.IGNORECASE)
+
+    @classmethod
+    def _parse_number(cls, text: str) -> Tuple[Optional[float], str]:
+        """(value, unit) when the whole string is one number, else (None, '').
+
+        Units are lower-cased; a trailing count noun ("samples", "replicates",
+        "fractions") is dropped so "40 samples" equals "40". Number words up
+        to twenty are accepted so "three" equals "3".
+        """
+        if not text:
+            return None, ''
+        m = cls._NUMERIC_VALUE_RE.match(text)
+        if not m:
+            return None, ''
+        raw = m.group('num').lower()
+        if raw in cls._NUMBER_WORDS:
+            value = float(cls._NUMBER_WORDS[raw])
+        else:
+            try:
+                value = float(raw.replace(',', '.'))
+            except ValueError:
+                return None, ''
+        unit = (m.group('unit') or '').lower()
+        if unit in {'sample', 'samples', 'replicate', 'replicates', 'fraction', 'fractions',
+                    'run', 'runs', 'patients', 'patient', 'donors', 'donor', 'subjects', 'subject'}:
+            unit = ''
+        return value, unit
+
     @staticmethod
     def _split_multi_value(value: str) -> List[str]:
         """Split a semicolon-separated multi-value string into individual items.

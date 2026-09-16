@@ -104,6 +104,7 @@ class NormalizationConfig:
         'flybase': 'flybase.obo',        # FlyBase controlled vocabulary
         'ratstrains': 'ratstrains.obo',  # Rat strains
         'chebi': 'chebi.obo',            # Chemical entities (ChEBI)
+        'hancestro': 'hancestro.obo',    # Human Ancestry Ontology
         'phenotypeandtrait': 'phenotypeandtrait.obo',    # PATO (Phenotype and Trait)
     })
     
@@ -137,6 +138,8 @@ class NormalizationConfig:
         'ptm': 'psimod',
         'psimod': 'psimod',
         # Other
+        'ethnicity': 'hancestro',
+        'ancestry': 'hancestro',
         'experimental_factor': 'experimentalfactor',
         'chemical': 'chebi',
         'phenotype': 'phenotypeandtrait',

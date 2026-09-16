@@ -92,6 +92,11 @@ ONTOLOGY_SOURCES: Dict[str, Dict[str, str]] = {
         'filename': 'chebi.obo',
         'description': 'Chemical Entities of Biological Interest (ChEBI)',
     },
+    'hancestro': {
+        'url': 'https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro.obo',
+        'filename': 'hancestro.obo',
+        'description': 'Human Ancestry Ontology (HANCESTRO)',
+    },
     'phenotypeandtrait': {
         'url': 'http://purl.obolibrary.org/obo/pato.obo',
         'filename': 'phenotypeandtrait.obo',
