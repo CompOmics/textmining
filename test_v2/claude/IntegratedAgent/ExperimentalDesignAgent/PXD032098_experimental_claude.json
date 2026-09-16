@@ -1,0 +1,263 @@
+{
+  "experimental_design": {
+    "resolved": "Chemical cross-linking coupled with mass spectrometry proteomics",
+    "confidence": 1.0,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "Chemical cross-linking coupled with mass spectrometry proteomics",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": "treated vs control",
+        "evidence": "inferred: Pre-60S particles were isolated from cells treated with LmB vs untreated cells, and Drg1 activity was measured with different nucleotides (ATP, ATP\u03b3S) or inhibitors (diazaborine)."
+      }
+    }
+  },
+  "biological_replicate": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "technical_replicate": {
+    "resolved": "2",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "2",
+        "evidence": "inferred: For each crosslinked sample four fractions were measured in technical duplicates."
+      }
+    }
+  },
+  "factor_value": {
+    "resolved": "nucleotide conditions and inhibitor treatment",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "nucleotide conditions and inhibitor treatment",
+        "evidence": "inferred: Samples were analyzed in presence of either 1 mM ATP or ATP\u03b3S or no nucleotide, and 1 mM ATP + 100 \u00b5g/ml diazaborine"
+      }
+    }
+  },
+  "number_of_fractions": {
+    "resolved": "4",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "4",
+        "evidence": "For each crosslinked sample four fractions were measured in technical duplicates."
+      }
+    }
+  },
+  "number_of_technical_replicates": {
+    "resolved": "2",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "2",
+        "evidence": "For each crosslinked sample four fractions were measured in technical duplicates."
+      }
+    }
+  },
+  "number_of_biological_replicates": {
+    "resolved": "3",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "3",
+        "evidence": "Three biological replicates were measured with three technical replicates to determine mean and s.d."
+      }
+    }
+  },
+  "number_of_samples": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "technology_type": {
+    "resolved": "Chemical cross-linking coupled with mass spectrometry proteomics",
+    "confidence": 0.9,
+    "status": "AGREE",
+    "sources": {
+      "meti": {
+        "value": "Chemical cross-linking coupled with mass spectrometry proteomics",
+        "accession": "PRIDE:0000430",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "affinity purification coupled with mass spectrometry proteomics",
+        "evidence": "Pre-60S particles were isolated using TAP tag affinity purification and crosslinked samples were analyzed by LC\u2013MS/MS analysis on an Orbitrap Fusion Tribrid mass spectrometer."
+      }
+    }
+  },
+  "experiment_type": {
+    "resolved": "Chemical cross-linking coupled with mass spectrometry proteomics",
+    "confidence": 0.9,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "Chemical cross-linking coupled with mass spectrometry proteomics",
+        "accession": "PRIDE:0000430",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "quantification_method": {
+    "resolved": "LFQ",
+    "confidence": 1.0,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "LFQ",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "_confidence": {
+    "overall": 0.733,
+    "evidence_score": 0.556,
+    "completeness": 0.778,
+    "format_score": 1.0
+  },
+  "_meti_data": {
+    "ptms": {
+      "source": "PRIDE",
+      "source_field": "pride_metadata.identifiedPTMStrings",
+      "values": [
+        "iodoacetamide derivatized residue"
+      ]
+    },
+    "experiment_types": [
+      "Chemical cross-linking coupled with mass spectrometry proteomics"
+    ],
+    "keywords": [
+      "Large ribosomal subunit",
+      "Ribosome biogenesis",
+      "Aaa-atpases",
+      "Substrate recognition",
+      "Substrate translocation mechanism",
+      "Single particle cryo-em"
+    ],
+    "spectra_stats": {
+      "acquisition_type": "DDA",
+      "fragmentation_tag": "??",
+      "n_ms2_spectra": 33684,
+      "n_spectra": 45677
+    },
+    "quantification_methods": [
+      "LFQ"
+    ],
+    "modification_site_fractions": {
+      "source": "PTM-Shepherd",
+      "source_field": "modification_site_fractions.dda_closed_search",
+      "num_mods_analyzed": 1,
+      "data": [
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "C",
+          "allowed_terms": "N-term",
+          "unique_peptides": 238,
+          "peptides_with_mod": 31,
+          "modified_sites": 40,
+          "potential_sites": 278,
+          "fraction_modified": 0.143885
+        }
+      ]
+    }
+  },
+  "modification_site_fractions": {
+    "resolved": {
+      "num_mods_analyzed": 1,
+      "data": [
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "C",
+          "allowed_terms": "N-term",
+          "unique_peptides": 238,
+          "peptides_with_mod": 31,
+          "modified_sites": 40,
+          "potential_sites": 278,
+          "fraction_modified": 0.143885
+        }
+      ]
+    },
+    "confidence": 1.0,
+    "status": "RUNASSESSOR_ONLY",
+    "sources": {
+      "meti": {
+        "value": {
+          "num_mods_analyzed": 1,
+          "data": [
+            {
+              "mod_key": "unimod:4",
+              "unimod_id": 4,
+              "mod_name": "Iodoacetamide derivative",
+              "mass_shift": 57.021465,
+              "allowed_residues": "C",
+              "allowed_terms": "N-term",
+              "unique_peptides": 238,
+              "peptides_with_mod": 31,
+              "modified_sites": 40,
+              "potential_sites": 278,
+              "fraction_modified": 0.143885
+            }
+          ]
+        },
+        "source": "PTM-Shepherd",
+        "source_field": "modification_site_fractions.dda_closed_search",
+        "score": 1.0
+      },
+      "llm": null
+    }
+  },
+  "_enrichment": {
+    "identifier": "PXD032098",
+    "pmid": 36097293,
+    "pxd_id": "PXD032098",
+    "meti_version": "1.0"
+  }
+}

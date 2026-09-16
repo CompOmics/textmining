@@ -1,0 +1,338 @@
+{
+  "experimental_design": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 1.0,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": "case vs control",
+        "evidence": "inferred: Samples from different breast cancer subtypes (luminal, Her2 positive, triple negative) were compared."
+      }
+    }
+  },
+  "biological_replicate": {
+    "resolved": "40",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "40",
+        "evidence": "inferred: 40 breast tumour samples"
+      }
+    }
+  },
+  "technical_replicate": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "factor_value": {
+    "resolved": "breast cancer subtype",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "breast cancer subtype",
+        "evidence": "inferred: The study compared luminal, Her2 positive, and triple negative breast cancer subtypes."
+      }
+    }
+  },
+  "number_of_fractions": {
+    "resolved": "6",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "6",
+        "evidence": "The peptides of each of the samples were fractionated into six fractions by strong anion exchange chromatography"
+      }
+    }
+  },
+  "number_of_technical_replicates": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "number_of_biological_replicates": {
+    "resolved": "40",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "40",
+        "evidence": "inferred: 40 breast tumour samples"
+      }
+    }
+  },
+  "number_of_samples": {
+    "resolved": "40",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "40",
+        "evidence": "40 breast tumour samples"
+      }
+    }
+  },
+  "technology_type": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 0.9,
+    "status": "AGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": "PRIDE:0000429",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "bottom-up proteomics",
+        "evidence": "The study used a bottom-up proteomics approach with mass spectrometry"
+      }
+    }
+  },
+  "experiment_type": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 0.9,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": "PRIDE:0000429",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "quantification_method": {
+    "resolved": "LFQ",
+    "confidence": 1.0,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "LFQ",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "_confidence": {
+    "overall": 0.722,
+    "evidence_score": 0.533,
+    "completeness": 0.778,
+    "format_score": 1.0
+  },
+  "_meti_data": {
+    "ptms": {
+      "source": "PRIDE",
+      "source_field": "pride_metadata.identifiedPTMStrings",
+      "values": [
+        "No PTMs are included in the dataset"
+      ]
+    },
+    "experiment_types": [
+      "Shotgun proteomics"
+    ],
+    "keywords": [
+      "Classification",
+      "Shotgun proteomics",
+      "Breast cancer subtypes"
+    ],
+    "spectra_stats": {
+      "acquisition_type": "DDA",
+      "fragmentation_tag": "??",
+      "n_ms2_spectra": 73052,
+      "n_spectra": 87187
+    },
+    "quantification_methods": [
+      "SILAC"
+    ],
+    "modification_site_fractions": {
+      "source": "PTM-Shepherd",
+      "source_field": "modification_site_fractions.dda_closed_search",
+      "num_mods_analyzed": 3,
+      "data": [
+        {
+          "mod_key": "unimod:1159",
+          "unimod_id": 1159,
+          "mod_name": "Asn->Gly substitution",
+          "mass_shift": -57.02146,
+          "allowed_residues": "N",
+          "allowed_terms": null,
+          "unique_peptides": 51947,
+          "peptides_with_mod": 13526,
+          "modified_sites": 18911,
+          "potential_sites": 45232,
+          "fraction_modified": 0.418089
+        },
+        {
+          "mod_key": "unimod:329",
+          "unimod_id": 329,
+          "mod_name": "monomethylation",
+          "mass_shift": 18.037834,
+          "allowed_residues": "KR",
+          "allowed_terms": "N-term",
+          "unique_peptides": 51947,
+          "peptides_with_mod": 13981,
+          "modified_sites": 20981,
+          "potential_sites": 157130,
+          "fraction_modified": 0.133526
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 51947,
+          "peptides_with_mod": 11032,
+          "modified_sites": 13928,
+          "potential_sites": 393835,
+          "fraction_modified": 0.035365
+        }
+      ]
+    }
+  },
+  "modification_site_fractions": {
+    "resolved": {
+      "num_mods_analyzed": 3,
+      "data": [
+        {
+          "mod_key": "unimod:1159",
+          "unimod_id": 1159,
+          "mod_name": "Asn->Gly substitution",
+          "mass_shift": -57.02146,
+          "allowed_residues": "N",
+          "allowed_terms": null,
+          "unique_peptides": 51947,
+          "peptides_with_mod": 13526,
+          "modified_sites": 18911,
+          "potential_sites": 45232,
+          "fraction_modified": 0.418089
+        },
+        {
+          "mod_key": "unimod:329",
+          "unimod_id": 329,
+          "mod_name": "monomethylation",
+          "mass_shift": 18.037834,
+          "allowed_residues": "KR",
+          "allowed_terms": "N-term",
+          "unique_peptides": 51947,
+          "peptides_with_mod": 13981,
+          "modified_sites": 20981,
+          "potential_sites": 157130,
+          "fraction_modified": 0.133526
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 51947,
+          "peptides_with_mod": 11032,
+          "modified_sites": 13928,
+          "potential_sites": 393835,
+          "fraction_modified": 0.035365
+        }
+      ]
+    },
+    "confidence": 1.0,
+    "status": "RUNASSESSOR_ONLY",
+    "sources": {
+      "meti": {
+        "value": {
+          "num_mods_analyzed": 3,
+          "data": [
+            {
+              "mod_key": "unimod:1159",
+              "unimod_id": 1159,
+              "mod_name": "Asn->Gly substitution",
+              "mass_shift": -57.02146,
+              "allowed_residues": "N",
+              "allowed_terms": null,
+              "unique_peptides": 51947,
+              "peptides_with_mod": 13526,
+              "modified_sites": 18911,
+              "potential_sites": 45232,
+              "fraction_modified": 0.418089
+            },
+            {
+              "mod_key": "unimod:329",
+              "unimod_id": 329,
+              "mod_name": "monomethylation",
+              "mass_shift": 18.037834,
+              "allowed_residues": "KR",
+              "allowed_terms": "N-term",
+              "unique_peptides": 51947,
+              "peptides_with_mod": 13981,
+              "modified_sites": 20981,
+              "potential_sites": 157130,
+              "fraction_modified": 0.133526
+            },
+            {
+              "mod_key": "unimod:4",
+              "unimod_id": 4,
+              "mod_name": "Iodoacetamide derivative",
+              "mass_shift": 57.021465,
+              "allowed_residues": "CDEHKMSTUY",
+              "allowed_terms": "N-term",
+              "unique_peptides": 51947,
+              "peptides_with_mod": 11032,
+              "modified_sites": 13928,
+              "potential_sites": 393835,
+              "fraction_modified": 0.035365
+            }
+          ]
+        },
+        "source": "PTM-Shepherd",
+        "source_field": "modification_site_fractions.dda_closed_search",
+        "score": 1.0
+      },
+      "llm": null
+    }
+  },
+  "_enrichment": {
+    "identifier": "PXD002619",
+    "pmid": 26725330,
+    "pxd_id": "PXD002619",
+    "meti_version": "1.0"
+  }
+}

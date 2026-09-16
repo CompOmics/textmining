@@ -1,0 +1,386 @@
+{
+  "experimental_design": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 1.0,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": "case vs control",
+        "evidence": "inferred: 18 randomly selected single islet sections comprising nine islets from a non-diabetic control donor and nine islets from a type 1 diabetes (T1D) donor were analyzed."
+      }
+    }
+  },
+  "biological_replicate": {
+    "resolved": "9",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "9",
+        "evidence": "inferred: The text states 'nine islets from a non-diabetic control donor and nine islets from a type 1 diabetes (T1D) donor', indicating 9 biological replicates per group."
+      }
+    }
+  },
+  "technical_replicate": {
+    "resolved": "1",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "1",
+        "evidence": "inferred: Each of the 18 single islet sections was analyzed once, resulting in 1 technical replicate per sample."
+      }
+    }
+  },
+  "factor_value": {
+    "resolved": "T1D vs control",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "T1D vs control",
+        "evidence": "inferred: Significant differences in abundance were observed for 304 proteins between T1D and control islets, representing a T1D vs control factor."
+      }
+    }
+  },
+  "number_of_fractions": {
+    "resolved": "1",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "1",
+        "evidence": "No fractionation is described in the methods, so the default value of 1 is applied."
+      }
+    }
+  },
+  "number_of_technical_replicates": {
+    "resolved": "1",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "1",
+        "evidence": "inferred: Each of the 18 single islet sections was analyzed once, resulting in 1 technical replicate per sample."
+      }
+    }
+  },
+  "number_of_biological_replicates": {
+    "resolved": "9",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "9",
+        "evidence": "inferred: The text states 'nine islets from a non-diabetic control donor and nine islets from a type 1 diabetes (T1D) donor', indicating 9 biological replicates per group."
+      }
+    }
+  },
+  "number_of_samples": {
+    "resolved": "18",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "18",
+        "evidence": "18 randomly selected single islet sections comprising nine islets from a non-diabetic control donor and nine islets from a type 1 diabetes (T1D) donor were analyzed."
+      }
+    }
+  },
+  "technology_type": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 0.9,
+    "status": "AGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": "PRIDE:0000429",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "bottom-up proteomics",
+        "evidence": "inferred: The proteins were then alkylated and digested using a two-step enzymatic hydrolysis, which is characteristic of bottom-up proteomics."
+      }
+    }
+  },
+  "experiment_type": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 0.9,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": "PRIDE:0000429",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "quantification_method": {
+    "resolved": "LFQ",
+    "confidence": 1.0,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "LFQ",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "_confidence": {
+    "overall": 0.717,
+    "evidence_score": 0.433,
+    "completeness": 1.0,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "number_of_fractions",
+      "value": "1",
+      "evidence": "No fractionation is described in the methods, so the default value of 1 is applied."
+    }
+  ],
+  "_meti_data": {
+    "ptms": {
+      "source": "PRIDE",
+      "source_field": "pride_metadata.identifiedPTMStrings",
+      "values": [
+        "Carbamidomethyl",
+        "Oxidation"
+      ]
+    },
+    "experiment_types": [
+      "Shotgun proteomics"
+    ],
+    "keywords": [
+      "Ultrasensitive",
+      "Proteomics",
+      "Nanopots"
+    ],
+    "spectra_stats": {
+      "acquisition_type": "DDA",
+      "fragmentation_tag": "??",
+      "n_ms2_spectra": 51452,
+      "n_spectra": 65564
+    },
+    "quantification_methods": [
+      "LFQ"
+    ],
+    "modification_site_fractions": {
+      "source": "PTM-Shepherd",
+      "source_field": "modification_site_fractions.dda_closed_search",
+      "num_mods_analyzed": 4,
+      "data": [
+        {
+          "mod_key": "unimod:1312",
+          "unimod_id": 1312,
+          "mod_name": "Reduced acrolein addition +58",
+          "mass_shift": 58.041866,
+          "allowed_residues": "CHK",
+          "allowed_terms": null,
+          "unique_peptides": 23535,
+          "peptides_with_mod": 6377,
+          "modified_sites": 11884,
+          "potential_sites": 42161,
+          "fraction_modified": 0.281872
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 23535,
+          "peptides_with_mod": 2694,
+          "modified_sites": 3372,
+          "potential_sites": 194568,
+          "fraction_modified": 0.017331
+        },
+        {
+          "mod_key": "unimod:2",
+          "unimod_id": 2,
+          "mod_name": "Amidation",
+          "mass_shift": -0.984016,
+          "allowed_residues": NaN,
+          "allowed_terms": "C-term",
+          "unique_peptides": 23535,
+          "peptides_with_mod": 33,
+          "modified_sites": 33,
+          "potential_sites": 23535,
+          "fraction_modified": 0.001402
+        },
+        {
+          "mod_key": "unimod:1287",
+          "unimod_id": 1287,
+          "mod_name": "Loss of arginine due to transpeptidation",
+          "mass_shift": -156.1011,
+          "allowed_residues": NaN,
+          "allowed_terms": "C-term",
+          "unique_peptides": 23535,
+          "peptides_with_mod": 27,
+          "modified_sites": 27,
+          "potential_sites": 23535,
+          "fraction_modified": 0.001147
+        }
+      ]
+    }
+  },
+  "modification_site_fractions": {
+    "resolved": {
+      "num_mods_analyzed": 4,
+      "data": [
+        {
+          "mod_key": "unimod:1312",
+          "unimod_id": 1312,
+          "mod_name": "Reduced acrolein addition +58",
+          "mass_shift": 58.041866,
+          "allowed_residues": "CHK",
+          "allowed_terms": null,
+          "unique_peptides": 23535,
+          "peptides_with_mod": 6377,
+          "modified_sites": 11884,
+          "potential_sites": 42161,
+          "fraction_modified": 0.281872
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 23535,
+          "peptides_with_mod": 2694,
+          "modified_sites": 3372,
+          "potential_sites": 194568,
+          "fraction_modified": 0.017331
+        },
+        {
+          "mod_key": "unimod:2",
+          "unimod_id": 2,
+          "mod_name": "Amidation",
+          "mass_shift": -0.984016,
+          "allowed_residues": NaN,
+          "allowed_terms": "C-term",
+          "unique_peptides": 23535,
+          "peptides_with_mod": 33,
+          "modified_sites": 33,
+          "potential_sites": 23535,
+          "fraction_modified": 0.001402
+        },
+        {
+          "mod_key": "unimod:1287",
+          "unimod_id": 1287,
+          "mod_name": "Loss of arginine due to transpeptidation",
+          "mass_shift": -156.1011,
+          "allowed_residues": NaN,
+          "allowed_terms": "C-term",
+          "unique_peptides": 23535,
+          "peptides_with_mod": 27,
+          "modified_sites": 27,
+          "potential_sites": 23535,
+          "fraction_modified": 0.001147
+        }
+      ]
+    },
+    "confidence": 1.0,
+    "status": "RUNASSESSOR_ONLY",
+    "sources": {
+      "meti": {
+        "value": {
+          "num_mods_analyzed": 4,
+          "data": [
+            {
+              "mod_key": "unimod:1312",
+              "unimod_id": 1312,
+              "mod_name": "Reduced acrolein addition +58",
+              "mass_shift": 58.041866,
+              "allowed_residues": "CHK",
+              "allowed_terms": null,
+              "unique_peptides": 23535,
+              "peptides_with_mod": 6377,
+              "modified_sites": 11884,
+              "potential_sites": 42161,
+              "fraction_modified": 0.281872
+            },
+            {
+              "mod_key": "unimod:4",
+              "unimod_id": 4,
+              "mod_name": "Iodoacetamide derivative",
+              "mass_shift": 57.021465,
+              "allowed_residues": "CDEHKMSTUY",
+              "allowed_terms": "N-term",
+              "unique_peptides": 23535,
+              "peptides_with_mod": 2694,
+              "modified_sites": 3372,
+              "potential_sites": 194568,
+              "fraction_modified": 0.017331
+            },
+            {
+              "mod_key": "unimod:2",
+              "unimod_id": 2,
+              "mod_name": "Amidation",
+              "mass_shift": -0.984016,
+              "allowed_residues": NaN,
+              "allowed_terms": "C-term",
+              "unique_peptides": 23535,
+              "peptides_with_mod": 33,
+              "modified_sites": 33,
+              "potential_sites": 23535,
+              "fraction_modified": 0.001402
+            },
+            {
+              "mod_key": "unimod:1287",
+              "unimod_id": 1287,
+              "mod_name": "Loss of arginine due to transpeptidation",
+              "mass_shift": -156.1011,
+              "allowed_residues": NaN,
+              "allowed_terms": "C-term",
+              "unique_peptides": 23535,
+              "peptides_with_mod": 27,
+              "modified_sites": 27,
+              "potential_sites": 23535,
+              "fraction_modified": 0.001147
+            }
+          ]
+        },
+        "source": "PTM-Shepherd",
+        "source_field": "modification_site_fractions.dda_closed_search",
+        "score": 1.0
+      },
+      "llm": null
+    }
+  },
+  "_enrichment": {
+    "identifier": "PXD006847",
+    "pmid": 29491378,
+    "pxd_id": "PXD006847",
+    "meti_version": "1.0"
+  }
+}

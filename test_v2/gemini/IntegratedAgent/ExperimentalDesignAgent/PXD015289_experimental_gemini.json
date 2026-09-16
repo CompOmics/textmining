@@ -1,0 +1,305 @@
+{
+  "experimental_design": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 1.0,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": "case vs control",
+        "evidence": "inferred: In addition, urine samples from healthy controls with BPH (n = 12) and patients diagnosed with urothelial cancer of the bladder (UCC; n = 5) or renal cell carcinoma (RCC; n = 6) were collected prior to treatment."
+      }
+    }
+  },
+  "biological_replicate": {
+    "resolved": "12",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "12",
+        "evidence": "inferred: Matched urine samples were collected from prostate cancer patients prior to (n = 12) and 3 months after local treatment"
+      }
+    }
+  },
+  "technical_replicate": {
+    "resolved": "6",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "6",
+        "evidence": "inferred: Technical replicates (n = 6) derived from a pool of cell-free urine collected from prostate cancer patients post-DRE"
+      }
+    }
+  },
+  "factor_value": {
+    "resolved": "cancer status",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "cancer status",
+        "evidence": "inferred: Clinical urine samples from men with prostate cancer and BPH were collected following DRE"
+      }
+    }
+  },
+  "number_of_fractions": {
+    "resolved": "1",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "1",
+        "evidence": "For mass spectrometry-based proteomic experiments, pooled EV-rich fractions 9\u201310, corresponding to a density of 1.087\u20131.109 g/mL were used for subsequent size exclusion chromatography (SEC)-based separation of EV from iodixanol"
+      }
+    }
+  },
+  "number_of_technical_replicates": {
+    "resolved": "6",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "6",
+        "evidence": "Technical replicates (n = 6) derived from a pool of cell-free urine collected from prostate cancer patients post-DRE were subjected to BU ODG separation"
+      }
+    }
+  },
+  "number_of_biological_replicates": {
+    "resolved": "12",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "12",
+        "evidence": "Matched urine samples were collected from prostate cancer patients prior to (n = 12) and 3 months after local treatment by radical prostatectomy or intensity-modulated radiation therapy (n = 10)."
+      }
+    }
+  },
+  "number_of_samples": {
+    "resolved": "34",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "34",
+        "evidence": "inferred: Matched urine samples were collected from prostate cancer patients prior to (n = 12) and 3 months after local treatment by radical prostatectomy or intensity-modulated radiation therapy (n = 10)... healthy controls with BPH (n = 12)"
+      }
+    }
+  },
+  "technology_type": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 0.9,
+    "status": "AGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": "PRIDE:0000429",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "bottom-up proteomics",
+        "evidence": "We demonstrate that density-based fractionation of urine by bottom-up Optiprep density gradient centrifugation separates EV and soluble proteins with high specificity and repeatability."
+      }
+    }
+  },
+  "experiment_type": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 0.9,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": "PRIDE:0000429",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "quantification_method": {
+    "resolved": "LFQ",
+    "confidence": 1.0,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "LFQ",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "_confidence": {
+    "overall": 0.739,
+    "evidence_score": 0.478,
+    "completeness": 1.0,
+    "format_score": 1.0
+  },
+  "_hallucination_flags": [
+    {
+      "type": "negated_evidence",
+      "field": "number_of_technical_replicates",
+      "value": "6",
+      "evidence": "Technical replicates (n = 6) derived from a pool of cell-free urine collected from prostate cancer patients post-DRE were subjected to BU ODG separation"
+    }
+  ],
+  "_meti_data": {
+    "ptms": {
+      "source": "PRIDE",
+      "source_field": "pride_metadata.identifiedPTMStrings",
+      "values": [
+        "monohydroxylated residue"
+      ]
+    },
+    "experiment_types": [
+      "Shotgun proteomics"
+    ],
+    "keywords": [
+      "Extracellular vesicles; exosomes; separation; isolation; urine; cancer; biomarkers"
+    ],
+    "spectra_stats": {
+      "acquisition_type": "DDA",
+      "fragmentation_tag": "??",
+      "n_ms2_spectra": 31381,
+      "n_spectra": 35844
+    },
+    "quantification_methods": [
+      "precursor ion"
+    ],
+    "modification_site_fractions": {
+      "source": "PTM-Shepherd",
+      "source_field": "modification_site_fractions.dda_closed_search",
+      "num_mods_analyzed": 2,
+      "data": [
+        {
+          "mod_key": "unimod:1187",
+          "unimod_id": 1187,
+          "mod_name": "Gln->Trp substitution",
+          "mass_shift": 58.02929,
+          "allowed_residues": "Q",
+          "allowed_terms": null,
+          "unique_peptides": 19516,
+          "peptides_with_mod": 4605,
+          "modified_sites": 6184,
+          "potential_sites": 18998,
+          "fraction_modified": 0.325508
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 19516,
+          "peptides_with_mod": 5335,
+          "modified_sites": 7870,
+          "potential_sites": 140861,
+          "fraction_modified": 0.055871
+        }
+      ]
+    }
+  },
+  "modification_site_fractions": {
+    "resolved": {
+      "num_mods_analyzed": 2,
+      "data": [
+        {
+          "mod_key": "unimod:1187",
+          "unimod_id": 1187,
+          "mod_name": "Gln->Trp substitution",
+          "mass_shift": 58.02929,
+          "allowed_residues": "Q",
+          "allowed_terms": null,
+          "unique_peptides": 19516,
+          "peptides_with_mod": 4605,
+          "modified_sites": 6184,
+          "potential_sites": 18998,
+          "fraction_modified": 0.325508
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 19516,
+          "peptides_with_mod": 5335,
+          "modified_sites": 7870,
+          "potential_sites": 140861,
+          "fraction_modified": 0.055871
+        }
+      ]
+    },
+    "confidence": 1.0,
+    "status": "RUNASSESSOR_ONLY",
+    "sources": {
+      "meti": {
+        "value": {
+          "num_mods_analyzed": 2,
+          "data": [
+            {
+              "mod_key": "unimod:1187",
+              "unimod_id": 1187,
+              "mod_name": "Gln->Trp substitution",
+              "mass_shift": 58.02929,
+              "allowed_residues": "Q",
+              "allowed_terms": null,
+              "unique_peptides": 19516,
+              "peptides_with_mod": 4605,
+              "modified_sites": 6184,
+              "potential_sites": 18998,
+              "fraction_modified": 0.325508
+            },
+            {
+              "mod_key": "unimod:4",
+              "unimod_id": 4,
+              "mod_name": "Iodoacetamide derivative",
+              "mass_shift": 57.021465,
+              "allowed_residues": "CDEHKMSTUY",
+              "allowed_terms": "N-term",
+              "unique_peptides": 19516,
+              "peptides_with_mod": 5335,
+              "modified_sites": 7870,
+              "potential_sites": 140861,
+              "fraction_modified": 0.055871
+            }
+          ]
+        },
+        "source": "PTM-Shepherd",
+        "source_field": "modification_site_fractions.dda_closed_search",
+        "score": 1.0
+      },
+      "llm": null
+    }
+  },
+  "_enrichment": {
+    "identifier": "PXD015289",
+    "pmid": 32284825,
+    "pxd_id": "PXD015289",
+    "meti_version": "1.0"
+  }
+}

@@ -1,0 +1,268 @@
+{
+  "experimental_design": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 1.0,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": "cross-sectional",
+        "evidence": "inferred: Single-step affinity purification (AP) was performed in quadruplicate as previously described for humans, with slight modifications."
+      }
+    }
+  },
+  "biological_replicate": {
+    "resolved": "4",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "4",
+        "evidence": "inferred: Single-step affinity purification (AP) was performed in quadruplicate as previously described for humans, with slight modifications."
+      }
+    }
+  },
+  "technical_replicate": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "factor_value": {
+    "resolved": "different bait pulldowns",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "different bait pulldowns",
+        "evidence": "inferred: Thresholds for new mtRP and mtAF candidates were based on the distribution of assigned mtRPs and other factors, respectively, in individual samples of the AP pulldowns, because overall this approach displayed a much better replicate correlation (\u223c0.66 for MRPS49 and MRPS63, \u223c0.62 for MRPL46, and \u223c0.54 for MRPL76 and mtPrA) than IP pulldowns."
+      }
+    }
+  },
+  "number_of_fractions": {
+    "resolved": "1",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "1",
+        "evidence": "Prior to LC\u2013MS/MS, protein digests were re-solubilized under agitation for 15 min in 10 \u03bcl of 0.2% formic acid."
+      }
+    }
+  },
+  "number_of_technical_replicates": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "number_of_biological_replicates": {
+    "resolved": "4",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "4",
+        "evidence": "Single-step affinity purification (AP) was performed in quadruplicate as previously described for humans, with slight modifications."
+      }
+    }
+  },
+  "number_of_samples": {
+    "resolved": "4",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "4",
+        "evidence": "Single-step affinity purification (AP) was performed in quadruplicate as previously described for humans, with slight modifications."
+      }
+    }
+  },
+  "technology_type": {
+    "resolved": "Shotgun proteomics; Affinity purification coupled with mass spectrometry proteomics",
+    "confidence": 0.9,
+    "status": "AGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics; Affinity purification coupled with mass spectrometry proteomics",
+        "accession": null,
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "affinity purification coupled with mass spectrometry proteomics",
+        "evidence": "Single-step affinity purification (AP) was performed in quadruplicate as previously described for humans, with slight modifications."
+      }
+    }
+  },
+  "experiment_type": {
+    "resolved": "Shotgun proteomics; Affinity purification coupled with mass spectrometry proteomics",
+    "confidence": 0.9,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics; Affinity purification coupled with mass spectrometry proteomics",
+        "accession": null,
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "quantification_method": {
+    "resolved": "LFQ",
+    "confidence": 1.0,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "LFQ",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "_confidence": {
+    "overall": 0.728,
+    "evidence_score": 0.544,
+    "completeness": 0.778,
+    "format_score": 1.0
+  },
+  "_meti_data": {
+    "ptms": {
+      "source": "PRIDE",
+      "source_field": "pride_metadata.identifiedPTMStrings",
+      "values": [
+        "monohydroxylated residue",
+        "phosphorylated residue",
+        "acetylated residue",
+        "(R)-5-oxo-1",
+        "iodoacetamide derivatized residue"
+      ]
+    },
+    "experiment_types": [
+      "Shotgun proteomics",
+      "Affinity purification coupled with mass spectrometry proteomics"
+    ],
+    "keywords": [
+      "Diplonema papillatum",
+      "Flagellate",
+      "Mitoribosome",
+      "Assembly intermediate",
+      "Affinity pulldown",
+      "Lc-msms"
+    ],
+    "spectra_stats": {
+      "acquisition_type": "DDA",
+      "fragmentation_tag": "??",
+      "n_ms2_spectra": 69095,
+      "n_spectra": 77503
+    },
+    "quantification_methods": [
+      "Spectrum count/molecular weight"
+    ],
+    "modification_site_fractions": {
+      "source": "PTM-Shepherd",
+      "source_field": "modification_site_fractions.dda_closed_search",
+      "num_mods_analyzed": 1,
+      "data": [
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "C",
+          "allowed_terms": "N-term",
+          "unique_peptides": 38,
+          "peptides_with_mod": 7,
+          "modified_sites": 7,
+          "potential_sites": 45,
+          "fraction_modified": 0.155556
+        }
+      ]
+    }
+  },
+  "modification_site_fractions": {
+    "resolved": {
+      "num_mods_analyzed": 1,
+      "data": [
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "C",
+          "allowed_terms": "N-term",
+          "unique_peptides": 38,
+          "peptides_with_mod": 7,
+          "modified_sites": 7,
+          "potential_sites": 45,
+          "fraction_modified": 0.155556
+        }
+      ]
+    },
+    "confidence": 1.0,
+    "status": "RUNASSESSOR_ONLY",
+    "sources": {
+      "meti": {
+        "value": {
+          "num_mods_analyzed": 1,
+          "data": [
+            {
+              "mod_key": "unimod:4",
+              "unimod_id": 4,
+              "mod_name": "Iodoacetamide derivative",
+              "mass_shift": 57.021465,
+              "allowed_residues": "C",
+              "allowed_terms": "N-term",
+              "unique_peptides": 38,
+              "peptides_with_mod": 7,
+              "modified_sites": 7,
+              "potential_sites": 45,
+              "fraction_modified": 0.155556
+            }
+          ]
+        },
+        "source": "PTM-Shepherd",
+        "source_field": "modification_site_fractions.dda_closed_search",
+        "score": 1.0
+      },
+      "llm": null
+    }
+  },
+  "_enrichment": {
+    "identifier": "PXD040176",
+    "pmid": 37207340,
+    "pxd_id": "PXD040176",
+    "meti_version": "1.0"
+  }
+}

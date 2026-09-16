@@ -1,0 +1,293 @@
+{
+  "species": {
+    "resolved": "Mus musculus (mouse)",
+    "confidence": 0.9,
+    "status": "AGREE",
+    "sources": {
+      "meti": {
+        "value": "Mus musculus (mouse)",
+        "accession": "10090",
+        "taxon_id": 10090,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "Mus musculus",
+        "evidence": "three-week-old male Swiss-Webster mice"
+      }
+    }
+  },
+  "tissue": {
+    "resolved": "Liver; Lung; Kidney; Heart",
+    "confidence": 0.9,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "Liver; Lung; Kidney; Heart",
+        "accession": null,
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "brain",
+        "evidence": "9 organs were harvested from three-week-old male Swiss-Webster mice: brain, brown fat, heart, liver, lung, kidney, pancreas, spleen, and testis."
+      }
+    }
+  },
+  "cell_type": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "cell_line": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "disease_state": {
+    "resolved": "Disease free",
+    "confidence": 0.9,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "Disease free",
+        "accession": "DOID:0000018",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "sample_source": {
+    "resolved": "tissue",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "tissue",
+        "evidence": "9 organs were harvested from three-week-old male Swiss-Webster mice: brain, brown fat, heart, liver, lung, kidney, pancreas, spleen, and testis."
+      }
+    }
+  },
+  "age": {
+    "resolved": "3 weeks",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "3 weeks",
+        "evidence": "three-week-old male Swiss-Webster mice"
+      }
+    }
+  },
+  "anatomic_site_tumor": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "BMI": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "sex": {
+    "resolved": "male",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "male",
+        "evidence": "three-week-old male Swiss-Webster mice"
+      }
+    }
+  },
+  "strain": {
+    "resolved": "Swiss-Webster",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "Swiss-Webster",
+        "evidence": "three-week-old male Swiss-Webster mice"
+      }
+    }
+  },
+  "material_type": {
+    "resolved": "tissue",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "tissue",
+        "evidence": "9 organs were harvested from three-week-old male Swiss-Webster mice: brain, brown fat, heart, liver, lung, kidney, pancreas, spleen, and testis."
+      }
+    }
+  },
+  "developmental_stage": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "ethnicity": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "_confidence": {
+    "overall": 0.821,
+    "evidence_score": 0.843,
+    "completeness": 0.5,
+    "format_score": 1.0
+  },
+  "_meti_data": {
+    "ptms": {
+      "source": "PRIDE",
+      "source_field": "pride_metadata.identifiedPTMStrings",
+      "values": [
+        "monohydroxylated residue",
+        "phosphorylated residue",
+        "iodoacetamide derivatized residue"
+      ]
+    },
+    "experiment_types": [
+      "Shotgun proteomics"
+    ],
+    "keywords": [
+      "Phosphoproteomics",
+      "Map phosphoproteome"
+    ],
+    "spectra_stats": {
+      "acquisition_type": "DDA",
+      "fragmentation_tag": "??",
+      "n_ms2_spectra": 7412,
+      "n_spectra": 8450
+    },
+    "quantification_methods": [
+      "Spectrum counting",
+      "Peptide counting"
+    ],
+    "modification_site_fractions": {
+      "source": "PTM-Shepherd",
+      "source_field": "modification_site_fractions.dda_closed_search",
+      "num_mods_analyzed": 1,
+      "data": [
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "C",
+          "allowed_terms": "N-term",
+          "unique_peptides": 131,
+          "peptides_with_mod": 32,
+          "modified_sites": 41,
+          "potential_sites": 172,
+          "fraction_modified": 0.238372
+        }
+      ]
+    }
+  },
+  "modification_site_fractions": {
+    "resolved": {
+      "num_mods_analyzed": 1,
+      "data": [
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "C",
+          "allowed_terms": "N-term",
+          "unique_peptides": 131,
+          "peptides_with_mod": 32,
+          "modified_sites": 41,
+          "potential_sites": 172,
+          "fraction_modified": 0.238372
+        }
+      ]
+    },
+    "confidence": 1.0,
+    "status": "RUNASSESSOR_ONLY",
+    "sources": {
+      "meti": {
+        "value": {
+          "num_mods_analyzed": 1,
+          "data": [
+            {
+              "mod_key": "unimod:4",
+              "unimod_id": 4,
+              "mod_name": "Iodoacetamide derivative",
+              "mass_shift": 57.021465,
+              "allowed_residues": "C",
+              "allowed_terms": "N-term",
+              "unique_peptides": 131,
+              "peptides_with_mod": 32,
+              "modified_sites": 41,
+              "potential_sites": 172,
+              "fraction_modified": 0.238372
+            }
+          ]
+        },
+        "source": "PTM-Shepherd",
+        "source_field": "modification_site_fractions.dda_closed_search",
+        "score": 1.0
+      },
+      "llm": null
+    }
+  },
+  "_enrichment": {
+    "identifier": "PXD019394",
+    "pmid": 21183079,
+    "pxd_id": "PXD019394",
+    "meti_version": "1.0"
+  }
+}

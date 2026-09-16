@@ -1,0 +1,341 @@
+{
+  "experimental_design": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 1.0,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": "cross-sectional",
+        "evidence": "inferred: The study compares chromatin proteins across multiple species from different taxonomic groups (eukaryotes and archaea) at a single time point rather than following changes over time."
+      }
+    }
+  },
+  "biological_replicate": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": "The text describes multiple species analyzed but does not explicitly state the number of biological replicates per species for the proteomics experiments."
+      }
+    }
+  },
+  "technical_replicate": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": "The text does not describe repeated measurements of the same sample."
+      }
+    }
+  },
+  "factor_value": {
+    "resolved": "species/taxonomic group",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "species/taxonomic group",
+        "evidence": "inferred: Proteomics analysis was performed across 26 species spanning eukaryotes and archaea to compare histone post-translational modifications."
+      }
+    }
+  },
+  "number_of_fractions": {
+    "resolved": "1",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "1",
+        "evidence": "No fractionation or pre-fractionation steps are described for the mass spectrometry analysis."
+      }
+    }
+  },
+  "number_of_technical_replicates": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": "No technical replicates are explicitly mentioned for the mass spectrometry analysis."
+      }
+    }
+  },
+  "number_of_biological_replicates": {
+    "resolved": "1",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "1",
+        "evidence": "No biological replicates are explicitly described for the proteomics experiments; each species appears to be analyzed once."
+      }
+    }
+  },
+  "number_of_samples": {
+    "resolved": "26",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "26",
+        "evidence": "inferred: We used the protein sequences of the canonical histones identified in each of the 26 species and we used them for the proteomic analysis of hPTMs."
+      }
+    }
+  },
+  "technology_type": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 0.9,
+    "status": "AGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": "PRIDE:0000429",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "bottom-up proteomics",
+        "evidence": "A 2-\u03bcg aliquot of the peptide mixture was analyzed using a LTQ-Orbitrap Fusion Lumos mass spectrometer coupled to an EASY-nLC 1000 with both collision induced dissociation (CID) and high energy collision dissociation (HCD) fragmentation."
+      }
+    }
+  },
+  "experiment_type": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 0.9,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": "PRIDE:0000429",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "quantification_method": {
+    "resolved": "LFQ",
+    "confidence": 1.0,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "LFQ",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "_confidence": {
+    "overall": 0.411,
+    "evidence_score": 0.156,
+    "completeness": 0.667,
+    "format_score": 0.667
+  },
+  "_meti_data": {
+    "ptms": {
+      "source": "PRIDE",
+      "source_field": "pride_metadata.identifiedPTMStrings",
+      "values": [
+        "dimethylated residue",
+        "acetylated residue",
+        "monomethylated residue"
+      ]
+    },
+    "experiment_types": [
+      "Shotgun proteomics"
+    ],
+    "keywords": [
+      "Proteogenomics",
+      "Histones",
+      "Evolution",
+      "Chromatin"
+    ],
+    "spectra_stats": {
+      "acquisition_type": "DDA",
+      "fragmentation_tag": "??",
+      "n_ms2_spectra": 33845,
+      "n_spectra": 38727
+    },
+    "quantification_methods": [
+      "LFQ"
+    ],
+    "modification_site_fractions": {
+      "source": "PTM-Shepherd",
+      "source_field": "modification_site_fractions.dda_closed_search",
+      "num_mods_analyzed": 3,
+      "data": [
+        {
+          "mod_key": "unimod:1922",
+          "unimod_id": 1922,
+          "mod_name": "Proline oxidation to 5-hydroxy-2-aminovaleric acid",
+          "mass_shift": 18.010565,
+          "allowed_residues": "P",
+          "allowed_terms": null,
+          "unique_peptides": 1557,
+          "peptides_with_mod": 574,
+          "modified_sites": 930,
+          "potential_sites": 1899,
+          "fraction_modified": 0.489731
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 1557,
+          "peptides_with_mod": 182,
+          "modified_sites": 198,
+          "potential_sites": 8154,
+          "fraction_modified": 0.024283
+        },
+        {
+          "mod_key": "unimod:1287",
+          "unimod_id": 1287,
+          "mod_name": "Loss of arginine due to transpeptidation",
+          "mass_shift": -156.1011,
+          "allowed_residues": NaN,
+          "allowed_terms": "C-term",
+          "unique_peptides": 1557,
+          "peptides_with_mod": 9,
+          "modified_sites": 9,
+          "potential_sites": 1557,
+          "fraction_modified": 0.00578
+        }
+      ]
+    }
+  },
+  "modification_site_fractions": {
+    "resolved": {
+      "num_mods_analyzed": 3,
+      "data": [
+        {
+          "mod_key": "unimod:1922",
+          "unimod_id": 1922,
+          "mod_name": "Proline oxidation to 5-hydroxy-2-aminovaleric acid",
+          "mass_shift": 18.010565,
+          "allowed_residues": "P",
+          "allowed_terms": null,
+          "unique_peptides": 1557,
+          "peptides_with_mod": 574,
+          "modified_sites": 930,
+          "potential_sites": 1899,
+          "fraction_modified": 0.489731
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 1557,
+          "peptides_with_mod": 182,
+          "modified_sites": 198,
+          "potential_sites": 8154,
+          "fraction_modified": 0.024283
+        },
+        {
+          "mod_key": "unimod:1287",
+          "unimod_id": 1287,
+          "mod_name": "Loss of arginine due to transpeptidation",
+          "mass_shift": -156.1011,
+          "allowed_residues": NaN,
+          "allowed_terms": "C-term",
+          "unique_peptides": 1557,
+          "peptides_with_mod": 9,
+          "modified_sites": 9,
+          "potential_sites": 1557,
+          "fraction_modified": 0.00578
+        }
+      ]
+    },
+    "confidence": 1.0,
+    "status": "RUNASSESSOR_ONLY",
+    "sources": {
+      "meti": {
+        "value": {
+          "num_mods_analyzed": 3,
+          "data": [
+            {
+              "mod_key": "unimod:1922",
+              "unimod_id": 1922,
+              "mod_name": "Proline oxidation to 5-hydroxy-2-aminovaleric acid",
+              "mass_shift": 18.010565,
+              "allowed_residues": "P",
+              "allowed_terms": null,
+              "unique_peptides": 1557,
+              "peptides_with_mod": 574,
+              "modified_sites": 930,
+              "potential_sites": 1899,
+              "fraction_modified": 0.489731
+            },
+            {
+              "mod_key": "unimod:4",
+              "unimod_id": 4,
+              "mod_name": "Iodoacetamide derivative",
+              "mass_shift": 57.021465,
+              "allowed_residues": "CDEHKMSTUY",
+              "allowed_terms": "N-term",
+              "unique_peptides": 1557,
+              "peptides_with_mod": 182,
+              "modified_sites": 198,
+              "potential_sites": 8154,
+              "fraction_modified": 0.024283
+            },
+            {
+              "mod_key": "unimod:1287",
+              "unimod_id": 1287,
+              "mod_name": "Loss of arginine due to transpeptidation",
+              "mass_shift": -156.1011,
+              "allowed_residues": NaN,
+              "allowed_terms": "C-term",
+              "unique_peptides": 1557,
+              "peptides_with_mod": 9,
+              "modified_sites": 9,
+              "potential_sites": 1557,
+              "fraction_modified": 0.00578
+            }
+          ]
+        },
+        "source": "PTM-Shepherd",
+        "source_field": "modification_site_fractions.dda_closed_search",
+        "score": 1.0
+      },
+      "llm": null
+    }
+  },
+  "_enrichment": {
+    "identifier": "PXD031991",
+    "pmid": 35680998,
+    "pxd_id": "PXD031991",
+    "meti_version": "1.0"
+  }
+}

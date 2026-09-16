@@ -1,0 +1,365 @@
+{
+  "instrument": {
+    "resolved": "Q Exactive",
+    "confidence": 1.0,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "Q Exactive",
+        "accession": "MS:1001911",
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": "Q-Exactive mass spectrometer",
+        "evidence": "Purified peptides were analyzed using an Easy nano LC 1000 nanoflow HPLC (Thermo Fisher) on-line coupled to a Q-Exactive mass spectrometer (Thermo Fisher)."
+      }
+    }
+  },
+  "fragmentation_method": {
+    "resolved": "HCD",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "HCD",
+        "evidence": "The Q-Exactive was operated in a data-dependent mode using Xcalibur v.2.2 (Thermo Fisher) and set to acquire a full-range scan at 70,000 resolution from 350 to 2000 Th (AGC target 3E6) and to fragment the top ten multiply charged ions above 5% underfill ratio by HCD (resolution 17,500, AGC target 1E5, maximum injection time 60\u2009ms, NCE 28) in each cycle."
+      }
+    }
+  },
+  "ionization_type": {
+    "resolved": "ESI",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "ESI",
+        "evidence": "Singly charged ions were excluded since in ESI mode peptides usually carry multiple charges."
+      }
+    }
+  },
+  "labeling": {
+    "resolved": "SILAC",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "SILAC",
+        "evidence": "We applied stable isotopic labeling by amino acids in cell culture (SILAC)-based mass spectrometry to precisely quantify protein abundance in HeLa cells after 4\u2009h or 24\u2009h of IFN stimulation (Fig.\u00a01a)."
+      }
+    }
+  },
+  "cleavage_agent": {
+    "resolved": "LysC; trypsin",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "LysC; trypsin",
+        "evidence": "Three micrograms of LysC was added to each sample and incubated for 3\u2009h at room temperature. Subsequently, samples were diluted with 4 volumes of Digestion Buffer (50\u2009mM NH4HCO3) and trypsin (Promega) was added at a ratio of 1:50."
+      }
+    }
+  },
+  "enrichment_method": {
+    "resolved": "antibody",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "antibody",
+        "evidence": "Two hundred fifty micrograms of protein from control or IFN-stimulated samples was diluted to 500\u2009\u03bcL in SEC buffer and incubated with the desired antibody or IgG as a control overnight at 4\u2009\u00b0C."
+      }
+    }
+  },
+  "fractionation_method": {
+    "resolved": "high pH reverse-phase (RP) fractionation; size exclusion chromatography (SEC)",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "high pH reverse-phase (RP) fractionation; size exclusion chromatography (SEC)",
+        "evidence": "Peptides from each biological replicate were then subjected to high pH reverse-phase (RP) fractionation on an Agilent 1100 HPLC system with an Agilent Zorbax Extend column (1.0\u2009\u00d7\u200950\u2009mm, 3.5\u2009\u03bcm particles, flow rate of 50\u2009\u03bcL/min). Briefly, after 24\u2009h treatment with IFN\u03b2, cells were immediately harvested by centrifugation at 200 r.c.f. for 5\u2009min at 4\u2009\u00b0C and washed three times with ice-cold 1\u00d7 PBS."
+      }
+    }
+  },
+  "acquisition_method": {
+    "resolved": "DDA",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "DDA",
+        "evidence": "The Q-Exactive was operated in a data-dependent mode using Xcalibur v.2.2 (Thermo Fisher) and set to acquire a full-range scan at 70,000 resolution from 350 to 2000 Th (AGC target 3E6) and to fragment the top ten multiply charged ions above 5% underfill ratio by HCD (resolution 17,500, AGC target 1E5, maximum injection time 60\u2009ms, NCE 28) in each cycle."
+      }
+    }
+  },
+  "collision_energy": {
+    "resolved": "NCE 28; 23 to 65\u2009eV; 42\u2009eV",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "NCE 28; 23 to 65\u2009eV; 42\u2009eV",
+        "evidence": "The Q-Exactive was operated in a data-dependent mode using Xcalibur v.2.2 (Thermo Fisher) and set to acquire a full-range scan at 70,000 resolution from 350 to 2000 Th (AGC target 3E6) and to fragment the top ten multiply charged ions above 5% underfill ratio by HCD (resolution 17,500, AGC target 1E5, maximum injection time 60\u2009ms, NCE 28) in each cycle. The isolation window for MS/MS was 2 to 3 Th depending on parent ion mass to charge ratio, and the collision energy ranged from 23 to 65\u2009eV depending on ion mass and charge. The collision energy was 42\u2009eV."
+      }
+    }
+  },
+  "reduction_reagent": {
+    "resolved": "DTT",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "DTT",
+        "evidence": "For shotgun proteomic analysis, ~\u20091.0\u2009\u00d7\u2009107 cells were harvested from control (light), 4\u2009h IFN\u03b2 stimulation (medium), and 24\u2009h IFN\u03b2 stimulation (heavy). Cells were lysed in Lysis Buffer (4% SDS, 10\u2009mM DTT, 100\u2009mM Tris-HCl, pH\u20098.8) and heated at 95\u2009\u00b0C for 5\u2009min."
+      }
+    }
+  },
+  "alkylation_reagent": {
+    "resolved": "iodoacetamide",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "iodoacetamide",
+        "evidence": "Samples were reduced and alkylated by adding 6\u2009\u03bcg of DTT and 15\u2009\u03bcg of iodoacetamide and incubating at room temperature in the dark for 30\u2009min and 20\u2009min, respectively."
+      }
+    }
+  },
+  "reduction_concentration": {
+    "resolved": "10\u2009mM",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "10\u2009mM",
+        "evidence": "For shotgun proteomic analysis, ~\u20091.0\u2009\u00d7\u2009107 cells were harvested from control (light), 4\u2009h IFN\u03b2 stimulation (medium), and 24\u2009h IFN\u03b2 stimulation (heavy). Cells were lysed in Lysis Buffer (4% SDS, 10\u2009mM DTT, 100\u2009mM Tris-HCl, pH\u20098.8) and heated at 95\u2009\u00b0C for 5\u2009min."
+      }
+    }
+  },
+  "alkylation_concentration": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "mass_analyzer": {
+    "resolved": "Orbitrap",
+    "confidence": 1.0,
+    "status": "AGREE",
+    "sources": {
+      "meti": {
+        "value": "Orbitrap",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": "Orbitrap",
+        "evidence": "Purified peptides were analyzed using an Easy nano LC 1000 nanoflow HPLC (Thermo Fisher) on-line coupled to a Q-Exactive mass spectrometer (Thermo Fisher)."
+      }
+    }
+  },
+  "ptm": {
+    "resolved": "No PTMs are included in the dataset",
+    "confidence": 0.9,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "No PTMs are included in the dataset",
+        "accession": "PRIDE:0000398",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "carbamidomethyl; methionine oxidation; deamidation (NQ); N-acetylation (protein N-terminus); N-acetyl peptides",
+        "evidence": "For shotgun SILAC experiments, the following parameters were used: peptide mass accuracy, 20\u2009ppm (ppm) for first search, 10\u2009ppm for second search; trypsin enzyme specificity, fixed modifications, carbamidomethyl; variable modifications, methionine oxidation, deamidation (NQ), and N-acetylation (protein N-terminus); and all other parameters as preset. For timsTOF data, analysis was performed using MaxQuant 1.6.10.43. The search was performed against a database comprised of the protein sequences from the source organism plus common contaminants using the following parameters: peptide mass accuracy 10\u2009ppm, fragment mass accuracy 0.05\u2009Da, trypsin enzyme specificity, fixed modifications\u2014carbamidomethyl, and variable modifications\u2014methionine oxidation and N-acetyl peptides."
+      }
+    }
+  },
+  "modification": {
+    "resolved": "No PTMs are included in the dataset",
+    "confidence": 0.9,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "No PTMs are included in the dataset",
+        "accession": "PRIDE:0000398",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "_confidence": {
+    "overall": 0.807,
+    "evidence_score": 0.64,
+    "completeness": 0.933,
+    "format_score": 1.0
+  },
+  "_meti_data": {
+    "ptms": {
+      "source": "PRIDE",
+      "source_field": "pride_metadata.identifiedPTMStrings",
+      "values": [
+        "No PTMs are included in the dataset"
+      ]
+    },
+    "experiment_types": [
+      "Shotgun proteomics",
+      "Affinity purification coupled with mass spectrometry proteomics"
+    ],
+    "keywords": [
+      "Innate immunity",
+      "Protein correlation profiling",
+      "Proteomics",
+      "Protein complexes",
+      "Interferon stimulated gene",
+      "Interferon",
+      "Interactome"
+    ],
+    "spectra_stats": {
+      "acquisition_type": "DDA",
+      "fragmentation_tag": "??",
+      "n_ms2_spectra": 65528,
+      "n_spectra": 77073
+    },
+    "quantification_methods": [
+      "MS1 intensity based label-free quantification method",
+      "SILAC"
+    ],
+    "modification_site_fractions": {
+      "source": "PTM-Shepherd",
+      "source_field": "modification_site_fractions.dda_closed_search",
+      "num_mods_analyzed": 2,
+      "data": [
+        {
+          "mod_key": "unimod:481",
+          "unimod_id": 481,
+          "mod_name": "4,4,5,5-D4 Lysine",
+          "mass_shift": 4.025107,
+          "allowed_residues": "AFKUY",
+          "allowed_terms": null,
+          "unique_peptides": 47146,
+          "peptides_with_mod": 15698,
+          "modified_sites": 32914,
+          "potential_sites": 134130,
+          "fraction_modified": 0.245389
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 47146,
+          "peptides_with_mod": 23199,
+          "modified_sites": 51736,
+          "potential_sites": 337134,
+          "fraction_modified": 0.153458
+        }
+      ]
+    }
+  },
+  "modification_site_fractions": {
+    "resolved": {
+      "num_mods_analyzed": 2,
+      "data": [
+        {
+          "mod_key": "unimod:481",
+          "unimod_id": 481,
+          "mod_name": "4,4,5,5-D4 Lysine",
+          "mass_shift": 4.025107,
+          "allowed_residues": "AFKUY",
+          "allowed_terms": null,
+          "unique_peptides": 47146,
+          "peptides_with_mod": 15698,
+          "modified_sites": 32914,
+          "potential_sites": 134130,
+          "fraction_modified": 0.245389
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 47146,
+          "peptides_with_mod": 23199,
+          "modified_sites": 51736,
+          "potential_sites": 337134,
+          "fraction_modified": 0.153458
+        }
+      ]
+    },
+    "confidence": 1.0,
+    "status": "RUNASSESSOR_ONLY",
+    "sources": {
+      "meti": {
+        "value": {
+          "num_mods_analyzed": 2,
+          "data": [
+            {
+              "mod_key": "unimod:481",
+              "unimod_id": 481,
+              "mod_name": "4,4,5,5-D4 Lysine",
+              "mass_shift": 4.025107,
+              "allowed_residues": "AFKUY",
+              "allowed_terms": null,
+              "unique_peptides": 47146,
+              "peptides_with_mod": 15698,
+              "modified_sites": 32914,
+              "potential_sites": 134130,
+              "fraction_modified": 0.245389
+            },
+            {
+              "mod_key": "unimod:4",
+              "unimod_id": 4,
+              "mod_name": "Iodoacetamide derivative",
+              "mass_shift": 57.021465,
+              "allowed_residues": "CDEHKMSTUY",
+              "allowed_terms": "N-term",
+              "unique_peptides": 47146,
+              "peptides_with_mod": 23199,
+              "modified_sites": 51736,
+              "potential_sites": 337134,
+              "fraction_modified": 0.153458
+            }
+          ]
+        },
+        "source": "PTM-Shepherd",
+        "source_field": "modification_site_fractions.dda_closed_search",
+        "score": 1.0
+      },
+      "llm": null
+    }
+  },
+  "_enrichment": {
+    "identifier": "PXD013809",
+    "pmid": 32539747,
+    "pxd_id": "PXD013809",
+    "meti_version": "1.0"
+  }
+}

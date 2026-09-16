@@ -1,0 +1,373 @@
+{
+  "instrument": {
+    "resolved": "Q Exactive",
+    "confidence": 1.0,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "Q Exactive",
+        "accession": "MS:1001911",
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": "Q-Exactive mass spectrometer",
+        "evidence": "Impact II; Bruker Daltonics"
+      }
+    }
+  },
+  "fragmentation_method": {
+    "resolved": "HCD",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "HCD",
+        "evidence": ""
+      }
+    }
+  },
+  "ionization_type": {
+    "resolved": "nano ESI",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "nano ESI",
+        "evidence": "Captive spray nanospray ionization source"
+      }
+    }
+  },
+  "labeling": {
+    "resolved": "SILAC",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "SILAC",
+        "evidence": "label-free quantitation (LFQ)"
+      }
+    }
+  },
+  "cleavage_agent": {
+    "resolved": "LysC",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "LysC",
+        "evidence": "trypsin"
+      }
+    }
+  },
+  "enrichment_method": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": ""
+      }
+    }
+  },
+  "fractionation_method": {
+    "resolved": "high pH reverse-phase (RP) fractionation",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "high pH reverse-phase (RP) fractionation",
+        "evidence": "size exclusion chromatography"
+      }
+    }
+  },
+  "acquisition_method": {
+    "resolved": "data-dependent",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "data-dependent",
+        "evidence": "data-dependent auto-MS/MS mode"
+      }
+    }
+  },
+  "collision_energy": {
+    "resolved": "NCE 28",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "NCE 28",
+        "evidence": "collision energy ranged from 23 to 65 eV"
+      }
+    }
+  },
+  "reduction_reagent": {
+    "resolved": "DTT",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "DTT",
+        "evidence": ""
+      }
+    }
+  },
+  "alkylation_reagent": {
+    "resolved": "iodoacetamide",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "iodoacetamide",
+        "evidence": ""
+      }
+    }
+  },
+  "reduction_concentration": {
+    "resolved": "6 \u03bcg of DTT",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "6 \u03bcg of DTT",
+        "evidence": "10 mM DTT"
+      }
+    }
+  },
+  "alkylation_concentration": {
+    "resolved": "15 \u03bcg of iodoacetamide",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "15 \u03bcg of iodoacetamide",
+        "evidence": ""
+      }
+    }
+  },
+  "mass_analyzer": {
+    "resolved": "Orbitrap",
+    "confidence": 1.0,
+    "status": "AGREE",
+    "sources": {
+      "meti": {
+        "value": "Orbitrap",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": "Orbitrap",
+        "evidence": "quadrupole time of flight"
+      }
+    }
+  },
+  "ptm": {
+    "resolved": "No PTMs are included in the dataset",
+    "confidence": 0.9,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "No PTMs are included in the dataset",
+        "accession": "PRIDE:0000398",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "carbamidomethyl",
+        "evidence": "methionine oxidation"
+      }
+    }
+  },
+  "modification": {
+    "resolved": "No PTMs are included in the dataset",
+    "confidence": 0.9,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "No PTMs are included in the dataset",
+        "accession": "PRIDE:0000398",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "_confidence": {
+    "overall": 0.257,
+    "evidence_score": 0.207,
+    "completeness": 0.267,
+    "format_score": 0.333
+  },
+  "_hallucination_flags": [
+    {
+      "type": "numeric_mismatch",
+      "field": "reduction_concentration",
+      "value": "6 \u03bcg of DTT",
+      "evidence": "10 mM DTT"
+    }
+  ],
+  "_meti_data": {
+    "ptms": {
+      "source": "PRIDE",
+      "source_field": "pride_metadata.identifiedPTMStrings",
+      "values": [
+        "No PTMs are included in the dataset"
+      ]
+    },
+    "experiment_types": [
+      "Shotgun proteomics",
+      "Affinity purification coupled with mass spectrometry proteomics"
+    ],
+    "keywords": [
+      "Innate immunity",
+      "Protein correlation profiling",
+      "Proteomics",
+      "Protein complexes",
+      "Interferon stimulated gene",
+      "Interferon",
+      "Interactome"
+    ],
+    "spectra_stats": {
+      "acquisition_type": "DDA",
+      "fragmentation_tag": "??",
+      "n_ms2_spectra": 65528,
+      "n_spectra": 77073
+    },
+    "quantification_methods": [
+      "MS1 intensity based label-free quantification method",
+      "SILAC"
+    ],
+    "modification_site_fractions": {
+      "source": "PTM-Shepherd",
+      "source_field": "modification_site_fractions.dda_closed_search",
+      "num_mods_analyzed": 2,
+      "data": [
+        {
+          "mod_key": "unimod:481",
+          "unimod_id": 481,
+          "mod_name": "4,4,5,5-D4 Lysine",
+          "mass_shift": 4.025107,
+          "allowed_residues": "AFKUY",
+          "allowed_terms": null,
+          "unique_peptides": 47146,
+          "peptides_with_mod": 15698,
+          "modified_sites": 32914,
+          "potential_sites": 134130,
+          "fraction_modified": 0.245389
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 47146,
+          "peptides_with_mod": 23199,
+          "modified_sites": 51736,
+          "potential_sites": 337134,
+          "fraction_modified": 0.153458
+        }
+      ]
+    }
+  },
+  "modification_site_fractions": {
+    "resolved": {
+      "num_mods_analyzed": 2,
+      "data": [
+        {
+          "mod_key": "unimod:481",
+          "unimod_id": 481,
+          "mod_name": "4,4,5,5-D4 Lysine",
+          "mass_shift": 4.025107,
+          "allowed_residues": "AFKUY",
+          "allowed_terms": null,
+          "unique_peptides": 47146,
+          "peptides_with_mod": 15698,
+          "modified_sites": 32914,
+          "potential_sites": 134130,
+          "fraction_modified": 0.245389
+        },
+        {
+          "mod_key": "unimod:4",
+          "unimod_id": 4,
+          "mod_name": "Iodoacetamide derivative",
+          "mass_shift": 57.021465,
+          "allowed_residues": "CDEHKMSTUY",
+          "allowed_terms": "N-term",
+          "unique_peptides": 47146,
+          "peptides_with_mod": 23199,
+          "modified_sites": 51736,
+          "potential_sites": 337134,
+          "fraction_modified": 0.153458
+        }
+      ]
+    },
+    "confidence": 1.0,
+    "status": "RUNASSESSOR_ONLY",
+    "sources": {
+      "meti": {
+        "value": {
+          "num_mods_analyzed": 2,
+          "data": [
+            {
+              "mod_key": "unimod:481",
+              "unimod_id": 481,
+              "mod_name": "4,4,5,5-D4 Lysine",
+              "mass_shift": 4.025107,
+              "allowed_residues": "AFKUY",
+              "allowed_terms": null,
+              "unique_peptides": 47146,
+              "peptides_with_mod": 15698,
+              "modified_sites": 32914,
+              "potential_sites": 134130,
+              "fraction_modified": 0.245389
+            },
+            {
+              "mod_key": "unimod:4",
+              "unimod_id": 4,
+              "mod_name": "Iodoacetamide derivative",
+              "mass_shift": 57.021465,
+              "allowed_residues": "CDEHKMSTUY",
+              "allowed_terms": "N-term",
+              "unique_peptides": 47146,
+              "peptides_with_mod": 23199,
+              "modified_sites": 51736,
+              "potential_sites": 337134,
+              "fraction_modified": 0.153458
+            }
+          ]
+        },
+        "source": "PTM-Shepherd",
+        "source_field": "modification_site_fractions.dda_closed_search",
+        "score": 1.0
+      },
+      "llm": null
+    }
+  },
+  "_enrichment": {
+    "identifier": "PXD013809",
+    "pmid": 32539747,
+    "pxd_id": "PXD013809",
+    "meti_version": "1.0"
+  }
+}

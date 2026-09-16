@@ -1,0 +1,210 @@
+{
+  "experimental_design": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 1.0,
+    "status": "DISAGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": null,
+        "taxon_id": null,
+        "score": 1.0
+      },
+      "llm": {
+        "value": "treated vs control",
+        "evidence": "inferred: OT-II proliferation/priming experiments included untreated WT virgin female negative control and c-OVA/Adj-immunized positive control for comparison"
+      }
+    }
+  },
+  "biological_replicate": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": "inferred: Mouse experiments used multiple mice per group (minimum n=5 mice per group with some exceptions of n=3), but specific biological replicate structure not explicitly described"
+      }
+    }
+  },
+  "technical_replicate": {
+    "resolved": "2",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "2",
+        "evidence": "inferred: samples were analysed by LC-MS/MS in duplicate 2 \u03bcl injections"
+      }
+    }
+  },
+  "factor_value": {
+    "resolved": "pregnancy status, antigen expression (mOVA), treatment (c-OVA/adjuvant)",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "pregnancy status, antigen expression (mOVA), treatment (c-OVA/adjuvant)",
+        "evidence": "inferred: Comparisons were made between pregnant vs virgin mice, mOVA+ vs WT pregnancies, and treated vs untreated conditions"
+      }
+    }
+  },
+  "number_of_fractions": {
+    "resolved": "1",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "1",
+        "evidence": "No fractionation described for the LC-MS/MS proteomics experiment"
+      }
+    }
+  },
+  "number_of_technical_replicates": {
+    "resolved": "2",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "2",
+        "evidence": "analysed by liquid chromatography with tandem mass spectrometry (LC\u2013MS/MS; described below) in duplicate 2 \u03bcl injections"
+      }
+    }
+  },
+  "number_of_biological_replicates": {
+    "resolved": "3-5",
+    "confidence": 0.5,
+    "status": "LLM_ONLY",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "3-5",
+        "evidence": "The number of mice for each group is shown on the graphs, and at minimum there were n = 5 mice per group with the following exceptions in which there were only n = 3 mice in some groups"
+      }
+    }
+  },
+  "number_of_samples": {
+    "resolved": null,
+    "confidence": 0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": {
+        "value": "unknown",
+        "evidence": "Sample numbers for the LC-MS/MS analysis of human and mouse plasma glycopeptides not explicitly stated"
+      }
+    }
+  },
+  "technology_type": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 0.9,
+    "status": "AGREE",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": "PRIDE:0000429",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": "bottom-up proteomics",
+        "evidence": "Peptides were identified using LC-MS/MS with trypsin digestion and Paragon algorithm analysis"
+      }
+    }
+  },
+  "experiment_type": {
+    "resolved": "Shotgun proteomics",
+    "confidence": 0.9,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "Shotgun proteomics",
+        "accession": "PRIDE:0000429",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "quantification_method": {
+    "resolved": "MS1 intensity based label-free quantification method",
+    "confidence": 0.9,
+    "status": "METI_ONLY",
+    "sources": {
+      "meti": {
+        "value": "MS1 intensity based label-free quantification method",
+        "accession": "PRIDE:0000425",
+        "taxon_id": null,
+        "score": 0.9
+      },
+      "llm": {
+        "value": null,
+        "evidence": ""
+      }
+    }
+  },
+  "_confidence": {
+    "overall": 0.506,
+    "evidence_score": 0.233,
+    "completeness": 0.778,
+    "format_score": 0.778
+  },
+  "_meti_data": {
+    "ptms": {
+      "source": "PRIDE",
+      "source_field": "pride_metadata.identifiedPTMStrings",
+      "values": [
+        "N-acetylneuraminylated residue"
+      ]
+    },
+    "experiment_types": [
+      "Shotgun proteomics"
+    ],
+    "keywords": [
+      "Lc-msms",
+      "Cd22",
+      "Placenta glycoproteins",
+      "Sialic acid",
+      "Fetomaternal tolerance",
+      "B cells"
+    ],
+    "spectra_stats": {
+      "acquisition_type": "DDA",
+      "fragmentation_tag": "HR QTOF",
+      "n_ms2_spectra": 7352,
+      "n_spectra": 23873
+    },
+    "quantification_methods": [
+      "MS1 intensity based label-free quantification method"
+    ],
+    "modification_site_fractions": {
+      "source": "PTM-Shepherd",
+      "source_field": "modification_site_fractions.dda_closed_search",
+      "num_mods_analyzed": 0,
+      "data": []
+    }
+  },
+  "modification_site_fractions": {
+    "resolved": null,
+    "confidence": 0.0,
+    "status": "UNKNOWN",
+    "sources": {
+      "meti": null,
+      "llm": null
+    }
+  },
+  "_enrichment": {
+    "identifier": "PXD029966",
+    "pmid": 35236989,
+    "pxd_id": "PXD029966",
+    "meti_version": "1.0"
+  }
+}
