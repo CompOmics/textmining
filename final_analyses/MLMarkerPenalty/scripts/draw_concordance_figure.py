@@ -12,7 +12,7 @@ Bottom: HAMLET proposes SEVERAL tissues -> MLMarker chooses
 
 Inputs: results/MLMarker_v_HAMLET/healthy_native_human_concordance.tsv (penalised
 scoring, biofluids excluded), results/run_meta_mlmarker_all_penalty.tsv (coverage),
-results/propose_choose/validation_summary.csv, results/granularity/A_multi_tissue_samples.csv.
+results/granularity/A_multi_tissue_samples.csv (scripts/granularity_and_disease.py).
 """
 from __future__ import annotations
 
@@ -61,7 +61,6 @@ def main():
     # a HAMLET tissue outside the 34 classes cannot be matched by construction:
     # report it as its own category instead of as conflict / distant
     single.loc[~single.is_in_mlm_vocab.astype(bool), "concordance_tier"] = OOV
-    val = pd.read_csv(RES / "propose_choose/validation_summary.csv")
     cancer = pd.read_csv(RES / "MLMarker_v_HAMLET/cancer_diseased_human_concordance.tsv", sep="\t")
     cancer = cancer.merge(cov, on=["pxd", "run"], how="left"); cancer["usable"] = cancer.coverage >= 0.10
     multi = pd.read_csv(RES / "granularity/A_multi_tissue_samples.csv")
@@ -83,7 +82,7 @@ def main():
         ax.set_xticks(x); ax.set_xticklabels([TIER_LABEL[t] for t in TIERS], fontsize=7.5, rotation=25, ha="right"); ax.set_ylabel("runs"); ax.grid(False, axis="x")
         from matplotlib.patches import Patch
         ax.legend(handles=[Patch(color=NEUTRAL, alpha=1.0, label="high coverage"),
-                           Patch(color=NEUTRAL, alpha=0.45, label="low coverage")], loc="upper right")
+                           Patch(color=NEUTRAL, alpha=0.45, label="low coverage")], loc="upper left")
         panel_title(ax, "a")
 
     def p_b(ax):

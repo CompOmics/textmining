@@ -24,6 +24,20 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from core.field_mappings import ANNOTATION_TO_GOLDEN as FIELD_MAPPING
 
 
+# "9606 (Homo sapiens)", "NCBITaxon:9606 (Homo sapiens)" -> "Homo sapiens".
+# Annotators and some SDRFs prefix the organism with its taxon id; the
+# benchmark compares names, and the id prefix made every species value of
+# those datasets a NO_MATCH (2026-09-14).
+_TAXON_PREFIX_RE = re.compile(r"^\s*(?:NCBITaxon:)?\d+\s*\((.+)\)\s*$", re.IGNORECASE)
+
+
+def strip_taxon_id(value):
+    if value is None:
+        return None
+    m = _TAXON_PREFIX_RE.match(str(value))
+    return m.group(1).strip() if m else value
+
+
 def convert_annotation(annotation_path: Path, pxd_id: str) -> dict:
     """Parse annotation JSON and return 3 golden-set dicts (one per agent)."""
     
@@ -44,6 +58,8 @@ def convert_annotation(annotation_path: Path, pxd_id: str) -> dict:
         
         if values and isinstance(values, list):
             # Join multiple values with "; " to match golden format
+            if golden_field in ("species", "organism"):
+                values = [strip_taxon_id(v) for v in values]
             joined = "; ".join(str(v) for v in values if v)
             agents[agent][golden_field] = joined if joined else None
         else:

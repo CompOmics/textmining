@@ -69,6 +69,20 @@ def parse_ac_value(entry: str) -> str:
     return None
 
 
+# "9606 (Homo sapiens)", "NCBITaxon:9606 (Homo sapiens)" -> "Homo sapiens".
+# Annotators and some SDRFs prefix the organism with its taxon id; the
+# benchmark compares names, and the id prefix made every species value of
+# those datasets a NO_MATCH (2026-09-14).
+_TAXON_PREFIX_RE = re.compile(r"^\s*(?:NCBITaxon:)?\d+\s*\((.+)\)\s*$", re.IGNORECASE)
+
+
+def strip_taxon_id(value):
+    if value is None:
+        return None
+    m = _TAXON_PREFIX_RE.match(str(value))
+    return m.group(1).strip() if m else value
+
+
 def unique_values(values: list, parse_fn=None) -> str | None:
     """Deduplicate and join values, optionally applying a parse function."""
     parsed = []
@@ -130,6 +144,8 @@ def convert_sdrf(sdrf_path: Path, pxd_id: str) -> dict:
         values = get_all_values(sdrf_col)
         if sdrf_col == "instrument":
             bio_fields[golden_field] = unique_values(values, parse_nt_value)
+        elif golden_field == "species":
+            bio_fields[golden_field] = unique_values(values, strip_taxon_id)
         else:
             bio_fields[golden_field] = unique_values(values)
     

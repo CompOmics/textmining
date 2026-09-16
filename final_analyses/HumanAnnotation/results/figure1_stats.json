@@ -1,6 +1,4 @@
 {
-  "embedding_model": "sapbert",
-  "semantic_threshold": 0.7,
   "n_labels": 42,
   "n_docs": 27,
   "n_identities": 13,
@@ -36,26 +34,6 @@
       "positive_agreement": 0.8204075629190752,
       "both_absent_share": 0.5035273368606702,
       "n_pairs": 3
-    }
-  },
-  "presence_kappa": {
-    "human_human": {
-      "mean": 0.4274794541178061,
-      "min": 0.16803278688524595,
-      "max": 0.7083333333333334,
-      "n": 35
-    },
-    "model_human": {
-      "mean": 0.399906059752044,
-      "min": 0.1969507623094226,
-      "max": 0.5593018643395479,
-      "n": 27
-    },
-    "model_model": {
-      "mean": 0.6900912098866815,
-      "min": 0.6766394545617654,
-      "max": 0.7152963160704751,
-      "n": 3
     }
   },
   "tests": {
@@ -150,12 +128,63 @@
       }
     }
   },
-  "embedding_model_name": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
   "value_match": {
     "n_instances": 8286,
     "exact_pct": 73.43712285783249,
     "semantic_pct": 14.965001206854936,
     "no_match_pct": 11.597875935312572
+  },
+  "movement": {
+    "biological": {
+      "n_labels": 12,
+      "n_pairs": 35,
+      "string_kappa": 0.3725956132576253,
+      "sapbert_kappa": 0.4563783931108019,
+      "shift": 0.08378277985317661
+    },
+    "experimental_design": {
+      "n_labels": 10,
+      "n_pairs": 35,
+      "string_kappa": 0.22429572066846018,
+      "sapbert_kappa": 0.2766903535451151,
+      "shift": 0.05239463287665489
+    },
+    "technical": {
+      "n_labels": 20,
+      "n_pairs": 35,
+      "string_kappa": 0.31555456145612415,
+      "sapbert_kappa": 0.4423012537863256,
+      "shift": 0.12674669233020147
+    }
+  },
+  "movement_pooled": {
+    "string_kappa": 0.30414863179406987,
+    "sapbert_kappa": 0.3917900001474142
+  },
+  "rarity_vs_difficulty": {
+    "rho": 0.07103702683463185,
+    "p": 0.6548428094252716,
+    "n_labels": 42
+  },
+  "presence_kappa": {
+    "human_human": {
+      "mean": 0.4274794541178061,
+      "min": 0.16803278688524595,
+      "max": 0.7083333333333334,
+      "n": 35
+    },
+    "model_human": {
+      "mean": 0.399906059752044,
+      "min": 0.1969507623094226,
+      "max": 0.5593018643395479,
+      "n": 27
+    },
+    "model_model": {
+      "mean": 0.6900912098866815,
+      "min": 0.6766394545617654,
+      "max": 0.7152963160704751,
+      "n": 3
+    }
   },
   "value_kappa_string": {
     "human_human": {
@@ -179,21 +208,21 @@
   },
   "value_kappa": {
     "human_human": {
-      "mean": 0.43511391880399275,
-      "min": 0.17623305451398896,
-      "max": 0.6514522821576764,
+      "mean": 0.44233901836718587,
+      "min": 0.18236472945891785,
+      "max": 0.656967840735069,
       "n": 35
     },
     "model_human": {
-      "mean": 0.3823088285161082,
-      "min": 0.2376948318293684,
-      "max": 0.511340162276125,
+      "mean": 0.3922065112111197,
+      "min": 0.2490909090909091,
+      "max": 0.5255136856471302,
       "n": 30
     },
     "model_model": {
-      "mean": 0.5677516182372657,
-      "min": 0.5618720182712269,
-      "max": 0.5729564169511949,
+      "mean": 0.5759919152441465,
+      "min": 0.570196943891381,
+      "max": 0.5808840611338341,
       "n": 3
     }
   },
@@ -201,53 +230,13 @@
     "n_pairs": 77,
     "n_up": 77,
     "n_down": 0,
-    "mean_gain": 0.10111098669678727,
-    "min_gain": 0.03533178899767489,
-    "max_gain": 0.19335113005310067
-  },
-  "movement": {
-    "biological": {
-      "n_labels": 12,
-      "n_pairs": 35,
-      "string_kappa": 0.3725956132576253,
-      "sapbert_kappa": 0.45642636042535534,
-      "shift": 0.08383074716773002
-    },
-    "experimental_design": {
-      "n_labels": 10,
-      "n_pairs": 35,
-      "string_kappa": 0.22429572066846018,
-      "sapbert_kappa": 0.27372227021116663,
-      "shift": 0.04942654954270643
-    },
-    "technical": {
-      "n_labels": 20,
-      "n_pairs": 35,
-      "string_kappa": 0.31555456145612415,
-      "sapbert_kappa": 0.42778326628150454,
-      "shift": 0.11222870482538035
-    }
-  },
-  "movement_pooled": {
-    "string_kappa": 0.30414863179406987,
-    "sapbert_kappa": 0.3859772989726754
+    "mean_gain": 0.1095206910954776,
+    "min_gain": 0.041944035883022535,
+    "max_gain": 0.2038718793085767
   },
   "movement_direction": {
     "n_category_pairs": 231,
-    "n_down": 18,
-    "worst_down": -0.015303682448589151
-  },
-  "rarity_vs_difficulty": {
-    "rho": 0.07103702683463185,
-    "p": 0.6548428094252716,
-    "n_labels": 42
-  },
-  "negative_control": {
-    "n_pairs": 88226,
-    "max": 0.6645976305007935,
-    "p99": 0.45068417489528656,
-    "median": 0.3050857335329056,
-    "n_above_threshold": 0,
-    "pct_above_threshold": 0.0
+    "n_down": 15,
+    "worst_down": -0.027705627705627726
   }
 }

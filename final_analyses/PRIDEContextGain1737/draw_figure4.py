@@ -101,7 +101,7 @@ def main():
         for c, clab in COHORTS:
             sub = gain[gain.cohort == c]
             data += [sub.over_manuscript, sub.over_pride]
-            labels += [f"vs manuscript\n{clab.split('-')[0]}", f"vs PRIDE\n{clab.split('-')[0]}"]
+            labels += [f"vs abstract + M&M\n{clab.split('-')[0]}", f"vs PRIDE\n{clab.split('-')[0]}"]
             colors += [SOURCE_COLORS["manuscript"], SOURCE_COLORS["pride"]]
         parts = ax.violinplot(data, showmedians=True, showextrema=False, widths=0.8)
         for body, col in zip(parts["bodies"], colors):
@@ -129,6 +129,12 @@ def main():
                            "disagree": ag.get("no_accepted_overlap_review", 0)}).reindex(AGENTS)
         l3 = pd.DataFrame({a_: {"agree": (g.lin >= 0.99).mean(), "partial": ((g.lin >= 0.5) & (g.lin < 0.99)).mean(), "disagree": (g.lin < 0.5).mean()}
                            for a_, g in lin.groupby("agent")}).T.reindex(AGENTS)
+        # experimental design: field-appropriate rule (Lin on EFO/Mondo/UBERON/CL/ChEBI for technology type and
+        # factor values, identity for the design vocabulary, equal / within one / off for counts), expdesign_agreement.py
+        ep = FIG / "expdesign_agreement_pairs.csv"
+        if ep.exists():
+            e = pd.read_csv(ep); e = e[e.category.notna()]
+            l3.loc["ExperimentalDesignAgent"] = e.category.value_counts(normalize=True).reindex(["agree", "partial", "disagree"]).fillna(0)
         lin_cols = [("agree", LIN_KIND["same term"]), ("partial", LIN_KIND["related (Lin 0.5-0.99)"]), ("disagree", LIN_KIND["unrelated (Lin <= 0.01)"])]
         m5 = ag.reindex(columns=[k for k, _, _ in STATUS], fill_value=0)
         y = np.arange(len(AGENTS)); h = 0.36
@@ -152,7 +158,7 @@ def main():
             left += v
         for yi, a_ in zip(y, AGENTS):
             ax.text(-0.02, yi - h / 2, "HAMLET matcher", ha="right", va="center", fontsize=7, color="#555555")
-            ax.text(-0.02, yi + h / 2, "Lin IC", ha="right", va="center", fontsize=7, color="#555555")
+            ax.text(-0.02, yi + h / 2, "Lin IC" if a_ != "ExperimentalDesignAgent" else "Lin IC / rule", ha="right", va="center", fontsize=7, color="#555555")
             if l3.loc[a_].isna().all() or l3.loc[a_].sum() == 0:
                 ax.text(0.02, yi + h / 2, "no ontology-backed field", va="center", fontsize=7, color="gray")
         ax.set_yticks(y); ax.set_yticklabels([AGENT_LABEL[a_] for a_ in AGENTS], fontsize=9); ax.tick_params(axis="y", pad=62)
@@ -166,7 +172,7 @@ def main():
         t = fc_cohort[cohort].set_index("field").reindex(order).reset_index()
         n = n_cohort[cohort]
         x = np.arange(len(t)); bottom = np.zeros(len(t))
-        for col, color, lab in [("both", NEUTRAL, "both inputs"), ("manuscript_only", SOURCE_COLORS["manuscript"], "manuscript only"),
+        for col, color, lab in [("both", NEUTRAL, "both inputs"), ("manuscript_only", SOURCE_COLORS["manuscript"], "abstract + M&M only"),
                                 ("pride_added", SOURCE_COLORS["pride"], "added by PRIDE")]:
             v = t[col].fillna(0).to_numpy() / n
             ax.bar(x, v, bottom=bottom, color=color, width=0.78, label=lab, zorder=2); bottom += v
@@ -196,7 +202,7 @@ def main():
     def p_e(ax, cohort="abstract_only", letter="e"):
         d = agent_share[cohort]
         y = np.arange(len(d)); left = np.zeros(len(d))
-        for col, color, lab in [("both", NEUTRAL, "both inputs"), ("manuscript_only", SOURCE_COLORS["manuscript"], "manuscript only"),
+        for col, color, lab in [("both", NEUTRAL, "both inputs"), ("manuscript_only", SOURCE_COLORS["manuscript"], "abstract + M&M only"),
                                 ("pride_added", SOURCE_COLORS["pride"], "added by PRIDE")]:
             v = d[col].to_numpy()
             ax.barh(y, v, left=left, color=color, height=0.62, label=lab, edgecolor="white", lw=.5)

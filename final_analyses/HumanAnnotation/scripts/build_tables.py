@@ -125,6 +125,7 @@ def main():
     dec_df.to_csv(RESULTS / "agreement_decomposition.csv", index=False)
 
     prev = {r: m.prevalence(presence, labels, r) for r in raters}
+    pd.DataFrame({"rater": list(prev), "prevalence": list(prev.values())}).to_csv(RESULTS / "rater_prevalence.csv", index=False)
     humans = [v for k, v in prev.items() if k not in m.MODEL_DIRS]
     models = [v for k, v in prev.items() if k in m.MODEL_DIRS]
     stats["prevalence"] = {

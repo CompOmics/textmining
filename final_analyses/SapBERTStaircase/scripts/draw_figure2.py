@@ -133,7 +133,7 @@ def main():
                         [("F1", "-o", "  F1"), ("lin_F1", "--s", "  Lin IC")], "model", MODELS, MODEL_COLORS,
                         {m: m for m in MODELS}, None, "weighted F1  /  Lin IC")
         metric_group_legend(ax, MODEL_COLORS, fontsize=8)
-        panel_title(ax, "a", "Overall, mean ± SD over 3 runs")
+        panel_title(ax, "a")
 
     def p_b(ax):
         cols = {f"{ag}_f1": ag for ag in AGENTS}
@@ -141,7 +141,7 @@ def main():
         trend_with_runs(ax, rep_a, [("{g}", "-o", "  F1"), ("lin_{g}", "--s", "  Lin IC")], "agent", AGENTS, AGENT_COLORS,
                         AGENT_LABEL, None, "weighted F1  /  Lin IC")
         metric_group_legend(ax, {AGENT_LABEL[a]: AGENT_COLORS[a] for a in AGENTS}, fontsize=8)
-        panel_title(ax, "b", "Per agent, mean over models ± SD over 3 runs")
+        panel_title(ax, "b")
 
     def p_e(ax):
         left = np.zeros(len(dec))
@@ -156,11 +156,11 @@ def main():
         ax.set_yticks(range(len(dec))); ax.set_yticklabels([AGENT_LABEL[a] for a in dec.index]); ax.invert_yaxis()
         ax.set_xlim(0, 1); ax.set_xlabel(f"share of values at {FINAL}"); ax.grid(False)
         legend_outside(ax, "right", fontsize=7.5)
-        panel_title(ax, "c", "How values are accepted at S5")
+        panel_title(ax, "c")
 
     def p_f(ax):
         trend_by_model(ax, data, "non_unknown_fields_mean", "non_unknown_fields_sd_across_replicates")
-        ax.set_ylim(0, data["non_unknown_fields_mean"].max() * 1.15); panel_title(ax, "d", "Output volume, mean ± SD over 3 runs")
+        ax.set_ylim(0, data["non_unknown_fields_mean"].max() * 1.15); panel_title(ax, "d")
         ax.set_ylabel("values per dataset"); legend_outside(ax, "right")
 
     def p_g(ax):
@@ -169,15 +169,24 @@ def main():
             sub = data[data.model == model].set_index("arm").reindex(ARMS)
             ax.plot(x, sub["unanimity_all_slots"], "-o", color=MODEL_COLORS[model], ms=4, lw=1.8, label=model)
         ax.set_xticks(x); ax.set_xticklabels(ARMS); ax.set_ylim(0, 1)
-        panel_title(ax, "e", "Three-run unanimity"); ax.set_ylabel("identical values")
+        panel_title(ax, "e"); ax.set_ylabel("identical values")
 
-    fig = plt.figure(figsize=(13, 10.5))
-    gs = fig.add_gridspec(3, 2, hspace=0.55, wspace=0.75, height_ratios=[1, 0.85, 1])
+    # f: six models, single run each, same metric (final_analyses/SixModelBenchmark)
+    sys.path.insert(0, str(ROOT.parents[0] / "SixModelBenchmark"))
+    from draw_six_models import f1_table, six_model_panel
+    six = f1_table()
+
+    def p_h(ax):
+        six_model_panel(ax, six, letter="f")
+
+    fig = plt.figure(figsize=(13, 14))
+    gs = fig.add_gridspec(4, 2, hspace=0.55, wspace=0.75, height_ratios=[1, 0.85, 1, 0.95])
     p_a(fig.add_subplot(gs[0, 0])); p_b(fig.add_subplot(gs[0, 1]))
     p_e(fig.add_subplot(gs[1, :]))
     p_f(fig.add_subplot(gs[2, 0])); p_g(fig.add_subplot(gs[2, 1]))
+    p_h(fig.add_subplot(gs[3, :]))
     save_composite(fig, FIG, "figure2"); plt.close(fig)
-    save_panels(plt, FIG, "figure2", {"a": p_a, "b": p_b, "c": p_e, "d": p_f, "e": p_g}, {"c": (11, 3.2)})
+    save_panels(plt, FIG, "figure2", {"a": p_a, "b": p_b, "c": p_e, "d": p_f, "e": p_g, "f": p_h}, {"c": (11, 3.2), "f": (9.5, 4.2)})
 
     # --------------------------------------------------- supplementary figure
     e2s = e2.sort_values(["agent", "accepted"], ascending=[True, False])
@@ -201,7 +210,7 @@ def main():
                 ax.text(-0.55, (min(idx) + max(idx)) / 2, AGENT_LABEL[agent], transform=ax.get_yaxis_transform(),
                         ha="right", va="center", rotation=90, fontsize=8, color=AGENT_COLORS[agent])
         ax.figure.colorbar(im, ax=ax, fraction=0.035, pad=0.02, label="share of values accepted")
-        panel_title(ax, "a", "Acceptance per entity along the staircase")
+        panel_title(ax, "a")
 
     def s_b(ax):
         y = np.arange(len(e2s)); left = np.zeros(len(e2s))
@@ -209,15 +218,15 @@ def main():
             v = e2s[col].to_numpy() if col in e2s else np.zeros(len(e2s))
             ax.barh(y, v, left=left, color=color, label=lab, height=0.6, edgecolor="white", lw=.5); left += v
         hx = [1 - human.loc[FIELD_TO_HUMAN[f], "no_match_pct"] / 100 if f in FIELD_TO_HUMAN and FIELD_TO_HUMAN[f] in human.index else np.nan for f in e2s.index]
-        ax.scatter(hx, y, marker="D", s=28, color="k", zorder=5, label="human annotators: share of values in agreement")
-        ax.set_yticks(y); ax.set_yticklabels([f"{f}  (n={n})" for f, n in zip(e2s.index, e2s.n_pairs)], fontsize=8); ax.invert_yaxis()
+        ax.scatter(hx, y, marker="D", s=22, color="k", zorder=5, label="human agreement")
+        ax.set_yticks(y); ax.set_yticklabels([f"{f} ({n})" for f, n in zip(e2s.index, e2s.n_pairs)], fontsize=8); ax.invert_yaxis()
         agents = list(e2s.agent)
         for i in range(1, len(agents)):
             if agents[i] != agents[i - 1]:
                 ax.axhline(i - 0.5, color="k", lw=0.8)
         ax.set_xlim(0, 1); ax.set_xlabel(f"share of values at {FINAL}"); ax.grid(False)
-        legend_outside(ax, "below", ncol=2)
-        panel_title(ax, "b", "Outcome per entity, with the human ceiling")
+        legend_outside(ax, "below", ncol=4, fontsize=8)
+        panel_title(ax, "b")
 
     def s_c(ax):
         kinds = list(LIN_KIND.items())
@@ -226,11 +235,11 @@ def main():
             v = e3s[k].to_numpy() if k in e3s else np.zeros(len(e3s))
             ax.barh(y, v, left=left, color=c, label=k, height=0.6, edgecolor="white", lw=.5); left += v
         ax.set_yticks(y); ax.set_yticklabels(e3s.index, fontsize=8); ax.invert_yaxis(); ax.set_xlim(0, 1); ax.grid(False)
-        ax.set_xlabel(f"share of values that resolve to an ontology term, {FINAL}"); legend_outside(ax, "below", ncol=5)
-        panel_title(ax, "c", "How wrong is wrong: ontology distance to the golden (Lin IC)")
+        ax.set_xlabel(f"share of ontology-resolved values at {FINAL}"); legend_outside(ax, "below", ncol=5, fontsize=8)
+        panel_title(ax, "c")
 
-    fig = plt.figure(figsize=(14, 12))
-    gs = fig.add_gridspec(2, 2, hspace=0.35, wspace=0.45, height_ratios=[1.15, 1])
+    fig = plt.figure(figsize=(13, 11))
+    gs = fig.add_gridspec(2, 2, hspace=0.45, wspace=0.5, height_ratios=[1.2, 1])
     s_a(fig.add_subplot(gs[0, 0])); s_b(fig.add_subplot(gs[0, 1])); s_c(fig.add_subplot(gs[1, :]))
     save_composite(fig, FIG, "figureS2_entities"); plt.close(fig)
     save_panels(plt, FIG, "figureS2_entities", {"a": s_a, "b": s_b, "c": s_c}, {"a": (6.5, 6), "b": (7, 6), "c": (11, 4.5)})

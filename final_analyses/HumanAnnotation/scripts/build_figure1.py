@@ -187,8 +187,8 @@ def panel_a(ax, cbar_lower=None, cbar_upper=None):
         ax.axhline(0.5, color="0.6", lw=0.8, ls=(0, (3, 2)))
         ax.axvline(0.5, color="0.6", lw=0.8, ls=(0, (3, 2)))
 
-    for im, cax, lab in ((im_p, cbar_lower, "lower: string identity"),
-                         (im_v, cbar_upper, "upper: SapBERT clusters")):
+    for im, cax, lab in ((im_p, cbar_lower, "value κ, string identity"),
+                         (im_v, cbar_upper, "value κ, SapBERT clusters")):
         if cax is None:
             continue
         cb = plt.colorbar(im, cax=cax)
@@ -245,7 +245,7 @@ def panel_b(ax):
         ("chance_agreement", "chance agreement"),
         ("both_absent_share", "both-absent share"),
         ("positive_agreement", "positive specific\nagreement"),
-        ("kappa", "Cohen's kappa"),
+        ("kappa", "Cohen's kappa\n(presence)"),
     ]
     SPLIT = 3          # rows above this index are shares of all slots
     groups = [g for g in GROUP_ORDER if g in by_group]
@@ -290,7 +290,7 @@ def panel_b(ax):
     ax.set_yticklabels([lab for _, lab in metrics], fontsize=7.4)
     ax.invert_yaxis()
     ax.set_xlim(0, 1.0)
-    ax.set_xlabel("value per annotator pair", fontsize=8.5)
+    ax.set_xlabel("presence agreement per annotator pair", fontsize=8.5)
     clean_axes(ax, grid_axis="x")
 
     handles = [plt.Rectangle((0, 0), 1, 1, facecolor=GROUP_COLOR[g], alpha=0.55,
@@ -301,7 +301,7 @@ def panel_b(ax):
               loc="upper left", bbox_to_anchor=(1.02, 1.0), handlelength=1.1)
 
     ax.axhline(SPLIT - 0.5, color="0.45", lw=0.9, ls=(0, (4, 3)), zorder=4)
-    panel_title(ax, "b")
+    panel_title(ax, "e")
 
 
 # -----------------------------------------------------------------------------
@@ -321,8 +321,6 @@ def panel_c(ax):
 
     mean_y = float(np.mean(ys))
     sd_y = float(np.std(ys))
-    ax.axhspan(mean_y - sd_y, mean_y + sd_y, color=GRID, alpha=0.75, zorder=0)
-    ax.axhline(mean_y, color="0.55", lw=1.0, ls=(0, (4, 3)), zorder=1)
 
     for cat in CAT_ORDER:
         sel = [p for p in pts if p[2] == cat]
@@ -352,7 +350,7 @@ def panel_c(ax):
     clean_axes(ax, grid_axis="both")
     ax.legend(frameon=False, fontsize=7.5, loc="upper left", bbox_to_anchor=(1.02, 1.0), handletextpad=0.3)
 
-    panel_title(ax, "c")
+    panel_title(ax, "d")
 
 
 # -----------------------------------------------------------------------------
@@ -380,7 +378,7 @@ def panel_d(ax):
     ax.set_ylabel("both-tagged instances (%)", fontsize=8.5)
     clean_axes(ax, grid_axis="y")
     ax.legend(frameon=False, fontsize=7.5, ncol=3, loc="lower center", bbox_to_anchor=(0.5, 1.0), handlelength=1.1)
-    panel_title(ax, "d")
+    panel_title(ax, "b")
 
 
 # -----------------------------------------------------------------------------
@@ -440,31 +438,49 @@ def panel_e(ax):
     ]
     ax.legend(handles=handles, frameon=False, fontsize=7.5, loc="upper left", bbox_to_anchor=(1.02, 1.0))
 
-    panel_title(ax, "e")
+    panel_title(ax, "c")
 
 
 # -----------------------------------------------------------------------------
+def panel_prevalence(ax):
+    """How much each rater marks: share of paper x field slots judged present.
+    The spread among humans is the threshold difference behind the
+    disagreement in Figure 1; the three models sit within a few points."""
+    rows = load("rater_prevalence.csv")
+    prev = {r["rater"]: float(r["prevalence"]) for r in rows}
+    humans = sorted((r for r in prev if r.startswith("Annotator")), key=lambda n: int(n.removeprefix("Annotator")))
+    order = (["SingleHuman"] if "SingleHuman" in prev else []) + humans + [m for m in MODEL_ORDER if m in prev]
+    short = {"SingleHuman": "single\nexpert"}; short.update({h: f"A{i + 1}" for i, h in enumerate(humans)})
+    labels = [short.get(r, r) for r in order]
+    colors = [NEUTRAL if r not in MODEL_ORDER else GROUP_COLOR["model-model"] for r in order]
+    x = np.arange(len(order))
+    ax.bar(x, [prev[r] for r in order], color=colors, width=0.7, edgecolor="white", lw=.5)
+    ax.set_xticks(x); ax.set_xticklabels(labels, fontsize=8, rotation=45, ha="right")
+    ax.set_ylabel("share of field slots marked present", fontsize=8.5); ax.set_ylim(0, 0.6); ax.grid(False, axis="x")
+    ax.axvline(len(order) - len([m for m in MODEL_ORDER if m in prev]) - 0.5, color="k", lw=0.8)
+    panel_title(ax, "f")
+
+
 def main():
-    fig = plt.figure(figsize=(17, 10))
-    gs = fig.add_gridspec(2, 3, width_ratios=[1.15, 1.0, 1.0], height_ratios=[1.0, 0.9],
-                          hspace=0.28, wspace=0.55)
-
+    # order follows the text: a value-level kappa matrix, b value match per
+    # field, c category shift per field group, d presence kappa vs rarity,
+    # e presence-agreement decomposition, f marking rate per rater
+    fig = plt.figure(figsize=(17, 16))
+    gs = fig.add_gridspec(3, 2, width_ratios=[1, 1.05], height_ratios=[1.15, 0.85, 0.85], hspace=0.5, wspace=0.35)
     ax_a = fig.add_subplot(gs[0, 0])
-    panel_a(ax_a,
-            cbar_lower=ax_a.inset_axes([1.03, 0.05, 0.03, 0.38]),
-            cbar_upper=ax_a.inset_axes([1.03, 0.55, 0.03, 0.38]))
-    panel_b(fig.add_subplot(gs[0, 1]))
-    panel_c(fig.add_subplot(gs[0, 2]))
-    panel_d(fig.add_subplot(gs[1, 0:2]))
-    panel_e(fig.add_subplot(gs[1, 2]))
-
+    panel_a(ax_a, cbar_lower=ax_a.inset_axes([1.03, 0.05, 0.03, 0.38]), cbar_upper=ax_a.inset_axes([1.03, 0.55, 0.03, 0.38]))
+    panel_d(fig.add_subplot(gs[0, 1]))
+    panel_e(fig.add_subplot(gs[1, 0]))
+    panel_c(fig.add_subplot(gs[1, 1]))
+    panel_b(fig.add_subplot(gs[2, 0]))
+    panel_prevalence(fig.add_subplot(gs[2, 1]))
     save_composite(fig, FIGDIR, "figure1")
     plt.close(fig)
     save_panels(plt, FIGDIR, "figure1", {
         "a": lambda ax: panel_a(ax, cbar_lower=ax.inset_axes([1.03, 0.05, 0.03, 0.38]),
                                 cbar_upper=ax.inset_axes([1.03, 0.55, 0.03, 0.38])),
-        "b": panel_b, "c": panel_c, "d": panel_d, "e": panel_e,
-    }, {"a": (7.5, 7.5), "b": (6.5, 4.6), "c": (6, 4.6), "d": (11, 4.2), "e": (6, 3.6)})
+        "b": panel_d, "c": panel_e, "d": panel_c, "e": panel_b, "f": panel_prevalence,
+    }, {"a": (7.5, 7.5), "b": (11, 4.2), "c": (6, 3.6), "d": (6, 4.6), "e": (7, 4.8), "f": (5.5, 4)})
     print(f"Saved: {FIGDIR / 'figure1.png'}")
 
 
