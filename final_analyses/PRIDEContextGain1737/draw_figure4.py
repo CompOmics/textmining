@@ -39,15 +39,39 @@ COHORTS = [(k, COHORT_LABEL[k]) for k in ("abstract_only", "with_methods")]
 STATUS = [(k, lab, col) for k, (lab, col) in AGREEMENT.items()]
 
 
+# closed-access datasets have no methods section: their manuscript input is the
+# abstract alone, drawn dotted; open-access = abstract + M&M, drawn solid.
+HATCH = {"abstract_only": "..", "with_methods": None}
+def src_label(src, cohort):
+    text = {"manuscript": "abstract", "pride": "PRIDE descriptor", "combined": "abstract + PRIDE"}[src]
+    return text.replace("abstract", "abstract + M&M") if cohort == "with_methods" else text
+
+
+def source_handles():
+    from matplotlib.patches import Patch
+    return [Patch(facecolor=SOURCE_COLORS["manuscript"], hatch="..", edgecolor="white", label="abstract (closed access)"),
+            Patch(facecolor=SOURCE_COLORS["manuscript"], label="abstract + M&M (open access)"),
+            Patch(facecolor=SOURCE_COLORS["pride"], label="PRIDE descriptor"),
+            Patch(facecolor=SOURCE_COLORS["combined"], hatch="..", edgecolor="white", label="abstract + PRIDE (closed access)"),
+            Patch(facecolor=SOURCE_COLORS["combined"], label="abstract + M&M + PRIDE (open access)")]
+
+
+def source_legend(ax, where="right"):
+    if where == "right":
+        return ax.legend(handles=source_handles(), loc="upper left", bbox_to_anchor=(1.02, 1.0), fontsize=7.5)
+    return ax.legend(handles=source_handles(), loc="upper center", bbox_to_anchor=(0.5, -0.18), ncol=3, fontsize=7.5)
+
+
 def grouped_bars(ax, cov, what, ylabel):
     """mean per dataset with SD whiskers; groups = cohorts, bars = inputs."""
     x = np.arange(len(COHORTS)); w = 0.26
     for i, (src, lab) in enumerate(SOURCES):
-        means = [cov[cov.cohort == c][f"{src}_{what}"].mean() for c, _ in COHORTS]
-        sds = [cov[cov.cohort == c][f"{src}_{what}"].std() for c, _ in COHORTS]
-        ax.bar(x + (i - 1) * w, means, w, yerr=sds, color=SOURCE_COLORS[src], label=lab, capsize=2, error_kw={"lw": .8})
-        for xi, m in zip(x + (i - 1) * w, means):
-            ax.text(xi, m + 1.2, f"{m:.1f}", ha="center", va="bottom", fontsize=7.5)
+        for j, (c, _) in enumerate(COHORTS):
+            sub = cov[cov.cohort == c][f"{src}_{what}"]
+            hatch = HATCH[c] if src != "pride" else None
+            ax.bar(x[j] + (i - 1) * w, sub.mean(), w, yerr=sub.std(), color=SOURCE_COLORS[src], hatch=hatch, edgecolor="white", lw=0.5,
+                   capsize=2, error_kw={"lw": .8, "ecolor": "#444444"})
+            ax.text(x[j] + (i - 1) * w, sub.mean() + 1.2, f"{sub.mean():.1f}", ha="center", va="bottom", fontsize=7.5)
     ax.set_xticks(x); ax.set_xticklabels([lab.replace(" manuscript", "") for c, lab in COHORTS])
     ax.set_ylabel(ylabel.replace(" per dataset", "")); ax.grid(False, axis="x")
 
@@ -88,21 +112,23 @@ def main():
     fc.to_csv(FIG / "field_coverage_manuscript_vs_combined.csv", index=False)
 
     # ---- panels
-    def p_a(ax):
+    def p_a(ax, legend=True):
         grouped_bars(ax, cov, "fields", "populated fields per dataset")
-        legend_outside(ax, "right"); panel_title(ax, "a")
+        if legend: source_legend(ax)
+        panel_title(ax, "a")
 
-    def p_b(ax):
+    def p_b(ax, legend=True):
         grouped_bars(ax, cov, "values", "distinct values per dataset")
-        legend_outside(ax, "right"); panel_title(ax, "b")
+        if legend: source_legend(ax)
+        panel_title(ax, "b")
 
     def p_c(ax):
-        data, labels, colors = [], [], []
+        data, labels, colors, hatches = [], [], [], []
         for c, clab in COHORTS:
             sub = gain[gain.cohort == c]
             data += [sub.over_manuscript, sub.over_pride]
-            labels += [f"vs abstract + M&M\n{clab.split('-')[0]}", f"vs PRIDE\n{clab.split('-')[0]}"]
-            colors += [SOURCE_COLORS["manuscript"], SOURCE_COLORS["pride"]]
+            labels += [f"vs {src_label('manuscript', c)}\n{clab.split('-')[0]}", f"vs PRIDE\n{clab.split('-')[0]}"]
+            colors += [SOURCE_COLORS["manuscript"], SOURCE_COLORS["pride"]]; hatches += [HATCH[c], None]
         parts = ax.violinplot(data, showmedians=True, showextrema=False, widths=0.8)
         for body, col in zip(parts["bodies"], colors):
             body.set_facecolor(col); body.set_alpha(.55); body.set_edgecolor("none")
@@ -129,12 +155,6 @@ def main():
                            "disagree": ag.get("no_accepted_overlap_review", 0)}).reindex(AGENTS)
         l3 = pd.DataFrame({a_: {"agree": (g.lin >= 0.99).mean(), "partial": ((g.lin >= 0.5) & (g.lin < 0.99)).mean(), "disagree": (g.lin < 0.5).mean()}
                            for a_, g in lin.groupby("agent")}).T.reindex(AGENTS)
-        # experimental design: field-appropriate rule (Lin on EFO/Mondo/UBERON/CL/ChEBI for technology type and
-        # factor values, identity for the design vocabulary, equal / within one / off for counts), expdesign_agreement.py
-        ep = FIG / "expdesign_agreement_pairs.csv"
-        if ep.exists():
-            e = pd.read_csv(ep); e = e[e.category.notna()]
-            l3.loc["ExperimentalDesignAgent"] = e.category.value_counts(normalize=True).reindex(["agree", "partial", "disagree"]).fillna(0)
         lin_cols = [("agree", LIN_KIND["same term"]), ("partial", LIN_KIND["related (Lin 0.5-0.99)"]), ("disagree", LIN_KIND["unrelated (Lin <= 0.01)"])]
         m5 = ag.reindex(columns=[k for k, _, _ in STATUS], fill_value=0)
         y = np.arange(len(AGENTS)); h = 0.36
@@ -147,10 +167,11 @@ def main():
                 if w >= 0.08:
                     ax.text(l + w / 2, yi, f"{w:.0%}", ha="center", va="center", fontsize=7, color="white" if k in ("equivalent_value_sets", "no_accepted_overlap_review") else "black")
             left += v
-        # Lin: three
+        # Lin: three categories, only for the agents with ontology-backed fields
+        has_lin = [a_ for a_ in AGENTS if a_ in l3.index and l3.loc[a_].fillna(0).sum() > 0]
         left = np.zeros(len(AGENTS))
         for col, color in lin_cols:
-            v = l3[col].fillna(0).to_numpy()
+            v = np.array([l3.loc[a_, col] if a_ in has_lin else 0 for a_ in AGENTS])
             ax.barh(y + h / 2, v, h, left=left, color=color, edgecolor="white", lw=.5, label=f"Lin IC: {col}")
             for yi, l, w in zip(y + h / 2, left, v):
                 if w >= 0.08:
@@ -158,9 +179,8 @@ def main():
             left += v
         for yi, a_ in zip(y, AGENTS):
             ax.text(-0.02, yi - h / 2, "HAMLET matcher", ha="right", va="center", fontsize=7, color="#555555")
-            ax.text(-0.02, yi + h / 2, "Lin IC" if a_ != "ExperimentalDesignAgent" else "Lin IC / rule", ha="right", va="center", fontsize=7, color="#555555")
-            if l3.loc[a_].isna().all() or l3.loc[a_].sum() == 0:
-                ax.text(0.02, yi + h / 2, "no ontology-backed field", va="center", fontsize=7, color="gray")
+            if a_ in has_lin:
+                ax.text(-0.02, yi + h / 2, "Lin IC", ha="right", va="center", fontsize=7, color="#555555")
         ax.set_yticks(y); ax.set_yticklabels([AGENT_LABEL[a_] for a_ in AGENTS], fontsize=9); ax.tick_params(axis="y", pad=62)
         ax.invert_yaxis(); ax.set_xlim(0, 1); ax.set_xlabel("share of fields populated by both"); ax.grid(False)
         legend_outside(ax, "right"); panel_title(ax, "d")
@@ -172,10 +192,10 @@ def main():
         t = fc_cohort[cohort].set_index("field").reindex(order).reset_index()
         n = n_cohort[cohort]
         x = np.arange(len(t)); bottom = np.zeros(len(t))
-        for col, color, lab in [("both", NEUTRAL, "both inputs"), ("manuscript_only", SOURCE_COLORS["manuscript"], "abstract + M&M only"),
+        for col, color, lab in [("both", NEUTRAL, "both inputs"), ("manuscript_only", SOURCE_COLORS["manuscript"], f"{src_label('manuscript', cohort)} only"),
                                 ("pride_added", SOURCE_COLORS["pride"], "added by PRIDE")]:
             v = t[col].fillna(0).to_numpy() / n
-            ax.bar(x, v, bottom=bottom, color=color, width=0.78, label=lab, zorder=2); bottom += v
+            ax.bar(x, v, bottom=bottom, color=color, width=0.78, label=lab, zorder=2, hatch=HATCH[cohort] if col == "manuscript_only" else None, edgecolor="white", lw=0); bottom += v
         ax.set_xticks(x); ax.set_xticklabels(t.field, fontsize=6.4, rotation=90)
         agent_of = dict(zip(fc.field, fc.agent))
         for tick, f in zip(ax.get_xticklabels(), t.field):
@@ -202,10 +222,10 @@ def main():
     def p_e(ax, cohort="abstract_only", letter="e"):
         d = agent_share[cohort]
         y = np.arange(len(d)); left = np.zeros(len(d))
-        for col, color, lab in [("both", NEUTRAL, "both inputs"), ("manuscript_only", SOURCE_COLORS["manuscript"], "abstract + M&M only"),
+        for col, color, lab in [("both", NEUTRAL, "both inputs"), ("manuscript_only", SOURCE_COLORS["manuscript"], f"{src_label('manuscript', cohort)} only"),
                                 ("pride_added", SOURCE_COLORS["pride"], "added by PRIDE")]:
             v = d[col].to_numpy()
-            ax.barh(y, v, left=left, color=color, height=0.62, label=lab, edgecolor="white", lw=.5)
+            ax.barh(y, v, left=left, color=color, height=0.62, label=lab, edgecolor="white", lw=.5, hatch=HATCH[cohort] if col == "manuscript_only" else None)
             for yi, l, w in zip(y, left, v):
                 if w >= 0.06:
                     ax.text(l + w / 2, yi, f"{w:.0%}", ha="center", va="center", fontsize=7.5, color="white" if col != "pride_added" else "black")
@@ -219,7 +239,11 @@ def main():
 
     fig = plt.figure(figsize=(14, 12))
     gs = fig.add_gridspec(3, 2, hspace=0.55, wspace=0.7, height_ratios=[1, 1, 0.8])
-    p_a(fig.add_subplot(gs[0, 0])); p_b(fig.add_subplot(gs[0, 1]))
+    ax_a = fig.add_subplot(gs[0, 0]); ax_b = fig.add_subplot(gs[0, 1])
+    p_a(ax_a, legend=False); p_b(ax_b, legend=False)
+    fig.canvas.draw()
+    xc = (ax_a.get_position().x0 + ax_b.get_position().x1) / 2
+    fig.legend(handles=source_handles(), loc="upper center", bbox_to_anchor=(xc, 0.64), ncol=3, fontsize=8, frameon=False)
     p_c(fig.add_subplot(gs[1, 0])); p_d(fig.add_subplot(gs[1, 1]))
     p_e(fig.add_subplot(gs[2, 0])); p_f(fig.add_subplot(gs[2, 1]))
     save_composite(fig, FIG, "figure4"); plt.close(fig)
