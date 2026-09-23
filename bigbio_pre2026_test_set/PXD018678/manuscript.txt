@@ -1,0 +1,53 @@
+Poor access to human left ventricular myocardium is a significant limitation in the study of heart failure (HF). Here, we utilise a carefully procured large human heart biobank of cryopreserved left ventricular myocardium to obtain direct molecular insights into ischaemic cardiomyopathy (ICM) and dilated cardiomyopathy (DCM), the most common causes of HF worldwide. We perform unbiased, deep proteomic and metabolomic analyses of 51 left ventricular (LV) samples from 44 cryopreserved human ICM and DCM hearts, compared to age-, gender-, and BMI-matched, histopathologically normal, donor controls. We report a dramatic reduction in serum amyloid A1 protein in ICM hearts, perturbed thyroid hormone signalling pathways and significant reductions in oxidoreductase co-factor riboflavin-5-monophosphate and glycolytic intermediate fructose-6-phosphate in both; unveil gender-specific changes in HF, including nitric oxide-related arginine metabolism, mitochondrial substrates, and X chromosome-linked protein and metabolite changes; and provide an interactive online application as a publicly-available resource.
+
+Study of human heart failure is limited by access to human tissue. Here, the authors apply multi-omic screening in human ischaemic and dilated myocardial tissue and matched controls to determine molecular changes common and unique to each aetiology and to reveal differences between male and female hearts.
+
+Donor hearts were procured but not used for heart transplantation (reasons included transportation logistics, donor-recipient mismatch in size, and immune incompatibility), whilst heart failure samples comprised those patients undergoing heart transplantation; both cohorts as previously described,,–,,. These samples are not post-mortem. Histological analysis of the donor samples were shown to be structurally normal as per formal pathological examination,. LV samples from both donors and heart failure patients were collected and and snap frozen (−196 °C) immediately within the operating theatre. All samples were stored in the Sydney Heart Bank at −170 to −180 °C from the time of harvest. Written consent was obtained to use tissue specimens for research. The study was approved by the Ethics Committee of The University of Sydney (USYD #2016/923) and was conducted in accordance with the Declaration of Helsinki.
+
+The mass spectrometry metabolomics data have been deposited to Metabolomics workbench. Frozen heart tissues were crushed to powder in liquid nitrogen and weighed for metabolomic (~150 mg) and proteomic (~20 mg) analysis, respectively. For targeted metabolomic analysis, a tandem liquid chromatography–mass spectrometry (LC-MS/MS) composed of an Agilent (Santa Clara, CA, USA) 1260 Infinity liquid chromatography system coupled to a QTRAP5500 mass spectrometer (AB Sciex, Foster City, CA, USA) was used to measure hydrophilic metabolites in positive and negative ionization modes. The polar metabolites in positive ionization mode included nucleotides, neurotransmitters, amino acids and vitamins, and were separated on a hydrophilic interaction chromatography using acidic chromatographic condition. For the separation of high-energy intermediates, nucleotide and nucleoside phosphates, organic acids, Krebs cycle intermediates and glycolytic intermediates, a BEH Amide column was used, both as previously described. Both sets of metabolites were based on HPLC-grade authentic chemical standards, where the retention time (RT) and MRM Q1 and Q3 masses were unique to each metabolite were derived and compiled into a library. A data file, “Instrument Settings Metabolite”, containing the LC/MS instrument settings for each metabolite, has been uploaded to Supplementary Data .
+
+The analysis software MultiQuant 3.0 (ABSciex) was used for MRM Q1/Q3 peak integration of the raw data files (Analyst software, v.1.6.2; ABSciex). The peak area corresponds to the abundance of that metabolite; the area values were then normalized to their bookended pooled plasma samples, which were included after every 4 study samples in the sample queue, in order to account for any performance drift in the LC-MS/MS.
+
+The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD018678. Muscle was lysed by tip-probe sonication in 8 M guanidine containing 100 mM Tris (pH 8.0), 10 mM tris(2-carboxyethyl)phosphine, 40 mM 2-chloroacetamide and heated to 95 °C for 5 min. The lysate was centrifuged at 20,000 × g for 20 min at 4 °C and the supernatant diluted 1:1 with water. Proteins were precipitated with 4 volumes of acetone overnight at −30 °C and washed with 80% acetone. Proteins were digested in 100 mM Tris pH 7.5 containing 10% 2,2,2-Trifluoroethanol overnight at 37 °C with sequencing grade LysC (Wako Chemicals) and trypsin (Sigma) at an enzyme to substrate ratio of 1:50. The digests were acidified to 1% trifluoroacetic acid prior to purification by styrene divinyl benzene—reversed phase sulfonated solid phase extraction microcolumns. Peptides were spiked with iRT peptides (Biognosys) and analysed with a Dionex 3500 ultra-high performance liquid chromatography (UHPLC) coupled to a Q-Exactive HF-X in positive polarity mode. The peptides were separated on an in-house 100 µm x 15 cm column with an integrated emitter using a Sutter laser puller (1.9 µm particle size, C18AQ; Dr Maisch) with a gradient of 2 – 35% acetonitrile containing 0.1% formic acid over 60 min at 800 nl/min. Data were acquired with positive ionization and the instrument was operated in data-independent acquisition mode (DIA) using settings essentially described previously. Briefly, an MS1 scan was acquired from 350 – 1650 m/z (30,000 resolution, 3e6 AGC, 50 ms injection time) followed by 20 variable window sized DIA isolations and fragmentation with HCD (15,000 resolution, 1e5 AGC, 3e6 AGC, automatic injection and step normalized collision energies of 22.5, 25 and 27.5).
+
+A spectral library was created by fractionating a pooled mix of peptides from all the samples on an in-house packed 320 μm × 25 cm column (3 μm particle size, BEH; Waters) with a gradient of 2–40% acetonitrile containing 10 mM ammonium formate over 60 min at 6 μl/min using an Agilent 1260 HPLC. A total of 12 concatenated fractions were analysed using the identical gradient conditions above except the instrument was operated in data-dependent acquisition (DDA) mode. Briefly, an MS1 scan was acquired from 350 – 1650 m/z (60,000 resolution, 3e6 AGC, 50 ms injection time) followed by 20 MS/MS with HCD (1.2 m/z isolation, 15,000 resolution, 1e5 AGC, 27 NCE). DDA data were processed with Andromeda in MaxQuant v1.6.0.9 against the human UniProt database (September, 2017) using all default settings with peptide spectral matches and protein false discovery rate (FDR) set to 1%. First search mass tolerances were set to 20 ppm for MS1 and MS2 and following recalibration, a second search was performed with MS1 tolerance of 4.5 ppm and MS2 tolerance of 20 ppm. The MaxQuant output were used to generate a spectral library in Spectronaunt v12 and the DIA data were processed with default settings employing retention time and mass recalibration. Quantification was performed using MS2-based extracted ion chromatograms employing 3-6 fragment ions >450 m/z with automated fragment-ion interference removal as described previously. Data was post-processed via Log2 transformation and median normalization in Perseus.
+
+All statistical analyses were then done in R (3.5.2). Both metabolomic and proteomic data were Log2 transformed and median normalized. Differential expression (DE) analyses for both proteins and metabolites by disease groups (ICM vs Donor and DCM vs Donor) adjusted for gender were performed using the lmFit and eBayes functions implemented in the limma R package, where a linear model is fitted for each protein or metabolite to identify those that are differentially expressed in each disease group compared with the healthy donors while adjusting for gender. We used multi-group comparison in design of limma, that is, all samples from ICM, DCM and donors were used to estimate the variance of each protein or metabolite. We then performed the contrasts between the two groups of interest to report the direct differential expression in proteins or metabolites for ICM vs Donor or DCM vs Donor. Pathway analyses were performed with mean-rank gene set tests, using the geneSetTest function from limma, where t-statistics from the corresponding differential expression analysis were ranked. Pathways were annotated by the Kyoto Encyclopedia of Genes and Genomes (https://www.kegg.jp). Pathway illustrations were generated using the pathview R package. Gender analysis was performed by fitting interaction models to look for any protein and metabolite that were differentially perturbed in each gender. Network plots of DE proteins and metabolites were generated with the igraph R package. Nodes in the network plots are the differentially expressed (DE) proteins in direct comparisons (ICM vs Donor and DCM vs Donor) while adjusted for gender with an adjusted P value ≤ 0.01 and DE metabolites with an adjusted P value ≤ 0.05 for ICM vs Donor, and for DCM vs Donor, nodes are the DE proteins with an adjusted P value ≤ 0.001 and DE metabolites with an adjusted P value ≤ 0.05. Edge weights were calculated as pairwise Pearson correlation coefficient for every two nodes, and only edges with an absolute weight greater than or equal to 0.7 were shown in the plots. The widths of edges in the plots are proportional to the corresponding edge weights. The graph ﻿layout was by multidimensional scaling, where the distance between two nodes is proportional to the inverse of their pairwise Pearson correlation coefficient. The Benjamini–Hochberg method was used to calculate adjusted P values for multiple comparisons in all mentioned analyses. Functional annotation of nodes in each network that are proteins were performed using DAVID,.
+
+Further information on research design is available in the linked to this article.
+
+Peer Review File
+
+Description of Additional Supplementary Files
+
+Supplementary Data 1
+
+Supplementary Data 2
+
+Supplementary Data 3
+
+Supplementary Data 4
+
+Supplementary Data 5
+
+Supplementary Data 6
+
+Supplementary Data 7
+
+Supplementary Data 8
+
+Supplementary Data 9
+
+Supplementary Data 10
+
+Supplementary Data 11
+
+Supplementary Data 12
+
+Supplementary Data 13
+
+Supplementary Data 14
+
+Supplementary data 15
+
+Reporting Summary
