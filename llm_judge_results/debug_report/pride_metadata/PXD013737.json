@@ -1,0 +1,136 @@
+{
+  "accession" : "PXD013737",
+  "title" : "Total cellular proteome analysis of mutant and WT HNF4alpha Hepatic Progenitor Stage Cells",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Post-translational modification of proteins has been shown to control different aspects of protein biology. We have previously implicated a SUMO consensus motif in HNF4alpha’s carboxylic terminus as an important regulator of protein biology during stem cell differentiation. In this study, we have generated deletion and point mutants of HNF4alpha to precisely study the role of protein domains during hepatocyte specification. During mammalian development, liver differentiation is driven by signals which converge on multiple transcription factor networks. The hepatocyte nuclear factor signalling network is known to be essential for hepatocyte specification and maintenance. In these studies we demonstrate that nuclear HNF4 is essential for hepatic progenitor specification and the introduction of point mutations in HNF4alpha’s SUMO consensus motif leads to disrupted hepatocyte specification and maturation. Taking a multi-omics approach, we identified key deficiencies in cell biology which included; dysfunctional cell metabolism, cell adhesion, tricarboxylic acid cycle flux, mRNA transport and processing. In summary, the combination of genome editing and multi-omics analyses have provided new insight into the diverse functions of HNF4alphaprotein during human hepatocyte specification and maturation.",
+  "sampleProcessingProtocol" : "Whole-cell extract preparations from stem cells from three different genetic backgrounds (WT, HNF4alpha-DNA-Binding mutant (DBD), HNF4alpha-SUMO-consensus mutant), at two different stages of differentiation (Gel 1 = day 16; immature hepatocytes, and gel 2 = 9 day; hepatoblasts).   Four replicates were prepared and ~20ug of each run in NuPAGE LDS sample buffer with 1x reducing agent on a 10% acrylamide NuPAGE gel (Bis-Tris with MOPS buffer). The gels were sliced into four sections per lane extracting 96 samples of tryptic peptides in a final volume of 35uL for MS analysis. LC-MS/MS analysis was performed on a Q Exactive mass spectrometer (Thermo Scientific) coupled to an EASY-nLC 1000 liquid chromatography system (Thermo Scientific). Peptides were fractionated on a 75 μm x 500 mm EASY-Spray column (Thermo Scientific) using a 90-minute gradient. Precursor ion full scan spectra were acquired over (m/z 300 to 1,800) with a resolution of 70,000 at m/z 200 (target value of 1,000,000 ions, maximum injection time 20 ms). Up to ten data dependent MS2 spectra were acquired with a resolution of 35,000 at m/z 200 (target value of 1,000,000 ions, maximum injection time 120 ms). Ions with unassigned, +1 and +8 charge state were rejected. Intensity threshold was set to 2.1 x 104 units. Peptide match was set to preferred, dynamic exclusion duration 40 s.",
+  "dataProcessingProtocol" : "Data were analyzed using MaxQuant (version 1.5.8.3) (Cox and Mann, 2008; Cox et al., 2011) and searched against UniProtKB H. sapiens database (86749 sequences - 13/06/2012). Unless otherwise stated, all MaxQuant settings were default. Variable modifications of acetyl (Protein N-term) and oxidation (M) were considered, along with the fixed modification of carbamidomethyl (C). Enzyme specificity was set to trypsin/P, and a false discovery rate of 1 % was set as a threshold at protein, peptide and site levels, and a mass deviation of 6 ppm was set for main search and 20 ppm for MS2 peaks. Match between runs was applied, and label-free quantification (LFQ) was selected. The MaxQuant proteinGroups.txt file was used for downstream proteome analysis. All decoy and ‘putative contaminant’ entries were removed, as were any identified only by site and those with fewer than 4 reported LFQ values for any single experimental group (WT, DBD Mut and SUMO Mut). This left 3639 protein groups comparable across all cell types. Zero LFQ values were replaced in Perseus (Tyanova et al., 2016), from a normal distribution of existing log10 LFQ intensities downshifted 1.8 and of width 0.3. Proteins were defined as statistically differing between groups using the Perseus unpaired two-samples Student’s t-test truncated by 1% permutation-based FDR using an S0 value of 0.1.",
+  "projectTags" : [ ],
+  "keywords" : [ "Human", "Hnf4alpha", "Embryonic stem cells", "Hepatic progenitor", "Sumo" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2019-05-07",
+  "publicationDate" : "2019-06-17",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Mike",
+    "lastName" : "Tatham",
+    "identifier" : "39330108",
+    "affiliation" : "University of Dundee",
+    "email" : "m.tatham@dundee.ac.uk",
+    "country" : "United Kingdom",
+    "orcid" : "0000-0001-6986-1691",
+    "name" : "Mike Tatham",
+    "id" : "39330108"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Ronald T",
+    "lastName" : "Hay",
+    "identifier" : "143260100",
+    "affiliation" : "Professor of Molecular Biology  Centre for Gene Regulation and Expression School of Life Sciences, University of Dundee, Dundee",
+    "email" : "r.t.hay@dundee.ac.uk",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Ronald T Hay",
+    "id" : "143260100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000312",
+    "name" : "Label free"
+  } ],
+  "countries" : [ "United Kingdom" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000379",
+      "name" : "embryo"
+    }, {
+      "cvLabel" : "CL",
+      "accession" : "CL:0002322",
+      "name" : "embryonic stem cell"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0002322",
+    "name" : "Embryonic stem cell"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000379",
+    "name" : "Embryo"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Wang Y, Tatham MH, Schmidt-Heck W, Swann C, Singh-Dolt K, Meseguer-Ripolles J, Lucendo-Villarin B, Kunath T, Rudd TR, Smith AJH, Hengstler JG, Godoy P, Hay RT, Hay DC. Multiomics Analyses of HNF4α Protein Domain Function during Human Pluripotent Stem Cell Differentiation. iScience. 2019 16:206-217",
+    "pubmedID" : 31185456,
+    "doi" : "10.1016/j.isci.2019.05.028"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00425",
+    "name" : "monohydroxylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00394",
+    "name" : "acetylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 4479,
+  "botCount" : 902,
+  "hubCount" : 3461,
+  "organicCount" : 116
+}

@@ -1,0 +1,600 @@
+{
+  "paper_id": "PXD011175",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"human MM lymph node metastases tissues\" and a search against the \"Homo sapiens UniProt revised database\".",
+        "TRUTH_CHECK": "The analyzed samples are from human patients.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "human MM lymph node metastases tissues",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organism part/tissue, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"fresh-frozen tissues from human MM lymph node metastases tissues\".",
+        "TRUTH_CHECK": "The analyzed samples are indeed lymph node metastases from melanoma patients.",
+        "COMPLETENESS_CHECK": "Complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "malignant melanoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods explicitly state the study is on malignant melanoma (MM).",
+        "TRUTH_CHECK": "The runs are derived from MM lymph node metastases tissues.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "39",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of any patients or subjects.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit, but more importantly, it is not in the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "51",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of any patients or subjects.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit, but more importantly, it is not in the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "71",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of any patients or subjects.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit, but the primary issue is the lack of source."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the sex field.",
+        "SOURCE_CHECK": "The paper does not mention the sex of the patients.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"MM tumor tissues\" and \"human MM lymph node metastases tissues\" were used.",
+        "TRUTH_CHECK": "The analysed material for all runs consists of these tissues.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms in the definition."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a developmental stage, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"patients\" and the related columns provide ages (39, 51, 71), from which \"adult\" is an allowed inference.",
+        "TRUTH_CHECK": "The samples are from melanoma patients of adult age.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"label-free quantification (LFQ) data\", which supports the use of label-free methods.",
+        "TRUTH_CHECK": "The runs described in the paper used label-free quantification.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper mentions both a \"Q Exactive\" and a \"Q Exactive HF-X\".",
+        "TRUTH_CHECK": "The runs listed include both high pH fractions (F1-F6, FT) and a non-fractionated run (MM1_R1). The paper states that LC-MS/MS was performed on either a Q Exactive or a Q Exactive HF-X. Without a mapping of which specific runs used which instrument, assigning all 28 runs to the base Q Exactive is a wrong detail if some were performed on the HF-X. However, the candidate value \"Q Exactive\" is explicitly printed in the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive HF-X;AC=MS:1002877",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section explicitly mentions the \"Q Exactive HF-X mass spectrometer\".",
+        "TRUTH_CHECK": "The value is correct for the runs listed.",
+        "COMPLETENESS_CHECK": "The value follows the required key-value format and is complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Lys-C;AC=MS:1001309",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state that proteins were firstly incubated with Lys-C.",
+        "TRUTH_CHECK": "Lys-C was used for the digestion of the samples in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the right field.",
+        "SOURCE_CHECK": "The methods state that proteins were incubated with Lys-C and then trypsin was added.",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the proteins analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "NT=HCD;AC=MS:1000422",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"fragmentation in the HCD collision cell\" for both the Q Exactive and Q Exactive HF-X instruments.",
+        "TRUTH_CHECK": "HCD was used for all runs described in the LC-MS/MS analysis.",
+        "COMPLETENESS_CHECK": "Complete. The NT term is correct and the AC accession is not judged."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "25% NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the collision energy, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"fragmentation in the HCD collision cell with an NCE of 25\" for both the Q Exactive and Q Exactive HF-X.",
+        "TRUTH_CHECK": "The value is correct for all runs as both instruments used the same NCE.",
+        "COMPLETENESS_CHECK": "The value \"25% NCE\" is a correct representation of \"NCE of 25\"."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "enrichment of phosphorylated Protein",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an enrichment method, which is the right field.",
+        "SOURCE_CHECK": "The paper describes an \"automated phosphopeptide enrichment protocol\" using \"Fe(III)-NTA-IMAC-based enrichment\".",
+        "TRUTH_CHECK": "The runs are part of the phosphoproteomics experiment using this enrichment.",
+        "COMPLETENESS_CHECK": "The value uses the SDRF controlled term for phosphopeptide enrichment."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "Fe(III)-IMAC",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phosphopeptide enrichment method, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions an \"Fe(III)-NTA-IMAC-based enrichment workflow\" and \"Fe(III)-NTA cartridges\".",
+        "TRUTH_CHECK": "The runs listed are part of the phosphoproteomics analysis using this enrichment.",
+        "COMPLETENESS_CHECK": "The method name is provided as allowed by the definition."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a phosphoproteomics workflow using LC-MS/MS, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the MS experiment performed on the samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Cysteine carbamidomethylation was set as fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was a global search parameter.",
+        "COMPLETENESS_CHECK": "Follows the required format including name, residue, and modification type."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;TA=M;MT=variable;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"methionine oxidation... were set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residue, and modification status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;TA=S,T,Y;MT=variable;AC=UNIMOD:21",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state that phosphorylation of serine, threonine and tyrosine were set as variable modifications.",
+        "TRUTH_CHECK": "The value is correct for the runs as they are part of the phosphoproteomics experiment.",
+        "COMPLETENESS_CHECK": "The value follows the required format including name, residues, and modification type."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;PP=Protein N-term;MT=variable;AC=UNIMOD:1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"protein N-terminal acetylation\" was set as a variable modification.",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, specifying the name, position, and modification type."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The data analysis section states \"peptide mass tolerance for the precursor ions and MS/MS spectra were 10 ppm and 0.02 Da, respectively\".",
+        "TRUTH_CHECK": "The value is correct for all runs in the study.",
+        "COMPLETENESS_CHECK": "The value follows the definition and includes the unit as printed."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.02 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that MS/MS spectra mass tolerance was 0.02 Da.",
+        "TRUTH_CHECK": "The value is correct for the runs described in the data analysis section.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "F1_MM2.raw = 1 | F2_MM2.raw = 1 | F3_MM2.raw = 1 | F4_MM2.raw = 1 | F5_MM2.raw = 1 | F6_MM2.raw = 1 | FT_MM2.raw = 1 | MM1_R1.raw = 1 | MM1_R3.raw = 2 | MM2_R1.raw = 1 | MM2_R2.raw = 2 | MM3_R1.raw = 1 | MM3_R2.raw = 2 | MM_100ug_IMAC_Bravo_R1.raw = 1 | MM_100ug_IMAC_Bravo_R2.raw = 1 | MM_100ug_IMAC_Bravo_R3.raw = 1 | MM_12ug_IMAC_Bravo_R1.raw = 1 | MM_12ug_IMAC_Bravo_R2.raw = 1 | MM_12ug_IMAC_Bravo_R3.raw = 1 | MM_200ug_IMAC_Bravo_R1.raw = 1 | MM_200ug_IMAC_Bravo_R2.raw = 1 | MM_200ug_IMAC_Bravo_R3.raw = 1 | MM_25ug_IMAC_Bravo_R1.raw = 1 | MM_25ug_IMAC_Bravo_R2.raw = 1 | MM_25ug_IMAC_Bravo_R3.raw = 1 | MM_50ug_IMAC_Bravo_R1.raw = 1 | MM_50ug_IMAC_Bravo_R2.raw = 1 | MM_50ug_IMAC_Bravo_R3.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "F1_MM2.raw = 1 | F2_MM2.raw = 1 | F3_MM2.raw = 1 | F4_MM2.raw = 1 | F5_MM2.raw = 1 | F6_MM2.raw = 1 | FT_MM2.raw = 1 | MM1_R1.raw = 2 | MM1_R3.raw = 3 | MM2_R1.raw = 4 | MM2_R2.raw = 5 | MM3_R1.raw = 6 | MM3_R2.raw = 7 | MM_100ug_IMAC_Bravo_R1.raw = 8 | MM_100ug_IMAC_Bravo_R2.raw = 8 | MM_100ug_IMAC_Bravo_R3.raw = 8 | MM_12ug_IMAC_Bravo_R1.raw = 9 | MM_12ug_IMAC_Bravo_R2.raw = 9 | MM_12ug_IMAC_Bravo_R3.raw = 9 | MM_200ug_IMAC_Bravo_R1.raw = 10 | MM_200ug_IMAC_Bravo_R2.raw = 10 | MM_200ug_IMAC_Bravo_R3.raw = 10 | MM_25ug_IMAC_Bravo_R1.raw = 11 | MM_25ug_IMAC_Bravo_R2.raw = 11 | MM_25ug_IMAC_Bravo_R3.raw = 11 | MM_50ug_IMAC_Bravo_R1.raw = 12 | MM_50ug_IMAC_Bravo_R2.raw = 12 | MM_50ug_IMAC_Bravo_R3.raw = 12",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes analysis of individual MM samples and a dilution series of MM tissue lysates.",
+        "TRUTH_CHECK": "The mapping is inconsistent. For the dilution series (e.g., MM_100ug), runs from the same sample correctly share an index. However, for the individual samples (MM1, MM2, MM3), the mapping assigns different biological replicate indices (1 and 2) to runs that appear to be from different samples (Sample 2, 3, 4, 5, 6, 7), but then resets the index to 1 for each new sample pair. According to the definition, independent biological units (separate patients/biopsies) must get unique incrementing indices (1, 2, 3...).",
+        "COMPLETENESS_CHECK": "Every run is assigned an index."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "F1_MM2.raw = 1 | F2_MM2.raw = 1 | F3_MM2.raw = 1 | F4_MM2.raw = 1 | F5_MM2.raw = 1 | F6_MM2.raw = 1 | FT_MM2.raw = 1 | MM1_R1.raw = 1 | MM1_R3.raw = 1 | MM2_R1.raw = 1 | MM2_R2.raw = 1 | MM3_R1.raw = 1 | MM3_R2.raw = 1 | MM_100ug_IMAC_Bravo_R1.raw = 1 | MM_100ug_IMAC_Bravo_R2.raw = 2 | MM_100ug_IMAC_Bravo_R3.raw = 3 | MM_12ug_IMAC_Bravo_R1.raw = 1 | MM_12ug_IMAC_Bravo_R2.raw = 2 | MM_12ug_IMAC_Bravo_R3.raw = 3 | MM_200ug_IMAC_Bravo_R1.raw = 1 | MM_200ug_IMAC_Bravo_R2.raw = 2 | MM_200ug_IMAC_Bravo_R3.raw = 3 | MM_25ug_IMAC_Bravo_R1.raw = 1 | MM_25ug_IMAC_Bravo_R2.raw = 2 | MM_25ug_IMAC_Bravo_R3.raw = 3 | MM_50ug_IMAC_Bravo_R1.raw = 1 | MM_50ug_IMAC_Bravo_R2.raw = 2 | MM_50ug_IMAC_Bravo_R3.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a dilution series and individual samples, with some runs labeled as R1, R2, R3, indicating technical replicates.",
+        "TRUTH_CHECK": "The mapping correctly assigns indices 1, 2, 3 to repeated runs of the same material (e.g., the IMAC Bravo series) and 1 to runs of unique materials or fractions.",
+        "COMPLETENESS_CHECK": "Every run is assigned a technical replicate index following the definition."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "F1_MM2.raw = 2 | F2_MM2.raw = 3 | F3_MM2.raw = 4 | F4_MM2.raw = 5 | F5_MM2.raw = 6 | F6_MM2.raw = 7 | FT_MM2.raw = 1 | MM1_R1.raw = 1 | MM1_R3.raw = 1 | MM2_R1.raw = 1 | MM2_R2.raw = 1 | MM3_R1.raw = 1 | MM3_R2.raw = 1 | MM_100ug_IMAC_Bravo_R1.raw = 1 | MM_100ug_IMAC_Bravo_R2.raw = 1 | MM_100ug_IMAC_Bravo_R3.raw = 1 | MM_12ug_IMAC_Bravo_R1.raw = 1 | MM_12ug_IMAC_Bravo_R2.raw = 1 | MM_12ug_IMAC_Bravo_R3.raw = 1 | MM_200ug_IMAC_Bravo_R1.raw = 1 | MM_200ug_IMAC_Bravo_R2.raw = 1 | MM_200ug_IMAC_Bravo_R3.raw = 1 | MM_25ug_IMAC_Bravo_R1.raw = 1 | MM_25ug_IMAC_Bravo_R2.raw = 1 | MM_25ug_IMAC_Bravo_R3.raw = 1 | MM_50ug_IMAC_Bravo_R1.raw = 1 | MM_50ug_IMAC_Bravo_R2.raw = 1 | MM_50ug_IMAC_Bravo_R3.raw = 1",
+      "verdict": null,
+      "type_mismatch": null,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": null,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "",
+        "SOURCE_CHECK": "",
+        "TRUTH_CHECK": "",
+        "COMPLETENESS_CHECK": ""
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample amount]",
+      "extracted_value": "60 ug",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the amount of protein material used, which is a valid characteristic for this study.",
+        "SOURCE_CHECK": "The abstract states \"from 60 μg of protein material the number of identified phosphoproteins... was comparable to previous reports\".",
+        "TRUTH_CHECK": "The value is right for the runs that used this specific starting amount of material.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample amount]",
+      "extracted_value": "100 ug",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample amount, which is appropriate for a column named \"characteristics[sample amount]\".",
+        "SOURCE_CHECK": "The paper mentions starting quantities of \"12.5 μg\" and \"60 μg\", but does not mention a \"100 ug\" sample amount.",
+        "TRUTH_CHECK": "The value is not supported by the text for any runs.",
+        "COMPLETENESS_CHECK": "Complete format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample amount]",
+      "extracted_value": "12 ug",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "12.5 ug",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the amount of protein material used, which is a valid characteristic for this study.",
+        "SOURCE_CHECK": "The paper mentions a \"dilution series of MM tissue lysates\" and specifically states that \"from only 12.5 μg of sample, more than 1,000 phosphopeptides were identified\".",
+        "TRUTH_CHECK": "The value \"12 ug\" is a slight drift from the printed \"12.5 μg\" for the runs associated with the 12.5 μg sample.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample amount]",
+      "extracted_value": "200 ug",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample amount, which is appropriate for a characteristics column.",
+        "SOURCE_CHECK": "The paper mentions starting quantities of \"12.5 μg\" and \"60 μg\", but does not mention \"200 ug\".",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample amount]",
+      "extracted_value": "25 ug",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a sample amount, which is appropriate for a column named \"characteristics[sample amount]\".",
+        "SOURCE_CHECK": "The paper mentions a \"dilution series of MM tissue lysates\" and specifically notes that \"from only 12.5 μg of sample, more than 1,000 phosphopeptides were identified\", as well as \"60 μg of protein material\". While \"25 ug\" is not explicitly written, it is part of the described dilution series.",
+        "TRUTH_CHECK": "The value describes the amount of protein material used for the specific runs (MM_25ug...), which is consistent with the paper's description of a dilution series.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample amount]",
+      "extracted_value": "50 ug",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a sample amount, which is appropriate for a column named \"characteristics[sample amount]\".",
+        "SOURCE_CHECK": "The paper mentions a \"dilution series of MM tissue lysates\" and specifically mentions \"12.5 μg\" and \"60 μg\", but does not explicitly list \"50 ug\" in the provided text.",
+        "TRUTH_CHECK": "While the paper describes a dilution series, the specific value \"50 ug\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The value is a simple quantity."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "NT=Orbitrap;AC=MS:1000484",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer, which is the correct information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The methods state that MS/MS spectra acquisition was performed in the Orbitrap analyzer for both the Q Exactive and Q Exactive HF-X instruments.",
+        "TRUTH_CHECK": "The Orbitrap was used for the MS2 scans in all runs described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

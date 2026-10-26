@@ -1,0 +1,148 @@
+{
+  "accession" : "PXD006003",
+  "title" : "Proteomics of melanoma response to immunotherapy reveals dependence on mitochondrial function",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Immunotherapy has revolutionized cancer treatment, yet most patients do not respond. Here, we investigated mechanisms of response by deeply profiling the proteome of clinical samples from advanced stage melanoma patients undergoing either tumor infiltrating lymphocytes (TIL)-based or anti-PD1 immunotherapy. Using high-resolution mass spectrometry, we quantified over 10,300 proteins with high accuracy. Statistical analyses revealed higher oxidative phosphorylation and lipid metabolism in responders in both treatments, and identified proteomic signatures for response. Aiming to elucidate the effects of the metabolic state on the immune response, we examined melanoma cells upon metabolic perturbations or Crisp-Cas9 knockouts. These experiments indicated lipid metabolism as a regulatory mechanism that increases melanoma immunogenicity by elevating antigen presentation, thereby affecting the sensitivity to T-cell mediated killing both in-vitro and in-vivo. Altogether, our proteomic analyses revealed novel association between the melanoma metabolic state and the response to immunotherapy, which can be the basis for future improvement of therapeutic response.",
+  "sampleProcessingProtocol" : "For clinical sample preparation, slides (6-10 μm thick) were macro-dissected from FFPE blocks. Samples were deparaffinized with xylene and washed with ethanol. The sample preparation of the TIL cohort was as follows: The extracted tissues were lysed with 4% sodium dodecyl sulfate (SDS), 0.1 M Tris pH 7.6, and then boiled for 10 minutes at 95°C, sonicated and centrifuged at 17,000 x g. For super-SILAC standard preparation, the heavy labeled cells were lysed with the same buffer and boiled for 10 minutes at 95°C. Following protein determination using the BCA protocol (Pierce), the heavy labeled super-SILAC standard lysate and the tumor lysates were mixed at a 1:1 ratio and the total protein lysate was trypsin-digested on 30 kDa filters (Millipore) using the filter-aided sample preparation (FASP) protocol (Wisniewski et al., 2009). Proteins were denatured on filters in 8 M urea, reduced using 100 mM DTT, and alkylated using 50 mM iodoacetamide, followed by overnight digestion with sequencing grade trypsin (Promega; 1:50 enzyme to protein ratio). Peptides were then acidified with 1% trifluoroacetic acid, separated into 6 fractions using strong anion exchange (SAX) chromatography in a stage tip format and then purified on C-18 (3M) stage tips (Rappsilber et al., 2003). The sample preparation of the anti-PD1 cohort was as follows: The extracted tissues were lysed with 50% 2-2-2 trifluoroethanol (TFE), 25mM ABC. Samples were boiled for 1 hr at 99°C, sonicated and centrifuged at 20,000 x g. Following protein determination using the Bradford protocol, the heavy labeled super-SILAC standard lysate (in the same buffer) and the tumor lysates were mixed at a 1:1 ratio and the total protein lysate was trypsin-digested using in-solution trypsin digestion protocol. Proteins were reduced using 5 mM DTT, alkylated using 15 mM iodoacetamide, diluted with 50 mM ammonium bicarbonate followed by overnight digestion with Lys-C-Trypsin mix (1:100 enzyme to protein ratio) and trypsin (Promega; 1:50 enzyme to protein ratio). Peptides were then acidified with 1% trifluoroacetic acid, separated into 5 fractions using strong cation exchange (SCX) chromatography in a stage tip format and then purified on C-18 (3M) stage tips. For cell line experiments cells were lysed upon reaching ~70-90% confluence using 6 M urea and 2 M thiourea in 50 mM ammonium bicarbonate in at least 3 biological replicates. Protein concentrations were determined using the Bradford assay and the proteins were digested in-solution. Specifically, lysates were reduced with 1 mM DTT, alkylated with 5 mM iodoacetamide, diluted 1:4 with 50 mM ammonium bicarbonate, and digested over-night with Lys-C-Trypsin mix (1:100 enzyme to protein ratio) and trypsin (1:50 enzyme to protein ratio). Next, peptides were acidified with TFA and purified on C-18 stage tips (3M).",
+  "dataProcessingProtocol" : "Raw MS data were processed using MaxQuant version 1.5.2.10 for the TIL dataset and 1.5.6.9 for the a-PD1 dataset and all the cell line perturbations (Cox and Mann, 2008), implemented with the Andromeda search engine (Cox et al., 2011) against the human uniprot database as a forward database and a decoy reverse database, using 1% false discovery rate (FDR) for both the peptide and the protein levels. The settings included carbamidomethyl cysteine as a fixed modification and methionine oxidation and N-terminal acetylation as variable modifications. The “match between runs” option was enabled to transfer identification between separate LC-MS/MS runs based on their accurate mass and retention time after retention time alignment. The settings for the SILAC-labeled tumor sample runs included Lys-8 and Arg-10 as heavy labels and the re-quantify option was enabled.",
+  "projectTags" : [ ],
+  "keywords" : [ "Human", "Melanoma", "Lc-ms/ms" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2019-04-09",
+  "publicationDate" : "2019-07-29",
+  "submitters" : [ {
+    "title" : "Professor",
+    "firstName" : "Tamar",
+    "lastName" : "Geiger",
+    "identifier" : "1990100",
+    "affiliation" : "Weizmann Institute of Science",
+    "email" : "geiger@tauex.tau.ac.il",
+    "country" : "Israel",
+    "orcid" : "0000-0002-9526-197X",
+    "name" : "Tamar Geiger",
+    "id" : "1990100"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Tamar",
+    "lastName" : "Geiger",
+    "identifier" : "140600100",
+    "affiliation" : "Department of Human Molecular Genetics and Biochemistry, Sackler Faculty of Medicine, Tel Aviv University, Tel Aviv, Israel",
+    "email" : "geiger@tauex.tau.ac.il",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Tamar Geiger",
+    "id" : "140600100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1002634",
+    "name" : "Q Exactive Plus"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1002523",
+    "name" : "Q Exactive HF"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000315",
+    "name" : "SILAC"
+  } ],
+  "countries" : [ "Israel" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "CL",
+      "accession" : "CL:0000148",
+      "name" : "melanocyte"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0001253",
+      "name" : "skin"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:1909",
+      "name" : "melanoma"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0001253",
+    "name" : "Skin"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0000148",
+    "name" : "Melanocyte"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:1909",
+    "name" : "Melanoma"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Harel M, Ortenberg R, Varanasi SK, Mangalhara KC, Mardamshina M, Markovits E, Baruch EN, Tripple V, Arama-Chayoth M, Greenberg E, Shenoy A, Ayasun R, Knafo N, Xu S, Anafi L, Yanovich-Arad G, Barnabas GD, Ashkenazi S, Besser MJ, Schachter J, Bosenberg M, Shadel GS, Barshack I, Kaech SM, Markel G, Geiger T. Proteomics of Melanoma Response to Immunotherapy Reveals Mitochondrial Dependence. Cell. 2019 179(1):236-250.e18",
+    "pubmedID" : 31495571,
+    "doi" : "10.1016/j.cell.2019.08.012"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000398",
+    "name" : "No PTMs are included in the dataset"
+  } ],
+  "totalFileDownloads" : 107879,
+  "botCount" : 23001,
+  "hubCount" : 84279,
+  "organicCount" : 599
+}

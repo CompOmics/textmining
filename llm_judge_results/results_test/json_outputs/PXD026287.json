@@ -1,0 +1,277 @@
+{
+  "paper_id": "PXD026287",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Arabidopsis thaliana",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper repeatedly mentions \"Arabidopsis\" and \"Arabidopsis lines\", and \"Arabidopsis thaliana\" is the scientific name for this plant.",
+        "TRUTH_CHECK": "The proteins analyzed in the IVI-MS experiment come from Arabidopsis plants.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "whole seedlings",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the part of the organism used, which is the right field.",
+        "SOURCE_CHECK": "The paper states that \"Freshly harvested 2-week-old seedlings were crosslinked\" for the IVI-MS libraries.",
+        "TRUTH_CHECK": "The MS runs were performed on material derived from these seedlings.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "characteristics[cell type]",
+      "extracted_value": "plant cell",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"plant cell\" describes a biological cell type, which fits the field_name.",
+        "SOURCE_CHECK": "The paper describes using Arabidopsis seedlings, but it does not specify a particular cell type for the proteomics runs.",
+        "TRUTH_CHECK": "The proteomics experiment used isolated nuclei from ground seedling powder; however, the field definition states that \"a value for a tissue sample with no stated cell type is unsupported.\"",
+        "COMPLETENESS_CHECK": "The value is a general term, but it is unsupported by the text."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "characteristics[developmental stage]",
+      "extracted_value": "2-week old",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the age/stage of the plant, which fits the developmental_stage field.",
+        "SOURCE_CHECK": "The paper states \"Freshly harvested 2-week-old seedlings\" were used for the IVI-MS libraries.",
+        "TRUTH_CHECK": "The runs listed are part of the IVI-MS experiment using these seedlings.",
+        "COMPLETENESS_CHECK": "The value is a description of the stage/age. While \"adult\" is a common controlled term, \"2-week old\" is the specific stage provided in the text."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that raw files were analyzed using \"label free quantification (LFQ)\".",
+        "TRUTH_CHECK": "The runs listed are part of the IVI-MS experiment which used LFQ.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=LTQ Orbitrap Velos;AC=MS:1001742",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=LTQ Orbitrap Velos Pro",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the samples were analyzed on an \"LTQ Orbitrap Velos Pro mass spectrometer\".",
+        "TRUTH_CHECK": "The instrument was used for the IVI-MS experiment described.",
+        "COMPLETENESS_CHECK": "The value is a drift from the full model name \"LTQ Orbitrap Velos Pro\" to \"LTQ Orbitrap Velos\"."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for protein digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"Protein samples were digested into peptides by trypsin\".",
+        "TRUTH_CHECK": "The value is correct for the runs listed, as trypsin was used for the IVI-MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a protein modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention any modifications (such as oxidation or acetylation) used during the MaxQuant database search.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent from the paper."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a protein modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention any database search parameters or modifications (such as Acetyl or Oxidation) used during the MaxQuant analysis.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "characteristics[biological replicate]",
+      "extracted_value": "WT_1_1.RAW = 1 | WT_1_2.RAW = 1 | WT_1_3.RAW = 1 | WT_1_4.RAW = 1 | WT_1_5.RAW = 1 | HAKAI_1_1.RAW = 1 | HAKAI_1_2.RAW = 1 | HAKAI_1_3.RAW = 1 | HAKAI_1_4.RAW = 1 | HAKAI_1_5.RAW = 1 | WT_2_1.RAW = 2 | WT_2_2.RAW = 2 | WT_2_3.RAW = 2 | WT_2_4.RAW = 2 | WT_2_5.RAW = 2 | HAKAI_2_1.RAW = 2 | HAKAI_2_2.RAW = 2 | HAKAI_2_3.RAW = 2 | HAKAI_2_4.RAW = 2 | HAKAI_2_5.RAW = 2 | WT_3_1.RAW = 3 | WT_3_2.RAW = 3 | WT_3_3.RAW = 3 | WT_3_4.RAW = 3 | WT_3_5.RAW = 3 | HAKAI_3_1.RAW = 3 | HAKAI_3_2.RAW = 3 | HAKAI_3_3.RAW = 3 | HAKAI_3_4.RAW = 3 | HAKAI_3_5.RAW = 3 | MTA_1_1.RAW = 1 | MTA_1_2.RAW = 1 | MTA_1_3.RAW = 1 | MTA_1_4.RAW = 1 | MTA_1_5.RAW = 1 | hakai_MTA_1_1.RAW = 1 | hakai_MTA_1_2.RAW = 1 | hakai_MTA_1_3.RAW = 1 | hakai_MTA_1_4.RAW = 1 | hakai_MTA_1_5.RAW = 1 | MTA_2_1.RAW = 2 | MTA_2_2.RAW = 2 | MTA_2_3.RAW = 2 | MTA_2_4.RAW = 2 | MTA_2_5.RAW = 2 | hakai_MTA_2_1.RAW = 2 | hakai_MTA_2_2.RAW = 2 | hakai_MTA_2_3.RAW = 2 | hakai_MTA_2_4.RAW = 2 | hakai_MTA_2_5.RAW = 2 | MTA_3_1.RAW = 3 | MTA_3_2.RAW = 3 | MTA_3_3.RAW = 3 | MTA_3_4.RAW = 3 | MTA_3_5.RAW = 3 | hakai_MTA_3_1.RAW = 3 | hakai_MTA_3_2.RAW = 3 | hakai_MTA_3_3.RAW = 3 | hakai_MTA_3_4.RAW = 3 | hakai_MTA_3_5.RAW = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states \"three biological replicates were performed for each line\".",
+        "TRUTH_CHECK": "The mapping correctly assigns runs to three biological replicates (1, 2, 3) per condition. The five slices per lane (1-5) are correctly assigned the same biological replicate index as they are fractions of the same biological sample.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "comment[technical replicate]",
+      "extracted_value": "WT_1_1.RAW = 1 | WT_1_2.RAW = 1 | WT_1_3.RAW = 1 | WT_1_4.RAW = 1 | WT_1_5.RAW = 1 | HAKAI_1_1.RAW = 1 | HAKAI_1_2.RAW = 1 | HAKAI_1_3.RAW = 1 | HAKAI_1_4.RAW = 1 | HAKAI_1_5.RAW = 1 | WT_2_1.RAW = 1 | WT_2_2.RAW = 1 | WT_2_3.RAW = 1 | WT_2_4.RAW = 1 | WT_2_5.RAW = 1 | HAKAI_2_1.RAW = 1 | HAKAI_2_2.RAW = 1 | HAKAI_2_3.RAW = 1 | HAKAI_2_4.RAW = 1 | HAKAI_2_5.RAW = 1 | WT_3_1.RAW = 1 | WT_3_2.RAW = 1 | WT_3_3.RAW = 1 | WT_3_4.RAW = 1 | WT_3_5.RAW = 1 | HAKAI_3_1.RAW = 1 | HAKAI_3_2.RAW = 1 | HAKAI_3_3.RAW = 1 | HAKAI_3_4.RAW = 1 | HAKAI_3_5.RAW = 1 | MTA_1_1.RAW = 1 | MTA_1_2.RAW = 1 | MTA_1_3.RAW = 1 | MTA_1_4.RAW = 1 | MTA_1_5.RAW = 1 | hakai_MTA_1_1.RAW = 1 | hakai_MTA_1_2.RAW = 1 | hakai_MTA_1_3.RAW = 1 | hakai_MTA_1_4.RAW = 1 | hakai_MTA_1_5.RAW = 1 | MTA_2_1.RAW = 1 | MTA_2_2.RAW = 1 | MTA_2_3.RAW = 1 | MTA_2_4.RAW = 1 | MTA_2_5.RAW = 1 | hakai_MTA_2_1.RAW = 1 | hakai_MTA_2_2.RAW = 1 | hakai_MTA_2_3.RAW = 1 | hakai_MTA_2_4.RAW = 1 | hakai_MTA_2_5.RAW = 1 | MTA_3_1.RAW = 1 | MTA_3_2.RAW = 1 | MTA_3_3.RAW = 1 | MTA_3_4.RAW = 1 | MTA_3_5.RAW = 1 | hakai_MTA_3_1.RAW = 1 | hakai_MTA_3_2.RAW = 1 | hakai_MTA_3_3.RAW = 1 | hakai_MTA_3_4.RAW = 1 | hakai_MTA_3_5.RAW = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that for the IVI-MS experiment, \"the gel for the same lane was cut into five slices\" and \"raw files corresponding to five slices from the same lane were merged\".",
+        "TRUTH_CHECK": "The runs grouped by the same prefix (e.g., WT_1_1 to WT_1_5) represent the five slices of a single gel lane (one material). According to the field definition, separate elutions or enrichment steps are fractions, not technical replicates. Since these are slices of one gel lane from one sample, they are fractions. Technical replicates are repeated runs of the same material. Each slice is a different part of the material.",
+        "COMPLETENESS_CHECK": "The mapping assigns index 1 to all runs, which is correct if they are not technical replicates of each other."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "comment[fraction identifier]",
+      "extracted_value": "WT_1_1.RAW = 1 | WT_1_2.RAW = 2 | WT_1_3.RAW = 3 | WT_1_4.RAW = 4 | WT_1_5.RAW = 5 | HAKAI_1_1.RAW = 6 | HAKAI_1_2.RAW = 7 | HAKAI_1_3.RAW = 8 | HAKAI_1_4.RAW = 9 | HAKAI_1_5.RAW = 10 | WT_2_1.RAW = 11 | WT_2_2.RAW = 12 | WT_2_3.RAW = 13 | WT_2_4.RAW = 14 | WT_2_5.RAW = 15 | HAKAI_2_1.RAW = 16 | HAKAI_2_2.RAW = 17 | HAKAI_2_3.RAW = 18 | HAKAI_2_4.RAW = 19 | HAKAI_2_5.RAW = 20 | WT_3_1.RAW = 21 | WT_3_2.RAW = 22 | WT_3_3.RAW = 23 | WT_3_4.RAW = 24 | WT_3_5.RAW = 25 | HAKAI_3_1.RAW = 26 | HAKAI_3_2.RAW = 27 | HAKAI_3_3.RAW = 28 | HAKAI_3_4.RAW = 29 | HAKAI_3_5.RAW = 30 | MTA_1_1.RAW = 31 | MTA_1_2.RAW = 32 | MTA_1_3.RAW = 33 | MTA_1_4.RAW = 34 | MTA_1_5.RAW = 35 | hakai_MTA_1_1.RAW = 36 | hakai_MTA_1_2.RAW = 37 | hakai_MTA_1_3.RAW = 38 | hakai_MTA_1_4.RAW = 39 | hakai_MTA_1_5.RAW = 40 | MTA_2_1.RAW = 41 | MTA_2_2.RAW = 42 | MTA_2_3.RAW = 43 | MTA_2_4.RAW = 44 | MTA_2_5.RAW = 45 | hakai_MTA_2_1.RAW = 46 | hakai_MTA_2_2.RAW = 47 | hakai_MTA_2_3.RAW = 48 | hakai_MTA_2_4.RAW = 49 | hakai_MTA_2_5.RAW = 50 | MTA_3_1.RAW = 51 | MTA_3_2.RAW = 52 | MTA_3_3.RAW = 53 | MTA_3_4.RAW = 54 | MTA_3_5.RAW = 55 | hakai_MTA_3_1.RAW = 56 | hakai_MTA_3_2.RAW = 57 | hakai_MTA_3_3.RAW = 58 | hakai_MTA_3_4.RAW = 59 | hakai_MTA_3_5.RAW = 60",
+      "verdict": null,
+      "type_mismatch": null,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": null,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "",
+        "SOURCE_CHECK": "",
+        "TRUTH_CHECK": "",
+        "COMPLETENESS_CHECK": ""
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[genotype]",
+      "extracted_value": "WT",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"WT\" (Wild Type) describes the genetic background of the plant lines, which is the correct information for a genotype column.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"WT was used as a control\" and \"Arabidopsis lines... used include WT\".",
+        "TRUTH_CHECK": "The runs carrying this value are labeled as WT, which matches the paper's description of the control group.",
+        "COMPLETENESS_CHECK": "The value is a standard abbreviation for Wild Type and is complete for this column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[genotype]",
+      "extracted_value": "HAKAIpro:HAKAI-GFP/hakai",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a genotype/transgenic line, which is the correct content for a characteristics[genotype] column.",
+        "SOURCE_CHECK": "The paper mentions the recombinant construct \"HAKAIpro:HAKAI-GFP\" and the \"hakai-2\" knockout line.",
+        "TRUTH_CHECK": "The value represents a transgenic line expressing HAKAI-GFP in a hakai mutant background, which is consistent with the study's use of transgenic lines and mutants.",
+        "COMPLETENESS_CHECK": "The value is a concise representation of the genotype."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[genotype]",
+      "extracted_value": "MTApro:MTA-GFP/mta",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a genotype/transgenic line, which is the correct content for a characteristics[genotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"MTApro:MTA-GFP\" as a recombinant plasmid construct and \"mta\" as a hypomorphic allele of MTA.",
+        "TRUTH_CHECK": "The value represents a transgenic line expressing MTA-GFP in an mta mutant background, which is consistent with the study's use of transgenic lines and mutants.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[genotype]",
+      "extracted_value": "hakai-2 MTApro:MTA-GFP/mta",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a genotype, which is the correct content for a column named characteristics[genotype].",
+        "SOURCE_CHECK": "The paper mentions the hakai-2 knockout line and the MTApro:MTA-GFP construct; the combination represents a transgenic line in a mutant background.",
+        "TRUTH_CHECK": "The value is right for the runs listed, which are identified as \"hakai MTA-GFP\".",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

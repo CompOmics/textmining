@@ -1,0 +1,379 @@
+{
+  "paper_id": "PXD000070",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "plasmodium falciparum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper explicitly states the analysis of the Plasmodium falciparum schizont phosphoproteome.",
+        "TRUTH_CHECK": "The runs are based on P. falciparum parasites collected by saponin lysis.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "human erythrocytes",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a cell/tissue type, which fits the field_name.",
+        "SOURCE_CHECK": "The paper mentions P. falciparum was cultured in human erythrocytes.",
+        "TRUTH_CHECK": "The paper states that saponin lysis was used to remove the vast majority of erythrocyte material to collect the parasite pellet; thus, the analyzed material is the parasite, not the host erythrocytes.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong material."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "schizont",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Schizont is a parasite life cycle stage, which belongs to the developmental_stage field.",
+        "SOURCE_CHECK": "The term \"schizont\" is stated in the abstract and methods.",
+        "TRUTH_CHECK": "The value describes the life cycle stage of the analyzed Plasmodium falciparum, not a biological cell type.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "strain",
+      "sdrf_column": "comment[plasmodium strain]",
+      "extracted_value": "3D7",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a strain identifier, which is the correct field.",
+        "SOURCE_CHECK": "The methods section explicitly states \"P. falciparum strain 3D7 was cultured\".",
+        "TRUTH_CHECK": "The runs listed are the IMAC DT and DDNL experiments using this strain.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "No labels (TMT, SILAC, etc.) are mentioned in the paper; the use of a standard LC-MS/MS workflow without labels is an allowed inference for \"label free sample\".",
+        "TRUTH_CHECK": "The runs described are label-free phosphoproteomic analyses.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format for label-free runs."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001742;NT=LTQ Orbitrap Velos",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the use of an LTQ Orbitrap Velos hybrid mass spectrometer.",
+        "TRUTH_CHECK": "The instrument was used for all the listed phosphoproteomic runs (DT and DDNL).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state proteins were digested with Trypsin Gold.",
+        "TRUTH_CHECK": "The runs listed are the IMAC phosphoproteomic runs, which used Trypsin Gold.",
+        "COMPLETENESS_CHECK": "Complete. Product names like Trypsin Gold are equivalent to Trypsin."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "ETD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that DT (decision-tree) experiments used either CID or ETD fragmentation.",
+        "TRUTH_CHECK": "The runs listed are DT experiments, and ETD was one of the methods used for these runs.",
+        "COMPLETENESS_CHECK": "One cell naming one of the methods used by the runs is complete according to the \"ONE VALUE PER CELL\" rule."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "CID",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragmentation method, the right field.",
+        "SOURCE_CHECK": "The paper states that DDNL experiments used CID and ETD fragmentation.",
+        "TRUTH_CHECK": "The runs are DDNL experiments, which used CID fragmentation.",
+        "COMPLETENESS_CHECK": "One cell names one method used by the runs, which is correct."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Carbamidomethyl;TA=C;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"cysteine alkylation was performed in situ with iodoacetamide\" and \"Carbamidomethyl (C) ... set as variable modifications\".",
+        "TRUTH_CHECK": "The modification was used for the runs, but the paper explicitly states it was set as variable.",
+        "COMPLETENESS_CHECK": "The value is complete but the MT status is wrong."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;AC=UNIMOD:35;TA=M,W,H;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Oxidation;TA=M;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"Oxidation (M)\" was set as a variable modification.",
+        "TRUTH_CHECK": "The modification was used for the database search of these runs.",
+        "COMPLETENESS_CHECK": "The paper specifies only residue M, but the candidate value includes W and H."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"Acetyl (Protein N-term)\" was set as a variable modification.",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, AC, PP, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;TA=K;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"Acetyl (Protein N-term)\" was set as a variable modification.",
+        "TRUTH_CHECK": "The modification was on the Protein N-terminus, not on Lysine (K).",
+        "COMPLETENESS_CHECK": "The value specifies a residue (TA=K) that was not searched."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Ammonia-loss;AC=UNIMOD:385;TA=Q,C;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "Ammonia-loss is not mentioned in the paper's search parameters.",
+        "TRUTH_CHECK": "The modification was not used in the database search for these runs.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Glu->pyro-Glu;AC=UNIMOD:27;TA=E;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The modification \"Glu->pyro-Glu\" is not mentioned in the paper text.",
+        "TRUTH_CHECK": "The paper lists Acetyl (Protein N-term), Oxidation (M), Deamidated (NQ), Carbamidomethyl (C), and Phospho (ST) as variable modifications, and later adds Phospho Y. Pyro-glutamate is not listed.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Deamidated;AC=UNIMOD:7;PP=Protein N-term;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Deamidated;AC=UNIMOD:7;TA=N,Q;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"Deamidated (NQ)\" was set as a variable modification.",
+        "TRUTH_CHECK": "The modification is searched, but the paper specifies residues N and Q, not the Protein N-terminus.",
+        "COMPLETENESS_CHECK": "The value uses a position (PP) instead of the residues (TA) specified in the paper."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;AC=UNIMOD:21;TA=S,T,Y,A;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Phospho;TA=S,T,Y;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"Phospho (ST) set as variable modifications\" and later mentions an additional search with \"Phospho Y\".",
+        "TRUTH_CHECK": "Phospho was searched on S, T, and Y for the listed runs. Alanine (A) was not searched.",
+        "COMPLETENESS_CHECK": "The residue list includes an incorrect residue (A)."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "10 ppm",
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"10 ppm for MS mass tolerance\" in the Data processing and database searching section.",
+        "TRUTH_CHECK": "The value \"20 ppm\" contradicts the \"10 ppm\" stated in the paper.",
+        "COMPLETENESS_CHECK": "The format is correct, but the detail is wrong."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "1.0005 Da",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "0.5 Da",
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states \"0.5 Da for MS/MS mass tolerance\" in the Data processing and database searching section.",
+        "TRUTH_CHECK": "The value 1.0005 Da is not the value printed in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format but contains the wrong number."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "OTPf-IMACDT2010Mar11-02.raw = 1 | OTPf-IMACDT2010Mar11-01.raw = 2 | OTPf-IMACDT2010Mar10-01.raw = 3 | OTPf-IMACDDNL_2010Mar9-02.raw = 1 | OTPf-IMACDDNL_2010Mar9-01.raw = 2 | OTPf-IMACDDNL_2010Mar06-02.raw = 3",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "OTPf-IMACDT2010Mar11-02.raw = 1 | OTPf-IMACDT2010Mar11-01.raw = 1 | OTPf-IMACDT2010Mar10-01.raw = 1 | OTPf-IMACDDNL_2010Mar9-02.raw = 1 | OTPf-IMACDDNL_2010Mar9-01.raw = 1 | OTPf-IMACDDNL_2010Mar06-02.raw = 1",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that phosphopeptides from two IMAC purifications were pooled and split into 6 aliquots for LC-MS/MS analysis.",
+        "TRUTH_CHECK": "Since all 6 runs (3 DT and 3 DDNL) are aliquots of a single pooled sample, they must all share the same biological replicate index.",
+        "COMPLETENESS_CHECK": "The mapping assigns different indices (1, 2, 3) to runs that are actually technical replicates of the same biological unit."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "OTPf-IMACDT2010Mar11-02.raw = 1 | OTPf-IMACDT2010Mar11-01.raw = 1 | OTPf-IMACDT2010Mar10-01.raw = 1 | OTPf-IMACDDNL_2010Mar9-02.raw = 1 | OTPf-IMACDDNL_2010Mar9-01.raw = 1 | OTPf-IMACDDNL_2010Mar06-02.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "OTPf-IMACDT2010Mar11-02.raw = 1 | OTPf-IMACDT2010Mar11-01.raw = 2 | OTPf-IMACDT2010Mar10-01.raw = 3 | OTPf-IMACDDNL_2010Mar9-02.raw = 1 | OTPf-IMACDDNL_2010Mar9-01.raw = 2 | OTPf-IMACDDNL_2010Mar06-02.raw = 3",
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that triplicate DT and triplicate DDNL experiments were performed.",
+        "TRUTH_CHECK": "The runs are described as triplicates of two different acquisition methods (DT and DDNL). Since they are independent runs of the same material (pooled phosphopeptides), they should be technical replicates 1, 2, and 3 within each group.",
+        "COMPLETENESS_CHECK": "The mapping assigns 1 to every run, which is incorrect for replicates."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "OTPf-IMACDT2010Mar11-02.raw = 1 | OTPf-IMACDT2010Mar11-01.raw = 2 | OTPf-IMACDT2010Mar10-01.raw = 3 | OTPf-IMACDDNL_2010Mar9-02.raw = 1 | OTPf-IMACDDNL_2010Mar9-01.raw = 2 | OTPf-IMACDDNL_2010Mar06-02.raw = 3",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "OTPf-IMACDT2010Mar11-02.raw = 1 | OTPf-IMACDT2010Mar11-01.raw = 1 | OTPf-IMACDT2010Mar10-01.raw = 1 | OTPf-IMACDDNL_2010Mar9-02.raw = 1 | OTPf-IMACDDNL_2010Mar9-01.raw = 1 | OTPf-IMACDDNL_2010Mar06-02.raw = 1",
+      "issue_summary": {
+        "TYPE_CHECK": "Fraction indices, the right field.",
+        "SOURCE_CHECK": "The paper describes IMAC purification where phosphopeptides from two purifications were pooled and split into 6 aliquots for LC-MS/MS analysis.",
+        "TRUTH_CHECK": "The runs are aliquots of a single pooled sample, not separate fractions from an offline fractionation process.",
+        "COMPLETENESS_CHECK": "Every run should be assigned fraction 1 as no offline fractionation is described."
+      }
+    }
+  ]
+}

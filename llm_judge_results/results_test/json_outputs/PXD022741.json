@@ -1,0 +1,719 @@
+{
+  "paper_id": "PXD022741",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Saccharomyces cerevisiae",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Saccharomyces cerevisiae\" in the abstract.",
+        "TRUTH_CHECK": "The experiment analyzed proteins from this yeast species.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT126",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states the use of \"TMT11 sample multiplexing\" and \"labeling with the TMT11 (Thermo A37727) reagent\".",
+        "TRUTH_CHECK": "TMT11 is a multiplexing kit containing 11 specific channels; TMT126 is the standard first channel of the TMT11 kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT127N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A TMT label channel, the right field.",
+        "SOURCE_CHECK": "The paper states the use of \"TMT11 sample multiplexing\" and \"TMT11 (Thermo A37727) reagent\".",
+        "TRUTH_CHECK": "TMT11 consists of 11 specific channels, including TMT127N.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT127C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states the use of \"TMT11 sample multiplexing\" and \"TMT11 (Thermo A37727) reagent\".",
+        "TRUTH_CHECK": "TMT11 consists of 11 specific channels, and TMT127C is one of the standard channels in the TMT11 kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT128N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states the use of \"TMT11 sample multiplexing\" and \"TMT11 (Thermo A37727) reagent\". While the specific channel names (like TMT128N) are not listed verbatim, they are the standard components of the TMT11 kit mentioned.",
+        "TRUTH_CHECK": "The runs are part of a TMT11 multiplexed experiment, so they must carry one of the 11 TMT channels.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT128C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"TMT11 sample multiplexing\" and \"TMT11 (Thermo A37727) reagent\" were used.",
+        "TRUTH_CHECK": "TMT11 is a multiplexing kit containing 11 specific channels. TMT128C is one of the standard channels in the TMT11 kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT129N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"TMT11 sample multiplexing\" and \"TMT11 (Thermo A37727) reagent\" were used.",
+        "TRUTH_CHECK": "TMT11 is a multiplexing kit consisting of 11 specific channels; TMT129N is one of the standard channels in the TMT11 kit.",
+        "COMPLETENESS_CHECK": "The value follows the required format for a labeled run."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT129C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states the use of \"TMT11 sample multiplexing\" and \"TMT11 (Thermo A37727) reagent\". While the specific channel \"TMT129C\" is not printed, the TMT11 kit consists of 11 specific channels, and TMT129C is one of the standard channels in that kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT11 multiplexed experiment, so they must carry one of the 11 channels.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT130N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states the use of \"TMT11 sample multiplexing\" and \"labeling with the TMT11 (Thermo A37727) reagent\".",
+        "TRUTH_CHECK": "TMT11 is a multiplexing kit that contains 11 specific channels; TMT130N is one of the standard channels in the TMT11 kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT130C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"TMT11 sample multiplexing\" and \"TMT11 (Thermo A37727) reagent\" were used.",
+        "TRUTH_CHECK": "TMT11 is a specific kit containing 11 distinct channels. TMT130C is one of the standard channels in the TMT11 11-plex kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT131N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states the use of \"TMT11 sample multiplexing\" and \"TMT11 (Thermo A37727) reagent\".",
+        "TRUTH_CHECK": "TMT131N is one of the standard channels in the TMT11-plex kit (Thermo A37727).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT131C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"TMT11 sample multiplexing\" and \"TMT11 (Thermo A37727) reagent\" were used.",
+        "TRUTH_CHECK": "TMT131C is one of the standard channels in the TMT11 11-plex kit.",
+        "COMPLETENESS_CHECK": "The value follows the required format for a labeled run."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Orbitrap Fusion Lumos",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass spectrometer model, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Mass spectra were recorded on an Orbitrap Fusion Lumos mass spectrometer\".",
+        "TRUTH_CHECK": "The instrument was used for the LC MS/MS analysis of the samples.",
+        "COMPLETENESS_CHECK": "The value follows the required key-value format and matches the paper."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state digestion with LysC followed by digestion with trypsin.",
+        "TRUTH_CHECK": "Trypsin was used for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "characteristics[enrichment process]",
+      "extracted_value": "FeNTA phosphorylation enrichment",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a peptide enrichment process, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that samples were enriched using the \"Pierce High Select Fe-NTA phosphopeptide enrichment kit\".",
+        "TRUTH_CHECK": "The value correctly describes the enrichment used for the phosphoproteomics runs.",
+        "COMPLETENESS_CHECK": "The value uses a descriptive name instead of the SDRF controlled term \"enrichment of phosphorylated protein\"."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "characteristics[enrichment process]",
+      "extracted_value": "no enrichment",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an enrichment method, the right field.",
+        "SOURCE_CHECK": "The paper describes both a total protein-level analysis (unfractionated/non-enriched) and a phosphopeptide enrichment using Fe-NTA.",
+        "TRUTH_CHECK": "The runs with this value correspond to the total protein-level analysis, which did not undergo phosphopeptide enrichment.",
+        "COMPLETENESS_CHECK": "The SDRF controlled term \"no enrichment\" is used correctly."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=TMT10plex;PP=Any N-term;AC=UNIMOD:737;MT=fixed",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=TMT11plex;PP=Any N-term;AC=UNIMOD:737;MT=fixed",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states TMT11 (not TMT10) tags on peptide N termini were set as static modifications.",
+        "TRUTH_CHECK": "The paper uses TMT11, not TMT10.",
+        "COMPLETENESS_CHECK": "Follows the format, but the specific TMT version is wrong."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=TMT10plex;TA=K;AC=UNIMOD:737;MT=fixed",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=TMT11plex;TA=K;AC=UNIMOD:737;MT=fixed",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"labeling with the TMT11 (Thermo A37727) reagent\" and \"TMT tags on lysine residues and peptide N termini (11-plex: +229.1629 Da) ... set as static modifications\".",
+        "TRUTH_CHECK": "The paper uses TMT11, not TMT10plex.",
+        "COMPLETENESS_CHECK": "Follows the format, but the specific TMT version is wrong."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;AC=UNIMOD:4;MT=fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"carbamidomethylation of cysteine residues (+57.0215 Da) were set as static modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Oxidation;TA=M;AC=UNIMOD:35;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"oxidation of methionine residues (+15.9949 Da)... were set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Follows the required format NT, TA, AC, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Deamidation;TA=N,Q;AC=UNIMOD:7;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"deamidation on asparagine and glutamine (+0.9840 Da)... were set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Follows the required format (NT, TA, AC, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Phosphorylation;TA=S,T,Y;AC=UNIMOD:21;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"phosphorylation (+79.9663 Da)\" was set as a variable modification.",
+        "TRUTH_CHECK": "The modification was used for the runs.",
+        "COMPLETENESS_CHECK": "The paper does not specify the residues (S, T, Y), but these are the standard residues for phosphorylation and the definition states that residues the paper does not give are a wrong detail (MEDIUM), not hallucinated."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "comment[precursor mass tolerance]",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"a 20 ppm precursor ion tolerance for total protein-level analysis\".",
+        "TRUTH_CHECK": "The value is correct for the runs described in the study.",
+        "COMPLETENESS_CHECK": "The value follows the definition and includes the unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "comment[fragment mass tolerance]",
+      "extracted_value": "1.0005 Da",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "0.9 Da",
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states a \"0.9 Da product ion tolerance\".",
+        "TRUTH_CHECK": "The value 1.0005 Da does not match the 0.9 Da printed in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format but contains the wrong number."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "characteristics[biological replicate]",
+      "extracted_value": "row 1 = Flask 1 | row 2 = Flask 1 | row 3 = Flask 1 | row 4 = Flask 1 | row 5 = Flask 1 | row 6 = Flask 1 | row 7 = Flask 1 | row 8 = Flask 1 | row 9 = Flask 1 | row 10 = Flask 1 | row 11 = Flask 1 | row 12 = Flask 1 | row 13 = Flask 1 | row 14 = Flask 1 | row 15 = Flask 1 | row 16 = Flask 1 | row 17 = Flask 1 | row 18 = Flask 1 | row 19 = Flask 1 | row 20 = Flask 1 | row 21 = Flask 1 | row 22 = Flask 1 | row 23 = Flask 2 | row 24 = Flask 2 | row 25 = Flask 2 | row 26 = Flask 2 | row 27 = Flask 2 | row 28 = Flask 2 | row 29 = Flask 2 | row 30 = Flask 2 | row 31 = Flask 2 | row 32 = Flask 2 | row 33 = Flask 2 | row 34 = Flask 2 | row 35 = Flask 2 | row 36 = Flask 2 | row 37 = Flask 2 | row 38 = Flask 2 | row 39 = Flask 2 | row 40 = Flask 2 | row 41 = Flask 2 | row 42 = Flask 2 | row 43 = Flask 2 | row 44 = Flask 2 | row 45 = Flask 3 | row 46 = Flask 3 | row 47 = Flask 3 | row 48 = Flask 3 | row 49 = Flask 3 | row 50 = Flask 3 | row 51 = Flask 3 | row 52 = Flask 3 | row 53 = Flask 3 | row 54 = Flask 3 | row 55 = Flask 3 | row 56 = Flask 3 | row 57 = Flask 3 | row 58 = Flask 3 | row 59 = Flask 3 | row 60 = Flask 3 | row 61 = Flask 3 | row 62 = Flask 3 | row 63 = Flask 3 | row 64 = Flask 3 | row 65 = Flask 3 | row 66 = Flask 3 | row 67 = Flask 1 | row 68 = Flask 1 | row 69 = Flask 1 | row 70 = Flask 1 | row 71 = Flask 1 | row 72 = Flask 1 | row 73 = Flask 1 | row 74 = Flask 1 | row 75 = Flask 1 | row 76 = Flask 1 | row 77 = Flask 1 | row 78 = Flask 1 | row 79 = Flask 1 | row 80 = Flask 1 | row 81 = Flask 1 | row 82 = Flask 1 | row 83 = Flask 1 | row 84 = Flask 1 | row 85 = Flask 1 | row 86 = Flask 1 | row 87 = Flask 1 | row 88 = Flask 1 | row 89 = Flask 1 | row 90 = Flask 1 | row 91 = Flask 1 | row 92 = Flask 1 | row 93 = Flask 1 | row 94 = Flask 1 | row 95 = Flask 1 | row 96 = Flask 1 | row 97 = Flask 1 | row 98 = Flask 1 | row 99 = Flask 1 | row 100 = Flask 1 | row 101 = Flask 1 | row 102 = Flask 1 | row 103 = Flask 1 | row 104 = Flask 1 | row 105 = Flask 1 | row 106 = Flask 1 | row 107 = Flask 1 | row 108 = Flask 1 | row 109 = Flask 1 | row 110 = Flask 1 | row 111 = Flask 1 | row 112 = Flask 1 | row 113 = Flask 1 | row 114 = Flask 1 | row 115 = Flask 1 | row 116 = Flask 1 | row 117 = Flask 1 | row 118 = Flask 1 | row 119 = Flask 1 | row 120 = Flask 1 | row 121 = Flask 1 | row 122 = Flask 1 | row 123 = Flask 1 | row 124 = Flask 1 | row 125 = Flask 1 | row 126 = Flask 1 | row 127 = Flask 1 | row 128 = Flask 1 | row 129 = Flask 1 | row 130 = Flask 1 | row 131 = Flask 1 | row 132 = Flask 1 | row 133 = Flask 1 | row 134 = Flask 1 | row 135 = Flask 1 | row 136 = Flask 1 | row 137 = Flask 1 | row 138 = Flask 1 | row 139 = Flask 1 | row 140 = Flask 1 | row 141 = Flask 1 | row 142 = Flask 1 | row 143 = Flask 1 | row 144 = Flask 1 | row 145 = Flask 1 | row 146 = Flask 1 | row 147 = Flask 1 | row 148 = Flask 1 | row 149 = Flask 1 | row 150 = Flask 1 | row 151 = Flask 1 | row 152 = Flask 1 | row 153 = Flask 1 | row 154 = Flask 1 | row 155 = Flask 1 | row 156 = Flask 1 | row 157 = Flask 1 | row 158 = Flask 1 | row 159 = Flask 1 | row 160 = Flask 1 | row 161 = Flask 1 | row 162 = Flask 1 | row 163 = Flask 1 | row 164 = Flask 1 | row 165 = Flask 1 | row 166 = Flask 1 | row 167 = Flask 1 | row 168 = Flask 1 | row 169 = Flask 1 | row 170 = Flask 1 | row 171 = Flask 1 | row 172 = Flask 1 | row 173 = Flask 1 | row 174 = Flask 1 | row 175 = Flask 1 | row 176 = Flask 1 | row 177 = Flask 1 | row 178 = Flask 1 | row 179 = Flask 1 | row 180 = Flask 1 | row 181 = Flask 1 | row 182 = Flask 1 | row 183 = Flask 1 | row 184 = Flask 1 | row 185 = Flask 1 | row 186 = Flask 1 | row 187 = Flask 1 | row 188 = Flask 1 | row 189 = Flask 1 | row 190 = Flask 1 | row 191 = Flask 1 | row 192 = Flask 1 | row 193 = Flask 1 | row 194 = Flask 1 | row 195 = Flask 1 | row 196 = Flask 1 | row 197 = Flask 1 | row 198 = Flask 1 | row 199 = Flask 2 | row 200 = Flask 2 | row 201 = Flask 2 | row 202 = Flask 2 | row 203 = Flask 2 | row 204 = Flask 2 | row 205 = Flask 2 | row 206 = Flask 2 | row 207 = Flask 2 | row 208 = Flask 2 | row 209 = Flask 2 | row 210 = Flask 2 | row 211 = Flask 2 | row 212 = Flask 2 | row 213 = Flask 2 | row 214 = Flask 2 | row 215 = Flask 2 | row 216 = Flask 2 | row 217 = Flask 2 | row 218 = Flask 2 | row 219 = Flask 2 | row 220 = Flask 2 | row 221 = Flask 2 | row 222 = Flask 2 | row 223 = Flask 2 | row 224 = Flask 2 | row 225 = Flask 2 | row 226 = Flask 2 | row 227 = Flask 2 | row 228 = Flask 2 | row 229 = Flask 2 | row 230 = Flask 2 | row 231 = Flask 2 | row 232 = Flask 2 | row 233 = Flask 2 | row 234 = Flask 2 | row 235 = Flask 2 | row 236 = Flask 2 | row 237 = Flask 2 | row 238 = Flask 2 | row 239 = Flask 2 | row 240 = Flask 2 | row 241 = Flask 2 | row 242 = Flask 2 | row 243 = Flask 2 | row 244 = Flask 2 | row 245 = Flask 2 | row 246 = Flask 2 | row 247 = Flask 2 | row 248 = Flask 2 | row 249 = Flask 2 | row 250 = Flask 2 | row 251 = Flask 2 | row 252 = Flask 2 | row 253 = Flask 2 | row 254 = Flask 2 | row 255 = Flask 2 | row 256 = Flask 2 | row 257 = Flask 2 | row 258 = Flask 2 | row 259 = Flask 2 | row 260 = Flask 2 | row 261 = Flask 2 | row 262 = Flask 2 | row 263 = Flask 2 | row 264 = Flask 2 | row 265 = Flask 2 | row 266 = Flask 2 | row 267 = Flask 2 | row 268 = Flask 2 | row 269 = Flask 2 | row 270 = Flask 2 | row 271 = Flask 2 | row 272 = Flask 2 | row 273 = Flask 2 | row 274 = Flask 2 | row 275 = Flask 2 | row 276 = Flask 2 | row 277 = Flask 2 | row 278 = Flask 2 | row 279 = Flask 2 | row 280 = Flask 2 | row 281 = Flask 2 | row 282 = Flask 2 | row 283 = Flask 2 | row 284 = Flask 2 | row 285 = Flask 2 | row 286 = Flask 2 | row 287 = Flask 2 | row 288 = Flask 2 | row 289 = Flask 2 | row 290 = Flask 2 | row 291 = Flask 2 | row 292 = Flask 2 | row 293 = Flask 2 | row 294 = Flask 2 | row 295 = Flask 2 | row 296 = Flask 2 | row 297 = Flask 2 | row 298 = Flask 2 | row 299 = Flask 2 | row 300 = Flask 2 | row 301 = Flask 2 | row 302 = Flask 2 | row 303 = Flask 2 | row 304 = Flask 2 | row 305 = Flask 2 | row 306 = Flask 2 | row 307 = Flask 2 | row 308 = Flask 2 | row 309 = Flask 2 | row 310 = Flask 2 | row 311 = Flask 2 | row 312 = Flask 2 | row 313 = Flask 2 | row 314 = Flask 2 | row 315 = Flask 2 | row 316 = Flask 2 | row 317 = Flask 2 | row 318 = Flask 2 | row 319 = Flask 2 | row 320 = Flask 2 | row 321 = Flask 2 | row 322 = Flask 2 | row 323 = Flask 2 | row 324 = Flask 2 | row 325 = Flask 2 | row 326 = Flask 2 | row 327 = Flask 2 | row 328 = Flask 2 | row 329 = Flask 2 | row 330 = Flask 2 | row 331 = Flask 3 | row 332 = Flask 3 | row 333 = Flask 3 | row 334 = Flask 3 | row 335 = Flask 3 | row 336 = Flask 3 | row 337 = Flask 3 | row 338 = Flask 3 | row 339 = Flask 3 | row 340 = Flask 3 | row 341 = Flask 3 | row 342 = Flask 3 | row 343 = Flask 3 | row 344 = Flask 3 | row 345 = Flask 3 | row 346 = Flask 3 | row 347 = Flask 3 | row 348 = Flask 3 | row 349 = Flask 3 | row 350 = Flask 3 | row 351 = Flask 3 | row 352 = Flask 3 | row 353 = Flask 3 | row 354 = Flask 3 | row 355 = Flask 3 | row 356 = Flask 3 | row 357 = Flask 3 | row 358 = Flask 3 | row 359 = Flask 3 | row 360 = Flask 3 | row 361 = Flask 3 | row 362 = Flask 3 | row 363 = Flask 3 | row 364 = Flask 3 | row 365 = Flask 3 | row 366 = Flask 3 | row 367 = Flask 3 | row 368 = Flask 3 | row 369 = Flask 3 | row 370 = Flask 3 | row 371 = Flask 3 | row 372 = Flask 3 | row 373 = Flask 3 | row 374 = Flask 3 | row 375 = Flask 3 | row 376 = Flask 3 | row 377 = Flask 3 | row 378 = Flask 3 | row 379 = Flask 3 | row 380 = Flask 3 | row 381 = Flask 3 | row 382 = Flask 3 | row 383 = Flask 3 | row 384 = Flask 3 | row 385 = Flask 3 | row 386 = Flask 3 | row 387 = Flask 3 | row 388 = Flask 3 | row 389 = Flask 3 | row 390 = Flask 3 | row 391 = Flask 3 | row 392 = Flask 3 | row 393 = Flask 3 | row 394 = Flask 3 | row 395 = Flask 3 | row 396 = Flask 3 | row 397 = Flask 3 | row 398 = Flask 3 | row 399 = Flask 3 | row 400 = Flask 3 | row 401 = Flask 3 | row 402 = Flask 3 | row 403 = Flask 3 | row 404 = Flask 3 | row 405 = Flask 3 | row 406 = Flask 3 | row 407 = Flask 3 | row 408 = Flask 3 | row 409 = Flask 3 | row 410 = Flask 3 | row 411 = Flask 3 | row 412 = Flask 3 | row 413 = Flask 3 | row 414 = Flask 3 | row 415 = Flask 3 | row 416 = Flask 3 | row 417 = Flask 3 | row 418 = Flask 3 | row 419 = Flask 3 | row 420 = Flask 3 | row 421 = Flask 3 | row 422 = Flask 3 | row 423 = Flask 3 | row 424 = Flask 3 | row 425 = Flask 3 | row 426 = Flask 3 | row 427 = Flask 3 | row 428 = Flask 3 | row 429 = Flask 3 | row 430 = Flask 3 | row 431 = Flask 3 | row 432 = Flask 3 | row 433 = Flask 3 | row 434 = Flask 3 | row 435 = Flask 3 | row 436 = Flask 3 | row 437 = Flask 3 | row 438 = Flask 3 | row 439 = Flask 3 | row 440 = Flask 3 | row 441 = Flask 3 | row 442 = Flask 3 | row 443 = Flask 3 | row 444 = Flask 3 | row 445 = Flask 3 | row 446 = Flask 3 | row 447 = Flask 3 | row 448 = Flask 3 | row 449 = Flask 3 | row 450 = Flask 3 | row 451 = Flask 3 | row 452 = Flask 3 | row 453 = Flask 3 | row 454 = Flask 3 | row 455 = Flask 3 | row 456 = Flask 3 | row 457 = Flask 3 | row 458 = Flask 3 | row 459 = Flask 3 | row 460 = Flask 3 | row 461 = Flask 3 | row 462 = Flask 3",
+      "verdict": null,
+      "type_mismatch": null,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": null,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "",
+        "SOURCE_CHECK": "",
+        "TRUTH_CHECK": "",
+        "COMPLETENESS_CHECK": ""
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "comment[technical replicate]",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 2 | row 13 = 2 | row 14 = 2 | row 15 = 2 | row 16 = 2 | row 17 = 2 | row 18 = 2 | row 19 = 2 | row 20 = 2 | row 21 = 2 | row 22 = 2 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 2 | row 35 = 2 | row 36 = 2 | row 37 = 2 | row 38 = 2 | row 39 = 2 | row 40 = 2 | row 41 = 2 | row 42 = 2 | row 43 = 2 | row 44 = 2 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 2 | row 57 = 2 | row 58 = 2 | row 59 = 2 | row 60 = 2 | row 61 = 2 | row 62 = 2 | row 63 = 2 | row 64 = 2 | row 65 = 2 | row 66 = 2 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1 | row 133 = 1 | row 134 = 1 | row 135 = 1 | row 136 = 1 | row 137 = 1 | row 138 = 1 | row 139 = 1 | row 140 = 1 | row 141 = 1 | row 142 = 1 | row 143 = 1 | row 144 = 1 | row 145 = 1 | row 146 = 1 | row 147 = 1 | row 148 = 1 | row 149 = 1 | row 150 = 1 | row 151 = 1 | row 152 = 1 | row 153 = 1 | row 154 = 1 | row 155 = 1 | row 156 = 1 | row 157 = 1 | row 158 = 1 | row 159 = 1 | row 160 = 1 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 1 | row 166 = 1 | row 167 = 1 | row 168 = 1 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 1 | row 173 = 1 | row 174 = 1 | row 175 = 1 | row 176 = 1 | row 177 = 1 | row 178 = 1 | row 179 = 1 | row 180 = 1 | row 181 = 1 | row 182 = 1 | row 183 = 1 | row 184 = 1 | row 185 = 1 | row 186 = 1 | row 187 = 1 | row 188 = 1 | row 189 = 1 | row 190 = 1 | row 191 = 1 | row 192 = 1 | row 193 = 1 | row 194 = 1 | row 195 = 1 | row 196 = 1 | row 197 = 1 | row 198 = 1 | row 199 = 1 | row 200 = 1 | row 201 = 1 | row 202 = 1 | row 203 = 1 | row 204 = 1 | row 205 = 1 | row 206 = 1 | row 207 = 1 | row 208 = 1 | row 209 = 1 | row 210 = 1 | row 211 = 1 | row 212 = 1 | row 213 = 1 | row 214 = 1 | row 215 = 1 | row 216 = 1 | row 217 = 1 | row 218 = 1 | row 219 = 1 | row 220 = 1 | row 221 = 1 | row 222 = 1 | row 223 = 1 | row 224 = 1 | row 225 = 1 | row 226 = 1 | row 227 = 1 | row 228 = 1 | row 229 = 1 | row 230 = 1 | row 231 = 1 | row 232 = 1 | row 233 = 1 | row 234 = 1 | row 235 = 1 | row 236 = 1 | row 237 = 1 | row 238 = 1 | row 239 = 1 | row 240 = 1 | row 241 = 1 | row 242 = 1 | row 243 = 1 | row 244 = 1 | row 245 = 1 | row 246 = 1 | row 247 = 1 | row 248 = 1 | row 249 = 1 | row 250 = 1 | row 251 = 1 | row 252 = 1 | row 253 = 1 | row 254 = 1 | row 255 = 1 | row 256 = 1 | row 257 = 1 | row 258 = 1 | row 259 = 1 | row 260 = 1 | row 261 = 1 | row 262 = 1 | row 263 = 1 | row 264 = 1 | row 265 = 1 | row 266 = 1 | row 267 = 1 | row 268 = 1 | row 269 = 1 | row 270 = 1 | row 271 = 1 | row 272 = 1 | row 273 = 1 | row 274 = 1 | row 275 = 1 | row 276 = 1 | row 277 = 1 | row 278 = 1 | row 279 = 1 | row 280 = 1 | row 281 = 1 | row 282 = 1 | row 283 = 1 | row 284 = 1 | row 285 = 1 | row 286 = 1 | row 287 = 1 | row 288 = 1 | row 289 = 1 | row 290 = 1 | row 291 = 1 | row 292 = 1 | row 293 = 1 | row 294 = 1 | row 295 = 1 | row 296 = 1 | row 297 = 1 | row 298 = 1 | row 299 = 1 | row 300 = 1 | row 301 = 1 | row 302 = 1 | row 303 = 1 | row 304 = 1 | row 305 = 1 | row 306 = 1 | row 307 = 1 | row 308 = 1 | row 309 = 1 | row 310 = 1 | row 311 = 1 | row 312 = 1 | row 313 = 1 | row 314 = 1 | row 315 = 1 | row 316 = 1 | row 317 = 1 | row 318 = 1 | row 319 = 1 | row 320 = 1 | row 321 = 1 | row 322 = 1 | row 323 = 1 | row 324 = 1 | row 325 = 1 | row 326 = 1 | row 327 = 1 | row 328 = 1 | row 329 = 1 | row 330 = 1 | row 331 = 1 | row 332 = 1 | row 333 = 1 | row 334 = 1 | row 335 = 1 | row 336 = 1 | row 337 = 1 | row 338 = 1 | row 339 = 1 | row 340 = 1 | row 341 = 1 | row 342 = 1 | row 343 = 1 | row 344 = 1 | row 345 = 1 | row 346 = 1 | row 347 = 1 | row 348 = 1 | row 349 = 1 | row 350 = 1 | row 351 = 1 | row 352 = 1 | row 353 = 1 | row 354 = 1 | row 355 = 1 | row 356 = 1 | row 357 = 1 | row 358 = 1 | row 359 = 1 | row 360 = 1 | row 361 = 1 | row 362 = 1 | row 363 = 1 | row 364 = 1 | row 365 = 1 | row 366 = 1 | row 367 = 1 | row 368 = 1 | row 369 = 1 | row 370 = 1 | row 371 = 1 | row 372 = 1 | row 373 = 1 | row 374 = 1 | row 375 = 1 | row 376 = 1 | row 377 = 1 | row 378 = 1 | row 379 = 1 | row 380 = 1 | row 381 = 1 | row 382 = 1 | row 383 = 1 | row 384 = 1 | row 385 = 1 | row 386 = 1 | row 387 = 1 | row 388 = 1 | row 389 = 1 | row 390 = 1 | row 391 = 1 | row 392 = 1 | row 393 = 1 | row 394 = 1 | row 395 = 1 | row 396 = 1 | row 397 = 1 | row 398 = 1 | row 399 = 1 | row 400 = 1 | row 401 = 1 | row 402 = 1 | row 403 = 1 | row 404 = 1 | row 405 = 1 | row 406 = 1 | row 407 = 1 | row 408 = 1 | row 409 = 1 | row 410 = 1 | row 411 = 1 | row 412 = 1 | row 413 = 1 | row 414 = 1 | row 415 = 1 | row 416 = 1 | row 417 = 1 | row 418 = 1 | row 419 = 1 | row 420 = 1 | row 421 = 1 | row 422 = 1 | row 423 = 1 | row 424 = 1 | row 425 = 1 | row 426 = 1 | row 427 = 1 | row 428 = 1 | row 429 = 1 | row 430 = 1 | row 431 = 1 | row 432 = 1 | row 433 = 1 | row 434 = 1 | row 435 = 1 | row 436 = 1 | row 437 = 1 | row 438 = 1 | row 439 = 1 | row 440 = 1 | row 441 = 1 | row 442 = 1 | row 443 = 1 | row 444 = 1 | row 445 = 1 | row 446 = 1 | row 447 = 1 | row 448 = 1 | row 449 = 1 | row 450 = 1 | row 451 = 1 | row 452 = 1 | row 453 = 1 | row 454 = 1 | row 455 = 1 | row 456 = 1 | row 457 = 1 | row 458 = 1 | row 459 = 1 | row 460 = 1 | row 461 = 1 | row 462 = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper does not mention technical replicates or repeated injections of the same material.",
+        "TRUTH_CHECK": "The mapping assigns technical replicate indices (1 and 2) to runs, but there is no evidence in the text that any material was measured more than once.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "comment[fraction identifier]",
+      "extracted_value": "row 1 = no fractions | row 2 = no fractions | row 3 = no fractions | row 4 = no fractions | row 5 = no fractions | row 6 = no fractions | row 7 = no fractions | row 8 = no fractions | row 9 = no fractions | row 10 = no fractions | row 11 = no fractions | row 12 = no fractions | row 13 = no fractions | row 14 = no fractions | row 15 = no fractions | row 16 = no fractions | row 17 = no fractions | row 18 = no fractions | row 19 = no fractions | row 20 = no fractions | row 21 = no fractions | row 22 = no fractions | row 23 = no fractions | row 24 = no fractions | row 25 = no fractions | row 26 = no fractions | row 27 = no fractions | row 28 = no fractions | row 29 = no fractions | row 30 = no fractions | row 31 = no fractions | row 32 = no fractions | row 33 = no fractions | row 34 = no fractions | row 35 = no fractions | row 36 = no fractions | row 37 = no fractions | row 38 = no fractions | row 39 = no fractions | row 40 = no fractions | row 41 = no fractions | row 42 = no fractions | row 43 = no fractions | row 44 = no fractions | row 45 = no fractions | row 46 = no fractions | row 47 = no fractions | row 48 = no fractions | row 49 = no fractions | row 50 = no fractions | row 51 = no fractions | row 52 = no fractions | row 53 = no fractions | row 54 = no fractions | row 55 = no fractions | row 56 = no fractions | row 57 = no fractions | row 58 = no fractions | row 59 = no fractions | row 60 = no fractions | row 61 = no fractions | row 62 = no fractions | row 63 = no fractions | row 64 = no fractions | row 65 = no fractions | row 66 = no fractions | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 2 | row 79 = 2 | row 80 = 2 | row 81 = 2 | row 82 = 2 | row 83 = 2 | row 84 = 2 | row 85 = 2 | row 86 = 2 | row 87 = 2 | row 88 = 2 | row 89 = 3 | row 90 = 3 | row 91 = 3 | row 92 = 3 | row 93 = 3 | row 94 = 3 | row 95 = 3 | row 96 = 3 | row 97 = 3 | row 98 = 3 | row 99 = 3 | row 100 = 4 | row 101 = 4 | row 102 = 4 | row 103 = 4 | row 104 = 4 | row 105 = 4 | row 106 = 4 | row 107 = 4 | row 108 = 4 | row 109 = 4 | row 110 = 4 | row 111 = 5 | row 112 = 5 | row 113 = 5 | row 114 = 5 | row 115 = 5 | row 116 = 5 | row 117 = 5 | row 118 = 5 | row 119 = 5 | row 120 = 5 | row 121 = 5 | row 122 = 6 | row 123 = 6 | row 124 = 6 | row 125 = 6 | row 126 = 6 | row 127 = 6 | row 128 = 6 | row 129 = 6 | row 130 = 6 | row 131 = 6 | row 132 = 6 | row 133 = 7 | row 134 = 7 | row 135 = 7 | row 136 = 7 | row 137 = 7 | row 138 = 7 | row 139 = 7 | row 140 = 7 | row 141 = 7 | row 142 = 7 | row 143 = 7 | row 144 = 8 | row 145 = 8 | row 146 = 8 | row 147 = 8 | row 148 = 8 | row 149 = 8 | row 150 = 8 | row 151 = 8 | row 152 = 8 | row 153 = 8 | row 154 = 8 | row 155 = 9 | row 156 = 9 | row 157 = 9 | row 158 = 9 | row 159 = 9 | row 160 = 9 | row 161 = 9 | row 162 = 9 | row 163 = 9 | row 164 = 9 | row 165 = 9 | row 166 = 10 | row 167 = 10 | row 168 = 10 | row 169 = 10 | row 170 = 10 | row 171 = 10 | row 172 = 10 | row 173 = 10 | row 174 = 10 | row 175 = 10 | row 176 = 10 | row 177 = 11 | row 178 = 11 | row 179 = 11 | row 180 = 11 | row 181 = 11 | row 182 = 11 | row 183 = 11 | row 184 = 11 | row 185 = 11 | row 186 = 11 | row 187 = 11 | row 188 = 12 | row 189 = 12 | row 190 = 12 | row 191 = 12 | row 192 = 12 | row 193 = 12 | row 194 = 12 | row 195 = 12 | row 196 = 12 | row 197 = 12 | row 198 = 12 | row 199 = 1 | row 200 = 1 | row 201 = 1 | row 202 = 1 | row 203 = 1 | row 204 = 1 | row 205 = 1 | row 206 = 1 | row 207 = 1 | row 208 = 1 | row 209 = 1 | row 210 = 2 | row 211 = 2 | row 212 = 2 | row 213 = 2 | row 214 = 2 | row 215 = 2 | row 216 = 2 | row 217 = 2 | row 218 = 2 | row 219 = 2 | row 220 = 2 | row 221 = 3 | row 222 = 3 | row 223 = 3 | row 224 = 3 | row 225 = 3 | row 226 = 3 | row 227 = 3 | row 228 = 3 | row 229 = 3 | row 230 = 3 | row 231 = 3 | row 232 = 4 | row 233 = 4 | row 234 = 4 | row 235 = 4 | row 236 = 4 | row 237 = 4 | row 238 = 4 | row 239 = 4 | row 240 = 4 | row 241 = 4 | row 242 = 4 | row 243 = 5 | row 244 = 5 | row 245 = 5 | row 246 = 5 | row 247 = 5 | row 248 = 5 | row 249 = 5 | row 250 = 5 | row 251 = 5 | row 252 = 5 | row 253 = 5 | row 254 = 6 | row 255 = 6 | row 256 = 6 | row 257 = 6 | row 258 = 6 | row 259 = 6 | row 260 = 6 | row 261 = 6 | row 262 = 6 | row 263 = 6 | row 264 = 6 | row 265 = 7 | row 266 = 7 | row 267 = 7 | row 268 = 7 | row 269 = 7 | row 270 = 7 | row 271 = 7 | row 272 = 7 | row 273 = 7 | row 274 = 7 | row 275 = 7 | row 276 = 8 | row 277 = 8 | row 278 = 8 | row 279 = 8 | row 280 = 8 | row 281 = 8 | row 282 = 8 | row 283 = 8 | row 284 = 8 | row 285 = 8 | row 286 = 8 | row 287 = 9 | row 288 = 9 | row 289 = 9 | row 290 = 9 | row 291 = 9 | row 292 = 9 | row 293 = 9 | row 294 = 9 | row 295 = 9 | row 296 = 9 | row 297 = 9 | row 298 = 10 | row 299 = 10 | row 300 = 10 | row 301 = 10 | row 302 = 10 | row 303 = 10 | row 304 = 10 | row 305 = 10 | row 306 = 10 | row 307 = 10 | row 308 = 10 | row 309 = 11 | row 310 = 11 | row 311 = 11 | row 312 = 11 | row 313 = 11 | row 314 = 11 | row 315 = 11 | row 316 = 11 | row 317 = 11 | row 318 = 11 | row 319 = 11 | row 320 = 12 | row 321 = 12 | row 322 = 12 | row 323 = 12 | row 324 = 12 | row 325 = 12 | row 326 = 12 | row 327 = 12 | row 328 = 12 | row 329 = 12 | row 330 = 12 | row 331 = 1 | row 332 = 1 | row 333 = 1 | row 334 = 1 | row 335 = 1 | row 336 = 1 | row 337 = 1 | row 338 = 1 | row 339 = 1 | row 340 = 1 | row 341 = 1 | row 342 = 2 | row 343 = 2 | row 344 = 2 | row 345 = 2 | row 346 = 2 | row 347 = 2 | row 348 = 2 | row 349 = 2 | row 350 = 2 | row 351 = 2 | row 352 = 2 | row 353 = 3 | row 354 = 3 | row 355 = 3 | row 356 = 3 | row 357 = 3 | row 358 = 3 | row 359 = 3 | row 360 = 3 | row 361 = 3 | row 362 = 3 | row 363 = 3 | row 364 = 4 | row 365 = 4 | row 366 = 4 | row 367 = 4 | row 368 = 4 | row 369 = 4 | row 370 = 4 | row 371 = 4 | row 372 = 4 | row 373 = 4 | row 374 = 4 | row 375 = 5 | row 376 = 5 | row 377 = 5 | row 378 = 5 | row 379 = 5 | row 380 = 5 | row 381 = 5 | row 382 = 5 | row 383 = 5 | row 384 = 5 | row 385 = 5 | row 386 = 6 | row 387 = 6 | row 388 = 6 | row 389 = 6 | row 390 = 6 | row 391 = 6 | row 392 = 6 | row 393 = 6 | row 394 = 6 | row 395 = 6 | row 396 = 6 | row 397 = 7 | row 398 = 7 | row 399 = 7 | row 400 = 7 | row 401 = 7 | row 402 = 7 | row 403 = 7 | row 404 = 7 | row 405 = 7 | row 406 = 7 | row 407 = 7 | row 408 = 8 | row 409 = 8 | row 410 = 8 | row 411 = 8 | row 412 = 8 | row 413 = 8 | row 414 = 8 | row 415 = 8 | row 416 = 8 | row 417 = 8 | row 418 = 8 | row 419 = 9 | row 420 = 9 | row 421 = 9 | row 422 = 9 | row 423 = 9 | row 424 = 9 | row 425 = 9 | row 426 = 9 | row 427 = 9 | row 428 = 9 | row 429 = 9 | row 430 = 10 | row 431 = 10 | row 432 = 10 | row 433 = 10 | row 434 = 10 | row 435 = 10 | row 436 = 10 | row 437 = 10 | row 438 = 10 | row 439 = 10 | row 440 = 10 | row 441 = 11 | row 442 = 11 | row 443 = 11 | row 444 = 11 | row 445 = 11 | row 446 = 11 | row 447 = 11 | row 448 = 11 | row 449 = 11 | row 450 = 11 | row 451 = 11 | row 452 = 12 | row 453 = 12 | row 454 = 12 | row 455 = 12 | row 456 = 12 | row 457 = 12 | row 458 = 12 | row 459 = 12 | row 460 = 12 | row 461 = 12 | row 462 = 12",
+      "verdict": null,
+      "type_mismatch": null,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": null,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "",
+        "SOURCE_CHECK": "",
+        "TRUTH_CHECK": "",
+        "COMPLETENESS_CHECK": ""
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time point]",
+      "extracted_value": "5hr",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point, which is the correct information for a column named \"characteristics[time point]\".",
+        "SOURCE_CHECK": "The paper states that protein and phosphorylation site changes were measured \"across 11 points of a time course\". While the specific hour values (e.g., \"5hr\") are not listed verbatim in the provided text, the existence of an 11-point time course is explicitly stated.",
+        "TRUTH_CHECK": "The value is right for the runs as they are part of the described time course experiment.",
+        "COMPLETENESS_CHECK": "The value is a clear and concise representation of a time point."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time point]",
+      "extracted_value": "7hr",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point, which is appropriate for a column named \"characteristics[time point]\".",
+        "SOURCE_CHECK": "The paper states that protein and phosphorylation site changes were measured \"across 11 points of a time course\", although the specific hour values (like 7hr) are not listed in the provided text.",
+        "TRUTH_CHECK": "The study is explicitly described as a time course of the diauxic shift in yeast, making time point labels correct for the runs.",
+        "COMPLETENESS_CHECK": "The value is a simple time label, which is complete for this type of characteristic."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time point]",
+      "extracted_value": "9hr",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point, which is appropriate for a column named \"characteristics[time point]\".",
+        "SOURCE_CHECK": "The paper states that protein and phosphorylation site changes were measured \"across 11 points of a time course\", although the specific hour values (like 9hr) are not explicitly listed in the provided text.",
+        "TRUTH_CHECK": "The value is consistent with the study's design of a temporal quantitative proteomics experiment across 11 points.",
+        "COMPLETENESS_CHECK": "The value is a simple time designation, which is complete for this type of characteristic."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time point]",
+      "extracted_value": "11hr",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point, which is appropriate for a column named \"characteristics[time point]\".",
+        "SOURCE_CHECK": "The paper states that protein and phosphorylation site changes were measured \"across 11 points of a time course\", although the specific hourly values are not listed in the provided text.",
+        "TRUTH_CHECK": "The value \"11hr\" is consistent with the study's design of an 11-point time course.",
+        "COMPLETENESS_CHECK": "The value is a plain text representation of a time point."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time point]",
+      "extracted_value": "13hr",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point, which is the correct type of information for a column named \"characteristics[time point]\".",
+        "SOURCE_CHECK": "The paper states that protein and phosphorylation site changes were measured across \"11 points of a time course\", although the specific hour values (like 13hr) are not explicitly listed in the provided text.",
+        "TRUTH_CHECK": "The value is consistent with the study's design of a temporal quantitative proteomics time course.",
+        "COMPLETENESS_CHECK": "The value is a standard representation of a time point."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time point]",
+      "extracted_value": "15hr",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point, which is the correct information for a column named \"characteristics[time point]\".",
+        "SOURCE_CHECK": "The paper states that protein and phosphorylation site changes were measured across \"11 points of a time course\", although the specific hour values (like 15hr) are not explicitly listed in the provided text.",
+        "TRUTH_CHECK": "The value is consistent with the study's design of a temporal quantitative proteomics time course.",
+        "COMPLETENESS_CHECK": "The value is a standard representation of a time point."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time point]",
+      "extracted_value": "17hr",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point, which is the correct information for a column named \"characteristics[time point]\".",
+        "SOURCE_CHECK": "The paper states that protein and phosphorylation site changes were measured \"across 11 points of a time course\", although the specific hour values are not listed in the provided text.",
+        "TRUTH_CHECK": "The value \"17hr\" is one of 11 distinct values in the column, matching the \"11 points of a time course\" mentioned in the paper.",
+        "COMPLETENESS_CHECK": "The value is a plain text representation of a time point."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time point]",
+      "extracted_value": "21hr",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time point, which is the correct type of information for a column named \"characteristics[time point]\".",
+        "SOURCE_CHECK": "The paper states that protein and phosphorylation site changes were measured \"across 11 points of a time course\", but it does not explicitly list the specific hours (e.g., 21hr) in the provided text.",
+        "TRUTH_CHECK": "While the paper mentions an 11-point time course, the specific values (5, 7, 9, 11, 13, 15, 17, 21, 25, 29, 33) are not printed in the text.",
+        "COMPLETENESS_CHECK": "The value is a simple time designation."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time point]",
+      "extracted_value": "25hr",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point, which is the correct type of information for a column named \"characteristics[time point]\".",
+        "SOURCE_CHECK": "The paper states that protein and phosphorylation site changes were measured \"across 11 points of a time course\", although the specific hour values (like 25hr) are not explicitly listed in the provided text.",
+        "TRUTH_CHECK": "Given the study design is a time course of the diauxic shift in yeast, time point values are the expected content for this column.",
+        "COMPLETENESS_CHECK": "The value is a simple time designation, which is complete for this type of characteristic."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time point]",
+      "extracted_value": "29hr",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point, which is the correct information for a column named \"characteristics[time point]\".",
+        "SOURCE_CHECK": "The paper states that protein and phosphorylation site changes were measured \"across 11 points of a time course\", but it does not explicitly list the specific hours (e.g., 29hr) in the provided text.",
+        "TRUTH_CHECK": "While the specific hours are not printed in the text, the paper explicitly describes a time course with 11 points. The candidate value and the other values in the column together total 11 distinct time points (5, 7, 9, 11, 13, 15, 17, 21, 25, 29, 33), which perfectly matches the study design described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time point]",
+      "extracted_value": "33hr",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time point, which is appropriate for a column named \"characteristics[time point]\".",
+        "SOURCE_CHECK": "The paper states that protein and phosphorylation site changes were measured across \"11 points of a time course\", but it does not explicitly list the specific hours (e.g., 33hr).",
+        "TRUTH_CHECK": "While the paper mentions 11 time points, the specific values (5hr, 7hr... 33hr) are not printed in the provided text.",
+        "COMPLETENESS_CHECK": "The value is a simple time designation."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[collision mode]",
+      "extracted_value": "CID-MSA",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a collision mode, which is appropriate for a column named \"comment[collision mode]\".",
+        "SOURCE_CHECK": "The paper states that MS2 scans consisted of \"collision-induced dissociation\" (CID). The term \"CID-MSA\" does not appear in the text.",
+        "TRUTH_CHECK": "The paper describes an SPS-MS3 method where MS2 is CID and MS3 is performed in the Orbitrap (HCD). \"CID-MSA\" is likely a technical label for the CID-based MS2 step in the MS3 workflow, but the paper does not use this specific terminology.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[collision mode]",
+      "extracted_value": "HCD",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which fits the column name \"collision mode\".",
+        "SOURCE_CHECK": "The paper explicitly states that \"MS2 scans consisted of collision-induced dissociation\" (CID). HCD is not mentioned.",
+        "TRUTH_CHECK": "The paper describes the use of CID for MS2 scans in the SPS-MS3 method. HCD is not used in this experiment.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[collision mode]",
+      "extracted_value": "CID",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"CID\" refers to a fragmentation method, which is appropriate for a column describing collision mode.",
+        "SOURCE_CHECK": "The paper states that \"MS2 scans consisted of collision-induced dissociation\" (CID).",
+        "TRUTH_CHECK": "The runs used CID for the MS2 scans as part of the SPS-MS3 method.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[Number of missed cleavages]",
+      "extracted_value": "2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number, which is the correct type for a count of missed cleavages.",
+        "SOURCE_CHECK": "The paper does not mention the number of missed cleavages allowed in the search.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    }
+  ]
+}

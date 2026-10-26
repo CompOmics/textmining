@@ -1,0 +1,532 @@
+{
+  "paper_id": "PXD036832",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Mus musculus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the use of C57BL/6J mice and the mouse reference proteome.",
+        "TRUTH_CHECK": "The analyzed proteins come from mice.",
+        "COMPLETENESS_CHECK": "Complete. \"Mus musculus\" is the scientific name for mouse."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "Liver",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ name, which is the correct information for the tissue field.",
+        "SOURCE_CHECK": "The paper explicitly lists \"liver\" as one of the collected organs.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., source=liver...) are derived from liver samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "Lungs",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ/organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly lists \"lung\" as one of the collected organs.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., source=lung...) are derived from lung samples.",
+        "COMPLETENESS_CHECK": "Complete. Pluralization (\"Lungs\" vs \"lung\") is acceptable."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "Spleen",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ name, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper explicitly lists \"spleen\" as one of the collected organs.",
+        "TRUTH_CHECK": "The runs are associated with spleen samples, which were analyzed in the proteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "Plasma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biofluid/organism part, which fits the tissue field.",
+        "SOURCE_CHECK": "The paper explicitly mentions collecting \"platelet-free plasma\" from citrated blood.",
+        "TRUTH_CHECK": "The runs listed are associated with plasma sources and are part of the MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "characteristics[disease]",
+      "extracted_value": "naive, sepsis",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a \"murine Escherichia coli sepsis model\" and a \"control group\" (which were injected with sterile DPBS).",
+        "TRUTH_CHECK": "The runs listed are DDA runs of pooled samples (e.g., \"T0T6\" and \"T12T18\" fractions) containing both control (naive) and infected (sepsis) material.",
+        "COMPLETENESS_CHECK": "The value contains two terms in one cell, which violates the \"ONE VALUE PER CELL\" convention. Furthermore, the SDRF term for healthy/control subjects is \"normal\", not \"naive\"."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "characteristics[disease]",
+      "extracted_value": "sepsis",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a \"murine Escherichia coli sepsis model\" and \"infected\" mice.",
+        "TRUTH_CHECK": "The runs carry the value \"sepsis\", which is correct for the infected cohorts.",
+        "COMPLETENESS_CHECK": "The value follows the definition for a disease state."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "characteristics[sex]",
+      "extracted_value": "F",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value refers to biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Nine-week-old female and male C57BL/6J mice\", meaning both sexes were used.",
+        "TRUTH_CHECK": "The value \"F\" (female) is applied to all 103 runs, but the paper explicitly states that both female and male mice were used in the study.",
+        "COMPLETENESS_CHECK": "The value \"F\" is a common abbreviation for female, but it is incorrect to assign it to all runs when the study used both sexes."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper does not mention any isotopic labels (TMT, SILAC, etc.), and the use of DIA and DDA for quantitative assessment without labels is described.",
+        "TRUTH_CHECK": "The runs are label-free.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "AC=MS:1002877;NT= Q Exactive HF-X",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states \"Peptide analyses... were performed on a Q Exactive HF-X mass spectrometer\".",
+        "TRUTH_CHECK": "The instrument was used for the peptide analyses of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state proteins were digested with \"Sequencing Grade Modified Trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of all samples analyzed by MS.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "comment [fractionation method]",
+      "extracted_value": "off-line high pH",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an offline separation method, which is the right field.",
+        "SOURCE_CHECK": "The paper states that samples \"were then fractionated with High pH Reversed-Phase (Pierce) into a total of 96 samples.\"",
+        "TRUTH_CHECK": "The runs listed (DDA runs) are the ones that were fractionated using this method to build the spectral library.",
+        "COMPLETENESS_CHECK": "The value is a correct description of the method used."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometer",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "proteomic profiling by mass spectrometry",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the general MS proteomics approach, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a proteomics workflow using DDA and DIA on a Q Exactive HF-X, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value is correct for the runs as they are part of the MS proteomics experiment.",
+        "COMPLETENESS_CHECK": "The value \"proteomic profiling by mass spectrometer\" contains a typo (\"spectrometer\" instead of \"spectrometry\") compared to the required SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states that proteins were alkylated with 25 mM iodoacetamide.",
+        "TRUTH_CHECK": "Carbamidomethylation is the resulting modification from iodoacetamide alkylation of cysteines.",
+        "COMPLETENESS_CHECK": "The format is correct. The modification is fixed as it is the standard result of the alkylation step described."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "characteristics[biological replicate]",
+      "extracted_value": "dda/CK_P1909_260.raw = 1 | dda/CK_P1909_261.raw = 1 | dda/CK_P1909_262.raw = 1 | dda/CK_P1909_263.raw = 1 | dda/CK_P1909_264.raw = 1 | dda/CK_P1909_265.raw = 1 | dda/CK_P1909_266.raw = 1 | dda/CK_P1909_267.raw = 1 | dda/CK_P1909_269.raw = 1 | dda/CK_P1909_270.raw = 1 | dda/CK_P1909_271.raw = 1 | dda/CK_P1909_272.raw = 1 | dda/CK_P1909_273.raw = 1 | dda/CK_P1909_274.raw = 1 | dda/CK_P1909_275.raw = 1 | dda/CK_P1909_276.raw = 1 | dda/CK_P1912_123.raw = 1 | dda/CK_P1912_124.raw = 1 | dda/CK_P1912_125.raw = 1 | dda/CK_P1912_126.raw = 1 | dda/CK_P1912_127.raw = 1 | dda/CK_P1912_128.raw = 1 | dda/CK_P1912_129.raw = 1 | dda/CK_P1912_130.raw = 1 | dda/CK_P1912_132.raw = 1 | dda/CK_P1912_133.raw = 1 | dda/CK_P2001_183.raw = 1 | dda/CK_P2001_184.raw = 1 | dda/CK_P2001_185.raw = 1 | dda/CK_P2001_186.raw = 1 | dda/CK_P2001_188.raw = 1 | dda/CK_P2001_189.raw = 1 | dda/CK_P2001_190.raw = 1 | dda/CK_P2001_191.raw = 1 | dda/CK_P1909_298.raw = 1 | dda/CK_P1909_299.raw = 1 | dda/CK_P1909_300.raw = 1 | dda/CK_P1909_301.raw = 1 | dda/CK_P1909_302.raw = 1 | dda/CK_P1909_303.raw = 1 | dda/CK_P1909_304.raw = 1 | dda/CK_P1909_305.raw = 1 | dda/CK_P1909_307.raw = 1 | dda/CK_P1909_308.raw = 1 | dda/CK_P1910_006.raw = 1 | dda/CK_P1910_007.raw = 1 | dda/CK_P1910_008.raw = 1 | dda/CK_P1910_009.raw = 1 | dda/CK_P1910_010.raw = 1 | dda/CK_P1910_011.raw = 1 | dda/CK_P1909_234.raw = 1 | dda/CK_P1909_235.raw = 1 | dda/CK_P1909_236.raw = 1 | dda/CK_P1909_237.raw = 1 | dda/CK_P1909_238.raw = 1 | dda/CK_P1909_239.raw = 1 | dda/CK_P1909_240.raw = 1 | dda/CK_P1909_241.raw = 1 | dda/CK_P1909_250.raw = 1 | dda/CK_P1909_251.raw = 1 | dda/CK_P1909_252.raw = 1 | dda/CK_P1909_253.raw = 1 | dda/CK_P1909_254.raw = 1 | dda/CK_P1909_255.raw = 1 | dda/CK_P1909_256.raw = 1 | dda/CK_P1909_257.raw = 1 | dda/CK_P1911_141.raw = 1 | dda/CK_P1911_142.raw = 1 | dda/CK_P1911_143.raw = 1 | dda/CK_P1911_144.raw = 1 | dda/CK_P1911_145.raw = 1 | dda/CK_P1911_146.raw = 1 | dda/CK_P1911_148.raw = 1 | dda/CK_P1911_148_20191119223541.raw = 1 | dda/CK_P1911_149.raw = 1 | dda/CK_P1911_149_20191120112209.raw = 1 | dda/CK_P1911_150.raw = 1 | dda/CK_P1911_151.raw = 1 | dda/CK_P1911_152.raw = 1 | dda/CK_P1911_013.raw = 1 | dda/CK_P1911_014.raw = 1 | dda/CK_P1911_015.raw = 1 | dda/CK_P1911_016.raw = 1 | dda/CK_P1911_017.raw = 1 | dda/CK_P1911_018.raw = 1 | dda/CK_P1911_019.raw = 1 | dda/CK_P1911_020.raw = 1 | dda/CK_P1911_023.raw = 1 | dda/CK_P1911_024.raw = 1 | dda/CK_P1911_025.raw = 1 | dda/CK_P1911_026.raw = 1 | dda/CK_P1911_027.raw = 1 | dda/CK_P1911_028.raw = 1 | dda/CK_P1911_029.raw = 1 | dda/CK_P1911_030.raw = 1 | dda/CK_P1911_032.raw = 1 | dda/CK_P1911_033.raw = 1 | dda/CK_P1911_034.raw = 1 | dda/CK_P1911_035.raw = 1 | dda/CK_P1911_036.raw = 1 | dda/CK_P1911_037.raw = 1 | dda/CK_P1911_038.raw = 1 | dda/CK_P1911_039.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that for the time-course experiment, samples were pooled per sample type and time points.",
+        "TRUTH_CHECK": "Since the DDA runs listed are derived from these pooled samples (as indicated by the source names like liver180802-T0T6_HpH_1), they all represent a single biological unit per pool.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index, and since they are pooled, they correctly share the same index."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "comment[technical replicate]",
+      "extracted_value": "dda/CK_P1909_260.raw = 1 | dda/CK_P1909_261.raw = 1 | dda/CK_P1909_262.raw = 1 | dda/CK_P1909_263.raw = 1 | dda/CK_P1909_264.raw = 1 | dda/CK_P1909_265.raw = 1 | dda/CK_P1909_266.raw = 1 | dda/CK_P1909_267.raw = 1 | dda/CK_P1909_269.raw = 1 | dda/CK_P1909_270.raw = 1 | dda/CK_P1909_271.raw = 1 | dda/CK_P1909_272.raw = 1 | dda/CK_P1909_273.raw = 1 | dda/CK_P1909_274.raw = 1 | dda/CK_P1909_275.raw = 1 | dda/CK_P1909_276.raw = 1 | dda/CK_P1912_123.raw = 2 | dda/CK_P1912_124.raw = 2 | dda/CK_P1912_125.raw = 2 | dda/CK_P1912_126.raw = 2 | dda/CK_P1912_127.raw = 2 | dda/CK_P1912_128.raw = 2 | dda/CK_P1912_129.raw = 2 | dda/CK_P1912_130.raw = 2 | dda/CK_P1912_132.raw = 2 | dda/CK_P1912_133.raw = 2 | dda/CK_P2001_183.raw = 2 | dda/CK_P2001_184.raw = 2 | dda/CK_P2001_185.raw = 3 | dda/CK_P2001_186.raw = 4 | dda/CK_P2001_188.raw = 2 | dda/CK_P2001_189.raw = 2 | dda/CK_P2001_190.raw = 2 | dda/CK_P2001_191.raw = 2 | dda/CK_P1909_298.raw = 1 | dda/CK_P1909_299.raw = 1 | dda/CK_P1909_300.raw = 1 | dda/CK_P1909_301.raw = 1 | dda/CK_P1909_302.raw = 1 | dda/CK_P1909_303.raw = 1 | dda/CK_P1909_304.raw = 1 | dda/CK_P1909_305.raw = 1 | dda/CK_P1909_307.raw = 1 | dda/CK_P1909_308.raw = 1 | dda/CK_P1910_006.raw = 1 | dda/CK_P1910_007.raw = 1 | dda/CK_P1910_008.raw = 1 | dda/CK_P1910_009.raw = 1 | dda/CK_P1910_010.raw = 1 | dda/CK_P1910_011.raw = 1 | dda/CK_P1909_234.raw = 1 | dda/CK_P1909_235.raw = 1 | dda/CK_P1909_236.raw = 1 | dda/CK_P1909_237.raw = 1 | dda/CK_P1909_238.raw = 1 | dda/CK_P1909_239.raw = 1 | dda/CK_P1909_240.raw = 1 | dda/CK_P1909_241.raw = 1 | dda/CK_P1909_250.raw = 1 | dda/CK_P1909_251.raw = 1 | dda/CK_P1909_252.raw = 1 | dda/CK_P1909_253.raw = 1 | dda/CK_P1909_254.raw = 1 | dda/CK_P1909_255.raw = 1 | dda/CK_P1909_256.raw = 1 | dda/CK_P1909_257.raw = 1 | dda/CK_P1911_141.raw = 2 | dda/CK_P1911_142.raw = 2 | dda/CK_P1911_143.raw = 2 | dda/CK_P1911_144.raw = 2 | dda/CK_P1911_145.raw = 2 | dda/CK_P1911_146.raw = 2 | dda/CK_P1911_148.raw = 2 | dda/CK_P1911_148_20191119223541.raw = 3 | dda/CK_P1911_149.raw = 2 | dda/CK_P1911_149_20191120112209.raw = 3 | dda/CK_P1911_150.raw = 2 | dda/CK_P1911_151.raw = 2 | dda/CK_P1911_152.raw = 2 | dda/CK_P1911_013.raw = 1 | dda/CK_P1911_014.raw = 1 | dda/CK_P1911_015.raw = 1 | dda/CK_P1911_016.raw = 1 | dda/CK_P1911_017.raw = 1 | dda/CK_P1911_018.raw = 1 | dda/CK_P1911_019.raw = 1 | dda/CK_P1911_020.raw = 1 | dda/CK_P1911_023.raw = 2 | dda/CK_P1911_024.raw = 2 | dda/CK_P1911_025.raw = 2 | dda/CK_P1911_026.raw = 2 | dda/CK_P1911_027.raw = 2 | dda/CK_P1911_028.raw = 2 | dda/CK_P1911_029.raw = 2 | dda/CK_P1911_030.raw = 2 | dda/CK_P1911_032.raw = 1 | dda/CK_P1911_033.raw = 1 | dda/CK_P1911_034.raw = 1 | dda/CK_P1911_035.raw = 1 | dda/CK_P1911_036.raw = 1 | dda/CK_P1911_037.raw = 1 | dda/CK_P1911_038.raw = 1 | dda/CK_P1911_039.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes pooling samples per type and time point and then fractionating them with High pH Reversed-Phase into 96 samples, which were then analyzed with DDA.",
+        "TRUTH_CHECK": "The mapping assigns technical replicate indices based on the 'source' column. For example, runs with the same source (e.g., liver180802-T0T6_HpH_1) are assigned different indices (1, 2), which is correct for repeated runs of the same material.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "comment[fraction identifier]",
+      "extracted_value": "dda/CK_P1909_260.raw = 1 | dda/CK_P1909_261.raw = 2 | dda/CK_P1909_262.raw = 3 | dda/CK_P1909_263.raw = 4 | dda/CK_P1909_264.raw = 5 | dda/CK_P1909_265.raw = 6 | dda/CK_P1909_266.raw = 7 | dda/CK_P1909_267.raw = 8 | dda/CK_P1909_269.raw = 1 | dda/CK_P1909_270.raw = 2 | dda/CK_P1909_271.raw = 3 | dda/CK_P1909_272.raw = 4 | dda/CK_P1909_273.raw = 5 | dda/CK_P1909_274.raw = 6 | dda/CK_P1909_275.raw = 7 | dda/CK_P1909_276.raw = 8 | dda/CK_P1912_123.raw = 1 | dda/CK_P1912_124.raw = 2 | dda/CK_P1912_125.raw = 3 | dda/CK_P1912_126.raw = 4 | dda/CK_P1912_127.raw = 5 | dda/CK_P1912_128.raw = 6 | dda/CK_P1912_129.raw = 7 | dda/CK_P1912_130.raw = 8 | dda/CK_P1912_132.raw = 1 | dda/CK_P1912_133.raw = 2 | dda/CK_P2001_183.raw = 3 | dda/CK_P2001_184.raw = 4 | dda/CK_P2001_185.raw = 4 | dda/CK_P2001_186.raw = 4 | dda/CK_P2001_188.raw = 5 | dda/CK_P2001_189.raw = 6 | dda/CK_P2001_190.raw = 7 | dda/CK_P2001_191.raw = 8 | dda/CK_P1909_298.raw = 1 | dda/CK_P1909_299.raw = 2 | dda/CK_P1909_300.raw = 3 | dda/CK_P1909_301.raw = 4 | dda/CK_P1909_302.raw = 5 | dda/CK_P1909_303.raw = 6 | dda/CK_P1909_304.raw = 7 | dda/CK_P1909_305.raw = 8 | dda/CK_P1909_307.raw = 1 | dda/CK_P1909_308.raw = 2 | dda/CK_P1910_006.raw = 3 | dda/CK_P1910_007.raw = 4 | dda/CK_P1910_008.raw = 5 | dda/CK_P1910_009.raw = 6 | dda/CK_P1910_010.raw = 7 | dda/CK_P1910_011.raw = 8 | dda/CK_P1909_234.raw = 1 | dda/CK_P1909_235.raw = 2 | dda/CK_P1909_236.raw = 3 | dda/CK_P1909_237.raw = 4 | dda/CK_P1909_238.raw = 5 | dda/CK_P1909_239.raw = 6 | dda/CK_P1909_240.raw = 7 | dda/CK_P1909_241.raw = 8 | dda/CK_P1909_250.raw = 1 | dda/CK_P1909_251.raw = 2 | dda/CK_P1909_252.raw = 3 | dda/CK_P1909_253.raw = 4 | dda/CK_P1909_254.raw = 5 | dda/CK_P1909_255.raw = 6 | dda/CK_P1909_256.raw = 7 | dda/CK_P1909_257.raw = 8 | dda/CK_P1911_141.raw = 3 | dda/CK_P1911_142.raw = 4 | dda/CK_P1911_143.raw = 5 | dda/CK_P1911_144.raw = 6 | dda/CK_P1911_145.raw = 7 | dda/CK_P1911_146.raw = 8 | dda/CK_P1911_148.raw = 3 | dda/CK_P1911_148_20191119223541.raw = 3 | dda/CK_P1911_149.raw = 5 | dda/CK_P1911_149_20191120112209.raw = 5 | dda/CK_P1911_150.raw = 6 | dda/CK_P1911_151.raw = 7 | dda/CK_P1911_152.raw = 8 | dda/CK_P1911_013.raw = 1 | dda/CK_P1911_014.raw = 2 | dda/CK_P1911_015.raw = 3 | dda/CK_P1911_016.raw = 4 | dda/CK_P1911_017.raw = 5 | dda/CK_P1911_018.raw = 6 | dda/CK_P1911_019.raw = 7 | dda/CK_P1911_020.raw = 8 | dda/CK_P1911_023.raw = 1 | dda/CK_P1911_024.raw = 2 | dda/CK_P1911_025.raw = 3 | dda/CK_P1911_026.raw = 4 | dda/CK_P1911_027.raw = 5 | dda/CK_P1911_028.raw = 6 | dda/CK_P1911_029.raw = 7 | dda/CK_P1911_030.raw = 8 | dda/CK_P1911_032.raw = 1 | dda/CK_P1911_033.raw = 2 | dda/CK_P1911_034.raw = 3 | dda/CK_P1911_035.raw = 4 | dda/CK_P1911_036.raw = 5 | dda/CK_P1911_037.raw = 6 | dda/CK_P1911_038.raw = 7 | dda/CK_P1911_039.raw = 8",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that pooled samples were \"fractionated with High pH Reversed-Phase (Pierce) into a total of 96 samples.\"",
+        "TRUTH_CHECK": "The runs are DDA runs of these fractions. The mapping correctly assigns indices 1-8 to the fractions of each sample group (e.g., liver, lung, spleen, plasma), which is consistent with the \"HpH_1\" through \"HpH_8\" labels in the source column.",
+        "COMPLETENESS_CHECK": "The mapping follows the required format."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[factor]",
+      "extracted_value": "dda/CK_P1909_260.raw = liver180802-T0T6_HpH_1 | dda/CK_P1909_261.raw = liver180802-T0T6_HpH_2 | dda/CK_P1909_262.raw = liver180802-T0T6_HpH_3 | dda/CK_P1909_263.raw = liver180802-T0T6_HpH_4 | dda/CK_P1909_264.raw = liver180802-T0T6_HpH_5 | dda/CK_P1909_265.raw = liver180802-T0T6_HpH_6 | dda/CK_P1909_266.raw = liver180802-T0T6_HpH_7 | dda/CK_P1909_267.raw = liver180802-T0T6_HpH_8 | dda/CK_P1909_269.raw = liver180802-T12T18_HpH_1 | dda/CK_P1909_270.raw = liver180802-T12T18_HpH_2 | dda/CK_P1909_271.raw = liver180802-T12T18_HpH_3 | dda/CK_P1909_272.raw = liver180802-T12T18_HpH_4 | dda/CK_P1909_273.raw = liver180802-T12T18_HpH_5 | dda/CK_P1909_274.raw = liver180802-T12T18_HpH_6 | dda/CK_P1909_275.raw = liver180802-T12T18_HpH_7 | dda/CK_P1909_276.raw = liver180802-T12T18_HpH_8 | dda/CK_P1912_123.raw = liver180802-T0T6_HpH_1 | dda/CK_P1912_124.raw = liver180802-T0T6_HpH_2 | dda/CK_P1912_125.raw = liver180802-T0T6_HpH_3 | dda/CK_P1912_126.raw = liver180802-T0T6_HpH_4 | dda/CK_P1912_127.raw = liver180802-T0T6_HpH_5 | dda/CK_P1912_128.raw = liver180802-T0T6_HpH_6 | dda/CK_P1912_129.raw = liver180802-T0T6_HpH_7 | dda/CK_P1912_130.raw = liver180802-T0T6_HpH_8 | dda/CK_P1912_132.raw = liver180802-T12T18_HpH_1 | dda/CK_P1912_133.raw = liver180802-T12T18_HpH_2 | dda/CK_P2001_183.raw = liver180802-T12T18_HpH_3 | dda/CK_P2001_184.raw = liver180802-T12T18_HpH_4 | dda/CK_P2001_185.raw = liver180802-T12T18_HpH_4 | dda/CK_P2001_186.raw = liver180802-T12T18_HpH_4 | dda/CK_P2001_188.raw = liver180802-T12T18_HpH_5 | dda/CK_P2001_189.raw = liver180802-T12T18_HpH_6 | dda/CK_P2001_190.raw = liver180802-T12T18_HpH_7 | dda/CK_P2001_191.raw = liver180802-T12T18_HpH_8 | dda/CK_P1909_298.raw = lung180802-T0T6_HpH_1 | dda/CK_P1909_299.raw = lung180802-T0T6_HpH_2 | dda/CK_P1909_300.raw = lung180802-T0T6_HpH_3 | dda/CK_P1909_301.raw = lung180802-T0T6_HpH_4 | dda/CK_P1909_302.raw = lung180802-T0T6_HpH_5 | dda/CK_P1909_303.raw = lung180802-T0T6_HpH_6 | dda/CK_P1909_304.raw = lung180802-T0T6_HpH_7 | dda/CK_P1909_305.raw = lung180802-T0T6_HpH_8 | dda/CK_P1909_307.raw = lung180802-T12T18_HpH_1 | dda/CK_P1909_308.raw = lung180802-T12T18_HpH_2 | dda/CK_P1910_006.raw = lung180802-T12T18_HpH_3 | dda/CK_P1910_007.raw = lung180802-T12T18_HpH_4 | dda/CK_P1910_008.raw = lung180802-T12T18_HpH_5 | dda/CK_P1910_009.raw = lung180802-T12T18_HpH_6 | dda/CK_P1910_010.raw = lung180802-T12T18_HpH_7 | dda/CK_P1910_011.raw = lung180802-T12T18_HpH_8 | dda/CK_P1909_234.raw = spleen180802-T0T6_HpH_1 | dda/CK_P1909_235.raw = spleen180802-T0T6_HpH_2 | dda/CK_P1909_236.raw = spleen180802-T0T6_HpH_3 | dda/CK_P1909_237.raw = spleen180802-T0T6_HpH_4 | dda/CK_P1909_238.raw = spleen180802-T0T6_HpH_5 | dda/CK_P1909_239.raw = spleen180802-T0T6_HpH_6 | dda/CK_P1909_240.raw = spleen180802-T0T6_HpH_7 | dda/CK_P1909_241.raw = spleen180802-T0T6_HpH_8 | dda/CK_P1909_250.raw = spleen180802-T12T18_HpH_1 | dda/CK_P1909_251.raw = spleen180802-T12T18_HpH_2 | dda/CK_P1909_252.raw = spleen180802-T12T18_HpH_3 | dda/CK_P1909_253.raw = spleen180802-T12T18_HpH_4 | dda/CK_P1909_254.raw = spleen180802-T12T18_HpH_5 | dda/CK_P1909_255.raw = spleen180802-T12T18_HpH_6 | dda/CK_P1909_256.raw = spleen180802-T12T18_HpH_7 | dda/CK_P1909_257.raw = spleen180802-T12T18_HpH_8 | dda/CK_P1911_141.raw = spleen180802-T12T18_HpH_3 | dda/CK_P1911_142.raw = spleen180802-T12T18_HpH_4 | dda/CK_P1911_143.raw = spleen180802-T12T18_HpH_5 | dda/CK_P1911_144.raw = spleen180802-T12T18_HpH_6 | dda/CK_P1911_145.raw = spleen180802-T12T18_HpH_7 | dda/CK_P1911_146.raw = spleen180802-T12T18_HpH_8 | dda/CK_P1911_148.raw = spleen180802-T0T6_HpH_3 | dda/CK_P1911_148_20191119223541.raw = spleen180802-T0T6_HpH_3 | dda/CK_P1911_149.raw = spleen180802-T0T6_HpH_5 | dda/CK_P1911_149_20191120112209.raw = spleen180802-T0T6_HpH_5 | dda/CK_P1911_150.raw = spleen180802-T0T6_HpH_6 | dda/CK_P1911_151.raw = spleen180802-T0T6_HpH_7 | dda/CK_P1911_152.raw = spleen180802-T0T6_HpH_8 | dda/CK_P1911_013.raw = plasma180802-T0T6_HpH_1 | dda/CK_P1911_014.raw = plasma180802-T0T6_HpH_2 | dda/CK_P1911_015.raw = plasma180802-T0T6_HpH_3 | dda/CK_P1911_016.raw = plasma180802-T0T6_HpH_4 | dda/CK_P1911_017.raw = plasma180802-T0T6_HpH_5 | dda/CK_P1911_018.raw = plasma180802-T0T6_HpH_6 | dda/CK_P1911_019.raw = plasma180802-T0T6_HpH_7 | dda/CK_P1911_020.raw = plasma180802-T0T6_HpH_8 | dda/CK_P1911_023.raw = plasma180802-T0T6_HpH_1 | dda/CK_P1911_024.raw = plasma180802-T0T6_HpH_2 | dda/CK_P1911_025.raw = plasma180802-T0T6_HpH_3 | dda/CK_P1911_026.raw = plasma180802-T0T6_HpH_4 | dda/CK_P1911_027.raw = plasma180802-T0T6_HpH_5 | dda/CK_P1911_028.raw = plasma180802-T0T6_HpH_6 | dda/CK_P1911_029.raw = plasma180802-T0T6_HpH_7 | dda/CK_P1911_030.raw = plasma180802-T0T6_HpH_8 | dda/CK_P1911_032.raw = plasma180802-T12T18_HpH_1 | dda/CK_P1911_033.raw = plasma180802-T12T18_HpH_2 | dda/CK_P1911_034.raw = plasma180802-T12T18_HpH_3 | dda/CK_P1911_035.raw = plasma180802-T12T18_HpH_4 | dda/CK_P1911_036.raw = plasma180802-T12T18_HpH_5 | dda/CK_P1911_037.raw = plasma180802-T12T18_HpH_6 | dda/CK_P1911_038.raw = plasma180802-T12T18_HpH_7 | dda/CK_P1911_039.raw = plasma180802-T12T18_HpH_8",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The values are sample/fraction identifiers, not levels of a studied variable (like treatment or time point).",
+        "SOURCE_CHECK": "The specific alphanumeric strings (e.g., \"liver180802-T0T6_HpH_1\") are not mentioned in the paper text; they appear to be internal sample IDs.",
+        "TRUTH_CHECK": "The values are not levels of a studied variable (factor) but are instead identifiers for the fractions/samples themselves.",
+        "COMPLETENESS_CHECK": "Not applicable as the type is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[hours post infection]",
+      "extracted_value": "0h, 6h",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents time points post-infection, which is appropriate for a column named \"characteristics[hours post infection]\".",
+        "SOURCE_CHECK": "The paper states that mice were sacrificed at 0-, 6-, 12-, and 18 h post-infection (h.p.i.).",
+        "TRUTH_CHECK": "The example runs (e.g., source=liver180802-T0T6_HpH_1) indicate that samples from 0h and 6h were pooled together for these specific DDA runs, making \"0h, 6h\" the correct description for these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[hours post infection]",
+      "extracted_value": "12h, 18h",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the time post-infection, which is a relevant characteristic for this study.",
+        "SOURCE_CHECK": "The paper states mice were sacrificed at 0-, 6-, 12-, and 18 h post-infection (h.p.i.).",
+        "TRUTH_CHECK": "The example runs (e.g., source=liver180802-T12T18_HpH_1) indicate that these specific DDA runs were performed on pooled samples from the 12h and 18h time points.",
+        "COMPLETENESS_CHECK": "The value is a correct representation of the pooled time points for these runs."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[animal experiment id]",
+      "extracted_value": "180805",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an identifier for an animal experiment, which fits the column name.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"time course (180805, Figs. 1–3, 23 animals, 4 groups)\" as one of the three batches of proteomic DIA data.",
+        "TRUTH_CHECK": "The value 180805 is used to identify the time-course experiment batch.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[mouse id]",
+      "extracted_value": "180805_1, 180805_2, 180805_3, 180805_4, 180805_5, 180805_7, 180805_8, 180805_9, 180805_10, 180805_11, 180805_12",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value consists of identifiers for mice, which is appropriate for a column named \"characteristics[mouse id]\".",
+        "SOURCE_CHECK": "The paper mentions a \"time course\" batch with the ID \"180805\" and 23 animals. While the specific IDs (e.g., 180805_1) are not listed verbatim, they are standard identifiers derived from the batch ID and animal count.",
+        "TRUTH_CHECK": "The value describes the mice used in the time-course experiment (batch 180805). However, the SDRF convention \"ONE VALUE PER CELL\" is violated here; a single cell contains a list of multiple mouse IDs instead of one ID per run.",
+        "COMPLETENESS_CHECK": "The value is a list of IDs, which contradicts the SDRF requirement of one value per cell."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[mouse id]",
+      "extracted_value": "180805_13, 180805_14, 180805_15, 180805_16, 180805_17, 180805_18, 180805_19, 180805_20, 180805_21, 180805_22, 180805_23, 180805_24",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value consists of identifiers for mice, which is appropriate for a column named \"characteristics[mouse id]\".",
+        "SOURCE_CHECK": "The paper mentions a \"time course\" batch with the identifier \"180805\" and 23 animals. The candidate values (e.g., 180805_13) follow this batch naming convention.",
+        "TRUTH_CHECK": "The value describes the mice associated with the runs. However, the SDRF convention \"ONE VALUE PER CELL\" is violated here; a single cell contains a list of multiple mouse IDs.",
+        "COMPLETENESS_CHECK": "The value is a list of IDs rather than a single ID per run."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[mouse id]",
+      "extracted_value": "180805_1, 180805_2, 180805_3, 180805_5, 180805_7, 180805_8, 180805_9, 180805_10, 180805_11, 180805_12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value consists of identifiers for individual mice, which is appropriate for a column named \"characteristics[mouse id]\".",
+        "SOURCE_CHECK": "The paper mentions a \"time course\" batch (180805) with 23 animals. While the specific IDs (e.g., 180805_1) are not listed verbatim in the text, they are standard identifiers derived from the batch date and animal count mentioned.",
+        "TRUTH_CHECK": "The value describes the mice associated with the runs. The example runs are DDA runs of pooled samples (\"plasma180802-T0T6_HpH_1\"), and the candidate value lists the mice that contributed to those pools.",
+        "COMPLETENESS_CHECK": "The value is a list of identifiers. However, the SDRF convention \"ONE VALUE PER CELL\" states that a cell should hold one value for its run. In the case of pooled samples, the cell should ideally list the contributors or a group identifier."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[mouse id]",
+      "extracted_value": "180805_14, 180805_15, 180805_16, 180805_17, 180805_18, 180805_19, 180805_20, 180805_21, 180805_22, 180805_23, 180805_24",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value consists of identifiers for mice, which is appropriate for a column named \"characteristics[mouse id]\".",
+        "SOURCE_CHECK": "The paper mentions a \"time course\" batch identified as \"180805\" with 23 animals. The candidate values follow a pattern (batch_id) consistent with this.",
+        "TRUTH_CHECK": "The value describes a group of mice from the 180805 batch. However, the SDRF convention \"ONE VALUE PER CELL\" is violated here; a single cell contains a list of multiple mouse IDs. Furthermore, the example runs are DDA runs of pooled samples (\"pooled per sample type and time points\"), meaning these runs do not belong to a single mouse but to a pool of mice. In such cases, listing the constituent mice in the cell is a way to describe the pool.",
+        "COMPLETENESS_CHECK": "The value is a list of identifiers."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[excluded]",
+      "extracted_value": "0",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is a generic characteristics column.",
+        "SOURCE_CHECK": "The paper does not mention any excluded samples or a value of \"0\" related to exclusions.",
+        "TRUTH_CHECK": "There is no evidence in the text that any runs were excluded or that a binary flag for exclusion was used.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pooled sample]",
+      "extracted_value": "180805_1, 180805_2, 180805_3, 180805_4, 180805_5, 180805_7, 180805_8, 180805_9, 180805_10, 180805_11, 180805_12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value consists of sample identifiers, which is appropriate for a characteristics column describing pooled samples.",
+        "SOURCE_CHECK": "The paper states that for the time-course experiment (batch 180805), samples were \"pooled per sample type and time points (0 h together with 6 h and 12 h together with 18 h)\".",
+        "TRUTH_CHECK": "The value lists specific sample IDs (e.g., 180805_1) that were pooled to create the DDA spectral library. This correctly describes the composition of the pooled samples used for those runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pooled sample]",
+      "extracted_value": "180805_13, 180805_14, 180805_15, 180805_16, 180805_17, 180805_18, 180805_19, 180805_20, 180805_21, 180805_22, 180805_23, 180805_24",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is a custom characteristics column intended to track pooled samples.",
+        "SOURCE_CHECK": "The paper states that for the time-course experiment (batch 180805), samples were \"pooled per sample type and time points (0 h together with 6 h and 12 h together with 18 h)\".",
+        "TRUTH_CHECK": "The candidate value lists specific sample IDs (180805_13 to 180805_24) that were pooled to create the fractions analyzed by DDA. This correctly maps the individual samples contributing to the pooled material for those specific runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pooled sample]",
+      "extracted_value": "180805_1, 180805_2, 180805_3, 180805_5, 180805_7, 180805_8, 180805_9, 180805_10, 180805_11, 180805_12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value consists of identifiers for samples, which is appropriate for a characteristics column describing pooled samples.",
+        "SOURCE_CHECK": "The paper states that for the time-course experiment (batch 180805), samples were pooled per sample type and time points (e.g., 0h together with 6h) and then fractionated.",
+        "TRUTH_CHECK": "The candidate value lists identifiers (likely individual animal IDs from the 180805 cohort) that were pooled to create the material analyzed in the DDA runs.",
+        "COMPLETENESS_CHECK": "The value is a list of identifiers, which is a complete way to describe the composition of a pooled sample."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pooled sample]",
+      "extracted_value": "180805_14, 180805_15, 180805_16, 180805_17, 180805_18, 180805_19, 180805_20, 180805_21, 180805_22, 180805_23, 180805_24",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value consists of sample identifiers, which is appropriate for a characteristics column describing pooled samples.",
+        "SOURCE_CHECK": "The paper states that for the time-course experiment (batch 180805), samples were \"pooled per sample type and time points\" and then fractionated.",
+        "TRUTH_CHECK": "The value lists specific sample IDs (e.g., 180805_14) that likely correspond to the individual samples that were pooled to create the fractions analyzed in the DDA runs.",
+        "COMPLETENESS_CHECK": "The value is a list of identifiers, which is a standard way to document the composition of a pooled sample in SDRF."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[data acquisition]",
+      "extracted_value": "AC=PRIDE:0000429;NT= Shotgun proteomics",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Shotgun proteomics\" describes the general proteomics approach, which is appropriate for a data acquisition comment column.",
+        "SOURCE_CHECK": "The paper describes a workflow using DDA and DIA on digested peptides, which is the definition of shotgun proteomics.",
+        "TRUTH_CHECK": "The runs listed are DDA runs used for spectral library generation, which fits the shotgun proteomics description.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

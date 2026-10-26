@@ -1,0 +1,906 @@
+{
+  "paper_id": "PXD012131",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"human body\", \"aged individuals\", and \"human proteome\", making \"homo sapiens\" an allowed inference.",
+        "TRUTH_CHECK": "The analysed brain tissues are from human individuals.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "brain",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ/organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Individual brains were extracted\" and \"core brain proteome\".",
+        "TRUTH_CHECK": "The analyzed samples are brain tissues.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Amygdala",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an anatomical region of the brain, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"nine anatomically distinct sections\" from the brain, but does not list the specific names of these sections in the provided text.",
+        "TRUTH_CHECK": "While the paper describes a multiregional brain proteome, the specific term \"Amygdala\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Cerebellum",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper mentions \"nine anatomically distinct sections\" of the brain, but does not list the specific names of these sections in the provided text.",
+        "TRUTH_CHECK": "While the paper describes a multiregional brain proteome, the specific term \"Cerebellum\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Caudate Nucleus",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an anatomical brain region, which is the right field for tissue.",
+        "SOURCE_CHECK": "The paper mentions \"nine anatomically distinct sections\" from the brain, but does not list the names of these sections in the provided text.",
+        "TRUTH_CHECK": "The specific term \"Caudate Nucleus\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The value is a plain text anatomical term."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Entorhinal Cortex",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a brain region, which is the right field for tissue.",
+        "SOURCE_CHECK": "The paper mentions \"nine anatomically distinct sections\" and \"multiregional perspective\" but does not list the specific brain regions by name in the provided text.",
+        "TRUTH_CHECK": "The specific region \"Entorhinal Cortex\" is not mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Inferior Parietal Lobule",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an anatomical brain region, which is the right kind of information for the tissue field.",
+        "SOURCE_CHECK": "The paper mentions \"nine anatomically distinct sections\" and \"multiregional perspective\" but does not list the specific names of these sections in the provided text.",
+        "TRUTH_CHECK": "The value is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Middle Frontal Gyrus",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an anatomical part of the brain, which fits the tissue field.",
+        "SOURCE_CHECK": "The paper mentions \"nine anatomically distinct sections\" and \"multiregional perspective\" but does not list the specific names of these sections in the provided text.",
+        "TRUTH_CHECK": "The specific term \"Middle Frontal Gyrus\" is not mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct for a tissue name."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Superior Temporal Gyrus",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an anatomical brain region, which is the right field for tissue.",
+        "SOURCE_CHECK": "The paper mentions \"nine anatomically distinct sections\" from the brain, but does not list the specific names of these sections in the provided text.",
+        "TRUTH_CHECK": "The value is not mentioned in the text, and the specific brain regions are not listed in the abstract or methods.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported by the provided text."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Thalamus",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A brain region name, which is the right field for tissue.",
+        "SOURCE_CHECK": "The paper mentions \"nine anatomically distinct sections\" of the brain, but does not list the names of these sections in the provided text.",
+        "TRUTH_CHECK": "While the value is a brain region, it is not stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Visual Cortex",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper mentions \"nine anatomically distinct sections\" of the brain, but does not list the specific names of these sections in the provided text.",
+        "TRUTH_CHECK": "The specific tissue \"Visual Cortex\" is not mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Neocortex",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"nine anatomically distinct sections\" of the brain, but does not list the names of these sections in the provided text.",
+        "TRUTH_CHECK": "The specific term \"Neocortex\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The value is a plain text term."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The paper describes a spectrum of disease progression for Alzheimer's Disease, implying a comparison with non-diseased/normal aged individuals.",
+        "TRUTH_CHECK": "The value is used for a subset of runs representing the non-AD cohort.",
+        "COMPLETENESS_CHECK": "The SDRF term for healthy/non-diseased subjects is \"normal\" (lowercase)."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Alzheimer's disease (stage VI)",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions Alzheimer's Disease (AD) and categorization by quantity of neurofibrillary tangles, but it never mentions \"stage VI\" or any specific staging system.",
+        "TRUTH_CHECK": "The disease is correct, but the specific stage \"VI\" is not supported by the text.",
+        "COMPLETENESS_CHECK": "The value follows the general format, but contains unsupported details."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Alzheimer's disease (stage III)",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions Alzheimer's Disease (AD) and that individuals were categorized by the quantity of neurofibrillary tangles, but it never mentions \"stage III\" or any specific staging system.",
+        "TRUTH_CHECK": "The disease is correct, but the specific stage is not supported by the text.",
+        "COMPLETENESS_CHECK": "The value follows the general format, but contains unsupported details."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "80Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"aged individuals\" and an \"aged cohort\" but does not state any specific numerical ages for the subjects.",
+        "TRUTH_CHECK": "The specific age \"80Y\" is not mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "79Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"aged individuals\" and an \"aged cohort\", but does not state the specific age of any individual.",
+        "TRUTH_CHECK": "The specific age \"79Y\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "78Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"aged individuals\" and an \"aged cohort\" but does not state the specific ages of the individuals.",
+        "TRUTH_CHECK": "The specific age \"78Y\" is not mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "85Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"aged individuals\" and an \"aged cohort\", but it does not state any specific numerical ages for the subjects.",
+        "TRUTH_CHECK": "The specific value \"85Y\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "86Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"aged individuals\" and an \"aged cohort\", but does not state the specific age of any individual.",
+        "TRUTH_CHECK": "The specific value \"86Y\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "84Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"aged individuals\" and an \"aged cohort\" but does not state the specific ages of the subjects.",
+        "TRUTH_CHECK": "The specific age \"84Y\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "81Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a subject's age, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"aged individuals\" and an \"aged cohort\" but does not state any specific numerical ages for the subjects.",
+        "TRUTH_CHECK": "The specific value \"81Y\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "74Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a subject's age, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"aged individuals\" and an \"aged cohort\" but does not state the specific ages of the individuals.",
+        "TRUTH_CHECK": "The specific age \"74Y\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The format follows the definition."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the sex of the individuals.",
+        "TRUTH_CHECK": "The sex of the subjects is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The value follows the format, but it is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the sex of the individuals.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The value follows the format, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a developmental stage, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"aged individuals\" and \"mature adult brains\", and the related age column shows ages between 74 and 86 years.",
+        "TRUTH_CHECK": "The subjects are aged adults.",
+        "COMPLETENESS_CHECK": "Complete. \"adult\" is an allowed inference from the stated ages and text."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that spectra were searched using \"fast LFQ\", which is equivalent to label-free.",
+        "TRUTH_CHECK": "The runs were analyzed using a label-free approach.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002732;NT=Orbitrap Fusion Lumos",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the samples were analyzed on a Thermo Orbitrap Fusion Lumos.",
+        "TRUTH_CHECK": "The instrument is correct for the runs listed.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state \"Trypsin was added to the protein lysate sample\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the samples analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a proteomics workflow using trypsin digestion and LC-MS/MS, which allows inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the mass spectrometry experiment performed on the brain samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Carbamidomethyl was set as a fixed modification.\"",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;AC;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-Term;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper only mentions Carbamidomethyl as a fixed modification; Acetyl is not mentioned.",
+        "TRUTH_CHECK": "The modification was not used in the search described in the paper.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper only mentions Carbamidomethyl as a fixed modification; Oxidation is not mentioned.",
+        "TRUTH_CHECK": "Not searched in the described experiment.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions a \"25ppm mass tolerance\" in the LC-MS/MS section regarding tandem MS isolation, but it does not state the precursor mass tolerance used during the database search in MaxQuant.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Format is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.5 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"0.5 Da MS2 match tolerance\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "20171002_JMM_A146_1.raw = 1 | 20171002_JMM_A146_2.raw = 1 | 20171002_JMM_A146_3.raw = 1 | 20171002_JMM_A146_4.raw = 1 | 20171002_JMM_A146_5.raw = 1 | 20171002_JMM_A146_6.raw = 1 | 20171002_JMM_A146_7.raw = 1 | 20171002_JMM_A146_8.raw = 1 | 20171002_JMM_A146_9.raw = 1 | 20171002_JMM_A146_10.raw = 1 | 20171002_JMM_A146_11.raw = 1 | 20171002_JMM_A146_12.raw = 1 | 20171002_JMM_C146_1.raw = 1 | 20171002_JMM_C146_2.raw = 1 | 20171002_JMM_C146_3.raw = 1 | 20171002_JMM_C146_4.raw = 1 | 20171002_JMM_C146_5.raw = 1 | 20171002_JMM_C146_6.raw = 1 | 20171002_JMM_C146_7.raw = 1 | 20171002_JMM_C146_8.raw = 1 | 20171002_JMM_C146_9.raw = 1 | 20171002_JMM_C146_10.raw = 1 | 20171002_JMM_C146_11.raw = 1 | 20171002_JMM_C146_12.raw = 1 | 20171002_JMM_CN146_1.raw = 1 | 20171002_JMM_CN146_2.raw = 1 | 20171002_JMM_CN146_3.raw = 1 | 20171002_JMM_CN146_4.raw = 1 | 20171002_JMM_CN146_5.raw = 1 | 20171002_JMM_CN146_6.raw = 1 | 20171002_JMM_CN146_7.raw = 1 | 20171002_JMM_CN146_8.raw = 1 | 20171002_JMM_CN146_9.raw = 1 | 20171002_JMM_CN146_10.raw = 1 | 20171002_JMM_CN146_11.raw = 1 | 20171002_JMM_CN146_12.raw = 1 | 20171002_JMM_EC146_1.raw = 1 | 20171002_JMM_EC146_2.raw = 1 | 20171002_JMM_EC146_3.raw = 1 | 20171002_JMM_EC146_4.raw = 1 | 20171002_JMM_EC146_5.raw = 1 | 20171002_JMM_EC146_6.raw = 1 | 20171002_JMM_EC146_7.raw = 1 | 20171002_JMM_EC146_8.raw = 1 | 20171002_JMM_EC146_9.raw = 1 | 20171002_JMM_EC146_10.raw = 1 | 20171002_JMM_EC146_11.raw = 1 | 20171002_JMM_EC146_12.raw = 1 | 20171017_JMM_IPL146_1.raw = 1 | 20171017_JMM_IPL146_2.raw = 1 | 20171017_JMM_IPL146_3.raw = 1 | 20171017_JMM_IPL146_4.raw = 1 | 20171017_JMM_IPL146_5.raw = 1 | 20171017_JMM_IPL146_6.raw = 1 | 20171017_JMM_IPL146_7.raw = 1 | 20171017_JMM_IPL146_8.raw = 1 | 20171017_JMM_IPL146_9.raw = 1 | 20171017_JMM_IPL146_10.raw = 1 | 20171017_JMM_IPL146_11.raw = 1 | 20171017_JMM_IPL146_12.raw = 1 | 20171018_JMM_MFG146_1.raw = 1 | 20171018_JMM_MFG146_2.raw = 1 | 20171018_JMM_MFG146_3.raw = 1 | 20171018_JMM_MFG146_4.raw = 1 | 20171018_JMM_MFG146_5.raw = 1 | 20171018_JMM_MFG146_6.raw = 1 | 20171018_JMM_MFG146_7.raw = 1 | 20171018_JMM_MFG146_8.raw = 1 | 20171018_JMM_MFG146_9.raw = 1 | 20171018_JMM_MFG146_10.raw = 1 | 20171018_JMM_MFG146_11.raw = 1 | 20171018_JMM_MFG146_12.raw = 1 | 20171018_JMM_STG146_1.raw = 1 | 20171018_JMM_STG146_2.raw = 1 | 20171018_JMM_STG146_3.raw = 1 | 20171018_JMM_STG146_4.raw = 1 | 20171018_JMM_STG146_5.raw = 1 | 20171018_JMM_STG146_6.raw = 1 | 20171018_JMM_STG146_7.raw = 1 | 20171018_JMM_STG146_8.raw = 1 | 20171018_JMM_STG146_9.raw = 1 | 20171018_JMM_STG146_10.raw = 1 | 20171018_JMM_STG146_11.raw = 1 | 20171018_JMM_STG146_12.raw = 1 | 20171019_JMM_T146_1.raw = 1 | 20171019_JMM_T146_2.raw = 1 | 20171019_JMM_T146_3.raw = 1 | 20171019_JMM_T146_4.raw = 1 | 20171019_JMM_T146_5.raw = 1 | 20171019_JMM_T146_6.raw = 1 | 20171019_JMM_T146_7.raw = 1 | 20171019_JMM_T146_8.raw = 1 | 20171019_JMM_T146_9.raw = 1 | 20171019_JMM_T146_10.raw = 1 | 20171019_JMM_T146_11.raw = 1 | 20171019_JMM_T146_12.raw = 1 | 20171025_JMM_VC146_1.raw = 1 | 20171025_JMM_VC146_2.raw = 1 | 20171025_JMM_VC146_3.raw = 1 | 20171025_JMM_VC146_4.raw = 1 | 20171025_JMM_VC146_5.raw = 1 | 20171025_JMM_VC146_6.raw = 1 | 20171025_JMM_VC146_7.raw = 1 | 20171025_JMM_VC146_8.raw = 1 | 20171025_JMM_VC146_9.raw = 1 | 20171025_JMM_VC146_10.raw = 1 | 20171025_JMM_VC146_11.raw = 1 | 20171025_JMM_VC146_12.raw = 1 | 20171026_JMM_A383_1.raw = 2 | 20171026_JMM_A383_2.raw = 2 | 20171026_JMM_A383_3.raw = 2 | 20171026_JMM_A383_4.raw = 2 | 20171026_JMM_A383_5.raw = 2 | 20171026_JMM_A383_6.raw = 2 | 20171026_JMM_A383_7.raw = 2 | 20171026_JMM_A383_8.raw = 2 | 20171026_JMM_A383_9.raw = 2 | 20171026_JMM_A383_10.raw = 2 | 20171026_JMM_A383_11.raw = 2 | 20171026_JMM_A383_12.raw = 2 | 20171026_JMM_C383_1.raw = 2 | 20171026_JMM_C383_2.raw = 2 | 20171026_JMM_C383_3.raw = 2 | 20171026_JMM_C383_4.raw = 2 | 20171026_JMM_C383_5.raw = 2 | 20171026_JMM_C383_6.raw = 2 | 20171026_JMM_C383_7.raw = 2 | 20171026_JMM_C383_8.raw = 2 | 20171026_JMM_C383_9.raw = 2 | 20171026_JMM_C383_10.raw = 2 | 20171026_JMM_C383_11.raw = 2 | 20171026_JMM_C383_12.raw = 2 | 20171026_JMM_CN383_1.raw = 2 | 20171026_JMM_CN383_2.raw = 2 | 20171026_JMM_CN383_3.raw = 2 | 20171026_JMM_CN383_4.raw = 2 | 20171026_JMM_CN383_5.raw = 2 | 20171026_JMM_CN383_6.raw = 2 | 20171026_JMM_CN383_7.raw = 2 | 20171026_JMM_CN383_8.raw = 2 | 20171026_JMM_CN383_9.raw = 2 | 20171026_JMM_CN383_10.raw = 2 | 20171026_JMM_CN383_11.raw = 2 | 20171026_JMM_CN383_12.raw = 2 | 20171026_JMM_EC383_1_20171030180857.raw = 2 | 20171026_JMM_EC383_2_20171030194117.raw = 2 | 20171026_JMM_EC383_3_20171030211337.raw = 2 | 20171026_JMM_EC383_4_20171030224557.raw = 2 | 20171026_JMM_EC383_5_20171031001818.raw = 2 | 20171026_JMM_EC383_6_20171031015038.raw = 2 | 20171026_JMM_EC383_7_20171031032258.raw = 2 | 20171026_JMM_EC383_8_20171031045518.raw = 2 | 20171026_JMM_EC383_9_20171031062739.raw = 2 | 20171026_JMM_EC383_10_20171031080000.raw = 2 | 20171026_JMM_EC383_11_20171031093221.raw = 2 | 20171026_JMM_EC383_12.raw = 2 | 20171026_JMM_IPL383_1.raw = 2 | 20171026_JMM_IPL383_2.raw = 2 | 20171026_JMM_IPL383_3.raw = 2 | 20171026_JMM_IPL383_4.raw = 2 | 20171026_JMM_IPL383_5.raw = 2 | 20171026_JMM_IPL383_6.raw = 2 | 20171026_JMM_IPL383_7.raw = 2 | 20171026_JMM_IPL383_8.raw = 2 | 20171026_JMM_IPL383_9.raw = 2 | 20171026_JMM_IPL383_10.raw = 2 | 20171026_JMM_IPL383_11.raw = 2 | 20171026_JMM_IPL383_12.raw = 2 | 20171101_JMM_MFG383_1.raw = 2 | 20171101_JMM_MFG383_2.raw = 2 | 20171101_JMM_MFG383_3.raw = 2 | 20171101_JMM_MFG383_4.raw = 2 | 20171101_JMM_MFG383_5.raw = 2 | 20171101_JMM_MFG383_6.raw = 2 | 20171101_JMM_MFG383_7.raw = 2 | 20171101_JMM_MFG383_8.raw = 2 | 20171101_JMM_MFG383_9.raw = 2 | 20171101_JMM_MFG383_10.raw = 2 | 20171101_JMM_MFG383_11.raw = 2 | 20171101_JMM_MFG383_12.raw = 2 | 20171101_JMM_STG383_1.raw = 2 | 20171101_JMM_STG383_2.raw = 2 | 20171101_JMM_STG383_3.raw = 2 | 20171101_JMM_STG383_4.raw = 2 | 20171101_JMM_STG383_5.raw = 2 | 20171101_JMM_STG383_6.raw = 2 | 20171101_JMM_STG383_7.raw = 2 | 20171101_JMM_STG383_8.raw = 2 | 20171101_JMM_STG383_9.raw = 2 | 20171101_JMM_STG383_10.raw = 2 | 20171101_JMM_STG383_11.raw = 2 | 20171101_JMM_STG383_12.raw = 2 | 20171102_JMM_T383_1.raw = 2 | 20171102_JMM_T383_2.raw = 2 | 20171102_JMM_T383_3.raw = 2 | 20171102_JMM_T383_4.raw = 2 | 20171102_JMM_T383_5.raw = 2 | 20171102_JMM_T383_6.raw = 2 | 20171102_JMM_T383_7.raw = 2 | 20171102_JMM_T383_8.raw = 2 | 20171102_JMM_T383_9.raw = 2 | 20171102_JMM_T383_10.raw = 2 | 20171102_JMM_T383_11.raw = 2 | 20171102_JMM_T383_12.raw = 2 | 20171103_JMM_VC383_1.raw = 2 | 20171103_JMM_VC383_2.raw = 2 | 20171103_JMM_VC383_3.raw = 2 | 20171103_JMM_VC383_4.raw = 2 | 20171103_JMM_VC383_5.raw = 2 | 20171103_JMM_VC383_6.raw = 2 | 20171103_JMM_VC383_7.raw = 2 | 20171103_JMM_VC383_8.raw = 2 | 20171103_JMM_VC383_9.raw = 2 | 20171103_JMM_VC383_10.raw = 2 | 20171103_JMM_VC383_11.raw = 2 | 20171103_JMM_VC383_12.raw = 2 | 20171103_JMM_A405_1.raw = 3 | 20171103_JMM_A405_2.raw = 3 | 20171103_JMM_A405_3.raw = 3 | 20171103_JMM_A405_4.raw = 3 | 20171103_JMM_A405_5.raw = 3 | 20171103_JMM_A405_6.raw = 3 | 20171103_JMM_A405_7.raw = 3 | 20171103_JMM_A405_8.raw = 3 | 20171103_JMM_A405_9.raw = 3 | 20171103_JMM_A405_10.raw = 3 | 20171103_JMM_A405_11.raw = 3 | 20171103_JMM_A405_12.raw = 3 | 20171113_JMM_CN405_1.raw = 3 | 20171113_JMM_CN405_2.raw = 3 | 20171113_JMM_CN405_3.raw = 3 | 20171113_JMM_CN405_4.raw = 3 | 20171113_JMM_CN405_5.raw = 3 | 20171113_JMM_CN405_6.raw = 3 | 20171113_JMM_CN405_7.raw = 3 | 20171113_JMM_CN405_8.raw = 3 | 20171113_JMM_CN405_9.raw = 3 | 20171116_JMM_CN405_10.raw = 3 | 20171113_JMM_CN405_11.raw = 3 | 20171113_JMM_CN405_12.raw = 3 | 20171114_JMM_EC405_1.raw = 3 | 20171114_JMM_EC405_2.raw = 3 | 20171114_JMM_EC405_3.raw = 3 | 20171114_JMM_EC405_4.raw = 3 | 20171114_JMM_EC405_5.raw = 3 | 20171114_JMM_EC405_6.raw = 3 | 20171114_JMM_EC405_7.raw = 3 | 20171114_JMM_EC405_8.raw = 3 | 20171114_JMM_EC405_9.raw = 3 | 20171114_JMM_EC405_10.raw = 3 | 20171114_JMM_EC405_11.raw = 3 | 20171114_JMM_EC405_12.raw = 3 | 20171114_JMM_IPL405_1.raw = 3 | 20171114_JMM_IPL405_2.raw = 3 | 20171114_JMM_IPL405_3.raw = 3 | 20171114_JMM_IPL405_4.raw = 3 | 20171114_JMM_IPL405_5.raw = 3 | 20171114_JMM_IPL405_6.raw = 3 | 20171114_JMM_IPL405_7.raw = 3 | 20171114_JMM_IPL405_8.raw = 3 | 20171114_JMM_IPL405_9.raw = 3 | 20171114_JMM_IPL405_10.raw = 3 | 20171114_JMM_IPL405_11.raw = 3 | 20171114_JMM_IPL405_12.raw = 3 | 20171115_JMM_MFG405_1.raw = 3 | 20171115_JMM_MFG405_2.raw = 3 | 20171115_JMM_MFG405_3.raw = 3 | 20171115_JMM_MFG405_4.raw = 3 | 20171115_JMM_MFG405_5.raw = 3 | 20171115_JMM_MFG405_6.raw = 3 | 20171115_JMM_MFG405_7.raw = 3 | 20171115_JMM_MFG405_8.raw = 3 | 20171115_JMM_MFG405_9.raw = 3 | 20171115_JMM_MFG405_10.raw = 3 | 20171115_JMM_MFG405_11.raw = 3 | 20171115_JMM_MFG405_12.raw = 3 | 20171116_JMM_STG405_1.raw = 3 | 20171116_JMM_STG405_2.raw = 3 | 20171116_JMM_STG405_3.raw = 3 | 20171116_JMM_STG405_4.raw = 3 | 20171116_JMM_STG405_5.raw = 3 | 20171116_JMM_STG405_6.raw = 3 | 20171116_JMM_STG405_7.raw = 3 | 20171116_JMM_STG405_8.raw = 3 | 20171116_JMM_STG405_9.raw = 3 | 20171116_JMM_STG405_10.raw = 3 | 20171116_JMM_STG405_11.raw = 3 | 20171116_JMM_STG405_12.raw = 3 | 20171117_JMM_T405_1.raw = 3 | 20171117_JMM_T405_2.raw = 3 | 20171117_JMM_T405_3.raw = 3 | 20171117_JMM_T405_4.raw = 3 | 20171117_JMM_T405_5.raw = 3 | 20171117_JMM_T405_6.raw = 3 | 20171117_JMM_T405_7.raw = 3 | 20171117_JMM_T405_8.raw = 3 | 20171117_JMM_T405_9.raw = 3 | 20171117_JMM_T405_10.raw = 3 | 20171117_JMM_T405_11.raw = 3 | 20171117_JMM_T405_12.raw = 3 | 20171117_JMM_VC405_1.raw = 3 | 20171117_JMM_VC405_2.raw = 3 | 20171117_JMM_VC405_3.raw = 3 | 20171117_JMM_VC405_4.raw = 3 | 20171117_JMM_VC405_5.raw = 3 | 20171117_JMM_VC405_6.raw = 3 | 20171117_JMM_VC405_7.raw = 3 | 20171117_JMM_VC405_8.raw = 3 | 20171117_JMM_VC405_9.raw = 3 | 20171117_JMM_VC405_10.raw = 3 | 20171117_JMM_VC405_11.raw = 3 | 20171117_JMM_VC405_12.raw = 3 | 20181130_JMM_199E.raw = 4 | 20181201_JMM_199N.raw = 4 | 20181130_JMM_254E.raw = 5 | 20181130_JMM_254N.raw = 6 | 20181130_JMM_343E.raw = 6 | 20181130_JMM_343N.raw = 6 | 20181201_JMM_372E.raw = 7 | 20181201_JMM_372N.raw = 7 | 20181130_JMM_384E.raw = 8 | 20181201_JMM_384N.raw = 8 | 20181201_JMM_403E.raw = 9 | 20181130_JMM_403N.raw = 9 | 20181202_JMM_440E.raw = 10 | 20181201_JMM_440N.raw = 10",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states the study used three aged individuals.",
+        "TRUTH_CHECK": "The mapping assigns runs to 10 different biological replicates, but the paper explicitly states the resource comprises samples from three aged individuals.",
+        "COMPLETENESS_CHECK": "The format is correct, but the mapping contradicts the paper's stated sample size."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20171002_JMM_A146_1.raw = 1 | 20171002_JMM_A146_2.raw = 1 | 20171002_JMM_A146_3.raw = 1 | 20171002_JMM_A146_4.raw = 1 | 20171002_JMM_A146_5.raw = 1 | 20171002_JMM_A146_6.raw = 1 | 20171002_JMM_A146_7.raw = 1 | 20171002_JMM_A146_8.raw = 1 | 20171002_JMM_A146_9.raw = 1 | 20171002_JMM_A146_10.raw = 1 | 20171002_JMM_A146_11.raw = 1 | 20171002_JMM_A146_12.raw = 1 | 20171002_JMM_C146_1.raw = 1 | 20171002_JMM_C146_2.raw = 1 | 20171002_JMM_C146_3.raw = 1 | 20171002_JMM_C146_4.raw = 1 | 20171002_JMM_C146_5.raw = 1 | 20171002_JMM_C146_6.raw = 1 | 20171002_JMM_C146_7.raw = 1 | 20171002_JMM_C146_8.raw = 1 | 20171002_JMM_C146_9.raw = 1 | 20171002_JMM_C146_10.raw = 1 | 20171002_JMM_C146_11.raw = 1 | 20171002_JMM_C146_12.raw = 1 | 20171002_JMM_CN146_1.raw = 1 | 20171002_JMM_CN146_2.raw = 1 | 20171002_JMM_CN146_3.raw = 1 | 20171002_JMM_CN146_4.raw = 1 | 20171002_JMM_CN146_5.raw = 1 | 20171002_JMM_CN146_6.raw = 1 | 20171002_JMM_CN146_7.raw = 1 | 20171002_JMM_CN146_8.raw = 1 | 20171002_JMM_CN146_9.raw = 1 | 20171002_JMM_CN146_10.raw = 1 | 20171002_JMM_CN146_11.raw = 1 | 20171002_JMM_CN146_12.raw = 1 | 20171002_JMM_EC146_1.raw = 1 | 20171002_JMM_EC146_2.raw = 1 | 20171002_JMM_EC146_3.raw = 1 | 20171002_JMM_EC146_4.raw = 1 | 20171002_JMM_EC146_5.raw = 1 | 20171002_JMM_EC146_6.raw = 1 | 20171002_JMM_EC146_7.raw = 1 | 20171002_JMM_EC146_8.raw = 1 | 20171002_JMM_EC146_9.raw = 1 | 20171002_JMM_EC146_10.raw = 1 | 20171002_JMM_EC146_11.raw = 1 | 20171002_JMM_EC146_12.raw = 1 | 20171017_JMM_IPL146_1.raw = 1 | 20171017_JMM_IPL146_2.raw = 1 | 20171017_JMM_IPL146_3.raw = 1 | 20171017_JMM_IPL146_4.raw = 1 | 20171017_JMM_IPL146_5.raw = 1 | 20171017_JMM_IPL146_6.raw = 1 | 20171017_JMM_IPL146_7.raw = 1 | 20171017_JMM_IPL146_8.raw = 1 | 20171017_JMM_IPL146_9.raw = 1 | 20171017_JMM_IPL146_10.raw = 1 | 20171017_JMM_IPL146_11.raw = 1 | 20171017_JMM_IPL146_12.raw = 1 | 20171018_JMM_MFG146_1.raw = 1 | 20171018_JMM_MFG146_2.raw = 1 | 20171018_JMM_MFG146_3.raw = 1 | 20171018_JMM_MFG146_4.raw = 1 | 20171018_JMM_MFG146_5.raw = 1 | 20171018_JMM_MFG146_6.raw = 1 | 20171018_JMM_MFG146_7.raw = 1 | 20171018_JMM_MFG146_8.raw = 1 | 20171018_JMM_MFG146_9.raw = 1 | 20171018_JMM_MFG146_10.raw = 1 | 20171018_JMM_MFG146_11.raw = 1 | 20171018_JMM_MFG146_12.raw = 1 | 20171018_JMM_STG146_1.raw = 1 | 20171018_JMM_STG146_2.raw = 1 | 20171018_JMM_STG146_3.raw = 1 | 20171018_JMM_STG146_4.raw = 1 | 20171018_JMM_STG146_5.raw = 1 | 20171018_JMM_STG146_6.raw = 1 | 20171018_JMM_STG146_7.raw = 1 | 20171018_JMM_STG146_8.raw = 1 | 20171018_JMM_STG146_9.raw = 1 | 20171018_JMM_STG146_10.raw = 1 | 20171018_JMM_STG146_11.raw = 1 | 20171018_JMM_STG146_12.raw = 1 | 20171019_JMM_T146_1.raw = 1 | 20171019_JMM_T146_2.raw = 1 | 20171019_JMM_T146_3.raw = 1 | 20171019_JMM_T146_4.raw = 1 | 20171019_JMM_T146_5.raw = 1 | 20171019_JMM_T146_6.raw = 1 | 20171019_JMM_T146_7.raw = 1 | 20171019_JMM_T146_8.raw = 1 | 20171019_JMM_T146_9.raw = 1 | 20171019_JMM_T146_10.raw = 1 | 20171019_JMM_T146_11.raw = 1 | 20171019_JMM_T146_12.raw = 1 | 20171025_JMM_VC146_1.raw = 1 | 20171025_JMM_VC146_2.raw = 1 | 20171025_JMM_VC146_3.raw = 1 | 20171025_JMM_VC146_4.raw = 1 | 20171025_JMM_VC146_5.raw = 1 | 20171025_JMM_VC146_6.raw = 1 | 20171025_JMM_VC146_7.raw = 1 | 20171025_JMM_VC146_8.raw = 1 | 20171025_JMM_VC146_9.raw = 1 | 20171025_JMM_VC146_10.raw = 1 | 20171025_JMM_VC146_11.raw = 1 | 20171025_JMM_VC146_12.raw = 1 | 20171026_JMM_A383_1.raw = 2 | 20171026_JMM_A383_2.raw = 2 | 20171026_JMM_A383_3.raw = 2 | 20171026_JMM_A383_4.raw = 2 | 20171026_JMM_A383_5.raw = 2 | 20171026_JMM_A383_6.raw = 2 | 20171026_JMM_A383_7.raw = 2 | 20171026_JMM_A383_8.raw = 2 | 20171026_JMM_A383_9.raw = 2 | 20171026_JMM_A383_10.raw = 2 | 20171026_JMM_A383_11.raw = 2 | 20171026_JMM_A383_12.raw = 2 | 20171026_JMM_C383_1.raw = 2 | 20171026_JMM_C383_2.raw = 2 | 20171026_JMM_C383_3.raw = 2 | 20171026_JMM_C383_4.raw = 2 | 20171026_JMM_C383_5.raw = 2 | 20171026_JMM_C383_6.raw = 2 | 20171026_JMM_C383_7.raw = 2 | 20171026_JMM_C383_8.raw = 2 | 20171026_JMM_C383_9.raw = 2 | 20171026_JMM_C383_10.raw = 2 | 20171026_JMM_C383_11.raw = 2 | 20171026_JMM_C383_12.raw = 2 | 20171026_JMM_CN383_1.raw = 2 | 20171026_JMM_CN383_2.raw = 2 | 20171026_JMM_CN383_3.raw = 2 | 20171026_JMM_CN383_4.raw = 2 | 20171026_JMM_CN383_5.raw = 2 | 20171026_JMM_CN383_6.raw = 2 | 20171026_JMM_CN383_7.raw = 2 | 20171026_JMM_CN383_8.raw = 2 | 20171026_JMM_CN383_9.raw = 2 | 20171026_JMM_CN383_10.raw = 2 | 20171026_JMM_CN383_11.raw = 2 | 20171026_JMM_CN383_12.raw = 2 | 20171026_JMM_EC383_1_20171030180857.raw = 2 | 20171026_JMM_EC383_2_20171030194117.raw = 2 | 20171026_JMM_EC383_3_20171030211337.raw = 2 | 20171026_JMM_EC383_4_20171030224557.raw = 2 | 20171026_JMM_EC383_5_20171031001818.raw = 2 | 20171026_JMM_EC383_6_20171031015038.raw = 2 | 20171026_JMM_EC383_7_20171031032258.raw = 2 | 20171026_JMM_EC383_8_20171031045518.raw = 2 | 20171026_JMM_EC383_9_20171031062739.raw = 2 | 20171026_JMM_EC383_10_20171031080000.raw = 2 | 20171026_JMM_EC383_11_20171031093221.raw = 2 | 20171026_JMM_EC383_12.raw = 2 | 20171026_JMM_IPL383_1.raw = 2 | 20171026_JMM_IPL383_2.raw = 2 | 20171026_JMM_IPL383_3.raw = 2 | 20171026_JMM_IPL383_4.raw = 2 | 20171026_JMM_IPL383_5.raw = 2 | 20171026_JMM_IPL383_6.raw = 2 | 20171026_JMM_IPL383_7.raw = 2 | 20171026_JMM_IPL383_8.raw = 2 | 20171026_JMM_IPL383_9.raw = 2 | 20171026_JMM_IPL383_10.raw = 2 | 20171026_JMM_IPL383_11.raw = 2 | 20171026_JMM_IPL383_12.raw = 2 | 20171101_JMM_MFG383_1.raw = 2 | 20171101_JMM_MFG383_2.raw = 2 | 20171101_JMM_MFG383_3.raw = 2 | 20171101_JMM_MFG383_4.raw = 2 | 20171101_JMM_MFG383_5.raw = 2 | 20171101_JMM_MFG383_6.raw = 2 | 20171101_JMM_MFG383_7.raw = 2 | 20171101_JMM_MFG383_8.raw = 2 | 20171101_JMM_MFG383_9.raw = 2 | 20171101_JMM_MFG383_10.raw = 2 | 20171101_JMM_MFG383_11.raw = 2 | 20171101_JMM_MFG383_12.raw = 2 | 20171101_JMM_STG383_1.raw = 2 | 20171101_JMM_STG383_2.raw = 2 | 20171101_JMM_STG383_3.raw = 2 | 20171101_JMM_STG383_4.raw = 2 | 20171101_JMM_STG383_5.raw = 2 | 20171101_JMM_STG383_6.raw = 2 | 20171101_JMM_STG383_7.raw = 2 | 20171101_JMM_STG383_8.raw = 2 | 20171101_JMM_STG383_9.raw = 2 | 20171101_JMM_STG383_10.raw = 2 | 20171101_JMM_STG383_11.raw = 2 | 20171101_JMM_STG383_12.raw = 2 | 20171102_JMM_T383_1.raw = 2 | 20171102_JMM_T383_2.raw = 2 | 20171102_JMM_T383_3.raw = 2 | 20171102_JMM_T383_4.raw = 2 | 20171102_JMM_T383_5.raw = 2 | 20171102_JMM_T383_6.raw = 2 | 20171102_JMM_T383_7.raw = 2 | 20171102_JMM_T383_8.raw = 2 | 20171102_JMM_T383_9.raw = 2 | 20171102_JMM_T383_10.raw = 2 | 20171102_JMM_T383_11.raw = 2 | 20171102_JMM_T383_12.raw = 2 | 20171103_JMM_VC383_1.raw = 2 | 20171103_JMM_VC383_2.raw = 2 | 20171103_JMM_VC383_3.raw = 2 | 20171103_JMM_VC383_4.raw = 2 | 20171103_JMM_VC383_5.raw = 2 | 20171103_JMM_VC383_6.raw = 2 | 20171103_JMM_VC383_7.raw = 2 | 20171103_JMM_VC383_8.raw = 2 | 20171103_JMM_VC383_9.raw = 2 | 20171103_JMM_VC383_10.raw = 2 | 20171103_JMM_VC383_11.raw = 2 | 20171103_JMM_VC383_12.raw = 2 | 20171103_JMM_A405_1.raw = 3 | 20171103_JMM_A405_2.raw = 3 | 20171103_JMM_A405_3.raw = 3 | 20171103_JMM_A405_4.raw = 3 | 20171103_JMM_A405_5.raw = 3 | 20171103_JMM_A405_6.raw = 3 | 20171103_JMM_A405_7.raw = 3 | 20171103_JMM_A405_8.raw = 3 | 20171103_JMM_A405_9.raw = 3 | 20171103_JMM_A405_10.raw = 3 | 20171103_JMM_A405_11.raw = 3 | 20171103_JMM_A405_12.raw = 3 | 20171113_JMM_CN405_1.raw = 3 | 20171113_JMM_CN405_2.raw = 3 | 20171113_JMM_CN405_3.raw = 3 | 20171113_JMM_CN405_4.raw = 3 | 20171113_JMM_CN405_5.raw = 3 | 20171113_JMM_CN405_6.raw = 3 | 20171113_JMM_CN405_7.raw = 3 | 20171113_JMM_CN405_8.raw = 3 | 20171113_JMM_CN405_9.raw = 3 | 20171116_JMM_CN405_10.raw = 3 | 20171113_JMM_CN405_11.raw = 3 | 20171113_JMM_CN405_12.raw = 3 | 20171114_JMM_EC405_1.raw = 3 | 20171114_JMM_EC405_2.raw = 3 | 20171114_JMM_EC405_3.raw = 3 | 20171114_JMM_EC405_4.raw = 3 | 20171114_JMM_EC405_5.raw = 3 | 20171114_JMM_EC405_6.raw = 3 | 20171114_JMM_EC405_7.raw = 3 | 20171114_JMM_EC405_8.raw = 3 | 20171114_JMM_EC405_9.raw = 3 | 20171114_JMM_EC405_10.raw = 3 | 20171114_JMM_EC405_11.raw = 3 | 20171114_JMM_EC405_12.raw = 3 | 20171114_JMM_IPL405_1.raw = 3 | 20171114_JMM_IPL405_2.raw = 3 | 20171114_JMM_IPL405_3.raw = 3 | 20171114_JMM_IPL405_4.raw = 3 | 20171114_JMM_IPL405_5.raw = 3 | 20171114_JMM_IPL405_6.raw = 3 | 20171114_JMM_IPL405_7.raw = 3 | 20171114_JMM_IPL405_8.raw = 3 | 20171114_JMM_IPL405_9.raw = 3 | 20171114_JMM_IPL405_10.raw = 3 | 20171114_JMM_IPL405_11.raw = 3 | 20171114_JMM_IPL405_12.raw = 3 | 20171115_JMM_MFG405_1.raw = 3 | 20171115_JMM_MFG405_2.raw = 3 | 20171115_JMM_MFG405_3.raw = 3 | 20171115_JMM_MFG405_4.raw = 3 | 20171115_JMM_MFG405_5.raw = 3 | 20171115_JMM_MFG405_6.raw = 3 | 20171115_JMM_MFG405_7.raw = 3 | 20171115_JMM_MFG405_8.raw = 3 | 20171115_JMM_MFG405_9.raw = 3 | 20171115_JMM_MFG405_10.raw = 3 | 20171115_JMM_MFG405_11.raw = 3 | 20171115_JMM_MFG405_12.raw = 3 | 20171116_JMM_STG405_1.raw = 3 | 20171116_JMM_STG405_2.raw = 3 | 20171116_JMM_STG405_3.raw = 3 | 20171116_JMM_STG405_4.raw = 3 | 20171116_JMM_STG405_5.raw = 3 | 20171116_JMM_STG405_6.raw = 3 | 20171116_JMM_STG405_7.raw = 3 | 20171116_JMM_STG405_8.raw = 3 | 20171116_JMM_STG405_9.raw = 3 | 20171116_JMM_STG405_10.raw = 3 | 20171116_JMM_STG405_11.raw = 3 | 20171116_JMM_STG405_12.raw = 3 | 20171117_JMM_T405_1.raw = 3 | 20171117_JMM_T405_2.raw = 3 | 20171117_JMM_T405_3.raw = 3 | 20171117_JMM_T405_4.raw = 3 | 20171117_JMM_T405_5.raw = 3 | 20171117_JMM_T405_6.raw = 3 | 20171117_JMM_T405_7.raw = 3 | 20171117_JMM_T405_8.raw = 3 | 20171117_JMM_T405_9.raw = 3 | 20171117_JMM_T405_10.raw = 3 | 20171117_JMM_T405_11.raw = 3 | 20171117_JMM_T405_12.raw = 3 | 20171117_JMM_VC405_1.raw = 3 | 20171117_JMM_VC405_2.raw = 3 | 20171117_JMM_VC405_3.raw = 3 | 20171117_JMM_VC405_4.raw = 3 | 20171117_JMM_VC405_5.raw = 3 | 20171117_JMM_VC405_6.raw = 3 | 20171117_JMM_VC405_7.raw = 3 | 20171117_JMM_VC405_8.raw = 3 | 20171117_JMM_VC405_9.raw = 3 | 20171117_JMM_VC405_10.raw = 3 | 20171117_JMM_VC405_11.raw = 3 | 20171117_JMM_VC405_12.raw = 3 | 20181130_JMM_199E.raw = 4 | 20181201_JMM_199N.raw = 4 | 20181130_JMM_254E.raw = 5 | 20181130_JMM_254N.raw = 6 | 20181130_JMM_343E.raw = 6 | 20181130_JMM_343N.raw = 6 | 20181201_JMM_372E.raw = 7 | 20181201_JMM_372N.raw = 7 | 20181130_JMM_384E.raw = 8 | 20181201_JMM_384N.raw = 8 | 20181201_JMM_403E.raw = 9 | 20181130_JMM_403N.raw = 9 | 20181202_JMM_440E.raw = 10 | 20181201_JMM_440N.raw = 10",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes three aged individuals and a secondary cohort, but does not explicitly state the number of technical replicates per sample.",
+        "TRUTH_CHECK": "The mapping assigns different technical replicate indices (1-10) to runs from the same source (PXD012131-Sample-1). However, the runs are clearly fractions (e.g., _1.raw to _12.raw) and different brain regions (A, C, CN, EC, IPL, MFG, STG, T, VC), not repeated injections of the same material. According to the definition, separate elutions or fractions are not technical replicates.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20171002_JMM_A146_1.raw = 1 | 20171002_JMM_A146_2.raw = 2 | 20171002_JMM_A146_3.raw = 3 | 20171002_JMM_A146_4.raw = 4 | 20171002_JMM_A146_5.raw = 5 | 20171002_JMM_A146_6.raw = 6 | 20171002_JMM_A146_7.raw = 7 | 20171002_JMM_A146_8.raw = 8 | 20171002_JMM_A146_9.raw = 9 | 20171002_JMM_A146_10.raw = 10 | 20171002_JMM_A146_11.raw = 11 | 20171002_JMM_A146_12.raw = 12 | 20171002_JMM_C146_1.raw = 13 | 20171002_JMM_C146_2.raw = 14 | 20171002_JMM_C146_3.raw = 15 | 20171002_JMM_C146_4.raw = 16 | 20171002_JMM_C146_5.raw = 17 | 20171002_JMM_C146_6.raw = 18 | 20171002_JMM_C146_7.raw = 19 | 20171002_JMM_C146_8.raw = 20 | 20171002_JMM_C146_9.raw = 21 | 20171002_JMM_C146_10.raw = 22 | 20171002_JMM_C146_11.raw = 23 | 20171002_JMM_C146_12.raw = 24 | 20171002_JMM_CN146_1.raw = 25 | 20171002_JMM_CN146_2.raw = 26 | 20171002_JMM_CN146_3.raw = 27 | 20171002_JMM_CN146_4.raw = 28 | 20171002_JMM_CN146_5.raw = 29 | 20171002_JMM_CN146_6.raw = 30 | 20171002_JMM_CN146_7.raw = 31 | 20171002_JMM_CN146_8.raw = 32 | 20171002_JMM_CN146_9.raw = 33 | 20171002_JMM_CN146_10.raw = 34 | 20171002_JMM_CN146_11.raw = 35 | 20171002_JMM_CN146_12.raw = 36 | 20171002_JMM_EC146_1.raw = 37 | 20171002_JMM_EC146_2.raw = 38 | 20171002_JMM_EC146_3.raw = 39 | 20171002_JMM_EC146_4.raw = 40 | 20171002_JMM_EC146_5.raw = 41 | 20171002_JMM_EC146_6.raw = 42 | 20171002_JMM_EC146_7.raw = 43 | 20171002_JMM_EC146_8.raw = 44 | 20171002_JMM_EC146_9.raw = 45 | 20171002_JMM_EC146_10.raw = 46 | 20171002_JMM_EC146_11.raw = 47 | 20171002_JMM_EC146_12.raw = 48 | 20171017_JMM_IPL146_1.raw = 49 | 20171017_JMM_IPL146_2.raw = 50 | 20171017_JMM_IPL146_3.raw = 51 | 20171017_JMM_IPL146_4.raw = 52 | 20171017_JMM_IPL146_5.raw = 53 | 20171017_JMM_IPL146_6.raw = 54 | 20171017_JMM_IPL146_7.raw = 55 | 20171017_JMM_IPL146_8.raw = 56 | 20171017_JMM_IPL146_9.raw = 57 | 20171017_JMM_IPL146_10.raw = 58 | 20171017_JMM_IPL146_11.raw = 59 | 20171017_JMM_IPL146_12.raw = 60 | 20171018_JMM_MFG146_1.raw = 61 | 20171018_JMM_MFG146_2.raw = 62 | 20171018_JMM_MFG146_3.raw = 63 | 20171018_JMM_MFG146_4.raw = 64 | 20171018_JMM_MFG146_5.raw = 65 | 20171018_JMM_MFG146_6.raw = 66 | 20171018_JMM_MFG146_7.raw = 67 | 20171018_JMM_MFG146_8.raw = 68 | 20171018_JMM_MFG146_9.raw = 69 | 20171018_JMM_MFG146_10.raw = 70 | 20171018_JMM_MFG146_11.raw = 71 | 20171018_JMM_MFG146_12.raw = 72 | 20171018_JMM_STG146_1.raw = 73 | 20171018_JMM_STG146_2.raw = 74 | 20171018_JMM_STG146_3.raw = 75 | 20171018_JMM_STG146_4.raw = 76 | 20171018_JMM_STG146_5.raw = 77 | 20171018_JMM_STG146_6.raw = 78 | 20171018_JMM_STG146_7.raw = 79 | 20171018_JMM_STG146_8.raw = 80 | 20171018_JMM_STG146_9.raw = 81 | 20171018_JMM_STG146_10.raw = 82 | 20171018_JMM_STG146_11.raw = 83 | 20171018_JMM_STG146_12.raw = 84 | 20171019_JMM_T146_1.raw = 85 | 20171019_JMM_T146_2.raw = 86 | 20171019_JMM_T146_3.raw = 87 | 20171019_JMM_T146_4.raw = 88 | 20171019_JMM_T146_5.raw = 89 | 20171019_JMM_T146_6.raw = 90 | 20171019_JMM_T146_7.raw = 91 | 20171019_JMM_T146_8.raw = 92 | 20171019_JMM_T146_9.raw = 93 | 20171019_JMM_T146_10.raw = 94 | 20171019_JMM_T146_11.raw = 95 | 20171019_JMM_T146_12.raw = 96 | 20171025_JMM_VC146_1.raw = 97 | 20171025_JMM_VC146_2.raw = 98 | 20171025_JMM_VC146_3.raw = 99 | 20171025_JMM_VC146_4.raw = 100 | 20171025_JMM_VC146_5.raw = 101 | 20171025_JMM_VC146_6.raw = 102 | 20171025_JMM_VC146_7.raw = 103 | 20171025_JMM_VC146_8.raw = 104 | 20171025_JMM_VC146_9.raw = 105 | 20171025_JMM_VC146_10.raw = 106 | 20171025_JMM_VC146_11.raw = 107 | 20171025_JMM_VC146_12.raw = 108 | 20171026_JMM_A383_1.raw = 1 | 20171026_JMM_A383_2.raw = 2 | 20171026_JMM_A383_3.raw = 3 | 20171026_JMM_A383_4.raw = 4 | 20171026_JMM_A383_5.raw = 5 | 20171026_JMM_A383_6.raw = 6 | 20171026_JMM_A383_7.raw = 7 | 20171026_JMM_A383_8.raw = 8 | 20171026_JMM_A383_9.raw = 9 | 20171026_JMM_A383_10.raw = 10 | 20171026_JMM_A383_11.raw = 11 | 20171026_JMM_A383_12.raw = 12 | 20171026_JMM_C383_1.raw = 13 | 20171026_JMM_C383_2.raw = 14 | 20171026_JMM_C383_3.raw = 15 | 20171026_JMM_C383_4.raw = 16 | 20171026_JMM_C383_5.raw = 17 | 20171026_JMM_C383_6.raw = 18 | 20171026_JMM_C383_7.raw = 19 | 20171026_JMM_C383_8.raw = 20 | 20171026_JMM_C383_9.raw = 21 | 20171026_JMM_C383_10.raw = 22 | 20171026_JMM_C383_11.raw = 23 | 20171026_JMM_C383_12.raw = 24 | 20171026_JMM_CN383_1.raw = 25 | 20171026_JMM_CN383_2.raw = 26 | 20171026_JMM_CN383_3.raw = 27 | 20171026_JMM_CN383_4.raw = 28 | 20171026_JMM_CN383_5.raw = 29 | 20171026_JMM_CN383_6.raw = 30 | 20171026_JMM_CN383_7.raw = 31 | 20171026_JMM_CN383_8.raw = 32 | 20171026_JMM_CN383_9.raw = 33 | 20171026_JMM_CN383_10.raw = 34 | 20171026_JMM_CN383_11.raw = 35 | 20171026_JMM_CN383_12.raw = 36 | 20171026_JMM_EC383_1_20171030180857.raw = 37 | 20171026_JMM_EC383_2_20171030194117.raw = 38 | 20171026_JMM_EC383_3_20171030211337.raw = 39 | 20171026_JMM_EC383_4_20171030224557.raw = 40 | 20171026_JMM_EC383_5_20171031001818.raw = 41 | 20171026_JMM_EC383_6_20171031015038.raw = 42 | 20171026_JMM_EC383_7_20171031032258.raw = 43 | 20171026_JMM_EC383_8_20171031045518.raw = 44 | 20171026_JMM_EC383_9_20171031062739.raw = 45 | 20171026_JMM_EC383_10_20171031080000.raw = 46 | 20171026_JMM_EC383_11_20171031093221.raw = 47 | 20171026_JMM_EC383_12.raw = 48 | 20171026_JMM_IPL383_1.raw = 49 | 20171026_JMM_IPL383_2.raw = 50 | 20171026_JMM_IPL383_3.raw = 51 | 20171026_JMM_IPL383_4.raw = 52 | 20171026_JMM_IPL383_5.raw = 53 | 20171026_JMM_IPL383_6.raw = 54 | 20171026_JMM_IPL383_7.raw = 55 | 20171026_JMM_IPL383_8.raw = 56 | 20171026_JMM_IPL383_9.raw = 57 | 20171026_JMM_IPL383_10.raw = 58 | 20171026_JMM_IPL383_11.raw = 59 | 20171026_JMM_IPL383_12.raw = 60 | 20171101_JMM_MFG383_1.raw = 61 | 20171101_JMM_MFG383_2.raw = 62 | 20171101_JMM_MFG383_3.raw = 63 | 20171101_JMM_MFG383_4.raw = 64 | 20171101_JMM_MFG383_5.raw = 65 | 20171101_JMM_MFG383_6.raw = 66 | 20171101_JMM_MFG383_7.raw = 67 | 20171101_JMM_MFG383_8.raw = 68 | 20171101_JMM_MFG383_9.raw = 69 | 20171101_JMM_MFG383_10.raw = 70 | 20171101_JMM_MFG383_11.raw = 71 | 20171101_JMM_MFG383_12.raw = 72 | 20171101_JMM_STG383_1.raw = 73 | 20171101_JMM_STG383_2.raw = 74 | 20171101_JMM_STG383_3.raw = 75 | 20171101_JMM_STG383_4.raw = 76 | 20171101_JMM_STG383_5.raw = 77 | 20171101_JMM_STG383_6.raw = 78 | 20171101_JMM_STG383_7.raw = 79 | 20171101_JMM_STG383_8.raw = 80 | 20171101_JMM_STG383_9.raw = 81 | 20171101_JMM_STG383_10.raw = 82 | 20171101_JMM_STG383_11.raw = 83 | 20171101_JMM_STG383_12.raw = 84 | 20171102_JMM_T383_1.raw = 85 | 20171102_JMM_T383_2.raw = 86 | 20171102_JMM_T383_3.raw = 87 | 20171102_JMM_T383_4.raw = 88 | 20171102_JMM_T383_5.raw = 89 | 20171102_JMM_T383_6.raw = 90 | 20171102_JMM_T383_7.raw = 91 | 20171102_JMM_T383_8.raw = 92 | 20171102_JMM_T383_9.raw = 93 | 20171102_JMM_T383_10.raw = 94 | 20171102_JMM_T383_11.raw = 95 | 20171102_JMM_T383_12.raw = 96 | 20171103_JMM_VC383_1.raw = 97 | 20171103_JMM_VC383_2.raw = 98 | 20171103_JMM_VC383_3.raw = 99 | 20171103_JMM_VC383_4.raw = 100 | 20171103_JMM_VC383_5.raw = 101 | 20171103_JMM_VC383_6.raw = 102 | 20171103_JMM_VC383_7.raw = 103 | 20171103_JMM_VC383_8.raw = 104 | 20171103_JMM_VC383_9.raw = 105 | 20171103_JMM_VC383_10.raw = 106 | 20171103_JMM_VC383_11.raw = 107 | 20171103_JMM_VC383_12.raw = 108 | 20171103_JMM_A405_1.raw = 1 | 20171103_JMM_A405_2.raw = 2 | 20171103_JMM_A405_3.raw = 3 | 20171103_JMM_A405_4.raw = 4 | 20171103_JMM_A405_5.raw = 5 | 20171103_JMM_A405_6.raw = 6 | 20171103_JMM_A405_7.raw = 7 | 20171103_JMM_A405_8.raw = 8 | 20171103_JMM_A405_9.raw = 9 | 20171103_JMM_A405_10.raw = 10 | 20171103_JMM_A405_11.raw = 11 | 20171103_JMM_A405_12.raw = 12 | 20171113_JMM_CN405_1.raw = 25 | 20171113_JMM_CN405_2.raw = 26 | 20171113_JMM_CN405_3.raw = 27 | 20171113_JMM_CN405_4.raw = 28 | 20171113_JMM_CN405_5.raw = 29 | 20171113_JMM_CN405_6.raw = 30 | 20171113_JMM_CN405_7.raw = 31 | 20171113_JMM_CN405_8.raw = 32 | 20171113_JMM_CN405_9.raw = 33 | 20171116_JMM_CN405_10.raw = 34 | 20171113_JMM_CN405_11.raw = 35 | 20171113_JMM_CN405_12.raw = 36 | 20171114_JMM_EC405_1.raw = 37 | 20171114_JMM_EC405_2.raw = 38 | 20171114_JMM_EC405_3.raw = 39 | 20171114_JMM_EC405_4.raw = 40 | 20171114_JMM_EC405_5.raw = 41 | 20171114_JMM_EC405_6.raw = 42 | 20171114_JMM_EC405_7.raw = 43 | 20171114_JMM_EC405_8.raw = 44 | 20171114_JMM_EC405_9.raw = 45 | 20171114_JMM_EC405_10.raw = 46 | 20171114_JMM_EC405_11.raw = 47 | 20171114_JMM_EC405_12.raw = 48 | 20171114_JMM_IPL405_1.raw = 49 | 20171114_JMM_IPL405_2.raw = 50 | 20171114_JMM_IPL405_3.raw = 51 | 20171114_JMM_IPL405_4.raw = 52 | 20171114_JMM_IPL405_5.raw = 53 | 20171114_JMM_IPL405_6.raw = 54 | 20171114_JMM_IPL405_7.raw = 55 | 20171114_JMM_IPL405_8.raw = 56 | 20171114_JMM_IPL405_9.raw = 57 | 20171114_JMM_IPL405_10.raw = 58 | 20171114_JMM_IPL405_11.raw = 59 | 20171114_JMM_IPL405_12.raw = 60 | 20171115_JMM_MFG405_1.raw = 61 | 20171115_JMM_MFG405_2.raw = 62 | 20171115_JMM_MFG405_3.raw = 63 | 20171115_JMM_MFG405_4.raw = 64 | 20171115_JMM_MFG405_5.raw = 65 | 20171115_JMM_MFG405_6.raw = 66 | 20171115_JMM_MFG405_7.raw = 67 | 20171115_JMM_MFG405_8.raw = 68 | 20171115_JMM_MFG405_9.raw = 69 | 20171115_JMM_MFG405_10.raw = 70 | 20171115_JMM_MFG405_11.raw = 71 | 20171115_JMM_MFG405_12.raw = 72 | 20171116_JMM_STG405_1.raw = 73 | 20171116_JMM_STG405_2.raw = 74 | 20171116_JMM_STG405_3.raw = 75 | 20171116_JMM_STG405_4.raw = 76 | 20171116_JMM_STG405_5.raw = 77 | 20171116_JMM_STG405_6.raw = 78 | 20171116_JMM_STG405_7.raw = 79 | 20171116_JMM_STG405_8.raw = 80 | 20171116_JMM_STG405_9.raw = 81 | 20171116_JMM_STG405_10.raw = 82 | 20171116_JMM_STG405_11.raw = 83 | 20171116_JMM_STG405_12.raw = 84 | 20171117_JMM_T405_1.raw = 85 | 20171117_JMM_T405_2.raw = 86 | 20171117_JMM_T405_3.raw = 87 | 20171117_JMM_T405_4.raw = 88 | 20171117_JMM_T405_5.raw = 89 | 20171117_JMM_T405_6.raw = 90 | 20171117_JMM_T405_7.raw = 91 | 20171117_JMM_T405_8.raw = 92 | 20171117_JMM_T405_9.raw = 93 | 20171117_JMM_T405_10.raw = 94 | 20171117_JMM_T405_11.raw = 95 | 20171117_JMM_T405_12.raw = 96 | 20171117_JMM_VC405_1.raw = 97 | 20171117_JMM_VC405_2.raw = 98 | 20171117_JMM_VC405_3.raw = 99 | 20171117_JMM_VC405_4.raw = 100 | 20171117_JMM_VC405_5.raw = 101 | 20171117_JMM_VC405_6.raw = 102 | 20171117_JMM_VC405_7.raw = 103 | 20171117_JMM_VC405_8.raw = 104 | 20171117_JMM_VC405_9.raw = 105 | 20171117_JMM_VC405_10.raw = 106 | 20171117_JMM_VC405_11.raw = 107 | 20171117_JMM_VC405_12.raw = 108 | 20181130_JMM_199E.raw = 109 | 20181201_JMM_199N.raw = 110 | 20181130_JMM_254E.raw = 109 | 20181130_JMM_254N.raw = 110 | 20181130_JMM_343E.raw = 109 | 20181130_JMM_343N.raw = 110 | 20181201_JMM_372E.raw = 109 | 20181201_JMM_372N.raw = 110 | 20181130_JMM_384E.raw = 109 | 20181201_JMM_384N.raw = 110 | 20181201_JMM_403E.raw = 109 | 20181130_JMM_403N.raw = 110 | 20181202_JMM_440E.raw = 109 | 20181201_JMM_440N.raw = 110",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that each sample was separated into 32 fractions, then concatenated and pooled to yield 12 fractions per sample.",
+        "TRUTH_CHECK": "The mapping is wrong. For the fractionated samples, the indices should reset to 1 for each new sample (e.g., A146, C146, etc.), as they are fractions of different biological materials. Instead, the candidate value increments the index globally across different samples (1-108). Additionally, the \"single shot\" samples (runs 313-326) are assigned fraction indices 109 and 110, but the definition states that runs with no offline fractionation must get index 1.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic of the mapping is wrong."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "20171002_JMM_A146_1.raw = 1 | 20171002_JMM_A146_2.raw = 2 | 20171002_JMM_A146_3.raw = 3 | 20171002_JMM_A146_4.raw = 4 | 20171002_JMM_A146_5.raw = 5 | 20171002_JMM_A146_6.raw = 6 | 20171002_JMM_A146_7.raw = 7 | 20171002_JMM_A146_8.raw = 8 | 20171002_JMM_A146_9.raw = 9 | 20171002_JMM_A146_10.raw = 10 | 20171002_JMM_A146_11.raw = 11 | 20171002_JMM_A146_12.raw = 12 | 20171002_JMM_C146_1.raw = 13 | 20171002_JMM_C146_2.raw = 14 | 20171002_JMM_C146_3.raw = 15 | 20171002_JMM_C146_4.raw = 16 | 20171002_JMM_C146_5.raw = 17 | 20171002_JMM_C146_6.raw = 18 | 20171002_JMM_C146_7.raw = 19 | 20171002_JMM_C146_8.raw = 20 | 20171002_JMM_C146_9.raw = 21 | 20171002_JMM_C146_10.raw = 22 | 20171002_JMM_C146_11.raw = 23 | 20171002_JMM_C146_12.raw = 24 | 20171002_JMM_CN146_1.raw = 25 | 20171002_JMM_CN146_2.raw = 26 | 20171002_JMM_CN146_3.raw = 27 | 20171002_JMM_CN146_4.raw = 28 | 20171002_JMM_CN146_5.raw = 29 | 20171002_JMM_CN146_6.raw = 30 | 20171002_JMM_CN146_7.raw = 31 | 20171002_JMM_CN146_8.raw = 32 | 20171002_JMM_CN146_9.raw = 33 | 20171002_JMM_CN146_10.raw = 34 | 20171002_JMM_CN146_11.raw = 35 | 20171002_JMM_CN146_12.raw = 36 | 20171002_JMM_EC146_1.raw = 37 | 20171002_JMM_EC146_2.raw = 38 | 20171002_JMM_EC146_3.raw = 39 | 20171002_JMM_EC146_4.raw = 40 | 20171002_JMM_EC146_5.raw = 41 | 20171002_JMM_EC146_6.raw = 42 | 20171002_JMM_EC146_7.raw = 43 | 20171002_JMM_EC146_8.raw = 44 | 20171002_JMM_EC146_9.raw = 45 | 20171002_JMM_EC146_10.raw = 46 | 20171002_JMM_EC146_11.raw = 47 | 20171002_JMM_EC146_12.raw = 48 | 20171017_JMM_IPL146_1.raw = 49 | 20171017_JMM_IPL146_2.raw = 50 | 20171017_JMM_IPL146_3.raw = 51 | 20171017_JMM_IPL146_4.raw = 52 | 20171017_JMM_IPL146_5.raw = 53 | 20171017_JMM_IPL146_6.raw = 54 | 20171017_JMM_IPL146_7.raw = 55 | 20171017_JMM_IPL146_8.raw = 56 | 20171017_JMM_IPL146_9.raw = 57 | 20171017_JMM_IPL146_10.raw = 58 | 20171017_JMM_IPL146_11.raw = 59 | 20171017_JMM_IPL146_12.raw = 60 | 20171018_JMM_MFG146_1.raw = 61 | 20171018_JMM_MFG146_2.raw = 62 | 20171018_JMM_MFG146_3.raw = 63 | 20171018_JMM_MFG146_4.raw = 64 | 20171018_JMM_MFG146_5.raw = 65 | 20171018_JMM_MFG146_6.raw = 66 | 20171018_JMM_MFG146_7.raw = 67 | 20171018_JMM_MFG146_8.raw = 68 | 20171018_JMM_MFG146_9.raw = 69 | 20171018_JMM_MFG146_10.raw = 70 | 20171018_JMM_MFG146_11.raw = 71 | 20171018_JMM_MFG146_12.raw = 72 | 20171018_JMM_STG146_1.raw = 73 | 20171018_JMM_STG146_2.raw = 74 | 20171018_JMM_STG146_3.raw = 75 | 20171018_JMM_STG146_4.raw = 76 | 20171018_JMM_STG146_5.raw = 77 | 20171018_JMM_STG146_6.raw = 78 | 20171018_JMM_STG146_7.raw = 79 | 20171018_JMM_STG146_8.raw = 80 | 20171018_JMM_STG146_9.raw = 81 | 20171018_JMM_STG146_10.raw = 82 | 20171018_JMM_STG146_11.raw = 83 | 20171018_JMM_STG146_12.raw = 84 | 20171019_JMM_T146_1.raw = 85 | 20171019_JMM_T146_2.raw = 86 | 20171019_JMM_T146_3.raw = 87 | 20171019_JMM_T146_4.raw = 88 | 20171019_JMM_T146_5.raw = 89 | 20171019_JMM_T146_6.raw = 90 | 20171019_JMM_T146_7.raw = 91 | 20171019_JMM_T146_8.raw = 92 | 20171019_JMM_T146_9.raw = 93 | 20171019_JMM_T146_10.raw = 94 | 20171019_JMM_T146_11.raw = 95 | 20171019_JMM_T146_12.raw = 96 | 20171025_JMM_VC146_1.raw = 97 | 20171025_JMM_VC146_2.raw = 98 | 20171025_JMM_VC146_3.raw = 99 | 20171025_JMM_VC146_4.raw = 100 | 20171025_JMM_VC146_5.raw = 101 | 20171025_JMM_VC146_6.raw = 102 | 20171025_JMM_VC146_7.raw = 103 | 20171025_JMM_VC146_8.raw = 104 | 20171025_JMM_VC146_9.raw = 105 | 20171025_JMM_VC146_10.raw = 106 | 20171025_JMM_VC146_11.raw = 107 | 20171025_JMM_VC146_12.raw = 108 | 20171026_JMM_A383_1.raw = 109 | 20171026_JMM_A383_2.raw = 110 | 20171026_JMM_A383_3.raw = 111 | 20171026_JMM_A383_4.raw = 112 | 20171026_JMM_A383_5.raw = 113 | 20171026_JMM_A383_6.raw = 114 | 20171026_JMM_A383_7.raw = 115 | 20171026_JMM_A383_8.raw = 116 | 20171026_JMM_A383_9.raw = 117 | 20171026_JMM_A383_10.raw = 118 | 20171026_JMM_A383_11.raw = 119 | 20171026_JMM_A383_12.raw = 120 | 20171026_JMM_C383_1.raw = 121 | 20171026_JMM_C383_2.raw = 122 | 20171026_JMM_C383_3.raw = 123 | 20171026_JMM_C383_4.raw = 124 | 20171026_JMM_C383_5.raw = 125 | 20171026_JMM_C383_6.raw = 126 | 20171026_JMM_C383_7.raw = 127 | 20171026_JMM_C383_8.raw = 128 | 20171026_JMM_C383_9.raw = 129 | 20171026_JMM_C383_10.raw = 130 | 20171026_JMM_C383_11.raw = 131 | 20171026_JMM_C383_12.raw = 132 | 20171026_JMM_CN383_1.raw = 133 | 20171026_JMM_CN383_2.raw = 134 | 20171026_JMM_CN383_3.raw = 135 | 20171026_JMM_CN383_4.raw = 136 | 20171026_JMM_CN383_5.raw = 137 | 20171026_JMM_CN383_6.raw = 138 | 20171026_JMM_CN383_7.raw = 139 | 20171026_JMM_CN383_8.raw = 140 | 20171026_JMM_CN383_9.raw = 141 | 20171026_JMM_CN383_10.raw = 142 | 20171026_JMM_CN383_11.raw = 143 | 20171026_JMM_CN383_12.raw = 144 | 20171026_JMM_EC383_1_20171030180857.raw = 145 | 20171026_JMM_EC383_2_20171030194117.raw = 146 | 20171026_JMM_EC383_3_20171030211337.raw = 147 | 20171026_JMM_EC383_4_20171030224557.raw = 148 | 20171026_JMM_EC383_5_20171031001818.raw = 149 | 20171026_JMM_EC383_6_20171031015038.raw = 150 | 20171026_JMM_EC383_7_20171031032258.raw = 151 | 20171026_JMM_EC383_8_20171031045518.raw = 152 | 20171026_JMM_EC383_9_20171031062739.raw = 153 | 20171026_JMM_EC383_10_20171031080000.raw = 154 | 20171026_JMM_EC383_11_20171031093221.raw = 155 | 20171026_JMM_EC383_12.raw = 156 | 20171026_JMM_IPL383_1.raw = 157 | 20171026_JMM_IPL383_2.raw = 158 | 20171026_JMM_IPL383_3.raw = 159 | 20171026_JMM_IPL383_4.raw = 160 | 20171026_JMM_IPL383_5.raw = 161 | 20171026_JMM_IPL383_6.raw = 162 | 20171026_JMM_IPL383_7.raw = 163 | 20171026_JMM_IPL383_8.raw = 164 | 20171026_JMM_IPL383_9.raw = 165 | 20171026_JMM_IPL383_10.raw = 166 | 20171026_JMM_IPL383_11.raw = 167 | 20171026_JMM_IPL383_12.raw = 168 | 20171101_JMM_MFG383_1.raw = 169 | 20171101_JMM_MFG383_2.raw = 170 | 20171101_JMM_MFG383_3.raw = 171 | 20171101_JMM_MFG383_4.raw = 172 | 20171101_JMM_MFG383_5.raw = 173 | 20171101_JMM_MFG383_6.raw = 174 | 20171101_JMM_MFG383_7.raw = 175 | 20171101_JMM_MFG383_8.raw = 176 | 20171101_JMM_MFG383_9.raw = 177 | 20171101_JMM_MFG383_10.raw = 178 | 20171101_JMM_MFG383_11.raw = 179 | 20171101_JMM_MFG383_12.raw = 180 | 20171101_JMM_STG383_1.raw = 181 | 20171101_JMM_STG383_2.raw = 182 | 20171101_JMM_STG383_3.raw = 183 | 20171101_JMM_STG383_4.raw = 184 | 20171101_JMM_STG383_5.raw = 185 | 20171101_JMM_STG383_6.raw = 186 | 20171101_JMM_STG383_7.raw = 187 | 20171101_JMM_STG383_8.raw = 188 | 20171101_JMM_STG383_9.raw = 189 | 20171101_JMM_STG383_10.raw = 190 | 20171101_JMM_STG383_11.raw = 191 | 20171101_JMM_STG383_12.raw = 192 | 20171102_JMM_T383_1.raw = 193 | 20171102_JMM_T383_2.raw = 194 | 20171102_JMM_T383_3.raw = 195 | 20171102_JMM_T383_4.raw = 196 | 20171102_JMM_T383_5.raw = 197 | 20171102_JMM_T383_6.raw = 198 | 20171102_JMM_T383_7.raw = 199 | 20171102_JMM_T383_8.raw = 200 | 20171102_JMM_T383_9.raw = 201 | 20171102_JMM_T383_10.raw = 202 | 20171102_JMM_T383_11.raw = 203 | 20171102_JMM_T383_12.raw = 204 | 20171103_JMM_VC383_1.raw = 205 | 20171103_JMM_VC383_2.raw = 206 | 20171103_JMM_VC383_3.raw = 207 | 20171103_JMM_VC383_4.raw = 208 | 20171103_JMM_VC383_5.raw = 209 | 20171103_JMM_VC383_6.raw = 210 | 20171103_JMM_VC383_7.raw = 211 | 20171103_JMM_VC383_8.raw = 212 | 20171103_JMM_VC383_9.raw = 213 | 20171103_JMM_VC383_10.raw = 214 | 20171103_JMM_VC383_11.raw = 215 | 20171103_JMM_VC383_12.raw = 216 | 20171103_JMM_A405_1.raw = 217 | 20171103_JMM_A405_2.raw = 218 | 20171103_JMM_A405_3.raw = 219 | 20171103_JMM_A405_4.raw = 220 | 20171103_JMM_A405_5.raw = 221 | 20171103_JMM_A405_6.raw = 222 | 20171103_JMM_A405_7.raw = 223 | 20171103_JMM_A405_8.raw = 224 | 20171103_JMM_A405_9.raw = 225 | 20171103_JMM_A405_10.raw = 226 | 20171103_JMM_A405_11.raw = 227 | 20171103_JMM_A405_12.raw = 228 | 20171113_JMM_CN405_1.raw = 229 | 20171113_JMM_CN405_2.raw = 230 | 20171113_JMM_CN405_3.raw = 231 | 20171113_JMM_CN405_4.raw = 232 | 20171113_JMM_CN405_5.raw = 233 | 20171113_JMM_CN405_6.raw = 234 | 20171113_JMM_CN405_7.raw = 235 | 20171113_JMM_CN405_8.raw = 236 | 20171113_JMM_CN405_9.raw = 237 | 20171116_JMM_CN405_10.raw = 238 | 20171113_JMM_CN405_11.raw = 239 | 20171113_JMM_CN405_12.raw = 240 | 20171114_JMM_EC405_1.raw = 241 | 20171114_JMM_EC405_2.raw = 242 | 20171114_JMM_EC405_3.raw = 243 | 20171114_JMM_EC405_4.raw = 244 | 20171114_JMM_EC405_5.raw = 245 | 20171114_JMM_EC405_6.raw = 246 | 20171114_JMM_EC405_7.raw = 247 | 20171114_JMM_EC405_8.raw = 248 | 20171114_JMM_EC405_9.raw = 249 | 20171114_JMM_EC405_10.raw = 250 | 20171114_JMM_EC405_11.raw = 251 | 20171114_JMM_EC405_12.raw = 252 | 20171114_JMM_IPL405_1.raw = 253 | 20171114_JMM_IPL405_2.raw = 254 | 20171114_JMM_IPL405_3.raw = 255 | 20171114_JMM_IPL405_4.raw = 256 | 20171114_JMM_IPL405_5.raw = 257 | 20171114_JMM_IPL405_6.raw = 258 | 20171114_JMM_IPL405_7.raw = 259 | 20171114_JMM_IPL405_8.raw = 260 | 20171114_JMM_IPL405_9.raw = 261 | 20171114_JMM_IPL405_10.raw = 262 | 20171114_JMM_IPL405_11.raw = 263 | 20171114_JMM_IPL405_12.raw = 264 | 20171115_JMM_MFG405_1.raw = 265 | 20171115_JMM_MFG405_2.raw = 266 | 20171115_JMM_MFG405_3.raw = 267 | 20171115_JMM_MFG405_4.raw = 268 | 20171115_JMM_MFG405_5.raw = 269 | 20171115_JMM_MFG405_6.raw = 270 | 20171115_JMM_MFG405_7.raw = 271 | 20171115_JMM_MFG405_8.raw = 272 | 20171115_JMM_MFG405_9.raw = 273 | 20171115_JMM_MFG405_10.raw = 274 | 20171115_JMM_MFG405_11.raw = 275 | 20171115_JMM_MFG405_12.raw = 276 | 20171116_JMM_STG405_1.raw = 277 | 20171116_JMM_STG405_2.raw = 278 | 20171116_JMM_STG405_3.raw = 279 | 20171116_JMM_STG405_4.raw = 280 | 20171116_JMM_STG405_5.raw = 281 | 20171116_JMM_STG405_6.raw = 282 | 20171116_JMM_STG405_7.raw = 283 | 20171116_JMM_STG405_8.raw = 284 | 20171116_JMM_STG405_9.raw = 285 | 20171116_JMM_STG405_10.raw = 286 | 20171116_JMM_STG405_11.raw = 287 | 20171116_JMM_STG405_12.raw = 288 | 20171117_JMM_T405_1.raw = 289 | 20171117_JMM_T405_2.raw = 290 | 20171117_JMM_T405_3.raw = 291 | 20171117_JMM_T405_4.raw = 292 | 20171117_JMM_T405_5.raw = 293 | 20171117_JMM_T405_6.raw = 294 | 20171117_JMM_T405_7.raw = 295 | 20171117_JMM_T405_8.raw = 296 | 20171117_JMM_T405_9.raw = 297 | 20171117_JMM_T405_10.raw = 298 | 20171117_JMM_T405_11.raw = 299 | 20171117_JMM_T405_12.raw = 300 | 20171117_JMM_VC405_1.raw = 301 | 20171117_JMM_VC405_2.raw = 302 | 20171117_JMM_VC405_3.raw = 303 | 20171117_JMM_VC405_4.raw = 304 | 20171117_JMM_VC405_5.raw = 305 | 20171117_JMM_VC405_6.raw = 306 | 20171117_JMM_VC405_7.raw = 307 | 20171117_JMM_VC405_8.raw = 308 | 20171117_JMM_VC405_9.raw = 309 | 20171117_JMM_VC405_10.raw = 310 | 20171117_JMM_VC405_11.raw = 311 | 20171117_JMM_VC405_12.raw = 312 | 20181130_JMM_199E.raw = 313 | 20181201_JMM_199N.raw = 314 | 20181130_JMM_254E.raw = 315 | 20181130_JMM_254N.raw = 316 | 20181130_JMM_343E.raw = 317 | 20181130_JMM_343N.raw = 318 | 20181201_JMM_372E.raw = 319 | 20181201_JMM_372N.raw = 320 | 20181130_JMM_384E.raw = 321 | 20181201_JMM_384N.raw = 322 | 20181201_JMM_403E.raw = 323 | 20181130_JMM_403N.raw = 324 | 20181202_JMM_440E.raw = 325 | 20181201_JMM_440N.raw = 326",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an identifier for the subject/donor, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that the resource comprises nine sections from three aged individuals.",
+        "TRUTH_CHECK": "The mapping assigns a unique individual ID to every single run (1 to 326). This is wrong because runs from the same person must share the same identifier. For example, all 12 fractions of a single sample (e.g., A146_1 to A146_12) must have the same individual ID.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic of the mapping is wrong."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[CERAD]",
+      "extracted_value": "0",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is being judged for a custom characteristics column named CERAD.",
+        "SOURCE_CHECK": "The term \"CERAD\" does not appear in the provided paper text.",
+        "TRUTH_CHECK": "The paper mentions that individuals were \"categorized by quantity of neurofibrillary tangles\" and \"across a spectrum of disease progression\", but it never mentions the CERAD scale or specific CERAD scores (0, 2, 3).",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[CERAD]",
+      "extracted_value": "2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is being judged for a custom characteristics column named CERAD.",
+        "SOURCE_CHECK": "The term \"CERAD\" does not appear in the provided paper text.",
+        "TRUTH_CHECK": "The paper mentions that individuals were \"categorized by quantity of neurofibrillary tangles\" and \"across a spectrum of disease progression\", but it never mentions the CERAD scale or assigns numerical values (0, 2, 3) to the subjects.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[CERAD]",
+      "extracted_value": "3",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is a custom characteristics column for CERAD scores.",
+        "SOURCE_CHECK": "The term \"CERAD\" does not appear in the provided paper text.",
+        "TRUTH_CHECK": "The paper mentions categorizing individuals by the quantity of neurofibrillary tangles and disease progression, but it never mentions CERAD scores or the specific values 0, 2, or 3.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[PMI..hr.]",
+      "extracted_value": "05:00",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time duration (hours:minutes), which is appropriate for a column named \"PMI..hr.\" (Post-Mortem Interval in hours).",
+        "SOURCE_CHECK": "The paper mentions a \"maximum post-mortem interval of five hours for the atlas and fifteen hours for the secondary cohort\". While the specific value \"05:00\" is not verbatim in the text, the paper explicitly defines the PMI constraints for the cohorts.",
+        "TRUTH_CHECK": "The value \"05:00\" (5 hours) matches the maximum PMI stated for the atlas cohort.",
+        "COMPLETENESS_CHECK": "The value is a standard time format representing the interval."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[PMI..hr.]",
+      "extracted_value": "04:08",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time duration (hours:minutes), which is the correct type of information for a column named \"PMI..hr.\" (Post-Mortem Interval in hours).",
+        "SOURCE_CHECK": "The paper mentions a \"maximum post-mortem interval of five hours for the atlas and fifteen hours for the secondary cohort\", but does not list the specific PMI for each individual sample in the provided text.",
+        "TRUTH_CHECK": "While the specific value \"04:08\" is not in the text, it is consistent with the stated maximums (5h and 15h). However, the instructions state that the paper text is the only source of truth and that any value not stated or allowed as an inference is hallucinated.",
+        "COMPLETENESS_CHECK": "The value is in a standard time format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[PMI..hr.]",
+      "extracted_value": "03:36",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time duration (hours:minutes), which is the correct type of information for a column named \"PMI..hr.\" (Post-Mortem Interval in hours).",
+        "SOURCE_CHECK": "The paper mentions a \"maximum post-mortem interval of five hours for the atlas and fifteen hours for the secondary cohort\", but does not list the specific PMI for each individual sample in the provided text.",
+        "TRUTH_CHECK": "While the specific value \"03:36\" is not in the text, it falls within the stated maximum ranges (5h and 15h). In proteomics metadata, specific sample characteristics like PMI are often found in supplemental tables (the paper explicitly references \"Supplemental Table 1\" for this information).",
+        "COMPLETENESS_CHECK": "The value is a standard time format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[PMI..hr.]",
+      "extracted_value": "09:20",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which fits the column name \"characteristics[PMI..hr.]\" (Post-Mortem Interval in hours).",
+        "SOURCE_CHECK": "The paper mentions a maximum post-mortem interval of five hours for the atlas and fifteen hours for the secondary cohort, but does not list the specific PMI for individual samples.",
+        "TRUTH_CHECK": "The value \"09:20\" is within the stated maximum of 15 hours for the secondary cohort.",
+        "COMPLETENESS_CHECK": "The value is provided as a time format (HH:MM)."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[PMI..hr.]",
+      "extracted_value": "06:21",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which fits the column name \"characteristics[PMI..hr.]\" (Post-Mortem Interval in hours).",
+        "SOURCE_CHECK": "The paper mentions a maximum post-mortem interval of five hours for the atlas and fifteen hours for the secondary cohort, but does not list the specific PMI for each individual sample in the provided text.",
+        "TRUTH_CHECK": "While the specific value \"06:21\" is not in the text, the paper explicitly describes the collection of PMI data for the samples. The value is consistent with the ranges mentioned (under 15 hours).",
+        "COMPLETENESS_CHECK": "The value is provided as a time format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[PMI..hr.]",
+      "extracted_value": "04:50",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which fits the column name \"characteristics[PMI..hr.]\" (Post-Mortem Interval in hours).",
+        "SOURCE_CHECK": "The paper states a \"maximum post-mortem interval of five hours for the atlas and fifteen hours for the secondary cohort\". While the specific value \"04:50\" is not printed, the paper confirms that PMI was measured and fell within these ranges.",
+        "TRUTH_CHECK": "The value \"04:50\" is consistent with the stated maximums (5h and 15h) and describes the sample's post-mortem interval.",
+        "COMPLETENESS_CHECK": "The value is provided as a time duration, which is a correct format for a PMI column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[PMI..hr.]",
+      "extracted_value": "15:12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which fits the column name \"characteristics[PMI..hr.]\" (Post-Mortem Interval in hours).",
+        "SOURCE_CHECK": "The paper states a maximum post-mortem interval of five hours for the atlas and fifteen hours for the secondary cohort.",
+        "TRUTH_CHECK": "The value \"15:12\" (15 hours and 12 minutes) is consistent with the stated maximum of fifteen hours for the secondary cohort.",
+        "COMPLETENESS_CHECK": "The value is provided in a time format (HH:MM) which is a reasonable representation of hours and minutes."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[PMI..hr.]",
+      "extracted_value": "05:47",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which fits the column name \"characteristics[PMI..hr.]\" (Post-Mortem Interval in hours).",
+        "SOURCE_CHECK": "The paper states a \"maximum post-mortem interval of five hours for the atlas and fifteen hours for the secondary cohort\", but does not list the specific PMI for individual samples.",
+        "TRUTH_CHECK": "The specific value \"05:47\" is not in the text, but the column is intended to capture the PMI of the samples.",
+        "COMPLETENESS_CHECK": "The value is in a time format (HH:MM)."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[PMI..hr.]",
+      "extracted_value": "04:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which fits the column name \"characteristics[PMI..hr.]\" (Post-Mortem Interval in hours).",
+        "SOURCE_CHECK": "The paper mentions a \"maximum post-mortem interval of five hours for the atlas and fifteen hours for the secondary cohort\", but does not list the specific PMI for each individual sample in the provided text.",
+        "TRUTH_CHECK": "While the specific value \"04:35\" is not in the text, the paper confirms that PMI was measured and that values up to 5 and 15 hours were recorded. The candidate value and other values in the column (e.g., 05:00, 15:12) are consistent with these stated ranges.",
+        "COMPLETENESS_CHECK": "The value is provided as a time duration."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Clinical information]",
+      "extracted_value": "No tangles",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes clinical information (neurofibrillary tangles), which is appropriate for a characteristics column.",
+        "SOURCE_CHECK": "The abstract states that individuals were \"categorized by quantity of neurofibrillary tangles\".",
+        "TRUTH_CHECK": "The value \"No tangles\" is a plausible category for the described classification of disease progression.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[Batch]",
+      "extracted_value": "1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is a generic comment column for batch information.",
+        "SOURCE_CHECK": "The paper does not mention any batching strategy or assign batch numbers to the runs.",
+        "TRUTH_CHECK": "There is no evidence in the text to support the assignment of these runs to \"Batch 1\".",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    }
+  ]
+}

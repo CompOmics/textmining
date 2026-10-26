@@ -1,0 +1,396 @@
+{
+  "paper_id": "PXD060381",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the use of \"ASC52telo cells, an hTERT immortalized human adipose derived mesenchymal stem cell line\", which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The proteins analyzed in the MS experiment were derived from this human cell line.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "characteristics[cell type]",
+      "extracted_value": "mesenchymal stem cells",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly refers to the cells as \"mesenchymal stem cells (MSCs)\" and \"human adipose derived mesenchymal stem cell line\".",
+        "TRUTH_CHECK": "The runs analyzed by mass spectrometry were EVs derived from these mesenchymal stem cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "characteristics[disease]",
+      "extracted_value": "degenerative disc disease",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease state, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"degenerative disc disease (DDD)\" in the introduction.",
+        "TRUTH_CHECK": "The runs carry the value \"ASC52telo\" in the cell_line column. ASC52telo is an immortalized human adipose derived mesenchymal stem cell line. The \"degenerative disc disease\" refers to the patients from whom the IVD cells were isolated for the in vitro treatment experiments, not the MSC line used for the proteomics runs.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong item."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "characteristics[cell line]",
+      "extracted_value": "ASC52telo",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an immortalized cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly names \"ASC52telo cells\" as an hTERT immortalized human adipose derived mesenchymal stem cell line.",
+        "TRUTH_CHECK": "The mass spectrometry analysis was performed on EVs derived from these ASC52telo cells.",
+        "COMPLETENESS_CHECK": "The value is written exactly as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "characteristics[material type]",
+      "extracted_value": "cell line",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analyzed material, which is the right field.",
+        "SOURCE_CHECK": "The paper states that ASC52telo cells are an \"immortalized human adipose derived mesenchymal stem cell line\".",
+        "TRUTH_CHECK": "The mass spectrometry analysis was performed on EVs derived from this cell line.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms for material_type."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "characteristics[material type]",
+      "extracted_value": "extracellular vesicles",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell culture",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"extracellular vesicles\" describes the material, but it is not one of the broad classes listed in the field definition.",
+        "SOURCE_CHECK": "The paper explicitly states that EV proteomic contents were analyzed by mass spectrometry.",
+        "TRUTH_CHECK": "The analyzed material consists of extracellular vesicles.",
+        "COMPLETENESS_CHECK": "The value does not follow the controlled vocabulary of the field definition."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Orbitrap Astral mass spectrometer",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass spectrometer model, which is the correct field.",
+        "SOURCE_CHECK": "The methods section explicitly states the use of an \"Orbitrap Astral mass spectrometer\".",
+        "TRUTH_CHECK": "This instrument was used for the proteomic analysis of the EVs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for protein digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under \"Mass Spectrometric Analysis of EVs\" states \"Proteins were digested overnight at 37 °C with trypsin.\"",
+        "TRUTH_CHECK": "The value is correct for the runs described in the mass spectrometry analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "comment[fragmentation method]",
+      "extracted_value": "HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the right field.",
+        "SOURCE_CHECK": "The methods section states \"HCD collision energy was maintained at 25%\".",
+        "TRUTH_CHECK": "The runs used HCD fragmentation.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "comment[collision energy]",
+      "extracted_value": "25%",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a percentage of collision energy, which is the right field.",
+        "SOURCE_CHECK": "The methods state \"HCD collision energy was maintained at 25%\".",
+        "TRUTH_CHECK": "The value is correct for the mass spectrometry runs described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "acquisition_method",
+      "sdrf_column": "comment[acquisition method]",
+      "extracted_value": "DIA",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an MS acquisition scheme, which is the right field.",
+        "SOURCE_CHECK": "The methods section explicitly states \"The Orbitrap Astral was operated in data-independent acquisition (DIA) mode\".",
+        "TRUTH_CHECK": "The value is correct for the runs described in the mass spectrometry analysis of EVs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[disease treatment]",
+      "extracted_value": "IL-1β pre-stimulation",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which fits the column name \"characteristics[disease treatment]\".",
+        "SOURCE_CHECK": "The paper states that IVD cells were \"exposed to IL-1β pre-stimulation\" in the methods.",
+        "TRUTH_CHECK": "The mass spectrometry runs analyzed the proteome of MSC-derived EVs (WT, NTC, and TSG-6 activated). The IL-1β pre-stimulation was performed on human IVD cells for a separate biological assay to test the effect of those EVs; it was not a treatment applied to the samples analyzed by mass spectrometry.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[genetic modification]",
+      "extracted_value": "CRISPR activation targeting TSG-6 (TSG-6 overexpression)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a genetic modification, which is the correct content for a column named \"characteristics[genetic modification]\".",
+        "SOURCE_CHECK": "The paper states that the MSCs were transduced with a CRISPR activation system targeting TSG-6 to achieve genetic overexpression.",
+        "TRUTH_CHECK": "The value correctly describes the modification applied to the MSCs from which the EVs were harvested for the MS analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of biological replicates]",
+      "extracted_value": "3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing the count of biological replicates, which fits the column name.",
+        "SOURCE_CHECK": "The paper states \"n = 3 for each group\" in the Mass Spectrometric Analysis of EVs section.",
+        "TRUTH_CHECK": "The proteomics experiment used three biological replicates per group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of samples]",
+      "extracted_value": "9",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is a generic \"other_column\" intended to hold the number of samples.",
+        "SOURCE_CHECK": "The paper states that for the proteomics of EVs, they used three groups (WT, NTC, and TSG-6) with n=3 for each group, which equals 9 samples.",
+        "TRUTH_CHECK": "The value 9 correctly represents the total number of samples analyzed by mass spectrometry.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[origin site disease]",
+      "extracted_value": "Intervertebral disc tissue from degenerative disc disease",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the origin site and disease of the sample, which fits the column name \"characteristics[origin site disease]\".",
+        "SOURCE_CHECK": "The paper states that IVD cells were isolated from disc tissue obtained from patients with disc herniation or DDD (degenerative disc disease).",
+        "TRUTH_CHECK": "The value describes the IVD cells used in the biological assays, but the MS runs (PXD060381) analyzed the proteome of MSC-derived extracellular vesicles (EVs), not the IVD tissue.",
+        "COMPLETENESS_CHECK": "The value is a descriptive string."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "exposure to MSC-derived extracellular vesicles",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample treatment, which is appropriate for a characteristics column.",
+        "SOURCE_CHECK": "The paper describes treating human IVD cells with MSC-derived extracellular vesicles (EVs) in the \"Human IVD Cell IL-1β and EV Co-treatment\" section.",
+        "TRUTH_CHECK": "The value describes the treatment of the IVD cells, but the runs in this SDRF file (PXD060381) are the proteomic analysis of the EVs themselves, not the IVD cells. The MS experiment analyzed the cargo of the EVs (WT, NTC, and TSG-6 activated), not the cells exposed to them.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "MSC-derived extracellular vesicles",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the specimen (MSC-derived extracellular vesicles), which is appropriate for a characteristics[specimen] column.",
+        "SOURCE_CHECK": "The paper explicitly states that \"EV proteomic contents were analyzed by mass spectrometry\" and refers to them as \"MSC-derived extracellular vesicles (EVs)\".",
+        "TRUTH_CHECK": "The mass spectrometry runs were performed on these vesicles.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time]",
+      "extracted_value": "18 h of EV treatment",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a time point/duration, which is appropriate for a column named \"characteristics[time]\".",
+        "SOURCE_CHECK": "The paper states \"RNA samples were collected 24 h after initiation of serum starvation (i.e., 18 h of EV treatment)\".",
+        "TRUTH_CHECK": "This value describes the IVD cell treatment experiment, not the mass spectrometry proteomics experiment. The proteomics analyzed the cargo of MSC-derived EVs, not the IVD cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time]",
+      "extracted_value": "24 h after initiation of serum starvation",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a time point, which is appropriate for a column named \"characteristics[time]\".",
+        "SOURCE_CHECK": "The paper states \"RNA samples were collected 24 h after initiation of serum starvation\" in the Human IVD Cell IL-1β and EV Co-treatment section.",
+        "TRUTH_CHECK": "This time point refers to the collection of RNA samples from human IVD cells, not the mass spectrometry analysis of MSC-derived EVs. The MS runs (PXD060381) analyzed the proteome of EVs, which were harvested 48 h after switching to serum-free basal media.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "37°C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which fits the column name \"characteristics[temperature]\".",
+        "SOURCE_CHECK": "The paper mentions cells were incubated at 37 °C in several sections (Human MSC Culture, Human IVD Cell Isolation and Culture).",
+        "TRUTH_CHECK": "While 37 °C is the incubation temperature for the cells, the proteomics experiment analyzed the cargo of extracellular vesicles (EVs) harvested from the medium. The temperature of the MS run itself or the specific sample processing temperature for the proteomics is not the primary characteristic of the run. However, in the context of \"characteristics\", the culture temperature is a valid sample attribute.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[number of missed cleavages]",
+      "extracted_value": "1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of missed cleavages, which is the correct information for a column named \"comment[number of missed cleavages]\".",
+        "SOURCE_CHECK": "The methods section under \"Mass Spectrometric Analysis of EVs\" states \"a maximum of 1 missed cleavage\".",
+        "TRUTH_CHECK": "The value is correct for the proteomics runs described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[separation]",
+      "extracted_value": "C18 column",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a chromatography column, which is a technical detail of the separation process.",
+        "SOURCE_CHECK": "The paper mentions an \"IonOpticks Aurora Elite 75 um x 15 cm C18 column\".",
+        "TRUTH_CHECK": "The C18 column was used for the LC separation of peptides prior to MS analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

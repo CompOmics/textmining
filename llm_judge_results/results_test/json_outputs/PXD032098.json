@@ -1,0 +1,107 @@
+{
+  "paper_id": "PXD032098",
+  "annotations": [
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes LC-MS/MS analysis of crosslinked peptides but mentions no isotopic labels (like TMT or SILAC) for the quantification of the peptides themselves.",
+        "TRUTH_CHECK": "The runs are label-free.",
+        "COMPLETENESS_CHECK": "The value \"label free sample\" is the correct SDRF term for label-free runs."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "Orbitrap Fusion",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "Orbitrap Fusion Tribrid",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states \"LC–MS/MS analysis was carried out on an Orbitrap Fusion Tribrid mass spectrometer\".",
+        "TRUTH_CHECK": "The value describes the primary instrument used for the LC-MS/MS analysis.",
+        "COMPLETENESS_CHECK": "The value is a drift from the full model name \"Orbitrap Fusion Tribrid\" printed in the paper."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "comment[fraction identifier]",
+      "extracted_value": "F1905_sailerc_139.raw = 1 | F1905_sailerc_140.raw = 1 | F1905_sailerc_141.raw = 2 | F1905_sailerc_142.raw = 2 | F1905_sailerc_143.raw = 3 | F1905_sailerc_144.raw = 3 | F1905_sailerc_145.raw = 4 | F1905_sailerc_146.raw = 4 | F1905_sailerc_149.raw = 1 | F1905_sailerc_150.raw = 1 | F1905_sailerc_151.raw = 2 | F1905_sailerc_152.raw = 2 | F1905_sailerc_153.raw = 3 | F1905_sailerc_154.raw = 3 | F1905_sailerc_155.raw = 4 | F1905_sailerc_156.raw = 4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that crosslinked peptides were enriched by SEC and that \"four fractions were measured in technical duplicates,\" with specific elution volumes pooled or analyzed separately.",
+        "TRUTH_CHECK": "The mapping correctly assigns four fractions (1-4) and groups the runs in technical duplicates (two runs per fraction), matching the described experimental design.",
+        "COMPLETENESS_CHECK": "The mapping follows the definition for fraction identifiers."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "sample 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field name \"other_column\" is a placeholder and does not correspond to any defined proteomics metadata field.",
+        "SOURCE_CHECK": "The term \"sample 1\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes crosslinking experiments with specific reagents (DSS and BS3) and fractions, but there is no mention of \"sample 1\" or \"sample 2\" as identifiers.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "sample 2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"sample 2\" is a generic sample identifier, but the field_name \"other_column\" is a placeholder with no specific definition.",
+        "SOURCE_CHECK": "The paper describes crosslinking experiments with two different reagents (DSS and BS3) and a control, but does not use the labels \"sample 1\" or \"sample 2\".",
+        "TRUTH_CHECK": "The value is a generic label that does not correspond to any specific experimental group or sample described in the paper.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[MS2 analyzer type]",
+      "extracted_value": "ion trap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the mass analyzer used for MS2 spectra, which is appropriate for a column named \"comment[MS2 analyzer type]\".",
+        "SOURCE_CHECK": "The paper states that \"MS/MS spectra were analyzed in the ion trap at a rapid scan rate.\"",
+        "TRUTH_CHECK": "The value is correct for the LC-MS/MS runs described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "paper_id": "PXD000534",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes samples from human patients, which is an allowed inference for \"Homo sapiens\".",
+        "TRUTH_CHECK": "The analyzed liver tissues are from human patients.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "liver",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"non-tumorous liver tissue\" and \"cholangiocellular carcinoma tissue\" (which arises from bile ducts in the liver).",
+        "TRUTH_CHECK": "The samples analyzed in the label-free LC-MS experiments were liver tissues.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial cells of bile ducts",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The abstract states that CCC \"arises from the epithelial cells of bile ducts\".",
+        "TRUTH_CHECK": "The runs correspond to the label-free proteomics of CCC and non-tumorous liver tissue; while CCC arises from these cells, the non-tumorous liver tissue contains other cell types (e.g., hepatocytes), and the paper does not state that the bulk tissue samples were purified for only epithelial cells of bile ducts.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the health status of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"non-tumorous liver tissue\" from patients, which are the controls in this case-control study.",
+        "TRUTH_CHECK": "The runs carry the value \"normal\" for the non-tumorous liver tissue samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term for healthy/non-diseased subjects."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "cholangiocellular carcinoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"cholangiocellular carcinoma (CCC)\" in the abstract and methods.",
+        "TRUTH_CHECK": "The runs carry this value for the tumorous tissue samples from CCC patients.",
+        "COMPLETENESS_CHECK": "The value follows the definition for a disease state."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "non-tumorous liver tissue",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "tissue",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the material, but it is a specific tissue description rather than a broad class.",
+        "SOURCE_CHECK": "The paper mentions \"non-tumorous liver tissue\".",
+        "TRUTH_CHECK": "The material is indeed non-tumorous liver tissue.",
+        "COMPLETENESS_CHECK": "The value does not use the controlled terms required by the field definition (\"tissue\")."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "CCC tumor tissue",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "tissue",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the material used, but it is a specific sample description rather than a broad class.",
+        "SOURCE_CHECK": "The paper mentions \"CCC tumor tissue\" and \"non-tumorous liver tissue\".",
+        "TRUTH_CHECK": "The material is indeed tissue.",
+        "COMPLETENESS_CHECK": "The value does not use the controlled terms specified in the field definition (\"tissue\")."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "CCC tumor tissue and non-tumorous liver tissue",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "tissue",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the material class, which fits the field_name.",
+        "SOURCE_CHECK": "The paper states that \"non-tumorous liver tissue and cholangiocellular carcinoma tissue\" were analyzed.",
+        "TRUTH_CHECK": "The value describes the material used for the runs.",
+        "COMPLETENESS_CHECK": "The value is a description rather than one of the broad class terms (\"tissue\") required by the definition."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"label-free proteomics\" and \"ion-intensity-based label-free quantification\" in the Label-free Analysis section.",
+        "TRUTH_CHECK": "The runs listed are part of the label-free LC-MS/MS analysis.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=LTQ Orbitrap Elite;AC=MS:1001910",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the label-free analysis was performed on an LTQ Orbitrap Elite.",
+        "TRUTH_CHECK": "The value is correct for the LC-MS/MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state that proteins were digested in-gel using trypsin for both the MALDI and label-free LC-MS/MS analyses.",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "NT=collision-induced dissociation;AC=MS:1000133",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that tandem mass spectra were measured \"after peptide fragmentation by collision-induced dissociation\".",
+        "TRUTH_CHECK": "The value is correct for the label-free LC-MS/MS runs.",
+        "COMPLETENESS_CHECK": "Complete. The NT term is provided and matches the paper."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes \"mass-spectrometry-based label-free proteomics\" in the abstract.",
+        "TRUTH_CHECK": "The runs are part of the LC-MS/MS proteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF controlled term convention."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=propionamide;MT=variable;TA=C;AC=UNIMOD:24",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"variable modifications, oxidation (M) and propionamide (C)\" for the label-free analysis.",
+        "TRUTH_CHECK": "The modification was used for the LC-MS/MS runs.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;AC;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The \"Protein Identification\" section for label-free analysis states \"variable modifications, oxidation (M)\".",
+        "TRUTH_CHECK": "The modification was used for the LC-MS/MS runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format including name, residues, and modification status."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under \"Protein Identification\" for the label-free analysis states \"precursor ion mass tolerance of 5 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the LC-MS/MS runs described.",
+        "COMPLETENESS_CHECK": "The value follows the definition format, including the unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.4 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods state \"fragment ion mass tolerance of 0.4 Da\" in the Protein Identification section for label-free analysis.",
+        "TRUTH_CHECK": "The value is correct for the label-free LC-MS/MS runs.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and the unit."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "OEI00066.raw = 1 | OEI00068.raw = 1 | OEI00070.raw = 1 | OEI00072.raw = 1 | OEI00074.raw = 1 | OEI00076.raw = 1 | OEI00078.raw = 1 | OEI00080.raw = 1 | OEI00082.raw = 1 | OEI00084.raw = 1 | OEI00086.raw = 1 | OEI00088.raw = 1 | OEI00090.raw = 1 | OEI00092.raw = 1 | OEI00094.raw = 1 | OEI00096.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents technical replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes label-free LC-MS/MS analysis of samples from eight patients (tumorous and non-tumorous), and there is no mention of repeated injections or technical replicates for the same material.",
+        "TRUTH_CHECK": "Since each sample was measured once, assigning a technical replicate index of 1 to each run is correct.",
+        "COMPLETENESS_CHECK": "The mapping follows the required format and is complete."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "OEI00066.raw = 1 | OEI00068.raw = 1 | OEI00070.raw = 1 | OEI00072.raw = 1 | OEI00074.raw = 1 | OEI00076.raw = 1 | OEI00078.raw = 1 | OEI00080.raw = 1 | OEI00082.raw = 1 | OEI00084.raw = 1 | OEI00086.raw = 1 | OEI00088.raw = 1 | OEI00090.raw = 1 | OEI00092.raw = 1 | OEI00094.raw = 1 | OEI00096.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the fraction_identifier field.",
+        "SOURCE_CHECK": "The paper describes a label-free LC-MS/MS analysis without any mention of offline fractionation.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns 1 to all runs."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "NT=orbitrap;AC=MS:1000484",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a mass analyzer, which is the correct type of information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper states that tandem mass spectra were measured in the linear ion trap.",
+        "TRUTH_CHECK": "The candidate value \"orbitrap\" is wrong for the MS2 (tandem) spectra; the paper explicitly says \"tandem mass spectra... were measured in the linear ion trap\". The Orbitrap was used for the full-scan MS spectra.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

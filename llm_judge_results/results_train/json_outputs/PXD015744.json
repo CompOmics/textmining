@@ -1,0 +1,345 @@
+{
+  "paper_id": "PXD015744",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes \"surgically resected PDAC specimens\" from \"patients\", which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analysed tumor samples are from human patients.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "pancreas",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper describes \"pancreatic ductal adenocarcinoma (PDAC)\" and \"resected PDAC specimens\", from which the organ of origin (pancreas) is an allowed inference.",
+        "TRUTH_CHECK": "The runs are derived from PDAC tumor samples, which originate from the pancreas.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "pancreatic ductal adenocarcinoma (PDAC)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods explicitly state the study is on pancreatic ductal adenocarcinoma (PDAC).",
+        "TRUTH_CHECK": "The runs correspond to the 20 surgically resected PDAC specimens analyzed.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "64Y",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that clinical parameters were collected, but it does not state the age of any specific patient or a mean age.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"Snap-frozen tumor samples from 39 patients\" and \"surgically resected PDAC specimens\" were used.",
+        "TRUTH_CHECK": "The runs correspond to these tumor specimens, which are tissues.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms in the definition."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a developmental stage, which is the right field.",
+        "SOURCE_CHECK": "The paper describes \"patients\" and the related column \"age\" shows \"64Y\", making \"adult\" an allowed inference.",
+        "TRUTH_CHECK": "The analyzed PDAC tumor specimens came from adult patients.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Searches were performed with the label-free quantification option selected\" and \"Label-free quantification (LFQ) intensities were filtered\".",
+        "TRUTH_CHECK": "The runs described are part of the label-free proteomic analysis of PDAC specimens.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state \"eluting peptides were ionized... into a Q Exactive mass spectrometer\".",
+        "TRUTH_CHECK": "The Q Exactive was the primary instrument used for the LC-MS/MS analysis of the 20 samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that gel cubes were covered with trypsin solution and enzyme specificity was set to trypsin.",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of all samples in the MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that peptide signals \"were submitted to MS/MS in the HCD (higher-energy collision) cell\".",
+        "TRUTH_CHECK": "The HCD method was used for the LC-MS/MS analysis of the PDAC specimens.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "25 NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The methods state \"25% normalized collision energy\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value \"25 NCE\" is a common abbreviation for \"25% normalized collision energy\"."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;AC=UNIMOD:4;MT=fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Cysteine carboxamidomethylation (Cys, +57.021464 Da) was treated as fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was a global search parameter.",
+        "COMPLETENESS_CHECK": "Complete, following the NT/TA/AC/MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;TA=M;AC=UNIMOD:35;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"methionine oxidation (Met, +15.994915 Da) ... as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residue, and MT status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;PP=Any N-term;AC=UNIMOD:1;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"N-terminal acetylation (N-terminal, +42.010565 Da) as variable modifications\".",
+        "TRUTH_CHECK": "The modification was used for the MS analysis of the PDAC specimens.",
+        "COMPLETENESS_CHECK": "The value uses PP=Any N-term, but the definition for modifications requires TA for residues or PP for a specific position. For N-terminal acetylation, the residue is the protein N-terminus."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "4.5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The methods state \"Peptide precursor ions were searched with a maximum mass deviation of 4.5 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the definition and includes the unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods state \"fragment ions with a maximum mass deviation of 20 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Complete, follows the definition format."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "QE1_180417_OPL1022_TLL_PDAC_tumor_A1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T5.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "QE1_180417_OPL1022_TLL_PDAC_tumor_A1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B1.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_B2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_B3.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_B4.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_B5.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_C1.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_C2.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_C3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_C4.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_C5.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_D1.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_D2.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_D3.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_D4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_D5.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_E1.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_E2.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_E3.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_E4.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_E5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_F1.raw = 6 | QE1_180417_OPL1022_TLL_PDAC_tumor_F2.raw = 6 | QE1_180417_OPL1022_TLL_PDAC_tumor_F3.raw = 6 | QE1_180417_OPL1022_TLL_PDAC_tumor_F4.raw = 6 | QE1_180417_OPL1022_TLL_PDAC_tumor_F5.raw = 6 | QE1_180417_OPL1022_TLL_PDAC_tumor_G1.raw = 7 | QE1_180417_OPL1022_TLL_PDAC_tumor_G2.raw = 7 | QE1_180417_OPL1022_TLL_PDAC_tumor_G3.raw = 7 | QE1_180417_OPL1022_TLL_PDAC_tumor_G4.raw = 7 | QE1_180417_OPL1022_TLL_PDAC_tumor_G5.raw = 7 | QE1_180417_OPL1022_TLL_PDAC_tumor_H1.raw = 8 | QE1_180417_OPL1022_TLL_PDAC_tumor_H2.raw = 8 | QE1_180417_OPL1022_TLL_PDAC_tumor_H3.raw = 8 | QE1_180417_OPL1022_TLL_PDAC_tumor_H4.raw = 8 | QE1_180417_OPL1022_TLL_PDAC_tumor_H5.raw = 8 | QE1_180417_OPL1022_TLL_PDAC_tumor_I1.raw = 9 | QE1_180417_OPL1022_TLL_PDAC_tumor_I2.raw = 9 | QE1_180417_OPL1022_TLL_PDAC_tumor_I3.raw = 9 | QE1_180417_OPL1022_TLL_PDAC_tumor_I4.raw = 9 | QE1_180417_OPL1022_TLL_PDAC_tumor_I5.raw = 9 | QE1_180417_OPL1022_TLL_PDAC_tumor_J1.raw = 10 | QE1_180417_OPL1022_TLL_PDAC_tumor_J2.raw = 10 | QE1_180417_OPL1022_TLL_PDAC_tumor_J3.raw = 10 | QE1_180417_OPL1022_TLL_PDAC_tumor_J4.raw = 10 | QE1_180417_OPL1022_TLL_PDAC_tumor_J5.raw = 10 | QE1_180417_OPL1022_TLL_PDAC_tumor_K1.raw = 11 | QE1_180417_OPL1022_TLL_PDAC_tumor_K2.raw = 11 | QE1_180417_OPL1022_TLL_PDAC_tumor_K3.raw = 11 | QE1_180417_OPL1022_TLL_PDAC_tumor_K4.raw = 11 | QE1_180417_OPL1022_TLL_PDAC_tumor_K5.raw = 11 | QE1_180417_OPL1022_TLL_PDAC_tumor_L1.raw = 12 | QE1_180417_OPL1022_TLL_PDAC_tumor_L2.raw = 12 | QE1_180417_OPL1022_TLL_PDAC_tumor_L3.raw = 12 | QE1_180417_OPL1022_TLL_PDAC_tumor_L4.raw = 12 | QE1_180417_OPL1022_TLL_PDAC_tumor_L5.raw = 12 | QE1_180417_OPL1022_TLL_PDAC_tumor_M1.raw = 13 | QE1_180417_OPL1022_TLL_PDAC_tumor_M2.raw = 13 | QE1_180417_OPL1022_TLL_PDAC_tumor_M3.raw = 13 | QE1_180417_OPL1022_TLL_PDAC_tumor_M4.raw = 13 | QE1_180417_OPL1022_TLL_PDAC_tumor_M5.raw = 13 | QE1_180417_OPL1022_TLL_PDAC_tumor_N1.raw = 14 | QE1_180417_OPL1022_TLL_PDAC_tumor_N2.raw = 14 | QE1_180417_OPL1022_TLL_PDAC_tumor_N3.raw = 14 | QE1_180417_OPL1022_TLL_PDAC_tumor_N4.raw = 14 | QE1_180417_OPL1022_TLL_PDAC_tumor_N5.raw = 14 | QE1_180417_OPL1022_TLL_PDAC_tumor_O1.raw = 15 | QE1_180417_OPL1022_TLL_PDAC_tumor_O2.raw = 15 | QE1_180417_OPL1022_TLL_PDAC_tumor_O3.raw = 15 | QE1_180417_OPL1022_TLL_PDAC_tumor_O4.raw = 15 | QE1_180417_OPL1022_TLL_PDAC_tumor_O5.raw = 15 | QE1_180417_OPL1022_TLL_PDAC_tumor_P1.raw = 16 | QE1_180417_OPL1022_TLL_PDAC_tumor_P2.raw = 16 | QE1_180417_OPL1022_TLL_PDAC_tumor_P3.raw = 16 | QE1_180417_OPL1022_TLL_PDAC_tumor_P4.raw = 16 | QE1_180417_OPL1022_TLL_PDAC_tumor_P5.raw = 16 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q1.raw = 17 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q2.raw = 17 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q3.raw = 17 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q4.raw = 17 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q5.raw = 17 | QE1_180417_OPL1022_TLL_PDAC_tumor_R1.raw = 18 | QE1_180417_OPL1022_TLL_PDAC_tumor_R2.raw = 18 | QE1_180417_OPL1022_TLL_PDAC_tumor_R3.raw = 18 | QE1_180417_OPL1022_TLL_PDAC_tumor_R4.raw = 18 | QE1_180417_OPL1022_TLL_PDAC_tumor_R5.raw = 18 | QE1_180417_OPL1022_TLL_PDAC_tumor_S1.raw = 19 | QE1_180417_OPL1022_TLL_PDAC_tumor_S2.raw = 19 | QE1_180417_OPL1022_TLL_PDAC_tumor_S3.raw = 19 | QE1_180417_OPL1022_TLL_PDAC_tumor_S4.raw = 19 | QE1_180417_OPL1022_TLL_PDAC_tumor_S5.raw = 19 | QE1_180417_OPL1022_TLL_PDAC_tumor_T1.raw = 20 | QE1_180417_OPL1022_TLL_PDAC_tumor_T2.raw = 20 | QE1_180417_OPL1022_TLL_PDAC_tumor_T3.raw = 20 | QE1_180417_OPL1022_TLL_PDAC_tumor_T4.raw = 20 | QE1_180417_OPL1022_TLL_PDAC_tumor_T5.raw = 20",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that 20 surgically resected PDAC specimens were analyzed.",
+        "TRUTH_CHECK": "The mapping assigns all 100 runs to biological replicate 1. However, the paper describes 20 different patients (independent biological units). Each patient's set of runs (5 gel bands per patient) should share a unique index, and different patients should have different indices (1 to 20).",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic of the mapping is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "QE1_180417_OPL1022_TLL_PDAC_tumor_A1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_A3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_A4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_A5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_B1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_B3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_B4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_B5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_C1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_C3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_C4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_C5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_D1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_D3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_D4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_D5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_E1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_E3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_E4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_E5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_F1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_F3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_F4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_F5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_G1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_G3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_G4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_G5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_H1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_H3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_H4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_H5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_I1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_I3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_I4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_I5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_J1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_J3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_J4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_J5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_K1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_K3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_K4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_K5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_L1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_L3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_L4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_L5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_M1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_M3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_M4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_M5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_N1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_N3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_N4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_N5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_O1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_O3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_O4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_O5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_P1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_P3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_P4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_P5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_R1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_R3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_R4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_R5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_S1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_S3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_S4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_S5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_T1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_T3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_T4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_T5.raw = 5",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that gel lanes were cut into five bands and each band was injected separately.",
+        "TRUTH_CHECK": "The runs are not technical replicates of the same material, but rather different fractions (gel bands 1-5) of the same sample.",
+        "COMPLETENESS_CHECK": "The mapping assigns indices 1-5 to these runs, but they should be fractions."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "QE1_180417_OPL1022_TLL_PDAC_tumor_A1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S5.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T2.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T3.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T4.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T5.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "QE1_180417_OPL1022_TLL_PDAC_tumor_A1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_A2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_A3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_A4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_A5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_B1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_B2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_B3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_B4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_B5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_C1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_C2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_C3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_C4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_C5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_D1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_D2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_D3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_D4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_D5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_E1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_E2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_E3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_E4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_E5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_F1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_F2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_F3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_F4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_F5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_G1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_G2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_G3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_G4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_G5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_H1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_H2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_H3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_H4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_H5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_I1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_I2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_I3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_I4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_I5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_J1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_J2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_J3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_J4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_J5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_K1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_K2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_K3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_K4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_K5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_L1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_L2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_L3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_L4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_L5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_M1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_M2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_M3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_M4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_M5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_N1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_N2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_N3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_N4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_N5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_O1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_O2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_O3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_O4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_O5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_P1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_P2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_P3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_P4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_P5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_Q5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_R1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_R2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_R3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_R4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_R5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_S1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_S2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_S3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_S4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_S5.raw = 5 | QE1_180417_OPL1022_TLL_PDAC_tumor_T1.raw = 1 | QE1_180417_OPL1022_TLL_PDAC_tumor_T2.raw = 2 | QE1_180417_OPL1022_TLL_PDAC_tumor_T3.raw = 3 | QE1_180417_OPL1022_TLL_PDAC_tumor_T4.raw = 4 | QE1_180417_OPL1022_TLL_PDAC_tumor_T5.raw = 5",
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"Gel lanes were cut into five bands\" and that \"The samples were injected by gel band\", which constitutes offline fractionation.",
+        "TRUTH_CHECK": "Each sample (A-T) has 5 runs (1-5), corresponding to the 5 gel bands. These should be assigned fraction identifiers 1, 2, 3, 4, and 5 respectively, rather than all being 1.",
+        "COMPLETENESS_CHECK": "The mapping is complete but contains wrong details for the fraction indices."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "NT=Orbitrap;AC=MS:1000484",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer, which is the correct information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper states that MS/MS spectra were acquired in the orbitrap.",
+        "TRUTH_CHECK": "The value is correct for the runs as they were all analyzed on a Q Exactive mass spectrometer.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

@@ -1,0 +1,498 @@
+{
+  "paper_id": "PXD005539",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes human melanoma cell lines (SKMEL28, A375, C32TG) and human primary adult epidermal melanocytes, making \"Homo sapiens\" an allowed inference.",
+        "TRUTH_CHECK": "The proteins analyzed in the EV proteomics were derived from these human cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "skin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the right field.",
+        "SOURCE_CHECK": "The paper describes melanoma cell lines and primary epidermal melanocytes. Melanoma and melanocytes originate from the skin.",
+        "TRUTH_CHECK": "The runs are derived from melanoma cell lines (A375, C32TG, SKMEL28), and the organ of origin for these is the skin.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions melanoma cell lines (A375, C32TG, SKMEL28) and primary adult epidermal melanocytes. Melanocytes and melanoma cells are not epithelial cells; they are neural crest-derived.",
+        "TRUTH_CHECK": "The value \"epithelial\" is not supported by the text for these cell lines or the primary melanocytes.",
+        "COMPLETENESS_CHECK": "Not applicable, the value is incorrect."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "melanoma",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"melanoma\" describes a disease or a type of cancer, not a biological cell type.",
+        "SOURCE_CHECK": "The paper mentions \"melanoma cell lines\" and \"melanoma EVs\".",
+        "TRUTH_CHECK": "Melanoma is the disease state of the cell lines (SKMEL28, A375, C32TG), not the cell type. The cell type for these melanoma lines is melanocyte (or malignant melanocyte).",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "malignant melanoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the material, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the use of \"melanoma cell lines\" (SKMEL28, A375, C32TG).",
+        "TRUTH_CHECK": "The runs carry these melanoma cell lines; \"malignant melanoma\" is the disease of origin for these lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "amelanotic melanoma",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"melanoma cell lines\" (SKMEL28, A375, C32TG), but the specific term \"amelanotic melanoma\" does not appear in the text.",
+        "TRUTH_CHECK": "The term \"amelanotic\" is not mentioned in the paper; it is an external detail not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The value follows the format for a disease state."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "54Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of the subjects or the donors of the cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "53Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of the subjects or the cell line donors.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "51Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of any subjects or cell line donors.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the sex of the donors for the A375 cell line or any other samples used in the proteomics experiment.",
+        "TRUTH_CHECK": "The sex of a cell line donor cannot be inferred and is not provided in the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the sex field.",
+        "SOURCE_CHECK": "The paper does not state the sex of the donors for the cell lines or the subjects in the melanoma/control cohorts.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "A375",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly lists A375 as one of the human melanoma cell lines used.",
+        "TRUTH_CHECK": "The EV proteomics section confirms that EV preparations from A375 were analyzed by MS.",
+        "COMPLETENESS_CHECK": "The value is written exactly as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "C32TG",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a name of an immortalized cell line, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly lists C32TG as one of the human melanoma cell lines used.",
+        "TRUTH_CHECK": "The \"EV Proteomics\" section confirms that EV preparations from C32TG were analyzed by MS.",
+        "COMPLETENESS_CHECK": "The value is written exactly as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SK-MEL-28",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"SKMEL28\" cell line in the Cell Lines and EV Proteomics sections.",
+        "TRUTH_CHECK": "The runs are identified as SKMEL28, and the paper confirms this cell line was used for EV proteomics.",
+        "COMPLETENESS_CHECK": "The value is complete. The difference in hyphenation (\"SK-MEL-28\" vs \"SKMEL28\") is a minor naming variation and not a reason to downgrade."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"cell\" is a description of material, but it is not one of the controlled terms listed in the field definition.",
+        "SOURCE_CHECK": "The paper describes the use of melanoma cell lines (SKMEL28, A375, C32TG) for EV proteomics.",
+        "TRUTH_CHECK": "The runs are derived from cell lines.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the allowed broad classes (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"adult\" is a developmental stage, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"primary adult epidermal melanocytes\" and the related columns show ages (e.g., 54Y) consistent with adults.",
+        "TRUTH_CHECK": "The runs are derived from melanoma cell lines and primary melanocytes, which are adult in origin.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Caucasian",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the ethnicity of the subjects or the cell line donors.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a proteomics workflow using gel sections and LC-MS/MS without mentioning any isotopic labels (TMT, SILAC, etc.), which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are part of the EV proteomics experiment which used a label-free approach.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT= LTQ Orbitrap Elite;AC=MS:1001910",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Orbitrap Elite",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper mentions a \"Thermo Scientific Orbitrap Elite Hybrid Mass Spectrometer\".",
+        "TRUTH_CHECK": "The instrument used for the runs is the Orbitrap Elite.",
+        "COMPLETENESS_CHECK": "The candidate value adds \"LTQ\" to the model name. While the paper describes it as a \"Hybrid Mass Spectrometer\" and mentions \"linear ion trap rapid CID\", the specific model name printed is \"Orbitrap Elite\"."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that gel sections were \"digested in 5 ng/µL trypsin overnight\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the EV samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "NT=collision-induced dissociation;AC=MS:1000133",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that the Orbitrap Elite experiment used \"linear ion trap rapid CID MS/MS scans\".",
+        "TRUTH_CHECK": "The runs associated with the Orbitrap Elite instrument used CID.",
+        "COMPLETENESS_CHECK": "Complete. \"collision-induced dissociation\" is the full name for CID."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes an \"EV Proteomics\" workflow using LC-MS/MS (Orbitrap Elite and QExactivePlus) to identify proteins, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the proteomics experiment performed on the EV samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Oxidation of methionine... were specified as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was part of the search parameters for all MS samples.",
+        "COMPLETENESS_CHECK": "Follows the required format including name, status, and residue."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=Variable;AC=UNIMOD:4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a database search modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that the \"iodoacetamide derivative of cysteine\" was specified as a variable modification.",
+        "TRUTH_CHECK": "Carbamidomethyl is the standard chemical name for the iodoacetamide derivative of cysteine.",
+        "COMPLETENESS_CHECK": "The value follows the required format, including the name, residue, and variable status."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"a parent ion tolerance of 10.0 PPM\".",
+        "TRUTH_CHECK": "The value is correct for the runs described in the proteomics section.",
+        "COMPLETENESS_CHECK": "The value follows the definition and matches the printed value."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.60 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states a fragment ion mass tolerance of 0.60 Da for the Elite.",
+        "TRUTH_CHECK": "The runs carry the value 0.60 Da and are associated with the Orbitrap Elite instrument.",
+        "COMPLETENESS_CHECK": "Complete, follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "A375_F1.raw = 1 | A375_F2.raw = 1 | A375_F3.raw = 1 | A375_F4.raw = 1 | A375_F5.raw = 1 | A375_F6.raw = 1 | A375_F7.raw = 1 | A375_F8.raw = 1 | A375_F9.raw = 1 | C32TG_F1.raw = 1 | C32TG_F2.raw = 1 | C32TG_F3.raw = 1 | C32TG_F4.raw = 1 | C32TG_F5.raw = 1 | C32TG_F6.raw = 1 | C32TG_F7.raw = 1 | C32TG_F8.raw = 1 | C32TG_F9.raw = 1 | SKEML28_F4.raw = 1 | SKMEL28_F1.raw = 1 | SKMEL28_F2.raw = 1 | SKMEL28_F2a.raw = 1 | SKMEL28_F3.raw = 1 | SKMEL28_F5.raw = 1 | SKMEL28_F6.raw = 1 | SKMEL28_F7.raw = 1 | SKMEL_F3b.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes proteomics on three melanoma cell line EV preparations (SKMEL28, C32TG, A375).",
+        "TRUTH_CHECK": "Each group of runs corresponds to one of the three cell line preparations. Runs within each group (e.g., A375_F1 to F9) are fractions or technical replicates of a single biological sample preparation.",
+        "COMPLETENESS_CHECK": "Every run within a sample group is correctly assigned the same biological replicate index (1)."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "A375_F1.raw = 1 | A375_F2.raw = 1 | A375_F3.raw = 1 | A375_F4.raw = 1 | A375_F5.raw = 1 | A375_F6.raw = 1 | A375_F7.raw = 1 | A375_F8.raw = 1 | A375_F9.raw = 1 | C32TG_F1.raw = 1 | C32TG_F2.raw = 1 | C32TG_F3.raw = 1 | C32TG_F4.raw = 1 | C32TG_F5.raw = 1 | C32TG_F6.raw = 1 | C32TG_F7.raw = 1 | C32TG_F8.raw = 1 | C32TG_F9.raw = 1 | SKEML28_F4.raw = 1 | SKMEL28_F1.raw = 1 | SKMEL28_F2.raw = 1 | SKMEL28_F2a.raw = 1 | SKMEL28_F3.raw = 1 | SKMEL28_F5.raw = 1 | SKMEL28_F6.raw = 1 | SKMEL28_F7.raw = 1 | SKMEL_F3b.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes \"silver-stained gel sections were prepared for MS analysis\" and \"gel fractions were destained\", indicating that the samples were split into multiple gel slices/fractions.",
+        "TRUTH_CHECK": "The runs are labeled as fractions (F1, F2, etc.). According to the field definition, separate elutions or enrichment steps (and by extension, separate gel fractions of one sample) are different material and should be treated as fractions, not technical replicates. However, since each unique fraction is measured once, each individual fraction run correctly receives a technical replicate index of 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index of 1, which is correct for a single measurement of each fraction."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "A375_F1.raw = 1 | A375_F2.raw = 2 | A375_F3.raw = 3 | A375_F4.raw = 4 | A375_F5.raw = 5 | A375_F6.raw = 6 | A375_F7.raw = 7 | A375_F8.raw = 8 | A375_F9.raw = 9 | C32TG_F1.raw = 1 | C32TG_F2.raw = 2 | C32TG_F3.raw = 3 | C32TG_F4.raw = 4 | C32TG_F5.raw = 5 | C32TG_F6.raw = 6 | C32TG_F7.raw = 7 | C32TG_F8.raw = 8 | C32TG_F9.raw = 9 | SKEML28_F4.raw = 4 | SKMEL28_F1.raw = 1 | SKMEL28_F2.raw = 2 | SKMEL28_F2a.raw = 8 | SKMEL28_F3.raw = 3 | SKMEL28_F5.raw = 5 | SKMEL28_F6.raw = 6 | SKMEL28_F7.raw = 7 | SKMEL_F3b.raw = 9",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the fraction_identifier field.",
+        "SOURCE_CHECK": "The paper states that \"Silver-stained gel sections were prepared for MS analysis\" and \"gel fractions were destained\", which confirms offline fractionation by SDS-PAGE gel slicing.",
+        "TRUTH_CHECK": "The runs are mapped to fraction indices based on the file names (e.g., _F1, _F2), which is consistent with the described gel fractionation.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns an index to each run."
+      }
+    }
+  ]
+}

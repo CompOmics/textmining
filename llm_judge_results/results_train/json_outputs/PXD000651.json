@@ -1,0 +1,328 @@
+{
+  "paper_id": "PXD000651",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the use of human cerebrospinal fluid and human subjects, which is an allowed inference.",
+        "TRUTH_CHECK": "The analysed proteins are from human samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "cerebrospinal fluid",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a body fluid, which is a valid organism part for the tissue field.",
+        "SOURCE_CHECK": "The paper explicitly states that the human cerebrospinal fluid (CSF) proteome was mapped.",
+        "TRUTH_CHECK": "The runs listed (source=mixed CSF) are derived from the CSF pool.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "uninfected",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the health status of the subjects, which belongs to the disease_state field.",
+        "SOURCE_CHECK": "The paper states that CSF was collected from \"neurologically healthy\" individuals.",
+        "TRUTH_CHECK": "The subjects are healthy; however, \"uninfected\" is not mentioned and is not an appropriate term for neurologically healthy human subjects in this context.",
+        "COMPLETENESS_CHECK": "The SDRF term for healthy subjects is \"normal\"."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a discovery proteomics workflow (DDA) without any mention of isotopic labels (TMT, SILAC, etc.), which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are part of the global CSF proteome mapping and are label-free.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001742; NT=LTQ Orbitrap Velos",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=LTQ Orbitrap Velos Pro",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the use of an \"LTQ Orbitrap Velos Pro mass spectrometer\".",
+        "TRUTH_CHECK": "The instrument was used for the LC-MS/MS analysis of the samples.",
+        "COMPLETENESS_CHECK": "The value \"LTQ Orbitrap Velos\" is a drift from the specific \"LTQ Orbitrap Velos Pro\" model printed in the paper."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods section explicitly mentions the use of trypsin for all sample preparations (SDS-PAGE, Mixed Mode, and SPEG).",
+        "TRUTH_CHECK": "The runs listed (HV_map_...) correspond to the mixed mode CSF mapping, which used trypsin.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000133;NT=CID",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragmentation method, the right field.",
+        "SOURCE_CHECK": "The MS Analysis section states \"collision-induced dissociation (CID) with normalized collision energy of 35%\".",
+        "TRUTH_CHECK": "The runs used CID as the fragmentation method.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "35 NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the collision energy, which is the right field.",
+        "SOURCE_CHECK": "The MS Analysis section states \"collision-induced dissociation (CID) with normalized collision energy of 35%\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value \"35 NCE\" is a slightly abbreviated version of \"35% normalized collision energy\", which is acceptable as a format."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "FractionationMethod",
+      "extracted_value": "AC=PRIDE:0000124; NT=Sodium dodecyl sulfate polyacrylamide gel electrophoresis",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an offline separation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods describe \"gel separation in two separate lanes using a lab-casted 20 cm 5–15% SDS-polyacrylamide gradient gel\" and cutting the gel into slices.",
+        "TRUTH_CHECK": "The runs listed (HV_map_A...) correspond to the SDS-PAGE experiment (as indicated by the \"map\" and \"A\" numbering typical for gel slices in this study).",
+        "COMPLETENESS_CHECK": "Complete. The term is a standard name for the method described."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a comprehensive mapping of the CSF and plasma proteomes using LC-MS/MS, which is a proteomic profiling experiment.",
+        "TRUTH_CHECK": "The value is correct for the runs described.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term definition."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"carbamidomethylation of cystein as a fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residue, and status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;AC=UNIMOD:35;MT=Variable;TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a modification set in the database search, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that \"oxidized methionine as a variable modification for all datasets\" was used.",
+        "TRUTH_CHECK": "The value is correct for the runs as it was applied to all datasets.",
+        "COMPLETENESS_CHECK": "The value follows the required format, including the name, residues, and modification status."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under \"Analysis of LC-MS/MS Data\" states \"Precursor mass tolerance was 10 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.7 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods section states \"fragment mass tolerance 0.7 Da\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Complete, follows the required format."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "HV_map_A2.raw = 1 | HV_map_A31.raw = 1 | HV_map_A9.raw = 1 | HV_map_A6.raw = 1 | HV_map_A27.raw = 1 | HV_map_A20.raw = 1 | HV_map_A14.raw = 1 | HV_map_A35.raw = 1 | HV_map_A24.raw = 1 | HV_map_A8.raw = 1 | HV_map_A3.raw = 1 | HV_map_A29.raw = 1 | HV_map_A22.raw = 1 | HV_map_A15ny.raw = 1 | HV_map_A21.raw = 1 | HV_map_A4.raw = 1 | HV_map_A16ny.raw = 1 | HV_map_A1.raw = 1 | HV_map_A34ny.raw = 1 | HV_map_A19.raw = 1 | HV_map_A36.raw = 1 | HV_map_A28.raw = 1 | HV_map_A13ny.raw = 1 | HV_map_A10.raw = 1 | HV_map_A37.raw = 1 | HV_map_A26.raw = 1 | HV_map_A18ny.raw = 1 | HV_map_A32.raw = 1 | HV_map_A7.raw = 1 | HV_map_A23.raw = 1 | HV_map_A25.raw = 1 | HV_map_A17conc.raw = 1 | HV_map_A5.raw = 1 | HV_map_A30.raw = 1 | HV_map_A33ny.raw = 1 | HV_map_A11.raw = 1 | HV_map_A12.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that aliquots of 500 μl CSF from each of the 21 individuals were combined into a pool.",
+        "TRUTH_CHECK": "Since all these runs are derived from the same pooled CSF sample, they must share the same biological replicate index.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned to biological replicate 1."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "HV_map_A2.raw = 1 | HV_map_A31.raw = 1 | HV_map_A9.raw = 1 | HV_map_A6.raw = 1 | HV_map_A27.raw = 1 | HV_map_A20.raw = 1 | HV_map_A14.raw = 1 | HV_map_A35.raw = 1 | HV_map_A24.raw = 1 | HV_map_A8.raw = 1 | HV_map_A3.raw = 1 | HV_map_A29.raw = 1 | HV_map_A22.raw = 1 | HV_map_A15ny.raw = 1 | HV_map_A21.raw = 1 | HV_map_A4.raw = 1 | HV_map_A16ny.raw = 1 | HV_map_A1.raw = 1 | HV_map_A34ny.raw = 1 | HV_map_A19.raw = 1 | HV_map_A36.raw = 1 | HV_map_A28.raw = 1 | HV_map_A13ny.raw = 1 | HV_map_A10.raw = 1 | HV_map_A37.raw = 1 | HV_map_A26.raw = 1 | HV_map_A18ny.raw = 1 | HV_map_A32.raw = 1 | HV_map_A7.raw = 1 | HV_map_A23.raw = 1 | HV_map_A25.raw = 1 | HV_map_A17conc.raw = 1 | HV_map_A5.raw = 1 | HV_map_A30.raw = 1 | HV_map_A33ny.raw = 1 | HV_map_A11.raw = 1 | HV_map_A12.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a pooled CSF sample processed via mixed mode fractionation into multiple fractions.",
+        "TRUTH_CHECK": "Each run represents a different fraction of the pooled sample; since each fraction is a unique material measured once, they each correctly receive a technical replicate index of 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value, and the value 1 is correct for a single measurement of a material."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "HV_map_A2.raw = 2 | HV_map_A31.raw = 31 | HV_map_A9.raw = 9 | HV_map_A6.raw = 6 | HV_map_A27.raw = 27 | HV_map_A20.raw = 20 | HV_map_A14.raw = 14 | HV_map_A35.raw = 35 | HV_map_A24.raw = 24 | HV_map_A8.raw = 8 | HV_map_A3.raw = 3 | HV_map_A29.raw = 29 | HV_map_A22.raw = 22 | HV_map_A15ny.raw = 15 | HV_map_A21.raw = 21 | HV_map_A4.raw = 4 | HV_map_A16ny.raw = 16 | HV_map_A1.raw = 1 | HV_map_A34ny.raw = 34 | HV_map_A19.raw = 19 | HV_map_A36.raw = 36 | HV_map_A28.raw = 28 | HV_map_A13ny.raw = 13 | HV_map_A10.raw = 10 | HV_map_A37.raw = 37 | HV_map_A26.raw = 26 | HV_map_A18ny.raw = 18 | HV_map_A32.raw = 32 | HV_map_A7.raw = 7 | HV_map_A23.raw = 23 | HV_map_A25.raw = 25 | HV_map_A17conc.raw = 17 | HV_map_A5.raw = 5 | HV_map_A30.raw = 30 | HV_map_A33ny.raw = 33 | HV_map_A11.raw = 11 | HV_map_A12.raw = 12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes offline fractionation of CSF using mixed mode reversed phase-anion exchange (MM RP-AX), resulting in 66 fractions for the depleted sample and 10 for the bound sample.",
+        "TRUTH_CHECK": "The runs are identified as \"mixed CSF\" and the indices correspond to the fractions generated by the MM RP-AX process described in the methods.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns a unique fraction index to each run based on the file naming convention."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "AC=MS:1000264; NT=ion trap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"ion trap\" describes a mass analyzer, which is the correct type of information for a column named \"MS2MassAnalyzer\".",
+        "SOURCE_CHECK": "The paper states the instrument used was an \"LTQ Orbitrap Velos Pro\".",
+        "TRUTH_CHECK": "The LTQ Orbitrap Velos is a hybrid instrument; the \"LTQ\" part refers to the Linear Trap (ion trap), which is used for MS/MS fragmentation (MS2) in this instrument's standard operation.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Separation",
+      "extracted_value": "AC=PRIDE:0000563;NT=Reversed-phase chromatography",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the chromatographic separation method, which is appropriate for a column named \"Separation\".",
+        "SOURCE_CHECK": "The paper describes the use of \"C18 beads\" and \"reversed phase-anion exchange\" for both the offline fractionation and the analytical LC-MS/MS separation.",
+        "TRUTH_CHECK": "The runs listed (HV_map_...) are part of the mixed-mode fractionation experiment, which uses reversed-phase chromatography as a primary component of its separation.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "paper_id": "PXD034195",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Desulfuromonas acetexigens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a scientific name of an organism, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly names Desulfuromonas acetexigens as the subject of the proteomic analysis.",
+        "TRUTH_CHECK": "The proteins analyzed in the LC-MS/MS experiment were from D. acetexigens.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "characteristics[cell line]",
+      "extracted_value": "Desulfuromonas acetexigens",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a bacterial species/strain name, not an immortalized cell line.",
+        "SOURCE_CHECK": "The organism is stated in the paper.",
+        "TRUTH_CHECK": "Desulfuromonas acetexigens is a bacterium, not a cell line.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "characteristics[material type]",
+      "extracted_value": "bacterial culture",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes D. acetexigens being cultured in anaerobic bottles and MECs, which is a bacterial culture.",
+        "TRUTH_CHECK": "The analysed material for the proteomics runs consists of D. acetexigens cells grown in culture.",
+        "COMPLETENESS_CHECK": "The value \"bacterial culture\" is a correct description, and while \"cell culture\" is the listed SDRF term for cultured cells, \"bacterial culture\" is a standard and accurate specification for this material."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Orbitrap Fusion Lumos",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states the peptide mixtures were analyzed using an \"Exploris 480 MS\".",
+        "TRUTH_CHECK": "The instrument used was an Exploris 480, not an Orbitrap Fusion Lumos.",
+        "COMPLETENESS_CHECK": "The value is complete but describes the wrong instrument model."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Exploris 480 MS",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states \"The peptide mixtures were analyzed using an Exploris 480 MS.\"",
+        "TRUTH_CHECK": "The Exploris 480 MS is the primary instrument used for the proteomic analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=trypsin",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The paper does not mention the cleavage agent used for the proteomics analysis.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "acquisition_method",
+      "sdrf_column": "comment[acquisition method]",
+      "extracted_value": "nano-LC-MS/MS",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"nano-LC-MS/MS\" describes the general analytical technique, not the specific MS acquisition scheme (DDA, DIA, etc.).",
+        "SOURCE_CHECK": "The paper mentions \"nano-liquid chromatography–tandem mass spectrometry (LC–MS/MS)\" and \"directDIA mode\".",
+        "TRUTH_CHECK": "The value is a general description of the workflow, not the acquisition method. The paper explicitly states \"directDIA mode\", which corresponds to \"DIA\".",
+        "COMPLETENESS_CHECK": "Not applicable, wrong type."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Carbamidomethyl;TA=C",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Carbamidomethyl;TA=C;MT=Fixed",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Carbamidomethylation of cysteine was set as a fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "The definition requires the MT status (Fixed or Variable), which is missing."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Oxidation;TA=M",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Oxidation;TA=M;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"oxidation of methionine\" was set as a variable modification.",
+        "TRUTH_CHECK": "The value is correct for the proteomics runs.",
+        "COMPLETENESS_CHECK": "The definition requires the modification status (MT=Fixed or Variable), which is missing."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Deamidated;TA=N,Q",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper does not mention deamidation in the search parameters; it only lists carbamidomethylation, oxidation of methionine, and acetylation of protein N-termini.",
+        "TRUTH_CHECK": "The modification was not used for the runs.",
+        "COMPLETENESS_CHECK": "Missing the MT status, but the value itself is not supported."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Acetyl;PP=Protein N-term",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Acetyl;PP=Protein N-term;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"acetylation of protein N-termini were set as variable modifications\".",
+        "TRUTH_CHECK": "The value is right for the runs.",
+        "COMPLETENESS_CHECK": "The value is missing the MT (modification type) status required by the definition."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[biological replicates]",
+      "extracted_value": "bioRep1; bioRep2; bioRep3",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes biological replicates, which is the correct type of information for a column named \"characteristics[biological replicates]\".",
+        "SOURCE_CHECK": "The paper states in the \"Statistics and reproducibility\" section that \"Three biological replicates were used for electrochemical, differential transcriptomic, and proteomic experiments.\"",
+        "TRUTH_CHECK": "The value \"bioRep1; bioRep2; bioRep3\" represents the three biological replicates mentioned in the paper. However, the SDRF convention \"ONE VALUE PER CELL\" is violated here; a single cell for a single run should not contain a list of all replicates in the study.",
+        "COMPLETENESS_CHECK": "The value is a list of labels rather than a single index for the specific run."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[compound]",
+      "extracted_value": "sodium acetate",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a chemical compound, which fits the column name \"characteristics[compound]\".",
+        "SOURCE_CHECK": "Sodium acetate is mentioned multiple times in the methods as the electron donor.",
+        "TRUTH_CHECK": "While sodium acetate was used in the growth medium, the proteomics experiment analyzed the proteins of the bacteria (D. acetexigens), not the compound itself. A \"characteristics\" column for a run typically describes the sample or the condition. However, the field definition for \"other_column\" is generic and asks if the value is what a column with this name should hold. In a proteomics study, the carbon source/electron donor is a key sample characteristic.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[concentration of compound]",
+      "extracted_value": "10 mM",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a concentration, which fits the column name \"characteristics[concentration of compound]\".",
+        "SOURCE_CHECK": "The paper mentions \"10 mM sodium acetate\" as the electron donor in the MECs and \"10 mM sodium acetate\" in the growth medium for iron oxide incubations.",
+        "TRUTH_CHECK": "The concentration refers to the acetate used as the carbon/energy source for the samples analyzed by proteomics.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of biological replicates]",
+      "extracted_value": "3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of replicates, which fits the column name \"characteristics[number of biological replicates]\".",
+        "SOURCE_CHECK": "The paper states in the Statistics and reproducibility section: \"Three biological replicates were used for electrochemical, differential transcriptomic, and proteomic experiments.\"",
+        "TRUTH_CHECK": "The value correctly describes the number of biological replicates used for the proteomic experiments.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of samples]",
+      "extracted_value": "6",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number, which is appropriate for a column describing a count of samples.",
+        "SOURCE_CHECK": "The paper mentions \"Six MECs were operated in parallel\" for transcriptomics and \"triplicate\" for proteomics, but the specific number of samples for the MS runs is not explicitly summed as 6 in the methods.",
+        "TRUTH_CHECK": "The proteomics section describes triplicate MECs and triplicate cultures for three different iron oxides (hematite, goethite, magnetite) plus a fumarate control, which would total 12 samples, not 6.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sampling time]",
+      "extracted_value": "48 hours",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which is appropriate for a sampling time column.",
+        "SOURCE_CHECK": "The methods state that incubations of D. acetexigens with iron oxides were collected at 48 hours for protein extraction.",
+        "TRUTH_CHECK": "The value correctly describes the sampling time for the proteomic runs involving iron oxide minerals.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "anaerobic growth in serum vials with fumarate as the electron acceptor; MEC operation with electrode at -0.1 V vs Ag/AgCl",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the experimental conditions/treatments applied to the samples, which is the correct content for a \"sample treatment\" characteristics column.",
+        "SOURCE_CHECK": "The paper describes cultures grown with fumarate as the soluble electron acceptor and MECs operated at a set potential of -0.1 V vs. Ag/AgCl.",
+        "TRUTH_CHECK": "These are the two primary conditions compared in the differential proteomics analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "soluble protein fraction",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample fraction, which is a common use for a specimen characteristics column.",
+        "SOURCE_CHECK": "The paper describes protein extraction from biofilms and cultures, but it does not mention a \"soluble protein fraction\" specifically.",
+        "TRUTH_CHECK": "The proteomics analysis was performed on total protein extracts from biofilms and cultures; there is no mention of separating a soluble fraction from an insoluble one.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "biofilm on electrode",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the specimen/material collected for the analysis, which is appropriate for a characteristics[specimen] column.",
+        "SOURCE_CHECK": "The paper states that \"biofilm electrodes were collected\" and \"D. acetexigens biofilm on the electrode of MECs\" was used for proteomic analysis.",
+        "TRUTH_CHECK": "The value correctly describes the material used for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time]",
+      "extracted_value": "10 hours",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which fits a column named \"characteristics[time]\".",
+        "SOURCE_CHECK": "The paper mentions \"rapid biofilm formation and current production within 10 hours after initial inoculation\".",
+        "TRUTH_CHECK": "The 10-hour mark refers to the observation of current production in the results, not the specific sampling time for the proteomics runs. The proteomics samples were collected after \"mature biofilm formation\" (for MECs) or at \"48 hours\" (for iron oxides).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "30°C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which is the correct kind of information for a column named characteristics[temperature].",
+        "SOURCE_CHECK": "The methods state that D. acetexigens was cultured at 30°C and that MEC reactors were operated at 30°C.",
+        "TRUTH_CHECK": "The temperature is correct for the cultivation and experimental conditions of the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[treatment]",
+      "extracted_value": "-0.1 V vs Ag/AgCl (applied potential in MECs)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the experimental treatment (applied potential), which is appropriate for a characteristics[treatment] column.",
+        "SOURCE_CHECK": "The paper states that MECs were operated at a set potential of -0.1 V vs. Ag/AgCl.",
+        "TRUTH_CHECK": "The value correctly describes the condition for the runs associated with the electrode-based EET experiments.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[experiment]",
+      "extracted_value": "Differential proteomics analysis comparing D. acetexigens cultures incubated with iron oxide minerals (hematite, goethite, magnetite) and D. acetexigens biofilm on the electrode of MECs, against cultures grown with fumarate",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a descriptive summary of the experimental design, which is appropriate for a comment field.",
+        "SOURCE_CHECK": "The content is explicitly stated in the \"Differential proteomics analysis...\" section of the methods.",
+        "TRUTH_CHECK": "The value correctly describes the proteomics experiment performed in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[number of missed cleavages]",
+      "extracted_value": "2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number, which is the correct type for a count of missed cleavages.",
+        "SOURCE_CHECK": "The paper does not mention the number of missed cleavages allowed in the database search.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    }
+  ]
+}

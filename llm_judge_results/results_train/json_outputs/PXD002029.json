@@ -1,0 +1,345 @@
+{
+  "paper_id": "PXD002029",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the analysis was performed on human soft tissue and human colon mucosa biopsies.",
+        "TRUTH_CHECK": "The analysed samples are human.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Human colon mucosa",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Colon mucosal biopsies\" were sampled from \"human soft tissue\".",
+        "TRUTH_CHECK": "The analyzed material for all runs is colon mucosa from human participants.",
+        "COMPLETENESS_CHECK": "Complete. A species word in front of the term is explicitly acceptable."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Normal healthy",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "normal",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the health status of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the participants were \"gastroenterologically healthy\".",
+        "TRUTH_CHECK": "The value is right for the runs as all participants were healthy.",
+        "COMPLETENESS_CHECK": "The value uses \"Normal healthy\" instead of the required SDRF controlled term \"normal\"."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"A label-free quantative analysis was performed in MaxQuant 1.5.1.2.\"",
+        "TRUTH_CHECK": "All 24 runs were analyzed using this label-free approach.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001911;NT=Q Exactive",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Q Exactive Plus",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the instrument was a Q Exactive Plus.",
+        "TRUTH_CHECK": "The paper specifies the \"Plus\" model, not the base Q Exactive.",
+        "COMPLETENESS_CHECK": "Drift to the base model, fixed to the printed model."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods section states \"A 1:50 (w/w) trypsin:protein ratio... was added to the spin filter\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of all samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a \"high throughput gel free quantitative proteomics\" analysis using LC-MS/MS, which is a proteomic profiling workflow.",
+        "TRUTH_CHECK": "The value correctly describes the experiment performed on all 24 runs.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"carbamidomethyl (C) as a static modification\".",
+        "TRUTH_CHECK": "The value is correct for all runs as it was a static modification for the search.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;AC;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"oxidation (M)\" was set as a variable modification.",
+        "TRUTH_CHECK": "The modification was used for all runs in the study.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, status, and residue."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-Term;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"protein N-terminal acetylation\" as a variable modification.",
+        "TRUTH_CHECK": "The value correctly describes the modification used for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, including the name, position, and modification status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=deamidated;AC=UNIMOD:7;TA=N,Q;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"deamidation (NQ)\" was set as a variable modification.",
+        "TRUTH_CHECK": "The modification was used for all runs in the study.",
+        "COMPLETENESS_CHECK": "Follows the required format with NT, TA, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=formylated residue;AC=PSI-MOD:00493;TA=N;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"peptide N-terminal formylation\" as a variable modification.",
+        "TRUTH_CHECK": "The modification was searched for all runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, specifying the name, residues (N-terminal), and variable status."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "Colon_ParticipantA_DF_1.raw = 1 | Colon_ParticipantA_DF_2.raw = 1 | Colon_ParticipantA_DF_3.raw = 1 | Colon_ParticipantA_RNAlater_1.raw = 1 | Colon_ParticipantA_RNAlater_2.raw = 1 | Colon_ParticipantA_RNAlater_3.raw = 1 | Colon_ParticipantA_iFFPE_1.raw = 1 | Colon_ParticipantA_iFFPE_2.raw = 1 | Colon_ParticipantA_iFFPE_3.raw = 1 | Colon_ParticipantA_sFFPE_1.raw = 1 | Colon_ParticipantA_sFFPE_2.raw = 1 | Colon_ParticipantA_sFFPE_3.raw = 1 | Colon_ParticipantB_DF_1.raw = 1 | Colon_ParticipantB_DF_2.raw = 1 | Colon_ParticipantB_DF_3.raw = 1 | Colon_ParticipantB_RNAlater_1.raw = 1 | Colon_ParticipantB_RNAlater_2.raw = 1 | Colon_ParticipantB_RNAlater_3.raw = 1 | Colon_ParticipantB_iFFPE_1.raw = 1 | Colon_ParticipantB_iFFPE_2.raw = 1 | Colon_ParticipantB_iFFPE_3.raw = 1 | Colon_ParticipantB_sFFPE_1.raw = 1 | Colon_ParticipantB_sFFPE_2.raw = 1 | Colon_ParticipantB_sFFPE_3.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "Colon_ParticipantA_DF_1.raw = 1 | Colon_ParticipantA_DF_2.raw = 2 | Colon_ParticipantA_DF_3.raw = 3 | Colon_ParticipantA_RNAlater_1.raw = 1 | Colon_ParticipantA_RNAlater_2.raw = 2 | Colon_ParticipantA_RNAlater_3.raw = 3 | Colon_ParticipantA_iFFPE_1.raw = 1 | Colon_ParticipantA_iFFPE_2.raw = 2 | Colon_ParticipantA_iFFPE_3.raw = 3 | Colon_ParticipantA_sFFPE_1.raw = 1 | Colon_ParticipantA_sFFPE_2.raw = 2 | Colon_ParticipantA_sFFPE_3.raw = 3 | Colon_ParticipantB_DF_1.raw = 1 | Colon_ParticipantB_DF_2.raw = 2 | Colon_ParticipantB_DF_3.raw = 3 | Colon_ParticipantB_RNAlater_1.raw = 1 | Colon_ParticipantB_RNAlater_2.raw = 2 | Colon_ParticipantB_RNAlater_3.raw = 3 | Colon_ParticipantB_iFFPE_1.raw = 1 | Colon_ParticipantB_iFFPE_2.raw = 2 | Colon_ParticipantB_iFFPE_3.raw = 3 | Colon_ParticipantB_sFFPE_1.raw = 1 | Colon_ParticipantB_sFFPE_2.raw = 2 | Colon_ParticipantB_sFFPE_3.raw = 3",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states 24 colon mucosa biopsies were extracted from two participants (12 from each).",
+        "TRUTH_CHECK": "The mapping assigns biological replicate 1 to all 24 runs. However, the paper states that 12 biopsies were extracted from each of the two participants. According to the field definition, separate biopsies are independent biological units. Therefore, each of the 12 biopsies per person should have a unique index (1-12), and these should be repeated for both participants.",
+        "COMPLETENESS_CHECK": "The mapping is complete but logically incorrect based on the study design."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "Colon_ParticipantA_DF_1.raw = 1 | Colon_ParticipantA_DF_2.raw = 1 | Colon_ParticipantA_DF_3.raw = 1 | Colon_ParticipantA_RNAlater_1.raw = 2 | Colon_ParticipantA_RNAlater_2.raw = 2 | Colon_ParticipantA_RNAlater_3.raw = 2 | Colon_ParticipantA_iFFPE_1.raw = 3 | Colon_ParticipantA_iFFPE_2.raw = 3 | Colon_ParticipantA_iFFPE_3.raw = 3 | Colon_ParticipantA_sFFPE_1.raw = 4 | Colon_ParticipantA_sFFPE_2.raw = 4 | Colon_ParticipantA_sFFPE_3.raw = 4 | Colon_ParticipantB_DF_1.raw = 5 | Colon_ParticipantB_DF_2.raw = 5 | Colon_ParticipantB_DF_3.raw = 5 | Colon_ParticipantB_RNAlater_1.raw = 6 | Colon_ParticipantB_RNAlater_2.raw = 6 | Colon_ParticipantB_RNAlater_3.raw = 6 | Colon_ParticipantB_iFFPE_1.raw = 7 | Colon_ParticipantB_iFFPE_2.raw = 7 | Colon_ParticipantB_iFFPE_3.raw = 7 | Colon_ParticipantB_sFFPE_1.raw = 8 | Colon_ParticipantB_sFFPE_2.raw = 8 | Colon_ParticipantB_sFFPE_3.raw = 8",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "Colon_ParticipantA_DF_1.raw = 1 | Colon_ParticipantA_DF_2.raw = 1 | Colon_ParticipantA_DF_3.raw = 1 | Colon_ParticipantA_RNAlater_1.raw = 1 | Colon_ParticipantA_RNAlater_2.raw = 1 | Colon_ParticipantA_RNAlater_3.raw = 1 | Colon_ParticipantA_iFFPE_1.raw = 1 | Colon_ParticipantA_iFFPE_2.raw = 1 | Colon_ParticipantA_iFFPE_3.raw = 1 | Colon_ParticipantA_sFFPE_1.raw = 1 | Colon_ParticipantA_sFFPE_2.raw = 1 | Colon_ParticipantA_sFFPE_3.raw = 1 | Colon_ParticipantB_DF_1.raw = 1 | Colon_ParticipantB_DF_2.raw = 1 | Colon_ParticipantB_DF_3.raw = 1 | Colon_ParticipantB_RNAlater_1.raw = 1 | Colon_ParticipantB_RNAlater_2.raw = 1 | Colon_ParticipantB_RNAlater_3.raw = 1 | Colon_ParticipantB_iFFPE_1.raw = 1 | Colon_ParticipantB_iFFPE_2.raw = 1 | Colon_ParticipantB_iFFPE_3.raw = 1 | Colon_ParticipantB_sFFPE_1.raw = 1 | Colon_ParticipantB_sFFPE_2.raw = 1 | Colon_ParticipantB_sFFPE_3.raw = 1",
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes 24 biopsies (12 per person) preserved by 4 methods, implying 3 biopsies per method per person.",
+        "TRUTH_CHECK": "The mapping assigns the same technical replicate index to different biopsies (e.g., DF_1, DF_2, DF_3). According to the definition, separate biopsies are independent biological units, not technical replicates of the same material. Each unique biopsy measured once should have a technical replicate index of 1.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "Colon_ParticipantA_DF_1.raw = 1 | Colon_ParticipantA_DF_2.raw = 1 | Colon_ParticipantA_DF_3.raw = 1 | Colon_ParticipantA_RNAlater_1.raw = 1 | Colon_ParticipantA_RNAlater_2.raw = 1 | Colon_ParticipantA_RNAlater_3.raw = 1 | Colon_ParticipantA_iFFPE_1.raw = 1 | Colon_ParticipantA_iFFPE_2.raw = 1 | Colon_ParticipantA_iFFPE_3.raw = 1 | Colon_ParticipantA_sFFPE_1.raw = 1 | Colon_ParticipantA_sFFPE_2.raw = 1 | Colon_ParticipantA_sFFPE_3.raw = 1 | Colon_ParticipantB_DF_1.raw = 1 | Colon_ParticipantB_DF_2.raw = 1 | Colon_ParticipantB_DF_3.raw = 1 | Colon_ParticipantB_RNAlater_1.raw = 1 | Colon_ParticipantB_RNAlater_2.raw = 1 | Colon_ParticipantB_RNAlater_3.raw = 1 | Colon_ParticipantB_iFFPE_1.raw = 1 | Colon_ParticipantB_iFFPE_2.raw = 1 | Colon_ParticipantB_iFFPE_3.raw = 1 | Colon_ParticipantB_sFFPE_1.raw = 1 | Colon_ParticipantB_sFFPE_2.raw = 1 | Colon_ParticipantB_sFFPE_3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes 24 biopsies (12 per person) split among 4 preservation methods, meaning 3 biopsies per method per person.",
+        "TRUTH_CHECK": "Each run corresponds to a different biopsy (Sample 1, 2, 3), which are independent biological units, not repeated runs of the same material. Therefore, each is its own first technical replicate.",
+        "COMPLETENESS_CHECK": "Every run is assigned the index 1, which is correct for material measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "Colon_ParticipantA_DF_1.raw = 1 | Colon_ParticipantA_DF_2.raw = 1 | Colon_ParticipantA_DF_3.raw = 1 | Colon_ParticipantA_RNAlater_1.raw = 2 | Colon_ParticipantA_RNAlater_2.raw = 2 | Colon_ParticipantA_RNAlater_3.raw = 2 | Colon_ParticipantA_iFFPE_1.raw = 3 | Colon_ParticipantA_iFFPE_2.raw = 3 | Colon_ParticipantA_iFFPE_3.raw = 3 | Colon_ParticipantA_sFFPE_1.raw = 4 | Colon_ParticipantA_sFFPE_2.raw = 4 | Colon_ParticipantA_sFFPE_3.raw = 4 | Colon_ParticipantB_DF_1.raw = 1 | Colon_ParticipantB_DF_2.raw = 1 | Colon_ParticipantB_DF_3.raw = 1 | Colon_ParticipantB_RNAlater_1.raw = 2 | Colon_ParticipantB_RNAlater_2.raw = 2 | Colon_ParticipantB_RNAlater_3.raw = 2 | Colon_ParticipantB_iFFPE_1.raw = 3 | Colon_ParticipantB_iFFPE_2.raw = 3 | Colon_ParticipantB_iFFPE_3.raw = 3 | Colon_ParticipantB_sFFPE_1.raw = 4 | Colon_ParticipantB_sFFPE_2.raw = 4 | Colon_ParticipantB_sFFPE_3.raw = 4",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "Colon_ParticipantA_DF_1.raw = 1 | Colon_ParticipantA_DF_2.raw = 1 | Colon_ParticipantA_DF_3.raw = 1 | Colon_ParticipantA_RNAlater_1.raw = 1 | Colon_ParticipantA_RNAlater_2.raw = 1 | Colon_ParticipantA_RNAlater_3.raw = 1 | Colon_ParticipantA_iFFPE_1.raw = 1 | Colon_ParticipantA_iFFPE_2.raw = 1 | Colon_ParticipantA_iFFPE_3.raw = 1 | Colon_ParticipantA_sFFPE_1.raw = 1 | Colon_ParticipantA_sFFPE_2.raw = 1 | Colon_ParticipantA_sFFPE_3.raw = 1 | Colon_ParticipantB_DF_1.raw = 1 | Colon_ParticipantB_DF_2.raw = 1 | Colon_ParticipantB_DF_3.raw = 1 | Colon_ParticipantB_RNAlater_1.raw = 1 | Colon_ParticipantB_RNAlater_2.raw = 1 | Colon_ParticipantB_RNAlater_3.raw = 1 | Colon_ParticipantB_iFFPE_1.raw = 1 | Colon_ParticipantB_iFFPE_2.raw = 1 | Colon_ParticipantB_iFFPE_3.raw = 1 | Colon_ParticipantB_sFFPE_1.raw = 1 | Colon_ParticipantB_sFFPE_2.raw = 1 | Colon_ParticipantB_sFFPE_3.raw = 1",
+      "issue_summary": {
+        "TYPE_CHECK": "The field is for offline fractionation indices, which is the right kind of information.",
+        "SOURCE_CHECK": "The paper describes four preservation methods (DF, RNAlater, iFFPE, sFFPE) but no offline fractionation.",
+        "TRUTH_CHECK": "The candidate value uses the fraction identifier to distinguish between preservation methods, which is explicitly forbidden by the field definition.",
+        "COMPLETENESS_CHECK": "Every run should be assigned fraction 1 when no fractionation is performed."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "Colon_ParticipantA_DF_1.raw = 1 | Colon_ParticipantA_DF_2.raw = 1 | Colon_ParticipantA_DF_3.raw = 1 | Colon_ParticipantA_RNAlater_1.raw = 1 | Colon_ParticipantA_RNAlater_2.raw = 1 | Colon_ParticipantA_RNAlater_3.raw = 1 | Colon_ParticipantA_iFFPE_1.raw = 1 | Colon_ParticipantA_iFFPE_2.raw = 1 | Colon_ParticipantA_iFFPE_3.raw = 1 | Colon_ParticipantA_sFFPE_1.raw = 1 | Colon_ParticipantA_sFFPE_2.raw = 1 | Colon_ParticipantA_sFFPE_3.raw = 1 | Colon_ParticipantB_DF_1.raw = 2 | Colon_ParticipantB_DF_2.raw = 2 | Colon_ParticipantB_DF_3.raw = 2 | Colon_ParticipantB_RNAlater_1.raw = 2 | Colon_ParticipantB_RNAlater_2.raw = 2 | Colon_ParticipantB_RNAlater_3.raw = 2 | Colon_ParticipantB_iFFPE_1.raw = 2 | Colon_ParticipantB_iFFPE_2.raw = 2 | Colon_ParticipantB_iFFPE_3.raw = 2 | Colon_ParticipantB_sFFPE_1.raw = 2 | Colon_ParticipantB_sFFPE_2.raw = 2 | Colon_ParticipantB_sFFPE_3.raw = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents subject identifiers, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that biopsies were extracted from two participants.",
+        "TRUTH_CHECK": "The mapping correctly assigns all runs from Participant A to one index and all runs from Participant B to another.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "comment[Donor]",
+      "extracted_value": "Colon_ParticipantA_DF_1.raw = A | Colon_ParticipantA_DF_2.raw = A | Colon_ParticipantA_DF_3.raw = A | Colon_ParticipantA_RNAlater_1.raw = A | Colon_ParticipantA_RNAlater_2.raw = A | Colon_ParticipantA_RNAlater_3.raw = A | Colon_ParticipantA_iFFPE_1.raw = A | Colon_ParticipantA_iFFPE_2.raw = A | Colon_ParticipantA_iFFPE_3.raw = A | Colon_ParticipantA_sFFPE_1.raw = A | Colon_ParticipantA_sFFPE_2.raw = A | Colon_ParticipantA_sFFPE_3.raw = A | Colon_ParticipantB_DF_1.raw = B | Colon_ParticipantB_DF_2.raw = B | Colon_ParticipantB_DF_3.raw = B | Colon_ParticipantB_RNAlater_1.raw = B | Colon_ParticipantB_RNAlater_2.raw = B | Colon_ParticipantB_RNAlater_3.raw = B | Colon_ParticipantB_iFFPE_1.raw = B | Colon_ParticipantB_iFFPE_2.raw = B | Colon_ParticipantB_iFFPE_3.raw = B | Colon_ParticipantB_sFFPE_1.raw = B | Colon_ParticipantB_sFFPE_2.raw = B | Colon_ParticipantB_sFFPE_3.raw = B",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents the identifier of the donor, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that biopsies were extracted from two healthy participants. While they are not named \"A\" and \"B\" in the text, the use of identifiers to distinguish the two participants is a standard way to represent this information.",
+        "TRUTH_CHECK": "The mapping correctly assigns runs from the first participant to one identifier and runs from the second participant to another, consistent with the study design of two participants.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[individual]",
+      "extracted_value": "Colon_ParticipantA_DF_1.raw = 1 | Colon_ParticipantA_DF_2.raw = 1 | Colon_ParticipantA_DF_3.raw = 1 | Colon_ParticipantA_RNAlater_1.raw = 1 | Colon_ParticipantA_RNAlater_2.raw = 1 | Colon_ParticipantA_RNAlater_3.raw = 1 | Colon_ParticipantA_iFFPE_1.raw = 1 | Colon_ParticipantA_iFFPE_2.raw = 1 | Colon_ParticipantA_iFFPE_3.raw = 1 | Colon_ParticipantA_sFFPE_1.raw = 1 | Colon_ParticipantA_sFFPE_2.raw = 1 | Colon_ParticipantA_sFFPE_3.raw = 1 | Colon_ParticipantB_DF_1.raw = 2 | Colon_ParticipantB_DF_2.raw = 2 | Colon_ParticipantB_DF_3.raw = 2 | Colon_ParticipantB_RNAlater_1.raw = 2 | Colon_ParticipantB_RNAlater_2.raw = 2 | Colon_ParticipantB_RNAlater_3.raw = 2 | Colon_ParticipantB_iFFPE_1.raw = 2 | Colon_ParticipantB_iFFPE_2.raw = 2 | Colon_ParticipantB_iFFPE_3.raw = 2 | Colon_ParticipantB_sFFPE_1.raw = 2 | Colon_ParticipantB_sFFPE_2.raw = 2 | Colon_ParticipantB_sFFPE_3.raw = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents the level of a studied variable (individual), which is the correct field.",
+        "SOURCE_CHECK": "The paper states that biopsies were extracted from two healthy participants.",
+        "TRUTH_CHECK": "The mapping correctly assigns all runs from Participant A to index 1 and all runs from Participant B to index 2.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[PTM]",
+      "extracted_value": "1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"1\" does not correspond to any meaningful information for a column named \"comment[PTM]\" based on the paper text.",
+        "SOURCE_CHECK": "The value \"1\" is not mentioned in the paper as a comment or identifier related to PTMs.",
+        "TRUTH_CHECK": "The value \"1\" has no meaning for the runs in the context of PTM comments.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    }
+  ]
+}

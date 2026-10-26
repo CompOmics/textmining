@@ -1,0 +1,753 @@
+{
+  "paper_id": "PXD001061",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the use of HeLa and U2-OS cells and matching against the human Uniprot database, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analyzed proteins are from human cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "cervix",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper mentions HeLa cells; the field definition explicitly allows inferring \"cervix\" as the organ of origin for HeLa.",
+        "TRUTH_CHECK": "The runs used HeLa cells, so the inferred tissue is correct.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The paper uses HeLa and U2-OS cells; the cell type \"epithelial\" is an allowed inference for these cell lines.",
+        "TRUTH_CHECK": "The runs are derived from HeLa and U2-OS cells, both of which are epithelial.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "adenocarcinoma",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "cervical adenocarcinoma",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of origin for the cell line, which is the correct field.",
+        "SOURCE_CHECK": "The paper uses HeLa cells; the definition allows inferring \"cervical adenocarcinoma\" for HeLa.",
+        "TRUTH_CHECK": "The runs use HeLa cells, so the inferred disease state is correct.",
+        "COMPLETENESS_CHECK": "The value \"adenocarcinoma\" is a partial term; the definition specifies \"cervical adenocarcinoma\" for HeLa."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "31Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not mention the age of any subjects; it uses HeLa and U2-OS cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological sex, the right field.",
+        "SOURCE_CHECK": "The paper does not state the sex of the subjects or the origin of the cell lines (HeLa, U2-OS).",
+        "TRUTH_CHECK": "Not applicable as the value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HeLa cells",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that HeLa cells were used in the cell culture and cell line generation section.",
+        "TRUTH_CHECK": "The MS analysis was performed on proteins purified from these cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell line",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that HeLa and U2-OS cells were used, which are known cell lines.",
+        "TRUTH_CHECK": "The runs are derived from these cell lines.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms in the definition."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a developmental stage, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the use of HeLa and U2-OS cell lines; while the text does not explicitly say \"adult\", the related column \"age\" provides \"31Y\", and \"adult\" is an allowed inference from a stated adult age.",
+        "TRUTH_CHECK": "The value is correct for the runs as they are derived from these cell lines.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Black",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper describes the use of HeLa and U2-OS cell lines; it does not state the ethnicity of the donors.",
+        "TRUTH_CHECK": "The ethnicity is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Label-Free Quantification (LFQ)\" in the Label-Free Quantification section.",
+        "TRUTH_CHECK": "The runs described used LFQ, so they are label-free samples.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the analysis was performed using a Q-Exactive (Thermo).",
+        "TRUTH_CHECK": "The instrument was used for all the listed MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state that \"Sequencing Grade Modified Trypsin (Promega) was added\".",
+        "TRUTH_CHECK": "Trypsin was used for the in-solution digestion of the peptides analyzed by MS.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Lys-C;AC=MS:1001309",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that \"Sequencing Grade Endoproteinase Lys-C (Promega) was added to the samples\".",
+        "TRUTH_CHECK": "Lys-C was used for the initial digestion of the SUMOylated peptides for all runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that the Q-Exactive was used using Higher-Collisional Dissociation (HCD) fragmentation.",
+        "TRUTH_CHECK": "HCD was used for the LC-MS/MS analysis of the peptides in all runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "25 NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the collision energy, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"a normalized collision energy of 25%\".",
+        "TRUTH_CHECK": "This value is correct for the runs described.",
+        "COMPLETENESS_CHECK": "The value \"25 NCE\" is a correct representation of \"normalized collision energy of 25%\"."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;AC=UNIMOD:4;MT=fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Cysteine carbamidomethylation was set as a fixed peptide modification\".",
+        "TRUTH_CHECK": "The value is correct for all runs.",
+        "COMPLETENESS_CHECK": "Follows the required format including NT, TA, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;TA=M;AC=UNIMOD:35;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"methionine oxidation\" was set as a variable peptide modification.",
+        "TRUTH_CHECK": "The modification was used for all runs in the study.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residue, and modification type."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamyl;PP=Peptide N-term;AC=UNIMOD:5;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"peptide N-terminal carbamylation\" was set as a variable peptide modification.",
+        "TRUTH_CHECK": "The modification is correctly attributed to the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, specifying the name, position, and variable status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;PP=Any N-term;AC=UNIMOD:1;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"Protein N-terminal acetylation\" was set as a variable peptide modification.",
+        "TRUTH_CHECK": "The modification is right for the runs.",
+        "COMPLETENESS_CHECK": "The candidate uses PP=Any N-term, which is a correct representation of Protein N-terminal acetylation."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=QQTGG;PP=Not peptide C-term;TA=K;MM=471.20776;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states QQTGG was set as a lysine-specific variable modification with a monoisotopic mass of 471.20776 and not allowed at the C-terminal end.",
+        "TRUTH_CHECK": "The value correctly describes the search parameters used for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, although it uses MM for mass instead of the standard SDRF keys, the content is complete based on the paper."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Pyro-QQTGG;PP=Not peptide C-term;TA=K;MM=454.18121;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Pyro-QQTGG (pQQTGG) was set as s lysine-specific modification, with a monoisotopic mass of 454.18121, and not allowed to occur at the C-terminal end of peptides\" and lists it as a variable modification.",
+        "TRUTH_CHECK": "The value correctly describes the search parameters used for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, although it includes a mass (MM) not explicitly required by the definition, which is acceptable."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "6 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The data processing section states \"MS/MS spectra were filtered for a mass tolerance of 6 ppm for precursor masses\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and the unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under Data processing states \"a mass tolerance of 20 ppm was used for fragment ions.\"",
+        "TRUTH_CHECK": "The value is correct for the runs described in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the required format including the unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "QE_IA_QQTGG_Control_BR1_TR1.raw = 1 | QE_IA_QQTGG_Control_BR2_TR1.raw = 2 | QE_IA_QQTGG_Control_BR2_TR2.raw = 2 | QE_IA_QQTGG_Control_BR3_TR1.raw = 3 | QE_IA_QQTGG_Control_BR3_TR2.raw = 3 | QE_IA_QQTGG_Control_BR4_TR1.raw = 4 | QE_IA_QQTGG_Control_BR4_TR2.raw = 4 | QE_IA_QQTGG_Control_BR5_TR1.raw = 5 | QE_IA_QQTGG_Control_BR5_TR2.raw = 5 | QE_IA_QQTGG_Control_BR6_TR1.raw = 6 | QE_IA_QQTGG_Control_BR6_TR2.raw = 6 | QE_IA_QQTGG_HEAT_BR1_TR1.raw = 1 | QE_IA_QQTGG_HEAT_BR1_TR2.raw = 1 | QE_IA_QQTGG_HEAT_BR2_TR1.raw = 2 | QE_IA_QQTGG_HEAT_BR2_TR2.raw = 2 | QE_IA_QQTGG_HEAT_BR3_TR1.raw = 3 | QE_IA_QQTGG_HEAT_BR3_TR2.raw = 3 | QE_IA_QQTGG_MG132_BR1_TR1.raw = 1 | QE_IA_QQTGG_MG132_BR1_TR2.raw = 1 | QE_IA_QQTGG_MG132_BR2_TR1.raw = 2 | QE_IA_QQTGG_MG132_BR2_TR2.raw = 2 | QE_IA_QQTGG_MG132_BR3_TR1.raw = 3 | QE_IA_QQTGG_MG132_BR3_TR2.raw = 3 | QE_IA_QQTGG_PR619_BR1_TR1.raw = 1 | QE_IA_QQTGG_PR619_BR1_TR2.raw = 1 | QE_IA_QQTGG_PR619_BR2_TR1.raw = 2 | QE_IA_QQTGG_PR619_BR2_TR2.raw = 2 | QE_IA_QQTGG_PR619_BR3_TR1.raw = 3 | QE_IA_QQTGG_PR619_BR3_TR2.raw = 3 | QE_IA_QQTGG_PR619_BR4_TR1.raw = 4 | QE_IA_QQTGG_PR619_BR5_TR1.raw = 5 | QE_IA_QQTGG_PR619_BR5_TR2.raw = 5",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states the number of biological replicates for each condition: Control (6), Heat Shock (3), MG-132 (3), and PR-619 (5).",
+        "TRUTH_CHECK": "The mapping correctly assigns indices based on the biological replicates (BR) and groups technical replicates (TR) under the same index.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "QE_IA_QQTGG_Control_BR1_TR1.raw = 1 | QE_IA_QQTGG_Control_BR2_TR1.raw = 1 | QE_IA_QQTGG_Control_BR2_TR2.raw = 2 | QE_IA_QQTGG_Control_BR3_TR1.raw = 1 | QE_IA_QQTGG_Control_BR3_TR2.raw = 2 | QE_IA_QQTGG_Control_BR4_TR1.raw = 1 | QE_IA_QQTGG_Control_BR4_TR2.raw = 2 | QE_IA_QQTGG_Control_BR5_TR1.raw = 1 | QE_IA_QQTGG_Control_BR5_TR2.raw = 2 | QE_IA_QQTGG_Control_BR6_TR1.raw = 1 | QE_IA_QQTGG_Control_BR6_TR2.raw = 2 | QE_IA_QQTGG_HEAT_BR1_TR1.raw = 1 | QE_IA_QQTGG_HEAT_BR1_TR2.raw = 2 | QE_IA_QQTGG_HEAT_BR2_TR1.raw = 1 | QE_IA_QQTGG_HEAT_BR2_TR2.raw = 2 | QE_IA_QQTGG_HEAT_BR3_TR1.raw = 1 | QE_IA_QQTGG_HEAT_BR3_TR2.raw = 2 | QE_IA_QQTGG_MG132_BR1_TR1.raw = 1 | QE_IA_QQTGG_MG132_BR1_TR2.raw = 2 | QE_IA_QQTGG_MG132_BR2_TR1.raw = 1 | QE_IA_QQTGG_MG132_BR2_TR2.raw = 2 | QE_IA_QQTGG_MG132_BR3_TR1.raw = 1 | QE_IA_QQTGG_MG132_BR3_TR2.raw = 2 | QE_IA_QQTGG_PR619_BR1_TR1.raw = 1 | QE_IA_QQTGG_PR619_BR1_TR2.raw = 2 | QE_IA_QQTGG_PR619_BR2_TR1.raw = 1 | QE_IA_QQTGG_PR619_BR2_TR2.raw = 2 | QE_IA_QQTGG_PR619_BR3_TR1.raw = 1 | QE_IA_QQTGG_PR619_BR3_TR2.raw = 2 | QE_IA_QQTGG_PR619_BR4_TR1.raw = 1 | QE_IA_QQTGG_PR619_BR5_TR1.raw = 1 | QE_IA_QQTGG_PR619_BR5_TR2.raw = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states the number of technical replicates for each condition (Control: 11, Heat shock: 6, MG-132: 6, PR-619: 9).",
+        "TRUTH_CHECK": "The mapping assigns indices 1 and 2 to repeated runs of the same biological replicate (BR), which is correct. However, the total count of runs provided in the mapping (32 runs) does not match the total technical replicates stated in the paper (11+6+6+9 = 32). While the total matches, the distribution of technical replicates per biological replicate in the mapping (mostly 2 per BR) is a plausible interpretation of the \"measured as X technical replicates\" statement.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "QE_IA_QQTGG_Control_BR1_TR1.raw = 1 | QE_IA_QQTGG_Control_BR2_TR1.raw = 1 | QE_IA_QQTGG_Control_BR2_TR2.raw = 1 | QE_IA_QQTGG_Control_BR3_TR1.raw = 1 | QE_IA_QQTGG_Control_BR3_TR2.raw = 1 | QE_IA_QQTGG_Control_BR4_TR1.raw = 1 | QE_IA_QQTGG_Control_BR4_TR2.raw = 1 | QE_IA_QQTGG_Control_BR5_TR1.raw = 1 | QE_IA_QQTGG_Control_BR5_TR2.raw = 1 | QE_IA_QQTGG_Control_BR6_TR1.raw = 1 | QE_IA_QQTGG_Control_BR6_TR2.raw = 1 | QE_IA_QQTGG_HEAT_BR1_TR1.raw = 1 | QE_IA_QQTGG_HEAT_BR1_TR2.raw = 1 | QE_IA_QQTGG_HEAT_BR2_TR1.raw = 1 | QE_IA_QQTGG_HEAT_BR2_TR2.raw = 1 | QE_IA_QQTGG_HEAT_BR3_TR1.raw = 1 | QE_IA_QQTGG_HEAT_BR3_TR2.raw = 1 | QE_IA_QQTGG_MG132_BR1_TR1.raw = 1 | QE_IA_QQTGG_MG132_BR1_TR2.raw = 1 | QE_IA_QQTGG_MG132_BR2_TR1.raw = 1 | QE_IA_QQTGG_MG132_BR2_TR2.raw = 1 | QE_IA_QQTGG_MG132_BR3_TR1.raw = 1 | QE_IA_QQTGG_MG132_BR3_TR2.raw = 1 | QE_IA_QQTGG_PR619_BR1_TR1.raw = 1 | QE_IA_QQTGG_PR619_BR1_TR2.raw = 1 | QE_IA_QQTGG_PR619_BR2_TR1.raw = 1 | QE_IA_QQTGG_PR619_BR2_TR2.raw = 1 | QE_IA_QQTGG_PR619_BR3_TR1.raw = 1 | QE_IA_QQTGG_PR619_BR3_TR2.raw = 1 | QE_IA_QQTGG_PR619_BR4_TR1.raw = 1 | QE_IA_QQTGG_PR619_BR5_TR1.raw = 1 | QE_IA_QQTGG_PR619_BR5_TR2.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a workflow with purification and in-solution digestion, but no offline fractionation (like high pH RP or SCX) is mentioned.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns 1 to all runs."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "control condition",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions a \"control condition experiment\" in the Data processing section.",
+        "TRUTH_CHECK": "The runs carrying this value are labeled as \"Control\", matching the control condition described in the paper.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the condition."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "heat shock",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper explicitly mentions \"heat shock\" as one of the treatments used to study SUMOylation dynamics.",
+        "TRUTH_CHECK": "The runs carrying this value (e.g., those with \"HEAT\" in the filename) correspond to the heat shock experiment.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the treatment and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor MG-132",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper states that cells were treated with 10 μM MG-132 and identifies it as a proteasome inhibitor in the abstract.",
+        "TRUTH_CHECK": "The value is correct for the run MG132_BR1_TR1.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor MG-133",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions \"MG-132\" and \"PR-619\", but \"MG-133\" is not mentioned.",
+        "TRUTH_CHECK": "The value \"MG-133\" is not used in the study; the proteasome inhibitor used was MG-132.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor MG-134",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions treatment with \"10 μM MG-132\", but it does not mention \"MG-134\".",
+        "TRUTH_CHECK": "The value \"MG-134\" is not used in the study; the proteasome inhibitor used was MG-132.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor MG-135",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions \"MG-132\" as a proteasome inhibitor, but \"MG-135\" is not mentioned anywhere in the text.",
+        "TRUTH_CHECK": "The value is not supported by the paper; the proteasome inhibitor used was MG-132.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor MG-136",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions the proteasome inhibitor MG-132, but there is no mention of \"MG-136\".",
+        "TRUTH_CHECK": "The value MG-136 is not supported by the text; the correct inhibitor used was MG-132.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor MG-137",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions the proteasome inhibitor MG-132, but it does not mention MG-137.",
+        "TRUTH_CHECK": "The value MG-137 is not used in the study; the correct inhibitor is MG-132.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor PR-619",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "SUMO protease inhibitor PR-619",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions treatment with \"20 μM PR-619 (Millipore)\" in the \"Treatments, transfection & lentiviral infection\" section.",
+        "TRUTH_CHECK": "PR-619 is used in the study to accumulate SUMOylated proteins. However, the paper describes PR-619 as a \"SUMO protease inhibitor\" (in the abstract: \"response to SUMO protease inhibition... PR-619\"), not a \"proteasome inhibitor\". MG-132 is the proteasome inhibitor.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor PR-620",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions the proteasome inhibitor PR-619, but it does not mention PR-620.",
+        "TRUTH_CHECK": "The value PR-620 is not supported by the text; the actual inhibitor used was PR-619.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor PR-621",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions the proteasome inhibitor PR-619, but there is no mention of \"PR-621\".",
+        "TRUTH_CHECK": "The value refers to a chemical not used in the study.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor PR-622",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions the use of PR-619, but there is no mention of \"PR-622\".",
+        "TRUTH_CHECK": "The value is not supported by the text; the only proteasome inhibitors mentioned are MG-132 and PR-619.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor PR-623",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions the proteasome inhibitor PR-619, but it does not mention PR-623.",
+        "TRUTH_CHECK": "The value PR-623 is not supported by the text; only PR-619 is used.",
+        "COMPLETENESS_CHECK": "Not applicable, the value is hallucinated."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor PR-624",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions PR-619 and MG-132 as inhibitors, but PR-624 is not mentioned.",
+        "TRUTH_CHECK": "The value PR-624 is not used in the study described in the paper.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor PR-625",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions PR-619 and MG-132 as inhibitors, but PR-625 is not mentioned anywhere in the text.",
+        "TRUTH_CHECK": "The value is not supported by the paper.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor PR-626",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions the proteasome inhibitor PR-619, but there is no mention of \"PR-626\".",
+        "TRUTH_CHECK": "The value is not supported by the text; the only proteasome inhibitors mentioned are MG-132 and PR-619.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "proteasome inhibitor PR-627",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions PR-619 and MG-132 as inhibitors, but PR-627 is not mentioned anywhere in the text.",
+        "TRUTH_CHECK": "The value is not supported by the paper.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    }
+  ]
+}

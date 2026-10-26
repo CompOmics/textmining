@@ -1,0 +1,182 @@
+{
+  "accession" : "PXD005554",
+  "title" : "Analysis of ECM-enriched samples using different methods",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Using LC-MS/MS, we analyzed ECM-enriched samples obtained from 1) human triple-negative breast cancer samples and matched adjacent normal mammary gland tissues, and 2) disease-free omentum from patient with non-metastatic ovarian cancer and high-grade- serous-ovarian- cancer-derived omental metastasis samples. We conducted the LC-MS/MS analysis on peptides obtained after solubilizing ECM-enriched samples using different methods (crude ECM extract, urea-soluble extract, urea-insoluble extract) and submitted to basic-reversed- phase separation or not.",
+  "sampleProcessingProtocol" : "The ECM sample was then diluted to 2 M urea, 100 mM ammonium bicarbonate (pH 8), and deglycosylated with PNGaseF for 2 h under agitation at 37°C, followed by digestion with Lys-C at a ratio of 1:100 enzyme:substrate, under agitation at 37°C for 2 h. Final digestion was done using trypsin at a ratio of 1:50 enzyme:substrate, under agitation at 37°C overnight. Peptides were acidified and desalted using C18 Cartridges (eluted with 50% acetonitrile with 0.1% trifluoroacetic acid (TFA), followed by concentration in a Speed-Vac.",
+  "dataProcessingProtocol" : "Each sample was separated by reverse phase HPLC using an EASY-nLC1000 liquid chromatograph (Thermo Fisher Scientific, Waltham, MA) over a 140-minute gradient before nanoelectrospray using a Q Exactive mass spectrometer (Thermo Fisher Scientific). The mass spectrometer was operated in a data-dependent mode. The parameters for the full scan MS were: resolution of 70,000 across 350-2000 m/z; AGC 3e6; and maximum IT 50 ms. The full MS scan was followed by MS/MS for the top 10 precursor ions in each cycle with a NCE of 28 and dynamic exclusion of 30 s. Raw mass spectral data files (.raw) were searched using Proteome Discoverer (Thermo Fisher Scientific) and Mascot version 2.4.1 (Matrix Science) using the SwissProt Homo sapiens database containing 20,199 entries. Mascot search parameters were: 10 ppm mass tolerance for precursor ions; 0.8 Da for fragment ion mass tolerance; 2 missed cleavages of trypsin; fixed modification were carbamidomethylation of cysteines; variable modifications were oxidized methionines, deamidation of asparagines, pyro-glutamic acid modification at N-terminal glutamines; and hydroxylation of prolines and lysines.",
+  "projectTags" : [ "Biomedical" ],
+  "keywords" : [ "Breast cancer", "Ovarian cancer", "Ecm", "Lc-ms/ms" ],
+  "doi" : "10.6019/PXD005554",
+  "submissionType" : "COMPLETE",
+  "license" : "EBI terms of use",
+  "submissionDate" : "2016-12-13",
+  "publicationDate" : "2017-07-11",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Amanda",
+    "lastName" : "Del Rosario",
+    "identifier" : "720161",
+    "affiliation" : "Janssen Pharmaceuticals",
+    "email" : "adelros1@its.jnj.com",
+    "country" : "United States",
+    "orcid" : "0000-0001-6107-7149",
+    "name" : "Amanda Del Rosario",
+    "id" : "720161"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Amanda Del",
+    "lastName" : "Rosario",
+    "identifier" : "60610100",
+    "affiliation" : "Massachusetts Institute of Technology",
+    "email" : "aweaver@mit.edu",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Amanda Del Rosario",
+    "id" : "60610100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001207",
+    "name" : "Mascot"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000650",
+    "name" : "Proteome Discoverer"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000436",
+    "name" : "Spectrum counting"
+  } ],
+  "countries" : [ "United States" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0004094",
+      "name" : "epithelial ovarian cancer cell"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000817",
+      "name" : "mammary gland"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:1612",
+      "name" : "breast cancer"
+    }, {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:2394",
+      "name" : "ovarian cancer"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000817",
+    "name" : "Mammary gland"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0004094",
+    "name" : "Epithelial ovarian cancer cell"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:1612",
+    "name" : "Breast cancer"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:2394",
+    "name" : "Ovarian cancer"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Naba A, Pearce OMT, Del Rosario A, Ma D, Ding H, Rajeeve V, Cutillas PR, Balkwill FR, Hynes RO. Characterization of the Extracellular Matrix of Normal and Diseased Tissues Using Proteomics. J Proteome Res. 2017 16(8):3083-3091",
+    "pubmedID" : 28675934,
+    "doi" : "10.1021/acs.jproteome.7b00191"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:28",
+    "name" : "Gln->pyro-Glu"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:21",
+    "name" : "Phospho"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:5",
+    "name" : "Carbamyl"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:7",
+    "name" : "Deamidated"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:4",
+    "name" : "Carbamidomethyl"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:35",
+    "name" : "Oxidation"
+  } ],
+  "totalFileDownloads" : 40244,
+  "botCount" : 14395,
+  "hubCount" : 25312,
+  "organicCount" : 537
+}

@@ -1,0 +1,447 @@
+{
+  "paper_id": "PXD019113",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Chlorocebus sabaeus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper specifies the use of Vero E6 cells, which are African green monkey kidney epithelial cells. The scientific name for the African green monkey is Chlorocebus sabaeus. This is an allowed inference from a cell line of known origin.",
+        "TRUTH_CHECK": "The proteins analyzed in the Vero E6 runs are from this species.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "kidney",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper describes the use of Vero E6 cells, which are identified as \"African green monkey kidney epithelial Vero E6\" cells.",
+        "TRUTH_CHECK": "The runs are derived from Vero E6 cells, and the organ of origin is the kidney.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes Vero E6 cells as \"African green monkey kidney epithelial Vero E6\".",
+        "TRUTH_CHECK": "The runs are derived from Vero E6 cells, which are epithelial cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the material, which is the correct field.",
+        "SOURCE_CHECK": "The runs use Vero E6 cells; the field definition allows inferring \"normal\" for HEK293 and by extension for other standard non-cancerous cell lines used as controls.",
+        "TRUTH_CHECK": "Vero E6 is a standard monkey kidney epithelial cell line used as the host for the infection experiment, not a disease model.",
+        "COMPLETENESS_CHECK": "The value \"normal\" is the correct SDRF controlled term for healthy/non-diseased subjects or materials."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "Vero E6",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a name of an immortalized cell line, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Vero E6 cells\" in the abstract and methods.",
+        "TRUTH_CHECK": "The mass spectrometry analysis was performed on Vero E6 cells (both for protein abundance and phosphoproteomics).",
+        "COMPLETENESS_CHECK": "The value follows the definition and is written as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the use of Vero E6 cells, A549 cells, and Caco-2 cells.",
+        "TRUTH_CHECK": "The runs are derived from these cell lines.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the controlled terms listed in the definition (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a quantitative phosphoproteomics survey using DDA and DIA without mentioning any isotopic labels (TMT, SILAC, etc.), which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are part of the MS experiment described as label-free.",
+        "COMPLETENESS_CHECK": "Complete. It uses the SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Orbitrap Exploris 480;AC=MS:1003028",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the samples were analyzed on an Orbitrap Exploris 480 mass spectrometry system.",
+        "TRUTH_CHECK": "The value is correct for the runs listed.",
+        "COMPLETENESS_CHECK": "Complete and follows the key-value format."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for protein digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"Trypsin (Promega) was added at a 1:100 (enzyme:protein w:w) ratio and digested overnight\".",
+        "TRUTH_CHECK": "The value is correct for the runs described in the proteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000422;NT=HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragmentation method, the right field.",
+        "SOURCE_CHECK": "The methods state that peptides were selected for MS/MS interrogation using higher energy collisional dissociation (HCD).",
+        "TRUTH_CHECK": "HCD was used for both the DDA spectral library generation and the DIA scans across all samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "27% NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"normalized HCD collision energy of 27%\" for DIA scans.",
+        "TRUTH_CHECK": "The value is correct for the runs using the DIA acquisition method.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "30% NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"normalized HCD collision energy of 30%\" for phosphopeptide enriched samples.",
+        "TRUTH_CHECK": "The runs listed are phosphopeptide DDA runs, and the 30% value is correct for these samples.",
+        "COMPLETENESS_CHECK": "Complete and follows the definition format."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "no enrichment",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the enrichment_method field.",
+        "SOURCE_CHECK": "The paper describes two types of MS analysis: \"protein abundance measurements\" and \"phosphopeptide enrichment\". The abundance samples are described as being kept after desalting but before the phosphopeptide enrichment step.",
+        "TRUTH_CHECK": "The runs with this value correspond to the protein abundance measurements, which did not undergo enrichment.",
+        "COMPLETENESS_CHECK": "The value \"no enrichment\" is the correct SDRF controlled term for samples without enrichment."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "enrichment of phosphorylated Protein",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the enrichment of a peptide subset, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a \"Phosphopeptide enrichment\" section using Fe3+-functionalized beads (Superflow) to isolate phosphopeptides.",
+        "TRUTH_CHECK": "The runs listed (containing \"phos\" in the filename) are the phosphopeptide enriched samples.",
+        "COMPLETENESS_CHECK": "The value uses the SDRF controlled term \"enrichment of phosphorylated protein\"."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a quantitative mass spectrometry-based phosphoproteomics survey and protein abundance measurements.",
+        "TRUTH_CHECK": "The runs are part of the MS experiment described in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term definition."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"static modification of carbamidomethyl cysteine\" in the Spectral library generation section.",
+        "TRUTH_CHECK": "The modification is correctly applied to the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, including the name, residue, and status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"variable modification of methionine oxidation\" for protein abundance samples.",
+        "TRUTH_CHECK": "The modification was used in the search for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format including NT, TA, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;MT=variable;TA=S,T,Y;AC=UNIMOD:21",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state that for phosphopeptide enriched samples, BGS settings were modified to include phosphorylation of S, T, and Y as a variable modification.",
+        "TRUTH_CHECK": "The runs carrying this value are phosphopeptide enriched samples (as indicated by the raw file names and related columns), so this modification is correct for them.",
+        "COMPLETENESS_CHECK": "The value follows the required format including NT, TA, and MT."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "LP1_03_AB_DDA_142.raw = not applicable | LP1_04_AB_DDA_142.raw = not applicable | LP1_08_AB_DDA_146.raw = not applicable | LP1_10_AB_DDA_150.raw = not applicable | LP1_13_AB_DDA_154.raw = not applicable | LP1_18_AB_DDA_158.raw = not applicable | LP1_19_AB_DDA_162.raw = not applicable | LP1_23_AB_DDA_166.raw = not applicable | LP1_01_AB_DIA_139.raw = 1 | LP1_02_AB_DIA_140.raw = 2 | LP1_03_AB_DIA_141.raw = 3 | LP1_04_AB_DIA_143.raw = 1 | LP1_05_AB_DIA_144.raw = 2 | LP1_06_AB_DIA_145.raw = 3 | LP1_07_AB_DIA_143.raw = 1 | LP1_08_AB_DIA_144.raw = 2 | LP1_09_AB_DIA_145.raw = 3 | LP1_10_AB_DIA_147.raw = 1 | LP1_11_AB_DIA_148.raw = 2 | LP1_12_AB_DIA_149.raw = 3 | LP1_13_AB_DIA_151.raw = 1 | LP1_14_AB_DIA_152.raw = 2 | LP1_15_AB_DIA_153.raw = 3 | LP1_16_AB_DIA_155.raw = 1 | LP1_17_AB_DIA_156.raw = 2 | LP1_18_AB_DIA_157.raw = 3 | LP1_19_AB_DIA_159.raw = 1 | LP1_20_AB_DIA_160.raw = 2 | LP1_21_AB_DIA_161.raw = 3 | LP1_22_AB_DIA_163.raw = 1 | LP1_23_AB_DIA_164.raw = 2 | LP1_24_AB_DIA_165.raw = 3 | LP1_03_phos_DDA_111.raw = not applicable | LP1_05_phos_DDA_114.raw = not applicable | LP1_07_phos_DDA_122.raw = not applicable | LP1_11_phos_DDA_126.raw = not applicable | LP1_13_phos_DDA_130.raw = not applicable | LP1_18_phos_DDA_134.raw = not applicable | LP1_20_phos_DDA_138.raw = not applicable | LP1_24_phos_DDA_118.raw = not applicable | LP1_01_phos_DIA_113.raw = 3 | LP1_02_phos_DIA_112.raw = 2 | LP1_03_phos_DIA_111.raw = 1 | LP1_04_phos_DIA_111.raw = 1 | LP1_05_phos_DIA_112.raw = 2 | LP1_06_phos_DIA_113.raw = 3 | LP1_07_phos_DIA_119.raw = 1 | LP1_08_phos_DIA_120.raw = 2 | LP1_09_phos_DIA_121.raw = 3 | LP1_10_phos_DIA_123.raw = 1 | LP1_11_phos_DIA_124.raw = 2 | LP1_12_phos_DIA_125.raw = 3 | LP1_13_phos_DIA_127.raw = 1 | LP1_14_phos_DIA_128.raw = 2 | LP1_15_phos_DIA_129.raw = 3 | LP1_16_phos_DIA_131.raw = 1 | LP1_17_phos_DIA_132.raw = 2 | LP1_18_phos_DIA_133.raw = 3 | LP1_19_phos_DIA_135.raw = 1 | LP1_20_phos_DIA_136.raw = 2 | LP1_21_phos_DIA_137.raw = 3 | LP1_22_phos_DIA_115.raw = 1 | LP1_23_phos_DIA_116.raw = 2 | LP1_24_phos_DIA_117.raw = 3",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "LP1_03_AB_DDA_142.raw = 1 | LP1_04_AB_DDA_142.raw = 1 | LP1_08_AB_DDA_146.raw = 1 | LP1_10_AB_DDA_150.raw = 1 | LP1_13_AB_DDA_154.raw = 1 | LP1_18_AB_DDA_158.raw = 1 | LP1_19_AB_DDA_162.raw = 1 | LP1_23_AB_DDA_166.raw = 1 | LP1_01_AB_DIA_139.raw = 1 | LP1_02_AB_DIA_140.raw = 2 | LP1_03_AB_DIA_141.raw = 3 | LP1_04_AB_DIA_143.raw = 1 | LP1_05_AB_DIA_144.raw = 2 | LP1_06_AB_DIA_145.raw = 3 | LP1_07_AB_DIA_143.raw = 1 | LP1_08_AB_DIA_144.raw = 2 | LP1_09_AB_DIA_145.raw = 3 | LP1_10_AB_DIA_147.raw = 1 | LP1_11_AB_DIA_148.raw = 2 | LP1_12_AB_DIA_149.raw = 3 | LP1_13_AB_DIA_151.raw = 1 | LP1_14_AB_DIA_152.raw = 2 | LP1_15_AB_DIA_153.raw = 3 | LP1_16_AB_DIA_155.raw = 1 | LP1_17_AB_DIA_156.raw = 2 | LP1_18_AB_DIA_157.raw = 3 | LP1_19_AB_DIA_159.raw = 1 | LP1_20_AB_DIA_160.raw = 2 | LP1_21_AB_DIA_161.raw = 3 | LP1_22_AB_DIA_163.raw = 1 | LP1_23_AB_DIA_164.raw = 2 | LP1_24_AB_DIA_165.raw = 3 | LP1_03_phos_DDA_111.raw = 1 | LP1_05_phos_DDA_114.raw = 1 | LP1_07_phos_DDA_122.raw = 1 | LP1_11_phos_DDA_126.raw = 1 | LP1_13_phos_DDA_130.raw = 1 | LP1_18_phos_DDA_134.raw = 1 | LP1_20_phos_DDA_138.raw = 1 | LP1_24_phos_DDA_118.raw = 1 | LP1_01_phos_DIA_113.raw = 3 | LP1_02_phos_DIA_112.raw = 2 | LP1_03_phos_DIA_111.raw = 1 | LP1_04_phos_DIA_111.raw = 1 | LP1_05_phos_DIA_112.raw = 2 | LP1_06_phos_DIA_113.raw = 3 | LP1_07_phos_DIA_119.raw = 1 | LP1_08_phos_DIA_120.raw = 2 | LP1_09_phos_DIA_121.raw = 3 | LP1_10_phos_DIA_123.raw = 1 | LP1_11_phos_DIA_124.raw = 2 | LP1_12_phos_DIA_125.raw = 3 | LP1_13_phos_DIA_127.raw = 1 | LP1_14_phos_DIA_128.raw = 2 | LP1_15_phos_DIA_129.raw = 3 | LP1_16_phos_DIA_131.raw = 1 | LP1_17_phos_DIA_132.raw = 2 | LP1_18_phos_DIA_133.raw = 3 | LP1_19_phos_DIA_135.raw = 1 | LP1_20_phos_DIA_136.raw = 2 | LP1_21_phos_DIA_137.raw = 3 | LP1_22_phos_DIA_115.raw = 1 | LP1_23_phos_DIA_116.raw = 2 | LP1_24_phos_DIA_117.raw = 3",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that all experiments were performed in at least three biologically independent samples.",
+        "TRUTH_CHECK": "The mapping assigns indices 1, 2, 3 to the DIA runs, which is consistent with the described biological replicates. However, the DDA runs are marked \"not applicable\", but they are explicitly described as \"one sample from each set of biological replicates\", meaning they are biological replicates themselves.",
+        "COMPLETENESS_CHECK": "The \"not applicable\" values violate the field definition and the automatic check requiring plain numbers."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "LP1_03_AB_DDA_142.raw = 1 | LP1_04_AB_DDA_142.raw = 1 | LP1_08_AB_DDA_146.raw = 1 | LP1_10_AB_DDA_150.raw = 1 | LP1_13_AB_DDA_154.raw = 1 | LP1_18_AB_DDA_158.raw = 1 | LP1_19_AB_DDA_162.raw = 1 | LP1_23_AB_DDA_166.raw = 1 | LP1_01_AB_DIA_139.raw = 1 | LP1_02_AB_DIA_140.raw = 1 | LP1_03_AB_DIA_141.raw = 1 | LP1_04_AB_DIA_143.raw = 1 | LP1_05_AB_DIA_144.raw = 1 | LP1_06_AB_DIA_145.raw = 1 | LP1_07_AB_DIA_143.raw = 1 | LP1_08_AB_DIA_144.raw = 1 | LP1_09_AB_DIA_145.raw = 1 | LP1_10_AB_DIA_147.raw = 1 | LP1_11_AB_DIA_148.raw = 1 | LP1_12_AB_DIA_149.raw = 1 | LP1_13_AB_DIA_151.raw = 1 | LP1_14_AB_DIA_152.raw = 1 | LP1_15_AB_DIA_153.raw = 1 | LP1_16_AB_DIA_155.raw = 1 | LP1_17_AB_DIA_156.raw = 1 | LP1_18_AB_DIA_157.raw = 1 | LP1_19_AB_DIA_159.raw = 1 | LP1_20_AB_DIA_160.raw = 1 | LP1_21_AB_DIA_161.raw = 1 | LP1_22_AB_DIA_163.raw = 1 | LP1_23_AB_DIA_164.raw = 1 | LP1_24_AB_DIA_165.raw = 1 | LP1_03_phos_DDA_111.raw = 1 | LP1_05_phos_DDA_114.raw = 1 | LP1_07_phos_DDA_122.raw = 1 | LP1_11_phos_DDA_126.raw = 1 | LP1_13_phos_DDA_130.raw = 1 | LP1_18_phos_DDA_134.raw = 1 | LP1_20_phos_DDA_138.raw = 1 | LP1_24_phos_DDA_118.raw = 1 | LP1_01_phos_DIA_113.raw = 1 | LP1_02_phos_DIA_112.raw = 1 | LP1_03_phos_DIA_111.raw = 1 | LP1_04_phos_DIA_111.raw = 1 | LP1_05_phos_DIA_112.raw = 1 | LP1_06_phos_DIA_113.raw = 1 | LP1_07_phos_DIA_119.raw = 1 | LP1_08_phos_DIA_120.raw = 1 | LP1_09_phos_DIA_121.raw = 1 | LP1_10_phos_DIA_123.raw = 1 | LP1_11_phos_DIA_124.raw = 1 | LP1_12_phos_DIA_125.raw = 1 | LP1_13_phos_DIA_127.raw = 1 | LP1_14_phos_DIA_128.raw = 1 | LP1_15_phos_DIA_129.raw = 1 | LP1_16_phos_DIA_131.raw = 1 | LP1_17_phos_DIA_132.raw = 1 | LP1_18_phos_DIA_133.raw = 1 | LP1_19_phos_DIA_135.raw = 1 | LP1_20_phos_DIA_136.raw = 1 | LP1_21_phos_DIA_137.raw = 1 | LP1_22_phos_DIA_115.raw = 1 | LP1_23_phos_DIA_116.raw = 1 | LP1_24_phos_DIA_117.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents technical replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention any repeated injections or technical replicates for the same material; it describes biological replicates.",
+        "TRUTH_CHECK": "Since no technical replicates are mentioned, each unique sample measurement is correctly assigned as technical replicate 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index, following the definition for materials measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "LP1_03_AB_DDA_142.raw = 1 | LP1_04_AB_DDA_142.raw = 1 | LP1_08_AB_DDA_146.raw = 1 | LP1_10_AB_DDA_150.raw = 1 | LP1_13_AB_DDA_154.raw = 1 | LP1_18_AB_DDA_158.raw = 1 | LP1_19_AB_DDA_162.raw = 1 | LP1_23_AB_DDA_166.raw = 1 | LP1_01_AB_DIA_139.raw = 1 | LP1_02_AB_DIA_140.raw = 1 | LP1_03_AB_DIA_141.raw = 1 | LP1_04_AB_DIA_143.raw = 1 | LP1_05_AB_DIA_144.raw = 1 | LP1_06_AB_DIA_145.raw = 1 | LP1_07_AB_DIA_143.raw = 1 | LP1_08_AB_DIA_144.raw = 1 | LP1_09_AB_DIA_145.raw = 1 | LP1_10_AB_DIA_147.raw = 1 | LP1_11_AB_DIA_148.raw = 1 | LP1_12_AB_DIA_149.raw = 1 | LP1_13_AB_DIA_151.raw = 1 | LP1_14_AB_DIA_152.raw = 1 | LP1_15_AB_DIA_153.raw = 1 | LP1_16_AB_DIA_155.raw = 1 | LP1_17_AB_DIA_156.raw = 1 | LP1_18_AB_DIA_157.raw = 1 | LP1_19_AB_DIA_159.raw = 1 | LP1_20_AB_DIA_160.raw = 1 | LP1_21_AB_DIA_161.raw = 1 | LP1_22_AB_DIA_163.raw = 1 | LP1_23_AB_DIA_164.raw = 1 | LP1_24_AB_DIA_165.raw = 1 | LP1_03_phos_DDA_111.raw = 1 | LP1_05_phos_DDA_114.raw = 1 | LP1_07_phos_DDA_122.raw = 1 | LP1_11_phos_DDA_126.raw = 1 | LP1_13_phos_DDA_130.raw = 1 | LP1_18_phos_DDA_134.raw = 1 | LP1_20_phos_DDA_138.raw = 1 | LP1_24_phos_DDA_118.raw = 1 | LP1_01_phos_DIA_113.raw = 1 | LP1_02_phos_DIA_112.raw = 1 | LP1_03_phos_DIA_111.raw = 1 | LP1_04_phos_DIA_111.raw = 1 | LP1_05_phos_DIA_112.raw = 1 | LP1_06_phos_DIA_113.raw = 1 | LP1_07_phos_DIA_119.raw = 1 | LP1_08_phos_DIA_120.raw = 1 | LP1_09_phos_DIA_121.raw = 1 | LP1_10_phos_DIA_123.raw = 1 | LP1_11_phos_DIA_124.raw = 1 | LP1_12_phos_DIA_125.raw = 1 | LP1_13_phos_DIA_127.raw = 1 | LP1_14_phos_DIA_128.raw = 1 | LP1_15_phos_DIA_129.raw = 1 | LP1_16_phos_DIA_131.raw = 1 | LP1_17_phos_DIA_132.raw = 1 | LP1_18_phos_DIA_133.raw = 1 | LP1_19_phos_DIA_135.raw = 1 | LP1_20_phos_DIA_136.raw = 1 | LP1_21_phos_DIA_137.raw = 1 | LP1_22_phos_DIA_115.raw = 1 | LP1_23_phos_DIA_116.raw = 1 | LP1_24_phos_DIA_117.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "No offline fractionation is described in the methods; only desalting and phosphopeptide enrichment are mentioned.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the SDRF convention for non-fractionated samples."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[infect]",
+      "extracted_value": "control",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"control\" is a level of the infection status variable, which is appropriate for a column named \"characteristics[infect]\".",
+        "SOURCE_CHECK": "The paper describes \"mock infected\" and \"infected\" samples, and refers to \"control time points\" and \"control\" runs in the Mass spectrometry data pre-processing section.",
+        "TRUTH_CHECK": "The value is correct for the runs that are not infected with the virus.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[infect]",
+      "extracted_value": "Severe acute respiratory syndrome coronavirus 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the infection status/agent, which is appropriate for a column named \"characteristics[infect]\".",
+        "SOURCE_CHECK": "The paper states that cells were either mock infected or infected with SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2).",
+        "TRUTH_CHECK": "The value is correct for the runs that were infected with the virus, while other runs are marked as \"control\".",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "AC=MS:1000484; NT=Orbitrap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer, which is the correct information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper states that MS/MS scans were analyzed in the Orbitrap for both phosphopeptide and protein abundance samples.",
+        "TRUTH_CHECK": "The Orbitrap was used as the mass analyzer for the MS2 (fragment) scans in this study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[proteomics data acquisition method]",
+      "extracted_value": "NT=Data-Dependent Acquisition;AC=NCIT:C161785",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the data acquisition method, which is appropriate for a column named \"comment[proteomics data acquisition method]\".",
+        "SOURCE_CHECK": "The paper explicitly states that \"Data dependent analysis (DDA) was performed\" to build spectral libraries.",
+        "TRUTH_CHECK": "The runs carrying this value (e.g., those with \"DDA\" in the filename) were acquired using the data-dependent acquisition method.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[proteomics data acquisition method]",
+      "extracted_value": "NT=Data-Independent Acquisition;AC=NCIT:C161786",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the MS acquisition method, which is appropriate for a column named \"comment[proteomics data acquisition method]\".",
+        "SOURCE_CHECK": "The paper explicitly states \"Data-independent analysis (DIA) was performed on all samples.\"",
+        "TRUTH_CHECK": "The runs listed (e.g., those with \"DIA\" in the filename) are the ones that underwent Data-Independent Acquisition.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

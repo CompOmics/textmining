@@ -1,0 +1,413 @@
+{
+  "paper_id": "PXD001819",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Saccharomyces cerevisiae",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a scientific name for an organism, which is the correct field.",
+        "SOURCE_CHECK": "The paper repeatedly mentions \"yeast cell lysate\" and \"yeast database from UniprotKB (S_cerevisiae_ 20121108.fasta)\".",
+        "TRUTH_CHECK": "The experiment analyzed yeast lysate.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "lysate",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "cell culture",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"lysate\" describes the state of the material, but it is not one of the broad classes defined for material_type.",
+        "SOURCE_CHECK": "The paper states \"yeast cell lysate\" was used.",
+        "TRUTH_CHECK": "The material is indeed a lysate of yeast cells.",
+        "COMPLETENESS_CHECK": "The value does not follow the controlled vocabulary required by the field definition (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling status, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"label-free quantitative analysis\" and \"label-free quantification\" multiple times.",
+        "TRUTH_CHECK": "All 27 runs are part of the label-free quantitative analysis described.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001742;NT=LTQ Orbitrap Velos",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"LTQ-Velos Orbitrap\" and \"LTQ-Orbitrap Velos\".",
+        "TRUTH_CHECK": "The instrument was used for all 27 raw files.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=trypsin/P;AC=MS:1001313",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"proteins were digested in solution by addition of 2% of trypsin\" and several workflows specify \"trypsin/P as the enzyme\".",
+        "TRUTH_CHECK": "The cleavage agent was used for all 27 runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a label-free LC-MS/MS analysis of yeast lysate spiked with recombinant proteins, which is a proteomic profiling experiment.",
+        "TRUTH_CHECK": "The value is correct for all 27 runs described in the study.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"carbamidomethyl (C) was set as fixed modification\" in Workflow 1 and \"carbamidomethylation of cysteine was defined as a fixed modification\" in Workflow 2.",
+        "TRUTH_CHECK": "The value is correct for all runs as it was used across the described workflows.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"oxidation (M)\" as a variable modification in multiple workflows (e.g., Workflow 1 and 2).",
+        "TRUTH_CHECK": "The modification was used for the database search of all runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with NT, TA, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:67;PP=Protein N-term;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"acetyl (Protein N-ter)\" as a variable modification in multiple workflows (e.g., Workflow 1 and 2).",
+        "TRUTH_CHECK": "The modification was used for the database search of all runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, specifying the name, position, and modification type."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper states a precursor mass error tolerance of 5 ppm in Workflow 1 and Workflow 3.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with those workflows. While Workflow 2 uses different tolerances (20 ppm and 6 ppm), the SDRF convention allows a cell to name one of several values used by the runs if they are part of the same study, and 5 ppm is explicitly printed for the majority of the described workflows.",
+        "COMPLETENESS_CHECK": "Complete, including the unit as required."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.8 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states \"fragment mass error tolerances were set at ... 0.8 Da\" in Workflow 1 and Workflow 3.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with those workflows.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "UPS1_12500amol_R1.raw = 1 | UPS1_12500amol_R2.raw = 1 | UPS1_12500amol_R3.raw = 1 | UPS1_125amol_R1.raw = 1 | UPS1_125amol_R2.raw = 1 | UPS1_125amol_R3.raw = 1 | UPS1_25000amol_R1.raw = 1 | UPS1_25000amol_R2.raw = 1 | UPS1_25000amol_R3.raw = 1 | UPS1_2500amol_R1.raw = 1 | UPS1_2500amol_R2.raw = 1 | UPS1_2500amol_R3.raw = 1 | UPS1_250amol_R1.raw = 1 | UPS1_250amol_R2.raw = 1 | UPS1_250amol_R3.raw = 1 | UPS1_50000amol_R1.raw = 1 | UPS1_50000amol_R2.raw = 1 | UPS1_50000amol_R3.raw = 1 | UPS1_5000amol_R1.raw = 1 | UPS1_5000amol_R2.raw = 1 | UPS1_5000amol_R3.raw = 1 | UPS1_500amol_R1.raw = 1 | UPS1_500amol_R2.raw = 1 | UPS1_500amol_R3.raw = 1 | UPS1_50amol_R1.raw = 1 | UPS1_50amol_R2.raw = 1 | UPS1_50amol_R3.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "UPS1_12500amol_R1.raw = 1 | UPS1_12500amol_R2.raw = 1 | UPS1_12500amol_R3.raw = 1 | UPS1_125amol_R1.raw = 2 | UPS1_125amol_R2.raw = 2 | UPS1_125amol_R3.raw = 2 | UPS1_25000amol_R1.raw = 3 | UPS1_25000amol_R2.raw = 3 | UPS1_25000amol_R3.raw = 3 | UPS1_2500amol_R1.raw = 4 | UPS1_2500amol_R2.raw = 4 | UPS1_2500amol_R3.raw = 4 | UPS1_250amol_R1.raw = 5 | UPS1_250amol_R2.raw = 5 | UPS1_250amol_R3.raw = 5 | UPS1_50000amol_R1.raw = 6 | UPS1_50000amol_R2.raw = 6 | UPS1_50000amol_R3.raw = 6 | UPS1_5000amol_R1.raw = 7 | UPS1_5000amol_R2.raw = 7 | UPS1_5000amol_R3.raw = 7 | UPS1_500amol_R1.raw = 8 | UPS1_500amol_R2.raw = 8 | UPS1_500amol_R3.raw = 8 | UPS1_50amol_R1.raw = 9 | UPS1_50amol_R2.raw = 9 | UPS1_50amol_R3.raw = 9",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states 9 different samples were analyzed in triplicate.",
+        "TRUTH_CHECK": "Each set of triplicates comes from one of the 9 distinct spiked samples. According to the definition, independent biological units of one condition get 1, 2, 3. Here, the 9 samples are the independent biological units. Therefore, each sample's triplicates should share an index, but different samples must have different indices.",
+        "COMPLETENESS_CHECK": "The mapping assigns index 1 to all 27 runs, treating 9 different biological samples as one."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "UPS1_12500amol_R1.raw = 1 | UPS1_12500amol_R2.raw = 2 | UPS1_12500amol_R3.raw = 3 | UPS1_125amol_R1.raw = 1 | UPS1_125amol_R2.raw = 2 | UPS1_125amol_R3.raw = 3 | UPS1_25000amol_R1.raw = 1 | UPS1_25000amol_R2.raw = 2 | UPS1_25000amol_R3.raw = 3 | UPS1_2500amol_R1.raw = 1 | UPS1_2500amol_R2.raw = 2 | UPS1_2500amol_R3.raw = 3 | UPS1_250amol_R1.raw = 1 | UPS1_250amol_R2.raw = 2 | UPS1_250amol_R3.raw = 3 | UPS1_50000amol_R1.raw = 1 | UPS1_50000amol_R2.raw = 2 | UPS1_50000amol_R3.raw = 3 | UPS1_5000amol_R1.raw = 1 | UPS1_5000amol_R2.raw = 2 | UPS1_5000amol_R3.raw = 3 | UPS1_500amol_R1.raw = 1 | UPS1_500amol_R2.raw = 2 | UPS1_500amol_R3.raw = 3 | UPS1_50amol_R1.raw = 1 | UPS1_50amol_R2.raw = 2 | UPS1_50amol_R3.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that 9 different samples were analyzed in triplicate, resulting in 27 raw files.",
+        "TRUTH_CHECK": "Each of the 9 samples has 3 runs assigned as replicates 1, 2, and 3, which matches the experimental design.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value following the definition."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "UPS1_12500amol_R1.raw = 1 | UPS1_12500amol_R2.raw = 1 | UPS1_12500amol_R3.raw = 1 | UPS1_125amol_R1.raw = 1 | UPS1_125amol_R2.raw = 1 | UPS1_125amol_R3.raw = 1 | UPS1_25000amol_R1.raw = 1 | UPS1_25000amol_R2.raw = 1 | UPS1_25000amol_R3.raw = 1 | UPS1_2500amol_R1.raw = 1 | UPS1_2500amol_R2.raw = 1 | UPS1_2500amol_R3.raw = 1 | UPS1_250amol_R1.raw = 1 | UPS1_250amol_R2.raw = 1 | UPS1_250amol_R3.raw = 1 | UPS1_50000amol_R1.raw = 1 | UPS1_50000amol_R2.raw = 1 | UPS1_50000amol_R3.raw = 1 | UPS1_5000amol_R1.raw = 1 | UPS1_5000amol_R2.raw = 1 | UPS1_5000amol_R3.raw = 1 | UPS1_500amol_R1.raw = 1 | UPS1_500amol_R2.raw = 1 | UPS1_500amol_R3.raw = 1 | UPS1_50amol_R1.raw = 1 | UPS1_50amol_R2.raw = 1 | UPS1_50amol_R3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the fraction_identifier field.",
+        "SOURCE_CHECK": "The paper describes nanoLC-MS/MS analysis but mentions no offline fractionation.",
+        "TRUTH_CHECK": "Every run is assigned fraction 1, which is correct when no fractionation is performed.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the SDRF convention for non-fractionated samples."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[mass]",
+      "extracted_value": "2 mg",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "2 µg",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"2 mg\" describes a mass of material, which is appropriate for a characteristics column related to mass.",
+        "SOURCE_CHECK": "The paper states that \"2 µg of yeast cell lysate\" was used for the analysis of each sample.",
+        "TRUTH_CHECK": "The value \"2 mg\" is incorrect; the paper specifies 2 micrograms (µg), not 2 milligrams (mg).",
+        "COMPLETENESS_CHECK": "Complete format, but the numerical value is wrong."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=12500 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the spiked compound (UPS1 mixture), which is the central experimental variable of the study.",
+        "SOURCE_CHECK": "The paper states the use of the \"UPS1 mixture of 48 recombinant proteins\" from \"Sigma\". The quantity \"12.5 fmol of UPS1/µg of yeast lysate\" is explicitly listed in the sample preparation section. 12.5 fmol is equal to 12,500 amol.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the 12.5 fmol spike level.",
+        "COMPLETENESS_CHECK": "The value provides the compound name (UPS1), the quantity (12500 amol), and the type (mixture)."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=125 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the spiked compound (UPS1 mixture) and its quantity, which is the central variable of the study.",
+        "SOURCE_CHECK": "The paper states the use of the \"UPS1 mixture of 48 recombinant proteins\" and lists 9 different spiked levels, including \"0.125 fmol of UPS1/µg of yeast lysate\". 125 amol is equivalent to 0.125 fmol.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with Sample 2 (125 amol).",
+        "COMPLETENESS_CHECK": "The value provides the compound name (UPS1), the quantity (125 amol), and the nature of the material (mixture)."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=25000 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the spiked compound (UPS1 mixture) and its quantity, which is the central experimental variable of the study.",
+        "SOURCE_CHECK": "The paper states the use of the \"UPS1 mixture of 48 recombinant proteins\" from \"Sigma\". The quantities are listed as \"0.05–0.125–0.250–0.5–2.5–5–12.5–25–50 fmol of UPS1/µg of yeast lysate\".",
+        "TRUTH_CHECK": "The value \"QY=25000 amol\" corresponds to \"25 fmol\" (25 * 10^-15 mol = 25,000 * 10^-18 mol). The runs associated with this value (Sample 3) match the 25 fmol spike level.",
+        "COMPLETENESS_CHECK": "The value provides the compound name (UPS1), the quantity, and the type (mixture)."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=2500 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the spiked compound (UPS1 mixture) and its quantity, which is the central experimental variable of this study.",
+        "SOURCE_CHECK": "The paper states the use of the \"UPS1 mixture of 48 recombinant proteins\" from \"Sigma\". The quantities are listed as \"0.05–0.125–0.250–0.5–2.5–5–12.5–25–50 fmol of UPS1/µg of yeast lysate\".",
+        "TRUTH_CHECK": "The value \"2500 amol\" is equivalent to \"2.5 fmol\" (2500 * 10^-18 = 2.5 * 10^-15). The runs associated with this value (Sample 4) correspond to the 2.5 fmol spike level.",
+        "COMPLETENESS_CHECK": "The value provides the compound name (UPS1), the type (mixture), and the quantity, which is appropriate for a column named \"SpikedCompound\"."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=250 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the spiked compound (UPS1 mixture) and its quantity, which is the central variable of the study.",
+        "SOURCE_CHECK": "The paper states the use of the \"UPS1 mixture of 48 recombinant proteins\" (Sigma) and lists 9 different spiked levels. The value \"250 amol\" corresponds to the \"0.250 fmol\" level mentioned in the methods (0.250 fmol = 250 amol).",
+        "TRUTH_CHECK": "The value is correct for the runs associated with Sample 5 (UPS1_250amol).",
+        "COMPLETENESS_CHECK": "The value provides the compound name (UPS1), the quantity (250 amol), and the nature of the material (mixture)."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=50000 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the spiked compound (UPS1 mixture) and its quantity, which is the central focus of the experimental design.",
+        "SOURCE_CHECK": "The paper states the use of the \"UPS1 mixture of 48 recombinant proteins\" from \"Sigma\". The quantities are listed as \"0.05–0.125–0.250–0.5–2.5–5–12.5–25–50 fmol of UPS1/µg of yeast lysate\".",
+        "TRUTH_CHECK": "The value \"50000 amol\" is equivalent to 50 fmol (1 fmol = 1000 amol), which matches the highest spike level mentioned in the paper. The \"CN=UPS1\" matches the mixture name. However, \"CV=Standards Research Group\" is not mentioned in the text (the paper cites Sigma).",
+        "COMPLETENESS_CHECK": "The value provides the compound name and quantity, which are the relevant details for this study."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=5000 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the spiked compound (UPS1 mixture), which is the central experimental variable of this study.",
+        "SOURCE_CHECK": "The paper states the use of the \"UPS1 mixture of 48 recombinant proteins\" from \"Sigma\". The spike levels are given as fmol of UPS1/µg of yeast lysate (e.g., 50 fmol/µg).",
+        "TRUTH_CHECK": "The value \"CN=UPS1\" is correct. However, the quantity \"QY=5000 amol\" is not supported by the text; the paper specifies concentrations (fmol/µg), not absolute amounts in amol. Furthermore, \"CV=Standards Research Group\" is not mentioned in the text (the supplier is Sigma).",
+        "COMPLETENESS_CHECK": "The value uses a custom key-value format not defined in the standard SDRF fields, but the content itself is partially hallucinated."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=500 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the spiked compound (UPS1 mixture) and its quantity, which is the central variable of the study.",
+        "SOURCE_CHECK": "The paper states the use of the UPS1 mixture (Sigma) and lists 9 different spiked levels (0.05 to 50 fmol of UPS1/µg of yeast lysate).",
+        "TRUTH_CHECK": "The value \"QY=500 amol\" corresponds to the 0.5 fmol/µg level (0.5 fmol = 500 amol). The runs associated with this value (Sample 8) match this spike level.",
+        "COMPLETENESS_CHECK": "The value provides the compound name (UPS1), type (mixture), and quantity, which is appropriate for a column named \"SpikedCompound\"."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=50 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the spiked compound (UPS1 mixture) and its quantity, which is appropriate for a column named \"SpikedCompound\" in this specific study.",
+        "SOURCE_CHECK": "The paper states the samples were spiked with the \"UPS1 mixture\" (Sigma) at various levels, including \"50 fmol of UPS1/µg of yeast lysate\".",
+        "TRUTH_CHECK": "The value \"50 amol\" is mathematically equivalent to \"50 fmol/µg\" if the unit is interpreted as attomoles per cell or a similar normalized unit, but the paper explicitly says \"50 fmol of UPS1/µg of yeast lysate\". However, the \"CN=UPS1\" and \"CT=mixture\" parts are correct.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the compound name, type, and quantity."
+      }
+    }
+  ]
+}

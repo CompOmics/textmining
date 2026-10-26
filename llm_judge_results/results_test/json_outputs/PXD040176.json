@@ -1,0 +1,158 @@
+{
+  "paper_id": "PXD040176",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Diplonema papillatum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a scientific name of an organism, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly names Diplonema papillatum as the species studied.",
+        "TRUTH_CHECK": "The proteomics experiments (AP and IP) were performed on D. papillatum cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "Mitochondrial mitoribosomes",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a subcellular complex/organelle, not a tissue (organism part).",
+        "SOURCE_CHECK": "The paper describes the analysis of mitoribosomes from mitochondria of Diplonema papillatum.",
+        "TRUTH_CHECK": "Mitoribosomes are the target of the affinity purification, not the tissue source.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong item."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "characteristics[cell type]",
+      "extracted_value": "Diplonema papillatum",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a species name, which belongs to the species field, not cell_type.",
+        "SOURCE_CHECK": "The species name is stated throughout the paper.",
+        "TRUTH_CHECK": "It describes the organism, not a biological cell type.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "Label free",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes iBAQ (intensity-Based Absolute Quantification) and does not mention any isotopic labels (TMT, SILAC), which allows the inference of a label-free approach.",
+        "TRUTH_CHECK": "The runs are part of the described LC-MS/MS experiments using iBAQ.",
+        "COMPLETENESS_CHECK": "The value \"Label free\" is an equivalent wording of the SDRF term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "Orbitrap Fusion",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the HPLC system was coupled to an Orbitrap Fusion mass spectrometer.",
+        "TRUTH_CHECK": "The value is correct for the runs listed.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"on-bead tryptic digestion\" and \"using 500 ng trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the affinity-purified complexes.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "characteristics[biological replicate]",
+      "extracted_value": "OF_20210531_OEF_06.RAW = 0 | OF_20210531_OEF_03.RAW = 0 | OF_20210531_OEF_01.RAW = 0 | OF_20210531_OEF_04.RAW = 0 | OF_20210531_OEF_05.RAW = 0 | OF_20210714_OEF_01_2.RAW = 0 | OF_20210714_OEF_02_2.RAW = 0 | OF_20210714_OEF_03.RAW = 0 | OF_20210717_OEF_04.RAW = 0 | OF_20210717_OEF_05.RAW = 0 | OF_20210717_OEF_06.RAW = 0 | OF_20210717_OEF_07.RAW = 0 | OF_20210717_OEF_08.RAW = 0 | OF_20210717_OEF_09.RAW = 0 | OF_20210716_OEF_10.RAW = 0 | OF_20210716_OEF_11.RAW = 0 | OF_20210716_OEF_12.RAW = 0 | OF_20210716_OEF_01.RAW = 0 | OF_20210716_OEF_02.RAW = 0 | OF_20210716_OEF_03.RAW = 0",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that single-step affinity purification (AP) was performed in quadruplicate and immunoprecipitation (IP) in triplicate.",
+        "TRUTH_CHECK": "The runs represent different biological replicates (e.g., MRPS49_1, _2, _3; CONTROL_1, _2, _3). Assigning all runs the same index (0) is incorrect.",
+        "COMPLETENESS_CHECK": "The indices should be 1, 2, 3, etc., not 0."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "comment[technical replicate]",
+      "extracted_value": "OF_20210531_OEF_06.RAW = 4 | OF_20210531_OEF_03.RAW = 4 | OF_20210531_OEF_01.RAW = 4 | OF_20210531_OEF_04.RAW = 4 | OF_20210531_OEF_05.RAW = 4 | OF_20210714_OEF_01_2.RAW = 1 | OF_20210714_OEF_02_2.RAW = 2 | OF_20210714_OEF_03.RAW = 3 | OF_20210717_OEF_04.RAW = 1 | OF_20210717_OEF_05.RAW = 2 | OF_20210717_OEF_06.RAW = 3 | OF_20210717_OEF_07.RAW = 1 | OF_20210717_OEF_08.RAW = 2 | OF_20210717_OEF_09.RAW = 3 | OF_20210716_OEF_10.RAW = 1 | OF_20210716_OEF_11.RAW = 2 | OF_20210716_OEF_12.RAW = 3 | OF_20210716_OEF_01.RAW = 1 | OF_20210716_OEF_02.RAW = 2 | OF_20210716_OEF_03.RAW = 3",
+      "verdict": null,
+      "type_mismatch": null,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": null,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "",
+        "SOURCE_CHECK": "",
+        "TRUTH_CHECK": "",
+        "COMPLETENESS_CHECK": ""
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[cultured cell]",
+      "extracted_value": "Diplonema papillatum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a species name, which is a characteristic of the cultured cell used in the study.",
+        "SOURCE_CHECK": "The paper states that Diplonema papillatum was cultivated axenically.",
+        "TRUTH_CHECK": "The runs are based on pulldowns from D. papillatum cell lines.",
+        "COMPLETENESS_CHECK": "The value is a correct identification of the cultured cell species."
+      }
+    }
+  ]
+}

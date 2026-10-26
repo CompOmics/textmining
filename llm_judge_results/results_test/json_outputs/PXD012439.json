@@ -1,0 +1,413 @@
+{
+  "paper_id": "PXD012439",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Riftia pachyptila",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper explicitly names the giant tube worm Riftia pachyptila as the host being studied.",
+        "TRUTH_CHECK": "The metaproteomics experiment analyzed proteins from Riftia pachyptila tissues.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "trophosome",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"trophosome samples\" in the Materials and Methods section.",
+        "TRUTH_CHECK": "The trophosome is one of the four tissues analyzed in the metaproteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "vestimentum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the right field.",
+        "SOURCE_CHECK": "The methods section explicitly lists \"vestimental samples\" as one of the four organs (referred to as tissues) stored for analysis.",
+        "TRUTH_CHECK": "The value correctly describes the tissue source for the run.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "plume",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the correct field.",
+        "SOURCE_CHECK": "The methods section explicitly mentions \"plume samples\" as one of the four organs (tissues) dissected.",
+        "TRUTH_CHECK": "The run is associated with a plume sample of Riftia pachyptila.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "characteristics[material type]",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the right field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"tissue samples\" and \"four different organs (here referred to as tissues)\".",
+        "TRUTH_CHECK": "The runs analyzed trophosome, vestimentum, and plume, all of which are tissues.",
+        "COMPLETENESS_CHECK": "The value follows the controlled vocabulary of the definition."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Q Exactive Plus hybrid quadrupole-Orbitrap mass spectrometer",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper does not mention the instrument model used for the proteomics analysis.",
+        "TRUTH_CHECK": "The instrument model is not stated in the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for protein digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"Tryptic peptides were generated following the FASP protocol\", which indicates the use of trypsin.",
+        "TRUTH_CHECK": "Trypsin was used for the proteomics samples described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "reduction_reagent",
+      "sdrf_column": "comment[reduction reagent]",
+      "extracted_value": "DTT",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A chemical used to reduce disulfide bonds, the right field.",
+        "SOURCE_CHECK": "The methods state that tissues were disrupted in SDT buffer containing 0.1 M dithiothreitol (DTT).",
+        "TRUTH_CHECK": "DTT was used in the lysis buffer for the proteomics samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of biological replicates]",
+      "extracted_value": "3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing the count of biological replicates, which matches the column name.",
+        "SOURCE_CHECK": "The methods state \"we used three biological replicates per tissue... and condition\".",
+        "TRUTH_CHECK": "The paper confirms that 3 biological replicates were used for each sample group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of samples]",
+      "extracted_value": "18",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a count of samples, which is appropriate for a column named \"number of samples\".",
+        "SOURCE_CHECK": "The methods state \"we used three biological replicates per tissue (trophosome, vestimentum, and plume) and condition (specimens with S-rich and S-depleted trophosomes), which resulted in a total of 18 samples.\"",
+        "TRUTH_CHECK": "The value correctly represents the total number of biological samples analyzed in the metaproteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of technical replicates]",
+      "extracted_value": "3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a count of technical replicates, which matches the column header.",
+        "SOURCE_CHECK": "The methods state \"Samples were analyzed in a randomized block design and run in technical triplicates.\"",
+        "TRUTH_CHECK": "The paper explicitly confirms that samples were run in technical triplicates (3 runs).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "S-rich trophosome",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample condition (sulfur content and tissue type), which is appropriate for a \"sample treatment\" or \"characteristics\" column.",
+        "SOURCE_CHECK": "The paper describes samples from \"S-rich\" and \"S-depleted\" specimens and specifically mentions \"trophosome\" samples.",
+        "TRUTH_CHECK": "The value correctly identifies the tissue and the energy/sulfur condition of the sample.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "S-depleted trophosome",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample condition/treatment (sulfur status and tissue type), which is appropriate for a characteristics column.",
+        "SOURCE_CHECK": "The paper describes samples from \"S-depleted\" specimens and \"trophosome\" tissue.",
+        "TRUTH_CHECK": "The value correctly identifies the sample treatment/characteristic for the run.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "trophosome_S-rich",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a specimen's tissue and its sulfur status, which is a characteristic of the sample.",
+        "SOURCE_CHECK": "The paper describes \"trophosome\" samples and classifies them as \"sulfur rich (S rich)\" or \"S depleted\".",
+        "TRUTH_CHECK": "The value correctly combines the tissue (trophosome) and the condition (S-rich) described in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "trophosome_S-depleted",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a specimen's tissue and its sulfur status, which is a characteristic of the sample.",
+        "SOURCE_CHECK": "The paper describes \"trophosome\" samples and classifies them as \"S depleted\" (sulfur-depleted).",
+        "TRUTH_CHECK": "The value correctly combines the tissue type and the energy/sulfur condition described in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "vestimentum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"vestimentum\" is an organ/tissue, which is a characteristic of the specimen.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"vestimental samples were cut off from the lateral portions of the vestimentum\" in the Sampling section.",
+        "TRUTH_CHECK": "The vestimentum is one of the four tissues analyzed in the proteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "plume",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"plume\" refers to a tissue/organ of the organism, which is a characteristic of the specimen.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"plume samples\" in the Sampling section.",
+        "TRUTH_CHECK": "The plume is one of the four tissues analyzed in the metaproteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[spiked compound]",
+      "extracted_value": "human hair",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"human hair\" is a material, but the column name \"spiked compound\" refers to a specific additive used for calibration or quantification.",
+        "SOURCE_CHECK": "The paper mentions human hair was used as a reference material for stable isotope fingerprinting (SIF) analysis.",
+        "TRUTH_CHECK": "Human hair is used as a reference/standard material, not as a \"spiked compound\" (which typically refers to a small amount of a known substance added to a sample).",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "4°C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which fits the column name characteristics[temperature].",
+        "SOURCE_CHECK": "The paper states that specimens were kept at 4°C in cold seawater until dissection.",
+        "TRUTH_CHECK": "This temperature refers to the storage of the specimens after collection, not to the conditions of the LC-MS/MS runs or the biological state of the samples during the experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "-80°C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which fits the column name.",
+        "SOURCE_CHECK": "The paper mentions that tissue samples were stored at -80°C.",
+        "TRUTH_CHECK": "The -80°C refers to the storage temperature of the samples, not a characteristic of the biological sample or the experimental condition of the run.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "95°C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which fits the column name.",
+        "SOURCE_CHECK": "The paper mentions heating to 95°C during the proteomics sample preparation (disruption of tissues).",
+        "TRUTH_CHECK": "The value describes a processing step (heating during extraction), not a characteristic of the sample or the biological state of the organism.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong item."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[experiment]",
+      "extracted_value": "Metaproteomics analysis of Riftia host and symbiont across trophosome, vestimentum, and plume tissues under sulfur-rich and sulfur-depleted conditions.",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a general description of the experiment, which is appropriate for a comment column.",
+        "SOURCE_CHECK": "The paper describes a metaproteomics analysis of the Riftia host and symbiont using trophosome, vestimentum, and plume tissues under sulfur-rich and sulfur-depleted conditions.",
+        "TRUTH_CHECK": "The value accurately summarizes the scope and design of the MS experiment described in the paper.",
+        "COMPLETENESS_CHECK": "The value is a complete and accurate summary."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[gradient time]",
+      "extracted_value": "4 h",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"4 h\" describes the duration of the LC gradient, which is appropriate for a column named \"comment[gradient time]\".",
+        "SOURCE_CHECK": "The methods section states \"All samples were analyzed by one-dimensional LC-MS/MS as described by Hinzke et al., using 4-h gradients.\"",
+        "TRUTH_CHECK": "The value is correct for the proteomics runs described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[separation]",
+      "extracted_value": "one-dimensional LC-MS/MS",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the LC-MS/MS dimensionality, which relates to the separation process.",
+        "SOURCE_CHECK": "The methods state \"All samples were analyzed by one-dimensional LC-MS/MS\".",
+        "TRUTH_CHECK": "The value correctly describes the separation method used for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

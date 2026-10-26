@@ -1,0 +1,144 @@
+{
+  "accession" : "PXD011153",
+  "title" : "Proteome characterization of Spleen during Schistosoma mansoni infection",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Schistosomiasis is a chronic parasitic disease that affects more that 230 million people worldwide. In the Americas, it caused by the blood flook Schistosoma mansoni. This parasite has a complex life cycle with two intermediary hosts. When infecting mammals, schistosomes cause an intense immune response to the presence of the different stages of the parasite within the host. After maturation of the worms and commencing of the oviposition, some eggs are transported via circulation to the liver, where they elicit an exaggerated inflammatory response in the tissue. This could lead to the formation of granulomas and liver fibrosis and along with this, the developent of hepatosplenomegaly and in the worst scenario could lead to the dead of the patient. In this project, we aim to make a shotgun evaluation of the proteome from splenocytes in a mice model, in order to identify novel molecular signatures associated with the immune respose to the presence of the parasite in the hosts.",
+  "sampleProcessingProtocol" : "Protein extract from whole murine spleen were prepared in presence of 25 mM Tris-HCl pH 7.5 buffer (1mM DTT, 1% PIC) using a tissue homogenizer. 30 μg protein previously treated with RapiGest SF were sequencially incubatated in the presence of DTT and Iodoacetamide. The enzymatic digestion of the proteins were carried out by addition of trypsin in the proportion of 1:50 and overnight incubation. LC-MS/MS analyses was performed in a nanoHPLC Dionex (C18 trap and separation columns) coupled to a Q-Exactive system, while elution of digested peptides were performed in a gradient  using water and acetonitrile:water 80:20 (0.1%¨formic acid, both) in 185 min (3.8 to 99% of acetonitrile). The mass spectrometry acquisition followed the DDA method collecting the TOP 12 ions in the 300-2000 m/z band, 30 V of normalized collision energy and exclusion time of 40 s.",
+  "dataProcessingProtocol" : "All data were processed in Pattern Lab for proteomics software(version 4.0). Sequences from mouse were downloaded from UniprotKB (https://www.uniprot.org/) and a target-reverse database was generated using the processing software. Peptide sequence matching using the Comet algorithm were performed and then filtered using Search Engine Processor (SEPro) and a match was considered true for a tryptic peptide candidates with carbamidomethylation as fixed and oxidation of methionine as variable PTMs under the range of less than 3% False discoverer rate for spectra, 2% for peptide and 1% for protein. The quantification was executed using the NSAF normalization and the TFold method embedded in the Patternlab for Proteomics software. The quantification parameters were fixed to 0.3 for F-stringency, 0.4 for L-stringency and 0.05 for BH q-value. Identities and quantification data was exported into csv files and loaded into R for data mining, categorization and pathway/enrichment analyses.",
+  "projectTags" : [ "Biomedical" ],
+  "keywords" : [ "Spleen", "Immunology", "Schitosoma mansoni" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2018-09-20",
+  "publicationDate" : "2019-02-13",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "William",
+    "lastName" : "Borges",
+    "identifier" : "116720129",
+    "affiliation" : "Universidade Federal de Ouro Preto",
+    "email" : "wborges@ufop.edu.br",
+    "country" : "Brazil",
+    "orcid" : "0000-0002-8515-7618",
+    "name" : "William Borges",
+    "id" : "116720129"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "William Castro",
+    "lastName" : "Borges",
+    "identifier" : "117210100",
+    "affiliation" : "Departamento de Ciências Biológicas, Laboratório de Enzimologia e Proteômica, Instituto de Ciencias Ciências Exatas e Biológicas, Universidade Federal de Ouro Preto, Brasil",
+    "email" : "wborges@ufop.edu.br",
+    "country" : "",
+    "orcid" : "",
+    "name" : "William Castro Borges",
+    "id" : "117210100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1002251",
+    "name" : "Comet"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1003108",
+    "name" : "PatternLab"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000440",
+    "name" : "Normalized Spectral Abundance Factor - NSAF"
+  } ],
+  "countries" : [ "Brazil" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0001281",
+      "name" : "spleen"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:10090",
+      "name" : "Mus musculus (Mouse)"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:1395",
+      "name" : "schistosomiasis"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:10090",
+    "name" : "Mus musculus (mouse)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0001281",
+    "name" : "Spleen"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:1395",
+    "name" : "Schistosomiasis"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Cosenza-Contreras M, de Oliveira E Castro RA, Mattei B, Campos JM, Gonçalves Silva G, de Paiva NCN, de Oliveira Aguiar-Soares RD, Carneiro CM, Afonso LCC, Castro-Borges W. The Schistosomiasis SpleenOME: Unveiling the Proteomic Landscape of Splenomegaly Using Label-Free Mass Spectrometry. Front Immunol. 2018 9:3137",
+    "pubmedID" : 30728824,
+    "doi" : "10.3389/fimmu.2018.03137"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00425",
+    "name" : "monohydroxylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 4159,
+  "botCount" : 1231,
+  "hubCount" : 2590,
+  "organicCount" : 338
+}

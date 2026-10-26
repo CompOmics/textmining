@@ -1,0 +1,498 @@
+{
+  "paper_id": "PXD005207",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "plasmodium falciparum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Plasmodium falciparum\" multiple times in the abstract and methods.",
+        "TRUTH_CHECK": "The experiment analyzes the phosphoproteome and proteome of the malaria parasite P. falciparum.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo Sapiens",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes the analysis of P. falciparum parasites cultured in O+ erythrocytes; while a combined Human and P. falciparum database was used for searching, the experiment's goal is the parasite phosphoproteome.",
+        "TRUTH_CHECK": "The study focuses on the malaria parasite (P. falciparum). While human proteins from the host erythrocytes are present in the sample and searched in the database, the primary organism analyzed is the parasite. However, the field definition for host-pathogen studies states the species is the organism the study analyses.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "schizonts",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Schizont is a parasite life cycle stage, which belongs to the developmental_stage field.",
+        "SOURCE_CHECK": "The paper states that parasites were harvested at the late schizont stage.",
+        "TRUTH_CHECK": "The value describes the developmental stage of the parasite, not its biological cell type.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "RBC",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "RBC (Red Blood Cell) is a biological cell type, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"erythrocytes\" and \"RBCs\" throughout the methods.",
+        "TRUTH_CHECK": "The proteomics analysis was performed on P. falciparum parasites cultured in and harvested from RBCs; however, the study's goal was to analyze the parasite phosphoproteome, not the RBCs themselves.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "strain",
+      "sdrf_column": "comment[plasmodium strain]",
+      "extracted_value": "3D7",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a parasite strain, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"3D7 (MR4)\" in the Parasite culture and transfections section.",
+        "TRUTH_CHECK": "The proteomics analysis was performed on P. falciparum lines, including those generated in the 3D7 strain.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "ITRAQ114",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an iTRAQ reporter ion, which is the correct field for labeling.",
+        "SOURCE_CHECK": "The methods state that peptides from wild type parasites were labeled with 114 and 115 iTRAQ reporter ions.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the wild type sample.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "ITRAQ115",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an iTRAQ reporter ion, which is the correct field for labeling.",
+        "SOURCE_CHECK": "The methods state that peptides from wild type parasites were labeled with 114 and 115 iTRAQ reporter ions.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the wild type samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "ITRAQ116",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a labeling channel, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that peptides from CDPK1 knockdown parasites were labeled with 116 and 117 iTRAQ reporter ions.",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "ITRAQ117",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an iTRAQ reporter ion, which is the correct field for labeling.",
+        "SOURCE_CHECK": "The methods state that peptides from CDPK1 knockdown parasites were labeled with 117 reporter ions.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the CDPK1 knockdown group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002732;NT=Orbitrap Fusion Lumos",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Orbitrap Fusion Tribrid",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states the instrument was an \"Orbitrap Fusion Tribrid mass spectrometer\".",
+        "TRUTH_CHECK": "The \"Orbitrap Fusion Lumos\" is a specific model within the Fusion Tribrid family, but the paper only specifies \"Orbitrap Fusion Tribrid\".",
+        "COMPLETENESS_CHECK": "The value is a more specific model than what is printed in the text."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state \"Trypsin was added in a ratio of 1 unit of trypsin per 20 unit of sample\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples analyzed by MS.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that precursor ions were fragmented using higher-energy collisional dissociation (HCD).",
+        "TRUTH_CHECK": "HCD was the fragmentation method used for the LC-MS/MS analysis of the samples.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The MS data analysis section states \"carbamidomethylation of cysteine residues\" was used as a fixed modification.",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Follows the required format (NT, AC, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;AC=UNIMOD:35;TA=M,W;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Oxidation;TA=M;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"Oxidation of methionine\" was selected as a dynamic modification.",
+        "TRUTH_CHECK": "The modification is right, but the residues listed include Tryptophan (W), which is not mentioned.",
+        "COMPLETENESS_CHECK": "The paper only specifies methionine (M) for oxidation."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Deamidated;AC=UNIMOD:7;TA=N,Q;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper lists \"carbamidomethylation of cysteine residues\", \"peptide N-terminal and lysine side chain of iTRAQ\", \"Oxidation of methionine\", and \"phosphorylation of serine, threonine and tyrosine\". Deamidation is not mentioned.",
+        "TRUTH_CHECK": "The modification was not used in the search described in the paper.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;AC=UNIMOD:21;TA=S,T,Y,A;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Phospho;TA=S,T,Y;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"phosphorylation of serine, threonine and tyrosine was selected as dynamic modifications\".",
+        "TRUTH_CHECK": "The modification is correct, but the residue Alanine (A) is not mentioned in the paper.",
+        "COMPLETENESS_CHECK": "The residue list includes an extra residue (A) not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Glu->pyro-Glu;AC=UNIMOD:27;TA=E;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper lists carbamidomethylation, iTRAQ, oxidation, and phosphorylation as modifications, but does not mention pyro-glutamate (Glu->pyro-Glu).",
+        "TRUTH_CHECK": "The modification was not used in the database search described in the paper.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Ammonia-loss;AC=UNIMOD:385;TA=Q,C;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "Ammonia-loss is not mentioned in the MS data analysis section or anywhere else in the paper.",
+        "TRUTH_CHECK": "The modification was not used in the search.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=ITRAQ4plex114;PP=Any N-term;TA=K;AC=UNIMOD:532;MT=fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"peptide N-terminal and lysine side chain of iTRAQ as fixed modification\" and mentions iTRAQ reporter ions 114, 115, 116, and 117.",
+        "TRUTH_CHECK": "The modification is correct for the runs using the 114 reporter ion.",
+        "COMPLETENESS_CHECK": "The value follows the required format including NT, TA, PP, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=iTRAQ;PP=Any N-term;TA=K;AC=UNIMOD:214;MT=fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"peptide N-terminal and lysine side chain of iTRAQ as fixed modification\".",
+        "TRUTH_CHECK": "The value correctly describes the iTRAQ modification used for the runs.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;PP;TA;AC;MT format."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The MS data analysis section states \"Precursor mass tolerance was set to 20 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, including the unit as printed."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.02 Da",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "0.1 Da",
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states a fragment mass tolerance of 0.1 Da in the MS data analysis section.",
+        "TRUTH_CHECK": "The value 0.02 Da is not the value printed in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format but contains the wrong number."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1 | row 133 = 1 | row 134 = 1 | row 135 = 1 | row 136 = 1 | row 137 = 1 | row 138 = 1 | row 139 = 1 | row 140 = 1 | row 141 = 1 | row 142 = 1 | row 143 = 1 | row 144 = 1 | row 145 = 1 | row 146 = 1 | row 147 = 1 | row 148 = 1 | row 149 = 1 | row 150 = 1 | row 151 = 1 | row 152 = 1 | row 153 = 1 | row 154 = 1 | row 155 = 1 | row 156 = 1 | row 157 = 1 | row 158 = 1 | row 159 = 1 | row 160 = 1 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 1 | row 166 = 1 | row 167 = 1 | row 168 = 1 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 1 | row 173 = 1 | row 174 = 1 | row 175 = 1 | row 176 = 1 | row 177 = 1 | row 178 = 1 | row 179 = 1 | row 180 = 1 | row 181 = 1 | row 182 = 1 | row 183 = 1 | row 184 = 1 | row 185 = 1 | row 186 = 1 | row 187 = 1 | row 188 = 1 | row 189 = 1 | row 190 = 1 | row 191 = 1 | row 192 = 1 | row 193 = 1 | row 194 = 1 | row 195 = 1 | row 196 = 1 | row 197 = 1 | row 198 = 1 | row 199 = 1 | row 200 = 1 | row 201 = 1 | row 202 = 1 | row 203 = 1 | row 204 = 1 | row 205 = 1 | row 206 = 1 | row 207 = 1 | row 208 = 1 | row 209 = 1 | row 210 = 1 | row 211 = 1 | row 212 = 1 | row 213 = 1 | row 214 = 1 | row 215 = 1 | row 216 = 1 | row 217 = 1 | row 218 = 1 | row 219 = 1 | row 220 = 1 | row 221 = 1 | row 222 = 1 | row 223 = 1 | row 224 = 1 | row 225 = 1 | row 226 = 1 | row 227 = 1 | row 228 = 1 | row 229 = 1 | row 230 = 1 | row 231 = 1 | row 232 = 1 | row 233 = 1 | row 234 = 1 | row 235 = 1 | row 236 = 1 | row 237 = 1 | row 238 = 1 | row 239 = 1 | row 240 = 1 | row 241 = 1 | row 242 = 1 | row 243 = 1 | row 244 = 1 | row 245 = 1 | row 246 = 1 | row 247 = 1 | row 248 = 1 | row 249 = 1 | row 250 = 1 | row 251 = 1 | row 252 = 1 | row 253 = 1 | row 254 = 1 | row 255 = 1 | row 256 = 1 | row 257 = 1 | row 258 = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that the analysis was carried out on four independent biological replicates, and one of those was further processed as technical duplicates, totaling five independent analyses.",
+        "TRUTH_CHECK": "The candidate value assigns every single run (across multiple samples and replicates) to biological replicate 1. This contradicts the paper, which explicitly mentions four independent biological replicates.",
+        "COMPLETENESS_CHECK": "The mapping is provided for all runs, but the values are incorrect."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 2 | row 24 = 2 | row 25 = 2 | row 26 = 2 | row 27 = 2 | row 28 = 2 | row 29 = 2 | row 30 = 2 | row 31 = 2 | row 32 = 2 | row 33 = 2 | row 34 = 2 | row 35 = 2 | row 36 = 2 | row 37 = 2 | row 38 = 2 | row 39 = 2 | row 40 = 2 | row 41 = 2 | row 42 = 2 | row 43 = 2 | row 44 = 2 | row 45 = 2 | row 46 = 2 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 2 | row 78 = 2 | row 79 = 2 | row 80 = 2 | row 81 = 2 | row 82 = 2 | row 83 = 2 | row 84 = 2 | row 85 = 2 | row 86 = 2 | row 87 = 2 | row 88 = 2 | row 89 = 2 | row 90 = 2 | row 91 = 2 | row 92 = 2 | row 93 = 2 | row 94 = 2 | row 95 = 2 | row 96 = 2 | row 97 = 2 | row 98 = 2 | row 99 = 2 | row 100 = 2 | row 101 = 2 | row 102 = 2 | row 103 = 2 | row 104 = 2 | row 105 = 2 | row 106 = 2 | row 107 = 3 | row 108 = 3 | row 109 = 3 | row 110 = 3 | row 111 = 3 | row 112 = 3 | row 113 = 3 | row 114 = 3 | row 115 = 3 | row 116 = 3 | row 117 = 3 | row 118 = 3 | row 119 = 3 | row 120 = 3 | row 121 = 3 | row 122 = 3 | row 123 = 3 | row 124 = 3 | row 125 = 3 | row 126 = 3 | row 127 = 3 | row 128 = 3 | row 129 = 3 | row 130 = 3 | row 131 = 3 | row 132 = 3 | row 133 = 3 | row 134 = 3 | row 135 = 4 | row 136 = 4 | row 137 = 4 | row 138 = 4 | row 139 = 4 | row 140 = 4 | row 141 = 4 | row 142 = 4 | row 143 = 4 | row 144 = 4 | row 145 = 4 | row 146 = 4 | row 147 = 4 | row 148 = 4 | row 149 = 4 | row 150 = 4 | row 151 = 4 | row 152 = 4 | row 153 = 4 | row 154 = 4 | row 155 = 4 | row 156 = 4 | row 157 = 4 | row 158 = 4 | row 159 = 5 | row 160 = 5 | row 161 = 5 | row 162 = 5 | row 163 = 5 | row 164 = 5 | row 165 = 5 | row 166 = 5 | row 167 = 5 | row 168 = 5 | row 169 = 5 | row 170 = 5 | row 171 = 5 | row 172 = 5 | row 173 = 5 | row 174 = 5 | row 175 = 5 | row 176 = 5 | row 177 = 5 | row 178 = 5 | row 179 = 5 | row 180 = 5 | row 181 = 5 | row 182 = 5 | row 183 = 5 | row 184 = 5 | row 185 = 6 | row 186 = 6 | row 187 = 6 | row 188 = 6 | row 189 = 6 | row 190 = 6 | row 191 = 6 | row 192 = 6 | row 193 = 6 | row 194 = 6 | row 195 = 6 | row 196 = 6 | row 197 = 6 | row 198 = 6 | row 199 = 6 | row 200 = 6 | row 201 = 6 | row 202 = 6 | row 203 = 6 | row 204 = 6 | row 205 = 7 | row 206 = 7 | row 207 = 7 | row 208 = 7 | row 209 = 7 | row 210 = 7 | row 211 = 7 | row 212 = 7 | row 213 = 7 | row 214 = 7 | row 215 = 7 | row 216 = 7 | row 217 = 7 | row 218 = 7 | row 219 = 7 | row 220 = 7 | row 221 = 7 | row 222 = 7 | row 223 = 7 | row 224 = 7 | row 225 = 7 | row 226 = 7 | row 227 = 7 | row 228 = 7 | row 229 = 7 | row 230 = 7 | row 231 = 7 | row 232 = 7 | row 233 = 7 | row 234 = 7 | row 235 = 8 | row 236 = 8 | row 237 = 8 | row 238 = 8 | row 239 = 8 | row 240 = 8 | row 241 = 8 | row 242 = 8 | row 243 = 8 | row 244 = 8 | row 245 = 8 | row 246 = 8 | row 247 = 8 | row 248 = 8 | row 249 = 8 | row 250 = 8 | row 251 = 8 | row 252 = 8 | row 253 = 8 | row 254 = 8 | row 255 = 8 | row 256 = 8 | row 257 = 8 | row 258 = 8",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that four independent biological replicates were used, and one of those was further processed as technical duplicates.",
+        "TRUTH_CHECK": "The mapping assigns technical replicate indices up to 8 across different runs. However, the paper only describes a maximum of two technical replicates for one of the biological replicates (the others being measured once). The mapping provided does not reflect the described experimental design.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1 | row 133 = 1 | row 134 = 1 | row 135 = 1 | row 136 = 1 | row 137 = 1 | row 138 = 1 | row 139 = 1 | row 140 = 1 | row 141 = 1 | row 142 = 1 | row 143 = 1 | row 144 = 1 | row 145 = 1 | row 146 = 1 | row 147 = 1 | row 148 = 1 | row 149 = 1 | row 150 = 1 | row 151 = 1 | row 152 = 1 | row 153 = 1 | row 154 = 1 | row 155 = 1 | row 156 = 1 | row 157 = 1 | row 158 = 1 | row 159 = 1 | row 160 = 1 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 1 | row 166 = 1 | row 167 = 1 | row 168 = 1 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 1 | row 173 = 1 | row 174 = 1 | row 175 = 1 | row 176 = 1 | row 177 = 1 | row 178 = 1 | row 179 = 1 | row 180 = 1 | row 181 = 1 | row 182 = 1 | row 183 = 1 | row 184 = 1 | row 185 = 1 | row 186 = 1 | row 187 = 1 | row 188 = 1 | row 189 = 1 | row 190 = 1 | row 191 = 1 | row 192 = 1 | row 193 = 1 | row 194 = 1 | row 195 = 1 | row 196 = 1 | row 197 = 1 | row 198 = 1 | row 199 = 1 | row 200 = 1 | row 201 = 1 | row 202 = 1 | row 203 = 1 | row 204 = 1 | row 205 = 1 | row 206 = 1 | row 207 = 1 | row 208 = 1 | row 209 = 1 | row 210 = 1 | row 211 = 1 | row 212 = 1 | row 213 = 1 | row 214 = 1 | row 215 = 1 | row 216 = 1 | row 217 = 1 | row 218 = 1 | row 219 = 1 | row 220 = 1 | row 221 = 1 | row 222 = 1 | row 223 = 1 | row 224 = 1 | row 225 = 1 | row 226 = 1 | row 227 = 1 | row 228 = 1 | row 229 = 1 | row 230 = 1 | row 231 = 1 | row 232 = 1 | row 233 = 1 | row 234 = 1 | row 235 = 1 | row 236 = 1 | row 237 = 1 | row 238 = 1 | row 239 = 1 | row 240 = 1 | row 241 = 1 | row 242 = 1 | row 243 = 1 | row 244 = 1 | row 245 = 1 | row 246 = 1 | row 247 = 1 | row 248 = 1 | row 249 = 1 | row 250 = 1 | row 251 = 1 | row 252 = 1 | row 253 = 1 | row 254 = 1 | row 255 = 1 | row 256 = 1 | row 257 = 1 | row 258 = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a basic RPLC fractionation step where 96 fractions were concatenated into 12 fractions.",
+        "TRUTH_CHECK": "The candidate value assigns fraction 1 to every run, but the paper explicitly states that the sample was resolved into 12 fractions and that both total proteome and phosphopeptide analysis were performed on these fractions.",
+        "COMPLETENESS_CHECK": "The mapping is provided for all runs, but the values are incorrect based on the study design."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[phenotype]",
+      "extracted_value": "row 1 = wild | row 2 = wild | row 3 = wild | row 4 = wild | row 5 = wild | row 6 = wild | row 7 = wild | row 8 = wild | row 9 = wild | row 10 = wild | row 11 = wild | row 12 = wild | row 13 = wild | row 14 = wild | row 15 = wild | row 16 = wild | row 17 = wild | row 18 = wild | row 19 = wild | row 20 = wild | row 21 = wild | row 22 = wild | row 23 = wild | row 24 = wild | row 25 = wild | row 26 = wild | row 27 = wild | row 28 = wild | row 29 = wild | row 30 = wild | row 31 = wild | row 32 = wild | row 33 = wild | row 34 = wild | row 35 = wild | row 36 = wild | row 37 = wild | row 38 = wild | row 39 = wild | row 40 = wild | row 41 = wild | row 42 = wild | row 43 = wild | row 44 = wild | row 45 = wild | row 46 = wild | row 47 = Mixed | row 48 = Mixed | row 49 = Mixed | row 50 = Mixed | row 51 = CDPK1 knockdown | row 52 = CDPK1 knockdown | row 53 = CDPK1 knockdown | row 54 = CDPK1 knockdown | row 55 = CDPK1 knockdown | row 56 = CDPK1 knockdown | row 57 = CDPK1 knockdown | row 58 = CDPK1 knockdown | row 59 = CDPK1 knockdown | row 60 = CDPK1 knockdown | row 61 = CDPK1 knockdown | row 62 = CDPK1 knockdown | row 63 = CDPK1 knockdown | row 64 = CDPK1 knockdown | row 65 = CDPK1 knockdown | row 66 = CDPK1 knockdown | row 67 = CDPK1 knockdown | row 68 = CDPK1 knockdown | row 69 = CDPK1 knockdown | row 70 = CDPK1 knockdown | row 71 = CDPK1 knockdown | row 72 = CDPK1 knockdown | row 73 = CDPK1 knockdown | row 74 = CDPK1 knockdown | row 75 = CDPK1 knockdown | row 76 = CDPK1 knockdown | row 77 = CDPK1 knockdown | row 78 = CDPK1 knockdown | row 79 = CDPK1 knockdown | row 80 = CDPK1 knockdown | row 81 = CDPK1 knockdown | row 82 = CDPK1 knockdown | row 83 = CDPK1 knockdown | row 84 = CDPK1 knockdown | row 85 = CDPK1 knockdown | row 86 = CDPK1 knockdown | row 87 = CDPK1 knockdown | row 88 = CDPK1 knockdown | row 89 = CDPK1 knockdown | row 90 = CDPK1 knockdown | row 91 = CDPK1 knockdown | row 92 = CDPK1 knockdown | row 93 = CDPK1 knockdown | row 94 = CDPK1 knockdown | row 95 = CDPK1 knockdown | row 96 = CDPK1 knockdown | row 97 = CDPK1 knockdown | row 98 = CDPK1 knockdown | row 99 = CDPK1 knockdown | row 100 = CDPK1 knockdown | row 101 = CDPK1 knockdown | row 102 = CDPK1 knockdown | row 103 = CDPK1 knockdown | row 104 = CDPK1 knockdown | row 105 = CDPK1 knockdown | row 106 = CDPK1 knockdown | row 107 = CDPK1 knockdown | row 108 = CDPK1 knockdown | row 109 = CDPK1 knockdown | row 110 = CDPK1 knockdown | row 111 = CDPK1 knockdown | row 112 = CDPK1 knockdown | row 113 = CDPK1 knockdown | row 114 = CDPK1 knockdown | row 115 = CDPK1 knockdown | row 116 = CDPK1 knockdown | row 117 = CDPK1 knockdown | row 118 = CDPK1 knockdown | row 119 = CDPK1 knockdown | row 120 = CDPK1 knockdown | row 121 = CDPK1 knockdown | row 122 = CDPK1 knockdown | row 123 = CDPK1 knockdown | row 124 = CDPK1 knockdown | row 125 = CDPK1 knockdown | row 126 = CDPK1 knockdown | row 127 = CDPK1 knockdown | row 128 = CDPK1 knockdown | row 129 = CDPK1 knockdown | row 130 = CDPK1 knockdown | row 131 = CDPK1 knockdown | row 132 = CDPK1 knockdown | row 133 = CDPK1 knockdown | row 134 = CDPK1 knockdown | row 135 = CDPK1 knockdown | row 136 = CDPK1 knockdown | row 137 = CDPK1 knockdown | row 138 = CDPK1 knockdown | row 139 = CDPK1 knockdown | row 140 = CDPK1 knockdown | row 141 = CDPK1 knockdown | row 142 = CDPK1 knockdown | row 143 = CDPK1 knockdown | row 144 = CDPK1 knockdown | row 145 = CDPK1 knockdown | row 146 = CDPK1 knockdown | row 147 = CDPK1 knockdown | row 148 = CDPK1 knockdown | row 149 = CDPK1 knockdown | row 150 = CDPK1 knockdown | row 151 = CDPK1 knockdown | row 152 = CDPK1 knockdown | row 153 = CDPK1 knockdown | row 154 = CDPK1 knockdown | row 155 = CDPK1 knockdown | row 156 = CDPK1 knockdown | row 157 = CDPK1 knockdown | row 158 = CDPK1 knockdown | row 159 = CDPK1 knockdown | row 160 = CDPK1 knockdown | row 161 = CDPK1 knockdown | row 162 = CDPK1 knockdown | row 163 = CDPK1 knockdown | row 164 = CDPK1 knockdown | row 165 = CDPK1 knockdown | row 166 = CDPK1 knockdown | row 167 = CDPK1 knockdown | row 168 = CDPK1 knockdown | row 169 = CDPK1 knockdown | row 170 = CDPK1 knockdown | row 171 = CDPK1 knockdown | row 172 = CDPK1 knockdown | row 173 = CDPK1 knockdown | row 174 = CDPK1 knockdown | row 175 = CDPK1 knockdown | row 176 = CDPK1 knockdown | row 177 = CDPK1 knockdown | row 178 = CDPK1 knockdown | row 179 = CDPK1 knockdown | row 180 = CDPK1 knockdown | row 181 = CDPK1 knockdown | row 182 = CDPK1 knockdown | row 183 = CDPK1 knockdown | row 184 = CDPK1 knockdown | row 185 = CDPK1 knockdown | row 186 = CDPK1 knockdown | row 187 = CDPK1 knockdown | row 188 = CDPK1 knockdown | row 189 = CDPK1 knockdown | row 190 = CDPK1 knockdown | row 191 = CDPK1 knockdown | row 192 = CDPK1 knockdown | row 193 = CDPK1 knockdown | row 194 = CDPK1 knockdown | row 195 = CDPK1 knockdown | row 196 = CDPK1 knockdown | row 197 = CDPK1 knockdown | row 198 = CDPK1 knockdown | row 199 = CDPK1 knockdown | row 200 = CDPK1 knockdown | row 201 = CDPK1 knockdown | row 202 = CDPK1 knockdown | row 203 = CDPK1 knockdown | row 204 = CDPK1 knockdown | row 205 = CDPK1 knockdown | row 206 = CDPK1 knockdown | row 207 = CDPK1 knockdown | row 208 = CDPK1 knockdown | row 209 = CDPK1 knockdown | row 210 = CDPK1 knockdown | row 211 = CDPK1 knockdown | row 212 = CDPK1 knockdown | row 213 = CDPK1 knockdown | row 214 = CDPK1 knockdown | row 215 = CDPK1 knockdown | row 216 = CDPK1 knockdown | row 217 = CDPK1 knockdown | row 218 = CDPK1 knockdown | row 219 = CDPK1 knockdown | row 220 = CDPK1 knockdown | row 221 = CDPK1 knockdown | row 222 = CDPK1 knockdown | row 223 = CDPK1 knockdown | row 224 = CDPK1 knockdown | row 225 = CDPK1 knockdown | row 226 = CDPK1 knockdown | row 227 = CDPK1 knockdown | row 228 = CDPK1 knockdown | row 229 = CDPK1 knockdown | row 230 = CDPK1 knockdown | row 231 = CDPK1 knockdown | row 232 = CDPK1 knockdown | row 233 = CDPK1 knockdown | row 234 = CDPK1 knockdown | row 235 = CDPK1 knockdown | row 236 = CDPK1 knockdown | row 237 = CDPK1 knockdown | row 238 = CDPK1 knockdown | row 239 = CDPK1 knockdown | row 240 = CDPK1 knockdown | row 241 = CDPK1 knockdown | row 242 = CDPK1 knockdown | row 243 = CDPK1 knockdown | row 244 = CDPK1 knockdown | row 245 = CDPK1 knockdown | row 246 = CDPK1 knockdown | row 247 = CDPK1 knockdown | row 248 = CDPK1 knockdown | row 249 = CDPK1 knockdown | row 250 = CDPK1 knockdown | row 251 = CDPK1 knockdown | row 252 = CDPK1 knockdown | row 253 = CDPK1 knockdown | row 254 = CDPK1 knockdown | row 255 = CDPK1 knockdown | row 256 = CDPK1 knockdown | row 257 = CDPK1 knockdown | row 258 = CDPK1 knockdown",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the levels of the studied variable (phenotype), which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a comparison between wild type parasites and CDPK1 knockdown parasites.",
+        "TRUTH_CHECK": "The mapping correctly assigns \"wild\" and \"CDPK1 knockdown\" to the respective groups, but the \"Mixed\" value for rows 47-50 is not supported by the paper.",
+        "COMPLETENESS_CHECK": "The mapping is complete for the runs, but contains an unsupported value."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "wild",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype or condition, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes \"wild type parasites\" as one of the groups compared to \"CDPK1 knockdown parasites\".",
+        "TRUTH_CHECK": "The value \"wild\" correctly identifies the wild-type group used in the phosphoproteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "Mixed",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is intended for a phenotype/characteristic column, which is the right kind of field for study groups.",
+        "SOURCE_CHECK": "The term \"Mixed\" does not appear in the paper text in the context of a sample phenotype or group.",
+        "TRUTH_CHECK": "The paper describes two main conditions: wild type parasites and CDPK1 knockdown parasites. There is no mention of a \"Mixed\" phenotype or sample group.",
+        "COMPLETENESS_CHECK": "Complete as a plain text value, but unsupported."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "CDPK1 knockdown",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the experimental condition/phenotype of the sample, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"CDPK1 knockdown\" in the abstract and methods (e.g., \"phosphorylation levels of proteins upon CDPK1 knockdown was studied\").",
+        "TRUTH_CHECK": "The value correctly identifies the phenotype of the runs associated with the knockdown condition.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the phenotype and is complete."
+      }
+    }
+  ]
+}

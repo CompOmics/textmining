@@ -1,0 +1,90 @@
+{
+  "accession" : "PXD032098",
+  "title" : "Structure of the AAA-ATPase Drg1 during extraction of Rlp24 from pre-60S particles",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "The AAA-ATPase Drg1 is a key factor in eukaryotic ribosome biogenesis that initiates cytoplasmic maturation of the large ribosomal subunit. Drg1 releases the shuttling maturation factor Rlp24 from pre-60S particles shortly after nuclear export, a strict requirement for downstream maturation. The molecular mechanism of release remained elusive. Here, we report a series of cryo-EM structures showing a hand-over-hand translocation mechanism of Drg1 and additional XL-MS data on positioning of Drg1 on pre-60S particles.",
+  "sampleProcessingProtocol" : "The pre-60S particles were purified via Arx1-TAP from a thermosensitive drg1-18 mutant after one hour of incubation at 37°C as described previously (Kappel et al., 2012).  After the TEV cleavage step, the TEV eluate from 2 l of culture were incubated with purified wildtype Drg1 (150 µg) in the presence of 1 mM ATPγS for 30 min on a rotator at room temperature. Afterwards, 1/3 of the sample was supplemented with the isotopically labeled crosslinking reagent A (disuccinimidyl suberate, DSS-d0/DSS-d12, Creative molecules), 1/3 was supplemented with isotopically labeled Crosslinker reagent B (bis(sulfosuccinimidyl)suberate, BS3-d0/BS3-d12, Sigma). 1/3 was further purified via Calmodulin sepharose beads without crosslinking. For both crosslinkers the final concentration was 1.5 mM. The crosslinking reactions were incubated at 30°C in a thermomixer at 300 rpm. After 30 min, the reactions were quenched with 5 µl of a 1 M NH4HCO3 stock solution for further 10 min in the thermomixer. Subsequently, the samples were concentrated in a speedvac and stored at -20°C. Crosslinked samples were processed essentially as described (Kargas et al., 2019). In short, samples were dried (Eppendorf, Concentrator plus), resuspended in 100 µl 8 M Urea, reduced, alkylated, and digested with trypsin (Promega). Digested peptides were separated from the solution and retained by a solid phase extraction system (SepPak, Waters). Crosslinked peptides were enriched by size exclusion chromatography using an ÄKTAmicro chromatography system (GE Healthcare) equipped with a SuperdexTM Peptide 3.2/30 column (column volume = 2.4 ml). For each crosslinked sample four fractions were measured in technical duplicates. Therefore, the elution fractions 0.9-1.0 and 1.0-1.1 ml were pooled and the three elution fractions 1.1-1.2, 1.2-1.3 and 1.3-1.4 ml were analyzed separately by LC-MS/MS. Absorption levels at 215 nm of each fraction were used to normalize peptide amounts prior to LC-MS/MS analysis. LC-MS/MS analysis was carried out on an Orbitrap Fusion Tribrid mass spectrometer (Thermo Electron, San Jose, CA). Peptides were separated on an EASY-nLC 1200 system (Thermo Scientific) at a flow rate of 300 nl/min over an 80 min gradient (5 % acetonitrile in 0.1 % formic acid for 4 min, 5 % - 35 % acetonitrile in 0.1% formic acid in 75 min, 35 % - 80 % acetonitrile in 1 min). Full scan mass spectra were acquired in the Orbitrap at a resolution of 120,000, a scan range of 400 - 1500 m/z, and a maximum injection time of 50 ms. Most intense precursor ions (intensity ≥ 5.0e3) with charge states 3 - 8 and monoisotopic peak determination set to ‘peptide’ were selected for MS/MS fragmentation by CID at 35 % collision energy in a data dependent mode. The duration for dynamic exclusion was set to 60 s. MS/MS spectra were analyzed in the Iontrap at a rapid scan rate.",
+  "dataProcessingProtocol" : "MS raw files were converted to centroid files and searched using xQuest/xProphet (Leitner et al., 2014) in ion-tag mode with a precursor mass tolerance of 10 ppm against a database containing ribosomal proteins and known assembly factors (total of 184 proteins). For each experiment only unique cross-links were considered and only high-confidence cross-linked peptides that were identified with a delta score (deltaS) below 0.95 and an ld-Score above 32, translating to an FDR ≤ 0.5, were selected for this study. Crosslink networks were visualized with xiNet (Combe et al., 2015).",
+  "projectTags" : [ ],
+  "keywords" : [ "Large ribosomal subunit", "Ribosome biogenesis", "Aaa-atpases", "Substrate recognition", "Substrate translocation mechanism", "Single particle cryo-em" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2022-03-07",
+  "publicationDate" : "2022-10-14",
+  "submitters" : [ {
+    "title" : "Mr",
+    "firstName" : "Florian",
+    "lastName" : "Stengel",
+    "identifier" : "106360140",
+    "affiliation" : "Universität Konstanz",
+    "email" : "florian.stengel@uni-konstanz.de",
+    "country" : "Germany",
+    "orcid" : "0000-0003-1447-4509",
+    "name" : "Florian Stengel",
+    "id" : "106360140"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Florian",
+    "lastName" : "Stengel",
+    "identifier" : "2367117",
+    "affiliation" : "Department of Biology, University of Konstanz, Germany",
+    "email" : "florian.stengel@uni-konstanz.de",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Florian Stengel",
+    "id" : "2367117"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1002416",
+    "name" : "Orbitrap Fusion"
+  } ],
+  "softwares" : [ ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000430",
+    "name" : "Chemical cross-linking coupled with mass spectrometry proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "Germany" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:4932",
+      "name" : "Saccharomyces cerevisiae (Baker's yeast)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:4932",
+    "name" : "Saccharomyces cerevisiae (baker's yeast)"
+  } ],
+  "organismParts" : [ ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Prattes M, Grishkovskaya I, Hodirnau VV, Hetzmannseder C, Zisser G, Sailer C, Kargas V, Loibl M, Gerhalter M, Kofler L, Warren AJ, Stengel F, Haselbach D, Bergler H. Visualizing maturation factor extraction from the nascent ribosome by the AAA-ATPase Drg1. Nat Struct Mol Biol. 2022 29(9):942-953",
+    "pubmedID" : 36097293,
+    "doi" : "10.1038/s41594-022-00832-5"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 1313,
+  "botCount" : 558,
+  "hubCount" : 730,
+  "organicCount" : 25
+}

@@ -1,0 +1,498 @@
+{
+  "paper_id": "PXD018594",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Chlorocebus sabaeus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"UniProt Chlorocebus sequences\" in the search database section and \"Vero E6\" cells.",
+        "TRUTH_CHECK": "Vero E6 cells are derived from the African green monkey (Chlorocebus sabaeus), which is an allowed inference from a cell line of known origin.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "kidney",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ name, which is the right field for tissue.",
+        "SOURCE_CHECK": "The paper uses Vero E6 cells; the definition allows inferring the organ of origin for cell lines.",
+        "TRUTH_CHECK": "Vero E6 cells are derived from the kidney of the African green monkey (Chlorocebus sabaeus).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the right field.",
+        "SOURCE_CHECK": "The paper uses Vero E6 cells; the cell type of this line (epithelial) is an allowed inference.",
+        "TRUTH_CHECK": "The runs used Vero E6 cells, which are epithelial cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The samples are derived from the Vero E6 cell line.",
+        "TRUTH_CHECK": "According to the field definition, the disease state for HEK293 is \"normal\", and by extension, the standard state for the Vero E6 (African green monkey kidney epithelial) cell line used as the host for infection is considered normal.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term \"normal\" for healthy/non-diseased material."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "Vero E6",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Vero E6 (ATCC, CLR-1586) cells were cultured\" and used for the infection experiments.",
+        "TRUTH_CHECK": "The MS analysis was performed on these infected Vero E6 cells.",
+        "COMPLETENESS_CHECK": "The value is written exactly as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the right field.",
+        "SOURCE_CHECK": "The paper states that Vero E6 cells were cultured and infected, which allows inference of the material type.",
+        "TRUTH_CHECK": "The analysed material consists of Vero E6 cells.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the controlled terms listed in the field definition (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"label-free protein quantification\" in the section header.",
+        "TRUTH_CHECK": "The runs used a label-free approach based on PSM counts.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive HF;AC=MS:1002523",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the peptides were identified using a \"Q-Exactive HF mass spectrometer\".",
+        "TRUTH_CHECK": "The value is correct for the runs listed.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"in-gel trypsin proteolysis\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a \"shotgun tandem mass spectrometry workflow\" for protein identification and quantification.",
+        "TRUTH_CHECK": "The runs are part of a proteomic profiling experiment.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term definition."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"static modifications were carbamidomethylated cysteine (+57.0215)\".",
+        "TRUTH_CHECK": "The modification is correctly applied to the runs.",
+        "COMPLETENESS_CHECK": "Complete, following the key-value format with name, residue, and status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=fixed;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"static modifications were carbamidomethylated cysteine (+57.0215) and oxidized methionine (+15.9949)\".",
+        "TRUTH_CHECK": "The value is right for the runs as oxidized methionine was a static (fixed) modification.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Deamidated;AC=UNIMOD:7;TA=N,Q;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"dynamic modifications allowed were deamidation of asparagine and glutamine\".",
+        "TRUTH_CHECK": "The modification was used for the runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residues, and status."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods state \"mass tolerances on the parent ion of 5 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it.",
+        "COMPLETENESS_CHECK": "Complete, follows the definition format."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.02 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"0.02 Da on the MS/MS\" under MS/MS data interpretation.",
+        "TRUTH_CHECK": "The value is correct for the runs described in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "Q10445_MS20-17_CoV2_J1(MOI-01).raw = 1 | Q10446_MS20-17_CoV2_J1(MOI-001).raw = 1 | Q10447_MS20-17_CoV2_J2(MOI-01).raw = 1 | Q10448_MS20-17_CoV2_J2(MOI-001).raw = 1 | Q10449_MS20-17_CoV2_J3(MOI-01).raw = 1 | Q10450_MS20-17_CoV2_J3(MOI-001).raw = 1 | Q10451_MS20-17_CoV2_J4(MOI-01).raw = 1 | Q10452_MS20-17_CoV2_J4(MOI-001).raw = 1 | Q10453_MS20-17_CoV2_J7(MOI-01).raw = 1 | Q10454_MS20-17_CoV2_J7(MOI-001).raw = 1 | Q10461_MS20-17_CoV2_J1(MOI-01)r.raw = 1 | Q10462_MS20-17_CoV2_J1(MOI-001)r.raw = 1 | Q10463_MS20-17_CoV2_J2(MOI-01)r.raw = 1 | Q10464_MS20-17_CoV2_J2(MOI-001)r.raw = 1 | Q10465_MS20-17_CoV2_J3(MOI-01)r.raw = 1 | Q10466_MS20-17_CoV2_J3(MOI-001)r.raw = 1 | Q10467_MS20-17_CoV2_J4(MOI-01)r.raw = 1 | Q10468_MS20-17_CoV2_J4(MOI-001)r.raw = 1 | Q10469_MS20-17_CoV2_J7(MOI-01)r.raw = 1 | Q10470_MS20-17_CoV2_J7(MOI-001)r.raw = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes infection of Vero cells at two MOIs and harvesting at 5 time-points (1, 2, 3, 4, 7 dpi).",
+        "TRUTH_CHECK": "The runs are grouped by time-points (J1, J2, J3, J4, J7) and MOIs (0.1 and 0.01). Each unique combination of time-point and MOI represents a distinct biological condition/sample. Assigning all runs to biological replicate 1 is incorrect because the different time-points (J1 through J7) are independent biological units of the infection kinetics.",
+        "COMPLETENESS_CHECK": "The mapping is complete in format but logically wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "Q10445_MS20-17_CoV2_J1(MOI-01).raw = 1 | Q10446_MS20-17_CoV2_J1(MOI-001).raw = 1 | Q10447_MS20-17_CoV2_J2(MOI-01).raw = 1 | Q10448_MS20-17_CoV2_J2(MOI-001).raw = 1 | Q10449_MS20-17_CoV2_J3(MOI-01).raw = 1 | Q10450_MS20-17_CoV2_J3(MOI-001).raw = 1 | Q10451_MS20-17_CoV2_J4(MOI-01).raw = 1 | Q10452_MS20-17_CoV2_J4(MOI-001).raw = 1 | Q10453_MS20-17_CoV2_J7(MOI-01).raw = 1 | Q10454_MS20-17_CoV2_J7(MOI-001).raw = 1 | Q10461_MS20-17_CoV2_J1(MOI-01)r.raw = 1 | Q10462_MS20-17_CoV2_J1(MOI-001)r.raw = 1 | Q10463_MS20-17_CoV2_J2(MOI-01)r.raw = 1 | Q10464_MS20-17_CoV2_J2(MOI-001)r.raw = 1 | Q10465_MS20-17_CoV2_J3(MOI-01)r.raw = 1 | Q10466_MS20-17_CoV2_J3(MOI-001)r.raw = 1 | Q10467_MS20-17_CoV2_J4(MOI-01)r.raw = 1 | Q10468_MS20-17_CoV2_J4(MOI-001)r.raw = 1 | Q10469_MS20-17_CoV2_J7(MOI-01)r.raw = 1 | Q10470_MS20-17_CoV2_J7(MOI-001)r.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents technical replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention performing repeated injections of the same material; it describes a set of samples across different time-points and MOIs.",
+        "TRUTH_CHECK": "Since no repeated runs of the same material are described, each run is treated as a single measurement of its respective material.",
+        "COMPLETENESS_CHECK": "Every run is assigned index 1, which is correct for materials measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "Q10445_MS20-17_CoV2_J1(MOI-01).raw = 1 | Q10446_MS20-17_CoV2_J1(MOI-001).raw = 1 | Q10447_MS20-17_CoV2_J2(MOI-01).raw = 1 | Q10448_MS20-17_CoV2_J2(MOI-001).raw = 1 | Q10449_MS20-17_CoV2_J3(MOI-01).raw = 1 | Q10450_MS20-17_CoV2_J3(MOI-001).raw = 1 | Q10451_MS20-17_CoV2_J4(MOI-01).raw = 1 | Q10452_MS20-17_CoV2_J4(MOI-001).raw = 1 | Q10453_MS20-17_CoV2_J7(MOI-01).raw = 1 | Q10454_MS20-17_CoV2_J7(MOI-001).raw = 1 | Q10461_MS20-17_CoV2_J1(MOI-01)r.raw = 1 | Q10462_MS20-17_CoV2_J1(MOI-001)r.raw = 1 | Q10463_MS20-17_CoV2_J2(MOI-01)r.raw = 1 | Q10464_MS20-17_CoV2_J2(MOI-001)r.raw = 1 | Q10465_MS20-17_CoV2_J3(MOI-01)r.raw = 1 | Q10466_MS20-17_CoV2_J3(MOI-001)r.raw = 1 | Q10467_MS20-17_CoV2_J4(MOI-01)r.raw = 1 | Q10468_MS20-17_CoV2_J4(MOI-001)r.raw = 1 | Q10469_MS20-17_CoV2_J7(MOI-01)r.raw = 1 | Q10470_MS20-17_CoV2_J7(MOI-001)r.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a shotgun proteomics workflow with no mention of offline fractionation.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns 1 to all runs."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[multiplicities of infection]",
+      "extracted_value": "Q10445_MS20-17_CoV2_J1(MOI-01).raw = 0.01 | Q10446_MS20-17_CoV2_J1(MOI-001).raw = 0.001 | Q10447_MS20-17_CoV2_J2(MOI-01).raw = 0.01 | Q10448_MS20-17_CoV2_J2(MOI-001).raw = 0.001 | Q10449_MS20-17_CoV2_J3(MOI-01).raw = 0.01 | Q10450_MS20-17_CoV2_J3(MOI-001).raw = 0.001 | Q10451_MS20-17_CoV2_J4(MOI-01).raw = 0.01 | Q10452_MS20-17_CoV2_J4(MOI-001).raw = 0.001 | Q10453_MS20-17_CoV2_J7(MOI-01).raw = 0.01 | Q10454_MS20-17_CoV2_J7(MOI-001).raw = 0.001 | Q10461_MS20-17_CoV2_J1(MOI-01)r.raw = 0.01 | Q10462_MS20-17_CoV2_J1(MOI-001)r.raw = 0.001 | Q10463_MS20-17_CoV2_J2(MOI-01)r.raw = 0.01 | Q10464_MS20-17_CoV2_J2(MOI-001)r.raw = 0.001 | Q10465_MS20-17_CoV2_J3(MOI-01)r.raw = 0.01 | Q10466_MS20-17_CoV2_J3(MOI-001)r.raw = 0.001 | Q10467_MS20-17_CoV2_J4(MOI-01)r.raw = 0.01 | Q10468_MS20-17_CoV2_J4(MOI-001)r.raw = 0.001 | Q10469_MS20-17_CoV2_J7(MOI-01)r.raw = 0.01 | Q10470_MS20-17_CoV2_J7(MOI-001)r.raw = 0.001",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents levels of a studied variable (MOI), which is the correct field.",
+        "SOURCE_CHECK": "The methods state that cells were infected at two multiplicities of infection (MOI; 0.01 and 0.001).",
+        "TRUTH_CHECK": "The mapping correctly assigns the MOI values to the runs based on the filenames (e.g., MOI-01 for 0.01 and MOI-001 for 0.001).",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[infect]",
+      "extracted_value": "Severe acute respiratory syndrome coronavirus 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the infecting agent, which is appropriate for a column named \"characteristics[infect]\".",
+        "SOURCE_CHECK": "The paper explicitly states the use of \"SARS-CoV-2\" and \"Severe acute respiratory syndrome-related coronavirus 2\".",
+        "TRUTH_CHECK": "All listed runs are part of the SARS-CoV-2 infection experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[multiplicities of infection]",
+      "extracted_value": "0",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is being judged for a custom characteristics column regarding multiplicities of infection (MOI).",
+        "SOURCE_CHECK": "The paper states that cells were infected at two multiplicities of infection (MOI): 0.01 and 0.001.",
+        "TRUTH_CHECK": "The value \"0\" does not correspond to any of the MOI values described in the paper (0.01 or 0.001). Furthermore, the example run filenames explicitly mention \"MOI-01\" and \"MOI-001\", which correspond to the 0.01 and 0.001 values.",
+        "COMPLETENESS_CHECK": "The value is a plain number, but it is the wrong number."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Time",
+      "extracted_value": "1 day",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point of infection, which is a relevant variable for this study.",
+        "SOURCE_CHECK": "The paper states cells were harvested at \"1, 2, 3, 4 and 7 days post-infection (dpi)\".",
+        "TRUTH_CHECK": "The value \"1 day\" correctly describes the time point for the runs associated with it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Time",
+      "extracted_value": "2 day",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"2 day\" is a time point, which is appropriate for a column named \"Time\" in this study.",
+        "SOURCE_CHECK": "The paper states that cells were harvested at 1, 2, 3, 4 and 7 days post-infection (dpi).",
+        "TRUTH_CHECK": "The value correctly describes the time point for the runs associated with it.",
+        "COMPLETENESS_CHECK": "The value is a simple time point and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Time",
+      "extracted_value": "2 days",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point, which is appropriate for a column named \"Time\" in this study.",
+        "SOURCE_CHECK": "The paper states that cells were harvested at 1, 2, 3, 4 and 7 days post-infection (dpi).",
+        "TRUTH_CHECK": "The value \"2 days\" correctly describes the time point for the runs associated with it.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the time point and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Time",
+      "extracted_value": "3 days",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point of infection, which is a central variable of the study.",
+        "SOURCE_CHECK": "The methods state cells were harvested at \"1, 2, 3, 4 and 7 days post-infection (dpi)\".",
+        "TRUTH_CHECK": "The value \"3 days\" correctly describes the time point for the runs listed (which contain \"J3\" in the filename, likely referring to Jour 3/Day 3).",
+        "COMPLETENESS_CHECK": "The value is a clear and accurate representation of the time point described in the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Time",
+      "extracted_value": "4 days",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point of infection, which is a relevant variable for this study.",
+        "SOURCE_CHECK": "The methods state that cells were harvested at \"1, 2, 3, 4 and 7 days post-infection (dpi)\".",
+        "TRUTH_CHECK": "The value \"4 days\" correctly describes the time point for the runs associated with it (J4).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Time",
+      "extracted_value": "7 days",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a time point of infection, which is a relevant variable for this study.",
+        "SOURCE_CHECK": "The methods state that cells were harvested at 1, 2, 3, 4 and 7 days post-infection (dpi).",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., J7) correspond to the 7 days post-infection time point.",
+        "COMPLETENESS_CHECK": "The value is a clear and complete representation of the time point."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[multiplicities of infection].1",
+      "extracted_value": "0.01",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a multiplicity of infection (MOI), which is a relevant experimental characteristic for this study.",
+        "SOURCE_CHECK": "The methods section explicitly states that cells were infected at two multiplicities of infection (MOI; 0.01 and 0.001).",
+        "TRUTH_CHECK": "The value 0.01 is one of the two MOIs used in the experiment and is correctly assigned to the corresponding runs.",
+        "COMPLETENESS_CHECK": "The value is a plain number as stated in the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[multiplicities of infection].1",
+      "extracted_value": "0.001",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a multiplicity of infection (MOI), which is a study-specific characteristic.",
+        "SOURCE_CHECK": "The methods state that cells were infected at two multiplicities of infection (MOI; 0.01 and 0.001).",
+        "TRUTH_CHECK": "The value 0.001 is one of the two MOIs used in the experiment and is correctly assigned to the corresponding runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

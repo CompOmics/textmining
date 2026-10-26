@@ -1,0 +1,515 @@
+{
+  "paper_id": "PXD009630",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes samples from patients with malignant melanoma, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analyzed lymph node metastasis samples are from human patients.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "trunk",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"trunk\" describes a body region/organ part, which fits the tissue field.",
+        "SOURCE_CHECK": "The term \"trunk\" does not appear in the provided paper text, nor is there any mention of the anatomical location of the primary tumors or the lymph node metastases.",
+        "TRUTH_CHECK": "The paper states that 111 lymph node metastasis samples were analyzed, but it does not specify the anatomical region (e.g., trunk, head/neck) from which these lymph nodes were excised.",
+        "COMPLETENESS_CHECK": "The value is a simple term, but it is unsupported by the text."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "head/neck",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a body region/organ of origin, which fits the tissue field.",
+        "SOURCE_CHECK": "The terms \"head/neck\", \"trunk\", \"upper extremity\", and \"lower extremity\" do not appear in the provided paper text.",
+        "TRUTH_CHECK": "The paper states that 111 lymph node metastasis samples were analyzed, but it does not specify the anatomical location of the primary tumor or the lymph nodes for individual runs.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "upper extremity",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a body region/organ part, which fits the tissue field.",
+        "SOURCE_CHECK": "The terms \"upper extremity\", \"trunk\", \"head/neck\", and \"lower extremity\" do not appear in the provided paper text.",
+        "TRUTH_CHECK": "The paper states that 111 lymph node metastasis samples were analyzed, but it does not specify the anatomical location of the lymph nodes (e.g., upper extremity).",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "lower extremity",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a body region/part, which fits the tissue field.",
+        "SOURCE_CHECK": "The terms \"lower extremity\", \"trunk\", \"head/neck\", and \"upper extremity\" do not appear in the provided paper text.",
+        "TRUTH_CHECK": "The paper states that 111 lymph node metastasis samples were analyzed, but it does not specify the anatomical location of the primary tumor or the lymph nodes for these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "other",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"other\" is not a tissue or organ of origin.",
+        "SOURCE_CHECK": "The term \"other\" appears in the paper's context of melanoma types (disease_state), not as a tissue location.",
+        "TRUTH_CHECK": "The samples are lymph node metastases; \"other\" refers to the melanoma subtype, not the tissue.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "superficial spreading melanoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease/cancer type, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"malignant melanoma\" and \"melanoma lymph node metastases\", but does not list specific histological subtypes like \"superficial spreading melanoma\".",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "nodular melanoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"malignant melanoma\" and \"melanoma lymph node metastases\", but does not list specific histological subtypes like \"nodular melanoma\".",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "acral lentiginous melanoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"malignant melanoma\" and \"melanoma lymph node metastases\", but does not mention \"acral lentiginous melanoma\" or any other specific melanoma subtypes.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "other",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is intended to describe the disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that 111 lymph node metastasis samples from patients with malignant melanoma were analyzed, but it does not list specific histological subtypes or a category named \"other\" for the disease state.",
+        "TRUTH_CHECK": "The value \"other\" is not supported by the text for the disease state of the samples.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "lentigo maligna melanoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease/cancer type, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"malignant melanoma\" and \"melanoma lymph node metastases\", but the specific subtype \"lentigo maligna melanoma\" is not mentioned in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "mucosal",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"mucosal\" describes a type of melanoma, which is a disease state.",
+        "SOURCE_CHECK": "The paper mentions \"malignant melanoma\" and various histological characteristics, but the specific term \"mucosal\" does not appear in the provided text.",
+        "TRUTH_CHECK": "While mucosal melanoma is a known subtype, it is not mentioned in the text as being part of the 111 samples analyzed.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that patient characteristics are summarised in Table 1, but Table 1 is not provided in the text. The words \"male\" or \"female\" do not appear in the provided text.",
+        "TRUTH_CHECK": "The content is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that patient characteristics are summarised in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The text does not provide the sex of the individual patients.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "tissue",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"cell\" is intended as a material type, but it is not one of the allowed controlled terms.",
+        "SOURCE_CHECK": "The paper describes \"lymph node metastasis samples\" and \"frozen tissue samples\", which are tissues.",
+        "TRUTH_CHECK": "The analysed material consists of tissue slices from lymph node metastases, not isolated cells.",
+        "COMPLETENESS_CHECK": "The value does not follow the controlled vocabulary defined for material_type."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a workflow using protein intensities and log2 transformation without any mention of isotopic labels or TMT/SILAC, which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The 111 runs are label-free.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF controlled term convention."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Q Exactive Plus",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states the instrument used was a \"Q-Exactive Plus mass spectrometer\".",
+        "TRUTH_CHECK": "The paper specifies the \"Plus\" model for the analysis of the tumor lysate digests.",
+        "COMPLETENESS_CHECK": "The value \"Q Exactive\" is a drift to the base model of the same family, whereas the paper specifies \"Q-Exactive Plus\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive Plus;AC=MS:1002634",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the system was coupled to a Q-Exactive Plus mass spectrometer.",
+        "TRUTH_CHECK": "The instrument was used for the LC-MS/MS analysis of the tumor lysate digests.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state \"digested with sequencing grade trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of all 111 samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "NT=HCD;AC=MS:1000422",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that \"Selected ions were fragmented in the HCD collision cell\".",
+        "TRUTH_CHECK": "HCD was used for the LC-MS/MS analysis of the tumor lysate digests.",
+        "COMPLETENESS_CHECK": "The value follows the key-value format and is complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "30% NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The methods state \"normalised collision energy of 30%\".",
+        "TRUTH_CHECK": "This value is correct for the runs described.",
+        "COMPLETENESS_CHECK": "The value is complete and follows the allowed formats."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a high-resolution mass spectrometry protein expression analysis using a digested DDA workflow.",
+        "TRUTH_CHECK": "The value correctly describes the LC-MS/MS experiment performed on the 111 samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term definition."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;MT=fixed;AC=UNIMOD:4",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"carbamidomethylation as static modification\" in the Proteomics data analysis section.",
+        "TRUTH_CHECK": "The modification was used for all 111 runs.",
+        "COMPLETENESS_CHECK": "The definition requires residues (TA) or position (PP). The paper specifies \"carbamidomethylation\", which in the context of trypsin digestion (stated in the paper) always targets Cysteine (C)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"oxidation of methionine as dynamic modification\".",
+        "TRUTH_CHECK": "The modification was searched for all runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residues, and status."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under \"Proteomics data analysis\" states \"20 ppm precursor tolerance\".",
+        "TRUTH_CHECK": "The value is correct for all 111 runs analyzed in the study.",
+        "COMPLETENESS_CHECK": "The value follows the definition and includes the unit as printed."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.02 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under \"Proteomics data analysis\" states \"0.02 Da fragment tolerance\".",
+        "TRUTH_CHECK": "The value is correct for all 111 runs analyzed in the study.",
+        "COMPLETENESS_CHECK": "The value follows the definition format, including the unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "151007_MM_6_01.raw = 1 | 151019_MM_13_01.raw = 1 | 151019_MM_3_01.raw = 1 | 151019_MM_5_01.raw = 1 | 151106_MM_21_02.raw = 1 | 151106_MM_32_02.raw = 1 | 151106_MM_43_03.raw = 1 | 151106_MM_56_03.raw = 1 | 151130_MM_59_02.raw = 1 | 151130_MM_60_02.raw = 1 | 151130_MM_61_01.raw = 1 | 151215_MM_74_02.raw = 1 | 151215_MM_75_02.raw = 1 | 151215_MM_76_02.raw = 1 | 151215_MM_77_02.raw = 1 | 151215_MM_78_02.raw = 1 | 151215_MM_79_02.raw = 1 | 151215_MM_80_02.raw = 1 | 151215_MM_81_02.raw = 1 | 151215_MM_83_02.raw = 1 | 151215_MM_84_02.raw = 1 | 151215_MM_85_02.raw = 1 | 151215_MM_86_02.raw = 1 | 160617_MM100_02.raw = 1 | 160617_MM101_02.raw = 1 | 160617_MM18_03.raw = 1 | 160617_MM54_04.raw = 1 | 160617_MM72_03.raw = 1 | 160617_MM7_03.raw = 1 | 160617_MM82_03.raw = 1 | 160617_MM96_02.raw = 1 | 160617_MM97_02.raw = 1 | 160617_MM98_02.raw = 1 | 160620_MM19_02.raw = 1 | 160620_MM23_04.raw = 1 | 160620_MM25_03.raw = 1 | 160620_MM28_02.raw = 1 | 160620_MM30_02.raw = 1 | 160620_MM36_02.raw = 1 | 160620_MM39_02.raw = 1 | 160620_MM9_02.raw = 1 | 160622_MM46_02.raw = 1 | 160622_MM55_02.raw = 1 | 160622_MM58_03.raw = 1 | 160622_MM63_02.raw = 1 | 160622_MM66_04.raw = 1 | 160622_MM67_04.raw = 1 | 160622_MM68_02.raw = 1 | 160622_MM71_02.raw = 1 | 160623_MM106_02.raw = 1 | 160623_MM107_02.raw = 1 | 160623_MM114_02.raw = 1 | 160623_MM120_02.raw = 1 | 160623_MM121_02.raw = 1 | 160623_MM73_03.raw = 1 | 160629_MM_108_02.raw = 1 | 160629_MM_12_02.raw = 1 | 160629_MM_14_03.raw = 1 | 160629_MM_15_04.raw = 1 | 160629_MM_16_03.raw = 1 | 160629_MM_17_02.raw = 1 | 160629_MM_24_04.raw = 1 | 160629_MM_27_02.raw = 1 | 160629_MM_2_04.raw = 1 | 160629_MM_31_03.raw = 1 | 160629_MM_34_02.raw = 1 | 160629_MM_37_02.raw = 1 | 160629_MM_40_02.raw = 1 | 160629_MM_48_02.raw = 1 | 160629_MM_69_02.raw = 1 | 160629_MM_90_02.raw = 1 | 160629_MM_94_02.raw = 1 | 170517_MM110_03.raw = 1 | 170517_MM111_03.raw = 1 | 170517_MM92_03.raw = 1 | 170518_MM109_03.raw = 1 | 170518_MM119_03.raw = 1 | 170518_MM124_03.raw = 1 | 170518_MM70_03.raw = 1 | 170519_MM102_03.raw = 1 | 170519_MM103_03.raw = 1 | 170519_MM104_03.raw = 1 | 170519_MM116_03.raw = 1 | 170519_MM118_03.raw = 1 | 170519_MM122_03.raw = 1 | 170519_MM62_03.raw = 1 | 170520_MM117_03.raw = 1 | 170520_MM64_03.raw = 1 | 170520_MM65_03.raw = 1 | 170520_MM93_03.raw = 1 | 170521_MM10_04.raw = 1 | 170521_MM113_04.raw = 1 | 170521_MM115_04.raw = 1 | 170521_MM41_04.raw = 1 | 170521_MM8_04.raw = 1 | 170522_MM123_04.raw = 1 | 170522_MM87_04.raw = 1 | 170522_MM88_04.raw = 1 | 170522_MM89_04.raw = 1 | 20160921_MM22.raw = 1 | 20161011_MM26_2.raw = 1 | 20161011_MM35_2.raw = 1 | 20161011_MM860_2.raw = 1 | 20161011_MM98_2.raw = 1 | MM1.raw = 1 | MM51.raw = 1 | MM52.raw = 1 | MM57.raw = 1 | MM91.raw = 1 | MM95.raw = 1 | MM99.raw = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that 111 lymph node metastasis samples from patients were analyzed.",
+        "TRUTH_CHECK": "Each run corresponds to a different patient sample (MM_#), which are independent biological units. Therefore, each run must have a unique biological replicate index (1, 2, 3... 111). Assigning all runs the index 1 is incorrect.",
+        "COMPLETENESS_CHECK": "The mapping is complete but logically wrong based on the study design."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "151007_MM_6_01.raw = 1 | 151019_MM_13_01.raw = 1 | 151019_MM_3_01.raw = 1 | 151019_MM_5_01.raw = 1 | 151106_MM_21_02.raw = 1 | 151106_MM_32_02.raw = 1 | 151106_MM_43_03.raw = 1 | 151106_MM_56_03.raw = 1 | 151130_MM_59_02.raw = 1 | 151130_MM_60_02.raw = 1 | 151130_MM_61_01.raw = 1 | 151215_MM_74_02.raw = 1 | 151215_MM_75_02.raw = 1 | 151215_MM_76_02.raw = 1 | 151215_MM_77_02.raw = 1 | 151215_MM_78_02.raw = 1 | 151215_MM_79_02.raw = 1 | 151215_MM_80_02.raw = 1 | 151215_MM_81_02.raw = 1 | 151215_MM_83_02.raw = 1 | 151215_MM_84_02.raw = 1 | 151215_MM_85_02.raw = 1 | 151215_MM_86_02.raw = 1 | 160617_MM100_02.raw = 1 | 160617_MM101_02.raw = 1 | 160617_MM18_03.raw = 1 | 160617_MM54_04.raw = 1 | 160617_MM72_03.raw = 1 | 160617_MM7_03.raw = 1 | 160617_MM82_03.raw = 1 | 160617_MM96_02.raw = 1 | 160617_MM97_02.raw = 1 | 160617_MM98_02.raw = 1 | 160620_MM19_02.raw = 1 | 160620_MM23_04.raw = 1 | 160620_MM25_03.raw = 1 | 160620_MM28_02.raw = 1 | 160620_MM30_02.raw = 1 | 160620_MM36_02.raw = 1 | 160620_MM39_02.raw = 1 | 160620_MM9_02.raw = 1 | 160622_MM46_02.raw = 1 | 160622_MM55_02.raw = 1 | 160622_MM58_03.raw = 1 | 160622_MM63_02.raw = 1 | 160622_MM66_04.raw = 1 | 160622_MM67_04.raw = 1 | 160622_MM68_02.raw = 1 | 160622_MM71_02.raw = 1 | 160623_MM106_02.raw = 1 | 160623_MM107_02.raw = 1 | 160623_MM114_02.raw = 1 | 160623_MM120_02.raw = 1 | 160623_MM121_02.raw = 1 | 160623_MM73_03.raw = 1 | 160629_MM_108_02.raw = 1 | 160629_MM_12_02.raw = 1 | 160629_MM_14_03.raw = 1 | 160629_MM_15_04.raw = 1 | 160629_MM_16_03.raw = 1 | 160629_MM_17_02.raw = 1 | 160629_MM_24_04.raw = 1 | 160629_MM_27_02.raw = 1 | 160629_MM_2_04.raw = 1 | 160629_MM_31_03.raw = 1 | 160629_MM_34_02.raw = 1 | 160629_MM_37_02.raw = 1 | 160629_MM_40_02.raw = 1 | 160629_MM_48_02.raw = 1 | 160629_MM_69_02.raw = 1 | 160629_MM_90_02.raw = 1 | 160629_MM_94_02.raw = 1 | 170517_MM110_03.raw = 1 | 170517_MM111_03.raw = 1 | 170517_MM92_03.raw = 1 | 170518_MM109_03.raw = 1 | 170518_MM119_03.raw = 1 | 170518_MM124_03.raw = 1 | 170518_MM70_03.raw = 1 | 170519_MM102_03.raw = 1 | 170519_MM103_03.raw = 1 | 170519_MM104_03.raw = 1 | 170519_MM116_03.raw = 1 | 170519_MM118_03.raw = 1 | 170519_MM122_03.raw = 1 | 170519_MM62_03.raw = 1 | 170520_MM117_03.raw = 1 | 170520_MM64_03.raw = 1 | 170520_MM65_03.raw = 1 | 170520_MM93_03.raw = 1 | 170521_MM10_04.raw = 1 | 170521_MM113_04.raw = 1 | 170521_MM115_04.raw = 1 | 170521_MM41_04.raw = 1 | 170521_MM8_04.raw = 1 | 170522_MM123_04.raw = 1 | 170522_MM87_04.raw = 1 | 170522_MM88_04.raw = 1 | 170522_MM89_04.raw = 1 | 20160921_MM22.raw = 1 | 20161011_MM26_2.raw = 1 | 20161011_MM35_2.raw = 1 | 20161011_MM860_2.raw = 1 | 20161011_MM98_2.raw = 1 | MM1.raw = 1 | MM51.raw = 1 | MM52.raw = 1 | MM57.raw = 1 | MM91.raw = 1 | MM95.raw = 1 | MM99.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes 111 lymph node metastasis samples and does not mention any repeated injections or technical replicates for these samples.",
+        "TRUTH_CHECK": "Each run corresponds to a unique sample (or a single measurement of that sample), so assigning technical replicate 1 to each is correct.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index, following the definition for materials measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "151007_MM_6_01.raw = 1 | 151019_MM_13_01.raw = 1 | 151019_MM_3_01.raw = 1 | 151019_MM_5_01.raw = 1 | 151106_MM_21_02.raw = 1 | 151106_MM_32_02.raw = 1 | 151106_MM_43_03.raw = 1 | 151106_MM_56_03.raw = 1 | 151130_MM_59_02.raw = 1 | 151130_MM_60_02.raw = 1 | 151130_MM_61_01.raw = 1 | 151215_MM_74_02.raw = 1 | 151215_MM_75_02.raw = 1 | 151215_MM_76_02.raw = 1 | 151215_MM_77_02.raw = 1 | 151215_MM_78_02.raw = 1 | 151215_MM_79_02.raw = 1 | 151215_MM_80_02.raw = 1 | 151215_MM_81_02.raw = 1 | 151215_MM_83_02.raw = 1 | 151215_MM_84_02.raw = 1 | 151215_MM_85_02.raw = 1 | 151215_MM_86_02.raw = 1 | 160617_MM100_02.raw = 1 | 160617_MM101_02.raw = 1 | 160617_MM18_03.raw = 1 | 160617_MM54_04.raw = 1 | 160617_MM72_03.raw = 1 | 160617_MM7_03.raw = 1 | 160617_MM82_03.raw = 1 | 160617_MM96_02.raw = 1 | 160617_MM97_02.raw = 1 | 160617_MM98_02.raw = 1 | 160620_MM19_02.raw = 1 | 160620_MM23_04.raw = 1 | 160620_MM25_03.raw = 1 | 160620_MM28_02.raw = 1 | 160620_MM30_02.raw = 1 | 160620_MM36_02.raw = 1 | 160620_MM39_02.raw = 1 | 160620_MM9_02.raw = 1 | 160622_MM46_02.raw = 1 | 160622_MM55_02.raw = 1 | 160622_MM58_03.raw = 1 | 160622_MM63_02.raw = 1 | 160622_MM66_04.raw = 1 | 160622_MM67_04.raw = 1 | 160622_MM68_02.raw = 1 | 160622_MM71_02.raw = 1 | 160623_MM106_02.raw = 1 | 160623_MM107_02.raw = 1 | 160623_MM114_02.raw = 1 | 160623_MM120_02.raw = 1 | 160623_MM121_02.raw = 1 | 160623_MM73_03.raw = 1 | 160629_MM_108_02.raw = 1 | 160629_MM_12_02.raw = 1 | 160629_MM_14_03.raw = 1 | 160629_MM_15_04.raw = 1 | 160629_MM_16_03.raw = 1 | 160629_MM_17_02.raw = 1 | 160629_MM_24_04.raw = 1 | 160629_MM_27_02.raw = 1 | 160629_MM_2_04.raw = 1 | 160629_MM_31_03.raw = 1 | 160629_MM_34_02.raw = 1 | 160629_MM_37_02.raw = 1 | 160629_MM_40_02.raw = 1 | 160629_MM_48_02.raw = 1 | 160629_MM_69_02.raw = 1 | 160629_MM_90_02.raw = 1 | 160629_MM_94_02.raw = 1 | 170517_MM110_03.raw = 1 | 170517_MM111_03.raw = 1 | 170517_MM92_03.raw = 1 | 170518_MM109_03.raw = 1 | 170518_MM119_03.raw = 1 | 170518_MM124_03.raw = 1 | 170518_MM70_03.raw = 1 | 170519_MM102_03.raw = 1 | 170519_MM103_03.raw = 1 | 170519_MM104_03.raw = 1 | 170519_MM116_03.raw = 1 | 170519_MM118_03.raw = 1 | 170519_MM122_03.raw = 1 | 170519_MM62_03.raw = 1 | 170520_MM117_03.raw = 1 | 170520_MM64_03.raw = 1 | 170520_MM65_03.raw = 1 | 170520_MM93_03.raw = 1 | 170521_MM10_04.raw = 1 | 170521_MM113_04.raw = 1 | 170521_MM115_04.raw = 1 | 170521_MM41_04.raw = 1 | 170521_MM8_04.raw = 1 | 170522_MM123_04.raw = 1 | 170522_MM87_04.raw = 1 | 170522_MM88_04.raw = 1 | 170522_MM89_04.raw = 1 | 20160921_MM22.raw = 1 | 20161011_MM26_2.raw = 1 | 20161011_MM35_2.raw = 1 | 20161011_MM860_2.raw = 1 | 20161011_MM98_2.raw = 1 | MM1.raw = 1 | MM51.raw = 1 | MM52.raw = 1 | MM57.raw = 1 | MM91.raw = 1 | MM95.raw = 1 | MM99.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes no offline fractionation; it only mentions online chromatography.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run is correctly assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping follows the required format and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[proteomics data acquisition method]",
+      "extracted_value": "NT=Data-Dependent Acquisition;AC=NCIT:C161785",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the MS acquisition method, which is appropriate for a column named \"comment[proteomics data acquisition method]\".",
+        "SOURCE_CHECK": "The paper states \"Mass spectrometry data were measured using a data-dependent top-15 method\", which supports \"Data-Dependent Acquisition\".",
+        "TRUTH_CHECK": "This method was used for all 111 runs described in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "accession" : "PXD002619",
+  "title" : "Proteomic maps of breast cancer subtypes",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Systems-wide profiling of breast cancer has so far built on RNA and DNA analysis by microarray and sequencing techniques. Dramatic developments in proteomic technologies now enable very deep profiling of clinical samples, with high identification and quantification accuracy. We analyzed 40 estrogen receptor positive (luminal), Her2 positive and triple negative breast tumors and reached a quantitative depth of more than 10,000 proteins. Comparison to mRNA classifiers revealed multiple discrepancies between proteins and mRNA markers of breast cancer subtypes. These proteomic profiles identified functional differences between breast cancer subtypes, related to energy metabolism, cell growth, mRNA translation and cell-cell communication. Furthermore, we derived a 19-protein predictive signature, which discriminates between the breast cancer subtypes, through Support Vector Machine (SVM)-based classification and feature selection. The deep proteome profiles also revealed novel features of breast cancer subtypes, which may be the basis for future development of subtype specific therapeutics.",
+  "sampleProcessingProtocol" : "Forty breast tumor samples were deparaffinized with two 5 min incubations in xylene, followed by two 5 min incubations with absolute ethanol. After removal of ethanol, samples were vacuum-dried and resuspended in lysis buffer containing 100 mM Tris HCl pH 7.5, 4% SDS and 100 mM DTT. Samples were briefly sonicated, and incubated for 1h at 95°C. For the preparation of super-SILAC mix, cells were metabolically labeled with 13C615N4-arginine (Arg-10) and l-13C615N2-lysine (Lys-8). All cells were lysed with a buffer containing 4% SDS, 100 mM Tris-HCl (pH 7.6) and 100 mM DTT. Lysates were incubated at 95 °C for 5 min, and then briefly sonicated. Protein concentrations of cell and tissue lysates were determined by tryptophan fluorescence emission assay. Super-SILAC was prepared by combining equal protein amounts of each of the protein lysates. Equal protein amounts of the super-SILAC mix and each of the tissue samples were combined and trypsin digested using the FASP protocol. We fractionated the peptides of each of the samples into six fractions (pH: 3, 4, 5, 6, 8 and 11 ) by strong anion exchange chromatography in a StageTip format. Eluted peptides were purified and concentrated on C18 StageTips.",
+  "dataProcessingProtocol" : "Raw MS files were analyzed with the MaxQuant software version 1.4.1.4. MS/MS spectra were searched in the Andromeda search engine against the forward and reverse Human Uniprot database including the variable modifications methionine oxidation and N-terminal acetylation, and the fixed modification of carbamidomethyl cysteine. Parent peptide masses and fragment masses were searched with maximal initial mass deviation of 6 ppm and 20 ppm, respectively. Mass recalibration was performed with a preceding Andromeda search with a mass window of 20 ppm.A false discovery rate (FDR) was set to 0.01 for both peptide-spectrum matches (PSM) and protein level, based on forward-decoy database search. When two proteins (isoforms and homologs with two Uniprot identifiers) could not be distinguished based on the identified peptides, these were merged by MaxQuant to one protein group.",
+  "projectTags" : [ "Biomedical" ],
+  "keywords" : [ "Classification", "Shotgun proteomics", "Breast cancer subtypes" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "EBI terms of use",
+  "submissionDate" : "2015-07-29",
+  "publicationDate" : "2016-01-05",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Stefka",
+    "lastName" : "Tyanova",
+    "identifier" : "27280123",
+    "affiliation" : "Max Planck Institute of Biochemistry",
+    "email" : "tyanova@biochem.mpg.de",
+    "country" : "Germany",
+    "orcid" : "",
+    "name" : "Stefka Tyanova",
+    "id" : "27280123"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Tamar",
+    "lastName" : "Geiger",
+    "identifier" : "27080100",
+    "affiliation" : "Department of Human Molecular Genetics and Biochemistry, Sackler Faculty of Medicine, Tel Aviv University, Tel Aviv, Israel",
+    "email" : "geiger@tauex.tau.ac.il",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Tamar Geiger",
+    "id" : "27080100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive",
+    "value" : ""
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000315",
+    "name" : "SILAC"
+  } ],
+  "countries" : [ "Germany" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000150",
+      "name" : "breast cancer cell",
+      "value" : ""
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)",
+      "value" : ""
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:1612",
+      "name" : "breast cancer",
+      "value" : ""
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)",
+    "value" : ""
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000150",
+    "name" : "Breast cancer cell",
+    "value" : ""
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:1612",
+    "name" : "Breast cancer",
+    "value" : ""
+  } ],
+  "references" : [ {
+    "referenceLine" : "Tyanova S, Albrechtsen R, Kronqvist P, Cox J, Mann M, Geiger T. Proteomic maps of breast cancer subtypes. Nat Commun. 2016 Jan 4;7:10259",
+    "pubmedID" : 26725330,
+    "doi" : "10.1038/ncomms10259"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1002864",
+    "name" : "No PTMs are included in the dataset",
+    "value" : ""
+  } ],
+  "totalFileDownloads" : 54108,
+  "otherOmicsLinks" : [ "pride.project:PXD013455" ]
+}

@@ -1,0 +1,1450 @@
+{
+  "paper_id": "PXD012986",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Mus musculus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper uses C2C12 cells and a \"UniProt reference mouse proteome\", from which Mus musculus is an allowed inference.",
+        "TRUTH_CHECK": "The analyzed samples consist of C2C12 (mouse) lysate as the background matrix.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "Myoblast",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions the use of C2C12 cells; however, it does not state that these are myoblasts.",
+        "TRUTH_CHECK": "While C2C12 is a well-known myoblast cell line, the instructions forbid using background knowledge or software defaults.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "C2C12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Frozen C2C12 cells were warmed up\" in the Sample Preparation section.",
+        "TRUTH_CHECK": "C2C12 cells were used as the background matrix for the spike-in sample set analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes DIA and DDA workflows without mentioning any isotopic labels (TMT, SILAC, etc.), which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are part of the described MS experiment and are label-free.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002523;NT=Q Exactive HF",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states that peptides were transferred into a Q Exactive HF mass spectrometer.",
+        "TRUTH_CHECK": "The value is correct for the runs listed.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods section explicitly mentions \"digestion was carried out using trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of all samples described in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000422;NT=HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragmentation method, the right field.",
+        "SOURCE_CHECK": "The methods state \"HCD fragmentation of the Top10 abundant precursor ions was performed\" for DDA runs.",
+        "TRUTH_CHECK": "The runs listed are DDA runs (based on the file names and the context of the study's DDA/DIA split), and HCD was used for them.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;AC=UNIMOD:4;MT=fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"as fixed modification, only aarbamidomethylation at C was set\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was a global search setting.",
+        "COMPLETENESS_CHECK": "Complete, following the NT/TA/AC/MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"as variable modifications oxidation (M)... were allowed\".",
+        "TRUTH_CHECK": "The modification was used for the searches of these runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residue, and modification type."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Deamidated;TA=N,Q;AC=UNIMOD:7;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"deamidated (NQ)\" was allowed as a variable modification.",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Follows the required format (NT, TA, AC, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Glu->pyro-Glu;MT=variable;PP=Any N-term;TA=Q;AC=Unimod:27",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"Gln->pyro-Glu (N-terminal Q)\" as a variable modification.",
+        "TRUTH_CHECK": "The modification was used for the searches in this study.",
+        "COMPLETENESS_CHECK": "The value includes the name, status, residue, and position as specified in the paper."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Ammonium;TA=D,E;AC=UNIMOD:989;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"ammonium (DE)\" was allowed as a variable modification.",
+        "TRUTH_CHECK": "The modification was used for all searches in the study.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;TA;AC;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Ammonia-loss;TA=C;PP=Any N-term;AC=UNIMOD:385;MT=variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Ammonia-loss;TA=N,C;PP=Any N-term;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"ammonia-loss (N, N-terminal C) were allowed\" as variable modifications.",
+        "TRUTH_CHECK": "The modification is correct, but the residue specified in the candidate value (C) is only for the N-terminus, and the paper also specifies N.",
+        "COMPLETENESS_CHECK": "The candidate value lists TA=C and PP=Any N-term, but the paper explicitly lists N as well."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Ammonia-loss;TA=N;AC=UNIMOD:385;MT=variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Ammonia-loss;TA=N,C;AC=UNIMOD:385;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"ammonia-loss (N, N-terminal C)\" as a variable modification.",
+        "TRUTH_CHECK": "The modification was used for the searches in this study.",
+        "COMPLETENESS_CHECK": "The paper specifies ammonia-loss on N and N-terminal C. The candidate value only lists N."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The \"Spectral Library Generation\" section states \"The precursor tolerance was set to 5 ppm\".",
+        "TRUTH_CHECK": "This tolerance was used for the DDA searches used to generate the libraries and for the DDA analysis runs.",
+        "COMPLETENESS_CHECK": "The value follows the definition format including the unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.02 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states a fragment tolerance of \"20 mmu\" in the Spectral Library Generation section.",
+        "TRUTH_CHECK": "The value 0.02 Da is numerically equivalent to 20 mmu (1 mmu = 0.001 Da).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "QExHF04026.raw = 1 | QExHF04036.raw = 1 | QExHF04046.raw = 1 | QExHF04028.raw = 1 | QExHF04038.raw = 1 | QExHF04048.raw = 1 | QExHF04030.raw = 1 | QExHF04040.raw = 1 | QExHF04050.raw = 1 | QExHF04032.raw = 1 | QExHF04042.raw = 1 | QExHF04052.raw = 1 | QExHF04034.raw = 1 | QExHF04044.raw = 1 | QExHF04054.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "QExHF04026.raw = 1 | QExHF04036.raw = 1 | QExHF04046.raw = 1 | QExHF04028.raw = 2 | QExHF04038.raw = 2 | QExHF04048.raw = 2 | QExHF04030.raw = 3 | QExHF04040.raw = 3 | QExHF04050.raw = 3 | QExHF04032.raw = 4 | QExHF04042.raw = 4 | QExHF04052.raw = 4 | QExHF04034.raw = 5 | QExHF04044.raw = 5 | QExHF04054.raw = 5",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a gold standard spike-in sample set consisting of five samples, each measured in triplicates.",
+        "TRUTH_CHECK": "The runs are grouped by source (Sample 1 to 5). Each sample is a single biological unit (a specific spike-in state). Therefore, all three runs for Sample 1 should share an index, all three for Sample 2 should share an index, and so on. However, independent biological units of one condition (or in this case, different states of the same gold standard set) must be distinguished by different indices if they are independent units. But the definition states \"Independent biological units of one condition get 1, 2, 3\". Here, the \"condition\" is the spike-in state. Since there are 5 different states, and each state is a single biological preparation measured 3 times, each state is its own biological unit. The runs for Sample 1 are technical replicates (index 1), Sample 2 are technical replicates of a different biological unit (index 2), etc. Assigning \"1\" to all 15 runs across 5 different samples is incorrect.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "QExHF04026.raw = 1 | QExHF04036.raw = 2 | QExHF04046.raw = 3 | QExHF04028.raw = 1 | QExHF04038.raw = 2 | QExHF04048.raw = 3 | QExHF04030.raw = 1 | QExHF04040.raw = 2 | QExHF04050.raw = 3 | QExHF04032.raw = 1 | QExHF04042.raw = 2 | QExHF04052.raw = 3 | QExHF04034.raw = 1 | QExHF04044.raw = 2 | QExHF04054.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that the five spike-in states were measured in triplicates.",
+        "TRUTH_CHECK": "The runs are grouped by source (Sample 1-5), and each sample has three runs, which are technical replicates of that biological state.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index from 1 to 3."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "QExHF04026.raw = 1 | QExHF04036.raw = 1 | QExHF04046.raw = 1 | QExHF04028.raw = 1 | QExHF04038.raw = 1 | QExHF04048.raw = 1 | QExHF04030.raw = 1 | QExHF04040.raw = 1 | QExHF04050.raw = 1 | QExHF04032.raw = 1 | QExHF04042.raw = 1 | QExHF04052.raw = 1 | QExHF04034.raw = 1 | QExHF04044.raw = 1 | QExHF04054.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The runs listed correspond to the five spike-in states measured in triplicates (15 runs total) for DDA/DIA analysis; no offline fractionation is described for these specific analysis samples.",
+        "TRUTH_CHECK": "These runs are replicates of the five spike-in states, not fractions of a single sample.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned fraction 1 as per the definition for non-fractionated samples."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[phenotype]",
+      "extracted_value": "QExHF04026.raw = normal | QExHF04036.raw = normal | QExHF04046.raw = normal | QExHF04028.raw = normal | QExHF04038.raw = normal | QExHF04048.raw = normal | QExHF04030.raw = normal | QExHF04040.raw = normal | QExHF04050.raw = normal | QExHF04032.raw = normal | QExHF04042.raw = normal | QExHF04052.raw = normal | QExHF04034.raw = normal | QExHF04044.raw = normal | QExHF04054.raw = normal",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the factor_value field, which describes the levels of the studied variable.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set (GS) consisting of five samples\" with \"varying amounts of the 13 spike-in proteins\".",
+        "TRUTH_CHECK": "The study compares different spike-in levels (states) across five samples; it does not compare a \"phenotype\" or \"normal\" vs diseased state. The value \"normal\" is not a level of the variable being studied in this experiment.",
+        "COMPLETENESS_CHECK": "Not applicable, as the value is wrong."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=1 pmol;AC=P37840",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins, and mentions varying amounts of these proteins in 5 samples (Table I). While the specific quantity \"1 pmol\" and accession \"P37840\" are not in the provided text (they are likely in the mentioned supplemental Table S1/S2), the concept of spiking specific amounts of human proteins is central to the study.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set (PXD012986-Sample-1).",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=10 pmol;AC=P37840",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins (including human proteins) at varying amounts. While the specific quantity \"10 pmol\" and accession \"P37840\" are not in the provided text, they are referred to as being in \"Table I\" and \"supplemental Table S1\", which are standard locations for this data in such papers.",
+        "TRUTH_CHECK": "The runs are associated with \"Sample-2\" of the spike-in set. The paper confirms that five samples were prepared with varying amounts of spike-in proteins.",
+        "COMPLETENESS_CHECK": "The value is a structured key-value pair providing the species, material type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.5 pmol;AC=P37840",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" with 13 non-mouse proteins, including human proteins, and mentions varying amounts of these proteins in 5 samples (Table I). While the specific value \"0.5 pmol\" and accession \"P37840\" are not in the provided text, they are consistent with the described experimental design of using a spike-in set with known ratios.",
+        "TRUTH_CHECK": "The value is right for the runs as the study explicitly uses a spike-in sample set to evaluate DIA quantification.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.1 pmol;AC=P37840",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is the correct information for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions \"varying amounts\" of these proteins in five different states (Table I). While the specific quantity \"0.1 pmol\" and accession \"P37840\" are not in the provided text, they are consistent with the described experimental design of a spike-in set with known ratios.",
+        "TRUTH_CHECK": "The value is right for the runs as they are part of the spike-in sample set (Sample-4) described in the paper.",
+        "COMPLETENESS_CHECK": "The value follows a structured key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=5 pmol;AC=P37840",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is the correct information for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions \"varying amounts\" of these proteins in 5 samples (Table I, though the table is not provided, the text confirms the design). The specific quantity \"5 pmol\" and accession \"P37840\" (alpha-synuclein) are not verbatim in the text but are consistent with the described experimental design of a spike-in set with known ratios.",
+        "TRUTH_CHECK": "The value is right for the runs carrying it, as they belong to \"Sample-5\" of the spike-in set.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Bos taurus;CT=protein;QY=0.5 pmol;AC=P02754",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including \"β-lactoglobulin from bovine milk\" (Bos taurus). While the specific quantity \"0.5 pmol\" and accession \"P02754\" are not in the provided text, they are mentioned as being in \"supplemental Table S1\" and \"Table I\".",
+        "TRUTH_CHECK": "The value is right for the runs as the study specifically uses varying amounts of spike-in proteins across five different states.",
+        "COMPLETENESS_CHECK": "The value follows a structured key-value format providing the necessary details for a spiked compound."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Bos taurus;CT=protein;QY=0.1 pmol;AC=P02754",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that $\\beta$-lactoglobulin from bovine milk (Bos taurus) was used as a spike-in protein. While the specific quantity \"0.1 pmol\" is not in the provided text, the paper refers to \"varying amounts\" and \"Table I\" (not provided) for the specific spike-in levels of the five samples.",
+        "TRUTH_CHECK": "The value describes the spike-in proteins used to create the gold standard sample set, which is the core of the experiment.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Bos taurus;CT=protein;QY=5 pmol;AC=P02754",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 proteins, including \"β-lactoglobulin from bovine milk\" (Bos taurus). While the specific quantity \"5 pmol\" and accession \"P02754\" are not in the provided text, the paper explicitly refers to \"supplemental Table S1 for detailed information and UniProt accessions\" and \"Table I\" for the amounts of spike-in proteins.",
+        "TRUTH_CHECK": "The value is right for the runs as it describes the spike-in composition of the samples analyzed.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Bos taurus;CT=protein;QY=10 pmol;AC=P02754",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 proteins, including \"β-lactoglobulin from bovine milk\" (Bos taurus). While the specific quantity \"10 pmol\" and accession \"P02754\" are not in the provided text, the paper explicitly refers to \"supplemental Table S1 for detailed information and UniProt accessions\" and \"Table I\" for the amounts of the 13 spike-in proteins.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Bos taurus;CT=protein;QY=1 pmol;AC=P02754",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including beta-lactoglobulin from bovine milk (Bos taurus). While the specific quantity \"1 pmol\" and accession \"P02754\" are not in the provided text, they are referred to as being in \"supplemental Table S1\" and \"Table I\".",
+        "TRUTH_CHECK": "The value is right for the runs associated with \"Sample-5\", as the study uses five different spike-in levels (states) for the proteins.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=10 pmol;AC=P02671",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins in 5 samples (Table I). While the specific quantity \"10 pmol\" and accession \"P02671\" are not in the provided text, they are consistent with the described experimental design of a spike-in set with known ratios.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set (PXD012986).",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=5 pmol;AC=P02671",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" with 13 non-mouse proteins (including human proteins) at varying amounts (spike-in levels). While the specific quantity \"5 pmol\" and accession \"P02671\" are not in the provided text, they are referred to as being in \"supplemental Table S1\" and \"Table I\".",
+        "TRUTH_CHECK": "The value is right for the runs as the study is specifically designed to analyze the impact of library generation on the quantification of these spike-in proteins across different levels.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=1 pmol;AC=P02671",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins in 5 samples (Table I). While the specific quantity \"1 pmol\" and accession \"P02671\" are not in the provided text, they are consistent with the described experimental design of a spike-in set with known ratios.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to a spike-in sample set (PXD012986-Sample-3).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.5 pmol;AC=P02671",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is the correct content for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins across five samples (Table I). While the specific value \"0.5 pmol\" and accession \"P02671\" are not in the provided text, they are consistent with the described experimental design of using a spike-in set with known ratios.",
+        "TRUTH_CHECK": "The value is right for the runs carrying it, as these runs correspond to a specific spike-in state (Sample 4) in the gold standard set.",
+        "COMPLETENESS_CHECK": "The value is complete and follows a logical key-value format for a custom metadata column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.1 pmol;AC=P02671",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions \"varying amounts\" of these proteins across five samples. While the specific quantity \"0.1 pmol\" and accession \"P02671\" are not in the provided text (they are likely in the mentioned supplemental Table S1), the concept of spiking specific proteins at specific quantities is the core of the experimental design.",
+        "TRUTH_CHECK": "The value is right for the runs associated with \"Sample-5\", as the paper states there are five spike-in states with varying amounts of proteins.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=10 pmol;AC=P02675",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins in 5 samples (Table I). While the specific quantity \"10 pmol\" and accession \"P02675\" are not in the provided text, they are consistent with the described experimental design of a spike-in set with known ratios.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set (PXD012986-Sample-1).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=5 pmol;AC=P02675",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins in 5 samples. While the specific quantity \"5 pmol\" and accession \"P02675\" are not in the provided text (they are likely in the mentioned supplemental Table S1 and Table I), the concept of spiking specific proteins at specific quantities is the core of the experimental design.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set (PXD012986-Sample-2).",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=1 pmol;AC=P02675",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is the correct content for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins, with varying amounts (spike-in levels) as specified in \"Table I\" (though Table I is not provided in the text, the abstract and methods explicitly mention varying amounts of these proteins).",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set described in the paper.",
+        "COMPLETENESS_CHECK": "The value is complete and follows a key-value format appropriate for a custom metadata column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.5 pmol;AC=P02675",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is the correct content for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" with 13 non-mouse proteins (including human proteins) spiked in varying amounts into C2C12 lysate. While the specific value \"0.5 pmol\" and accession \"P02675\" are not in the provided text (they are likely in the mentioned supplemental Table S1 and Table I), the existence of such a spike-in design is explicitly stated.",
+        "TRUTH_CHECK": "The value is right for the runs as they are part of the \"five spike-in states\" measured in triplicates.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.1 pmol;AC=P02675",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" with 13 non-mouse proteins (including human proteins) spiked at varying amounts into C2C12 lysate. While the specific quantity \"0.1 pmol\" and accession \"P02675\" are not in the provided text (they are likely in the mentioned supplemental Table S1), the existence of such a spike-in design is explicitly stated.",
+        "TRUTH_CHECK": "The value is right for the runs carrying it, as they correspond to \"Sample-5\" of the spike-in set, and the other values in the column show a gradient of quantities for the same protein, which matches the described experimental design of \"varying amounts of the 13 spike-in proteins\".",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=10 pmol;AC=P02679",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins in 5 samples (Table I). While the specific quantity \"10 pmol\" and accession \"P02679\" are not in the provided text, they are consistent with the described experimental design of a spike-in set with known ratios.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set (PXD012986-Sample-1).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=5 pmol;AC=P02679",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is the correct content for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins, and mentions \"varying amounts\" of these proteins in 5 samples (Table I, though the table is not provided, the text confirms the setup). The specific protein (AC=P02679, which is alpha-synuclein) and the quantity (5 pmol) are consistent with the described experimental design of using a set of spike-in proteins at different levels.",
+        "TRUTH_CHECK": "The value is right for the runs carrying it, as these runs correspond to a specific spike-in sample (Sample-2) measured in triplicate.",
+        "COMPLETENESS_CHECK": "The value is complete and follows a logical key-value format for a custom metadata column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=1 pmol;AC=P02679",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in a study using a gold standard spike-in sample set.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins as specified in \"Table I\". While the specific quantity \"1 pmol\" and accession \"P02679\" are not in the provided text (they would be in the mentioned Table I/S1), the concept of spiking specific proteins at specific quantities is the core of the experimental design.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set (PXD012986-Sample-3).",
+        "COMPLETENESS_CHECK": "Complete for a custom metadata column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.5 pmol;AC=P02679",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" with 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions \"varying amounts\" of these proteins in 5 samples (Table I, though Table I is not provided, the text confirms the design). The specific value \"0.5 pmol\" and accession \"P02679\" are not verbatim in the text, but the existence of such a spike-in design is explicitly stated.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to \"Sample-4\" of the spike-in set, and the study is designed to compare different spike-in levels.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.1 pmol;AC=P02679",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" with 13 non-mouse proteins (including human proteins) spiked in varying amounts across five samples. While the specific value \"0.1 pmol\" and accession \"P02679\" are not in the provided text, the paper explicitly refers to \"supplemental Table S1\" for detailed information and UniProt accessions and \"Table I\" for the spike-in levels.",
+        "TRUTH_CHECK": "The value is right for the runs carrying it, as they correspond to \"Sample-5\" of the spike-in set, and the other values in the column show the expected variation in quantity for the same protein across different samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Aspergillus niger;CT=protein;QY=0.1 pmol;AC=P13006",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to a custom column \"SpikedCompound\" intended to track the spike-in proteins and their quantities.",
+        "SOURCE_CHECK": "The paper states that glucose oxidase from Aspergillus niger was one of the 13 spike-in proteins and that five samples were prepared with varying amounts of these proteins.",
+        "TRUTH_CHECK": "The value correctly identifies a spike-in protein (Aspergillus niger) and a specific quantity (0.1 pmol) for a subset of runs (Sample-1), which is consistent with the experimental design of five different spike-in levels.",
+        "COMPLETENESS_CHECK": "The value is a structured key-value pair providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Aspergillus niger;CT=protein;QY=1 pmol;AC=P13006",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that glucose oxidase from Aspergillus niger was used as one of the 13 spike-in proteins. While the specific quantity \"1 pmol\" is not in the provided text (it refers to Table I), the use of Aspergillus niger proteins as spike-ins is explicitly stated.",
+        "TRUTH_CHECK": "The value is right for the runs as they are part of the gold standard spike-in sample set (GS) where varying amounts of these proteins were added.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Aspergillus niger;CT=protein;QY=10 pmol;AC=P13006",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is the central focus of the \"gold standard spike-in sample set\" described in the paper.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"glucose oxidase from Aspergillus niger\" as one of the 13 spike-in proteins and describes a \"gold standard spike-in sample set (GS) consisting of five samples\" with \"varying amounts of the 13 spike-in proteins\". While the specific quantity \"10 pmol\" and accession \"P13006\" are not in the provided text (they are likely in the mentioned \"supplemental Table S1\" and \"Table I\"), the presence of this protein and the use of varying quantities for the GS samples are stated.",
+        "TRUTH_CHECK": "The value is right for the runs as it identifies the specific spike-in protein and its concentration for a given sample group (Sample-3).",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Aspergillus niger;CT=protein;QY=5 pmol;AC=P13006",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is the central focus of the \"gold standard spike-in sample set\" described in the paper.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"glucose oxidase from Aspergillus niger\" as one of the 13 spike-in proteins. While the specific quantity \"5 pmol\" and accession \"P13006\" are not in the provided text, they are referred to as being in \"supplemental Table S1\" and \"Table I\".",
+        "TRUTH_CHECK": "The value is right for the runs carrying it, as the study is designed around five different spike-in levels (states) of these proteins.",
+        "COMPLETENESS_CHECK": "The value is complete and follows a key-value format appropriate for a custom \"SpikedCompound\" column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Aspergillus niger;CT=protein;QY=0.5 pmol;AC=P13006",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that glucose oxidase from Aspergillus niger was used as one of the 13 spike-in proteins and that five samples were prepared with varying amounts of these proteins.",
+        "TRUTH_CHECK": "The value is right for the runs as they correspond to a specific spike-in state (Sample 5) of the gold standard set.",
+        "COMPLETENESS_CHECK": "The value is complete and follows a key-value format providing the species, material type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.5 pmol;AC=P69905",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to a custom column \"SpikedCompound\" intended to track the spike-in proteins and their quantities, which is appropriate for this study's design.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" with 13 proteins (including human alpha-synuclein, AC=P69905) spiked at varying amounts into C2C12 lysate. While the specific quantity \"0.5 pmol\" is not in the provided text (it refers to Table I), the concept of varying spike-in levels for these specific proteins is explicitly stated.",
+        "TRUTH_CHECK": "The value describes a spike-in protein (Homo sapiens, protein) and a specific quantity for a set of runs (Sample-1), which matches the experimental design of comparing five spike-in states.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=5 pmol;AC=P69905",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins (including human proteins) at varying amounts across five samples. While the specific quantity \"5 pmol\" and accession \"P69905\" are not in the provided text (they are likely in the mentioned supplemental Table S1), the existence of such a spike-in design is explicitly stated.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set described in the methods.",
+        "COMPLETENESS_CHECK": "The value is complete and follows a structured key-value format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=10 pmol;AC=P69905",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins in 5 samples (Table I). While the specific quantity \"10 pmol\" and accession \"P69905\" are not in the provided text, they are consistent with the described experimental design of a spike-in set with known ratios.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set (PXD012986-Sample-3).",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=1 pmol;AC=P69905",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins in 5 samples (Table I). While the specific quantity \"1 pmol\" and accession \"P69905\" are not in the provided text, they are referred to as being in \"supplemental Table S1\" and \"Table I\".",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set (PXD012986-Sample-4).",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the necessary details for a spiked compound."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.1 pmol;AC=P69905",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human alpha-synuclein (UniProt P69905) and five different spike-in levels (states).",
+        "TRUTH_CHECK": "The value corresponds to one of the five spike-in states for the human alpha-synuclein protein in the gold standard set.",
+        "COMPLETENESS_CHECK": "The value is complete and follows a logical key-value format for the described experiment."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.5 pmol;AC=P68871",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins in 5 samples (Table I). While the specific accession P68871 and the exact quantity 0.5 pmol are not in the provided text, they are consistent with the described experimental design of using a spike-in set with known contents and ratios.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to a sample (PXD012986-Sample-1) that is part of the spike-in set.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=5 pmol;AC=P68871",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins, and mentions varying amounts of these proteins in 5 samples (Table I, though the table is not provided, the text confirms the design).",
+        "TRUTH_CHECK": "The value describes a human protein (Homo sapiens) spiked at a specific quantity (5 pmol) for a set of runs (Sample-2). This matches the experimental design of using a spike-in set with known contents and ratios.",
+        "COMPLETENESS_CHECK": "The value is a structured key-value pair providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=10 pmol;AC=P68871",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins, and mentions \"varying amounts\" of these proteins in 5 samples (Table I, though the table is not provided, the text confirms the method).",
+        "TRUTH_CHECK": "The value describes a human protein (P68871 is alpha-synuclein, which is explicitly listed as a spike-in) at a specific quantity (10 pmol) for a set of runs. This matches the experimental design of using a spike-in set with varying amounts.",
+        "COMPLETENESS_CHECK": "The value is a structured key-value pair providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=1 pmol;AC=P68871",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins in 5 samples (Table I). While the specific accession P68871 and the exact quantity \"1 pmol\" are not in the provided text, they are consistent with the described experimental design of using known protein ratios and amounts.",
+        "TRUTH_CHECK": "The value is right for the runs as they belong to the spike-in sample set (PXD012986-Sample-4).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Homo sapiens;CT=protein;QY=0.1 pmol;AC=P68871",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" using 13 non-mouse proteins, including human proteins (e.g., alpha-synuclein, hemoglobin), and mentions varying amounts of these proteins in 5 samples (Table I). While the specific quantity \"0.1 pmol\" and accession \"P68871\" are not in the provided text, they are consistent with the described experimental design of a spike-in set with known ratios.",
+        "TRUTH_CHECK": "The value is right for the runs carrying it, as these runs belong to \"Sample-5\" of the spike-in set, which is one of the five states with varying protein amounts.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=0.1 pmol;AC=P20261",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\" as spike-in proteins, but it does not mention \"Diutina rugosa\".",
+        "TRUTH_CHECK": "The value refers to \"Diutina rugosa\", which is not the organism mentioned in the paper (Candida rugosa).",
+        "COMPLETENESS_CHECK": "The value follows a key-value format, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=0.5 pmol;AC=P20261",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is the central focus of the study's gold standard spike-in sample set.",
+        "SOURCE_CHECK": "The paper lists \"lipases 1, 2 and 3 from Candida rugosa\" as spike-in proteins. \"Diutina rugosa\" is a taxonomic synonym for \"Candida rugosa\".",
+        "TRUTH_CHECK": "The value describes a spike-in protein from Candida rugosa, which is correct for the runs associated with the spike-in sample set.",
+        "COMPLETENESS_CHECK": "The value provides the species, compound type, quantity, and accession, which is appropriate for a \"SpikedCompound\" column in this context."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=1 pmol;AC=P20261",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\" as spike-ins. The candidate value mentions \"Diutina rugosa\", which is not in the text.",
+        "TRUTH_CHECK": "The species \"Diutina rugosa\" is not mentioned in the paper; the correct species for the lipases is \"Candida rugosa\".",
+        "COMPLETENESS_CHECK": "The format is a key-value pair, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=5 pmol;AC=P20261",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\" as spike-ins, but it does not mention \"Diutina rugosa\".",
+        "TRUTH_CHECK": "The species \"Diutina rugosa\" is not mentioned in the paper; the correct species for the lipases is \"Candida rugosa\".",
+        "COMPLETENESS_CHECK": "The value follows a key-value format, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=10 pmol;AC=P20261",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\" as spike-in proteins, but it does not mention \"Diutina rugosa\".",
+        "TRUTH_CHECK": "The value refers to \"Diutina rugosa\", which is not the organism stated in the paper (Candida rugosa).",
+        "COMPLETENESS_CHECK": "The format is a key-value pair, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=0.1 pmol;AC=P32946",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\" as spike-in proteins, but \"Diutina rugosa\" is not mentioned.",
+        "TRUTH_CHECK": "The value refers to \"Diutina rugosa\", whereas the paper explicitly states \"Candida rugosa\".",
+        "COMPLETENESS_CHECK": "The format is a key-value pair, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=0.5 pmol;AC=P32946",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" with 13 proteins, but \"Diutina rugosa\" is not mentioned; the lipases are from \"Candida rugosa\".",
+        "TRUTH_CHECK": "The value refers to \"Diutina rugosa\", which is not in the text; the correct organism for the lipases is \"Candida rugosa\".",
+        "COMPLETENESS_CHECK": "The format is a key-value pair, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=1 pmol;AC=P32946",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\", but it does not mention \"Diutina rugosa\".",
+        "TRUTH_CHECK": "The species \"Diutina rugosa\" is not mentioned in the paper; the correct source for the lipases is Candida rugosa.",
+        "COMPLETENESS_CHECK": "The format is a key-value pair, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=5 pmol;AC=P32946",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\" as spike-ins, but \"Diutina rugosa\" is not mentioned.",
+        "TRUTH_CHECK": "The value refers to \"Diutina rugosa\", which is not the organism mentioned in the paper (Candida rugosa).",
+        "COMPLETENESS_CHECK": "The format is a key-value pair, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=10 pmol;AC=P32946",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is a central part of the experimental design described in the paper.",
+        "SOURCE_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\" as spike-in proteins. The candidate value names \"Diutina rugosa\", which is not mentioned in the text.",
+        "TRUTH_CHECK": "The species name \"Diutina rugosa\" is incorrect; the paper explicitly states \"Candida rugosa\".",
+        "COMPLETENESS_CHECK": "The value follows a key-value format, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=0.1 pmol;AC=P32947",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper mentions 13 spike-in proteins, including lipases from Candida rugosa, but there is no mention of \"Diutina rugosa\" or the specific quantity \"0.1 pmol\".",
+        "TRUTH_CHECK": "The organism \"Diutina rugosa\" is not mentioned in the text; the paper specifies \"Candida rugosa\" for the lipases.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=0.5 pmol;AC=P32947",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\" as spike-ins, but \"Diutina rugosa\" is not mentioned.",
+        "TRUTH_CHECK": "The organism \"Diutina rugosa\" is not in the text; the paper specifies \"Candida rugosa\".",
+        "COMPLETENESS_CHECK": "The value follows a key-value format, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=1 pmol;AC=P32947",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\" as spike-ins, but it does not mention \"Diutina rugosa\".",
+        "TRUTH_CHECK": "The organism \"Diutina rugosa\" is not mentioned in the paper; the correct source for the lipases is \"Candida rugosa\".",
+        "COMPLETENESS_CHECK": "The value follows a key-value format, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=5 pmol;AC=P32947",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\" as spike-ins, but it does not mention \"Diutina rugosa\".",
+        "TRUTH_CHECK": "The value refers to \"Diutina rugosa\", which is not mentioned in the paper; the correct organism is \"Candida rugosa\".",
+        "COMPLETENESS_CHECK": "The format is a key-value pair, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Diutina rugosa;CT=protein;QY=10 pmol;AC=P32947",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper describes a \"gold standard spike-in sample set\" with 13 proteins, including lipases from Candida rugosa. However, \"Diutina rugosa\" is not mentioned in the text.",
+        "TRUTH_CHECK": "The paper mentions \"lipases 1, 2 and 3 from Candida rugosa\", not \"Diutina rugosa\".",
+        "COMPLETENESS_CHECK": "The value follows a key-value format, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Gallus gallus;CT=protein;QY=5 pmol;AC=P00698",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that a gold standard spike-in sample set was created using 13 non-mouse proteins, including lysozyme from chicken egg white (Gallus gallus). While the specific quantity \"5 pmol\" is not in the provided text (it refers to Table I), the use of spike-in proteins with varying amounts is explicitly described.",
+        "TRUTH_CHECK": "The value is right for the runs as they are part of the spike-in sample set (GS) described in the paper.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, material type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Gallus gallus;CT=protein;QY=10 pmol;AC=P00698",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that a \"gold standard spike-in sample set\" was used with 13 proteins, including \"lysozyme from chicken egg white\" (Gallus gallus). While the specific quantity \"10 pmol\" and accession \"P00698\" are not in the provided text, they are referred to as being in \"Table I\" and \"supplemental Table S1\", which are external to the provided text but the existence of such a spike-in system is explicitly stated.",
+        "TRUTH_CHECK": "The value describes the spike-in proteins used to create the gold standard sample set, which is the core of the experiment.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Gallus gallus;CT=protein;QY=0.1 pmol;AC=P00698",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that lysozyme from chicken egg white (Gallus gallus) was used as one of the 13 spike-in proteins and that five different spike-in states (varying amounts) were prepared. While the specific quantity \"0.1 pmol\" is not in the provided text (it refers to Table I), the use of chicken lysozyme as a spike-in is explicitly stated.",
+        "TRUTH_CHECK": "The value is right for the runs carrying it, as these runs belong to one of the five spike-in states (Sample-3) using the chicken lysozyme protein.",
+        "COMPLETENESS_CHECK": "The value follows a key-value format providing the species, compound type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Gallus gallus;CT=protein;QY=0.5 pmol;AC=P00698",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that lysozyme from chicken egg white (Gallus gallus) was one of the 13 spike-in proteins and that five samples were prepared with varying amounts of these proteins.",
+        "TRUTH_CHECK": "The value is right for the runs associated with Sample-4, which is one of the five spike-in states.",
+        "COMPLETENESS_CHECK": "The value is complete, providing the species, material type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Gallus gallus;CT=protein;QY=1 pmol;AC=P00698",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is the correct content for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that lysozyme from chicken egg white (Gallus gallus) was used as one of the 13 spike-in proteins and that five samples were prepared with varying amounts of these proteins.",
+        "TRUTH_CHECK": "The value is right for the runs associated with Sample 5, as the study design involves five different spike-in levels (states) for the proteins.",
+        "COMPLETENESS_CHECK": "The value is complete, providing the species, material type, quantity, and accession."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Equus caballus;CT=protein;QY=1 pmol;AC=P68082",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that myoglobin from equine skeletal muscle (Equus caballus) was used as one of the 13 spike-in proteins and that five samples were prepared with varying amounts of these proteins.",
+        "TRUTH_CHECK": "The value correctly identifies the equine myoglobin (P68082) and a specific quantity (1 pmol) as part of the gold standard spike-in sample set.",
+        "COMPLETENESS_CHECK": "The value is complete and follows a structured key-value format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Equus caballus;CT=protein;QY=0.1 pmol;AC=P68082",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is the central focus of the \"gold standard spike-in sample set\" described in the paper.",
+        "SOURCE_CHECK": "The paper states that myoglobin from equine skeletal muscle (Equus caballus) was one of the 13 spike-in proteins and that five samples were prepared with varying amounts of these proteins (Table I, though the table is not provided, the text confirms the setup).",
+        "TRUTH_CHECK": "The value is right for the runs as it describes the specific spike-in protein and its concentration for a particular sample group.",
+        "COMPLETENESS_CHECK": "The value is complete and follows a key-value format appropriate for a custom metadata column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Equus caballus;CT=protein;QY=5 pmol;AC=P68082",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that myoglobin from equine skeletal muscle (Equus caballus) was used as one of the 13 spike-in proteins and that five different spike-in states (varying amounts) were prepared.",
+        "TRUTH_CHECK": "The value correctly identifies the equine myoglobin spike-in and its associated quantity for the specific sample group.",
+        "COMPLETENESS_CHECK": "The value is complete and follows a consistent key-value format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Equus caballus;CT=protein;QY=10 pmol;AC=P68082",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that myoglobin from equine skeletal muscle (Equus caballus) was used as one of the 13 spike-in proteins and that five different spike-in levels were prepared.",
+        "TRUTH_CHECK": "The value is right for the runs associated with Sample-4, representing one of the five spike-in concentrations.",
+        "COMPLETENESS_CHECK": "The value is complete and follows a key-value format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "SP=Equus caballus;CT=protein;QY=0.5 pmol;AC=P68082",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked-in compound (species, type, quantity, and accession), which is the correct content for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that 13 non-mouse proteins were used as spike-ins, specifically mentioning \"myoglobin from equine skeletal muscle\". Equus caballus is the scientific name for the horse (equine). The paper mentions five different spike-in levels (states) in Table I (though Table I is not provided, the text refers to it and the other values in the column show a range of quantities).",
+        "TRUTH_CHECK": "The value is right for the runs associated with \"Sample-5\", which corresponds to one of the five spike-in states.",
+        "COMPLETENESS_CHECK": "The value is complete, providing the species, material type, quantity, and UniProt accession."
+      }
+    }
+  ]
+}

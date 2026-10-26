@@ -1,0 +1,135 @@
+{
+  "accession" : "PXD014145",
+  "title" : "Depletion of histone methyltransferase KMT9 inhibits lung cancer cell proliferation by inducing non-apoptotic cell death",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Background: Lung cancer is the leading cause of cancer related death worldwide. Over the past 15 years no major improvement of survival rates could be accomplished. The recently discovered histone methyltransferase KMT9 as epigenetic regulator of prostate tumor growth has now raised hopes of enabling new cancer therapies. In this study we aimed to identify the function of KMT9 in lung cancer which has remained elusive so far.  Methods: We linked full transcriptome and proteome analyses of A549 lung adenocarcinoma cells using RNA-Seq and mass spectrometry with functional cell culture, real-time proliferation and flow cytometry assays.  Results: KMT9 is expressed in lung cancer tissue and cell lineswith high levels of KMT9 correlating with poor patient survival. We identified 460 overlapping genes and proteins that are deregulated upon knock-down of KMT9alpha in A549 cells. These genes cluster with proliferation, cell cycle and cell death gene sets as well as with subcellular organelles in gene ontology analysis. Knock-down of KMT9alpha  inhibits lung cancer cell proliferation and induces non-apoptotic cell death in A549 cells.  Conclusions: The novel histone methyltransferase KMT9 is crucial for proliferation and survival of lung cancer cells harboring various mutations. Small molecule inhibitors targeting KMT9 therefore should be further examined as potential milestones in modern epigenetic lung cancer therapy.",
+  "sampleProcessingProtocol" : "A549 cells transfected with siControl or siKMT9alpha#1 (n=4) were harvested tree days after transfection. Cells were lysed in 0.1% RapiGest SF (0.1M HEPES pH8) and protease inhibitors. Proteins were reduced using 5mM DTT and afterwards alkylated using 15 mM 2-Iodoacetamide (each at 37°C for 15 min). Two-step digestion was performed using trypsin in 1:25 enzmy:protein ration. Peptides were desalted using PreOmics columns. TMT labelled samples were fractionated using an Waters reversed phase XBridge C18 column (150mm x 1mm column containing 3.5µm particles) on a Agilent1100 HPLC system. Fractions were measured on an Q Exactive plus mass spectrometer coupled to EASY-nLC™ 1000 UHPLC system. The analytical column was an EASY-Spray™ C18 column (250mm x 75µm column containing 2µm particles) which was heated at 50°C.",
+  "dataProcessingProtocol" : "Raw data were analyzed using MaxQuant (v 1.6.0.2) and a reviewed human database (uniprot, 20188 protein sequences ‎June ‎6, ‎2017).The results were further processed using R (v 3.5.2) and RStudio(v 1.1.456). First all contaminants and reversed hits were removed as well as proteins which were only identified by site. Subsequently, protein intensities were log2 transformed and median-polished. To identify differentially expressed proteins we used the limma package (v 3.40.0). Only proteins with an adjusted p-value<0.05 were considered significantly dysregulated.",
+  "projectTags" : [ "Biomedical" ],
+  "keywords" : [ "Kmt9", "Non-small cell lung cancer", "Proteomics", "Epigenetics", "Histone methyltransferase", "Lung cancer", "A549", "Transcriptomics" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2019-06-06",
+  "publicationDate" : "2020-05-26",
+  "submitters" : [ {
+    "title" : "Mr",
+    "firstName" : "Oliver",
+    "lastName" : "Schilling",
+    "identifier" : "23590124",
+    "affiliation" : "University of Freiburg",
+    "email" : "oliver.schilling@mol-med.uni-freiburg.de",
+    "country" : "Germany",
+    "orcid" : "0000-0001-7678-7653",
+    "name" : "Oliver Schilling",
+    "id" : "23590124"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Oliver",
+    "lastName" : "Schilling",
+    "identifier" : "146900100",
+    "affiliation" : "Institute for Surgical Pathology, Medical Center and Faculty of Medicine - University of Freiburg, Freiburg, Germany",
+    "email" : "oliver.schilling@mol-med.uni-freiburg.de",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Oliver Schilling",
+    "id" : "146900100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000314",
+    "name" : "TMT"
+  } ],
+  "countries" : [ "Germany" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000214",
+      "name" : "cell culture"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:3908",
+      "name" : "non-small cell lung carcinoma"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000214",
+    "name" : "Cell culture"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:3908",
+    "name" : "Non-small cell lung carcinoma"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Baumert HM, Metzger E, Fahrner M, George J, Thomas RK, Schilling O, Schüle R. Depletion of histone methyltransferase KMT9 inhibits lung cancer cell proliferation by inducing non-apoptotic cell death. Cancer Cell Int. 2020 20:52",
+    "pubmedID" : 32095117,
+    "doi" : "10.1186/s12935-020-1141-2"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 20214,
+  "botCount" : 7362,
+  "hubCount" : 10778,
+  "organicCount" : 2074,
+  "otherOmicsLinks" : [ "geo:GSE83213", "geo:GSE131016" ]
+}

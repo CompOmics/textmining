@@ -1,0 +1,328 @@
+{
+  "paper_id": "PXD004682",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes clinical samples from patients (lung squamous cell carcinomas and adjacent tissues), which allows the inference of human species.",
+        "TRUTH_CHECK": "The analyzed proteins are from human tissues.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "lung tumor-adjacent tissues",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"adjacent lung tissues\" in the abstract and \"adjacent lung tissues\" in the methods.",
+        "TRUTH_CHECK": "The value correctly describes the non-tumor samples used in the experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "lung squamous  cell carcinoma tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organ of origin for a tumor, which is the correct field.",
+        "SOURCE_CHECK": "The abstract states the study used \"frozen lung squamous cell carcinomas\".",
+        "TRUTH_CHECK": "The value correctly describes the tissue for the runs associated with the tumor samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "control",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "normal",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"adjacent tissues\" as the comparison group for \"lung squamous cell carcinomas\".",
+        "TRUTH_CHECK": "The runs carry the value \"control\" for the adjacent tissues, which are the control group in this study.",
+        "COMPLETENESS_CHECK": "The field definition explicitly states that the SDRF term for healthy subjects or controls in a case-control study is \"normal\"."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "squamous  cell carcinoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The abstract states the study used \"frozen lung squamous cell carcinomas\".",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the tumor samples.",
+        "COMPLETENESS_CHECK": "The value follows the definition for a disease state."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that gender is available in Table S1, but Table S1 is not provided in the text.",
+        "TRUTH_CHECK": "The sex of the subjects is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the right field.",
+        "SOURCE_CHECK": "The paper states that samples were \"frozen lung squamous cell carcinomas and 4 adjacent tissues\".",
+        "TRUTH_CHECK": "The analysed material for all runs consists of these lung tissues.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms in the definition."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "white",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper states that ethnicity can be found in Table S1, but Table S1 is not provided in the text.",
+        "TRUTH_CHECK": "The value is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"label-free quantification (LF)\" and \"label free files\", which supports the use of label-free methods.",
+        "TRUTH_CHECK": "The runs listed (bRPLC fractions) belong to the LF experiment, which is label-free.",
+        "COMPLETENESS_CHECK": "Complete. \"label free sample\" is the specified SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002634;NT=Q Exactive Plus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state that a \"QExactive Plus, Thermo, San Jose, CA\" was used.",
+        "TRUTH_CHECK": "The instrument was used for the tandem mass spectrometry experiments described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state \"trypsin digestion was carried out overnight\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes discovery proteomics using LC-MS/MS (DDA, DIA, LF, TMT), which is the basis for this inference.",
+        "TRUTH_CHECK": "The runs are part of the MS proteomics experiments described.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"oxidation (methionine)\" in the IDPicker and Pinnacle analysis sections.",
+        "TRUTH_CHECK": "The modification was searched for the runs described.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:4;NT=Carbamidomethyl;MT=Variable;TA=C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper mentions carbamidomethylation (cysteine) in the IDPicker and Pinnacle analysis sections.",
+        "TRUTH_CHECK": "The modification was used for the runs.",
+        "COMPLETENESS_CHECK": "The paper describes carbamidomethylation as \"allowable modifications\" (IDPicker) and \"dynamic modifications\" (Pinnacle), both of which indicate a variable status."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"a mass error of 10 ppm\" in the MaxQuant Data Analysis section and \"precursor mass tolerance was set to 10 ppm\" in the Pinnacle Data Analysis section.",
+        "TRUTH_CHECK": "The value is correct for the runs described in the study.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.05 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The Pinnacle Data Analysis section states \"MS/MS mass tolerance was 0.05 Da\".",
+        "TRUTH_CHECK": "The value is correct for the runs analyzed using this pipeline.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and the unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "20150912_Haura-Pilot_N0294_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC02-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC03-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC04-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC05-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC06-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC07-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC08-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC09-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC10-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC11-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC12-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC02-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC03-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC04-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC05-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC06-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC07-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC08-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC09-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC10-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC11-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC12-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC02-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC03-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC04-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC05-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC06-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC07-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC08-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC09-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC10-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC11-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC12-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC02-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC03-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC04-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC05-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC06-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC07-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC08-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC09-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC10-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC11-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC12-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC02-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC03-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC04-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC05-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC06-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC07-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC08-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC09-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC10-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC11-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC12-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC02-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC03-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC04-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC05-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC06-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC07-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC08-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC09-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC10-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC11-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC12-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC02-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC03-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC04-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC05-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC06-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC07-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC08-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC09-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC10-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC11-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC12-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC02-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC03-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC04-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC05-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC06-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC07-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC08-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC09-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC10-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC11-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC12-2.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "20150912_Haura-Pilot_N0294_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC02-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC03-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC04-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC05-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC06-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC07-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC08-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC09-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC10-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC11-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC12-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC01-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC01-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC02-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC03-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC03-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC04-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC04-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC05-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC05-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC06-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC06-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC07-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC07-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC08-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC08-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC09-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC09-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC10-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC10-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC11-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC11-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC12-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC12-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC01-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC01-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC02-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC02-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC03-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC03-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC04-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC04-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC05-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC05-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC06-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC06-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC07-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC07-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC08-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC08-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC09-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC09-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC10-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC10-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC11-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC11-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC12-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC12-2.raw = 3 | 20150912_Haura-Pilot_N0299_bRPLC01-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC01-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC02-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC02-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC03-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC03-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC04-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC04-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC05-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC05-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC06-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC06-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC07-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC07-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC08-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC08-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC09-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC09-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC10-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC10-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC11-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC11-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC12-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC12-2.raw = 4 | 20150912_Haura-Pilot_T0298_bRPLC01-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC01-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC02-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC02-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC03-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC03-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC04-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC04-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC05-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC05-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC06-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC06-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC07-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC07-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC08-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC08-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC09-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC09-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC10-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC10-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC11-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC11-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC12-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC12-2.raw = 5 | 20150912_Haura-Pilot_T0300_bRPLC01-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC01-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC02-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC02-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC03-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC03-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC04-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC04-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC05-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC05-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC06-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC06-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC07-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC07-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC08-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC08-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC09-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC09-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC10-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC10-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC11-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC11-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC12-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC12-2.raw = 6 | 20150912_Haura-Pilot_T0301_bRPLC01-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC01-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC02-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC02-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC03-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC03-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC04-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC04-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC05-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC05-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC06-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC06-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC07-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC07-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC08-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC08-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC09-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC09-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC10-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC10-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC11-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC11-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC12-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC12-2.raw = 7 | 20150912_Haura-Pilot_T0303_bRPLC01-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC01-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC02-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC02-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC03-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC03-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC04-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC04-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC05-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC05-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC06-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC06-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC07-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC07-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC08-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC08-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC09-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC09-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC10-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC10-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC11-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC11-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC12-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC12-2.raw = 8",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes 8 clinical samples (4 tumor, 4 adjacent).",
+        "TRUTH_CHECK": "The mapping assigns all runs to biological replicate 1, but the runs clearly belong to 8 different samples (Sample 1 through Sample 8). Each distinct biological sample must have its own unique replicate index.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value, but the values are logically incorrect based on the sample sources."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20150912_Haura-Pilot_N0294_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC01-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC03-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC04-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC05-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC06-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC07-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC08-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC09-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC10-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC11-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC12-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC01-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC03-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC04-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC05-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC06-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC07-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC08-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC09-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC10-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC11-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC12-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC01-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC03-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC04-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC05-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC06-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC07-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC08-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC09-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC10-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC11-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC12-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC01-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC03-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC04-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC05-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC06-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC07-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC08-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC09-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC10-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC11-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC12-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC01-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC03-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC04-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC05-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC06-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC07-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC08-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC09-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC10-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC11-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC12-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC01-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC03-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC04-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC05-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC06-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC07-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC08-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC09-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC10-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC11-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC12-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC01-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC03-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC04-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC05-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC06-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC07-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC08-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC09-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC10-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC11-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC12-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC01-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC02-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC03-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC03-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC04-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC04-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC05-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC05-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC06-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC06-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC07-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC07-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC08-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC08-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC09-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC09-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC10-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC10-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC11-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC11-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC12-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC12-2.raw = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"technical replicates\" in the MaxQuant and Pinnacle analysis sections, and the file names suggest repeated runs (suffix -1 and -2).",
+        "TRUTH_CHECK": "The runs are grouped by sample and fraction (bRPLC01 to bRPLC12). For each fraction, there are two runs (-1 and -2). These are repeated injections of the same material, which are technical replicates.",
+        "COMPLETENESS_CHECK": "Every run is assigned a technical replicate index (1 or 2)."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20150912_Haura-Pilot_N0294_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_N0294_bRPLC02-1.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_N0294_bRPLC03-1.raw = 3 | 20150912_Haura-Pilot_N0294_bRPLC03-2.raw = 3 | 20150912_Haura-Pilot_N0294_bRPLC04-1.raw = 4 | 20150912_Haura-Pilot_N0294_bRPLC04-2.raw = 4 | 20150912_Haura-Pilot_N0294_bRPLC05-1.raw = 5 | 20150912_Haura-Pilot_N0294_bRPLC05-2.raw = 5 | 20150912_Haura-Pilot_N0294_bRPLC06-1.raw = 6 | 20150912_Haura-Pilot_N0294_bRPLC06-2.raw = 6 | 20150912_Haura-Pilot_N0294_bRPLC07-1.raw = 7 | 20150912_Haura-Pilot_N0294_bRPLC07-2.raw = 7 | 20150912_Haura-Pilot_N0294_bRPLC08-1.raw = 8 | 20150912_Haura-Pilot_N0294_bRPLC08-2.raw = 8 | 20150912_Haura-Pilot_N0294_bRPLC09-1.raw = 9 | 20150912_Haura-Pilot_N0294_bRPLC09-2.raw = 9 | 20150912_Haura-Pilot_N0294_bRPLC10-1.raw = 10 | 20150912_Haura-Pilot_N0294_bRPLC10-2.raw = 10 | 20150912_Haura-Pilot_N0294_bRPLC11-1.raw = 11 | 20150912_Haura-Pilot_N0294_bRPLC11-2.raw = 11 | 20150912_Haura-Pilot_N0294_bRPLC12-1.raw = 12 | 20150912_Haura-Pilot_N0294_bRPLC12-2.raw = 12 | 20150912_Haura-Pilot_N0295_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_N0295_bRPLC02-1.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_N0295_bRPLC03-1.raw = 3 | 20150912_Haura-Pilot_N0295_bRPLC03-2.raw = 3 | 20150912_Haura-Pilot_N0295_bRPLC04-1.raw = 4 | 20150912_Haura-Pilot_N0295_bRPLC04-2.raw = 4 | 20150912_Haura-Pilot_N0295_bRPLC05-1.raw = 5 | 20150912_Haura-Pilot_N0295_bRPLC05-2.raw = 5 | 20150912_Haura-Pilot_N0295_bRPLC06-1.raw = 6 | 20150912_Haura-Pilot_N0295_bRPLC06-2.raw = 6 | 20150912_Haura-Pilot_N0295_bRPLC07-1.raw = 7 | 20150912_Haura-Pilot_N0295_bRPLC07-2.raw = 7 | 20150912_Haura-Pilot_N0295_bRPLC08-1.raw = 8 | 20150912_Haura-Pilot_N0295_bRPLC08-2.raw = 8 | 20150912_Haura-Pilot_N0295_bRPLC09-1.raw = 9 | 20150912_Haura-Pilot_N0295_bRPLC09-2.raw = 9 | 20150912_Haura-Pilot_N0295_bRPLC10-1.raw = 10 | 20150912_Haura-Pilot_N0295_bRPLC10-2.raw = 10 | 20150912_Haura-Pilot_N0295_bRPLC11-1.raw = 11 | 20150912_Haura-Pilot_N0295_bRPLC11-2.raw = 11 | 20150912_Haura-Pilot_N0295_bRPLC12-1.raw = 12 | 20150912_Haura-Pilot_N0295_bRPLC12-2.raw = 12 | 20150912_Haura-Pilot_N0296_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_N0296_bRPLC02-1.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_N0296_bRPLC03-1.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC03-2.raw = 3 | 20150912_Haura-Pilot_N0296_bRPLC04-1.raw = 4 | 20150912_Haura-Pilot_N0296_bRPLC04-2.raw = 4 | 20150912_Haura-Pilot_N0296_bRPLC05-1.raw = 5 | 20150912_Haura-Pilot_N0296_bRPLC05-2.raw = 5 | 20150912_Haura-Pilot_N0296_bRPLC06-1.raw = 6 | 20150912_Haura-Pilot_N0296_bRPLC06-2.raw = 6 | 20150912_Haura-Pilot_N0296_bRPLC07-1.raw = 7 | 20150912_Haura-Pilot_N0296_bRPLC07-2.raw = 7 | 20150912_Haura-Pilot_N0296_bRPLC08-1.raw = 8 | 20150912_Haura-Pilot_N0296_bRPLC08-2.raw = 8 | 20150912_Haura-Pilot_N0296_bRPLC09-1.raw = 9 | 20150912_Haura-Pilot_N0296_bRPLC09-2.raw = 9 | 20150912_Haura-Pilot_N0296_bRPLC10-1.raw = 10 | 20150912_Haura-Pilot_N0296_bRPLC10-2.raw = 10 | 20150912_Haura-Pilot_N0296_bRPLC11-1.raw = 11 | 20150912_Haura-Pilot_N0296_bRPLC11-2.raw = 11 | 20150912_Haura-Pilot_N0296_bRPLC12-1.raw = 12 | 20150912_Haura-Pilot_N0296_bRPLC12-2.raw = 12 | 20150912_Haura-Pilot_N0299_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_N0299_bRPLC02-1.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_N0299_bRPLC03-1.raw = 3 | 20150912_Haura-Pilot_N0299_bRPLC03-2.raw = 3 | 20150912_Haura-Pilot_N0299_bRPLC04-1.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC04-2.raw = 4 | 20150912_Haura-Pilot_N0299_bRPLC05-1.raw = 5 | 20150912_Haura-Pilot_N0299_bRPLC05-2.raw = 5 | 20150912_Haura-Pilot_N0299_bRPLC06-1.raw = 6 | 20150912_Haura-Pilot_N0299_bRPLC06-2.raw = 6 | 20150912_Haura-Pilot_N0299_bRPLC07-1.raw = 7 | 20150912_Haura-Pilot_N0299_bRPLC07-2.raw = 7 | 20150912_Haura-Pilot_N0299_bRPLC08-1.raw = 8 | 20150912_Haura-Pilot_N0299_bRPLC08-2.raw = 8 | 20150912_Haura-Pilot_N0299_bRPLC09-1.raw = 9 | 20150912_Haura-Pilot_N0299_bRPLC09-2.raw = 9 | 20150912_Haura-Pilot_N0299_bRPLC10-1.raw = 10 | 20150912_Haura-Pilot_N0299_bRPLC10-2.raw = 10 | 20150912_Haura-Pilot_N0299_bRPLC11-1.raw = 11 | 20150912_Haura-Pilot_N0299_bRPLC11-2.raw = 11 | 20150912_Haura-Pilot_N0299_bRPLC12-1.raw = 12 | 20150912_Haura-Pilot_N0299_bRPLC12-2.raw = 12 | 20150912_Haura-Pilot_T0298_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_T0298_bRPLC02-1.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_T0298_bRPLC03-1.raw = 3 | 20150912_Haura-Pilot_T0298_bRPLC03-2.raw = 3 | 20150912_Haura-Pilot_T0298_bRPLC04-1.raw = 4 | 20150912_Haura-Pilot_T0298_bRPLC04-2.raw = 4 | 20150912_Haura-Pilot_T0298_bRPLC05-1.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC05-2.raw = 5 | 20150912_Haura-Pilot_T0298_bRPLC06-1.raw = 6 | 20150912_Haura-Pilot_T0298_bRPLC06-2.raw = 6 | 20150912_Haura-Pilot_T0298_bRPLC07-1.raw = 7 | 20150912_Haura-Pilot_T0298_bRPLC07-2.raw = 7 | 20150912_Haura-Pilot_T0298_bRPLC08-1.raw = 8 | 20150912_Haura-Pilot_T0298_bRPLC08-2.raw = 8 | 20150912_Haura-Pilot_T0298_bRPLC09-1.raw = 9 | 20150912_Haura-Pilot_T0298_bRPLC09-2.raw = 9 | 20150912_Haura-Pilot_T0298_bRPLC10-1.raw = 10 | 20150912_Haura-Pilot_T0298_bRPLC10-2.raw = 10 | 20150912_Haura-Pilot_T0298_bRPLC11-1.raw = 11 | 20150912_Haura-Pilot_T0298_bRPLC11-2.raw = 11 | 20150912_Haura-Pilot_T0298_bRPLC12-1.raw = 12 | 20150912_Haura-Pilot_T0298_bRPLC12-2.raw = 12 | 20150912_Haura-Pilot_T0300_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_T0300_bRPLC02-1.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_T0300_bRPLC03-1.raw = 3 | 20150912_Haura-Pilot_T0300_bRPLC03-2.raw = 3 | 20150912_Haura-Pilot_T0300_bRPLC04-1.raw = 4 | 20150912_Haura-Pilot_T0300_bRPLC04-2.raw = 4 | 20150912_Haura-Pilot_T0300_bRPLC05-1.raw = 5 | 20150912_Haura-Pilot_T0300_bRPLC05-2.raw = 5 | 20150912_Haura-Pilot_T0300_bRPLC06-1.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC06-2.raw = 6 | 20150912_Haura-Pilot_T0300_bRPLC07-1.raw = 7 | 20150912_Haura-Pilot_T0300_bRPLC07-2.raw = 7 | 20150912_Haura-Pilot_T0300_bRPLC08-1.raw = 8 | 20150912_Haura-Pilot_T0300_bRPLC08-2.raw = 8 | 20150912_Haura-Pilot_T0300_bRPLC09-1.raw = 9 | 20150912_Haura-Pilot_T0300_bRPLC09-2.raw = 9 | 20150912_Haura-Pilot_T0300_bRPLC10-1.raw = 10 | 20150912_Haura-Pilot_T0300_bRPLC10-2.raw = 10 | 20150912_Haura-Pilot_T0300_bRPLC11-1.raw = 11 | 20150912_Haura-Pilot_T0300_bRPLC11-2.raw = 11 | 20150912_Haura-Pilot_T0300_bRPLC12-1.raw = 12 | 20150912_Haura-Pilot_T0300_bRPLC12-2.raw = 12 | 20150912_Haura-Pilot_T0301_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_T0301_bRPLC02-1.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_T0301_bRPLC03-1.raw = 3 | 20150912_Haura-Pilot_T0301_bRPLC03-2.raw = 3 | 20150912_Haura-Pilot_T0301_bRPLC04-1.raw = 4 | 20150912_Haura-Pilot_T0301_bRPLC04-2.raw = 4 | 20150912_Haura-Pilot_T0301_bRPLC05-1.raw = 5 | 20150912_Haura-Pilot_T0301_bRPLC05-2.raw = 5 | 20150912_Haura-Pilot_T0301_bRPLC06-1.raw = 6 | 20150912_Haura-Pilot_T0301_bRPLC06-2.raw = 6 | 20150912_Haura-Pilot_T0301_bRPLC07-1.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC07-2.raw = 7 | 20150912_Haura-Pilot_T0301_bRPLC08-1.raw = 8 | 20150912_Haura-Pilot_T0301_bRPLC08-2.raw = 8 | 20150912_Haura-Pilot_T0301_bRPLC09-1.raw = 9 | 20150912_Haura-Pilot_T0301_bRPLC09-2.raw = 9 | 20150912_Haura-Pilot_T0301_bRPLC10-1.raw = 10 | 20150912_Haura-Pilot_T0301_bRPLC10-2.raw = 10 | 20150912_Haura-Pilot_T0301_bRPLC11-1.raw = 11 | 20150912_Haura-Pilot_T0301_bRPLC11-2.raw = 11 | 20150912_Haura-Pilot_T0301_bRPLC12-1.raw = 12 | 20150912_Haura-Pilot_T0301_bRPLC12-2.raw = 12 | 20150912_Haura-Pilot_T0303_bRPLC01-1.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC01-2.raw = 1 | 20150912_Haura-Pilot_T0303_bRPLC02-1.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC02-2.raw = 2 | 20150912_Haura-Pilot_T0303_bRPLC03-1.raw = 3 | 20150912_Haura-Pilot_T0303_bRPLC03-2.raw = 3 | 20150912_Haura-Pilot_T0303_bRPLC04-1.raw = 4 | 20150912_Haura-Pilot_T0303_bRPLC04-2.raw = 4 | 20150912_Haura-Pilot_T0303_bRPLC05-1.raw = 5 | 20150912_Haura-Pilot_T0303_bRPLC05-2.raw = 5 | 20150912_Haura-Pilot_T0303_bRPLC06-1.raw = 6 | 20150912_Haura-Pilot_T0303_bRPLC06-2.raw = 6 | 20150912_Haura-Pilot_T0303_bRPLC07-1.raw = 7 | 20150912_Haura-Pilot_T0303_bRPLC07-2.raw = 7 | 20150912_Haura-Pilot_T0303_bRPLC08-1.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC08-2.raw = 8 | 20150912_Haura-Pilot_T0303_bRPLC09-1.raw = 9 | 20150912_Haura-Pilot_T0303_bRPLC09-2.raw = 9 | 20150912_Haura-Pilot_T0303_bRPLC10-1.raw = 10 | 20150912_Haura-Pilot_T0303_bRPLC10-2.raw = 10 | 20150912_Haura-Pilot_T0303_bRPLC11-1.raw = 11 | 20150912_Haura-Pilot_T0303_bRPLC11-2.raw = 11 | 20150912_Haura-Pilot_T0303_bRPLC12-1.raw = 12 | 20150912_Haura-Pilot_T0303_bRPLC12-2.raw = 12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that for LF and TMT experiments, \"Twelve concatenated fractions were analyzed with LC-MS/MS\".",
+        "TRUTH_CHECK": "The mapping correctly assigns runs to 12 fractions per sample. Each fraction is analyzed in duplicate (e.g., bRPLC01-1 and bRPLC01-2), and these duplicates correctly share the same fraction identifier.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the definition."
+      }
+    }
+  ]
+}

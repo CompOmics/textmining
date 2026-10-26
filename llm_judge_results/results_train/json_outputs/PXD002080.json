@@ -1,0 +1,464 @@
+{
+  "paper_id": "PXD002080",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper mentions colon and rectal tumors from TCGA and normal colon biopsies from human participants, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analyzed tumor and biopsy samples are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Sigmoid Colon",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"colon and rectal tumors\" and \"Normal colon biopsies\", but does not mention \"Sigmoid Colon\" or other specific colon segments.",
+        "TRUTH_CHECK": "While the samples are colon tumors, the specific anatomical location \"Sigmoid Colon\" is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Cecum",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an anatomical part of the organism, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"colon and rectal tumors\" and \"Normal colon biopsies\", but does not specifically name the \"Cecum\" or other specific colon segments.",
+        "TRUTH_CHECK": "While the cecum is part of the colon, the specific term \"Cecum\" is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Hepatic Flexure",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an anatomical part of the organism, which is the correct field.",
+        "SOURCE_CHECK": "The term \"Hepatic Flexure\" does not appear in the provided paper text.",
+        "TRUTH_CHECK": "While the paper mentions \"colon and rectal tumors\", it does not specify the exact anatomical locations (like hepatic flexure, cecum, or sigmoid colon) for the samples.",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Ascending Colon",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"colon and rectal tumors\" and \"Normal colon biopsies\", but does not specify the \"Ascending Colon\" specifically.",
+        "TRUTH_CHECK": "While the paper describes colon tumors, the specific anatomical location \"Ascending Colon\" is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not in the text."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Colon adenocarcinoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The abstract states the analysis of \"colon and rectal tumors\" from the TCGA cohort.",
+        "TRUTH_CHECK": "The runs are from TCGA tumor samples, and the related columns indicate colon tissues.",
+        "COMPLETENESS_CHECK": "The value is a specific disease state. While \"adenocarcinoma\" is not verbatim in the text, \"colon tumors\" is, and adenocarcinoma is the standard histological type for TCGA colon tumors."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "Female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the sex of the patients or subjects.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "Male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the biological sex of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the sex of the patients or subjects.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The value follows the format, but the content is missing from the source."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "Sigmoid Colon",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Sigmoid Colon\" is an anatomical location, which belongs to the tissue field, not material_type.",
+        "SOURCE_CHECK": "The paper mentions colon and rectal tumors, but \"Sigmoid Colon\" is not explicitly stated in the provided text.",
+        "TRUTH_CHECK": "The value describes the specific tissue/organ, not the broad class of material.",
+        "COMPLETENESS_CHECK": "The value does not follow the controlled list of broad classes (e.g., \"tissue\")."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "Cecum",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Cecum\" is an anatomical part, which belongs to the tissue field, not material_type.",
+        "SOURCE_CHECK": "The paper mentions colon and rectal tumors, but \"Cecum\" is not explicitly stated in the provided text.",
+        "TRUTH_CHECK": "Even if the sample is from the cecum, it is a tissue, not a broad material class.",
+        "COMPLETENESS_CHECK": "Not applicable; the value is a type mismatch."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "Hepatic Flexure",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Hepatic Flexure\" is an anatomical location, which belongs to the tissue field, not material_type.",
+        "SOURCE_CHECK": "The term \"Hepatic Flexure\" is not mentioned in the provided text.",
+        "TRUTH_CHECK": "The value describes a specific tissue site, not a broad material class.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "Ascending Colon",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Ascending Colon\" is an anatomical location, which belongs to the tissue field, not the broad material class.",
+        "SOURCE_CHECK": "The paper mentions \"colon and rectal tumors\" and \"Normal colon biopsies\", but \"Ascending Colon\" is not explicitly stated in the provided text.",
+        "TRUTH_CHECK": "The value describes a specific tissue site, not the material type.",
+        "COMPLETENESS_CHECK": "Not applicable; the value is a type mismatch."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper states that quantitative comparisons were based on spectral count data, which is a label-free quantification method.",
+        "TRUTH_CHECK": "The runs used spectral counting, which is label-free.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF controlled term convention."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001742;NT=LTQ Orbitrap Velos",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The instrument model is not mentioned in the provided abstract or methods text.",
+        "TRUTH_CHECK": "The content is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that \"tryptic peptide digests were analyzed\", which indicates the use of trypsin.",
+        "TRUTH_CHECK": "The value is correct for the runs as they are part of the described tryptic digest analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000133;NT=CID",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragmentation method, the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the fragmentation method used (CID, HCD, etc.).",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes analyzing proteomes using multidimensional liquid chromatography-tandem mass spectrometry.",
+        "TRUTH_CHECK": "The runs are part of the described proteomic profiling experiment.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper text does not mention any database search modifications (Oxidation or otherwise).",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Format is correct, but content is missing from the text."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"tryptic peptide digests\" but does not state the specific modifications searched in the database.",
+        "TRUTH_CHECK": "The modification is not mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR01.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR02.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR03.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR04.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR05.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR06.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR07.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR08.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR09.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR10.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR11.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR12.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR13.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR14.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR15.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121205_A0218_7D_R_FR01.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR02.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR03.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR04.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR05.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR06.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR07.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR08.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR09.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR10.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR11.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR12.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR13.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR14.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR15.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR01.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR02.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR03.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR04.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR05.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR06.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR07.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR08.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR09.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR10.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR11.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR12.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR13.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR14.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121030_A0218_5E_R_FR15.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR01.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR02.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR03.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR04.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR05.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR06.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR07.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR08.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR09.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR10.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR11.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR12.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR13.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR14.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR15.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121209_A0218_7F_R_FR01.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121209_A0218_7F_R_FR02.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR03.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR04.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR05.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR06.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR07.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR08.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR09.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR10.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR11.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR12.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR13.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR14.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR15.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR01.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR02.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR03.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR04.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR05.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR06.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR07.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR08.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR09.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR10.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR11.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR12.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR13.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR14.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130107_A0218_8J_R_FR15.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR01.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR02.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR03.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR04.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR05.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR06.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR07.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR08.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR09.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR10.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR11.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR12.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR13.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR14.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR15.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR01.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR02.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR03.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR04.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR05.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR06.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR07.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR08.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR09.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR10.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR11.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR12.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR13.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR14.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR15.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR01.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR02.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR03.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR04.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR05.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR06.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR07.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR08.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR09.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR10.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR11.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR12.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR13.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR14.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR15.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR01.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR02.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR03.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR04.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR05.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR06.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR07.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR08.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR09.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR10.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR11.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR12.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR13.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR14.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR15.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes analyzing proteomes of colon and rectal tumors from TCGA.",
+        "TRUTH_CHECK": "The mapping assigns the same biological replicate index (1) to all runs originating from the same sample (e.g., Sample 1, Sample 2), which is correct as these are fractions/aliquots of a single biological unit. However, it assigns the index \"1\" to every single sample in the study. Biological replicates are independent biological units of one condition; therefore, Sample 1 should be 1, Sample 2 should be 2, and so on.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic of the indices is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR01.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR02.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR03.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR04.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR05.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR06.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR07.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR08.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR09.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR10.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR11.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR12.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR13.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR14.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR15.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121205_A0218_7D_R_FR01.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR02.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR03.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR04.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR05.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR06.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR07.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR08.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR09.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR10.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR11.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR12.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR13.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR14.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR15.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR01.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR02.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR03.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR04.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR05.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR06.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR07.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR08.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR09.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR10.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR11.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR12.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR13.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR14.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121030_A0218_5E_R_FR15.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR01.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR02.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR03.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR04.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR05.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR06.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR07.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR08.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR09.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR10.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR11.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR12.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR13.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR14.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR15.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121209_A0218_7F_R_FR01.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121209_A0218_7F_R_FR02.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR03.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR04.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR05.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR06.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR07.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR08.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR09.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR10.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR11.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR12.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR13.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR14.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR15.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR01.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR02.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR03.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR04.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR05.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR06.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR07.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR08.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR09.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR10.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR11.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR12.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR13.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR14.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130107_A0218_8J_R_FR15.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR01.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR02.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR03.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR04.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR05.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR06.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR07.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR08.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR09.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR10.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR11.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR12.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR13.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR14.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR15.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR01.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR02.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR03.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR04.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR05.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR06.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR07.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR08.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR09.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR10.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR11.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR12.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR13.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR14.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR15.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR01.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR02.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR03.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR04.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR05.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR06.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR07.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR08.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR09.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR10.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR11.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR12.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR13.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR14.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR15.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR01.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR02.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR03.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR04.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR05.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR06.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR07.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR08.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR09.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR10.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR11.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR12.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR13.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR14.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR15.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"multidimensional liquid chromatography-tandem mass spectrometry\", which implies offline fractionation.",
+        "TRUTH_CHECK": "The run filenames contain \"FR01\", \"FR02\", etc., indicating these are separate fractions of the same sample. According to the field definition, separate elutions or enrichment steps are fractions, not technical replicates. Therefore, each fraction is a different material and should be treated as a separate entity (technical replicate 1) unless the same fraction was injected multiple times.",
+        "COMPLETENESS_CHECK": "Every run is assigned index 1, which is correct for material measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR01.raw = 1 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR02.raw = 2 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR03.raw = 3 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR04.raw = 4 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR05.raw = 5 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR06.raw = 6 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR07.raw = 7 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR08.raw = 8 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR09.raw = 9 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR10.raw = 10 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR11.raw = 11 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR12.raw = 12 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR13.raw = 13 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR14.raw = 14 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR15.raw = 15 | TCGA-A6-3808-01A-22_W_VU_20121205_A0218_7D_R_FR01.raw = 1 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR02.raw = 2 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR03.raw = 3 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR04.raw = 4 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR05.raw = 5 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR06.raw = 6 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR07.raw = 7 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR08.raw = 8 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR09.raw = 9 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR10.raw = 10 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR11.raw = 11 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR12.raw = 12 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR13.raw = 13 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR14.raw = 14 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR15.raw = 15 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR01.raw = 1 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR02.raw = 2 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR03.raw = 3 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR04.raw = 4 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR05.raw = 5 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR06.raw = 6 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR07.raw = 7 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR08.raw = 8 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR09.raw = 9 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR10.raw = 10 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR11.raw = 11 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR12.raw = 12 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR13.raw = 13 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR14.raw = 14 | TCGA-A6-3810-01A-22_W_VU_20121030_A0218_5E_R_FR15.raw = 15 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR01.raw = 1 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR02.raw = 2 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR03.raw = 3 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR04.raw = 4 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR05.raw = 5 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR06.raw = 6 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR07.raw = 7 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR08.raw = 8 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR09.raw = 9 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR10.raw = 10 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR11.raw = 11 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR12.raw = 12 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR13.raw = 13 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR14.raw = 14 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR15.raw = 15 | TCGA-AA-3525-01A-12_W_VU_20121209_A0218_7F_R_FR01.raw = 1 | TCGA-AA-3525-01A-12_W_VU_20121209_A0218_7F_R_FR02.raw = 2 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR03.raw = 3 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR04.raw = 4 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR05.raw = 5 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR06.raw = 6 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR07.raw = 7 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR08.raw = 8 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR09.raw = 9 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR10.raw = 10 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR11.raw = 11 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR12.raw = 12 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR13.raw = 13 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR14.raw = 14 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR15.raw = 15 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR01.raw = 1 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR02.raw = 2 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR03.raw = 3 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR04.raw = 4 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR05.raw = 5 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR06.raw = 6 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR07.raw = 7 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR08.raw = 8 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR09.raw = 9 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR10.raw = 10 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR11.raw = 11 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR12.raw = 12 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR13.raw = 13 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR14.raw = 14 | TCGA-AA-3526-01A-11_W_VU_20130107_A0218_8J_R_FR15.raw = 15 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR01.raw = 1 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR02.raw = 2 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR03.raw = 3 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR04.raw = 4 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR05.raw = 5 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR06.raw = 6 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR07.raw = 7 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR08.raw = 8 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR09.raw = 9 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR10.raw = 10 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR11.raw = 11 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR12.raw = 12 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR13.raw = 13 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR14.raw = 14 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR15.raw = 15 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR01.raw = 1 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR02.raw = 2 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR03.raw = 3 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR04.raw = 4 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR05.raw = 5 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR06.raw = 6 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR07.raw = 7 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR08.raw = 8 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR09.raw = 9 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR10.raw = 10 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR11.raw = 11 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR12.raw = 12 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR13.raw = 13 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR14.raw = 14 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR15.raw = 15 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR01.raw = 1 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR02.raw = 2 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR03.raw = 3 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR04.raw = 4 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR05.raw = 5 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR06.raw = 6 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR07.raw = 7 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR08.raw = 8 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR09.raw = 9 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR10.raw = 10 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR11.raw = 11 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR12.raw = 12 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR13.raw = 13 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR14.raw = 14 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR15.raw = 15 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR01.raw = 1 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR02.raw = 2 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR03.raw = 3 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR04.raw = 4 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR05.raw = 5 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR06.raw = 6 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR07.raw = 7 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR08.raw = 8 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR09.raw = 9 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR10.raw = 10 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR11.raw = 11 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR12.raw = 12 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR13.raw = 13 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR14.raw = 14 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR15.raw = 15",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"multidimensional liquid chromatography-tandem mass spectrometry\", which implies offline fractionation.",
+        "TRUTH_CHECK": "The run filenames explicitly contain \"FR01\" through \"FR15\", and the mapping correctly assigns these to fraction identifiers 1 through 15 for each sample.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR01.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR02.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR03.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR04.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR05.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR06.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR07.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR08.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR09.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121019_A0218_4I_R_FR10.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR11.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR12.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR13.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR14.raw = TCGA-A6-3807 | TCGA-A6-3807-01A-22_W_VU_20121020_A0218_4I_R_FR15.raw = TCGA-A6-3807 | TCGA-A6-3808-01A-22_W_VU_20121205_A0218_7D_R_FR01.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR02.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR03.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR04.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR05.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR06.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR07.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR08.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR09.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR10.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR11.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR12.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR13.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR14.raw = TCGA-A6-3808 | TCGA-A6-3808-01A-22_W_VU_20121206_A0218_7D_R_FR15.raw = TCGA-A6-3808 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR01.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR02.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR03.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR04.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR05.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR06.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR07.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR08.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR09.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR10.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR11.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR12.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR13.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121029_A0218_5E_R_FR14.raw = TCGA-A6-3810 | TCGA-A6-3810-01A-22_W_VU_20121030_A0218_5E_R_FR15.raw = TCGA-A6-3810 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR01.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR02.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR03.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR04.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR05.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR06.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120915_A0218_3F_R_FR07.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR08.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR09.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR10.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR11.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR12.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR13.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR14.raw = TCGA-AA-3518 | TCGA-AA-3518-01A-11_W_VU_20120916_A0218_3F_R_FR15.raw = TCGA-AA-3518 | TCGA-AA-3525-01A-12_W_VU_20121209_A0218_7F_R_FR01.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121209_A0218_7F_R_FR02.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR03.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR04.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR05.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR06.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR07.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR08.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR09.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR10.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR11.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR12.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR13.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR14.raw = TCGA-AA-3525 | TCGA-AA-3525-01A-12_W_VU_20121210_A0218_7F_R_FR15.raw = TCGA-AA-3525 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR01.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR02.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR03.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR04.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR05.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR06.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR07.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR08.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR09.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR10.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR11.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR12.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR13.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130106_A0218_8J_R_FR14.raw = TCGA-AA-3526 | TCGA-AA-3526-01A-11_W_VU_20130107_A0218_8J_R_FR15.raw = TCGA-AA-3526 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR01.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR02.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR03.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR04.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR05.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR06.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR07.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR08.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR09.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR10.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121203_A0218_7B_R_FR11.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR12.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR13.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR14.raw = TCGA-AA-3529 | TCGA-AA-3529-01A-12_W_VU_20121204_A0218_7B_R_FR15.raw = TCGA-AA-3529 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR01.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR02.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR03.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR04.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR05.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130101_A0218_8G_R_FR06.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR07.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR08.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR09.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR10.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR11.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR12.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR13.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR14.raw = TCGA-AA-3531 | TCGA-AA-3531-01A-22_W_VU_20130102_A0218_8G_R_FR15.raw = TCGA-AA-3531 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR01.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR02.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR03.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR04.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR05.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR06.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR07.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR08.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130208_A0218_10B_R_FR09.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR10.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR11.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR12.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR13.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR14.raw = TCGA-AA-3534 | TCGA-AA-3534-01A-22_W_VU_20130209_A0218_10B_R_FR15.raw = TCGA-AA-3534 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR01.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR02.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR03.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR04.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR05.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130125_A0218_9F_R_FR06.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR07.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR08.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR09.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR10.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR11.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR12.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR13.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR14.raw = TCGA-AA-3552 | TCGA-AA-3552-01A-22_W_VU_20130126_A0218_9F_R_FR15.raw = TCGA-AA-3552",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The values are subject identifiers, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that tumor samples were obtained through the TCGA Biospecimen Core Resource, and the identifiers follow the standard TCGA format.",
+        "TRUTH_CHECK": "The mapping correctly assigns runs from the same sample (e.g., Sample 1) to the same individual identifier (e.g., TCGA-A6-3807).",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "Stage IIIC",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a cancer stage, which is a phenotype/characteristic of the sample.",
+        "SOURCE_CHECK": "The paper states that tumor samples were obtained from TCGA and that they were \"previously characterized\", but it does not list the specific stages of the tumors in the provided text.",
+        "TRUTH_CHECK": "While the samples are TCGA tumors (which have stages), the specific value \"Stage IIIC\" is not mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "Stage IIA",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a clinical phenotype (cancer stage), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper states that tumor samples were obtained from TCGA and that the study analyzed proteomes of colon and rectal tumors. While \"Stage IIA\" is not written verbatim in the provided abstract and methods, the paper explicitly references the TCGA cohort and clinical outcomes.",
+        "TRUTH_CHECK": "Cancer staging is a standard phenotype for TCGA tumor samples. However, the provided text does not list the specific stages of the samples analyzed.",
+        "COMPLETENESS_CHECK": "The value is a standard representation of a cancer stage."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "Stage IIIB",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a cancer stage, which is a phenotype characteristic.",
+        "SOURCE_CHECK": "The paper text mentions \"colon and rectal tumors\" and \"TCGA cohort\", but does not list specific cancer stages for the samples.",
+        "TRUTH_CHECK": "While the study uses TCGA samples (which have known stages), the provided paper text does not state the stage of any sample.",
+        "COMPLETENESS_CHECK": "The value is a standard cancer stage designation."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "Stage I",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Stage I\" describes a clinical phenotype (cancer stage), which is appropriate for a column named characteristics[phenotype].",
+        "SOURCE_CHECK": "The paper mentions analyzing colon and rectal tumors from the TCGA cohort, but it does not explicitly list the cancer stages (e.g., Stage I, II, III) of the samples in the provided text.",
+        "TRUTH_CHECK": "While the study uses TCGA samples (which are characterized by stage), the specific value \"Stage I\" is not stated in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "The value is a standard clinical stage descriptor."
+      }
+    }
+  ]
+}

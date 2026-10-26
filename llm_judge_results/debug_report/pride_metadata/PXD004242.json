@@ -1,0 +1,112 @@
+{
+  "accession" : "PXD004242",
+  "title" : "Plasma Proteome Profiling Reveals the Effects of Weight Loss on the Apolipoprotein Family and Systemic Inflammation Status",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Sustained weight loss is the preferred intervention in a wide range of metabolic conditions, but the effects on an individual´s health state remain ill-defined and controversial. Here, we investigate the plasma proteomes of a cohort of 43 obese individuals that had undergone eight weeks of weight loss (average of 12%) followed by a year of weight maintenance. Using plasma proteome profiling, a mass spectrometry-based approach, we measured 1294 plasma samples to examine dynamic changes of hundreds of human plasma proteins, including the entire apolipoprotein family. Longitudinal monitoring of the cohort revealed individual-specific protein levels and functional connected proteins with correlated regulation over time. The wide-ranging effect of losing weight on the plasma proteome was reflected in 93 significantly affected proteins. The adipocyte secreted SERPINF1 and the apolipoprotein APOF1 were most significantly down and up regulated (p<10**13), although their fold-change was modest (-16% and +37%), respectively. Overall, markers of inflammation went down in nearly all study participants (39 of 42), however, there were diverse patterns of inflammation marker responses, allowing individual-specific interpretation of the effects of weight loss. Plasma proteome profiling can be used broadly to evaluate and monitor intervention in metabolic diseases.",
+  "sampleProcessingProtocol" : "Sample preparation was don as described in (17, 20) with the automated set-up on an Agilent Bravo liquid handling platform. Plasma samples were diluted 1:10 with ddH2O and 10 µl of the sample were mixed with 10 µl 2-fold concentrated SDC-buffer. Reduction and alkylation were carried out at 95°C for 10 min. Trypsin and LysC (1:100 micrograms of enzyme to micrograms of protein ratio) added to the mixture after a 5 min cooling step at room temperature. Digestion was performed at 37 °C for 1 h. Peptides were acidified by adding 40 µl of 1% trifluoro-acetic acid (TFA) in isopropanol to the digest. An amount of 20 µg of peptides were loaded on two 14-gauge StageTip plugs, followed by adding of 100 µl  1% trifluoro-acetic acid (TFA) in isopropanol and strongly mixing. The StageTips were centrifuged using a 3D-printed in-house-made StageTip centrifugal device for up to 1,500 g. After washing the StageTips 2 times using 100 µl 1% trifluoro-acetic acid (TFA) in isopropanol and one times 100 µl 0.2% TFA in ddH2O, purified peptides were eluted by 60 µl of elution buffer  into auto sampler vials. The collected material was completely dried using a SpeedVac centrifuge at 60 °C (Eppendorf, Concentrator plus). Peptides were suspended in buffer A* (20) and afterwards sonicated (Branson Ultrasonics, Ultrasonic Cleaner Model 2510).",
+  "dataProcessingProtocol" : "MS raw files were analyzed by MaxQuant software version 1.5.3.23 (37) and peptide lists were searched against the human Uniprot FASTA database (version June 2015). A contaminants database by the Andromeda search engine (38) with cysteine carbamidomethylation as a fixed modification and N-terminal acetylation and methionine oxidations as variable modifications was used. We set the false discovery rate (FDR) to 0.01 for protein and peptide level with a minimum length of 7 amino acids for peptides and the FDR was determined by searching a reverse database. Enzyme specificity was set as C-terminal to arginine and lysine as expected using trypsin and LysC as proteases, and a maximum of two missed cleavages were allowed. Peptide identification was performed with an initial precursor mass deviation up to 7 ppm and a fragment mass deviation of 20 ppm. The match between run algorithm was performed with a matching library consistent of depleted and all the undepleted plasma samples from the weight loss study. All proteins and peptides matching to the reversed database were filtered out. Label-free protein quantification (LFQ) was performed with a minimum ratio count of 1 (39).",
+  "projectTags" : [ "Biomedical" ],
+  "keywords" : [ "Clinic", "Inflammation", "Obesity", "Metabolic syndrome", "Mass spectrometry", "Apolipoproteins", "Human", "C-reactive protein", "Plasma proteome profile", "Blood analysis", "Weight loss" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "EBI terms of use",
+  "submissionDate" : "2016-05-31",
+  "publicationDate" : "2016-12-24",
+  "submitters" : [ {
+    "title" : "Mr",
+    "firstName" : "Mario",
+    "lastName" : "Oroshi",
+    "identifier" : "420122",
+    "affiliation" : "Proteomics",
+    "email" : "oroshi@biochem.mpg.de",
+    "country" : "Germany",
+    "orcid" : "",
+    "name" : "Mario Oroshi",
+    "id" : "420122"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Matthias",
+    "lastName" : "Mann",
+    "identifier" : "46610100",
+    "affiliation" : "Proteomics and Signal Transduction Max Planck Institute of Biochemistry Am Klopferspitz 18 D-82152 Martinsried",
+    "email" : "mmann@biochem.mpg.de",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Matthias Mann",
+    "id" : "46610100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "Germany" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000131",
+      "name" : "blood plasma"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000131",
+    "name" : "Blood plasma"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Geyer PE, Wewer Albrechtsen NJ, Tyanova S, Grassl N, Iepsen EW, Lundgren J, Madsbad S, Holst JJ, Torekov SS, Mann M. Proteomics reveals the effects of sustained weight loss on the human plasma proteome. Mol Syst Biol. 2016 Dec 22;12(12):901",
+    "pubmedID" : 28007936,
+    "doi" : "10.15252/msb.20167357"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000398",
+    "name" : "No PTMs are included in the dataset"
+  } ],
+  "totalFileDownloads" : 211594,
+  "botCount" : 47087,
+  "hubCount" : 163824,
+  "organicCount" : 683
+}

@@ -1,0 +1,532 @@
+{
+  "paper_id": "PXD016002",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states that CSF specimens were collected from human patients, which is an allowed inference for \"Homo sapiens\".",
+        "TRUTH_CHECK": "The analysed proteins are from human CSF.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "cerebrospinal fluid",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the biological fluid/organism part from which the sample was derived, which is the correct field.",
+        "SOURCE_CHECK": "The paper repeatedly mentions \"CSF\" (cerebrospinal fluid) as the source of the samples.",
+        "TRUTH_CHECK": "The proteomics runs were performed on concentrated and depleted CSF samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions 16 patients, 8 of whom had confirmed LMM, implying the other 8 were controls/healthy.",
+        "TRUTH_CHECK": "The value \"normal\" is used for the control group in a case-control study.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term for healthy subjects."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "leptomeningeal melanoma metastases",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods explicitly mention \"leptomeningeal melanoma metastases (LMM)\".",
+        "TRUTH_CHECK": "The runs carry this value for samples from patients with confirmed LMM.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological sex, the right field.",
+        "SOURCE_CHECK": "The paper does not state the sex of any of the 16 patients.",
+        "TRUTH_CHECK": "Not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the sex of any of the patients.",
+        "TRUTH_CHECK": "The sex is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that CSF (cerebrospinal fluid) specimens were analyzed by mass spectrometry.",
+        "TRUTH_CHECK": "CSF is a biofluid, not a tissue. While the paper mentions tissues collected from one patient at autopsy, these were used for IHC, not for the LC-MS/MS proteomics runs.",
+        "COMPLETENESS_CHECK": "The value follows the format but is the wrong category."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT126",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Tryptic peptides (10 μg) were labeled with TMT-6plex reagents (Thermo)\".",
+        "TRUTH_CHECK": "TMT-6plex uses a set of six channels; TMT126 is the standard first channel of the TMT-6plex kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Tryptic peptides (10 μg) were labeled with TMT-6plex reagents (Thermo)\". While the specific channel \"TMT127\" is not listed, it is a standard component of a TMT-6plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT-6plex experiment as described in the methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Tryptic peptides (10 μg) were labeled with TMT-6plex reagents (Thermo)\". It does not list the specific channels used.",
+        "TRUTH_CHECK": "TMT-6plex reagents typically include a set of channels (such as 126, 127, 128, 129, 130, 131). While the specific channel \"TMT128\" is not explicitly written, it is a standard component of the 6plex kit mentioned.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Tryptic peptides (10 μg) were labeled with TMT-6plex reagents (Thermo)\". While the specific channel \"TMT129\" is not mentioned, it is a standard component of a TMT-6plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT-6plex experiment as described in the methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT130",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Tryptic peptides (10 μg) were labeled with TMT-6plex reagents (Thermo)\". While the specific channel \"TMT130\" is not printed, the use of a 6-plex TMT kit implies the use of six distinct channels.",
+        "TRUTH_CHECK": "The runs are part of a TMT-6plex experiment, so assigning one of the six channels to a subset of runs is correct.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT131",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Tryptic peptides (10 μg) were labeled with TMT-6plex reagents (Thermo)\". While the specific channel \"TMT131\" is not printed, it is a standard component of a TMT-6plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT-6plex experiment as described in the methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive Plus;AC=MS:1002634",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states \"QExactive Plus mass spectrometer, Thermo\".",
+        "TRUTH_CHECK": "The instrument was used for the LC-MS/MS analysis of the CSF samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease used for protein digestion, the right field.",
+        "SOURCE_CHECK": "The methods state the flow through was \"digested with trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the proteomics analysis of the CSF samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "FractionationMethod",
+      "extracted_value": "NT=Reversed-phase chromatography (RP);AC=PRIDE:0000563",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fractionation method, the right field.",
+        "SOURCE_CHECK": "The paper states that pooled TMT labeled samples were separated via \"basic pH RPLC fractionation\".",
+        "TRUTH_CHECK": "The runs were separated by reversed-phase liquid chromatography (RPLC).",
+        "COMPLETENESS_CHECK": "Complete. \"Reversed-phase chromatography\" is a correct normalized term for RPLC."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a proteomics workflow using TMT labeling and LC-MS/MS on a QExactive Plus, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the mass spectrometry experiment performed on the CSF samples.",
+        "COMPLETENESS_CHECK": "The value follows the required SDRF controlled terminology."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 1 | run 10 = 1 | run 11 = 1 | run 12 = 1 | run 13 = 1 | run 14 = 1 | run 15 = 1 | run 16 = 1 | run 17 = 1 | run 18 = 1 | run 19 = 1 | run 20 = 1 | run 21 = 1 | run 22 = 1 | run 23 = 1 | run 24 = 1 | run 25 = 1 | run 26 = 1 | run 27 = 1 | run 28 = 1 | run 29 = 1 | run 30 = 1 | run 31 = 1 | run 32 = 1 | run 33 = 1 | run 34 = 1 | run 35 = 1 | run 36 = 1 | run 37 = 1 | run 38 = 1 | run 39 = 1 | run 40 = 1 | run 41 = 1 | run 42 = 1 | run 43 = 1 | run 44 = 1 | run 45 = 1 | run 46 = 1 | run 47 = 1 | run 48 = 1 | run 49 = 1 | run 50 = 1 | run 51 = 1 | run 52 = 1 | run 53 = 1 | run 54 = 1 | run 55 = 1 | run 56 = 1 | run 57 = 1 | run 58 = 1 | run 59 = 1 | run 60 = 1 | run 61 = 1 | run 62 = 1 | run 63 = 1 | run 64 = 1 | run 65 = 1 | run 66 = 1 | run 67 = 1 | run 68 = 1 | run 69 = 1 | run 70 = 1 | run 71 = 1 | run 72 = 1 | run 73 = 1 | run 74 = 1 | run 75 = 1 | run 76 = 1 | run 77 = 1 | run 78 = 1 | run 79 = 1 | run 80 = 1 | run 81 = 1 | run 82 = 1 | run 83 = 1 | run 84 = 1 | run 85 = 1 | run 86 = 1 | run 87 = 1 | run 88 = 1 | run 89 = 1 | run 90 = 1 | run 91 = 1 | run 92 = 1 | run 93 = 1 | run 94 = 1 | run 95 = 1 | run 96 = 1 | run 97 = 1 | run 98 = 1 | run 99 = 1 | run 100 = 1 | run 101 = 1 | run 102 = 1 | run 103 = 1 | run 104 = 1 | run 105 = 1 | run 106 = 1 | run 107 = 1 | run 108 = 1 | run 109 = 1 | run 110 = 1 | run 111 = 1 | run 112 = 1 | run 113 = 1 | run 114 = 1 | run 115 = 1 | run 116 = 1 | run 117 = 1 | run 118 = 1 | run 119 = 1 | run 120 = 1 | run 121 = 1 | run 122 = 1 | run 123 = 1 | run 124 = 1 | run 125 = 1 | run 126 = 1 | run 127 = 1 | run 128 = 1 | run 129 = 1 | run 130 = 1 | run 131 = 1 | run 132 = 1 | run 133 = 1 | run 134 = 1 | run 135 = 1 | run 136 = 1 | run 137 = 1 | run 138 = 1 | run 139 = 1 | run 140 = 1 | run 141 = 1 | run 142 = 1 | run 143 = 1 | run 144 = 1 | run 145 = 1 | run 146 = 1 | run 147 = 1 | run 148 = 1 | run 149 = 1 | run 150 = 1 | run 151 = 1 | run 152 = 1 | run 153 = 1 | run 154 = 1 | run 155 = 1 | run 156 = 1 | run 157 = 1 | run 158 = 1 | run 159 = 1 | run 160 = 1 | run 161 = 1 | run 162 = 1 | run 163 = 1 | run 164 = 1 | run 165 = 1 | run 166 = 1 | run 167 = 1 | run 168 = 1 | run 169 = 1 | run 170 = 1 | run 171 = 1 | run 172 = 1 | run 173 = 1 | run 174 = 1 | run 175 = 1 | run 176 = 1 | run 177 = 1 | run 178 = 1 | run 179 = 1 | run 180 = 1 | run 181 = 1 | run 182 = 1 | run 183 = 1 | run 184 = 1 | run 185 = 1 | run 186 = 1 | run 187 = 1 | run 188 = 1 | run 189 = 1 | run 190 = 1 | run 191 = 1 | run 192 = 1 | run 193 = 1 | run 194 = 1 | run 195 = 1 | run 196 = 1 | run 197 = 1 | run 198 = 1 | run 199 = 1 | run 200 = 1 | run 201 = 1 | run 202 = 1 | run 203 = 1 | run 204 = 1 | run 205 = 1 | run 206 = 1 | run 207 = 1 | run 208 = 1 | run 209 = 1 | run 210 = 1 | run 211 = 1 | run 212 = 1 | run 213 = 1 | run 214 = 1 | run 215 = 1 | run 216 = 1 | run 217 = 1 | run 218 = 1 | run 219 = 1 | run 220 = 1 | run 221 = 1 | run 222 = 1 | run 223 = 1 | run 224 = 1 | run 225 = 1 | run 226 = 1 | run 227 = 1 | run 228 = 1 | run 229 = 1 | run 230 = 1 | run 231 = 1 | run 232 = 1 | run 233 = 1 | run 234 = 1 | run 235 = 1 | run 236 = 1 | run 237 = 1 | run 238 = 1 | run 239 = 1 | run 240 = 1 | run 241 = 1 | run 242 = 1 | run 243 = 1 | run 244 = 1 | run 245 = 1 | run 246 = 1 | run 247 = 1 | run 248 = 1 | run 249 = 1 | run 250 = 1 | run 251 = 1 | run 252 = 1 | run 253 = 1 | run 254 = 1 | run 255 = 1 | run 256 = 1 | run 257 = 1 | run 258 = 1 | run 259 = 1 | run 260 = 1 | run 261 = 1 | run 262 = 1 | run 263 = 1 | run 264 = 1 | run 265 = 1 | run 266 = 1 | run 267 = 1 | run 268 = 1 | run 269 = 1 | run 270 = 1 | run 271 = 1 | run 272 = 1 | run 273 = 1 | run 274 = 1 | run 275 = 1 | run 276 = 1 | run 277 = 1 | run 278 = 1 | run 279 = 1 | run 280 = 1 | run 281 = 1 | run 282 = 1 | run 283 = 1 | run 284 = 1 | run 285 = 1 | run 286 = 1 | run 287 = 1 | run 288 = 1 | run 289 = 1 | run 290 = 1 | run 291 = 1 | run 292 = 1 | run 293 = 1 | run 294 = 1 | run 295 = 1 | run 296 = 1 | run 297 = 1 | run 298 = 1 | run 299 = 1 | run 300 = 1 | run 301 = 1 | run 302 = 1 | run 303 = 1 | run 304 = 1 | run 305 = 1 | run 306 = 1 | run 307 = 1 | run 308 = 1 | run 309 = 1 | run 310 = 1 | run 311 = 1 | run 312 = 1 | run 313 = 1 | run 314 = 1 | run 315 = 1 | run 316 = 1 | run 317 = 1 | run 318 = 1 | run 319 = 1 | run 320 = 1 | run 321 = 1 | run 322 = 1 | run 323 = 1 | run 324 = 1 | run 325 = 1 | run 326 = 1 | run 327 = 1 | run 328 = 1 | run 329 = 1 | run 330 = 1 | run 331 = 1 | run 332 = 1 | run 333 = 1 | run 334 = 1 | run 335 = 1 | run 336 = 1 | run 337 = 1 | run 338 = 1 | run 339 = 1 | run 340 = 1 | run 341 = 1 | run 342 = 1 | run 343 = 1 | run 344 = 1 | run 345 = 1 | run 346 = 1 | run 347 = 1 | run 348 = 1 | run 349 = 1 | run 350 = 1 | run 351 = 1 | run 352 = 1 | run 353 = 1 | run 354 = 1 | run 355 = 1 | run 356 = 1 | run 357 = 1 | run 358 = 1 | run 359 = 1 | run 360 = 1 | run 361 = 1 | run 362 = 1 | run 363 = 1 | run 364 = 1 | run 365 = 1 | run 366 = 1 | run 367 = 1 | run 368 = 1 | run 369 = 1 | run 370 = 1 | run 371 = 1 | run 372 = 1 | run 373 = 1 | run 374 = 1 | run 375 = 1 | run 376 = 1 | run 377 = 1 | run 378 = 1 | run 379 = 1 | run 380 = 1 | run 381 = 1 | run 382 = 1 | run 383 = 1 | run 384 = 1 | run 385 = 1 | run 386 = 1 | run 387 = 1 | run 388 = 1 | run 389 = 1 | run 390 = 1 | run 391 = 1 | run 392 = 1 | run 393 = 1 | run 394 = 1 | run 395 = 1 | run 396 = 1 | run 397 = 1 | run 398 = 1 | run 399 = 1 | run 400 = 1 | run 401 = 1 | run 402 = 1 | run 403 = 1 | run 404 = 1 | run 405 = 1 | run 406 = 1 | run 407 = 1 | run 408 = 1 | run 409 = 1 | run 410 = 1 | run 411 = 1 | run 412 = 1 | run 413 = 1 | run 414 = 1 | run 415 = 1 | run 416 = 1 | run 417 = 1 | run 418 = 1 | run 419 = 1 | run 420 = 1 | run 421 = 1 | run 422 = 1 | run 423 = 1 | run 424 = 1 | run 425 = 1 | run 426 = 1 | run 427 = 1 | run 428 = 1 | run 429 = 1 | run 430 = 1 | run 431 = 1 | run 432 = 1 | run 433 = 1 | run 434 = 1 | run 435 = 1 | run 436 = 1 | run 437 = 1 | run 438 = 1 | run 439 = 1 | run 440 = 1 | run 441 = 1 | run 442 = 1 | run 443 = 1 | run 444 = 1 | run 445 = 1 | run 446 = 1 | run 447 = 1 | run 448 = 1 | run 449 = 1 | run 450 = 1 | run 451 = 1 | run 452 = 1 | run 453 = 1 | run 454 = 1 | run 455 = 1 | run 456 = 1 | run 457 = 1 | run 458 = 1 | run 459 = 1 | run 460 = 1 | run 461 = 1 | run 462 = 1 | run 463 = 1 | run 464 = 1 | run 465 = 1 | run 466 = 1 | run 467 = 1 | run 468 = 1 | run 469 = 1 | run 470 = 1 | run 471 = 1 | run 472 = 1 | run 473 = 1 | run 474 = 1 | run 475 = 1 | run 476 = 1 | run 477 = 1 | run 478 = 1 | run 479 = 1 | run 480 = 1 | run 481 = 1 | run 482 = 1 | run 483 = 1 | run 484 = 1 | run 485 = 1 | run 486 = 1 | run 487 = 1 | run 488 = 1 | run 489 = 1 | run 490 = 1 | run 491 = 1 | run 492 = 1 | run 493 = 1 | run 494 = 1 | run 495 = 1 | run 496 = 1 | run 497 = 1 | run 498 = 1 | run 499 = 1 | run 500 = 1 | run 501 = 1 | run 502 = 1 | run 503 = 1 | run 504 = 1 | run 505 = 1 | run 506 = 1 | run 507 = 1 | run 508 = 1 | run 509 = 1 | run 510 = 1 | run 511 = 1 | run 512 = 1 | run 513 = 1 | run 514 = 1 | run 515 = 1 | run 516 = 1 | run 517 = 1 | run 518 = 1 | run 519 = 1 | run 520 = 1 | run 521 = 1 | run 522 = 1 | run 523 = 1 | run 524 = 1 | run 525 = 1 | run 526 = 1 | run 527 = 1 | run 528 = 1 | run 529 = 1 | run 530 = 1 | run 531 = 1 | run 532 = 1 | run 533 = 1 | run 534 = 1 | run 535 = 1 | run 536 = 1 | run 537 = 1 | run 538 = 1 | run 539 = 1 | run 540 = 1 | run 541 = 1 | run 542 = 1 | run 543 = 1 | run 544 = 1 | run 545 = 1 | run 546 = 1 | run 547 = 1 | run 548 = 1 | run 549 = 1 | run 550 = 1 | run 551 = 1 | run 552 = 1 | run 553 = 1 | run 554 = 1 | run 555 = 1 | run 556 = 1 | run 557 = 1 | run 558 = 1 | run 559 = 1 | run 560 = 1 | run 561 = 1 | run 562 = 1 | run 563 = 1 | run 564 = 1 | run 565 = 1 | run 566 = 1 | run 567 = 1 | run 568 = 1 | run 569 = 1 | run 570 = 1 | run 571 = 1 | run 572 = 1 | run 573 = 1 | run 574 = 1 | run 575 = 1 | run 576 = 1 | run 577 = 1 | run 578 = 1 | run 579 = 1 | run 580 = 1 | run 581 = 1 | run 582 = 1 | run 583 = 1 | run 584 = 1 | run 585 = 1 | run 586 = 1 | run 587 = 1 | run 588 = 1 | run 589 = 1 | run 590 = 1 | run 591 = 1 | run 592 = 1 | run 593 = 1 | run 594 = 1 | run 595 = 1 | run 596 = 1 | run 597 = 1 | run 598 = 1 | run 599 = 1 | run 600 = 1 | run 601 = 1 | run 602 = 1 | run 603 = 1 | run 604 = 1 | run 605 = 1 | run 606 = 1 | run 607 = 1 | run 608 = 1 | run 609 = 1 | run 610 = 1 | run 611 = 1 | run 612 = 1 | run 613 = 1 | run 614 = 1 | run 615 = 1 | run 616 = 1 | run 617 = 1 | run 618 = 1 | run 619 = 1 | run 620 = 1 | run 621 = 1 | run 622 = 1 | run 623 = 1 | run 624 = 1 | run 625 = 1 | run 626 = 1 | run 627 = 1 | run 628 = 1 | run 629 = 1 | run 630 = 1 | run 631 = 1 | run 632 = 1 | run 633 = 1 | run 634 = 1 | run 635 = 1 | run 636 = 1 | run 637 = 1 | run 638 = 1 | run 639 = 1 | run 640 = 1 | run 641 = 1 | run 642 = 1 | run 643 = 1 | run 644 = 1 | run 645 = 1 | run 646 = 1 | run 647 = 1 | run 648 = 1 | run 649 = 1 | run 650 = 1 | run 651 = 1 | run 652 = 1 | run 653 = 1 | run 654 = 1 | run 655 = 1 | run 656 = 1 | run 657 = 1 | run 658 = 1 | run 659 = 1 | run 660 = 1 | run 661 = 1 | run 662 = 1 | run 663 = 1 | run 664 = 1 | run 665 = 1 | run 666 = 1 | run 667 = 1 | run 668 = 1 | run 669 = 1 | run 670 = 1 | run 671 = 1 | run 672 = 1 | run 673 = 1 | run 674 = 1 | run 675 = 1 | run 676 = 1 | run 677 = 1 | run 678 = 1 | run 679 = 1 | run 680 = 1 | run 681 = 1 | run 682 = 1 | run 683 = 1 | run 684 = 1 | run 685 = 1 | run 686 = 1 | run 687 = 1 | run 688 = 1 | run 689 = 1 | run 690 = 1 | run 691 = 1 | run 692 = 1 | run 693 = 1 | run 694 = 1 | run 695 = 1 | run 696 = 1 | run 697 = 1 | run 698 = 1 | run 699 = 1 | run 700 = 1 | run 701 = 1 | run 702 = 1 | run 703 = 1 | run 704 = 1 | run 705 = 1 | run 706 = 1 | run 707 = 1 | run 708 = 1 | run 709 = 1 | run 710 = 1 | run 711 = 1 | run 712 = 1 | run 713 = 1 | run 714 = 1 | run 715 = 1 | run 716 = 1 | run 717 = 1 | run 718 = 1 | run 719 = 1 | run 720 = 1 | run 721 = 1 | run 722 = 1 | run 723 = 1 | run 724 = 1 | run 725 = 1 | run 726 = 1 | run 727 = 1 | run 728 = 1 | run 729 = 1 | run 730 = 1 | run 731 = 1 | run 732 = 1 | run 733 = 1 | run 734 = 1 | run 735 = 1 | run 736 = 1 | run 737 = 1 | run 738 = 1 | run 739 = 1 | run 740 = 1 | run 741 = 1 | run 742 = 1 | run 743 = 1 | run 744 = 1 | run 745 = 1 | run 746 = 1 | run 747 = 1 | run 748 = 1 | run 749 = 1 | run 750 = 1 | run 751 = 1 | run 752 = 1 | run 753 = 1 | run 754 = 1 | run 755 = 1 | run 756 = 1 | run 757 = 1 | run 758 = 1 | run 759 = 1 | run 760 = 1 | run 761 = 1 | run 762 = 1 | run 763 = 1 | run 764 = 1 | run 765 = 1 | run 766 = 1 | run 767 = 1 | run 768 = 1 | run 769 = 1 | run 770 = 1 | run 771 = 1 | run 772 = 1 | run 773 = 1 | run 774 = 1 | run 775 = 1 | run 776 = 1 | run 777 = 1 | run 778 = 1 | run 779 = 1 | run 780 = 1 | run 781 = 1 | run 782 = 1 | run 783 = 1 | run 784 = 1 | run 785 = 1 | run 786 = 1 | run 787 = 1 | run 788 = 1 | run 789 = 1 | run 790 = 1 | run 791 = 1 | run 792 = 1 | run 793 = 1 | run 794 = 1 | run 795 = 1 | run 796 = 1 | run 797 = 1 | run 798 = 1 | run 799 = 1 | run 800 = 1 | run 801 = 1 | run 802 = 1 | run 803 = 1 | run 804 = 1 | run 805 = 1 | run 806 = 1 | run 807 = 1 | run 808 = 1 | run 809 = 1 | run 810 = 1 | run 811 = 1 | run 812 = 1 | run 813 = 1 | run 814 = 1 | run 815 = 1 | run 816 = 1 | run 817 = 1 | run 818 = 1 | run 819 = 1 | run 820 = 1 | run 821 = 1 | run 822 = 1 | run 823 = 1 | run 824 = 1 | run 825 = 1 | run 826 = 1 | run 827 = 1 | run 828 = 1 | run 829 = 1 | run 830 = 1 | run 831 = 1 | run 832 = 1 | run 833 = 1 | run 834 = 1 | run 835 = 1 | run 836 = 1 | run 837 = 1 | run 838 = 1 | run 839 = 1 | run 840 = 1 | run 841 = 1 | run 842 = 1 | run 843 = 1 | run 844 = 1 | run 845 = 1 | run 846 = 1 | run 847 = 1 | run 848 = 1 | run 849 = 1 | run 850 = 1 | run 851 = 1 | run 852 = 1 | run 853 = 1 | run 854 = 1 | run 855 = 1 | run 856 = 1 | run 857 = 1 | run 858 = 1 | run 859 = 1 | run 860 = 1 | run 861 = 1 | run 862 = 1 | run 863 = 1 | run 864 = 1 | run 865 = 1 | run 866 = 1 | run 867 = 1 | run 868 = 1 | run 869 = 1 | run 870 = 1 | run 871 = 1 | run 872 = 1 | run 873 = 1 | run 874 = 1 | run 875 = 1 | run 876 = 1 | run 877 = 1 | run 878 = 1 | run 879 = 1 | run 880 = 1 | run 881 = 1 | run 882 = 1 | run 883 = 1 | run 884 = 1 | run 885 = 1 | run 886 = 1 | run 887 = 1 | run 888 = 1 | run 889 = 1 | run 890 = 1 | run 891 = 1 | run 892 = 1 | run 893 = 1 | run 894 = 1 | run 895 = 1 | run 896 = 1 | run 897 = 1 | run 898 = 1 | run 899 = 1 | run 900 = 1 | run 901 = 1 | run 902 = 1 | run 903 = 1 | run 904 = 1 | run 905 = 1 | run 906 = 1 | run 907 = 1 | run 908 = 1 | run 909 = 1 | run 910 = 1 | run 911 = 1 | run 912 = 1 | run 913 = 1 | run 914 = 1 | run 915 = 1 | run 916 = 1 | run 917 = 1 | run 918 = 1 | run 919 = 1 | run 920 = 1 | run 921 = 1 | run 922 = 1 | run 923 = 1 | run 924 = 1 | run 925 = 1 | run 926 = 1 | run 927 = 1 | run 928 = 1 | run 929 = 1 | run 930 = 1 | run 931 = 1 | run 932 = 1 | run 933 = 1 | run 934 = 1 | run 935 = 1 | run 936 = 1 | run 937 = 1 | run 938 = 1 | run 939 = 1 | run 940 = 1 | run 941 = 1 | run 942 = 1 | run 943 = 1 | run 944 = 1 | run 945 = 1 | run 946 = 1 | run 947 = 1 | run 948 = 1 | run 949 = 1 | run 950 = 1 | run 951 = 1 | run 952 = 1 | run 953 = 1 | run 954 = 1 | run 955 = 1 | run 956 = 1 | run 957 = 1 | run 958 = 1 | run 959 = 1 | run 960 = 1 | run 961 = 1 | run 962 = 1 | run 963 = 1 | run 964 = 1 | run 965 = 1 | run 966 = 1 | run 967 = 1 | run 968 = 1 | run 969 = 1 | run 970 = 1 | run 971 = 1 | run 972 = 1 | run 973 = 1 | run 974 = 1 | run 975 = 1 | run 976 = 1 | run 977 = 1 | run 978 = 1 | run 979 = 1 | run 980 = 1 | run 981 = 1 | run 982 = 1 | run 983 = 1 | run 984 = 1 | run 985 = 1 | run 986 = 1 | run 987 = 1 | run 988 = 1 | run 989 = 1 | run 990 = 1 | run 991 = 1 | run 992 = 1 | run 993 = 1 | run 994 = 1 | run 995 = 1 | run 996 = 1 | run 997 = 1 | run 998 = 1 | run 999 = 1 | run 1000 = 1 | run 1001 = 1 | run 1002 = 1 | run 1003 = 1 | run 1004 = 1 | run 1005 = 1 | run 1006 = 1 | run 1007 = 1 | run 1008 = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that 45 CSF samples were collected from 16 patients.",
+        "TRUTH_CHECK": "The mapping assigns all runs to biological replicate 1, but the runs are associated with different sources (Sample 1 through Sample 7). Since these samples represent different biological units (patients or serial samples from patients), they must have distinct biological replicate indices.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value, but the values are logically incorrect based on the sample sources."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 1 | run 10 = 1 | run 11 = 1 | run 12 = 1 | run 13 = 1 | run 14 = 1 | run 15 = 1 | run 16 = 1 | run 17 = 1 | run 18 = 1 | run 19 = 1 | run 20 = 1 | run 21 = 1 | run 22 = 1 | run 23 = 1 | run 24 = 1 | run 25 = 1 | run 26 = 1 | run 27 = 1 | run 28 = 1 | run 29 = 1 | run 30 = 1 | run 31 = 1 | run 32 = 1 | run 33 = 1 | run 34 = 1 | run 35 = 1 | run 36 = 1 | run 37 = 1 | run 38 = 1 | run 39 = 1 | run 40 = 1 | run 41 = 1 | run 42 = 1 | run 43 = 1 | run 44 = 1 | run 45 = 1 | run 46 = 1 | run 47 = 1 | run 48 = 1 | run 49 = 1 | run 50 = 1 | run 51 = 1 | run 52 = 1 | run 53 = 1 | run 54 = 1 | run 55 = 1 | run 56 = 1 | run 57 = 1 | run 58 = 1 | run 59 = 1 | run 60 = 1 | run 61 = 1 | run 62 = 1 | run 63 = 1 | run 64 = 1 | run 65 = 1 | run 66 = 1 | run 67 = 1 | run 68 = 1 | run 69 = 1 | run 70 = 1 | run 71 = 1 | run 72 = 1 | run 73 = 1 | run 74 = 1 | run 75 = 1 | run 76 = 1 | run 77 = 1 | run 78 = 1 | run 79 = 1 | run 80 = 1 | run 81 = 1 | run 82 = 1 | run 83 = 1 | run 84 = 1 | run 85 = 1 | run 86 = 1 | run 87 = 1 | run 88 = 1 | run 89 = 1 | run 90 = 1 | run 91 = 1 | run 92 = 1 | run 93 = 1 | run 94 = 1 | run 95 = 1 | run 96 = 1 | run 97 = 1 | run 98 = 1 | run 99 = 1 | run 100 = 1 | run 101 = 1 | run 102 = 1 | run 103 = 1 | run 104 = 1 | run 105 = 1 | run 106 = 1 | run 107 = 1 | run 108 = 1 | run 109 = 1 | run 110 = 1 | run 111 = 1 | run 112 = 1 | run 113 = 1 | run 114 = 1 | run 115 = 1 | run 116 = 1 | run 117 = 1 | run 118 = 1 | run 119 = 1 | run 120 = 1 | run 121 = 1 | run 122 = 1 | run 123 = 1 | run 124 = 1 | run 125 = 1 | run 126 = 1 | run 127 = 1 | run 128 = 1 | run 129 = 1 | run 130 = 1 | run 131 = 1 | run 132 = 1 | run 133 = 1 | run 134 = 1 | run 135 = 1 | run 136 = 1 | run 137 = 1 | run 138 = 1 | run 139 = 1 | run 140 = 1 | run 141 = 1 | run 142 = 1 | run 143 = 1 | run 144 = 1 | run 145 = 1 | run 146 = 1 | run 147 = 1 | run 148 = 1 | run 149 = 1 | run 150 = 1 | run 151 = 1 | run 152 = 1 | run 153 = 1 | run 154 = 1 | run 155 = 1 | run 156 = 1 | run 157 = 1 | run 158 = 1 | run 159 = 1 | run 160 = 1 | run 161 = 1 | run 162 = 1 | run 163 = 1 | run 164 = 1 | run 165 = 1 | run 166 = 1 | run 167 = 1 | run 168 = 1 | run 169 = 1 | run 170 = 1 | run 171 = 1 | run 172 = 1 | run 173 = 1 | run 174 = 1 | run 175 = 1 | run 176 = 1 | run 177 = 1 | run 178 = 1 | run 179 = 1 | run 180 = 1 | run 181 = 1 | run 182 = 1 | run 183 = 1 | run 184 = 1 | run 185 = 1 | run 186 = 1 | run 187 = 1 | run 188 = 1 | run 189 = 1 | run 190 = 1 | run 191 = 1 | run 192 = 1 | run 193 = 1 | run 194 = 1 | run 195 = 1 | run 196 = 1 | run 197 = 1 | run 198 = 1 | run 199 = 1 | run 200 = 1 | run 201 = 1 | run 202 = 1 | run 203 = 1 | run 204 = 1 | run 205 = 1 | run 206 = 1 | run 207 = 1 | run 208 = 1 | run 209 = 1 | run 210 = 1 | run 211 = 1 | run 212 = 1 | run 213 = 1 | run 214 = 1 | run 215 = 1 | run 216 = 1 | run 217 = 1 | run 218 = 1 | run 219 = 1 | run 220 = 1 | run 221 = 1 | run 222 = 1 | run 223 = 1 | run 224 = 1 | run 225 = 1 | run 226 = 1 | run 227 = 1 | run 228 = 1 | run 229 = 1 | run 230 = 1 | run 231 = 1 | run 232 = 1 | run 233 = 1 | run 234 = 1 | run 235 = 1 | run 236 = 1 | run 237 = 1 | run 238 = 1 | run 239 = 1 | run 240 = 1 | run 241 = 1 | run 242 = 1 | run 243 = 1 | run 244 = 1 | run 245 = 1 | run 246 = 1 | run 247 = 1 | run 248 = 1 | run 249 = 1 | run 250 = 1 | run 251 = 1 | run 252 = 1 | run 253 = 1 | run 254 = 1 | run 255 = 1 | run 256 = 1 | run 257 = 1 | run 258 = 1 | run 259 = 1 | run 260 = 1 | run 261 = 1 | run 262 = 1 | run 263 = 1 | run 264 = 1 | run 265 = 1 | run 266 = 1 | run 267 = 1 | run 268 = 1 | run 269 = 1 | run 270 = 1 | run 271 = 1 | run 272 = 1 | run 273 = 1 | run 274 = 1 | run 275 = 1 | run 276 = 1 | run 277 = 1 | run 278 = 1 | run 279 = 1 | run 280 = 1 | run 281 = 1 | run 282 = 1 | run 283 = 1 | run 284 = 1 | run 285 = 1 | run 286 = 1 | run 287 = 1 | run 288 = 1 | run 289 = 1 | run 290 = 1 | run 291 = 1 | run 292 = 1 | run 293 = 1 | run 294 = 1 | run 295 = 1 | run 296 = 1 | run 297 = 1 | run 298 = 1 | run 299 = 1 | run 300 = 1 | run 301 = 1 | run 302 = 1 | run 303 = 1 | run 304 = 1 | run 305 = 1 | run 306 = 1 | run 307 = 1 | run 308 = 1 | run 309 = 1 | run 310 = 1 | run 311 = 1 | run 312 = 1 | run 313 = 1 | run 314 = 1 | run 315 = 1 | run 316 = 1 | run 317 = 1 | run 318 = 1 | run 319 = 1 | run 320 = 1 | run 321 = 1 | run 322 = 1 | run 323 = 1 | run 324 = 1 | run 325 = 1 | run 326 = 1 | run 327 = 1 | run 328 = 1 | run 329 = 1 | run 330 = 1 | run 331 = 1 | run 332 = 1 | run 333 = 1 | run 334 = 1 | run 335 = 1 | run 336 = 1 | run 337 = 1 | run 338 = 1 | run 339 = 1 | run 340 = 1 | run 341 = 1 | run 342 = 1 | run 343 = 1 | run 344 = 1 | run 345 = 1 | run 346 = 1 | run 347 = 1 | run 348 = 1 | run 349 = 1 | run 350 = 1 | run 351 = 1 | run 352 = 1 | run 353 = 1 | run 354 = 1 | run 355 = 1 | run 356 = 1 | run 357 = 1 | run 358 = 1 | run 359 = 1 | run 360 = 1 | run 361 = 1 | run 362 = 1 | run 363 = 1 | run 364 = 1 | run 365 = 1 | run 366 = 1 | run 367 = 1 | run 368 = 1 | run 369 = 1 | run 370 = 1 | run 371 = 1 | run 372 = 1 | run 373 = 1 | run 374 = 1 | run 375 = 1 | run 376 = 1 | run 377 = 1 | run 378 = 1 | run 379 = 1 | run 380 = 1 | run 381 = 1 | run 382 = 1 | run 383 = 1 | run 384 = 1 | run 385 = 1 | run 386 = 1 | run 387 = 1 | run 388 = 1 | run 389 = 1 | run 390 = 1 | run 391 = 1 | run 392 = 1 | run 393 = 1 | run 394 = 1 | run 395 = 1 | run 396 = 1 | run 397 = 1 | run 398 = 1 | run 399 = 1 | run 400 = 1 | run 401 = 1 | run 402 = 1 | run 403 = 1 | run 404 = 1 | run 405 = 1 | run 406 = 1 | run 407 = 1 | run 408 = 1 | run 409 = 1 | run 410 = 1 | run 411 = 1 | run 412 = 1 | run 413 = 1 | run 414 = 1 | run 415 = 1 | run 416 = 1 | run 417 = 1 | run 418 = 1 | run 419 = 1 | run 420 = 1 | run 421 = 1 | run 422 = 1 | run 423 = 1 | run 424 = 1 | run 425 = 1 | run 426 = 1 | run 427 = 1 | run 428 = 1 | run 429 = 1 | run 430 = 1 | run 431 = 1 | run 432 = 1 | run 433 = 1 | run 434 = 1 | run 435 = 1 | run 436 = 1 | run 437 = 1 | run 438 = 1 | run 439 = 1 | run 440 = 1 | run 441 = 1 | run 442 = 1 | run 443 = 1 | run 444 = 1 | run 445 = 1 | run 446 = 1 | run 447 = 1 | run 448 = 1 | run 449 = 1 | run 450 = 1 | run 451 = 1 | run 452 = 1 | run 453 = 1 | run 454 = 1 | run 455 = 1 | run 456 = 1 | run 457 = 1 | run 458 = 1 | run 459 = 1 | run 460 = 1 | run 461 = 1 | run 462 = 1 | run 463 = 1 | run 464 = 1 | run 465 = 1 | run 466 = 1 | run 467 = 1 | run 468 = 1 | run 469 = 1 | run 470 = 1 | run 471 = 1 | run 472 = 1 | run 473 = 1 | run 474 = 1 | run 475 = 1 | run 476 = 1 | run 477 = 1 | run 478 = 1 | run 479 = 1 | run 480 = 1 | run 481 = 1 | run 482 = 1 | run 483 = 1 | run 484 = 1 | run 485 = 1 | run 486 = 1 | run 487 = 1 | run 488 = 1 | run 489 = 1 | run 490 = 1 | run 491 = 1 | run 492 = 1 | run 493 = 1 | run 494 = 1 | run 495 = 1 | run 496 = 1 | run 497 = 1 | run 498 = 1 | run 499 = 1 | run 500 = 1 | run 501 = 1 | run 502 = 1 | run 503 = 1 | run 504 = 1 | run 505 = 1 | run 506 = 1 | run 507 = 1 | run 508 = 1 | run 509 = 1 | run 510 = 1 | run 511 = 1 | run 512 = 1 | run 513 = 1 | run 514 = 1 | run 515 = 1 | run 516 = 1 | run 517 = 1 | run 518 = 1 | run 519 = 1 | run 520 = 1 | run 521 = 1 | run 522 = 1 | run 523 = 1 | run 524 = 1 | run 525 = 1 | run 526 = 1 | run 527 = 1 | run 528 = 1 | run 529 = 1 | run 530 = 1 | run 531 = 1 | run 532 = 1 | run 533 = 1 | run 534 = 1 | run 535 = 1 | run 536 = 1 | run 537 = 1 | run 538 = 1 | run 539 = 1 | run 540 = 1 | run 541 = 1 | run 542 = 1 | run 543 = 1 | run 544 = 1 | run 545 = 1 | run 546 = 1 | run 547 = 1 | run 548 = 1 | run 549 = 1 | run 550 = 1 | run 551 = 1 | run 552 = 1 | run 553 = 1 | run 554 = 1 | run 555 = 1 | run 556 = 1 | run 557 = 1 | run 558 = 1 | run 559 = 1 | run 560 = 1 | run 561 = 1 | run 562 = 1 | run 563 = 1 | run 564 = 1 | run 565 = 1 | run 566 = 1 | run 567 = 1 | run 568 = 1 | run 569 = 1 | run 570 = 1 | run 571 = 1 | run 572 = 1 | run 573 = 1 | run 574 = 1 | run 575 = 1 | run 576 = 1 | run 577 = 1 | run 578 = 1 | run 579 = 1 | run 580 = 1 | run 581 = 1 | run 582 = 1 | run 583 = 1 | run 584 = 1 | run 585 = 1 | run 586 = 1 | run 587 = 1 | run 588 = 1 | run 589 = 1 | run 590 = 1 | run 591 = 1 | run 592 = 1 | run 593 = 1 | run 594 = 1 | run 595 = 1 | run 596 = 1 | run 597 = 1 | run 598 = 1 | run 599 = 1 | run 600 = 1 | run 601 = 1 | run 602 = 1 | run 603 = 1 | run 604 = 1 | run 605 = 1 | run 606 = 1 | run 607 = 1 | run 608 = 1 | run 609 = 1 | run 610 = 1 | run 611 = 1 | run 612 = 1 | run 613 = 1 | run 614 = 1 | run 615 = 1 | run 616 = 1 | run 617 = 1 | run 618 = 1 | run 619 = 1 | run 620 = 1 | run 621 = 1 | run 622 = 1 | run 623 = 1 | run 624 = 1 | run 625 = 1 | run 626 = 1 | run 627 = 1 | run 628 = 1 | run 629 = 1 | run 630 = 1 | run 631 = 1 | run 632 = 1 | run 633 = 1 | run 634 = 1 | run 635 = 1 | run 636 = 1 | run 637 = 1 | run 638 = 1 | run 639 = 1 | run 640 = 1 | run 641 = 1 | run 642 = 1 | run 643 = 1 | run 644 = 1 | run 645 = 1 | run 646 = 1 | run 647 = 1 | run 648 = 1 | run 649 = 1 | run 650 = 1 | run 651 = 1 | run 652 = 1 | run 653 = 1 | run 654 = 1 | run 655 = 1 | run 656 = 1 | run 657 = 1 | run 658 = 1 | run 659 = 1 | run 660 = 1 | run 661 = 1 | run 662 = 1 | run 663 = 1 | run 664 = 1 | run 665 = 1 | run 666 = 1 | run 667 = 1 | run 668 = 1 | run 669 = 1 | run 670 = 1 | run 671 = 1 | run 672 = 1 | run 673 = 1 | run 674 = 1 | run 675 = 1 | run 676 = 1 | run 677 = 1 | run 678 = 1 | run 679 = 1 | run 680 = 1 | run 681 = 1 | run 682 = 1 | run 683 = 1 | run 684 = 1 | run 685 = 1 | run 686 = 1 | run 687 = 1 | run 688 = 1 | run 689 = 1 | run 690 = 1 | run 691 = 1 | run 692 = 1 | run 693 = 1 | run 694 = 1 | run 695 = 1 | run 696 = 1 | run 697 = 1 | run 698 = 1 | run 699 = 1 | run 700 = 1 | run 701 = 1 | run 702 = 1 | run 703 = 1 | run 704 = 1 | run 705 = 1 | run 706 = 1 | run 707 = 1 | run 708 = 1 | run 709 = 1 | run 710 = 1 | run 711 = 1 | run 712 = 1 | run 713 = 1 | run 714 = 1 | run 715 = 1 | run 716 = 1 | run 717 = 1 | run 718 = 1 | run 719 = 1 | run 720 = 1 | run 721 = 1 | run 722 = 1 | run 723 = 1 | run 724 = 1 | run 725 = 1 | run 726 = 1 | run 727 = 1 | run 728 = 1 | run 729 = 1 | run 730 = 1 | run 731 = 1 | run 732 = 1 | run 733 = 1 | run 734 = 1 | run 735 = 1 | run 736 = 1 | run 737 = 1 | run 738 = 1 | run 739 = 1 | run 740 = 1 | run 741 = 1 | run 742 = 1 | run 743 = 1 | run 744 = 1 | run 745 = 1 | run 746 = 1 | run 747 = 1 | run 748 = 1 | run 749 = 1 | run 750 = 1 | run 751 = 1 | run 752 = 1 | run 753 = 1 | run 754 = 1 | run 755 = 1 | run 756 = 1 | run 757 = 1 | run 758 = 1 | run 759 = 1 | run 760 = 1 | run 761 = 1 | run 762 = 1 | run 763 = 1 | run 764 = 1 | run 765 = 1 | run 766 = 1 | run 767 = 1 | run 768 = 1 | run 769 = 1 | run 770 = 1 | run 771 = 1 | run 772 = 1 | run 773 = 1 | run 774 = 1 | run 775 = 1 | run 776 = 1 | run 777 = 1 | run 778 = 1 | run 779 = 1 | run 780 = 1 | run 781 = 1 | run 782 = 1 | run 783 = 1 | run 784 = 1 | run 785 = 1 | run 786 = 1 | run 787 = 1 | run 788 = 1 | run 789 = 1 | run 790 = 1 | run 791 = 1 | run 792 = 1 | run 793 = 1 | run 794 = 1 | run 795 = 1 | run 796 = 1 | run 797 = 1 | run 798 = 1 | run 799 = 1 | run 800 = 1 | run 801 = 1 | run 802 = 1 | run 803 = 1 | run 804 = 1 | run 805 = 1 | run 806 = 1 | run 807 = 1 | run 808 = 1 | run 809 = 1 | run 810 = 1 | run 811 = 1 | run 812 = 1 | run 813 = 1 | run 814 = 1 | run 815 = 1 | run 816 = 1 | run 817 = 1 | run 818 = 1 | run 819 = 1 | run 820 = 1 | run 821 = 1 | run 822 = 1 | run 823 = 1 | run 824 = 1 | run 825 = 1 | run 826 = 1 | run 827 = 1 | run 828 = 1 | run 829 = 1 | run 830 = 1 | run 831 = 1 | run 832 = 1 | run 833 = 1 | run 834 = 1 | run 835 = 1 | run 836 = 1 | run 837 = 1 | run 838 = 1 | run 839 = 1 | run 840 = 1 | run 841 = 1 | run 842 = 1 | run 843 = 1 | run 844 = 1 | run 845 = 1 | run 846 = 1 | run 847 = 1 | run 848 = 1 | run 849 = 1 | run 850 = 1 | run 851 = 1 | run 852 = 1 | run 853 = 1 | run 854 = 1 | run 855 = 1 | run 856 = 1 | run 857 = 1 | run 858 = 1 | run 859 = 1 | run 860 = 1 | run 861 = 1 | run 862 = 1 | run 863 = 1 | run 864 = 1 | run 865 = 1 | run 866 = 1 | run 867 = 1 | run 868 = 1 | run 869 = 1 | run 870 = 1 | run 871 = 1 | run 872 = 1 | run 873 = 1 | run 874 = 1 | run 875 = 1 | run 876 = 1 | run 877 = 1 | run 878 = 1 | run 879 = 1 | run 880 = 1 | run 881 = 1 | run 882 = 1 | run 883 = 1 | run 884 = 1 | run 885 = 1 | run 886 = 1 | run 887 = 1 | run 888 = 1 | run 889 = 1 | run 890 = 1 | run 891 = 1 | run 892 = 1 | run 893 = 1 | run 894 = 1 | run 895 = 1 | run 896 = 1 | run 897 = 1 | run 898 = 1 | run 899 = 1 | run 900 = 1 | run 901 = 1 | run 902 = 1 | run 903 = 1 | run 904 = 1 | run 905 = 1 | run 906 = 1 | run 907 = 1 | run 908 = 1 | run 909 = 1 | run 910 = 1 | run 911 = 1 | run 912 = 1 | run 913 = 1 | run 914 = 1 | run 915 = 1 | run 916 = 1 | run 917 = 1 | run 918 = 1 | run 919 = 1 | run 920 = 1 | run 921 = 1 | run 922 = 1 | run 923 = 1 | run 924 = 1 | run 925 = 1 | run 926 = 1 | run 927 = 1 | run 928 = 1 | run 929 = 1 | run 930 = 1 | run 931 = 1 | run 932 = 1 | run 933 = 1 | run 934 = 1 | run 935 = 1 | run 936 = 1 | run 937 = 1 | run 938 = 1 | run 939 = 1 | run 940 = 1 | run 941 = 1 | run 942 = 1 | run 943 = 1 | run 944 = 1 | run 945 = 1 | run 946 = 1 | run 947 = 1 | run 948 = 1 | run 949 = 1 | run 950 = 1 | run 951 = 1 | run 952 = 1 | run 953 = 1 | run 954 = 1 | run 955 = 1 | run 956 = 1 | run 957 = 1 | run 958 = 1 | run 959 = 1 | run 960 = 1 | run 961 = 1 | run 962 = 1 | run 963 = 1 | run 964 = 1 | run 965 = 1 | run 966 = 1 | run 967 = 1 | run 968 = 1 | run 969 = 1 | run 970 = 1 | run 971 = 1 | run 972 = 1 | run 973 = 1 | run 974 = 1 | run 975 = 1 | run 976 = 1 | run 977 = 1 | run 978 = 1 | run 979 = 1 | run 980 = 1 | run 981 = 1 | run 982 = 1 | run 983 = 1 | run 984 = 1 | run 985 = 1 | run 986 = 1 | run 987 = 1 | run 988 = 1 | run 989 = 1 | run 990 = 1 | run 991 = 1 | run 992 = 1 | run 993 = 1 | run 994 = 1 | run 995 = 1 | run 996 = 1 | run 997 = 1 | run 998 = 1 | run 999 = 1 | run 1000 = 1 | run 1001 = 1 | run 1002 = 1 | run 1003 = 1 | run 1004 = 1 | run 1005 = 1 | run 1006 = 1 | run 1007 = 1 | run 1008 = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents technical replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention repeated runs of the same material; it describes a single set of 24 concatenated fractions per multiplex.",
+        "TRUTH_CHECK": "The runs are listed as coming from different samples (Sample 1, 2, 3, etc.) and are separated by fractionation (24 fractions). According to the definition, separate elutions or enrichment steps are fractions, not technical replicates. Since no repeated injections of the same fraction are mentioned, every run should be technical replicate 1.",
+        "COMPLETENESS_CHECK": "The mapping assigns index 1 to every run, which is correct for material measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 2 | run 8 = 2 | run 9 = 2 | run 10 = 2 | run 11 = 2 | run 12 = 2 | run 13 = 3 | run 14 = 3 | run 15 = 3 | run 16 = 3 | run 17 = 3 | run 18 = 3 | run 19 = 4 | run 20 = 4 | run 21 = 4 | run 22 = 4 | run 23 = 4 | run 24 = 4 | run 25 = 5 | run 26 = 5 | run 27 = 5 | run 28 = 5 | run 29 = 5 | run 30 = 5 | run 31 = 6 | run 32 = 6 | run 33 = 6 | run 34 = 6 | run 35 = 6 | run 36 = 6 | run 37 = 7 | run 38 = 7 | run 39 = 7 | run 40 = 7 | run 41 = 7 | run 42 = 7 | run 43 = 8 | run 44 = 8 | run 45 = 8 | run 46 = 8 | run 47 = 8 | run 48 = 8 | run 49 = 9 | run 50 = 9 | run 51 = 9 | run 52 = 9 | run 53 = 9 | run 54 = 9 | run 55 = 10 | run 56 = 10 | run 57 = 10 | run 58 = 10 | run 59 = 10 | run 60 = 10 | run 61 = 11 | run 62 = 11 | run 63 = 11 | run 64 = 11 | run 65 = 11 | run 66 = 11 | run 67 = 12 | run 68 = 12 | run 69 = 12 | run 70 = 12 | run 71 = 12 | run 72 = 12 | run 73 = 13 | run 74 = 13 | run 75 = 13 | run 76 = 13 | run 77 = 13 | run 78 = 13 | run 79 = 14 | run 80 = 14 | run 81 = 14 | run 82 = 14 | run 83 = 14 | run 84 = 14 | run 85 = 15 | run 86 = 15 | run 87 = 15 | run 88 = 15 | run 89 = 15 | run 90 = 15 | run 91 = 16 | run 92 = 16 | run 93 = 16 | run 94 = 16 | run 95 = 16 | run 96 = 16 | run 97 = 17 | run 98 = 17 | run 99 = 17 | run 100 = 17 | run 101 = 17 | run 102 = 17 | run 103 = 18 | run 104 = 18 | run 105 = 18 | run 106 = 18 | run 107 = 18 | run 108 = 18 | run 109 = 19 | run 110 = 19 | run 111 = 19 | run 112 = 19 | run 113 = 19 | run 114 = 19 | run 115 = 20 | run 116 = 20 | run 117 = 20 | run 118 = 20 | run 119 = 20 | run 120 = 20 | run 121 = 21 | run 122 = 21 | run 123 = 21 | run 124 = 21 | run 125 = 21 | run 126 = 21 | run 127 = 22 | run 128 = 22 | run 129 = 22 | run 130 = 22 | run 131 = 22 | run 132 = 22 | run 133 = 23 | run 134 = 23 | run 135 = 23 | run 136 = 23 | run 137 = 23 | run 138 = 23 | run 139 = 24 | run 140 = 24 | run 141 = 24 | run 142 = 24 | run 143 = 24 | run 144 = 24 | run 145 = 1 | run 146 = 1 | run 147 = 1 | run 148 = 1 | run 149 = 1 | run 150 = 1 | run 151 = 2 | run 152 = 2 | run 153 = 2 | run 154 = 2 | run 155 = 2 | run 156 = 2 | run 157 = 3 | run 158 = 3 | run 159 = 3 | run 160 = 3 | run 161 = 3 | run 162 = 3 | run 163 = 4 | run 164 = 4 | run 165 = 4 | run 166 = 4 | run 167 = 4 | run 168 = 4 | run 169 = 5 | run 170 = 5 | run 171 = 5 | run 172 = 5 | run 173 = 5 | run 174 = 5 | run 175 = 6 | run 176 = 6 | run 177 = 6 | run 178 = 6 | run 179 = 6 | run 180 = 6 | run 181 = 7 | run 182 = 7 | run 183 = 7 | run 184 = 7 | run 185 = 7 | run 186 = 7 | run 187 = 8 | run 188 = 8 | run 189 = 8 | run 190 = 8 | run 191 = 8 | run 192 = 8 | run 193 = 9 | run 194 = 9 | run 195 = 9 | run 196 = 9 | run 197 = 9 | run 198 = 9 | run 199 = 10 | run 200 = 10 | run 201 = 10 | run 202 = 10 | run 203 = 10 | run 204 = 10 | run 205 = 11 | run 206 = 11 | run 207 = 11 | run 208 = 11 | run 209 = 11 | run 210 = 11 | run 211 = 12 | run 212 = 12 | run 213 = 12 | run 214 = 12 | run 215 = 12 | run 216 = 12 | run 217 = 13 | run 218 = 13 | run 219 = 13 | run 220 = 13 | run 221 = 13 | run 222 = 13 | run 223 = 14 | run 224 = 14 | run 225 = 14 | run 226 = 14 | run 227 = 14 | run 228 = 14 | run 229 = 15 | run 230 = 15 | run 231 = 15 | run 232 = 15 | run 233 = 15 | run 234 = 15 | run 235 = 16 | run 236 = 16 | run 237 = 16 | run 238 = 16 | run 239 = 16 | run 240 = 16 | run 241 = 17 | run 242 = 17 | run 243 = 17 | run 244 = 17 | run 245 = 17 | run 246 = 17 | run 247 = 18 | run 248 = 18 | run 249 = 18 | run 250 = 18 | run 251 = 18 | run 252 = 18 | run 253 = 19 | run 254 = 19 | run 255 = 19 | run 256 = 19 | run 257 = 19 | run 258 = 19 | run 259 = 20 | run 260 = 20 | run 261 = 20 | run 262 = 20 | run 263 = 20 | run 264 = 20 | run 265 = 21 | run 266 = 21 | run 267 = 21 | run 268 = 21 | run 269 = 21 | run 270 = 21 | run 271 = 22 | run 272 = 22 | run 273 = 22 | run 274 = 22 | run 275 = 22 | run 276 = 22 | run 277 = 23 | run 278 = 23 | run 279 = 23 | run 280 = 23 | run 281 = 23 | run 282 = 23 | run 283 = 24 | run 284 = 24 | run 285 = 24 | run 286 = 24 | run 287 = 24 | run 288 = 24 | run 289 = 1 | run 290 = 1 | run 291 = 1 | run 292 = 1 | run 293 = 1 | run 294 = 1 | run 295 = 2 | run 296 = 2 | run 297 = 2 | run 298 = 2 | run 299 = 2 | run 300 = 2 | run 301 = 3 | run 302 = 3 | run 303 = 3 | run 304 = 3 | run 305 = 3 | run 306 = 3 | run 307 = 4 | run 308 = 4 | run 309 = 4 | run 310 = 4 | run 311 = 4 | run 312 = 4 | run 313 = 5 | run 314 = 5 | run 315 = 5 | run 316 = 5 | run 317 = 5 | run 318 = 5 | run 319 = 6 | run 320 = 6 | run 321 = 6 | run 322 = 6 | run 323 = 6 | run 324 = 6 | run 325 = 7 | run 326 = 7 | run 327 = 7 | run 328 = 7 | run 329 = 7 | run 330 = 7 | run 331 = 8 | run 332 = 8 | run 333 = 8 | run 334 = 8 | run 335 = 8 | run 336 = 8 | run 337 = 9 | run 338 = 9 | run 339 = 9 | run 340 = 9 | run 341 = 9 | run 342 = 9 | run 343 = 10 | run 344 = 10 | run 345 = 10 | run 346 = 10 | run 347 = 10 | run 348 = 10 | run 349 = 11 | run 350 = 11 | run 351 = 11 | run 352 = 11 | run 353 = 11 | run 354 = 11 | run 355 = 12 | run 356 = 12 | run 357 = 12 | run 358 = 12 | run 359 = 12 | run 360 = 12 | run 361 = 13 | run 362 = 13 | run 363 = 13 | run 364 = 13 | run 365 = 13 | run 366 = 13 | run 367 = 14 | run 368 = 14 | run 369 = 14 | run 370 = 14 | run 371 = 14 | run 372 = 14 | run 373 = 15 | run 374 = 15 | run 375 = 15 | run 376 = 15 | run 377 = 15 | run 378 = 15 | run 379 = 16 | run 380 = 16 | run 381 = 16 | run 382 = 16 | run 383 = 16 | run 384 = 16 | run 385 = 17 | run 386 = 17 | run 387 = 17 | run 388 = 17 | run 389 = 17 | run 390 = 17 | run 391 = 18 | run 392 = 18 | run 393 = 18 | run 394 = 18 | run 395 = 18 | run 396 = 18 | run 397 = 19 | run 398 = 19 | run 399 = 19 | run 400 = 19 | run 401 = 19 | run 402 = 19 | run 403 = 20 | run 404 = 20 | run 405 = 20 | run 406 = 20 | run 407 = 20 | run 408 = 20 | run 409 = 21 | run 410 = 21 | run 411 = 21 | run 412 = 21 | run 413 = 21 | run 414 = 21 | run 415 = 22 | run 416 = 22 | run 417 = 22 | run 418 = 22 | run 419 = 22 | run 420 = 22 | run 421 = 23 | run 422 = 23 | run 423 = 23 | run 424 = 23 | run 425 = 23 | run 426 = 23 | run 427 = 24 | run 428 = 24 | run 429 = 24 | run 430 = 24 | run 431 = 24 | run 432 = 24 | run 433 = 1 | run 434 = 1 | run 435 = 1 | run 436 = 1 | run 437 = 1 | run 438 = 1 | run 439 = 2 | run 440 = 2 | run 441 = 2 | run 442 = 2 | run 443 = 2 | run 444 = 2 | run 445 = 3 | run 446 = 3 | run 447 = 3 | run 448 = 3 | run 449 = 3 | run 450 = 3 | run 451 = 4 | run 452 = 4 | run 453 = 4 | run 454 = 4 | run 455 = 4 | run 456 = 4 | run 457 = 5 | run 458 = 5 | run 459 = 5 | run 460 = 5 | run 461 = 5 | run 462 = 5 | run 463 = 6 | run 464 = 6 | run 465 = 6 | run 466 = 6 | run 467 = 6 | run 468 = 6 | run 469 = 7 | run 470 = 7 | run 471 = 7 | run 472 = 7 | run 473 = 7 | run 474 = 7 | run 475 = 8 | run 476 = 8 | run 477 = 8 | run 478 = 8 | run 479 = 8 | run 480 = 8 | run 481 = 9 | run 482 = 9 | run 483 = 9 | run 484 = 9 | run 485 = 9 | run 486 = 9 | run 487 = 10 | run 488 = 10 | run 489 = 10 | run 490 = 10 | run 491 = 10 | run 492 = 10 | run 493 = 11 | run 494 = 11 | run 495 = 11 | run 496 = 11 | run 497 = 11 | run 498 = 11 | run 499 = 12 | run 500 = 12 | run 501 = 12 | run 502 = 12 | run 503 = 12 | run 504 = 12 | run 505 = 13 | run 506 = 13 | run 507 = 13 | run 508 = 13 | run 509 = 13 | run 510 = 13 | run 511 = 14 | run 512 = 14 | run 513 = 14 | run 514 = 14 | run 515 = 14 | run 516 = 14 | run 517 = 15 | run 518 = 15 | run 519 = 15 | run 520 = 15 | run 521 = 15 | run 522 = 15 | run 523 = 16 | run 524 = 16 | run 525 = 16 | run 526 = 16 | run 527 = 16 | run 528 = 16 | run 529 = 17 | run 530 = 17 | run 531 = 17 | run 532 = 17 | run 533 = 17 | run 534 = 17 | run 535 = 18 | run 536 = 18 | run 537 = 18 | run 538 = 18 | run 539 = 18 | run 540 = 18 | run 541 = 19 | run 542 = 19 | run 543 = 19 | run 544 = 19 | run 545 = 19 | run 546 = 19 | run 547 = 20 | run 548 = 20 | run 549 = 20 | run 550 = 20 | run 551 = 20 | run 552 = 20 | run 553 = 21 | run 554 = 21 | run 555 = 21 | run 556 = 21 | run 557 = 21 | run 558 = 21 | run 559 = 22 | run 560 = 22 | run 561 = 22 | run 562 = 22 | run 563 = 22 | run 564 = 22 | run 565 = 23 | run 566 = 23 | run 567 = 23 | run 568 = 23 | run 569 = 23 | run 570 = 23 | run 571 = 24 | run 572 = 24 | run 573 = 24 | run 574 = 24 | run 575 = 24 | run 576 = 24 | run 577 = 1 | run 578 = 1 | run 579 = 1 | run 580 = 1 | run 581 = 1 | run 582 = 1 | run 583 = 2 | run 584 = 2 | run 585 = 2 | run 586 = 2 | run 587 = 2 | run 588 = 2 | run 589 = 3 | run 590 = 3 | run 591 = 3 | run 592 = 3 | run 593 = 3 | run 594 = 3 | run 595 = 4 | run 596 = 4 | run 597 = 4 | run 598 = 4 | run 599 = 4 | run 600 = 4 | run 601 = 5 | run 602 = 5 | run 603 = 5 | run 604 = 5 | run 605 = 5 | run 606 = 5 | run 607 = 6 | run 608 = 6 | run 609 = 6 | run 610 = 6 | run 611 = 6 | run 612 = 6 | run 613 = 7 | run 614 = 7 | run 615 = 7 | run 616 = 7 | run 617 = 7 | run 618 = 7 | run 619 = 8 | run 620 = 8 | run 621 = 8 | run 622 = 8 | run 623 = 8 | run 624 = 8 | run 625 = 9 | run 626 = 9 | run 627 = 9 | run 628 = 9 | run 629 = 9 | run 630 = 9 | run 631 = 10 | run 632 = 10 | run 633 = 10 | run 634 = 10 | run 635 = 10 | run 636 = 10 | run 637 = 11 | run 638 = 11 | run 639 = 11 | run 640 = 11 | run 641 = 11 | run 642 = 11 | run 643 = 12 | run 644 = 12 | run 645 = 12 | run 646 = 12 | run 647 = 12 | run 648 = 12 | run 649 = 13 | run 650 = 13 | run 651 = 13 | run 652 = 13 | run 653 = 13 | run 654 = 13 | run 655 = 14 | run 656 = 14 | run 657 = 14 | run 658 = 14 | run 659 = 14 | run 660 = 14 | run 661 = 15 | run 662 = 15 | run 663 = 15 | run 664 = 15 | run 665 = 15 | run 666 = 15 | run 667 = 16 | run 668 = 16 | run 669 = 16 | run 670 = 16 | run 671 = 16 | run 672 = 16 | run 673 = 17 | run 674 = 17 | run 675 = 17 | run 676 = 17 | run 677 = 17 | run 678 = 17 | run 679 = 18 | run 680 = 18 | run 681 = 18 | run 682 = 18 | run 683 = 18 | run 684 = 18 | run 685 = 19 | run 686 = 19 | run 687 = 19 | run 688 = 19 | run 689 = 19 | run 690 = 19 | run 691 = 20 | run 692 = 20 | run 693 = 20 | run 694 = 20 | run 695 = 20 | run 696 = 20 | run 697 = 21 | run 698 = 21 | run 699 = 21 | run 700 = 21 | run 701 = 21 | run 702 = 21 | run 703 = 22 | run 704 = 22 | run 705 = 22 | run 706 = 22 | run 707 = 22 | run 708 = 22 | run 709 = 23 | run 710 = 23 | run 711 = 23 | run 712 = 23 | run 713 = 23 | run 714 = 23 | run 715 = 24 | run 716 = 24 | run 717 = 24 | run 718 = 24 | run 719 = 24 | run 720 = 24 | run 721 = 1 | run 722 = 1 | run 723 = 1 | run 724 = 1 | run 725 = 1 | run 726 = 1 | run 727 = 2 | run 728 = 2 | run 729 = 2 | run 730 = 2 | run 731 = 2 | run 732 = 2 | run 733 = 3 | run 734 = 3 | run 735 = 3 | run 736 = 3 | run 737 = 3 | run 738 = 3 | run 739 = 4 | run 740 = 4 | run 741 = 4 | run 742 = 4 | run 743 = 4 | run 744 = 4 | run 745 = 5 | run 746 = 5 | run 747 = 5 | run 748 = 5 | run 749 = 5 | run 750 = 5 | run 751 = 6 | run 752 = 6 | run 753 = 6 | run 754 = 6 | run 755 = 6 | run 756 = 6 | run 757 = 7 | run 758 = 7 | run 759 = 7 | run 760 = 7 | run 761 = 7 | run 762 = 7 | run 763 = 8 | run 764 = 8 | run 765 = 8 | run 766 = 8 | run 767 = 8 | run 768 = 8 | run 769 = 9 | run 770 = 9 | run 771 = 9 | run 772 = 9 | run 773 = 9 | run 774 = 9 | run 775 = 10 | run 776 = 10 | run 777 = 10 | run 778 = 10 | run 779 = 10 | run 780 = 10 | run 781 = 11 | run 782 = 11 | run 783 = 11 | run 784 = 11 | run 785 = 11 | run 786 = 11 | run 787 = 12 | run 788 = 12 | run 789 = 12 | run 790 = 12 | run 791 = 12 | run 792 = 12 | run 793 = 13 | run 794 = 13 | run 795 = 13 | run 796 = 13 | run 797 = 13 | run 798 = 13 | run 799 = 14 | run 800 = 14 | run 801 = 14 | run 802 = 14 | run 803 = 14 | run 804 = 14 | run 805 = 15 | run 806 = 15 | run 807 = 15 | run 808 = 15 | run 809 = 15 | run 810 = 15 | run 811 = 16 | run 812 = 16 | run 813 = 16 | run 814 = 16 | run 815 = 16 | run 816 = 16 | run 817 = 17 | run 818 = 17 | run 819 = 17 | run 820 = 17 | run 821 = 17 | run 822 = 17 | run 823 = 18 | run 824 = 18 | run 825 = 18 | run 826 = 18 | run 827 = 18 | run 828 = 18 | run 829 = 19 | run 830 = 19 | run 831 = 19 | run 832 = 19 | run 833 = 19 | run 834 = 19 | run 835 = 20 | run 836 = 20 | run 837 = 20 | run 838 = 20 | run 839 = 20 | run 840 = 20 | run 841 = 21 | run 842 = 21 | run 843 = 21 | run 844 = 21 | run 845 = 21 | run 846 = 21 | run 847 = 22 | run 848 = 22 | run 849 = 22 | run 850 = 22 | run 851 = 22 | run 852 = 22 | run 853 = 23 | run 854 = 23 | run 855 = 23 | run 856 = 23 | run 857 = 23 | run 858 = 23 | run 859 = 24 | run 860 = 24 | run 861 = 24 | run 862 = 24 | run 863 = 24 | run 864 = 24 | run 865 = 1 | run 866 = 1 | run 867 = 1 | run 868 = 1 | run 869 = 1 | run 870 = 1 | run 871 = 2 | run 872 = 2 | run 873 = 2 | run 874 = 2 | run 875 = 2 | run 876 = 2 | run 877 = 3 | run 878 = 3 | run 879 = 3 | run 880 = 3 | run 881 = 3 | run 882 = 3 | run 883 = 4 | run 884 = 4 | run 885 = 4 | run 886 = 4 | run 887 = 4 | run 888 = 4 | run 889 = 5 | run 890 = 5 | run 891 = 5 | run 892 = 5 | run 893 = 5 | run 894 = 5 | run 895 = 6 | run 896 = 6 | run 897 = 6 | run 898 = 6 | run 899 = 6 | run 900 = 6 | run 901 = 7 | run 902 = 7 | run 903 = 7 | run 904 = 7 | run 905 = 7 | run 906 = 7 | run 907 = 8 | run 908 = 8 | run 909 = 8 | run 910 = 8 | run 911 = 8 | run 912 = 8 | run 913 = 9 | run 914 = 9 | run 915 = 9 | run 916 = 9 | run 917 = 9 | run 918 = 9 | run 919 = 10 | run 920 = 10 | run 921 = 10 | run 922 = 10 | run 923 = 10 | run 924 = 10 | run 925 = 11 | run 926 = 11 | run 927 = 11 | run 928 = 11 | run 929 = 11 | run 930 = 11 | run 931 = 12 | run 932 = 12 | run 933 = 12 | run 934 = 12 | run 935 = 12 | run 936 = 12 | run 937 = 13 | run 938 = 13 | run 939 = 13 | run 940 = 13 | run 941 = 13 | run 942 = 13 | run 943 = 14 | run 944 = 14 | run 945 = 14 | run 946 = 14 | run 947 = 14 | run 948 = 14 | run 949 = 15 | run 950 = 15 | run 951 = 15 | run 952 = 15 | run 953 = 15 | run 954 = 15 | run 955 = 16 | run 956 = 16 | run 957 = 16 | run 958 = 16 | run 959 = 16 | run 960 = 16 | run 961 = 17 | run 962 = 17 | run 963 = 17 | run 964 = 17 | run 965 = 17 | run 966 = 17 | run 967 = 18 | run 968 = 18 | run 969 = 18 | run 970 = 18 | run 971 = 18 | run 972 = 18 | run 973 = 19 | run 974 = 19 | run 975 = 19 | run 976 = 19 | run 977 = 19 | run 978 = 19 | run 979 = 20 | run 980 = 20 | run 981 = 20 | run 982 = 20 | run 983 = 20 | run 984 = 20 | run 985 = 21 | run 986 = 21 | run 987 = 21 | run 988 = 21 | run 989 = 21 | run 990 = 21 | run 991 = 22 | run 992 = 22 | run 993 = 22 | run 994 = 22 | run 995 = 22 | run 996 = 22 | run 997 = 23 | run 998 = 23 | run 999 = 23 | run 1000 = 23 | run 1001 = 23 | run 1002 = 23 | run 1003 = 24 | run 1004 = 24 | run 1005 = 24 | run 1006 = 24 | run 1007 = 24 | run 1008 = 24",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that pooled TMT labeled samples were separated via basic pH RPLC fractionation into final 24 concatenated fractions.",
+        "TRUTH_CHECK": "The mapping correctly assigns runs to 24 fractions for each sample, matching the described offline fractionation.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "run 1 = Pool | run 2 = Patient1 | run 3 = Patient1 | run 4 = Patient1 | run 5 = Patient1 | run 6 = Patient1 | run 7 = Pool | run 8 = Patient1 | run 9 = Patient1 | run 10 = Patient1 | run 11 = Patient1 | run 12 = Patient1 | run 13 = Pool | run 14 = Patient1 | run 15 = Patient1 | run 16 = Patient1 | run 17 = Patient1 | run 18 = Patient1 | run 19 = Pool | run 20 = Patient1 | run 21 = Patient1 | run 22 = Patient1 | run 23 = Patient1 | run 24 = Patient1 | run 25 = Pool | run 26 = Patient1 | run 27 = Patient1 | run 28 = Patient1 | run 29 = Patient1 | run 30 = Patient1 | run 31 = Pool | run 32 = Patient1 | run 33 = Patient1 | run 34 = Patient1 | run 35 = Patient1 | run 36 = Patient1 | run 37 = Pool | run 38 = Patient1 | run 39 = Patient1 | run 40 = Patient1 | run 41 = Patient1 | run 42 = Patient1 | run 43 = Pool | run 44 = Patient1 | run 45 = Patient1 | run 46 = Patient1 | run 47 = Patient1 | run 48 = Patient1 | run 49 = Pool | run 50 = Patient1 | run 51 = Patient1 | run 52 = Patient1 | run 53 = Patient1 | run 54 = Patient1 | run 55 = Pool | run 56 = Patient1 | run 57 = Patient1 | run 58 = Patient1 | run 59 = Patient1 | run 60 = Patient1 | run 61 = Pool | run 62 = Patient1 | run 63 = Patient1 | run 64 = Patient1 | run 65 = Patient1 | run 66 = Patient1 | run 67 = Pool | run 68 = Patient1 | run 69 = Patient1 | run 70 = Patient1 | run 71 = Patient1 | run 72 = Patient1 | run 73 = Pool | run 74 = Patient1 | run 75 = Patient1 | run 76 = Patient1 | run 77 = Patient1 | run 78 = Patient1 | run 79 = Pool | run 80 = Patient1 | run 81 = Patient1 | run 82 = Patient1 | run 83 = Patient1 | run 84 = Patient1 | run 85 = Pool | run 86 = Patient1 | run 87 = Patient1 | run 88 = Patient1 | run 89 = Patient1 | run 90 = Patient1 | run 91 = Pool | run 92 = Patient1 | run 93 = Patient1 | run 94 = Patient1 | run 95 = Patient1 | run 96 = Patient1 | run 97 = Pool | run 98 = Patient1 | run 99 = Patient1 | run 100 = Patient1 | run 101 = Patient1 | run 102 = Patient1 | run 103 = Pool | run 104 = Patient1 | run 105 = Patient1 | run 106 = Patient1 | run 107 = Patient1 | run 108 = Patient1 | run 109 = Pool | run 110 = Patient1 | run 111 = Patient1 | run 112 = Patient1 | run 113 = Patient1 | run 114 = Patient1 | run 115 = Pool | run 116 = Patient1 | run 117 = Patient1 | run 118 = Patient1 | run 119 = Patient1 | run 120 = Patient1 | run 121 = Pool | run 122 = Patient1 | run 123 = Patient1 | run 124 = Patient1 | run 125 = Patient1 | run 126 = Patient1 | run 127 = Pool | run 128 = Patient1 | run 129 = Patient1 | run 130 = Patient1 | run 131 = Patient1 | run 132 = Patient1 | run 133 = Pool | run 134 = Patient1 | run 135 = Patient1 | run 136 = Patient1 | run 137 = Patient1 | run 138 = Patient1 | run 139 = Pool | run 140 = Patient1 | run 141 = Patient1 | run 142 = Patient1 | run 143 = Patient1 | run 144 = Patient1 | run 145 = Pool | run 146 = Patient2 | run 147 = Patient2 | run 148 = Patient2 | run 149 = Patient2 | run 150 = Patient2 | run 151 = Pool | run 152 = Patient2 | run 153 = Patient2 | run 154 = Patient2 | run 155 = Patient2 | run 156 = Patient2 | run 157 = Pool | run 158 = Patient2 | run 159 = Patient2 | run 160 = Patient2 | run 161 = Patient2 | run 162 = Patient2 | run 163 = Pool | run 164 = Patient2 | run 165 = Patient2 | run 166 = Patient2 | run 167 = Patient2 | run 168 = Patient2 | run 169 = Pool | run 170 = Patient2 | run 171 = Patient2 | run 172 = Patient2 | run 173 = Patient2 | run 174 = Patient2 | run 175 = Pool | run 176 = Patient2 | run 177 = Patient2 | run 178 = Patient2 | run 179 = Patient2 | run 180 = Patient2 | run 181 = Pool | run 182 = Patient2 | run 183 = Patient2 | run 184 = Patient2 | run 185 = Patient2 | run 186 = Patient2 | run 187 = Pool | run 188 = Patient2 | run 189 = Patient2 | run 190 = Patient2 | run 191 = Patient2 | run 192 = Patient2 | run 193 = Pool | run 194 = Patient2 | run 195 = Patient2 | run 196 = Patient2 | run 197 = Patient2 | run 198 = Patient2 | run 199 = Pool | run 200 = Patient2 | run 201 = Patient2 | run 202 = Patient2 | run 203 = Patient2 | run 204 = Patient2 | run 205 = Pool | run 206 = Patient2 | run 207 = Patient2 | run 208 = Patient2 | run 209 = Patient2 | run 210 = Patient2 | run 211 = Pool | run 212 = Patient2 | run 213 = Patient2 | run 214 = Patient2 | run 215 = Patient2 | run 216 = Patient2 | run 217 = Pool | run 218 = Patient2 | run 219 = Patient2 | run 220 = Patient2 | run 221 = Patient2 | run 222 = Patient2 | run 223 = Pool | run 224 = Patient2 | run 225 = Patient2 | run 226 = Patient2 | run 227 = Patient2 | run 228 = Patient2 | run 229 = Pool | run 230 = Patient2 | run 231 = Patient2 | run 232 = Patient2 | run 233 = Patient2 | run 234 = Patient2 | run 235 = Pool | run 236 = Patient2 | run 237 = Patient2 | run 238 = Patient2 | run 239 = Patient2 | run 240 = Patient2 | run 241 = Pool | run 242 = Patient2 | run 243 = Patient2 | run 244 = Patient2 | run 245 = Patient2 | run 246 = Patient2 | run 247 = Pool | run 248 = Patient2 | run 249 = Patient2 | run 250 = Patient2 | run 251 = Patient2 | run 252 = Patient2 | run 253 = Pool | run 254 = Patient2 | run 255 = Patient2 | run 256 = Patient2 | run 257 = Patient2 | run 258 = Patient2 | run 259 = Pool | run 260 = Patient2 | run 261 = Patient2 | run 262 = Patient2 | run 263 = Patient2 | run 264 = Patient2 | run 265 = Pool | run 266 = Patient2 | run 267 = Patient2 | run 268 = Patient2 | run 269 = Patient2 | run 270 = Patient2 | run 271 = Pool | run 272 = Patient2 | run 273 = Patient2 | run 274 = Patient2 | run 275 = Patient2 | run 276 = Patient2 | run 277 = Pool | run 278 = Patient2 | run 279 = Patient2 | run 280 = Patient2 | run 281 = Patient2 | run 282 = Patient2 | run 283 = Pool | run 284 = Patient2 | run 285 = Patient2 | run 286 = Patient2 | run 287 = Patient2 | run 288 = Patient2 | run 289 = Pool | run 290 = Patient2 | run 291 = Patient2 | run 292 = Patient7 | run 293 = Patient6 | run 294 = Patient6 | run 295 = Pool | run 296 = Patient2 | run 297 = Patient2 | run 298 = Patient7 | run 299 = Patient6 | run 300 = Patient6 | run 301 = Pool | run 302 = Patient2 | run 303 = Patient2 | run 304 = Patient7 | run 305 = Patient6 | run 306 = Patient6 | run 307 = Pool | run 308 = Patient2 | run 309 = Patient2 | run 310 = Patient7 | run 311 = Patient6 | run 312 = Patient6 | run 313 = Pool | run 314 = Patient2 | run 315 = Patient2 | run 316 = Patient7 | run 317 = Patient6 | run 318 = Patient6 | run 319 = Pool | run 320 = Patient2 | run 321 = Patient2 | run 322 = Patient7 | run 323 = Patient6 | run 324 = Patient6 | run 325 = Pool | run 326 = Patient2 | run 327 = Patient2 | run 328 = Patient7 | run 329 = Patient6 | run 330 = Patient6 | run 331 = Pool | run 332 = Patient2 | run 333 = Patient2 | run 334 = Patient7 | run 335 = Patient6 | run 336 = Patient6 | run 337 = Pool | run 338 = Patient2 | run 339 = Patient2 | run 340 = Patient7 | run 341 = Patient6 | run 342 = Patient6 | run 343 = Pool | run 344 = Patient2 | run 345 = Patient2 | run 346 = Patient7 | run 347 = Patient6 | run 348 = Patient6 | run 349 = Pool | run 350 = Patient2 | run 351 = Patient2 | run 352 = Patient7 | run 353 = Patient6 | run 354 = Patient6 | run 355 = Pool | run 356 = Patient2 | run 357 = Patient2 | run 358 = Patient7 | run 359 = Patient6 | run 360 = Patient6 | run 361 = Pool | run 362 = Patient2 | run 363 = Patient2 | run 364 = Patient7 | run 365 = Patient6 | run 366 = Patient6 | run 367 = Pool | run 368 = Patient2 | run 369 = Patient2 | run 370 = Patient7 | run 371 = Patient6 | run 372 = Patient6 | run 373 = Pool | run 374 = Patient2 | run 375 = Patient2 | run 376 = Patient7 | run 377 = Patient6 | run 378 = Patient6 | run 379 = Pool | run 380 = Patient2 | run 381 = Patient2 | run 382 = Patient7 | run 383 = Patient6 | run 384 = Patient6 | run 385 = Pool | run 386 = Patient2 | run 387 = Patient2 | run 388 = Patient7 | run 389 = Patient6 | run 390 = Patient6 | run 391 = Pool | run 392 = Patient2 | run 393 = Patient2 | run 394 = Patient7 | run 395 = Patient6 | run 396 = Patient6 | run 397 = Pool | run 398 = Patient2 | run 399 = Patient2 | run 400 = Patient7 | run 401 = Patient6 | run 402 = Patient6 | run 403 = Pool | run 404 = Patient2 | run 405 = Patient2 | run 406 = Patient7 | run 407 = Patient6 | run 408 = Patient6 | run 409 = Pool | run 410 = Patient2 | run 411 = Patient2 | run 412 = Patient7 | run 413 = Patient6 | run 414 = Patient6 | run 415 = Pool | run 416 = Patient2 | run 417 = Patient2 | run 418 = Patient7 | run 419 = Patient6 | run 420 = Patient6 | run 421 = Pool | run 422 = Patient2 | run 423 = Patient2 | run 424 = Patient7 | run 425 = Patient6 | run 426 = Patient6 | run 427 = Pool | run 428 = Patient2 | run 429 = Patient2 | run 430 = Patient7 | run 431 = Patient6 | run 432 = Patient6 | run 433 = Pool | run 434 = Patient4 | run 435 = Patient4 | run 436 = Patient4 | run 437 = Patient4 | run 438 = Patient4 | run 439 = Pool | run 440 = Patient4 | run 441 = Patient4 | run 442 = Patient4 | run 443 = Patient4 | run 444 = Patient4 | run 445 = Pool | run 446 = Patient4 | run 447 = Patient4 | run 448 = Patient4 | run 449 = Patient4 | run 450 = Patient4 | run 451 = Pool | run 452 = Patient4 | run 453 = Patient4 | run 454 = Patient4 | run 455 = Patient4 | run 456 = Patient4 | run 457 = Pool | run 458 = Patient4 | run 459 = Patient4 | run 460 = Patient4 | run 461 = Patient4 | run 462 = Patient4 | run 463 = Pool | run 464 = Patient4 | run 465 = Patient4 | run 466 = Patient4 | run 467 = Patient4 | run 468 = Patient4 | run 469 = Pool | run 470 = Patient4 | run 471 = Patient4 | run 472 = Patient4 | run 473 = Patient4 | run 474 = Patient4 | run 475 = Pool | run 476 = Patient4 | run 477 = Patient4 | run 478 = Patient4 | run 479 = Patient4 | run 480 = Patient4 | run 481 = Pool | run 482 = Patient4 | run 483 = Patient4 | run 484 = Patient4 | run 485 = Patient4 | run 486 = Patient4 | run 487 = Pool | run 488 = Patient4 | run 489 = Patient4 | run 490 = Patient4 | run 491 = Patient4 | run 492 = Patient4 | run 493 = Pool | run 494 = Patient4 | run 495 = Patient4 | run 496 = Patient4 | run 497 = Patient4 | run 498 = Patient4 | run 499 = Pool | run 500 = Patient4 | run 501 = Patient4 | run 502 = Patient4 | run 503 = Patient4 | run 504 = Patient4 | run 505 = Pool | run 506 = Patient4 | run 507 = Patient4 | run 508 = Patient4 | run 509 = Patient4 | run 510 = Patient4 | run 511 = Pool | run 512 = Patient4 | run 513 = Patient4 | run 514 = Patient4 | run 515 = Patient4 | run 516 = Patient4 | run 517 = Pool | run 518 = Patient4 | run 519 = Patient4 | run 520 = Patient4 | run 521 = Patient4 | run 522 = Patient4 | run 523 = Pool | run 524 = Patient4 | run 525 = Patient4 | run 526 = Patient4 | run 527 = Patient4 | run 528 = Patient4 | run 529 = Pool | run 530 = Patient4 | run 531 = Patient4 | run 532 = Patient4 | run 533 = Patient4 | run 534 = Patient4 | run 535 = Pool | run 536 = Patient4 | run 537 = Patient4 | run 538 = Patient4 | run 539 = Patient4 | run 540 = Patient4 | run 541 = Pool | run 542 = Patient4 | run 543 = Patient4 | run 544 = Patient4 | run 545 = Patient4 | run 546 = Patient4 | run 547 = Pool | run 548 = Patient4 | run 549 = Patient4 | run 550 = Patient4 | run 551 = Patient4 | run 552 = Patient4 | run 553 = Pool | run 554 = Patient4 | run 555 = Patient4 | run 556 = Patient4 | run 557 = Patient4 | run 558 = Patient4 | run 559 = Pool | run 560 = Patient4 | run 561 = Patient4 | run 562 = Patient4 | run 563 = Patient4 | run 564 = Patient4 | run 565 = Pool | run 566 = Patient4 | run 567 = Patient4 | run 568 = Patient4 | run 569 = Patient4 | run 570 = Patient4 | run 571 = Pool | run 572 = Patient4 | run 573 = Patient4 | run 574 = Patient4 | run 575 = Patient4 | run 576 = Patient4 | run 577 = Pool | run 578 = Patient3 | run 579 = Patient1 | run 580 = Patient4 | run 581 = Patient4 | run 582 = Patient9 | run 583 = Pool | run 584 = Patient3 | run 585 = Patient1 | run 586 = Patient4 | run 587 = Patient4 | run 588 = Patient9 | run 589 = Pool | run 590 = Patient3 | run 591 = Patient1 | run 592 = Patient4 | run 593 = Patient4 | run 594 = Patient9 | run 595 = Pool | run 596 = Patient3 | run 597 = Patient1 | run 598 = Patient4 | run 599 = Patient4 | run 600 = Patient9 | run 601 = Pool | run 602 = Patient3 | run 603 = Patient1 | run 604 = Patient4 | run 605 = Patient4 | run 606 = Patient9 | run 607 = Pool | run 608 = Patient3 | run 609 = Patient1 | run 610 = Patient4 | run 611 = Patient4 | run 612 = Patient9 | run 613 = Pool | run 614 = Patient3 | run 615 = Patient1 | run 616 = Patient4 | run 617 = Patient4 | run 618 = Patient9 | run 619 = Pool | run 620 = Patient3 | run 621 = Patient1 | run 622 = Patient4 | run 623 = Patient4 | run 624 = Patient9 | run 625 = Pool | run 626 = Patient3 | run 627 = Patient1 | run 628 = Patient4 | run 629 = Patient4 | run 630 = Patient9 | run 631 = Pool | run 632 = Patient3 | run 633 = Patient1 | run 634 = Patient4 | run 635 = Patient4 | run 636 = Patient9 | run 637 = Pool | run 638 = Patient3 | run 639 = Patient1 | run 640 = Patient4 | run 641 = Patient4 | run 642 = Patient9 | run 643 = Pool | run 644 = Patient3 | run 645 = Patient1 | run 646 = Patient4 | run 647 = Patient4 | run 648 = Patient9 | run 649 = Pool | run 650 = Patient3 | run 651 = Patient1 | run 652 = Patient4 | run 653 = Patient4 | run 654 = Patient9 | run 655 = Pool | run 656 = Patient3 | run 657 = Patient1 | run 658 = Patient4 | run 659 = Patient4 | run 660 = Patient9 | run 661 = Pool | run 662 = Patient3 | run 663 = Patient1 | run 664 = Patient4 | run 665 = Patient4 | run 666 = Patient9 | run 667 = Pool | run 668 = Patient3 | run 669 = Patient1 | run 670 = Patient4 | run 671 = Patient4 | run 672 = Patient9 | run 673 = Pool | run 674 = Patient3 | run 675 = Patient1 | run 676 = Patient4 | run 677 = Patient4 | run 678 = Patient9 | run 679 = Pool | run 680 = Patient3 | run 681 = Patient1 | run 682 = Patient4 | run 683 = Patient4 | run 684 = Patient9 | run 685 = Pool | run 686 = Patient3 | run 687 = Patient1 | run 688 = Patient4 | run 689 = Patient4 | run 690 = Patient9 | run 691 = Pool | run 692 = Patient3 | run 693 = Patient1 | run 694 = Patient4 | run 695 = Patient4 | run 696 = Patient9 | run 697 = Pool | run 698 = Patient3 | run 699 = Patient1 | run 700 = Patient4 | run 701 = Patient4 | run 702 = Patient9 | run 703 = Pool | run 704 = Patient3 | run 705 = Patient1 | run 706 = Patient4 | run 707 = Patient4 | run 708 = Patient9 | run 709 = Pool | run 710 = Patient3 | run 711 = Patient1 | run 712 = Patient4 | run 713 = Patient4 | run 714 = Patient9 | run 715 = Pool | run 716 = Patient3 | run 717 = Patient1 | run 718 = Patient4 | run 719 = Patient4 | run 720 = Patient9 | run 721 = Pool | run 722 = Patient5 | run 723 = Patient5 | run 724 = Patient5 | run 725 = Patient5 | run 726 = Patient5 | run 727 = Pool | run 728 = Patient5 | run 729 = Patient5 | run 730 = Patient5 | run 731 = Patient5 | run 732 = Patient5 | run 733 = Pool | run 734 = Patient5 | run 735 = Patient5 | run 736 = Patient5 | run 737 = Patient5 | run 738 = Patient5 | run 739 = Pool | run 740 = Patient5 | run 741 = Patient5 | run 742 = Patient5 | run 743 = Patient5 | run 744 = Patient5 | run 745 = Pool | run 746 = Patient5 | run 747 = Patient5 | run 748 = Patient5 | run 749 = Patient5 | run 750 = Patient5 | run 751 = Pool | run 752 = Patient5 | run 753 = Patient5 | run 754 = Patient5 | run 755 = Patient5 | run 756 = Patient5 | run 757 = Pool | run 758 = Patient5 | run 759 = Patient5 | run 760 = Patient5 | run 761 = Patient5 | run 762 = Patient5 | run 763 = Pool | run 764 = Patient5 | run 765 = Patient5 | run 766 = Patient5 | run 767 = Patient5 | run 768 = Patient5 | run 769 = Pool | run 770 = Patient5 | run 771 = Patient5 | run 772 = Patient5 | run 773 = Patient5 | run 774 = Patient5 | run 775 = Pool | run 776 = Patient5 | run 777 = Patient5 | run 778 = Patient5 | run 779 = Patient5 | run 780 = Patient5 | run 781 = Pool | run 782 = Patient5 | run 783 = Patient5 | run 784 = Patient5 | run 785 = Patient5 | run 786 = Patient5 | run 787 = Pool | run 788 = Patient5 | run 789 = Patient5 | run 790 = Patient5 | run 791 = Patient5 | run 792 = Patient5 | run 793 = Pool | run 794 = Patient5 | run 795 = Patient5 | run 796 = Patient5 | run 797 = Patient5 | run 798 = Patient5 | run 799 = Pool | run 800 = Patient5 | run 801 = Patient5 | run 802 = Patient5 | run 803 = Patient5 | run 804 = Patient5 | run 805 = Pool | run 806 = Patient5 | run 807 = Patient5 | run 808 = Patient5 | run 809 = Patient5 | run 810 = Patient5 | run 811 = Pool | run 812 = Patient5 | run 813 = Patient5 | run 814 = Patient5 | run 815 = Patient5 | run 816 = Patient5 | run 817 = Pool | run 818 = Patient5 | run 819 = Patient5 | run 820 = Patient5 | run 821 = Patient5 | run 822 = Patient5 | run 823 = Pool | run 824 = Patient5 | run 825 = Patient5 | run 826 = Patient5 | run 827 = Patient5 | run 828 = Patient5 | run 829 = Pool | run 830 = Patient5 | run 831 = Patient5 | run 832 = Patient5 | run 833 = Patient5 | run 834 = Patient5 | run 835 = Pool | run 836 = Patient5 | run 837 = Patient5 | run 838 = Patient5 | run 839 = Patient5 | run 840 = Patient5 | run 841 = Pool | run 842 = Patient5 | run 843 = Patient5 | run 844 = Patient5 | run 845 = Patient5 | run 846 = Patient5 | run 847 = Pool | run 848 = Patient5 | run 849 = Patient5 | run 850 = Patient5 | run 851 = Patient5 | run 852 = Patient5 | run 853 = Pool | run 854 = Patient5 | run 855 = Patient5 | run 856 = Patient5 | run 857 = Patient5 | run 858 = Patient5 | run 859 = Pool | run 860 = Patient5 | run 861 = Patient5 | run 862 = Patient5 | run 863 = Patient5 | run 864 = Patient5 | run 865 = Pool | run 866 = Patient8 | run 867 = Patient8 | run 868 = Patient8 | run 869 = Patient8 | run 870 = Patient8 | run 871 = Pool | run 872 = Patient8 | run 873 = Patient8 | run 874 = Patient8 | run 875 = Patient8 | run 876 = Patient8 | run 877 = Pool | run 878 = Patient8 | run 879 = Patient8 | run 880 = Patient8 | run 881 = Patient8 | run 882 = Patient8 | run 883 = Pool | run 884 = Patient8 | run 885 = Patient8 | run 886 = Patient8 | run 887 = Patient8 | run 888 = Patient8 | run 889 = Pool | run 890 = Patient8 | run 891 = Patient8 | run 892 = Patient8 | run 893 = Patient8 | run 894 = Patient8 | run 895 = Pool | run 896 = Patient8 | run 897 = Patient8 | run 898 = Patient8 | run 899 = Patient8 | run 900 = Patient8 | run 901 = Pool | run 902 = Patient8 | run 903 = Patient8 | run 904 = Patient8 | run 905 = Patient8 | run 906 = Patient8 | run 907 = Pool | run 908 = Patient8 | run 909 = Patient8 | run 910 = Patient8 | run 911 = Patient8 | run 912 = Patient8 | run 913 = Pool | run 914 = Patient8 | run 915 = Patient8 | run 916 = Patient8 | run 917 = Patient8 | run 918 = Patient8 | run 919 = Pool | run 920 = Patient8 | run 921 = Patient8 | run 922 = Patient8 | run 923 = Patient8 | run 924 = Patient8 | run 925 = Pool | run 926 = Patient8 | run 927 = Patient8 | run 928 = Patient8 | run 929 = Patient8 | run 930 = Patient8 | run 931 = Pool | run 932 = Patient8 | run 933 = Patient8 | run 934 = Patient8 | run 935 = Patient8 | run 936 = Patient8 | run 937 = Pool | run 938 = Patient8 | run 939 = Patient8 | run 940 = Patient8 | run 941 = Patient8 | run 942 = Patient8 | run 943 = Pool | run 944 = Patient8 | run 945 = Patient8 | run 946 = Patient8 | run 947 = Patient8 | run 948 = Patient8 | run 949 = Pool | run 950 = Patient8 | run 951 = Patient8 | run 952 = Patient8 | run 953 = Patient8 | run 954 = Patient8 | run 955 = Pool | run 956 = Patient8 | run 957 = Patient8 | run 958 = Patient8 | run 959 = Patient8 | run 960 = Patient8 | run 961 = Pool | run 962 = Patient8 | run 963 = Patient8 | run 964 = Patient8 | run 965 = Patient8 | run 966 = Patient8 | run 967 = Pool | run 968 = Patient8 | run 969 = Patient8 | run 970 = Patient8 | run 971 = Patient8 | run 972 = Patient8 | run 973 = Pool | run 974 = Patient8 | run 975 = Patient8 | run 976 = Patient8 | run 977 = Patient8 | run 978 = Patient8 | run 979 = Pool | run 980 = Patient8 | run 981 = Patient8 | run 982 = Patient8 | run 983 = Patient8 | run 984 = Patient8 | run 985 = Pool | run 986 = Patient8 | run 987 = Patient8 | run 988 = Patient8 | run 989 = Patient8 | run 990 = Patient8 | run 991 = Pool | run 992 = Patient8 | run 993 = Patient8 | run 994 = Patient8 | run 995 = Patient8 | run 996 = Patient8 | run 997 = Pool | run 998 = Patient8 | run 999 = Patient8 | run 1000 = Patient8 | run 1001 = Patient8 | run 1002 = Patient8 | run 1003 = Pool | run 1004 = Patient8 | run 1005 = Patient8 | run 1006 = Patient8 | run 1007 = Patient8 | run 1008 = Patient8",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an identifier for the subject or donor, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions 16 patients and a reference pool used for normalization, but it does not provide a mapping of specific runs to specific patient IDs.",
+        "TRUTH_CHECK": "The mapping of runs to \"Patient1\", \"Patient2\", etc., is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[pool]",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 1 | run 10 = 1 | run 11 = 1 | run 12 = 1 | run 13 = 1 | run 14 = 1 | run 15 = 1 | run 16 = 1 | run 17 = 1 | run 18 = 1 | run 19 = 1 | run 20 = 1 | run 21 = 1 | run 22 = 1 | run 23 = 1 | run 24 = 1 | run 25 = 1 | run 26 = 1 | run 27 = 1 | run 28 = 1 | run 29 = 1 | run 30 = 1 | run 31 = 1 | run 32 = 1 | run 33 = 1 | run 34 = 1 | run 35 = 1 | run 36 = 1 | run 37 = 1 | run 38 = 1 | run 39 = 1 | run 40 = 1 | run 41 = 1 | run 42 = 1 | run 43 = 1 | run 44 = 1 | run 45 = 1 | run 46 = 1 | run 47 = 1 | run 48 = 1 | run 49 = 1 | run 50 = 1 | run 51 = 1 | run 52 = 1 | run 53 = 1 | run 54 = 1 | run 55 = 1 | run 56 = 1 | run 57 = 1 | run 58 = 1 | run 59 = 1 | run 60 = 1 | run 61 = 1 | run 62 = 1 | run 63 = 1 | run 64 = 1 | run 65 = 1 | run 66 = 1 | run 67 = 1 | run 68 = 1 | run 69 = 1 | run 70 = 1 | run 71 = 1 | run 72 = 1 | run 73 = 1 | run 74 = 1 | run 75 = 1 | run 76 = 1 | run 77 = 1 | run 78 = 1 | run 79 = 1 | run 80 = 1 | run 81 = 1 | run 82 = 1 | run 83 = 1 | run 84 = 1 | run 85 = 1 | run 86 = 1 | run 87 = 1 | run 88 = 1 | run 89 = 1 | run 90 = 1 | run 91 = 1 | run 92 = 1 | run 93 = 1 | run 94 = 1 | run 95 = 1 | run 96 = 1 | run 97 = 1 | run 98 = 1 | run 99 = 1 | run 100 = 1 | run 101 = 1 | run 102 = 1 | run 103 = 1 | run 104 = 1 | run 105 = 1 | run 106 = 1 | run 107 = 1 | run 108 = 1 | run 109 = 1 | run 110 = 1 | run 111 = 1 | run 112 = 1 | run 113 = 1 | run 114 = 1 | run 115 = 1 | run 116 = 1 | run 117 = 1 | run 118 = 1 | run 119 = 1 | run 120 = 1 | run 121 = 1 | run 122 = 1 | run 123 = 1 | run 124 = 1 | run 125 = 1 | run 126 = 1 | run 127 = 1 | run 128 = 1 | run 129 = 1 | run 130 = 1 | run 131 = 1 | run 132 = 1 | run 133 = 1 | run 134 = 1 | run 135 = 1 | run 136 = 1 | run 137 = 1 | run 138 = 1 | run 139 = 1 | run 140 = 1 | run 141 = 1 | run 142 = 1 | run 143 = 1 | run 144 = 1 | run 145 = 2 | run 146 = 2 | run 147 = 2 | run 148 = 2 | run 149 = 2 | run 150 = 2 | run 151 = 2 | run 152 = 2 | run 153 = 2 | run 154 = 2 | run 155 = 2 | run 156 = 2 | run 157 = 2 | run 158 = 2 | run 159 = 2 | run 160 = 2 | run 161 = 2 | run 162 = 2 | run 163 = 2 | run 164 = 2 | run 165 = 2 | run 166 = 2 | run 167 = 2 | run 168 = 2 | run 169 = 2 | run 170 = 2 | run 171 = 2 | run 172 = 2 | run 173 = 2 | run 174 = 2 | run 175 = 2 | run 176 = 2 | run 177 = 2 | run 178 = 2 | run 179 = 2 | run 180 = 2 | run 181 = 2 | run 182 = 2 | run 183 = 2 | run 184 = 2 | run 185 = 2 | run 186 = 2 | run 187 = 2 | run 188 = 2 | run 189 = 2 | run 190 = 2 | run 191 = 2 | run 192 = 2 | run 193 = 2 | run 194 = 2 | run 195 = 2 | run 196 = 2 | run 197 = 2 | run 198 = 2 | run 199 = 2 | run 200 = 2 | run 201 = 2 | run 202 = 2 | run 203 = 2 | run 204 = 2 | run 205 = 2 | run 206 = 2 | run 207 = 2 | run 208 = 2 | run 209 = 2 | run 210 = 2 | run 211 = 2 | run 212 = 2 | run 213 = 2 | run 214 = 2 | run 215 = 2 | run 216 = 2 | run 217 = 2 | run 218 = 2 | run 219 = 2 | run 220 = 2 | run 221 = 2 | run 222 = 2 | run 223 = 2 | run 224 = 2 | run 225 = 2 | run 226 = 2 | run 227 = 2 | run 228 = 2 | run 229 = 2 | run 230 = 2 | run 231 = 2 | run 232 = 2 | run 233 = 2 | run 234 = 2 | run 235 = 2 | run 236 = 2 | run 237 = 2 | run 238 = 2 | run 239 = 2 | run 240 = 2 | run 241 = 2 | run 242 = 2 | run 243 = 2 | run 244 = 2 | run 245 = 2 | run 246 = 2 | run 247 = 2 | run 248 = 2 | run 249 = 2 | run 250 = 2 | run 251 = 2 | run 252 = 2 | run 253 = 2 | run 254 = 2 | run 255 = 2 | run 256 = 2 | run 257 = 2 | run 258 = 2 | run 259 = 2 | run 260 = 2 | run 261 = 2 | run 262 = 2 | run 263 = 2 | run 264 = 2 | run 265 = 2 | run 266 = 2 | run 267 = 2 | run 268 = 2 | run 269 = 2 | run 270 = 2 | run 271 = 2 | run 272 = 2 | run 273 = 2 | run 274 = 2 | run 275 = 2 | run 276 = 2 | run 277 = 2 | run 278 = 2 | run 279 = 2 | run 280 = 2 | run 281 = 2 | run 282 = 2 | run 283 = 2 | run 284 = 2 | run 285 = 2 | run 286 = 2 | run 287 = 2 | run 288 = 2 | run 289 = 3 | run 290 = 3 | run 291 = 3 | run 292 = 3 | run 293 = 3 | run 294 = 3 | run 295 = 3 | run 296 = 3 | run 297 = 3 | run 298 = 3 | run 299 = 3 | run 300 = 3 | run 301 = 3 | run 302 = 3 | run 303 = 3 | run 304 = 3 | run 305 = 3 | run 306 = 3 | run 307 = 3 | run 308 = 3 | run 309 = 3 | run 310 = 3 | run 311 = 3 | run 312 = 3 | run 313 = 3 | run 314 = 3 | run 315 = 3 | run 316 = 3 | run 317 = 3 | run 318 = 3 | run 319 = 3 | run 320 = 3 | run 321 = 3 | run 322 = 3 | run 323 = 3 | run 324 = 3 | run 325 = 3 | run 326 = 3 | run 327 = 3 | run 328 = 3 | run 329 = 3 | run 330 = 3 | run 331 = 3 | run 332 = 3 | run 333 = 3 | run 334 = 3 | run 335 = 3 | run 336 = 3 | run 337 = 3 | run 338 = 3 | run 339 = 3 | run 340 = 3 | run 341 = 3 | run 342 = 3 | run 343 = 3 | run 344 = 3 | run 345 = 3 | run 346 = 3 | run 347 = 3 | run 348 = 3 | run 349 = 3 | run 350 = 3 | run 351 = 3 | run 352 = 3 | run 353 = 3 | run 354 = 3 | run 355 = 3 | run 356 = 3 | run 357 = 3 | run 358 = 3 | run 359 = 3 | run 360 = 3 | run 361 = 3 | run 362 = 3 | run 363 = 3 | run 364 = 3 | run 365 = 3 | run 366 = 3 | run 367 = 3 | run 368 = 3 | run 369 = 3 | run 370 = 3 | run 371 = 3 | run 372 = 3 | run 373 = 3 | run 374 = 3 | run 375 = 3 | run 376 = 3 | run 377 = 3 | run 378 = 3 | run 379 = 3 | run 380 = 3 | run 381 = 3 | run 382 = 3 | run 383 = 3 | run 384 = 3 | run 385 = 3 | run 386 = 3 | run 387 = 3 | run 388 = 3 | run 389 = 3 | run 390 = 3 | run 391 = 3 | run 392 = 3 | run 393 = 3 | run 394 = 3 | run 395 = 3 | run 396 = 3 | run 397 = 3 | run 398 = 3 | run 399 = 3 | run 400 = 3 | run 401 = 3 | run 402 = 3 | run 403 = 3 | run 404 = 3 | run 405 = 3 | run 406 = 3 | run 407 = 3 | run 408 = 3 | run 409 = 3 | run 410 = 3 | run 411 = 3 | run 412 = 3 | run 413 = 3 | run 414 = 3 | run 415 = 3 | run 416 = 3 | run 417 = 3 | run 418 = 3 | run 419 = 3 | run 420 = 3 | run 421 = 3 | run 422 = 3 | run 423 = 3 | run 424 = 3 | run 425 = 3 | run 426 = 3 | run 427 = 3 | run 428 = 3 | run 429 = 3 | run 430 = 3 | run 431 = 3 | run 432 = 3 | run 433 = 4 | run 434 = 4 | run 435 = 4 | run 436 = 4 | run 437 = 4 | run 438 = 4 | run 439 = 4 | run 440 = 4 | run 441 = 4 | run 442 = 4 | run 443 = 4 | run 444 = 4 | run 445 = 4 | run 446 = 4 | run 447 = 4 | run 448 = 4 | run 449 = 4 | run 450 = 4 | run 451 = 4 | run 452 = 4 | run 453 = 4 | run 454 = 4 | run 455 = 4 | run 456 = 4 | run 457 = 4 | run 458 = 4 | run 459 = 4 | run 460 = 4 | run 461 = 4 | run 462 = 4 | run 463 = 4 | run 464 = 4 | run 465 = 4 | run 466 = 4 | run 467 = 4 | run 468 = 4 | run 469 = 4 | run 470 = 4 | run 471 = 4 | run 472 = 4 | run 473 = 4 | run 474 = 4 | run 475 = 4 | run 476 = 4 | run 477 = 4 | run 478 = 4 | run 479 = 4 | run 480 = 4 | run 481 = 4 | run 482 = 4 | run 483 = 4 | run 484 = 4 | run 485 = 4 | run 486 = 4 | run 487 = 4 | run 488 = 4 | run 489 = 4 | run 490 = 4 | run 491 = 4 | run 492 = 4 | run 493 = 4 | run 494 = 4 | run 495 = 4 | run 496 = 4 | run 497 = 4 | run 498 = 4 | run 499 = 4 | run 500 = 4 | run 501 = 4 | run 502 = 4 | run 503 = 4 | run 504 = 4 | run 505 = 4 | run 506 = 4 | run 507 = 4 | run 508 = 4 | run 509 = 4 | run 510 = 4 | run 511 = 4 | run 512 = 4 | run 513 = 4 | run 514 = 4 | run 515 = 4 | run 516 = 4 | run 517 = 4 | run 518 = 4 | run 519 = 4 | run 520 = 4 | run 521 = 4 | run 522 = 4 | run 523 = 4 | run 524 = 4 | run 525 = 4 | run 526 = 4 | run 527 = 4 | run 528 = 4 | run 529 = 4 | run 530 = 4 | run 531 = 4 | run 532 = 4 | run 533 = 4 | run 534 = 4 | run 535 = 4 | run 536 = 4 | run 537 = 4 | run 538 = 4 | run 539 = 4 | run 540 = 4 | run 541 = 4 | run 542 = 4 | run 543 = 4 | run 544 = 4 | run 545 = 4 | run 546 = 4 | run 547 = 4 | run 548 = 4 | run 549 = 4 | run 550 = 4 | run 551 = 4 | run 552 = 4 | run 553 = 4 | run 554 = 4 | run 555 = 4 | run 556 = 4 | run 557 = 4 | run 558 = 4 | run 559 = 4 | run 560 = 4 | run 561 = 4 | run 562 = 4 | run 563 = 4 | run 564 = 4 | run 565 = 4 | run 566 = 4 | run 567 = 4 | run 568 = 4 | run 569 = 4 | run 570 = 4 | run 571 = 4 | run 572 = 4 | run 573 = 4 | run 574 = 4 | run 575 = 4 | run 576 = 4 | run 577 = 5 | run 578 = 5 | run 579 = 5 | run 580 = 5 | run 581 = 5 | run 582 = 5 | run 583 = 5 | run 584 = 5 | run 585 = 5 | run 586 = 5 | run 587 = 5 | run 588 = 5 | run 589 = 5 | run 590 = 5 | run 591 = 5 | run 592 = 5 | run 593 = 5 | run 594 = 5 | run 595 = 5 | run 596 = 5 | run 597 = 5 | run 598 = 5 | run 599 = 5 | run 600 = 5 | run 601 = 5 | run 602 = 5 | run 603 = 5 | run 604 = 5 | run 605 = 5 | run 606 = 5 | run 607 = 5 | run 608 = 5 | run 609 = 5 | run 610 = 5 | run 611 = 5 | run 612 = 5 | run 613 = 5 | run 614 = 5 | run 615 = 5 | run 616 = 5 | run 617 = 5 | run 618 = 5 | run 619 = 5 | run 620 = 5 | run 621 = 5 | run 622 = 5 | run 623 = 5 | run 624 = 5 | run 625 = 5 | run 626 = 5 | run 627 = 5 | run 628 = 5 | run 629 = 5 | run 630 = 5 | run 631 = 5 | run 632 = 5 | run 633 = 5 | run 634 = 5 | run 635 = 5 | run 636 = 5 | run 637 = 5 | run 638 = 5 | run 639 = 5 | run 640 = 5 | run 641 = 5 | run 642 = 5 | run 643 = 5 | run 644 = 5 | run 645 = 5 | run 646 = 5 | run 647 = 5 | run 648 = 5 | run 649 = 5 | run 650 = 5 | run 651 = 5 | run 652 = 5 | run 653 = 5 | run 654 = 5 | run 655 = 5 | run 656 = 5 | run 657 = 5 | run 658 = 5 | run 659 = 5 | run 660 = 5 | run 661 = 5 | run 662 = 5 | run 663 = 5 | run 664 = 5 | run 665 = 5 | run 666 = 5 | run 667 = 5 | run 668 = 5 | run 669 = 5 | run 670 = 5 | run 671 = 5 | run 672 = 5 | run 673 = 5 | run 674 = 5 | run 675 = 5 | run 676 = 5 | run 677 = 5 | run 678 = 5 | run 679 = 5 | run 680 = 5 | run 681 = 5 | run 682 = 5 | run 683 = 5 | run 684 = 5 | run 685 = 5 | run 686 = 5 | run 687 = 5 | run 688 = 5 | run 689 = 5 | run 690 = 5 | run 691 = 5 | run 692 = 5 | run 693 = 5 | run 694 = 5 | run 695 = 5 | run 696 = 5 | run 697 = 5 | run 698 = 5 | run 699 = 5 | run 700 = 5 | run 701 = 5 | run 702 = 5 | run 703 = 5 | run 704 = 5 | run 705 = 5 | run 706 = 5 | run 707 = 5 | run 708 = 5 | run 709 = 5 | run 710 = 5 | run 711 = 5 | run 712 = 5 | run 713 = 5 | run 714 = 5 | run 715 = 5 | run 716 = 5 | run 717 = 5 | run 718 = 5 | run 719 = 5 | run 720 = 5 | run 721 = 6 | run 722 = 6 | run 723 = 6 | run 724 = 6 | run 725 = 6 | run 726 = 6 | run 727 = 6 | run 728 = 6 | run 729 = 6 | run 730 = 6 | run 731 = 6 | run 732 = 6 | run 733 = 6 | run 734 = 6 | run 735 = 6 | run 736 = 6 | run 737 = 6 | run 738 = 6 | run 739 = 6 | run 740 = 6 | run 741 = 6 | run 742 = 6 | run 743 = 6 | run 744 = 6 | run 745 = 6 | run 746 = 6 | run 747 = 6 | run 748 = 6 | run 749 = 6 | run 750 = 6 | run 751 = 6 | run 752 = 6 | run 753 = 6 | run 754 = 6 | run 755 = 6 | run 756 = 6 | run 757 = 6 | run 758 = 6 | run 759 = 6 | run 760 = 6 | run 761 = 6 | run 762 = 6 | run 763 = 6 | run 764 = 6 | run 765 = 6 | run 766 = 6 | run 767 = 6 | run 768 = 6 | run 769 = 6 | run 770 = 6 | run 771 = 6 | run 772 = 6 | run 773 = 6 | run 774 = 6 | run 775 = 6 | run 776 = 6 | run 777 = 6 | run 778 = 6 | run 779 = 6 | run 780 = 6 | run 781 = 6 | run 782 = 6 | run 783 = 6 | run 784 = 6 | run 785 = 6 | run 786 = 6 | run 787 = 6 | run 788 = 6 | run 789 = 6 | run 790 = 6 | run 791 = 6 | run 792 = 6 | run 793 = 6 | run 794 = 6 | run 795 = 6 | run 796 = 6 | run 797 = 6 | run 798 = 6 | run 799 = 6 | run 800 = 6 | run 801 = 6 | run 802 = 6 | run 803 = 6 | run 804 = 6 | run 805 = 6 | run 806 = 6 | run 807 = 6 | run 808 = 6 | run 809 = 6 | run 810 = 6 | run 811 = 6 | run 812 = 6 | run 813 = 6 | run 814 = 6 | run 815 = 6 | run 816 = 6 | run 817 = 6 | run 818 = 6 | run 819 = 6 | run 820 = 6 | run 821 = 6 | run 822 = 6 | run 823 = 6 | run 824 = 6 | run 825 = 6 | run 826 = 6 | run 827 = 6 | run 828 = 6 | run 829 = 6 | run 830 = 6 | run 831 = 6 | run 832 = 6 | run 833 = 6 | run 834 = 6 | run 835 = 6 | run 836 = 6 | run 837 = 6 | run 838 = 6 | run 839 = 6 | run 840 = 6 | run 841 = 6 | run 842 = 6 | run 843 = 6 | run 844 = 6 | run 845 = 6 | run 846 = 6 | run 847 = 6 | run 848 = 6 | run 849 = 6 | run 850 = 6 | run 851 = 6 | run 852 = 6 | run 853 = 6 | run 854 = 6 | run 855 = 6 | run 856 = 6 | run 857 = 6 | run 858 = 6 | run 859 = 6 | run 860 = 6 | run 861 = 6 | run 862 = 6 | run 863 = 6 | run 864 = 6 | run 865 = 7 | run 866 = 7 | run 867 = 7 | run 868 = 7 | run 869 = 7 | run 870 = 7 | run 871 = 7 | run 872 = 7 | run 873 = 7 | run 874 = 7 | run 875 = 7 | run 876 = 7 | run 877 = 7 | run 878 = 7 | run 879 = 7 | run 880 = 7 | run 881 = 7 | run 882 = 7 | run 883 = 7 | run 884 = 7 | run 885 = 7 | run 886 = 7 | run 887 = 7 | run 888 = 7 | run 889 = 7 | run 890 = 7 | run 891 = 7 | run 892 = 7 | run 893 = 7 | run 894 = 7 | run 895 = 7 | run 896 = 7 | run 897 = 7 | run 898 = 7 | run 899 = 7 | run 900 = 7 | run 901 = 7 | run 902 = 7 | run 903 = 7 | run 904 = 7 | run 905 = 7 | run 906 = 7 | run 907 = 7 | run 908 = 7 | run 909 = 7 | run 910 = 7 | run 911 = 7 | run 912 = 7 | run 913 = 7 | run 914 = 7 | run 915 = 7 | run 916 = 7 | run 917 = 7 | run 918 = 7 | run 919 = 7 | run 920 = 7 | run 921 = 7 | run 922 = 7 | run 923 = 7 | run 924 = 7 | run 925 = 7 | run 926 = 7 | run 927 = 7 | run 928 = 7 | run 929 = 7 | run 930 = 7 | run 931 = 7 | run 932 = 7 | run 933 = 7 | run 934 = 7 | run 935 = 7 | run 936 = 7 | run 937 = 7 | run 938 = 7 | run 939 = 7 | run 940 = 7 | run 941 = 7 | run 942 = 7 | run 943 = 7 | run 944 = 7 | run 945 = 7 | run 946 = 7 | run 947 = 7 | run 948 = 7 | run 949 = 7 | run 950 = 7 | run 951 = 7 | run 952 = 7 | run 953 = 7 | run 954 = 7 | run 955 = 7 | run 956 = 7 | run 957 = 7 | run 958 = 7 | run 959 = 7 | run 960 = 7 | run 961 = 7 | run 962 = 7 | run 963 = 7 | run 964 = 7 | run 965 = 7 | run 966 = 7 | run 967 = 7 | run 968 = 7 | run 969 = 7 | run 970 = 7 | run 971 = 7 | run 972 = 7 | run 973 = 7 | run 974 = 7 | run 975 = 7 | run 976 = 7 | run 977 = 7 | run 978 = 7 | run 979 = 7 | run 980 = 7 | run 981 = 7 | run 982 = 7 | run 983 = 7 | run 984 = 7 | run 985 = 7 | run 986 = 7 | run 987 = 7 | run 988 = 7 | run 989 = 7 | run 990 = 7 | run 991 = 7 | run 992 = 7 | run 993 = 7 | run 994 = 7 | run 995 = 7 | run 996 = 7 | run 997 = 7 | run 998 = 7 | run 999 = 7 | run 1000 = 7 | run 1001 = 7 | run 1002 = 7 | run 1003 = 7 | run 1004 = 7 | run 1005 = 7 | run 1006 = 7 | run 1007 = 7 | run 1008 = 7",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the factor_value field, which describes the levels of the studied variable.",
+        "SOURCE_CHECK": "The paper describes a TMT-6plex experiment with pooled samples and basic pH RPLC fractionation into 24 concatenated fractions.",
+        "TRUTH_CHECK": "The mapping assigns runs to \"pools\" (1-7). However, the paper describes a TMT-6plex design. While the exact number of pools is not explicitly stated in the text (it refers to Supplemental Table 1), the mapping of runs to pools is a standard way to represent multiplexed experiments. The runs are grouped by source (Sample 1, Sample 2, etc.), and each source is assigned a unique pool index.",
+        "COMPLETENESS_CHECK": "The mapping is complete as every run is assigned a value."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pool]",
+      "extracted_value": "1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is a generic characteristics column intended to capture pooling information.",
+        "SOURCE_CHECK": "The paper states that \"pooled TMT labeled samples were then separated via basic pH RPLC fractionation into final 24 concatenated fractions.\"",
+        "TRUTH_CHECK": "The use of TMT-6plex reagents implies the creation of multiple pools (multiplexes) to accommodate the samples. The value \"1\" correctly identifies the first pool/multiplex for the runs associated with it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pool]",
+      "extracted_value": "2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a numeric index for a pool, which is appropriate for a column named characteristics[pool].",
+        "SOURCE_CHECK": "The paper states that TMT-6plex reagents were used and that pooled TMT labeled samples were separated into 24 fractions.",
+        "TRUTH_CHECK": "The use of TMT-6plex implies the creation of multiple pools (multiplexes) to cover the 16 patients and their serial samples. The value \"2\" correctly identifies one of these pools.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pool]",
+      "extracted_value": "3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a numeric index for a pool, which is appropriate for a characteristics column describing sample pooling.",
+        "SOURCE_CHECK": "The paper states that TMT-6plex reagents were used and that \"pooled TMT labeled samples were then separated via basic pH RPLC fractionation into final 24 concatenated fractions.\"",
+        "TRUTH_CHECK": "The runs with this value are associated with \"Sample 3\", and the column \"characteristics[pool]\" correctly identifies which TMT multiplex/pool the run belongs to.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pool]",
+      "extracted_value": "4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is a custom characteristics column for pooling, which is appropriate for a TMT study.",
+        "SOURCE_CHECK": "The paper states that TMT-6plex reagents were used and that pooled TMT labeled samples were separated into 24 fractions.",
+        "TRUTH_CHECK": "The value \"4\" refers to the pool index. Given the TMT-6plex design and the number of samples (45), multiple pools (multiplexes) were required. The example runs are all associated with \"Sample 4\", and the value \"4\" identifies the specific TMT pool/multiplex that sample was part of.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pool]",
+      "extracted_value": "5",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a numeric index for a pool, which is appropriate for a column named \"characteristics[pool]\".",
+        "SOURCE_CHECK": "The paper states that TMT-6plex reagents were used and that pooled TMT labeled samples were separated into 24 concatenated fractions.",
+        "TRUTH_CHECK": "The use of TMT-6plex implies the samples were divided into multiple multiplexed pools (plexes) before fractionation and LC-MS/MS. The value \"5\" represents one of these pools.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pool]",
+      "extracted_value": "6",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number used in a column named \"characteristics[pool]\", which is intended to identify the TMT pool.",
+        "SOURCE_CHECK": "The paper states that TMT-6plex reagents were used, implying the samples were divided into pools of 6.",
+        "TRUTH_CHECK": "The runs associated with this value are linked to \"Sample 6\", and the column values (1-7) correspond to the TMT multiplexes (pools) used to process the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pool]",
+      "extracted_value": "7",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a numeric index for a pool, which is appropriate for a column named characteristics[pool].",
+        "SOURCE_CHECK": "The paper states that TMT-6plex reagents were used and that pooled TMT labeled samples were separated into 24 fractions.",
+        "TRUTH_CHECK": "The runs are associated with \"Sample 7\" (likely the 7th TMT multiplex/pool), and the value \"7\" correctly identifies this group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Depletion",
+      "extracted_value": "depletion",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"depletion\" refers to a sample preparation step described in the paper.",
+        "SOURCE_CHECK": "The methods state \"followed by depletion of the Top 12 abundant serum proteins using spin columns (Pierce)\".",
+        "TRUTH_CHECK": "The depletion step was performed on all CSF samples analyzed by mass spectrometry.",
+        "COMPLETENESS_CHECK": "The value is a simple descriptor of the process performed."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Separation",
+      "extracted_value": "AC=PRIDE:0000563;NT=Reversed-phase chromatography",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a separation technique, which is appropriate for a column named \"Separation\".",
+        "SOURCE_CHECK": "The paper states that samples were separated via \"basic pH RPLC fractionation\" and \"LC-MS/MS\", where RPLC stands for Reversed-Phase Liquid Chromatography.",
+        "TRUTH_CHECK": "The value correctly describes the separation method used for the proteomics runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

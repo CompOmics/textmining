@@ -1,0 +1,122 @@
+{
+  "accession" : "PXD004613",
+  "title" : "Repo-Man/PP1 regulates heterochromatin formation in interphase",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "GST:Repo-Man(C-terminus) or GST:alone were expressed as in Vagnarelli et al. 2011. Before elution, beads were first incubated with nucleosomes extracted from HeLa. HeLa cells were lysed and nucleosomes were digested with MNase (20min, 37C). Nucleosomes were firstly incubated with GST alone for 2hrs. This cleared lysate was then incubated with GST:Repo-Man and GST alone. Beads were then eluted and mix with 3x Laemli Buffer. Histone bands were sent to Mass Spec.",
+  "sampleProcessingProtocol" : "Excised gel bands were de-stained and proteins were digested with trypsin, as previously described (Shevchenko et al, 1996). In brief, proteins were reduced in 10 mM dithiothreitol (Sigma Aldrich, UK) for 30 min at 37°C and alkylated in 55 mM iodoacetamide (Sigma Aldrich, UK) for 20 min at ambient temperature in the dark. They were then digested overnight at 37°C with 12.5 ng μL-1 trypsin (Pierce, UK).  Following digestion, samples were diluted with equal volume of 0.1% TFA and spun onto StageTips as describe by Rappsilber et al (2003). Peptides were eluted in 20 μL of 80% acetonitrile in 0.1% TFA and concentrated down to 4 μL by vacuum centrifugation (Concentrator 5301, Eppendorf, UK). The peptide sample was then prepared for LC-MS/MS analysis by diluting it to 5 μL by 0.1% TFA. MS-analyses were performed either on an LTQ-Orbitrap mass spectrometer (Thermo Fisher Scientific, UK) or on a Q Exactive mass spectrometer (Thermo Fisher Scientific, UK), both coupled on-line, to Ultimate 3000 RSLCnano Systems (Dionex, Thermo Fisher Scientific). The analytical column with a self-assembled particle frit (Ishihama et al 2002) and C18 material (ReproSil-Pur C18-AQ 3 μm; Dr. Maisch, GmbH, Germany) was packed into a spray emitter (75-μm ID, 8-μm opening, 300-mm length; New Objective) using an air-pressure pump (Proxeon Biosystems, USA). Mobile phase A consisted of water and 0.1% formic acid; mobile phase B consisted of 80% acetonitrile and 0.1% formic acid. The gradient used was 220 min. In both mass spectrometers, the peptides were loaded onto the column at a flow rate of 0.5 μL min-1 and eluted at a flow rate of 0.2 μL min-1 according to the following gradient: 2 to 40% buffer B in 180 min, then to 95% in 16 min. For the LTQ Orbitrap, FTMS spectra were recorded at 60,000 resolution (scan range between 300-1700 m/z) and the six most intense peaks with charge ≥ 2 of the MS scan were selected with an isolation window of 2.0 Thomson in the ion trap for MS2 (normal scan, wideband activation, filling 5.0E5 ions for MS scan, 1.0E4 ions for MS2, maximum fill time 100 ms, dynamic exclusion for 60 s). For Q Exactive, FTMS spectra were recorded at 70,000 resolution (scan range between 300 and 1400 m/z) and the top 10 most abundant peaks with charge ≥ 2 and isolation window of 2.0 Thomson were selected and fragmented by higher-energy collisional dissociation (Olsen et al, 2007) with normalised collision energy of 25. The maximum ion injection time for the MS and MS2 scans was set to 20 and 60 ms respectively and the AGC target was set to 1 E6 for the MS scan and to 5 E4 for the MS2 scan. Dynamic exclusion was set to 60 s.",
+  "dataProcessingProtocol" : "The MaxQuant software platform (Cox and Mann, 2008) version 1.5.1.2 was used to process the raw files and search was conducted against Homo sapiens complete/reference proteome set of UniProt database (released on 14/05/2014), using the Andromeda search engine (Cox et al, 2011). For the first search peptide tolerance was set to 20 ppm while for the main search peptide tolerance was set to 4.5 pm. Isotope mass tolerance was 2 ppm and maximum charge to 7. Digestion mode was set to specific with trypsin allowing maximum of two missed cleavages. Carbamidomethylation of cysteine was set as fixed modification.  Oxidation of methionine, acetylation, single, di- and tri-methylation of lysine, as well as single and di-methylation of arginine were set as variable modifications. Peptide and protein identifications were filtered to 1% FDR.",
+  "projectTags" : [ "Biological" ],
+  "keywords" : [ "Human", "Shotgun proteomics heretochromatin", "Hela", "Repo-man" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "EBI terms of use",
+  "submissionDate" : "2016-07-20",
+  "publicationDate" : "2016-12-07",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Paola",
+    "lastName" : "Vagnarelli",
+    "identifier" : "50910119",
+    "affiliation" : "Brunel University London",
+    "email" : "paola.vagnarelli@brunel.ac.uk",
+    "country" : "United Kingdom",
+    "orcid" : "",
+    "name" : "Paola Vagnarelli",
+    "id" : "50910119"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Paola",
+    "lastName" : "Vagnarelli",
+    "identifier" : "50690100",
+    "affiliation" : "Brunel University London",
+    "email" : "Paola.Vagnarelli@brunel.ac.uk",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Paola Vagnarelli",
+    "id" : "50690100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "United Kingdom" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000214",
+      "name" : "cell culture"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000214",
+    "name" : "Cell culture"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "de Castro IJ, Budzak J, Di Giacinto ML, Ligammari L, Gokhan E, Spanos C, Moralli D, Richardson C, de Las Heras JI, Salatino S, Schirmer EC, Ullman KS, Bickmore WA, Green C, Rappsilber J, Lamble S, Goldberg MW, Vinciotti V, Vagnarelli P. Repo-Man/PP1 regulates heterochromatin formation in interphase. Nat Commun. 2017 Jan 16;8:14048",
+    "pubmedID" : 28091603,
+    "doi" : "10.1038/ncomms14048"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00394",
+    "name" : "acetylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00599",
+    "name" : "monomethylated residue"
+  } ],
+  "totalFileDownloads" : 1435,
+  "botCount" : 533,
+  "hubCount" : 899,
+  "organicCount" : 3
+}

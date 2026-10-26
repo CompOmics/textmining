@@ -1,0 +1,379 @@
+{
+  "paper_id": "PXD012203",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states \"human brain tissues\" and \"human material\", which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analyzed samples are from human brain tissues.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "brain",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper states \"Frozen brain samples of the medial frontal gyrus\" and \"human brain tissues\".",
+        "TRUTH_CHECK": "The analyzed samples are from the brain.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "medial frontal gyrus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The methods state that \"Frozen brain samples of the medial frontal gyrus from AD patients and age-matched controls were obtained\".",
+        "TRUTH_CHECK": "The analyzed samples are from the medial frontal gyrus.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Non-demented control",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "normal",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"Non-demented\" and \"control\" groups.",
+        "TRUTH_CHECK": "The value correctly identifies the control group in the study.",
+        "COMPLETENESS_CHECK": "The value uses a descriptive term instead of the required SDRF controlled term \"normal\" for healthy subjects."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Alzheimer's diseasemedial",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "Alzheimer's disease",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the subjects have Alzheimer's disease (AD).",
+        "TRUTH_CHECK": "The value \"Alzheimer's diseasemedial\" appears to be a concatenation of the disease and the tissue (medial frontal gyrus), which is incorrect for the disease_state field.",
+        "COMPLETENESS_CHECK": "The value is not a standard term and contains extraneous tissue information."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Alzheimer's disease",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Alzheimer’s disease (AD)\" in the abstract and methods.",
+        "TRUTH_CHECK": "The runs are associated with brain tissues from AD patients.",
+        "COMPLETENESS_CHECK": "The value is a correct and complete description of the disease state."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analyzed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"human brain tissues\" and \"Frozen brain samples\".",
+        "TRUTH_CHECK": "The analyzed material for all runs consists of brain tissue.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms in the definition."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002624;NT=iTRAQ reagent 114",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an iTRAQ label channel, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that a 4-plex iTRAQ reagent kit was used and specifically lists label 114 for the non-demented women brain control.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the 114 channel.",
+        "COMPLETENESS_CHECK": "Complete. The NT term correctly identifies the label used."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002625;NT=iTRAQ reagent 115",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an iTRAQ label, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that a 4-plex iTRAQ reagent kit was used and specifically list label 115 for the AD women brain.",
+        "TRUTH_CHECK": "The value is right for the runs carrying it as part of the iTRAQ experiment.",
+        "COMPLETENESS_CHECK": "Complete. The NT term correctly identifies the label used."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002626;NT=iTRAQ reagent 116",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an iTRAQ label, which is the correct field.",
+        "SOURCE_CHECK": "The methods section explicitly mentions the use of a 4-plex iTRAQ reagent kit and lists label 116 for Non-demented women brain of 84 ± 3.2 year old.",
+        "TRUTH_CHECK": "The value is right for the runs carrying it as part of the iTRAQ experiment.",
+        "COMPLETENESS_CHECK": "Complete. The NT term correctly identifies the label used."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002627;NT=iTRAQ reagent 117",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an isobaric label, which is the correct field.",
+        "SOURCE_CHECK": "The methods state the use of a 4-plex iTRAQ reagent kit and specifically list label 117 for AD women brain.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the 117 channel.",
+        "COMPLETENESS_CHECK": "Complete. The NT term correctly identifies the label used."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001911;NT=Q Exactive",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the analysis was performed using a \"Q-Exactive apparatus\".",
+        "TRUTH_CHECK": "The value correctly identifies the instrument used for the LC-MS/MS analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state \"protein digestion with sequencing grade modified trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes LC-MS/MS-based iTRAQ and label-free quantitative proteomics, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the proteomics experiments performed in the study.",
+        "COMPLETENESS_CHECK": "The value follows the required SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper does not mention oxidation of methionine as a searched modification; it only lists \"deamidation of Q and N\" as a dynamic modification.",
+        "TRUTH_CHECK": "The modification was not used in the search parameters described in the paper.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=Fixed",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper does not mention Acetyl or Protein N-term modification in the search parameters.",
+        "TRUTH_CHECK": "The modification was not used in the database search described in the paper.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states that gel pieces were \"alkylated with methyl methanethiosulfonate (10 mM)\".",
+        "TRUTH_CHECK": "Methyl methanethiosulfonate (MTS) is an alkylating agent that modifies cysteines, but it is not carbamidomethylation (which comes from iodoacetamide).",
+        "COMPLETENESS_CHECK": "Not applicable, wrong modification."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "10 ppm",
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The methods section under \"Mass spectrometric data analysis\" states \"precursor mass tolerance: 10 ppm\".",
+        "TRUTH_CHECK": "The value \"20 ppm\" is incorrect as the paper specifies 10 ppm.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.6 Da",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "0.02 Da",
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states a fragment mass tolerance of 0.02 Da in the Mass spectrometric data analysis section.",
+        "TRUTH_CHECK": "The value 0.6 Da is not the value printed in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format but contains the wrong number."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 2 | run 6 = 2 | run 7 = 2 | run 8 = 2 | run 9 = 3 | run 10 = 3 | run 11 = 3 | run 12 = 3 | run 13 = 1 | run 14 = 1 | run 15 = 1 | run 16 = 1 | run 17 = 2 | run 18 = 2 | run 19 = 2 | run 20 = 2 | run 21 = 3 | run 22 = 3 | run 23 = 3 | run 24 = 3 | run 25 = 1 | run 26 = 1 | run 27 = 1 | run 28 = 1 | run 29 = 2 | run 30 = 2 | run 31 = 2 | run 32 = 2 | run 33 = 3 | run 34 = 3 | run 35 = 3 | run 36 = 3 | run 37 = 1 | run 38 = 1 | run 39 = 1 | run 40 = 1 | run 41 = 2 | run 42 = 2 | run 43 = 2 | run 44 = 2 | run 45 = 3 | run 46 = 3 | run 47 = 3 | run 48 = 3 | run 49 = 1 | run 50 = 1 | run 51 = 1 | run 52 = 1 | run 53 = 2 | run 54 = 2 | run 55 = 2 | run 56 = 2 | run 57 = 3 | run 58 = 3 | run 59 = 3 | run 60 = 3 | run 61 = 1 | run 62 = 1 | run 63 = 1 | run 64 = 1 | run 65 = 2 | run 66 = 2 | run 67 = 2 | run 68 = 2 | run 69 = 3 | run 70 = 3 | run 71 = 3 | run 72 = 3 | run 73 = 1 | run 74 = 1 | run 75 = 1 | run 76 = 1 | run 77 = 2 | run 78 = 2 | run 79 = 2 | run 80 = 2 | run 81 = 3 | run 82 = 3 | run 83 = 3 | run 84 = 3 | run 85 = 1 | run 86 = 1 | run 87 = 1 | run 88 = 1 | run 89 = 2 | run 90 = 2 | run 91 = 2 | run 92 = 2 | run 93 = 3 | run 94 = 3 | run 95 = 3 | run 96 = 3 | run 97 = 1 | run 98 = 1 | run 99 = 1 | run 100 = 1 | run 101 = 2 | run 102 = 2 | run 103 = 2 | run 104 = 2 | run 105 = 3 | run 106 = 3 | run 107 = 3 | run 108 = 3 | run 109 = 1 | run 110 = 1 | run 111 = 1 | run 112 = 1 | run 113 = 2 | run 114 = 2 | run 115 = 2 | run 116 = 2 | run 117 = 3 | run 118 = 3 | run 119 = 3 | run 120 = 3 | run 121 = 1 | run 122 = 1 | run 123 = 1 | run 124 = 1 | run 125 = 2 | run 126 = 2 | run 127 = 2 | run 128 = 2 | run 129 = 3 | run 130 = 3 | run 131 = 3 | run 132 = 3 | run 133 = 1 | run 134 = 1 | run 135 = 1 | run 136 = 1 | run 137 = 2 | run 138 = 2 | run 139 = 2 | run 140 = 2 | run 141 = 3 | run 142 = 3 | run 143 = 3 | run 144 = 3 | run 145 = 1 | run 146 = 1 | run 147 = 1 | run 148 = 1 | run 149 = 2 | run 150 = 2 | run 151 = 2 | run 152 = 2 | run 153 = 3 | run 154 = 3 | run 155 = 3 | run 156 = 3 | run 157 = 1 | run 158 = 1 | run 159 = 1 | run 160 = 1 | run 161 = 2 | run 162 = 2 | run 163 = 2 | run 164 = 2 | run 165 = 3 | run 166 = 3 | run 167 = 3 | run 168 = 3 | run 169 = 1 | run 170 = 1 | run 171 = 1 | run 172 = 1 | run 173 = 2 | run 174 = 2 | run 175 = 2 | run 176 = 2 | run 177 = 3 | run 178 = 3 | run 179 = 3 | run 180 = 3 | run 181 = 1 | run 182 = 1 | run 183 = 1 | run 184 = 1 | run 185 = 2 | run 186 = 2 | run 187 = 2 | run 188 = 2 | run 189 = 3 | run 190 = 3 | run 191 = 3 | run 192 = 3 | run 193 = 1 | run 194 = 1 | run 195 = 1 | run 196 = 1 | run 197 = 2 | run 198 = 2 | run 199 = 2 | run 200 = 2 | run 201 = 3 | run 202 = 3 | run 203 = 3 | run 204 = 3 | run 205 = 1 | run 206 = 1 | run 207 = 1 | run 208 = 1 | run 209 = 2 | run 210 = 2 | run 211 = 2 | run 212 = 2 | run 213 = 3 | run 214 = 3 | run 215 = 3 | run 216 = 3 | run 217 = 1 | run 218 = 1 | run 219 = 1 | run 220 = 1 | run 221 = 2 | run 222 = 2 | run 223 = 2 | run 224 = 2 | run 225 = 3 | run 226 = 3 | run 227 = 3 | run 228 = 3 | run 229 = 1 | run 230 = 1 | run 231 = 1 | run 232 = 1 | run 233 = 2 | run 234 = 2 | run 235 = 2 | run 236 = 2 | run 237 = 3 | run 238 = 3 | run 239 = 3 | run 240 = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that iTRAQ experiments were performed in triplicate and that samples were pooled in a group-wise manner.",
+        "TRUTH_CHECK": "The mapping assigns indices 1, 2, and 3 to runs based on the source sample, which is consistent with the triplicate design mentioned in the paper.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index, and runs from the same source share the same index."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 1 | run 10 = 1 | run 11 = 1 | run 12 = 1 | run 13 = 1 | run 14 = 1 | run 15 = 1 | run 16 = 1 | run 17 = 1 | run 18 = 1 | run 19 = 1 | run 20 = 1 | run 21 = 1 | run 22 = 1 | run 23 = 1 | run 24 = 1 | run 25 = 1 | run 26 = 1 | run 27 = 1 | run 28 = 1 | run 29 = 1 | run 30 = 1 | run 31 = 1 | run 32 = 1 | run 33 = 1 | run 34 = 1 | run 35 = 1 | run 36 = 1 | run 37 = 1 | run 38 = 1 | run 39 = 1 | run 40 = 1 | run 41 = 1 | run 42 = 1 | run 43 = 1 | run 44 = 1 | run 45 = 1 | run 46 = 1 | run 47 = 1 | run 48 = 1 | run 49 = 1 | run 50 = 1 | run 51 = 1 | run 52 = 1 | run 53 = 1 | run 54 = 1 | run 55 = 1 | run 56 = 1 | run 57 = 1 | run 58 = 1 | run 59 = 1 | run 60 = 1 | run 61 = 1 | run 62 = 1 | run 63 = 1 | run 64 = 1 | run 65 = 1 | run 66 = 1 | run 67 = 1 | run 68 = 1 | run 69 = 1 | run 70 = 1 | run 71 = 1 | run 72 = 1 | run 73 = 1 | run 74 = 1 | run 75 = 1 | run 76 = 1 | run 77 = 1 | run 78 = 1 | run 79 = 1 | run 80 = 1 | run 81 = 1 | run 82 = 1 | run 83 = 1 | run 84 = 1 | run 85 = 1 | run 86 = 1 | run 87 = 1 | run 88 = 1 | run 89 = 1 | run 90 = 1 | run 91 = 1 | run 92 = 1 | run 93 = 1 | run 94 = 1 | run 95 = 1 | run 96 = 1 | run 97 = 1 | run 98 = 1 | run 99 = 1 | run 100 = 1 | run 101 = 1 | run 102 = 1 | run 103 = 1 | run 104 = 1 | run 105 = 1 | run 106 = 1 | run 107 = 1 | run 108 = 1 | run 109 = 1 | run 110 = 1 | run 111 = 1 | run 112 = 1 | run 113 = 1 | run 114 = 1 | run 115 = 1 | run 116 = 1 | run 117 = 1 | run 118 = 1 | run 119 = 1 | run 120 = 1 | run 121 = 1 | run 122 = 1 | run 123 = 1 | run 124 = 1 | run 125 = 1 | run 126 = 1 | run 127 = 1 | run 128 = 1 | run 129 = 1 | run 130 = 1 | run 131 = 1 | run 132 = 1 | run 133 = 1 | run 134 = 1 | run 135 = 1 | run 136 = 1 | run 137 = 1 | run 138 = 1 | run 139 = 1 | run 140 = 1 | run 141 = 1 | run 142 = 1 | run 143 = 1 | run 144 = 1 | run 145 = 1 | run 146 = 1 | run 147 = 1 | run 148 = 1 | run 149 = 1 | run 150 = 1 | run 151 = 1 | run 152 = 1 | run 153 = 1 | run 154 = 1 | run 155 = 1 | run 156 = 1 | run 157 = 1 | run 158 = 1 | run 159 = 1 | run 160 = 1 | run 161 = 1 | run 162 = 1 | run 163 = 1 | run 164 = 1 | run 165 = 1 | run 166 = 1 | run 167 = 1 | run 168 = 1 | run 169 = 1 | run 170 = 1 | run 171 = 1 | run 172 = 1 | run 173 = 1 | run 174 = 1 | run 175 = 1 | run 176 = 1 | run 177 = 1 | run 178 = 1 | run 179 = 1 | run 180 = 1 | run 181 = 1 | run 182 = 1 | run 183 = 1 | run 184 = 1 | run 185 = 1 | run 186 = 1 | run 187 = 1 | run 188 = 1 | run 189 = 1 | run 190 = 1 | run 191 = 1 | run 192 = 1 | run 193 = 1 | run 194 = 1 | run 195 = 1 | run 196 = 1 | run 197 = 1 | run 198 = 1 | run 199 = 1 | run 200 = 1 | run 201 = 1 | run 202 = 1 | run 203 = 1 | run 204 = 1 | run 205 = 1 | run 206 = 1 | run 207 = 1 | run 208 = 1 | run 209 = 1 | run 210 = 1 | run 211 = 1 | run 212 = 1 | run 213 = 1 | run 214 = 1 | run 215 = 1 | run 216 = 1 | run 217 = 1 | run 218 = 1 | run 219 = 1 | run 220 = 1 | run 221 = 1 | run 222 = 1 | run 223 = 1 | run 224 = 1 | run 225 = 1 | run 226 = 1 | run 227 = 1 | run 228 = 1 | run 229 = 1 | run 230 = 1 | run 231 = 1 | run 232 = 1 | run 233 = 1 | run 234 = 1 | run 235 = 1 | run 236 = 1 | run 237 = 1 | run 238 = 1 | run 239 = 1 | run 240 = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes iTRAQ experiments performed in triplicate and label-free proteomics, but does not explicitly detail the number of technical injections per sample.",
+        "TRUTH_CHECK": "The mapping assigns a value of 1 to every run. According to the definition, a material measured once gets 1. If multiple runs of the same source are present, they should be indexed 1, 2, 3... unless they are fractions. In this dataset, each source (Sample 1-60) has 4 runs. The paper mentions that iTRAQ-labeled peptides were fractionated into 60 fractions, which were then pooled using a concatenate pooling method. If these runs represent those pooled fractions or different acquisition methods on the same material, they are not technical replicates. However, without explicit evidence of repeated injections of the same material, the default is to check if they are distinct materials (fractions). The paper states \"sixty fractions were collected... pooled according to concatenate pooling method... for LC-MS/MS analysis\". This implies the runs are likely fractions. If they are fractions, they should all be technical replicate 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 1 | run 10 = 1 | run 11 = 1 | run 12 = 1 | run 13 = 1 | run 14 = 1 | run 15 = 1 | run 16 = 1 | run 17 = 1 | run 18 = 1 | run 19 = 1 | run 20 = 1 | run 21 = 1 | run 22 = 1 | run 23 = 1 | run 24 = 1 | run 25 = 1 | run 26 = 1 | run 27 = 1 | run 28 = 1 | run 29 = 1 | run 30 = 1 | run 31 = 1 | run 32 = 1 | run 33 = 1 | run 34 = 1 | run 35 = 1 | run 36 = 1 | run 37 = 1 | run 38 = 1 | run 39 = 1 | run 40 = 1 | run 41 = 1 | run 42 = 1 | run 43 = 1 | run 44 = 1 | run 45 = 1 | run 46 = 1 | run 47 = 1 | run 48 = 1 | run 49 = 1 | run 50 = 1 | run 51 = 1 | run 52 = 1 | run 53 = 1 | run 54 = 1 | run 55 = 1 | run 56 = 1 | run 57 = 1 | run 58 = 1 | run 59 = 1 | run 60 = 1 | run 61 = 1 | run 62 = 1 | run 63 = 1 | run 64 = 1 | run 65 = 1 | run 66 = 1 | run 67 = 1 | run 68 = 1 | run 69 = 1 | run 70 = 1 | run 71 = 1 | run 72 = 1 | run 73 = 1 | run 74 = 1 | run 75 = 1 | run 76 = 1 | run 77 = 1 | run 78 = 1 | run 79 = 1 | run 80 = 1 | run 81 = 1 | run 82 = 1 | run 83 = 1 | run 84 = 1 | run 85 = 1 | run 86 = 1 | run 87 = 1 | run 88 = 1 | run 89 = 1 | run 90 = 1 | run 91 = 1 | run 92 = 1 | run 93 = 1 | run 94 = 1 | run 95 = 1 | run 96 = 1 | run 97 = 1 | run 98 = 1 | run 99 = 1 | run 100 = 1 | run 101 = 1 | run 102 = 1 | run 103 = 1 | run 104 = 1 | run 105 = 1 | run 106 = 1 | run 107 = 1 | run 108 = 1 | run 109 = 1 | run 110 = 1 | run 111 = 1 | run 112 = 1 | run 113 = 1 | run 114 = 1 | run 115 = 1 | run 116 = 1 | run 117 = 1 | run 118 = 1 | run 119 = 1 | run 120 = 1 | run 121 = 1 | run 122 = 1 | run 123 = 1 | run 124 = 1 | run 125 = 1 | run 126 = 1 | run 127 = 1 | run 128 = 1 | run 129 = 1 | run 130 = 1 | run 131 = 1 | run 132 = 1 | run 133 = 1 | run 134 = 1 | run 135 = 1 | run 136 = 1 | run 137 = 1 | run 138 = 1 | run 139 = 1 | run 140 = 1 | run 141 = 1 | run 142 = 1 | run 143 = 1 | run 144 = 1 | run 145 = 1 | run 146 = 1 | run 147 = 1 | run 148 = 1 | run 149 = 1 | run 150 = 1 | run 151 = 1 | run 152 = 1 | run 153 = 1 | run 154 = 1 | run 155 = 1 | run 156 = 1 | run 157 = 1 | run 158 = 1 | run 159 = 1 | run 160 = 1 | run 161 = 1 | run 162 = 1 | run 163 = 1 | run 164 = 1 | run 165 = 1 | run 166 = 1 | run 167 = 1 | run 168 = 1 | run 169 = 1 | run 170 = 1 | run 171 = 1 | run 172 = 1 | run 173 = 1 | run 174 = 1 | run 175 = 1 | run 176 = 1 | run 177 = 1 | run 178 = 1 | run 179 = 1 | run 180 = 1 | run 181 = 1 | run 182 = 1 | run 183 = 1 | run 184 = 1 | run 185 = 1 | run 186 = 1 | run 187 = 1 | run 188 = 1 | run 189 = 1 | run 190 = 1 | run 191 = 1 | run 192 = 1 | run 193 = 1 | run 194 = 1 | run 195 = 1 | run 196 = 1 | run 197 = 1 | run 198 = 1 | run 199 = 1 | run 200 = 1 | run 201 = 1 | run 202 = 1 | run 203 = 1 | run 204 = 1 | run 205 = 1 | run 206 = 1 | run 207 = 1 | run 208 = 1 | run 209 = 1 | run 210 = 1 | run 211 = 1 | run 212 = 1 | run 213 = 1 | run 214 = 1 | run 215 = 1 | run 216 = 1 | run 217 = 1 | run 218 = 1 | run 219 = 1 | run 220 = 1 | run 221 = 1 | run 222 = 1 | run 223 = 1 | run 224 = 1 | run 225 = 1 | run 226 = 1 | run 227 = 1 | run 228 = 1 | run 229 = 1 | run 230 = 1 | run 231 = 1 | run 232 = 1 | run 233 = 1 | run 234 = 1 | run 235 = 1 | run 236 = 1 | run 237 = 1 | run 238 = 1 | run 239 = 1 | run 240 = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes an iTRAQ experiment where peptides were \"fractionated on a C18 column\" and \"sixty fractions were collected\".",
+        "TRUTH_CHECK": "The runs are assigned fraction 1, but the paper explicitly states that 60 fractions were collected and analyzed. Therefore, the runs should be mapped to their respective fraction indices (1-60) rather than all being assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The format is correct, but the mapping is wrong based on the study design."
+      }
+    }
+  ]
+}

@@ -1,0 +1,566 @@
+{
+  "paper_id": "PXD012143",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "plasmodium falciparum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a scientific name of an organism, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Plasmodium falciparum\" throughout the abstract and methods.",
+        "TRUTH_CHECK": "The experiment analyzes the phosphoproteome of P. falciparum parasites.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "schizonts",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Schizont is a parasite life cycle stage, which belongs to the developmental_stage field.",
+        "SOURCE_CHECK": "The paper mentions that schizonts were enriched for the phosphoproteomics experiments.",
+        "TRUTH_CHECK": "The value describes the developmental stage of the parasite, not its biological cell type.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "strain",
+      "sdrf_column": "characteristics[plasmodium strain]",
+      "extracted_value": "3D7",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a strain name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"P. falciparum 3D7 sequences\" in the Phosphoproteomics section.",
+        "TRUTH_CHECK": "The phosphoproteomics experiments used P. falciparum lines derived from 3D7 (e.g., PKAc-HA:loxP line generated from the DiCre-expressing 3D7 P. falciparum clone).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT126",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were \"labelled using the 0.8 mg Tandem Mass Tag 10plex isobaric reagent kit (Thermo Scientific)\".",
+        "TRUTH_CHECK": "The use of a TMT 10plex kit implies the use of 10 distinct channels; TMT126 is one of the standard channels in that kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were \"labelled using the 0.8 mg Tandem Mass Tag 10plex isobaric reagent kit (Thermo Scientific)\".",
+        "TRUTH_CHECK": "The use of a TMT 10plex kit implies the use of 10 distinct channels; TMT127N is a standard channel within that kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that a \"Tandem Mass Tag 10plex isobaric reagent kit (Thermo Scientific)\" was used.",
+        "TRUTH_CHECK": "The 10plex TMT kit contains the channel TMT127C.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were \"labelled using the 0.8 mg Tandem Mass Tag 10plex isobaric reagent kit (Thermo Scientific)\".",
+        "TRUTH_CHECK": "TMT128N is one of the standard channels in a TMT 10plex kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that a \"Tandem Mass Tag 10plex isobaric reagent kit (Thermo Scientific)\" was used. While the specific channel \"TMT128C\" is not printed, it is a standard component of a TMT 10plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT 10plex experiment, and the value represents one of the channels used in that experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a TMT channel, which is the correct information for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were \"labelled using the 0.8 mg Tandem Mass Tag 10plex isobaric reagent kit (Thermo Scientific)\".",
+        "TRUTH_CHECK": "TMT129N is a standard channel within a TMT 10plex kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that a \"Tandem Mass Tag 10plex isobaric reagent kit (Thermo Scientific)\" was used.",
+        "TRUTH_CHECK": "TMT129C is one of the standard channels in a TMT 10plex kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT130N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that a \"Tandem Mass Tag 10plex isobaric reagent kit (Thermo Scientific)\" was used. While the specific channel \"TMT130N\" is not printed, it is a standard component of the 10plex kit mentioned.",
+        "TRUTH_CHECK": "The runs are part of the phosphoproteomics experiment which used TMT 10plex labeling.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT130C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that a \"Tandem Mass Tag 10plex isobaric reagent kit (Thermo Scientific)\" was used.",
+        "TRUTH_CHECK": "TMT130C is a standard channel within a TMT 10plex kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT131",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that a \"Tandem Mass Tag 10plex isobaric reagent kit (Thermo Scientific)\" was used. While the specific channel \"TMT131\" is not listed verbatim, it is a standard component of the TMT 10plex kit.",
+        "TRUTH_CHECK": "The runs are part of the phosphoproteomics experiment which used TMT 10plex labeling.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002732;NT=Orbitrap Fusion Lumos",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The phosphoproteomics section states the use of an Orbitrap Fusion Lumos.",
+        "TRUTH_CHECK": "The instrument was used for the LC-MS/MS analysis of the phosphopeptide fractions.",
+        "COMPLETENESS_CHECK": "Complete and follows the key-value format."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that proteolytic digestion was carried out using LysC followed by trypsin.",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the proteins in the phosphoproteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete. The definition allows naming one of several agents used."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragmentation method, the right field.",
+        "SOURCE_CHECK": "The methods state that \"Two replicate injections were made for each fraction with different fragmentation methods based on the MS2 HCD and MSA SPS MS3 strategies\".",
+        "TRUTH_CHECK": "The runs carrying this value used HCD fragmentation.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "MSA SPS",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value refers to a fragmentation strategy, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"Two replicate injections were made for each fraction with different fragmentation methods based on the MS2 HCD and MSA SPS MS3 strategies described.\"",
+        "TRUTH_CHECK": "The runs carrying this value used the MSA SPS MS3 strategy.",
+        "COMPLETENESS_CHECK": "The value \"MSA SPS\" is a correct shorthand for the \"MSA SPS MS3\" strategy mentioned in the text."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Fixed modifications were set as Carbamidomethyl (C)\".",
+        "TRUTH_CHECK": "The value is correct for the phosphoproteomics runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;AC=UNIMOD:35;TA=M,W;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Oxidation;AC=UNIMOD:35;TA=M;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"variable modifications set as Oxidation (M)\".",
+        "TRUTH_CHECK": "The modification is correct, but the residues listed include Tryptophan (W) which is not mentioned.",
+        "COMPLETENESS_CHECK": "The residues TA=M,W include a residue not stated in the paper."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;AC=UNIMOD:21;TA=S,T,Y,A;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Phospho;AC=UNIMOD:21;TA=S,T,Y;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"variable modifications set as Oxidation (M) and Phospho (STY)\".",
+        "TRUTH_CHECK": "The modification is correct, but the residue list includes Alanine (A), which is not in the paper.",
+        "COMPLETENESS_CHECK": "The residue list is a wrong detail (d), as the paper only specifies S, T, and Y."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not state a precursor mass tolerance; it only mentions that \"Other parameters were used as preset in the software\" (MaxQuant).",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable, as the value is not in the text."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.02 Da",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not state a fragment mass tolerance; it only mentions that \"Other parameters were used as preset in the software\" (MaxQuant).",
+        "TRUTH_CHECK": "Since the value is not in the paper, it cannot be verified as right for the runs.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1 | row 133 = 1 | row 134 = 1 | row 135 = 1 | row 136 = 1 | row 137 = 1 | row 138 = 1 | row 139 = 1 | row 140 = 1 | row 141 = 1 | row 142 = 1 | row 143 = 1 | row 144 = 1 | row 145 = 1 | row 146 = 1 | row 147 = 1 | row 148 = 1 | row 149 = 1 | row 150 = 1 | row 151 = 1 | row 152 = 1 | row 153 = 1 | row 154 = 1 | row 155 = 1 | row 156 = 1 | row 157 = 1 | row 158 = 1 | row 159 = 1 | row 160 = 1 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 1 | row 166 = 1 | row 167 = 1 | row 168 = 1 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 1 | row 173 = 1 | row 174 = 1 | row 175 = 1 | row 176 = 1 | row 177 = 1 | row 178 = 1 | row 179 = 1 | row 180 = 1 | row 181 = 1 | row 182 = 1 | row 183 = 1 | row 184 = 1 | row 185 = 1 | row 186 = 1 | row 187 = 1 | row 188 = 1 | row 189 = 1 | row 190 = 1 | row 191 = 1 | row 192 = 1 | row 193 = 1 | row 194 = 1 | row 195 = 1 | row 196 = 1 | row 197 = 1 | row 198 = 1 | row 199 = 1 | row 200 = 1 | row 201 = 1 | row 202 = 1 | row 203 = 1 | row 204 = 1 | row 205 = 1 | row 206 = 1 | row 207 = 1 | row 208 = 1 | row 209 = 1 | row 210 = 1 | row 211 = 1 | row 212 = 1 | row 213 = 1 | row 214 = 1 | row 215 = 1 | row 216 = 1 | row 217 = 1 | row 218 = 1 | row 219 = 1 | row 220 = 1 | row 221 = 1 | row 222 = 1 | row 223 = 1 | row 224 = 1 | row 225 = 1 | row 226 = 1 | row 227 = 1 | row 228 = 1 | row 229 = 1 | row 230 = 1 | row 231 = 1 | row 232 = 1 | row 233 = 1 | row 234 = 1 | row 235 = 1 | row 236 = 1 | row 237 = 1 | row 238 = 1 | row 239 = 1 | row 240 = 1 | row 241 = 1 | row 242 = 1 | row 243 = 1 | row 244 = 1 | row 245 = 1 | row 246 = 1 | row 247 = 1 | row 248 = 1 | row 249 = 1 | row 250 = 1 | row 251 = 1 | row 252 = 1 | row 253 = 1 | row 254 = 1 | row 255 = 1 | row 256 = 1 | row 257 = 1 | row 258 = 1 | row 259 = 1 | row 260 = 1 | row 261 = 1 | row 262 = 1 | row 263 = 1 | row 264 = 1 | row 265 = 1 | row 266 = 1 | row 267 = 1 | row 268 = 1 | row 269 = 1 | row 270 = 1 | row 271 = 1 | row 272 = 1 | row 273 = 1 | row 274 = 1 | row 275 = 1 | row 276 = 1 | row 277 = 1 | row 278 = 1 | row 279 = 1 | row 280 = 1 | row 281 = 1 | row 282 = 1 | row 283 = 1 | row 284 = 1 | row 285 = 1 | row 286 = 1 | row 287 = 1 | row 288 = 1 | row 289 = 1 | row 290 = 1 | row 291 = 1 | row 292 = 1 | row 293 = 1 | row 294 = 1 | row 295 = 1 | row 296 = 1 | row 297 = 1 | row 298 = 1 | row 299 = 1 | row 300 = 1 | row 301 = 1 | row 302 = 1 | row 303 = 1 | row 304 = 1 | row 305 = 1 | row 306 = 1 | row 307 = 1 | row 308 = 1 | row 309 = 1 | row 310 = 1 | row 311 = 1 | row 312 = 1 | row 313 = 1 | row 314 = 1 | row 315 = 1 | row 316 = 1 | row 317 = 1 | row 318 = 1 | row 319 = 1 | row 320 = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that for the phosphoproteomics experiments, \"three DMSO-treated samples\" and \"three RAP-treated\" samples were used for each set (ACβ and PKAc).",
+        "TRUTH_CHECK": "The candidate value assigns all 320 runs to biological replicate 1. However, the paper explicitly mentions three biological replicates per condition (three DMSO and three RAP). The runs are grouped by \"source\" (PXD012143-Sample-1 to 20), which likely correspond to the different biological replicates and their subsequent fractions. Assigning all runs to a single biological replicate contradicts the study design.",
+        "COMPLETENESS_CHECK": "The format is correct, but the mapping is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 2 | row 12 = 2 | row 13 = 2 | row 14 = 2 | row 15 = 2 | row 16 = 2 | row 17 = 2 | row 18 = 2 | row 19 = 2 | row 20 = 2 | row 21 = 3 | row 22 = 3 | row 23 = 3 | row 24 = 3 | row 25 = 3 | row 26 = 3 | row 27 = 3 | row 28 = 3 | row 29 = 3 | row 30 = 3 | row 31 = 4 | row 32 = 4 | row 33 = 4 | row 34 = 4 | row 35 = 4 | row 36 = 4 | row 37 = 4 | row 38 = 4 | row 39 = 4 | row 40 = 4 | row 41 = 5 | row 42 = 5 | row 43 = 5 | row 44 = 5 | row 45 = 5 | row 46 = 5 | row 47 = 5 | row 48 = 5 | row 49 = 5 | row 50 = 5 | row 51 = 6 | row 52 = 6 | row 53 = 6 | row 54 = 6 | row 55 = 6 | row 56 = 6 | row 57 = 6 | row 58 = 6 | row 59 = 6 | row 60 = 6 | row 61 = 7 | row 62 = 7 | row 63 = 7 | row 64 = 7 | row 65 = 7 | row 66 = 7 | row 67 = 7 | row 68 = 7 | row 69 = 7 | row 70 = 7 | row 71 = 8 | row 72 = 8 | row 73 = 8 | row 74 = 8 | row 75 = 8 | row 76 = 8 | row 77 = 8 | row 78 = 8 | row 79 = 8 | row 80 = 8 | row 81 = 9 | row 82 = 9 | row 83 = 9 | row 84 = 9 | row 85 = 9 | row 86 = 9 | row 87 = 9 | row 88 = 9 | row 89 = 9 | row 90 = 9 | row 91 = 10 | row 92 = 10 | row 93 = 10 | row 94 = 10 | row 95 = 10 | row 96 = 10 | row 97 = 10 | row 98 = 10 | row 99 = 10 | row 100 = 10 | row 101 = 11 | row 102 = 11 | row 103 = 11 | row 104 = 11 | row 105 = 11 | row 106 = 11 | row 107 = 11 | row 108 = 11 | row 109 = 11 | row 110 = 11 | row 111 = 12 | row 112 = 12 | row 113 = 12 | row 114 = 12 | row 115 = 12 | row 116 = 12 | row 117 = 12 | row 118 = 12 | row 119 = 12 | row 120 = 12 | row 121 = 13 | row 122 = 13 | row 123 = 13 | row 124 = 13 | row 125 = 13 | row 126 = 13 | row 127 = 13 | row 128 = 13 | row 129 = 13 | row 130 = 13 | row 131 = 14 | row 132 = 14 | row 133 = 14 | row 134 = 14 | row 135 = 14 | row 136 = 14 | row 137 = 14 | row 138 = 14 | row 139 = 14 | row 140 = 14 | row 141 = 15 | row 142 = 15 | row 143 = 15 | row 144 = 15 | row 145 = 15 | row 146 = 15 | row 147 = 15 | row 148 = 15 | row 149 = 15 | row 150 = 15 | row 151 = 16 | row 152 = 16 | row 153 = 16 | row 154 = 16 | row 155 = 16 | row 156 = 16 | row 157 = 16 | row 158 = 16 | row 159 = 16 | row 160 = 16 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 1 | row 166 = 1 | row 167 = 1 | row 168 = 1 | row 169 = 1 | row 170 = 1 | row 171 = 2 | row 172 = 2 | row 173 = 2 | row 174 = 2 | row 175 = 2 | row 176 = 2 | row 177 = 2 | row 178 = 2 | row 179 = 2 | row 180 = 2 | row 181 = 3 | row 182 = 3 | row 183 = 3 | row 184 = 3 | row 185 = 3 | row 186 = 3 | row 187 = 3 | row 188 = 3 | row 189 = 3 | row 190 = 3 | row 191 = 4 | row 192 = 4 | row 193 = 4 | row 194 = 4 | row 195 = 4 | row 196 = 4 | row 197 = 4 | row 198 = 4 | row 199 = 4 | row 200 = 4 | row 201 = 5 | row 202 = 5 | row 203 = 5 | row 204 = 5 | row 205 = 5 | row 206 = 5 | row 207 = 5 | row 208 = 5 | row 209 = 5 | row 210 = 5 | row 211 = 6 | row 212 = 6 | row 213 = 6 | row 214 = 6 | row 215 = 6 | row 216 = 6 | row 217 = 6 | row 218 = 6 | row 219 = 6 | row 220 = 6 | row 221 = 7 | row 222 = 7 | row 223 = 7 | row 224 = 7 | row 225 = 7 | row 226 = 7 | row 227 = 7 | row 228 = 7 | row 229 = 7 | row 230 = 7 | row 231 = 8 | row 232 = 8 | row 233 = 8 | row 234 = 8 | row 235 = 8 | row 236 = 8 | row 237 = 8 | row 238 = 8 | row 239 = 8 | row 240 = 8 | row 241 = 9 | row 242 = 9 | row 243 = 9 | row 244 = 9 | row 245 = 9 | row 246 = 9 | row 247 = 9 | row 248 = 9 | row 249 = 9 | row 250 = 9 | row 251 = 10 | row 252 = 10 | row 253 = 10 | row 254 = 10 | row 255 = 10 | row 256 = 10 | row 257 = 10 | row 258 = 10 | row 259 = 10 | row 260 = 10 | row 261 = 11 | row 262 = 11 | row 263 = 11 | row 264 = 11 | row 265 = 11 | row 266 = 11 | row 267 = 11 | row 268 = 11 | row 269 = 11 | row 270 = 11 | row 271 = 12 | row 272 = 12 | row 273 = 12 | row 274 = 12 | row 275 = 12 | row 276 = 12 | row 277 = 12 | row 278 = 12 | row 279 = 12 | row 280 = 12 | row 281 = 13 | row 282 = 13 | row 283 = 13 | row 284 = 13 | row 285 = 13 | row 286 = 13 | row 287 = 13 | row 288 = 13 | row 289 = 13 | row 290 = 13 | row 291 = 14 | row 292 = 14 | row 293 = 14 | row 294 = 14 | row 295 = 14 | row 296 = 14 | row 297 = 14 | row 298 = 14 | row 299 = 14 | row 300 = 14 | row 301 = 15 | row 302 = 15 | row 303 = 15 | row 304 = 15 | row 305 = 15 | row 306 = 15 | row 307 = 15 | row 308 = 15 | row 309 = 15 | row 310 = 15 | row 311 = 16 | row 312 = 16 | row 313 = 16 | row 314 = 16 | row 315 = 16 | row 316 = 16 | row 317 = 16 | row 318 = 16 | row 319 = 16 | row 320 = 16",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents technical replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"Two replicate injections were made for each fraction\", implying technical replicates.",
+        "TRUTH_CHECK": "The mapping assigns a unique index to each run (assay) across different samples. However, technical replicates are repeated runs of the same material. In this dataset, the \"source\" (Sample 1-20) represents the material. For a given sample, the first time it is run (assay run 1 or run 17) should be replicate 1, the second time (assay run 2 or run 18) should be replicate 2, and so on. The candidate value correctly assigns the same technical replicate index to all samples within a single assay run, and increments that index for subsequent runs of the same samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1 | row 133 = 1 | row 134 = 1 | row 135 = 1 | row 136 = 1 | row 137 = 1 | row 138 = 1 | row 139 = 1 | row 140 = 1 | row 141 = 1 | row 142 = 1 | row 143 = 1 | row 144 = 1 | row 145 = 1 | row 146 = 1 | row 147 = 1 | row 148 = 1 | row 149 = 1 | row 150 = 1 | row 151 = 1 | row 152 = 1 | row 153 = 1 | row 154 = 1 | row 155 = 1 | row 156 = 1 | row 157 = 1 | row 158 = 1 | row 159 = 1 | row 160 = 1 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 1 | row 166 = 1 | row 167 = 1 | row 168 = 1 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 1 | row 173 = 1 | row 174 = 1 | row 175 = 1 | row 176 = 1 | row 177 = 1 | row 178 = 1 | row 179 = 1 | row 180 = 1 | row 181 = 1 | row 182 = 1 | row 183 = 1 | row 184 = 1 | row 185 = 1 | row 186 = 1 | row 187 = 1 | row 188 = 1 | row 189 = 1 | row 190 = 1 | row 191 = 1 | row 192 = 1 | row 193 = 1 | row 194 = 1 | row 195 = 1 | row 196 = 1 | row 197 = 1 | row 198 = 1 | row 199 = 1 | row 200 = 1 | row 201 = 1 | row 202 = 1 | row 203 = 1 | row 204 = 1 | row 205 = 1 | row 206 = 1 | row 207 = 1 | row 208 = 1 | row 209 = 1 | row 210 = 1 | row 211 = 1 | row 212 = 1 | row 213 = 1 | row 214 = 1 | row 215 = 1 | row 216 = 1 | row 217 = 1 | row 218 = 1 | row 219 = 1 | row 220 = 1 | row 221 = 1 | row 222 = 1 | row 223 = 1 | row 224 = 1 | row 225 = 1 | row 226 = 1 | row 227 = 1 | row 228 = 1 | row 229 = 1 | row 230 = 1 | row 231 = 1 | row 232 = 1 | row 233 = 1 | row 234 = 1 | row 235 = 1 | row 236 = 1 | row 237 = 1 | row 238 = 1 | row 239 = 1 | row 240 = 1 | row 241 = 1 | row 242 = 1 | row 243 = 1 | row 244 = 1 | row 245 = 1 | row 246 = 1 | row 247 = 1 | row 248 = 1 | row 249 = 1 | row 250 = 1 | row 251 = 1 | row 252 = 1 | row 253 = 1 | row 254 = 1 | row 255 = 1 | row 256 = 1 | row 257 = 1 | row 258 = 1 | row 259 = 1 | row 260 = 1 | row 261 = 1 | row 262 = 1 | row 263 = 1 | row 264 = 1 | row 265 = 1 | row 266 = 1 | row 267 = 1 | row 268 = 1 | row 269 = 1 | row 270 = 1 | row 271 = 1 | row 272 = 1 | row 273 = 1 | row 274 = 1 | row 275 = 1 | row 276 = 1 | row 277 = 1 | row 278 = 1 | row 279 = 1 | row 280 = 1 | row 281 = 1 | row 282 = 1 | row 283 = 1 | row 284 = 1 | row 285 = 1 | row 286 = 1 | row 287 = 1 | row 288 = 1 | row 289 = 1 | row 290 = 1 | row 291 = 1 | row 292 = 1 | row 293 = 1 | row 294 = 1 | row 295 = 1 | row 296 = 1 | row 297 = 1 | row 298 = 1 | row 299 = 1 | row 300 = 1 | row 301 = 1 | row 302 = 1 | row 303 = 1 | row 304 = 1 | row 305 = 1 | row 306 = 1 | row 307 = 1 | row 308 = 1 | row 309 = 1 | row 310 = 1 | row 311 = 1 | row 312 = 1 | row 313 = 1 | row 314 = 1 | row 315 = 1 | row 316 = 1 | row 317 = 1 | row 318 = 1 | row 319 = 1 | row 320 = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that phosphopeptide fractions were generated using a High pH Reversed-Phase Peptide Fractionation kit.",
+        "TRUTH_CHECK": "The paper describes offline fractionation into multiple fractions; therefore, not every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping assigns every run to fraction 1, which contradicts the described workflow."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "knockdown",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype or experimental condition, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes \"conditional disruption\" and \"conditional gene knockout\" of ACβ and PKA using DiCre, which is functionally equivalent to a knockdown/knockout phenotype.",
+        "TRUTH_CHECK": "The phosphoproteomics experiments compared DMSO-treated (control) and RAP-treated (knockout/disruption) samples. However, the candidate value \"knockdown\" is applied to all 320 runs, including the control samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "DMSO",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"DMSO\" describes a treatment condition used in the study.",
+        "SOURCE_CHECK": "The paper states that control parasites were treated with vehicle only (1% v/v DMSO) and compares them to RAP-treated samples.",
+        "TRUTH_CHECK": "The value is correct for the control runs in the phosphoproteomics experiments.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "RAP",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"RAP\" describes a treatment applied to the samples, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper states that parasites were treated with 100 nM RAP or vehicle only (DMSO).",
+        "TRUTH_CHECK": "The phosphoproteomics experiments used RAP-treated and DMSO-treated samples.",
+        "COMPLETENESS_CHECK": "The value is a plain text term correctly identifying the treatment."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Time",
+      "extracted_value": "30m",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which is a plausible content for a column named \"Time\".",
+        "SOURCE_CHECK": "The paper mentions \"allow egress for 30 min\" during the phosphoproteomics sample preparation.",
+        "TRUTH_CHECK": "The 30-minute duration refers to the egress step of the sample preparation process for all phosphoproteomics runs, not a variable time point for different runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Time",
+      "extracted_value": "35m",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which is a common metadata type, but it must be relevant to the study's MS runs.",
+        "SOURCE_CHECK": "The paper mentions a 30-min egress period and a 10-min lysis period, but there is no mention of a \"35m\" time point or duration associated with the LC-MS/MS runs.",
+        "TRUTH_CHECK": "The phosphoproteomics section describes a 30-min egress and a 10-min lysis, but \"35m\" does not correspond to any described experimental time point for the samples analyzed by mass spectrometry.",
+        "COMPLETENESS_CHECK": "The value is a simple duration, but it is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Time",
+      "extracted_value": "15m",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is being judged for a column named \"Time\", which is a generic metadata field.",
+        "SOURCE_CHECK": "The paper mentions several time durations (e.g., 1-2 h invasion, 2-4 h RAP treatment, 30 min egress, 10 min lysis), but \"15m\" (15 minutes) does not appear in the text.",
+        "TRUTH_CHECK": "The phosphoproteomics experiment describes a 30 min egress period and a 10 min lysis period, but there is no mention of a 15-minute time point or duration associated with the LC-MS/MS runs.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Experiment",
+      "extracted_value": "ACb-HA:loxP",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the parasite line used in the experiment, which is a valid identifier for an experiment group.",
+        "SOURCE_CHECK": "The paper mentions the \"ACβ-HA:loxP parasite line\" in the Genetic modification and Phosphoproteomics sections.",
+        "TRUTH_CHECK": "The value correctly identifies the group of runs derived from the ACβ-HA:loxP line.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Experiment",
+      "extracted_value": "PKAc-HA:loxP",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a parasite line used in one of the two main phosphoproteomics experiments.",
+        "SOURCE_CHECK": "The \"PKAc-HA:loxP\" line is explicitly mentioned in the Phosphoproteomics section.",
+        "TRUTH_CHECK": "The paper describes two isobaric labelling experiments, one using ACβ-HA:loxP and the second using PKAc-HA:loxP. This value correctly identifies the experimental group for the runs it is associated with.",
+        "COMPLETENESS_CHECK": "The value is a correct identifier for the experiment/group."
+      }
+    }
+  ]
+}

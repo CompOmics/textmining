@@ -1,0 +1,152 @@
+{
+  "accession" : "PXD012431",
+  "title" : "High-throughput mass spectrometry and bioinformatics analysis of breast cancer proteomic data",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "The project contains raw and result files from a comparative proteomic analysis of malignant [primary breast tumor (PT) and axillary metastatic lymph nodes (LN)] and non-tumor [contralateral (NCT) and adjacent breast (ANT)] tissues of patients diagnosed with invasive ductal carcinoma. A label-free mass spectrometry was conducted using nano-liquid chromatography coupled to electrospray ionization–mass spectrometry (LC-ESI-MS/MS) followed by functional annotation to reveal differentially expressed proteins and their predicted impacts on pathways and cellular functions in breast cancer. A total of 462 proteins was observed as differentially expressed (DEPs) among the groups of samples analyzed. Ingenuity Pathway Analysis software version 2.3 (QIAGEN Inc.) was employed to identify the most relevant signaling and metabolic pathways, diseases, biological functions and interaction networks affected by the deregulated proteins. Upstream regulator and biomarker analyses were also performed by IPA’s tools. Altogether, our findings revealed differential proteomic profiles that affected the associated and interconnected cancer signaling processes.",
+  "sampleProcessingProtocol" : "Tissue samples were lysed in 4% SDS, 0.1 M Tris-HCl pH 7.6 and 0.1 M DTT (100 μL buffer per 10 mg tissue), homogenized in TissueLyser II sample disruptor (Qiagen Corp. MD, USA) at an oscillation frequency of 25 Hz for 3 min and heated to 95ºC. Homogenization and heating were repeated three times followed by sonication and centrifugation to remove cellular debris. Samples (25 µg) were separated in 1D-PAGE 10% (v/v) acrylamide gels, reduced with 10 mM DTT, alkylated with 50 mM iodacetamide and digested overnight with 12.5 ng/µl trypsin solution in ABC at 37 °C. After that, the peptides were extracted twice with 30% acetonitrile (ACN), 3% TFA and twice with ACN, dried in a vacuum centrifuge and desalted with C18 Stage Tips. Peptide mixtures were analyzed in triplicate on EASY-nLC 1000 chromatograph (Thermo Scientific) coupled to an LTQ Orbitrap XL ETD (Thermo Scientific) mass spectrometer. The MS2 analysis was performed in a DDA mode.",
+  "dataProcessingProtocol" : "The mass spectra were analyzed with MaxQuant software version 1.5.8.3. Trypsin was set as the enzyme and the search was done against human UniProt protein database (UniProtKB 24 May 2017, 70,939 entries) for protein identification. Oxidation of methionine and acetylation of protein N-terminal were set as variable modification and carbamidomethylation of cysteine as fixed modification. For peptide identification, at least seven amino acids were required. An FDR of 1% was independently applied for both peptide and protein identification. LFQ and match between runs options were enabled.",
+  "projectTags" : [ "Biomedical" ],
+  "keywords" : [ "Proteomics", "Contralateral breast tissue", "Label-free mass spectrometry", "Breast cancer", "Bioinformatics analysis" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2019-01-18",
+  "publicationDate" : "2019-07-15",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Michel",
+    "lastName" : "Batista",
+    "identifier" : "67690106",
+    "affiliation" : "Fiocruz",
+    "email" : "batista.mic@gmail.com",
+    "country" : "Brazil",
+    "orcid" : "0000-0001-7125-417X",
+    "name" : "Michel Batista",
+    "id" : "67690106"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Enilze Maria de Souza Fonseca",
+    "lastName" : "Ribeiro",
+    "identifier" : "130150100",
+    "affiliation" : "Genetics Department, Federal University of Parana, Curitiba, Brazil",
+    "email" : "enilzeribeiro@gmail.com",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Enilze Maria de Souza Fonseca Ribeiro",
+    "id" : "130150100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000639",
+    "name" : "LTQ Orbitrap XL ETD"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000425",
+    "name" : "MS1 intensity based label-free quantification method"
+  } ],
+  "countries" : [ "Brazil" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000150",
+      "name" : "breast cancer cell"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000784",
+      "name" : "lymph node"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000149",
+      "name" : "breast"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:1612",
+      "name" : "breast cancer"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000150",
+    "name" : "Breast cancer cell"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000784",
+    "name" : "Lymph node"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000149",
+    "name" : "Breast"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:1612",
+    "name" : "Breast cancer"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Gomig THB, Cavalli IJ, Souza RLR, Lucena ACR, Batista M, Machado KC, Marchini FK, Marchi FA, Lima RS, Urban CA, Cavalli LR, Ribeiro EMSF. High-throughput mass spectrometry and bioinformatics analysis of breast cancer proteomic data. Data Brief. 2019 25:104125",
+    "pubmedID" : 31294064,
+    "doi" : "10.1016/j.dib.2019.104125"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 211583,
+  "botCount" : 1983,
+  "hubCount" : 209246,
+  "organicCount" : 354
+}

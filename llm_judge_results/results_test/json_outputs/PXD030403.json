@@ -1,0 +1,294 @@
+{
+  "paper_id": "PXD030403",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes the use of the \"normal human thyroid epithelial cell line Nthy-ORI\", which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The proteins analyzed in the LC-MS experiment come from this human cell line.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "thyroid",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ/tissue name, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the use of the Nthy-ORI cell line, which it explicitly calls \"normal human thyroid epithelial cell line\".",
+        "TRUTH_CHECK": "The organ of origin for the Nthy-ORI cell line is the thyroid.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "characteristics[cell type]",
+      "extracted_value": "thyroid epithelial cell",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions the \"normal human thyroid epithelial cell line Nthy-ORI\".",
+        "TRUTH_CHECK": "The runs are derived from the Nthy-ORI cell line, which are thyroid epithelial cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "characteristics[disease]",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the Nthy-ORI cell line as \"immortalized normal human thyroid epithelial cell line\".",
+        "TRUTH_CHECK": "The material used for the runs is the Nthy-ORI cell line, which is stated to be normal.",
+        "COMPLETENESS_CHECK": "The value \"normal\" is the correct SDRF term for healthy/normal subjects or cell lines."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "characteristics[cell line]",
+      "extracted_value": "Nthy-ORI",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an immortalized cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly names the \"immortalized normal human thyroid epithelial cell line Nthy-ORI\".",
+        "TRUTH_CHECK": "The BioID mass spectrometry experiment used Nthy-ORI cells.",
+        "COMPLETENESS_CHECK": "Complete as written."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"Data acquired by mass spectrometry was quantified using MaxQuant label-free quantification (LFQ) workflow\".",
+        "TRUTH_CHECK": "The MS runs used a label-free quantification approach.",
+        "COMPLETENESS_CHECK": "The value \"label free sample\" is the correct SDRF controlled term for label-free runs."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT= LTQ-Orbitrap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state \"LC–MS was performed using an LTQ-Orbitrap instrument (ThermoFisher)\".",
+        "TRUTH_CHECK": "The value is correct for the runs described in the proteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=Trypsin",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The paper does not mention the cleavage agent used for the mass spectrometry analysis.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "characteristics[biological replicate]",
+      "extracted_value": "qe+2020_0176_3.1.raw = 1 | qe+2020_0170_3.2.raw = 1 | qe+2020_0182_3.3.raw = 1 | qe+2020_0177_4.1.raw = 2 | qe+2020_0171_4.2.raw = 2 | qe+2020_0183_4.3.raw = 2 | qe+2020_0178_5.1.raw = 1 | qe+2020_0172_5.2.raw = 1 | qe+2020_0184_5.3.raw = 1 | qe+2020_0179_6.1.raw = 2 | qe+2020_0173_6.2.raw = 2 | qe+2020_0185_6.3.raw = 2 | qe+2020_0139_7.1.raw = 1 | qe+2020_0143_7.2.raw = 1 | qe+2020_0141_7.3.raw = 1 | qe+2020_0146_8.1.raw = 2 | qe+2020_0145_8.2.raw = 2 | qe+2020_0144_8.3.raw = 2 | qe+2020_0153_9.1.raw = 1 | qe+2020_0150_9.2.raw = 1 | qe+2020_0147_9.3.raw = 1 | qe+2020_0154_10.1.raw = 2 | qe+2020_0151_10.2.raw = 2 | qe+2020_0148_10.3.raw = 2 | qe+2020_0155_11.1.raw = 1 | qe+2020_0152_11.2.raw = 1 | qe+2020_0149_11.3.raw = 1 | qe+2020_0164_12.1.raw = 2 | qe+2020_0161_12.2.raw = 2 | qe+2020_0159_12.3.raw = 2 | qe+2020_0163_13.1.raw = 1 | qe+2020_0160_13.2.raw = 1 | qe+2020_0158_13.3.raw = 1 | qe+2020_0162_14.1.raw = 2 | qe+2020_0142_14.2.raw = 2 | qe+2020_0157_14.3.raw = 2 | qe+2020_0174_1.1.raw = 1 | qe+2020_0175_1.2.raw = 1 | qe+2020_0167_1.3.raw = 1 | qe+2020_0168_1.2.raw = 2 | qe+2020_0169_2.2.raw = 2 | qe+2020_0181_2.3.raw = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper does not explicitly state the number of biological replicates for the BioID LC-MS experiment, only for ATAC-seq and RNA-seq.",
+        "TRUTH_CHECK": "The mapping assigns runs to two biological replicates per condition (e.g., PVV1=1, PVV2=2). While the paper doesn't specify the count for MS, this is a standard experimental design and is not contradicted by the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "comment[technical replicate]",
+      "extracted_value": "qe+2020_0176_3.1.raw = 1 | qe+2020_0170_3.2.raw = 1 | qe+2020_0182_3.3.raw = 1 | qe+2020_0177_4.1.raw = 2 | qe+2020_0171_4.2.raw = 2 | qe+2020_0183_4.3.raw = 2 | qe+2020_0178_5.1.raw = 1 | qe+2020_0172_5.2.raw = 1 | qe+2020_0184_5.3.raw = 1 | qe+2020_0179_6.1.raw = 2 | qe+2020_0173_6.2.raw = 2 | qe+2020_0185_6.3.raw = 2 | qe+2020_0139_7.1.raw = 1 | qe+2020_0143_7.2.raw = 1 | qe+2020_0141_7.3.raw = 1 | qe+2020_0146_8.1.raw = 2 | qe+2020_0145_8.2.raw = 2 | qe+2020_0144_8.3.raw = 2 | qe+2020_0153_9.1.raw = 1 | qe+2020_0150_9.2.raw = 1 | qe+2020_0147_9.3.raw = 1 | qe+2020_0154_10.1.raw = 2 | qe+2020_0151_10.2.raw = 2 | qe+2020_0148_10.3.raw = 2 | qe+2020_0155_11.1.raw = 1 | qe+2020_0152_11.2.raw = 1 | qe+2020_0149_11.3.raw = 1 | qe+2020_0164_12.1.raw = 2 | qe+2020_0161_12.2.raw = 2 | qe+2020_0159_12.3.raw = 2 | qe+2020_0163_13.1.raw = 1 | qe+2020_0160_13.2.raw = 1 | qe+2020_0158_13.3.raw = 1 | qe+2020_0162_14.1.raw = 2 | qe+2020_0142_14.2.raw = 2 | qe+2020_0157_14.3.raw = 2 | qe+2020_0174_1.1.raw = 1 | qe+2020_0175_1.2.raw = 1 | qe+2020_0167_1.3.raw = 1 | qe+2020_0168_1.2.raw = 2 | qe+2020_0169_2.2.raw = 2 | qe+2020_0181_2.3.raw = 2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes LC-MS analysis of biotinylated proteins but does not explicitly state the number of technical replicates per sample.",
+        "TRUTH_CHECK": "The mapping assigns technical replicate indices (1 or 2) to runs. However, the runs are grouped by source (e.g., PVV1, PVV2). In the provided mapping, runs from the same source (e.g., PVV1) are all assigned index 1, while runs from another source (e.g., PVV2) are all assigned index 2. This is a misuse of the technical_replicate field; technical replicates are repeated measurements of the same material. If PVV1 and PVV2 are different biological samples, they should have different biological_replicate indices, and their own internal technical replicates should start from 1. If the runs within PVV1 are technical replicates, they should be 1, 2, 3.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "comment[fraction identifier]",
+      "extracted_value": "qe+2020_0176_3.1.raw = 1 | qe+2020_0170_3.2.raw = 2 | qe+2020_0182_3.3.raw = 3 | qe+2020_0177_4.1.raw = 1 | qe+2020_0171_4.2.raw = 2 | qe+2020_0183_4.3.raw = 3 | qe+2020_0178_5.1.raw = 1 | qe+2020_0172_5.2.raw = 2 | qe+2020_0184_5.3.raw = 3 | qe+2020_0179_6.1.raw = 1 | qe+2020_0173_6.2.raw = 2 | qe+2020_0185_6.3.raw = 3 | qe+2020_0139_7.1.raw = 1 | qe+2020_0143_7.2.raw = 2 | qe+2020_0141_7.3.raw = 3 | qe+2020_0146_8.1.raw = 1 | qe+2020_0145_8.2.raw = 2 | qe+2020_0144_8.3.raw = 3 | qe+2020_0153_9.1.raw = 1 | qe+2020_0150_9.2.raw = 2 | qe+2020_0147_9.3.raw = 3 | qe+2020_0154_10.1.raw = 1 | qe+2020_0151_10.2.raw = 2 | qe+2020_0148_10.3.raw = 3 | qe+2020_0155_11.1.raw = 1 | qe+2020_0152_11.2.raw = 2 | qe+2020_0149_11.3.raw = 3 | qe+2020_0164_12.1.raw = 1 | qe+2020_0161_12.2.raw = 2 | qe+2020_0159_12.3.raw = 3 | qe+2020_0163_13.1.raw = 1 | qe+2020_0160_13.2.raw = 2 | qe+2020_0158_13.3.raw = 3 | qe+2020_0162_14.1.raw = 1 | qe+2020_0142_14.2.raw = 2 | qe+2020_0157_14.3.raw = 3 | qe+2020_0174_1.1.raw = 1 | qe+2020_0175_1.2.raw = 2 | qe+2020_0167_1.3.raw = 3 | qe+2020_0168_1.2.raw = 1 | qe+2020_0169_2.2.raw = 2 | qe+2020_0181_2.3.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the fraction_identifier field.",
+        "SOURCE_CHECK": "The paper mentions that gels were silver stained and bands were excised for mass spectrometry, which implies the creation of fractions (gel bands).",
+        "TRUTH_CHECK": "The runs are grouped by source (e.g., PVV1, PVV2), and within each source, they are assigned indices 1, 2, and 3. This matches the process of excising multiple bands from a gel for each sample.",
+        "COMPLETENESS_CHECK": "The mapping follows the definition for fraction indices."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[compound]",
+      "extracted_value": "vehicle",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment compound, which is appropriate for a column named characteristics[compound].",
+        "SOURCE_CHECK": "The paper states that cells were treated with \"10 nM T3 or the equivalent volume of 1 N NaOH vehicle\".",
+        "TRUTH_CHECK": "The value \"vehicle\" correctly describes the control condition used in the experiments.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[compound]",
+      "extracted_value": "T3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"T3\" refers to a compound used as a treatment, which is appropriate for a column named \"characteristics[compound]\".",
+        "SOURCE_CHECK": "The paper explicitly mentions treatment with \"10 nM T3\" in the methods.",
+        "TRUTH_CHECK": "The runs are part of the MS experiment (BioID) where cells were treated with T3 or vehicle.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "ligand-binding domain mutant TRb (PV)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the experimental condition/phenotype of the sample, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions the creation of a \"3X-HA-miniTurbo-TRβ-PV\" mutant vector. While the specific phrase \"ligand-binding domain mutant\" is not verbatim in the provided text, the \"PV\" mutant is explicitly stated as one of the constructs used in the BioID/MS experiment.",
+        "TRUTH_CHECK": "The value correctly identifies the \"PV\" mutant group used in the proteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "wildtype TRb",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the experimental condition/phenotype of the sample, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes the use of a \"3X-HA-miniTurbo-TRβ vector\" (wildtype) alongside mutant and empty vector controls.",
+        "TRUTH_CHECK": "The value correctly identifies the group of runs associated with the wildtype TRβ construct.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "DNA-binding domain mutant TRb",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a specific protein construct/mutant used in the experiment, which is a valid phenotype/characteristic for the runs.",
+        "SOURCE_CHECK": "The paper mentions \"mutant 3X-HA-miniTurbo-TRβ-GS125\" and \"3X-HA-miniTurbo-TRβ-PV\" vectors. While \"DNA-binding domain mutant\" is not verbatim, GS125 is a known DNA-binding domain mutant of TRβ.",
+        "TRUTH_CHECK": "The value correctly identifies the experimental group (the GS125 mutant) for the runs associated with it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "empty vector",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a condition/phenotype of the sample, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions an \"empty vector control group\" in the BioID/MS section.",
+        "TRUTH_CHECK": "The value correctly identifies the control group used in the BioID experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "accession" : "PXD005463",
+  "title" : "Draft of the mitochondrial landscape, OM/IM",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "The mitochondrial subcompartment proteomes revealed by quantitative MS.",
+  "sampleProcessingProtocol" : "Yeast were grown on SILAC media (heavy Arg10, Lys8 / light. Mitochondria were purified according to Sickmann et al, PNAS 2003. Highly purified mitochondria (heavy and light). Outer mitochondrial membrane vesicles (OMV) were isolated by osmotic swelling, followed by two ultracentrifugation steps (Zahedi et al, Mol Biol Cell 2006). Total membranes were isolated by sonication followed by ultracentrifugation. Light/Heavy OMV and total membranes were mixed in three different ratios, and OMV/Total ratios were determined based on SILAC ratios. Therefore, samples were analyzed by nano-LC-MS/MS on a Q-Exactive Plus.",
+  "dataProcessingProtocol" : "SILAC samples were individually analyzed using MaxQuant and the SGD database, generating 3 quantitative datasets which were used to determine protein distributions between total and outer mitochondrial membranes.",
+  "projectTags" : [ "Biological" ],
+  "keywords" : [ "Mitochondria", "Yeast", "Subcompartments" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "EBI terms of use",
+  "submissionDate" : "2016-11-30",
+  "publicationDate" : "2017-08-24",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "René",
+    "lastName" : "Zahedi",
+    "identifier" : "470159",
+    "affiliation" : "Segal Cancer Proteomics Centre",
+    "email" : "rene.zahedi@ladydavis.ca",
+    "country" : "Canada",
+    "orcid" : "0000-0002-4960-5460",
+    "name" : "René Zahedi",
+    "id" : "470159"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "René",
+    "lastName" : "Zahedi",
+    "identifier" : "59500100",
+    "affiliation" : "Protein Dynamics Group ISAS - Leibniz-Institut für Analytische Wissenschaften Otto-Hahn-Str. 6b 44227 Dortmund Germany",
+    "email" : "zahedi@isas.de",
+    "country" : "",
+    "orcid" : "",
+    "name" : "René Zahedi",
+    "id" : "59500100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive",
+    "value" : ""
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000315",
+    "name" : "SILAC"
+  } ],
+  "countries" : [ "Canada" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000214",
+      "name" : "cell culture",
+      "value" : ""
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:4932",
+      "name" : "Saccharomyces cerevisiae (Baker's yeast)",
+      "value" : ""
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:4932",
+    "name" : "Saccharomyces cerevisiae (baker's yeast)",
+    "value" : ""
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000214",
+    "name" : "Cell culture",
+    "value" : ""
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Vögtle FN, Burkhart JM, Gonczarowska-Jorge H, Kücükköse C, Taskin AA, Kopczynski D, Ahrends R, Mossmann D, Sickmann A, Zahedi RP, Meisinger C. Landscape of submitochondrial protein distribution. Nat Commun. 2017 8(1):290",
+    "pubmedID" : 28819139,
+    "doi" : "10.1038/s41467-017-00359-0"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00582",
+    "name" : "6x(13)C",
+    "value" : ""
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00587",
+    "name" : "6x(13)C",
+    "value" : ""
+  } ],
+  "totalFileDownloads" : 7409,
+  "otherOmicsLinks" : [ "px:PXD005541", "pride.project:PXD005541" ]
+}

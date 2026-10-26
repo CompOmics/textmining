@@ -1,0 +1,787 @@
+{
+  "paper_id": "PXD005445",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states \"human brain specimens\" and \"human protein sequences\", making \"Homo sapiens\" an allowed inference.",
+        "TRUTH_CHECK": "The analysed proteins are from human brain regions.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "brain",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ/organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"human brain regions\" and \"human brain specimens\" in the abstract and methods.",
+        "TRUTH_CHECK": "The analyzed samples are from various regions of the brain.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "uninfected",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a proteomic survey of adult human brain regions without mentioning any infection or disease; there is no mention of \"uninfected\" subjects.",
+        "TRUTH_CHECK": "The term \"uninfected\" is not applicable to this study of human brain regions.",
+        "COMPLETENESS_CHECK": "The SDRF term for healthy subjects is \"normal\"."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "1726D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit (days), which is the right field.",
+        "SOURCE_CHECK": "The paper states that specimens range from \"one year post conception to 40 years\", but the specific value \"1726D\" does not appear in the text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct (number + unit), but the content is missing from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "5741D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit (days), which is the right field.",
+        "SOURCE_CHECK": "The paper states that specimens range in age from one year post conception to 40 years, but it does not list the specific age of 5741 days for any subject.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format (number + unit) is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "386D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that specimens range from \"one year post conception to 40 years\", but the specific value \"386D\" (or 386 days) is not mentioned in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format (number + unit) is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "631D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper states that specimens range in age from one year post conception to 40 years, but the specific value \"631D\" (presumably 631 days) is not mentioned in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format (number + unit) is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "13771D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit (D for days), which is the right field.",
+        "SOURCE_CHECK": "The paper states that specimens range in age from one year post conception to 40 years, but it does not list the specific age of 13771 days for any subject.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct (number + unit), but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "11216D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents an age with a unit (D for days), which is the correct field.",
+        "SOURCE_CHECK": "The paper states that specimens range in age from one year post conception to 40 years, but the specific value \"11216D\" does not appear in the text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format (number + unit) is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "7201D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper states that specimens range in age from one year post conception to 40 years, but the specific value \"7201D\" (presumably days) is not mentioned.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct (number and unit), but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "14866D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit (days), which is the correct field.",
+        "SOURCE_CHECK": "The paper states that specimens range in age from one year post conception to 40 years, but the specific value \"14866D\" (or any specific age in days for individual subjects) is not mentioned in the provided text.",
+        "TRUTH_CHECK": "Not applicable as the value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct (number + unit), but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "8661D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit (days), which is the right field.",
+        "SOURCE_CHECK": "The paper states that specimens range in age from one year post conception to 40 years, but it does not provide the specific age for individual subjects or the value \"8661D\".",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format (number + unit) is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "3186D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit (days), which is the correct field.",
+        "SOURCE_CHECK": "The paper states that specimens range in age from one year post conception to 40 years, but the specific value \"3186D\" does not appear in the text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format (number + unit) is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "996D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions specimens range from one year post conception to 40 years, but the specific value \"996D\" (presumably 996 days) is not stated in the text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format (number + unit) is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "13406D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit (days), which is the right field.",
+        "SOURCE_CHECK": "The paper states that specimens range in age from \"one year post conception to 40 years\", but the specific value \"13406D\" (or any specific day count) is not mentioned in the text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format (number + unit) is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "1361D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions ages ranging from \"one year post conception to 40 years\" and specific developmental periods, but the value \"1361D\" does not appear in the text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format (number + unit) is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "4281D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper states that specimens range from one year post conception to 40 years, but the specific value \"4281D\" does not appear in the text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format (number + unit) is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that subjects were a \"near equal mix of males and females\".",
+        "TRUTH_CHECK": "While the paper mentions the presence of males, it does not provide a mapping of specific individuals (e.g., HSB118) to their sex.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that subjects were a \"near equal mix of males and females\".",
+        "TRUTH_CHECK": "The paper confirms the use of female subjects in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "African",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an ethnic group, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the ethnicity or ancestry of the subjects.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "European",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an ethnic group, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the ethnicity or ancestry of the subjects.",
+        "TRUTH_CHECK": "Since the information is not in the text, it cannot be verified as right for these runs.",
+        "COMPLETENESS_CHECK": "The format is a plain text term, which is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods state \"label-free quantitative tandem mass-spectrometry proteomics\" and \"label free quantification (maxLFQ) algorithm\".",
+        "TRUTH_CHECK": "The runs are part of the label-free quantitative proteomics experiment described.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002634; NT=Q Exactive Plus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass spectrometer model, which is the correct field.",
+        "SOURCE_CHECK": "The methods section explicitly states that MS analyses were performed on a Q Exactive Plus mass spectrometer.",
+        "TRUTH_CHECK": "The instrument was used for both the pooled fractionated and single shot quantitative runs.",
+        "COMPLETENESS_CHECK": "The value follows the required key-value format and matches the model name in the paper."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease used for protein digestion, the right field.",
+        "SOURCE_CHECK": "The methods state \"addition of trypsin at 1:20 trypsin:protein ratio\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the brain samples analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000422;NT=HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"higher energy collisional dissociation based fragmentation\" was used, which is the full name for HCD.",
+        "TRUTH_CHECK": "This method was used for the LC-MS/MS analysis of the brain samples.",
+        "COMPLETENESS_CHECK": "The value follows the key-value format and uses the correct normalized term."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "28 NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the collision energy, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"higher energy collisional dissociation based fragmentation (normalised collision energy 28)\".",
+        "TRUTH_CHECK": "The value is correct for the runs using the Q Exactive Plus.",
+        "COMPLETENESS_CHECK": "The value \"28 NCE\" is a correct representation of \"normalised collision energy 28\"."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "FractionationMethod",
+      "extracted_value": "AC=PRIDE:0000564; NT=High-pH reversed-phase chromatography",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an offline separation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"An orthogonal ‘high pH reverse phase separation was carried out\".",
+        "TRUTH_CHECK": "The value is correct for the runs that underwent fractionation.",
+        "COMPLETENESS_CHECK": "Complete. The term is a correct representation of the method described."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "FractionationMethod",
+      "extracted_value": "no fractionation",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the absence of offline fractionation, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes both \"fractionated\" and \"single shot\" runs; \"single shot\" implies no offline fractionation.",
+        "TRUTH_CHECK": "The runs listed (e.g., those with \"dev\" or \"d\" in the assay name) correspond to the single-shot analysis mentioned in the text.",
+        "COMPLETENESS_CHECK": "The value is a clear statement of the absence of the method."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a \"proteomic survey\" using \"label-free quantitative tandem mass-spectrometry proteomics\", which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the LC-MS/MS experiments performed on the brain samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"This search included a fixed modification, cysteine carbamidomethylation\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Follows the required SDRF format (NT, AC, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;AC=UNIMOD:35;MT=Variable;TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"two variable modifications, N-acetylation and methionine oxidation\".",
+        "TRUTH_CHECK": "The modification was used for the search of all runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, accession, residues, and status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"two variable modifications, N-acetylation and methionine oxidation\".",
+        "TRUTH_CHECK": "The modification was used for the search of these runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format including name, position, and modification type."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "QEp15-3136.raw = 1 | QEp15-3137.raw = 1 | QEp15-3138.raw = 1 | QEp15-3139.raw = 1 | QEp15-3140.raw = 1 | QEp15-3141.raw = 1 | QEp15-3142.raw = 1 | QEp15-3143.raw = 1 | QEp15-3144.raw = 1 | QEp15-3145.raw = 1 | QEp15-3146.raw = 1 | QEp15-3147.raw = 1 | QEp15-3148.raw = 1 | QEp15-3149.raw = 1 | QEp15-3150.raw = 1 | QEp15-3538.raw = 1 | QEp15-3539.raw = 1 | QEp15-3540.raw = 1 | QEp15-3541.raw = 1 | QEp15-3542.raw = 1 | QEp15-3543.raw = 1 | QEp15-3544.raw = 1 | QEp15-3545.raw = 1 | QEp15-3546.raw = 1 | QEp15-3547.raw = 1 | QEp15-3548.raw = 1 | QEp15-3549.raw = 1 | QEp15-3550.raw = 1 | QEp15-3551.raw = 1 | QEp15-3552.raw = 1 | QEp15-3558.raw = 1 | QEp15-3559.raw = 1 | QEp15-3560.raw = 1 | QEp15-3561.raw = 1 | QEp15-3562.raw = 1 | QEp15-3563.raw = 1 | QEp15-3564.raw = 1 | QEp15-3565.raw = 1 | QEp15-3566.raw = 1 | QEp15-3567.raw = 1 | QEp15-3568.raw = 1 | QEp15-3569.raw = 1 | QEp15-3570.raw = 1 | QEp15-3571.raw = 1 | QEp15-3572.raw = 1 | QEp15-3578.raw = 1 | QEp15-3579.raw = 1 | QEp15-3580.raw = 1 | QEp15-3581.raw = 1 | QEp15-3582.raw = 1 | QEp15-3583.raw = 1 | QEp15-3584.raw = 1 | QEp15-3585.raw = 1 | QEp15-3586.raw = 1 | QEp15-3587.raw = 1 | QEp15-3588.raw = 1 | QEp15-3589.raw = 1 | QEp15-3590.raw = 1 | QEp15-3591.raw = 1 | QEp15-3592.raw = 1 | QEp15-3598.raw = 1 | QEp15-3599.raw = 1 | QEp15-3600.raw = 1 | QEp15-3601.raw = 1 | QEp15-3602.raw = 1 | QEp15-3603.raw = 1 | QEp15-3604.raw = 1 | QEp15-3605.raw = 1 | QEp15-3606.raw = 1 | QEp15-3607.raw = 1 | QEp15-3608.raw = 1 | QEp15-3609.raw = 1 | QEp15-3610.raw = 1 | QEp15-3611.raw = 1 | QEp15-3612.raw = 1 | QEp15-3618.raw = 1 | QEp15-3619.raw = 1 | QEp15-3620.raw = 1 | QEp15-3621.raw = 1 | QEp15-3622.raw = 1 | QEp15-3623.raw = 1 | QEp15-3624.raw = 1 | QEp15-3625.raw = 1 | QEp15-3626.raw = 1 | QEp15-3627.raw = 1 | QEp15-3628.raw = 1 | QEp15-3629.raw = 1 | QEp15-3630.raw = 1 | QEp15-3631.raw = 1 | QEp15-3632.raw = 1 | QEp15-3638.raw = 1 | QEp15-3639.raw = 1 | QEp15-3640.raw = 1 | QEp15-3641.raw = 1 | QEp15-3642.raw = 1 | QEp15-3643.raw = 1 | QEp15-3644.raw = 1 | QEp15-3645.raw = 1 | QEp15-3646.raw = 1 | QEp15-3647.raw = 1 | QEp15-3648.raw = 1 | QEp15-3649.raw = 1 | QEp15-3650.raw = 1 | QEp15-3651.raw = 1 | QEp15-3652.raw = 1 | QEp16-2746_AMYdev.raw = 1 | QEp16-2146_CBCd.raw = 1 | QEp16-1970_DFCd.raw = 1 | QEp16-2081_HIPd.raw = 1 | QEp16-2005_MDd.raw = 1 | QEp16-2035_STRd.raw = 1 | QEp16-2116_V1Cd.raw = 1 | QEp16-2761_AMYdev.raw = 1 | QEp16-2731_AMYdev.raw = 1 | QEp16-2736_AMYdev.raw = 1 | QEp16-2141_CBCd.raw = 1 | QEp16-1965_DFCd.raw = 1 | QEp16-2076_HIPd.raw = 1 | QEp16-2000_MDd.raw = 1 | QEp16-2030_STRd.raw = 1 | QEp16-2111_V1Cd.raw = 1 | QEp15-2554_AMY.raw = 1 | QEp15-2606_CBC.raw = 1 | QEp15-2580_DFC.raw = 1 | QEp15-2713_HIP.raw = 1 | QEp15-2788_STR.raw = 1 | QEp15-2826_V1C.raw = 1 | QEp15-2558_AMY.raw = 1 | QEp15-2618_CBC.raw = 1 | QEp15-2592_DFC.raw = 1 | QEp15-2717_HIP.raw = 1 | QEp15-2738_MD.raw = 1 | QEp15-2792_STR.raw = 1 | QEp15-2830_V1C.raw = 1 | QEp16-2131_CBCd.raw = 1 | QEp16-1955_DFCd.raw = 1 | QEp16-2055_HIPd.raw = 1 | QEp16-1985_MDd.raw = 1 | QEp16-2020_STRd.raw = 1 | QEp16-2096_V1Cd.raw = 1 | QEp15-2562_AMY.raw = 1 | QEp15-2610_CBC.raw = 1 | QEp15-2584_DFC.raw = 1 | QEp15-2721_HIP.raw = 1 | QEp15-2742_MD.raw = 1 | QEp15-2796_STR.raw = 1 | QEp15-2834_V1C.raw = 1 | QEp15-2566_AMY.raw = 1 | QEp15-2622_CBC.raw = 1 | QEp15-2596_DFC.raw = 1 | QEp15-2725_HIP.raw = 1 | QEp15-2746_MD.raw = 1 | QEp15-2800_STR.raw = 1 | QEp15-2838_V1C.raw = 1 | QEp16-2151_CBCd.raw = 1 | QEp16-1975_DFCd.raw = 1 | QEp16-2086_HIPd.raw = 1 | QEp16-2010_MDd.raw = 1 | QEp16-2040_STRd.raw = 1 | QEp16-2121_V1Cd.raw = 1 | QEp16-2136_CBCd.raw = 1 | QEp16-1960_DFCd.raw = 1 | QEp16-2060_HIPd.raw = 1 | QEp16-1990_MDd.raw = 1 | QEp16-2025_STRd.raw = 1 | QEp16-2101_V1Cd.raw = 1 | QEp16-2126_CBCd.raw = 1 | QEp16-1950_DFCd.raw = 1 | QEp16-2050_HIPd.raw = 1 | QEp16-1980_MDd.raw = 1 | QEp16-2015_STRd.raw = 1 | QEp16-2091_V1Cd.raw = 1 | QEp15-2570_AMY.raw = 1 | QEp15-2614_CBC.raw = 1 | QEp15-2588_DFC.raw = 1 | QEp15-2729_HIP.raw = 1 | QEp15-2750_MD.raw = 1 | QEp15-2804_STR.raw = 1 | QEp15-2842_V1C.raw = 1 | QEp16-2741_AMYdev.raw = 1 | QEp16-2751_AMYdev.raw = 1 | QEp16-2756_AMYdev.raw = 1 | QEp16-2156_CON3.raw = 1 | QEp15-2822_CON.raw = 1 | QEp16-2771_CON.raw = 1 | QEp15-2550_CON.raw = 1 | QEp15-2734_CON.raw = 1 | QEp15-2709_CON.raw = 1 | QEp16-2726_CON.raw = 1 | QEp16-2106_CON3.raw = 1 | QEp15-2784_CON.raw = 1 | QEp15-2602_CON.raw = 1 | QEp15-2576_CON.raw = 1 | QEp16-2045_CON3.raw = 1 | QEp16-1995_CON3.raw = 1 | QEp16-2766_AMYdev.raw = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes multiple subjects (e.g., HSB118, HSB122, HSB123, etc.) and pooled samples.",
+        "TRUTH_CHECK": "The mapping assigns every single run to biological replicate 1, regardless of the source (e.g., HSB118, HSB122, HSB123, etc.). According to the definition, separate donors are independent biological units and must get different indices (1, 2, 3...).",
+        "COMPLETENESS_CHECK": "Not applicable, the logic of the mapping is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "QEp15-3136.raw = 1 | QEp15-3137.raw = 1 | QEp15-3138.raw = 1 | QEp15-3139.raw = 1 | QEp15-3140.raw = 1 | QEp15-3141.raw = 1 | QEp15-3142.raw = 1 | QEp15-3143.raw = 1 | QEp15-3144.raw = 1 | QEp15-3145.raw = 1 | QEp15-3146.raw = 1 | QEp15-3147.raw = 1 | QEp15-3148.raw = 1 | QEp15-3149.raw = 1 | QEp15-3150.raw = 1 | QEp15-3538.raw = 1 | QEp15-3539.raw = 1 | QEp15-3540.raw = 1 | QEp15-3541.raw = 1 | QEp15-3542.raw = 1 | QEp15-3543.raw = 1 | QEp15-3544.raw = 1 | QEp15-3545.raw = 1 | QEp15-3546.raw = 1 | QEp15-3547.raw = 1 | QEp15-3548.raw = 1 | QEp15-3549.raw = 1 | QEp15-3550.raw = 1 | QEp15-3551.raw = 1 | QEp15-3552.raw = 1 | QEp15-3558.raw = 1 | QEp15-3559.raw = 1 | QEp15-3560.raw = 1 | QEp15-3561.raw = 1 | QEp15-3562.raw = 1 | QEp15-3563.raw = 1 | QEp15-3564.raw = 1 | QEp15-3565.raw = 1 | QEp15-3566.raw = 1 | QEp15-3567.raw = 1 | QEp15-3568.raw = 1 | QEp15-3569.raw = 1 | QEp15-3570.raw = 1 | QEp15-3571.raw = 1 | QEp15-3572.raw = 1 | QEp15-3578.raw = 1 | QEp15-3579.raw = 1 | QEp15-3580.raw = 1 | QEp15-3581.raw = 1 | QEp15-3582.raw = 1 | QEp15-3583.raw = 1 | QEp15-3584.raw = 1 | QEp15-3585.raw = 1 | QEp15-3586.raw = 1 | QEp15-3587.raw = 1 | QEp15-3588.raw = 1 | QEp15-3589.raw = 1 | QEp15-3590.raw = 1 | QEp15-3591.raw = 1 | QEp15-3592.raw = 1 | QEp15-3598.raw = 1 | QEp15-3599.raw = 1 | QEp15-3600.raw = 1 | QEp15-3601.raw = 1 | QEp15-3602.raw = 1 | QEp15-3603.raw = 1 | QEp15-3604.raw = 1 | QEp15-3605.raw = 1 | QEp15-3606.raw = 1 | QEp15-3607.raw = 1 | QEp15-3608.raw = 1 | QEp15-3609.raw = 1 | QEp15-3610.raw = 1 | QEp15-3611.raw = 1 | QEp15-3612.raw = 1 | QEp15-3618.raw = 1 | QEp15-3619.raw = 1 | QEp15-3620.raw = 1 | QEp15-3621.raw = 1 | QEp15-3622.raw = 1 | QEp15-3623.raw = 1 | QEp15-3624.raw = 1 | QEp15-3625.raw = 1 | QEp15-3626.raw = 1 | QEp15-3627.raw = 1 | QEp15-3628.raw = 1 | QEp15-3629.raw = 1 | QEp15-3630.raw = 1 | QEp15-3631.raw = 1 | QEp15-3632.raw = 1 | QEp15-3638.raw = 1 | QEp15-3639.raw = 1 | QEp15-3640.raw = 1 | QEp15-3641.raw = 1 | QEp15-3642.raw = 1 | QEp15-3643.raw = 1 | QEp15-3644.raw = 1 | QEp15-3645.raw = 1 | QEp15-3646.raw = 1 | QEp15-3647.raw = 1 | QEp15-3648.raw = 1 | QEp15-3649.raw = 1 | QEp15-3650.raw = 1 | QEp15-3651.raw = 1 | QEp15-3652.raw = 1 | QEp16-2746_AMYdev.raw = 1 | QEp16-2146_CBCd.raw = 1 | QEp16-1970_DFCd.raw = 1 | QEp16-2081_HIPd.raw = 1 | QEp16-2005_MDd.raw = 1 | QEp16-2035_STRd.raw = 1 | QEp16-2116_V1Cd.raw = 1 | QEp16-2761_AMYdev.raw = 1 | QEp16-2731_AMYdev.raw = 1 | QEp16-2736_AMYdev.raw = 1 | QEp16-2141_CBCd.raw = 1 | QEp16-1965_DFCd.raw = 1 | QEp16-2076_HIPd.raw = 1 | QEp16-2000_MDd.raw = 1 | QEp16-2030_STRd.raw = 1 | QEp16-2111_V1Cd.raw = 1 | QEp15-2554_AMY.raw = 1 | QEp15-2606_CBC.raw = 1 | QEp15-2580_DFC.raw = 1 | QEp15-2713_HIP.raw = 1 | QEp15-2788_STR.raw = 1 | QEp15-2826_V1C.raw = 1 | QEp15-2558_AMY.raw = 1 | QEp15-2618_CBC.raw = 1 | QEp15-2592_DFC.raw = 1 | QEp15-2717_HIP.raw = 1 | QEp15-2738_MD.raw = 1 | QEp15-2792_STR.raw = 1 | QEp15-2830_V1C.raw = 1 | QEp16-2131_CBCd.raw = 1 | QEp16-1955_DFCd.raw = 1 | QEp16-2055_HIPd.raw = 1 | QEp16-1985_MDd.raw = 1 | QEp16-2020_STRd.raw = 1 | QEp16-2096_V1Cd.raw = 1 | QEp15-2562_AMY.raw = 1 | QEp15-2610_CBC.raw = 1 | QEp15-2584_DFC.raw = 1 | QEp15-2721_HIP.raw = 1 | QEp15-2742_MD.raw = 1 | QEp15-2796_STR.raw = 1 | QEp15-2834_V1C.raw = 1 | QEp15-2566_AMY.raw = 1 | QEp15-2622_CBC.raw = 1 | QEp15-2596_DFC.raw = 1 | QEp15-2725_HIP.raw = 1 | QEp15-2746_MD.raw = 1 | QEp15-2800_STR.raw = 1 | QEp15-2838_V1C.raw = 1 | QEp16-2151_CBCd.raw = 1 | QEp16-1975_DFCd.raw = 1 | QEp16-2086_HIPd.raw = 1 | QEp16-2010_MDd.raw = 1 | QEp16-2040_STRd.raw = 1 | QEp16-2121_V1Cd.raw = 1 | QEp16-2136_CBCd.raw = 1 | QEp16-1960_DFCd.raw = 1 | QEp16-2060_HIPd.raw = 1 | QEp16-1990_MDd.raw = 1 | QEp16-2025_STRd.raw = 1 | QEp16-2101_V1Cd.raw = 1 | QEp16-2126_CBCd.raw = 1 | QEp16-1950_DFCd.raw = 1 | QEp16-2050_HIPd.raw = 1 | QEp16-1980_MDd.raw = 1 | QEp16-2015_STRd.raw = 1 | QEp16-2091_V1Cd.raw = 1 | QEp15-2570_AMY.raw = 1 | QEp15-2614_CBC.raw = 1 | QEp15-2588_DFC.raw = 1 | QEp15-2729_HIP.raw = 1 | QEp15-2750_MD.raw = 1 | QEp15-2804_STR.raw = 1 | QEp15-2842_V1C.raw = 1 | QEp16-2741_AMYdev.raw = 1 | QEp16-2751_AMYdev.raw = 1 | QEp16-2756_AMYdev.raw = 1 | QEp16-2156_CON3.raw = not available | QEp15-2822_CON.raw = not available | QEp16-2771_CON.raw = not available | QEp15-2550_CON.raw = not available | QEp15-2734_CON.raw = not available | QEp15-2709_CON.raw = not available | QEp16-2726_CON.raw = not available | QEp16-2106_CON3.raw = not available | QEp15-2784_CON.raw = not available | QEp15-2602_CON.raw = not available | QEp15-2576_CON.raw = not available | QEp16-2045_CON3.raw = not available | QEp16-1995_CON3.raw = not available | QEp16-2766_AMYdev.raw = not available",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes single-shot runs and fractionated runs (where 48 fractions were pooled into 15), but does not explicitly mention repeated technical injections of the same material.",
+        "TRUTH_CHECK": "For the fractionated runs (e.g., mixed_0 to mixed_6), each run represents a different pool (fraction), not a technical replicate of the same material. According to the field definition, separate elutions or enrichment steps are fractions, not technical replicates. Therefore, these should be technical replicate 1, but they are distinct materials. For the single-shot runs, they are measured once, so they are technical replicate 1.",
+        "COMPLETENESS_CHECK": "The mapping assigns 1 to all valid runs and \"not available\" to controls. However, the \"not available\" values are not allowed per SDRF conventions (though the prompt says they are never sent, they appear in the candidate_value)."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "QEp15-3136.raw = 1 | QEp15-3137.raw = 2 | QEp15-3138.raw = 3 | QEp15-3139.raw = 4 | QEp15-3140.raw = 5 | QEp15-3141.raw = 6 | QEp15-3142.raw = 7 | QEp15-3143.raw = 8 | QEp15-3144.raw = 9 | QEp15-3145.raw = 10 | QEp15-3146.raw = 11 | QEp15-3147.raw = 12 | QEp15-3148.raw = 13 | QEp15-3149.raw = 14 | QEp15-3150.raw = 15 | QEp15-3538.raw = 1 | QEp15-3539.raw = 2 | QEp15-3540.raw = 3 | QEp15-3541.raw = 4 | QEp15-3542.raw = 5 | QEp15-3543.raw = 6 | QEp15-3544.raw = 7 | QEp15-3545.raw = 8 | QEp15-3546.raw = 9 | QEp15-3547.raw = 10 | QEp15-3548.raw = 11 | QEp15-3549.raw = 12 | QEp15-3550.raw = 13 | QEp15-3551.raw = 14 | QEp15-3552.raw = 15 | QEp15-3558.raw = 1 | QEp15-3559.raw = 2 | QEp15-3560.raw = 3 | QEp15-3561.raw = 4 | QEp15-3562.raw = 5 | QEp15-3563.raw = 6 | QEp15-3564.raw = 7 | QEp15-3565.raw = 8 | QEp15-3566.raw = 9 | QEp15-3567.raw = 10 | QEp15-3568.raw = 11 | QEp15-3569.raw = 12 | QEp15-3570.raw = 13 | QEp15-3571.raw = 14 | QEp15-3572.raw = 15 | QEp15-3578.raw = 1 | QEp15-3579.raw = 2 | QEp15-3580.raw = 3 | QEp15-3581.raw = 4 | QEp15-3582.raw = 5 | QEp15-3583.raw = 6 | QEp15-3584.raw = 7 | QEp15-3585.raw = 8 | QEp15-3586.raw = 9 | QEp15-3587.raw = 10 | QEp15-3588.raw = 11 | QEp15-3589.raw = 12 | QEp15-3590.raw = 13 | QEp15-3591.raw = 14 | QEp15-3592.raw = 15 | QEp15-3598.raw = 1 | QEp15-3599.raw = 2 | QEp15-3600.raw = 3 | QEp15-3601.raw = 4 | QEp15-3602.raw = 5 | QEp15-3603.raw = 6 | QEp15-3604.raw = 7 | QEp15-3605.raw = 8 | QEp15-3606.raw = 9 | QEp15-3607.raw = 10 | QEp15-3608.raw = 11 | QEp15-3609.raw = 12 | QEp15-3610.raw = 13 | QEp15-3611.raw = 14 | QEp15-3612.raw = 15 | QEp15-3618.raw = 1 | QEp15-3619.raw = 2 | QEp15-3620.raw = 3 | QEp15-3621.raw = 4 | QEp15-3622.raw = 5 | QEp15-3623.raw = 6 | QEp15-3624.raw = 7 | QEp15-3625.raw = 8 | QEp15-3626.raw = 9 | QEp15-3627.raw = 10 | QEp15-3628.raw = 11 | QEp15-3629.raw = 12 | QEp15-3630.raw = 13 | QEp15-3631.raw = 14 | QEp15-3632.raw = 15 | QEp15-3638.raw = 1 | QEp15-3639.raw = 2 | QEp15-3640.raw = 3 | QEp15-3641.raw = 4 | QEp15-3642.raw = 5 | QEp15-3643.raw = 6 | QEp15-3644.raw = 7 | QEp15-3645.raw = 8 | QEp15-3646.raw = 9 | QEp15-3647.raw = 10 | QEp15-3648.raw = 11 | QEp15-3649.raw = 12 | QEp15-3650.raw = 13 | QEp15-3651.raw = 14 | QEp15-3652.raw = 15 | QEp16-2746_AMYdev.raw = not applicable | QEp16-2146_CBCd.raw = not applicable | QEp16-1970_DFCd.raw = not applicable | QEp16-2081_HIPd.raw = not applicable | QEp16-2005_MDd.raw = not applicable | QEp16-2035_STRd.raw = not applicable | QEp16-2116_V1Cd.raw = not applicable | QEp16-2761_AMYdev.raw = not applicable | QEp16-2731_AMYdev.raw = not applicable | QEp16-2736_AMYdev.raw = not applicable | QEp16-2141_CBCd.raw = not applicable | QEp16-1965_DFCd.raw = not applicable | QEp16-2076_HIPd.raw = not applicable | QEp16-2000_MDd.raw = not applicable | QEp16-2030_STRd.raw = not applicable | QEp16-2111_V1Cd.raw = not applicable | QEp15-2554_AMY.raw = not applicable | QEp15-2606_CBC.raw = not applicable | QEp15-2580_DFC.raw = not applicable | QEp15-2713_HIP.raw = not applicable | QEp15-2788_STR.raw = not applicable | QEp15-2826_V1C.raw = not applicable | QEp15-2558_AMY.raw = not applicable | QEp15-2618_CBC.raw = not applicable | QEp15-2592_DFC.raw = not applicable | QEp15-2717_HIP.raw = not applicable | QEp15-2738_MD.raw = not applicable | QEp15-2792_STR.raw = not applicable | QEp15-2830_V1C.raw = not applicable | QEp16-2131_CBCd.raw = not applicable | QEp16-1955_DFCd.raw = not applicable | QEp16-2055_HIPd.raw = not applicable | QEp16-1985_MDd.raw = not applicable | QEp16-2020_STRd.raw = not applicable | QEp16-2096_V1Cd.raw = not applicable | QEp15-2562_AMY.raw = not applicable | QEp15-2610_CBC.raw = not applicable | QEp15-2584_DFC.raw = not applicable | QEp15-2721_HIP.raw = not applicable | QEp15-2742_MD.raw = not applicable | QEp15-2796_STR.raw = not applicable | QEp15-2834_V1C.raw = not applicable | QEp15-2566_AMY.raw = not applicable | QEp15-2622_CBC.raw = not applicable | QEp15-2596_DFC.raw = not applicable | QEp15-2725_HIP.raw = not applicable | QEp15-2746_MD.raw = not applicable | QEp15-2800_STR.raw = not applicable | QEp15-2838_V1C.raw = not applicable | QEp16-2151_CBCd.raw = not applicable | QEp16-1975_DFCd.raw = not applicable | QEp16-2086_HIPd.raw = not applicable | QEp16-2010_MDd.raw = not applicable | QEp16-2040_STRd.raw = not applicable | QEp16-2121_V1Cd.raw = not applicable | QEp16-2136_CBCd.raw = not applicable | QEp16-1960_DFCd.raw = not applicable | QEp16-2060_HIPd.raw = not applicable | QEp16-1990_MDd.raw = not applicable | QEp16-2025_STRd.raw = not applicable | QEp16-2101_V1Cd.raw = not applicable | QEp16-2126_CBCd.raw = not applicable | QEp16-1950_DFCd.raw = not applicable | QEp16-2050_HIPd.raw = not applicable | QEp16-1980_MDd.raw = not applicable | QEp16-2015_STRd.raw = not applicable | QEp16-2091_V1Cd.raw = not applicable | QEp15-2570_AMY.raw = not applicable | QEp15-2614_CBC.raw = not applicable | QEp15-2588_DFC.raw = not applicable | QEp15-2729_HIP.raw = not applicable | QEp15-2750_MD.raw = not applicable | QEp15-2804_STR.raw = not applicable | QEp15-2842_V1C.raw = not applicable | QEp16-2741_AMYdev.raw = not applicable | QEp16-2751_AMYdev.raw = not applicable | QEp16-2756_AMYdev.raw = not applicable | QEp16-2156_CON3.raw = not available | QEp15-2822_CON.raw = not available | QEp16-2771_CON.raw = not available | QEp15-2550_CON.raw = not available | QEp15-2734_CON.raw = not available | QEp15-2709_CON.raw = not available | QEp16-2726_CON.raw = not available | QEp16-2106_CON3.raw = not available | QEp15-2784_CON.raw = not available | QEp15-2602_CON.raw = not available | QEp15-2576_CON.raw = not available | QEp16-2045_CON3.raw = not available | QEp16-1995_CON3.raw = not available | QEp16-2766_AMYdev.raw = not available",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that for fractionated samples, 48 fractions were collected and then pooled into 15 pools, each analyzed individually by LC MS/MS.",
+        "TRUTH_CHECK": "The runs associated with \"mixed\" sources are the fractionated runs, and they are correctly assigned indices 1-15. The single-shot runs (e.g., HSB... brain) are correctly marked as not applicable as they did not undergo offline fractionation.",
+        "COMPLETENESS_CHECK": "The mapping follows the definition, assigning indices to fractionated runs and excluding non-fractionated runs."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "QEp15-3136.raw = not applicable | QEp15-3137.raw = not applicable | QEp15-3138.raw = not applicable | QEp15-3139.raw = not applicable | QEp15-3140.raw = not applicable | QEp15-3141.raw = not applicable | QEp15-3142.raw = not applicable | QEp15-3143.raw = not applicable | QEp15-3144.raw = not applicable | QEp15-3145.raw = not applicable | QEp15-3146.raw = not applicable | QEp15-3147.raw = not applicable | QEp15-3148.raw = not applicable | QEp15-3149.raw = not applicable | QEp15-3150.raw = not applicable | QEp15-3538.raw = not applicable | QEp15-3539.raw = not applicable | QEp15-3540.raw = not applicable | QEp15-3541.raw = not applicable | QEp15-3542.raw = not applicable | QEp15-3543.raw = not applicable | QEp15-3544.raw = not applicable | QEp15-3545.raw = not applicable | QEp15-3546.raw = not applicable | QEp15-3547.raw = not applicable | QEp15-3548.raw = not applicable | QEp15-3549.raw = not applicable | QEp15-3550.raw = not applicable | QEp15-3551.raw = not applicable | QEp15-3552.raw = not applicable | QEp15-3558.raw = not applicable | QEp15-3559.raw = not applicable | QEp15-3560.raw = not applicable | QEp15-3561.raw = not applicable | QEp15-3562.raw = not applicable | QEp15-3563.raw = not applicable | QEp15-3564.raw = not applicable | QEp15-3565.raw = not applicable | QEp15-3566.raw = not applicable | QEp15-3567.raw = not applicable | QEp15-3568.raw = not applicable | QEp15-3569.raw = not applicable | QEp15-3570.raw = not applicable | QEp15-3571.raw = not applicable | QEp15-3572.raw = not applicable | QEp15-3578.raw = not applicable | QEp15-3579.raw = not applicable | QEp15-3580.raw = not applicable | QEp15-3581.raw = not applicable | QEp15-3582.raw = not applicable | QEp15-3583.raw = not applicable | QEp15-3584.raw = not applicable | QEp15-3585.raw = not applicable | QEp15-3586.raw = not applicable | QEp15-3587.raw = not applicable | QEp15-3588.raw = not applicable | QEp15-3589.raw = not applicable | QEp15-3590.raw = not applicable | QEp15-3591.raw = not applicable | QEp15-3592.raw = not applicable | QEp15-3598.raw = not applicable | QEp15-3599.raw = not applicable | QEp15-3600.raw = not applicable | QEp15-3601.raw = not applicable | QEp15-3602.raw = not applicable | QEp15-3603.raw = not applicable | QEp15-3604.raw = not applicable | QEp15-3605.raw = not applicable | QEp15-3606.raw = not applicable | QEp15-3607.raw = not applicable | QEp15-3608.raw = not applicable | QEp15-3609.raw = not applicable | QEp15-3610.raw = not applicable | QEp15-3611.raw = not applicable | QEp15-3612.raw = not applicable | QEp15-3618.raw = not applicable | QEp15-3619.raw = not applicable | QEp15-3620.raw = not applicable | QEp15-3621.raw = not applicable | QEp15-3622.raw = not applicable | QEp15-3623.raw = not applicable | QEp15-3624.raw = not applicable | QEp15-3625.raw = not applicable | QEp15-3626.raw = not applicable | QEp15-3627.raw = not applicable | QEp15-3628.raw = not applicable | QEp15-3629.raw = not applicable | QEp15-3630.raw = not applicable | QEp15-3631.raw = not applicable | QEp15-3632.raw = not applicable | QEp15-3638.raw = not applicable | QEp15-3639.raw = not applicable | QEp15-3640.raw = not applicable | QEp15-3641.raw = not applicable | QEp15-3642.raw = not applicable | QEp15-3643.raw = not applicable | QEp15-3644.raw = not applicable | QEp15-3645.raw = not applicable | QEp15-3646.raw = not applicable | QEp15-3647.raw = not applicable | QEp15-3648.raw = not applicable | QEp15-3649.raw = not applicable | QEp15-3650.raw = not applicable | QEp15-3651.raw = not applicable | QEp15-3652.raw = not applicable | QEp16-2746_AMYdev.raw = HSB118 | QEp16-2146_CBCd.raw = HSB118 | QEp16-1970_DFCd.raw = HSB118 | QEp16-2081_HIPd.raw = HSB118 | QEp16-2005_MDd.raw = HSB118 | QEp16-2035_STRd.raw = HSB118 | QEp16-2116_V1Cd.raw = HSB118 | QEp16-2761_AMYdev.raw = HSB119 | QEp16-2731_AMYdev.raw = HSB121 | QEp16-2736_AMYdev.raw = HSB122 | QEp16-2141_CBCd.raw = HSB122 | QEp16-1965_DFCd.raw = HSB122 | QEp16-2076_HIPd.raw = HSB122 | QEp16-2000_MDd.raw = HSB122 | QEp16-2030_STRd.raw = HSB122 | QEp16-2111_V1Cd.raw = HSB122 | QEp15-2554_AMY.raw = HSB123 | QEp15-2606_CBC.raw = HSB123 | QEp15-2580_DFC.raw = HSB123 | QEp15-2713_HIP.raw = HSB123 | QEp15-2788_STR.raw = HSB123 | QEp15-2826_V1C.raw = HSB123 | QEp15-2558_AMY.raw = HSB126 | QEp15-2618_CBC.raw = HSB126 | QEp15-2592_DFC.raw = HSB126 | QEp15-2717_HIP.raw = HSB126 | QEp15-2738_MD.raw = HSB126 | QEp15-2792_STR.raw = HSB126 | QEp15-2830_V1C.raw = HSB126 | QEp16-2131_CBCd.raw = HSB127 | QEp16-1955_DFCd.raw = HSB127 | QEp16-2055_HIPd.raw = HSB127 | QEp16-1985_MDd.raw = HSB127 | QEp16-2020_STRd.raw = HSB127 | QEp16-2096_V1Cd.raw = HSB127 | QEp15-2562_AMY.raw = HSB135 | QEp15-2610_CBC.raw = HSB135 | QEp15-2584_DFC.raw = HSB135 | QEp15-2721_HIP.raw = HSB135 | QEp15-2742_MD.raw = HSB135 | QEp15-2796_STR.raw = HSB135 | QEp15-2834_V1C.raw = HSB135 | QEp15-2566_AMY.raw = HSB136 | QEp15-2622_CBC.raw = HSB136 | QEp15-2596_DFC.raw = HSB136 | QEp15-2725_HIP.raw = HSB136 | QEp15-2746_MD.raw = HSB136 | QEp15-2800_STR.raw = HSB136 | QEp15-2838_V1C.raw = HSB136 | QEp16-2151_CBCd.raw = HSB139 | QEp16-1975_DFCd.raw = HSB139 | QEp16-2086_HIPd.raw = HSB139 | QEp16-2010_MDd.raw = HSB139 | QEp16-2040_STRd.raw = HSB139 | QEp16-2121_V1Cd.raw = HSB139 | QEp16-2136_CBCd.raw = HSB141 | QEp16-1960_DFCd.raw = HSB141 | QEp16-2060_HIPd.raw = HSB141 | QEp16-1990_MDd.raw = HSB141 | QEp16-2025_STRd.raw = HSB141 | QEp16-2101_V1Cd.raw = HSB141 | QEp16-2126_CBCd.raw = HSB143 | QEp16-1950_DFCd.raw = HSB143 | QEp16-2050_HIPd.raw = HSB143 | QEp16-1980_MDd.raw = HSB143 | QEp16-2015_STRd.raw = HSB143 | QEp16-2091_V1Cd.raw = HSB143 | QEp15-2570_AMY.raw = HSB145 | QEp15-2614_CBC.raw = HSB145 | QEp15-2588_DFC.raw = HSB145 | QEp15-2729_HIP.raw = HSB145 | QEp15-2750_MD.raw = HSB145 | QEp15-2804_STR.raw = HSB145 | QEp15-2842_V1C.raw = HSB145 | QEp16-2741_AMYdev.raw = HSB173 | QEp16-2751_AMYdev.raw = HSB174 | QEp16-2756_AMYdev.raw = HSB175 | QEp16-2156_CON3.raw = not available | QEp15-2822_CON.raw = not available | QEp16-2771_CON.raw = not available | QEp15-2550_CON.raw = not available | QEp15-2734_CON.raw = not available | QEp15-2709_CON.raw = not available | QEp16-2726_CON.raw = not available | QEp16-2106_CON3.raw = not available | QEp15-2784_CON.raw = not available | QEp15-2602_CON.raw = not available | QEp15-2576_CON.raw = not available | QEp16-2045_CON3.raw = not available | QEp16-1995_CON3.raw = not available | QEp16-2766_AMYdev.raw = not available",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents subject identifiers, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that samples were obtained from the Brainspan and psychENCODE consortia and that non-identifying information was recorded, but it does not list the specific subject IDs (e.g., HSB118, HSB119).",
+        "TRUTH_CHECK": "The IDs are not present in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[anatomycal cluster]",
+      "extracted_value": "amygdala",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a brain region, which fits the column name \"characteristics[anatomycal cluster]\".",
+        "SOURCE_CHECK": "The amygdala (AMY) is explicitly listed as one of the seven brain regions profiled in the methods.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., those containing \"AMY\" in the filename and source) correspond to the amygdala samples.",
+        "COMPLETENESS_CHECK": "The value is a plain text name of the region, which is complete for this type of characteristic column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[anatomycal cluster]",
+      "extracted_value": "cerebellar cortex",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a brain region, which is appropriate for a column named \"anatomical cluster\".",
+        "SOURCE_CHECK": "The paper explicitly mentions the \"cerebellar cortex\" in the sample dissections section for the CBC region.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the CBC (cerebellum) region.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the anatomical region."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[anatomycal cluster]",
+      "extracted_value": "dorsolateral prefrontal cortex",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a brain region, which fits the column name \"anatomical cluster\".",
+        "SOURCE_CHECK": "The \"dorsolateral prefrontal cortex\" (DFC) is explicitly listed as one of the seven brain regions profiled in the methods.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with DFC.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[anatomycal cluster]",
+      "extracted_value": "hippocampal formation",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a brain region, which is appropriate for a column named \"characteristics[anatomycal cluster]\".",
+        "SOURCE_CHECK": "The paper mentions the \"retrocommissural hippocampal formation\" in the Sample dissections section.",
+        "TRUTH_CHECK": "The value \"hippocampal formation\" correctly identifies the anatomical region for the runs labeled as HIP.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[anatomycal cluster]",
+      "extracted_value": "medial dorsal nucleus of thalamus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a brain region, which is appropriate for a column named \"anatomical cluster\".",
+        "SOURCE_CHECK": "The paper explicitly mentions the \"mediodorsal nucleus of the thalamus (MD)\" in the Sample dissections section.",
+        "TRUTH_CHECK": "The value is correct for the runs listed, as they are identified by the \"MD\" label in the source/assay columns.",
+        "COMPLETENESS_CHECK": "The value is a correct representation of the brain region described in the text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[anatomycal cluster]",
+      "extracted_value": "striatum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"striatum\" is a brain region, which fits the column name \"characteristics[anatomycal cluster]\".",
+        "SOURCE_CHECK": "The paper explicitly lists the striatum (STR) as one of the seven brain regions profiled.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., those containing \"STR\") correspond to the striatum samples described in the paper.",
+        "COMPLETENESS_CHECK": "The value is a plain text name of the region, which is complete for this type of characteristic column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[anatomycal cluster]",
+      "extracted_value": "primary visual cortex",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a brain region, which fits the column name \"characteristics[anatomycal cluster]\".",
+        "SOURCE_CHECK": "The \"primary visual cortex\" (V1C) is explicitly listed as one of the seven brain regions profiled in the methods.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., those containing \"V1C\") are correctly mapped to the primary visual cortex.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the anatomical region."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Depletion",
+      "extracted_value": "no depletion",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the absence of a depletion step, which is a valid technical detail for a proteomics experiment.",
+        "SOURCE_CHECK": "The paper describes sample preparation (lysis, reduction, alkylation, digestion, and desalting) but mentions no depletion of abundant proteins.",
+        "TRUTH_CHECK": "Since no depletion was performed, \"no depletion\" is a correct description of the process for these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "AC=MS:1000484; NT=Orbitrap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer, which is the correct information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper states the use of a Q Exactive Plus mass spectrometer; an Orbitrap mass analyzer is an allowed inference from this instrument model.",
+        "TRUTH_CHECK": "The Q Exactive Plus uses an Orbitrap for MS2 scans (and MS1).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Separation",
+      "extracted_value": "AC=PRIDE:0000563;NT=Reversed-phase chromatography",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the chromatographic separation method, which is appropriate for a column named \"Separation\".",
+        "SOURCE_CHECK": "The paper describes the use of \"C18 column\" and \"high pH reverse phase separation\", which are types of reversed-phase chromatography.",
+        "TRUTH_CHECK": "All runs used reversed-phase chromatography (both for the offline fractionation and the online LC-MS/MS).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

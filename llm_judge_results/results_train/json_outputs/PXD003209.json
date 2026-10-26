@@ -1,0 +1,311 @@
+{
+  "paper_id": "PXD003209",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism name, which is the correct field.",
+        "SOURCE_CHECK": "The mass spectrometry analysis used HeLa cells and the UniProt Homo Sapiens database; species is inferable from the cell line.",
+        "TRUTH_CHECK": "The proteins analyzed in the MS experiment are from HeLa cells, which are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "cervix",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the right field for tissue.",
+        "SOURCE_CHECK": "The paper states HeLa cells were used; the organ of origin (cervix) is an allowed inference for this cell line.",
+        "TRUTH_CHECK": "The runs used HeLa cells, so the inferred tissue is correct.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the right field.",
+        "SOURCE_CHECK": "The paper states that HeLa cells were used for the mass spectrometry analysis; the cell type \"epithelial\" is an allowed inference for the HeLa cell line.",
+        "TRUTH_CHECK": "The runs carry the value for HeLa cells, which are epithelial cells.",
+        "COMPLETENESS_CHECK": "The value is complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "adenocarcinoma",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cervical adenocarcinoma",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the material, which is the right field.",
+        "SOURCE_CHECK": "The paper uses HeLa cells; the field definition explicitly allows inferring \"cervical adenocarcinoma\" for HeLa.",
+        "TRUTH_CHECK": "The runs are derived from HeLa cells, so the disease of origin is correct.",
+        "COMPLETENESS_CHECK": "The value \"adenocarcinoma\" is a partial term; the definition specifies \"HeLa cervical adenocarcinoma\"."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "31Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of any subjects; it mentions HeLa cells and HEK293T cells, and purchased human fluids, but no specific age.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the sex field.",
+        "SOURCE_CHECK": "The paper does not state the sex of the subjects or the cell line donor.",
+        "TRUTH_CHECK": "Not applicable as the value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HeLa cells",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a name of an immortalized cell line, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"For enrichment of vesicles for mass spectrophotometry analysis, HeLa cells (ATCC® CCL-2™) were cultured\".",
+        "TRUTH_CHECK": "The mass spectrometry analysis was performed on vesicles harvested from HeLa cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell line",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analyzed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that for mass spectrometry analysis, HeLa cells were used.",
+        "TRUTH_CHECK": "The analyzed material consists of vesicles harvested from HeLa cells, which is a cell line.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms in the definition."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"adult\" is a developmental stage, which is the correct field.",
+        "SOURCE_CHECK": "The related column \"age\" provides a value of \"31Y\", and the definition allows \"adult\" to be inferred from a stated adult age.",
+        "TRUTH_CHECK": "The runs are derived from a source with a stated age of 31 years, making \"adult\" correct.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Black",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper does not mention the ethnicity of the subjects or the cell line donor.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a standard LC-MS/MS workflow using SDS-PAGE and in-gel digestion without any mention of isotopic labels (TMT, SILAC, etc.), which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are based on the HeLa cell vesicle proteomics experiment described in the mass spectrometry section.",
+        "COMPLETENESS_CHECK": "Complete. The SDRF controlled term \"label free sample\" is used."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=LTQ Orbitrap Velos;AC=MS:1001742",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states \"LC-MS/MS analysis was done using an externally calibrated Thermo LTQ Orbitrap Velos\".",
+        "TRUTH_CHECK": "The instrument was used for the proteomics analysis of the HeLa cell vesicles.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease used for protein digestion, the right field.",
+        "SOURCE_CHECK": "The methods state that gel pieces were rehydrated with \"Trypsin Gold protein digest enzyme\".",
+        "TRUTH_CHECK": "The enzyme was used for the protein digestion of the HeLa cell vesicle samples.",
+        "COMPLETENESS_CHECK": "Complete. \"Trypsin Gold\" is equivalent to \"Trypsin\" per the definition."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Dehydrated;AC=UNIMOD:23",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The term \"Dehydrated\" does not appear in the paper text, nor is it listed as a searched modification in the mass spectrometry section.",
+        "TRUTH_CHECK": "The modification was not used for these runs.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "01112016_DM798_Run1.raw = 1 | 01112016_DM798_Run2.raw = 1 | 01112016_DM798_Run3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that for the mass spectrometry analysis, \"database searches were conducted for each technical replicate\".",
+        "TRUTH_CHECK": "The runs are described as technical replicates of the same sample (HeLa cell vesicles harvested using ExtraPEG), meaning they originate from one biological unit.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned the same biological replicate index."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "01112016_DM798_Run1.raw = 1 | 01112016_DM798_Run2.raw = 2 | 01112016_DM798_Run3.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states \"database searches were conducted for each technical replicate\", implying multiple technical replicates were performed.",
+        "TRUTH_CHECK": "The runs are listed as Sample 1, Sample 2, and Sample 3. In proteomics, if these are separate samples (biological replicates), they should each have technical replicate 1. If they are the same material measured three times, they are technical replicates 1, 2, and 3. The paper mentions \"technical replicate\" in the context of the search, but the source column here labels them as \"Sample 1\", \"Sample 2\", and \"Sample 3\", which typically denotes biological replicates. However, without explicit confirmation that these are the same material, and given the \"Run1, Run2, Run3\" naming convention in the filenames, they are likely technical replicates of the same protein extract.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "01112016_DM798_Run1.raw = 1 | 01112016_DM798_Run2.raw = 1 | 01112016_DM798_Run3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a proteomics workflow using gel excision of a single protein band (run approximately 1 cm into the gel), but no offline fractionation (like high pH RP or SCX) is mentioned.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned fraction 1.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned the value 1."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "NT=Orbitrap;AC=MS:1000484",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer type, which is the correct information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper states the use of a \"Thermo LTQ Orbitrap Velos\", from which the Orbitrap analyzer is identified.",
+        "TRUTH_CHECK": "The Orbitrap was the high-resolution analyzer used for the MS/MS (MS2) analysis in this study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

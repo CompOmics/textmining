@@ -1,0 +1,117 @@
+{
+  "accession" : "PXD003028",
+  "title" : "Ultra-deep and quantitative saliva proteome reveals dynamics of the oral microbiome",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "The oral cavity is home to one of the most diverse microbial community of the human body and a major entry portal for pathogens. Its homeostasis is maintained by saliva, which fulfills key functions including lubrication of food, predigesting and bacterial defense. Consequently, disruptions in saliva secretion contributes to conditions such as tooth decay and respiratory tract infections. Here we used recent improvements in mass spectrometry (MS)-based proteomics to develop a rapid workflow for mapping to map the saliva proteome quantitatively and at great depth. Microgram protein amounts retrieved from cotton swabs were processed in a single-run format, resulting in more than 3,700 quantified human proteins in 100 min measurements gradients. After separation into eight fractions, this increased to 5,500 human proteins. Remarkably, our measurements also quantified more than 2,000 microbial proteins and we find peptide evidence for more than 70 bacterial genera without any microbial culture. Co-analysis of the proteomics results with next generation sequencing data as well as MALDI Biotyper revealed strong agreement. The oral microbiome differs between individuals and changes drastically upon eating and tooth brushing. Rapid and robust shotgun technology can now simultaneously characterize the human and microbiome contributions to the proteome of a body fluid.",
+  "sampleProcessingProtocol" : "We collected saliva at two different time points from four female and four male, healthy, non-smoking individuals, aged 24 to 40 years with Caucasian backgrounds.The study was approved by the ethics committee of the Max Planck Society and all donors provided their written informed consent. The first collection was immediately after waking, before eating, drinking or tooth brushing. The second collection took place at 10 a.m., at least 30 minutes after the donors had eaten had breakfast and brushed their teeth. In addition, we collected five samples immediately after one another from the same donor, processed it in parallel and determined the reproducibility of our workflow. Following collection, the swabs were transferred to an Eppendorf tube containing 200 µl of lysis buffer (1% SDC (v/v), 10mM TCEP, 40mM CAA, 100mM Tris buffer pH 8.5), thoroughly squeezed against the inner wall of the Eppendorf tube and removed. We reproducibly recovered more than 100 µg of protein in this way as estimated by the Bradford protein assay. Sample preparation followed essentially the in-StageTip protocol.",
+  "dataProcessingProtocol" : "The raw files were analyzed in MaxQuant (version 1.5.3.15). We analyzed the single runs and the fractionated samples together in order to exploit the “match between runs ” algorithm, which enables the identification of peptides that were not selected for fragmentation in one run by checking whether these peptide were sequenced in another run (max. time deviation 30 s of the recalibrated retention times).We used the Andromeda search engine to search the detected features against the human reference proteome from Uniprot (downloaded on 06-24-2015, 91647 sequences) and a list of 247 potential contaminants. Only tryptic peptides of at least 7 amino acids in length with up to two missed cleavages were considered. An FDR of 1% was imposed for peptide-spectrum-matches (PSMs) and protein identification using a target-decoy approach. Relative quantification was performed using the default parameters of the MaxLFQ algorithm with the minimum ratio count set to 1.",
+  "projectTags" : [ "Biological" ],
+  "keywords" : [ "Saliva", "Brp", "Microbiome", "Metaproteome", "Ngs", "Ms", "Plasma", "Blood", "Fractionation", "Biomarker" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "EBI terms of use",
+  "submissionDate" : "2015-10-09",
+  "publicationDate" : "2016-03-18",
+  "submitters" : [ {
+    "title" : "Mr",
+    "firstName" : "Niklas",
+    "lastName" : "Grassl",
+    "identifier" : "31610140",
+    "affiliation" : "Max-Planck Institute of Biochemistry",
+    "email" : "grassl@biochem.mpg.de",
+    "country" : "Germany",
+    "orcid" : "",
+    "name" : "Niklas Grassl",
+    "id" : "31610140"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Matthias",
+    "lastName" : "Mann",
+    "identifier" : "31960100",
+    "affiliation" : "Department of proteomics and signal transduction, max planck institute of biochemistry, Germany",
+    "email" : "mmann@biochem.mpg.de",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Matthias Mann",
+    "id" : "31960100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000425",
+    "name" : "MS1 intensity based label-free quantification method"
+  } ],
+  "countries" : [ "Germany" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0001202",
+      "name" : "saliva"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0001202",
+    "name" : "Saliva"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Grassl N, Kulak NA, Pichler G, Geyer PE, Jung J, Schubert S, Sinitcyn P, Cox J, Mann M. Ultra-deep and quantitative saliva proteome reveals dynamics of the oral microbiome. Genome Med. 2016 Apr 21;8(1):44",
+    "pubmedID" : 27102203,
+    "doi" : "10.1186/s13073-016-0293-0"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000398",
+    "name" : "No PTMs are included in the dataset"
+  } ],
+  "totalFileDownloads" : 14538,
+  "botCount" : 3079,
+  "hubCount" : 11049,
+  "organicCount" : 410
+}

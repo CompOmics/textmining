@@ -1,0 +1,243 @@
+{
+  "paper_id": "PXD014528",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Mus musculus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"mouse embryonic stem cells (ESCs)\" and \"mouse RefSeq protein sequence database\", making Mus musculus an allowed inference.",
+        "TRUTH_CHECK": "The analysed proteins are from mouse ESCs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "Embryonic stem cell",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"mouse embryonic stem cells (ESCs)\" in the abstract and methods.",
+        "TRUTH_CHECK": "The runs are derived from E14Tg2a ESCs, so the cell type is correct.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "E14Tg2a",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An immortalized cell line name, the right field.",
+        "SOURCE_CHECK": "The methods state \"E14Tg2a ESCs (purchased from ATCC)\".",
+        "TRUTH_CHECK": "These cells were used for the proteome profiling with LC-MS/MS.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the material_type field.",
+        "SOURCE_CHECK": "The paper describes the use of E14Tg2a embryonic stem cells (ESCs) maintained in culture.",
+        "TRUTH_CHECK": "The material analyzed is a cell line (E14Tg2a), not a tissue.",
+        "COMPLETENESS_CHECK": "The value is a valid controlled term, but it is the wrong term for the material used."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that \"label-free quantification (LFQ)\" was enabled for the proteome profiling.",
+        "TRUTH_CHECK": "The proteome profiling runs used LFQ, which corresponds to label free samples.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1000484;NT=orbitrap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass spectrometer model, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"loaded on Orbitrap LC-MS (Thermo)\".",
+        "TRUTH_CHECK": "The runs were analyzed using this instrument.",
+        "COMPLETENESS_CHECK": "The value \"orbitrap\" is a general term for the analyzer family, but in this paper, it is the only model name provided for the instrument."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease used for protein digestion, the right field.",
+        "SOURCE_CHECK": "The methods state that protein lysates were digested with a \"trypsin/LysC combination\".",
+        "TRUTH_CHECK": "Trypsin was used for the proteome profiling runs.",
+        "COMPLETENESS_CHECK": "Complete. Naming one of several agents used is acceptable per the \"ONE VALUE PER CELL\" rule."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001309;NT=Lys-C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for protein digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that protein lysates were digested with a \"trypsin/LysC combination\".",
+        "TRUTH_CHECK": "Lys-C was one of the agents used for the digestion of the samples in these runs.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF key-value format and names one of the agents used."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes \"Proteome profiling with LC-MS/MS\" using a digested DDA workflow (MaxQuant search), which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the LC-MS/MS experiment performed on the cell lysates.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The paper states that MaxQuant was used with \"default MaxQuant settings\", but it does not explicitly print the numerical value for the precursor mass tolerance.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "4.5 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"default MaxQuant settings\" for the search but does not print a specific fragment mass tolerance value.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "20140917_Q1_SA_YaAt_exp3_2i_FCS-Epi_8A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_10A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_10B.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_10C.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_11A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_11B.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_11C.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_7A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_7B.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_7C.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_8B.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_8C.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_9A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_9B.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_9C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_1A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_1B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_1C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_2A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_2B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_2C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_3A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_3B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_3C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_4A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_4B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_4C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_5A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_5B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_5C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_6A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_6B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_6C.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_1A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_1B.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_1C.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_2A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_2B.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_2C.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_3A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_3B.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_3C.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_4A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_4B.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_4C.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_7A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_7B.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_7C.raw = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that biological triplicates were grouped for differential protein expression.",
+        "TRUTH_CHECK": "The mapping assigns every single run to biological replicate 1, regardless of the sample source (Sample 1 through Sample 17). Since the paper describes biological triplicates for conditions, different samples (independent biological units) must have different replicate indices.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20140917_Q1_SA_YaAt_exp3_2i_FCS-Epi_8A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_10A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_10B.raw = 2 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_10C.raw = 3 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_11A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_11B.raw = 2 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_11C.raw = 3 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_7A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_7B.raw = 2 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_7C.raw = 3 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_8B.raw = 2 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_8C.raw = 3 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_9A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_9B.raw = 2 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_9C.raw = 3 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_1A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_1B.raw = 2 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_1C.raw = 3 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_2A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_2B.raw = 2 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_2C.raw = 3 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_3A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_3B.raw = 2 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_3C.raw = 3 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_4A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_4B.raw = 2 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_4C.raw = 3 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_5A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_5B.raw = 2 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_5C.raw = 3 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_6A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_6B.raw = 2 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_6C.raw = 3 | 20150105_Q1_SA_YaAt_ESC_proteome_1A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_1B.raw = 2 | 20150105_Q1_SA_YaAt_ESC_proteome_1C.raw = 3 | 20150105_Q1_SA_YaAt_ESC_proteome_2A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_2B.raw = 2 | 20150105_Q1_SA_YaAt_ESC_proteome_2C.raw = 3 | 20150105_Q1_SA_YaAt_ESC_proteome_3A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_3B.raw = 2 | 20150105_Q1_SA_YaAt_ESC_proteome_3C.raw = 3 | 20150105_Q1_SA_YaAt_ESC_proteome_4A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_4B.raw = 2 | 20150105_Q1_SA_YaAt_ESC_proteome_4C.raw = 3 | 20150105_Q1_SA_YaAt_ESC_proteome_7A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_7B.raw = 2 | 20150105_Q1_SA_YaAt_ESC_proteome_7C.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions that biological triplicates were grouped for differential protein expression, and the raw file names (ending in A, B, C) indicate technical replicates of the same sample.",
+        "TRUTH_CHECK": "The mapping correctly assigns indices 1, 2, and 3 to repeated runs of the same source sample.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index following the definition."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20140917_Q1_SA_YaAt_exp3_2i_FCS-Epi_8A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_10A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_10B.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_10C.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_11A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_11B.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_11C.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_7A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_7B.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_7C.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_8B.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_8C.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_9A.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_9B.raw = 1 | 20140924_Q1_SA_YaAt_2i_FCS-Epi_Rv_9C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_1A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_1B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_1C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_2A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_2B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_2C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_3A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_3B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_3C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_4A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_4B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_4C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_5A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_5B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_5C.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_6A.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_6B.raw = 1 | 20141022_Q1_SA_YaAt_2i_FCS-Epi_6C.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_1A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_1B.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_1C.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_2A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_2B.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_2C.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_3A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_3B.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_3C.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_4A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_4B.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_4C.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_7A.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_7B.raw = 1 | 20150105_Q1_SA_YaAt_ESC_proteome_7C.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The methods section describes proteome profiling using FASP and LC-MS/MS, but no offline fractionation (such as high pH RP or SCX) is mentioned.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns fraction 1 to all listed runs."
+      }
+    }
+  ]
+}

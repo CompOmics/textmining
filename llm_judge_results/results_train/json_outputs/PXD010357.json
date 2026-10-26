@@ -1,0 +1,277 @@
+{
+  "paper_id": "PXD010357",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes a cohort of 108 squamous cell lung cancer patients, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analyzed tumor tissues are from human patients.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "lung",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ name, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper states the samples are \"lung squamous cell carcinoma tumor tissues\".",
+        "TRUTH_CHECK": "The analyzed samples are tumors originating from the lung.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "squamous cell lung cancer",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods state the cohort consists of squamous cell lung cancer (SCC) patients.",
+        "TRUTH_CHECK": "The runs are derived from these patients' tumor tissues.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"tissue\" is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"snap frozen lung squamous cell carcinoma tumor tissues\" were used.",
+        "TRUTH_CHECK": "The runs are derived from these tumor tissue samples.",
+        "COMPLETENESS_CHECK": "The value follows the allowed terms in the field definition."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"adult\" is a developmental stage, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a cohort of 108 patients with lung squamous cell carcinoma; \"adult\" is an allowed inference from patients.",
+        "TRUTH_CHECK": "The analyzed tumor tissues came from these patients.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that for DIA, aliquots of total protein digest were injected for each sample, and these are distinct from the TMT labeling experiments.",
+        "TRUTH_CHECK": "The runs listed are DIA runs (indicated by \"-DIA.raw\" in the filenames), which are label-free.",
+        "COMPLETENESS_CHECK": "Complete. \"label free sample\" is the correct SDRF term for label-free runs."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive Plus;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state a \"Q Exactive Plus, Thermo, San Jose, CA\" was used.",
+        "TRUTH_CHECK": "The instrument was used for the tandem mass spectrometry peptide sequencing experiments.",
+        "COMPLETENESS_CHECK": "Complete and follows the key-value format."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field for cleavage_agent.",
+        "SOURCE_CHECK": "The methods state that \"trypsin digestion was carried out overnight\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes an integrated proteogenomic analysis using expression proteomics (DIA and TMT), which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The runs listed are part of the proteomics experiment described in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the required SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=fixed;TA=M;AC=UNIMOD:35",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Oxidation;TA=M;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"dynamic modifications of 16 Da on methionine (oxidation)\" in the LC-MS/MS processing section.",
+        "TRUTH_CHECK": "The modification is correct for the runs, but the status is wrong.",
+        "COMPLETENESS_CHECK": "The paper specifies it as a dynamic modification, which means it is variable, not fixed."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "20160301_Haura-SCC-PG-06S15092277-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15092281-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15092305-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101141-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101145-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101153-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101161-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101171-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101175-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101183-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101191-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101195-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15092272-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15092306-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101114-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101126-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101131-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101135-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101136-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101174-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101188-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101194-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101198-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101203-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092273-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092288-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092292-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092299-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101115-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101118-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101132-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101134-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101149-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101152-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101167-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101182-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15092280-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15092286-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101121-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101128-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101144-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101148-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101158-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101159-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101179-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101190-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101196-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101199-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15092274-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15092275-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101117-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101122-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101125-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101129-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101142-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101146-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101151-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101166-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101172-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101181-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S10347307-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092278-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092279-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092285-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092289-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101120-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101123-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101137-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101147-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101155-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101156-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101186-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15092290-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15092294-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15092298-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101127-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101139-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101157-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101164-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101165-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101177-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101180-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101184-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101192-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092283-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092284-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092296-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092297-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092300-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101116-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101119-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101140-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101160-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101173-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101176-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101201-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092287-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092295-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092302-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092303-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101130-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101138-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101143-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101162-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101170-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101185-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101193-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101200-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092276-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092282-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092293-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092304-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101124-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101150-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101154-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101189-DIA.raw = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a cohort of 108 patients, each providing a tumor tissue sample.",
+        "TRUTH_CHECK": "Each run corresponds to a different sample (Sample 1 to Sample 116). Since these are independent biological units (different patients), each run must have a unique biological replicate index. Assigning all of them to index 1 is incorrect.",
+        "COMPLETENESS_CHECK": "The format is correct, but the mapping is logically wrong based on the study design."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20160301_Haura-SCC-PG-06S15092277-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15092281-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15092305-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101141-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101145-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101153-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101161-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101171-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101175-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101183-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101191-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101195-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15092272-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15092306-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101114-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101126-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101131-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101135-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101136-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101174-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101188-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101194-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101198-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101203-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092273-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092288-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092292-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092299-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101115-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101118-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101132-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101134-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101149-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101152-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101167-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101182-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15092280-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15092286-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101121-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101128-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101144-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101148-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101158-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101159-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101179-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101190-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101196-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101199-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15092274-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15092275-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101117-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101122-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101125-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101129-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101142-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101146-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101151-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101166-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101172-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101181-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S10347307-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092278-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092279-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092285-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092289-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101120-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101123-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101137-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101147-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101155-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101156-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101186-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15092290-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15092294-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15092298-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101127-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101139-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101157-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101164-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101165-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101177-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101180-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101184-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101192-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092283-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092284-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092296-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092297-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092300-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101116-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101119-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101140-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101160-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101173-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101176-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101201-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092287-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092295-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092302-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092303-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101130-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101138-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101143-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101162-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101170-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101185-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101193-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101200-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092276-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092282-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092293-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092304-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101124-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101150-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101154-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101189-DIA.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes DIA analysis where aliquots of total protein digest were injected for each sample.",
+        "TRUTH_CHECK": "Each run corresponds to a unique sample (Sample 1 to Sample 116), and there is no mention of repeated injections for the same material in the DIA workflow.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned a technical replicate index of 1."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20160301_Haura-SCC-PG-06S15092277-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15092281-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15092305-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101141-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101145-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101153-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101161-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101171-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101175-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101183-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101191-DIA.raw = 1 | 20160301_Haura-SCC-PG-06S15101195-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15092272-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15092306-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101114-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101126-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101131-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101135-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101136-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101174-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101188-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101194-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101198-DIA.raw = 1 | 20160302_Haura-SCC-PG-06S15101203-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092273-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092288-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092292-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15092299-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101115-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101118-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101132-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101134-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101149-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101152-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101167-DIA.raw = 1 | 20160303_Haura-SCC-PG-06S15101182-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15092280-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15092286-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101121-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101128-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101144-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101148-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101158-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101159-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101179-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101190-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101196-DIA.raw = 1 | 20160304_Haura-SCC-PG-06S15101199-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15092274-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15092275-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101117-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101122-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101125-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101129-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101142-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101146-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101151-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101166-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101172-DIA.raw = 1 | 20160308_Haura-SCC-PG-06S15101181-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S10347307-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092278-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092279-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092285-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15092289-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101120-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101123-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101137-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101147-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101155-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101156-DIA.raw = 1 | 20160309_Haura-SCC-PG-06S15101186-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15092290-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15092294-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15092298-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101127-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101139-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101157-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101164-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101165-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101177-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101180-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101184-DIA.raw = 1 | 20160310_Haura-SCC-PG-06S15101192-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092283-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092284-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092296-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092297-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15092300-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101116-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101119-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101140-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101160-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101173-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101176-DIA.raw = 1 | 20160311_Haura-SCC-PG-06S15101201-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092287-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092295-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092302-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15092303-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101130-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101138-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101143-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101162-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101170-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101185-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101193-DIA.raw = 1 | 20160315_Haura-SCC-PG-06S15101200-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092276-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092282-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092293-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15092304-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101124-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101150-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101154-DIA.raw = 1 | 20160316_Haura-SCC-PG-06S15101189-DIA.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes DIA analysis where aliquots of total protein digest were injected for each sample, with no mention of offline fractionation.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed for the DIA runs, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[proteomics data acquisition method]",
+      "extracted_value": "NT=Data-Independent Acquisition;AC=NCIT:C161786",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the data acquisition method, which is appropriate for a column named \"comment[proteomics data acquisition method]\".",
+        "SOURCE_CHECK": "The methods state \"data independent acquisition (DIA) tandem mass spectrometry scans\" were used for the DIA runs.",
+        "TRUTH_CHECK": "The runs listed (ending in -DIA.raw) are the DIA runs, for which this value is correct.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[scan window lower limit]",
+      "extracted_value": "450 m/z",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass-to-charge ratio limit, which is appropriate for a column named \"scan window lower limit\".",
+        "SOURCE_CHECK": "The methods state that DIA tandem mass spectrometry scans covered the m/z range from 450 to 1080.",
+        "TRUTH_CHECK": "The value 450 m/z correctly describes the lower limit of the scan window for the DIA runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[scan window upper limit]",
+      "extracted_value": "1080 m/z",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass-to-charge ratio limit, which is appropriate for a column named \"scan window upper limit\".",
+        "SOURCE_CHECK": "The methods state that DIA tandem mass spectrometry scans covered the m/z range from 450 to 1080.",
+        "TRUTH_CHECK": "The value 1080 m/z correctly describes the upper limit of the scan window for the DIA runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "paper_id": "PXD005355",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism name, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes profiling colorectal cancer cell lines and patients, and searching against the UniProtKB human reference proteome, allowing the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analyzed materials (CRC cell lines and patients) are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "colorectal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organ of origin, which is the right field.",
+        "SOURCE_CHECK": "The paper describes \"colorectal cancer (CRC) cell lines\" and \"CRC patients\", supporting the organ of origin as the colon/rectum.",
+        "TRUTH_CHECK": "The analyzed samples are colorectal cancer cell lines and patient samples.",
+        "COMPLETENESS_CHECK": "The term \"colorectal\" is a correct description of the organ of origin."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "colorectal cancer",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The abstract states the study profiled the proteomes of 65 colorectal cancer (CRC) cell lines and 90 CRC patients.",
+        "TRUTH_CHECK": "The runs correspond to the CRC cell lines and patients analyzed in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "organism part",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"organism part\" is not one of the allowed broad classes for material_type.",
+        "SOURCE_CHECK": "The paper describes profiling the proteomes of 65 colorectal cancer cell lines.",
+        "TRUTH_CHECK": "The analysed material consists of cell lines, not a general \"organism part\".",
+        "COMPLETENESS_CHECK": "The value does not follow the controlled vocabulary defined for this field."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention any labels (TMT, SILAC, etc.) and describes a standard DDA workflow with MaxQuant quantification, which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are part of the proteomic profiling of cell lines and Kinobeads pulldowns, both of which were performed without labels.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001910;NT=LTQ Orbitrap Elite",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Orbitrap Elite",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper mentions an \"Orbitrap Elite\" for Kinobeads and an \"Orbitrap Velos\" for full proteomes.",
+        "TRUTH_CHECK": "The value \"LTQ Orbitrap Elite\" adds \"LTQ\" to the model name. The paper only prints \"Orbitrap Elite\".",
+        "COMPLETENESS_CHECK": "The value contains a drift/detail error by adding \"LTQ\" to the model name."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001313;NT=Trypsin/P",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"digestion mode to fully tryptic, allowing for cleavage before proline (Trypsin/P)\".",
+        "TRUTH_CHECK": "The value is correct for the runs described in the proteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete. The term \"Trypsin/P\" is explicitly listed as equivalent to trypsin in the field definition."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes profiling the proteomes of 65 cell lines and 90 patients using LC-MS/MS, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The runs are part of the described proteomic profiling experiment.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF controlled term convention."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Carbamidomethylation of cysteines was set as a fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;TA;MT;AC format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"oxidation of methionines... were set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl; MT=Fixed; PP=Protein N-term;AC=UNIMOD:1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Acetyl;TA=Protein N-term;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"acetylation of protein N-termini were set as variable modifications\".",
+        "TRUTH_CHECK": "The modification is correct, but the status is listed as fixed instead of variable.",
+        "COMPLETENESS_CHECK": "The value follows the format, but the MT status is wrong."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "120 ppm",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "4.5 ppm",
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"120 ppm\" specifically as the fragment ion tolerance for Kinobeads, not the precursor tolerance. The precursor tolerance for the search was 20 ppm (initial) and 4.5 ppm (after recalibration).",
+        "TRUTH_CHECK": "The value 120 ppm is the fragment mass tolerance for Kinobeads, not the precursor mass tolerance.",
+        "COMPLETENESS_CHECK": "The format is correct, but the value is wrong."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "4.5 ppm",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "120 ppm",
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions 4.5 ppm as a precursor ion tolerance after recalibration, not as a fragment mass tolerance.",
+        "TRUTH_CHECK": "The value is the precursor tolerance, not the fragment tolerance.",
+        "COMPLETENESS_CHECK": "Complete format, but the value is incorrect for this field."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "00872_A01_P007435_B00_A00_R1.raw = 1 | 00872_A02_P007443_B00_A00_R2.raw = 1 | 00872_A03_P007451_B00_A00_R2.raw = 1 | 00872_A04_P007459_B00_A00_R2.raw = 1 | 00872_A05_P007467_B00_A00_R2.raw = 1 | 00872_A06_P007475_B00_A00_R1.raw = 1 | 00872_A07_P007483_B00_A00_R1.raw = 1 | 00872_A08_P007491_B00_A00_R1.raw = 1 | 00872_B01_P007436_B00_A00_R2.raw = 1 | 00872_B02_P007444_B00_A00_R2.raw = 1 | 00872_B03_P007452_B00_A00_R2.raw = 1 | 00872_B04_P007460_B00_A00_R2.raw = 1 | 00872_B05_P007468_B00_A00_R2.raw = 1 | 00872_B06_P007476_B00_A00_R1.raw = 1 | 00872_B07_P007484_B00_A00_R1.raw = 1 | 00872_B08_P007492_B00_A00_R1.raw = 1 | 00872_C01_P007437_B00_A00_R2.raw = 1 | 00872_C02_P007445_B00_A00_R2.raw = 1 | 00872_C03_P007453_B00_A00_R2.raw = 1 | 00872_C04_P007461_B00_A00_R2.raw = 1 | 00872_C05_P007469_B00_A00_R1.raw = 1 | 00872_C06_P007477_B00_A00_R1.raw = 1 | 00872_C07_P007485_B00_A00_R1.raw = 1 | 00872_C08_P007493_B00_A00_R1.raw = 1 | 00872_D01_P007438_B00_A00_R2.raw = 1 | 00872_D02_P007446_B00_A00_R2.raw = 1 | 00872_D03_P007454_B00_A00_R2.raw = 1 | 00872_D04_P007462_B00_A00_R2.raw = 1 | 00872_D05_P007470_B00_A00_R1.raw = 1 | 00872_D06_P007478_B00_A00_R1.raw = 1 | 00872_D07_P007486_B00_A00_R1.raw = 1 | 00872_D08_P007494_B00_A00_R1.raw = 1 | 00872_E01_P007439_B00_A00_R2.raw = 1 | 00872_E02_P007447_B00_A00_R2.raw = 1 | 00872_E03_P007455_B00_A00_R2.raw = 1 | 00872_E04_P007463_B00_A00_R2.raw = 1 | 00872_E05_P007471_B00_A00_R1.raw = 1 | 00872_E06_P007479_B00_A00_R1.raw = 1 | 00872_E07_P007487_B00_A00_R1.raw = 1 | 00872_E08_P007495_B00_A00_R1.raw = 1 | 00872_F01_P007440_B00_A00_R2.raw = 1 | 00872_F02_P007448_B00_A00_R2.raw = 1 | 00872_F03_P007456_B00_A00_R2.raw = 1 | 00872_F04_P007464_B00_A00_R2.raw = 1 | 00872_F05_P007472_B00_A00_R1.raw = 1 | 00872_F06_P007480_B00_A00_R1.raw = 1 | 00872_F07_P007488_B00_A00_R1.raw = 1 | 00872_F08_P007496_B00_A00_R1.raw = 1 | 00872_G01_P007441_B00_A00_R2.raw = 1 | 00872_G02_P007449_B00_A00_R2.raw = 1 | 00872_G03_P007457_B00_A00_R2.raw = 1 | 00872_G04_P007465_B00_A00_R2.raw = 1 | 00872_G05_P007473_B00_A00_R1.raw = 1 | 00872_G06_P007481_B00_A00_R1.raw = 1 | 00872_G07_P007489_B00_A00_R1.raw = 1 | 00872_G08_P007497_B00_A00_R1.raw = 1 | 00872_H01_P007442_B00_A00_R2.raw = 1 | 00872_H02_P007450_B00_A00_R2.raw = 1 | 00872_H03_P007458_B00_A00_R2.raw = 1 | 00872_H04_P007466_B00_A00_R2.raw = 1 | 00872_H05_P007474_B00_A00_R1_131217092459.raw = 1 | 00872_H06_P007482_B00_A00_R1.raw = 1 | 00872_H07_P007490_B00_A00_R1.raw = 1 | 00872_H08_P007498_B00_A00_R1.raw = 1 | 00892_A01_P007560_B00_A00_R1.raw = 1 | 00892_A02_P007568_B00_A00_R2.raw = 1 | 00892_A03_P007576_B00_A00_R1.raw = 1 | 00892_A04_P007584_B00_A00_R1.raw = 1 | 00892_A05_P007592_B00_A00_R1.raw = 1 | 00892_A06_P007600_B00_A00_R1.raw = 1 | 00892_A07_P007608_B00_A00_R1.raw = 1 | 00892_A08_P007616_B00_A00_R1.raw = 1 | 00892_B01_P007561_B00_A00_R1.raw = 1 | 00892_B02_P007569_B00_A00_R2.raw = 1 | 00892_B03_P007577_B00_A00_R2.raw = 1 | 00892_B04_P007585_B00_A00_R1.raw = 1 | 00892_B05_P007593_B00_A00_R1.raw = 1 | 00892_B06_P007601_B00_A00_R1.raw = 1 | 00892_B07_P007609_B00_A00_R1.raw = 1 | 00892_B08_P007617_B00_A00_R1.raw = 1 | 00892_C01_P007562_B00_A00_R1.raw = 1 | 00892_C02_P007570_B00_A00_R1.raw = 1 | 00892_C03_P007578_B00_A00_R1.raw = 1 | 00892_C04_P007586_B00_A00_R1.raw = 1 | 00892_C05_P007594_B00_A00_R1.raw = 1 | 00892_C06_P007602_B00_A00_R1.raw = 1 | 00892_C07_P007610_B00_A00_R1.raw = 1 | 00892_C08_P007618_B00_A00_R1.raw = 1 | 00892_D01_P007563_B00_A00_R1.raw = 1 | 00892_D02_P007571_B00_A00_R1.raw = 1 | 00892_D03_P007579_B00_A00_R1.raw = 1 | 00892_D04_P007587_B00_A00_R1.raw = 1 | 00892_D05_P007595_B00_A00_R1.raw = 1 | 00892_D06_P007603_B00_A00_R1.raw = 1 | 00892_D07_P007611_B00_A00_R1.raw = 1 | 00892_D08_P007619_B00_A00_R1.raw = 1 | 00892_E01_P007564_B00_A00_R1.raw = 1 | 00892_E02_P007572_B00_A00_R1.raw = 1 | 00892_E03_P007580_B00_A00_R2.raw = 1 | 00892_E04_P007588_B00_A00_R1.raw = 1 | 00892_E05_P007596_B00_A00_R1.raw = 1 | 00892_E06_P007604_B00_A00_R1.raw = 1 | 00892_E07_P007612_B00_A00_R2.raw = 1 | 00892_E08_P007620_B00_A00_R1.raw = 1 | 00892_F01_P007565_B00_A00_R1.raw = 1 | 00892_F02_P007573_B00_A00_R1.raw = 1 | 00892_F03_P007581_B00_A00_R1.raw = 1 | 00892_F04_P007589_B00_A00_R1.raw = 1 | 00892_F05_P007597_B00_A00_R1.raw = 1 | 00892_F06_P007605_B00_A00_R1.raw = 1 | 00892_F07_P007613_B00_A00_R1.raw = 1 | 00892_F08_P007621_B00_A00_R1.raw = 1 | 00892_G01_P007566_B00_A00_R1.raw = 1 | 00892_G02_P007574_B00_A00_R1.raw = 1 | 00892_G03_P007582_B00_A00_R1.raw = 1 | 00892_G04_P007590_B00_A00_R1.raw = 1 | 00892_G05_P007598_B00_A00_R1.raw = 1 | 00892_G06_P007606_B00_A00_R1.raw = 1 | 00892_G07_P007614_B00_A00_R1.raw = 1 | 00892_G08_P007622_B00_A00_R1.raw = 1 | 00892_H01_P007567_B00_A00_R1.raw = 1 | 00892_H02_P007575_B00_A00_R1.raw = 1 | 00892_H03_P007583_B00_A00_R1.raw = 1 | 00892_H04_P007591_B00_A00_R1.raw = 1 | 00892_H05_P007599_B00_A00_R1.raw = 1 | 00892_H06_P007607_B00_A00_R1.raw = 1 | 00892_H07_P007615_B00_A00_R1.raw = 1 | 00892_H08_P007623_B00_A00_R1.raw = 1 | 00915_A01_P007959_B00_A00_R1.raw = 1 | 00915_A02_P007967_B00_A00_R2.raw = 1 | 00915_A03_P007975_B00_A00_R2.raw = 1 | 00915_A04_P007983_B00_A00_R2.raw = 1 | 00915_A05_P007991_B00_A00_R1.raw = 1 | 00915_A06_P007999_B00_A00_R1.raw = 1 | 00915_A07_P008007_B00_A00_R1.raw = 1 | 00915_A08_P008015_B00_A00_R1.raw = 1 | 00915_B01_P007960_B00_A00_R1.raw = 1 | 00915_B02_P007968_B00_A00_R2.raw = 1 | 00915_B03_P007976_B00_A00_R2.raw = 1 | 00915_B04_P007984_B00_A00_R2.raw = 1 | 00915_B05_P007992_B00_A00_R1.raw = 1 | 00915_B06_P008000_B00_A00_R1.raw = 1 | 00915_B07_P008008_B00_A00_R1.raw = 1 | 00915_B08_P008016_B00_A00_R1.raw = 1 | 00915_C01_P007961_B00_A00_R1.raw = 1 | 00915_C02_P007969_B00_A00_R2.raw = 1 | 00915_C03_P007977_B00_A00_R2.raw = 1 | 00915_C04_P007985_B00_A00_R2.raw = 1 | 00915_C05_P007993_B00_A00_R1.raw = 1 | 00915_C06_P008001_B00_A00_R1.raw = 1 | 00915_C07_P008009_B00_A00_R1.raw = 1 | 00915_C08_P008017_B00_A00_R1.raw = 1 | 00915_D01_P007962_B00_A00_R1.raw = 1 | 00915_D02_P007970_B00_A00_R2.raw = 1 | 00915_D03_P007978_B00_A00_R2.raw = 1 | 00915_D04_P007986_B00_A00_R2.raw = 1 | 00915_D05_P007994_B00_A00_R2.raw = 1 | 00915_D06_P008002_B00_A00_R1.raw = 1 | 00915_D07_P008010_B00_A00_R1.raw = 1 | 00915_D08_P008018_B00_A00_R1.raw = 1 | 00915_E01_P007963_B00_A00_R1.raw = 1 | 00915_E02_P007971_B00_A00_R2.raw = 1 | 00915_E03_P007979_B00_A00_R2.raw = 1 | 00915_E04_P007987_B00_A00_R1.raw = 1 | 00915_E05_P007995_B00_A00_R1.raw = 1 | 00915_E06_P008003_B00_A00_R1.raw = 1 | 00915_E07_P008011_B00_A00_R1.raw = 1 | 00915_E08_P008019_B00_A00_R1.raw = 1 | 00915_F01_P007964_B00_A00_R2.raw = 1 | 00915_F02_P007972_B00_A00_R2.raw = 1 | 00915_F03_P007980_B00_A00_R1.raw = 1 | 00915_F04_P007988_B00_A00_R1.raw = 1 | 00915_F05_P007996_B00_A00_R1.raw = 1 | 00915_F06_P008004_B00_A00_R1.raw = 1 | 00915_F07_P008012_B00_A00_R1.raw = 1 | 00915_F08_P008020_B00_A00_R1.raw = 1 | 00915_G01_P007965_B00_A00_R2.raw = 1 | 00915_G02_P007973_B00_A00_R2.raw = 1 | 00915_G03_P007981_B00_A00_R1.raw = 1 | 00915_G04_P007989_B00_A00_R1.raw = 1 | 00915_G05_P007997_B00_A00_R1.raw = 1 | 00915_G06_P008005_B00_A00_R1.raw = 1 | 00915_G07_P008013_B00_A00_R1.raw = 1 | 00915_G08_P008021_B00_A00_R1.raw = 1 | 00915_H01_P007966_B00_A00_R2.raw = 1 | 00915_H02_P007974_B00_A00_R2.raw = 1 | 00915_H03_P007982_B00_A00_R2.raw = 1 | 00915_H04_P007990_B00_A00_R1.raw = 1 | 00915_H05_P007998_B00_A00_R1.raw = 1 | 00915_H06_P008006_B00_A00_R1.raw = 1 | 00915_H07_P008014_B00_A00_R1.raw = 1 | 00915_H08_P008022_B00_A00_R2.raw = 1 | 01564_A04_P015997_B00_A00_R2.raw = 1 | 01564_B04_P015998_B00_A00_R2.raw = 1 | 01638_C03_P015999_B00_A00_R3.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "00872_A01_P007435_B00_A00_R1.raw = 1 | 00872_A02_P007443_B00_A00_R2.raw = 2 | 00872_A03_P007451_B00_A00_R2.raw = 3 | 00872_A04_P007459_B00_A00_R2.raw = 4 | 00872_A05_P007467_B00_A00_R2.raw = 5 | 00872_A06_P007475_B00_A00_R1.raw = 6 | 00872_A07_P007483_B00_A00_R1.raw = 7 | 00872_A08_P007491_B00_A00_R1.raw = 8 | 00872_B01_P007436_B00_A00_R2.raw = 9 | 00872_B02_P007444_B00_A00_R2.raw = 10 | 00872_B03_P007452_B00_A00_R2.raw = 11 | 00872_B04_P007460_B00_A00_R2.raw = 12 | 00872_B05_P007468_B00_A00_R2.raw = 13 | 00872_B06_P007476_B00_A00_R1.raw = 14 | 00872_B07_P007484_B00_A00_R1.raw = 15 | 00872_B08_P007492_B00_A00_R1.raw = 16 | 00872_C01_P007437_B00_A00_R2.raw = 17 | 00872_C02_P007445_B00_A00_R2.raw = 18 | 00872_C03_P007453_B00_A00_R2.raw = 19 | 00872_C04_P007461_B00_A00_R2.raw = 20 | 00872_C05_P007469_B00_A00_R1.raw = 21 | 00872_C06_P007477_B00_A00_R1.raw = 22 | 00872_C07_P007485_B00_A00_R1.raw = 23 | 00872_C08_P007493_B00_A00_R1.raw = 24 | 00872_D01_P007438_B00_A00_R2.raw = 25 | 00872_D02_P007446_B00_A00_R2.raw = 26 | 00872_D03_P007454_B00_A00_R2.raw = 27 | 00872_D04_P007462_B00_A00_R2.raw = 28 | 00872_D05_P007470_B00_A00_R1.raw = 29 | 00872_D06_P007478_B00_A00_R1.raw = 30 | 00872_D07_P007486_B00_A00_R1.raw = 31 | 00872_D08_P007494_B00_A00_R1.raw = 32 | 00872_E01_P007439_B00_A00_R2.raw = 33 | 00872_E02_P007447_B00_A00_R2.raw = 34 | 00872_E03_P007455_B00_A00_R2.raw = 35 | 00872_E04_P007463_B00_A00_R2.raw = 36 | 00872_E05_P007471_B00_A00_R1.raw = 37 | 00872_E06_P007479_B00_A00_R1.raw = 38 | 00872_E07_P007487_B00_A00_R1.raw = 39 | 00872_E08_P007495_B00_A00_R1.raw = 40 | 00872_F01_P007440_B00_A00_R2.raw = 41 | 00872_F02_P007448_B00_A00_R2.raw = 42 | 00872_F03_P007456_B00_A00_R2.raw = 43 | 00872_F04_P007464_B00_A00_R2.raw = 44 | 00872_F05_P007472_B00_A00_R1.raw = 45 | 00872_F06_P007480_B00_A00_R1.raw = 46 | 00872_F07_P007488_B00_A00_R1.raw = 47 | 00872_F08_P007496_B00_A00_R1.raw = 48 | 00872_G01_P007441_B00_A00_R2.raw = 49 | 00872_G02_P007449_B00_A00_R2.raw = 50 | 00872_G03_P007457_B00_A00_R2.raw = 51 | 00872_G04_P007465_B00_A00_R2.raw = 52 | 00872_G05_P007473_B00_A00_R1.raw = 53 | 00872_G06_P007481_B00_A00_R1.raw = 54 | 00872_G07_P007489_B00_A00_R1.raw = 55 | 00872_G08_P007497_B00_A00_R1.raw = 56 | 00872_H01_P007442_B00_A00_R2.raw = 57 | 00872_H02_P007450_B00_A00_R2.raw = 58 | 00872_H03_P007458_B00_A00_R2.raw = 59 | 00872_H04_P007466_B00_A00_R2.raw = 60 | 00872_H05_P007474_B00_A00_R1_131217092459.raw = 61 | 00872_H06_P007482_B00_A00_R1.raw = 62 | 00872_H07_P007490_B00_A00_R1.raw = 63 | 00872_H08_P007498_B00_A00_R1.raw = 64 | 00892_A01_P007560_B00_A00_R1.raw = 65 | 00892_A02_P007568_B00_A00_R2.raw = 66 | 00892_A03_P007576_B00_A00_R1.raw = 67 | 00892_A04_P007584_B00_A00_R1.raw = 68 | 00892_A05_P007592_B00_A00_R1.raw = 69 | 00892_A06_P007600_B00_A00_R1.raw = 70 | 00892_A07_P007608_B00_A00_R1.raw = 71 | 00892_A08_P007616_B00_A00_R1.raw = 72 | 00892_B01_P007561_B00_A00_R1.raw = 73 | 00892_B02_P007569_B00_A00_R2.raw = 74 | 00892_B03_P007577_B00_A00_R2.raw = 75 | 00892_B04_P007585_B00_A00_R1.raw = 76 | 00892_B05_P007593_B00_A00_R1.raw = 77 | 00892_B06_P007601_B00_A00_R1.raw = 78 | 00892_B07_P007609_B00_A00_R1.raw = 79 | 00892_B08_P007617_B00_A00_R1.raw = 80 | 00892_C01_P007562_B00_A00_R1.raw = 81 | 00892_C02_P007570_B00_A00_R1.raw = 82 | 00892_C03_P007578_B00_A00_R1.raw = 83 | 00892_C04_P007586_B00_A00_R1.raw = 84 | 00892_C05_P007594_B00_A00_R1.raw = 85 | 00892_C06_P007602_B00_A00_R1.raw = 86 | 00892_C07_P007610_B00_A00_R1.raw = 87 | 00892_C08_P007618_B00_A00_R1.raw = 88 | 00892_D01_P007563_B00_A00_R1.raw = 89 | 00892_D02_P007571_B00_A00_R1.raw = 90 | 00892_D03_P007579_B00_A00_R1.raw = 91 | 00892_D04_P007587_B00_A00_R1.raw = 92 | 00892_D05_P007595_B00_A00_R1.raw = 93 | 00892_D06_P007603_B00_A00_R1.raw = 94 | 00892_D07_P007611_B00_A00_R1.raw = 95 | 00892_D08_P007619_B00_A00_R1.raw = 96 | 00892_E01_P007564_B00_A00_R1.raw = 97 | 00892_E02_P007572_B00_A00_R1.raw = 98 | 00892_E03_P007580_B00_A00_R2.raw = 99 | 00892_E04_P007588_B00_A00_R1.raw = 100 | 00892_E05_P007596_B00_A00_R1.raw = 101 | 00892_E06_P007604_B00_A00_R1.raw = 102 | 00892_E07_P007612_B00_A00_R2.raw = 103 | 00892_E08_P007620_B00_A00_R1.raw = 104 | 00892_F01_P007565_B00_A00_R1.raw = 105 | 00892_F02_P007573_B00_A00_R1.raw = 106 | 00892_F03_P007581_B00_A00_R1.raw = 107 | 00892_F04_P007589_B00_A00_R1.raw = 108 | 00892_F05_P007597_B00_A00_R1.raw = 109 | 00892_F06_P007605_B00_A00_R1.raw = 110 | 00892_F07_P007613_B00_A00_R1.raw = 111 | 00892_F08_P007621_B00_A00_R1.raw = 112 | 00892_G01_P007566_B00_A00_R1.raw = 113 | 00892_G02_P007574_B00_A00_R1.raw = 114 | 00892_G03_P007582_B00_A00_R1.raw = 115 | 00892_G04_P007590_B00_A00_R1.raw = 116 | 00892_G05_P007598_B00_A00_R1.raw = 117 | 00892_G06_P007606_B00_A00_R1.raw = 118 | 00892_G07_P007614_B00_A00_R1.raw = 119 | 00892_G08_P007622_B00_A00_R1.raw = 120 | 00892_H01_P007567_B00_A00_R1.raw = 121 | 00892_H02_P007575_B00_A00_R1.raw = 122 | 00892_H03_P007583_B00_A00_R1.raw = 123 | 00892_H04_P007591_B00_A00_R1.raw = 124 | 00892_H05_P007599_B00_A00_R1.raw = 125 | 00892_H06_P007607_B00_A00_R1.raw = 126 | 00892_H07_P007615_B00_A00_R1.raw = 127 | 00892_H08_P007623_B00_A00_R1.raw = 128 | 00915_A01_P007959_B00_A00_R1.raw = 129 | 00915_A02_P007967_B00_A00_R2.raw = 130 | 00915_A03_P007975_B00_A00_R2.raw = 131 | 00915_A04_P007983_B00_A00_R2.raw = 132 | 00915_A05_P007991_B00_A00_R1.raw = 133 | 00915_A06_P007999_B00_A00_R1.raw = 134 | 00915_A07_P008007_B00_A00_R1.raw = 135 | 00915_A08_P008015_B00_A00_R1.raw = 136 | 00915_B01_P007960_B00_A00_R1.raw = 137 | 00915_B02_P007968_B00_A00_R2.raw = 138 | 00915_B03_P007976_B00_A00_R2.raw = 139 | 00915_B04_P007984_B00_A00_R2.raw = 140 | 00915_B05_P007992_B00_A00_R1.raw = 141 | 00915_B06_P008000_B00_A00_R1.raw = 142 | 00915_B07_P008008_B00_A00_R1.raw = 143 | 00915_B08_P008016_B00_A00_R1.raw = 144 | 00915_C01_P007961_B00_A00_R1.raw = 145 | 00915_C02_P007969_B00_A00_R2.raw = 146 | 00915_C03_P007977_B00_A00_R2.raw = 147 | 00915_C04_P007985_B00_A00_R2.raw = 148 | 00915_C05_P007993_B00_A00_R1.raw = 149 | 00915_C06_P008001_B00_A00_R1.raw = 150 | 00915_C07_P008009_B00_A00_R1.raw = 151 | 00915_C08_P008017_B00_A00_R1.raw = 152 | 00915_D01_P007962_B00_A00_R1.raw = 153 | 00915_D02_P007970_B00_A00_R2.raw = 154 | 00915_D03_P007978_B00_A00_R2.raw = 155 | 00915_D04_P007986_B00_A00_R2.raw = 156 | 00915_D05_P007994_B00_A00_R2.raw = 157 | 00915_D06_P008002_B00_A00_R1.raw = 158 | 00915_D07_P008010_B00_A00_R1.raw = 159 | 00915_D08_P008018_B00_A00_R1.raw = 160 | 00915_E01_P007963_B00_A00_R1.raw = 161 | 00915_E02_P007971_B00_A00_R2.raw = 162 | 00915_E03_P007979_B00_A00_R2.raw = 163 | 00915_E04_P007987_B00_A00_R1.raw = 164 | 00915_E05_P007995_B00_A00_R1.raw = 165 | 00915_E06_P008003_B00_A00_R1.raw = 166 | 00915_E07_P008011_B00_A00_R1.raw = 167 | 00915_E08_P008019_B00_A00_R1.raw = 168 | 00915_F01_P007964_B00_A00_R2.raw = 169 | 00915_F02_P007972_B00_A00_R2.raw = 170 | 00915_F03_P007980_B00_A00_R1.raw = 171 | 00915_F04_P007988_B00_A00_R1.raw = 172 | 00915_F05_P007996_B00_A00_R1.raw = 173 | 00915_F06_P008004_B00_A00_R1.raw = 174 | 00915_F07_P008012_B00_A00_R1.raw = 175 | 00915_F08_P008020_B00_A00_R1.raw = 176 | 00915_G01_P007965_B00_A00_R2.raw = 177 | 00915_G02_P007973_B00_A00_R2.raw = 178 | 00915_G03_P007981_B00_A00_R1.raw = 179 | 00915_G04_P007989_B00_A00_R1.raw = 180 | 00915_G05_P007997_B00_A00_R1.raw = 181 | 00915_G06_P008005_B00_A00_R1.raw = 182 | 00915_G07_P008013_B00_A00_R1.raw = 183 | 00915_G08_P008021_B00_A00_R1.raw = 184 | 00915_H01_P007966_B00_A00_R2.raw = 185 | 00915_H02_P007974_B00_A00_R2.raw = 186 | 00915_H03_P007982_B00_A00_R2.raw = 187 | 00915_H04_P007990_B00_A00_R1.raw = 188 | 00915_H05_P007998_B00_A00_R1.raw = 189 | 00915_H06_P008006_B00_A00_R1.raw = 190 | 00915_H07_P008014_B00_A00_R1.raw = 191 | 00915_H08_P008022_B00_A00_R2.raw = 192 | 01564_A04_P015997_B00_A00_R2.raw = 193 | 01564_B04_P015998_B00_A00_R2.raw = 194 | 01638_C03_P015999_B00_A00_R3.raw = 195",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes profiling 65 colorectal cancer cell lines.",
+        "TRUTH_CHECK": "Each run corresponds to a different sample (Sample 1 to Sample 195). Since these are different cell lines or different fractions/aliquots of different cell lines, they are independent biological units. Each unique biological sample should have its own index (1, 2, 3...). Assigning all 195 runs to biological replicate 1 is incorrect.",
+        "COMPLETENESS_CHECK": "The format is correct, but the mapping is logically wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "00872_A01_P007435_B00_A00_R1.raw = 1 | 00872_A02_P007443_B00_A00_R2.raw = 1 | 00872_A03_P007451_B00_A00_R2.raw = 1 | 00872_A04_P007459_B00_A00_R2.raw = 1 | 00872_A05_P007467_B00_A00_R2.raw = 1 | 00872_A06_P007475_B00_A00_R1.raw = 1 | 00872_A07_P007483_B00_A00_R1.raw = 1 | 00872_A08_P007491_B00_A00_R1.raw = 1 | 00872_B01_P007436_B00_A00_R2.raw = 1 | 00872_B02_P007444_B00_A00_R2.raw = 1 | 00872_B03_P007452_B00_A00_R2.raw = 1 | 00872_B04_P007460_B00_A00_R2.raw = 1 | 00872_B05_P007468_B00_A00_R2.raw = 1 | 00872_B06_P007476_B00_A00_R1.raw = 1 | 00872_B07_P007484_B00_A00_R1.raw = 1 | 00872_B08_P007492_B00_A00_R1.raw = 1 | 00872_C01_P007437_B00_A00_R2.raw = 1 | 00872_C02_P007445_B00_A00_R2.raw = 1 | 00872_C03_P007453_B00_A00_R2.raw = 1 | 00872_C04_P007461_B00_A00_R2.raw = 1 | 00872_C05_P007469_B00_A00_R1.raw = 1 | 00872_C06_P007477_B00_A00_R1.raw = 1 | 00872_C07_P007485_B00_A00_R1.raw = 1 | 00872_C08_P007493_B00_A00_R1.raw = 1 | 00872_D01_P007438_B00_A00_R2.raw = 1 | 00872_D02_P007446_B00_A00_R2.raw = 1 | 00872_D03_P007454_B00_A00_R2.raw = 1 | 00872_D04_P007462_B00_A00_R2.raw = 1 | 00872_D05_P007470_B00_A00_R1.raw = 1 | 00872_D06_P007478_B00_A00_R1.raw = 1 | 00872_D07_P007486_B00_A00_R1.raw = 1 | 00872_D08_P007494_B00_A00_R1.raw = 1 | 00872_E01_P007439_B00_A00_R2.raw = 1 | 00872_E02_P007447_B00_A00_R2.raw = 1 | 00872_E03_P007455_B00_A00_R2.raw = 1 | 00872_E04_P007463_B00_A00_R2.raw = 1 | 00872_E05_P007471_B00_A00_R1.raw = 1 | 00872_E06_P007479_B00_A00_R1.raw = 1 | 00872_E07_P007487_B00_A00_R1.raw = 1 | 00872_E08_P007495_B00_A00_R1.raw = 1 | 00872_F01_P007440_B00_A00_R2.raw = 1 | 00872_F02_P007448_B00_A00_R2.raw = 1 | 00872_F03_P007456_B00_A00_R2.raw = 1 | 00872_F04_P007464_B00_A00_R2.raw = 1 | 00872_F05_P007472_B00_A00_R1.raw = 1 | 00872_F06_P007480_B00_A00_R1.raw = 1 | 00872_F07_P007488_B00_A00_R1.raw = 1 | 00872_F08_P007496_B00_A00_R1.raw = 1 | 00872_G01_P007441_B00_A00_R2.raw = 1 | 00872_G02_P007449_B00_A00_R2.raw = 1 | 00872_G03_P007457_B00_A00_R2.raw = 1 | 00872_G04_P007465_B00_A00_R2.raw = 1 | 00872_G05_P007473_B00_A00_R1.raw = 1 | 00872_G06_P007481_B00_A00_R1.raw = 1 | 00872_G07_P007489_B00_A00_R1.raw = 1 | 00872_G08_P007497_B00_A00_R1.raw = 1 | 00872_H01_P007442_B00_A00_R2.raw = 1 | 00872_H02_P007450_B00_A00_R2.raw = 1 | 00872_H03_P007458_B00_A00_R2.raw = 1 | 00872_H04_P007466_B00_A00_R2.raw = 1 | 00872_H05_P007474_B00_A00_R1_131217092459.raw = 1 | 00872_H06_P007482_B00_A00_R1.raw = 1 | 00872_H07_P007490_B00_A00_R1.raw = 1 | 00872_H08_P007498_B00_A00_R1.raw = 1 | 00892_A01_P007560_B00_A00_R1.raw = 1 | 00892_A02_P007568_B00_A00_R2.raw = 1 | 00892_A03_P007576_B00_A00_R1.raw = 1 | 00892_A04_P007584_B00_A00_R1.raw = 1 | 00892_A05_P007592_B00_A00_R1.raw = 1 | 00892_A06_P007600_B00_A00_R1.raw = 1 | 00892_A07_P007608_B00_A00_R1.raw = 1 | 00892_A08_P007616_B00_A00_R1.raw = 1 | 00892_B01_P007561_B00_A00_R1.raw = 1 | 00892_B02_P007569_B00_A00_R2.raw = 1 | 00892_B03_P007577_B00_A00_R2.raw = 1 | 00892_B04_P007585_B00_A00_R1.raw = 1 | 00892_B05_P007593_B00_A00_R1.raw = 1 | 00892_B06_P007601_B00_A00_R1.raw = 1 | 00892_B07_P007609_B00_A00_R1.raw = 1 | 00892_B08_P007617_B00_A00_R1.raw = 1 | 00892_C01_P007562_B00_A00_R1.raw = 1 | 00892_C02_P007570_B00_A00_R1.raw = 1 | 00892_C03_P007578_B00_A00_R1.raw = 1 | 00892_C04_P007586_B00_A00_R1.raw = 1 | 00892_C05_P007594_B00_A00_R1.raw = 1 | 00892_C06_P007602_B00_A00_R1.raw = 1 | 00892_C07_P007610_B00_A00_R1.raw = 1 | 00892_C08_P007618_B00_A00_R1.raw = 1 | 00892_D01_P007563_B00_A00_R1.raw = 1 | 00892_D02_P007571_B00_A00_R1.raw = 1 | 00892_D03_P007579_B00_A00_R1.raw = 1 | 00892_D04_P007587_B00_A00_R1.raw = 1 | 00892_D05_P007595_B00_A00_R1.raw = 1 | 00892_D06_P007603_B00_A00_R1.raw = 1 | 00892_D07_P007611_B00_A00_R1.raw = 1 | 00892_D08_P007619_B00_A00_R1.raw = 1 | 00892_E01_P007564_B00_A00_R1.raw = 1 | 00892_E02_P007572_B00_A00_R1.raw = 1 | 00892_E03_P007580_B00_A00_R2.raw = 1 | 00892_E04_P007588_B00_A00_R1.raw = 1 | 00892_E05_P007596_B00_A00_R1.raw = 1 | 00892_E06_P007604_B00_A00_R1.raw = 1 | 00892_E07_P007612_B00_A00_R2.raw = 1 | 00892_E08_P007620_B00_A00_R1.raw = 1 | 00892_F01_P007565_B00_A00_R1.raw = 1 | 00892_F02_P007573_B00_A00_R1.raw = 1 | 00892_F03_P007581_B00_A00_R1.raw = 1 | 00892_F04_P007589_B00_A00_R1.raw = 1 | 00892_F05_P007597_B00_A00_R1.raw = 1 | 00892_F06_P007605_B00_A00_R1.raw = 1 | 00892_F07_P007613_B00_A00_R1.raw = 1 | 00892_F08_P007621_B00_A00_R1.raw = 1 | 00892_G01_P007566_B00_A00_R1.raw = 1 | 00892_G02_P007574_B00_A00_R1.raw = 1 | 00892_G03_P007582_B00_A00_R1.raw = 1 | 00892_G04_P007590_B00_A00_R1.raw = 1 | 00892_G05_P007598_B00_A00_R1.raw = 1 | 00892_G06_P007606_B00_A00_R1.raw = 1 | 00892_G07_P007614_B00_A00_R1.raw = 1 | 00892_G08_P007622_B00_A00_R1.raw = 1 | 00892_H01_P007567_B00_A00_R1.raw = 1 | 00892_H02_P007575_B00_A00_R1.raw = 1 | 00892_H03_P007583_B00_A00_R1.raw = 1 | 00892_H04_P007591_B00_A00_R1.raw = 1 | 00892_H05_P007599_B00_A00_R1.raw = 1 | 00892_H06_P007607_B00_A00_R1.raw = 1 | 00892_H07_P007615_B00_A00_R1.raw = 1 | 00892_H08_P007623_B00_A00_R1.raw = 1 | 00915_A01_P007959_B00_A00_R1.raw = 1 | 00915_A02_P007967_B00_A00_R2.raw = 1 | 00915_A03_P007975_B00_A00_R2.raw = 1 | 00915_A04_P007983_B00_A00_R2.raw = 1 | 00915_A05_P007991_B00_A00_R1.raw = 1 | 00915_A06_P007999_B00_A00_R1.raw = 1 | 00915_A07_P008007_B00_A00_R1.raw = 1 | 00915_A08_P008015_B00_A00_R1.raw = 1 | 00915_B01_P007960_B00_A00_R1.raw = 1 | 00915_B02_P007968_B00_A00_R2.raw = 1 | 00915_B03_P007976_B00_A00_R2.raw = 1 | 00915_B04_P007984_B00_A00_R2.raw = 1 | 00915_B05_P007992_B00_A00_R1.raw = 1 | 00915_B06_P008000_B00_A00_R1.raw = 1 | 00915_B07_P008008_B00_A00_R1.raw = 1 | 00915_B08_P008016_B00_A00_R1.raw = 1 | 00915_C01_P007961_B00_A00_R1.raw = 1 | 00915_C02_P007969_B00_A00_R2.raw = 1 | 00915_C03_P007977_B00_A00_R2.raw = 1 | 00915_C04_P007985_B00_A00_R2.raw = 1 | 00915_C05_P007993_B00_A00_R1.raw = 1 | 00915_C06_P008001_B00_A00_R1.raw = 1 | 00915_C07_P008009_B00_A00_R1.raw = 1 | 00915_C08_P008017_B00_A00_R1.raw = 1 | 00915_D01_P007962_B00_A00_R1.raw = 1 | 00915_D02_P007970_B00_A00_R2.raw = 1 | 00915_D03_P007978_B00_A00_R2.raw = 1 | 00915_D04_P007986_B00_A00_R2.raw = 1 | 00915_D05_P007994_B00_A00_R2.raw = 1 | 00915_D06_P008002_B00_A00_R1.raw = 1 | 00915_D07_P008010_B00_A00_R1.raw = 1 | 00915_D08_P008018_B00_A00_R1.raw = 1 | 00915_E01_P007963_B00_A00_R1.raw = 1 | 00915_E02_P007971_B00_A00_R2.raw = 1 | 00915_E03_P007979_B00_A00_R2.raw = 1 | 00915_E04_P007987_B00_A00_R1.raw = 1 | 00915_E05_P007995_B00_A00_R1.raw = 1 | 00915_E06_P008003_B00_A00_R1.raw = 1 | 00915_E07_P008011_B00_A00_R1.raw = 1 | 00915_E08_P008019_B00_A00_R1.raw = 1 | 00915_F01_P007964_B00_A00_R2.raw = 1 | 00915_F02_P007972_B00_A00_R2.raw = 1 | 00915_F03_P007980_B00_A00_R1.raw = 1 | 00915_F04_P007988_B00_A00_R1.raw = 1 | 00915_F05_P007996_B00_A00_R1.raw = 1 | 00915_F06_P008004_B00_A00_R1.raw = 1 | 00915_F07_P008012_B00_A00_R1.raw = 1 | 00915_F08_P008020_B00_A00_R1.raw = 1 | 00915_G01_P007965_B00_A00_R2.raw = 1 | 00915_G02_P007973_B00_A00_R2.raw = 1 | 00915_G03_P007981_B00_A00_R1.raw = 1 | 00915_G04_P007989_B00_A00_R1.raw = 1 | 00915_G05_P007997_B00_A00_R1.raw = 1 | 00915_G06_P008005_B00_A00_R1.raw = 1 | 00915_G07_P008013_B00_A00_R1.raw = 1 | 00915_G08_P008021_B00_A00_R1.raw = 1 | 00915_H01_P007966_B00_A00_R2.raw = 1 | 00915_H02_P007974_B00_A00_R2.raw = 1 | 00915_H03_P007982_B00_A00_R2.raw = 1 | 00915_H04_P007990_B00_A00_R1.raw = 1 | 00915_H05_P007998_B00_A00_R1.raw = 1 | 00915_H06_P008006_B00_A00_R1.raw = 1 | 00915_H07_P008014_B00_A00_R1.raw = 1 | 00915_H08_P008022_B00_A00_R2.raw = 1 | 01564_A04_P015997_B00_A00_R2.raw = 1 | 01564_B04_P015998_B00_A00_R2.raw = 1 | 01638_C03_P015999_B00_A00_R3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper does not mention technical replicates for the full proteome LC-MS/MS runs; it describes a large-scale profiling of 65 cell lines.",
+        "TRUTH_CHECK": "Each run is assigned to a unique sample (Sample 1 to Sample 195), meaning each is measured once.",
+        "COMPLETENESS_CHECK": "Every run is assigned the index 1, which is correct for materials measured once."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "00872_A01_P007435_B00_A00_R1.raw = P007435 | 00872_A02_P007443_B00_A00_R2.raw = P007443 | 00872_A03_P007451_B00_A00_R2.raw = P007451 | 00872_A04_P007459_B00_A00_R2.raw = P007459 | 00872_A05_P007467_B00_A00_R2.raw = P007467 | 00872_A06_P007475_B00_A00_R1.raw = P007475 | 00872_A07_P007483_B00_A00_R1.raw = P007483 | 00872_A08_P007491_B00_A00_R1.raw = P007491 | 00872_B01_P007436_B00_A00_R2.raw = P007436 | 00872_B02_P007444_B00_A00_R2.raw = P007444 | 00872_B03_P007452_B00_A00_R2.raw = P007452 | 00872_B04_P007460_B00_A00_R2.raw = P007460 | 00872_B05_P007468_B00_A00_R2.raw = P007468 | 00872_B06_P007476_B00_A00_R1.raw = P007476 | 00872_B07_P007484_B00_A00_R1.raw = P007484 | 00872_B08_P007492_B00_A00_R1.raw = P007492 | 00872_C01_P007437_B00_A00_R2.raw = P007437 | 00872_C02_P007445_B00_A00_R2.raw = P007445 | 00872_C03_P007453_B00_A00_R2.raw = P007453 | 00872_C04_P007461_B00_A00_R2.raw = P007461 | 00872_C05_P007469_B00_A00_R1.raw = P007469 | 00872_C06_P007477_B00_A00_R1.raw = P007477 | 00872_C07_P007485_B00_A00_R1.raw = P007485 | 00872_C08_P007493_B00_A00_R1.raw = P007493 | 00872_D01_P007438_B00_A00_R2.raw = P007438 | 00872_D02_P007446_B00_A00_R2.raw = P007446 | 00872_D03_P007454_B00_A00_R2.raw = P007454 | 00872_D04_P007462_B00_A00_R2.raw = P007462 | 00872_D05_P007470_B00_A00_R1.raw = P007470 | 00872_D06_P007478_B00_A00_R1.raw = P007478 | 00872_D07_P007486_B00_A00_R1.raw = P007486 | 00872_D08_P007494_B00_A00_R1.raw = P007494 | 00872_E01_P007439_B00_A00_R2.raw = P007439 | 00872_E02_P007447_B00_A00_R2.raw = P007447 | 00872_E03_P007455_B00_A00_R2.raw = P007455 | 00872_E04_P007463_B00_A00_R2.raw = P007463 | 00872_E05_P007471_B00_A00_R1.raw = P007471 | 00872_E06_P007479_B00_A00_R1.raw = P007479 | 00872_E07_P007487_B00_A00_R1.raw = P007487 | 00872_E08_P007495_B00_A00_R1.raw = P007495 | 00872_F01_P007440_B00_A00_R2.raw = P007440 | 00872_F02_P007448_B00_A00_R2.raw = P007448 | 00872_F03_P007456_B00_A00_R2.raw = P007456 | 00872_F04_P007464_B00_A00_R2.raw = P007464 | 00872_F05_P007472_B00_A00_R1.raw = P007472 | 00872_F06_P007480_B00_A00_R1.raw = P007480 | 00872_F07_P007488_B00_A00_R1.raw = P007488 | 00872_F08_P007496_B00_A00_R1.raw = P007496 | 00872_G01_P007441_B00_A00_R2.raw = P007441 | 00872_G02_P007449_B00_A00_R2.raw = P007449 | 00872_G03_P007457_B00_A00_R2.raw = P007457 | 00872_G04_P007465_B00_A00_R2.raw = P007465 | 00872_G05_P007473_B00_A00_R1.raw = P007473 | 00872_G06_P007481_B00_A00_R1.raw = P007481 | 00872_G07_P007489_B00_A00_R1.raw = P007489 | 00872_G08_P007497_B00_A00_R1.raw = P007497 | 00872_H01_P007442_B00_A00_R2.raw = P007442 | 00872_H02_P007450_B00_A00_R2.raw = P007450 | 00872_H03_P007458_B00_A00_R2.raw = P007458 | 00872_H04_P007466_B00_A00_R2.raw = P007466 | 00872_H05_P007474_B00_A00_R1_131217092459.raw = P007474 | 00872_H06_P007482_B00_A00_R1.raw = P007482 | 00872_H07_P007490_B00_A00_R1.raw = P007490 | 00872_H08_P007498_B00_A00_R1.raw = P007498 | 00892_A01_P007560_B00_A00_R1.raw = P007560 | 00892_A02_P007568_B00_A00_R2.raw = P007568 | 00892_A03_P007576_B00_A00_R1.raw = P007576 | 00892_A04_P007584_B00_A00_R1.raw = P007584 | 00892_A05_P007592_B00_A00_R1.raw = P007592 | 00892_A06_P007600_B00_A00_R1.raw = P007600 | 00892_A07_P007608_B00_A00_R1.raw = P007608 | 00892_A08_P007616_B00_A00_R1.raw = P007616 | 00892_B01_P007561_B00_A00_R1.raw = P007561 | 00892_B02_P007569_B00_A00_R2.raw = P007569 | 00892_B03_P007577_B00_A00_R2.raw = P007577 | 00892_B04_P007585_B00_A00_R1.raw = P007585 | 00892_B05_P007593_B00_A00_R1.raw = P007593 | 00892_B06_P007601_B00_A00_R1.raw = P007601 | 00892_B07_P007609_B00_A00_R1.raw = P007609 | 00892_B08_P007617_B00_A00_R1.raw = P007617 | 00892_C01_P007562_B00_A00_R1.raw = P007562 | 00892_C02_P007570_B00_A00_R1.raw = P007570 | 00892_C03_P007578_B00_A00_R1.raw = P007578 | 00892_C04_P007586_B00_A00_R1.raw = P007586 | 00892_C05_P007594_B00_A00_R1.raw = P007594 | 00892_C06_P007602_B00_A00_R1.raw = P007602 | 00892_C07_P007610_B00_A00_R1.raw = P007610 | 00892_C08_P007618_B00_A00_R1.raw = P007618 | 00892_D01_P007563_B00_A00_R1.raw = P007563 | 00892_D02_P007571_B00_A00_R1.raw = P007571 | 00892_D03_P007579_B00_A00_R1.raw = P007579 | 00892_D04_P007587_B00_A00_R1.raw = P007587 | 00892_D05_P007595_B00_A00_R1.raw = P007595 | 00892_D06_P007603_B00_A00_R1.raw = P007603 | 00892_D07_P007611_B00_A00_R1.raw = P007611 | 00892_D08_P007619_B00_A00_R1.raw = P007619 | 00892_E01_P007564_B00_A00_R1.raw = P007564 | 00892_E02_P007572_B00_A00_R1.raw = P007572 | 00892_E03_P007580_B00_A00_R2.raw = P007580 | 00892_E04_P007588_B00_A00_R1.raw = P007588 | 00892_E05_P007596_B00_A00_R1.raw = P007596 | 00892_E06_P007604_B00_A00_R1.raw = P007604 | 00892_E07_P007612_B00_A00_R2.raw = P007612 | 00892_E08_P007620_B00_A00_R1.raw = P007620 | 00892_F01_P007565_B00_A00_R1.raw = P007565 | 00892_F02_P007573_B00_A00_R1.raw = P007573 | 00892_F03_P007581_B00_A00_R1.raw = P007581 | 00892_F04_P007589_B00_A00_R1.raw = P007589 | 00892_F05_P007597_B00_A00_R1.raw = P007597 | 00892_F06_P007605_B00_A00_R1.raw = P007605 | 00892_F07_P007613_B00_A00_R1.raw = P007613 | 00892_F08_P007621_B00_A00_R1.raw = P007621 | 00892_G01_P007566_B00_A00_R1.raw = P007566 | 00892_G02_P007574_B00_A00_R1.raw = P007574 | 00892_G03_P007582_B00_A00_R1.raw = P007582 | 00892_G04_P007590_B00_A00_R1.raw = P007590 | 00892_G05_P007598_B00_A00_R1.raw = P007598 | 00892_G06_P007606_B00_A00_R1.raw = P007606 | 00892_G07_P007614_B00_A00_R1.raw = P007614 | 00892_G08_P007622_B00_A00_R1.raw = P007622 | 00892_H01_P007567_B00_A00_R1.raw = P007567 | 00892_H02_P007575_B00_A00_R1.raw = P007575 | 00892_H03_P007583_B00_A00_R1.raw = P007583 | 00892_H04_P007591_B00_A00_R1.raw = P007591 | 00892_H05_P007599_B00_A00_R1.raw = P007599 | 00892_H06_P007607_B00_A00_R1.raw = P007607 | 00892_H07_P007615_B00_A00_R1.raw = P007615 | 00892_H08_P007623_B00_A00_R1.raw = P007623 | 00915_A01_P007959_B00_A00_R1.raw = P007959 | 00915_A02_P007967_B00_A00_R2.raw = P007967 | 00915_A03_P007975_B00_A00_R2.raw = P007975 | 00915_A04_P007983_B00_A00_R2.raw = P007983 | 00915_A05_P007991_B00_A00_R1.raw = P007991 | 00915_A06_P007999_B00_A00_R1.raw = P007999 | 00915_A07_P008007_B00_A00_R1.raw = P008007 | 00915_A08_P008015_B00_A00_R1.raw = P008015 | 00915_B01_P007960_B00_A00_R1.raw = P007960 | 00915_B02_P007968_B00_A00_R2.raw = P007968 | 00915_B03_P007976_B00_A00_R2.raw = P007976 | 00915_B04_P007984_B00_A00_R2.raw = P007984 | 00915_B05_P007992_B00_A00_R1.raw = P007992 | 00915_B06_P008000_B00_A00_R1.raw = P008000 | 00915_B07_P008008_B00_A00_R1.raw = P008008 | 00915_B08_P008016_B00_A00_R1.raw = P008016 | 00915_C01_P007961_B00_A00_R1.raw = P007961 | 00915_C02_P007969_B00_A00_R2.raw = P007969 | 00915_C03_P007977_B00_A00_R2.raw = P007977 | 00915_C04_P007985_B00_A00_R2.raw = P007985 | 00915_C05_P007993_B00_A00_R1.raw = P007993 | 00915_C06_P008001_B00_A00_R1.raw = P008001 | 00915_C07_P008009_B00_A00_R1.raw = P008009 | 00915_C08_P008017_B00_A00_R1.raw = P008017 | 00915_D01_P007962_B00_A00_R1.raw = P007962 | 00915_D02_P007970_B00_A00_R2.raw = P007970 | 00915_D03_P007978_B00_A00_R2.raw = P007978 | 00915_D04_P007986_B00_A00_R2.raw = P007986 | 00915_D05_P007994_B00_A00_R2.raw = P007994 | 00915_D06_P008002_B00_A00_R1.raw = P008002 | 00915_D07_P008010_B00_A00_R1.raw = P008010 | 00915_D08_P008018_B00_A00_R1.raw = P008018 | 00915_E01_P007963_B00_A00_R1.raw = P007963 | 00915_E02_P007971_B00_A00_R2.raw = P007971 | 00915_E03_P007979_B00_A00_R2.raw = P007979 | 00915_E04_P007987_B00_A00_R1.raw = P007987 | 00915_E05_P007995_B00_A00_R1.raw = P007995 | 00915_E06_P008003_B00_A00_R1.raw = P008003 | 00915_E07_P008011_B00_A00_R1.raw = P008011 | 00915_E08_P008019_B00_A00_R1.raw = P008019 | 00915_F01_P007964_B00_A00_R2.raw = P007964 | 00915_F02_P007972_B00_A00_R2.raw = P007972 | 00915_F03_P007980_B00_A00_R1.raw = P007980 | 00915_F04_P007988_B00_A00_R1.raw = P007988 | 00915_F05_P007996_B00_A00_R1.raw = P007996 | 00915_F06_P008004_B00_A00_R1.raw = P008004 | 00915_F07_P008012_B00_A00_R1.raw = P008012 | 00915_F08_P008020_B00_A00_R1.raw = P008020 | 00915_G01_P007965_B00_A00_R2.raw = P007965 | 00915_G02_P007973_B00_A00_R2.raw = P007973 | 00915_G03_P007981_B00_A00_R1.raw = P007981 | 00915_G04_P007989_B00_A00_R1.raw = P007989 | 00915_G05_P007997_B00_A00_R1.raw = P007997 | 00915_G06_P008005_B00_A00_R1.raw = P008005 | 00915_G07_P008013_B00_A00_R1.raw = P008013 | 00915_G08_P008021_B00_A00_R1.raw = P008021 | 00915_H01_P007966_B00_A00_R2.raw = P007966 | 00915_H02_P007974_B00_A00_R2.raw = P007974 | 00915_H03_P007982_B00_A00_R2.raw = P007982 | 00915_H04_P007990_B00_A00_R1.raw = P007990 | 00915_H05_P007998_B00_A00_R1.raw = P007998 | 00915_H06_P008006_B00_A00_R1.raw = P008006 | 00915_H07_P008014_B00_A00_R1.raw = P008014 | 00915_H08_P008022_B00_A00_R2.raw = P008022 | 01564_A04_P015997_B00_A00_R2.raw = P015997 | 01564_B04_P015998_B00_A00_R2.raw = P015998 | 01638_C03_P015999_B00_A00_R3.raw = P015999",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an identifier for the subject or donor, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the analysis of 90 CRC patients and 1,074 patients from the QUASAR 2 cohort, but it does not list the specific individual identifiers (e.g., \"P007435\") in the provided text.",
+        "TRUTH_CHECK": "While the identifiers are likely from the dataset, they are not stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported by the text."
+      }
+    }
+  ]
+}

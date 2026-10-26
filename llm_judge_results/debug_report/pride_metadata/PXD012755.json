@@ -1,0 +1,148 @@
+{
+  "accession" : "PXD012755",
+  "title" : "Proteomic Explorations of Autism Brain - Part 1",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Autism Spectrum Disorder (ASD) is a group of common neurodevelopmental conditions with impairments in socialization, communication and restricted behaviors. Only a minority of ASD cases are determined to have a definitive etiology and the pathogenesis of most ASD remains poorly understood. In this study, we made use of the power of proteomics, heretofore little utilized in the study of the biology of ASD, and analyzed the proteomes of two brain regions, Brodmann area 19 (BA19) and posterior inferior cerebellum (CB), from 9 idiopathic ASD cases/9 matched controls by label-free HPLC-tandem mass spectrometry (MS) and validated the differentially expressed protein findings with selected-reaction monitoring MS. The data revealed marked differences between ASD and control brain proteomes for both brain regions, with numerous differentially expressed proteins, although the proteomic difference between brain regions was not attenuated in ASD brain. Bioinformatic analyses based on the differentially expressed proteins highlighted multiple canonical pathways and protein-protein interaction networks that are implicated in the differential biology of ASD vs. controls. Canonical pathways involving glutamate receptor signaling and RXR activation were enriched for both BA19 and CB; others such as cell-cell junction signaling and fatty acid oxidation were enriched for BA19 and CB, respectively. Network analysis revealed a protein interaction network related to synaptic biology in BA19 and another involving cytoskeletal/vesicular functions in CB. Upstream regulator analysis for both regions revealed multiple neurodegeneration-associated proteins. The finding of several shared canonical pathways and upstream regulators for both regions underscores likely common ASD pathophysiology that has distinctive regional expression.",
+  "sampleProcessingProtocol" : "Samples were rinsed in 100 mM Tris pH 8.0, transferred to a Covaris cryobag and frozen in liquid nitrogen, pulverized, transferred to glass vials, and then lysed with 2% SDS and 0.1% protease inhibitor cocktail (Sigma-Aldrich, St. Louis, MO). Samples were then sonicated, followed by filter-aided sample preparation detergent clean-up. 10 mcg protein of each sample was digested with LysC for 1 hour and trypsin overnight at 37°C.",
+  "dataProcessingProtocol" : "Raw LC-MS/MS data files for each sample were processed using Rosetta Elucidator (Rosetta Biosoftware, Seattle, WA) (Version 3.3.01 SP4 25). Automated differential quantification of peptides was performed as previously described. Briefly, LC-MS/MS raw data were imported, and for each MS spectrum profile of each LC-MS/MS run, chromatographic peaks and monoisotopic masses were extracted and aligned. Chromatographic peaks were first aligned by retention time and monoisotopic mass. Peak lists with the monoisotopic mass and corresponding MS/MS data were then generated for each sample and searched using  Mascot. Resultant peptide identifications were imported into Elucidator and monoisotopic masses annotated with peptide identifications. The false discovery rate for protein identifications was calculated to be 0.02%. The MS/MS peak lists were searched by Mascot (version 2.4.1) (Matrix Science, London, UK) using the human UniProt database. Search settings were as follows: trypsin enzyme specificity; mass accuracy window for precursor ion, 25 ppm; mass accuracy window for fragment ions, 0.8 Da; variable modifications including carbamidomethlylation of cysteines, one missed cleavage and oxidation of methionine.",
+  "projectTags" : [ ],
+  "keywords" : [ "Neurodevelopment", "Autism", "Proteomics", "Asd" ],
+  "doi" : "10.6019/PXD012755",
+  "submissionType" : "COMPLETE",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2019-02-18",
+  "publicationDate" : "2019-09-16",
+  "submitters" : [ {
+    "title" : "Ms",
+    "firstName" : "Kathleen",
+    "lastName" : "Lundberg",
+    "identifier" : "11200109",
+    "affiliation" : "Case Western Reserve University",
+    "email" : "kathleen.lundberg@case.edu",
+    "country" : "United States",
+    "orcid" : "",
+    "name" : "Kathleen Lundberg",
+    "id" : "11200109"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Marvin",
+    "lastName" : "Natowicz",
+    "identifier" : "133780100",
+    "affiliation" : "Pathology and Laboratory Medicine, Genomic Medicine, Neurological and Pediatrics Institutes, Cleveland Clinic, Cleveland OH",
+    "email" : "natowim@ccf.org",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Marvin Natowicz",
+    "id" : "133780100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001910",
+    "name" : "LTQ Orbitrap Elite"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001207",
+    "name" : "Mascot"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000425",
+    "name" : "MS1 intensity based label-free quantification method"
+  } ],
+  "countries" : [ "United States" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000142",
+      "name" : "brain"
+    }, {
+      "cvLabel" : "CL",
+      "accession" : "CL:0000211",
+      "name" : "electrically active cell"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "HP:0012759",
+      "name" : "Neurodevelopmental abnormality"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000142",
+    "name" : "Brain"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0000211",
+    "name" : "Electrically active cell"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "HP:0012759",
+    "name" : "Neurodevelopmental abnormality"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Abraham JR, Szoko N, Barnard J, Rubin RA, Schlatzer D, Lundberg K, Li X, Natowicz MR. Proteomic Investigations of Autism Brain Identify Known and Novel Pathogenetic Processes. Sci Rep. 2019 9(1):13118",
+    "pubmedID" : 31511657,
+    "doi" : "10.1038/s41598-019-49533-y"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:4",
+    "name" : "Carbamidomethyl"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:35",
+    "name" : "Oxidation"
+  } ],
+  "totalFileDownloads" : 22849,
+  "botCount" : 6452,
+  "hubCount" : 16240,
+  "organicCount" : 157
+}

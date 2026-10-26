@@ -1,0 +1,481 @@
+{
+  "paper_id": "PXD042574",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes saliva samples from healthy individuals and OSCC patients, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analyzed proteins are from human saliva.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "characteristics[disease]",
+      "extracted_value": "oral squamous cell carcinoma (OSCC)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"oral squamous cell carcinoma (OSCC)\" in the abstract and introduction.",
+        "TRUTH_CHECK": "The runs are derived from OSCC patients.",
+        "COMPLETENESS_CHECK": "The value is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=LTQ Orbitrap Velos",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section explicitly states the use of an LTQ Orbitrap Velos.",
+        "TRUTH_CHECK": "The instrument was used for the primary LC-MS/MS analysis of the samples.",
+        "COMPLETENESS_CHECK": "Complete and follows the key-value format."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=proteinase K",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for digestion, which is the right field.",
+        "SOURCE_CHECK": "The methods state that proteinase K (PK) was added to samples for the LiP approach.",
+        "TRUTH_CHECK": "Proteinase K was used as the first protease in the LiP-MS workflow for these runs.",
+        "COMPLETENESS_CHECK": "Complete. The NT term is used as per the key-value style."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state that samples were digested with \"sequencing-grade porcine trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for all samples in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "comment[fragmentation method]",
+      "extracted_value": "CID",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that ions were \"fragmented in the high-pressure linear ion trap by collision-induced dissociation (CID)\".",
+        "TRUTH_CHECK": "The value is correct for the runs described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "comment[collision energy]",
+      "extracted_value": "35% (CID)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the collision energy used during fragmentation, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that ions \"were sequentially isolated... and fragmented in the high-pressure linear ion trap by collision-induced dissociation (CID) with a normalized collision energy of 35%.\"",
+        "TRUTH_CHECK": "The value is correct for the runs using the LTQ Orbitrap Velos with CID.",
+        "COMPLETENESS_CHECK": "The value is complete and follows the allowed formats."
+      }
+    },
+    {
+      "annotation_type": "reduction_reagent",
+      "sdrf_column": "comment[reduction reagent]",
+      "extracted_value": "dithiothreitol (DTT)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A chemical used for reduction of disulfide bonds, the right field.",
+        "SOURCE_CHECK": "The methods state \"reduced by incubation with dithiothreitol (DTT)\".",
+        "TRUTH_CHECK": "The reagent was used for the samples analyzed in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "ionization_type",
+      "sdrf_column": "comment[ionization type]",
+      "extracted_value": "nanoESI",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an ionization type, which is the correct field.",
+        "SOURCE_CHECK": "The methods state the use of a \"Proxeon nanoelectrospray ion source\".",
+        "TRUTH_CHECK": "The nanoelectrospray source was used for the LC-MS/MS analysis of the samples.",
+        "COMPLETENESS_CHECK": "The value \"nanoESI\" is the correct SDRF term for \"nanoelectrospray\" as per the definition."
+      }
+    },
+    {
+      "annotation_type": "mass_analyzer",
+      "sdrf_column": "comment[mass analyzer type]",
+      "extracted_value": "linear ion trap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer type, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that peptides were \"fragmented in the high-pressure linear ion trap\".",
+        "TRUTH_CHECK": "The runs used an LTQ Orbitrap Velos, which is a hybrid instrument containing both a linear ion trap and an Orbitrap; naming the linear ion trap is correct.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "acquisition_method",
+      "sdrf_column": "comment[acquisition method]",
+      "extracted_value": "DDA",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an MS acquisition scheme, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"The instrument methods employed for LTQ Orbitrap Velos were set up in data-dependent acquisition (DDA) mode.\"",
+        "TRUTH_CHECK": "The value is correct for the runs using the LTQ Orbitrap Velos.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Cysteine carbamidomethylation (+57.0214 Da) ... allowed as fixed\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Oxidation;TA=M;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"methionine oxidation (+15.99492) were allowed as... variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was part of the search parameters.",
+        "COMPLETENESS_CHECK": "Follows the required format (NT, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "comment[precursor mass tolerance]",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The methods section states \"monoisotopic peptide tolerance was set to 10 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the runs described in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "comment[fragment mass tolerance]",
+      "extracted_value": "1 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods state \"fragment mass tolerance was set to 1 Da for both digestion strategies\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and the unit."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of samples]",
+      "extracted_value": "12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a count of samples, which fits the column name \"characteristics[number of samples]\".",
+        "SOURCE_CHECK": "The paper describes an independent patient cohort including healthy control (n = 4) and OSCC patients (n = 8), totaling 12 samples.",
+        "TRUTH_CHECK": "The value 12 correctly represents the total number of samples in the main study cohort.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "Proteinase K digestion under native conditions followed by denaturation with 0.1% RapiGest and complete tryptic digestion",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the sample preparation/treatment workflow, which is appropriate for a \"sample treatment\" characteristics column.",
+        "SOURCE_CHECK": "The methods describe adding proteinase K under native conditions, stopping it with heat, adding 0.1% RapiGest for denaturation, and then performing complete tryptic digestion.",
+        "TRUTH_CHECK": "This describes the LiP-MS workflow used for the analyzed samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "Tryptic digestion following reduction and alkylation",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample preparation process, which is appropriate for a \"sample treatment\" characteristics column.",
+        "SOURCE_CHECK": "The paper describes reduction (DTT), alkylation (IAA), and tryptic digestion in the \"Tryptic Digestion\" section.",
+        "TRUTH_CHECK": "This describes the \"tryptic digestion-only proteome\" workflow used in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "saliva",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"saliva\" describes the specimen type, which is appropriate for a column named \"characteristics[specimen]\".",
+        "SOURCE_CHECK": "The paper explicitly states that \"saliva samples\" were collected and analyzed.",
+        "TRUTH_CHECK": "The analyzed material for the runs in this study is saliva.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "56 °C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which fits the column name \"characteristics[temperature]\".",
+        "SOURCE_CHECK": "The paper states that samples were reduced by incubation with dithiothreitol (DTT) at 56 °C.",
+        "TRUTH_CHECK": "The temperature 56 °C refers to a specific step in the sample preparation (reduction), not a characteristic of the sample or the MS run itself.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "room temperature",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"room temperature\" describes a temperature condition, which fits the column name \"characteristics[temperature]\".",
+        "SOURCE_CHECK": "The paper mentions \"room temperature\" in the context of the alkylation step (\"30 min at room temperature in the dark\").",
+        "TRUTH_CHECK": "The value describes a specific step in the sample preparation (alkylation), not a characteristic of the MS runs themselves or the samples as a whole.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "37 °C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which matches the column name.",
+        "SOURCE_CHECK": "The paper mentions 37 °C in the Tryptic Digestion section.",
+        "TRUTH_CHECK": "The 37 °C refers to the incubation temperature during the tryptic digestion step, not a characteristic of the sample or the MS run itself.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "98 °C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which fits the column name \"characteristics[temperature]\".",
+        "SOURCE_CHECK": "The paper mentions heating samples to 98 °C in a thermocycler to stop PK digestion.",
+        "TRUTH_CHECK": "This temperature refers to a specific step in the sample preparation (stopping the enzymatic reaction), not a characteristic of the sample or the LC-MS/MS run itself.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[treatment]",
+      "extracted_value": "LiP-MS",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"LiP-MS\" describes a proteomics strategy/workflow, not a treatment applied to the subjects.",
+        "SOURCE_CHECK": "LiP-MS is mentioned throughout the paper as the analytical strategy used.",
+        "TRUTH_CHECK": "LiP-MS is the method of analysis, not a treatment of the patients or samples.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[experiment]",
+      "extracted_value": "LiP-MS in saliva samples to explore structural alterations comparing the proteome of healthy control and OSCC patients with and without lymph node metastasis",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a descriptive summary of the experiment, which is appropriate for a comment field.",
+        "SOURCE_CHECK": "The content is stated in the abstract and methods: \"we employed limited proteolysis–mass spectrometry in saliva samples to explore structural alterations, comparing the proteome of healthy control and oral squamous cell carcinoma (OSCC) patients with and without lymph node metastasis.\"",
+        "TRUTH_CHECK": "The value accurately describes the experiment performed for the runs.",
+        "COMPLETENESS_CHECK": "The value is a complete and accurate summary."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[gradient time]",
+      "extracted_value": "220 min",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which is appropriate for a column named \"gradient time\".",
+        "SOURCE_CHECK": "The methods state that peptides were separated \"over 220 min\".",
+        "TRUTH_CHECK": "The value correctly describes the LC gradient duration for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[number of missed cleavages]",
+      "extracted_value": "2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of missed cleavages, which is appropriate for a column named \"comment[number of missed cleavages]\".",
+        "SOURCE_CHECK": "The methods state \"up to two missed cleavages were allowed\" for the MaxQuant search.",
+        "TRUTH_CHECK": "The value correctly reflects the search parameters described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[separation]",
+      "extracted_value": "nanoLC on an LTQ Orbitrap Velos system with a PicoFrit column (2 μg injections described)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the LC-MS system and sample amount, which are technical details.",
+        "SOURCE_CHECK": "The paper mentions the LTQ Orbitrap Velos, the PicoFrit column, and 2 μg peptide digests.",
+        "TRUTH_CHECK": "The value is a summary of the technical setup, which is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

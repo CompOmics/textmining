@@ -1,0 +1,1399 @@
+{
+  "paper_id": "PXD008934",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states \"human myocardial tissue\" and \"failing human hearts\", which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The proteins analysed in the mass spectrometry experiment are from human heart tissue.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "heart left ventricle",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organ and specific chamber of the heart, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"Human myocardial tissue\" and \"left ventricle (LV) cavity\" and \"mid LV free wall\" were used for mass spectrometry.",
+        "TRUTH_CHECK": "The mass spectrometry runs were performed on samples from the left ventricle of the heart.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "heart cell",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a cell type, which is the right field.",
+        "SOURCE_CHECK": "The paper describes the analysis of \"human myocardial tissue\" and \"cardiomyocytes\", but the MS runs specifically used \"left ventricle tissue\" (homogenized).",
+        "TRUTH_CHECK": "The MS runs were performed on homogenized tissue, not isolated cells. While the paper discusses cardiomyocytes, the material for the 34 MS runs was tissue. According to the field definition, \"a value for a tissue sample with no stated cell type is unsupported\".",
+        "COMPLETENESS_CHECK": "The value is a general description, but it is unsupported for these specific runs."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "ischemic cardiomyopathy",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"ischemic cardiomyopathy (ICM)\" as a classification for failing hearts.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the ICM group.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"7 normal\" hearts used in mass spectrometry.",
+        "TRUTH_CHECK": "The value is correct for the 7 runs associated with the normal group.",
+        "COMPLETENESS_CHECK": "The value \"normal\" is the correct SDRF term for healthy subjects."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "cardiac hypertrophy",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"compensated hypertrophy\" (cHyp) and \"hypertrophic cardiomyopathy\" (HCM), but does not use the general term \"cardiac hypertrophy\" as a group label.",
+        "TRUTH_CHECK": "The runs are assigned to a group not explicitly named in the paper's classification (Normal, cHyp, HCMpEF, HCMrEF, DCM, ICM).",
+        "COMPLETENESS_CHECK": "The value is a plain text description of a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "dilated cardiomyopathy",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"dilated cardiomyopathy (DCM)\" as a classification for failing hearts.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the DCM group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "compensated hypertrophy",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease/clinical state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"compensated hypertrophy (cHyp)\" as a classification for non-failing hearts.",
+        "TRUTH_CHECK": "The value is correctly assigned to runs derived from the cHyp group.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is a correct reading of the paper."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "compensated hypertrophy",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease/clinical state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"compensated hypertrophy (cHyp)\" as a classification for non-failing hearts.",
+        "TRUTH_CHECK": "The value is correctly assigned to the runs representing the cHyp group.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "hypertrophic cardiomyopathy with reduced reduced ejection fraction",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "hypertrophic cardiomyopathy with reduced ejection fraction",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"HCM with reduced EF (HCMrEF EF<50%)\", which is hypertrophic cardiomyopathy with reduced ejection fraction.",
+        "TRUTH_CHECK": "The value is right for the runs carrying it, as they belong to the HCMrEF group.",
+        "COMPLETENESS_CHECK": "The value contains a typo (\"reduced reduced\"), which is a wrong detail."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "hypertrophic cardiomyopathy with preserved reduced ejection fraction",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "hypertrophic cardiomyopathy with preserved ejection fraction",
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The paper describes \"hypertrophic cardiomyopathy (HCM), which is subdivided into HCM with preserved EF (HCMpEF EF>50%) and HCM with reduced EF (HCMrEF EF<50%)\".",
+        "TRUTH_CHECK": "The candidate value \"hypertrophic cardiomyopathy with preserved reduced ejection fraction\" is a contradictory mix of the two distinct subgroups (preserved vs reduced).",
+        "COMPLETENESS_CHECK": "The value is logically inconsistent and does not match the paper's classification."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "58Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but no specific ages for individual samples are printed in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "54Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that a linear model was used to adjust for age and sex and refers to a \"source data file Supplementary Spreadsheet MS data\" for the PCA plots, but the specific age \"54Y\" is not printed in the provided text.",
+        "TRUTH_CHECK": "Not applicable as the value is not in the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "55Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "Not applicable as the value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is missing from the source."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "52Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is missing from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "60Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that a linear model was used to adjust for age and sex, but it does not list the specific ages of the individual participants in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not in the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "64Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but the specific ages of the individual subjects are not listed in the provided text.",
+        "TRUTH_CHECK": "Not applicable as the value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "48Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The format follows the definition (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "44Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is missing from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "65Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The specific value \"65Y\" is not stated in the paper text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "35Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not in the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "40Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the linear model for differential gene expression and in PCA plots, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The specific value \"40Y\" is not stated in the paper text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "53Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "Not applicable as the value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "63Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "56Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the linear model for differential gene expression and that PCA was used to evaluate distribution toward age groups, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The specific value \"56Y\" is not stated in the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "26Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "Not applicable as the value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is missing from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "36Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The format follows the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "51Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "42Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The specific value \"42Y\" is not stated in the paper text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "41Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the ages of the individual subjects; it only mentions that a linear model was used to adjust for age.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is missing from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "59Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "62Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "67Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not in the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "46Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is missing from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "66Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that age was used in the PCA and LIMMA analysis, but it does not list the specific ages of the individual subjects in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "Male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that PCA was performed to evaluate distribution toward gender groups and that a linear model adjusted for sex was used, but it never lists the sex of the individual subjects.",
+        "TRUTH_CHECK": "Not applicable as the source is absent.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "Female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions adjusting for sex in the LIMMA analysis and using sex to color code PCA plots, but it does not list the sex of individual samples in the provided text.",
+        "TRUTH_CHECK": "Not applicable as the source is absent.",
+        "COMPLETENESS_CHECK": "The value follows the format, but it is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a developmental stage, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes patients and cadaveric donors with ages ranging from 26Y to 67Y (as seen in related columns), which allows the inference of \"adult\".",
+        "TRUTH_CHECK": "The analyzed left ventricle tissues come from these adult human subjects.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"LFQ (Label-free quantification) and iBAQ... were enabled\", which is equivalent to \"label free sample\".",
+        "TRUTH_CHECK": "The proteomic analysis of the 34 hearts used label-free quantification.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format for label-free runs."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state \"Desalted peptides were analyzed on a Q-Exactive (Thermo Scientific)\".",
+        "TRUTH_CHECK": "The instrument was used for the proteomic analysis of the 34 hearts.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state the protein solution was \"digested with trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the 34 heart samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a proteomics experiment using LC-MS/MS (Q-Exactive) to analyze protein expression in heart tissues.",
+        "TRUTH_CHECK": "The value correctly describes the mass spectrometry experiment performed on the 34 heart samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Carbamidomethyl [C] was set as fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format including name, residue, and modification status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Oxidation [M] was set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was used in the search for all samples.",
+        "COMPLETENESS_CHECK": "The value follows the required format including name, status, and residue."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under \"Proteomics MS data analysis\" states \"precursor mass tolerance of 20 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the runs described in the proteomics analysis.",
+        "COMPLETENESS_CHECK": "The value follows the definition and includes the unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"fragment mass tolerance of 20 ppm\".",
+        "TRUTH_CHECK": "The value is correct for all 34 runs used in the mass spectrometry analysis.",
+        "COMPLETENESS_CHECK": "The value follows the definition format, including the unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "Prosser_1004.raw = 1 | Prosser_1085.raw = 1 | Prosser_1086.raw = 1 | Prosser_1119.raw = 1 | Prosser_1136.raw = 1 | Prosser_1146.raw = 1 | Prosser_1195.raw = 1 | Prosser_1198.raw = 1 | Prosser_1200.raw = 1 | Prosser_1205.raw = 1 | Prosser_1209.raw = 1 | Prosser_1228.raw = 1 | Prosser_1273.raw = 1 | Prosser_1288.raw = 1 | Prosser_1290.raw = 1 | Prosser_1304.raw = 1 | Prosser_1311.raw = 1 | Prosser_1320.raw = 1 | Prosser_1325.raw = 1 | Prosser_1339.raw = 1 | Prosser_1356.raw = 1 | Prosser_1366.raw = 1 | Prosser_1375.raw = 1 | Prosser_1379.raw = 1 | Prosser_1383.raw = 1 | Prosser_1425.raw = 1 | Prosser_1427.raw = 1 | Prosser_1462.raw = 1 | Prosser_1467.raw = 1 | Prosser_1472.raw = 1 | Prosser_1510.raw = 1 | Prosser_1535.raw = 1 | Prosser_1602.raw = 1 | Prosser_1605.raw = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that 34 hearts in total were used in mass spectrometry, and these were biologically independent samples.",
+        "TRUTH_CHECK": "Each run corresponds to a different sample (Sample 1 to Sample 34), meaning they are independent biological units. According to the definition, independent biological units of one condition get 1, 2, 3. Since these are different hearts, they must have unique biological replicate indices within their respective groups. Assigning \"1\" to all 34 runs implies they are all the same biological sample, which is incorrect.",
+        "COMPLETENESS_CHECK": "The mapping is complete but logically wrong based on the study design."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "Prosser_1004.raw = 1 | Prosser_1085.raw = 1 | Prosser_1086.raw = 1 | Prosser_1119.raw = 1 | Prosser_1136.raw = 1 | Prosser_1146.raw = 1 | Prosser_1195.raw = 1 | Prosser_1198.raw = 1 | Prosser_1200.raw = 1 | Prosser_1205.raw = 1 | Prosser_1209.raw = 1 | Prosser_1228.raw = 1 | Prosser_1273.raw = 1 | Prosser_1288.raw = 1 | Prosser_1290.raw = 1 | Prosser_1304.raw = 1 | Prosser_1311.raw = 1 | Prosser_1320.raw = 1 | Prosser_1325.raw = 1 | Prosser_1339.raw = 1 | Prosser_1356.raw = 1 | Prosser_1366.raw = 1 | Prosser_1375.raw = 1 | Prosser_1379.raw = 1 | Prosser_1383.raw = 1 | Prosser_1425.raw = 1 | Prosser_1427.raw = 1 | Prosser_1462.raw = 1 | Prosser_1467.raw = 1 | Prosser_1472.raw = 1 | Prosser_1510.raw = 1 | Prosser_1535.raw = 1 | Prosser_1602.raw = 1 | Prosser_1605.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that 34 hearts were used in mass spectrometry, and the runs list 34 distinct samples.",
+        "TRUTH_CHECK": "Each run corresponds to a unique sample (1-34), meaning each material was measured once.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned technical replicate index 1."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "Prosser_1004.raw = 1 | Prosser_1085.raw = 1 | Prosser_1086.raw = 1 | Prosser_1119.raw = 1 | Prosser_1136.raw = 1 | Prosser_1146.raw = 1 | Prosser_1195.raw = 1 | Prosser_1198.raw = 1 | Prosser_1200.raw = 1 | Prosser_1205.raw = 1 | Prosser_1209.raw = 1 | Prosser_1228.raw = 1 | Prosser_1273.raw = 1 | Prosser_1288.raw = 1 | Prosser_1290.raw = 1 | Prosser_1304.raw = 1 | Prosser_1311.raw = 1 | Prosser_1320.raw = 1 | Prosser_1325.raw = 1 | Prosser_1339.raw = 1 | Prosser_1356.raw = 1 | Prosser_1366.raw = 1 | Prosser_1375.raw = 1 | Prosser_1379.raw = 1 | Prosser_1383.raw = 1 | Prosser_1425.raw = 1 | Prosser_1427.raw = 1 | Prosser_1462.raw = 1 | Prosser_1467.raw = 1 | Prosser_1472.raw = 1 | Prosser_1510.raw = 1 | Prosser_1535.raw = 1 | Prosser_1602.raw = 1 | Prosser_1605.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a standard LC-MS/MS workflow without any offline fractionation steps.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns 1 to all 34 runs."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "Prosser_1004.raw = S1004 | Prosser_1085.raw = S1085 | Prosser_1086.raw = S1086 | Prosser_1119.raw = S1119 | Prosser_1136.raw = S1136 | Prosser_1146.raw = S1146 | Prosser_1195.raw = S1195 | Prosser_1198.raw = S1198 | Prosser_1200.raw = S1200 | Prosser_1205.raw = S1205 | Prosser_1209.raw = S1209 | Prosser_1228.raw = S1228 | Prosser_1273.raw = S1273 | Prosser_1288.raw = S1288 | Prosser_1290.raw = S1290 | Prosser_1304.raw = S1304 | Prosser_1311.raw = S1311 | Prosser_1320.raw = S1320 | Prosser_1325.raw = S1325 | Prosser_1339.raw = S1339 | Prosser_1356.raw = S1356 | Prosser_1366.raw = S1366 | Prosser_1375.raw = S1375 | Prosser_1379.raw = S1379 | Prosser_1383.raw = S1383 | Prosser_1425.raw = S1425 | Prosser_1427.raw = S1427 | Prosser_1462.raw = S1462 | Prosser_1467.raw = S1467 | Prosser_1472.raw = S1472 | Prosser_1510.raw = S1510 | Prosser_1535.raw = S1535 | Prosser_1602.raw = S1602 | Prosser_1605.raw = S1609",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an identifier for the subject/donor, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that 34 hearts were used in mass spectrometry, but it does not list the individual subject identifiers (e.g., S1004, S1085).",
+        "TRUTH_CHECK": "The identifiers are not present in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct for the field, but the content is not supported."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "967g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which fits the column name \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 967g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text. However, the \"Statistics and Reproducibility\" section refers to a \"source data file Supplementary Spreadsheet MS data\" for sample distribution and factors.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is the correct format for a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "297g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (like 297g) are not listed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text and likely reside in the mentioned \"Supplementary Table 1\" or \"Supplementary Spreadsheet MS data\", which are not provided.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "687g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight, which is appropriate for a column named \"heart weight\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 687g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text. However, the \"Statistics and Reproducibility\" section refers to a \"source data file Supplementary Spreadsheet MS data\" for sample distribution and factors.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a complete representation of a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "466g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but it does not list the individual weight values in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific value \"466g\" is not present in the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "465g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but it does not list the individual heart weights in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific value \"465g\" is not present in the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "424g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 424g) are not listed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text and likely reside in the mentioned \"Supplementary Table 1\" or \"source data file Supplementary Spreadsheet MS data\".",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a complete format for a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "444g",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", although the specific value \"444g\" is not printed in the provided text (it is likely in the mentioned Supplementary Table 1).",
+        "TRUTH_CHECK": "The value describes a heart weight for a sample used in the MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "754g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 754g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms heart weights were measured for the samples, the specific values are absent from the text. However, the \"Statistics and Reproducibility\" section mentions a \"source data file Supplementary Spreadsheet MS data\", which is where these specific values would originate.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a complete representation of a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "420g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which fits the column name \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (like 420g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the 34 hearts used in mass spectrometry, the actual numerical values are absent from the text.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a standard format for weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "516g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 516g) are not listed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text and likely reside in the mentioned \"Supplementary Table 1\" or \"Supplementary Spreadsheet MS data\", which are not provided.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "546g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which fits the column name \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but it does not list the individual heart weights in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific value \"546g\" is not present in the text.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a standard format for weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "404g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 404g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text. However, the \"Statistics and Reproducibility\" section refers to a \"source data file Supplementary Spreadsheet MS data\" for sample distribution and factors.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "329g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The methods state that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 329g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text. However, the \"Statistics and Reproducibility\" section refers to a \"source data file Supplementary Spreadsheet MS data\" for sample distribution and factors.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a complete representation of a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "283g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 283g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text and likely reside in the mentioned \"Supplementary Table 1\" or \"source data file Supplementary Spreadsheet MS data\", which are not provided.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "624g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 624g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text and likely reside in the mentioned \"Supplementary Table 1\" or \"source data file Supplementary Spreadsheet MS data\", which are not provided.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a complete representation of a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "526g",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (like 526g) are not listed in the provided text; they are likely in the mentioned \"Supplementary Table 1\" or \"Supplementary Spreadsheet MS data\".",
+        "TRUTH_CHECK": "The paper confirms that heart weights were measured for the samples used in the mass spectrometry experiment.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit (g), which is a complete representation of a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "619g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 619g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a standard format for weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "402g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The methods state that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 402g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "309g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"heart weight\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 309g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text and likely reside in the mentioned \"Supplementary Table 1\" or \"Supplementary Spreadsheet MS data\", which are not provided.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is the correct format for a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "336g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (like 336g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text and likely reside in the mentioned \"Supplementary Table 1\" or \"Supplementary Spreadsheet MS data\", which are not provided.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a complete representation of a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "295g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 295g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "518g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (like 518g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific value \"518g\" is not present in the text.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a standard format for weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "655g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 655g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text. However, the \"Statistics and Reproducibility\" section mentions a \"source data file Supplementary Spreadsheet MS data\" which likely contains these individual measurements.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is the correct format for a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "498g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 498g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text. However, the \"Statistics and Reproducibility\" section refers to a \"source data file Supplementary Spreadsheet MS data\" for sample distribution and factors.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "634g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 634g) are not listed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text and likely reside in the mentioned \"Supplementary Table 1\" or \"Supplementary Spreadsheet MS data\", which are not provided.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a complete format for a weight measurement."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "512g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (like 512g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a complete representation of a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "635g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 635g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a standard format for weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "604g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The methods state that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 604g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text and likely reside in the mentioned \"Supplementary Table 1\" or \"Supplementary Spreadsheet MS data\".",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "463g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (like 463g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text. However, the \"Statistics and Reproducibility\" section refers to a \"source data file Supplementary Spreadsheet MS data\" for sample distribution and factors.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "548g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 548g) are not listed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text and likely reside in the mentioned \"Supplementary Table 1\" or \"Supplementary Spreadsheet MS data\", which are not provided.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a complete representation of a weight."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "571g",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (e.g., 571g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific values are absent from the text and likely reside in the mentioned \"Supplementary Table 1\" or \"source data file Supplementary Spreadsheet MS data\", which are not provided.",
+        "COMPLETENESS_CHECK": "The value follows a standard weight format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[heart weight]",
+      "extracted_value": "650g",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a weight measurement, which is appropriate for a column named \"characteristics[heart weight]\".",
+        "SOURCE_CHECK": "The paper states that \"Whole hearts and dissected left ventricle (LV) cavity were weighed to determine levels of hypertrophy\", but the specific weight values (like 650g) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms that heart weights were measured for the samples, the specific value \"650g\" is not present in the text. However, the \"other_values_in_column\" show a distribution of weights for 34 runs, which matches the number of hearts used in the mass spectrometry experiment (34 hearts). These values are likely from the \"Supplementary Table 1\" or \"source data file Supplementary Spreadsheet MS data\" mentioned in the text.",
+        "COMPLETENESS_CHECK": "The value is a number with a unit, which is a complete representation of a weight."
+      }
+    }
+  ]
+}

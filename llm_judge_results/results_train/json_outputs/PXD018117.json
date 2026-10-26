@@ -1,0 +1,855 @@
+{
+  "paper_id": "PXD018117",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the use of HEK293T cells and the analysis of human proteins, which allows the inference of homo sapiens.",
+        "TRUTH_CHECK": "The experiment analyzed the human proteins interacting with viral proteins.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "kidney",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper states that HEK-293T kidney cells were used.",
+        "TRUTH_CHECK": "The runs used HEK-293T cells, and the organ of origin for this cell line is the kidney.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HEK293T",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an immortalized cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that HEK293T kidney cells were used for the AP-MS experiments.",
+        "TRUTH_CHECK": "The runs are derived from these HEK293T cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the right field.",
+        "SOURCE_CHECK": "The paper states that HEK293T cells were used for the AP-MS experiments.",
+        "TRUTH_CHECK": "The runs carry this value and the material used was indeed a cell line.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the controlled terms listed in the definition (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "fetus",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"fetus\" describes a developmental stage, which is the right field.",
+        "SOURCE_CHECK": "The paper states that HEK293T cells were used for the AP-MS experiments; there is no mention of fetal tissue or fetal subjects.",
+        "TRUTH_CHECK": "The runs used HEK293T cells, not fetal material.",
+        "COMPLETENESS_CHECK": "Not applicable, the value is not supported."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes AP-MS using MaxQuant default settings and spectral counts, with no mention of TMT, SILAC, or other labels, allowing the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are part of the AP-MS experiment described as label-free.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive Plus;AC=MS:1002634",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the samples were analyzed on a Q-Exactive Plus mass spectrometer.",
+        "TRUTH_CHECK": "The value is correct for the runs described in the paper.",
+        "COMPLETENESS_CHECK": "Complete and follows the key-value format."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The \"On-bead digestion\" section states that proteins were incubated with trypsin.",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the proteins in the AP-MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a technology type, the right field.",
+        "SOURCE_CHECK": "The paper describes an affinity-purification mass spectrometry (AP-MS) workflow to identify protein interactions, which is a form of MS-based proteomics.",
+        "TRUTH_CHECK": "The value correctly describes the MS experiment performed for all listed runs.",
+        "COMPLETENESS_CHECK": "The value uses the official SDRF controlled term for MS-based proteomics."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;AC=UNIMOD:4;MT=fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state that proteins were alkylated with iodoacetamide, which results in carbamidomethylation of cysteines.",
+        "TRUTH_CHECK": "The alkylation step was performed on all samples before digestion.",
+        "COMPLETENESS_CHECK": "Complete. The residue (C) and status (fixed) are correct for an alkylation step."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;TA=M;AC=UNIMOD:35;MT=variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper does not mention Oxidation as a searched modification in the mass spectrometry data analysis section.",
+        "TRUTH_CHECK": "The modification is not stated as part of the search parameters.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a protein modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention Acetyl as a searched modification; it only mentions \"default settings for MaxQuant\".",
+        "TRUTH_CHECK": "The modification is not stated as being used in the search parameters.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "qx017144.raw = 1 | qx017145.raw = 2 | qx017146.raw = 3 | qx017084.raw = 1 | qx017098.raw = 2 | qx017108.raw = 4 | qx017142.raw = 5 | qx017077.raw = 1 | qx017078.raw = 2 | qx017118.raw = 4 | qx017132.raw = 5 | qx017158.raw = 3 | qx017184.raw = 6 | qx017208.raw = 7 | qx017138.raw = 1 | qx017139.raw = 2 | qx017140.raw = 3 | qx017104.raw = 1 | qx017105.raw = 2 | qx017106.raw = 3 | qx017080.raw = 1 | qx017081.raw = 2 | qx017082.raw = 3 | qx017160.raw = 1 | qx017161.raw = 2 | qx017162.raw = 3 | qx017164.raw = 1 | qx017165.raw = 2 | qx017166.raw = 3 | qx017186.raw = 1 | qx017187.raw = 2 | qx017188.raw = 3 | qx017210.raw = 1 | qx017211.raw = 2 | qx017212.raw = 3 | qx017168.raw = 1 | qx017169.raw = 2 | qx017170.raw = 3 | qx017214.raw = 1 | qx017215.raw = 2 | qx017216.raw = 3 | qx017176.raw = 1 | qx017177.raw = 2 | qx017178.raw = 3 | qx017086.raw = 1 | qx017087.raw = 2 | qx017088.raw = 3 | qx017090.raw = 1 | qx017091.raw = 2 | qx017092.raw = 3 | qx017180.raw = 1 | qx017181.raw = 2 | qx017182.raw = 3 | qx017094.raw = 1 | qx017095.raw = 2 | qx017096.raw = 3 | qx017194.raw = 1 | qx017195.raw = 2 | qx017196.raw = 3 | qx017100.raw = 1 | qx017101.raw = 2 | qx017102.raw = 3 | qx017150.raw = 1 | qx017151.raw = 2 | qx017152.raw = 3 | qx017154.raw = 1 | qx017155.raw = 2 | qx017156.raw = 3 | qx017128.raw = 1 | qx017129.raw = 2 | qx017130.raw = 3 | qx017110.raw = 1 | qx017111.raw = 2 | qx017112.raw = 3 | qx017172.raw = 1 | qx017173.raw = 2 | qx017174.raw = 3 | qx017124.raw = 1 | qx017125.raw = 2 | qx017126.raw = 3 | qx017120.raw = 1 | qx017121.raw = 2 | qx017122.raw = 3 | qx017200.raw = 1 | qx017201.raw = 2 | qx017202.raw = 3 | qx017114.raw = 1 | qx017115.raw = 2 | qx017116.raw = 3 | qx017204.raw = 1 | qx017205.raw = 2 | qx017206.raw = 3 | qx017134.raw = 1 | qx017135.raw = 2 | qx017136.raw = 3 | qx017190.raw = 1 | qx017191.raw = 2 | qx017192.raw = 3",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states \"At least three biological replicates were independently prepared for affinity purification.\"",
+        "TRUTH_CHECK": "The mapping assigns indices 1, 2, and 3 to most runs, but some runs are assigned indices 4, 5, 6, and 7. This contradicts the paper's statement of \"at least three\" replicates per bait, as the mapping suggests some baits had up to 7 replicates while others had 3, and the distribution of indices across the runs is inconsistent with a standard replicate design for the baits described.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "qx017144.raw = 1 | qx017145.raw = 1 | qx017146.raw = 1 | qx017084.raw = 1 | qx017098.raw = 1 | qx017108.raw = 1 | qx017142.raw = 1 | qx017077.raw = 1 | qx017078.raw = 1 | qx017118.raw = 1 | qx017132.raw = 1 | qx017158.raw = 1 | qx017184.raw = 1 | qx017208.raw = 1 | qx017138.raw = 1 | qx017139.raw = 1 | qx017140.raw = 1 | qx017104.raw = 1 | qx017105.raw = 1 | qx017106.raw = 1 | qx017080.raw = 1 | qx017081.raw = 1 | qx017082.raw = 1 | qx017160.raw = 1 | qx017161.raw = 1 | qx017162.raw = 1 | qx017164.raw = 1 | qx017165.raw = 1 | qx017166.raw = 1 | qx017186.raw = 1 | qx017187.raw = 1 | qx017188.raw = 1 | qx017210.raw = 1 | qx017211.raw = 1 | qx017212.raw = 1 | qx017168.raw = 1 | qx017169.raw = 1 | qx017170.raw = 1 | qx017214.raw = 1 | qx017215.raw = 1 | qx017216.raw = 1 | qx017176.raw = 1 | qx017177.raw = 1 | qx017178.raw = 1 | qx017086.raw = 1 | qx017087.raw = 1 | qx017088.raw = 1 | qx017090.raw = 1 | qx017091.raw = 1 | qx017092.raw = 1 | qx017180.raw = 1 | qx017181.raw = 1 | qx017182.raw = 1 | qx017094.raw = 1 | qx017095.raw = 1 | qx017096.raw = 1 | qx017194.raw = 1 | qx017195.raw = 1 | qx017196.raw = 1 | qx017100.raw = 1 | qx017101.raw = 1 | qx017102.raw = 1 | qx017150.raw = 1 | qx017151.raw = 1 | qx017152.raw = 1 | qx017154.raw = 1 | qx017155.raw = 1 | qx017156.raw = 1 | qx017128.raw = 1 | qx017129.raw = 1 | qx017130.raw = 1 | qx017110.raw = 1 | qx017111.raw = 1 | qx017112.raw = 1 | qx017172.raw = 1 | qx017173.raw = 1 | qx017174.raw = 1 | qx017124.raw = 1 | qx017125.raw = 1 | qx017126.raw = 1 | qx017120.raw = 1 | qx017121.raw = 1 | qx017122.raw = 1 | qx017200.raw = 1 | qx017201.raw = 1 | qx017202.raw = 1 | qx017114.raw = 1 | qx017115.raw = 1 | qx017116.raw = 1 | qx017204.raw = 1 | qx017205.raw = 1 | qx017206.raw = 1 | qx017134.raw = 1 | qx017135.raw = 1 | qx017136.raw = 1 | qx017190.raw = 1 | qx017191.raw = 1 | qx017192.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents technical replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"At least three biological replicates were independently prepared\", but does not mention any repeated injections or technical replicates of the same material.",
+        "TRUTH_CHECK": "Since no technical replicates are mentioned, each unique sample/run is correctly assigned the index 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value, and the format follows the definition for a material measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "qx017144.raw = 1 | qx017145.raw = 1 | qx017146.raw = 1 | qx017084.raw = 1 | qx017098.raw = 1 | qx017108.raw = 1 | qx017142.raw = 1 | qx017077.raw = 1 | qx017078.raw = 1 | qx017118.raw = 1 | qx017132.raw = 1 | qx017158.raw = 1 | qx017184.raw = 1 | qx017208.raw = 1 | qx017138.raw = 1 | qx017139.raw = 1 | qx017140.raw = 1 | qx017104.raw = 1 | qx017105.raw = 1 | qx017106.raw = 1 | qx017080.raw = 1 | qx017081.raw = 1 | qx017082.raw = 1 | qx017160.raw = 1 | qx017161.raw = 1 | qx017162.raw = 1 | qx017164.raw = 1 | qx017165.raw = 1 | qx017166.raw = 1 | qx017186.raw = 1 | qx017187.raw = 1 | qx017188.raw = 1 | qx017210.raw = 1 | qx017211.raw = 1 | qx017212.raw = 1 | qx017168.raw = 1 | qx017169.raw = 1 | qx017170.raw = 1 | qx017214.raw = 1 | qx017215.raw = 1 | qx017216.raw = 1 | qx017176.raw = 1 | qx017177.raw = 1 | qx017178.raw = 1 | qx017086.raw = 1 | qx017087.raw = 1 | qx017088.raw = 1 | qx017090.raw = 1 | qx017091.raw = 1 | qx017092.raw = 1 | qx017180.raw = 1 | qx017181.raw = 1 | qx017182.raw = 1 | qx017094.raw = 1 | qx017095.raw = 1 | qx017096.raw = 1 | qx017194.raw = 1 | qx017195.raw = 1 | qx017196.raw = 1 | qx017100.raw = 1 | qx017101.raw = 1 | qx017102.raw = 1 | qx017150.raw = 1 | qx017151.raw = 1 | qx017152.raw = 1 | qx017154.raw = 1 | qx017155.raw = 1 | qx017156.raw = 1 | qx017128.raw = 1 | qx017129.raw = 1 | qx017130.raw = 1 | qx017110.raw = 1 | qx017111.raw = 1 | qx017112.raw = 1 | qx017172.raw = 1 | qx017173.raw = 1 | qx017174.raw = 1 | qx017124.raw = 1 | qx017125.raw = 1 | qx017126.raw = 1 | qx017120.raw = 1 | qx017121.raw = 1 | qx017122.raw = 1 | qx017200.raw = 1 | qx017201.raw = 1 | qx017202.raw = 1 | qx017114.raw = 1 | qx017115.raw = 1 | qx017116.raw = 1 | qx017204.raw = 1 | qx017205.raw = 1 | qx017206.raw = 1 | qx017134.raw = 1 | qx017135.raw = 1 | qx017136.raw = 1 | qx017190.raw = 1 | qx017191.raw = 1 | qx017192.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a reversed-phase gradient separation but no offline fractionation into multiple fractions per sample.",
+        "TRUTH_CHECK": "Since no offline fractionation is described, every run should be assigned fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns 1 to all runs."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "qx017144.raw = CoV01-002_H11 | qx017145.raw = CoV01-025_F12 | qx017146.raw = CoV01-031_F6 | qx017084.raw = CoV02-004 | qx017098.raw = CoV02-005 | qx017108.raw = CoV01-039_E10 | qx017142.raw = CoV01-013_G12 | qx017077.raw = CoV02-001 | qx017078.raw = CoV02-002 | qx017118.raw = CoV01-027_F10 | qx017132.raw = CoV01-014_G11 | qx017158.raw = CoV02-003 | qx017184.raw = CoV03-001 | qx017208.raw = CoV03-002 | qx017138.raw = CoV01-003_H10 | qx017139.raw = CoV01-024_G1 | qx017140.raw = CoV01-028_F9 | qx017104.raw = CoV01-004_H9 | qx017105.raw = CoV01-023_G2 | qx017106.raw = CoV01-034_F3 | qx017080.raw = CoV02-007 | qx017081.raw = CoV02-008 | qx017082.raw = CoV02-009 | qx017160.raw = CoV02-028 | qx017161.raw = CoV02-029 | qx017162.raw = CoV02-030 | qx017164.raw = CoV02-031 | qx017165.raw = CoV02-032 | qx017166.raw = CoV02-033 | qx017186.raw = CoV03-013 | qx017187.raw = CoV03-014 | qx017188.raw = CoV03-015 | qx017210.raw = CoV03-016 | qx017211.raw = CoV04-005 | qx017212.raw = CoV03-018 | qx017168.raw = CoV02-034 | qx017169.raw = CoV02-035 | qx017170.raw = CoV02-036 | qx017214.raw = CoV03-019 | qx017215.raw = CoV04-007 | qx017216.raw = CoV03-021 | qx017176.raw = CoV03-007 | qx017177.raw = CoV03-008 | qx017178.raw = CoV03-009 | qx017086.raw = CoV02-010 | qx017087.raw = CoV02-011 | qx017088.raw = CoV02-012 | qx017090.raw = CoV02-013 | qx017091.raw = CoV02-014 | qx017092.raw = CoV02-015 | qx017180.raw = CoV03-010 | qx017181.raw = CoV03-011 | qx017182.raw = CoV03-012 | qx017094.raw = CoV02-016 | qx017095.raw = CoV02-017 | qx017096.raw = CoV02-018 | qx017194.raw = CoV03-028 | qx017195.raw = CoV03-029 | qx017196.raw = CoV03-030 | qx017100.raw = CoV02-019 | qx017101.raw = CoV02-020 | qx017102.raw = CoV02-021 | qx017150.raw = CoV02-022 | qx017151.raw = CoV02-023 | qx017152.raw = CoV02-024 | qx017154.raw = CoV02-025 | qx017155.raw = CoV02-026 | qx017156.raw = CoV02-027 | qx017128.raw = CoV01-010_H3 | qx017129.raw = CoV01-017_G8 | qx017130.raw = CoV01-030_F7 | qx017110.raw = CoV01-032_F5 | qx017111.raw = CoV01-022_G3 | qx017112.raw = CoV01-005_H8 | qx017172.raw = CoV02-037 | qx017173.raw = CoV02-038 | qx017174.raw = CoV02-039 | qx017124.raw = CoV01-006_H7 | qx017125.raw = CoV01-021_G4 | qx017126.raw = CoV01-037_E12 | qx017120.raw = CoV01-007_H6 | qx017121.raw = CoV01-020_G5 | qx017122.raw = CoV01-029_F8 | qx017200.raw = CoV03-034 | qx017201.raw = CoV03-035 | qx017202.raw = CoV03-036 | qx017114.raw = CoV01-008_H5 | qx017115.raw = CoV01-019_G6 | qx017116.raw = CoV01-035_F2 | qx017204.raw = CoV03-037 | qx017205.raw = CoV03-038 | qx017206.raw = CoV03-039 | qx017134.raw = CoV01-011_H2 | qx017135.raw = CoV01-016_G9 | qx017136.raw = CoV01-033_F4 | qx017190.raw = CoV03-022 | qx017191.raw = CoV03-023 | qx017192.raw = CoV03-024",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is for subject or donor identifiers, which is the correct field for this type of data.",
+        "SOURCE_CHECK": "The paper states that HEK293T cells were used for the AP-MS experiments; it does not mention any human subjects, donors, or individual identifiers.",
+        "TRUTH_CHECK": "The runs are based on a commercial cell line (HEK293T), not individual human subjects.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[phenotype]",
+      "extracted_value": "qx017144.raw = SARS-Co-V2 proteins | qx017145.raw = SARS-Co-V2 proteins | qx017146.raw = SARS-Co-V2 proteins | qx017084.raw = Control | qx017098.raw = Control | qx017108.raw = Control | qx017142.raw = Control | qx017077.raw = Control | qx017078.raw = Control | qx017118.raw = Control | qx017132.raw = Control | qx017158.raw = Control | qx017184.raw = Control | qx017208.raw = Control | qx017138.raw = SARS-Co-V2 proteins | qx017139.raw = SARS-Co-V2 proteins | qx017140.raw = SARS-Co-V2 proteins | qx017104.raw = SARS-Co-V2 proteins | qx017105.raw = SARS-Co-V2 proteins | qx017106.raw = SARS-Co-V2 proteins | qx017080.raw = SARS-Co-V2 proteins | qx017081.raw = SARS-Co-V2 proteins | qx017082.raw = SARS-Co-V2 proteins | qx017160.raw = SARS-Co-V2 proteins | qx017161.raw = SARS-Co-V2 proteins | qx017162.raw = SARS-Co-V2 proteins | qx017164.raw = SARS-Co-V2 proteins | qx017165.raw = SARS-Co-V2 proteins | qx017166.raw = SARS-Co-V2 proteins | qx017186.raw = SARS-Co-V2 proteins | qx017187.raw = SARS-Co-V2 proteins | qx017188.raw = SARS-Co-V2 proteins | qx017210.raw = SARS-Co-V2 proteins | qx017211.raw = SARS-Co-V2 proteins | qx017212.raw = SARS-Co-V2 proteins | qx017168.raw = SARS-Co-V2 proteins | qx017169.raw = SARS-Co-V2 proteins | qx017170.raw = SARS-Co-V2 proteins | qx017214.raw = SARS-Co-V2 proteins | qx017215.raw = SARS-Co-V2 proteins | qx017216.raw = SARS-Co-V2 proteins | qx017176.raw = SARS-Co-V2 proteins | qx017177.raw = SARS-Co-V2 proteins | qx017178.raw = SARS-Co-V2 proteins | qx017086.raw = SARS-Co-V2 proteins | qx017087.raw = SARS-Co-V2 proteins | qx017088.raw = SARS-Co-V2 proteins | qx017090.raw = SARS-Co-V2 proteins | qx017091.raw = SARS-Co-V2 proteins | qx017092.raw = SARS-Co-V2 proteins | qx017180.raw = SARS-Co-V2 proteins | qx017181.raw = SARS-Co-V2 proteins | qx017182.raw = SARS-Co-V2 proteins | qx017094.raw = SARS-Co-V2 proteins | qx017095.raw = SARS-Co-V2 proteins | qx017096.raw = SARS-Co-V2 proteins | qx017194.raw = SARS-Co-V2 proteins | qx017195.raw = SARS-Co-V2 proteins | qx017196.raw = SARS-Co-V2 proteins | qx017100.raw = SARS-Co-V2 proteins | qx017101.raw = SARS-Co-V2 proteins | qx017102.raw = SARS-Co-V2 proteins | qx017150.raw = SARS-Co-V2 proteins | qx017151.raw = SARS-Co-V2 proteins | qx017152.raw = SARS-Co-V2 proteins | qx017154.raw = SARS-Co-V2 proteins | qx017155.raw = SARS-Co-V2 proteins | qx017156.raw = SARS-Co-V2 proteins | qx017128.raw = SARS-Co-V2 proteins | qx017129.raw = SARS-Co-V2 proteins | qx017130.raw = SARS-Co-V2 proteins | qx017110.raw = SARS-Co-V2 proteins | qx017111.raw = SARS-Co-V2 proteins | qx017112.raw = SARS-Co-V2 proteins | qx017172.raw = SARS-Co-V2 proteins | qx017173.raw = SARS-Co-V2 proteins | qx017174.raw = SARS-Co-V2 proteins | qx017124.raw = SARS-Co-V2 proteins | qx017125.raw = SARS-Co-V2 proteins | qx017126.raw = SARS-Co-V2 proteins | qx017120.raw = SARS-Co-V2 proteins | qx017121.raw = SARS-Co-V2 proteins | qx017122.raw = SARS-Co-V2 proteins | qx017200.raw = SARS-Co-V2 proteins | qx017201.raw = SARS-Co-V2 proteins | qx017202.raw = SARS-Co-V2 proteins | qx017114.raw = SARS-Co-V2 proteins | qx017115.raw = SARS-Co-V2 proteins | qx017116.raw = SARS-Co-V2 proteins | qx017204.raw = SARS-Co-V2 proteins | qx017205.raw = SARS-Co-V2 proteins | qx017206.raw = SARS-Co-V2 proteins | qx017134.raw = SARS-Co-V2 proteins | qx017135.raw = SARS-Co-V2 proteins | qx017136.raw = SARS-Co-V2 proteins | qx017190.raw = SARS-Co-V2 proteins | qx017191.raw = SARS-Co-V2 proteins | qx017192.raw = SARS-Co-V2 proteins",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the group/condition of the runs, which is the correct purpose of factor_value.",
+        "SOURCE_CHECK": "The paper describes an AP-MS experiment using viral proteins as baits and mentions \"control sample of genes\" and \"empty vector\" (implied controls for AP-MS), supporting the existence of bait and control groups.",
+        "TRUTH_CHECK": "The mapping correctly separates runs into \"SARS-CoV-2 proteins\" (baits) and \"Control\" groups as per the experimental design of an affinity purification mass spectrometry study.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "SARS-Co-V2 proteins",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the bait proteins used in the AP-MS experiment, which is a characteristic of the sample/run.",
+        "SOURCE_CHECK": "The paper states that 26 of the 29 viral proteins were expressed and used as baits for affinity purification.",
+        "TRUTH_CHECK": "The runs are AP-MS experiments using SARS-CoV-2 proteins as baits, contrasted with \"Control\" runs.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the sample group."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "Control",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Control\" is a phenotype or group label, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes the use of \"empty vector\" as a control for the transfection of viral protein constructs.",
+        "TRUTH_CHECK": "The runs are part of an AP-MS experiment where some samples are controls (empty vector) and others are viral baits.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "E",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"E\" refers to a viral protein used as a bait in an affinity purification mass spectrometry (AP-MS) experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Protein E\" and \"interactors of E\" in the methods and results sections.",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it, as the study cloned and expressed 26 viral proteins (including E) to identify human protein interactions.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "EGFP",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protein used as a bait in an affinity purification experiment, which is appropriate for a column named \"Bait\".",
+        "SOURCE_CHECK": "The paper states that data was searched against the \"EGFP sequence\" and mentions \"empty vector\" (EV) in the transfection section, which typically expresses EGFP in these types of constructs.",
+        "TRUTH_CHECK": "EGFP is used as a control bait in AP-MS experiments to identify non-specific binders.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "EV",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is used as a bait identifier, which is appropriate for a column named \"Bait\" in an AP-MS study.",
+        "SOURCE_CHECK": "The term \"EV\" (Empty Vector) is not explicitly mentioned in the provided text, although the methods mention that \"Total plasmid was normalized to 15 μg with empty vector\".",
+        "TRUTH_CHECK": "In AP-MS experiments, \"EV\" typically stands for Empty Vector, which serves as the essential negative control to identify non-specific binders. The paper explicitly mentions using an empty vector for plasmid normalization.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"M\" refers to a viral protein used as a bait in an affinity purification experiment, which is appropriate for a column named \"Bait\".",
+        "SOURCE_CHECK": "The paper explicitly mentions the \"M\" protein as one of the structural proteins cloned and expressed (Materials and Methods, Genome annotation).",
+        "TRUTH_CHECK": "The \"M\" protein was used as a bait to identify human interacting proteins, as listed in the study's scope.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"N\" refers to a viral protein used as a bait in an AP-MS experiment, which is the correct type of information for a column named \"Bait\".",
+        "SOURCE_CHECK": "The paper explicitly mentions the \"SARS-CoV-2 nucleocapsid (N) interactome\" and lists \"N\" as one of the structural proteins cloned and expressed.",
+        "TRUTH_CHECK": "The value \"N\" is right for the runs that carry it, as the study performed AP-MS for various viral proteins, including N.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an AP-MS experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper states that 26 of the 29 viral proteins were expressed and used for affinity-purification mass spectrometry, specifically mentioning Nsp1 in the results.",
+        "TRUTH_CHECK": "The value \"nsp1\" correctly identifies the bait protein used for the runs associated with it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp10",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an AP-MS experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper states that 26 of the 29 viral proteins were expressed and used for affinity-purification mass spectrometry, and specifically mentions Nsp10 in the results section.",
+        "TRUTH_CHECK": "Nsp10 is one of the viral baits used to identify human interacting proteins.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp11",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein name, which is the correct type of information for a \"Bait\" column in an AP-MS study.",
+        "SOURCE_CHECK": "The paper lists the proteins cloned and expressed, including Nsp1-Nsp16, S, E, M, N, and various Orfs. However, \"nsp11\" is not mentioned in the text.",
+        "TRUTH_CHECK": "The paper explicitly states they \"cloned, tagged and expressed 26 of the 29 viral proteins\". While Nsp11 is a known SARS-CoV-2 protein, it is not listed among the baits used in this specific study's methods or results.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an AP-MS experiment, which is the correct content for a \"Bait\" column in this study.",
+        "SOURCE_CHECK": "The paper states that 26 of the 29 viral proteins were cloned, tagged and expressed. While \"nsp12\" is not mentioned by name in the provided text, it is one of the standard nonstructural proteins of SARS-CoV-2 (Nsp1-Nsp16) mentioned in the \"Genome annotation\" section.",
+        "TRUTH_CHECK": "The study used a wide range of viral proteins as baits to identify human interactors; nsp12 is a core part of the viral replication complex and fits the described experimental design.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp13",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an affinity purification experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper explicitly mentions Nsp13 as one of the viral proteins used to identify human interacting proteins.",
+        "TRUTH_CHECK": "The value is correct for the runs as Nsp13 was one of the 26 viral proteins expressed and used as a bait.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp14",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an AP-MS experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper mentions nsp14 in the \"Identification of existing drugs\" section (\"the human purine biosynthesis enzyme Inosine-5′-monophosphate dehydrogenase (IMPDH2) interacts with the viral protein nsp14\").",
+        "TRUTH_CHECK": "The study cloned and expressed 26 of the 29 viral proteins to identify human interactors; nsp14 is one of the viral proteins of SARS-CoV-2.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp15",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an AP-MS experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper explicitly mentions Nsp15 in the \"The SARS-CoV-2 interactome reveals novel aspects of SARS-CoV-2 biology\" section and in the genome annotation.",
+        "TRUTH_CHECK": "Nsp15 was one of the viral proteins cloned and expressed to identify human interacting proteins.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an AP-MS experiment, which is the correct type of information for a column named \"Bait\".",
+        "SOURCE_CHECK": "The paper states that 26 of the 29 viral proteins were cloned, tagged and expressed. While \"nsp2\" is not mentioned by name in the provided text, the \"Materials and Methods\" section explicitly mentions \"16 predicted nonstructural proteins (Nsp1-Nsp16)\" were cloned.",
+        "TRUTH_CHECK": "Nsp2 is one of the 16 nonstructural proteins (Nsp1-Nsp16) cloned and used as baits in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an AP-MS experiment, which is appropriate for a column named \"Bait\".",
+        "SOURCE_CHECK": "The paper states that 26 of the 29 viral proteins were expressed and used for affinity-purification mass spectrometry, and specifically mentions Nsp4 in the \"SARS-CoV-2 interactome reveals novel aspects of SARS-CoV-2 biology\" section.",
+        "TRUTH_CHECK": "The value \"nsp4\" correctly identifies the viral bait protein used for the runs associated with it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp5",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"nsp5\" refers to a viral bait protein, which is the central variable of the AP-MS experiment described.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Nsp5\" as one of the viral proteins cloned and expressed for affinity purification.",
+        "TRUTH_CHECK": "The runs are part of an AP-MS study where different SARS-CoV-2 proteins (baits) were used to identify human interactors; nsp5 is one such bait.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp5_C145A",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents a viral bait protein used in an affinity purification experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper explicitly mentions the use of a catalytic dead mutant of Nsp5, specifically \"Nsp5 C145A\", in the Materials and Methods and the results section.",
+        "TRUTH_CHECK": "The value \"nsp5_C145A\" is a correct representation of the Nsp5 C145A mutant used as a bait for the AP-MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp6 (not used)",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to a column identifying the bait protein used in the AP-MS experiment.",
+        "SOURCE_CHECK": "The paper states that Nsp6 was one of the viral proteins cloned and expressed for affinity purification.",
+        "TRUTH_CHECK": "The value \"nsp6 (not used)\" is contradictory; the paper explicitly mentions Nsp6 as a bait that recovered interactors (e.g., \"subunits of which interact with Nsp6 and M\").",
+        "COMPLETENESS_CHECK": "The value contains an annotation \"(not used)\" that contradicts the paper's findings."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp6",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"nsp6\" is a viral protein used as a bait in an affinity-purification mass spectrometry (AP-MS) experiment, which is the central design of this study.",
+        "SOURCE_CHECK": "The paper explicitly mentions Nsp6 as one of the viral proteins used to identify human interacting proteins (e.g., \"subunits of which interact with Nsp6 and M\").",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it, as Nsp6 was one of the 26 viral proteins cloned and expressed for the AP-MS analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp7",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to a column identifying the viral bait protein used in the AP-MS experiment.",
+        "SOURCE_CHECK": "The paper states that 26 of the 29 viral proteins were expressed and used as baits, specifically mentioning Nsp7 in the context of nuclear transport.",
+        "TRUTH_CHECK": "Nsp7 is one of the viral proteins used as a bait to identify human interacting proteins.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp8",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait for affinity purification, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper explicitly mentions Nsp8 as one of the viral proteins cloned and expressed for AP-MS.",
+        "TRUTH_CHECK": "The value is correct for the runs that used Nsp8 as the bait protein.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "nsp9",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an AP-MS experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper explicitly mentions Nsp9 in the \"The SARS-CoV-2 interactome reveals novel aspects of SARS-CoV-2 biology\" section (e.g., \"nuclear transport machinery (Nsp9, Nsp15, Orf6)\").",
+        "TRUTH_CHECK": "The study cloned and expressed 26 of the 29 viral proteins to identify human interactors; Nsp9 is one of these viral proteins.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "orf10",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an AP-MS experiment, which is the correct content for a \"Bait\" column in this study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"The novel Orf10 of SARS-CoV-2 interacts with a Cullin ubiquitin ligase complex\" and lists it among the annotated open reading frames.",
+        "TRUTH_CHECK": "The value \"orf10\" correctly identifies the viral bait protein used for the runs associated with it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "orf3a",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an affinity purification experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Orf3a\" as one of the viral proteins cloned and expressed for AP-MS.",
+        "TRUTH_CHECK": "The value is correct for the runs that used the Orf3a protein as the bait for capturing human interactors.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "orf3b",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein name, which is appropriate for a \"Bait\" column in an AP-MS study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"we annotated a further four open reading frames: Orf3b, Orf7b, Orf9b, and Orf9c\" in the Materials and Methods.",
+        "TRUTH_CHECK": "The study's goal was to identify human proteins associated with viral proteins (baits). Orf3b is one of the annotated viral proteins.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "orf6",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an affinity purification mass spectrometry (AP-MS) experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Orf6\" as one of the viral proteins cloned and expressed to identify human interacting proteins.",
+        "TRUTH_CHECK": "The value \"orf6\" correctly identifies the bait used for the runs associated with it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "orf7a",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait for affinity purification, which is the central design of this study.",
+        "SOURCE_CHECK": "The paper explicitly lists \"Orf7a\" as one of the open reading frames annotated in the viral genome.",
+        "TRUTH_CHECK": "The study cloned and expressed 26 of the 29 viral proteins to identify human interactors; Orf7a is one of these proteins.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "orf7b",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an AP-MS experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper explicitly lists \"Orf7b\" as one of the annotated open reading frames in the Materials and Methods section.",
+        "TRUTH_CHECK": "The study's goal was to identify human proteins associated with viral proteins (baits) using AP-MS; Orf7b is one of these viral proteins.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "orf8",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"orf8\" is a viral protein used as a bait in an affinity-purification mass spectrometry (AP-MS) experiment, which is the central design of this study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Orf8\" as one of the viral proteins cloned and expressed for the interactome analysis.",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it, as Orf8 was used as a bait to identify interacting human proteins.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "orf9b",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a viral protein used as a bait in an AP-MS experiment, which is the central focus of the study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Orf9b\" in the \"SARS-CoV-2 interactome reveals novel aspects of SARS-CoV-2 biology\" section.",
+        "TRUTH_CHECK": "The study cloned and expressed 26 viral proteins to identify human interactors; Orf9b is one of the annotated proteins used in this process.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "orf9c (protein14)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value identifies the viral bait protein used in the affinity purification, which is the central variable of this study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"orf9c\" as one of the viral proteins cloned and expressed for AP-MS.",
+        "TRUTH_CHECK": "The value correctly identifies the bait protein for the runs associated with it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Bait",
+      "extracted_value": "S",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"S\" refers to a viral bait protein, which is the central variable of the AP-MS experiment described.",
+        "SOURCE_CHECK": "The paper explicitly mentions the \"S\" (Spike) protein as one of the viral proteins cloned and expressed for affinity purification.",
+        "TRUTH_CHECK": "The value is correct for the runs that used the Spike protein as the bait for identifying human interactors.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "accession" : "PXD060381",
+  "title" : "CRISPR/dCAS9 genomic engineering for boosting the therapeutic potential of Extracellular Vesicles",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "This study aimed to enhance the therapeutic effect of MSC-derived extracellular vesicles (EVs) by overexpressing the TSG-6 gene using CRISPR activation and evaluate the biological activity of these modified EVs on human intervertebral disc (IVD) cells in vitro. n immortalized human MSC line was transduced with a CRISPR activation system targeting TSG-6. MSC-EVs were collected via ultracentrifugation, and their particle size/number was analyzed. Gene and protein expression were assessed to evaluate transduction efficiency. EV proteomics was analyzed by mass spectrometry. Human IVD cells were isolated from patients undergoing spinal surgery, pre-stimulated with IL-1β, and treated with MSC-EVs.",
+  "sampleProcessingProtocol" : "MSCs were cultured until 80% confluence, then washed with PBS and replaced with serum-free media. After 48 hours, conditioned medium (CM) was collected, centrifuged at 2000×g for 15 minutes at 4°C to remove debris. The supernatant was ultracentrifuged at 15,000×g for 30 minutes and 100,000×g for 120 minutes at 4°C. The pellet was resuspended in 500µl PBS and stored at −80°C. EV pellets from WT, NTC, and TSG-6 MSCs were resuspended in 100µl PBS (n=3) and sent to the URMC Mass Spectrometry Core for protein quantification and analysis. Protein (25µg/sample) was treated with dithiothreitol, iodoacetamide, and phosphoric acid, then processed using S-Trap microcolumns. After overnight digestion with trypsin, peptides were collected, freeze-dried, and resuspended in 0.1% trifluoroacetic acid for mass spectrometry. Peptides were loaded onto a 75µm × 2cm trap column and separated on a 75µm × 15cm C18 column using a Vanquish Neo UHPLC connected to an Orbitrap Astral mass spectrometer. A gradient of Solvent A and B separated the peptides. The Orbitrap Astral was set to DIA mode, with MS1 scans at 240,000 resolution (380–980 m/z) and MS2 scans at 3ms injection time, using variable windowing (2–8 Da). HCD collision energy was 25%, and normalized AGC was 500%, with fragment ions detected from 150–2000 m/z and a cycle time of 0.6s.",
+  "dataProcessingProtocol" : "Raw data was processed using DIA-NN v1.8.1 in library-free mode. The human UniProt database (UP000005640_9606, 4/7/2021) was used for library construction with deep learning-based spectra and RT prediction. Parameters for precursor ion generation included a max of 1 missed cleavage, 1 variable modification (Ox(M)), peptide lengths 6-30, precursor charge 2-4, and m/z range 380-980. Quantification was set to ‘Robust LC (high precision)’ mode with RT-dependent normalization. Precursors were filtered based on q-values (1%) and posterior error probability (50%). MaxLFQ was used for protein quantification, with further analysis via DiannReportGenerator and ProteinReportr. Plots were generated using QuartoReport.",
+  "projectTags" : [ ],
+  "keywords" : [ "Human", "Mscs", "Extracellular vesicles", "Crispr" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2025-01-30",
+  "publicationDate" : "2025-05-07",
+  "submitters" : [ {
+    "title" : "Mr",
+    "firstName" : "Iker",
+    "lastName" : "Martinez Zalbidea",
+    "identifier" : "3481952",
+    "affiliation" : "Rochester Institute of Technology",
+    "email" : "im5865@rit.edu",
+    "country" : "United States",
+    "orcid" : "0009-0005-2354-1058",
+    "name" : "Iker Martinez Zalbidea",
+    "id" : "3481952"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Karin",
+    "lastName" : "Wuertz-Kozak",
+    "identifier" : "3103103",
+    "affiliation" : "Kate Gleason Endowed Full Professor Biomedical Engineering Rochester Institute of Technology Rochester, New York. USA.",
+    "email" : "kwbme@rit.edu",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Karin Wuertz-Kozak",
+    "id" : "3103103"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1003378",
+    "name" : "Orbitrap Astral"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1003253",
+    "name" : "DIA-NN"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000450",
+    "name" : "Data-independent acquisition"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "United States" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000214",
+      "name" : "cell culture"
+    }, {
+      "cvLabel" : "CL",
+      "accession" : "CL:0000034",
+      "name" : "stem cell"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000214",
+    "name" : "Cell culture"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0000034",
+    "name" : "Stem cell"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Martinez-Zalbidea I, Wagner G, Bergendahl N, Mesfin A, Puvanesarajah V, Hitzl W, Schulze S, Wuertz-Kozak K. CRISPR-dCas9 Activation of TSG-6 in MSCs Modulates the Cargo of MSC-Derived Extracellular Vesicles and Attenuates Inflammatory Responses in Human Intervertebral Disc Cells In Vitro. Cell Mol Bioeng. 2025 18(1):83-98",
+    "pubmedID" : 39949490,
+    "doi" : "10.1007/s12195-025-00843-4"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00425",
+    "name" : "monohydroxylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 1084,
+  "botCount" : 304,
+  "hubCount" : 769,
+  "organicCount" : 11
+}

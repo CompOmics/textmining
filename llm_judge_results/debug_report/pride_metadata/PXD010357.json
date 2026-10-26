@@ -1,0 +1,146 @@
+{
+  "accession" : "PXD010357",
+  "title" : "Proteogenomic Landscape of Squamous Cell Lung Cancer 1: Digestion QC with DIA LC-MS/MS",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "We report an integrated analysis incorporating DNA copy number analyses, somatic exon mutations, mRNA expression via RNA-sequencing, and shotgun mass spectrometry analysis of protein abundance in 108 surgically resected squamous cell lung cancers (SCC) with accompanying clinical outcome, evaluation of tumor pathology, and other clinically relevant data.  We identified three major subtypes of SCC at the proteomic level, with two groups associated with inflammation/immune response or oxidation-reduction biology.  Inflamed tumors could be further sub-classified based on neutrophil infiltration or antigen presentation proteomes and reflected patterns of infiltrating immune cells.  No gene mutations, mRNA signatures, or proteomic subclasses were associated with outcomes; however, the presence of B-cell rich tertiary lymph node structures could be associated with better patient outcomes.  By integrating our proteogenomic data with publicly available RNA interference screen data, we identified TP63, PSAT1, and AKR1C3 as vulnerabilities in SCC, particularly in the redox proteomic group.  This cohort and its deep molecular data serves as an important resource to better understand biology and targets associated with SCC.",
+  "sampleProcessingProtocol" : "Protein Extraction and Digestion. Homogenized tissue samples were resuspended in lysis buffer containing 20 mM HEPES, pH 8.0, 9 M urea, 1 mM sodium orthovanadate, 2.5 mM sodium pyrophosphate, and 1 mM beta-glycerophosphate (Supplemental Figure 7). After brief sonication, the lysate was cleared by centrifugation at 10,000 x g at 15 ºC for 30 minutes. Protein concentration was determined by Bradford Assay (Coomassie Plus, Pierce), and 1 mg of total protein was digested for each sample (Supplemental Figure 8).  The proteins were reduced with 4.5 mM DTT at 60 ºC for 20 minutes followed by alkylation with 11 mM iodoacetamide at room temperature for 15 minutes in the dark. The sample was then diluted 4-fold to a final concentration of 2 M urea, 20 mM HEPES, pH 8.0, and trypsin digestion was carried out overnight at 37 ºC with an enzyme/protein ratio of 1/25.  C18 Sep-Pak Peptide Cleanup. The digested peptide solution was acidified with 20% TFA to a final TFA concentration of 1%. After incubation at room temperature for 10 minutes, the solution was cleared by centrifugation at 10,000 x g at 15 ºC for 15 minutes. Sep-Pak cartridges were washed with 5 ml acetonitrile followed by 3 ml and 4 ml washes with Sep-Pak solvent A (aqueous 0.1% TFA). After acidified peptides were loaded, the cartridge was washed with 1 ml, 5 ml and 6 ml of Sep-Pak solvent A. Elution was carried out 3 times using 2 ml of Sep-Pak solvent B (aqueous 40% acetonitrile with 0.1% TFA). After freezing, the peptides were lyophilized to dryness over for 2 days. For DIA, aliquots (500 ng) of total protein digest were injected for each sample. Two aliquots (100 g each) of total protein digest were retained for TMT labeling.  The remaining material was saved for future experiments (e.g. phosphoproteomics). DIA Analysis of Label-Free Unfractionated Samples. The same UPLC conditions were used as described above for the TMT experiments. The mass spectrometry method utilized MS1 scans alternated with looped 18 narrow window data independent acquisition (DIA) tandem mass spectrometry scans covering the m/z range from 450 to 1,080. The MS/MS isolation windows from 450 to 900 were set at 5 Th and the isolation windows from 900 to 1,080 were set at 8 Th. Resolution was set at 70,000 for MS1 and 17,500 for MS/MS. Twenty-five femtomoles of standard peptides (PRTC) were spiked in each LC-MS/MS analysis to monitor instrument performance.  Ten batches were processed in sequence.",
+  "dataProcessingProtocol" : "The purpose of this step was to evaluate digestions for each clinical sample, using a small aliquot of the total digest.  We evaluated the number of assigned peptides and protein groups for each sample to determine whether any samples did not meet the expected metrics for the proteolytic digests.  While four samples has lower amounts of protein and peptide identifications, none of the samples were ruled out in this experiment.  For in-house analysis, Pinnacle was used for evaluation of the DIA LC-MS/MS data.  For posting to ProteomeXchange, Mascot database searches of the UniProt human entries were conducted using methionine oxidation as a variable modification and allowing up to 2 missed cleavages.",
+  "projectTags" : [ "Biomedical" ],
+  "keywords" : [ "Human", "Dia", "Squamous cell carcinoma", "Lung cancer" ],
+  "doi" : "10.6019/PXD010357",
+  "submissionType" : "COMPLETE",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2018-07-10",
+  "publicationDate" : "2019-05-24",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "John",
+    "lastName" : "Koomen",
+    "identifier" : "5300100",
+    "affiliation" : "Moffitt Cancer Center",
+    "email" : "john.koomen@moffitt.org",
+    "country" : "United States",
+    "orcid" : "0000-0002-3818-1762",
+    "name" : "John Koomen",
+    "id" : "5300100"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Eric Haura,",
+    "lastName" : "MD",
+    "identifier" : "109520100",
+    "affiliation" : "Moffitt Cancer Center",
+    "email" : "eric.haura@moffitt.org",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Eric Haura, MD",
+    "id" : "109520100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive",
+    "value" : ""
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001207",
+    "name" : "Mascot"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000323",
+    "name" : "TIC"
+  } ],
+  "countries" : [ "United States" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000763",
+      "name" : "lung",
+      "value" : ""
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)",
+      "value" : ""
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:3908",
+      "name" : "non-small cell lung carcinoma",
+      "value" : ""
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)",
+    "value" : ""
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000763",
+    "name" : "Lung",
+    "value" : ""
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:3908",
+    "name" : "Non-small cell lung carcinoma",
+    "value" : ""
+  } ],
+  "references" : [ {
+    "referenceLine" : "Stewart PA, Welsh EA, Slebos RJC, Fang B, Izumi V, Chambers M, Zhang G, Cen L, Pettersson F, Zhang Y, Chen Z, Cheng CH, Thapa R, Thompson Z, Fellows KM, Francis JM, Saller JJ, Mesa T, Zhang C, Yoder S, DeNicola GM, Beg AA, Boyle TA, Teer JK, Ann Chen Y, Koomen JM, Eschrich SA, Haura EB. Proteogenomic landscape of squamous cell lung cancer. Nat Commun. 2019 10(1):3578",
+    "pubmedID" : 31395880,
+    "doi" : "10.1038/s41467-019-11452-x"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:4",
+    "name" : "Carbamidomethyl",
+    "value" : ""
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:35",
+    "name" : "Oxidation",
+    "value" : ""
+  } ],
+  "totalFileDownloads" : 114994,
+  "otherOmicsLinks" : [ "px:PXD010429", "pride.project:PXD010429" ]
+}

@@ -1,0 +1,464 @@
+{
+  "paper_id": "PXD004613",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper uses HeLa cells and searches against the Homo sapiens proteome.",
+        "TRUTH_CHECK": "The proteins analyzed from HeLa cells are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "cervix",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper uses HeLa cells; the organ of origin for HeLa is the cervix, which is an allowed inference.",
+        "TRUTH_CHECK": "The runs are derived from HeLa cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the right field.",
+        "SOURCE_CHECK": "The paper uses HeLa cells; the cell type of HeLa (epithelial) is an allowed inference.",
+        "TRUTH_CHECK": "The runs are derived from HeLa cells, which are epithelial.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "adenocarcinoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of origin for the material, which is the correct field.",
+        "SOURCE_CHECK": "The paper uses HeLa cells; the disease of origin for HeLa is cervical adenocarcinoma, which is an allowed inference according to the field definition.",
+        "TRUTH_CHECK": "The runs are derived from HeLa cells, so the disease state is correct.",
+        "COMPLETENESS_CHECK": "The value \"adenocarcinoma\" is a correct but slightly simplified version of the inferred \"cervical adenocarcinoma\"."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "31Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of the subjects; it uses HeLa, HT1080, and DT40 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the sex of the subjects; it uses HeLa and HT1080 cell lines.",
+        "TRUTH_CHECK": "The sex of the donor for the cell lines is not mentioned, and the definition explicitly forbids inferring sex from a cell line.",
+        "COMPLETENESS_CHECK": "Complete format, but unsupported."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HeLa cells",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that chromatin was extracted from HeLa cells for the MS experiments.",
+        "TRUTH_CHECK": "The runs listed are the MS runs, and they were performed on material derived from HeLa cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell line",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the material_type field.",
+        "SOURCE_CHECK": "The paper states that chromatin was extracted from HeLa cells for the MS analysis.",
+        "TRUTH_CHECK": "HeLa is a well-known cell line, and the material used for these runs was derived from it.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms for material_type."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"adult\" is a developmental stage, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of the subjects or the developmental stage of the cell lines used (HeLa, HT1080).",
+        "TRUTH_CHECK": "The value is not supported by the text. While the related_columns mention \"31Y\", this information is not present in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Black",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the ethnicity field.",
+        "SOURCE_CHECK": "The paper does not mention the ethnicity of the subjects; it uses HeLa, HT1080, and DT40 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a standard trypsin digestion and MaxQuant search without mentioning any isotopic labels (TMT, SILAC, etc.), which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs described (GST:Repo-Man and GST alone) were analyzed without labels.",
+        "COMPLETENESS_CHECK": "Complete. The value uses the correct SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state that MS-analyses were performed on either an LTQ-Orbitrap or a Q Exactive mass spectrometer.",
+        "TRUTH_CHECK": "The paper mentions two different instruments (LTQ-Orbitrap and Q Exactive). The candidate value assigns only the Q Exactive to all 8 runs. However, the run keys (e.g., \"E150416...\") do not explicitly state which instrument was used for which run, and the paper does not provide a mapping. In the absence of a contradictory mapping in the text, naming one of the instruments used in the study for these runs is acceptable if it is plausible.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=LTQ Orbitrap;AC=MS:1000449",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states that MS-analyses were performed on an \"LTQ-Orbitrap mass spectrometer\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state \"proteins were digested with trypsin\" and \"digested overnight at 37 °C with 12.5 ng μl-1 trypsin (Pierce)\".",
+        "TRUTH_CHECK": "The value is correct for all listed runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;AC=UNIMOD:4;MT=fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"Carbamidomethylation of cysteine was set as fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it.",
+        "COMPLETENESS_CHECK": "Complete, following the required format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;TA=M;AC=UNIMOD:35;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"Oxidation of methionine\" was set as a variable modification.",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Follows the required format (NT, TA, AC, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;TA=M;AC=UNIMOD:1;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Acetyl;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"acetylation\" as a variable modification, but does not specify the residue.",
+        "TRUTH_CHECK": "The paper does not state that acetylation was searched on methionine (M). Acetylation typically occurs on lysine (K) or the protein N-terminus.",
+        "COMPLETENESS_CHECK": "The residue TA=M is a wrong detail."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Methyl;TA=K,R;AC=UNIMOD:34;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"single, di- and tri-methylation of lysine, as well as single and di-methylation of arginine were set as variable modifications\".",
+        "TRUTH_CHECK": "The modification was used for the search of these runs.",
+        "COMPLETENESS_CHECK": "The value follows the format and correctly identifies the residues (K, R) and the variable status."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "4.5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states \"for the first search peptide tolerance was set to 20 p.p.m. while for the main search peptide tolerance was set to 4.5 pm\".",
+        "TRUTH_CHECK": "The value 4.5 ppm corresponds to the \"main search\" described in the paper.",
+        "COMPLETENESS_CHECK": "Complete, including the unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper mentions precursor peptide tolerance (20 ppm and 4.5 ppm) and isotope mass tolerance (2 ppm), but it does not state a fragment (MS/MS) mass tolerance.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "E150416_02_Quty1_CS_CO_220_Ines_CtermGST_1.raw = 1 | E150416_03_Quty1_CS_CO_220_Ines_CtermGST_2.raw = 2 | E150416_04_Quty1_CS_CO_220_Ines_CtermGST_3.raw = 3 | E150416_06_Quty1_CS_CO_220_Ines_GSTalone_1.raw = 1 | E150416_07_Quty1_CS_CO_220_Ines_GSTalone_2.raw = 2 | E150416_08_Quty1_CS_CO_220_Ines_GSTalone_3.raw = 3 | E160618_05_Quty1_CS_CO_220_PV_Ines_PV1A.raw = 1 | E160618_07_Quty1_CS_CO_220_PV_Ines_PV1B.raw = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"three GST:Repo-ManCTerm data sets\" and \"two similar histone gel bands\" for the phosphorylation analysis.",
+        "TRUTH_CHECK": "For the CtermGST and GSTalone runs, the paper describes them as \"data sets\" (plural), and the run names suggest replicates (1, 2, 3). For the PV runs (phosphorylation analysis), the paper explicitly states \"two similar histone gel bands were digested\", indicating two independent biological units.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns indices to the runs based on the described replicates."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "E150416_02_Quty1_CS_CO_220_Ines_CtermGST_1.raw = 1 | E150416_03_Quty1_CS_CO_220_Ines_CtermGST_2.raw = 1 | E150416_04_Quty1_CS_CO_220_Ines_CtermGST_3.raw = 1 | E150416_06_Quty1_CS_CO_220_Ines_GSTalone_1.raw = 1 | E150416_07_Quty1_CS_CO_220_Ines_GSTalone_2.raw = 1 | E150416_08_Quty1_CS_CO_220_Ines_GSTalone_3.raw = 1 | E160618_05_Quty1_CS_CO_220_PV_Ines_PV1A.raw = 1 | E160618_07_Quty1_CS_CO_220_PV_Ines_PV1B.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes multiple data sets for GST:Repo-ManCTerm and GST alone, and two samples for the phosphorylation of S28.",
+        "TRUTH_CHECK": "The runs are assigned to different samples (Sample 1-8), meaning they are treated as independent biological units or separate materials, not repeated injections of the same material.",
+        "COMPLETENESS_CHECK": "Each run is assigned a technical replicate index of 1, which is correct for materials measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "E150416_02_Quty1_CS_CO_220_Ines_CtermGST_1.raw = 1 | E150416_03_Quty1_CS_CO_220_Ines_CtermGST_2.raw = 1 | E150416_04_Quty1_CS_CO_220_Ines_CtermGST_3.raw = 1 | E150416_06_Quty1_CS_CO_220_Ines_GSTalone_1.raw = 1 | E150416_07_Quty1_CS_CO_220_Ines_GSTalone_2.raw = 1 | E150416_08_Quty1_CS_CO_220_Ines_GSTalone_3.raw = 1 | E160618_05_Quty1_CS_CO_220_PV_Ines_PV1A.raw = 1 | E160618_07_Quty1_CS_CO_220_PV_Ines_PV1B.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the fraction_identifier field.",
+        "SOURCE_CHECK": "The paper describes excised gel bands being analyzed, but does not describe any offline fractionation into multiple fractions per sample.",
+        "TRUTH_CHECK": "Since no offline fractionation is described, every run should be assigned fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns 1 to all runs."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "GST:C-terminus domain of Repo-Man",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the protein used for the pull-down (GST-fusion), which is a treatment/condition for the sample preparation.",
+        "SOURCE_CHECK": "The paper mentions \"GST:Repo-Man403-1023\" and \"GST:Repo-ManCTerm\", which corresponds to the C-terminus domain of Repo-Man.",
+        "TRUTH_CHECK": "The runs are identified as \"CtermGST\", and the paper describes these as the data sets where histone PTMs were detected.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "GST alone",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the protein used for the pull-down (GST alone), which is a treatment/condition for the sample preparation.",
+        "SOURCE_CHECK": "The paper mentions \"GST alone\" as a control in the \"Preparation of Repo-Man bound nucleosomes\" and \"Mass spectrometry\" sections.",
+        "TRUTH_CHECK": "The runs listed are explicitly labeled \"GSTalone\", and the paper confirms this was one of the conditions used for the MS analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "GST:Repo-Man1-135 proteins incubated with HeLa nucleosomes",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the sample treatment/condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions \"GST: Repo-Man1-135 (ref.)\" and \"chromatin was extracted from HeLa cells... incubated... with either GST:Repo-Man or GST alone\". The candidate value combines these elements.",
+        "TRUTH_CHECK": "The value describes the experimental condition (protein used for pull-down of HeLa nucleosomes) for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "NT=Orbitrap;AC=MS:1000484",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer, which is the correct information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper mentions the use of an LTQ-Orbitrap and a Q Exactive, both of which use an Orbitrap mass analyzer.",
+        "TRUTH_CHECK": "The runs listed were performed on these instruments, so the Orbitrap analyzer is correct.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

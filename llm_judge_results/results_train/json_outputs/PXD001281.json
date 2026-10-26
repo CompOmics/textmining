@@ -1,0 +1,175 @@
+{
+  "paper_id": "PXD001281",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes the use of HEK293 N3S cells and searches against the UniProtKB human proteome, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analysed proteins are from human cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial cell",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the use of HEK293 N3S cells. While the paper does not explicitly state \"epithelial cell\", the field definition allows the cell type of a cell line to be inferred. HEK293 is a known human embryonic kidney cell line, which is epithelial in nature.",
+        "TRUTH_CHECK": "The runs are associated with \"HeLa sample\" in the example runs, but the paper text describes HEK293 N3S cells. However, the provided example runs mention \"HeLa sample\", which is not mentioned in the provided paper text at all.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "adenocarcinoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the right field.",
+        "SOURCE_CHECK": "The paper text describes the use of HEK293 N3S cells, but the example runs refer to \"HeLa sample\". HeLa is a well-known cervical adenocarcinoma cell line, and the field definition explicitly allows inferring \"cervical adenocarcinoma\" for HeLa.",
+        "TRUTH_CHECK": "The value \"adenocarcinoma\" is a correct (though broad) description of the disease state for HeLa cells.",
+        "COMPLETENESS_CHECK": "The value is a correct inference based on the cell line mentioned in the runs."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "Label free",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a workflow using immunoprecipitation and LC-MS/MS without any mention of isotopic labels (TMT, SILAC, etc.), which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs listed (e.g., Velos02_...) are not mentioned in the provided paper text. The paper describes a Q Exactive instrument and HEK293 cells, while the runs mention a Velos instrument and HeLa samples. This is a different experiment.",
+        "COMPLETENESS_CHECK": "The value \"Label free\" is an equivalent wording for the SDRF term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "LTQ Orbitrap Velos",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states the use of a \"Q Exactive mass spectrometer\", not an LTQ Orbitrap Velos.",
+        "TRUTH_CHECK": "The value does not match the instrument described in the paper.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The paper mentions trypsinization in the TAP-SUMO2 section and the virtual branched peptide database section.",
+        "TRUTH_CHECK": "The runs listed (e.g., Velos02_06228) are not mentioned in the provided paper text, and the source \"HeLa sample\" is not mentioned in the paper (which uses HEK293 N3S cells). These runs belong to a different experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "Velos02_06228 RP1 F1.raw = 0 | Velos02_06231 RP2 F1.raw = 0 | Velos02_06222 RP1 F2.raw = 0 | Velos02_06225 RP2 F2.raw = 0 | Velos02_06218 RP1 F3.raw = 0 | Velos02_06221 RP2 F3.raw = 0 | Velos02_06212 RP1 F4.raw = 0 | Velos02_06215 RP2 F4.raw = 0 | Velos02_06208 RP1 F5.raw = 0 | Velos02_06211 RP2 F5.raw = 0 | Velos02_06202 RP1 F6.raw = 0 | Velos02_06205 RP2 F6.raw = 0 | Velos02_06198 RP1 F7.raw = 0 | Velos02_06201 RP2 F7.raw = 0 | Velos02_06229 SCX1 F1.raw = 0 | Velos02_06230 SCX2 F1.raw = 0 | Velos02_06223 SCX1 F2.raw = 0 | Velos02_06224 SCX2 F2.raw = 0 | Velos02_06219 SCX1 F3.raw = 0 | Velos02_06220 SCX2 F3.raw = 0 | Velos02_06213 SCX1 F4.raw = 0 | Velos02_06214 SCX2 F4.raw = 0 | Velos02_06209 SCX1 F5.raw = 0 | Velos02_06210 SCX2 F5.raw = 0 | Velos02_06203 SCX1 F6.raw = 0 | Velos02_06204 SCX2 F6.raw = 0 | Velos02_06199 SCX1 F7.raw = 0 | Velos02_06200 SCX2 F7.raw = 0 | Velos012431 SCXBRP1 F1.raw = 0 | Velos012432 SCXBRP2 F1.raw = 0 | Velos012572 SCXBRP1 F2.raw = 0 | Velos012573 SCXBRP2 F2.raw = 0 | Velos012427 SCXBRP1 F3.raw = 0 | Velos012428 SCXBRP2 F3.raw = 0 | Velos012426 SCXBRP1 F4.raw = 0 | Velos012425 SCXBRP2 F4.raw = 0 | Velos012422 SCXBRP1 F5.raw = 0 | Velos012423 SCXBRP2 F5.raw = 0 | Velos012421 SCXBRP1 F6.raw = 0 | Velos012420 SCXBRP2 F6.raw = 0 | Velos012418 SCXBRP1 F7.raw = 0 | Velos012419 SCXBRP2 F7.raw = 0 | Velos02_06318 ERLIC1 F1.raw = 0 | Velos02_06319 ERLIC2 F1.raw = 0 | Velos02_06355 ERLIC1 F2.raw = 0 | Velos02_06356 ERLIC2 F2.raw = 0 | Velos02_06353 ERLIC1 F3.raw = 0 | Velos02_06354 ERLIC2 F3.raw = 0 | Velos02_06320 ERLIC1 F4.raw = 0 | Velos02_06321 ERLIC2 F4.raw = 0 | Velos02_06350 ERLIC1 F5.raw = 0 | Velos02_06351 ERLIC2 F5.raw = 0 | Velos02_06346 ERLIC1 F6.raw = 0 | Velos02_06347 ERLIC2 F6.raw = 0 | Velos02_06330 ERLIC1 F7.raw = 0 | Velos02_06331 ERLIC2 F7.raw = 0 | Velos02_06332 ERLIC1 F8.raw = 0 | Velos02_06333 ERLIC2 F8.raw = 0 | Velos02_06334 ERLIC1 F9.raw = 0 | Velos02_06335 ERLIC2 F9.raw = 0 | Velos02_06337 ERLIC1 F10.raw = 0 | Velos02_06338 ERLIC2 F10.raw = 0 | Velos02_06339 ERLIC1 F11.raw = 0 | Velos02_06340 ERLIC2 F11.raw = 0 | Velos02_06341 ERLIC1 F12.raw = 0 | Velos02_06342 ERLIC2 F12.raw = 0 | Velos02_06344 ERLIC1 F13.raw = 0 | Velos02_06345 ERLIC2 F13.raw = 0 | Velos02_06348 ERLIC1 F14.raw = 0 | Velos02_06349 ERLIC2 F14.raw = 0 | Velos02_06280 ERLIC1 F15.raw = 0 | Velos02_06281 ERLIC2 F15.raw = 0 | Velos02_06283 ERLIC1 F16.raw = 0 | Velos02_06282 ERLIC2 F16.raw = 0 | Velos02_06284 ERLIC1 F17.raw = 0 | Velos02_06285 ERLIC2 F17.raw = 0 | Velos02_06286 ERLIC1 F18.raw = 0 | Velos02_06287 ERLIC2 F18.raw = 0 | Velos02_06289 ERLIC1 F19.raw = 0 | Velos02_06290 ERLIC2 F19.raw = 0 | Velos02_06291 ERLIC1 F20.raw = 0 | Velos02_06292 ERLIC2 F20.raw = 0 | Velos02_06293 ERLIC1 F21.raw = 0 | Velos02_06294 ERLIC2 F21.raw = 0",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is biological_replicate, which is the correct field for replicate indices.",
+        "SOURCE_CHECK": "The paper describes experiments using HEK293 N3S cells, not HeLa cells. The runs listed refer to \"HeLa sample\", which is not mentioned in the provided text.",
+        "TRUTH_CHECK": "The runs describe a \"HeLa sample\" and use a \"Velos\" instrument, whereas the paper describes \"HEK293 N3S\" cells and a \"Q Exactive\" instrument. These runs do not belong to the experiment described in the paper.",
+        "COMPLETENESS_CHECK": "The value \"0\" is not a standard biological replicate index (which should be 1, 2, 3...)."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "Velos02_06228 RP1 F1.raw = 1 | Velos02_06231 RP2 F1.raw = 2 | Velos02_06222 RP1 F2.raw = 1 | Velos02_06225 RP2 F2.raw = 2 | Velos02_06218 RP1 F3.raw = 1 | Velos02_06221 RP2 F3.raw = 2 | Velos02_06212 RP1 F4.raw = 1 | Velos02_06215 RP2 F4.raw = 2 | Velos02_06208 RP1 F5.raw = 1 | Velos02_06211 RP2 F5.raw = 2 | Velos02_06202 RP1 F6.raw = 1 | Velos02_06205 RP2 F6.raw = 2 | Velos02_06198 RP1 F7.raw = 1 | Velos02_06201 RP2 F7.raw = 2 | Velos02_06229 SCX1 F1.raw = 1 | Velos02_06230 SCX2 F1.raw = 2 | Velos02_06223 SCX1 F2.raw = 1 | Velos02_06224 SCX2 F2.raw = 2 | Velos02_06219 SCX1 F3.raw = 1 | Velos02_06220 SCX2 F3.raw = 2 | Velos02_06213 SCX1 F4.raw = 1 | Velos02_06214 SCX2 F4.raw = 2 | Velos02_06209 SCX1 F5.raw = 1 | Velos02_06210 SCX2 F5.raw = 2 | Velos02_06203 SCX1 F6.raw = 1 | Velos02_06204 SCX2 F6.raw = 2 | Velos02_06199 SCX1 F7.raw = 1 | Velos02_06200 SCX2 F7.raw = 2 | Velos012431 SCXBRP1 F1.raw = 1 | Velos012432 SCXBRP2 F1.raw = 2 | Velos012572 SCXBRP1 F2.raw = 1 | Velos012573 SCXBRP2 F2.raw = 2 | Velos012427 SCXBRP1 F3.raw = 1 | Velos012428 SCXBRP2 F3.raw = 2 | Velos012426 SCXBRP1 F4.raw = 1 | Velos012425 SCXBRP2 F4.raw = 2 | Velos012422 SCXBRP1 F5.raw = 1 | Velos012423 SCXBRP2 F5.raw = 2 | Velos012421 SCXBRP1 F6.raw = 1 | Velos012420 SCXBRP2 F6.raw = 2 | Velos012418 SCXBRP1 F7.raw = 1 | Velos012419 SCXBRP2 F7.raw = 2 | Velos02_06318 ERLIC1 F1.raw = 1 | Velos02_06319 ERLIC2 F1.raw = 2 | Velos02_06355 ERLIC1 F2.raw = 1 | Velos02_06356 ERLIC2 F2.raw = 2 | Velos02_06353 ERLIC1 F3.raw = 1 | Velos02_06354 ERLIC2 F3.raw = 2 | Velos02_06320 ERLIC1 F4.raw = 1 | Velos02_06321 ERLIC2 F4.raw = 2 | Velos02_06350 ERLIC1 F5.raw = 1 | Velos02_06351 ERLIC2 F5.raw = 2 | Velos02_06346 ERLIC1 F6.raw = 1 | Velos02_06347 ERLIC2 F6.raw = 2 | Velos02_06330 ERLIC1 F7.raw = 1 | Velos02_06331 ERLIC2 F7.raw = 2 | Velos02_06332 ERLIC1 F8.raw = 1 | Velos02_06333 ERLIC2 F8.raw = 2 | Velos02_06334 ERLIC1 F9.raw = 1 | Velos02_06335 ERLIC2 F9.raw = 2 | Velos02_06337 ERLIC1 F10.raw = 1 | Velos02_06338 ERLIC2 F10.raw = 2 | Velos02_06339 ERLIC1 F11.raw = 1 | Velos02_06340 ERLIC2 F11.raw = 2 | Velos02_06341 ERLIC1 F12.raw = 1 | Velos02_06342 ERLIC2 F12.raw = 2 | Velos02_06344 ERLIC1 F13.raw = 1 | Velos02_06345 ERLIC2 F13.raw = 2 | Velos02_06348 ERLIC1 F14.raw = 1 | Velos02_06349 ERLIC2 F14.raw = 2 | Velos02_06280 ERLIC1 F15.raw = 1 | Velos02_06281 ERLIC2 F15.raw = 2 | Velos02_06283 ERLIC1 F16.raw = 1 | Velos02_06282 ERLIC2 F16.raw = 2 | Velos02_06284 ERLIC1 F17.raw = 1 | Velos02_06285 ERLIC2 F17.raw = 2 | Velos02_06286 ERLIC1 F18.raw = 1 | Velos02_06287 ERLIC2 F18.raw = 2 | Velos02_06289 ERLIC1 F19.raw = 1 | Velos02_06290 ERLIC2 F19.raw = 2 | Velos02_06291 ERLIC1 F20.raw = 1 | Velos02_06292 ERLIC2 F20.raw = 2 | Velos02_06293 ERLIC1 F21.raw = 1 | Velos02_06294 ERLIC2 F21.raw = 2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper does not mention any of these runs, assays, or HeLa samples; it describes experiments using HEK293 N3S cells.",
+        "TRUTH_CHECK": "The runs and samples (HeLa) are not mentioned in the paper and do not belong to the described MS experiment.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong item."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "Velos02_06228 RP1 F1.raw = 1 | Velos02_06231 RP2 F1.raw = 1 | Velos02_06222 RP1 F2.raw = 2 | Velos02_06225 RP2 F2.raw = 2 | Velos02_06218 RP1 F3.raw = 3 | Velos02_06221 RP2 F3.raw = 3 | Velos02_06212 RP1 F4.raw = 4 | Velos02_06215 RP2 F4.raw = 4 | Velos02_06208 RP1 F5.raw = 5 | Velos02_06211 RP2 F5.raw = 5 | Velos02_06202 RP1 F6.raw = 6 | Velos02_06205 RP2 F6.raw = 6 | Velos02_06198 RP1 F7.raw = 7 | Velos02_06201 RP2 F7.raw = 7 | Velos02_06229 SCX1 F1.raw = 1 | Velos02_06230 SCX2 F1.raw = 1 | Velos02_06223 SCX1 F2.raw = 2 | Velos02_06224 SCX2 F2.raw = 2 | Velos02_06219 SCX1 F3.raw = 3 | Velos02_06220 SCX2 F3.raw = 3 | Velos02_06213 SCX1 F4.raw = 4 | Velos02_06214 SCX2 F4.raw = 4 | Velos02_06209 SCX1 F5.raw = 5 | Velos02_06210 SCX2 F5.raw = 5 | Velos02_06203 SCX1 F6.raw = 6 | Velos02_06204 SCX2 F6.raw = 6 | Velos02_06199 SCX1 F7.raw = 7 | Velos02_06200 SCX2 F7.raw = 7 | Velos012431 SCXBRP1 F1.raw = 1 | Velos012432 SCXBRP2 F1.raw = 1 | Velos012572 SCXBRP1 F2.raw = 2 | Velos012573 SCXBRP2 F2.raw = 2 | Velos012427 SCXBRP1 F3.raw = 3 | Velos012428 SCXBRP2 F3.raw = 3 | Velos012426 SCXBRP1 F4.raw = 4 | Velos012425 SCXBRP2 F4.raw = 4 | Velos012422 SCXBRP1 F5.raw = 5 | Velos012423 SCXBRP2 F5.raw = 5 | Velos012421 SCXBRP1 F6.raw = 6 | Velos012420 SCXBRP2 F6.raw = 6 | Velos012418 SCXBRP1 F7.raw = 7 | Velos012419 SCXBRP2 F7.raw = 7 | Velos02_06318 ERLIC1 F1.raw = 1 | Velos02_06319 ERLIC2 F1.raw = 1 | Velos02_06355 ERLIC1 F2.raw = 2 | Velos02_06356 ERLIC2 F2.raw = 2 | Velos02_06353 ERLIC1 F3.raw = 3 | Velos02_06354 ERLIC2 F3.raw = 3 | Velos02_06320 ERLIC1 F4.raw = 4 | Velos02_06321 ERLIC2 F4.raw = 4 | Velos02_06350 ERLIC1 F5.raw = 5 | Velos02_06351 ERLIC2 F5.raw = 5 | Velos02_06346 ERLIC1 F6.raw = 6 | Velos02_06347 ERLIC2 F6.raw = 6 | Velos02_06330 ERLIC1 F7.raw = 7 | Velos02_06331 ERLIC2 F7.raw = 7 | Velos02_06332 ERLIC1 F8.raw = 8 | Velos02_06333 ERLIC2 F8.raw = 8 | Velos02_06334 ERLIC1 F9.raw = 9 | Velos02_06335 ERLIC2 F9.raw = 9 | Velos02_06337 ERLIC1 F10.raw = 10 | Velos02_06338 ERLIC2 F10.raw = 10 | Velos02_06339 ERLIC1 F11.raw = 11 | Velos02_06340 ERLIC2 F11.raw = 11 | Velos02_06341 ERLIC1 F12.raw = 12 | Velos02_06342 ERLIC2 F12.raw = 12 | Velos02_06344 ERLIC1 F13.raw = 13 | Velos02_06345 ERLIC2 F13.raw = 13 | Velos02_06348 ERLIC1 F14.raw = 14 | Velos02_06349 ERLIC2 F14.raw = 14 | Velos02_06280 ERLIC1 F15.raw = 15 | Velos02_06281 ERLIC2 F15.raw = 15 | Velos02_06283 ERLIC1 F16.raw = 16 | Velos02_06282 ERLIC2 F16.raw = 16 | Velos02_06284 ERLIC1 F17.raw = 17 | Velos02_06285 ERLIC2 F17.raw = 17 | Velos02_06286 ERLIC1 F18.raw = 18 | Velos02_06287 ERLIC2 F18.raw = 18 | Velos02_06289 ERLIC1 F19.raw = 19 | Velos02_06290 ERLIC2 F19.raw = 19 | Velos02_06291 ERLIC1 F20.raw = 20 | Velos02_06292 ERLIC2 F20.raw = 20 | Velos02_06293 ERLIC1 F21.raw = 21 | Velos02_06294 ERLIC2 F21.raw = 21",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not describe any offline fractionation for the main experiment (only mentions \"desalted on self-made reverse-phase C18 stop-and-go-extraction tips\" and \"TAP-SUMO2... fractionated by protein electrophoresis\", but the runs listed are from a \"HeLa sample\" and use \"Velos\" instruments not mentioned in the main methods). More importantly, the provided runs and their \"HeLa sample\" source are not mentioned anywhere in the provided paper text.",
+        "TRUTH_CHECK": "The runs listed (HeLa sample, Velos instrument) do not appear in the paper text, which describes HEK293 N3S cells and a Q Exactive instrument.",
+        "COMPLETENESS_CHECK": "The mapping follows the format, but the content is not from the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[cultured cell]",
+      "extracted_value": "HeLa",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is appropriate for a column describing cultured cells.",
+        "SOURCE_CHECK": "The paper describes the use of HEK293 N3S cells; HeLa is not mentioned anywhere in the text.",
+        "TRUTH_CHECK": "The analyzed material is HEK293 N3S, not HeLa.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    }
+  ]
+}

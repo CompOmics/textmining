@@ -1,0 +1,345 @@
+{
+  "paper_id": "PXD004683",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes clinical samples from patients (lung squamous cell carcinomas), which is an allowed inference for human.",
+        "TRUTH_CHECK": "The analysed lung tissues are from human patients.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "lung",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ name, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper states the samples are \"lung squamous cell carcinomas\" and \"adjacent lung tissues\".",
+        "TRUTH_CHECK": "The analyzed material is lung tissue.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "squamous cell carcinoma",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease, which is the correct field.",
+        "SOURCE_CHECK": "The abstract mentions \"frozen lung squamous cell carcinomas\".",
+        "TRUTH_CHECK": "The value is wrong for the runs because the study compares \"lung squamous cell carcinomas\" and \"adjacent tissues\". The adjacent tissues should be marked as \"normal\".",
+        "COMPLETENESS_CHECK": "The value follows the definition format."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper states that gender, race, and ethnicity are in Table S1, but Table S1 is not provided in the text.",
+        "TRUTH_CHECK": "The sex of the subjects is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"frozen lung squamous cell carcinomas and 4 adjacent tissues\" were used.",
+        "TRUTH_CHECK": "The analysed materials are lung tissues.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms in the definition."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT126",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a label used for the runs, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"TMT 6-plex\" was used for labeling. While the specific channel \"TMT126\" is not explicitly named, it is a standard component of a TMT 6-plex set.",
+        "TRUTH_CHECK": "The runs are part of the TMT experiment described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a label channel, which is the right field.",
+        "SOURCE_CHECK": "The paper states the use of \"TMT 6-plex\" labeling, but does not list the specific reporter ion channels (e.g., 126, 127) used.",
+        "TRUTH_CHECK": "While TMT 6-plex was used, the specific channel TMT127 is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The value follows the format for a labeled run."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct field for labeling.",
+        "SOURCE_CHECK": "The paper states the use of \"TMT 6-plex\" labeling, but does not list the specific reporter ion channels (e.g., TMT128) used.",
+        "TRUTH_CHECK": "While TMT 6-plex was used, the specific channel TMT128 is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "Complete format for a labeled run."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a TMT label channel, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the use of \"TMT 6-plex\" labeling, but does not list the specific reporter ion channels used.",
+        "TRUTH_CHECK": "TMT129 is a standard channel in TMT 6-plex sets, but its use for these specific runs is not stated in the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002634;NT=Q Exactive Plus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section explicitly mentions the \"QExactive Plus, Thermo, San Jose, CA\".",
+        "TRUTH_CHECK": "The instrument was used for the DDA, TMT, and DIA experiments described in the paper.",
+        "COMPLETENESS_CHECK": "Complete. The NT term matches the printed model."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"trypsin digestion was carried out overnight\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of all samples in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes discovery proteomics experiments using LC-MS/MS (DDA, DIA, LF, TMT), which is the basis for this inference.",
+        "TRUTH_CHECK": "The value correctly describes the proteomics experiments performed on the lung tissue samples.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF controlled term convention."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:35;NT=Oxidation;MT=Variable;TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"oxidation (methionine)\" in the IDPicker and Pinnacle analysis sections.",
+        "TRUTH_CHECK": "The modification was used for the analyzed samples.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;AC;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:4;NT=Carbamidomethyl;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Carbamidomethyl;TA=C;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper mentions carbamidomethylation of cysteine in the IDPicker and Pinnacle analysis sections.",
+        "TRUTH_CHECK": "The modification was used for the runs.",
+        "COMPLETENESS_CHECK": "The cell is missing the TA residue (C) and the MT status is listed as Variable, but the paper describes it as an alkylation step (which is typically fixed) and the Pinnacle section lists it as a \"dynamic modification\" (Variable). However, the IDPicker section lists it as an \"allowable modification\" without specifying fixed/variable. In the context of the Pinnacle analysis, \"dynamic modifications included cysteine carbamidomethylation\", which means Variable."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"a mass error of 10 ppm\" in the MaxQuant section and \"precursor mass tolerance was set to 10 ppm\" in the Pinnacle section.",
+        "TRUTH_CHECK": "The value is correct for the runs described in the study.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.05 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The Pinnacle Data Analysis section states \"MS/MS mass tolerance was 0.05 Da\".",
+        "TRUTH_CHECK": "The value is correct for the runs analyzed using this search parameter.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and the unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1 | row 133 = 1 | row 134 = 1 | row 135 = 1 | row 136 = 1 | row 137 = 1 | row 138 = 1 | row 139 = 1 | row 140 = 1 | row 141 = 1 | row 142 = 1 | row 143 = 1 | row 144 = 1 | row 145 = 1 | row 146 = 1 | row 147 = 1 | row 148 = 1 | row 149 = 1 | row 150 = 1 | row 151 = 1 | row 152 = 1 | row 153 = 1 | row 154 = 1 | row 155 = 1 | row 156 = 1 | row 157 = 1 | row 158 = 1 | row 159 = 1 | row 160 = 1 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 1 | row 166 = 1 | row 167 = 1 | row 168 = 1 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 1 | row 173 = 1 | row 174 = 1 | row 175 = 1 | row 176 = 1 | row 177 = 1 | row 178 = 1 | row 179 = 1 | row 180 = 1 | row 181 = 1 | row 182 = 1 | row 183 = 1 | row 184 = 1 | row 185 = 1 | row 186 = 1 | row 187 = 1 | row 188 = 1 | row 189 = 1 | row 190 = 1 | row 191 = 1 | row 192 = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that the strategies were applied to a set of 4 frozen lung squamous cell carcinomas and 4 adjacent tissues (8 samples total).",
+        "TRUTH_CHECK": "The candidate value assigns all runs to biological replicate 1. However, the paper describes 8 distinct clinical samples (4 tumor, 4 adjacent). Each distinct sample is an independent biological unit and must have its own replicate index.",
+        "COMPLETENESS_CHECK": "The mapping is complete but logically incorrect based on the study design."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 2 | row 6 = 2 | row 7 = 2 | row 8 = 2 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 2 | row 14 = 2 | row 15 = 2 | row 16 = 2 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 2 | row 22 = 2 | row 23 = 2 | row 24 = 2 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 2 | row 30 = 2 | row 31 = 2 | row 32 = 2 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 2 | row 38 = 2 | row 39 = 2 | row 40 = 2 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 2 | row 46 = 2 | row 47 = 2 | row 48 = 2 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 2 | row 54 = 2 | row 55 = 2 | row 56 = 2 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 2 | row 62 = 2 | row 63 = 2 | row 64 = 2 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 2 | row 70 = 2 | row 71 = 2 | row 72 = 2 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 2 | row 78 = 2 | row 79 = 2 | row 80 = 2 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 2 | row 86 = 2 | row 87 = 2 | row 88 = 2 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 2 | row 94 = 2 | row 95 = 2 | row 96 = 2 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 2 | row 102 = 2 | row 103 = 2 | row 104 = 2 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 2 | row 110 = 2 | row 111 = 2 | row 112 = 2 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 2 | row 118 = 2 | row 119 = 2 | row 120 = 2 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 2 | row 126 = 2 | row 127 = 2 | row 128 = 2 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1 | row 133 = 2 | row 134 = 2 | row 135 = 2 | row 136 = 2 | row 137 = 1 | row 138 = 1 | row 139 = 1 | row 140 = 1 | row 141 = 2 | row 142 = 2 | row 143 = 2 | row 144 = 2 | row 145 = 1 | row 146 = 1 | row 147 = 1 | row 148 = 1 | row 149 = 2 | row 150 = 2 | row 151 = 2 | row 152 = 2 | row 153 = 1 | row 154 = 1 | row 155 = 1 | row 156 = 1 | row 157 = 2 | row 158 = 2 | row 159 = 2 | row 160 = 2 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 2 | row 166 = 2 | row 167 = 2 | row 168 = 2 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 1 | row 173 = 2 | row 174 = 2 | row 175 = 2 | row 176 = 2 | row 177 = 1 | row 178 = 1 | row 179 = 1 | row 180 = 1 | row 181 = 2 | row 182 = 2 | row 183 = 2 | row 184 = 2 | row 185 = 1 | row 186 = 1 | row 187 = 1 | row 188 = 1 | row 189 = 2 | row 190 = 2 | row 191 = 2 | row 192 = 2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"technical replicates\" in the MaxQuant and Pinnacle analysis sections, but does not explicitly state the number of technical replicates per sample for the LF and TMT experiments.",
+        "TRUTH_CHECK": "The mapping assigns technical replicate 1 and 2 alternatingly to runs of the same sample. However, the paper does not provide evidence that each sample was run twice as technical replicates.",
+        "COMPLETENESS_CHECK": "The format is correct, but the values are not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 2 | row 10 = 2 | row 11 = 2 | row 12 = 2 | row 13 = 2 | row 14 = 2 | row 15 = 2 | row 16 = 2 | row 17 = 3 | row 18 = 3 | row 19 = 3 | row 20 = 3 | row 21 = 3 | row 22 = 3 | row 23 = 3 | row 24 = 3 | row 25 = 4 | row 26 = 4 | row 27 = 4 | row 28 = 4 | row 29 = 4 | row 30 = 4 | row 31 = 4 | row 32 = 4 | row 33 = 5 | row 34 = 5 | row 35 = 5 | row 36 = 5 | row 37 = 5 | row 38 = 5 | row 39 = 5 | row 40 = 5 | row 41 = 6 | row 42 = 6 | row 43 = 6 | row 44 = 6 | row 45 = 6 | row 46 = 6 | row 47 = 6 | row 48 = 6 | row 49 = 7 | row 50 = 7 | row 51 = 7 | row 52 = 7 | row 53 = 7 | row 54 = 7 | row 55 = 7 | row 56 = 7 | row 57 = 8 | row 58 = 8 | row 59 = 8 | row 60 = 8 | row 61 = 8 | row 62 = 8 | row 63 = 8 | row 64 = 8 | row 65 = 9 | row 66 = 9 | row 67 = 9 | row 68 = 9 | row 69 = 9 | row 70 = 9 | row 71 = 9 | row 72 = 9 | row 73 = 10 | row 74 = 10 | row 75 = 10 | row 76 = 10 | row 77 = 10 | row 78 = 10 | row 79 = 10 | row 80 = 10 | row 81 = 11 | row 82 = 11 | row 83 = 11 | row 84 = 11 | row 85 = 11 | row 86 = 11 | row 87 = 11 | row 88 = 11 | row 89 = 12 | row 90 = 12 | row 91 = 12 | row 92 = 12 | row 93 = 12 | row 94 = 12 | row 95 = 12 | row 96 = 12 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 2 | row 106 = 2 | row 107 = 2 | row 108 = 2 | row 109 = 2 | row 110 = 2 | row 111 = 2 | row 112 = 2 | row 113 = 3 | row 114 = 3 | row 115 = 3 | row 116 = 3 | row 117 = 3 | row 118 = 3 | row 119 = 3 | row 120 = 3 | row 121 = 4 | row 122 = 4 | row 123 = 4 | row 124 = 4 | row 125 = 4 | row 126 = 4 | row 127 = 4 | row 128 = 4 | row 129 = 5 | row 130 = 5 | row 131 = 5 | row 132 = 5 | row 133 = 5 | row 134 = 5 | row 135 = 5 | row 136 = 5 | row 137 = 6 | row 138 = 6 | row 139 = 6 | row 140 = 6 | row 141 = 6 | row 142 = 6 | row 143 = 6 | row 144 = 6 | row 145 = 7 | row 146 = 7 | row 147 = 7 | row 148 = 7 | row 149 = 7 | row 150 = 7 | row 151 = 7 | row 152 = 7 | row 153 = 8 | row 154 = 8 | row 155 = 8 | row 156 = 8 | row 157 = 8 | row 158 = 8 | row 159 = 8 | row 160 = 8 | row 161 = 9 | row 162 = 9 | row 163 = 9 | row 164 = 9 | row 165 = 9 | row 166 = 9 | row 167 = 9 | row 168 = 9 | row 169 = 10 | row 170 = 10 | row 171 = 10 | row 172 = 10 | row 173 = 10 | row 174 = 10 | row 175 = 10 | row 176 = 10 | row 177 = 11 | row 178 = 11 | row 179 = 11 | row 180 = 11 | row 181 = 11 | row 182 = 11 | row 183 = 11 | row 184 = 11 | row 185 = 12 | row 186 = 12 | row 187 = 12 | row 188 = 12 | row 189 = 12 | row 190 = 12 | row 191 = 12 | row 192 = 12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Fraction indices, the right field.",
+        "SOURCE_CHECK": "The paper states that for LF and TMT experiments, twelve concatenated fractions were analyzed.",
+        "TRUTH_CHECK": "The mapping correctly assigns runs to fractions 1-12. The runs are grouped by assay (which corresponds to the fraction) across the different samples.",
+        "COMPLETENESS_CHECK": "Every run is assigned a fraction index following the described experimental design."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "row 1 = P1 | row 2 = P2 | row 3 = P3 | row 4 = P4_5 | row 5 = P1 | row 6 = P2 | row 7 = P3 | row 8 = P4_5 | row 9 = P1 | row 10 = P2 | row 11 = P3 | row 12 = P4_5 | row 13 = P1 | row 14 = P2 | row 15 = P3 | row 16 = P4_5 | row 17 = P1 | row 18 = P2 | row 19 = P3 | row 20 = P4_5 | row 21 = P1 | row 22 = P2 | row 23 = P3 | row 24 = P4_5 | row 25 = P1 | row 26 = P2 | row 27 = P3 | row 28 = P4_5 | row 29 = P1 | row 30 = P2 | row 31 = P3 | row 32 = P4_5 | row 33 = P1 | row 34 = P2 | row 35 = P3 | row 36 = P4_5 | row 37 = P1 | row 38 = P2 | row 39 = P3 | row 40 = P4_5 | row 41 = P1 | row 42 = P2 | row 43 = P3 | row 44 = P4_5 | row 45 = P1 | row 46 = P2 | row 47 = P3 | row 48 = P4_5 | row 49 = P1 | row 50 = P2 | row 51 = P3 | row 52 = P4_5 | row 53 = P1 | row 54 = P2 | row 55 = P3 | row 56 = P4_5 | row 57 = P1 | row 58 = P2 | row 59 = P3 | row 60 = P4_5 | row 61 = P1 | row 62 = P2 | row 63 = P3 | row 64 = P4_5 | row 65 = P1 | row 66 = P2 | row 67 = P3 | row 68 = P4_5 | row 69 = P1 | row 70 = P2 | row 71 = P3 | row 72 = P4_5 | row 73 = P1 | row 74 = P2 | row 75 = P3 | row 76 = P4_5 | row 77 = P1 | row 78 = P2 | row 79 = P3 | row 80 = P4_5 | row 81 = P1 | row 82 = P2 | row 83 = P3 | row 84 = P4_5 | row 85 = P1 | row 86 = P2 | row 87 = P3 | row 88 = P4_5 | row 89 = P1 | row 90 = P2 | row 91 = P3 | row 92 = P4_5 | row 93 = P1 | row 94 = P2 | row 95 = P3 | row 96 = P4_5 | row 97 = P1 | row 98 = P2 | row 99 = P3 | row 100 = P4_5 | row 101 = P1 | row 102 = P2 | row 103 = P3 | row 104 = P4_5 | row 105 = P1 | row 106 = P2 | row 107 = P3 | row 108 = P4_5 | row 109 = P1 | row 110 = P2 | row 111 = P3 | row 112 = P4_5 | row 113 = P1 | row 114 = P2 | row 115 = P3 | row 116 = P4_5 | row 117 = P1 | row 118 = P2 | row 119 = P3 | row 120 = P4_5 | row 121 = P1 | row 122 = P2 | row 123 = P3 | row 124 = P4_5 | row 125 = P1 | row 126 = P2 | row 127 = P3 | row 128 = P4_5 | row 129 = P1 | row 130 = P2 | row 131 = P3 | row 132 = P4_5 | row 133 = P1 | row 134 = P2 | row 135 = P3 | row 136 = P4_5 | row 137 = P1 | row 138 = P2 | row 139 = P3 | row 140 = P4_5 | row 141 = P1 | row 142 = P2 | row 143 = P3 | row 144 = P4_5 | row 145 = P1 | row 146 = P2 | row 147 = P3 | row 148 = P4_5 | row 149 = P1 | row 150 = P2 | row 151 = P3 | row 152 = P4_5 | row 153 = P1 | row 154 = P2 | row 155 = P3 | row 156 = P4_5 | row 157 = P1 | row 158 = P2 | row 159 = P3 | row 160 = P4_5 | row 161 = P1 | row 162 = P2 | row 163 = P3 | row 164 = P4_5 | row 165 = P1 | row 166 = P2 | row 167 = P3 | row 168 = P4_5 | row 169 = P1 | row 170 = P2 | row 171 = P3 | row 172 = P4_5 | row 173 = P1 | row 174 = P2 | row 175 = P3 | row 176 = P4_5 | row 177 = P1 | row 178 = P2 | row 179 = P3 | row 180 = P4_5 | row 181 = P1 | row 182 = P2 | row 183 = P3 | row 184 = P4_5 | row 185 = P1 | row 186 = P2 | row 187 = P3 | row 188 = P4_5 | row 189 = P1 | row 190 = P2 | row 191 = P3 | row 192 = P4_5",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value provides identifiers for the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions 8 clinical samples, with 6 being paired sets and 2 unpaired samples designated as patients 4 and 5 (\"P4/5\").",
+        "TRUTH_CHECK": "The mapping assigns P1, P2, P3, and P4_5 to the runs. However, the paper states there are 8 samples in total (4 tumor and 4 adjacent). The mapping only accounts for 4 distinct individuals (P1, P2, P3, and the combined P4/5), which contradicts the study design of 8 samples from multiple patients. Furthermore, \"P4/5\" is a designation for two unpaired samples, not a single individual.",
+        "COMPLETENESS_CHECK": "The format is correct for a run mapping."
+      }
+    }
+  ]
+}

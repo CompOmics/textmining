@@ -30,7 +30,7 @@ COV = HERE / "three_source_comparison_excluding_PXD001017_v2" / "dataset_coverag
 AGREE = HERE / "matched_prompt_comparison" / "job_966224" / "results" / "field_value_agreement.csv"
 
 import sys
-sys.path.insert(0, str(HERE.parent))
+sys.path.insert(0, str(HERE.parent)); sys.path.insert(0, str(HERE))
 from figure_style import (SOURCE as SOURCE_COLORS, SOURCE_LABEL, COHORT_LABEL, AGENT as AGENT_COLORS, AGENT_LABEL, AGENTS,
                           AGREEMENT, NEUTRAL, style, panel_title, legend_outside, save_composite, save_panels)
 
@@ -185,6 +185,34 @@ def main():
         ax.invert_yaxis(); ax.set_xlim(0, 1); ax.set_xlabel("share of fields populated by both"); ax.grid(False)
         legend_outside(ax, "right"); panel_title(ax, "d")
 
+    # agreement by access cohort (supplementary): matcher tiers per agent, closed vs open
+    agc = shared.groupby(["cohort", "agent", "status"]).size().unstack("status", fill_value=0)
+    agc = agc.div(agc.sum(axis=1), axis=0).reindex(columns=[k for k, _, _ in STATUS], fill_value=0)
+    agc.to_csv(FIG / "value_agreement_by_agent_and_cohort.csv")
+
+    def p_d_cohort(ax):
+        y = np.arange(len(AGENTS)); h = 0.36
+        for j, (c, clab) in enumerate(COHORTS):
+            off = -h / 2 if c == "abstract_only" else h / 2
+            left = np.zeros(len(AGENTS))
+            for k, lab, color in STATUS:
+                v = np.array([agc.loc[(c, a_), k] if (c, a_) in agc.index else 0 for a_ in AGENTS])
+                ax.barh(y + off, v, h, left=left, color=color, edgecolor="white", lw=.5, hatch=HATCH[c], label=lab if j == 1 else None)
+                for yi, l, w in zip(y + off, left, v):
+                    if w >= 0.08:
+                        ax.text(l + w / 2, yi, f"{w:.0%}", ha="center", va="center", fontsize=7, color="white" if k in ("equivalent_value_sets", "no_accepted_overlap_review") else "black")
+                left += v
+            for yi in y:
+                ax.text(-0.02, yi + off, clab.split("-")[0] + "-access", ha="right", va="center", fontsize=7, color="#555555")
+        ax.set_yticks(y); ax.set_yticklabels([AGENT_LABEL[a_] for a_ in AGENTS], fontsize=9); ax.tick_params(axis="y", pad=62)
+        ax.invert_yaxis(); ax.set_xlim(0, 1); ax.set_xlabel("share of fields populated by both (abstract[+M&M] vs +PRIDE)"); ax.grid(False)
+        legend_outside(ax, "right"); panel_title(ax, "")
+
+    fig, ax = plt.subplots(figsize=(8, 4.2))
+    p_d_cohort(ax)
+    save_composite(fig, FIG, "figureS4_agreement_by_access"); plt.close(fig)
+    save_panels(plt, FIG, "figureS4_agreement_by_access", {"a": p_d_cohort}, {"a": (8, 4.2)})
+
     order = list(fc.sort_values("n_datasets_populated", ascending=False).field)   # same order in e and f
 
     def p_s(ax, cohort="abstract_only", letter="a"):
@@ -237,24 +265,65 @@ def main():
     def p_f(ax):
         p_e(ax, "with_methods", "f")
 
+    from draw_source_choice import source_choice_panel, coverage_panel, tier_panel
+
+    def p_src(ax):
+        source_choice_panel(ax, letter="", legend_ncol=7)
+
+    def p_d2(ax):
+        coverage_panel(ax, "d")
+
+    def p_e2(ax):
+        tier_panel(ax, "abstract_only", "e")
+
+    def p_f2(ax):
+        tier_panel(ax, "with_methods", "f")
+
     fig = plt.figure(figsize=(14, 12))
     gs = fig.add_gridspec(3, 2, hspace=0.55, wspace=0.7, height_ratios=[1, 1, 0.8])
     ax_a = fig.add_subplot(gs[0, 0]); ax_b = fig.add_subplot(gs[0, 1])
     p_a(ax_a, legend=False); p_b(ax_b, legend=False)
     fig.canvas.draw()
     xc = (ax_a.get_position().x0 + ax_b.get_position().x1) / 2
-    fig.legend(handles=source_handles(), loc="upper center", bbox_to_anchor=(xc, 0.64), ncol=3, fontsize=8, frameon=False)
-    p_c(fig.add_subplot(gs[1, 0])); p_d(fig.add_subplot(gs[1, 1]))
-    p_e(fig.add_subplot(gs[2, 0])); p_f(fig.add_subplot(gs[2, 1]))
+    ya = ax_a.get_position().y0
+    fig.legend(handles=source_handles(), loc="upper center", bbox_to_anchor=(xc, ya - 0.035), ncol=3, fontsize=8, frameon=False)
+    p_c(fig.add_subplot(gs[1, 0])); p_d2(fig.add_subplot(gs[1, 1]))
+    p_e2(fig.add_subplot(gs[2, 0])); p_f2(fig.add_subplot(gs[2, 1]))
     save_composite(fig, FIG, "figure4"); plt.close(fig)
+    # supplementary: per-field version of e/f
+    fig, ax = plt.subplots(figsize=(9, 12))
+    p_src(ax)
+    save_composite(fig, FIG, "figureS4_source_choice_fields"); plt.close(fig)
+    # supplementary: per-agent population shares by cohort (former 4e/f)
+    fig, axes = plt.subplots(1, 2, figsize=(13, 3.4), gridspec_kw={"wspace": 0.9})
+    p_e(axes[0], "abstract_only", "a"); p_e(axes[1], "with_methods", "b")
+    save_composite(fig, FIG, "figureS4_agents_by_access"); plt.close(fig)
     # supplementary: per-field population, both cohorts
     fig, axes = plt.subplots(2, 1, figsize=(12, 9), gridspec_kw={"hspace": 0.95})
     p_s(axes[0], "abstract_only", "a"); p_s_open(axes[1])
     save_composite(fig, FIG, "figureS4_fields"); plt.close(fig)
     save_panels(plt, FIG, "figureS4_fields", {"a": p_s, "b": p_s_open}, {"a": (11, 4.2), "b": (11, 4.2)})
-    save_panels(plt, FIG, "figure4", {"a": p_a, "b": p_b, "c": p_c, "d": p_d, "e": p_e,
-                                       "f": p_f},
+    # supplementary: e/f decomposed per field
+    from draw_source_choice import field_tier_panel
+
+    def p_ft_closed(ax):
+        field_tier_panel(ax, "abstract_only", "a")
+
+    def p_ft_open(ax):
+        field_tier_panel(ax, "with_methods", "b")
+
+    fig, axes = plt.subplots(1, 2, figsize=(14, 9), gridspec_kw={"wspace": 0.75})
+    p_ft_closed(axes[0]); p_ft_open(axes[1])
+    axes[1].legend(loc="upper center", bbox_to_anchor=(-0.45, -0.06), ncol=5, fontsize=8, frameon=False)
+    save_composite(fig, FIG, "figureS4_matcher_tiers_by_field"); plt.close(fig)
+    save_panels(plt, FIG, "figureS4_matcher_tiers_by_field", {"a": p_ft_closed, "b": p_ft_open}, {"a": (7, 9), "b": (7, 9)})
+    # supplementary: former panel d (matcher tiers vs Lin IC per agent, pooled cohorts)
+    fig, ax = plt.subplots(figsize=(7.5, 3.6)); p_d(ax)
+    save_composite(fig, FIG, "figureS4_matcher_vs_lin"); plt.close(fig)
+    save_panels(plt, FIG, "figure4", {"a": p_a, "b": p_b, "c": p_c, "d": p_d2, "e": p_e2, "f": p_f2},
                 {"a": (6, 3.6), "b": (6, 3.6), "c": (6.5, 3.8), "d": (7.5, 3.6), "e": (6, 3), "f": (6, 3)})
+    save_panels(plt, FIG, "figureS4_source_choice_fields", {"a": p_src}, {"a": (9, 12)})
+    save_panels(plt, FIG, "figureS4_agents_by_access", {"a": p_e, "b": p_f}, {"a": (6, 3), "b": (6, 3)})
     print(f"wrote figure4 png+svg and panels under {FIG}")
 
 

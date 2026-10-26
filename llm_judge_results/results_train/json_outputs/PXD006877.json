@@ -1,0 +1,362 @@
+{
+  "paper_id": "PXD006877",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Haloferax volcanii DS2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism name, which is the correct field.",
+        "SOURCE_CHECK": "The paper repeatedly mentions \"Haloferax volcanii\" and the \"type strain DS2\" as the basis for the reference proteome and the origin of the analyzed strains.",
+        "TRUTH_CHECK": "The experiment analyzes the proteomes of H. volcanii strains.",
+        "COMPLETENESS_CHECK": "Complete. Including the strain identifier \"DS2\" within the species name is acceptable as it specifies the organism."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Whole organism",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the part of the organism analyzed, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the analysis of \"whole proteomes\" and \"whole-cell extracts\" for several datasets (e.g., PXD014974, PXD011056).",
+        "TRUTH_CHECK": "For a unicellular organism like Haloferax volcanii, the whole cell is the equivalent of the whole organism.",
+        "COMPLETENESS_CHECK": "The value is a correct and complete description of the material used for these runs."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "prokaryotic cell",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a biological cell type, which is the right field.",
+        "SOURCE_CHECK": "The paper describes the analysis of Haloferax volcanii, which is an archaeon (a prokaryote).",
+        "TRUTH_CHECK": "The analyzed samples are from H. volcanii cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "strain",
+      "sdrf_column": "Strain",
+      "extracted_value": "LM08",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a strain identifier, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"A double auxotroph for lysine and arginine (LM08) was generated\" in the description of Dataset PXD006877.",
+        "TRUTH_CHECK": "The value LM08 is only used for the runs associated with Dataset PXD006877. The request states that 112 of 112 runs carry this value, but the paper describes many other datasets (PXD000202, PXD007061, PXD009116, PXD011012, etc.) using different strains (e.g., DS2, H26, H53, AF103, FH54). Therefore, this value is wrong for the majority of the runs in the study.",
+        "COMPLETENESS_CHECK": "The value is a simple string, which follows the definition."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "SILAC light K:12C(6)14N(2)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a SILAC label, which is the correct field.",
+        "SOURCE_CHECK": "Dataset PXD006877 describes the use of SILAC with heavy amino acids 13C/15N-lysine and 13C-arginine versus light amino acids.",
+        "TRUTH_CHECK": "The runs belong to the SILAC experiment (PXD006877), where light and heavy versions were used.",
+        "COMPLETENESS_CHECK": "The value specifies the label and the specific isotope composition for the light lysine, which is a correct representation of the \"light\" condition."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "SILAC heavy K:13C(6)15N(2)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the label used for the runs, which is the correct field.",
+        "SOURCE_CHECK": "Dataset PXD006877 describes the use of SILAC with heavy amino acids, specifically 13C/15N-lysine. The reanalysis section further specifies \"Label:13C(6)15N(2) on lysine\".",
+        "TRUTH_CHECK": "The value is correct for the runs associated with dataset PXD006877.",
+        "COMPLETENESS_CHECK": "The value follows the format for a labeled run by specifying the label type and the specific channel/isotope."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "SILAC light R:12C(6)14N(4)",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the use of SILAC in dataset PXD006877, specifically mentioning heavy amino acids 13C/15N-lysine and 13C-arginine, and a \"mock (ddH2O) control\" (light). However, the specific isotopic composition \"12C(6)14N(4)\" for the light arginine is not stated in the text.",
+        "TRUTH_CHECK": "The value describes the light channel of a SILAC experiment mentioned in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the general format for a label channel."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "SILAC medium R:13C(6)14N(4)",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a SILAC label, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes SILAC for dataset PXD006877, using 13C/15N-lysine (+8 Da) and 13C-arginine (+6 Da). The specific isotopic composition \"13C(6)14N(4)\" for arginine is not stated in the text.",
+        "TRUTH_CHECK": "The paper mentions 13C-arginine (+6 Da), but the specific chemical formula provided in the candidate value is not in the text.",
+        "COMPLETENESS_CHECK": "The value follows the general format for a label channel."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002634;NT=Q Exactive Plus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass spectrometer model, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"Q Exactive Plus\" multiple times (e.g., in the descriptions of datasets PXD006877, PXD010824, PXD011012, PXD011015, and PXD011050).",
+        "TRUTH_CHECK": "The value is correct for the runs, as the Q Exactive Plus was used for several of the analyzed datasets.",
+        "COMPLETENESS_CHECK": "The value follows the required key-value format and matches the model name in the text."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "Trypsin is mentioned as the digestion agent for multiple datasets (e.g., PXD000202, PXD006877, PXD007061, PXD009116, PXD011012, PXD011050, PXD011218, PXD013046, PXD014974).",
+        "TRUTH_CHECK": "The related columns indicate modifications (Methylthio, SILAC labels) that correspond to dataset PXD006877, which used trypsin.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "NT=HCD;AC=MS:1002481",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragmentation method, the right field.",
+        "SOURCE_CHECK": "The paper mentions HCD fragmentation for several datasets, including PXD011012 and PXD011050, which used the Q Exactive Plus.",
+        "TRUTH_CHECK": "The runs are associated with the Q Exactive Plus and a collision energy of 27% NCE, which matches the HCD settings described for dataset PXD011050.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "27% NCE",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A collision energy value, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"normalized collision energy of 30\" for PXD011012 and \"normalized collision energy of 27\" for PXD011050.",
+        "TRUTH_CHECK": "The value \"27% NCE\" is only correct for runs associated with dataset PXD011050. It is not correct for the 112 runs if they include other datasets (like PXD011012 which used 30).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods explicitly describe \"mass spectrometry (MS) based proteomics\" and various LC-MS/MS workflows.",
+        "TRUTH_CHECK": "The value correctly describes the nature of the experiments for all listed runs.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Methylthio;AC=UNIMOD:39;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states for dataset PXD006877 that \"Methylthio was included as fixed modification\" and that cysteine side chains were blocked by methyl methanethiosulfonate (MMTS).",
+        "TRUTH_CHECK": "The value is correct for the runs associated with dataset PXD006877.",
+        "COMPLETENESS_CHECK": "Complete, including name, residue, and fixed status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Label:13C(6)15N(2);AC=UNIMOD:259;TA=K;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The \"Protein database search for the reanalysis within the ArcPP\" section explicitly lists \"Label:13C(6)15N(2) on lysine\" as a variable modification for PXD006877.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with dataset PXD006877.",
+        "COMPLETENESS_CHECK": "The value follows the required format including name, residues, and modification status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Label:13C(6);AC=UNIMOD:259;TA=R;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The \"Protein database search for the reanalysis within the ArcPP\" section states that for PXD006877, \"Label:13C(6) on arginine\" was included as a variable modification.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with dataset PXD006877.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, AC, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes multiple datasets (PXD000202, PXD006877, etc.) with various biological replicate counts (triplicates, duplicates, etc.).",
+        "TRUTH_CHECK": "The mapping assigns every single run across four different samples to biological replicate 1. This implies all 112 runs come from a single biological unit, which contradicts the paper's description of multiple biological replicates for each dataset.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes multiple datasets with biological replicates (e.g., PXD000202, PXD006877, PXD011012), but does not explicitly mention technical replicates for the runs.",
+        "TRUTH_CHECK": "The mapping assigns index 1 to all runs. Since no technical replicates are mentioned, each run is treated as the first (and only) measurement of its respective material.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value, following the definition that a material measured once gets 1."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "row 1 = 1 | row 2 = 2 | row 3 = 3 | row 4 = 4 | row 5 = 5 | row 6 = 6 | row 7 = 7 | row 8 = 8 | row 9 = 9 | row 10 = 10 | row 11 = 11 | row 12 = 12 | row 13 = 13 | row 14 = 14 | row 15 = 1 | row 16 = 2 | row 17 = 3 | row 18 = 4 | row 19 = 5 | row 20 = 6 | row 21 = 7 | row 22 = 8 | row 23 = 9 | row 24 = 10 | row 25 = 11 | row 26 = 12 | row 27 = 13 | row 28 = 14 | row 29 = 1 | row 30 = 2 | row 31 = 3 | row 32 = 4 | row 33 = 5 | row 34 = 6 | row 35 = 7 | row 36 = 8 | row 37 = 9 | row 38 = 10 | row 39 = 11 | row 40 = 12 | row 41 = 13 | row 42 = 14 | row 43 = 1 | row 44 = 2 | row 45 = 3 | row 46 = 4 | row 47 = 5 | row 48 = 6 | row 49 = 7 | row 50 = 8 | row 51 = 9 | row 52 = 10 | row 53 = 11 | row 54 = 12 | row 55 = 13 | row 56 = 14 | row 57 = 1 | row 58 = 2 | row 59 = 3 | row 60 = 4 | row 61 = 5 | row 62 = 6 | row 63 = 7 | row 64 = 8 | row 65 = 9 | row 66 = 10 | row 67 = 11 | row 68 = 12 | row 69 = 13 | row 70 = 14 | row 71 = 1 | row 72 = 2 | row 73 = 3 | row 74 = 4 | row 75 = 5 | row 76 = 6 | row 77 = 7 | row 78 = 8 | row 79 = 9 | row 80 = 10 | row 81 = 11 | row 82 = 12 | row 83 = 13 | row 84 = 14 | row 85 = 1 | row 86 = 2 | row 87 = 3 | row 88 = 4 | row 89 = 5 | row 90 = 6 | row 91 = 7 | row 92 = 8 | row 93 = 9 | row 94 = 10 | row 95 = 11 | row 96 = 12 | row 97 = 13 | row 98 = 14 | row 99 = 1 | row 100 = 2 | row 101 = 3 | row 102 = 4 | row 103 = 5 | row 104 = 6 | row 105 = 7 | row 106 = 8 | row 107 = 9 | row 108 = 10 | row 109 = 11 | row 110 = 12 | row 111 = 13 | row 112 = 14",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "Dataset PXD006877 describes peptides fractionated into 14 fractions by strong cation exchange chromatography (SCX).",
+        "TRUTH_CHECK": "The mapping correctly assigns fraction indices 1-14 to the runs of each sample, matching the 14 fractions described for PXD006877.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[growth condition]",
+      "extracted_value": "control",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a growth/treatment condition, which is appropriate for a characteristics column.",
+        "SOURCE_CHECK": "The paper describes a \"mock (ddH2O) control\" for the hypochlorite stress experiment (Dataset PXD006877).",
+        "TRUTH_CHECK": "The value \"control\" correctly identifies the group not treated with NaOCl.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[growth condition]",
+      "extracted_value": "2.5 mM NaOCl",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a growth/treatment condition, which is the correct content for a characteristics[growth condition] column.",
+        "SOURCE_CHECK": "The paper states that cells were treated with \"2.5 mM NaOCl\" in the description of dataset PXD006877.",
+        "TRUTH_CHECK": "The value correctly identifies the treatment condition for the runs associated with the hypochlorite stress experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

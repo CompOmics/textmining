@@ -1,0 +1,226 @@
+{
+  "paper_id": "PXD004987",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"human substantia nigra\" and \"human subjects\", which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analyzed samples are from human subjects.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "NT=Brain;AC=BTO:0000142",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper mentions \"human post mortem brain tissue\" and \"human brain tissue\".",
+        "TRUTH_CHECK": "The samples were isolated from the substantia nigra of the brain.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the health status of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that subjects had \"no history of neurological or neurodegenerative diseases and lacking neuropathological abnormalities\".",
+        "TRUTH_CHECK": "The subjects are healthy, so the value is right for the runs.",
+        "COMPLETENESS_CHECK": "The value \"normal\" is the correct SDRF controlled term for healthy subjects."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a workflow using spectral counting for relative quantification and does not mention any chemical labels (TMT, SILAC, etc.), which allows the inference of a label-free experiment.",
+        "TRUTH_CHECK": "The runs are label-free.",
+        "COMPLETENESS_CHECK": "Complete. \"label free sample\" is the correct SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=LTQ Orbitrap Elite;AC=MS:1001910",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Orbitrap Elite",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states the instrument used was an \"Orbitrap Elite\".",
+        "TRUTH_CHECK": "The paper specifies \"Orbitrap Elite\", not \"LTQ Orbitrap Elite\".",
+        "COMPLETENESS_CHECK": "The value contains a drift by adding \"LTQ\" to the model name."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"Trypsin was diluted in 50 mM ammonium bicarbonate and was added 1:25 (v/v) to the samples.\"",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of all samples analyzed in the MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a global proteomics analysis using LC-MS/MS, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the proteomics experiment performed on the neuromelanin granules and control samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The methods section states \"The peptide mass tolerance was set to 5 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it.",
+        "COMPLETENESS_CHECK": "The value follows the definition format including the unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.4 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods state \"the fragment mass tolerance was 0.4 Da\".",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it.",
+        "COMPLETENESS_CHECK": "Complete, follows the required format."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "OEI15202.raw = 1 | OEI15208.raw = 1 | OEI15216.raw = 1 | OEI15218.raw = 1 | OEI15224.raw = 1 | OEI15234.raw = 1 | OEI16007.raw = 1 | OEI16013.raw = 1 | OEI16027.raw = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that samples were obtained from five human subjects.",
+        "TRUTH_CHECK": "The runs are derived from different samples (Sample1 through Sample9), which correspond to the five subjects and their respective controls (NM granules and control samples). These are independent biological units and should be assigned distinct biological replicate indices.",
+        "COMPLETENESS_CHECK": "The mapping assigns the same index (1) to all runs, which is incorrect for independent biological samples."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "OEI15202.raw = 1 | OEI15208.raw = 1 | OEI15216.raw = 1 | OEI15218.raw = 1 | OEI15224.raw = 1 | OEI15234.raw = 1 | OEI16007.raw = 1 | OEI16013.raw = 1 | OEI16027.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes measurements of samples and a mixture to estimate technical variance, but does not state that any individual sample was measured multiple times.",
+        "TRUTH_CHECK": "Each run is assigned index 1, which is correct for materials measured once.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value following the definition."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "OEI15202.raw = 1 | OEI15208.raw = 1 | OEI15216.raw = 1 | OEI15218.raw = 1 | OEI15224.raw = 1 | OEI15234.raw = 1 | OEI16007.raw = 1 | OEI16013.raw = 1 | OEI16027.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is for fraction indices, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a standard LC-MS/MS workflow without any offline fractionation steps.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned fraction 1.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned the value 1."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "NumberOfMissedCleavages",
+      "extracted_value": "1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of missed cleavages, which is a standard search parameter.",
+        "SOURCE_CHECK": "The methods state \"one possible missed cleavage site\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was the parameter used for the search.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

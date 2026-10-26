@@ -1,0 +1,447 @@
+{
+  "paper_id": "PXD013543",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Rattus norvegicus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a scientific name for an organism, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"Male Wistar rats\" were used and the search database used \"Rattus norvegicus taxonomy\".",
+        "TRUTH_CHECK": "The proteins analyzed in the experiment are from the rats used in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "left ventricle",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that \"Heart tissue was dissected, and then the left ventricle (LV) was removed\".",
+        "TRUTH_CHECK": "The proteomics analysis was performed on the left ventricle samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "characteristics[disease]",
+      "extracted_value": "obesity",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease condition of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that the study evaluated myocardial protein expression in \"healthy and obese rats\" and used a \"diet-induced obesity model\".",
+        "TRUTH_CHECK": "The runs carrying this value are from the obese group (Western diet).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "strain",
+      "sdrf_column": "characteristics[strain]",
+      "extracted_value": "Wistar",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a rat strain, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"Male Wistar rats were established in two groups\".",
+        "TRUTH_CHECK": "The runs used Wistar rats.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "characteristics[material type]",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"Heart tissue was dissected, and then the left ventricle (LV) was removed\", supporting the inference of tissue.",
+        "TRUTH_CHECK": "The analysed material for the runs is the left ventricle of the heart.",
+        "COMPLETENESS_CHECK": "Complete and follows the controlled vocabulary."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"shotgun proteomics with label-free quantification\" in the abstract and \"shotgun proteomics followed by label-free quantification\" in the methods.",
+        "TRUTH_CHECK": "The runs used a label-free approach.",
+        "COMPLETENESS_CHECK": "The value \"label free sample\" is the correct SDRF term for label-free runs."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Q-Exactive HF Hybrid quadrupole-Orbitrap mass spectrometer (Thermo Fisher Scientific)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the use of a \"Q-Exactive HF Hybrid quadrupole-Orbitrap mass spectrometer (Thermo Fisher Scientific)\".",
+        "TRUTH_CHECK": "The instrument was used for the shotgun proteomics analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease used for protein digestion, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"digested in-gel with trypsin\" for 2-DE and \"digested using sequencing grade trypsin\" for shotgun proteomics.",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion in both proteomic approaches.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "comment[fragmentation method]",
+      "extracted_value": "HCD",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the right field.",
+        "SOURCE_CHECK": "The paper does not explicitly name the fragmentation method for the shotgun proteomics (Q-Exactive HF), but it provides a collision energy of 30% (in related columns) and uses a Q-Exactive HF, which typically uses HCD. However, the instructions state that the content must be stated in the paper or be an allowed inference. HCD is not listed as an allowed inference from the instrument model alone (only mass_analyzer is).",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "comment[collision energy]",
+      "extracted_value": "30%",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy percentage, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state a collision energy value for any of the MS experiments.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "ionization_type",
+      "sdrf_column": "comment[ionization type]",
+      "extracted_value": "nano-electrospray ionization",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the ionization method, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions a \"Dionex Ultimate 3000 RSLC nano-liquid chromatography\" coupled to the Q-Exactive HF; nano-LC is a standard basis for inferring nanoESI.",
+        "TRUTH_CHECK": "The shotgun proteomics runs used this ionization type.",
+        "COMPLETENESS_CHECK": "The value is a descriptive term for nanoESI."
+      }
+    },
+    {
+      "annotation_type": "acquisition_method",
+      "sdrf_column": "comment[acquisition method]",
+      "extracted_value": "data-dependent acquisition (DDA)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the MS acquisition scheme, which is the right field.",
+        "SOURCE_CHECK": "The paper describes \"shotgun proteomics\" using a Q-Exactive HF, which is a standard DDA workflow.",
+        "TRUTH_CHECK": "The shotgun proteomics runs used this acquisition method.",
+        "COMPLETENESS_CHECK": "The value provides the correct SDRF term \"DDA\"."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "comment[precursor mass tolerance]",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section for shotgun proteomics states \"A precursor mass tolerance of 10 ppm... were applied.\"",
+        "TRUTH_CHECK": "The value is correct for the shotgun proteomics runs using the Q-Exactive HF.",
+        "COMPLETENESS_CHECK": "Complete, including the value and the unit as printed."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "comment[fragment mass tolerance]",
+      "extracted_value": "0.01 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The \"Shotgun proteomics\" section states a fragment ion mass tolerance of 0.01 Da.",
+        "TRUTH_CHECK": "The value is correct for the runs using the Q-Exactive HF instrument.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and the unit."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[compound]",
+      "extracted_value": "RapiGest",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"RapiGest\" is a detergent/surfactant used during protein digestion.",
+        "SOURCE_CHECK": "The methods state that samples were incubated with RapiGest (0.05% w/v) before digestion.",
+        "TRUTH_CHECK": "RapiGest is a processing reagent used in the sample preparation step, not a biological or experimental characteristic of the sample or the MS run itself.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[concentration of compound]",
+      "extracted_value": "0.05% w/v final concentration of RapiGest",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the concentration of a chemical additive (RapiGest) used during sample preparation.",
+        "SOURCE_CHECK": "The methods state \"a fixed amount of protein from each sample (100 μg) was initially incubated at 80 °C with RapiGest (0.05% w/v final concentration, Waters, Manchester, UK)\".",
+        "TRUTH_CHECK": "RapiGest is a detergent used for protein digestion in the shotgun proteomics workflow, not a compound whose concentration is a characteristic of the biological sample or the experimental condition being studied.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of biological replicates]",
+      "extracted_value": "8 per group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the number of biological replicates, which matches the column name.",
+        "SOURCE_CHECK": "The paper states that for shotgun proteomics, \"LV samples from eight individuals in each of the control and WD groups (non-pooled samples) were used\".",
+        "TRUTH_CHECK": "The value \"8 per group\" correctly describes the number of biological replicates used for the shotgun proteomics runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of samples]",
+      "extracted_value": "16",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of samples, which fits the column name \"characteristics[number of samples]\".",
+        "SOURCE_CHECK": "The paper states that for shotgun proteomics, \"LV samples from eight individuals in each of the control and WD groups (non-pooled samples) were used\", totaling 16 samples.",
+        "TRUTH_CHECK": "The value 16 correctly represents the total number of individual samples used in the shotgun proteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of technical replicates]",
+      "extracted_value": "3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing the count of technical replicates, which is appropriate for a column named \"number of technical replicates\".",
+        "SOURCE_CHECK": "The paper states in the 2-DE section: \"the pool was analysed as three technical replicates.\"",
+        "TRUTH_CHECK": "The value correctly describes the technical replication for the 2-DE runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "in-solution digestion with trypsin following reduction with DTT and alkylation with IAA; digestion with sequencing grade trypsin (Proteins) at an enzyme:protein ratio of 1:50 overnight at 37 °C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes sample preparation (digestion, reduction, alkylation), which is a technical process, not a \"sample treatment\" (which usually refers to the experimental condition or intervention like the diet).",
+        "SOURCE_CHECK": "The paper mentions \"sequencing grade trypsin\" and \"in-solution digestion\", but it does not mention DTT, IAA, or the specific enzyme:protein ratio of 1:50.",
+        "TRUTH_CHECK": "The content is a mix of some printed details and hallucinated technical parameters.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "left ventricle tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the anatomical source of the specimen, which is appropriate for a specimen characteristics column.",
+        "SOURCE_CHECK": "The methods state \"Heart tissue was dissected, and then the left ventricle (LV) was removed\", supporting the value.",
+        "TRUTH_CHECK": "The analyzed material for both the 2-DE and shotgun proteomics was the left ventricle of the heart.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "40°C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which matches the column name.",
+        "SOURCE_CHECK": "The paper mentions a room temperature of 24 °C ± 2 °C and a cryostat cooled to −20 °C, but it does not mention 40°C.",
+        "TRUTH_CHECK": "The value 40°C is not associated with any part of the described experiment.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[experiment]",
+      "extracted_value": "Two proteomic approaches: 2-DE followed by MS identification, and shotgun proteomics with label-free quantification.",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a general description of the experimental strategy, which is appropriate for a comment field.",
+        "SOURCE_CHECK": "The abstract and methods explicitly state the use of two approaches: 2-DE with MS identification and shotgun proteomics with label-free quantification.",
+        "TRUTH_CHECK": "The value correctly describes the proteomic experiments performed in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[gradient time]",
+      "extracted_value": "90 min",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which fits the column name \"comment[gradient time]\".",
+        "SOURCE_CHECK": "The paper does not mention a gradient time of 90 minutes or any specific LC gradient duration for either the 2-DE or shotgun proteomics workflows.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Complete format for a time duration."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[number of missed cleavages]",
+      "extracted_value": "1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of missed cleavages, which is the correct information for a column named \"comment[number of missed cleavages]\".",
+        "SOURCE_CHECK": "The paper states \"one permitted miscleavage\" for the 2-DE MS analysis and \"one missed cleavage was allowed\" for the shotgun proteomics.",
+        "TRUTH_CHECK": "The value is correct for the runs in this study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[separation]",
+      "extracted_value": "C18 reversed-phase nano-LC using trap column and analytical column; gradient 3.8–50% buffer B over 90 min",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the LC separation parameters, which is appropriate for a column named \"comment[separation]\".",
+        "SOURCE_CHECK": "The paper mentions \"Dionex Ultimate 3000 RSLC nano-liquid chromatography\" and \"LC-20AT; Shimadzu\", but it does not state the C18 chemistry, the use of a trap column, the specific gradient (3.8–50% buffer B), or the 90 min duration.",
+        "TRUTH_CHECK": "The content is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    }
+  ]
+}

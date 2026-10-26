@@ -1,0 +1,149 @@
+{
+  "accession" : "PXD030403",
+  "title" : "Thyroid Hormone Dependent Transcriptional Programming by TRb Requires SWI/SNF Chromatin Remodelers",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Transcriptional regulation in response to thyroid hormone (3,5,3´-triiodo-L-thyronine, T3) is a dynamic and cell-type specific process that maintains cellular homeostasis and identity in all tissues. However, our understanding of the mechanisms of thyroid hormone receptor (TR) actions at the molecular level are actively being refined. We used an integrated genomics approach to profile and characterize the cistrome of TRb, map changes in chromatin accessibility, and capture the transcriptomic changes in response to T3 in normal human thyroid cells. There are significant shifts in TRb genomic occupancy in response to T3, which are associated with differential chromatin accessibility, and differential recruitment of SWI/SNF chromatin remodelers. We further demonstrate selective recruitment of BAF and PBAF SWI/SNF complexes to TRb binding sites, revealing novel differential functions in regulating chromatin accessibility and gene expression. Our findings highlight three distinct modes of TRb interaction with chromatin and coordination of coregulator activity.",
+  "sampleProcessingProtocol" : "To enrich biotinylated proteins, 1 mg of nuclear extract was incubated for 30 minutes rotating at room temperature with 100 uL of streptavidin-coated magnetic beads. The supernatant was removed, and the beads were washed three times with high salt RIPA buffer (100 mM Tris pH 9.0, 500 mM LiCl, 150 mM NaCl, 1% Igepal/NP-40, 1% deoxycholic acid). Washed beads were then resuspended in Laemmli sample buffer and boiled for 10 minutes to denature and release the biotinylated proteins from the beads. The eluents were loaded onto 10% Tris-Glycine gels, and separated by SDS-PAGE. Gels were then silver stained prior to band excision for mass spectrometry. LC-MS was performed using an LTQ-Orbitrap instrument.",
+  "dataProcessingProtocol" : "Data acquired by mass spectrometry was quantified using MaxQuant label-free quantification (LFQ) workflow, and LFQ values were used to calculate differential enrichment of identified proteins between experimental conditions using the DEP Bioconductor package. Proteins with a p-value of <0.05 and a log2 fold change greater than 1 or less than -1 were considered differentially enriched. Proteins found to be enriched in the empty vector control group were excluded from wildtype and mutant TR datasets and were not used for downstream analysis.",
+  "projectTags" : [ ],
+  "keywords" : [ "Transcription", "Coregulators", "Thyroid hormone receptor", "Nuclear receptor" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2021-12-14",
+  "publicationDate" : "2022-04-04",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Noelle",
+    "lastName" : "Gillis",
+    "identifier" : "2396711",
+    "affiliation" : "University of Vermont",
+    "email" : "negillis@uvm.edu",
+    "country" : "United States",
+    "orcid" : "",
+    "name" : "Noelle Gillis",
+    "id" : "2396711"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Frances",
+    "lastName" : "Carr",
+    "identifier" : "2331956",
+    "affiliation" : "Department of Pharmacology, University of Vermont Larner College of Medicine",
+    "email" : "fcarr@uvm.edu",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Frances Carr",
+    "id" : "2331956"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000449",
+    "name" : "LTQ Orbitrap"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000305",
+    "name" : "Gel-based experiment"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000433",
+    "name" : "Affinity purification coupled with mass spectrometry proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000440",
+    "name" : "Normalized Spectral Abundance Factor - NSAF"
+  } ],
+  "countries" : [ "United States" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0001379",
+      "name" : "thyroid gland"
+    }, {
+      "cvLabel" : "CL",
+      "accession" : "CL:0002257",
+      "name" : "epithelial cell of thyroid gland"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:50",
+      "name" : "thyroid gland disease"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0002257",
+    "name" : "Epithelial cell of thyroid gland"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0001379",
+    "name" : "Thyroid gland"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:50",
+    "name" : "Thyroid gland disease"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Gillis NE, Boyd JR, Tomczak JA, Frietze S, Carr FE. Thyroid hormone dependent transcriptional programming by TRβ requires SWI/SNF chromatin remodelers. Nucleic Acids Res. 2022 50(3):1382-1395",
+    "pubmedID" : 35037038,
+    "doi" : "10.1093/nar/gkab1287"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:01885",
+    "name" : "biotinylated residue"
+  } ],
+  "totalFileDownloads" : 2729,
+  "botCount" : 492,
+  "hubCount" : 2206,
+  "organicCount" : 31,
+  "otherOmicsLinks" : [ "geo:GSE168954" ]
+}

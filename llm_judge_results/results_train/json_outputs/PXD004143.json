@@ -1,0 +1,277 @@
+{
+  "paper_id": "PXD004143",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the use of \"human post-mortem brain samples\", which is an allowed inference for homo sapiens.",
+        "TRUTH_CHECK": "The analyzed brain samples are human.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "dorsolateral prefrontal cortex",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an organism part, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that brain tissue was obtained from the \"dorsolateral prefrontal cortex; broadman area 9\".",
+        "TRUTH_CHECK": "The runs are derived from these brain samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "normal",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The paper describes \"two cases from the Emory Brain Bank\" but does not state any disease or pathology for these human post-mortem brain samples.",
+        "TRUTH_CHECK": "There is no evidence in the text that the subjects were healthy or had a specific disease.",
+        "COMPLETENESS_CHECK": "The term \"normal\" is the SDRF convention for healthy subjects, but it is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a developmental stage, which is the right field.",
+        "SOURCE_CHECK": "The paper describes \"post-mortem human brain\" samples from the \"Emory Brain Bank\"; while \"adult\" is not verbatim, it is a standard allowed inference for human post-mortem brain donors unless otherwise specified as pediatric.",
+        "TRUTH_CHECK": "The value is correct for the human brain samples analyzed.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"label-free ion intensity measurements\" in the abstract.",
+        "TRUTH_CHECK": "The runs listed are the discovery proteomics runs (LysC only and LysC/Trypsin) which were analyzed using label-free measurements.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001911;NT=Q Exactive",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper mentions a \"Thermo Orbitrap Fusion mass spectrometer\" for the main LC-MS/MS analysis.",
+        "TRUTH_CHECK": "The runs listed (LysC only and LysC/Trypsin) correspond to the main discovery proteomics experiment, which used the Orbitrap Fusion, not a Q Exactive. The Q Exactive was used only for validation of synthetic standards and PRM.",
+        "COMPLETENESS_CHECK": "The value is a model name, but it is the wrong instrument for these runs."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state samples were digested with trypsin (and LysC).",
+        "TRUTH_CHECK": "The runs listed include both \"LysConly\" and \"LyscTrypsin\" samples. For the \"LyscTrypsin\" runs, Trypsin is correct. For the \"LysConly\" runs, only LysC was used, making Trypsin wrong for those specific runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes high-resolution mass spectrometry-based proteomics using a bottom-up workflow (digestion and LC-MS/MS), which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the proteomics experiment performed on the brain samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"static modification for carbamidomethyl Cys (+57.0215 Da)\".",
+        "TRUTH_CHECK": "The modification was used for the database search of the MS runs.",
+        "COMPLETENESS_CHECK": "Complete, including name, residue, and fixed status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=deamidated;AC=UNIMOD:7;TA=N,Q;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"dynamic modifications for... deaminated Asn and Gln\", which corresponds to deamidation on N and Q.",
+        "TRUTH_CHECK": "The modification was used in the database search for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, AC, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a database search modification, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"dynamic modifications for oxidized Met (+15.9949 Da)\".",
+        "TRUTH_CHECK": "The modification was used for the database search of the MS/MS spectra.",
+        "COMPLETENESS_CHECK": "The value follows the required format including NT, MT, TA, and AC."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;AC=UNIMOD:21;TA=STY;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a protein modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper lists dynamic modifications for oxidized Met, deaminated Asn and Gln, and protein N-terminal acetylation, as well as a static modification for carbamidomethyl Cys. Phosphorylation is not mentioned.",
+        "TRUTH_CHECK": "Phosphorylation was not searched in the database search for these runs.",
+        "COMPLETENESS_CHECK": "Not applicable, as the modification is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The \"Database Searching\" section states \"mass tolerance of precursor ions (±10 ppm)\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.5Da",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "0.05 Da",
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The \"Database Searching\" section states \"0.05 Da mass tolerance for product ions\".",
+        "TRUTH_CHECK": "The value 0.5 Da is incorrect; the paper specifies 0.05 Da.",
+        "COMPLETENESS_CHECK": "The value follows the format but contains a wrong detail."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "e0590_01_LysConly.raw = 1 | os02252_01_LysConly.raw = 2 | e0590_lt_01_LyscTrypsin = 3 | OS02252_01_LyscTrypsin.raw = 4",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Fraction indices, the right field.",
+        "SOURCE_CHECK": "The paper describes ERLIC fractionation where 40 fractions were pooled into 20 fractions.",
+        "TRUTH_CHECK": "The runs listed are from different samples (Sample 1, 2, 3, 4) and different digestion conditions (LysC only vs LysC/Trypsin). Fraction identifiers must be assigned per sample. Assigning 1, 2, 3, 4 across different samples is incorrect.",
+        "COMPLETENESS_CHECK": "The mapping is complete but logically wrong."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "e0590_01_LysConly.raw = 1 | os02252_01_LysConly.raw = 2 | e0590_lt_01_LyscTrypsin = 1 | OS02252_01_LyscTrypsin.raw = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value provides identifiers for the human subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that proteomics was performed for \"two human post-mortem brain samples\" from \"two cases from the Emory Brain Bank\".",
+        "TRUTH_CHECK": "The mapping correctly groups the runs by sample: runs starting with 'e0590' belong to the first case (individual 1) and runs starting with 'os02252' belong to the second case (individual 2), regardless of the digestion method (LysC only or LysC/Trypsin).",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    }
+  ]
+}

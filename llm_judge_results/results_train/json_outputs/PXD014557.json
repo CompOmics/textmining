@@ -1,0 +1,753 @@
+{
+  "paper_id": "PXD014557",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes postmortem human brain tissue from AD and control cases, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analysed hippocampal tissues are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Brain",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ/organism part, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"human brain tissue\" in the highlights and \"hippocampal tissues\" in the methods.",
+        "TRUTH_CHECK": "The samples were microdissected from the hippocampus, which is part of the brain.",
+        "COMPLETENESS_CHECK": "The value is a correct, though broad, term for the tissue."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Hippocampus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the right field.",
+        "SOURCE_CHECK": "The paper states that frozen hippocampal tissues were obtained.",
+        "TRUTH_CHECK": "The analyzed samples were microdissected from the hippocampus (specifically the dentate gyrus).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the health status of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a control group of \"neurologically healthy control cases\".",
+        "TRUTH_CHECK": "The runs carrying this value belong to the control group.",
+        "COMPLETENESS_CHECK": "The SDRF term for healthy subjects is \"normal\" (lowercase)."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Alzheimer's Disease",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects, which is the right field.",
+        "SOURCE_CHECK": "The paper repeatedly mentions \"Alzheimer disease (AD)\" and \"AD cases\".",
+        "TRUTH_CHECK": "The runs are derived from subjects with AD.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"gender\" in the Statistical Analysis section and refers to \"supplemental Table S1\" for demographic characteristics, but the actual sex of the subjects is not provided in the provided text.",
+        "TRUTH_CHECK": "The content is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The value follows the format, but is unsupported."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"gender\" in the Statistical Analysis section as a demographic characteristic compared between groups, but it does not state the sex of any individual subject.",
+        "TRUTH_CHECK": "The sex of the subjects is not provided in the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT126",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that peptides were labeled with \"TMT10plex 126–131Da\", which supports the use of TMT126.",
+        "TRUTH_CHECK": "The runs are part of a TMT10plex experiment where each sample was assigned a different tag; TMT126 is one of those tags.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that peptides were labeled with \"TMT10plex 126–131Da\".",
+        "TRUTH_CHECK": "TMT127C is one of the standard channels in a TMT10plex kit (126, 127N, 127C, 128N, 128C, 129N, 129C, 130N, 130C, 131).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value refers to a TMT channel, which is the correct information for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled with \"TMT10plex 126–131Da\". While the specific channel \"TMT127N\" is not written verbatim, it is a standard component of the TMT10plex kit mentioned.",
+        "TRUTH_CHECK": "The runs are part of a TMT10plex experiment where 10 different tags were used across the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct field for labeling.",
+        "SOURCE_CHECK": "The paper states that peptides were labeled with \"TMT10plex 126–131Da\".",
+        "TRUTH_CHECK": "TMT128C is one of the standard channels within the TMT10plex 126-131 set used in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled with \"TMT10plex 126–131Da\", which implies the use of the standard 10-plex TMT kit channels.",
+        "TRUTH_CHECK": "TMT128N is one of the standard channels in the TMT10plex kit (126, 127N, 127C, 128N, 128C, 129N, 129C, 130N, 130C, 131).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled with \"TMT10plex 126–131Da\", which implies the use of the 10 channels in that set.",
+        "TRUTH_CHECK": "The runs are part of a TMT10plex experiment where each sample is assigned a specific channel.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that peptides were labeled with \"ten different amine-reactive isobaric tandem mass tags (TMTs) (TMT10plex 126–131Da, Thermo Scientific)\".",
+        "TRUTH_CHECK": "TMT129N is one of the standard channels within the TMT10plex 126-131Da kit used in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT130C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that peptides were labeled with \"ten different amine-reactive isobaric tandem mass tags (TMTs) (TMT10plex 126–131Da, Thermo Scientific)\".",
+        "TRUTH_CHECK": "TMT130C is one of the standard channels in a TMT10plex set (126, 127N, 127C, 128N, 128C, 129N, 129C, 130N, 130C, 131).",
+        "COMPLETENESS_CHECK": "The value follows the required format for a labeled run."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT130N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that peptides were labeled with \"TMT10plex 126–131Da\", which implies the use of the standard 10-plex TMT channel set.",
+        "TRUTH_CHECK": "The runs are part of a TMT10plex experiment; TMT130N is one of the standard channels in that set.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT131",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that peptides were labeled with \"TMT10plex 126–131Da\", which includes the 131 channel.",
+        "TRUTH_CHECK": "The runs are part of the TMT10plex experiment described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001911;NT=Q Exactive",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Q Exactive HF",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state that LC-MS/MS was performed using a hybrid Q-Exactive-HF mass spectrometer.",
+        "TRUTH_CHECK": "The paper specifies the HF model, not the base Q Exactive.",
+        "COMPLETENESS_CHECK": "Drift to the base model of the same family."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state the tissue was \"digested first by Lys-C... prior to trypsin digestion\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the proteins in the MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a technology type, the right field.",
+        "SOURCE_CHECK": "The paper describes an \"in-depth proteomic analysis\" using LC-MS/MS, which allows the inference of this term.",
+        "TRUTH_CHECK": "The runs are part of the MS-based proteomics experiment described.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Fixed modifications were... carbamidomethylation on cysteine residues\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residue, and fixed status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a searched modification, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"a variable modification was used for oxidation on methionine residues\".",
+        "TRUTH_CHECK": "The modification was used for the database search of the MS runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, including the name, residue, and modification status."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The methods section under \"Peptide and Protein Identification\" states \"precursor mass tolerance of 10 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the definition and includes the unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.02 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods state \"fragment ion mass tolerance of 0.02 Da\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, follows the definition format."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 1 | run 10 = 1 | run 11 = 1 | run 12 = 1 | run 13 = 1 | run 14 = 1 | run 15 = 1 | run 16 = 1 | run 17 = 1 | run 18 = 1 | run 19 = 1 | run 20 = 1 | run 21 = 1 | run 22 = 1 | run 23 = 1 | run 24 = 1 | run 25 = 1 | run 26 = 1 | run 27 = 1 | run 28 = 1 | run 29 = 1 | run 30 = 1 | run 31 = 1 | run 32 = 1 | run 33 = 1 | run 34 = 1 | run 35 = 1 | run 36 = 1 | run 37 = 1 | run 38 = 1 | run 39 = 1 | run 40 = 1 | run 41 = 1 | run 42 = 1 | run 43 = 1 | run 44 = 1 | run 45 = 1 | run 46 = 1 | run 47 = 1 | run 48 = 1 | run 49 = 1 | run 50 = 1 | run 51 = 1 | run 52 = 1 | run 53 = 1 | run 54 = 1 | run 55 = 1 | run 56 = 1 | run 57 = 1 | run 58 = 1 | run 59 = 1 | run 60 = 1 | run 61 = 1 | run 62 = 1 | run 63 = 1 | run 64 = 1 | run 65 = 1 | run 66 = 1 | run 67 = 1 | run 68 = 1 | run 69 = 1 | run 70 = 1 | run 71 = 1 | run 72 = 1 | run 73 = 1 | run 74 = 1 | run 75 = 1 | run 76 = 1 | run 77 = 1 | run 78 = 1 | run 79 = 1 | run 80 = 1 | run 81 = 1 | run 82 = 1 | run 83 = 1 | run 84 = 1 | run 85 = 1 | run 86 = 1 | run 87 = 1 | run 88 = 1 | run 89 = 1 | run 90 = 1 | run 91 = 1 | run 92 = 1 | run 93 = 1 | run 94 = 1 | run 95 = 1 | run 96 = 1 | run 97 = 1 | run 98 = 1 | run 99 = 1 | run 100 = 1 | run 101 = 1 | run 102 = 1 | run 103 = 1 | run 104 = 1 | run 105 = 1 | run 106 = 1 | run 107 = 1 | run 108 = 1 | run 109 = 1 | run 110 = 1 | run 111 = 1 | run 112 = 1 | run 113 = 1 | run 114 = 1 | run 115 = 1 | run 116 = 1 | run 117 = 1 | run 118 = 1 | run 119 = 1 | run 120 = 1 | run 121 = 1 | run 122 = 1 | run 123 = 1 | run 124 = 1 | run 125 = 1 | run 126 = 1 | run 127 = 1 | run 128 = 1 | run 129 = 1 | run 130 = 1 | run 131 = 1 | run 132 = 1 | run 133 = 1 | run 134 = 1 | run 135 = 1 | run 136 = 1 | run 137 = 1 | run 138 = 1 | run 139 = 1 | run 140 = 1 | run 141 = 1 | run 142 = 1 | run 143 = 1 | run 144 = 1 | run 145 = 1 | run 146 = 1 | run 147 = 1 | run 148 = 1 | run 149 = 1 | run 150 = 1 | run 151 = 1 | run 152 = 1 | run 153 = 1 | run 154 = 1 | run 155 = 1 | run 156 = 1 | run 157 = 1 | run 158 = 1 | run 159 = 1 | run 160 = 1 | run 161 = 1 | run 162 = 1 | run 163 = 1 | run 164 = 1 | run 165 = 1 | run 166 = 1 | run 167 = 1 | run 168 = 1 | run 169 = 1 | run 170 = 1 | run 171 = 1 | run 172 = 1 | run 173 = 1 | run 174 = 1 | run 175 = 1 | run 176 = 1 | run 177 = 1 | run 178 = 1 | run 179 = 1 | run 180 = 1 | run 181 = 1 | run 182 = 1 | run 183 = 1 | run 184 = 1 | run 185 = 1 | run 186 = 1 | run 187 = 1 | run 188 = 1 | run 189 = 1 | run 190 = 1 | run 191 = 1 | run 192 = 1 | run 193 = 1 | run 194 = 1 | run 195 = 1 | run 196 = 1 | run 197 = 1 | run 198 = 1 | run 199 = 1 | run 200 = 1 | run 201 = 1 | run 202 = 1 | run 203 = 1 | run 204 = 1 | run 205 = 1 | run 206 = 1 | run 207 = 1 | run 208 = 1 | run 209 = 1 | run 210 = 1 | run 211 = 1 | run 212 = 1 | run 213 = 1 | run 214 = 1 | run 215 = 1 | run 216 = 1 | run 217 = 1 | run 218 = 1 | run 219 = 1 | run 220 = 1 | run 221 = 1 | run 222 = 1 | run 223 = 1 | run 224 = 1 | run 225 = 1 | run 226 = 1 | run 227 = 1 | run 228 = 1 | run 229 = 1 | run 230 = 1 | run 231 = 1 | run 232 = 1 | run 233 = 1 | run 234 = 1 | run 235 = 1 | run 236 = 1 | run 237 = 1 | run 238 = 1 | run 239 = 1 | run 240 = 1 | run 241 = 1 | run 242 = 1 | run 243 = 1 | run 244 = 1 | run 245 = 1 | run 246 = 1 | run 247 = 1 | run 248 = 1 | run 249 = 1 | run 250 = 1 | run 251 = 1 | run 252 = 1 | run 253 = 1 | run 254 = 1 | run 255 = 1 | run 256 = 1 | run 257 = 1 | run 258 = 1 | run 259 = 1 | run 260 = 1 | run 261 = 1 | run 262 = 1 | run 263 = 1 | run 264 = 1 | run 265 = 1 | run 266 = 1 | run 267 = 1 | run 268 = 1 | run 269 = 1 | run 270 = 1 | run 271 = 1 | run 272 = 1 | run 273 = 1 | run 274 = 1 | run 275 = 1 | run 276 = 1 | run 277 = 1 | run 278 = 1 | run 279 = 1 | run 280 = 1 | run 281 = 1 | run 282 = 1 | run 283 = 1 | run 284 = 1 | run 285 = 1 | run 286 = 1 | run 287 = 1 | run 288 = 1 | run 289 = 1 | run 290 = 1 | run 291 = 1 | run 292 = 1 | run 293 = 1 | run 294 = 1 | run 295 = 1 | run 296 = 1 | run 297 = 1 | run 298 = 1 | run 299 = 1 | run 300 = 1 | run 301 = 1 | run 302 = 1 | run 303 = 1 | run 304 = 1 | run 305 = 1 | run 306 = 1 | run 307 = 1 | run 308 = 1 | run 309 = 1 | run 310 = 1 | run 311 = 1 | run 312 = 1 | run 313 = 1 | run 314 = 1 | run 315 = 1 | run 316 = 1 | run 317 = 1 | run 318 = 1 | run 319 = 1 | run 320 = 1 | run 321 = 1 | run 322 = 1 | run 323 = 1 | run 324 = 1 | run 325 = 1 | run 326 = 1 | run 327 = 1 | run 328 = 1 | run 329 = 1 | run 330 = 1 | run 331 = 1 | run 332 = 1 | run 333 = 1 | run 334 = 1 | run 335 = 1 | run 336 = 1 | run 337 = 1 | run 338 = 1 | run 339 = 1 | run 340 = 1 | run 341 = 1 | run 342 = 1 | run 343 = 1 | run 344 = 1 | run 345 = 1 | run 346 = 1 | run 347 = 1 | run 348 = 1 | run 349 = 1 | run 350 = 1 | run 351 = 1 | run 352 = 1 | run 353 = 1 | run 354 = 1 | run 355 = 1 | run 356 = 1 | run 357 = 1 | run 358 = 1 | run 359 = 1 | run 360 = 1 | run 361 = 1 | run 362 = 1 | run 363 = 1 | run 364 = 1 | run 365 = 1 | run 366 = 1 | run 367 = 1 | run 368 = 1 | run 369 = 1 | run 370 = 1 | run 371 = 1 | run 372 = 1 | run 373 = 1 | run 374 = 1 | run 375 = 1 | run 376 = 1 | run 377 = 1 | run 378 = 1 | run 379 = 1 | run 380 = 1 | run 381 = 1 | run 382 = 1 | run 383 = 1 | run 384 = 1 | run 385 = 1 | run 386 = 1 | run 387 = 1 | run 388 = 1 | run 389 = 1 | run 390 = 1 | run 391 = 1 | run 392 = 1 | run 393 = 1 | run 394 = 1 | run 395 = 1 | run 396 = 1 | run 397 = 1 | run 398 = 1 | run 399 = 1 | run 400 = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states an exploratory cohort of five AD and five control cases (10 subjects total).",
+        "TRUTH_CHECK": "The mapping assigns all runs to biological replicate 1, but the paper describes 10 independent biological units (subjects). Each subject should have a unique index.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 1 | run 10 = 1 | run 11 = 1 | run 12 = 1 | run 13 = 1 | run 14 = 1 | run 15 = 1 | run 16 = 1 | run 17 = 1 | run 18 = 1 | run 19 = 1 | run 20 = 1 | run 21 = 1 | run 22 = 1 | run 23 = 1 | run 24 = 1 | run 25 = 1 | run 26 = 1 | run 27 = 1 | run 28 = 1 | run 29 = 1 | run 30 = 1 | run 31 = 1 | run 32 = 1 | run 33 = 1 | run 34 = 1 | run 35 = 1 | run 36 = 1 | run 37 = 1 | run 38 = 1 | run 39 = 1 | run 40 = 1 | run 41 = 1 | run 42 = 1 | run 43 = 1 | run 44 = 1 | run 45 = 1 | run 46 = 1 | run 47 = 1 | run 48 = 1 | run 49 = 1 | run 50 = 1 | run 51 = 1 | run 52 = 1 | run 53 = 1 | run 54 = 1 | run 55 = 1 | run 56 = 1 | run 57 = 1 | run 58 = 1 | run 59 = 1 | run 60 = 1 | run 61 = 1 | run 62 = 1 | run 63 = 1 | run 64 = 1 | run 65 = 1 | run 66 = 1 | run 67 = 1 | run 68 = 1 | run 69 = 1 | run 70 = 1 | run 71 = 1 | run 72 = 1 | run 73 = 1 | run 74 = 1 | run 75 = 1 | run 76 = 1 | run 77 = 1 | run 78 = 1 | run 79 = 1 | run 80 = 1 | run 81 = 1 | run 82 = 1 | run 83 = 1 | run 84 = 1 | run 85 = 1 | run 86 = 1 | run 87 = 1 | run 88 = 1 | run 89 = 1 | run 90 = 1 | run 91 = 1 | run 92 = 1 | run 93 = 1 | run 94 = 1 | run 95 = 1 | run 96 = 1 | run 97 = 1 | run 98 = 1 | run 99 = 1 | run 100 = 1 | run 101 = 1 | run 102 = 1 | run 103 = 1 | run 104 = 1 | run 105 = 1 | run 106 = 1 | run 107 = 1 | run 108 = 1 | run 109 = 1 | run 110 = 1 | run 111 = 1 | run 112 = 1 | run 113 = 1 | run 114 = 1 | run 115 = 1 | run 116 = 1 | run 117 = 1 | run 118 = 1 | run 119 = 1 | run 120 = 1 | run 121 = 1 | run 122 = 1 | run 123 = 1 | run 124 = 1 | run 125 = 1 | run 126 = 1 | run 127 = 1 | run 128 = 1 | run 129 = 1 | run 130 = 1 | run 131 = 1 | run 132 = 1 | run 133 = 1 | run 134 = 1 | run 135 = 1 | run 136 = 1 | run 137 = 1 | run 138 = 1 | run 139 = 1 | run 140 = 1 | run 141 = 1 | run 142 = 1 | run 143 = 1 | run 144 = 1 | run 145 = 1 | run 146 = 1 | run 147 = 1 | run 148 = 1 | run 149 = 1 | run 150 = 1 | run 151 = 1 | run 152 = 1 | run 153 = 1 | run 154 = 1 | run 155 = 1 | run 156 = 1 | run 157 = 1 | run 158 = 1 | run 159 = 1 | run 160 = 1 | run 161 = 1 | run 162 = 1 | run 163 = 1 | run 164 = 1 | run 165 = 1 | run 166 = 1 | run 167 = 1 | run 168 = 1 | run 169 = 1 | run 170 = 1 | run 171 = 1 | run 172 = 1 | run 173 = 1 | run 174 = 1 | run 175 = 1 | run 176 = 1 | run 177 = 1 | run 178 = 1 | run 179 = 1 | run 180 = 1 | run 181 = 1 | run 182 = 1 | run 183 = 1 | run 184 = 1 | run 185 = 1 | run 186 = 1 | run 187 = 1 | run 188 = 1 | run 189 = 1 | run 190 = 1 | run 191 = 1 | run 192 = 1 | run 193 = 1 | run 194 = 1 | run 195 = 1 | run 196 = 1 | run 197 = 1 | run 198 = 1 | run 199 = 1 | run 200 = 1 | run 201 = 1 | run 202 = 1 | run 203 = 1 | run 204 = 1 | run 205 = 1 | run 206 = 1 | run 207 = 1 | run 208 = 1 | run 209 = 1 | run 210 = 1 | run 211 = 1 | run 212 = 1 | run 213 = 1 | run 214 = 1 | run 215 = 1 | run 216 = 1 | run 217 = 1 | run 218 = 1 | run 219 = 1 | run 220 = 1 | run 221 = 1 | run 222 = 1 | run 223 = 1 | run 224 = 1 | run 225 = 1 | run 226 = 1 | run 227 = 1 | run 228 = 1 | run 229 = 1 | run 230 = 1 | run 231 = 1 | run 232 = 1 | run 233 = 1 | run 234 = 1 | run 235 = 1 | run 236 = 1 | run 237 = 1 | run 238 = 1 | run 239 = 1 | run 240 = 1 | run 241 = 1 | run 242 = 1 | run 243 = 1 | run 244 = 1 | run 245 = 1 | run 246 = 1 | run 247 = 1 | run 248 = 1 | run 249 = 1 | run 250 = 1 | run 251 = 1 | run 252 = 1 | run 253 = 1 | run 254 = 1 | run 255 = 1 | run 256 = 1 | run 257 = 1 | run 258 = 1 | run 259 = 1 | run 260 = 1 | run 261 = 1 | run 262 = 1 | run 263 = 1 | run 264 = 1 | run 265 = 1 | run 266 = 1 | run 267 = 1 | run 268 = 1 | run 269 = 1 | run 270 = 1 | run 271 = 1 | run 272 = 1 | run 273 = 1 | run 274 = 1 | run 275 = 1 | run 276 = 1 | run 277 = 1 | run 278 = 1 | run 279 = 1 | run 280 = 1 | run 281 = 1 | run 282 = 1 | run 283 = 1 | run 284 = 1 | run 285 = 1 | run 286 = 1 | run 287 = 1 | run 288 = 1 | run 289 = 1 | run 290 = 1 | run 291 = 1 | run 292 = 1 | run 293 = 1 | run 294 = 1 | run 295 = 1 | run 296 = 1 | run 297 = 1 | run 298 = 1 | run 299 = 1 | run 300 = 1 | run 301 = 1 | run 302 = 1 | run 303 = 1 | run 304 = 1 | run 305 = 1 | run 306 = 1 | run 307 = 1 | run 308 = 1 | run 309 = 1 | run 310 = 1 | run 311 = 1 | run 312 = 1 | run 313 = 1 | run 314 = 1 | run 315 = 1 | run 316 = 1 | run 317 = 1 | run 318 = 1 | run 319 = 1 | run 320 = 1 | run 321 = 1 | run 322 = 1 | run 323 = 1 | run 324 = 1 | run 325 = 1 | run 326 = 1 | run 327 = 1 | run 328 = 1 | run 329 = 1 | run 330 = 1 | run 331 = 1 | run 332 = 1 | run 333 = 1 | run 334 = 1 | run 335 = 1 | run 336 = 1 | run 337 = 1 | run 338 = 1 | run 339 = 1 | run 340 = 1 | run 341 = 1 | run 342 = 1 | run 343 = 1 | run 344 = 1 | run 345 = 1 | run 346 = 1 | run 347 = 1 | run 348 = 1 | run 349 = 1 | run 350 = 1 | run 351 = 1 | run 352 = 1 | run 353 = 1 | run 354 = 1 | run 355 = 1 | run 356 = 1 | run 357 = 1 | run 358 = 1 | run 359 = 1 | run 360 = 1 | run 361 = 1 | run 362 = 1 | run 363 = 1 | run 364 = 1 | run 365 = 1 | run 366 = 1 | run 367 = 1 | run 368 = 1 | run 369 = 1 | run 370 = 1 | run 371 = 1 | run 372 = 1 | run 373 = 1 | run 374 = 1 | run 375 = 1 | run 376 = 1 | run 377 = 1 | run 378 = 1 | run 379 = 1 | run 380 = 1 | run 381 = 1 | run 382 = 1 | run 383 = 1 | run 384 = 1 | run 385 = 1 | run 386 = 1 | run 387 = 1 | run 388 = 1 | run 389 = 1 | run 390 = 1 | run 391 = 1 | run 392 = 1 | run 393 = 1 | run 394 = 1 | run 395 = 1 | run 396 = 1 | run 397 = 1 | run 398 = 1 | run 399 = 1 | run 400 = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents technical replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly states in the Methods section: \"No technical replicates were performed\".",
+        "TRUTH_CHECK": "Since no technical replicates were performed, every run is the first and only measurement of its specific material (fraction), thus they all correctly carry the index 1.",
+        "COMPLETENESS_CHECK": "The mapping follows the required format and is complete."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 1 | run 10 = 1 | run 11 = 2 | run 12 = 2 | run 13 = 2 | run 14 = 2 | run 15 = 2 | run 16 = 2 | run 17 = 2 | run 18 = 2 | run 19 = 2 | run 20 = 2 | run 21 = 3 | run 22 = 3 | run 23 = 3 | run 24 = 3 | run 25 = 3 | run 26 = 3 | run 27 = 3 | run 28 = 3 | run 29 = 3 | run 30 = 3 | run 31 = 4 | run 32 = 4 | run 33 = 4 | run 34 = 4 | run 35 = 4 | run 36 = 4 | run 37 = 4 | run 38 = 4 | run 39 = 4 | run 40 = 4 | run 41 = 5 | run 42 = 5 | run 43 = 5 | run 44 = 5 | run 45 = 5 | run 46 = 5 | run 47 = 5 | run 48 = 5 | run 49 = 5 | run 50 = 5 | run 51 = 6 | run 52 = 6 | run 53 = 6 | run 54 = 6 | run 55 = 6 | run 56 = 6 | run 57 = 6 | run 58 = 6 | run 59 = 6 | run 60 = 6 | run 61 = 7 | run 62 = 7 | run 63 = 7 | run 64 = 7 | run 65 = 7 | run 66 = 7 | run 67 = 7 | run 68 = 7 | run 69 = 7 | run 70 = 7 | run 71 = 8 | run 72 = 8 | run 73 = 8 | run 74 = 8 | run 75 = 8 | run 76 = 8 | run 77 = 8 | run 78 = 8 | run 79 = 8 | run 80 = 8 | run 81 = 9 | run 82 = 9 | run 83 = 9 | run 84 = 9 | run 85 = 9 | run 86 = 9 | run 87 = 9 | run 88 = 9 | run 89 = 9 | run 90 = 9 | run 91 = 10 | run 92 = 10 | run 93 = 10 | run 94 = 10 | run 95 = 10 | run 96 = 10 | run 97 = 10 | run 98 = 10 | run 99 = 10 | run 100 = 10 | run 101 = 11 | run 102 = 11 | run 103 = 11 | run 104 = 11 | run 105 = 11 | run 106 = 11 | run 107 = 11 | run 108 = 11 | run 109 = 11 | run 110 = 11 | run 111 = 12 | run 112 = 12 | run 113 = 12 | run 114 = 12 | run 115 = 12 | run 116 = 12 | run 117 = 12 | run 118 = 12 | run 119 = 12 | run 120 = 12 | run 121 = 13 | run 122 = 13 | run 123 = 13 | run 124 = 13 | run 125 = 13 | run 126 = 13 | run 127 = 13 | run 128 = 13 | run 129 = 13 | run 130 = 13 | run 131 = 14 | run 132 = 14 | run 133 = 14 | run 134 = 14 | run 135 = 14 | run 136 = 14 | run 137 = 14 | run 138 = 14 | run 139 = 14 | run 140 = 14 | run 141 = 15 | run 142 = 15 | run 143 = 15 | run 144 = 15 | run 145 = 15 | run 146 = 15 | run 147 = 15 | run 148 = 15 | run 149 = 15 | run 150 = 15 | run 151 = 16 | run 152 = 16 | run 153 = 16 | run 154 = 16 | run 155 = 16 | run 156 = 16 | run 157 = 16 | run 158 = 16 | run 159 = 16 | run 160 = 16 | run 161 = 17 | run 162 = 17 | run 163 = 17 | run 164 = 17 | run 165 = 17 | run 166 = 17 | run 167 = 17 | run 168 = 17 | run 169 = 17 | run 170 = 17 | run 171 = 18 | run 172 = 18 | run 173 = 18 | run 174 = 18 | run 175 = 18 | run 176 = 18 | run 177 = 18 | run 178 = 18 | run 179 = 18 | run 180 = 18 | run 181 = 19 | run 182 = 19 | run 183 = 19 | run 184 = 19 | run 185 = 19 | run 186 = 19 | run 187 = 19 | run 188 = 19 | run 189 = 19 | run 190 = 19 | run 191 = 27 | run 192 = 27 | run 193 = 27 | run 194 = 27 | run 195 = 27 | run 196 = 27 | run 197 = 27 | run 198 = 27 | run 199 = 27 | run 200 = 27 | run 201 = 28 | run 202 = 28 | run 203 = 28 | run 204 = 28 | run 205 = 28 | run 206 = 28 | run 207 = 28 | run 208 = 28 | run 209 = 28 | run 210 = 28 | run 211 = 29 | run 212 = 29 | run 213 = 29 | run 214 = 29 | run 215 = 29 | run 216 = 29 | run 217 = 29 | run 218 = 29 | run 219 = 29 | run 220 = 29 | run 221 = 30 | run 222 = 30 | run 223 = 30 | run 224 = 30 | run 225 = 30 | run 226 = 30 | run 227 = 30 | run 228 = 30 | run 229 = 30 | run 230 = 30 | run 231 = 31 | run 232 = 31 | run 233 = 31 | run 234 = 31 | run 235 = 31 | run 236 = 31 | run 237 = 31 | run 238 = 31 | run 239 = 31 | run 240 = 31 | run 241 = 36 | run 242 = 36 | run 243 = 36 | run 244 = 36 | run 245 = 36 | run 246 = 36 | run 247 = 36 | run 248 = 36 | run 249 = 36 | run 250 = 36 | run 251 = 37 | run 252 = 37 | run 253 = 37 | run 254 = 37 | run 255 = 37 | run 256 = 37 | run 257 = 37 | run 258 = 37 | run 259 = 37 | run 260 = 37 | run 261 = 38 | run 262 = 38 | run 263 = 38 | run 264 = 38 | run 265 = 38 | run 266 = 38 | run 267 = 38 | run 268 = 38 | run 269 = 38 | run 270 = 38 | run 271 = 39 | run 272 = 39 | run 273 = 39 | run 274 = 39 | run 275 = 39 | run 276 = 39 | run 277 = 39 | run 278 = 39 | run 279 = 39 | run 280 = 39 | run 281 = 40 | run 282 = 40 | run 283 = 40 | run 284 = 40 | run 285 = 40 | run 286 = 40 | run 287 = 40 | run 288 = 40 | run 289 = 40 | run 290 = 40 | run 291 = 41 | run 292 = 41 | run 293 = 41 | run 294 = 41 | run 295 = 41 | run 296 = 41 | run 297 = 41 | run 298 = 41 | run 299 = 41 | run 300 = 41 | run 301 = 42 | run 302 = 42 | run 303 = 42 | run 304 = 42 | run 305 = 42 | run 306 = 42 | run 307 = 42 | run 308 = 42 | run 309 = 42 | run 310 = 42 | run 311 = 50 | run 312 = 50 | run 313 = 50 | run 314 = 50 | run 315 = 50 | run 316 = 50 | run 317 = 50 | run 318 = 50 | run 319 = 50 | run 320 = 50 | run 321 = 51 | run 322 = 51 | run 323 = 51 | run 324 = 51 | run 325 = 51 | run 326 = 51 | run 327 = 51 | run 328 = 51 | run 329 = 51 | run 330 = 51 | run 331 = 52 | run 332 = 52 | run 333 = 52 | run 334 = 52 | run 335 = 52 | run 336 = 52 | run 337 = 52 | run 338 = 52 | run 339 = 52 | run 340 = 52 | run 341 = 53 | run 342 = 53 | run 343 = 53 | run 344 = 53 | run 345 = 53 | run 346 = 53 | run 347 = 53 | run 348 = 53 | run 349 = 53 | run 350 = 53 | run 351 = 64 | run 352 = 64 | run 353 = 64 | run 354 = 64 | run 355 = 64 | run 356 = 64 | run 357 = 64 | run 358 = 64 | run 359 = 64 | run 360 = 64 | run 361 = 65 | run 362 = 65 | run 363 = 65 | run 364 = 65 | run 365 = 65 | run 366 = 65 | run 367 = 65 | run 368 = 65 | run 369 = 65 | run 370 = 65 | run 371 = 66 | run 372 = 66 | run 373 = 66 | run 374 = 66 | run 375 = 66 | run 376 = 66 | run 377 = 66 | run 378 = 66 | run 379 = 66 | run 380 = 66 | run 381 = 71 | run 382 = 71 | run 383 = 71 | run 384 = 71 | run 385 = 71 | run 386 = 71 | run 387 = 71 | run 388 = 71 | run 389 = 71 | run 390 = 71 | run 391 = 72 | run 392 = 72 | run 393 = 72 | run 394 = 72 | run 395 = 72 | run 396 = 72 | run 397 = 72 | run 398 = 72 | run 399 = 72 | run 400 = 72",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that the pooled sample was pre-fractionated into 72 fractions by high-resolution isoelectric focusing (HiRIEF).",
+        "TRUTH_CHECK": "The mapping is wrong. The paper describes a pooled sample (all 10 cases combined) that was split into 72 fractions. Therefore, each fraction (run) contains material from all samples. The candidate value incorrectly assigns fraction indices based on the sample source (e.g., runs 1-10 for Sample 1 get fraction 1, runs 11-20 for Sample 2 get fraction 2), which contradicts the \"pooled\" workflow. Each run should represent one of the 72 fractions.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 1 | run 10 = 1 | run 11 = 2 | run 12 = 2 | run 13 = 2 | run 14 = 2 | run 15 = 2 | run 16 = 2 | run 17 = 2 | run 18 = 2 | run 19 = 2 | run 20 = 2 | run 21 = 3 | run 22 = 3 | run 23 = 3 | run 24 = 3 | run 25 = 3 | run 26 = 3 | run 27 = 3 | run 28 = 3 | run 29 = 3 | run 30 = 3 | run 31 = 4 | run 32 = 4 | run 33 = 4 | run 34 = 4 | run 35 = 4 | run 36 = 4 | run 37 = 4 | run 38 = 4 | run 39 = 4 | run 40 = 4 | run 41 = 5 | run 42 = 5 | run 43 = 5 | run 44 = 5 | run 45 = 5 | run 46 = 5 | run 47 = 5 | run 48 = 5 | run 49 = 5 | run 50 = 5 | run 51 = 6 | run 52 = 6 | run 53 = 6 | run 54 = 6 | run 55 = 6 | run 56 = 6 | run 57 = 6 | run 58 = 6 | run 59 = 6 | run 60 = 6 | run 61 = 7 | run 62 = 7 | run 63 = 7 | run 64 = 7 | run 65 = 7 | run 66 = 7 | run 67 = 7 | run 68 = 7 | run 69 = 7 | run 70 = 7 | run 71 = 8 | run 72 = 8 | run 73 = 8 | run 74 = 8 | run 75 = 8 | run 76 = 8 | run 77 = 8 | run 78 = 8 | run 79 = 8 | run 80 = 8 | run 81 = 9 | run 82 = 9 | run 83 = 9 | run 84 = 9 | run 85 = 9 | run 86 = 9 | run 87 = 9 | run 88 = 9 | run 89 = 9 | run 90 = 9 | run 91 = 10 | run 92 = 10 | run 93 = 10 | run 94 = 10 | run 95 = 10 | run 96 = 10 | run 97 = 10 | run 98 = 10 | run 99 = 10 | run 100 = 10 | run 101 = 11 | run 102 = 11 | run 103 = 11 | run 104 = 11 | run 105 = 11 | run 106 = 11 | run 107 = 11 | run 108 = 11 | run 109 = 11 | run 110 = 11 | run 111 = 12 | run 112 = 12 | run 113 = 12 | run 114 = 12 | run 115 = 12 | run 116 = 12 | run 117 = 12 | run 118 = 12 | run 119 = 12 | run 120 = 12 | run 121 = 13 | run 122 = 13 | run 123 = 13 | run 124 = 13 | run 125 = 13 | run 126 = 13 | run 127 = 13 | run 128 = 13 | run 129 = 13 | run 130 = 13 | run 131 = 14 | run 132 = 14 | run 133 = 14 | run 134 = 14 | run 135 = 14 | run 136 = 14 | run 137 = 14 | run 138 = 14 | run 139 = 14 | run 140 = 14 | run 141 = 15 | run 142 = 15 | run 143 = 15 | run 144 = 15 | run 145 = 15 | run 146 = 15 | run 147 = 15 | run 148 = 15 | run 149 = 15 | run 150 = 15 | run 151 = 16 | run 152 = 16 | run 153 = 16 | run 154 = 16 | run 155 = 16 | run 156 = 16 | run 157 = 16 | run 158 = 16 | run 159 = 16 | run 160 = 16 | run 161 = 17 | run 162 = 17 | run 163 = 17 | run 164 = 17 | run 165 = 17 | run 166 = 17 | run 167 = 17 | run 168 = 17 | run 169 = 17 | run 170 = 17 | run 171 = 18 | run 172 = 18 | run 173 = 18 | run 174 = 18 | run 175 = 18 | run 176 = 18 | run 177 = 18 | run 178 = 18 | run 179 = 18 | run 180 = 18 | run 181 = 19 | run 182 = 19 | run 183 = 19 | run 184 = 19 | run 185 = 19 | run 186 = 19 | run 187 = 19 | run 188 = 19 | run 189 = 19 | run 190 = 19 | run 191 = 20 | run 192 = 20 | run 193 = 20 | run 194 = 20 | run 195 = 20 | run 196 = 20 | run 197 = 20 | run 198 = 20 | run 199 = 20 | run 200 = 20 | run 201 = 21 | run 202 = 21 | run 203 = 21 | run 204 = 21 | run 205 = 21 | run 206 = 21 | run 207 = 21 | run 208 = 21 | run 209 = 21 | run 210 = 21 | run 211 = 22 | run 212 = 22 | run 213 = 22 | run 214 = 22 | run 215 = 22 | run 216 = 22 | run 217 = 22 | run 218 = 22 | run 219 = 22 | run 220 = 22 | run 221 = 23 | run 222 = 23 | run 223 = 23 | run 224 = 23 | run 225 = 23 | run 226 = 23 | run 227 = 23 | run 228 = 23 | run 229 = 23 | run 230 = 23 | run 231 = 24 | run 232 = 24 | run 233 = 24 | run 234 = 24 | run 235 = 24 | run 236 = 24 | run 237 = 24 | run 238 = 24 | run 239 = 24 | run 240 = 24 | run 241 = 25 | run 242 = 25 | run 243 = 25 | run 244 = 25 | run 245 = 25 | run 246 = 25 | run 247 = 25 | run 248 = 25 | run 249 = 25 | run 250 = 25 | run 251 = 26 | run 252 = 26 | run 253 = 26 | run 254 = 26 | run 255 = 26 | run 256 = 26 | run 257 = 26 | run 258 = 26 | run 259 = 26 | run 260 = 26 | run 261 = 27 | run 262 = 27 | run 263 = 27 | run 264 = 27 | run 265 = 27 | run 266 = 27 | run 267 = 27 | run 268 = 27 | run 269 = 27 | run 270 = 27 | run 271 = 28 | run 272 = 28 | run 273 = 28 | run 274 = 28 | run 275 = 28 | run 276 = 28 | run 277 = 28 | run 278 = 28 | run 279 = 28 | run 280 = 28 | run 281 = 29 | run 282 = 29 | run 283 = 29 | run 284 = 29 | run 285 = 29 | run 286 = 29 | run 287 = 29 | run 288 = 29 | run 289 = 29 | run 290 = 29 | run 291 = 30 | run 292 = 30 | run 293 = 30 | run 294 = 30 | run 295 = 30 | run 296 = 30 | run 297 = 30 | run 298 = 30 | run 299 = 30 | run 300 = 30 | run 301 = 31 | run 302 = 31 | run 303 = 31 | run 304 = 31 | run 305 = 31 | run 306 = 31 | run 307 = 31 | run 308 = 31 | run 309 = 31 | run 310 = 31 | run 311 = 32 | run 312 = 32 | run 313 = 32 | run 314 = 32 | run 315 = 32 | run 316 = 32 | run 317 = 32 | run 318 = 32 | run 319 = 32 | run 320 = 32 | run 321 = 33 | run 322 = 33 | run 323 = 33 | run 324 = 33 | run 325 = 33 | run 326 = 33 | run 327 = 33 | run 328 = 33 | run 329 = 33 | run 330 = 33 | run 331 = 34 | run 332 = 34 | run 333 = 34 | run 334 = 34 | run 335 = 34 | run 336 = 34 | run 337 = 34 | run 338 = 34 | run 339 = 34 | run 340 = 34 | run 341 = 35 | run 342 = 35 | run 343 = 35 | run 344 = 35 | run 345 = 35 | run 346 = 35 | run 347 = 35 | run 348 = 35 | run 349 = 35 | run 350 = 35 | run 351 = 36 | run 352 = 36 | run 353 = 36 | run 354 = 36 | run 355 = 36 | run 356 = 36 | run 357 = 36 | run 358 = 36 | run 359 = 36 | run 360 = 36 | run 361 = 37 | run 362 = 37 | run 363 = 37 | run 364 = 37 | run 365 = 37 | run 366 = 37 | run 367 = 37 | run 368 = 37 | run 369 = 37 | run 370 = 37 | run 371 = 38 | run 372 = 38 | run 373 = 38 | run 374 = 38 | run 375 = 38 | run 376 = 38 | run 377 = 38 | run 378 = 38 | run 379 = 38 | run 380 = 38 | run 381 = 39 | run 382 = 39 | run 383 = 39 | run 384 = 39 | run 385 = 39 | run 386 = 39 | run 387 = 39 | run 388 = 39 | run 389 = 39 | run 390 = 39 | run 391 = 40 | run 392 = 40 | run 393 = 40 | run 394 = 40 | run 395 = 40 | run 396 = 40 | run 397 = 40 | run 398 = 40 | run 399 = 40 | run 400 = 40",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents individual identifiers for the runs, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that the exploratory proteomics study used five AD and five control cases (10 subjects total).",
+        "TRUTH_CHECK": "The mapping assigns 40 different individual identifiers (1 to 40), but the paper explicitly states only 10 subjects were used in the MS experiment.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content contradicts the paper's study design."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[BRAAK]",
+      "extracted_value": "0",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a Braak stage, which is a characteristic of the subjects in this study.",
+        "SOURCE_CHECK": "The paper mentions \"AD Braak stage 0–2\" for control cases and \"AD Braak stage 4\" for AD cases.",
+        "TRUTH_CHECK": "The value \"0\" is within the range described for the control cases.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[BRAAK]",
+      "extracted_value": "4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a Braak stage, which is a characteristic of the subjects in this study.",
+        "SOURCE_CHECK": "The paper mentions \"AD Braak stage 4\" for AD cases and \"AD Braak stage 0–2\" for control cases.",
+        "TRUTH_CHECK": "The value \"4\" correctly describes the Braak stage for the AD group runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[BRAAK]",
+      "extracted_value": "2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a Braak stage, which is a characteristic of the subjects in this study.",
+        "SOURCE_CHECK": "The paper mentions Braak stages (e.g., \"AD Braak stage 4\", \"AD Braak stage 0–2\") in the Case Selection section.",
+        "TRUTH_CHECK": "The value \"2\" is consistent with the described control group (Braak stage 0-2).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[BRAAK]",
+      "extracted_value": "1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a Braak stage, which is a characteristic of the subjects in this study.",
+        "SOURCE_CHECK": "The paper mentions Braak stages 0-2 for controls and stage 4 for AD cases.",
+        "TRUTH_CHECK": "The value \"1\" falls within the described range for control cases (Braak stage 0-2).",
+        "COMPLETENESS_CHECK": "The value is a simple integer representing the stage, which is appropriate for this column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Age at Death]",
+      "extracted_value": "72",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is appropriate for a column named \"Age at Death\".",
+        "SOURCE_CHECK": "The paper mentions that demographic characteristics including age are shown in supplemental Table S1, but the specific values (like 72) are not printed in the provided text.",
+        "TRUTH_CHECK": "While the paper confirms age was recorded for the cases, the specific value \"72\" is not in the provided text. However, the field definition for \"other_column\" asks if the value is what such a column *should* hold.",
+        "COMPLETENESS_CHECK": "The value is a plain number, which is the standard format for age."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Age at Death]",
+      "extracted_value": "91",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is appropriate for a column named \"Age at Death\".",
+        "SOURCE_CHECK": "The paper mentions that demographic characteristics including age are shown in supplemental Table S1, but the specific value \"91\" is not in the provided text.",
+        "TRUTH_CHECK": "While the paper refers to a table containing ages, the provided text does not contain the actual age values for the subjects.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Age at Death]",
+      "extracted_value": "95",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is appropriate for a column named \"Age at Death\".",
+        "SOURCE_CHECK": "The paper mentions demographic characteristics including age in the Statistical Analysis section and refers to supplemental Table S1 for the specific values. While the value \"95\" is not in the provided text, the existence of age data for the cases is explicitly stated.",
+        "TRUTH_CHECK": "The value is used for runs associated with specific samples, which is correct for a subject-level characteristic.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Age at Death]",
+      "extracted_value": "84",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is appropriate for a column named \"Age at Death\".",
+        "SOURCE_CHECK": "The paper mentions that demographic characteristics including age are shown in supplemental Table S1, but the specific value \"84\" is not in the provided text.",
+        "TRUTH_CHECK": "While the value is not in the text, the paper explicitly states that age was recorded for the cases in Table S1.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Age at Death]",
+      "extracted_value": "85",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is appropriate for a column named \"Age at Death\".",
+        "SOURCE_CHECK": "The paper mentions that demographic characteristics including age are shown in supplemental Table S1, but the specific value \"85\" is not present in the provided text.",
+        "TRUTH_CHECK": "While the paper refers to a table containing ages, the provided text does not contain the actual age values for the subjects.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Age at Death]",
+      "extracted_value": "92",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is appropriate for a column named \"Age at Death\".",
+        "SOURCE_CHECK": "The paper mentions that demographic characteristics including age are shown in supplemental Table S1, but the specific values (like 92) are not provided in the provided text.",
+        "TRUTH_CHECK": "The paper confirms that age was recorded for the cases, so a value in this column is correct in principle.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Age at Death]",
+      "extracted_value": "88",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is appropriate for a column named \"Age at Death\".",
+        "SOURCE_CHECK": "The paper mentions that demographic characteristics including age are shown in supplemental Table S1, but the specific value \"88\" is not in the provided text.",
+        "TRUTH_CHECK": "While the specific value is in a supplement not provided, the paper confirms that age was recorded for all cases in the cohorts.",
+        "COMPLETENESS_CHECK": "The value is a plain number, which is the standard format for age."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Age at Death]",
+      "extracted_value": "94",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is appropriate for a column named \"Age at Death\".",
+        "SOURCE_CHECK": "The paper mentions that demographic characteristics including age are shown in supplemental Table S1, but the specific value \"94\" is not present in the provided text.",
+        "TRUTH_CHECK": "While the value is not in the provided text, the paper explicitly states that age was recorded for the cases in Table S1.",
+        "COMPLETENESS_CHECK": "The value is a plain number, which is a standard format for age."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Amyloid stage]",
+      "extracted_value": "not avilable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is being judged for a custom characteristics column regarding Amyloid stage.",
+        "SOURCE_CHECK": "The paper mentions amyloid deposits stage C for AD cases and stage 0-B for control cases.",
+        "TRUTH_CHECK": "The value \"not avilable\" is not supported by the paper; all cases in the exploratory cohort (which the MS runs belong to) were categorized by amyloid stage.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Amyloid stage]",
+      "extracted_value": "C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"C\" refers to an amyloid deposit stage, which is a characteristic of the subjects in this study.",
+        "SOURCE_CHECK": "The paper states that AD cases were selected with \"amyloid deposits stage C\".",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the AD cases.",
+        "COMPLETENESS_CHECK": "The value is a simple stage identifier as described in the text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Amyloid stage]",
+      "extracted_value": "0",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a stage identifier for amyloid deposits, which fits the column name.",
+        "SOURCE_CHECK": "The paper mentions \"amyloid deposits stage 0-B\" for control cases.",
+        "TRUTH_CHECK": "The value \"0\" is part of the described amyloid deposit stages for the control group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Amyloid stage]",
+      "extracted_value": "B",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to a custom characteristics column for amyloid stage.",
+        "SOURCE_CHECK": "The paper mentions \"amyloid deposits stage 0-B\" for control cases and \"amyloid deposits stage C\" for AD cases.",
+        "TRUTH_CHECK": "The value \"B\" corresponds to the amyloid deposit stage described for the control group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

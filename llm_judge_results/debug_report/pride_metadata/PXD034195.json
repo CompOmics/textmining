@@ -1,0 +1,121 @@
+{
+  "accession" : "PXD034195",
+  "title" : "Proteome analysis of Desulfuromonas acetexigens",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Desulfuromonas acetexigens is capable of extracellular electron transfer (EET) and can generate high peak current densities >9 A/m2 in a very short period (~20 h after inoculation) under potential induced growth (–0.1 V vs. Ag/AgCl) and acetate as the electron donor. Despite its high electrochemical activity in microbial electrochemical systems, the proteome and EET mechanisms of D. acetexigens are still unknown. Here, the proteome of D. acetexigens was characterized and a stimulus-induced comparative analysis was performed to elucidate its putative EET mechanism. Proteome analysis indicates that D. acetexigens is a versatile bacterium with a high diversity of accessory genes that allow it to adapt to diverse environments.",
+  "sampleProcessingProtocol" : "Desulfuromonas acetexigens cultures grown in serum vials with fumarate as the electron acceptor were centrifuged at 13,000 g for 20 min and the resultant pellet was washed with saline phosphate buffer. Pelleted cells were resuspended in lysis buffer containing 3-[(3-cholamidopropyl) dimethylammonio] propanesulfonate (CHAPS) (4%, w/v), Triton X-100 (2%, w/v), urea (7 M), thiourea (2 M), and dithiothreitol (60 mM). Resuspended cells were lysed for 1 h at 4°C in a bath sonicator with settings at 50% power, 15 seconds ON, 90 seconds OFF pulse intervals. After sonication, the solution was centrifuged at 25,000 g for 1 h at 4 °C, and the supernatant was recovered as soluble protein fraction. Protein concentrations from the resulting supernatants were determined using the Thermo Scientific™ Pierce™ BCA Protein Assay Kit. Samples were loaded onto SDS containing polyacrylamide gels (NuPAGE 4–12% Bis–Tris gel) and electrophoresed for 2 cm. Gel lanes were then cut into 5 gel slices, and de-stained with acetonitrile. Gel slices were subjected to reduction with 10 mM DTT and alkylation with 50 mM iodoacetamide and in-gel tryptic digestion overnight using trypsin in a 1:50 trypsin:protein ratio. The resulting trypsin-digested peptides were extracted in 0.1% formic acid (FA) and desalted using Sep-Pak C18 Vac cartridges. The samples were then subjected to nano-liquid chromatography–tandem mass spectrometry (nano-LC-MS/MS) analysis. The peptide mixtures were analyzed using an Orbitrap Fusion mass spectrometer (MS) (Lumos, Thermo Fisher Scientific) coupled with an UltiMate™ 3000 UHPLC (Thermo Scientific). \n\nDifferential protein expression levels were evaluated by comparing D. acetexigens cultures incubated with iron oxide minerals (i.e., hematite, goethite, magnetite) and D. acetexigens biofilm on the electrode of MECs, against cultures grown with a soluble electron acceptor (i.e., fumarate). D. acetexigens cultures were incubated in triplicate in septa-sealed anaerobic vials containing 45 mL of growth medium with 10 mM sodium acetate as the electron donor and 15 mM of hematite, goethite, or magnetite as the sole electron acceptor. Incubations of D. acetexigens with the iron oxides as the electron acceptor were collected at 48 hours for protein extraction and proteome sequencing. Triplicate MECs with D. acetexigens biofilm on the electrode were operated at an applied potential of -0.1 V vs. Ag/AgCl. Electrode biofilm samples were collected after mature biofilm formation and stable reproducible current production were observed. The biofilm electrodes were collected with sterilized scissors in the anaerobic chamber for proteomic analysis. D. acetexigens cultures grown with fumarate as the soluble electron acceptor were used as a control for the differential proteomic analyses. The proteome of the samples was characterized by nano-liquid chromatography–tandem mass spectrometry (LC-MS/MS) analysis. The peptide mixtures were analyzed using an Exploris 480 MS.",
+  "dataProcessingProtocol" : "Protein identification by peptide mass fingerprinting was performed using the MASCOT search programme 2.8.0.1 and Proteome Discoverer software version 2.4. The amino acid sequences of protein-coding genes located in the “Desulfuromonas acetexigens” genome (GenBank accession number: VJVV00000000.1) were used as the reference database. The following settings were used for peptide and protein identification: carbamidomethyl (Cys) as fixed modification, oxidation (Met) and deamidation (NQ) as variable modifications. The enzyme limits were set at full trypsin cleavage with a maximum of two missed cleavages allowed and a minimal peptide length of 6 amino acids.\n\nDifferential proteomics analysis was conducted using Spectronaut software (version 18.5.231110.55695) in directDIA mode. The amino acid sequences of protein-coding genes from the D. acetexigens genome (GenBank accession number: VJVV00000000.1) were used as the reference database. Carbamidomethylation of cysteine was set as a fixed modification, while oxidation of methionine and acetylation of protein N-termini were set as variable modifications. The false discovery rate (FDR) thresholds were set to 1% for peptide-spectrum matches (PSMs), peptides, and proteins. Spectronaut software was used for data normalization and analysis. Protein abundances between samples were then compared using statistical tests to determine differential abundance.",
+  "projectTags" : [ ],
+  "keywords" : [ "Desulfuromonas acetexigens strain 2873", "Extracellular electron transfer (eet)" ],
+  "doi" : "10.6019/PXD034195",
+  "submissionType" : "COMPLETE",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2022-05-29",
+  "publicationDate" : "2025-06-08",
+  "submitters" : [ {
+    "title" : "Ms",
+    "firstName" : "Olga",
+    "lastName" : "Douvropoulou",
+    "identifier" : "2503974",
+    "affiliation" : "KAUST",
+    "email" : "olga.douvropoulou@kaust.edu.sa",
+    "country" : "Saudi Arabia",
+    "orcid" : "",
+    "name" : "Olga Douvropoulou",
+    "id" : "2503974"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Paskal",
+    "lastName" : "Saikaly",
+    "identifier" : "2403115",
+    "affiliation" : "Professor, Environmental Science and Engineering Chair, Environmental Science and Engineering Program Biological and Environmental Science and Engineering Division KAUST Saudi Arabia",
+    "email" : "pascal.saikaly@kaust.edu.sa",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Paskal Saikaly",
+    "id" : "2403115"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1002732",
+    "name" : "Orbitrap Fusion Lumos"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001327",
+    "name" : "Spectronaut"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001207",
+    "name" : "Mascot"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000650",
+    "name" : "Proteome Discoverer"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "Saudi Arabia" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:38815",
+      "name" : "Desulfuromonas acetexigens"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:38815",
+    "name" : "Desulfuromonas acetexigens"
+  } ],
+  "organismParts" : [ ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Shaw DR, Katuri KP, Sapireddy V, Douvropoulou O, Gralnick JA, Saikaly PE. Independently evolved extracellular electron transfer pathways in ecologically diverse Desulfobacterota. ISME J. 2025:wraf097",
+    "pubmedID" : 40381216,
+    "doi" : "10.1093/ismejo/wraf097"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00425",
+    "name" : "monohydroxylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00394",
+    "name" : "acetylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00400",
+    "name" : "deamidated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 1101,
+  "botCount" : 576,
+  "hubCount" : 502,
+  "organicCount" : 23,
+  "otherOmicsLinks" : [ "bioproject:PRJNA552430", "bioproject:PRJNA726843" ]
+}

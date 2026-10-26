@@ -1,0 +1,685 @@
+{
+  "paper_id": "PXD029966",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states that human plasma was collected from healthy women.",
+        "TRUTH_CHECK": "The runs carry the value for samples derived from human plasma.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Mus musculus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes experiments using various mouse strains (C57BL/6J, etc.), which allows the inference of Mus musculus.",
+        "TRUTH_CHECK": "The runs are associated with mouse samples (serum/plasma).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "serum",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "plasma",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"serum\" describes a biofluid/organism part, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions collecting \"serum supernatant\" from mouse donor blood and analyzing \"human plasma\" and \"mouse plasma\".",
+        "TRUTH_CHECK": "The LC-MS/MS analysis was performed on peptides derived from \"human plasma\" and \"mouse plasma\" (after MARS depletion), not serum. While the paper mentions serum for transfer experiments, the proteomics runs used plasma.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes LC-MS/MS using a TripleTOF 6600 in DDA mode without any mention of isotopic labels (TMT, SILAC, etc.), which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The MS analysis of plasma glycopeptides was performed without labels.",
+        "COMPLETENESS_CHECK": "Complete. The SDRF controlled term \"label free sample\" is used."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "TripleTOF 6600",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass spectrometer model, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"LC–MS/MS analysis was performed using a NanoLC 425 Ultra system (Eksigent Technologies) interfaced with a TripleTOF 6600 mass spectrometer (SCIEX).\"",
+        "TRUTH_CHECK": "The TripleTOF 6600 was the primary instrument used for the LC-MS/MS analysis of the plasma samples.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for protein digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that \"trypsin (ThermoFisher Scientific; 1:50 trypsin:protein ratio...)\" was added for digestion.",
+        "TRUTH_CHECK": "The trypsin digestion was used for the plasma samples analyzed by LC-MS/MS.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "comment[dissociation method]",
+      "extracted_value": "CID",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that the TripleTOF 6600 was operated using \"collision-induced dissociation of precursor ions\".",
+        "TRUTH_CHECK": "The fragmentation method used for the LC-MS/MS runs was CID.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "characteristics[enrichment process]",
+      "extracted_value": "N-sialoglycopeptides",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the subset of peptides enriched before MS, which fits the enrichment_method field.",
+        "SOURCE_CHECK": "The paper states that \"volumes of peptide samples... were loaded onto a SNA-I lectin agarose column\" to analyze \"α(2,6)-Sia-containing glycopeptides\".",
+        "TRUTH_CHECK": "The use of a SNA-I lectin column specifically enriches for sialoglycopeptides (glycopeptides containing sialic acid).",
+        "COMPLETENESS_CHECK": "The value is a descriptive name of the enriched subset; however, the field definition provides a specific controlled term \"enrichment of glycosylated protein\" for this type of process."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a technology type, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a workflow using trypsin digestion and LC-MS/MS (TripleTOF 6600) in data-dependent acquisition mode, which is a standard proteomic profiling workflow.",
+        "TRUTH_CHECK": "The value correctly describes the MS experiment performed on the plasma samples.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "characteristics[biological replicate]",
+      "extracted_value": "Run 1 = 1 | Run 2 = 1 | Run 3 = 2 | Run 4 = 2 | Run 5 = 3 | Run 6 = 3 | Run 7 = 1 | Run 8 = 1 | Run 9 = 2 | Run 10 = 2 | Run 11 = 3 | Run 12 = 3 | Run 13 = 1 | Run 14 = 1 | Run 15 = 2 | Run 16 = 2 | Run 17 = 3 | Run 18 = 3 | Run 19 = 1 | Run 20 = 1 | Run 21 = 2 | Run 22 = 2 | Run 23 = 3 | Run 24 = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes LC-MS/MS analysis of plasma samples performed in duplicate 2 μl injections.",
+        "TRUTH_CHECK": "The mapping correctly assigns the same biological replicate index to runs originating from the same sample (duplicate injections) and increments the index for different samples within each group.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index following the definition."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "comment[technical replicate]",
+      "extracted_value": "Run 1 = 1 | Run 2 = 2 | Run 3 = 1 | Run 4 = 2 | Run 5 = 1 | Run 6 = 2 | Run 7 = 1 | Run 8 = 2 | Run 9 = 1 | Run 10 = 2 | Run 11 = 1 | Run 12 = 2 | Run 13 = 1 | Run 14 = 2 | Run 15 = 1 | Run 16 = 2 | Run 17 = 1 | Run 18 = 2 | Run 19 = 1 | Run 20 = 2 | Run 21 = 1 | Run 22 = 2 | Run 23 = 1 | Run 24 = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that the LC-MS/MS analysis was performed \"in duplicate 2 μl injections\" for each sample.",
+        "TRUTH_CHECK": "The mapping correctly assigns indices 1 and 2 to the two runs originating from each of the 12 samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "comment[fraction identifier]",
+      "extracted_value": "Run 1 = 1 | Run 2 = 1 | Run 3 = 1 | Run 4 = 1 | Run 5 = 1 | Run 6 = 1 | Run 7 = 1 | Run 8 = 1 | Run 9 = 1 | Run 10 = 1 | Run 11 = 1 | Run 12 = 1 | Run 13 = 1 | Run 14 = 1 | Run 15 = 1 | Run 16 = 1 | Run 17 = 1 | Run 18 = 1 | Run 19 = 1 | Run 20 = 1 | Run 21 = 1 | Run 22 = 1 | Run 23 = 1 | Run 24 = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "Run 1 = 1 | Run 2 = 2 | Run 3 = 1 | Run 4 = 2 | Run 5 = 1 | Run 6 = 2 | Run 7 = 1 | Run 8 = 2 | Run 9 = 1 | Run 10 = 2 | Run 11 = 1 | Run 12 = 2 | Run 13 = 1 | Run 14 = 2 | Run 15 = 1 | Run 16 = 2 | Run 17 = 1 | Run 18 = 2 | Run 19 = 1 | Run 20 = 2 | Run 21 = 1 | Run 22 = 2 | Run 23 = 1 | Run 24 = 2",
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a lectin enrichment step (SNA-I lectin agarose column) where the bound material was eluted in two steps (first with 200 mM acetic acid and 500 mM lactose, and then with 200 mM acetic acid).",
+        "TRUTH_CHECK": "The paper explicitly describes two separate elutions for the analysis of alpha(2,6)-Sia-containing glycopeptides. These separate elutions are defined as fractions. Since the runs are performed in duplicate (2 injections per sample), each sample should have a fraction 1 and a fraction 2. Assigning all runs as fraction 1 is incorrect.",
+        "COMPLETENESS_CHECK": "The format is correct, but the mapping does not reflect the experimental design."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[pregnancy status]",
+      "extracted_value": "Run 1 = AC=MS:1001251 | Run 2 = AC=MS:1001251 | Run 3 = AC=MS:1001251 | Run 4 = AC=MS:1001251 | Run 5 = AC=MS:1001251 | Run 6 = AC=MS:1001251 | Run 7 = AC=MS:1001251 | Run 8 = AC=MS:1001251 | Run 9 = AC=MS:1001251 | Run 10 = AC=MS:1001251 | Run 11 = AC=MS:1001251 | Run 12 = AC=MS:1001251 | Run 13 = AC=MS:1001251 | Run 14 = AC=MS:1001251 | Run 15 = AC=MS:1001251 | Run 16 = AC=MS:1001251 | Run 17 = AC=MS:1001251 | Run 18 = AC=MS:1001251 | Run 19 = AC=MS:1001251 | Run 20 = AC=MS:1001251 | Run 21 = AC=MS:1001251 | Run 22 = AC=MS:1001251 | Run 23 = AC=MS:1001251 | Run 24 = AC=MS:1001251",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an accession number, which does not belong in a factor_value field.",
+        "SOURCE_CHECK": "The paper describes pregnancy status (pregnant vs virgin/non-pregnant), but the value provided is an accession number.",
+        "TRUTH_CHECK": "The value does not represent a level of pregnancy status.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pregnancy status]",
+      "extracted_value": "Non-pregnant",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the pregnancy status of the subjects, which is a relevant characteristic for this study.",
+        "SOURCE_CHECK": "The paper mentions \"non-pregnant mOVA+ transgenic mice\" and \"virgin female\" controls.",
+        "TRUTH_CHECK": "The value is correct for runs derived from non-pregnant samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pregnancy status]",
+      "extracted_value": "Term",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a pregnancy status, which is appropriate for a column named \"characteristics[pregnancy status]\".",
+        "SOURCE_CHECK": "The paper mentions \"pregnant women were collected at the time of term delivery (>37 weeks)\".",
+        "TRUTH_CHECK": "The value \"Term\" correctly identifies the pregnancy status of the human plasma samples collected at delivery.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pregnancy status]",
+      "extracted_value": "Virgin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the pregnancy status of the subjects, which is a relevant characteristic for this study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"virgin\" mice (e.g., \"untreated WT virgin female\", \"virgin mice were retro-orbitally injected\").",
+        "TRUTH_CHECK": "The value is correct for runs associated with virgin mice.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-1 inj 1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-1 inj 1\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma proteins in duplicate 2 μl injections, but it does not provide these specific alphanumeric labels for the runs.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-1 inj 2",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value appears to be a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific identifier \"OVA10-1 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma samples in duplicate (2 μl injections), which matches the pattern of \"inj 1\" and \"inj 2\" seen in the column values.",
+        "COMPLETENESS_CHECK": "The value is a plain text identifier."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-2 inj 1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific identifier \"OVA10-2 inj 1\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma from human and mouse sources, but it does not provide a list of run identifiers or sample codes like \"OVA10-2\".",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-2 inj 2",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value appears to be a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-2 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma samples in duplicate (2 μl injections), which aligns with the \"inj 1\" and \"inj 2\" pattern seen in the column. However, the specific labels \"OVA10-X\" are not defined in the text.",
+        "COMPLETENESS_CHECK": "The value is a label."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-3 inj 1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value appears to be a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-3 inj 1\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes various injections of OVA and the analysis of plasma/tissues, but there is no mention of a naming scheme like \"OVA10-X inj Y\".",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-3 inj 2",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value appears to be a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-3 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma samples in duplicate (2 μl injections), which aligns with the \"inj 1\" and \"inj 2\" pattern seen in the column. However, the specific labels \"OVA10-X\" are not defined in the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-4 inj 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value appears to be a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-4 inj 1\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma proteins in duplicate 2 μl injections. The values in the column (e.g., OVA10-1 inj 1, OVA10-1 inj 2) are consistent with this experimental design (samples 1-12, each with two injections).",
+        "COMPLETENESS_CHECK": "The value is a label for a specific run."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-4 inj 2",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value appears to be a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-4 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma samples in duplicate (2 μl injections), which aligns with the \"inj 1\" and \"inj 2\" pattern seen in the column. However, the specific labels \"OVA10-x\" are not defined in the text.",
+        "COMPLETENESS_CHECK": "The value is a plain text label."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-5 inj 1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field name \"other_column\" is a placeholder, and the value \"OVA10-5 inj 1\" appears to be a sample or run identifier.",
+        "SOURCE_CHECK": "The specific string \"OVA10-5 inj 1\" is not mentioned in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma samples in duplicate (2 injections per sample), which matches the pattern of the values in this column (e.g., \"inj 1\", \"inj 2\"). However, the specific labels \"OVA10-X\" are not defined in the text.",
+        "COMPLETENESS_CHECK": "The value is a label, but it is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-5 inj 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value appears to be a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-5 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma samples in duplicate (2 injections per sample). The values in the column (e.g., OVA10-1 inj 1, OVA10-1 inj 2) follow a pattern consistent with 12 samples (OVA10-1 to OVA10-12) each injected twice.",
+        "COMPLETENESS_CHECK": "The value is a label for a specific run."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-6 inj 1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific identifier \"OVA10-6 inj 1\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma from human and mouse samples, but it does not provide a list of specific run IDs or sample codes like \"OVA10-6\".",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-6 inj 2",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-6 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma from human and mouse samples, but it does not provide a list of run names or specific injection identifiers like \"OVA10-6 inj 2\".",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-7 inj 1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is being judged for a generic \"other_column\" without a specific field definition.",
+        "SOURCE_CHECK": "The specific string \"OVA10-7 inj 1\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma from human and mouse samples, but it does not mention a series of \"OVA10\" injections or a numbering scheme like \"inj 1/2\" for the MS runs.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-7 inj 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value appears to be a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-7 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma samples in duplicate (2 injections per sample). The values in the column (e.g., OVA10-1 inj 1, OVA10-1 inj 2) follow a pattern consistent with this experimental design (Sample ID + Injection number).",
+        "COMPLETENESS_CHECK": "The value is a simple identifier."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-8 inj 1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-8 inj 1\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma from human and mouse samples, but it does not mention a series of 24 runs labeled \"OVA10-1\" through \"OVA10-12\" with \"inj 1\" and \"inj 2\" (duplicate injections). While the paper mentions duplicate 2 uL injections for the LC-MS/MS analysis, the specific naming convention used in the candidate value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-8 inj 2",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value appears to be a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-8 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes experiments with OVA-specific B cells and various injections, but there is no mention of a naming convention like \"OVA10-X inj Y\".",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-9 inj 1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-9 inj 1\" does not appear in the paper text.",
+        "TRUTH_CHECK": "While the paper describes multiple mouse experiments and injections of OVA, it does not provide a naming scheme or a list of run identifiers matching this format.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-9 inj 2",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is being judged for a generic \"other_column\" without a specific field definition.",
+        "SOURCE_CHECK": "The specific string \"OVA10-9 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma proteins (human and mouse) and the use of OVA-tetramers and various mouse strains, but it does not mention a naming convention like \"OVA10-X inj Y\" for its MS runs.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-10 inj 1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value appears to be a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-10 inj 1\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma from human and mouse sources, but it does not provide a mapping of specific run names or sample IDs like \"OVA10-10 inj 1\".",
+        "COMPLETENESS_CHECK": "The value is a plain text string."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-10 inj 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-10 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes LC-MS/MS analysis of plasma samples in duplicate (2 injections per sample). The values in this column follow a pattern (Sample ID + injection number) that is consistent with the described experimental design (duplicate 2 uL injections).",
+        "COMPLETENESS_CHECK": "The value is a plain text identifier."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-11 inj 1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is being judged for a generic \"other_column\" to see if it represents a meaningful entity in the study.",
+        "SOURCE_CHECK": "The paper describes the use of OVA and various injections, but the specific identifier \"OVA10-11 inj 1\" does not appear in the text.",
+        "TRUTH_CHECK": "The value appears to be a run or sample identifier (likely referring to a specific mouse or injection sequence). While the paper describes multiple mice and injections, these specific alphanumeric codes are not provided in the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-11 inj 2",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is being judged for a generic \"other_column\" without a specific field definition.",
+        "SOURCE_CHECK": "The specific string \"OVA10-11 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes experiments involving OVA-specific B cells and injections of OVA, but it does not provide a naming convention or a list of samples/runs matching these identifiers (e.g., \"OVA10-11\").",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-12 inj 1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-12 inj 1\" does not appear in the text, nor is there a described naming convention for runs/samples matching this pattern.",
+        "TRUTH_CHECK": "The paper describes various injections (c-OVA, poly(I:C), etc.) and samples (plasma, tissue), but it does not provide a mapping of runs to these specific alphanumeric labels.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "",
+      "extracted_value": "OVA10-12 inj 2",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample or run identifier, but the field_name \"other_column\" is a generic placeholder.",
+        "SOURCE_CHECK": "The specific string \"OVA10-12 inj 2\" does not appear in the paper text.",
+        "TRUTH_CHECK": "The paper describes multiple mouse experiments with various groups (WT, knockout, transgenic) and injections of OVA/adjuvants, but it does not provide a specific naming convention or list of run IDs like \"OVA10-12 inj 2\".",
+        "COMPLETENESS_CHECK": "The value is a plain text string."
+      }
+    }
+  ]
+}

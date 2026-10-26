@@ -1,0 +1,112 @@
+{
+  "accession" : "PXD014528",
+  "title" : "The translational landscape of naïve and primed state pluripotency",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Translational control plays a central role in regulation of gene expression and can lead to significant divergence between mRNA- and protein-abundance. The translational landscape of early mammalian development and its impact on cellular proteome, however, remains largely un-explored. Here we used genome-wide approaches combined with time-course analysis to measure the mRNA-abundance, mRNA-translation rate and protein expression during the transition of naïve into primed embryonic stem cells (ESCs). We found that the ground state ESCs cultured with GSK3- and MEK-inhibitors and LIF (2iL) display higher ribosome density on a selective set of mRNAs. These mRNAs show reduced translation during the exit from ground state pluripotency and transition to serum/LIF (SL) culture or upon commitment to primed epiblast-like stem cells (EpiLSCs). Strikingly, integrative analysis with cellular proteome indicate a strong translational buffering of this set of mRNAs in 2iL-ESCs leading to stable protein expression levels. Our data reveal that the global alteration of cellular proteome is largely accompanied by transcriptional rewiring. Furthermore, we identified a set of genes (including UHRF1 and KRAS) that undergo selective post-translational regulation during the transition of naïve into primed pluripotency and linked the observed changes to upstream GSK- and MEK/MAPK-signaling pathways using single inhibitor treated ESCs. Thus, we provide a comprehensive and detailed overview of the global changes in gene expression during the transition of naïve to primed pluripotency and dissect the relative contributions of RNA-transcription, translation and regulation of protein stability in controlling protein abundance.",
+  "sampleProcessingProtocol" : "To generate whole cell proteomic profiles, cells were lyzed in 4% SDS, 0.1M HEPES pH 7.6, 0.1M DTT. Protein lysates were then digested with trypsin/LysC combination using Filter Aided Sample‐Preparation (FASP) as described previously (Wisniewski et al., 2009). Peptides were desalted and purified on StageTips (Rappsilber et al., 2007) and were loaded on Orbitrap LC-MS (Thermo).",
+  "dataProcessingProtocol" : "MaxQuant 1.5.1.0 (Cox and Mann, 2008) was used to analyze the mass spectra with standard settings, match‐between‐runs, and label‐free quantification enabled. Protein groups were identified using the mouse RefSeq protein sequence database and were subsequently filtered for reverse hits and potential contaminants (using Perseus, MaxQuant software package). Only proteins that were detected in all three replicates of the same sample were maintained for further analysis.",
+  "projectTags" : [ ],
+  "keywords" : [ "Ribosome profiling", "Proteome", "Translation", "Embryonic stem cells", "Ground state pluripotency" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2019-07-09",
+  "publicationDate" : "2020-04-03",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Yaser",
+    "lastName" : "Atlasi",
+    "identifier" : "149520157",
+    "affiliation" : "Radboud University",
+    "email" : "yaser.atlasi@ncmls.ru.nl",
+    "country" : "Netherlands",
+    "orcid" : "",
+    "name" : "Yaser Atlasi",
+    "id" : "149520157"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Henk",
+    "lastName" : "Stunnenberg",
+    "identifier" : "150830100",
+    "affiliation" : "Radboud University Nijmegen The Netherlands",
+    "email" : "h.stunnenberg@ncmls.ru.nl",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Henk Stunnenberg",
+    "id" : "150830100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "Netherlands" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "CL",
+      "accession" : "CL:0002322",
+      "name" : "embryonic stem cell"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:10090",
+      "name" : "Mus musculus (Mouse)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:10090",
+    "name" : "Mus musculus (mouse)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0002322",
+    "name" : "Embryonic stem cell"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Atlasi Y, Jafarnejad SM, Gkogkas CG, Vermeulen M, Sonenberg N, Stunnenberg HG. The translational landscape of ground state pluripotency. Nat Commun. 2020 11(1):1617",
+    "pubmedID" : 32238817,
+    "doi" : "10.1038/s41467-020-15449-9"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000398",
+    "name" : "No PTMs are included in the dataset"
+  } ],
+  "totalFileDownloads" : 10425,
+  "botCount" : 1736,
+  "hubCount" : 8509,
+  "organicCount" : 180
+}

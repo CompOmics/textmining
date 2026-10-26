@@ -1,0 +1,139 @@
+{
+  "accession" : "PXD040722",
+  "title" : "The mouse aging proteomic atlas",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "This database provides TMT-labeled proteomic data of aorta (thoracic aorta), brain, heart, kidney, liver, lung, muscle (gastrocnemius muscle), and skin (abdominal skin) of 6, 15, 24, and 30 months old male C57BL/6 mice. In addition to the whole-tissue lysate, low-soluble protein-enriched fraction was also analyzed for heart, kidney, lung, muscle, and skin. Bulk RNA-Seq data are available for brain, heart, kidney, liver, lung, muscle, and skin. The tissues used for transcriptomic analysis and proteomic analysis of whole-tissue lysate and low-soluble protein-enriched fraction were collected from the same mice. All analyses were conducted with 4 biological replicates.",
+  "sampleProcessingProtocol" : "Male C57BL/6J mice were purchased from the Jackson Laboratory Japan and were maintained under specific pathogen-free conditions on a 12 h light dark cycle. All procedures were approved by the Institutional Animal Care and Use Committee at Osaka Metropolitan University. For tissue collection, mice were first euthanized by cervical dislocation and then the abdominal hair was removed with depilatory cream Veet (Reckitt Benckiser). After 30 seconds, the cream was wiped off and abdominal skin, brain (cerebrum), gastrocnemius muscle, heart, kidney, liver, lung, and thoracic aorta were collected. Collected tissues were immediately frozen in liquid nitrogen. Frozen tissues were thoroughly pulverized with mortar in liquid nitrogen and kept in -80 Â°C until use.   The WTL was prepared by rotating tissue powder in 2 Ã— Laemmli buffer (4% SDS, 20% glycerol, 0.02% bromophenol blue, 125 mM Tris-Cl, pH 6.8) for 2 h at RT. Insoluble material was removed by centrifugation (17,700 Ã— g, 15 min, RT). To prepare the LSF, tissue powder was first rotated in 0.125 (heart, kidney, lung, skin) or 0.25% (muscle) SDS/water solution supplemented with protease inhibitor cocktail (Nacalai Tesque Cat No. 03969) for 72 h at RT. Pre-incubated tissues were pelleted by centrifugation (14,000 Ã— g, 15 min, RT) and the supernatant was discarded. The pelleted tissue was resuspended in water containing protease inhibitor cocktail (Nacalai Tesque Cat No. 03969) and rotated for 48 h at RT. Then the tissue was centrifuged again (17,700 Ã— g, 15 min, RT). The supernatant was discarded and the pelleted tissue was resuspended and rotated in 2 Ã— Laemmli buffer for 2 h at RT. Insoluble material was removed by centrifugation (17,700 Ã— g, 15 min, RT) and the supernatant was used as the LSF. Protein concentration was measured using the DC protein assay kit (Bio-Rad Cat No. 500-0111). Trypsin digestion and peptide purification was performed using the S-Trap mini column (Protifi) following the manufacturer's instructions.   Peptides were labelled with TMT16plex (10.1038/s41592-020-0781-4) Isobaric Label Reagent (ThermoFisher) according the manufacturer’s instructions. The reaction was quenched with 5% hydroxylamine for 15min at RT. Samples were combined and for sample clean up an OASIS® HLB µElution Plate (Waters) was used. Offline high pH reverse phase fractionation was carried out on an Agilent 1200 Infinity high-performance liquid chromatography system, equipped with a Gemini C18 column (3 μm, 110 Å, 100 x 1.0 mm, Phenomenex). An UltiMate 3000 RSLC nano LC system (Dionex) equipped with an µ-Precolumn (C18 PepMap 100, 5µm, 300 µm i.d. x 5 mm, 100 Å) and an analytical column (nanoEase™ M/Z HSS T3 column 75 µm x 250 mm C18, 1.8 µm, 100 Å, Waters) was coupled directly to an Orbitrap Fusion™ Lumos™ Tribrid™ Mass Spectrometer (Thermo) using the Nanospray Flex™ ion source in positive ion mode. Sample trapping was carried out with a constant flow of 0.05% trifluoroacetic acid in water at 30 µL/min for 6 minutes. Peptides were eluted from the analytical column running using solvent A (0.1% formic acid in water, 3% DMSO) with a constant flow of 0.3 µL/min in combination with an increasing percentage of solvent B (0.1% formic acid in acetonitrile, 3% DMSO). The gradient was as follows: from 2% to 8% in 4 min, from 8% to 26% in 104 min, from 28%-38% in 4 min, and finally from 38%-80% in 4 min followed by re-equilibration back to 2% B in 4 min. The peptides were introduced into the Fusion Lumos via a Pico-Tip Emitter 360 µm OD x 20 µm ID; 10 µm tip (CoAnn Technologies) and an applied spray voltage of 2.2 kV. The capillary temperature was set at 275°C. Full mass scan was acquired with mass range 375-1500 m/z in profile mode in the orbitrap with resolution of 120000. The filling time was set at maximum of 50 ms with a limitation of 4x105 ions. Data dependent acquisition (DDA) was performed with the resolution of the Orbitrap set to 30000, with a fill time of 94 ms and a limitation of 1x105 ions. A normalized collision energy of 34 was applied. MS2 data was acquired in profile mode.",
+  "dataProcessingProtocol" : "The acquired RAW files were searched against a Mus musculus (UP000000589, June 2020, 63854 entries) Uniprot database containing common contaminants and reversed sequences using IsobarQuant (DOI: doi:10.1038/nprot.2015.101) and Mascot (v2.2.07). The following modifications were included into the search parameters: Carbamidomethyl (C) and TMT16 (K) as fixed modifications, Acetyl (Protein N-term), Oxidation (M) and TMT16 (N-term) as variable modifications. For the full scan (MS1) a mass error tolerance of 10 ppm and for MS/MS (MS2) spectra of 0.02 Da was used. Further parameters were trypsin as protease with an allowance of maximum two missed cleavages; a minimum peptide length of seven amino acids; at least two unique peptides were required for a protein identification. The false discovery rate on peptide and protein level was set to 0.01. The raw output files of IsobarQuant (protein.txt – files) were processed using the R programming language (ISBN 3-900051-07-0). Contaminants were filtered out and only proteins that were quantified with at least two unique peptides were considered for the analysis. Log2 transformed raw TMT reporter ion intensities (‘signal_sum’ columns) were normalized using vsn (variance stabilization normalization - PMID: 12169536). Proteins were tested for differential expression using the limma package. The replicate information was added as a factor in the design matrix given as an argument to the ‘lmFit’ function of limma. A protein was annotated as a hit with a false discovery rate (fdr) smaller 5 % and a fold-change of at least 100 % and as a candidate with a fdr below 20 % and a fold-change of at least 50 %.",
+  "projectTags" : [ ],
+  "keywords" : [ "Proteome", "Aging", "Multi-omics" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2023-03-09",
+  "publicationDate" : "2024-09-17",
+  "submitters" : [ {
+    "title" : "Mr",
+    "firstName" : "Frank",
+    "lastName" : "Stein",
+    "identifier" : "95870166",
+    "affiliation" : "EMBL",
+    "email" : "frank.stein@embl.de",
+    "country" : "Germany",
+    "orcid" : "",
+    "name" : "Frank Stein",
+    "id" : "95870166"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Naoko",
+    "lastName" : "Ohtani",
+    "identifier" : "2533117",
+    "affiliation" : "Osaka Metropolitan University Graduate School of Medicine",
+    "email" : "naoko.ohtani@omu.ac.jp",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Naoko Ohtani",
+    "id" : "2533117"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1002732",
+    "name" : "Orbitrap Fusion Lumos"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001207",
+    "name" : "Mascot"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "Germany" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000671",
+      "name" : "kidney"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000562",
+      "name" : "heart"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0001253",
+      "name" : "skin"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000763",
+      "name" : "lung"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:10090",
+      "name" : "Mus musculus (Mouse)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:10090",
+    "name" : "Mus musculus (mouse)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0001253",
+    "name" : "Skin"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000763",
+    "name" : "Lung"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000671",
+    "name" : "Kidney"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000562",
+    "name" : "Heart"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Takasugi M, Nonaka Y, Takemura K, Yoshida Y, Stein F, Schwarz JJ, Adachi J, Satoh J, Ito S, Tombline G, Biashad SA, Seluanov A, Gorbunova V, Ohtani N. An atlas of the aging mouse proteome reveals the features of age-related post-transcriptional dysregulation. Nat Commun. 2024 15(1):8520",
+    "pubmedID" : 39353907,
+    "doi" : "10.1038/s41467-024-52845-x"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:01720",
+    "name" : "TMT6plex-126 reporter+balance reagent acylated residue"
+  } ],
+  "totalFileDownloads" : 27525,
+  "botCount" : 11698,
+  "hubCount" : 14376,
+  "organicCount" : 1451
+}

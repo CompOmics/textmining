@@ -1,0 +1,100 @@
+{
+  "accession" : "PXD012255",
+  "title" : "Phosphoproteomics using CZE-MS/MS",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Phosphoproteomics requires better separation of phosphopeptides to boost the coverage of the phosphoproteome. We argue that an alternative separation method that produces orthogonal phosphopeptide separation to the widely used LC needs to be considered. Capillary zone electrophoresis (CZE) is one important alternative because CZE and LC are orthogonal for phosphopeptide separation and because the migration time of peptides in CZE can be accurately predicted. In this work, we coupled strong cation exchange (SCX)-reversed-phase LC (RPLC) to CZE-MS/MS for large-scale phosphoproteomics of the colon carcinoma  HCT116 cell line. The CZE-MS/MS-based platform identified 11,555 phosphopeptides. The phosphopeptide dataset is at least 100% larger than that from previous CZE-MS/MS studies and will be a valuable resource for building a model for predicting the migration time of phosphopeptides in CZE. Preliminary investigations demonstrated that predicted and observed electrophoretic mobility of phosphopeptides containing one phosphoryl group had good linear correlations (R2≥0.94). Adding one phosphoryl group on a peptide decreased its electrophoretic mobility dramatically because the phosphoryl group reduced the peptide’s charge by roughly 1 based on our experimental data. Phosphopeptides tended to migrate significantly slower than unphosphopeptides in the CZE separation capillary and phosphorylated and unphosphorylated forms of peptides were separated well by CZE. The CZE-MS/MS and LC-MS/MS were complementary in large-scale phosphopeptide identifications and produced different phosphosite motifs from the HCT116 cell line. The data highlight the value of CZE-MS/MS for phosphoproteomics as a complementary separation approach for not only improving the phosphoproteome coverage but also providing more insight into the phosphosite motifs.",
+  "sampleProcessingProtocol" : "A lysis buffer with 8 M urea with 75 mM NaCl, 50 mM Tris-HCl (pH 8.2), 10 mM sodium pyrophosphate, 1 mM PMSF, 1 mM Na3VO4, 1 mM NaF, 1 mM β-glycerophosphate, and 1 EDTA-free protease inhibitor cocktail was prepared. HCT116 colon cancer cells were cultured to 70% confluence followed by cell lysis with the lysis buffer. A small aliquot of the cell lysate was subjected to the Bicinchoninic acid assay for protein concentration measurement. Three mg of extracted protein was subjected to denaturation at 37 °C for 1 h, reduction with 5 mM Dithiothreitol (DTT) at 37 °C for 1 h, and alkylation with 14 mM iodoacetamide (IAA) for 30 min at room temperature. The alkylation was terminated by adding 5 mM DTT for 25 min. The sample was then diluted with 25 mM Tris-HCl buffer (pH 8.2) with 1 mM CaCl2. Trypsin was added to the sample for overnight digestion at 37 °C. Phosphopeptides in the desalted digest were enriched with TiO2 beads in a 1:4 peptides to beads ratio based on the references [35] and [36]. After enrichment, the phosphopeptides were desalted, lyophilized and stored at -80 °C before use. We assumed 70% recovery during tryptic digestion and 10% recovery during phosphopeptide enrichment, resulting in about 200 µg phosphopeptides in the end.",
+  "dataProcessingProtocol" : "Proteome Discoverer 2.2 software (Thermo Fisher Scientific) was used for data analysis. Sequest HT was used for the database search.[37] The human proteome database (UP000005640, 70,965 protein sequences) containing reviewed and unreviewed proteins was downloaded from UniProt (http://www.uniprot.org/).  All raw files were searched against both the forward database and a decoy (reverse) database to estimate the false discovery rate (FDR). [38] Maximum two missed cleavage sites were allowed for peptide identification, and the peptide length was set to 6 to 144 amino acid residues. The mass tolerances of precursor and fragments were 20 ppm and 0.05 Da, respectively. Oxidation (methionine) and phosphorylation (serine, threonine and tyrosine) were set as dynamic modifications. Acetylation at the protein N-terminal was chosen as a dynamic modification. Carbamidomethylation (cysteine) was set as a static modification. The peptide ID was filtered with confidence as high, corresponding to a 1% FDR. Protein grouping was enabled, and the strict parsimony principle was applied. The phosphoRS that integrated into the workflow was used to evaluate the confidence of the phosphosite localization.",
+  "projectTags" : [ "Biological" ],
+  "keywords" : [ "Cze-ms/ms", "Hct116 cell line", "Phosphoproteomics" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2019-01-08",
+  "publicationDate" : "2019-01-16",
+  "submitters" : [ {
+    "title" : "Professor",
+    "firstName" : "Liangliang",
+    "lastName" : "Sun",
+    "identifier" : "77150114",
+    "affiliation" : "Michigan State University ",
+    "email" : "lsun@chemistry.msu.edu",
+    "country" : "United States",
+    "orcid" : "0000-0001-8939-5042",
+    "name" : "Liangliang Sun",
+    "id" : "77150114"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Liangliang",
+    "lastName" : "Sun",
+    "identifier" : "128730100",
+    "affiliation" : "Department of Chemistry, Michigan State University",
+    "email" : "lsun@chemistry.msu.edu",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Liangliang Sun",
+    "id" : "128730100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001208",
+    "name" : "Sequest"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000650",
+    "name" : "Proteome Discoverer"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "United States" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Chen D, Ludwig K, Krokhin OV, Spicer V, Yang Z, Shen X, Hummon AB, Sun L. Capillary zone electrophoresis-tandem mass spectrometry for large-scale phosphoproteomics with the production of over 11000 phosphopeptides from the colon carcinoma HCT116 cell line. Anal Chem. 2019",
+    "pubmedID" : 30624053,
+    "doi" : "10.1021/acs.analchem.8b04770"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00696",
+    "name" : "phosphorylated residue"
+  } ],
+  "totalFileDownloads" : 7982,
+  "botCount" : 758,
+  "hubCount" : 7150,
+  "organicCount" : 74
+}

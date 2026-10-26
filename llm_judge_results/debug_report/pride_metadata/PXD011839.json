@@ -1,0 +1,116 @@
+{
+  "accession" : "PXD011839",
+  "title" : "Plasma proteome profiling discovers novel proteins associated with non-alcoholic fatty liver disease",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Non-alcoholic fatty liver disease (NAFLD) affects 25% of the population and can progress to cirrhosis, where treatment options are limited. As the liver secrets most of the blood plasma proteins its diseases should affect the plasma proteome. Plasma proteome profiling on 48 patients with cirrhosis or NAFLD with normal glucose tolerance or diabetes, revealed 8 significantly changing (ALDOB, APOM, LGALS3BP, PIGR, VTN, IGHD, FCGBP and AFM), two of which are already linked to liver disease. Polymeric immunoglobulin receptor (PIGR) was significantly elevated in both cohorts with a 2.7-fold expression change in NAFLD and 4-fold change in cirrhosis and was further validated in mouse models. Furthermore, a global correlation map of clinical and proteomic data strongly associated DPP4, ANPEP, TGFBI, PIGR, and APOE to NAFLD and cirrhosis. DPP4 is a known drug target in diabetes. ANPEP and TGFBI are of interest because of their potential role in extracellular matrix remodeling in fibrosis.",
+  "sampleProcessingProtocol" : "All plasma samples were prepared according to the previously published Plasma Proteome Profiling pipeline on an automated liquid handling system (Agilent Bravo) in a 96-well plate format (Geyer et al., 2016a). In brief, proteins were denatured, reduced, alkylated, digested and peptides purified on StageTips (Kulak et al., 2014) using reagents from the PreOmics ‘iST' Kit (P.O. 00001, PreOmics GmbH).",
+  "dataProcessingProtocol" : "For human plasma, mMass spectrometry raw files were analyzed in the MaxQuant environment v.1.5.8.6 (Cox and Mann, 2008) and employed Andromeda for database search (Cox et al., 2011). The MS/MS spectra were searched against the human Uniprot FASTA database (version 20170406, 157, 510 entries). Enzyme specificity was set to trypsin with a maximum of 2 missed cleavages and the search included cysteine carbamidomethylation as fixed modification and oxidation on methionine and N-terminal acetylation as variable modifications with a minimum length of 7 amino acids. A false discovery rate (FDR) of 0.01 was set to PSM and protein levels. Study samples were analyzed together with our in-house generated matching library and the ‘match between runs’ algorithm (Nagaraj et al., 2012). Label-free quantification (LFQ) was performed with a minimum ratio count of 2 and normalized in a separate group from the library raw files (Cox et al., 2014).",
+  "projectTags" : [ "Biomedical" ],
+  "keywords" : [ "Biomarker discovery/ mass spectrometry/ nafld/ nash/ plasma proteome profiling" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2018-11-27",
+  "publicationDate" : "2019-03-04",
+  "submitters" : [ {
+    "title" : "Mr",
+    "firstName" : "Mario",
+    "lastName" : "Oroshi",
+    "identifier" : "420122",
+    "affiliation" : "Proteomics",
+    "email" : "oroshi@biochem.mpg.de",
+    "country" : "Germany",
+    "orcid" : "",
+    "name" : "Mario Oroshi",
+    "id" : "420122"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Matthias",
+    "lastName" : "Mann",
+    "identifier" : "124290100",
+    "affiliation" : "Max Planck Institute of Biochemistry",
+    "email" : "mmann@biochem.mpg.de",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Matthias Mann",
+    "id" : "124290100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive",
+    "value" : ""
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "Germany" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000131",
+      "name" : "blood plasma",
+      "value" : ""
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)",
+      "value" : ""
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)",
+    "value" : ""
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000131",
+    "name" : "Blood plasma",
+    "value" : ""
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Niu L, Geyer PE, Wewer Albrechtsen NJ, Gluud LL, Santos A, Doll S, Treit PV, Holst JJ, Knop FK, Vilsbøll T, Junker A, Sachs S, Stemmer K, Müller TD, Tschöp MH, Hofmann SM, Mann M. Plasma proteome profiling discovers novel proteins associated with non-alcoholic fatty liver disease. Mol Syst Biol. 2019 15(3):e8793",
+    "pubmedID" : 30824564,
+    "doi" : "10.15252/msb.20188793"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1002864",
+    "name" : "No PTMs are included in the dataset",
+    "value" : ""
+  } ],
+  "totalFileDownloads" : 18447,
+  "otherOmicsLinks" : [ "pride.project:PXD012056" ]
+}

@@ -1,0 +1,532 @@
+{
+  "paper_id": "PXD005554",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states patient samples were donated by women and used the SwissProt Homo sapiens database, which is an allowed inference.",
+        "TRUTH_CHECK": "The analyzed tissues (breast and omentum) are from human patients.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "omentum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper mentions \"normal omentum\" and \"omental metastasis from high-grade serous ovarian cancer\".",
+        "TRUTH_CHECK": "The runs listed are derived from omentum samples (both normal and HGSOC).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "breast",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper mentions \"triple-negative breast cancer\" and \"adjacent mammary tissue\".",
+        "TRUTH_CHECK": "The runs are derived from TNBC and adjacent mammary tissue, both of which originate from the breast.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The paper describes \"normal omentum\" and \"normal or adjacent samples\".",
+        "TRUTH_CHECK": "The runs with this value are associated with \"omentum normal\", which are the control samples.",
+        "COMPLETENESS_CHECK": "The value \"normal\" is the correct SDRF term for healthy subjects."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "metastatic ovarian high grade serous adenocarcinoma",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "high-grade serous ovarian cancer",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"omental metastasis from high-grade serous ovarian cancer\".",
+        "TRUTH_CHECK": "The runs are associated with \"omentum HGSOC\", which matches the disease state.",
+        "COMPLETENESS_CHECK": "The value is a descriptive name of the disease. While \"adenocarcinoma\" is a common histological type for HGSOC, the paper specifically uses \"high-grade serous ovarian cancer\"."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "triple-negative breast cancer",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods explicitly mention \"triple-negative breast cancer\".",
+        "TRUTH_CHECK": "The runs carrying this value are associated with TNBC sources, which is correct.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "F",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"Patient samples were kindly donated by women\", which supports the sex as female.",
+        "TRUTH_CHECK": "The samples were obtained from women, so the sex is female.",
+        "COMPLETENESS_CHECK": "The value \"F\" is a standard abbreviation for female."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the labeling field.",
+        "SOURCE_CHECK": "No labels (TMT, SILAC, etc.) are mentioned in the methods; the use of \"sum of the intensities of the precursor ions\" as a normalization metric is consistent with a label-free approach.",
+        "TRUTH_CHECK": "The runs are label-free.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term for label-free runs."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state \"using a QExactive mass spectrometer (Thermo)\".",
+        "TRUTH_CHECK": "The instrument used for the runs is the QExactive.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state that samples were digested with bead-immobilized trypsin.",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the proteins in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Lys-C;AC=MS:1001309",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that samples were pre-digested with Lys-C.",
+        "TRUTH_CHECK": "Lys-C was used for the digestion of the proteins analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=N-glycosidase F;AC=CHMO:0002921",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "N-glycosidase F (PNGaseF) is a deglycosylation enzyme, not a protease or chemical cleavage agent used to digest proteins into peptides.",
+        "SOURCE_CHECK": "The paper mentions deglycosylation with PNGaseF, but this is a separate step from protein digestion.",
+        "TRUTH_CHECK": "The proteins were digested using Lys-C and trypsin, not PNGaseF.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong item."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "NT= Extraction purification;AC=NCIT:C113061",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a method for enriching a protein subset, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a sequential extraction process using a CNMCS kit to remove nuclear, membrane, and cytoskeletal proteins, leaving an insoluble pellet enriched for ECM proteins.",
+        "TRUTH_CHECK": "The process described is a sequential extraction to purify the ECM fraction.",
+        "COMPLETENESS_CHECK": "The value uses a controlled term (NT=Extraction purification) which accurately summarizes the described sequential extraction process."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "FractionationMethod",
+      "extracted_value": "high-pH reversed-phase chromatography (hpHRP)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an offline separation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section explicitly describes \"Off-Line Fractionation of Peptides by Reversed-Phase Chromatography at High pH\".",
+        "TRUTH_CHECK": "The runs listed (e.g., those ending in _f1.raw, _f10.raw) correspond to the fractions generated by this high-pH reversed-phase chromatography.",
+        "COMPLETENESS_CHECK": "Complete. The value is a correct description of the method used."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a workflow of protein extraction, digestion into peptides, and LC-MS/MS analysis, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the proteomics experiment performed on all listed runs.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=Unimod:4;MT=Fixed;PP=Anywhere;TA=C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"fixed modification was carbamidomethylation of cysteine\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, including the name, residue, and fixed status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Gln->pyro-Glu;AC=Unimod:28;MT=Variable;PP=Protein N-term;TA=Q",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"pyro-glutamic acid modification at N-terminal glutamine\" as a variable modification.",
+        "TRUTH_CHECK": "The modification is correctly attributed to the runs.",
+        "COMPLETENESS_CHECK": "The cell follows the required format, specifying the name, residues (Q), position (Protein N-term), and status (Variable)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Deamidated;AC=Unimod:7;MT=Variable;PP=Anywhere;TA=N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"variable modifications were... deamidation of asparagine\".",
+        "TRUTH_CHECK": "The modification was used for the search of the runs listed.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, AC, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;AC=Unimod:35;MT=Variable;PP=Anywhere;TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"variable modifications were oxidized methionine\".",
+        "TRUTH_CHECK": "The value is right for the runs as it was part of the search parameters.",
+        "COMPLETENESS_CHECK": "The value follows the required format including NT, TA, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Hydroxylation;AC=MOP:0000673;MT=Variable;PP=Anywhere;TA=P",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"variable modifications were... hydroxylation of lysine and proline\".",
+        "TRUTH_CHECK": "The modification was used for the runs.",
+        "COMPLETENESS_CHECK": "The cell specifies proline (TA=P) as a residue for hydroxylation, which is correct."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Hydroxylation;AC=MOP:0000673;MT=Variable;PP=Anywhere;TA=K",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"variable modifications were... hydroxylation of lysine and proline\".",
+        "TRUTH_CHECK": "Hydroxylation of lysine (K) was searched as a variable modification for these runs.",
+        "COMPLETENESS_CHECK": "The cell follows the required format, specifying the name, residues, and modification type."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under Protein Identification states \"10 ppm mass tolerance for precursor ions\".",
+        "TRUTH_CHECK": "The value is correct for all runs in the study.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.8 Da",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "0.015 Da",
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states \"15 mmu for fragment-ion mass tolerance\".",
+        "TRUTH_CHECK": "The value 0.8 Da does not match the 15 mmu (0.015 Da) stated in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format but contains the wrong number."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "150324_121_AN_G42_C1_2h.raw = 1 | 150330_121_AN_G138_C2_2h.raw = 1 | 150330_121_AN_G138_S2_2h.raw = 1 | 150330_121_AN_G42_S1_2h.raw = 1 | 150603_121_AN_G138_C2_f1.raw = 1 | 150603_121_AN_G138_C2_f10.raw = 1 | 150603_121_AN_G138_C2_f11.raw = 1 | 150603_121_AN_G138_C2_f12.raw = 1 | 150603_121_AN_G138_C2_f13.raw = 1 | 150603_121_AN_G138_C2_f14.raw = 1 | 150603_121_AN_G138_C2_f15.raw = 1 | 150603_121_AN_G138_C2_f2_b.raw = 1 | 150603_121_AN_G138_C2_f3.raw = 1 | 150603_121_AN_G138_C2_f4.raw = 1 | 150603_121_AN_G138_C2_f5.raw = 1 | 150603_121_AN_G138_C2_f6.raw = 1 | 150603_121_AN_G138_C2_f7.raw = 2 | 150603_121_AN_G138_C2_f8.raw = 2 | 150603_121_AN_G138_C2_f9.raw = 2 | 150603_121_AN_G138_S2_f1.raw = 2 | 150603_121_AN_G138_S2_f10.raw = 2 | 150603_121_AN_G138_S2_f11.raw = 2 | 150603_121_AN_G138_S2_f12.raw = 2 | 150603_121_AN_G138_S2_f13.raw = 2 | 150603_121_AN_G138_S2_f14.raw = 2 | 150603_121_AN_G138_S2_f15.raw = 2 | 150603_121_AN_G138_S2_f2.raw = 2 | 150603_121_AN_G138_S2_f3.raw = 2 | 150603_121_AN_G138_S2_f4.raw = 2 | 150603_121_AN_G138_S2_f5.raw = 2 | 150603_121_AN_G138_S2_f6.raw = 2 | 150603_121_AN_G138_S2_f7.raw = 2 | 150603_121_AN_G138_S2_f8.raw = 2 | 150603_121_AN_G138_S2_f9.raw = 1 | 150911_174_AN_G138_C1_f1.raw = 1 | 150911_174_AN_G138_C1_f10.raw = 1 | 150911_174_AN_G138_C1_f11.raw = 1 | 150911_174_AN_G138_C1_f12.raw = 1 | 150911_174_AN_G138_C1_f13.raw = 1 | 150911_174_AN_G138_C1_f14.raw = 1 | 150911_174_AN_G138_C1_f15.raw = 1 | 150911_174_AN_G138_C1_f2.raw = 1 | 150911_174_AN_G138_C1_f3.raw = 1 | 150911_174_AN_G138_C1_f4.raw = 1 | 150911_174_AN_G138_C1_f5.raw = 1 | 150911_174_AN_G138_C1_f6.raw = 1 | 150911_174_AN_G138_C1_f7.raw = 1 | 150911_174_AN_G138_C1_f8.raw = 1 | 150911_174_AN_G138_C1_f9.raw = 1 | 150911_174_AN_G138_S1_f1.raw = 2 | 150911_174_AN_G138_S1_f10.raw = 2 | 150911_174_AN_G138_S1_f11.raw = 2 | 150911_174_AN_G138_S1_f12.raw = 2 | 150911_174_AN_G138_S1_f13.raw = 2 | 150911_174_AN_G138_S1_f14.raw = 2 | 150911_174_AN_G138_S1_f15.raw = 2 | 150911_174_AN_G138_S1_f2.raw = 2 | 150911_174_AN_G138_S1_f3.raw = 2 | 150911_174_AN_G138_S1_f4.raw = 2 | 150911_174_AN_G138_S1_f5.raw = 2 | 150911_174_AN_G138_S1_f6.raw = 2 | 150911_174_AN_G138_S1_f7.raw = 2 | 150911_174_AN_G138_S1_f8.raw = 2 | 150911_174_AN_G138_S1_f9.raw = 2 | 160123_210_AN_10.raw = 2 | 160123_210_AN_12.raw = 1 | 160123_210_AN_13.raw = 1 | 160123_210_AN_14.raw = 1 | 160123_210_AN_15.raw = 1 | 160123_210_AN_16.raw = 1 | 160123_210_AN_17.raw = 1 | 160123_210_AN_18.raw = 1 | 160123_210_AN_2.raw = 1 | 160123_210_AN_3.raw = 1 | 160123_210_AN_5.raw = 1 | 160123_210_AN_7.raw = 1 | 160123_210_AN_8.raw = 1 | 160129_210_AN_1.raw = 1 | 160129_210_AN_6.raw = 1 | 160129_210_AN_9.raw = 1 | 160218_210_AN_11.raw = 1 | 160218_210_AN_4.raw = 2 | 160310_210_AN_4_f1.raw = 2 | 160310_210_AN_4_f10.raw = 2 | 160310_210_AN_4_f11.raw = 2 | 160310_210_AN_4_f12.raw = 2 | 160310_210_AN_4_f13.raw = 2 | 160310_210_AN_4_f14.raw = 2 | 160310_210_AN_4_f15.raw = 2 | 160310_210_AN_4_f2.raw = 2 | 160310_210_AN_4_f3.raw = 2 | 160310_210_AN_4_f4.raw = 2 | 160310_210_AN_4_f5.raw = 2 | 160310_210_AN_4_f6.raw = 2 | 160310_210_AN_4_f7.raw = 2 | 160310_210_AN_4_f8.raw = 2 | 160310_210_AN_4_f9.raw = 2 | 160315_210_AN_10_f1.raw = 2 | 160315_210_AN_10_f10.raw = 1 | 160315_210_AN_10_f11.raw = 1 | 160315_210_AN_10_f12.raw = 1 | 160315_210_AN_10_f13.raw = 1 | 160315_210_AN_10_f14.raw = 1 | 160315_210_AN_10_f15.raw = 1 | 160315_210_AN_10_f2.raw = 1 | 160315_210_AN_10_f3.raw = 1 | 160315_210_AN_10_f4.raw = 1 | 160315_210_AN_10_f5.raw = 1 | 160315_210_AN_10_f6.raw = 1 | 160315_210_AN_10_f7.raw = 1 | 160315_210_AN_10_f8.raw = 1 | 160315_210_AN_10_f9.raw = 1 | 160317_210_AN_11_f1.raw = 1 | 160317_210_AN_11_f10.raw = 1 | 160317_210_AN_11_f11.raw = 2 | 160317_210_AN_11_f12.raw = 2 | 160317_210_AN_11_f13.raw = 2 | 160317_210_AN_11_f14.raw = 2 | 160317_210_AN_11_f15.raw = 2 | 160317_210_AN_11_f2.raw = 2 | 160317_210_AN_11_f3.raw = 2 | 160317_210_AN_11_f4.raw = 2 | 160317_210_AN_11_f5.raw = 2 | 160317_210_AN_11_f6.raw = 2 | 160317_210_AN_11_f7.raw = 2 | 160317_210_AN_11_f8.raw = 2 | 160317_210_AN_11_f9.raw = 2 | 160403_210_AN_5_f1.raw = 2 | 160403_210_AN_5_f10.raw = 2 | 160403_210_AN_5_f11.raw = 2 | 160403_210_AN_5_f12.raw = 1 | 160403_210_AN_5_f2.raw = 2 | 160403_210_AN_5_f3.raw = 2 | 160403_210_AN_5_f4.raw = 1 | 160403_210_AN_5_f5.raw = 1 | 160403_210_AN_5_f6.raw = 2 | 160403_210_AN_5_f7.raw = 2 | 160403_210_AN_5_f8.raw = 1 | 160403_210_AN_5_f9.raw = 1 | 160405_210_AN_5_f13.raw = 2 | 160405_210_AN_5_f14.raw = 1 | 160405_210_AN_5_f15.raw = 2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions n=2 for HGSOC and n=2 for TNBC, implying two biological replicates per condition.",
+        "TRUTH_CHECK": "The mapping is inconsistent. Runs from the same sample (e.g., 150603_121_AN_G138_C2_f1 through f15) are split between replicate 1 and 2, and runs from the same sample (e.g., 160403_210_AN_5_f1 through f15) are randomly assigned 1 or 2. According to the definition, runs of the same biological sample (including fractions) must all get the same index.",
+        "COMPLETENESS_CHECK": "Every run has an index, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "150324_121_AN_G42_C1_2h.raw = 1 | 150330_121_AN_G138_C2_2h.raw = 1 | 150330_121_AN_G138_S2_2h.raw = 1 | 150330_121_AN_G42_S1_2h.raw = 1 | 150603_121_AN_G138_C2_f1.raw = 1 | 150603_121_AN_G138_C2_f10.raw = 1 | 150603_121_AN_G138_C2_f11.raw = 1 | 150603_121_AN_G138_C2_f12.raw = 1 | 150603_121_AN_G138_C2_f13.raw = 1 | 150603_121_AN_G138_C2_f14.raw = 1 | 150603_121_AN_G138_C2_f15.raw = 1 | 150603_121_AN_G138_C2_f2_b.raw = 1 | 150603_121_AN_G138_C2_f3.raw = 1 | 150603_121_AN_G138_C2_f4.raw = 1 | 150603_121_AN_G138_C2_f5.raw = 1 | 150603_121_AN_G138_C2_f6.raw = 1 | 150603_121_AN_G138_C2_f7.raw = 1 | 150603_121_AN_G138_C2_f8.raw = 1 | 150603_121_AN_G138_C2_f9.raw = 1 | 150603_121_AN_G138_S2_f1.raw = 1 | 150603_121_AN_G138_S2_f10.raw = 1 | 150603_121_AN_G138_S2_f11.raw = 1 | 150603_121_AN_G138_S2_f12.raw = 1 | 150603_121_AN_G138_S2_f13.raw = 1 | 150603_121_AN_G138_S2_f14.raw = 1 | 150603_121_AN_G138_S2_f15.raw = 1 | 150603_121_AN_G138_S2_f2.raw = 1 | 150603_121_AN_G138_S2_f3.raw = 1 | 150603_121_AN_G138_S2_f4.raw = 1 | 150603_121_AN_G138_S2_f5.raw = 1 | 150603_121_AN_G138_S2_f6.raw = 1 | 150603_121_AN_G138_S2_f7.raw = 1 | 150603_121_AN_G138_S2_f8.raw = 1 | 150603_121_AN_G138_S2_f9.raw = 1 | 150911_174_AN_G138_C1_f1.raw = 1 | 150911_174_AN_G138_C1_f10.raw = 1 | 150911_174_AN_G138_C1_f11.raw = 1 | 150911_174_AN_G138_C1_f12.raw = 1 | 150911_174_AN_G138_C1_f13.raw = 1 | 150911_174_AN_G138_C1_f14.raw = 1 | 150911_174_AN_G138_C1_f15.raw = 1 | 150911_174_AN_G138_C1_f2.raw = 1 | 150911_174_AN_G138_C1_f3.raw = 1 | 150911_174_AN_G138_C1_f4.raw = 1 | 150911_174_AN_G138_C1_f5.raw = 1 | 150911_174_AN_G138_C1_f6.raw = 1 | 150911_174_AN_G138_C1_f7.raw = 1 | 150911_174_AN_G138_C1_f8.raw = 1 | 150911_174_AN_G138_C1_f9.raw = 1 | 150911_174_AN_G138_S1_f1.raw = 1 | 150911_174_AN_G138_S1_f10.raw = 1 | 150911_174_AN_G138_S1_f11.raw = 1 | 150911_174_AN_G138_S1_f12.raw = 1 | 150911_174_AN_G138_S1_f13.raw = 1 | 150911_174_AN_G138_S1_f14.raw = 1 | 150911_174_AN_G138_S1_f15.raw = 1 | 150911_174_AN_G138_S1_f2.raw = 1 | 150911_174_AN_G138_S1_f3.raw = 1 | 150911_174_AN_G138_S1_f4.raw = 1 | 150911_174_AN_G138_S1_f5.raw = 1 | 150911_174_AN_G138_S1_f6.raw = 1 | 150911_174_AN_G138_S1_f7.raw = 1 | 150911_174_AN_G138_S1_f8.raw = 1 | 150911_174_AN_G138_S1_f9.raw = 1 | 160123_210_AN_10.raw = 1 | 160123_210_AN_12.raw = 1 | 160123_210_AN_13.raw = 1 | 160123_210_AN_14.raw = 1 | 160123_210_AN_15.raw = 1 | 160123_210_AN_16.raw = 1 | 160123_210_AN_17.raw = 1 | 160123_210_AN_18.raw = 1 | 160123_210_AN_2.raw = 1 | 160123_210_AN_3.raw = 1 | 160123_210_AN_5.raw = 1 | 160123_210_AN_7.raw = 1 | 160123_210_AN_8.raw = 1 | 160129_210_AN_1.raw = 1 | 160129_210_AN_6.raw = 1 | 160129_210_AN_9.raw = 1 | 160218_210_AN_11.raw = 1 | 160218_210_AN_4.raw = 1 | 160310_210_AN_4_f1.raw = 1 | 160310_210_AN_4_f10.raw = 1 | 160310_210_AN_4_f11.raw = 1 | 160310_210_AN_4_f12.raw = 1 | 160310_210_AN_4_f13.raw = 1 | 160310_210_AN_4_f14.raw = 1 | 160310_210_AN_4_f15.raw = 1 | 160310_210_AN_4_f2.raw = 1 | 160310_210_AN_4_f3.raw = 1 | 160310_210_AN_4_f4.raw = 1 | 160310_210_AN_4_f5.raw = 1 | 160310_210_AN_4_f6.raw = 1 | 160310_210_AN_4_f7.raw = 1 | 160310_210_AN_4_f8.raw = 1 | 160310_210_AN_4_f9.raw = 1 | 160315_210_AN_10_f1.raw = 1 | 160315_210_AN_10_f10.raw = 1 | 160315_210_AN_10_f11.raw = 1 | 160315_210_AN_10_f12.raw = 1 | 160315_210_AN_10_f13.raw = 1 | 160315_210_AN_10_f14.raw = 1 | 160315_210_AN_10_f15.raw = 1 | 160315_210_AN_10_f2.raw = 1 | 160315_210_AN_10_f3.raw = 1 | 160315_210_AN_10_f4.raw = 1 | 160315_210_AN_10_f5.raw = 1 | 160315_210_AN_10_f6.raw = 1 | 160315_210_AN_10_f7.raw = 1 | 160315_210_AN_10_f8.raw = 1 | 160315_210_AN_10_f9.raw = 1 | 160317_210_AN_11_f1.raw = 1 | 160317_210_AN_11_f10.raw = 1 | 160317_210_AN_11_f11.raw = 1 | 160317_210_AN_11_f12.raw = 1 | 160317_210_AN_11_f13.raw = 1 | 160317_210_AN_11_f14.raw = 1 | 160317_210_AN_11_f15.raw = 1 | 160317_210_AN_11_f2.raw = 1 | 160317_210_AN_11_f3.raw = 1 | 160317_210_AN_11_f4.raw = 1 | 160317_210_AN_11_f5.raw = 1 | 160317_210_AN_11_f6.raw = 1 | 160317_210_AN_11_f7.raw = 1 | 160317_210_AN_11_f8.raw = 1 | 160317_210_AN_11_f9.raw = 1 | 160403_210_AN_5_f1.raw = 1 | 160403_210_AN_5_f10.raw = 1 | 160403_210_AN_5_f11.raw = 1 | 160403_210_AN_5_f12.raw = 1 | 160403_210_AN_5_f2.raw = 1 | 160403_210_AN_5_f3.raw = 1 | 160403_210_AN_5_f4.raw = 1 | 160403_210_AN_5_f5.raw = 1 | 160403_210_AN_5_f6.raw = 1 | 160403_210_AN_5_f7.raw = 1 | 160403_210_AN_5_f8.raw = 1 | 160403_210_AN_5_f9.raw = 1 | 160405_210_AN_5_f13.raw = 1 | 160405_210_AN_5_f14.raw = 1 | 160405_210_AN_5_f15.raw = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that for each of the four tissue types, samples were obtained from two patients (n=2 for HGSOC, n=2 for TNBC).",
+        "TRUTH_CHECK": "The mapping assigns all runs to biological replicate 1, but the paper describes two patients per disease group, meaning there are at least two independent biological units per condition.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value, but the mapping fails to distinguish between the different patients."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "150324_121_AN_G42_C1_2h.raw = 1 | 150330_121_AN_G138_C2_2h.raw = 1 | 150330_121_AN_G138_S2_2h.raw = 1 | 150330_121_AN_G42_S1_2h.raw = 1 | 150603_121_AN_G138_C2_f1.raw = 1 | 150603_121_AN_G138_C2_f10.raw = 1 | 150603_121_AN_G138_C2_f11.raw = 1 | 150603_121_AN_G138_C2_f12.raw = 1 | 150603_121_AN_G138_C2_f13.raw = 1 | 150603_121_AN_G138_C2_f14.raw = 1 | 150603_121_AN_G138_C2_f15.raw = 1 | 150603_121_AN_G138_C2_f2_b.raw = 1 | 150603_121_AN_G138_C2_f3.raw = 1 | 150603_121_AN_G138_C2_f4.raw = 1 | 150603_121_AN_G138_C2_f5.raw = 1 | 150603_121_AN_G138_C2_f6.raw = 1 | 150603_121_AN_G138_C2_f7.raw = 1 | 150603_121_AN_G138_C2_f8.raw = 1 | 150603_121_AN_G138_C2_f9.raw = 1 | 150603_121_AN_G138_S2_f1.raw = 1 | 150603_121_AN_G138_S2_f10.raw = 1 | 150603_121_AN_G138_S2_f11.raw = 1 | 150603_121_AN_G138_S2_f12.raw = 1 | 150603_121_AN_G138_S2_f13.raw = 1 | 150603_121_AN_G138_S2_f14.raw = 1 | 150603_121_AN_G138_S2_f15.raw = 1 | 150603_121_AN_G138_S2_f2.raw = 1 | 150603_121_AN_G138_S2_f3.raw = 1 | 150603_121_AN_G138_S2_f4.raw = 1 | 150603_121_AN_G138_S2_f5.raw = 1 | 150603_121_AN_G138_S2_f6.raw = 1 | 150603_121_AN_G138_S2_f7.raw = 1 | 150603_121_AN_G138_S2_f8.raw = 1 | 150603_121_AN_G138_S2_f9.raw = 1 | 150911_174_AN_G138_C1_f1.raw = 1 | 150911_174_AN_G138_C1_f10.raw = 1 | 150911_174_AN_G138_C1_f11.raw = 1 | 150911_174_AN_G138_C1_f12.raw = 1 | 150911_174_AN_G138_C1_f13.raw = 1 | 150911_174_AN_G138_C1_f14.raw = 1 | 150911_174_AN_G138_C1_f15.raw = 1 | 150911_174_AN_G138_C1_f2.raw = 1 | 150911_174_AN_G138_C1_f3.raw = 1 | 150911_174_AN_G138_C1_f4.raw = 1 | 150911_174_AN_G138_C1_f5.raw = 1 | 150911_174_AN_G138_C1_f6.raw = 1 | 150911_174_AN_G138_C1_f7.raw = 1 | 150911_174_AN_G138_C1_f8.raw = 1 | 150911_174_AN_G138_C1_f9.raw = 1 | 150911_174_AN_G138_S1_f1.raw = 1 | 150911_174_AN_G138_S1_f10.raw = 1 | 150911_174_AN_G138_S1_f11.raw = 1 | 150911_174_AN_G138_S1_f12.raw = 1 | 150911_174_AN_G138_S1_f13.raw = 1 | 150911_174_AN_G138_S1_f14.raw = 1 | 150911_174_AN_G138_S1_f15.raw = 1 | 150911_174_AN_G138_S1_f2.raw = 1 | 150911_174_AN_G138_S1_f3.raw = 1 | 150911_174_AN_G138_S1_f4.raw = 1 | 150911_174_AN_G138_S1_f5.raw = 1 | 150911_174_AN_G138_S1_f6.raw = 1 | 150911_174_AN_G138_S1_f7.raw = 1 | 150911_174_AN_G138_S1_f8.raw = 1 | 150911_174_AN_G138_S1_f9.raw = 1 | 160123_210_AN_10.raw = 1 | 160123_210_AN_12.raw = 1 | 160123_210_AN_13.raw = 1 | 160123_210_AN_14.raw = 1 | 160123_210_AN_15.raw = 1 | 160123_210_AN_16.raw = 1 | 160123_210_AN_17.raw = 1 | 160123_210_AN_18.raw = 1 | 160123_210_AN_2.raw = 1 | 160123_210_AN_3.raw = 1 | 160123_210_AN_5.raw = 1 | 160123_210_AN_7.raw = 1 | 160123_210_AN_8.raw = 1 | 160129_210_AN_1.raw = 1 | 160129_210_AN_6.raw = 1 | 160129_210_AN_9.raw = 1 | 160218_210_AN_11.raw = 1 | 160218_210_AN_4.raw = 1 | 160310_210_AN_4_f1.raw = 1 | 160310_210_AN_4_f10.raw = 1 | 160310_210_AN_4_f11.raw = 1 | 160310_210_AN_4_f12.raw = 1 | 160310_210_AN_4_f13.raw = 1 | 160310_210_AN_4_f14.raw = 1 | 160310_210_AN_4_f15.raw = 1 | 160310_210_AN_4_f2.raw = 1 | 160310_210_AN_4_f3.raw = 1 | 160310_210_AN_4_f4.raw = 1 | 160310_210_AN_4_f5.raw = 1 | 160310_210_AN_4_f6.raw = 1 | 160310_210_AN_4_f7.raw = 1 | 160310_210_AN_4_f8.raw = 1 | 160310_210_AN_4_f9.raw = 1 | 160315_210_AN_10_f1.raw = 1 | 160315_210_AN_10_f10.raw = 1 | 160315_210_AN_10_f11.raw = 1 | 160315_210_AN_10_f12.raw = 1 | 160315_210_AN_10_f13.raw = 1 | 160315_210_AN_10_f14.raw = 1 | 160315_210_AN_10_f15.raw = 1 | 160315_210_AN_10_f2.raw = 1 | 160315_210_AN_10_f3.raw = 1 | 160315_210_AN_10_f4.raw = 1 | 160315_210_AN_10_f5.raw = 1 | 160315_210_AN_10_f6.raw = 1 | 160315_210_AN_10_f7.raw = 1 | 160315_210_AN_10_f8.raw = 1 | 160315_210_AN_10_f9.raw = 1 | 160317_210_AN_11_f1.raw = 1 | 160317_210_AN_11_f10.raw = 1 | 160317_210_AN_11_f11.raw = 1 | 160317_210_AN_11_f12.raw = 1 | 160317_210_AN_11_f13.raw = 1 | 160317_210_AN_11_f14.raw = 1 | 160317_210_AN_11_f15.raw = 1 | 160317_210_AN_11_f2.raw = 1 | 160317_210_AN_11_f3.raw = 1 | 160317_210_AN_11_f4.raw = 1 | 160317_210_AN_11_f5.raw = 1 | 160317_210_AN_11_f6.raw = 1 | 160317_210_AN_11_f7.raw = 1 | 160317_210_AN_11_f8.raw = 1 | 160317_210_AN_11_f9.raw = 1 | 160403_210_AN_5_f1.raw = 1 | 160403_210_AN_5_f10.raw = 1 | 160403_210_AN_5_f11.raw = 1 | 160403_210_AN_5_f12.raw = 1 | 160403_210_AN_5_f2.raw = 1 | 160403_210_AN_5_f3.raw = 1 | 160403_210_AN_5_f4.raw = 1 | 160403_210_AN_5_f5.raw = 1 | 160403_210_AN_5_f6.raw = 1 | 160403_210_AN_5_f7.raw = 1 | 160403_210_AN_5_f8.raw = 1 | 160403_210_AN_5_f9.raw = 1 | 160405_210_AN_5_f13.raw = 1 | 160405_210_AN_5_f14.raw = 1 | 160405_210_AN_5_f15.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper does not mention performing technical replicates for any of the samples; it describes a workflow of sample preparation and analysis.",
+        "TRUTH_CHECK": "In the absence of stated technical replicates, each unique material measured is assigned index 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value of 1, which is correct for materials measured once."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "150324_121_AN_G42_C1_2h.raw = 1 | 150330_121_AN_G138_C2_2h.raw = 1 | 150330_121_AN_G138_S2_2h.raw = 1 | 150330_121_AN_G42_S1_2h.raw = 1 | 150603_121_AN_G138_C2_f1.raw = 1 | 150603_121_AN_G138_C2_f10.raw = 1 | 150603_121_AN_G138_C2_f11.raw = 1 | 150603_121_AN_G138_C2_f12.raw = 1 | 150603_121_AN_G138_C2_f13.raw = 1 | 150603_121_AN_G138_C2_f14.raw = 1 | 150603_121_AN_G138_C2_f15.raw = 1 | 150603_121_AN_G138_C2_f2_b.raw = 1 | 150603_121_AN_G138_C2_f3.raw = 1 | 150603_121_AN_G138_C2_f4.raw = 1 | 150603_121_AN_G138_C2_f5.raw = 1 | 150603_121_AN_G138_C2_f6.raw = 1 | 150603_121_AN_G138_C2_f7.raw = 1 | 150603_121_AN_G138_C2_f8.raw = 1 | 150603_121_AN_G138_C2_f9.raw = 1 | 150603_121_AN_G138_S2_f1.raw = 1 | 150603_121_AN_G138_S2_f10.raw = 1 | 150603_121_AN_G138_S2_f11.raw = 1 | 150603_121_AN_G138_S2_f12.raw = 1 | 150603_121_AN_G138_S2_f13.raw = 1 | 150603_121_AN_G138_S2_f14.raw = 1 | 150603_121_AN_G138_S2_f15.raw = 1 | 150603_121_AN_G138_S2_f2.raw = 1 | 150603_121_AN_G138_S2_f3.raw = 1 | 150603_121_AN_G138_S2_f4.raw = 1 | 150603_121_AN_G138_S2_f5.raw = 1 | 150603_121_AN_G138_S2_f6.raw = 1 | 150603_121_AN_G138_S2_f7.raw = 1 | 150603_121_AN_G138_S2_f8.raw = 1 | 150603_121_AN_G138_S2_f9.raw = 1 | 150911_174_AN_G138_C1_f1.raw = 1 | 150911_174_AN_G138_C1_f10.raw = 1 | 150911_174_AN_G138_C1_f11.raw = 1 | 150911_174_AN_G138_C1_f12.raw = 1 | 150911_174_AN_G138_C1_f13.raw = 1 | 150911_174_AN_G138_C1_f14.raw = 1 | 150911_174_AN_G138_C1_f15.raw = 1 | 150911_174_AN_G138_C1_f2.raw = 1 | 150911_174_AN_G138_C1_f3.raw = 1 | 150911_174_AN_G138_C1_f4.raw = 1 | 150911_174_AN_G138_C1_f5.raw = 1 | 150911_174_AN_G138_C1_f6.raw = 1 | 150911_174_AN_G138_C1_f7.raw = 1 | 150911_174_AN_G138_C1_f8.raw = 1 | 150911_174_AN_G138_C1_f9.raw = 1 | 150911_174_AN_G138_S1_f1.raw = 1 | 150911_174_AN_G138_S1_f10.raw = 1 | 150911_174_AN_G138_S1_f11.raw = 1 | 150911_174_AN_G138_S1_f12.raw = 1 | 150911_174_AN_G138_S1_f13.raw = 1 | 150911_174_AN_G138_S1_f14.raw = 1 | 150911_174_AN_G138_S1_f15.raw = 1 | 150911_174_AN_G138_S1_f2.raw = 1 | 150911_174_AN_G138_S1_f3.raw = 1 | 150911_174_AN_G138_S1_f4.raw = 1 | 150911_174_AN_G138_S1_f5.raw = 1 | 150911_174_AN_G138_S1_f6.raw = 1 | 150911_174_AN_G138_S1_f7.raw = 1 | 150911_174_AN_G138_S1_f8.raw = 1 | 150911_174_AN_G138_S1_f9.raw = 1 | 160123_210_AN_10.raw = 1 | 160123_210_AN_12.raw = 1 | 160123_210_AN_13.raw = 1 | 160123_210_AN_14.raw = 1 | 160123_210_AN_15.raw = 1 | 160123_210_AN_16.raw = 1 | 160123_210_AN_17.raw = 1 | 160123_210_AN_18.raw = 1 | 160123_210_AN_2.raw = 1 | 160123_210_AN_3.raw = 1 | 160123_210_AN_5.raw = 1 | 160123_210_AN_7.raw = 1 | 160123_210_AN_8.raw = 1 | 160129_210_AN_1.raw = 1 | 160129_210_AN_6.raw = 1 | 160129_210_AN_9.raw = 1 | 160218_210_AN_11.raw = 1 | 160218_210_AN_4.raw = 1 | 160310_210_AN_4_f1.raw = 1 | 160310_210_AN_4_f10.raw = 1 | 160310_210_AN_4_f11.raw = 1 | 160310_210_AN_4_f12.raw = 1 | 160310_210_AN_4_f13.raw = 1 | 160310_210_AN_4_f14.raw = 1 | 160310_210_AN_4_f15.raw = 1 | 160310_210_AN_4_f2.raw = 1 | 160310_210_AN_4_f3.raw = 1 | 160310_210_AN_4_f4.raw = 1 | 160310_210_AN_4_f5.raw = 1 | 160310_210_AN_4_f6.raw = 1 | 160310_210_AN_4_f7.raw = 1 | 160310_210_AN_4_f8.raw = 1 | 160310_210_AN_4_f9.raw = 1 | 160315_210_AN_10_f1.raw = 1 | 160315_210_AN_10_f10.raw = 1 | 160315_210_AN_10_f11.raw = 1 | 160315_210_AN_10_f12.raw = 1 | 160315_210_AN_10_f13.raw = 1 | 160315_210_AN_10_f14.raw = 1 | 160315_210_AN_10_f15.raw = 1 | 160315_210_AN_10_f2.raw = 1 | 160315_210_AN_10_f3.raw = 1 | 160315_210_AN_10_f4.raw = 1 | 160315_210_AN_10_f5.raw = 1 | 160315_210_AN_10_f6.raw = 1 | 160315_210_AN_10_f7.raw = 1 | 160315_210_AN_10_f8.raw = 1 | 160315_210_AN_10_f9.raw = 1 | 160317_210_AN_11_f1.raw = 1 | 160317_210_AN_11_f10.raw = 1 | 160317_210_AN_11_f11.raw = 1 | 160317_210_AN_11_f12.raw = 1 | 160317_210_AN_11_f13.raw = 1 | 160317_210_AN_11_f14.raw = 1 | 160317_210_AN_11_f15.raw = 1 | 160317_210_AN_11_f2.raw = 1 | 160317_210_AN_11_f3.raw = 1 | 160317_210_AN_11_f4.raw = 1 | 160317_210_AN_11_f5.raw = 1 | 160317_210_AN_11_f6.raw = 1 | 160317_210_AN_11_f7.raw = 1 | 160317_210_AN_11_f8.raw = 1 | 160317_210_AN_11_f9.raw = 1 | 160403_210_AN_5_f1.raw = 1 | 160403_210_AN_5_f10.raw = 1 | 160403_210_AN_5_f11.raw = 1 | 160403_210_AN_5_f12.raw = 1 | 160403_210_AN_5_f2.raw = 1 | 160403_210_AN_5_f3.raw = 1 | 160403_210_AN_5_f4.raw = 1 | 160403_210_AN_5_f5.raw = 1 | 160403_210_AN_5_f6.raw = 1 | 160403_210_AN_5_f7.raw = 1 | 160403_210_AN_5_f8.raw = 1 | 160403_210_AN_5_f9.raw = 1 | 160405_210_AN_5_f13.raw = 1 | 160405_210_AN_5_f14.raw = 1 | 160405_210_AN_5_f15.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper does not mention performing technical replicates for any of the samples; it describes a workflow of sample preparation and analysis.",
+        "TRUTH_CHECK": "In the absence of stated technical replicates, each unique material measured is assigned index 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value of 1, which is correct for materials measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "150324_121_AN_G42_C1_2h.raw = not applicable | 150330_121_AN_G138_C2_2h.raw = not applicable | 150330_121_AN_G138_S2_2h.raw = not applicable | 150330_121_AN_G42_S1_2h.raw = not applicable | 150603_121_AN_G138_C2_f1.raw = 1 | 150603_121_AN_G138_C2_f10.raw = 10 | 150603_121_AN_G138_C2_f11.raw = 11 | 150603_121_AN_G138_C2_f12.raw = 12 | 150603_121_AN_G138_C2_f13.raw = 13 | 150603_121_AN_G138_C2_f14.raw = 14 | 150603_121_AN_G138_C2_f15.raw = 15 | 150603_121_AN_G138_C2_f2_b.raw = 2 | 150603_121_AN_G138_C2_f3.raw = 3 | 150603_121_AN_G138_C2_f4.raw = 4 | 150603_121_AN_G138_C2_f5.raw = 5 | 150603_121_AN_G138_C2_f6.raw = 6 | 150603_121_AN_G138_C2_f7.raw = 7 | 150603_121_AN_G138_C2_f8.raw = 8 | 150603_121_AN_G138_C2_f9.raw = 9 | 150603_121_AN_G138_S2_f1.raw = 1 | 150603_121_AN_G138_S2_f10.raw = 10 | 150603_121_AN_G138_S2_f11.raw = 11 | 150603_121_AN_G138_S2_f12.raw = 12 | 150603_121_AN_G138_S2_f13.raw = 13 | 150603_121_AN_G138_S2_f14.raw = 14 | 150603_121_AN_G138_S2_f15.raw = 15 | 150603_121_AN_G138_S2_f2.raw = 2 | 150603_121_AN_G138_S2_f3.raw = 3 | 150603_121_AN_G138_S2_f4.raw = 4 | 150603_121_AN_G138_S2_f5.raw = 5 | 150603_121_AN_G138_S2_f6.raw = 6 | 150603_121_AN_G138_S2_f7.raw = 7 | 150603_121_AN_G138_S2_f8.raw = 8 | 150603_121_AN_G138_S2_f9.raw = 9 | 150911_174_AN_G138_C1_f1.raw = 1 | 150911_174_AN_G138_C1_f10.raw = 10 | 150911_174_AN_G138_C1_f11.raw = 11 | 150911_174_AN_G138_C1_f12.raw = 12 | 150911_174_AN_G138_C1_f13.raw = 13 | 150911_174_AN_G138_C1_f14.raw = 14 | 150911_174_AN_G138_C1_f15.raw = 15 | 150911_174_AN_G138_C1_f2.raw = 2 | 150911_174_AN_G138_C1_f3.raw = 3 | 150911_174_AN_G138_C1_f4.raw = 4 | 150911_174_AN_G138_C1_f5.raw = 5 | 150911_174_AN_G138_C1_f6.raw = 6 | 150911_174_AN_G138_C1_f7.raw = 7 | 150911_174_AN_G138_C1_f8.raw = 8 | 150911_174_AN_G138_C1_f9.raw = 9 | 150911_174_AN_G138_S1_f1.raw = 1 | 150911_174_AN_G138_S1_f10.raw = 10 | 150911_174_AN_G138_S1_f11.raw = 11 | 150911_174_AN_G138_S1_f12.raw = 12 | 150911_174_AN_G138_S1_f13.raw = 13 | 150911_174_AN_G138_S1_f14.raw = 14 | 150911_174_AN_G138_S1_f15.raw = 15 | 150911_174_AN_G138_S1_f2.raw = 2 | 150911_174_AN_G138_S1_f3.raw = 3 | 150911_174_AN_G138_S1_f4.raw = 4 | 150911_174_AN_G138_S1_f5.raw = 5 | 150911_174_AN_G138_S1_f6.raw = 6 | 150911_174_AN_G138_S1_f7.raw = 7 | 150911_174_AN_G138_S1_f8.raw = 8 | 150911_174_AN_G138_S1_f9.raw = 9 | 160123_210_AN_10.raw = not applicable | 160123_210_AN_12.raw = not applicable | 160123_210_AN_13.raw = not applicable | 160123_210_AN_14.raw = not applicable | 160123_210_AN_15.raw = not applicable | 160123_210_AN_16.raw = not applicable | 160123_210_AN_17.raw = not  applicable | 160123_210_AN_18.raw = not applicable | 160123_210_AN_2.raw = not applicable | 160123_210_AN_3.raw = not applicable | 160123_210_AN_5.raw = not applicable | 160123_210_AN_7.raw = not applicable | 160123_210_AN_8.raw = not applicable | 160129_210_AN_1.raw = not applicable | 160129_210_AN_6.raw = not applicable | 160129_210_AN_9.raw = not applicable | 160218_210_AN_11.raw = not applicable | 160218_210_AN_4.raw = not applicable | 160310_210_AN_4_f1.raw = 1 | 160310_210_AN_4_f10.raw = 10 | 160310_210_AN_4_f11.raw = 11 | 160310_210_AN_4_f12.raw = 12 | 160310_210_AN_4_f13.raw = 13 | 160310_210_AN_4_f14.raw = 14 | 160310_210_AN_4_f15.raw = 15 | 160310_210_AN_4_f2.raw = 2 | 160310_210_AN_4_f3.raw = 3 | 160310_210_AN_4_f4.raw = 4 | 160310_210_AN_4_f5.raw = 5 | 160310_210_AN_4_f6.raw = 6 | 160310_210_AN_4_f7.raw = 7 | 160310_210_AN_4_f8.raw = 8 | 160310_210_AN_4_f9.raw = 9 | 160315_210_AN_10_f1.raw = 1 | 160315_210_AN_10_f10.raw = 10 | 160315_210_AN_10_f11.raw = 11 | 160315_210_AN_10_f12.raw = 12 | 160315_210_AN_10_f13.raw = 13 | 160315_210_AN_10_f14.raw = 14 | 160315_210_AN_10_f15.raw = 15 | 160315_210_AN_10_f2.raw = 2 | 160315_210_AN_10_f3.raw = 3 | 160315_210_AN_10_f4.raw = 4 | 160315_210_AN_10_f5.raw = 5 | 160315_210_AN_10_f6.raw = 6 | 160315_210_AN_10_f7.raw = 7 | 160315_210_AN_10_f8.raw = 8 | 160315_210_AN_10_f9.raw = 9 | 160317_210_AN_11_f1.raw = 1 | 160317_210_AN_11_f10.raw = 10 | 160317_210_AN_11_f11.raw = 11 | 160317_210_AN_11_f12.raw = 12 | 160317_210_AN_11_f13.raw = 13 | 160317_210_AN_11_f14.raw = 14 | 160317_210_AN_11_f15.raw = 15 | 160317_210_AN_11_f2.raw = 2 | 160317_210_AN_11_f3.raw = 3 | 160317_210_AN_11_f4.raw = 4 | 160317_210_AN_11_f5.raw = 5 | 160317_210_AN_11_f6.raw = 6 | 160317_210_AN_11_f7.raw = 7 | 160317_210_AN_11_f8.raw = 8 | 160317_210_AN_11_f9.raw = 9 | 160403_210_AN_5_f1.raw = 1 | 160403_210_AN_5_f10.raw = 10 | 160403_210_AN_5_f11.raw = 11 | 160403_210_AN_5_f12.raw = 12 | 160403_210_AN_5_f2.raw = 2 | 160403_210_AN_5_f3.raw = 3 | 160403_210_AN_5_f4.raw = 4 | 160403_210_AN_5_f5.raw = 5 | 160403_210_AN_5_f6.raw = 6 | 160403_210_AN_5_f7.raw = 7 | 160403_210_AN_5_f8.raw = 8 | 160403_210_AN_5_f9.raw = 9 | 160405_210_AN_5_f13.raw = 13 | 160405_210_AN_5_f14.raw = 14 | 160405_210_AN_5_f15.raw = 15",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The values are fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes offline fractionation of peptides via high-pH reversed-phase HPLC into 15 concatenated fractions.",
+        "TRUTH_CHECK": "The mapping correctly assigns fraction numbers to runs that underwent fractionation (indicated by _f# in the filename) and marks non-fractionated runs as not applicable.",
+        "COMPLETENESS_CHECK": "The field definition requires a plain number. \"not applicable\" is a placeholder for runs without fractionation, and the numbered runs follow the format."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[chemical entity]",
+      "extracted_value": "150324_121_AN_G42_C1_2h.raw = not applicable | 150330_121_AN_G138_C2_2h.raw = not applicable | 150330_121_AN_G138_S2_2h.raw = supernatant | 150330_121_AN_G42_S1_2h.raw = supernatant | 150603_121_AN_G138_C2_f1.raw = not applicable | 150603_121_AN_G138_C2_f10.raw = not applicable | 150603_121_AN_G138_C2_f11.raw = not applicable | 150603_121_AN_G138_C2_f12.raw = not applicable | 150603_121_AN_G138_C2_f13.raw = not applicable | 150603_121_AN_G138_C2_f14.raw = not applicable | 150603_121_AN_G138_C2_f15.raw = not applicable | 150603_121_AN_G138_C2_f2_b.raw = not applicable | 150603_121_AN_G138_C2_f3.raw = not applicable | 150603_121_AN_G138_C2_f4.raw = not applicable | 150603_121_AN_G138_C2_f5.raw = not applicable | 150603_121_AN_G138_C2_f6.raw = not applicable | 150603_121_AN_G138_C2_f7.raw = not applicable | 150603_121_AN_G138_C2_f8.raw = not applicable | 150603_121_AN_G138_C2_f9.raw = not applicable | 150603_121_AN_G138_S2_f1.raw = supernatant | 150603_121_AN_G138_S2_f10.raw = supernatant | 150603_121_AN_G138_S2_f11.raw = supernatant | 150603_121_AN_G138_S2_f12.raw = supernatant | 150603_121_AN_G138_S2_f13.raw = supernatant | 150603_121_AN_G138_S2_f14.raw = supernatant | 150603_121_AN_G138_S2_f15.raw = supernatant | 150603_121_AN_G138_S2_f2.raw = supernatant | 150603_121_AN_G138_S2_f3.raw = supernatant | 150603_121_AN_G138_S2_f4.raw = supernatant | 150603_121_AN_G138_S2_f5.raw = supernatant | 150603_121_AN_G138_S2_f6.raw = supernatant | 150603_121_AN_G138_S2_f7.raw = supernatant | 150603_121_AN_G138_S2_f8.raw = supernatant | 150603_121_AN_G138_S2_f9.raw = supernatant | 150911_174_AN_G138_C1_f1.raw = not applicable | 150911_174_AN_G138_C1_f10.raw = not applicable | 150911_174_AN_G138_C1_f11.raw = not applicable | 150911_174_AN_G138_C1_f12.raw = not applicable | 150911_174_AN_G138_C1_f13.raw = not applicable | 150911_174_AN_G138_C1_f14.raw = not applicable | 150911_174_AN_G138_C1_f15.raw = not applicable | 150911_174_AN_G138_C1_f2.raw = not applicable | 150911_174_AN_G138_C1_f3.raw = not applicable | 150911_174_AN_G138_C1_f4.raw = not applicable | 150911_174_AN_G138_C1_f5.raw = not applicable | 150911_174_AN_G138_C1_f6.raw = not applicable | 150911_174_AN_G138_C1_f7.raw = not applicable | 150911_174_AN_G138_C1_f8.raw = not applicable | 150911_174_AN_G138_C1_f9.raw = not applicable | 150911_174_AN_G138_S1_f1.raw = supernatant | 150911_174_AN_G138_S1_f10.raw = supernatant | 150911_174_AN_G138_S1_f11.raw = supernatant | 150911_174_AN_G138_S1_f12.raw = supernatant | 150911_174_AN_G138_S1_f13.raw = supernatant | 150911_174_AN_G138_S1_f14.raw = supernatant | 150911_174_AN_G138_S1_f15.raw = supernatant | 150911_174_AN_G138_S1_f2.raw = supernatant | 150911_174_AN_G138_S1_f3.raw = supernatant | 150911_174_AN_G138_S1_f4.raw = supernatant | 150911_174_AN_G138_S1_f5.raw = supernatant | 150911_174_AN_G138_S1_f6.raw = supernatant | 150911_174_AN_G138_S1_f7.raw = supernatant | 150911_174_AN_G138_S1_f8.raw = supernatant | 150911_174_AN_G138_S1_f9.raw = supernatant | 160123_210_AN_10.raw = not applicable | 160123_210_AN_12.raw = not applicable | 160123_210_AN_13.raw = centrifugation pellet | 160123_210_AN_14.raw = centrifugation pellet | 160123_210_AN_15.raw = centrifugation pellet | 160123_210_AN_16.raw = centrifugation pellet | 160123_210_AN_17.raw = centrifugation pellet | 160123_210_AN_18.raw = centrifugation pellet | 160123_210_AN_2.raw = supernatant | 160123_210_AN_3.raw = supernatant | 160123_210_AN_5.raw = supernatant | 160123_210_AN_7.raw = not applicable | 160123_210_AN_8.raw = not applicable | 160129_210_AN_1.raw = supernatant | 160129_210_AN_6.raw = supernatant | 160129_210_AN_9.raw = not applicable | 160218_210_AN_11.raw = not applicable | 160218_210_AN_4.raw = supernatant | 160310_210_AN_4_f1.raw = supernatant | 160310_210_AN_4_f10.raw = supernatant | 160310_210_AN_4_f11.raw = supernatant | 160310_210_AN_4_f12.raw = supernatant | 160310_210_AN_4_f13.raw = supernatant | 160310_210_AN_4_f14.raw = supernatant | 160310_210_AN_4_f15.raw = supernatant | 160310_210_AN_4_f2.raw = supernatant | 160310_210_AN_4_f3.raw = supernatant | 160310_210_AN_4_f4.raw = supernatant | 160310_210_AN_4_f5.raw = supernatant | 160310_210_AN_4_f6.raw = supernatant | 160310_210_AN_4_f7.raw = supernatant | 160310_210_AN_4_f8.raw = supernatant | 160310_210_AN_4_f9.raw = supernatant | 160315_210_AN_10_f1.raw = not applicable | 160315_210_AN_10_f10.raw = not applicable | 160315_210_AN_10_f11.raw = not applicable | 160315_210_AN_10_f12.raw = not applicable | 160315_210_AN_10_f13.raw = not applicable | 160315_210_AN_10_f14.raw = not applicable | 160315_210_AN_10_f15.raw = not applicable | 160315_210_AN_10_f2.raw = not applicable | 160315_210_AN_10_f3.raw = not applicable | 160315_210_AN_10_f4.raw = not applicable | 160315_210_AN_10_f5.raw = not applicable | 160315_210_AN_10_f6.raw = not applicable | 160315_210_AN_10_f7.raw = not applicable | 160315_210_AN_10_f8.raw = not applicable | 160315_210_AN_10_f9.raw = not applicable | 160317_210_AN_11_f1.raw = not applicable | 160317_210_AN_11_f10.raw = not applicable | 160317_210_AN_11_f11.raw = not applicable | 160317_210_AN_11_f12.raw = not applicable | 160317_210_AN_11_f13.raw = not applicable | 160317_210_AN_11_f14.raw = not applicable | 160317_210_AN_11_f15.raw = not applicable | 160317_210_AN_11_f2.raw = not applicable | 160317_210_AN_11_f3.raw = not applicable | 160317_210_AN_11_f4.raw = not applicable | 160317_210_AN_11_f5.raw = not applicable | 160317_210_AN_11_f6.raw = not applicable | 160317_210_AN_11_f7.raw = not applicable | 160317_210_AN_11_f8.raw = not applicable | 160317_210_AN_11_f9.raw = not applicable | 160403_210_AN_5_f1.raw = supernatant | 160403_210_AN_5_f10.raw = supernatant | 160403_210_AN_5_f11.raw = supernatant | 160403_210_AN_5_f12.raw = supernatant | 160403_210_AN_5_f2.raw = supernatant | 160403_210_AN_5_f3.raw = supernatant | 160403_210_AN_5_f4.raw = supernatant | 160403_210_AN_5_f5.raw = supernatant | 160403_210_AN_5_f6.raw = supernatant | 160403_210_AN_5_f7.raw = supernatant | 160403_210_AN_5_f8.raw = supernatant | 160403_210_AN_5_f9.raw = supernatant | 160405_210_AN_5_f13.raw = supernatant | 160405_210_AN_5_f14.raw = supernatant | 160405_210_AN_5_f15.raw = supernatant",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the chemical entity (fraction/pellet/supernatant) resulting from the solubilization process, which is a valid level for a studied variable in this experiment.",
+        "SOURCE_CHECK": "The methods describe three types of ECM samples: \"crude\" (direct digestion), \"urea-soluble fraction\" (supernatant), and \"urea-insoluble pellet\".",
+        "TRUTH_CHECK": "The mapping correctly assigns \"supernatant\" to urea-soluble runs, \"centrifugation pellet\" to pellet runs, and \"not applicable\" to crude runs.",
+        "COMPLETENESS_CHECK": "The values are consistent with the sample descriptions in the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[chemical entity]",
+      "extracted_value": "NT=supernatant;AC=SIO:010425",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a chemical entity/fraction (supernatant), which is appropriate for a characteristics column.",
+        "SOURCE_CHECK": "The methods state that after centrifugation of solubilized ECM-enriched samples, the \"supernatant was recovered\" and referred to as the \"urea-soluble fraction\".",
+        "TRUTH_CHECK": "The runs carrying this value are explicitly labeled as \"urea-soluble\" in the source column, which corresponds to the supernatant.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[chemical entity]",
+      "extracted_value": "NT=centrifugation pellet;AC=SIO:010424",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a chemical entity/fraction of the sample, which is appropriate for a characteristics column.",
+        "SOURCE_CHECK": "The paper describes a process where samples were centrifuged to separate a \"urea-soluble fraction\" (supernatant) and a \"urea-insoluble pellet\".",
+        "TRUTH_CHECK": "The runs carrying this value are explicitly labeled as \"pellet\" in the source column, matching the \"urea-insoluble pellet\" described in the methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

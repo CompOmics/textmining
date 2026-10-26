@@ -1,0 +1,889 @@
+{
+  "paper_id": "PXD013753",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes the use of human AD and control subjects, which is an allowed inference for homo sapiens.",
+        "TRUTH_CHECK": "The analysed brain tissue is from human subjects.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Brain",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ/organism part, which is the right field.",
+        "SOURCE_CHECK": "The paper states that brain tissue was provided from the superior temporal gyrus and primary visual cortex.",
+        "TRUTH_CHECK": "The samples are derived from brain regions.",
+        "COMPLETENESS_CHECK": "The value is a broader term (\"Brain\") that is correct, as the paper specifies narrower regions (temporal and occipital cortices/gyrus and visual cortex)."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Control",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "normal",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"control subjects\" as the comparison group for AD.",
+        "TRUTH_CHECK": "The runs are associated with the control group.",
+        "COMPLETENESS_CHECK": "The field definition explicitly states that the SDRF term for healthy subjects is \"normal\" and that other wording like \"healthy\" or \"Control\" is a format error."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Alzheimer's Disease",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"clinically diagnosed AD\" and \"human AD brain\" in the abstract and methods.",
+        "TRUTH_CHECK": "The runs carrying this value correspond to the AD groups described in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "76.0",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not state the age of the subjects; it only mentions the number of subjects (33).",
+        "TRUTH_CHECK": "Not applicable as the value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "59.0",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the ages of the subjects.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit as required by the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "83.0",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the ages of the subjects.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit as required by the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "79.5",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of any subjects.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit as required by the definition."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"TMT labels\" were used and specifically mentions \"TMT8plex_Nter and TMT 8plex-Lys\". While the specific channel \"TMT127N\" is not printed verbatim, it is a standard component of the TMT8plex set mentioned.",
+        "TRUTH_CHECK": "The runs are part of a TMT8plex experiment as described in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT label channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"TMT labels\" were used and specifically mentions \"TMT8plex_Nter and TMT 8plex-Lys\". While the specific channel \"TMT129N\" is not written verbatim, it is a standard component of the TMT 8-plex set used in the study.",
+        "TRUTH_CHECK": "The runs are part of a TMT 8-plex experiment as described in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT label channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"TMT labels\" were used and specifically mentions \"TMT8plex_Nter\" and \"TMT 8plex-Lys\" in the MaxQuant parameters.",
+        "TRUTH_CHECK": "The paper describes an 8-plex TMT experiment. TMT128N is a standard channel of the TMT 8-plex N-terminal set.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT130N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT label channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"TMT labels\" were used and specifically mentions \"TMT8plex_Nter and TMT 8plex-Lys\" in the MaxQuant parameters. While the specific channel \"TMT130N\" is not printed verbatim, it is a standard channel of the TMT 8-plex kit used in the study.",
+        "TRUTH_CHECK": "The runs are part of a TMT 8-plex experiment as described in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"TMT labels\" were used and specifically mentions \"TMT8plex_Nter and TMT 8plex-Lys\". While the specific channel \"TMT127C\" is not written verbatim, it is a standard component of the TMT 8-plex kit used in the study.",
+        "TRUTH_CHECK": "The runs are part of a TMT 8-plex experiment as described in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT label channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"8 TMT labels\" were used and \"TMT8plex\" was used for the search, but it does not list the specific channels (e.g., 126, 127N, 129C).",
+        "TRUTH_CHECK": "While TMT8plex was used, the specific channel \"TMT129C\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "Complete format for a TMT channel."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states \"TMT labels\" and \"TMT8plex\" were used, but does not list the specific channels (e.g., 128C).",
+        "TRUTH_CHECK": "The use of TMT8plex is confirmed, and the candidate value is a standard channel within that set.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT130C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT label channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"8 TMT labels\" were used and that \"TMT8plex_Nter and TMT 8plex-Lys\" were used for reporter ions. While the specific channel \"TMT130C\" is not written verbatim, it is a standard component of the TMT 8-plex kit mentioned.",
+        "TRUTH_CHECK": "The runs are part of a TMT 8-plex experiment as described in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002523;NT=Q Exactive HF",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state \"Analysis of peptides was performed using a Q-Exactive-HF (Thermo Scientific) mass spectrometer\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that proteins were digested twice with trypsin.",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the proteins in all runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"fixed modifications, carbamidomethylation (C)\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, including name, residues, and fixed status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=deamidated;AC=UNIMOD:7;TA=N,Q;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"variable modifications, deamidation (NQ)\".",
+        "TRUTH_CHECK": "The modification was used for the proteomics search of these runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residues, and MT status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"variable modifications, deamidation (NQ), oxidation (M)\".",
+        "TRUTH_CHECK": "The modification was used for the search of all runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, status, and residue."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;MT=Variable;PP=Protein N-term;AC=UNIMOD:1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"protein N-acetylation\" was used as a variable modification.",
+        "TRUTH_CHECK": "The value correctly describes the modification used for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, including the name, status, and position."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Gln->pyro-Glu;AC=UNIMOD:28;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Gln->pyro-Glu;AC=UNIMOD:28;TA=Q;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a database search modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper lists \"gln-pyro-glu\" as a variable modification in the LC-MS/MS analysis section.",
+        "TRUTH_CHECK": "The modification was used for the search of the analyzed samples.",
+        "COMPLETENESS_CHECK": "The definition requires residues (TA) or position (PP). The paper specifies \"gln\" (Glutamine), which should be included as TA=Q."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods state \"MS/MS tolerance: FTMS- 10 ppm, ITMS- 0.02 Da\". In the context of a Q-Exactive (Orbitrap) instrument, the FTMS (Fourier Transform Mass Spectrometer) value refers to the precursor/MS1 tolerance.",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.02 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"MS/MS tolerance: FTMS- 10 ppm, ITMS- 0.02 Da\".",
+        "TRUTH_CHECK": "The value 0.02 Da is one of the fragment tolerances used for the search.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 1 | run 10 = 1 | run 11 = 1 | run 12 = 1 | run 13 = 1 | run 14 = 1 | run 15 = 1 | run 16 = 1 | run 17 = 1 | run 18 = 1 | run 19 = 1 | run 20 = 1 | run 21 = 1 | run 22 = 1 | run 23 = 1 | run 24 = 1 | run 25 = 1 | run 26 = 1 | run 27 = 1 | run 28 = 1 | run 29 = 1 | run 30 = 1 | run 31 = 1 | run 32 = 1 | run 33 = 1 | run 34 = 1 | run 35 = 1 | run 36 = 1 | run 37 = 1 | run 38 = 1 | run 39 = 1 | run 40 = 1 | run 41 = 1 | run 42 = 1 | run 43 = 1 | run 44 = 1 | run 45 = 1 | run 46 = 1 | run 47 = 1 | run 48 = 1 | run 49 = 1 | run 50 = 1 | run 51 = 1 | run 52 = 1 | run 53 = 1 | run 54 = 1 | run 55 = 1 | run 56 = 1 | run 57 = 1 | run 58 = 1 | run 59 = 1 | run 60 = 1 | run 61 = 1 | run 62 = 1 | run 63 = 1 | run 64 = 1 | run 65 = 1 | run 66 = 1 | run 67 = 1 | run 68 = 1 | run 69 = 1 | run 70 = 1 | run 71 = 1 | run 72 = 1 | run 73 = 1 | run 74 = 1 | run 75 = 1 | run 76 = 1 | run 77 = 1 | run 78 = 1 | run 79 = 1 | run 80 = 1 | run 81 = 1 | run 82 = 1 | run 83 = 1 | run 84 = 1 | run 85 = 1 | run 86 = 1 | run 87 = 1 | run 88 = 1 | run 89 = 1 | run 90 = 1 | run 91 = 1 | run 92 = 1 | run 93 = 1 | run 94 = 1 | run 95 = 1 | run 96 = 1 | run 97 = 1 | run 98 = 1 | run 99 = 1 | run 100 = 1 | run 101 = 1 | run 102 = 1 | run 103 = 1 | run 104 = 1 | run 105 = 1 | run 106 = 1 | run 107 = 1 | run 108 = 1 | run 109 = 1 | run 110 = 1 | run 111 = 1 | run 112 = 1 | run 113 = 1 | run 114 = 1 | run 115 = 1 | run 116 = 1 | run 117 = 1 | run 118 = 1 | run 119 = 1 | run 120 = 1 | run 121 = 1 | run 122 = 1 | run 123 = 1 | run 124 = 1 | run 125 = 1 | run 126 = 1 | run 127 = 1 | run 128 = 1 | run 129 = 1 | run 130 = 1 | run 131 = 1 | run 132 = 1 | run 133 = 1 | run 134 = 1 | run 135 = 1 | run 136 = 1 | run 137 = 1 | run 138 = 1 | run 139 = 1 | run 140 = 1 | run 141 = 1 | run 142 = 1 | run 143 = 1 | run 144 = 1 | run 145 = 1 | run 146 = 1 | run 147 = 1 | run 148 = 1 | run 149 = 1 | run 150 = 1 | run 151 = 1 | run 152 = 1 | run 153 = 1 | run 154 = 1 | run 155 = 1 | run 156 = 1 | run 157 = 1 | run 158 = 1 | run 159 = 1 | run 160 = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that tissue from all subjects in each group was pooled for unbiased proteomic analyses.",
+        "TRUTH_CHECK": "Since the samples were pooled, all runs within a condition are derived from a single pooled biological sample, and thus should share the same biological replicate index.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index of 1, which is correct for pooled samples."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 1 | run 10 = 1 | run 11 = 1 | run 12 = 1 | run 13 = 1 | run 14 = 1 | run 15 = 1 | run 16 = 1 | run 17 = 1 | run 18 = 1 | run 19 = 1 | run 20 = 1 | run 21 = 1 | run 22 = 1 | run 23 = 1 | run 24 = 1 | run 25 = 1 | run 26 = 1 | run 27 = 1 | run 28 = 1 | run 29 = 1 | run 30 = 1 | run 31 = 1 | run 32 = 1 | run 33 = 1 | run 34 = 1 | run 35 = 1 | run 36 = 1 | run 37 = 1 | run 38 = 1 | run 39 = 1 | run 40 = 1 | run 41 = 1 | run 42 = 1 | run 43 = 1 | run 44 = 1 | run 45 = 1 | run 46 = 1 | run 47 = 1 | run 48 = 1 | run 49 = 1 | run 50 = 1 | run 51 = 1 | run 52 = 1 | run 53 = 1 | run 54 = 1 | run 55 = 1 | run 56 = 1 | run 57 = 1 | run 58 = 1 | run 59 = 1 | run 60 = 1 | run 61 = 1 | run 62 = 1 | run 63 = 1 | run 64 = 1 | run 65 = 1 | run 66 = 1 | run 67 = 1 | run 68 = 1 | run 69 = 1 | run 70 = 1 | run 71 = 1 | run 72 = 1 | run 73 = 1 | run 74 = 1 | run 75 = 1 | run 76 = 1 | run 77 = 1 | run 78 = 1 | run 79 = 1 | run 80 = 1 | run 81 = 1 | run 82 = 1 | run 83 = 1 | run 84 = 1 | run 85 = 1 | run 86 = 1 | run 87 = 1 | run 88 = 1 | run 89 = 1 | run 90 = 1 | run 91 = 1 | run 92 = 1 | run 93 = 1 | run 94 = 1 | run 95 = 1 | run 96 = 1 | run 97 = 1 | run 98 = 1 | run 99 = 1 | run 100 = 1 | run 101 = 1 | run 102 = 1 | run 103 = 1 | run 104 = 1 | run 105 = 1 | run 106 = 1 | run 107 = 1 | run 108 = 1 | run 109 = 1 | run 110 = 1 | run 111 = 1 | run 112 = 1 | run 113 = 1 | run 114 = 1 | run 115 = 1 | run 116 = 1 | run 117 = 1 | run 118 = 1 | run 119 = 1 | run 120 = 1 | run 121 = 1 | run 122 = 1 | run 123 = 1 | run 124 = 1 | run 125 = 1 | run 126 = 1 | run 127 = 1 | run 128 = 1 | run 129 = 1 | run 130 = 1 | run 131 = 1 | run 132 = 1 | run 133 = 1 | run 134 = 1 | run 135 = 1 | run 136 = 1 | run 137 = 1 | run 138 = 1 | run 139 = 1 | run 140 = 1 | run 141 = 1 | run 142 = 1 | run 143 = 1 | run 144 = 1 | run 145 = 1 | run 146 = 1 | run 147 = 1 | run 148 = 1 | run 149 = 1 | run 150 = 1 | run 151 = 1 | run 152 = 1 | run 153 = 1 | run 154 = 1 | run 155 = 1 | run 156 = 1 | run 157 = 1 | run 158 = 1 | run 159 = 1 | run 160 = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a pooled design where 8 groups were analyzed, and peptides were fractionated into 20 concatenated fractions.",
+        "TRUTH_CHECK": "The runs are not repeated measurements of the same material, but rather different fractions (1-20) of the 8 pooled samples (8 samples * 20 fractions = 160 runs). Each fraction is a different material, not a technical replicate.",
+        "COMPLETENESS_CHECK": "Every run is assigned index 1."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 2 | run 10 = 2 | run 11 = 2 | run 12 = 2 | run 13 = 2 | run 14 = 2 | run 15 = 2 | run 16 = 2 | run 17 = 3 | run 18 = 3 | run 19 = 3 | run 20 = 3 | run 21 = 3 | run 22 = 3 | run 23 = 3 | run 24 = 3 | run 25 = 4 | run 26 = 4 | run 27 = 4 | run 28 = 4 | run 29 = 4 | run 30 = 4 | run 31 = 4 | run 32 = 4 | run 33 = 5 | run 34 = 5 | run 35 = 5 | run 36 = 5 | run 37 = 5 | run 38 = 5 | run 39 = 5 | run 40 = 5 | run 41 = 6 | run 42 = 6 | run 43 = 6 | run 44 = 6 | run 45 = 6 | run 46 = 6 | run 47 = 6 | run 48 = 6 | run 49 = 7 | run 50 = 7 | run 51 = 7 | run 52 = 7 | run 53 = 7 | run 54 = 7 | run 55 = 7 | run 56 = 7 | run 57 = 8 | run 58 = 8 | run 59 = 8 | run 60 = 8 | run 61 = 8 | run 62 = 8 | run 63 = 8 | run 64 = 8 | run 65 = 9 | run 66 = 9 | run 67 = 9 | run 68 = 9 | run 69 = 9 | run 70 = 9 | run 71 = 9 | run 72 = 9 | run 73 = 10 | run 74 = 10 | run 75 = 10 | run 76 = 10 | run 77 = 10 | run 78 = 10 | run 79 = 10 | run 80 = 10 | run 81 = 11 | run 82 = 11 | run 83 = 11 | run 84 = 11 | run 85 = 11 | run 86 = 11 | run 87 = 11 | run 88 = 11 | run 89 = 12 | run 90 = 12 | run 91 = 12 | run 92 = 12 | run 93 = 12 | run 94 = 12 | run 95 = 12 | run 96 = 12 | run 97 = 13 | run 98 = 13 | run 99 = 13 | run 100 = 13 | run 101 = 13 | run 102 = 13 | run 103 = 13 | run 104 = 13 | run 105 = 14 | run 106 = 14 | run 107 = 14 | run 108 = 14 | run 109 = 14 | run 110 = 14 | run 111 = 14 | run 112 = 14 | run 113 = 15 | run 114 = 15 | run 115 = 15 | run 116 = 15 | run 117 = 15 | run 118 = 15 | run 119 = 15 | run 120 = 15 | run 121 = 16 | run 122 = 16 | run 123 = 16 | run 124 = 16 | run 125 = 16 | run 126 = 16 | run 127 = 16 | run 128 = 16 | run 129 = 17 | run 130 = 17 | run 131 = 17 | run 132 = 17 | run 133 = 17 | run 134 = 17 | run 135 = 17 | run 136 = 17 | run 137 = 18 | run 138 = 18 | run 139 = 18 | run 140 = 18 | run 141 = 18 | run 142 = 18 | run 143 = 18 | run 144 = 18 | run 145 = 19 | run 146 = 19 | run 147 = 19 | run 148 = 19 | run 149 = 19 | run 150 = 19 | run 151 = 19 | run 152 = 19 | run 153 = 20 | run 154 = 20 | run 155 = 20 | run 156 = 20 | run 157 = 20 | run 158 = 20 | run 159 = 20 | run 160 = 20",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes offline fractionation using High pH RP HPLC, resulting in 80 fractions concatenated into 20.",
+        "TRUTH_CHECK": "The candidate value assigns different fraction indices to different samples (Sample 1 = 1, Sample 2 = 2, etc.). According to the field definition, conditions or samples are never fractions. Each run should be assigned a fraction index based on the offline fractionation step, not the sample ID.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "run 1 = 1 | run 2 = 1 | run 3 = 1 | run 4 = 1 | run 5 = 1 | run 6 = 1 | run 7 = 1 | run 8 = 1 | run 9 = 2 | run 10 = 2 | run 11 = 2 | run 12 = 2 | run 13 = 2 | run 14 = 2 | run 15 = 2 | run 16 = 2 | run 17 = 3 | run 18 = 3 | run 19 = 3 | run 20 = 3 | run 21 = 3 | run 22 = 3 | run 23 = 3 | run 24 = 3 | run 25 = 4 | run 26 = 4 | run 27 = 4 | run 28 = 4 | run 29 = 4 | run 30 = 4 | run 31 = 4 | run 32 = 4 | run 33 = 5 | run 34 = 5 | run 35 = 5 | run 36 = 5 | run 37 = 5 | run 38 = 5 | run 39 = 5 | run 40 = 5 | run 41 = 6 | run 42 = 6 | run 43 = 6 | run 44 = 6 | run 45 = 6 | run 46 = 6 | run 47 = 6 | run 48 = 6 | run 49 = 7 | run 50 = 7 | run 51 = 7 | run 52 = 7 | run 53 = 7 | run 54 = 7 | run 55 = 7 | run 56 = 7 | run 57 = 8 | run 58 = 8 | run 59 = 8 | run 60 = 8 | run 61 = 8 | run 62 = 8 | run 63 = 8 | run 64 = 8 | run 65 = 9 | run 66 = 9 | run 67 = 9 | run 68 = 9 | run 69 = 9 | run 70 = 9 | run 71 = 9 | run 72 = 9 | run 73 = 10 | run 74 = 10 | run 75 = 10 | run 76 = 10 | run 77 = 10 | run 78 = 10 | run 79 = 10 | run 80 = 10 | run 81 = 12 | run 82 = 11 | run 83 = 11 | run 84 = 11 | run 85 = 11 | run 86 = 11 | run 87 = 11 | run 88 = 11 | run 89 = 12 | run 90 = 12 | run 91 = 12 | run 92 = 12 | run 93 = 12 | run 94 = 12 | run 95 = 12 | run 96 = 12 | run 97 = 13 | run 98 = 13 | run 99 = 13 | run 100 = 13 | run 101 = 13 | run 102 = 13 | run 103 = 13 | run 104 = 13 | run 105 = 14 | run 106 = 14 | run 107 = 14 | run 108 = 14 | run 109 = 14 | run 110 = 14 | run 111 = 14 | run 112 = 14 | run 113 = 15 | run 114 = 15 | run 115 = 15 | run 116 = 15 | run 117 = 15 | run 118 = 15 | run 119 = 15 | run 120 = 15 | run 121 = 16 | run 122 = 16 | run 123 = 16 | run 124 = 16 | run 125 = 16 | run 126 = 16 | run 127 = 16 | run 128 = 16 | run 129 = 17 | run 130 = 17 | run 131 = 17 | run 132 = 17 | run 133 = 17 | run 134 = 17 | run 135 = 17 | run 136 = 17 | run 137 = 18 | run 138 = 18 | run 139 = 18 | run 140 = 18 | run 141 = 18 | run 142 = 18 | run 143 = 18 | run 144 = 18 | run 145 = 19 | run 146 = 19 | run 147 = 19 | run 148 = 19 | run 149 = 19 | run 150 = 19 | run 151 = 19 | run 152 = 19 | run 153 = 20 | run 154 = 20 | run 155 = 20 | run 156 = 20 | run 157 = 20 | run 158 = 20 | run 159 = 20 | run 160 = 20",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is for subject/donor identifiers, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"Pools containing equal amounts of protein (25 μg per case) were prepared of each of the 8 groups\" and that they \"pooled tissue from all subjects in each group for unbiased proteomic analyses\".",
+        "TRUTH_CHECK": "The proteomics runs were performed on pooled samples, not on individual subjects. According to the biological_replicate and individual rules, runs from a pooled sample must share the same identifier (or be treated as a single unit), but assigning individual subject IDs to runs of a pool is incorrect because the runs do not come from a single individual.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[region]",
+      "extracted_value": "superior temporal gyrus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a brain region, which is appropriate for a column named \"characteristics[region]\".",
+        "SOURCE_CHECK": "The methods state that tissue was provided from the \"superior temporal gyrus (BA41/42)\".",
+        "TRUTH_CHECK": "The study analyzed synaptoneurosome preparations from this specific region.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[region]",
+      "extracted_value": "primary visual cortex",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a brain region, which is appropriate for a column named characteristics[region].",
+        "SOURCE_CHECK": "The methods state that tissue was provided from the primary visual cortex (BA17).",
+        "TRUTH_CHECK": "The value correctly describes the brain region for the runs associated with that sample group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample]",
+      "extracted_value": "Control_APOE3/3_superior_temporal_gyrus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample characteristic combining group, genotype, and brain region, which is appropriate for a characteristics[sample] column.",
+        "SOURCE_CHECK": "The paper describes 8 groups based on disease state (control, AD), APOE genotype (APOE3/3, APOE3/4), and brain region (superior temporal gyrus/BA41/42, primary visual cortex/BA17).",
+        "TRUTH_CHECK": "The value \"Control_APOE3/3_superior_temporal_gyrus\" correctly represents one of the 8 pooled groups described in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "The value is a complete description of the sample group."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample]",
+      "extracted_value": "Control_APOE3/3_primary_visual_cortex",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample characteristic combining disease state, genotype, and brain region, which is appropriate for a characteristics[sample] column.",
+        "SOURCE_CHECK": "The paper describes 8 groups based on disease status (control, AD), APOE genotype (APOE3/3, APOE3/4), and brain region (superior temporal gyrus/BA41/42, primary visual cortex/BA17).",
+        "TRUTH_CHECK": "The value \"Control_APOE3/3_primary_visual_cortex\" correctly describes one of the 8 pooled groups mentioned in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample]",
+      "extracted_value": "Control_APOE3/4_superior_temporal_gyrus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample characteristic combining disease state, genotype, and brain region, which is appropriate for a characteristics[sample] column.",
+        "SOURCE_CHECK": "The paper describes 8 groups based on disease (AD vs control), APOE genotype (3/3 vs 3/4), and brain region (superior temporal gyrus BA41/42 vs primary visual cortex BA17).",
+        "TRUTH_CHECK": "The value \"Control_APOE3/4_superior_temporal_gyrus\" correctly represents one of the 8 groups described in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "The value is a complete descriptor of the sample group."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample]",
+      "extracted_value": "Control_APOE3/4_primary_visual_cortex",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample characteristic combining disease state, genotype, and brain region, which is appropriate for a characteristics column.",
+        "SOURCE_CHECK": "The paper describes 8 groups, including \"control APOE3/4 BA17\" (primary visual cortex), which matches the components of the value.",
+        "TRUTH_CHECK": "The value correctly describes one of the experimental groups analyzed in the MS experiment.",
+        "COMPLETENESS_CHECK": "The value is a descriptive label for the sample group."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample]",
+      "extracted_value": "Alzheimer's_Disease_APOE3/3_superior_temporal_gyrus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a combination of disease state, genotype, and brain region, which is appropriate for a sample characteristics column.",
+        "SOURCE_CHECK": "The paper describes 8 groups based on disease (AD, control), APOE status (3/3, 3/4), and brain region (superior temporal gyrus BA41/42, primary visual cortex BA17).",
+        "TRUTH_CHECK": "The value \"Alzheimer's_Disease_APOE3/3_superior_temporal_gyrus\" correctly combines these three factors as described in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "The value is a complete descriptor of the sample group."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample]",
+      "extracted_value": "Alzheimer's_Disease_APOE3/3_primary_visual_cortex",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample characteristic combining disease state, genotype, and brain region, which is appropriate for a characteristics[sample] column.",
+        "SOURCE_CHECK": "The paper describes 8 groups based on disease (AD, control), APOE genotype (3/3, 3/4), and brain region (BA17/primary visual cortex, BA41/42/superior temporal gyrus).",
+        "TRUTH_CHECK": "The value correctly describes one of the 8 experimental groups mentioned in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "The value is a descriptive label for the sample group."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample]",
+      "extracted_value": "Alzheimer's_Disease_APOE3/4_superior_temporal_gyrus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample characteristic combining disease state, genotype, and brain region, which is appropriate for a characteristics[sample] column.",
+        "SOURCE_CHECK": "The paper describes 8 groups based on disease (AD vs control), APOE genotype (3/3 vs 3/4), and brain region (superior temporal gyrus BA41/42 vs primary visual cortex BA17).",
+        "TRUTH_CHECK": "The value \"Alzheimer's_Disease_APOE3/4_superior_temporal_gyrus\" correctly describes one of the 8 experimental groups mentioned in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "The value is a complete descriptor of the sample group."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample]",
+      "extracted_value": "Alzheimer's_Disease_APOE3/4_primary_visual_cortex",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a sample characteristic combining disease state, genotype, and brain region, which is appropriate for a characteristics[sample] column.",
+        "SOURCE_CHECK": "The paper describes 8 groups based on disease (AD vs control), APOE genotype (3/3 vs 3/4), and brain region (BA41/42 superior temporal gyrus vs BA17 primary visual cortex).",
+        "TRUTH_CHECK": "The value \"Alzheimer's_Disease_APOE3/4_primary_visual_cortex\" correctly describes one of the 8 groups mentioned in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "The value is a complete descriptor of the sample group."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[apoE.status]",
+      "extracted_value": "APOE3/3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the APOE genotype, which is the intended content for a column named characteristics[apoE.status].",
+        "SOURCE_CHECK": "The paper explicitly mentions \"APOE3/3\" and \"APOE3/4\" as groups used in the proteomic analysis.",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it, as the study compared these specific APOE genotypes.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[apoE.status]",
+      "extracted_value": "APOE3/4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the APOE genotype, which is the specific variable being studied.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"APOE3/4\" as one of the groups in the LC-MS/MS analysis section.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the APOE3/4 groups.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[broadman area]",
+      "extracted_value": "BA41/42",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value refers to a Broadman area, which is a specific anatomical region of the brain, fitting the column name.",
+        "SOURCE_CHECK": "The methods state that tissue was provided from \"superior temporal gyrus (BA41/42)\" and \"primary visual cortex (BA17)\".",
+        "TRUTH_CHECK": "The value correctly describes the brain region for the runs associated with the superior temporal gyrus samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[broadman area]",
+      "extracted_value": "BA17",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value refers to a Broadman area, which is a specific anatomical region of the brain, fitting the column name.",
+        "SOURCE_CHECK": "The methods state that tissue was provided from the primary visual cortex (BA17).",
+        "TRUTH_CHECK": "The study analyzed synaptoneurosome preparations from BA17 and BA41/42.",
+        "COMPLETENESS_CHECK": "The value is a plain text identifier as used in the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[batch]",
+      "extracted_value": "1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a generic index in a comment column.",
+        "SOURCE_CHECK": "The paper does not mention \"batches\" or any batch-related numbering for the MS runs.",
+        "TRUTH_CHECK": "There is no evidence in the text that the runs were processed in batches or that \"1\" represents a batch identifier.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "PooledSample",
+      "extracted_value": "TW1-Pool1-ctrl ApoE3/3 41/42",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a pooled sample group, which is appropriate for a column named \"PooledSample\" in this study.",
+        "SOURCE_CHECK": "The paper describes 8 groups based on disease state (AD, control), APOE genotype (APOE3/3, APOE3/4), and brain region (BA41/42, BA17). The candidate value \"ctrl ApoE3/3 41/42\" matches the \"control APOE3/3 BA41/42\" group described in the LC-MS/MS analysis section.",
+        "TRUTH_CHECK": "The value correctly identifies one of the 8 pooled groups used for the unbiased proteomic analysis.",
+        "COMPLETENESS_CHECK": "The value is a descriptive identifier for the pool."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "PooledSample",
+      "extracted_value": "TW5-Pool5-ctrl ApoE3/3 17",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a pooled sample group, which is appropriate for a column named \"PooledSample\" in this study.",
+        "SOURCE_CHECK": "The paper describes 8 groups of pooled samples based on disease state (AD, control), APOE genotype (E3/3, E3/4), and brain region (BA41/42, BA17). The candidate value \"ctrl ApoE3/3 17\" corresponds to the \"control APOE3/3 BA17\" group.",
+        "TRUTH_CHECK": "The value correctly identifies one of the 8 pooled groups described in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "PooledSample",
+      "extracted_value": "TW3-Pool3-ctrl ApoE4/x 41/42",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a pooled sample group, which is a relevant characteristic for this study's design.",
+        "SOURCE_CHECK": "The paper describes 8 groups of pooled samples based on disease state (AD or control), APOE genotype (e.g., APOE3/3, APOE3/4), and brain region (BA41/42 or BA17).",
+        "TRUTH_CHECK": "The value \"TW3-Pool3-ctrl ApoE4/x 41/42\" corresponds to the \"control APOE3/4 BA41/42\" group (where ApoE4/x represents the APOE3/4 genotype).",
+        "COMPLETENESS_CHECK": "The value is a descriptive identifier for the pooled sample."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "PooledSample",
+      "extracted_value": "TW7-Pool7-ctrl ApoE4/x 17",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is being judged for a custom column \"PooledSample\" to see if it fits the study's design.",
+        "SOURCE_CHECK": "The paper states that pools were prepared for 8 groups, including \"control APOE3/4 BA17\" (which corresponds to the ApoE4/x 17 part of the value).",
+        "TRUTH_CHECK": "The paper explicitly describes a pooled design (\"We pooled tissue from all subjects in each group for unbiased proteomic analyses\"). The value correctly identifies a pool associated with a specific group (Control, APOE4, BA17).",
+        "COMPLETENESS_CHECK": "The value is a descriptive identifier for the pooled sample."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "PooledSample",
+      "extracted_value": "TW2-Pool2-AD ApoE3/3 41/42",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a pooled sample group, which is appropriate for a column named \"PooledSample\" in this study.",
+        "SOURCE_CHECK": "The paper states that pools were prepared for 8 groups, including \"AD APOE3/3 BA41/42\". The candidate value \"TW2-Pool2-AD ApoE3/3 41/42\" is a specific identifier for this group.",
+        "TRUTH_CHECK": "The value correctly identifies one of the 8 pooled groups described in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "The value is a complete identifier for the sample pool."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "PooledSample",
+      "extracted_value": "TW6-Pool6-AD ApoE3/3 17",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a pooled sample group, which is appropriate for a column named \"PooledSample\" in this study.",
+        "SOURCE_CHECK": "The paper describes 8 groups of pooled samples, including \"AD APOE3/3 BA17\" (where 17 refers to BA17). The candidate value \"TW6-Pool6-AD ApoE3/3 17\" corresponds to this group.",
+        "TRUTH_CHECK": "The value correctly identifies the pooled sample group (AD, ApoE3/3, BA17) used for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "PooledSample",
+      "extracted_value": "TW4-Pool4-AD ApoE4/x 41/42",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a pooled sample group, which is appropriate for a column named \"PooledSample\" in this study.",
+        "SOURCE_CHECK": "The paper describes 8 groups based on disease state (AD, control), APOE status (E3/3, E3/4), and brain region (BA41/42, BA17). The candidate value \"AD ApoE4/x 41/42\" corresponds to the AD APOE3/4 BA41/42 group (where x represents the other allele).",
+        "TRUTH_CHECK": "The value correctly identifies one of the 8 pooled groups used for the unbiased proteomic analysis.",
+        "COMPLETENESS_CHECK": "The value is a descriptive identifier for the pool."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "PooledSample",
+      "extracted_value": "TW8-Pool7-AD ApoE4/x 17",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a pooled sample identifier, which is appropriate for a column named \"PooledSample\".",
+        "SOURCE_CHECK": "The paper states that \"Pools containing equal amounts of protein... were prepared of each of the 8 groups\" and lists the groups (e.g., AD APOE3/4 BA17). The candidate value \"AD ApoE4/x 17\" corresponds to the AD APOE3/4 BA17 group (where x represents the other allele).",
+        "TRUTH_CHECK": "The value correctly identifies one of the 8 pooled groups described in the LC-MS/MS analysis section.",
+        "COMPLETENESS_CHECK": "The value is a specific identifier for the pool, which is complete for this purpose."
+      }
+    }
+  ]
+}

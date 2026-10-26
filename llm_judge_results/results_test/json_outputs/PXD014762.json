@@ -1,0 +1,515 @@
+{
+  "paper_id": "PXD014762",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the use of \"human lung tissues\" and \"human lung alveoli\", which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analyzed proteins are from human lung tissue.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "alveoli",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"human lung alveoli\" in the abstract and methods.",
+        "TRUTH_CHECK": "The runs are derived from micro-dissected lung alveoli.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "blood vessels",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"human lung blood vessels\" as one of the micro-dissected regions.",
+        "TRUTH_CHECK": "The runs carry this value and the paper confirms blood vessels were analyzed.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "characteristics[disease]",
+      "extracted_value": "Idiopathic Pulmonary Fibrosis (IPF)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that specimens were from Idiopathic Pulmonary Fibrosis (IPF) patients.",
+        "TRUTH_CHECK": "The material was microdissected from IPF specimens, although the authors specify they used \"distal lung tissue that appeared morphologically normal\". However, the subjects themselves have IPF.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "characteristics[material type]",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"tissue\" belongs to the material_type field.",
+        "SOURCE_CHECK": "The paper describes the analysis of human lung alveoli and blood vessels from FFPE sections, which are tissues.",
+        "TRUTH_CHECK": "The analyzed material for the runs is indeed tissue.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms for material_type."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=UltiMate 3000 RSLC system coupled to a Q Exactive HF mass spectrometer",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value contains both the LC system and the mass spectrometer; the instrument field should only contain the mass spectrometer model.",
+        "SOURCE_CHECK": "The paper states the use of an UltiMate 3000 Rapid Separation LC system coupled to a Q Exactive HF mass spectrometer.",
+        "TRUTH_CHECK": "The Q Exactive HF is the primary instrument used for the MS analysis.",
+        "COMPLETENESS_CHECK": "The value includes the LC system, which is explicitly forbidden by the field definition (rule D)."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for digestion, which is the right field.",
+        "SOURCE_CHECK": "The methods state \"in-column digest was performed by adding 25 μL of a 0.8 µg/µL trypsin solution\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion in the MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "comment[enrichment method]",
+      "extracted_value": "ECM enrichment",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an enrichment of a protein subset, which is the right field.",
+        "SOURCE_CHECK": "The paper states that the combined protocol (heat extraction, physical disruption, and urea-based buffer) was used to \"enhance extraction of extracellular matrix (ECM) proteins\" and that this \"utilizes multi-steps to enrich for ECM proteins\".",
+        "TRUTH_CHECK": "The method was used to enrich for ECM proteins in the analyzed samples.",
+        "COMPLETENESS_CHECK": "The value is a descriptive name of the enrichment target, which is acceptable."
+      }
+    },
+    {
+      "annotation_type": "acquisition_method",
+      "sdrf_column": "comment[acquisition method]",
+      "extracted_value": "DDA",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an MS acquisition scheme, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Mass spectrometry data was acquired in a data directed manner\" and \"by data dependent analysis on a basis of the top 12 peptides\", which allows the inference of DDA.",
+        "TRUTH_CHECK": "The acquisition method described applies to the LC-MS/MS runs.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "comment[precursor mass tolerance]",
+      "extracted_value": "8 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The methods section states \"Peptide tolerance and MS/MS tolerance were set to 8 ppm and 0.015 Da, respectively.\"",
+        "TRUTH_CHECK": "The value is correct for the runs described in the main proteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete, including the unit as printed."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "comment[fragment mass tolerance]",
+      "extracted_value": "0.015 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"Peptide tolerance and MS/MS tolerance were set to 8 ppm and 0.015 Da, respectively.\"",
+        "TRUTH_CHECK": "The value 0.015 Da is correctly attributed to the MS/MS (fragment) tolerance.",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition, including the unit."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[biological replicates]",
+      "extracted_value": "IPF patient 1; IPF patient 2; IPF patient 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes biological replicates/subjects, which is the correct content for a column named \"characteristics[biological replicates]\".",
+        "SOURCE_CHECK": "The paper states \"n = 3 IPF specimens\" and \"n = 3 IPF patients\", supporting the existence of three distinct biological sources.",
+        "TRUTH_CHECK": "The value correctly identifies the three patients used as biological replicates in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of biological replicates]",
+      "extracted_value": "3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing the count of biological replicates, which fits the column name.",
+        "SOURCE_CHECK": "The paper states \"n = 3 IPF specimens\" and \"n = 3 IPF patients\" in the Methods and Results sections.",
+        "TRUTH_CHECK": "The study used three independent biological specimens (patients) for the main analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of samples]",
+      "extracted_value": "6",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of samples, which fits the column name \"characteristics[number of samples]\".",
+        "SOURCE_CHECK": "The paper states in the Results section: \"encompassing a total of 6 LCM-MS samples\".",
+        "TRUTH_CHECK": "The value correctly describes the total number of samples used in the main LCM-MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[origin site disease]",
+      "extracted_value": "Idiopathic Pulmonary Fibrosis (IPF)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the specimens, which is appropriate for a column named \"characteristics[origin site disease]\".",
+        "SOURCE_CHECK": "The paper states that the specimens met the criteria for Idiopathic Pulmonary Fibrosis (IPF) diagnosis.",
+        "TRUTH_CHECK": "The analyzed lung tissues were obtained from IPF specimens.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[pooled sample]",
+      "extracted_value": "Yes",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is a custom characteristics column for pooled samples.",
+        "SOURCE_CHECK": "The paper states that for each specimen, tissue from alveoli and blood vessels were \"pooled from H&E-stained 5-micron FFPE sections\".",
+        "TRUTH_CHECK": "The runs are derived from these pooled samples.",
+        "COMPLETENESS_CHECK": "The value \"Yes\" correctly indicates that the sample was pooled."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "detergent-based heat retrieval procedure to enhance protein solubility by reversing chemical crosslinking due to fixation",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample treatment step, which is appropriate for a column named \"characteristics[sample treatment]\".",
+        "SOURCE_CHECK": "The paper states in the Intro and Methods that a \"detergent-based heat-retrieval procedure\" was performed to \"enhance protein solubility by reversing chemical crosslinking caused by fixation\".",
+        "TRUTH_CHECK": "This procedure was applied to the samples analyzed by mass spectrometry.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "alkylated by the addition of 8 µL of 500 mM IAM and incubated for 30 minutes in the dark",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample preparation step (alkylation), which is a technical procedure rather than a sample treatment characteristic.",
+        "SOURCE_CHECK": "The paper states \"samples were alkylated by the addition of 8 µL of 500 mM iodoacetamide (Sigma, I1149) and incubated for 30 min in the dark\".",
+        "TRUTH_CHECK": "While the content is in the paper, it describes a standard part of the MS sample preparation workflow (alkylation) applied to all samples, not a \"sample treatment\" (which usually refers to experimental conditions, drugs, or specific perturbations).",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "in-column digestion with trypsin (2 µg in 50 mM TEAB, pH 8.0) for 1 hour at 47 °C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample preparation step (digestion), which is a technical procedure rather than a sample treatment characteristic.",
+        "SOURCE_CHECK": "The paper describes in-column digestion with trypsin at 47 °C for 1 hour in 50 mM TEAB pH 8.0, but the amount is 0.8 µg/µL, not 2 µg.",
+        "TRUTH_CHECK": "The value describes a general technical step applied to all samples, not a specific treatment variable used to characterize the samples.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "desalting using Oligo R3 resin beads",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample preparation step (desalting), which is a treatment/processing step.",
+        "SOURCE_CHECK": "The paper states \"Desalting of samples was performed using Oligo R3 resin beads\" in the Sample preparation section.",
+        "TRUTH_CHECK": "Desalting is a standard part of the sample preparation pipeline for all runs in this study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "S-Trap digestion and desalting workflow (S-Trap column) for sample cleanup and digestion",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample preparation workflow, which is a characteristic of the sample treatment.",
+        "SOURCE_CHECK": "The paper describes the use of S-Trap columns for in-column digestion and a subsequent desalting step using Oligo R3 resin beads.",
+        "TRUTH_CHECK": "The S-Trap and desalting steps are central to the sample preparation for the MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "laser microdissected alveoli tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the specific specimen material, which is appropriate for a characteristics[specimen] column.",
+        "SOURCE_CHECK": "The paper describes \"micro-dissected morphologically normal human lung alveoli\".",
+        "TRUTH_CHECK": "The value correctly identifies the material analyzed in the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "laser microdissected blood vessel tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the specimen material, which is appropriate for a characteristics[specimen] column.",
+        "SOURCE_CHECK": "The paper describes the analysis of \"human lung blood vessels\" that were \"laser microdissected\".",
+        "TRUTH_CHECK": "The value correctly describes the material used for the runs associated with blood vessel samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[staining]",
+      "extracted_value": "Haematoxylin and eosin (H&E) staining",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the staining method used on the tissue, which is appropriate for a characteristics column named \"staining\".",
+        "SOURCE_CHECK": "The paper explicitly describes the use of \"haematoxylin and eosin (H&E)\" staining in the abstract, intro, and methods.",
+        "TRUTH_CHECK": "The runs analyzed in the MS experiment were performed on H&E-stained FFPE sections.",
+        "COMPLETENESS_CHECK": "The value is a clear and accurate description of the staining used."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "95 °C for 20 minutes",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a temperature and duration used during sample preparation.",
+        "SOURCE_CHECK": "The paper states \"subjected to 95 °C for 20 min\" in the Sample preparation for mass spectrometry section.",
+        "TRUTH_CHECK": "This is a step in the sample preparation protocol (heat extraction), not a characteristic of the sample or the MS run itself.",
+        "COMPLETENESS_CHECK": "The value is a description of a process step."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "60 °C for 2 hours",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a temperature and duration used during sample preparation.",
+        "SOURCE_CHECK": "The paper states that samples were subjected to \"95 °C for 20 min, then 60 °C for 2 h while shaking\".",
+        "TRUTH_CHECK": "While the value is printed in the paper, it describes a step in the sample preparation protocol (heat extraction), not a characteristic of the sample or the MS run itself.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[experiment]",
+      "extracted_value": "LCM-MS analysis of FFPE human lung tissue (IPF)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a descriptive summary of the experiment, which is appropriate for a comment field.",
+        "SOURCE_CHECK": "The paper describes LCM-MS analysis of FFPE human lung tissue from IPF specimens.",
+        "TRUTH_CHECK": "The value accurately summarizes the experiment described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[flow rate chromatogram]",
+      "extracted_value": "300 nL/min",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a flow rate, which is appropriate for a column named \"comment[flow rate chromatogram]\".",
+        "SOURCE_CHECK": "The paper states a loading rate of 300 nL/min in the Liquid chromatography coupled tandem mass spectrometry section.",
+        "TRUTH_CHECK": "The value is a correct detail of the LC method used for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[gradient time]",
+      "extracted_value": "74 min",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which fits a column describing gradient time.",
+        "SOURCE_CHECK": "The paper describes a gradient from 7% to 18% B in 64 min, then 18% to 27% B in 8 min, and 27% to 60% B in 2 min (implied by \"finally... in minute\", likely meaning 1 or 2 minutes). Summing these (64+8+2) gives 74 minutes.",
+        "TRUTH_CHECK": "The calculated total gradient time matches the candidate value.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[separation]",
+      "extracted_value": "C18 reversed-phase chromatography",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a chromatography method, which is a technical detail of the separation process.",
+        "SOURCE_CHECK": "The paper states the use of a \"CSH C18, analytical column\" for liquid chromatography.",
+        "TRUTH_CHECK": "The value correctly describes the separation method used for the MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

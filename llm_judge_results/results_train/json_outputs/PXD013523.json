@@ -1,0 +1,1518 @@
+{
+  "paper_id": "PXD013523",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes nephrectomies from human participants and the use of the human proteome database.",
+        "TRUTH_CHECK": "The analysed kidney tissues are from human patients.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "kidney",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper describes the analysis of papillary renal cell carcinoma (pRCC) and matched healthy kidney controls.",
+        "TRUTH_CHECK": "The samples are derived from kidney tissue.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "kidney cell",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a cell type, which is the right field.",
+        "SOURCE_CHECK": "The paper describes the analysis of kidney tissues and kidney-derived cell lines, but does not specify a particular biological cell type (e.g., podocyte, tubular cell) for the tissue samples.",
+        "TRUTH_CHECK": "The runs are derived from kidney tissue; however, the field definition states that \"a value for a tissue sample with no stated cell type is unsupported.\"",
+        "COMPLETENESS_CHECK": "The value is a generic description rather than a specific biological cell type stated in the text."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the health status of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"patient-matched healthy kidney controls\" and \"matched normal kidney tissues\".",
+        "TRUTH_CHECK": "The runs associated with this value correspond to the healthy kidney control samples.",
+        "COMPLETENESS_CHECK": "The value \"normal\" is the correct SDRF controlled term for healthy subjects."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Papillary Renal Cell Carcinomas",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper repeatedly mentions \"Papillary renal cell carcinoma (pRCC)\" in the abstract and methods.",
+        "TRUTH_CHECK": "The runs listed (e.g., case1_pRCC_typeIIM) correspond to the pRCC samples described in the study.",
+        "COMPLETENESS_CHECK": "The value is a correct description of the disease state."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "pT3a",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"pT3a\" refers to a tumor stage (TNM classification), not the age of the subject.",
+        "SOURCE_CHECK": "The term \"pT3a\" does not appear in the provided text, although the paper mentions clinical characteristics are in Table 1 (not provided).",
+        "TRUTH_CHECK": "The value does not describe the age of the subjects.",
+        "COMPLETENESS_CHECK": "Not applicable; the value is not an age."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "pT3b",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"pT3b\" is a TNM cancer stage (tumor size/extent), not an age.",
+        "SOURCE_CHECK": "The term \"pT3b\" does not appear in the provided text, although the paper mentions clinical characteristics are in Table 1 (not provided).",
+        "TRUTH_CHECK": "The value does not describe the age of the subjects.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "pT1a",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"pT1a\" is a TNM tumor stage (pathological tumor size), not the age of the subject.",
+        "SOURCE_CHECK": "The term \"pT1a\" does not appear in the provided text, although the paper mentions clinical characteristics are in Table 1 (not provided).",
+        "TRUTH_CHECK": "The value describes the tumor stage, not the age.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "pT1b",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"pT1b\" is a TNM cancer stage (tumor size/extent), not an age.",
+        "SOURCE_CHECK": "The term \"pT1b\" does not appear in the provided text, although the paper mentions clinical characteristics are in Table 1 (not provided).",
+        "TRUTH_CHECK": "The value does not describe the age of the subjects.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "pT2b",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"pT2b\" is a TNM tumor stage/grade, not an age.",
+        "SOURCE_CHECK": "The term \"pT2b\" does not appear in the provided paper text.",
+        "TRUTH_CHECK": "The value does not describe the age of the subjects.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "pT2a",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"pT2a\" is a TNM staging classification for tumors, not an age.",
+        "SOURCE_CHECK": "The term \"pT2a\" does not appear in the provided text, although the paper mentions clinical characteristics are in Table 1 (not provided).",
+        "TRUTH_CHECK": "The value does not describe the age of the subjects.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "42Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "Complete format."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "54Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the text.",
+        "COMPLETENESS_CHECK": "The format follows the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "68Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the provided text.",
+        "COMPLETENESS_CHECK": "The format follows the definition (value and unit)."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "72Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The format (number + Y) is consistent with the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "70Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text. The value \"70Y\" does not appear in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The format follows the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "83Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text. The value \"83Y\" does not appear in the provided text.",
+        "TRUTH_CHECK": "Not applicable as the source is missing.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported by the provided text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "67Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the provided text.",
+        "COMPLETENESS_CHECK": "The format follows the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "57Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the text.",
+        "COMPLETENESS_CHECK": "Follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "60Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the ages of the participants; it only refers to a \"Table 1\" for clinical characteristics, which is not provided in the text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "80Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the text.",
+        "COMPLETENESS_CHECK": "The format follows the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "74Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the text.",
+        "COMPLETENESS_CHECK": "The format (number + Y) is consistent with the field definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "77Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the text.",
+        "COMPLETENESS_CHECK": "Follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "35Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the provided text.",
+        "COMPLETENESS_CHECK": "The format follows the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "81Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the provided text.",
+        "COMPLETENESS_CHECK": "The format follows the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "49Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the text.",
+        "COMPLETENESS_CHECK": "The format (number + unit) follows the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "71Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the provided text.",
+        "COMPLETENESS_CHECK": "The format follows the definition."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "Male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the sex of the participants; it only refers to \"19 pRCC and patient-matched healthy kidney controls\".",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "Female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the sex field.",
+        "SOURCE_CHECK": "The paper text does not mention the sex of the participants; it only refers to \"19 pRCC and patient-matched healthy kidney controls\".",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"adult\" is a developmental stage, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes nephrectomies from patients with ages such as 35Y, 42Y, 83Y, etc., which allows the inference of \"adult\".",
+        "TRUTH_CHECK": "The runs are derived from these patient kidney tissues.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"label-free quantification (LFQ) intensities\" in section 4.5.",
+        "TRUTH_CHECK": "The proteome profiling runs used label-free quantification.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive HF;AC=MS:1002523",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section (4.5) states the instrument is a \"Q-Exactive HF Orbitrap mass spectrometer\".",
+        "TRUTH_CHECK": "The value is correct for the shotgun proteome profiling runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods section (4.4) states \"followed by trypsin digestion (1:100) at 37 °C overnight\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes \"shotgun proteome profiling\" and \"quantitative proteome profiling\" using LC-MS/MS.",
+        "TRUTH_CHECK": "The runs are part of the proteomic profiling experiment described in the paper.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF controlled term convention."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"N-terminal acetylation... were set as variable modifications\".",
+        "TRUTH_CHECK": "The modification is correct for the proteome profiling runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format including NT, PP, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;AC=UNIMOD:35;MT=Variable;TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"methionine oxidation were set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Follows the required format including NT, MT, and TA."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Cysteine carbamidomethylation was set as fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;AC;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "4.5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section (4.5) states \"a mass tolerance of 4.5 ppm for precursor\".",
+        "TRUTH_CHECK": "The value is correct for the shotgun proteome profiling runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods section states \"a mass tolerance of 4.5 ppm for precursor and 20 ppm for fragment ions were required.\"",
+        "TRUTH_CHECK": "The value is correct for the shotgun proteome profiling runs.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and the unit as printed."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "case1_kidney_typeIIM_1D.raw = 1 | case1_kidney_typeIIM_SCX_2.raw = 1 | case1_kidney_typeIIM_SCX_3.raw = 1 | case1_kidney_typeIIM_SCX_4.raw = 1 | case1_kidney_typeIIM_SCX_5.raw = 1 | case1_kidney_typeIIM_SCX_X.raw = 1 | case1_kidney_typeII_1D.raw = 1 | case1_kidney_typeII_SCX_2.raw = 1 | case1_kidney_typeII_SCX_3.raw = 1 | case1_kidney_typeII_SCX_4.raw = 1 | case1_kidney_typeII_SCX_5.raw = 1 | case1_kidney_typeII_SCX_X.raw = 1 | case1_kidney_typeI_1D.raw = 1 | case1_kidney_typeI_SCX_2.raw = 1 | case1_kidney_typeI_SCX_3.raw = 1 | case1_kidney_typeI_SCX_4.raw = 1 | case1_kidney_typeI_SCX_5.raw = 1 | case1_kidney_typeI_SCX_X.raw = 1 | case1_pRCC_typeIIM_1D.raw = 1 | case1_pRCC_typeIIM_SCX_2.raw = 1 | case1_pRCC_typeIIM_SCX_3.raw = 1 | case1_pRCC_typeIIM_SCX_4.raw = 1 | case1_pRCC_typeIIM_SCX_5.raw = 1 | case1_pRCC_typeIIM_SCX_X.raw = 1 | case1_pRCC_typeII_1D.raw = 1 | case1_pRCC_typeII_SCX_2.raw = 1 | case1_pRCC_typeII_SCX_3.raw = 1 | case1_pRCC_typeII_SCX_4.raw = 1 | case1_pRCC_typeII_SCX_5.raw = 1 | case1_pRCC_typeII_SCX_X.raw = 1 | case1_pRCC_typeI_1D.raw = 1 | case1_pRCC_typeI_SCX_2.raw = 1 | case1_pRCC_typeI_SCX_3.raw = 1 | case1_pRCC_typeI_SCX_4.raw = 1 | case1_pRCC_typeI_SCX_5.raw = 1 | case1_pRCC_typeI_SCX_X.raw = 1 | case2_kidney_typeIIM_1D.raw = 1 | case2_kidney_typeIIM_SCX_2.raw = 1 | case2_kidney_typeIIM_SCX_3.raw = 1 | case2_kidney_typeIIM_SCX_4.raw = 1 | case2_kidney_typeIIM_SCX_5.raw = 1 | case2_kidney_typeIIM_SCX_X.raw = 1 | case2_kidney_typeII_1D.raw = 1 | case2_kidney_typeII_SCX_2.raw = 1 | case2_kidney_typeII_SCX_3.raw = 1 | case2_kidney_typeII_SCX_4.raw = 1 | case2_kidney_typeII_SCX_5.raw = 1 | case2_kidney_typeII_SCX_X.raw = 1 | case2_kidney_typeI_1D.raw = 1 | case2_kidney_typeI_SCX_2.raw = 1 | case2_kidney_typeI_SCX_3.raw = 1 | case2_kidney_typeI_SCX_4.raw = 1 | case2_kidney_typeI_SCX_5.raw = 1 | case2_kidney_typeI_SCX_X.raw = 1 | case2_pRCC_typeIIM_1D.raw = 1 | case2_pRCC_typeIIM_SCX_2.raw = 1 | case2_pRCC_typeIIM_SCX_3.raw = 1 | case2_pRCC_typeIIM_SCX_4.raw = 1 | case2_pRCC_typeIIM_SCX_5.raw = 1 | case2_pRCC_typeIIM_SCX_X.raw = 1 | case2_pRCC_typeII_1D.raw = 1 | case2_pRCC_typeII_SCX_2.raw = 1 | case2_pRCC_typeII_SCX_3.raw = 1 | case2_pRCC_typeII_SCX_4.raw = 1 | case2_pRCC_typeII_SCX_5.raw = 1 | case2_pRCC_typeII_SCX_X.raw = 1 | case2_pRCC_typeI_1D.raw = 1 | case2_pRCC_typeI_SCX_2.raw = 1 | case2_pRCC_typeI_SCX_3.raw = 1 | case2_pRCC_typeI_SCX_4.raw = 1 | case2_pRCC_typeI_SCX_5.raw = 1 | case2_pRCC_typeI_SCX_X.raw = 1 | case3_kidney_typeIIM_1D.raw = 1 | case3_kidney_typeIIM_SCX_2.raw = 1 | case3_kidney_typeIIM_SCX_3.raw = 1 | case3_kidney_typeIIM_SCX_4.raw = 1 | case3_kidney_typeIIM_SCX_5.raw = 1 | case3_kidney_typeIIM_SCX_X.raw = 1 | case3_kidney_typeII_SCX_3.raw = 1 | case3_kidney_typeII_SCX_4.raw = 1 | case3_kidney_typeII_SCX_5.raw = 1 | case3_kidney_typeII_SCX_X.raw = 1 | case3_kidney_typeII__1D.raw = 1 | case3_kidney_typeII__SCX_2.raw = 1 | case3_kidney_typeI_1D.raw = 1 | case3_kidney_typeI_SCX_2.raw = 1 | case3_kidney_typeI_SCX_3.raw = 1 | case3_kidney_typeI_SCX_4.raw = 1 | case3_kidney_typeI_SCX_5.raw = 1 | case3_kidney_typeI_SCX_X.raw = 1 | case3_pRCC_typeIIM_1D.raw = 1 | case3_pRCC_typeIIM_SCX_2.raw = 1 | case3_pRCC_typeIIM_SCX_3.raw = 1 | case3_pRCC_typeIIM_SCX_4.raw = 1 | case3_pRCC_typeIIM_SCX_5.raw = 1 | case3_pRCC_typeIIM_SCX_X.raw = 1 | case3_pRCC_typeII_1D.raw = 1 | case3_pRCC_typeII_SCX_2.raw = 1 | case3_pRCC_typeII_SCX_3.raw = 1 | case3_pRCC_typeII_SCX_4.raw = 1 | case3_pRCC_typeII_SCX_5.raw = 1 | case3_pRCC_typeII_SCX_X.raw = 1 | case3_pRCC_typeI_1D.raw = 1 | case3_pRCC_typeI_SCX_2.raw = 1 | case3_pRCC_typeI_SCX_3.raw = 1 | case3_pRCC_typeI_SCX_4.raw = 1 | case3_pRCC_typeI_SCX_5.raw = 1 | case3_pRCC_typeI_SCX_X.raw = 1 | case4_kidney_typeIIM_1D.raw = 1 | case4_kidney_typeIIM_SCX_2.raw = 1 | case4_kidney_typeIIM_SCX_3.raw = 1 | case4_kidney_typeIIM_SCX_4.raw = 1 | case4_kidney_typeIIM_SCX_5.raw = 1 | case4_kidney_typeIIM_SCX_X.raw = 1 | case4_kidney_typeII_1D.raw = 1 | case4_kidney_typeII_SCX_2.raw = 1 | case4_kidney_typeII_SCX_3.raw = 1 | case4_kidney_typeII_SCX_4.raw = 1 | case4_kidney_typeII_SCX_5.raw = 1 | case4_kidney_typeII_SCX_X.raw = 1 | case4_kidney_typeI_1D.raw = 1 | case4_kidney_typeI_SCX_2.raw = 1 | case4_kidney_typeI_SCX_3.raw = 1 | case4_kidney_typeI_SCX_4.raw = 1 | case4_kidney_typeI_SCX_5.raw = 1 | case4_kidney_typeI_SCX_X.raw = 1 | case4_pRCC_typeIIM_1D.raw = 1 | case4_pRCC_typeIIM_SCX_2.raw = 1 | case4_pRCC_typeIIM_SCX_3.raw = 1 | case4_pRCC_typeIIM_SCX_4.raw = 1 | case4_pRCC_typeIIM_SCX_5.raw = 1 | case4_pRCC_typeIIM_SCX_X.raw = 1 | case4_pRCC_typeII_1D.raw = 1 | case4_pRCC_typeII_SCX_2.raw = 1 | case4_pRCC_typeII_SCX_3.raw = 1 | case4_pRCC_typeII_SCX_4.raw = 1 | case4_pRCC_typeII_SCX_5.raw = 1 | case4_pRCC_typeII_SCX_X.raw = 1 | case4_pRCC_typeI_1D.raw = 1 | case4_pRCC_typeI_SCX_2.raw = 1 | case4_pRCC_typeI_SCX_3.raw = 1 | case4_pRCC_typeI_SCX_4.raw = 1 | case4_pRCC_typeI_SCX_5.raw = 1 | case4_pRCC_typeI_SCX_X.raw = 1 | case5_kidney_typeII_1D.raw = 1 | case5_kidney_typeII_SCX_2.raw = 1 | case5_kidney_typeII_SCX_3.raw = 1 | case5_kidney_typeII_SCX_4.raw = 1 | case5_kidney_typeII_SCX_5.raw = 1 | case5_kidney_typeII_SCX_X.raw = 1 | case5_kidney_typeI_1D.raw = 1 | case5_kidney_typeI_SCX_2.raw = 1 | case5_kidney_typeI_SCX_3.raw = 1 | case5_kidney_typeI_SCX_4.raw = 1 | case5_kidney_typeI_SCX_5.raw = 1 | case5_kidney_typeI_SCX_X.raw = 1 | case5_pRCC_typeII_1D.raw = 1 | case5_pRCC_typeII_SCX_2.raw = 1 | case5_pRCC_typeII_SCX_3.raw = 1 | case5_pRCC_typeII_SCX_4.raw = 1 | case5_pRCC_typeII_SCX_5.raw = 1 | case5_pRCC_typeII_SCX_X.raw = 1 | case5_pRCC_typeI_1D.raw = 1 | case5_pRCC_typeI_SCX_2.raw = 1 | case5_pRCC_typeI_SCX_3.raw = 1 | case5_pRCC_typeI_SCX_4.raw = 1 | case5_pRCC_typeI_SCX_5.raw = 1 | case5_pRCC_typeI_SCX_X.raw = 1 | case6_kidney_typeII_1D.raw = 1 | case6_kidney_typeII_SCX_2.raw = 1 | case6_kidney_typeII_SCX_3.raw = 1 | case6_kidney_typeII_SCX_4.raw = 1 | case6_kidney_typeII_SCX_5.raw = 1 | case6_kidney_typeII_SCX_X.raw = 1 | case6_kidney_typeI_1D.raw = 1 | case6_kidney_typeI_SCX_2.raw = 1 | case6_kidney_typeI_SCX_3.raw = 1 | case6_kidney_typeI_SCX_4.raw = 1 | case6_kidney_typeI_SCX_5.raw = 1 | case6_kidney_typeI_SCX_X.raw = 1 | case6_pRCC_typeII_1D.raw = 1 | case6_pRCC_typeII_SCX_2.raw = 1 | case6_pRCC_typeII_SCX_3.raw = 1 | case6_pRCC_typeII_SCX_4.raw = 1 | case6_pRCC_typeII_SCX_5.raw = 1 | case6_pRCC_typeII_SCX_X.raw = 1 | case6_pRCC_typeI_1D.raw = 1 | case6_pRCC_typeI_SCX_2.raw = 1 | case6_pRCC_typeI_SCX_3.raw = 1 | case6_pRCC_typeI_SCX_4.raw = 1 | case6_pRCC_typeI_SCX_5.raw = 1 | case6_pRCC_typeI_SCX_X.raw = 1 | case7_kidney_typeII_1D.raw = 1 | case7_kidney_typeII_SCX_2.raw = 1 | case7_kidney_typeII_SCX_3.raw = 1 | case7_kidney_typeII_SCX_4.raw = 1 | case7_kidney_typeII_SCX_5.raw = 1 | case7_kidney_typeII_SCX_X.raw = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes 19 pRCC and matched healthy kidney controls (cases).",
+        "TRUTH_CHECK": "The mapping assigns every run in the study to biological replicate 1, but the paper describes multiple independent patients/cases (19 pairs), which are independent biological units.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value, but the values are logically incorrect."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "case1_kidney_typeIIM_1D.raw = 1 | case1_kidney_typeIIM_SCX_2.raw = 1 | case1_kidney_typeIIM_SCX_3.raw = 1 | case1_kidney_typeIIM_SCX_4.raw = 1 | case1_kidney_typeIIM_SCX_5.raw = 1 | case1_kidney_typeIIM_SCX_X.raw = 1 | case1_kidney_typeII_1D.raw = 1 | case1_kidney_typeII_SCX_2.raw = 1 | case1_kidney_typeII_SCX_3.raw = 1 | case1_kidney_typeII_SCX_4.raw = 1 | case1_kidney_typeII_SCX_5.raw = 1 | case1_kidney_typeII_SCX_X.raw = 1 | case1_kidney_typeI_1D.raw = 1 | case1_kidney_typeI_SCX_2.raw = 1 | case1_kidney_typeI_SCX_3.raw = 1 | case1_kidney_typeI_SCX_4.raw = 1 | case1_kidney_typeI_SCX_5.raw = 1 | case1_kidney_typeI_SCX_X.raw = 1 | case1_pRCC_typeIIM_1D.raw = 1 | case1_pRCC_typeIIM_SCX_2.raw = 1 | case1_pRCC_typeIIM_SCX_3.raw = 1 | case1_pRCC_typeIIM_SCX_4.raw = 1 | case1_pRCC_typeIIM_SCX_5.raw = 1 | case1_pRCC_typeIIM_SCX_X.raw = 1 | case1_pRCC_typeII_1D.raw = 1 | case1_pRCC_typeII_SCX_2.raw = 1 | case1_pRCC_typeII_SCX_3.raw = 1 | case1_pRCC_typeII_SCX_4.raw = 1 | case1_pRCC_typeII_SCX_5.raw = 1 | case1_pRCC_typeII_SCX_X.raw = 1 | case1_pRCC_typeI_1D.raw = 1 | case1_pRCC_typeI_SCX_2.raw = 1 | case1_pRCC_typeI_SCX_3.raw = 1 | case1_pRCC_typeI_SCX_4.raw = 1 | case1_pRCC_typeI_SCX_5.raw = 1 | case1_pRCC_typeI_SCX_X.raw = 1 | case2_kidney_typeIIM_1D.raw = 1 | case2_kidney_typeIIM_SCX_2.raw = 1 | case2_kidney_typeIIM_SCX_3.raw = 1 | case2_kidney_typeIIM_SCX_4.raw = 1 | case2_kidney_typeIIM_SCX_5.raw = 1 | case2_kidney_typeIIM_SCX_X.raw = 1 | case2_kidney_typeII_1D.raw = 1 | case2_kidney_typeII_SCX_2.raw = 1 | case2_kidney_typeII_SCX_3.raw = 1 | case2_kidney_typeII_SCX_4.raw = 1 | case2_kidney_typeII_SCX_5.raw = 1 | case2_kidney_typeII_SCX_X.raw = 1 | case2_kidney_typeI_1D.raw = 1 | case2_kidney_typeI_SCX_2.raw = 1 | case2_kidney_typeI_SCX_3.raw = 1 | case2_kidney_typeI_SCX_4.raw = 1 | case2_kidney_typeI_SCX_5.raw = 1 | case2_kidney_typeI_SCX_X.raw = 1 | case2_pRCC_typeIIM_1D.raw = 1 | case2_pRCC_typeIIM_SCX_2.raw = 1 | case2_pRCC_typeIIM_SCX_3.raw = 1 | case2_pRCC_typeIIM_SCX_4.raw = 1 | case2_pRCC_typeIIM_SCX_5.raw = 1 | case2_pRCC_typeIIM_SCX_X.raw = 1 | case2_pRCC_typeII_1D.raw = 1 | case2_pRCC_typeII_SCX_2.raw = 1 | case2_pRCC_typeII_SCX_3.raw = 1 | case2_pRCC_typeII_SCX_4.raw = 1 | case2_pRCC_typeII_SCX_5.raw = 1 | case2_pRCC_typeII_SCX_X.raw = 1 | case2_pRCC_typeI_1D.raw = 1 | case2_pRCC_typeI_SCX_2.raw = 1 | case2_pRCC_typeI_SCX_3.raw = 1 | case2_pRCC_typeI_SCX_4.raw = 1 | case2_pRCC_typeI_SCX_5.raw = 1 | case2_pRCC_typeI_SCX_X.raw = 1 | case3_kidney_typeIIM_1D.raw = 1 | case3_kidney_typeIIM_SCX_2.raw = 1 | case3_kidney_typeIIM_SCX_3.raw = 1 | case3_kidney_typeIIM_SCX_4.raw = 1 | case3_kidney_typeIIM_SCX_5.raw = 1 | case3_kidney_typeIIM_SCX_X.raw = 1 | case3_kidney_typeII_SCX_3.raw = 1 | case3_kidney_typeII_SCX_4.raw = 1 | case3_kidney_typeII_SCX_5.raw = 1 | case3_kidney_typeII_SCX_X.raw = 1 | case3_kidney_typeII__1D.raw = 1 | case3_kidney_typeII__SCX_2.raw = 1 | case3_kidney_typeI_1D.raw = 1 | case3_kidney_typeI_SCX_2.raw = 1 | case3_kidney_typeI_SCX_3.raw = 1 | case3_kidney_typeI_SCX_4.raw = 1 | case3_kidney_typeI_SCX_5.raw = 1 | case3_kidney_typeI_SCX_X.raw = 1 | case3_pRCC_typeIIM_1D.raw = 1 | case3_pRCC_typeIIM_SCX_2.raw = 1 | case3_pRCC_typeIIM_SCX_3.raw = 1 | case3_pRCC_typeIIM_SCX_4.raw = 1 | case3_pRCC_typeIIM_SCX_5.raw = 1 | case3_pRCC_typeIIM_SCX_X.raw = 1 | case3_pRCC_typeII_1D.raw = 1 | case3_pRCC_typeII_SCX_2.raw = 1 | case3_pRCC_typeII_SCX_3.raw = 1 | case3_pRCC_typeII_SCX_4.raw = 1 | case3_pRCC_typeII_SCX_5.raw = 1 | case3_pRCC_typeII_SCX_X.raw = 1 | case3_pRCC_typeI_1D.raw = 1 | case3_pRCC_typeI_SCX_2.raw = 1 | case3_pRCC_typeI_SCX_3.raw = 1 | case3_pRCC_typeI_SCX_4.raw = 1 | case3_pRCC_typeI_SCX_5.raw = 1 | case3_pRCC_typeI_SCX_X.raw = 1 | case4_kidney_typeIIM_1D.raw = 1 | case4_kidney_typeIIM_SCX_2.raw = 1 | case4_kidney_typeIIM_SCX_3.raw = 1 | case4_kidney_typeIIM_SCX_4.raw = 1 | case4_kidney_typeIIM_SCX_5.raw = 1 | case4_kidney_typeIIM_SCX_X.raw = 1 | case4_kidney_typeII_1D.raw = 1 | case4_kidney_typeII_SCX_2.raw = 1 | case4_kidney_typeII_SCX_3.raw = 1 | case4_kidney_typeII_SCX_4.raw = 1 | case4_kidney_typeII_SCX_5.raw = 1 | case4_kidney_typeII_SCX_X.raw = 1 | case4_kidney_typeI_1D.raw = 1 | case4_kidney_typeI_SCX_2.raw = 1 | case4_kidney_typeI_SCX_3.raw = 1 | case4_kidney_typeI_SCX_4.raw = 1 | case4_kidney_typeI_SCX_5.raw = 1 | case4_kidney_typeI_SCX_X.raw = 1 | case4_pRCC_typeIIM_1D.raw = 1 | case4_pRCC_typeIIM_SCX_2.raw = 1 | case4_pRCC_typeIIM_SCX_3.raw = 1 | case4_pRCC_typeIIM_SCX_4.raw = 1 | case4_pRCC_typeIIM_SCX_5.raw = 1 | case4_pRCC_typeIIM_SCX_X.raw = 1 | case4_pRCC_typeII_1D.raw = 1 | case4_pRCC_typeII_SCX_2.raw = 1 | case4_pRCC_typeII_SCX_3.raw = 1 | case4_pRCC_typeII_SCX_4.raw = 1 | case4_pRCC_typeII_SCX_5.raw = 1 | case4_pRCC_typeII_SCX_X.raw = 1 | case4_pRCC_typeI_1D.raw = 1 | case4_pRCC_typeI_SCX_2.raw = 1 | case4_pRCC_typeI_SCX_3.raw = 1 | case4_pRCC_typeI_SCX_4.raw = 1 | case4_pRCC_typeI_SCX_5.raw = 1 | case4_pRCC_typeI_SCX_X.raw = 1 | case5_kidney_typeII_1D.raw = 1 | case5_kidney_typeII_SCX_2.raw = 1 | case5_kidney_typeII_SCX_3.raw = 1 | case5_kidney_typeII_SCX_4.raw = 1 | case5_kidney_typeII_SCX_5.raw = 1 | case5_kidney_typeII_SCX_X.raw = 1 | case5_kidney_typeI_1D.raw = 1 | case5_kidney_typeI_SCX_2.raw = 1 | case5_kidney_typeI_SCX_3.raw = 1 | case5_kidney_typeI_SCX_4.raw = 1 | case5_kidney_typeI_SCX_5.raw = 1 | case5_kidney_typeI_SCX_X.raw = 1 | case5_pRCC_typeII_1D.raw = 1 | case5_pRCC_typeII_SCX_2.raw = 1 | case5_pRCC_typeII_SCX_3.raw = 1 | case5_pRCC_typeII_SCX_4.raw = 1 | case5_pRCC_typeII_SCX_5.raw = 1 | case5_pRCC_typeII_SCX_X.raw = 1 | case5_pRCC_typeI_1D.raw = 1 | case5_pRCC_typeI_SCX_2.raw = 1 | case5_pRCC_typeI_SCX_3.raw = 1 | case5_pRCC_typeI_SCX_4.raw = 1 | case5_pRCC_typeI_SCX_5.raw = 1 | case5_pRCC_typeI_SCX_X.raw = 1 | case6_kidney_typeII_1D.raw = 1 | case6_kidney_typeII_SCX_2.raw = 1 | case6_kidney_typeII_SCX_3.raw = 1 | case6_kidney_typeII_SCX_4.raw = 1 | case6_kidney_typeII_SCX_5.raw = 1 | case6_kidney_typeII_SCX_X.raw = 1 | case6_kidney_typeI_1D.raw = 1 | case6_kidney_typeI_SCX_2.raw = 1 | case6_kidney_typeI_SCX_3.raw = 1 | case6_kidney_typeI_SCX_4.raw = 1 | case6_kidney_typeI_SCX_5.raw = 1 | case6_kidney_typeI_SCX_X.raw = 1 | case6_pRCC_typeII_1D.raw = 1 | case6_pRCC_typeII_SCX_2.raw = 1 | case6_pRCC_typeII_SCX_3.raw = 1 | case6_pRCC_typeII_SCX_4.raw = 1 | case6_pRCC_typeII_SCX_5.raw = 1 | case6_pRCC_typeII_SCX_X.raw = 1 | case6_pRCC_typeI_1D.raw = 1 | case6_pRCC_typeI_SCX_2.raw = 1 | case6_pRCC_typeI_SCX_3.raw = 1 | case6_pRCC_typeI_SCX_4.raw = 1 | case6_pRCC_typeI_SCX_5.raw = 1 | case6_pRCC_typeI_SCX_X.raw = 1 | case7_kidney_typeII_1D.raw = 1 | case7_kidney_typeII_SCX_2.raw = 1 | case7_kidney_typeII_SCX_3.raw = 1 | case7_kidney_typeII_SCX_4.raw = 1 | case7_kidney_typeII_SCX_5.raw = 1 | case7_kidney_typeII_SCX_X.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a proteomic profiling workflow where samples were fractionated by SCX.",
+        "TRUTH_CHECK": "The runs listed for each sample are a combination of a 1D run and several SCX fractions. According to the field definition, separate elutions or enrichment steps (like SCX fractions) are different material and should be treated as fractions, not technical replicates. However, since they are all derived from the same biological sample and are not repeated injections of the same material, they all correctly share the same technical replicate index (1) as they are not technical replicates of each other.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "case1_kidney_typeIIM_1D.raw = 1 | case1_kidney_typeIIM_SCX_2.raw = 2 | case1_kidney_typeIIM_SCX_3.raw = 3 | case1_kidney_typeIIM_SCX_4.raw = 4 | case1_kidney_typeIIM_SCX_5.raw = 5 | case1_kidney_typeIIM_SCX_X.raw = 6 | case1_kidney_typeII_1D.raw = 1 | case1_kidney_typeII_SCX_2.raw = 2 | case1_kidney_typeII_SCX_3.raw = 3 | case1_kidney_typeII_SCX_4.raw = 4 | case1_kidney_typeII_SCX_5.raw = 5 | case1_kidney_typeII_SCX_X.raw = 6 | case1_kidney_typeI_1D.raw = 1 | case1_kidney_typeI_SCX_2.raw = 2 | case1_kidney_typeI_SCX_3.raw = 3 | case1_kidney_typeI_SCX_4.raw = 4 | case1_kidney_typeI_SCX_5.raw = 5 | case1_kidney_typeI_SCX_X.raw = 6 | case1_pRCC_typeIIM_1D.raw = 1 | case1_pRCC_typeIIM_SCX_2.raw = 2 | case1_pRCC_typeIIM_SCX_3.raw = 3 | case1_pRCC_typeIIM_SCX_4.raw = 4 | case1_pRCC_typeIIM_SCX_5.raw = 5 | case1_pRCC_typeIIM_SCX_X.raw = 6 | case1_pRCC_typeII_1D.raw = 1 | case1_pRCC_typeII_SCX_2.raw = 2 | case1_pRCC_typeII_SCX_3.raw = 3 | case1_pRCC_typeII_SCX_4.raw = 4 | case1_pRCC_typeII_SCX_5.raw = 5 | case1_pRCC_typeII_SCX_X.raw = 6 | case1_pRCC_typeI_1D.raw = 1 | case1_pRCC_typeI_SCX_2.raw = 2 | case1_pRCC_typeI_SCX_3.raw = 3 | case1_pRCC_typeI_SCX_4.raw = 4 | case1_pRCC_typeI_SCX_5.raw = 5 | case1_pRCC_typeI_SCX_X.raw = 6 | case2_kidney_typeIIM_1D.raw = 1 | case2_kidney_typeIIM_SCX_2.raw = 2 | case2_kidney_typeIIM_SCX_3.raw = 3 | case2_kidney_typeIIM_SCX_4.raw = 4 | case2_kidney_typeIIM_SCX_5.raw = 5 | case2_kidney_typeIIM_SCX_X.raw = 6 | case2_kidney_typeII_1D.raw = 1 | case2_kidney_typeII_SCX_2.raw = 2 | case2_kidney_typeII_SCX_3.raw = 3 | case2_kidney_typeII_SCX_4.raw = 4 | case2_kidney_typeII_SCX_5.raw = 5 | case2_kidney_typeII_SCX_X.raw = 6 | case2_kidney_typeI_1D.raw = 1 | case2_kidney_typeI_SCX_2.raw = 2 | case2_kidney_typeI_SCX_3.raw = 3 | case2_kidney_typeI_SCX_4.raw = 4 | case2_kidney_typeI_SCX_5.raw = 5 | case2_kidney_typeI_SCX_X.raw = 6 | case2_pRCC_typeIIM_1D.raw = 1 | case2_pRCC_typeIIM_SCX_2.raw = 2 | case2_pRCC_typeIIM_SCX_3.raw = 3 | case2_pRCC_typeIIM_SCX_4.raw = 4 | case2_pRCC_typeIIM_SCX_5.raw = 5 | case2_pRCC_typeIIM_SCX_X.raw = 6 | case2_pRCC_typeII_1D.raw = 1 | case2_pRCC_typeII_SCX_2.raw = 2 | case2_pRCC_typeII_SCX_3.raw = 3 | case2_pRCC_typeII_SCX_4.raw = 4 | case2_pRCC_typeII_SCX_5.raw = 5 | case2_pRCC_typeII_SCX_X.raw = 6 | case2_pRCC_typeI_1D.raw = 1 | case2_pRCC_typeI_SCX_2.raw = 2 | case2_pRCC_typeI_SCX_3.raw = 3 | case2_pRCC_typeI_SCX_4.raw = 4 | case2_pRCC_typeI_SCX_5.raw = 5 | case2_pRCC_typeI_SCX_X.raw = 6 | case3_kidney_typeIIM_1D.raw = 1 | case3_kidney_typeIIM_SCX_2.raw = 2 | case3_kidney_typeIIM_SCX_3.raw = 3 | case3_kidney_typeIIM_SCX_4.raw = 4 | case3_kidney_typeIIM_SCX_5.raw = 5 | case3_kidney_typeIIM_SCX_X.raw = 6 | case3_kidney_typeII_SCX_3.raw = 3 | case3_kidney_typeII_SCX_4.raw = 4 | case3_kidney_typeII_SCX_5.raw = 5 | case3_kidney_typeII_SCX_X.raw = 6 | case3_kidney_typeII__1D.raw = 1 | case3_kidney_typeII__SCX_2.raw = 2 | case3_kidney_typeI_1D.raw = 1 | case3_kidney_typeI_SCX_2.raw = 2 | case3_kidney_typeI_SCX_3.raw = 3 | case3_kidney_typeI_SCX_4.raw = 4 | case3_kidney_typeI_SCX_5.raw = 5 | case3_kidney_typeI_SCX_X.raw = 6 | case3_pRCC_typeIIM_1D.raw = 1 | case3_pRCC_typeIIM_SCX_2.raw = 2 | case3_pRCC_typeIIM_SCX_3.raw = 3 | case3_pRCC_typeIIM_SCX_4.raw = 4 | case3_pRCC_typeIIM_SCX_5.raw = 5 | case3_pRCC_typeIIM_SCX_X.raw = 6 | case3_pRCC_typeII_1D.raw = 1 | case3_pRCC_typeII_SCX_2.raw = 2 | case3_pRCC_typeII_SCX_3.raw = 3 | case3_pRCC_typeII_SCX_4.raw = 4 | case3_pRCC_typeII_SCX_5.raw = 5 | case3_pRCC_typeII_SCX_X.raw = 6 | case3_pRCC_typeI_1D.raw = 1 | case3_pRCC_typeI_SCX_2.raw = 2 | case3_pRCC_typeI_SCX_3.raw = 3 | case3_pRCC_typeI_SCX_4.raw = 4 | case3_pRCC_typeI_SCX_5.raw = 5 | case3_pRCC_typeI_SCX_X.raw = 6 | case4_kidney_typeIIM_1D.raw = 1 | case4_kidney_typeIIM_SCX_2.raw = 2 | case4_kidney_typeIIM_SCX_3.raw = 3 | case4_kidney_typeIIM_SCX_4.raw = 4 | case4_kidney_typeIIM_SCX_5.raw = 5 | case4_kidney_typeIIM_SCX_X.raw = 6 | case4_kidney_typeII_1D.raw = 1 | case4_kidney_typeII_SCX_2.raw = 2 | case4_kidney_typeII_SCX_3.raw = 3 | case4_kidney_typeII_SCX_4.raw = 4 | case4_kidney_typeII_SCX_5.raw = 5 | case4_kidney_typeII_SCX_X.raw = 6 | case4_kidney_typeI_1D.raw = 1 | case4_kidney_typeI_SCX_2.raw = 2 | case4_kidney_typeI_SCX_3.raw = 3 | case4_kidney_typeI_SCX_4.raw = 4 | case4_kidney_typeI_SCX_5.raw = 5 | case4_kidney_typeI_SCX_X.raw = 6 | case4_pRCC_typeIIM_1D.raw = 1 | case4_pRCC_typeIIM_SCX_2.raw = 2 | case4_pRCC_typeIIM_SCX_3.raw = 3 | case4_pRCC_typeIIM_SCX_4.raw = 4 | case4_pRCC_typeIIM_SCX_5.raw = 5 | case4_pRCC_typeIIM_SCX_X.raw = 6 | case4_pRCC_typeII_1D.raw = 1 | case4_pRCC_typeII_SCX_2.raw = 2 | case4_pRCC_typeII_SCX_3.raw = 3 | case4_pRCC_typeII_SCX_4.raw = 4 | case4_pRCC_typeII_SCX_5.raw = 5 | case4_pRCC_typeII_SCX_X.raw = 6 | case4_pRCC_typeI_1D.raw = 1 | case4_pRCC_typeI_SCX_2.raw = 2 | case4_pRCC_typeI_SCX_3.raw = 3 | case4_pRCC_typeI_SCX_4.raw = 4 | case4_pRCC_typeI_SCX_5.raw = 5 | case4_pRCC_typeI_SCX_X.raw = 6 | case5_kidney_typeII_1D.raw = 1 | case5_kidney_typeII_SCX_2.raw = 2 | case5_kidney_typeII_SCX_3.raw = 3 | case5_kidney_typeII_SCX_4.raw = 4 | case5_kidney_typeII_SCX_5.raw = 5 | case5_kidney_typeII_SCX_X.raw = 6 | case5_kidney_typeI_1D.raw = 1 | case5_kidney_typeI_SCX_2.raw = 2 | case5_kidney_typeI_SCX_3.raw = 3 | case5_kidney_typeI_SCX_4.raw = 4 | case5_kidney_typeI_SCX_5.raw = 5 | case5_kidney_typeI_SCX_X.raw = 6 | case5_pRCC_typeII_1D.raw = 1 | case5_pRCC_typeII_SCX_2.raw = 2 | case5_pRCC_typeII_SCX_3.raw = 3 | case5_pRCC_typeII_SCX_4.raw = 4 | case5_pRCC_typeII_SCX_5.raw = 5 | case5_pRCC_typeII_SCX_X.raw = 6 | case5_pRCC_typeI_1D.raw = 1 | case5_pRCC_typeI_SCX_2.raw = 2 | case5_pRCC_typeI_SCX_3.raw = 3 | case5_pRCC_typeI_SCX_4.raw = 4 | case5_pRCC_typeI_SCX_5.raw = 5 | case5_pRCC_typeI_SCX_X.raw = 6 | case6_kidney_typeII_1D.raw = 1 | case6_kidney_typeII_SCX_2.raw = 2 | case6_kidney_typeII_SCX_3.raw = 3 | case6_kidney_typeII_SCX_4.raw = 4 | case6_kidney_typeII_SCX_5.raw = 5 | case6_kidney_typeII_SCX_X.raw = 6 | case6_kidney_typeI_1D.raw = 1 | case6_kidney_typeI_SCX_2.raw = 2 | case6_kidney_typeI_SCX_3.raw = 3 | case6_kidney_typeI_SCX_4.raw = 4 | case6_kidney_typeI_SCX_5.raw = 5 | case6_kidney_typeI_SCX_X.raw = 6 | case6_pRCC_typeII_1D.raw = 1 | case6_pRCC_typeII_SCX_2.raw = 2 | case6_pRCC_typeII_SCX_3.raw = 3 | case6_pRCC_typeII_SCX_4.raw = 4 | case6_pRCC_typeII_SCX_5.raw = 5 | case6_pRCC_typeII_SCX_X.raw = 6 | case6_pRCC_typeI_1D.raw = 1 | case6_pRCC_typeI_SCX_2.raw = 2 | case6_pRCC_typeI_SCX_3.raw = 3 | case6_pRCC_typeI_SCX_4.raw = 4 | case6_pRCC_typeI_SCX_5.raw = 5 | case6_pRCC_typeI_SCX_X.raw = 6 | case7_kidney_typeII_1D.raw = 1 | case7_kidney_typeII_SCX_2.raw = 2 | case7_kidney_typeII_SCX_3.raw = 3 | case7_kidney_typeII_SCX_4.raw = 4 | case7_kidney_typeII_SCX_5.raw = 5 | case7_kidney_typeII_SCX_X.raw = 6",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that for whole proteome profiling, samples were fractionated by strong cation exchange (SCX) chromatography.",
+        "TRUTH_CHECK": "The runs are correctly mapped to fractions; the \"1D\" runs are the non-fractionated/initial part and the \"SCX\" runs are the subsequent fractions.",
+        "COMPLETENESS_CHECK": "The mapping follows the required format and correctly assigns indices to the runs."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "case1_kidney_typeIIM_1D.raw = C1 type IIM | case1_kidney_typeIIM_SCX_2.raw = C1 type IIM | case1_kidney_typeIIM_SCX_3.raw = C1 type IIM | case1_kidney_typeIIM_SCX_4.raw = C1 type IIM | case1_kidney_typeIIM_SCX_5.raw = C1 type IIM | case1_kidney_typeIIM_SCX_X.raw = C1 type IIM | case1_kidney_typeII_1D.raw = C1 type II | case1_kidney_typeII_SCX_2.raw = C1 type II | case1_kidney_typeII_SCX_3.raw = C1 type II | case1_kidney_typeII_SCX_4.raw = C1 type II | case1_kidney_typeII_SCX_5.raw = C1 type II | case1_kidney_typeII_SCX_X.raw = C1 type II | case1_kidney_typeI_1D.raw = C1 type I | case1_kidney_typeI_SCX_2.raw = C1 type I | case1_kidney_typeI_SCX_3.raw = C1 type I | case1_kidney_typeI_SCX_4.raw = C1 type I | case1_kidney_typeI_SCX_5.raw = C1 type I | case1_kidney_typeI_SCX_X.raw = C1 type I | case1_pRCC_typeIIM_1D.raw = C1 type IIM | case1_pRCC_typeIIM_SCX_2.raw = C1 type IIM | case1_pRCC_typeIIM_SCX_3.raw = C1 type IIM | case1_pRCC_typeIIM_SCX_4.raw = C1 type IIM | case1_pRCC_typeIIM_SCX_5.raw = C1 type IIM | case1_pRCC_typeIIM_SCX_X.raw = C1 type IIM | case1_pRCC_typeII_1D.raw = C1 type II | case1_pRCC_typeII_SCX_2.raw = C1 type II | case1_pRCC_typeII_SCX_3.raw = C1 type II | case1_pRCC_typeII_SCX_4.raw = C1 type II | case1_pRCC_typeII_SCX_5.raw = C1 type II | case1_pRCC_typeII_SCX_X.raw = C1 type II | case1_pRCC_typeI_1D.raw = C1 type I | case1_pRCC_typeI_SCX_2.raw = C1 type I | case1_pRCC_typeI_SCX_3.raw = C1 type I | case1_pRCC_typeI_SCX_4.raw = C1 type I | case1_pRCC_typeI_SCX_5.raw = C1 type I | case1_pRCC_typeI_SCX_X.raw = C1 type I | case2_kidney_typeIIM_1D.raw = C2 type IIM | case2_kidney_typeIIM_SCX_2.raw = C2 type IIM | case2_kidney_typeIIM_SCX_3.raw = C2 type IIM | case2_kidney_typeIIM_SCX_4.raw = C2 type IIM | case2_kidney_typeIIM_SCX_5.raw = C2 type IIM | case2_kidney_typeIIM_SCX_X.raw = C2 type IIM | case2_kidney_typeII_1D.raw = C2 type II | case2_kidney_typeII_SCX_2.raw = C2 type II | case2_kidney_typeII_SCX_3.raw = C2 type II | case2_kidney_typeII_SCX_4.raw = C2 type II | case2_kidney_typeII_SCX_5.raw = C2 type II | case2_kidney_typeII_SCX_X.raw = C2 type II | case2_kidney_typeI_1D.raw = C2 type I | case2_kidney_typeI_SCX_2.raw = C2 type I | case2_kidney_typeI_SCX_3.raw = C2 type I | case2_kidney_typeI_SCX_4.raw = C2 type I | case2_kidney_typeI_SCX_5.raw = C2 type I | case2_kidney_typeI_SCX_X.raw = C2 type I | case2_pRCC_typeIIM_1D.raw = C2 type IIM | case2_pRCC_typeIIM_SCX_2.raw = C2 type IIM | case2_pRCC_typeIIM_SCX_3.raw = C2 type IIM | case2_pRCC_typeIIM_SCX_4.raw = C2 type IIM | case2_pRCC_typeIIM_SCX_5.raw = C2 type IIM | case2_pRCC_typeIIM_SCX_X.raw = C2 type IIM | case2_pRCC_typeII_1D.raw = C2 type II | case2_pRCC_typeII_SCX_2.raw = C2 type II | case2_pRCC_typeII_SCX_3.raw = C2 type II | case2_pRCC_typeII_SCX_4.raw = C2 type II | case2_pRCC_typeII_SCX_5.raw = C2 type II | case2_pRCC_typeII_SCX_X.raw = C2 type II | case2_pRCC_typeI_1D.raw = C2 type I | case2_pRCC_typeI_SCX_2.raw = C2 type I | case2_pRCC_typeI_SCX_3.raw = C2 type I | case2_pRCC_typeI_SCX_4.raw = C2 type I | case2_pRCC_typeI_SCX_5.raw = C2 type I | case2_pRCC_typeI_SCX_X.raw = C2 type I | case3_kidney_typeIIM_1D.raw = C3 type IIM | case3_kidney_typeIIM_SCX_2.raw = C3 type IIM | case3_kidney_typeIIM_SCX_3.raw = C3 type IIM | case3_kidney_typeIIM_SCX_4.raw = C3 type IIM | case3_kidney_typeIIM_SCX_5.raw = C3 type IIM | case3_kidney_typeIIM_SCX_X.raw = C3 type IIM | case3_kidney_typeII_SCX_3.raw = C3 type II | case3_kidney_typeII_SCX_4.raw = C3 type II | case3_kidney_typeII_SCX_5.raw = C3 type II | case3_kidney_typeII_SCX_X.raw = C3 type II | case3_kidney_typeII__1D.raw = C3 type II | case3_kidney_typeII__SCX_2.raw = C3 type II | case3_kidney_typeI_1D.raw = C3 type I | case3_kidney_typeI_SCX_2.raw = C3 type I | case3_kidney_typeI_SCX_3.raw = C3 type I | case3_kidney_typeI_SCX_4.raw = C3 type I | case3_kidney_typeI_SCX_5.raw = C3 type I | case3_kidney_typeI_SCX_X.raw = C3 type I | case3_pRCC_typeIIM_1D.raw = C3 type IIM | case3_pRCC_typeIIM_SCX_2.raw = C3 type IIM | case3_pRCC_typeIIM_SCX_3.raw = C3 type IIM | case3_pRCC_typeIIM_SCX_4.raw = C3 type IIM | case3_pRCC_typeIIM_SCX_5.raw = C3 type IIM | case3_pRCC_typeIIM_SCX_X.raw = C3 type IIM | case3_pRCC_typeII_1D.raw = C3 type II | case3_pRCC_typeII_SCX_2.raw = C3 type II | case3_pRCC_typeII_SCX_3.raw = C3 type II | case3_pRCC_typeII_SCX_4.raw = C3 type II | case3_pRCC_typeII_SCX_5.raw = C3 type II | case3_pRCC_typeII_SCX_X.raw = C3 type II | case3_pRCC_typeI_1D.raw = C3 type I | case3_pRCC_typeI_SCX_2.raw = C3 type I | case3_pRCC_typeI_SCX_3.raw = C3 type I | case3_pRCC_typeI_SCX_4.raw = C3 type I | case3_pRCC_typeI_SCX_5.raw = C3 type I | case3_pRCC_typeI_SCX_X.raw = C3 type I | case4_kidney_typeIIM_1D.raw = C4 type IIM | case4_kidney_typeIIM_SCX_2.raw = C4 type IIM | case4_kidney_typeIIM_SCX_3.raw = C4 type IIM | case4_kidney_typeIIM_SCX_4.raw = C4 type IIM | case4_kidney_typeIIM_SCX_5.raw = C4 type IIM | case4_kidney_typeIIM_SCX_X.raw = C4 type IIM | case4_kidney_typeII_1D.raw = C4 type II | case4_kidney_typeII_SCX_2.raw = C4 type II | case4_kidney_typeII_SCX_3.raw = C4 type II | case4_kidney_typeII_SCX_4.raw = C4 type II | case4_kidney_typeII_SCX_5.raw = C4 type II | case4_kidney_typeII_SCX_X.raw = C4 type II | case4_kidney_typeI_1D.raw = C4 type I | case4_kidney_typeI_SCX_2.raw = C4 type I | case4_kidney_typeI_SCX_3.raw = C4 type I | case4_kidney_typeI_SCX_4.raw = C4 type I | case4_kidney_typeI_SCX_5.raw = C4 type I | case4_kidney_typeI_SCX_X.raw = C4 type I | case4_pRCC_typeIIM_1D.raw = C4 type IIM | case4_pRCC_typeIIM_SCX_2.raw = C4 type IIM | case4_pRCC_typeIIM_SCX_3.raw = C4 type IIM | case4_pRCC_typeIIM_SCX_4.raw = C4 type IIM | case4_pRCC_typeIIM_SCX_5.raw = C4 type IIM | case4_pRCC_typeIIM_SCX_X.raw = C4 type IIM | case4_pRCC_typeII_1D.raw = C4 type II | case4_pRCC_typeII_SCX_2.raw = C4 type II | case4_pRCC_typeII_SCX_3.raw = C4 type II | case4_pRCC_typeII_SCX_4.raw = C4 type II | case4_pRCC_typeII_SCX_5.raw = C4 type II | case4_pRCC_typeII_SCX_X.raw = C4 type II | case4_pRCC_typeI_1D.raw = C4 type I | case4_pRCC_typeI_SCX_2.raw = C4 type I | case4_pRCC_typeI_SCX_3.raw = C4 type I | case4_pRCC_typeI_SCX_4.raw = C4 type I | case4_pRCC_typeI_SCX_5.raw = C4 type I | case4_pRCC_typeI_SCX_X.raw = C4 type I | case5_kidney_typeII_1D.raw = C5 type II | case5_kidney_typeII_SCX_2.raw = C5 type II | case5_kidney_typeII_SCX_3.raw = C5 type II | case5_kidney_typeII_SCX_4.raw = C5 type II | case5_kidney_typeII_SCX_5.raw = C5 type II | case5_kidney_typeII_SCX_X.raw = C5 type II | case5_kidney_typeI_1D.raw = C5 type I | case5_kidney_typeI_SCX_2.raw = C5 type I | case5_kidney_typeI_SCX_3.raw = C5 type I | case5_kidney_typeI_SCX_4.raw = C5 type I | case5_kidney_typeI_SCX_5.raw = C5 type I | case5_kidney_typeI_SCX_X.raw = C5 type I | case5_pRCC_typeII_1D.raw = C5 type II | case5_pRCC_typeII_SCX_2.raw = C5 type II | case5_pRCC_typeII_SCX_3.raw = C5 type II | case5_pRCC_typeII_SCX_4.raw = C5 type II | case5_pRCC_typeII_SCX_5.raw = C5 type II | case5_pRCC_typeII_SCX_X.raw = C5 type II | case5_pRCC_typeI_1D.raw = C5 type I | case5_pRCC_typeI_SCX_2.raw = C5 type I | case5_pRCC_typeI_SCX_3.raw = C5 type I | case5_pRCC_typeI_SCX_4.raw = C5 type I | case5_pRCC_typeI_SCX_5.raw = C5 type I | case5_pRCC_typeI_SCX_X.raw = C5 type I | case6_kidney_typeII_1D.raw = C6 type II | case6_kidney_typeII_SCX_2.raw = C6 type II | case6_kidney_typeII_SCX_3.raw = C6 type II | case6_kidney_typeII_SCX_4.raw = C6 type II | case6_kidney_typeII_SCX_5.raw = C6 type II | case6_kidney_typeII_SCX_X.raw = C6 type II | case6_kidney_typeI_1D.raw = C6 type I | case6_kidney_typeI_SCX_2.raw = C6 type I | case6_kidney_typeI_SCX_3.raw = C6 type I | case6_kidney_typeI_SCX_4.raw = C6 type I | case6_kidney_typeI_SCX_5.raw = C6 type I | case6_kidney_typeI_SCX_X.raw = C6 type I | case6_pRCC_typeII_1D.raw = C6 type II | case6_pRCC_typeII_SCX_2.raw = C6 type II | case6_pRCC_typeII_SCX_3.raw = C6 type II | case6_pRCC_typeII_SCX_4.raw = C6 type II | case6_pRCC_typeII_SCX_5.raw = C6 type II | case6_pRCC_typeII_SCX_X.raw = C6 type II | case6_pRCC_typeI_1D.raw = C6 type I | case6_pRCC_typeI_SCX_2.raw = C6 type I | case6_pRCC_typeI_SCX_3.raw = C6 type I | case6_pRCC_typeI_SCX_4.raw = C6 type I | case6_pRCC_typeI_SCX_5.raw = C6 type I | case6_pRCC_typeI_SCX_X.raw = C6 type I | case7_kidney_typeII_1D.raw = C7 type II | case7_kidney_typeII_SCX_2.raw = C7 type II | case7_kidney_typeII_SCX_3.raw = C7 type II | case7_kidney_typeII_SCX_4.raw = C7 type II | case7_kidney_typeII_SCX_5.raw = C7 type II | case7_kidney_typeII_SCX_X.raw = C7 type II",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value contains identifiers for subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions 19 pRCC and patient-matched healthy kidney controls, but does not provide a specific list of individual identifiers (like C1, C2, etc.).",
+        "TRUTH_CHECK": "The values include disease/tissue types (e.g., \"type IIM\", \"type II\") which are not part of an individual identifier.",
+        "COMPLETENESS_CHECK": "The values are not simple identifiers but combine subject IDs with sample types."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[phenotype]",
+      "extracted_value": "case1_kidney_typeIIM_1D.raw = normal | case1_kidney_typeIIM_SCX_2.raw = normal | case1_kidney_typeIIM_SCX_3.raw = normal | case1_kidney_typeIIM_SCX_4.raw = normal | case1_kidney_typeIIM_SCX_5.raw = normal | case1_kidney_typeIIM_SCX_X.raw = normal | case1_kidney_typeII_1D.raw = normal | case1_kidney_typeII_SCX_2.raw = normal | case1_kidney_typeII_SCX_3.raw = normal | case1_kidney_typeII_SCX_4.raw = normal | case1_kidney_typeII_SCX_5.raw = normal | case1_kidney_typeII_SCX_X.raw = normal | case1_kidney_typeI_1D.raw = normal | case1_kidney_typeI_SCX_2.raw = normal | case1_kidney_typeI_SCX_3.raw = normal | case1_kidney_typeI_SCX_4.raw = normal | case1_kidney_typeI_SCX_5.raw = normal | case1_kidney_typeI_SCX_X.raw = normal | case1_pRCC_typeIIM_1D.raw = type IIM | case1_pRCC_typeIIM_SCX_2.raw = type IIM | case1_pRCC_typeIIM_SCX_3.raw = type IIM | case1_pRCC_typeIIM_SCX_4.raw = type IIM | case1_pRCC_typeIIM_SCX_5.raw = type IIM | case1_pRCC_typeIIM_SCX_X.raw = type IIM | case1_pRCC_typeII_1D.raw = type II | case1_pRCC_typeII_SCX_2.raw = type II | case1_pRCC_typeII_SCX_3.raw = type II | case1_pRCC_typeII_SCX_4.raw = type II | case1_pRCC_typeII_SCX_5.raw = type II | case1_pRCC_typeII_SCX_X.raw = type II | case1_pRCC_typeI_1D.raw = type I | case1_pRCC_typeI_SCX_2.raw = type I | case1_pRCC_typeI_SCX_3.raw = type I | case1_pRCC_typeI_SCX_4.raw = type I | case1_pRCC_typeI_SCX_5.raw = type I | case1_pRCC_typeI_SCX_X.raw = type I | case2_kidney_typeIIM_1D.raw = normal | case2_kidney_typeIIM_SCX_2.raw = normal | case2_kidney_typeIIM_SCX_3.raw = normal | case2_kidney_typeIIM_SCX_4.raw = normal | case2_kidney_typeIIM_SCX_5.raw = normal | case2_kidney_typeIIM_SCX_X.raw = normal | case2_kidney_typeII_1D.raw = normal | case2_kidney_typeII_SCX_2.raw = normal | case2_kidney_typeII_SCX_3.raw = normal | case2_kidney_typeII_SCX_4.raw = normal | case2_kidney_typeII_SCX_5.raw = normal | case2_kidney_typeII_SCX_X.raw = normal | case2_kidney_typeI_1D.raw = normal | case2_kidney_typeI_SCX_2.raw = normal | case2_kidney_typeI_SCX_3.raw = normal | case2_kidney_typeI_SCX_4.raw = normal | case2_kidney_typeI_SCX_5.raw = normal | case2_kidney_typeI_SCX_X.raw = normal | case2_pRCC_typeIIM_1D.raw = type IIM | case2_pRCC_typeIIM_SCX_2.raw = type IIM | case2_pRCC_typeIIM_SCX_3.raw = type IIM | case2_pRCC_typeIIM_SCX_4.raw = type IIM | case2_pRCC_typeIIM_SCX_5.raw = type IIM | case2_pRCC_typeIIM_SCX_X.raw = type IIM | case2_pRCC_typeII_1D.raw = type II | case2_pRCC_typeII_SCX_2.raw = type II | case2_pRCC_typeII_SCX_3.raw = type II | case2_pRCC_typeII_SCX_4.raw = type II | case2_pRCC_typeII_SCX_5.raw = type II | case2_pRCC_typeII_SCX_X.raw = type II | case2_pRCC_typeI_1D.raw = type I | case2_pRCC_typeI_SCX_2.raw = type I | case2_pRCC_typeI_SCX_3.raw = type I | case2_pRCC_typeI_SCX_4.raw = type I | case2_pRCC_typeI_SCX_5.raw = type I | case2_pRCC_typeI_SCX_X.raw = type I | case3_kidney_typeIIM_1D.raw = normal | case3_kidney_typeIIM_SCX_2.raw = normal | case3_kidney_typeIIM_SCX_3.raw = normal | case3_kidney_typeIIM_SCX_4.raw = normal | case3_kidney_typeIIM_SCX_5.raw = normal | case3_kidney_typeIIM_SCX_X.raw = normal | case3_kidney_typeII_SCX_3.raw = normal | case3_kidney_typeII_SCX_4.raw = normal | case3_kidney_typeII_SCX_5.raw = normal | case3_kidney_typeII_SCX_X.raw = normal | case3_kidney_typeII__1D.raw = normal | case3_kidney_typeII__SCX_2.raw = normal | case3_kidney_typeI_1D.raw = normal | case3_kidney_typeI_SCX_2.raw = normal | case3_kidney_typeI_SCX_3.raw = normal | case3_kidney_typeI_SCX_4.raw = normal | case3_kidney_typeI_SCX_5.raw = normal | case3_kidney_typeI_SCX_X.raw = normal | case3_pRCC_typeIIM_1D.raw = type IIM | case3_pRCC_typeIIM_SCX_2.raw = type IIM | case3_pRCC_typeIIM_SCX_3.raw = type IIM | case3_pRCC_typeIIM_SCX_4.raw = type IIM | case3_pRCC_typeIIM_SCX_5.raw = type IIM | case3_pRCC_typeIIM_SCX_X.raw = type IIM | case3_pRCC_typeII_1D.raw = type II | case3_pRCC_typeII_SCX_2.raw = type II | case3_pRCC_typeII_SCX_3.raw = type II | case3_pRCC_typeII_SCX_4.raw = type II | case3_pRCC_typeII_SCX_5.raw = type II | case3_pRCC_typeII_SCX_X.raw = type II | case3_pRCC_typeI_1D.raw = type I | case3_pRCC_typeI_SCX_2.raw = type I | case3_pRCC_typeI_SCX_3.raw = type I | case3_pRCC_typeI_SCX_4.raw = type I | case3_pRCC_typeI_SCX_5.raw = type I | case3_pRCC_typeI_SCX_X.raw = type I | case4_kidney_typeIIM_1D.raw = normal | case4_kidney_typeIIM_SCX_2.raw = normal | case4_kidney_typeIIM_SCX_3.raw = normal | case4_kidney_typeIIM_SCX_4.raw = normal | case4_kidney_typeIIM_SCX_5.raw = normal | case4_kidney_typeIIM_SCX_X.raw = normal | case4_kidney_typeII_1D.raw = normal | case4_kidney_typeII_SCX_2.raw = normal | case4_kidney_typeII_SCX_3.raw = normal | case4_kidney_typeII_SCX_4.raw = normal | case4_kidney_typeII_SCX_5.raw = normal | case4_kidney_typeII_SCX_X.raw = normal | case4_kidney_typeI_1D.raw = normal | case4_kidney_typeI_SCX_2.raw = normal | case4_kidney_typeI_SCX_3.raw = normal | case4_kidney_typeI_SCX_4.raw = normal | case4_kidney_typeI_SCX_5.raw = normal | case4_kidney_typeI_SCX_X.raw = normal | case4_pRCC_typeIIM_1D.raw = type IIM | case4_pRCC_typeIIM_SCX_2.raw = type IIM | case4_pRCC_typeIIM_SCX_3.raw = type IIM | case4_pRCC_typeIIM_SCX_4.raw = type IIM | case4_pRCC_typeIIM_SCX_5.raw = type IIM | case4_pRCC_typeIIM_SCX_X.raw = type IIM | case4_pRCC_typeII_1D.raw = type II | case4_pRCC_typeII_SCX_2.raw = type II | case4_pRCC_typeII_SCX_3.raw = type II | case4_pRCC_typeII_SCX_4.raw = type II | case4_pRCC_typeII_SCX_5.raw = type II | case4_pRCC_typeII_SCX_X.raw = type II | case4_pRCC_typeI_1D.raw = type I | case4_pRCC_typeI_SCX_2.raw = type I | case4_pRCC_typeI_SCX_3.raw = type I | case4_pRCC_typeI_SCX_4.raw = type I | case4_pRCC_typeI_SCX_5.raw = type I | case4_pRCC_typeI_SCX_X.raw = type I | case5_kidney_typeII_1D.raw = normal | case5_kidney_typeII_SCX_2.raw = normal | case5_kidney_typeII_SCX_3.raw = normal | case5_kidney_typeII_SCX_4.raw = normal | case5_kidney_typeII_SCX_5.raw = normal | case5_kidney_typeII_SCX_X.raw = normal | case5_kidney_typeI_1D.raw = normal | case5_kidney_typeI_SCX_2.raw = normal | case5_kidney_typeI_SCX_3.raw = normal | case5_kidney_typeI_SCX_4.raw = normal | case5_kidney_typeI_SCX_5.raw = normal | case5_kidney_typeI_SCX_X.raw = normal | case5_pRCC_typeII_1D.raw = type II | case5_pRCC_typeII_SCX_2.raw = type II | case5_pRCC_typeII_SCX_3.raw = type II | case5_pRCC_typeII_SCX_4.raw = type II | case5_pRCC_typeII_SCX_5.raw = type II | case5_pRCC_typeII_SCX_X.raw = type II | case5_pRCC_typeI_1D.raw = type I | case5_pRCC_typeI_SCX_2.raw = type I | case5_pRCC_typeI_SCX_3.raw = type I | case5_pRCC_typeI_SCX_4.raw = type I | case5_pRCC_typeI_SCX_5.raw = type I | case5_pRCC_typeI_SCX_X.raw = type I | case6_kidney_typeII_1D.raw = normal | case6_kidney_typeII_SCX_2.raw = normal | case6_kidney_typeII_SCX_3.raw = normal | case6_kidney_typeII_SCX_4.raw = normal | case6_kidney_typeII_SCX_5.raw = normal | case6_kidney_typeII_SCX_X.raw = normal | case6_kidney_typeI_1D.raw = normal | case6_kidney_typeI_SCX_2.raw = normal | case6_kidney_typeI_SCX_3.raw = normal | case6_kidney_typeI_SCX_4.raw = normal | case6_kidney_typeI_SCX_5.raw = normal | case6_kidney_typeI_SCX_X.raw = normal | case6_pRCC_typeII_1D.raw = type II | case6_pRCC_typeII_SCX_2.raw = type II | case6_pRCC_typeII_SCX_3.raw = type II | case6_pRCC_typeII_SCX_4.raw = type II | case6_pRCC_typeII_SCX_5.raw = type II | case6_pRCC_typeII_SCX_X.raw = type II | case6_pRCC_typeI_1D.raw = type I | case6_pRCC_typeI_SCX_2.raw = type I | case6_pRCC_typeI_SCX_3.raw = type I | case6_pRCC_typeI_SCX_4.raw = type I | case6_pRCC_typeI_SCX_5.raw = type I | case6_pRCC_typeI_SCX_X.raw = type I | case7_kidney_typeII_1D.raw = type II | case7_kidney_typeII_SCX_2.raw = type II | case7_kidney_typeII_SCX_3.raw = type II | case7_kidney_typeII_SCX_4.raw = type II | case7_kidney_typeII_SCX_5.raw = type II | case7_kidney_typeII_SCX_X.raw = type II",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the phenotype (disease state/type) of the samples, which is the correct field for factor_value.",
+        "SOURCE_CHECK": "The paper describes comparing pRCC type I, type II, and type IIM with matched normal kidney tissues.",
+        "TRUTH_CHECK": "Most runs are correctly mapped to \"normal\" or the specific pRCC type. However, the runs for case 7 (case7_kidney_typeII_...) are mapped to \"type II\", but the run keys and the study design indicate these are \"kidney\" (normal) samples matched to a type II case.",
+        "COMPLETENESS_CHECK": "The mapping follows the required format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C1 type IIM",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (pRCC type IIM), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"pRCC type IIM\" (metastatic cancer samples) in section 4.8.",
+        "TRUTH_CHECK": "The value \"C1 type IIM\" refers to Case 1 with the pRCC type IIM phenotype, which matches the sample descriptions in the example runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C1 type II",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/disease subtype, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes \"pRCC type I\", \"pRCC type II\", and \"pRCC type IIM\" (metastatic) in section 4.8.",
+        "TRUTH_CHECK": "The value \"C1 type II\" combines a case identifier (C1) with the disease subtype (type II), which matches the experimental design of comparing different pRCC types.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C1 type I",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (pRCC type I), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"pRCC type I\" in section 4.8. The \"C1\" prefix is not in the text but likely refers to Case 1.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., case1_pRCC_typeI) correspond to the pRCC type I group described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C2 type IIM",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (pRCC type IIM), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"pRCC type IIM\" (metastatic cancer samples) in section 4.8.",
+        "TRUTH_CHECK": "The value \"C2 type IIM\" corresponds to the runs for \"case2\" with \"typeIIM\", which matches the study's design of comparing different pRCC types.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C2 type II",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/disease subtype, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes \"pRCC type I\", \"pRCC type II\", and \"pRCC type IIM\" (metastatic). The \"C2\" likely refers to a case/patient index.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., case2_pRCC_typeII) match the \"type II\" description in the paper.",
+        "COMPLETENESS_CHECK": "The value is a concise label for the phenotype."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C2 type I",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (pRCC type I), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"pRCC type I\" in section 4.8. The \"C2\" prefix is not explicitly in the text but likely refers to a case/patient identifier.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., case2_pRCC_typeI) correspond to the pRCC type I group described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C3 type IIM",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample phenotype (case number and pRCC subtype), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes 19 pRCC cases including \"pRCC type I\", \"pRCC type II\", and \"pRCC type IIM\" (metastatic). The \"C3\" refers to the case index.",
+        "TRUTH_CHECK": "The value correctly maps the runs (e.g., case3_pRCC_typeIIM) to their respective phenotype.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C3 type II",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (pRCC type II), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"pRCC type II\" and \"pRCC type IIM\" (metastatic) in the experimental design section.",
+        "TRUTH_CHECK": "The value \"C3 type II\" likely refers to Case 3, pRCC type II. The example runs (e.g., case3_pRCC_typeII_1D.raw) confirm that these runs belong to a sample identified as case 3 and type II.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C3 type I",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (pRCC type I), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes \"pRCC type I\", \"pRCC type II\", and \"pRCC type IIM\" (metastatic) in section 4.8.",
+        "TRUTH_CHECK": "The value \"C3 type I\" combines a case identifier (C3) with the tumor type (type I), which matches the experimental design of comparing different pRCC types.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C4 type IIM",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (pRCC type IIM), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"pRCC type IIM\" (metastatic cancer samples) in section 4.8.",
+        "TRUTH_CHECK": "The value \"C4 type IIM\" corresponds to the pRCC type IIM group for case 4, which is consistent with the study design described in section 4.8.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C4 type II",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (pRCC type II), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes \"pRCC type II\" in section 4.8. The \"C4\" prefix is an identifier for the case/sample.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., case4_pRCC_typeII) correspond to the pRCC type II group described in the paper.",
+        "COMPLETENESS_CHECK": "The value is a concise representation of the sample group."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C4 type I",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample phenotype (case number and cancer subtype), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes 19 pRCC cases including \"pRCC type I\", \"pRCC type II\", and \"pRCC type IIM\" (metastatic). The \"C4\" part is an index for the case.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., case4_kidney_typeI) correspond to the pRCC type I samples described in the study.",
+        "COMPLETENESS_CHECK": "The value is a concise representation of the sample's phenotype."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C5 type II",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (pRCC type II), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes \"pRCC type II\" in the experimental design (Section 4.8). The \"C5\" part is an index for the case/patient.",
+        "TRUTH_CHECK": "The value is right for the runs; the example runs (e.g., case5_pRCC_typeII) explicitly link case 5 to pRCC type II.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C5 type I",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a sample phenotype (case number and cancer subtype), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"pRCC type I\", \"pRCC type II\", and \"pRCC type IIM\" (metastatic) in section 4.8. While the specific label \"C5\" is not in the text, it is a common shorthand for \"Case 5\", and the paper explicitly mentions \"pRCC type I kidney 7 and case 5\" in the exclusion section.",
+        "TRUTH_CHECK": "The value \"C5 type I\" correctly maps the sample \"case5\" and the subtype \"type I\" mentioned in the run filenames (e.g., case5_pRCC_typeI_1D.raw).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C6 type II",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (pRCC type II), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes \"pRCC type II\" in the experimental design (section 4.8). The \"C6\" likely refers to Case 6.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., case6_pRCC_typeII) match the description of pRCC type II samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C6 type I",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (case number and cancer subtype), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"pRCC type I\", \"pRCC type II\", and \"pRCC type IIM\" (metastatic) in section 4.8. The \"C6\" likely refers to \"case 6\" from the study's 19 cases.",
+        "TRUTH_CHECK": "The value \"C6 type I\" correctly maps to the runs associated with \"case6\" and \"typeI\" as described in the run keys and the paper's experimental design.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "C7 type II",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/group (pRCC type II), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"pRCC type II\" in section 4.8. The \"C7\" likely refers to \"case 7\" mentioned in the same section.",
+        "TRUTH_CHECK": "The runs associated with this value (case7_kidney_typeII) match the \"pRCC type II\" description in the paper.",
+        "COMPLETENESS_CHECK": "The value is a concise label for the sample group."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "6.5cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which is a clinical characteristic.",
+        "SOURCE_CHECK": "The paper states that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the provided text.",
+        "COMPLETENESS_CHECK": "The value is a measurement with a unit."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "16cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which fits the column name \"TumorSize\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value is not present in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "5cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which fits the requested column name.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value is not present in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "17cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which fits the column name \"TumorSize\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text. The value \"17cm\" does not appear in the abstract or methods.",
+        "TRUTH_CHECK": "Since the source text (Abstract and Methods) does not contain the clinical data or Table 1, there is no evidence in the provided text to support this value.",
+        "COMPLETENESS_CHECK": "Complete format for a size measurement."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "2.5cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which fits the column name \"TumorSize\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified as the source table is missing from the text.",
+        "COMPLETENESS_CHECK": "The value is a measurement with a unit."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "5.5cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which fits the column name \"TumorSize\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value is not present in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "12.5cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which fits the column name \"TumorSize\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text. The specific value \"12.5cm\" does not appear in the provided text.",
+        "TRUTH_CHECK": "While the paper refers to a table containing clinical characteristics, the actual values are not present in the provided source text.",
+        "COMPLETENESS_CHECK": "The value is a standard measurement."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "3.9cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which is a relevant clinical characteristic for a cancer study.",
+        "SOURCE_CHECK": "The paper states that \"The clinical characteristics of the tumors are reported in Table 1\", but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "While the paper mentions a table of clinical characteristics, the specific value \"3.9cm\" does not appear in the provided text.",
+        "COMPLETENESS_CHECK": "The value is a standard measurement."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "11cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which fits the column name \"TumorSize\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text. The value \"11cm\" does not appear in the abstract or methods.",
+        "TRUTH_CHECK": "While the paper refers to a table containing clinical characteristics, the specific value \"11cm\" is not present in the provided source text.",
+        "COMPLETENESS_CHECK": "The value is a simple measurement."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "6.2cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which fits the purpose of a column named \"TumorSize\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "The value is not present in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "6cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which is a clinical characteristic.",
+        "SOURCE_CHECK": "The paper states in section 4.1 that \"The clinical characteristics of the tumors are reported in Table 1\", but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "While the paper mentions a table containing clinical characteristics, the specific value \"6cm\" does not appear in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "3.5cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which fits the column name \"TumorSize\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The value is not present in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "8.5cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which is a clinical characteristic.",
+        "SOURCE_CHECK": "The paper states that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The value is not present in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "4.2cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which fits the column name \"TumorSize\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text. The value \"4.2cm\" does not appear in the provided text.",
+        "TRUTH_CHECK": "Since the source text (abstract and methods) does not contain the clinical data from Table 1, the value cannot be verified.",
+        "COMPLETENESS_CHECK": "The value is a standard measurement."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "TumorSize",
+      "extracted_value": "7.5cm",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a measurement of tumor size, which fits the column name \"TumorSize\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text. The value \"7.5cm\" does not appear in the provided text.",
+        "TRUTH_CHECK": "While the paper refers to a table for clinical characteristics, the actual values are not in the provided source text.",
+        "COMPLETENESS_CHECK": "The value is a standard measurement."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Fuhrman Nuclear Grade]",
+      "extracted_value": "Fuhrman Grade 3",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a histological grade, which is a characteristic of the tumor samples.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text. The terms \"Fuhrman Grade\" or \"Nuclear Grade\" do not appear in the provided text.",
+        "TRUTH_CHECK": "Since the source text does not contain the clinical data (Table 1), there is no evidence to support this value.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Fuhrman Nuclear Grade]",
+      "extracted_value": "Fuhrman Grade 2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a nuclear grade, which is a clinical characteristic of the tumor.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The paper does not provide the specific Fuhrman grades for the samples in the provided text.",
+        "COMPLETENESS_CHECK": "The value follows a standard format for nuclear grading."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Fuhrman Nuclear Grade]",
+      "extracted_value": "Fuhrman Grade 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a clinical grade, which is a valid characteristic for a cancer study.",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The paper does not provide the specific Fuhrman grades for the samples in the provided text.",
+        "COMPLETENESS_CHECK": "The value is a standard representation of a nuclear grade."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Pathologic]",
+      "extracted_value": "pT3a",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a pathologic T-stage, which is appropriate for a column named \"characteristics[Pathologic]\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text.",
+        "TRUTH_CHECK": "The value is not present in the provided text, and the text does not provide the specific pathologic stages for the samples.",
+        "COMPLETENESS_CHECK": "The value is a standard pathologic stage designation."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Pathologic]",
+      "extracted_value": "pT3b",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a pathologic tumor stage (TNM classification), which is appropriate for a column named \"characteristics[Pathologic]\".",
+        "SOURCE_CHECK": "The paper states that \"The clinical characteristics of the tumors are reported in Table 1\", but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "While the specific value \"pT3b\" is not in the text, the paper describes a study of 19 pRCC cases with clinical characteristics, and pT stages are the standard way to describe renal cell carcinoma pathology.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Pathologic]",
+      "extracted_value": "pT1a",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a pathologic tumor stage (pTNM), which is appropriate for a column named \"characteristics[Pathologic]\".",
+        "SOURCE_CHECK": "The paper mentions that \"The clinical characteristics of the tumors are reported in Table 1\", but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "While the specific value \"pT1a\" is not in the text, the paper explicitly states that clinical characteristics were collected for the 19 pRCC cases.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Pathologic]",
+      "extracted_value": "pT1b",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a pathologic tumor stage (pTNM), which is appropriate for a column named \"characteristics[Pathologic]\".",
+        "SOURCE_CHECK": "The paper mentions that clinical characteristics of the tumors are reported in Table 1, but Table 1 is not provided in the text. However, the abstract and methods confirm the study analyzed 19 pRCC cases.",
+        "TRUTH_CHECK": "While the specific value \"pT1b\" is not in the provided text, the paper explicitly refers to a Table 1 containing clinical characteristics for the pRCC cases. In the context of renal cell carcinoma, pT stages are the standard pathologic characteristics.",
+        "COMPLETENESS_CHECK": "The value is a standard pathologic stage designation."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Pathologic]",
+      "extracted_value": "pT2b",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a pathologic tumor stage (TNM classification), which is appropriate for a column named \"characteristics[Pathologic]\".",
+        "SOURCE_CHECK": "The paper mentions that \"clinical characteristics of the tumors are reported in Table 1\", but Table 1 is not provided in the text. However, the abstract and methods confirm the study analyzed pRCC tumors.",
+        "TRUTH_CHECK": "While the specific value \"pT2b\" is not in the provided text, it is a standard pathologic stage for renal cell carcinoma, and the paper explicitly refers to a table of clinical characteristics for the 19 cases.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[Pathologic]",
+      "extracted_value": "pT2a",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a pathologic tumor stage (TNM classification), which is appropriate for a column named \"characteristics[Pathologic]\".",
+        "SOURCE_CHECK": "The paper mentions that \"The clinical characteristics of the tumors are reported in Table 1\", but Table 1 is not provided in the provided text.",
+        "TRUTH_CHECK": "While the specific value \"pT2a\" is not in the text, the paper explicitly states that clinical characteristics were collected for the 19 pRCC cases.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype].1",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is a phenotype characteristic, which is appropriate for describing the sample group.",
+        "SOURCE_CHECK": "The paper describes a comparison between pRCC (types I, II, and IIM) and matched healthy kidney controls.",
+        "TRUTH_CHECK": "The value \"normal\" correctly identifies the control group (healthy kidney tissue) in contrast to the cancer types.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype].1",
+      "extracted_value": "type IIM",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/subtype of the cancer, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"pRCC type IIM\" in section 4.8.",
+        "TRUTH_CHECK": "The value correctly identifies the phenotype for the runs associated with pRCC type IIM samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype].1",
+      "extracted_value": "type II",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the histological subtype of the cancer, which is a phenotype characteristic.",
+        "SOURCE_CHECK": "The paper mentions \"pRCC type II\" in the Experimental Design section.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with pRCC type II samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype].1",
+      "extracted_value": "type I",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/subtype of the cancer, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"Seven pRCC type I\" in section 4.8.",
+        "TRUTH_CHECK": "The value \"type I\" correctly describes the phenotype of the runs associated with pRCC type I samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

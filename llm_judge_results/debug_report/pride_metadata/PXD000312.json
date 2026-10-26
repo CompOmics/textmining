@@ -1,0 +1,145 @@
+{
+  "accession" : "PXD000312",
+  "title" : "Mercury Uniquely Alters B-Cell Protein Phosphorylation Profiles",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "To test the hypothesis that HgCl2 acts as a phospho-tyrosine phosphatase inhibitor in B-cells, we treated the WEHI-231 cell line for 10 min with HgCl2 at 100 uM or 250 uM, okadaic acid at 100 nM or pervanadate at 25 uM and analyzed the phosphoproteome by TiO2 affinity chromatography and LC-MS/MS.   WEHI-231 cell extracts were trypsinized and phosphopeptides were isolated using TiO2 affinity chromatography.  Eluates were dried and resuspended in reversed-phase HPLC loading buffer for nano-flow HPLC, electrospray ionization and analysis on a Thermo LTQ mass spectrometer.   Data were analyzed using the peptide prophet algorithm in Scaffold using Mascot and X!Tandem search results as input. Tandem mass spectra were extracted by Proteome Discoverer (ThermoFisher Scientific) version 1.4.0.288. Charge state deconvolution and deisotoping were not performed. All MS/MS data were analyzed using Mascot (Matrix Science, London, U.K., version 2.4.0) and X! Tandem (The GPM, thegpm.org; version CYCLONE (2010.12.01.1)). Mascot and X!Tandem were each set up to search the 2013_04 release of the SwissProt database (selected for Mus musculus, 16611 entries) assuming the digestion enzyme trypsin. Spectra were searched with a fragment ion mass tolerance of 0.70 Da and a parent ion tolerance of 3.5 Da. The iodoacetamide derivative of cysteine was specified as a fixed modification. Oxidation of methionine, acetylation of the n-terminus, and phosphorylation of serine, threonine, and tyrosine were specified as variable modifications.",
+  "sampleProcessingProtocol" : "Not available",
+  "dataProcessingProtocol" : "Not available",
+  "projectTags" : [ ],
+  "keywords" : [ "Phosphoprotein", "B-cell", "Mercury", "Phosphoylation", "Pervanadate", "Hg" ],
+  "doi" : "10.6019/PXD000312",
+  "submissionType" : "COMPLETE",
+  "license" : "EBI terms of use",
+  "submissionDate" : "2013-07-01",
+  "publicationDate" : "2013-12-10",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Nicholas",
+    "lastName" : "Carruthers",
+    "identifier" : "750119",
+    "affiliation" : "IEHS",
+    "email" : "aj7682@wayne.edu",
+    "country" : "United States",
+    "orcid" : "0000-0003-3070-2057",
+    "name" : "Nicholas Carruthers",
+    "id" : "750119"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Nicholas",
+    "lastName" : "Carruthers",
+    "identifier" : "3017841",
+    "affiliation" : "IEHS",
+    "email" : "aj7682@wayne.edu",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Nicholas Carruthers",
+    "id" : "3017841"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000447",
+    "name" : "LTQ"
+  } ],
+  "softwares" : [ ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000428",
+    "name" : "Bottom-up proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "United States" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000089",
+      "name" : "blood"
+    }, {
+      "cvLabel" : "CL",
+      "accession" : "CL:0000236",
+      "name" : "B cell"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0001093",
+      "name" : "WEHI-231 cell"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:10090",
+      "name" : "Mus musculus (Mouse)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:10090",
+    "name" : "Mus musculus (mouse)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000089",
+    "name" : "Blood"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0000236",
+    "name" : "B cell"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0001093",
+    "name" : "Wehi-231 cell"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Caruthers NJ, Stemmer PM, Shin N, Dombkowski A, Caruso JA, Gill R, Rosenspire A; Mercury Alters B-Cell Protein Phosphorylation Profiles., J Proteome Res, 2013 Dec 4, ",
+    "pubmedID" : 24224561,
+    "doi" : "10.1021/pr400657k"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00425",
+    "name" : "monohydroxylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00696",
+    "name" : "phosphorylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:01160",
+    "name" : "deaminated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00394",
+    "name" : "acetylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 17176,
+  "botCount" : 7034,
+  "hubCount" : 9996,
+  "organicCount" : 146
+}

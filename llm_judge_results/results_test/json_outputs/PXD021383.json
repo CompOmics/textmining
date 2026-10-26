@@ -1,0 +1,396 @@
+{
+  "paper_id": "PXD021383",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Dermatophagoides pteronyssinus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes the analysis of products labeled as D. pteronyssinus and the use of a D. pteronyssinus reference solution.",
+        "TRUTH_CHECK": "The experiment analyzed proteins from these products to determine if they contained D. pteronyssinus proteins.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Dermatophagoides farinae",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "Dermatophagoides farinae is mentioned throughout the paper as a target of the analysis.",
+        "TRUTH_CHECK": "The experiment analyzed proteins from D. farinae (both in reference samples and Indian products).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Suidasia medanensis",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a scientific name of an organism, which is the right field.",
+        "SOURCE_CHECK": "The paper explicitly mentions that several samples contained proteins from the storage mite Suidasia medanensis.",
+        "TRUTH_CHECK": "The experiment analyzed the protein content of these samples, and S. medanensis proteins were identified and quantified.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Cicer arietinum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a scientific name of an organism, which is the right field.",
+        "SOURCE_CHECK": "The paper states that several samples contained allergens from the legume Cicer arietinum (chickpea).",
+        "TRUTH_CHECK": "The experiment analyzed the proteins of the samples, and Cicer arietinum proteins were identified as constituents of those samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Saccharomyces cerevisiae",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a scientific name of an organism, which is the right field.",
+        "SOURCE_CHECK": "The paper states that proteins from baker's yeast Saccharomyces cerevisiae were identified in several samples.",
+        "TRUTH_CHECK": "The experiment analyzed the protein content of the samples, and S. cerevisiae proteins were a significant part of the analyzed material in the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper explicitly mentions the identification of \"human serum proteins\" and \"proteins of human origin\" in several samples.",
+        "TRUTH_CHECK": "The experiment analyzed proteins from human serum found in the commercial products.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "characteristics[material type]",
+      "extracted_value": "SPT solution",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"SPT solution\" is a description of the sample, but it does not match any of the broad classes defined for material_type.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"SPT solutions\" throughout the text.",
+        "TRUTH_CHECK": "The material is indeed an SPT solution, but this is not a valid term for the material_type field.",
+        "COMPLETENESS_CHECK": "The value does not follow the controlled vocabulary of the field definition."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "characteristics[material type]",
+      "extracted_value": "Allergy vaccine (AV)",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Allergy vaccine (AV)\" is a description of the sample, but it does not match any of the broad classes required by the field_name definition.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"allergy vaccines (AVs)\" as one of the analyzed materials.",
+        "TRUTH_CHECK": "The value is correct for the sample, but it is not a valid material_type term.",
+        "COMPLETENESS_CHECK": "The value does not follow the controlled vocabulary of the field definition."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Q Exactive Orbitrap mass spectrometer (Thermo Fisher Scientific)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the peptides were coupled to a \"Q Exactive Orbitrap mass spectrometer (Thermo Fisher Scientific)\".",
+        "TRUTH_CHECK": "This is the primary instrument used for the proteomics analysis.",
+        "COMPLETENESS_CHECK": "The value follows the key-value style and matches the paper text."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that samples were \"digested with trypsin using 2 different approaches.\"",
+        "TRUTH_CHECK": "Trypsin was used for the mass spectrometric analysis of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "comment[collision energy]",
+      "extracted_value": "27%",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy percentage, which is the right field.",
+        "SOURCE_CHECK": "The methods section states \"a normalized fragmentation energy at 27%\".",
+        "TRUTH_CHECK": "This value applies to the mass spectrometric analysis of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "reduction_reagent",
+      "sdrf_column": "comment[reduction reagent]",
+      "extracted_value": "dithiothreitol (DTT)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A chemical used to reduce disulfide bonds, the right field.",
+        "SOURCE_CHECK": "The methods state \"Samples were then reduced with dithiothreitol (DTT) at 60 °C for 1 h\".",
+        "TRUTH_CHECK": "DTT was used for the reduction step of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "ionization_type",
+      "sdrf_column": "comment[ionization type]",
+      "extracted_value": "nano electrospray (nanoESI)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the ionization source, which is the right field.",
+        "SOURCE_CHECK": "The methods state the instrument was \"directly coupled via nano electrospray\".",
+        "TRUTH_CHECK": "The nano electrospray source was used for the MS analysis of the samples.",
+        "COMPLETENESS_CHECK": "The value \"nano electrospray (nanoESI)\" is a correct representation of the source."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Carbamidomethyl",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Carbamidomethyl;TA=C;MT=Fixed",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Fixed modification: carbamidomethylation (C)\".",
+        "TRUTH_CHECK": "The modification was used for the protein identification of the runs.",
+        "COMPLETENESS_CHECK": "The value is missing the required residue (TA) and modification type (MT) specified in the definition."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[compound]",
+      "extracted_value": "glycerol",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"glycerol\" is a chemical compound mentioned in the paper.",
+        "SOURCE_CHECK": "The methods section states that the samples \"contained glycerol and phenol\".",
+        "TRUTH_CHECK": "Glycerol is a component of the SPT solutions and AVs analyzed in the MS experiment.",
+        "COMPLETENESS_CHECK": "The value is a simple term and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[compound]",
+      "extracted_value": "phenol",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"phenol\" is a chemical compound mentioned in the paper.",
+        "SOURCE_CHECK": "The methods state that the samples \"contained glycerol and phenol\".",
+        "TRUTH_CHECK": "Phenol is a preservative in the SPT solutions and AVs analyzed in the MS experiment.",
+        "COMPLETENESS_CHECK": "The value is a simple term describing a compound present in the sample."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of biological replicates]",
+      "extracted_value": "4–6",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a count of experiments, which fits the purpose of a column describing the number of biological replicates.",
+        "SOURCE_CHECK": "The paper states in the Data analysis section: \"Data presented here were based on 4 to 6 independent experiments for each sample.\"",
+        "TRUTH_CHECK": "The value correctly describes the number of independent experiments (biological replicates) performed for the samples.",
+        "COMPLETENESS_CHECK": "The value is a range as printed in the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "SPT solution",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the type of specimen/product analyzed, which is appropriate for a characteristics column.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"SPT solutions\" throughout the text.",
+        "TRUTH_CHECK": "The analyzed materials are indeed skin prick test (SPT) solutions and allergy vaccines.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the specimen."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "Allergy vaccine (AV)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the type of specimen (allergy vaccine), which is appropriate for a characteristics[specimen] column.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"allergy vaccines (AVs)\" throughout the text.",
+        "TRUTH_CHECK": "The study analyzed both skin prick test (SPT) solutions and allergy vaccines (AVs).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "55°C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which fits the column name \"characteristics[temperature]\".",
+        "SOURCE_CHECK": "The paper mentions 55 °C in the Mass spectrometry section as the temperature of the LC column.",
+        "TRUTH_CHECK": "The value describes the LC column temperature, not a characteristic of the sample or the run itself.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[experiment]",
+      "extracted_value": "Proteomic profiling of commercial dust mite skin prick test solutions and allergy vaccines from India",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the title of the paper, which is a suitable general comment for the experiment.",
+        "SOURCE_CHECK": "The value is the title of the paper.",
+        "TRUTH_CHECK": "The value correctly describes the overall experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[gradient time]",
+      "extracted_value": "120 min",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which is appropriate for a column named \"gradient time\".",
+        "SOURCE_CHECK": "The methods section states the acetonitrile gradient was \"5–45% B in 120 min\".",
+        "TRUTH_CHECK": "The value correctly describes the LC gradient time used for the mass spectrometric analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[separation]",
+      "extracted_value": "reverse-phase nano-HPLC",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a chromatography method, which is a technical detail of the separation process.",
+        "SOURCE_CHECK": "The paper states \"Desalted peptides resulting from the tryptic digests were separated by reverse-phase nano-HPLC\".",
+        "TRUTH_CHECK": "The value correctly describes the separation method used for the MS runs.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the separation method."
+      }
+    }
+  ]
+}

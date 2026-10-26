@@ -1,0 +1,532 @@
+{
+  "paper_id": "PXD012755",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the use of human ASD cases and matched controls, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analysed brain samples are from human subjects.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Cerebellum CB",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper states samples were from the \"posterior inferior cerebellar hemispheric cortex (CB)\".",
+        "TRUTH_CHECK": "The value \"Cerebellum CB\" correctly identifies the brain region for the runs listed.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Cerebellum BA19",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes two brain regions: Brodmann area 19 (BA19) and posterior inferior cerebellum (CB).",
+        "TRUTH_CHECK": "The value \"Cerebellum BA19\" is a contradiction; BA19 is the occipital cortex, while the cerebellum is a separate region (CB).",
+        "COMPLETENESS_CHECK": "The value is a combination of two distinct regions."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Control",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "normal",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a study comparing ASD cases and matched controls.",
+        "TRUTH_CHECK": "The runs carry the value \"Control\", which refers to the healthy control group.",
+        "COMPLETENESS_CHECK": "The field definition explicitly states that the SDRF term for healthy subjects is \"normal\" and that other wording like \"Control\" is a format error."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Autism Spectrum Disorder",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods explicitly state the study compares \"Autism Spectrum Disorder (ASD)\" cases against controls.",
+        "TRUTH_CHECK": "The runs carrying this value are the ASD cases.",
+        "COMPLETENESS_CHECK": "The value is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "30",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that controls were matched for age and that age was used as a continuous variable in the linear mixed effects model, but it does not list the specific ages of the subjects in the provided text.",
+        "TRUTH_CHECK": "Not applicable as the value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which is required by the field definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "60",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number intended to represent age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that controls were matched for age and that age was used as a continuous variable in the linear mixed effects model, but it does not list the specific ages of the subjects.",
+        "TRUTH_CHECK": "The specific value \"60\" is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which the definition requires."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "39",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that controls were matched for age and that age was used as a continuous variable in the linear mixed effects model, but it does not list the specific ages of the subjects.",
+        "TRUTH_CHECK": "The specific value \"39\" is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which the definition requires (\"with its unit as stated\")."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "22",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that controls were matched for age and that age was used as a continuous variable in the linear mixed effects model, but it does not list the specific ages of the subjects in the provided text.",
+        "TRUTH_CHECK": "The specific value \"22\" is not stated in the paper text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which the definition requires (\"with its unit as stated\")."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number, which is the right kind of information for the age field.",
+        "SOURCE_CHECK": "The paper mentions that controls were matched for age and that age was used as a continuous variable in the linear mixed effects model, but it does not list the specific ages of the subjects in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified as the specific ages are not printed in the abstract or methods.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which is required by the field definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "11",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which fits the field_name.",
+        "SOURCE_CHECK": "The paper mentions that controls were matched for age and that age was used as a continuous variable in the linear mixed effects model, but it does not list the specific ages of the subjects in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which is required by the field definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "28",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that controls were matched for age and that age was used as a continuous variable in the linear mixed effects model, but it does not list the specific ages of the subjects in the provided text.",
+        "TRUTH_CHECK": "The specific value \"28\" is not stated in the paper text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which the definition requires (\"with its unit as stated\")."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "8",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number intended to represent age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that controls were matched for age, but it does not list the specific ages of the subjects in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which is required by the field definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "4",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number intended as age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that controls were matched for age and that age was used as a continuous variable in the linear mixed effects model, but it does not list the specific ages of the subjects in the provided text.",
+        "TRUTH_CHECK": "The specific value \"4\" is not stated in the paper text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which is required by the field definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "2",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number intended to represent age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that controls were matched for age and that age was used as a continuous variable in the linear mixed effects model, but it does not list the specific ages of the subjects in the provided text.",
+        "TRUTH_CHECK": "The specific value \"2\" is not stated in the paper text for any subject.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which is required by the field definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "5",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number intended to represent age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that controls were matched for age and that age was used as a continuous variable in the linear mixed effects model, but it does not list the specific ages of the subjects in the provided text.",
+        "TRUTH_CHECK": "The specific value \"5\" is not stated in the paper text for any subject.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which is required by the field definition."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"Brain samples\" and \"Tissues\" were procured from brain banks.",
+        "TRUTH_CHECK": "The analysed materials are brain regions (CB and BA19), which are tissues.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms in the definition."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "White",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an ethnic group, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the ethnicity or ancestry of the subjects.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Black",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an ethnic group, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the ethnicity or ancestry of the subjects.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"label-free HPLC-tandem mass spectrometry\" and \"Global label-free expression proteomic analysis\".",
+        "TRUTH_CHECK": "The runs described are part of the label-free global proteomic analysis.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001910;NT=LTQ Orbitrap Elite",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper does not mention the instrument model used for the LC-MS/MS analysis.",
+        "TRUTH_CHECK": "The instrument model is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for protein digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that samples were digested with LysC for 1 hour and trypsin overnight.",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the samples in all runs.",
+        "COMPLETENESS_CHECK": "Complete. The cell names one of the two agents used, which is allowed by the \"ONE VALUE PER CELL\" convention."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the SDRF term for MS based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a \"global label-free expression proteomic analysis\" using \"HPLC-tandem mass spectrometry\", which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the MS experiment performed on all listed runs.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:35;NT=Oxidation;MT=Variable;TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"variable modifications including... oxidation of methionine\".",
+        "TRUTH_CHECK": "The value correctly describes the modification used for the runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with NT, TA, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:4;NT=Carbamidomethyl;MT=Variable;TA=C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"variable modifications including carbamidomethlylation of cysteines\".",
+        "TRUTH_CHECK": "The modification was used for the runs.",
+        "COMPLETENESS_CHECK": "Follows the key-value format and includes all required details (NT, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "25 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"mass accuracy window for precursor ion, 25 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the runs described in the global proteomic analysis.",
+        "COMPLETENESS_CHECK": "The value follows the definition format, including the number and the unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.8 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"mass accuracy window for fragment ions, 0.8 Da\".",
+        "TRUTH_CHECK": "The value is correct for the runs described in the global proteomic analysis.",
+        "COMPLETENESS_CHECK": "The value follows the definition format, including the number and the unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "Nat_10_CB5334.raw = 1 | Nat_11_CB6200.raw = 1 | Nat_12_CB7561.raw = 1 | Nat_13_CB5718.raw = 1 | Nat_14_CB1453.raw = 1 | Nat_15_CB3228.raw = 1 | Nat_16_CB4543.raw = 1 | Nat_17_CB1860.raw = 1 | Nat_18_CB4678.raw = 1 | Nat_19_A196399.raw = 1 | Nat_1_CB6399.raw = 1 | Nat_20_A196677.raw = 1 | Nat_21_A196337.raw = 1 | Nat_22_A196994.raw = 1 | Nat_23_A195666.raw = 1 | Nat_24_A196401.raw = 1 | Nat_25_A195569.raw = 1 | Nat_26_A197090.raw = 1 | Nat_27_A195334.raw = 1 | Nat_28_A196200.raw = 1 | Nat_29_A197561.raw = 1 | Nat_2_CB7078.raw = 1 | Nat_30_A195718.raw = 1 | Nat_31_A191453.raw = 1 | Nat_32_A194543.raw = 1 | Nat_3_CB6677.raw = 1 | Nat_4_CB6337.raw = 1 | Nat_5_CB6994.raw = 1 | Nat_6_CB5666_rerun.raw = 1 | Nat_7_CB6401.raw = 1 | Nat_8_CB5569.raw = 1 | Nat_9_CB7090.raw = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that tissues were procured from 9 ASD and 9 control subjects for CB and from 7 ASD and 6 control subjects for BA19, totaling multiple independent biological units.",
+        "TRUTH_CHECK": "The candidate value assigns the same biological replicate index (1) to all 32 runs, but these runs come from different samples (Sample 1 to Sample 32) derived from different human subjects.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value, but the mapping is logically incorrect based on the study design."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "Nat_10_CB5334.raw = 1 | Nat_11_CB6200.raw = 1 | Nat_12_CB7561.raw = 1 | Nat_13_CB5718.raw = 1 | Nat_14_CB1453.raw = 1 | Nat_15_CB3228.raw = 1 | Nat_16_CB4543.raw = 1 | Nat_17_CB1860.raw = 1 | Nat_18_CB4678.raw = 1 | Nat_19_A196399.raw = 1 | Nat_1_CB6399.raw = 1 | Nat_20_A196677.raw = 1 | Nat_21_A196337.raw = 1 | Nat_22_A196994.raw = 1 | Nat_23_A195666.raw = 1 | Nat_24_A196401.raw = 1 | Nat_25_A195569.raw = 1 | Nat_26_A197090.raw = 1 | Nat_27_A195334.raw = 1 | Nat_28_A196200.raw = 1 | Nat_29_A197561.raw = 1 | Nat_2_CB7078.raw = 1 | Nat_30_A195718.raw = 1 | Nat_31_A191453.raw = 1 | Nat_32_A194543.raw = 1 | Nat_3_CB6677.raw = 1 | Nat_4_CB6337.raw = 1 | Nat_5_CB6994.raw = 1 | Nat_6_CB5666_rerun.raw = 1 | Nat_7_CB6401.raw = 1 | Nat_8_CB5569.raw = 1 | Nat_9_CB7090.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a global label-free analysis of brain samples; there is no mention of repeated injections or technical replicates for the same material.",
+        "TRUTH_CHECK": "Each run corresponds to a unique sample (as indicated by the source and filename), and since no repeated runs are described, they are all technical replicate 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value of 1, which is correct for materials measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "Nat_10_CB5334.raw = 1 | Nat_11_CB6200.raw = 1 | Nat_12_CB7561.raw = 1 | Nat_13_CB5718.raw = 1 | Nat_14_CB1453.raw = 1 | Nat_15_CB3228.raw = 1 | Nat_16_CB4543.raw = 1 | Nat_17_CB1860.raw = 1 | Nat_18_CB4678.raw = 1 | Nat_19_A196399.raw = 1 | Nat_1_CB6399.raw = 1 | Nat_20_A196677.raw = 1 | Nat_21_A196337.raw = 1 | Nat_22_A196994.raw = 1 | Nat_23_A195666.raw = 1 | Nat_24_A196401.raw = 1 | Nat_25_A195569.raw = 1 | Nat_26_A197090.raw = 1 | Nat_27_A195334.raw = 1 | Nat_28_A196200.raw = 1 | Nat_29_A197561.raw = 1 | Nat_2_CB7078.raw = 1 | Nat_30_A195718.raw = 1 | Nat_31_A191453.raw = 1 | Nat_32_A194543.raw = 1 | Nat_3_CB6677.raw = 1 | Nat_4_CB6337.raw = 1 | Nat_5_CB6994.raw = 1 | Nat_6_CB5666_rerun.raw = 1 | Nat_7_CB6401.raw = 1 | Nat_8_CB5569.raw = 1 | Nat_9_CB7090.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a global label-free proteomic analysis but mentions no offline fractionation.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "All runs are correctly assigned the value 1."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "Nat_10_CB5334.raw = CB5334 | Nat_11_CB6200.raw = CB6200 | Nat_12_CB7561.raw = CB7561 | Nat_13_CB5718.raw = CB5718 | Nat_14_CB1453.raw = CB1453 | Nat_15_CB3228.raw = CB3228 | Nat_16_CB4543.raw = CB4543 | Nat_17_CB1860.raw = CB1860 | Nat_18_CB4678.raw = CB4678 | Nat_19_A196399.raw = A196399 | Nat_1_CB6399.raw = CB6399 | Nat_20_A196677.raw = A196677 | Nat_21_A196337.raw = A196337 | Nat_22_A196994.raw = A196994 | Nat_23_A195666.raw = A195666 | Nat_24_A196401.raw = A196401 | Nat_25_A195569.raw = A195569 | Nat_26_A197090.raw = A197090 | Nat_27_A195334.raw = A195334 | Nat_28_A196200.raw = A196200 | Nat_29_A197561.raw = A197561 | Nat_2_CB7078.raw = CB7078 | Nat_30_A195718.raw = A195718 | Nat_31_A191453.raw = A191453 | Nat_32_A194543.raw = A194543 | Nat_3_CB6677.raw = CB6677 | Nat_4_CB6337.raw = CB6337 | Nat_5_CB6994.raw = CB6994 | Nat_6_CB5666_rerun.raw = CB5666 | Nat_7_CB6401.raw = CB6401 | Nat_8_CB5569.raw = CB5569 | Nat_9_CB7090.raw = CB7090",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an identifier for the subject or donor, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions subjects and a specific case ID (ANO9714), but the specific individual IDs (e.g., CB5334, A196399) provided in the mapping are not listed in the provided text.",
+        "TRUTH_CHECK": "The IDs are not stated in the paper, so they cannot be verified as correct for the runs.",
+        "COMPLETENESS_CHECK": "The format is correct for a run mapping."
+      }
+    }
+  ]
+}

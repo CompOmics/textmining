@@ -1,0 +1,600 @@
+{
+  "paper_id": "PXD001856",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "human (Homo sapiens)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes human mesenchymal stem cells and human embryonic stem cells.",
+        "TRUTH_CHECK": "The analyzed proteins are from human cells.",
+        "COMPLETENESS_CHECK": "Complete. Common and scientific names are equivalent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "characteristics[age]",
+      "extracted_value": "40y",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The methods section lists BM-MSC donors, including one who is \"40y/m\".",
+        "TRUTH_CHECK": "The value is correct for the run associated with the 40-year-old donor.",
+        "COMPLETENESS_CHECK": "The value includes the number and the unit (y for years), following the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "characteristics[age]",
+      "extracted_value": "39y",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The methods section lists BM-MSC donors, including one described as \"39y/m\".",
+        "TRUTH_CHECK": "The value is correct for the run associated with the 39-year-old donor.",
+        "COMPLETENESS_CHECK": "The value includes the number and the unit (y for years) as stated in the paper."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "characteristics[age]",
+      "extracted_value": "27y",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The methods section lists BM-MSC donors, including one that is \"27y/m\".",
+        "TRUTH_CHECK": "The value is correct for the run associated with the 27-year-old donor.",
+        "COMPLETENESS_CHECK": "Complete, including the value and unit as stated in the paper."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "characteristics[age]",
+      "extracted_value": "20y",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The methods section lists a BM-MSC donor as \"20y/m\".",
+        "TRUTH_CHECK": "The value is correct for the run associated with the 20-year-old donor.",
+        "COMPLETENESS_CHECK": "Complete, as it includes the value and the unit (y for years)."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "characteristics[material type]",
+      "extracted_value": "cell line",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the use of the human embryonic stem cell line ES04 (WiCell institute).",
+        "TRUTH_CHECK": "The runs associated with this value are derived from the hESC line ES04.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms for material_type."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "Lys8/Arg10 (heavy)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the SILAC label used, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that \"heavy\" labeling was performed using L-lysine – U-13C615N2 (Lys8) and L-arginine – U-13C615N4 (Arg10).",
+        "TRUTH_CHECK": "The runs used this specific SILAC labeling scheme.",
+        "COMPLETENESS_CHECK": "Complete. It identifies the amino acids and the label channel."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "Lys4/Arg6 (medium)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the SILAC label used, which is the right field.",
+        "SOURCE_CHECK": "The methods state that \"L-lysine – U-13C415N0 (Lys4) and L-arginine – U-13C615N0 (Arg6)\" were used for \"medium\" labeling.",
+        "TRUTH_CHECK": "The value is correct for the runs using the medium SILAC label.",
+        "COMPLETENESS_CHECK": "Complete. The value identifies the specific amino acid labels and the channel name."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "Light (unlabeled)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling state of the sample, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a triple SILAC approach using \"light\", \"medium\", and \"heavy\" labels, specifically stating that \"light\" corresponds to \"standard amino acids\".",
+        "TRUTH_CHECK": "The runs used a triple SILAC design where one channel is the light (unlabeled) control.",
+        "COMPLETENESS_CHECK": "Complete. \"Light\" is the channel name used in the paper."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Q Exactive mass spectrometer (Thermo Scientific, Bremen, Germany)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the use of a \"Q Exactive mass spectrometer (Thermo Scientific, Bremen, Germany)\".",
+        "TRUTH_CHECK": "The value correctly describes the primary instrument used for the LC-MS/MS analysis.",
+        "COMPLETENESS_CHECK": "The value includes the model and vendor information as printed."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=Lys-C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for protein digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that proteins were digested by Lys-C (Wako) and then by trypsin.",
+        "TRUTH_CHECK": "Lys-C was used for the digestion of the proteins in the MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease used for protein digestion, the right field.",
+        "SOURCE_CHECK": "The methods state that proteins were digested by Lys-C and then by overnight trypsin digestion.",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the proteins in the MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "comment[fragmentation method]",
+      "extracted_value": "HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that ions were \"fragmented using higher energy collisional dissociation (HCD)\".",
+        "TRUTH_CHECK": "The runs used the Q Exactive instrument and the HCD method as described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "comment[collision energy]",
+      "extracted_value": "normalized collision energy 25",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the collision energy used during fragmentation, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under \"Nano LC-MS/MS analysis\" states \"fragmented using higher energy collisional dissociation (HCD) (normalized collision energy 25)\".",
+        "TRUTH_CHECK": "The value is correct for the runs using the Q Exactive instrument and HCD fragmentation.",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "comment[fractionation method]",
+      "extracted_value": "Isoelectric focusing (OFFGEL fractionator) into 12 fractions over a pH range of 3-10",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an offline separation of peptides into fractions, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"Peptides (180 μg) were separated by in-solution isoelectric focusing (OFFGEL fractionator, Agilent) into 12 fractions over a pH range of 3–10.\"",
+        "TRUTH_CHECK": "The value correctly describes the fractionation step used for the proteomics runs.",
+        "COMPLETENESS_CHECK": "The value is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "reduction_reagent",
+      "sdrf_column": "comment[reduction reagent]",
+      "extracted_value": "DTT",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a chemical used to reduce disulfide bonds, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"After reduction (5 mM DTT, 30 min)\".",
+        "TRUTH_CHECK": "DTT was used for the reduction step of the samples analyzed by MS.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "mass_analyzer",
+      "sdrf_column": "comment[mass analyzer type]",
+      "extracted_value": "Orbitrap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer type, which is the correct field.",
+        "SOURCE_CHECK": "The paper specifies the use of a \"Q Exactive mass spectrometer\", and an Orbitrap analyzer is an allowed inference from this instrument model.",
+        "TRUTH_CHECK": "The Q Exactive is the primary instrument used for the LC-MS/MS analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "acquisition_method",
+      "sdrf_column": "comment[acquisition method]",
+      "extracted_value": "DDA",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an MS acquisition scheme, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"A data dependent mass spectrometric method was employed\", which allows the inference of \"DDA\".",
+        "TRUTH_CHECK": "The runs used this data-dependent acquisition method.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Carbamidomethyl",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Carbamidomethyl;TA=C;MT=Fixed",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"cysteine carbamidomethylation as fixed modification\".",
+        "TRUTH_CHECK": "The modification was used for the proteomics runs.",
+        "COMPLETENESS_CHECK": "The value is missing the required residue (TA) and modification status (MT) specified in the field definition."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Oxidation",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Oxidation;TA=M;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"methionine oxidation as variable modifications\".",
+        "TRUTH_CHECK": "The modification was used for the MS analysis.",
+        "COMPLETENESS_CHECK": "The cell is missing the required residue (TA) and modification type (MT) as specified in the field definition."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Acetyl;PP=Any N-term",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Acetyl;PP=Any N-term;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"N-terminal acetylation\" was set as a variable modification.",
+        "TRUTH_CHECK": "The modification is correct for the runs.",
+        "COMPLETENESS_CHECK": "The cell is missing the MT (modification type) status required by the definition."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "comment[precursor mass tolerance]",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states \"first search mass accuracy tolerance 20 ppm\" in the Data analysis section.",
+        "TRUTH_CHECK": "The value is correct for the MS runs.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and the unit."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[cell part]",
+      "extracted_value": "cytosolic (CYT)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a subcellular fraction, which is appropriate for a column named \"characteristics[cell part]\".",
+        "SOURCE_CHECK": "The paper explicitly mentions \"subcellular fractionation was performed... resulting in cytosolic (CYT), nuclear (NUC) and chromatin-bound (CH) proteins\".",
+        "TRUTH_CHECK": "The value correctly identifies one of the fractions analyzed by mass spectrometry.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[cell part]",
+      "extracted_value": "nuclear (NUC)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a subcellular fraction, which is appropriate for a column named \"characteristics[cell part]\".",
+        "SOURCE_CHECK": "The paper explicitly mentions subcellular fractionation into \"cytosolic (CYT), nuclear (NUC) and chromatin-bound (CH) proteins\".",
+        "TRUTH_CHECK": "The value \"nuclear (NUC)\" correctly identifies one of the fractions analyzed by mass spectrometry.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[cell part]",
+      "extracted_value": "chromatin-bound (CH)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a subcellular fraction, which is appropriate for a column named \"characteristics[cell part]\".",
+        "SOURCE_CHECK": "The paper explicitly mentions \"subcellular fractionation... resulting in cytosolic (CYT), nuclear (NUC) and chromatin-bound (CH) proteins\".",
+        "TRUTH_CHECK": "The value correctly identifies one of the three subcellular fractions analyzed by mass spectrometry in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of biological replicates]",
+      "extracted_value": "3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of replicates, which is appropriate for a column named \"number of biological replicates\".",
+        "SOURCE_CHECK": "The paper states \"Three biological replicates were generated\" in the LC-MS/MS section.",
+        "TRUTH_CHECK": "The value correctly describes the number of biological replicates used for the proteomic experiments.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "cytosolic fraction",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a subcellular fraction, which is a characteristic of the specimen.",
+        "SOURCE_CHECK": "The paper describes subcellular fractionation resulting in \"cytosolic (CYT), nuclear (NUC) and chromatin-bound (CH) proteins\".",
+        "TRUTH_CHECK": "The value correctly identifies one of the fractions analyzed by mass spectrometry.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "nuclear fraction",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a subcellular fraction, which is a characteristic of the specimen/sample.",
+        "SOURCE_CHECK": "The paper describes subcellular fractionation into cytosol (CYT), nucleus (NUC), and chromatin (CH).",
+        "TRUTH_CHECK": "The \"nuclear fraction\" (NUC) is one of the materials analyzed by mass spectrometry.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "chromatin-bound fraction",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a subcellular fraction, which is a characteristic of the specimen.",
+        "SOURCE_CHECK": "The paper states that subcellular fractionation resulted in cytosolic (CYT), nuclear (NUC), and chromatin-bound (CH) proteins.",
+        "TRUTH_CHECK": "The chromatin-bound fraction was one of the materials analyzed by mass spectrometry.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "37 °C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which matches the column name \"characteristics[temperature]\".",
+        "SOURCE_CHECK": "The methods state \"All cells were cultured at 37 °C\".",
+        "TRUTH_CHECK": "The temperature refers to the cell culture conditions of the samples analyzed in the MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[experiment]",
+      "extracted_value": "Triple SILAC proteomics experimental design comparing ESC, ESC-MSC and BM-MSC with three biological replicates, including cytosolic (CYT), nuclear (NUC), and chromatin-bound (CH) fractions.",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a descriptive summary of the experimental design, which is appropriate for a comment column.",
+        "SOURCE_CHECK": "The paper states the use of triple SILAC, the comparison of ESC, ESC-MSC, and BM-MSC, the use of three biological replicates, and the subcellular fractionation into CYT, NUC, and CH.",
+        "TRUTH_CHECK": "The value accurately describes the proteomics experiment detailed in the methods and results.",
+        "COMPLETENESS_CHECK": "The value is a complete and accurate summary of the study's MS design."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[gradient time]",
+      "extracted_value": "100 min",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the duration of the LC gradient, which is appropriate for a column named \"comment[gradient time]\".",
+        "SOURCE_CHECK": "The methods state \"Liquid chromatography analysis was performed with a segmented gradient from 10 to 60% mobile phase B over 100 min\".",
+        "TRUTH_CHECK": "The value is correct for the LC-MS/MS runs described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[number of missed cleavages]",
+      "extracted_value": "2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of missed cleavages, which matches the column name.",
+        "SOURCE_CHECK": "The methods state \"allowing for maximum two missed cleavages\".",
+        "TRUTH_CHECK": "The value correctly describes the search parameter used for the MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[number of fractions]",
+      "extracted_value": "12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of fractions, which is appropriate for a column named \"comment[number of fractions]\".",
+        "SOURCE_CHECK": "The methods state that peptides were separated by in-solution isoelectric focusing \"into 12 fractions over a pH range of 3–10\".",
+        "TRUTH_CHECK": "The value correctly describes the number of fractions generated for the samples in the MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[separation]",
+      "extracted_value": "C18 reversed-phase",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a chromatography method, which is a common type of separation comment.",
+        "SOURCE_CHECK": "The paper mentions \"C18 STAGETips\" and \"ReproSil-Pur 120 C18-AQ 3 μm diameter beads\" used for LC, which implies C18 reversed-phase chromatography.",
+        "TRUTH_CHECK": "The value correctly describes the separation technology used for the MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "paper_id": "PXD016837",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper uses the human melanoma cell line MDA-MB-435S and searches against the human Swissprot database, making \"Homo sapiens\" an allowed inference.",
+        "TRUTH_CHECK": "The analyzed proteins are from human cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Melanocyte",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Melanocyte\" describes a cell type, not a tissue.",
+        "SOURCE_CHECK": "The paper describes the cell line MDA-MB-435S as a \"human melanoma cell line\". Melanoma originates from melanocytes.",
+        "TRUTH_CHECK": "The value describes the cell type of the line, which belongs in the cell_type field.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "melanocyte",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the right field.",
+        "SOURCE_CHECK": "The paper describes the use of the \"melanoma cell line MDA-MB-435S\". Melanoma is a cancer of melanocytes.",
+        "TRUTH_CHECK": "The cell line MDA-MB-435S is a melanoma cell line, and the cell type of melanoma is melanocyte.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "ductal carcinoma",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the cells are from the \"Human melanoma cell line MDA-MB-435S\". \"Ductal carcinoma\" is not mentioned in the text.",
+        "TRUTH_CHECK": "The cell line used is a melanoma line, not a ductal carcinoma line.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "31Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of the subjects or the origin of the MDA-MB-435S cell line's donor.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the sex of the donor for the MDA-MB-435S cell line.",
+        "TRUTH_CHECK": "The sex of a cell line donor cannot be inferred and is not provided in the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MDA-MB-435S",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly names the \"Human melanoma cell line MDA-MB-435S\".",
+        "TRUTH_CHECK": "The MS analysis was performed on isolated IACs from MDA-MB-435S cells and its derived clones.",
+        "COMPLETENESS_CHECK": "The value is written exactly as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the right field.",
+        "SOURCE_CHECK": "The paper states the use of the MDA-MB-435S cell line.",
+        "TRUTH_CHECK": "The analysed material is a cell line.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the controlled terms listed in the field definition (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Caucasian",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an ethnicity, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the ethnicity of the donor for the MDA-MB-435S cell line.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a workflow using gel excision, trypsin digestion, and Mascot search without any mention of isotopic labels or TMT/SILAC; this is an allowed inference for \"label free sample\".",
+        "TRUTH_CHECK": "The runs are label-free.",
+        "COMPLETENESS_CHECK": "Complete. The term \"label free sample\" is the correct SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=LTQ Orbitrap Elite;AC=MS:1001910",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Orbitrap Elite",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states the instrument is an \"Orbitrap Elite\".",
+        "TRUTH_CHECK": "The paper specifies \"Orbitrap Elite\", not \"LTQ Orbitrap Elite\".",
+        "COMPLETENESS_CHECK": "The value contains a drift/wrong detail by adding \"LTQ\" to the model name."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that gel pieces were incubated with trypsin.",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples analyzed by MS.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "FractionationMethod",
+      "extracted_value": "1",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"1\" is a numeric index, which does not belong to the fractionation_method field (which requires the name of the method).",
+        "SOURCE_CHECK": "The paper describes the use of gradient gels (NuPage 4-12% Bis-Tris) and the excision of protein bands, which constitutes SDS-PAGE gel slicing.",
+        "TRUTH_CHECK": "The runs were derived from gel pieces, so they underwent offline fractionation.",
+        "COMPLETENESS_CHECK": "The value is a number, not a method name."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a technology type, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes using \"mass spectrometry (MS)-based proteomics\" to analyze IAC components.",
+        "TRUTH_CHECK": "The value correctly describes the MS experiment performed on the runs.",
+        "COMPLETENESS_CHECK": "The value uses the exact SDRF controlled term for MS-based proteomics."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"parent ion tolerance was 5 PPM\".",
+        "TRUTH_CHECK": "The value is correct for the runs described in the MS analysis.",
+        "COMPLETENESS_CHECK": "The value follows the definition and includes the unit as printed."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.5 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"Fragment ion tolerance was set to 0.50 Da\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the definition and matches the paper."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "20170307_JH_04.raw = 1 | 20170307_JH_05.raw = 1 | 20170307_JH_06.raw = 1 | 20170307_JH_07.raw = 1 | 20170307_JH_08.raw = 1 | 20170307_JH_09.raw = 1 | 20180403_MP_01.raw = 1 | 20180403_MP_02.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "20170307_JH_04.raw = 1 | 20170307_JH_05.raw = 1 | 20170307_JH_06.raw = 1 | 20170307_JH_07.raw = 1 | 20170307_JH_08.raw = 1 | 20170307_JH_09.raw = 1 | 20180403_MP_01.raw = 2 | 20180403_MP_02.raw = 2",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that for IAC isolation, at least six dishes per cell line were used.",
+        "TRUTH_CHECK": "The runs are grouped by source (Sample 1 and Sample 2). Runs from the same source (same biological sample/pool) must share the same index, but different sources (independent biological units) must have different indices. Here, Sample 2 is assigned index 1, which is the same as Sample 1.",
+        "COMPLETENESS_CHECK": "The mapping is complete but logically incorrect regarding independent units."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20170307_JH_04.raw = 1 | 20170307_JH_05.raw = 1 | 20170307_JH_06.raw = 1 | 20170307_JH_07.raw = 1 | 20170307_JH_08.raw = 1 | 20170307_JH_09.raw = 1 | 20180403_MP_01.raw = 1 | 20180403_MP_02.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "20170307_JH_04.raw = 1 | 20170307_JH_05.raw = 2 | 20170307_JH_06.raw = 3 | 20170307_JH_07.raw = 4 | 20170307_JH_08.raw = 5 | 20170307_JH_09.raw = 6 | 20180403_MP_01.raw = 1 | 20180403_MP_02.raw = 2",
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper does not explicitly state the number of technical replicates per sample, but it describes the general workflow.",
+        "TRUTH_CHECK": "The runs are grouped by source (Sample 1 and Sample 2). If multiple runs are performed on the same material (source), they should be indexed as 1, 2, 3. Here, multiple runs for Sample 1 and Sample 2 are all marked as 1.",
+        "COMPLETENESS_CHECK": "The mapping assigns an index to every run."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20170307_JH_04.raw = 4 | 20170307_JH_05.raw = 5 | 20170307_JH_06.raw = 6 | 20170307_JH_07.raw = 7 | 20170307_JH_08.raw = 8 | 20170307_JH_09.raw = 9 | 20180403_MP_01.raw = 1 | 20180403_MP_02.raw = 2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is for fraction indices, which is the right kind of information.",
+        "SOURCE_CHECK": "The paper describes gel excision (\"Protein bands were stained... followed by excision\"), but it does not specify the number of bands or fractions per sample.",
+        "TRUTH_CHECK": "The candidate values assign different fraction indices to runs from the same sample. While gel bands are fractions, the paper does not provide the specific mapping of runs to band numbers. However, the definition states that every run gets 1 when no offline fractionation is described; here, gel excision is described, but the specific indices (4, 5, 6, etc.) are not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the values are not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SyntheticPeptide",
+      "extracted_value": "not synthetic",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes whether the peptides are synthetic, which is appropriate for a column named \"SyntheticPeptide\".",
+        "SOURCE_CHECK": "The paper describes a bottom-up proteomics workflow using cell lysates (isolated IACs) digested with trypsin, with no mention of synthetic peptide standards or spikes.",
+        "TRUTH_CHECK": "The analyzed material consists of endogenous proteins from cell lines, so the peptides are not synthetic.",
+        "COMPLETENESS_CHECK": "The value is a clear statement that the material is not synthetic."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "AC=MS:1000484; NT=Orbitrap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer, which is the correct type of information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper states the use of an Orbitrap Elite mass detector.",
+        "TRUTH_CHECK": "The Orbitrap analyzer was used for the MS analysis of the isolated IACs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

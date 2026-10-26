@@ -1,0 +1,362 @@
+{
+  "paper_id": "PXD013737",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"human pluripotent stem cells\", which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The proteins analyzed are from human stem cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "liver",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ/tissue, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"liver differentiation\" and \"hepatocyte specification\" from human pluripotent stem cells.",
+        "TRUTH_CHECK": "The experiment uses pluripotent stem cells to differentiate into hepatocytes (liver cells); therefore, the organ of origin for the resulting cells is the liver.",
+        "COMPLETENESS_CHECK": "The value is a simple term and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "Hepatic stem progenitor cells",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a biological cell type, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"hepatic progenitor specification\" and \"pluripotent stem cell entry into the hepatic lineage\".",
+        "TRUTH_CHECK": "The experiment analyzes the specification of hepatic progenitors from stem cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "pluripotent stem cell line",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a type of cell line, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"human pluripotent stem cells\", but does not provide a specific name for the cell line used.",
+        "TRUTH_CHECK": "The value is a generic description rather than the name of an immortalized cell line.",
+        "COMPLETENESS_CHECK": "The field definition requires the name of the cell line \"as written\"."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "Cell line",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the broad class of analyzed material, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"human pluripotent stem cells\", from which \"cell line\" is an allowed inference for the material type.",
+        "TRUTH_CHECK": "The analyzed material consists of these stem cells and their derivatives.",
+        "COMPLETENESS_CHECK": "The value follows the allowed terms in the field definition."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention any labeling method or the term \"label free\".",
+        "TRUTH_CHECK": "There is no evidence in the provided text to support the use of label-free proteomics or any other labeling strategy.",
+        "COMPLETENESS_CHECK": "The format is correct for an SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002523;NT=Q Exactive HF",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The instrument model is not mentioned in the provided abstract or methods text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the cleavage agent used.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Complete format, but content is missing from the source."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000422;NT=HCD",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the right field.",
+        "SOURCE_CHECK": "The paper text provided (abstract and methods) does not mention the fragmentation method or the instrument details.",
+        "TRUTH_CHECK": "The content is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The abstract mentions a \"multiomics approach\" and \"multiomics analyses\", which in the context of the provided run files (.raw) and labeling (label free sample) indicates MS-based proteomics.",
+        "TRUTH_CHECK": "The value correctly describes the proteomics experiment performed on the samples.",
+        "COMPLETENESS_CHECK": "The value follows the required SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper text provided (abstract and methods) does not mention any search parameters or modifications.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=PP=Any N-term;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper text does not mention any database search parameters or modifications.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper text provided (abstract and methods) does not mention any database search parameters or modifications.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent from the text."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "6 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper text provided (abstract and methods) does not mention any mass spectrometry search parameters or mass tolerances.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "6  ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper text provided (abstract and methods) does not mention any mass spectrometry search parameters or mass tolerances.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent from the text."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The paper text provided (abstract and methods) does not mention any mass spectrometry search parameters or fragment mass tolerance.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "20170929_MT_Celine_90m_01.raw = 1 | 20170929_MT_Celine_90m_02.raw = 1 | 20170929_MT_Celine_90m_03.raw = 1 | 20170929_MT_Celine_90m_04.raw = 1 | 20170929_MT_Celine_90m_05.raw = 1 | 20170929_MT_Celine_90m_06.raw = 1 | 20170929_MT_Celine_90m_07.raw = 1 | 20170929_MT_Celine_90m_08.raw = 1 | 20170929_MT_Celine_90m_09.raw = 1 | 20170929_MT_Celine_90m_10.raw = 1 | 20170929_MT_Celine_90m_11.raw = 1 | 20170929_MT_Celine_90m_12.raw = 1 | 20170929_MT_Celine_90m_13.raw = 1 | 20170929_MT_Celine_90m_14.raw = 1 | 20170929_MT_Celine_90m_15.raw = 1 | 20170929_MT_Celine_90m_16.raw = 1 | 20170929_MT_Celine_90m_17.raw = 2 | 20170929_MT_Celine_90m_18.raw = 2 | 20170929_MT_Celine_90m_19.raw = 2 | 20170929_MT_Celine_90m_20.raw = 2 | 20170929_MT_Celine_90m_21.raw = 2 | 20170929_MT_Celine_90m_22.raw = 2 | 20170929_MT_Celine_90m_23.raw = 2 | 20170929_MT_Celine_90m_24.raw = 2 | 20170929_MT_Celine_90m_25.raw = 2 | 20170929_MT_Celine_90m_26.raw = 2 | 20170929_MT_Celine_90m_27.raw = 2 | 20170929_MT_Celine_90m_28.raw = 2 | 20170929_MT_Celine_90m_29.raw = 2 | 20170929_MT_Celine_90m_30.raw = 2 | 20170929_MT_Celine_90m_31.raw = 2 | 20170929_MT_Celine_90m_32.raw = 2 | 20170929_MT_Celine_90m_33.raw = 3 | 20170929_MT_Celine_90m_34.raw = 3 | 20170929_MT_Celine_90m_35.raw = 3 | 20170929_MT_Celine_90m_36.raw = 3 | 20170929_MT_Celine_90m_37.raw = 3 | 20170929_MT_Celine_90m_38.raw = 3 | 20170929_MT_Celine_90m_39.raw = 3 | 20170929_MT_Celine_90m_40.raw = 3 | 20170929_MT_Celine_90m_41.raw = 3 | 20170929_MT_Celine_90m_42.raw = 3 | 20170929_MT_Celine_90m_43.raw = 3 | 20170929_MT_Celine_90m_44.raw = 3 | 20170929_MT_Celine_90m_45.raw = 3 | 20170929_MT_Celine_90m_46.raw = 3 | 20170929_MT_Celine_90m_47.raw = 3 | 20170929_MT_Celine_90m_48.raw = 3 | 20170929_MT_Celine_90m_49.raw = 1 | 20170929_MT_Celine_90m_50.raw = 1 | 20170929_MT_Celine_90m_51.raw = 1 | 20170929_MT_Celine_90m_52.raw = 1 | 20170929_MT_Celine_90m_53.raw = 1 | 20170929_MT_Celine_90m_54.raw = 1 | 20170929_MT_Celine_90m_55.raw = 1 | 20170929_MT_Celine_90m_56.raw = 1 | 20170929_MT_Celine_90m_57.raw = 1 | 20170929_MT_Celine_90m_58.raw = 1 | 20170929_MT_Celine_90m_59.raw = 1 | 20170929_MT_Celine_90m_60.raw = 1 | 20170929_MT_Celine_90m_61.raw = 1 | 20170929_MT_Celine_90m_62.raw = 1 | 20170929_MT_Celine_90m_63.raw = 1 | 20170929_MT_Celine_90m_64.raw = 1 | 20170929_MT_Celine_90m_65.raw = 2 | 20170929_MT_Celine_90m_66.raw = 2 | 20170929_MT_Celine_90m_67.raw = 2 | 20170929_MT_Celine_90m_68.raw = 2 | 20170929_MT_Celine_90m_69.raw = 2 | 20170929_MT_Celine_90m_70.raw = 2 | 20170929_MT_Celine_90m_71.raw = 2 | 20170929_MT_Celine_90m_72.raw = 2 | 20170929_MT_Celine_90m_73.raw = 2 | 20170929_MT_Celine_90m_74.raw = 2 | 20170929_MT_Celine_90m_75.raw = 2 | 20170929_MT_Celine_90m_76.raw = 2 | 20170929_MT_Celine_90m_77.raw = 2 | 20170929_MT_Celine_90m_78.raw = 2 | 20170929_MT_Celine_90m_79.raw = 2 | 20170929_MT_Celine_90m_80.raw = 2 | 20170929_MT_Celine_90m_81.raw = 3 | 20170929_MT_Celine_90m_82.raw = 3 | 20170929_MT_Celine_90m_83.raw = 3 | 20170929_MT_Celine_90m_84.raw = 3 | 20170929_MT_Celine_90m_85.raw = 3 | 20170929_MT_Celine_90m_86.raw = 3 | 20170929_MT_Celine_90m_87.raw = 3 | 20170929_MT_Celine_90m_88.raw = 3 | 20170929_MT_Celine_90m_89.raw = 3 | 20170929_MT_Celine_90m_90.raw = 3 | 20170929_MT_Celine_90m_91.raw = 3 | 20170929_MT_Celine_90m_92.raw = 3 | 20170929_MT_Celine_90m_93.raw = 3 | 20170929_MT_Celine_90m_94.raw = 3 | 20170929_MT_Celine_90m_95.raw = 3 | 20170929_MT_Celine_90m_96.raw = 3",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper does not provide details on the number of biological replicates or the run design.",
+        "TRUTH_CHECK": "The mapping is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20170929_MT_Celine_90m_01.raw = 1 | 20170929_MT_Celine_90m_02.raw = 1 | 20170929_MT_Celine_90m_03.raw = 1 | 20170929_MT_Celine_90m_04.raw = 1 | 20170929_MT_Celine_90m_05.raw = 2 | 20170929_MT_Celine_90m_06.raw = 2 | 20170929_MT_Celine_90m_07.raw = 2 | 20170929_MT_Celine_90m_08.raw = 2 | 20170929_MT_Celine_90m_09.raw = 3 | 20170929_MT_Celine_90m_10.raw = 3 | 20170929_MT_Celine_90m_11.raw = 3 | 20170929_MT_Celine_90m_12.raw = 3 | 20170929_MT_Celine_90m_13.raw = 4 | 20170929_MT_Celine_90m_14.raw = 4 | 20170929_MT_Celine_90m_15.raw = 4 | 20170929_MT_Celine_90m_16.raw = 4 | 20170929_MT_Celine_90m_17.raw = 1 | 20170929_MT_Celine_90m_18.raw = 1 | 20170929_MT_Celine_90m_19.raw = 1 | 20170929_MT_Celine_90m_20.raw = 1 | 20170929_MT_Celine_90m_21.raw = 2 | 20170929_MT_Celine_90m_22.raw = 2 | 20170929_MT_Celine_90m_23.raw = 2 | 20170929_MT_Celine_90m_24.raw = 2 | 20170929_MT_Celine_90m_25.raw = 3 | 20170929_MT_Celine_90m_26.raw = 3 | 20170929_MT_Celine_90m_27.raw = 3 | 20170929_MT_Celine_90m_28.raw = 3 | 20170929_MT_Celine_90m_29.raw = 4 | 20170929_MT_Celine_90m_30.raw = 4 | 20170929_MT_Celine_90m_31.raw = 4 | 20170929_MT_Celine_90m_32.raw = 4 | 20170929_MT_Celine_90m_33.raw = 1 | 20170929_MT_Celine_90m_34.raw = 1 | 20170929_MT_Celine_90m_35.raw = 1 | 20170929_MT_Celine_90m_36.raw = 1 | 20170929_MT_Celine_90m_37.raw = 2 | 20170929_MT_Celine_90m_38.raw = 2 | 20170929_MT_Celine_90m_39.raw = 2 | 20170929_MT_Celine_90m_40.raw = 2 | 20170929_MT_Celine_90m_41.raw = 3 | 20170929_MT_Celine_90m_42.raw = 3 | 20170929_MT_Celine_90m_43.raw = 3 | 20170929_MT_Celine_90m_44.raw = 3 | 20170929_MT_Celine_90m_45.raw = 4 | 20170929_MT_Celine_90m_46.raw = 4 | 20170929_MT_Celine_90m_47.raw = 4 | 20170929_MT_Celine_90m_48.raw = 4 | 20170929_MT_Celine_90m_49.raw = 1 | 20170929_MT_Celine_90m_50.raw = 1 | 20170929_MT_Celine_90m_51.raw = 1 | 20170929_MT_Celine_90m_52.raw = 1 | 20170929_MT_Celine_90m_53.raw = 2 | 20170929_MT_Celine_90m_54.raw = 2 | 20170929_MT_Celine_90m_55.raw = 2 | 20170929_MT_Celine_90m_56.raw = 2 | 20170929_MT_Celine_90m_57.raw = 3 | 20170929_MT_Celine_90m_58.raw = 3 | 20170929_MT_Celine_90m_59.raw = 3 | 20170929_MT_Celine_90m_60.raw = 3 | 20170929_MT_Celine_90m_61.raw = 4 | 20170929_MT_Celine_90m_62.raw = 4 | 20170929_MT_Celine_90m_63.raw = 4 | 20170929_MT_Celine_90m_64.raw = 4 | 20170929_MT_Celine_90m_65.raw = 1 | 20170929_MT_Celine_90m_66.raw = 1 | 20170929_MT_Celine_90m_67.raw = 1 | 20170929_MT_Celine_90m_68.raw = 1 | 20170929_MT_Celine_90m_69.raw = 2 | 20170929_MT_Celine_90m_70.raw = 2 | 20170929_MT_Celine_90m_71.raw = 2 | 20170929_MT_Celine_90m_72.raw = 2 | 20170929_MT_Celine_90m_73.raw = 3 | 20170929_MT_Celine_90m_74.raw = 3 | 20170929_MT_Celine_90m_75.raw = 3 | 20170929_MT_Celine_90m_76.raw = 3 | 20170929_MT_Celine_90m_77.raw = 4 | 20170929_MT_Celine_90m_78.raw = 4 | 20170929_MT_Celine_90m_79.raw = 4 | 20170929_MT_Celine_90m_80.raw = 4 | 20170929_MT_Celine_90m_81.raw = 1 | 20170929_MT_Celine_90m_82.raw = 1 | 20170929_MT_Celine_90m_83.raw = 1 | 20170929_MT_Celine_90m_84.raw = 1 | 20170929_MT_Celine_90m_85.raw = 2 | 20170929_MT_Celine_90m_86.raw = 2 | 20170929_MT_Celine_90m_87.raw = 2 | 20170929_MT_Celine_90m_88.raw = 2 | 20170929_MT_Celine_90m_89.raw = 3 | 20170929_MT_Celine_90m_90.raw = 3 | 20170929_MT_Celine_90m_91.raw = 3 | 20170929_MT_Celine_90m_92.raw = 3 | 20170929_MT_Celine_90m_93.raw = 4 | 20170929_MT_Celine_90m_94.raw = 4 | 20170929_MT_Celine_90m_95.raw = 4 | 20170929_MT_Celine_90m_96.raw = 4",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper text does not provide details on the number of technical replicates or the run structure.",
+        "TRUTH_CHECK": "The mapping assigns indices based on the sample source, but the logic is flawed: repeated runs of the same material (e.g., Sample 1) should be indexed 1, 2, 3, 4, not all assigned 1. Conversely, the mapping assigns different indices (1, 2, 3, 4) to different samples, which is the role of the biological_replicate field, not technical_replicate.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic contradicts the field definition."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20170929_MT_Celine_90m_01.raw = 1 | 20170929_MT_Celine_90m_02.raw = 2 | 20170929_MT_Celine_90m_03.raw = 3 | 20170929_MT_Celine_90m_04.raw = 4 | 20170929_MT_Celine_90m_05.raw = 1 | 20170929_MT_Celine_90m_06.raw = 2 | 20170929_MT_Celine_90m_07.raw = 3 | 20170929_MT_Celine_90m_08.raw = 4 | 20170929_MT_Celine_90m_09.raw = 1 | 20170929_MT_Celine_90m_10.raw = 2 | 20170929_MT_Celine_90m_11.raw = 3 | 20170929_MT_Celine_90m_12.raw = 4 | 20170929_MT_Celine_90m_13.raw = 1 | 20170929_MT_Celine_90m_14.raw = 2 | 20170929_MT_Celine_90m_15.raw = 3 | 20170929_MT_Celine_90m_16.raw = 4 | 20170929_MT_Celine_90m_17.raw = 1 | 20170929_MT_Celine_90m_18.raw = 2 | 20170929_MT_Celine_90m_19.raw = 3 | 20170929_MT_Celine_90m_20.raw = 4 | 20170929_MT_Celine_90m_21.raw = 1 | 20170929_MT_Celine_90m_22.raw = 2 | 20170929_MT_Celine_90m_23.raw = 3 | 20170929_MT_Celine_90m_24.raw = 4 | 20170929_MT_Celine_90m_25.raw = 1 | 20170929_MT_Celine_90m_26.raw = 2 | 20170929_MT_Celine_90m_27.raw = 3 | 20170929_MT_Celine_90m_28.raw = 4 | 20170929_MT_Celine_90m_29.raw = 1 | 20170929_MT_Celine_90m_30.raw = 2 | 20170929_MT_Celine_90m_31.raw = 3 | 20170929_MT_Celine_90m_32.raw = 4 | 20170929_MT_Celine_90m_33.raw = 1 | 20170929_MT_Celine_90m_34.raw = 2 | 20170929_MT_Celine_90m_35.raw = 3 | 20170929_MT_Celine_90m_36.raw = 4 | 20170929_MT_Celine_90m_37.raw = 1 | 20170929_MT_Celine_90m_38.raw = 2 | 20170929_MT_Celine_90m_39.raw = 3 | 20170929_MT_Celine_90m_40.raw = 4 | 20170929_MT_Celine_90m_41.raw = 1 | 20170929_MT_Celine_90m_42.raw = 2 | 20170929_MT_Celine_90m_43.raw = 3 | 20170929_MT_Celine_90m_44.raw = 4 | 20170929_MT_Celine_90m_45.raw = 1 | 20170929_MT_Celine_90m_46.raw = 2 | 20170929_MT_Celine_90m_47.raw = 3 | 20170929_MT_Celine_90m_48.raw = 4 | 20170929_MT_Celine_90m_49.raw = 1 | 20170929_MT_Celine_90m_50.raw = 2 | 20170929_MT_Celine_90m_51.raw = 3 | 20170929_MT_Celine_90m_52.raw = 4 | 20170929_MT_Celine_90m_53.raw = 1 | 20170929_MT_Celine_90m_54.raw = 2 | 20170929_MT_Celine_90m_55.raw = 3 | 20170929_MT_Celine_90m_56.raw = 4 | 20170929_MT_Celine_90m_57.raw = 1 | 20170929_MT_Celine_90m_58.raw = 2 | 20170929_MT_Celine_90m_59.raw = 3 | 20170929_MT_Celine_90m_60.raw = 4 | 20170929_MT_Celine_90m_61.raw = 1 | 20170929_MT_Celine_90m_62.raw = 2 | 20170929_MT_Celine_90m_63.raw = 3 | 20170929_MT_Celine_90m_64.raw = 4 | 20170929_MT_Celine_90m_65.raw = 1 | 20170929_MT_Celine_90m_66.raw = 2 | 20170929_MT_Celine_90m_67.raw = 3 | 20170929_MT_Celine_90m_68.raw = 4 | 20170929_MT_Celine_90m_69.raw = 1 | 20170929_MT_Celine_90m_70.raw = 2 | 20170929_MT_Celine_90m_71.raw = 3 | 20170929_MT_Celine_90m_72.raw = 4 | 20170929_MT_Celine_90m_73.raw = 1 | 20170929_MT_Celine_90m_74.raw = 2 | 20170929_MT_Celine_90m_75.raw = 3 | 20170929_MT_Celine_90m_76.raw = 4 | 20170929_MT_Celine_90m_77.raw = 1 | 20170929_MT_Celine_90m_78.raw = 2 | 20170929_MT_Celine_90m_79.raw = 3 | 20170929_MT_Celine_90m_80.raw = 4 | 20170929_MT_Celine_90m_81.raw = 1 | 20170929_MT_Celine_90m_82.raw = 2 | 20170929_MT_Celine_90m_83.raw = 3 | 20170929_MT_Celine_90m_84.raw = 4 | 20170929_MT_Celine_90m_85.raw = 1 | 20170929_MT_Celine_90m_86.raw = 2 | 20170929_MT_Celine_90m_87.raw = 3 | 20170929_MT_Celine_90m_88.raw = 4 | 20170929_MT_Celine_90m_89.raw = 1 | 20170929_MT_Celine_90m_90.raw = 2 | 20170929_MT_Celine_90m_91.raw = 3 | 20170929_MT_Celine_90m_92.raw = 4 | 20170929_MT_Celine_90m_93.raw = 1 | 20170929_MT_Celine_90m_94.raw = 2 | 20170929_MT_Celine_90m_95.raw = 3 | 20170929_MT_Celine_90m_96.raw = 4",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "20170929_MT_Celine_90m_01.raw = 1 | 20170929_MT_Celine_90m_02.raw = 1 | 20170929_MT_Celine_90m_03.raw = 1 | 20170929_MT_Celine_90m_04.raw = 1 | 20170929_MT_Celine_90m_05.raw = 1 | 20170929_MT_Celine_90m_06.raw = 1 | 20170929_MT_Celine_90m_07.raw = 1 | 20170929_MT_Celine_90m_08.raw = 1 | 20170929_MT_Celine_90m_09.raw = 1 | 20170929_MT_Celine_90m_10.raw = 1 | 20170929_MT_Celine_90m_11.raw = 1 | 20170929_MT_Celine_90m_12.raw = 1 | 20170929_MT_Celine_90m_13.raw = 1 | 20170929_MT_Celine_90m_14.raw = 1 | 20170929_MT_Celine_90m_15.raw = 1 | 20170929_MT_Celine_90m_16.raw = 1 | 20170929_MT_Celine_90m_17.raw = 1 | 20170929_MT_Celine_90m_18.raw = 1 | 20170929_MT_Celine_90m_19.raw = 1 | 20170929_MT_Celine_90m_20.raw = 1 | 20170929_MT_Celine_90m_21.raw = 1 | 20170929_MT_Celine_90m_22.raw = 1 | 20170929_MT_Celine_90m_23.raw = 1 | 20170929_MT_Celine_90m_24.raw = 1 | 20170929_MT_Celine_90m_25.raw = 1 | 20170929_MT_Celine_90m_26.raw = 1 | 20170929_MT_Celine_90m_27.raw = 1 | 20170929_MT_Celine_90m_28.raw = 1 | 20170929_MT_Celine_90m_29.raw = 1 | 20170929_MT_Celine_90m_30.raw = 1 | 20170929_MT_Celine_90m_31.raw = 1 | 20170929_MT_Celine_90m_32.raw = 1 | 20170929_MT_Celine_90m_33.raw = 1 | 20170929_MT_Celine_90m_34.raw = 1 | 20170929_MT_Celine_90m_35.raw = 1 | 20170929_MT_Celine_90m_36.raw = 1 | 20170929_MT_Celine_90m_37.raw = 1 | 20170929_MT_Celine_90m_38.raw = 1 | 20170929_MT_Celine_90m_39.raw = 1 | 20170929_MT_Celine_90m_40.raw = 1 | 20170929_MT_Celine_90m_41.raw = 1 | 20170929_MT_Celine_90m_42.raw = 1 | 20170929_MT_Celine_90m_43.raw = 1 | 20170929_MT_Celine_90m_44.raw = 1 | 20170929_MT_Celine_90m_45.raw = 1 | 20170929_MT_Celine_90m_46.raw = 1 | 20170929_MT_Celine_90m_47.raw = 1 | 20170929_MT_Celine_90m_48.raw = 1 | 20170929_MT_Celine_90m_49.raw = 1 | 20170929_MT_Celine_90m_50.raw = 1 | 20170929_MT_Celine_90m_51.raw = 1 | 20170929_MT_Celine_90m_52.raw = 1 | 20170929_MT_Celine_90m_53.raw = 1 | 20170929_MT_Celine_90m_54.raw = 1 | 20170929_MT_Celine_90m_55.raw = 1 | 20170929_MT_Celine_90m_56.raw = 1 | 20170929_MT_Celine_90m_57.raw = 1 | 20170929_MT_Celine_90m_58.raw = 1 | 20170929_MT_Celine_90m_59.raw = 1 | 20170929_MT_Celine_90m_60.raw = 1 | 20170929_MT_Celine_90m_61.raw = 1 | 20170929_MT_Celine_90m_62.raw = 1 | 20170929_MT_Celine_90m_63.raw = 1 | 20170929_MT_Celine_90m_64.raw = 1 | 20170929_MT_Celine_90m_65.raw = 1 | 20170929_MT_Celine_90m_66.raw = 1 | 20170929_MT_Celine_90m_67.raw = 1 | 20170929_MT_Celine_90m_68.raw = 1 | 20170929_MT_Celine_90m_69.raw = 1 | 20170929_MT_Celine_90m_70.raw = 1 | 20170929_MT_Celine_90m_71.raw = 1 | 20170929_MT_Celine_90m_72.raw = 1 | 20170929_MT_Celine_90m_73.raw = 1 | 20170929_MT_Celine_90m_74.raw = 1 | 20170929_MT_Celine_90m_75.raw = 1 | 20170929_MT_Celine_90m_76.raw = 1 | 20170929_MT_Celine_90m_77.raw = 1 | 20170929_MT_Celine_90m_78.raw = 1 | 20170929_MT_Celine_90m_79.raw = 1 | 20170929_MT_Celine_90m_80.raw = 1 | 20170929_MT_Celine_90m_81.raw = 1 | 20170929_MT_Celine_90m_82.raw = 1 | 20170929_MT_Celine_90m_83.raw = 1 | 20170929_MT_Celine_90m_84.raw = 1 | 20170929_MT_Celine_90m_85.raw = 1 | 20170929_MT_Celine_90m_86.raw = 1 | 20170929_MT_Celine_90m_87.raw = 1 | 20170929_MT_Celine_90m_88.raw = 1 | 20170929_MT_Celine_90m_89.raw = 1 | 20170929_MT_Celine_90m_90.raw = 1 | 20170929_MT_Celine_90m_91.raw = 1 | 20170929_MT_Celine_90m_92.raw = 1 | 20170929_MT_Celine_90m_93.raw = 1 | 20170929_MT_Celine_90m_94.raw = 1 | 20170929_MT_Celine_90m_95.raw = 1 | 20170929_MT_Celine_90m_96.raw = 1",
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not describe any offline fractionation.",
+        "TRUTH_CHECK": "Since no fractionation is described, every run should be assigned to fraction 1. The current mapping assigns indices 1-4 repeatedly for each sample, which is incorrect.",
+        "COMPLETENESS_CHECK": "Complete, but the values are wrong based on the paper."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[phenotype]",
+      "extracted_value": "20170929_MT_Celine_90m_01.raw = Control | 20170929_MT_Celine_90m_02.raw = Control | 20170929_MT_Celine_90m_03.raw = Control | 20170929_MT_Celine_90m_04.raw = Control | 20170929_MT_Celine_90m_05.raw = Control | 20170929_MT_Celine_90m_06.raw = Control | 20170929_MT_Celine_90m_07.raw = Control | 20170929_MT_Celine_90m_08.raw = Control | 20170929_MT_Celine_90m_09.raw = Control | 20170929_MT_Celine_90m_10.raw = Control | 20170929_MT_Celine_90m_11.raw = Control | 20170929_MT_Celine_90m_12.raw = Control | 20170929_MT_Celine_90m_13.raw = Control | 20170929_MT_Celine_90m_14.raw = Control | 20170929_MT_Celine_90m_15.raw = Control | 20170929_MT_Celine_90m_16.raw = Control | 20170929_MT_Celine_90m_17.raw = DBD_Mutant | 20170929_MT_Celine_90m_18.raw = DBD_Mutant | 20170929_MT_Celine_90m_19.raw = DBD_Mutant | 20170929_MT_Celine_90m_20.raw = DBD_Mutant | 20170929_MT_Celine_90m_21.raw = DBD_Mutant | 20170929_MT_Celine_90m_22.raw = DBD_Mutant | 20170929_MT_Celine_90m_23.raw = DBD_Mutant | 20170929_MT_Celine_90m_24.raw = DBD_Mutant | 20170929_MT_Celine_90m_25.raw = DBD_Mutant | 20170929_MT_Celine_90m_26.raw = DBD_Mutant | 20170929_MT_Celine_90m_27.raw = DBD_Mutant | 20170929_MT_Celine_90m_28.raw = DBD_Mutant | 20170929_MT_Celine_90m_29.raw = DBD_Mutant | 20170929_MT_Celine_90m_30.raw = DBD_Mutant | 20170929_MT_Celine_90m_31.raw = DBD_Mutant | 20170929_MT_Celine_90m_32.raw = DBD_Mutant | 20170929_MT_Celine_90m_33.raw = SUMO_Mutant | 20170929_MT_Celine_90m_34.raw = SUMO_Mutant | 20170929_MT_Celine_90m_35.raw = SUMO_Mutant | 20170929_MT_Celine_90m_36.raw = SUMO_Mutant | 20170929_MT_Celine_90m_37.raw = SUMO_Mutant | 20170929_MT_Celine_90m_38.raw = SUMO_Mutant | 20170929_MT_Celine_90m_39.raw = SUMO_Mutant | 20170929_MT_Celine_90m_40.raw = SUMO_Mutant | 20170929_MT_Celine_90m_41.raw = SUMO_Mutant | 20170929_MT_Celine_90m_42.raw = SUMO_Mutant | 20170929_MT_Celine_90m_43.raw = SUMO_Mutant | 20170929_MT_Celine_90m_44.raw = SUMO_Mutant | 20170929_MT_Celine_90m_45.raw = SUMO_Mutant | 20170929_MT_Celine_90m_46.raw = SUMO_Mutant | 20170929_MT_Celine_90m_47.raw = SUMO_Mutant | 20170929_MT_Celine_90m_48.raw = SUMO_Mutant | 20170929_MT_Celine_90m_49.raw = Control | 20170929_MT_Celine_90m_50.raw = Control | 20170929_MT_Celine_90m_51.raw = Control | 20170929_MT_Celine_90m_52.raw = Control | 20170929_MT_Celine_90m_53.raw = Control | 20170929_MT_Celine_90m_54.raw = Control | 20170929_MT_Celine_90m_55.raw = Control | 20170929_MT_Celine_90m_56.raw = Control | 20170929_MT_Celine_90m_57.raw = Control | 20170929_MT_Celine_90m_58.raw = Control | 20170929_MT_Celine_90m_59.raw = Control | 20170929_MT_Celine_90m_60.raw = Control | 20170929_MT_Celine_90m_61.raw = Control | 20170929_MT_Celine_90m_62.raw = Control | 20170929_MT_Celine_90m_63.raw = Control | 20170929_MT_Celine_90m_64.raw = Control | 20170929_MT_Celine_90m_65.raw = DBD_Mutant | 20170929_MT_Celine_90m_66.raw = DBD_Mutant | 20170929_MT_Celine_90m_67.raw = DBD_Mutant | 20170929_MT_Celine_90m_68.raw = DBD_Mutant | 20170929_MT_Celine_90m_69.raw = DBD_Mutant | 20170929_MT_Celine_90m_70.raw = DBD_Mutant | 20170929_MT_Celine_90m_71.raw = DBD_Mutant | 20170929_MT_Celine_90m_72.raw = DBD_Mutant | 20170929_MT_Celine_90m_73.raw = DBD_Mutant | 20170929_MT_Celine_90m_74.raw = DBD_Mutant | 20170929_MT_Celine_90m_75.raw = DBD_Mutant | 20170929_MT_Celine_90m_76.raw = DBD_Mutant | 20170929_MT_Celine_90m_77.raw = DBD_Mutant | 20170929_MT_Celine_90m_78.raw = DBD_Mutant | 20170929_MT_Celine_90m_79.raw = DBD_Mutant | 20170929_MT_Celine_90m_80.raw = DBD_Mutant | 20170929_MT_Celine_90m_81.raw = SUMO_Mutant | 20170929_MT_Celine_90m_82.raw = SUMO_Mutant | 20170929_MT_Celine_90m_83.raw = SUMO_Mutant | 20170929_MT_Celine_90m_84.raw = SUMO_Mutant | 20170929_MT_Celine_90m_85.raw = SUMO_Mutant | 20170929_MT_Celine_90m_86.raw = SUMO_Mutant | 20170929_MT_Celine_90m_87.raw = SUMO_Mutant | 20170929_MT_Celine_90m_88.raw = SUMO_Mutant | 20170929_MT_Celine_90m_89.raw = SUMO_Mutant | 20170929_MT_Celine_90m_90.raw = SUMO_Mutant | 20170929_MT_Celine_90m_91.raw = SUMO_Mutant | 20170929_MT_Celine_90m_92.raw = SUMO_Mutant | 20170929_MT_Celine_90m_93.raw = SUMO_Mutant | 20170929_MT_Celine_90m_94.raw = SUMO_Mutant | 20170929_MT_Celine_90m_95.raw = SUMO_Mutant | 20170929_MT_Celine_90m_96.raw = SUMO_Mutant",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the levels of the studied variable (phenotype), which is the correct field.",
+        "SOURCE_CHECK": "The abstract mentions the generation of deletion mutants (DNA-binding domain/DBD) and point mutants (SUMO consensus motif), and the comparison of these against a baseline (Control).",
+        "TRUTH_CHECK": "The mapping correctly assigns runs to the three groups (Control, DBD_Mutant, SUMO_Mutant) based on the experimental design described in the abstract.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "Healthy",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Healthy\" is a phenotype/condition, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper describes the use of human pluripotent stem cells and the generation of HNF4α deletion and point mutants to study hepatocyte specification; it does not mention \"healthy\" subjects or a \"healthy\" phenotype.",
+        "TRUTH_CHECK": "The study is based on genome-edited stem cell lines (mutants vs wild-type/control), not a comparison of healthy versus diseased human subjects.",
+        "COMPLETENESS_CHECK": "The value is a simple term, but it does not describe the experimental conditions (mutants/deletion) mentioned in the text."
+      }
+    }
+  ]
+}

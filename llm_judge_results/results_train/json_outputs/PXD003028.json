@@ -1,0 +1,311 @@
+{
+  "paper_id": "PXD003028",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the samples were collected from healthy individuals, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The experiment analyzed the human saliva proteome.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Saliva",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a body fluid/organism part, which fits the tissue field.",
+        "SOURCE_CHECK": "The paper explicitly states that saliva was collected from individuals.",
+        "TRUTH_CHECK": "The analyzed samples for the LC-MS/MS runs are saliva.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "organism part",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"organism part\" is a general description and does not represent a biological cell type.",
+        "SOURCE_CHECK": "The paper describes saliva collection from healthy individuals, but does not specify a particular cell type.",
+        "TRUTH_CHECK": "The value is not a cell type; it is a generic term.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "organism part",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "biofluid",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"organism part\" is not among the allowed broad classes for material_type.",
+        "SOURCE_CHECK": "The paper describes the analysis of saliva, which is a biofluid.",
+        "TRUTH_CHECK": "The material analyzed is saliva.",
+        "COMPLETENESS_CHECK": "The value does not follow the controlled vocabulary defined for this field."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "Adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a developmental stage, which is the right field.",
+        "SOURCE_CHECK": "The paper states the individuals were aged 24 to 40 years, from which \"adult\" is an allowed inference.",
+        "TRUTH_CHECK": "The analyzed saliva samples came from these adult donors.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"label-free quantification (LFQ) intensities\", which indicates a label-free approach.",
+        "TRUTH_CHECK": "The runs described are part of the LC-MS/MS experiment using LFQ.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002523;NT=Q Exactive HF",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the chromatography was coupled to a Q Exactive HF mass spectrometer.",
+        "TRUTH_CHECK": "The Q Exactive HF was the primary instrument used for the LC-MS/MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state that protein was digested by adding trypsin and LysC.",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the samples in these runs.",
+        "COMPLETENESS_CHECK": "Complete. One cell naming one of the two agents used is correct."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000422;NT=HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that ions were selected for higher-energy collisional dissociation (HCD) fragmentation.",
+        "TRUTH_CHECK": "The HCD method was used for the LC-MS/MS runs described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a technology type, the right field.",
+        "SOURCE_CHECK": "The paper describes a \"mass spectrometry-based proteomics workflow\" and \"shotgun\" proteomics, which allows the inference of this SDRF term.",
+        "TRUTH_CHECK": "The runs are part of the MS-based proteomics experiment described.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"carbamidomethylation of cysteine as a fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs described.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;AC;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=PP=Any N-term;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Acetyl;AC=UNIMOD:1;PP=Any N-term;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"N-acetylation of proteins’ N-termini\" as a variable modification.",
+        "TRUTH_CHECK": "The modification is correct for the runs.",
+        "COMPLETENESS_CHECK": "The value contains a typo in the position field (\"PP=PP=Any N-term\")."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation ; TA=M ;AC=UNIMOD:35 ;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a database search modification, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"oxidation of methionine (15.994915 Da) as variable modifications\".",
+        "TRUTH_CHECK": "The modification was used for the human and bacterial protein searches.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, AC, MT)."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "4.5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"The initial allowed mass tolerance was set to 4.5 ppm at the MS level\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.5 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"0.5 Da at the MS/MS level\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20150414_QEp1_LC7_NiGr_QC_SA_Saliva2_2.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated2.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated3.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated4.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated5.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated6.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated7.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated8.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated2.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated3.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated4.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated5.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated6.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated7.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated8.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated2.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated3.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated4.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated5.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated6.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated7.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated8.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_4.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_4m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated2.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated3.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated4.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated5.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated6.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated7.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated8.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated2.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated3.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated4.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated5.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated6.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated7.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated8.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated2.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated3.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated4.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated5.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated6.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated7.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated8.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated2.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated3.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated4.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated5.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated6.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated7.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated8.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8m.raw = 1 | 20150602_QEp3_NiGr_SA_saliva3_4_frac1.raw = 1 | 20150602_QEp3_NiGr_SA_saliva3_4_frac2.raw = 1 | 20150602_QEp3_NiGr_SA_saliva3_4_frac3.raw = 1 | 20150602_QEp3_NiGr_SA_saliva3_4_frac4.raw = 1 | 20150602_QEp3_NiGr_SA_saliva3_4_frac5.raw = 1 | 20150602_QEp3_NiGr_SA_saliva3_4_frac6.raw = 1 | 20150602_QEp3_NiGr_SA_saliva3_4_frac7.raw = 1 | 20150602_QEp3_NiGr_SA_saliva3_4_frac8.raw = 1 | 20141116_QEp1_LC7_PhGe_4_53_M1_2.raw = 1 | 20141116_QEp1_LC7_PhGe_4_53_M1_3.raw = 1 | 20141116_QEp1_LC7_PhGe_4_53_M1_4.raw = 1 | 20141116_QEp1_LC7_PhGe_4_53_M2_1.raw = 1 | 20141116_QEp1_LC7_PhGe_4_53_M2_2.raw = 1 | 20141116_QEp1_LC7_PhGe_4_53_M2_3.raw = 1 | 20150513_QEp4_NiGr_SA_workflow_rep1.raw = 1 | 20150513_QEp4_NiGr_SA_workflow_rep2.raw = 2 | 20150513_QEp4_NiGr_SA_workflow_rep3.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that for the main study they did not perform technical replicates, but they did collect three samples from the same donor to determine reproducibility of the workflow.",
+        "TRUTH_CHECK": "The mapping correctly assigns 1 to the main runs and 1, 2, 3 to the workflow reproducibility runs (rep1, rep2, rep3).",
+        "COMPLETENESS_CHECK": "Every run is assigned an index following the definition."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20150414_QEp1_LC7_NiGr_QC_SA_Saliva2_2.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated2.raw = 2 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated3.raw = 3 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated4.raw = 4 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated5.raw = 5 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated6.raw = 6 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated7.raw = 7 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1_fractionated8.raw = 8 | 20150414_QEp1_LC7_NiGr_SA_Saliva_1m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated2.raw = 2 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated3.raw = 3 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated4.raw = 4 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated5.raw = 5 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated6.raw = 6 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated7.raw = 7 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2_fractionated8.raw = 8 | 20150414_QEp1_LC7_NiGr_SA_Saliva_2m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated2.raw = 2 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated3.raw = 3 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated4.raw = 4 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated5.raw = 5 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated6.raw = 6 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated7.raw = 7 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3_fractionated8.raw = 8 | 20150414_QEp1_LC7_NiGr_SA_Saliva_3m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_4.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_4m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated2.raw = 2 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated3.raw = 3 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated4.raw = 4 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated5.raw = 5 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated6.raw = 6 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated7.raw = 7 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5_fractionated8.raw = 8 | 20150414_QEp1_LC7_NiGr_SA_Saliva_5m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated2.raw = 2 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated3.raw = 3 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated4.raw = 4 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated5.raw = 5 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated6.raw = 6 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated7.raw = 7 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6_fractionated8.raw = 8 | 20150414_QEp1_LC7_NiGr_SA_Saliva_6m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated2.raw = 2 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated3.raw = 3 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated4.raw = 4 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated5.raw = 5 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated6.raw = 6 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated7.raw = 7 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7_fractionated8.raw = 8 | 20150414_QEp1_LC7_NiGr_SA_Saliva_7m.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated1.raw = 1 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated2.raw = 2 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated3.raw = 3 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated4.raw = 4 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated5.raw = 5 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated6.raw = 6 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated7.raw = 7 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8_fractionated8.raw = 8 | 20150414_QEp1_LC7_NiGr_SA_Saliva_8m.raw = 1 | 20150602_QEp3_NiGr_SA_saliva3_4_frac1.raw = 1 | 20150602_QEp3_NiGr_SA_saliva3_4_frac2.raw = 2 | 20150602_QEp3_NiGr_SA_saliva3_4_frac3.raw = 3 | 20150602_QEp3_NiGr_SA_saliva3_4_frac4.raw = 4 | 20150602_QEp3_NiGr_SA_saliva3_4_frac5.raw = 5 | 20150602_QEp3_NiGr_SA_saliva3_4_frac6.raw = 6 | 20150602_QEp3_NiGr_SA_saliva3_4_frac7.raw = 7 | 20150602_QEp3_NiGr_SA_saliva3_4_frac8.raw = 8 | 20141116_QEp1_LC7_PhGe_4_53_M1_2.raw = 1 | 20141116_QEp1_LC7_PhGe_4_53_M1_3.raw = 1 | 20141116_QEp1_LC7_PhGe_4_53_M1_4.raw = 1 | 20141116_QEp1_LC7_PhGe_4_53_M2_1.raw = 1 | 20141116_QEp1_LC7_PhGe_4_53_M2_2.raw = 1 | 20141116_QEp1_LC7_PhGe_4_53_M2_3.raw = 1 | 20150513_QEp4_NiGr_SA_workflow_rep1.raw = 1 | 20150513_QEp4_NiGr_SA_workflow_rep2.raw = 1 | 20150513_QEp4_NiGr_SA_workflow_rep3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that eight waking samples were fractionated using basic reversed phase chromatography, and the results were measured as concatenated fractions.",
+        "TRUTH_CHECK": "The mapping correctly assigns fraction indices (1-8) to the runs explicitly labeled as \"fractionated\" or \"frac\", and assigns 1 to the single-run samples and other non-fractionated runs.",
+        "COMPLETENESS_CHECK": "The mapping follows the definition, providing a fraction index for every run."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "Healthy",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/health status, which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper states that saliva was collected from \"eight healthy individuals\".",
+        "TRUTH_CHECK": "All subjects in the study are described as healthy.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

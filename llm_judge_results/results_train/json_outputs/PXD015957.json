@@ -1,0 +1,532 @@
+{
+  "paper_id": "PXD015957",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes the use of human melanoma cell lines (12T, 108T, A375) and searches against the UniProt human database, making \"Homo sapiens\" an allowed inference.",
+        "TRUTH_CHECK": "The analyzed proteins are from human cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "metastatic melanoma tumor",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that cell lines 12T and 108T were derived from \"pathology-confirmed metastatic melanoma tumor resections\".",
+        "TRUTH_CHECK": "The runs carry values for cell lines 12T, 108T, and A375, all of which are melanoma.",
+        "COMPLETENESS_CHECK": "The value is a correct description of the disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "malignant melanoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the sample, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that A375 is a commercial cell line and that the study focuses on melanoma patients and melanoma tumor resections.",
+        "TRUTH_CHECK": "The runs carry the A375 cell line, which is a melanoma cell line.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "53Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that patient information is found in Supplementary Table 16, but the provided text does not contain any specific ages for the patients.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "25Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of the patients from whom the 108T, 12T, or A375 cell lines were derived.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "54Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of the donors for the A375 cell line or any other specific age values.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the sex of the patients from whom the 12T and 108T cell lines were derived.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that Cox regression was performed controlling for sex, but it never states the sex of the specific patients from whom the cell lines (108T, 12T, A375) were derived.",
+        "TRUTH_CHECK": "The sex of the donors for these cell lines is not provided in the text.",
+        "COMPLETENESS_CHECK": "The value follows the format, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "12T",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"Cell lines 12T and 108T\" in the Cells section.",
+        "TRUTH_CHECK": "The 12T cell line was used for HLA peptidomics analysis (LC-MS/MS).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "108T",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Cell lines 12T and 108T\" in the Cells section.",
+        "TRUTH_CHECK": "The 108T cell line was used for the HLA peptidomics MS analysis.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is written as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "A375",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"A375 is a commercial cell line that was purchase from ATCC.\"",
+        "TRUTH_CHECK": "The A375 cell line was used for HLA peptidomics analysis (MS experiment), as evidenced by the mention of \"A375 OE3\" in the analysis section.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the right field.",
+        "SOURCE_CHECK": "The paper states that cell lines (12T, 108T, A375) were used for the HLA peptidomics analysis.",
+        "TRUTH_CHECK": "The runs are derived from these cell lines.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the controlled terms listed in the field definition."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes an HLA peptidomics workflow using MaxQuant for analysis and does not mention any TMT, SILAC, or other labeling reagents.",
+        "TRUTH_CHECK": "The absence of any mentioned labels in the described LC-MS/MS workflow indicates a label-free approach.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT= Q Exactive Plus;AC=MS:1002634",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the system was coupled to a \"Q-Exactive-Plus\".",
+        "TRUTH_CHECK": "The instrument was used for the HLA peptidomics analysis of the runs.",
+        "COMPLETENESS_CHECK": "Complete. The hyphenation in the paper is ignored as per conventions."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The paper does not mention any cleavage agent or protease used for the HLA peptidomics analysis.",
+        "TRUTH_CHECK": "The paper describes \"HLA peptidomics\" where peptides are eluted from HLA molecules; these are naturally occurring peptides, not digested proteins.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000422;NT=HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that peptides were fragmented by higher-energy collisional dissociation (HCD).",
+        "TRUTH_CHECK": "HCD was used for the HLA peptidomics runs described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "25% NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The methods state \"Normalized collision energy was set to 25%\".",
+        "TRUTH_CHECK": "This value applies to the HLA peptidomics runs described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "FractionationMethod",
+      "extracted_value": "no fractionation",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the absence of offline fractionation, which is the correct field.",
+        "SOURCE_CHECK": "The methods describe a direct LC-MS/MS analysis of eluted HLA peptides without any offline fractionation steps.",
+        "TRUTH_CHECK": "The runs were not fractionated offline.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a technology type, the right field.",
+        "SOURCE_CHECK": "The paper describes an HLA peptidomics workflow using LC-MS/MS, which is a form of MS-based proteomics.",
+        "TRUTH_CHECK": "The runs are part of the MS experiment described in the paper.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"N-terminal acetylation (42.010565 Da) ... were set as variable modifications\".",
+        "TRUTH_CHECK": "The modification was used for the HLA peptidomics runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, AC, PP, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;AC=UNIMOD:35;MT=Variable;TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"methionine oxidation (15.994915 Da) were set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;AC;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "12T_IFN1.raw = 1 | 12T_IFN2.raw = 2 | 12T_IFN3.raw = 3 | 12T_NT1.raw = 1 | 12T_NT2.raw = 2 | 12T_NT3.raw = 3 | 12T_EV1.raw = 1 | 12T_EV2.raw = 2 | 12T_EV3.raw = 3 | 12T_OE1.raw = 1 | 12T_OE2.raw = 2 | 12T_OE3.raw = 3 | 108T_IFN1.raw = 1 | 108T_IFN2.raw = 2 | 108T_IFN3.raw = 3 | 108T_NT1.raw = 1 | 108T_NT2.raw = 2 | 108T_NT3.raw = 3 | 108T_EV1.raw = 1 | 108T_EV2.raw = 2 | 108T_EV3.raw = 3 | 108T_OE1.raw = 1 | 108T_OE2.raw = 2 | 108T_OE3.raw = 3 | A375_EV1.raw = 1 | A375_EV2.raw = 2 | A375_EV3.raw = 3 | A375_OE1.raw = 1 | A375_OE2.raw = 2 | A375_OE3.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that for each cell line and condition, three experimental replicates were collected.",
+        "TRUTH_CHECK": "The runs are correctly grouped by condition and cell line, with each of the three replicates assigned a unique index (1, 2, 3).",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "12T_IFN1.raw = 1 | 12T_IFN2.raw = 1 | 12T_IFN3.raw = 1 | 12T_NT1.raw = 1 | 12T_NT2.raw = 1 | 12T_NT3.raw = 1 | 12T_EV1.raw = 1 | 12T_EV2.raw = 1 | 12T_EV3.raw = 1 | 12T_OE1.raw = 1 | 12T_OE2.raw = 1 | 12T_OE3.raw = 1 | 108T_IFN1.raw = 1 | 108T_IFN2.raw = 1 | 108T_IFN3.raw = 1 | 108T_NT1.raw = 1 | 108T_NT2.raw = 1 | 108T_NT3.raw = 1 | 108T_EV1.raw = 1 | 108T_EV2.raw = 1 | 108T_EV3.raw = 1 | 108T_OE1.raw = 1 | 108T_OE2.raw = 1 | 108T_OE3.raw = 1 | A375_EV1.raw = 1 | A375_EV2.raw = 1 | A375_EV3.raw = 1 | A375_OE1.raw = 1 | A375_OE2.raw = 1 | A375_OE3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents technical replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that for each cell line and condition, three experimental replicates were collected and used for HLA peptidomics.",
+        "TRUTH_CHECK": "The runs are described as experimental replicates (biological replicates of the cell culture conditions), not repeated injections of the same material. Each unique sample is measured once.",
+        "COMPLETENESS_CHECK": "Each run is assigned a technical replicate index of 1, which is correct for material measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "12T_IFN1.raw = 1 | 12T_IFN2.raw = 1 | 12T_IFN3.raw = 1 | 12T_NT1.raw = 1 | 12T_NT2.raw = 1 | 12T_NT3.raw = 1 | 12T_EV1.raw = 1 | 12T_EV2.raw = 1 | 12T_EV3.raw = 1 | 12T_OE1.raw = 1 | 12T_OE2.raw = 1 | 12T_OE3.raw = 1 | 108T_IFN1.raw = 1 | 108T_IFN2.raw = 1 | 108T_IFN3.raw = 1 | 108T_NT1.raw = 1 | 108T_NT2.raw = 1 | 108T_NT3.raw = 1 | 108T_EV1.raw = 1 | 108T_EV2.raw = 1 | 108T_EV3.raw = 1 | 108T_OE1.raw = 1 | 108T_OE2.raw = 1 | 108T_OE3.raw = 1 | A375_EV1.raw = 1 | A375_EV2.raw = 1 | A375_EV3.raw = 1 | A375_OE1.raw = 1 | A375_OE2.raw = 1 | A375_OE3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes HLA peptidomics using immunoaffinity purification and C18 cleaning, but no offline fractionation (like high pH RP or SCX) is mentioned.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns 1 to all runs."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "IFNy",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"IFNy\" refers to a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The methods state that 12T and 108T cells were treated with \"250 U/ml IFNγ\".",
+        "TRUTH_CHECK": "The runs listed (12T_IFN and 108T_IFN) correspond to the cells treated with IFNγ.",
+        "COMPLETENESS_CHECK": "Complete. \"IFNy\" is a standard abbreviation for Interferon gamma (IFNγ)."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "control",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to a column describing the treatment or condition of the samples.",
+        "SOURCE_CHECK": "The paper describes \"non-treated cells\" (NT) and \"empty vector control\" cells.",
+        "TRUTH_CHECK": "The runs carrying this value (12T_NT and 108T_NT) are the non-treated cells, which serve as the control for the IFNγ treatment.",
+        "COMPLETENESS_CHECK": "The value is a simple label and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "vector control",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition (empty vector control), which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions \"empty vector control\" multiple times in the \"Stable expression of immunoproteasome subunits in melanoma cell lines\" and \"Purification of membrane HLA molecules\" sections.",
+        "TRUTH_CHECK": "The runs listed (e.g., 12T_EV1, 108T_EV1, A375_EV1) correspond to the \"empty vector\" (EV) conditions described in the paper.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the condition and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "overexpressed both PSMB8 and PSMB9",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition (overexpression of specific genes), which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper describes the production of cells with \"double transfection of PSMB8 and PSMB9\" and \"overexpression of immunoproteasome subunits\".",
+        "TRUTH_CHECK": "The runs (12T_OE1, 108T_OE1, A375_OE1) correspond to the \"OE\" (overexpression) condition for the three cell lines mentioned in the methods.",
+        "COMPLETENESS_CHECK": "The value is a clear description of the experimental condition."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "overexpressed both PSMB8 and PSMB10",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper describes the overexpression of PSMB8 and PSMB9, but never mentions PSMB10.",
+        "TRUTH_CHECK": "The value is wrong because the study focuses on PSMB8 and PSMB9, not PSMB10.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "overexpressed both PSMB8 and PSMB11",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a treatment condition (overexpression of specific genes), which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper describes the overexpression of PSMB8 and PSMB9, but there is no mention of PSMB11.",
+        "TRUTH_CHECK": "The study focuses on PSMB8 and PSMB9; PSMB11 is not part of the experimental design.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SyntheticPeptide",
+      "extracted_value": "not synthetic",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes whether the peptides analyzed in the MS runs are synthetic or naturally occurring, which is appropriate for a column named \"SyntheticPeptide\".",
+        "SOURCE_CHECK": "The paper describes \"HLA peptidomics\" where HLA-I molecules were immunoaffinity purified from cell lysates and the eluted peptides were analyzed by LC-MS/MS.",
+        "TRUTH_CHECK": "The MS runs listed (e.g., 12T_IFN1.raw) are the peptidomics runs using purified HLA molecules from cells, not the synthetic peptides used later in the \"T-cell reactivity\" ELISA assays. Therefore, these runs are indeed \"not synthetic\".",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

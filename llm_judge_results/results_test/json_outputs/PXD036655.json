@@ -1,0 +1,583 @@
+{
+  "paper_id": "PXD036655",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Mus musculus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a scientific name for an organism, which is the correct field.",
+        "SOURCE_CHECK": "The paper repeatedly states that \"mouse islets\" were used and specifies mouse strains (C57BL/6NJR and C57BL/6NTAC).",
+        "TRUTH_CHECK": "The proteins analyzed in the proteomics experiment were derived from these mouse islets.",
+        "COMPLETENESS_CHECK": "Complete. Scientific names are acceptable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "characteristics[age]",
+      "extracted_value": "12 weeks old",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the age of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that pancreata were from \"12-week-old male C57BL/6NJR mice\" and \"12-week-old male C57BL/6NTAC mice\".",
+        "TRUTH_CHECK": "The value is correct for the mouse islets used in the experiment.",
+        "COMPLETENESS_CHECK": "The value follows the definition and includes the unit as stated in the paper."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "characteristics[sex]",
+      "extracted_value": "male",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the biological sex of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that \"Pancreata from 12-week-old male C57BL/6NJR mice... or 12-week-old male C57BL/6NTAC mice\" were used.",
+        "TRUTH_CHECK": "The runs are derived from these male mouse islets.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "characteristics[material type]",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the material_type field.",
+        "SOURCE_CHECK": "The paper describes the use of \"mouse islets\", which are clusters of cells isolated from the pancreas.",
+        "TRUTH_CHECK": "Islets are a type of tissue (or a part of the pancreas tissue).",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms for material_type."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "characteristics[developmental stage]",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a developmental stage, which is the right field.",
+        "SOURCE_CHECK": "The paper states the mice were 12-week-old, and \"adult\" may be inferred from a stated adult age.",
+        "TRUTH_CHECK": "The 12-week-old mice used for islet isolation are adults.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "TMT10plex",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "TMT126",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling method used for the proteomics runs, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that peptides \"were labeled with TMT10 plex according to the manufacture’s protocol\".",
+        "TRUTH_CHECK": "The proteomics runs used TMT10 plex labeling.",
+        "COMPLETENESS_CHECK": "The field definition requires a labeled run to carry its channel (e.g., \"TMT126\"). The candidate value provides the labeling kit/technology (\"TMT10plex\") but not the specific channels assigned to the runs."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Orbitrap Fusion Lumos",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the nanoLC was connected to an Orbitrap Fusion Lumos.",
+        "TRUTH_CHECK": "This instrument was used for the proteomics analysis of the mouse islets.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for protein digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under \"Proteomics\" states that samples were digested with \"2% (w/w) trypsin (Sigma)\".",
+        "TRUTH_CHECK": "Trypsin was used for the proteomics runs described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "comment[fragmentation method]",
+      "extracted_value": "HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that \"The most abundant peptide ions were selected from the MS for higher energy collision-induced dissociation (HCD) fragmentation\".",
+        "TRUTH_CHECK": "The proteomics runs used HCD fragmentation.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "comment[collision energy]",
+      "extracted_value": "40 V",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The methods state \"higher energy collision-induced dissociation (HCD) fragmentation (normalized collision energy: 40 V)\".",
+        "TRUTH_CHECK": "The value is correct for the proteomics runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "comment[fractionation method]",
+      "extracted_value": "HILIC",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fractionation method, the right field.",
+        "SOURCE_CHECK": "The methods section describes \"Hydrophilic interaction liquid chromatography (HILIC)\" used to separate peptide samples into 13 final fractions.",
+        "TRUTH_CHECK": "The HILIC step was used for offline fractionation before the nanoLC-ESI-MS/MS analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "reduction_reagent",
+      "sdrf_column": "comment[reduction reagent]",
+      "extracted_value": "DTT",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a chemical used to reduce disulfide bonds, which is the correct field.",
+        "SOURCE_CHECK": "The proteomics section states that islets were lysed, reduced, and pre-digested in a buffer containing 10 mM DTT.",
+        "TRUTH_CHECK": "DTT was used for the reduction step of the proteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "ionization_type",
+      "sdrf_column": "comment[ionization type]",
+      "extracted_value": "nanoESI",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an ionization type, which is the correct field.",
+        "SOURCE_CHECK": "The methods section describes \"Reversed-phase nanoLC-ESI-MS/MS\", where ESI combined with nanoLC is nanoESI.",
+        "TRUTH_CHECK": "The value is correct for the proteomics runs described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "mass_analyzer",
+      "sdrf_column": "comment[mass analyzer type]",
+      "extracted_value": "Orbitrap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer type, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the instrument used was an Orbitrap Fusion Lumos.",
+        "TRUTH_CHECK": "The Orbitrap is the primary mass analyzer of the Orbitrap Fusion Lumos.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "acquisition_method",
+      "sdrf_column": "comment[acquisition method]",
+      "extracted_value": "DDA",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an MS acquisition scheme, which is the right field.",
+        "SOURCE_CHECK": "The methods state the instrument was operated with a \"data-dependent acquisition\", which is an allowed inference for DDA.",
+        "TRUTH_CHECK": "The proteomics runs used this acquisition method.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "comment[fraction identifier]",
+      "extracted_value": "not available = 13 fractions",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "not available = 13",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the number of fractions, which belongs to the fraction_identifier field.",
+        "SOURCE_CHECK": "The methods state that peptides were separated by HILIC and \"Fractions were collected every 1 min and combined into 13 final fractions\".",
+        "TRUTH_CHECK": "The runs are the result of this fractionation; however, each individual run should be assigned its specific fraction index (1, 2, 3... 13), not the total count of fractions.",
+        "COMPLETENESS_CHECK": "The value \"13 fractions\" is a description of the total count, not a plain number index for a specific run as required by the definition."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[compound]",
+      "extracted_value": "BMP-2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"BMP-2\" describes a compound/factor used to treat the samples, which is appropriate for a characteristics column.",
+        "SOURCE_CHECK": "The paper states that islets were cultured in the presence or absence of 50 ng/ml recombinant human BMP-2.",
+        "TRUTH_CHECK": "BMP-2 is the primary experimental compound used to induce beta cell dysfunction in this study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[concentration of compound]",
+      "extracted_value": "50 ng/mL",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a concentration of a compound, which matches the column header \"characteristics[concentration of compound]\".",
+        "SOURCE_CHECK": "The methods state that islets were cultured in the presence or absence of \"50 ng/ml recombinant human BMP-2\".",
+        "TRUTH_CHECK": "The value correctly describes the concentration of the compound (BMP-2) used in the experimental runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[genotype]",
+      "extracted_value": "C57BL/6NJR",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mouse strain, which is the correct information for a genotype column.",
+        "SOURCE_CHECK": "The paper states that pancreata were from \"C57BL/6NJR mice\".",
+        "TRUTH_CHECK": "The analyzed mouse islets were derived from this strain.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of biological replicates]",
+      "extracted_value": "5",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing the count of biological replicates, which is appropriate for a column named \"number of biological replicates\".",
+        "SOURCE_CHECK": "The proteomics section states \"About 150 intact mouse islets per condition (N = 5) were collected\", indicating 5 biological replicates per condition.",
+        "TRUTH_CHECK": "The value correctly reflects the number of biological replicates used for the proteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[number of samples]",
+      "extracted_value": "10",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number, which is appropriate for a column describing a count of samples.",
+        "SOURCE_CHECK": "The number 10 appears in the paper, but it refers to the duration of culture (10 days), not the number of samples.",
+        "TRUTH_CHECK": "The proteomics section states N=5 per condition (Control and BMP-2), totaling 10 biological samples. However, the candidate value is not explicitly stated as the \"number of samples\" in the text; it is an inference from the N values.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sampling time]",
+      "extracted_value": "2 h (reduction)",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a processing step duration, not a sampling time.",
+        "SOURCE_CHECK": "The paper mentions a 2 h pre-digestion step (\"pre-digested... for 2 h at RT\"), but this is not a sampling time.",
+        "TRUTH_CHECK": "The value describes the duration of the reduction/pre-digestion step in the proteomics workflow, not the time the sample was collected from the organism.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sampling time]",
+      "extracted_value": "10 days BMP-2 exposure",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the duration and condition of the sample treatment, which is appropriate for a sampling time characteristic.",
+        "SOURCE_CHECK": "The paper states that islets were cultured for 10 days in the absence or presence of 50 ng/ml recombinant human BMP-2.",
+        "TRUTH_CHECK": "The value correctly describes the treatment duration for the BMP-2 exposed group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[sample treatment]",
+      "extracted_value": "BMP-2 treatment (50 ng/mL) for 10 days",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the treatment applied to the samples, which is appropriate for a column named \"characteristics[sample treatment]\".",
+        "SOURCE_CHECK": "The methods state that islets were cultured \"in the absence or presence of 50 ng/ml recombinant human BMP-2\" for \"10 days\".",
+        "TRUTH_CHECK": "The value correctly describes the treatment condition for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "intact mouse islets",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the specimen used in the experiment, which is appropriate for a characteristics[specimen] column.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"intact mouse islets\" in the Proteomics and Gene expression analysis sections.",
+        "TRUTH_CHECK": "The proteomics runs were performed on intact mouse islets.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[time]",
+      "extracted_value": "10 days BMP-2 exposure",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the duration and condition of the treatment, which is appropriate for a time-related characteristic column.",
+        "SOURCE_CHECK": "The methods state that islets were cultured for 10 days in the absence or presence of 50 ng/ml recombinant human BMP-2.",
+        "TRUTH_CHECK": "The value correctly describes the experimental condition for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[temperature]",
+      "extracted_value": "30°C",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which fits the column name \"characteristics[temperature]\".",
+        "SOURCE_CHECK": "The paper mentions \"30 °C\" in the Proteomics section (\"digestion with 2% (w/w) trypsin (Sigma) overnight (ON) at 30 °C\").",
+        "TRUTH_CHECK": "The value describes the temperature of the protein digestion step, not a characteristic of the sample or the LC-MS run itself.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[treatment]",
+      "extracted_value": "50 ng/mL BMP-2 for 10 days",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the treatment condition, which is appropriate for a column named \"characteristics[treatment]\".",
+        "SOURCE_CHECK": "The paper states in the Methods and Results that islets were cultured in the presence of \"50 ng/ml recombinant human BMP-2\" for \"10 days\".",
+        "TRUTH_CHECK": "The value correctly describes the treatment applied to the BMP-2 exposed runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[experiment]",
+      "extracted_value": "Proteomics experiment on BMP-2 treated mouse islets",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a general description of the experiment, which is appropriate for a comment column.",
+        "SOURCE_CHECK": "The paper describes a global proteomic analysis on mouse islets exposed to BMP-2.",
+        "TRUTH_CHECK": "The value correctly describes the proteomics experiment performed in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[flow rate chromatogram]",
+      "extracted_value": "250 nL/min",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a flow rate, which is a technical parameter of the LC system.",
+        "SOURCE_CHECK": "The methods state \"at a constant flow rate of 250 nl/min\" in the Reversed-phase nanoLC-ESI-MS/MS section.",
+        "TRUTH_CHECK": "The value correctly describes the flow rate used for the LC-MS/MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[gradient time]",
+      "extracted_value": "64 min",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which is appropriate for a column named \"gradient time\".",
+        "SOURCE_CHECK": "The paper describes a gradient from 1% to 7% buffer B for 3 min, then up to 28% for 55 min, then to 40% in 3 min, and finally to 95% in 3 min. Summing these (3 + 55 + 3 + 3) equals 64 minutes.",
+        "TRUTH_CHECK": "The calculated total gradient time for the reversed-phase nanoLC-ESI-MS/MS experiment is 64 minutes.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[number of missed cleavages]",
+      "extracted_value": "2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of missed cleavages, which is appropriate for a column named \"comment[number of missed cleavages]\".",
+        "SOURCE_CHECK": "The \"MS data processing and statistical analysis\" section states \"maximum missed cleavages, 2\".",
+        "TRUTH_CHECK": "The value correctly describes the search parameter used for the proteomics runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[number of fractions]",
+      "extracted_value": "13",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of fractions, which is appropriate for a column named \"comment[number of fractions]\".",
+        "SOURCE_CHECK": "The \"Hydrophilic interaction liquid chromatography (HILIC)\" section states that \"Fractions were collected every 1 min and combined into 13 final fractions\".",
+        "TRUTH_CHECK": "The proteomics experiment used 13 fractions for the LC-MS/MS analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[separation]",
+      "extracted_value": "nanoLC-ESI-MS/MS",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"nanoLC-ESI-MS/MS\" describes the technical method of analysis, not a comment on separation.",
+        "SOURCE_CHECK": "The term \"Reversed-phase nanoLC-ESI-MS/MS\" is explicitly used as a section header in the methods.",
+        "TRUTH_CHECK": "While the term is in the paper, it describes the overall acquisition system. In an SDRF file, \"separation\" usually refers to the chromatography or fractionation steps. However, the field name \"other_column\" and the column header \"comment[separation]\" suggest a generic comment field. Even so, \"nanoLC-ESI-MS/MS\" is a description of the instrument/method, not a specific comment about the separation process of the runs.",
+        "COMPLETENESS_CHECK": "Complete as a string."
+      }
+    }
+  ]
+}

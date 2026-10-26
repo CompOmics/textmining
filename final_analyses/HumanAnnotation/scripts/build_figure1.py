@@ -442,6 +442,54 @@ def panel_e(ax):
 
 
 # -----------------------------------------------------------------------------
+def panel_a_lower(ax, include_models=True, cbar=None, letter=""):
+    """Panel a, single triangle: value-level Cohen's kappa under exact string
+    identity only (the lower triangle of panel a). include_models=False keeps
+    the human identities (single expert, A1-A8, consensus) only."""
+    pres = {(r["annotator_a"], r["annotator_b"]): fnum(r["kappa"]) for r in load("pair_agreement_value_string.csv")}
+    present = {x for pair in pres for x in pair}
+    multi = sorted((x for x in present if x.startswith("Annotator")), key=lambda n: int(n.removeprefix("Annotator")))
+    humans = (["SingleHuman"] if "SingleHuman" in present else []) + multi
+    consensus = ["HarmonizedHuman"] if "HarmonizedHuman" in present else []
+    models = [x for x in MODEL_ORDER if x in present] if include_models else []
+    order = humans + consensus + models
+    n = len(order); idx = {k: i for i, k in enumerate(order)}
+    short = {"SingleHuman": "single\nexpert", "HarmonizedHuman": "consensus"}
+    short.update({h: f"A{i + 1}" for i, h in enumerate(multi)}); short.update({x: x for x in models})
+
+    P = np.full((n, n), np.nan)
+    for (a, b), k in pres.items():
+        if a in idx and b in idx:
+            i, j = idx[a], idx[b]; P[i, j] = P[j, i] = k
+    lower = np.ma.array(P, mask=np.triu(np.ones_like(P, dtype=bool)) | np.isnan(P))
+    cm = plt.get_cmap("Greens").copy(); cm.set_bad(alpha=0)
+    im = ax.imshow(lower, cmap=cm, vmin=0, vmax=1); ax.set_aspect("equal")
+    for i in range(n):
+        for j in range(i):
+            v = P[i, j]
+            if np.isnan(v):
+                ax.text(j, i, "n/a", ha="center", va="center", fontsize=5.6, color="0.62", style="italic")
+            else:
+                ax.text(j, i, f"{v:.2f}", ha="center", va="center", fontsize=6.0, color="white" if v > 0.58 else "0.2")
+        ax.add_patch(plt.Rectangle((i - 0.5, i - 0.5), 1, 1, facecolor="#f4f6f5", edgecolor="white", lw=0.6, zorder=2))
+    ax.set_xticks(range(n - 1)); ax.set_yticks(range(1, n))
+    ax.set_xticklabels([short[k] for k in order[:-1]], fontsize=7, rotation=45, ha="right")
+    ax.set_yticklabels([short[k] for k in order[1:]], fontsize=7)
+    ax.set_xlim(-0.5, n - 1.5); ax.set_ylim(n - 0.5, 0.5)
+    for sp in ax.spines.values():
+        sp.set_visible(False)
+    ax.tick_params(length=0); ax.grid(False)
+    if models:
+        sep = len(humans) + len(consensus) - 0.5
+        ax.axhline(sep, color="0.35", lw=1.0); ax.axvline(sep, color="0.35", lw=1.0)
+    if "SingleHuman" in idx:
+        ax.axhline(0.5, color="0.6", lw=0.8, ls=(0, (3, 2))); ax.axvline(0.5, color="0.6", lw=0.8, ls=(0, (3, 2)))
+    if cbar is not None:
+        cb = plt.colorbar(im, cax=cbar); cb.set_label("value \u03ba, string identity", fontsize=7); cb.ax.tick_params(labelsize=6.5)
+    panel_title(ax, letter)
+    return im
+
+
 def panel_prevalence(ax):
     """How much each rater marks: share of paper x field slots judged present.
     The spread among humans is the threshold difference behind the
@@ -481,7 +529,13 @@ def main():
                                 cbar_upper=ax.inset_axes([1.03, 0.55, 0.03, 0.38])),
         "b": panel_d, "c": panel_e, "d": panel_c, "e": panel_b, "f": panel_prevalence,
     }, {"a": (7.5, 7.5), "b": (11, 4.2), "c": (6, 3.6), "d": (6, 4.6), "e": (7, 4.8), "f": (5.5, 4)})
-    print(f"Saved: {FIGDIR / 'figure1.png'}")
+    # variants of panel a: string-identity lower triangle only
+    for name, with_models, size in [("figure1_a_humans_string", False, (6.5, 6)), ("figure1_a_all_string", True, (7.5, 7))]:
+        def draw(ax, with_models=with_models):
+            panel_a_lower(ax, include_models=with_models, cbar=ax.inset_axes([1.04, 0.1, 0.03, 0.55]))
+        fig, ax = plt.subplots(figsize=size); draw(ax)
+        save_composite(fig, FIGDIR, name); plt.close(fig)
+    print(f"Saved: {FIGDIR / 'figure1.png'} and the two panel-a variants")
 
 
 if __name__ == "__main__":

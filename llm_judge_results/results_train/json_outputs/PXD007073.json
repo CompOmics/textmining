@@ -1,0 +1,328 @@
+{
+  "paper_id": "PXD007073",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes human meningioma specimens and human meninges, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analysed proteins are from human samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Brain",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ/tissue, which is the right field.",
+        "SOURCE_CHECK": "The paper describes meningioma specimens (intracranial tumours) and human brain cerebral meninges.",
+        "TRUTH_CHECK": "Meningiomas are tumours of the meninges (the membranes surrounding the brain and spinal cord); \"Brain\" is a correct broader term for the organ of origin.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Brain meningioma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects, which is the right field.",
+        "SOURCE_CHECK": "The paper describes the analysis of meningioma specimens.",
+        "TRUTH_CHECK": "The runs carry samples from meningioma patients.",
+        "COMPLETENESS_CHECK": "The value is complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the health status of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"three normal healthy human meninges\" in the abstract and \"Two frozen normal meninges... and one human brain cerebral meninges\" in the methods.",
+        "TRUTH_CHECK": "The runs carry the value for the control samples (normal meninges).",
+        "COMPLETENESS_CHECK": "The SDRF term for healthy subjects is \"normal\" (lowercase)."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly states that \"Proteins were quantified with label free quantification (LFQ) values\".",
+        "TRUTH_CHECK": "The runs listed are part of the MS analysis described as LFQ.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001742;NT=LTQ Orbitrap Velos",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper does not mention the instrument model used for the LC-MS/MS analysis.",
+        "TRUTH_CHECK": "The instrument model is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods section explicitly mentions the use of trypsin for both phosphopeptide and in-gel digestion.",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the proteins analysed in the MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Lys-C;AC=MS:1001309",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "Lys-C is explicitly mentioned in the phosphopeptide enrichment section.",
+        "TRUTH_CHECK": "The runs listed include PXD007073 (global proteome). For global proteome analysis, the paper states \"Proteins were digested in 12.5 ng/μl trypsin\", not Lys-C. Lys-C was used only for the phosphopeptide enrichment workflow.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"proteomic profiling\" using \"LC-MS/MS\" in the abstract and methods.",
+        "TRUTH_CHECK": "The runs are part of the LC-MS/MS proteomic profiling experiment described.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states that proteins were alkylated with 2-iodoacetamide, which results in carbamidomethylation of cysteines.",
+        "TRUTH_CHECK": "The alkylation step was performed on all samples used for MS analysis.",
+        "COMPLETENESS_CHECK": "The value follows the required format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=PP=Any N-term;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a protein modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention Acetyl as a searched modification in the MS analysis section.",
+        "TRUTH_CHECK": "The modification is not stated as part of the search parameters for the runs.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper does not mention Oxidation as a searched modification in the MS section.",
+        "TRUTH_CHECK": "The modification is not stated as part of the search parameters.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=cyclization;AC=MOP:0000561;PP=Any N-term;TA=Q;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper does not mention cyclization as a searched modification.",
+        "TRUTH_CHECK": "The modification is not stated in the search parameters.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "4.5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states a \"first search mass tolerance of 20 ppm\" and a \"main search tolerance of 4.5 ppm for the parental peptide\".",
+        "TRUTH_CHECK": "The main search tolerance for the parental (precursor) peptide is 4.5 ppm.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.5 da",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions a first search mass tolerance of 20 ppm and a main search tolerance of 4.5 ppm for the parental peptide, but it does not state a fragment (MS/MS) mass tolerance.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20150310VS26.raw = 1 | 20150310VS27.raw = 1 | 20150310VS28.raw = 1 | 20150310VS29.raw = 1 | 20150310VS30.raw = 1 | 20150310VS31.raw = 1 | 20150310VS33.raw = 1 | 20150310VS34.raw = 1 | 20150310VS35.raw = 1 | 20150310VS36.raw = 1 | 20150310VS37.raw = 1 | 20150310VS38.raw = 1 | 20150823VS40.raw = 1 | 20150823VS41.raw = 1 | 20150823VS42.raw = 1 | 20150823VS43.raw = 1 | 20150823VS44.raw = 1 | 20150823VS45.raw = 1 | 20150823VS46.raw = 1 | 20150823VS47.raw = 1 | 20150823VS48.raw = 1 | 20150823VS49.raw = 1 | 20150823VS50.raw = 1 | 20150823VS51.raw = 1 | 20150902VS01.raw = 1 | 20150902VS02.raw = 1 | 20150902VS03.raw = 1 | 20150902VS04.raw = 1 | 20150902VS05.raw = 1 | 20150902VS06.raw = 1 | 20150902VS07.raw = 1 | 20150902VS08.raw = 1 | 20150902VS09.raw = 1 | 20150902VS10.raw = 1 | 20150902VS11.raw = 1 | 20150902VS12.raw = 1 | 20150902VS14.raw = 1 | 20150902VS15.raw = 1 | 20150902VS16.raw = 1 | 20150902VS17.raw = 1 | 20150902VS18.raw = 1 | 20150902VS19.raw = 1 | 20150918VS28.raw = 1 | 20150918VS29.raw = 1 | 20150918VS30.raw = 1 | 20150918VS31.raw = 1 | 20150918VS32.raw = 1 | 20150918VS33.raw = 1 | 20150918VS34.raw = 1 | 20150918VS35.raw = 1 | 20150918VS36.raw = 1 | 20150918VS37.raw = 1 | 20150918VS38.raw = 1 | 20150918VS39.raw = 1 | 20150918VS41.raw = 1 | 20150918VS42.raw = 1 | 20150918VS43.raw = 1 | 20150918VS44.raw = 1 | 20150918VS45.raw = 1 | 20150918VS46.raw = 1 | 20150924VS01.raw = 1 | 20150924VS03.raw = 1 | 20150924VS05.raw = 1 | 20150924VS06.raw = 1 | 20150924VS07.raw = 1 | 20150924VS08.raw = 1 | 20151002VS01.raw = 1 | 20151002VS02.raw = 1 | 20151002VS03.raw = 1 | 20151002VS04.raw = 1 | 20151119VS30.raw = 1 | 20151119VS31.raw = 1 | 20151119VS32.raw = 1 | 20151119VS33.raw = 1 | 20151119VS34.raw = 1 | 20151119VS35.raw = 1 | 20160403VS01.raw = 1 | 20160403VS02.raw = 1 | 20160403VS03.raw = 1 | 20160403VS04.raw = 1 | 20160403VS05.raw = 1 | 20160403VS06.raw = 1 | 20160403VS07.raw = 1 | 20160403VS08.raw = 1 | 20160403VS09.raw = 1 | 20160403VS10.raw = 1 | 20160403VS11.raw = 1 | 20160403VS12.raw = 1 | 20160403VS31.raw = 1 | 20160403VS32.raw = 1 | 20160403VS33.raw = 1 | 20160403VS34.raw = 1 | 20160403VS35.raw = 1 | 20160403VS36.raw = 1 | 20160403VS38.raw = 1 | 20160403VS39.raw = 1 | 20160403VS40.raw = 1 | 20160403VS41.raw = 1 | 20160403VS42.raw = 1 | 20160403VS43.raw = 1 | 20160403VS44.raw = 1 | 20160403VS45.raw = 1 | 20160403VS46.raw = 1 | 20160403VS47.raw = 1 | 20160403VS48.raw = 1 | 20160403VS49.raw = 1 | 20160403VS52.raw = 1 | 20160403VS53.raw = 1 | 20160403VS54.raw = 1 | 20160403VS55.raw = 1 | 20160403VS56.raw = 1 | 20160403VS57.raw = 1 | 20160403VS58.raw = 1 | 20160403VS59.raw = 1 | 20160403VS60.raw = 1 | 20160403VS61.raw = 1 | 20160403VS62.raw = 1 | 20160403VS63.raw = 1 | 20160403VS64.raw = 1 | 20160403VS65.raw = 1 | 20160403VS66.raw = 1 | 20160403VS67.raw = 1 | 20160403VS68.raw = 1 | 20160403VS69.raw = 1 | 20160423VS22.raw = 1 | 20160423VS23.raw = 1 | 20160423VS24.raw = 1 | 20160423VS25.raw = 1 | 20160423VS26.raw = 1 | 20160423VS27.raw = 1 | 20160423VS28.raw = 1 | 20160423VS29.raw = 1 | 20160423VS30.raw = 1 | 20160423VS31.raw = 1 | 20160423VS32.raw = 1 | 20160423VS33.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a global proteome analysis where samples were separated by SDS-PAGE and sliced into 6 fractions.",
+        "TRUTH_CHECK": "The runs for each sample (e.g., Sample-1 has 6 runs) correspond to these 6 fractions. According to the field definition, separate elutions or enrichment steps (including gel slices/fractions) are fractions, not technical replicates. Therefore, each run is a different material (fraction 1-6) and should be technical replicate 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned index 1, which is correct for a material measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20150310VS26.raw = 1 | 20150310VS27.raw = 2 | 20150310VS28.raw = 3 | 20150310VS29.raw = 4 | 20150310VS30.raw = 5 | 20150310VS31.raw = 6 | 20150310VS33.raw = 1 | 20150310VS34.raw = 2 | 20150310VS35.raw = 3 | 20150310VS36.raw = 4 | 20150310VS37.raw = 5 | 20150310VS38.raw = 6 | 20150823VS40.raw = 1 | 20150823VS41.raw = 2 | 20150823VS42.raw = 3 | 20150823VS43.raw = 4 | 20150823VS44.raw = 5 | 20150823VS45.raw = 6 | 20150823VS46.raw = 1 | 20150823VS47.raw = 2 | 20150823VS48.raw = 3 | 20150823VS49.raw = 4 | 20150823VS50.raw = 5 | 20150823VS51.raw = 6 | 20150902VS01.raw = 1 | 20150902VS02.raw = 2 | 20150902VS03.raw = 3 | 20150902VS04.raw = 4 | 20150902VS05.raw = 5 | 20150902VS06.raw = 6 | 20150902VS07.raw = 1 | 20150902VS08.raw = 2 | 20150902VS09.raw = 3 | 20150902VS10.raw = 4 | 20150902VS11.raw = 5 | 20150902VS12.raw = 6 | 20150902VS14.raw = 1 | 20150902VS15.raw = 2 | 20150902VS16.raw = 3 | 20150902VS17.raw = 4 | 20150902VS18.raw = 5 | 20150902VS19.raw = 6 | 20150918VS28.raw = 1 | 20150918VS29.raw = 2 | 20150918VS30.raw = 3 | 20150918VS31.raw = 4 | 20150918VS32.raw = 1 | 20150918VS33.raw = 2 | 20150918VS34.raw = 3 | 20150918VS35.raw = 4 | 20150918VS36.raw = 1 | 20150918VS37.raw = 2 | 20150918VS38.raw = 3 | 20150918VS39.raw = 4 | 20150918VS41.raw = 1 | 20150918VS42.raw = 2 | 20150918VS43.raw = 3 | 20150918VS44.raw = 4 | 20150918VS45.raw = 1 | 20150918VS46.raw = 2 | 20150924VS01.raw = 3 | 20150924VS03.raw = 4 | 20150924VS05.raw = 1 | 20150924VS06.raw = 2 | 20150924VS07.raw = 3 | 20150924VS08.raw = 4 | 20151002VS01.raw = 1 | 20151002VS02.raw = 2 | 20151002VS03.raw = 3 | 20151002VS04.raw = 4 | 20151119VS30.raw = 1 | 20151119VS31.raw = 2 | 20151119VS32.raw = 3 | 20151119VS33.raw = 4 | 20151119VS34.raw = 5 | 20151119VS35.raw = 6 | 20160403VS01.raw = 1 | 20160403VS02.raw = 2 | 20160403VS03.raw = 3 | 20160403VS04.raw = 4 | 20160403VS05.raw = 5 | 20160403VS06.raw = 6 | 20160403VS07.raw = 1 | 20160403VS08.raw = 2 | 20160403VS09.raw = 3 | 20160403VS10.raw = 4 | 20160403VS11.raw = 5 | 20160403VS12.raw = 6 | 20160403VS31.raw = 1 | 20160403VS32.raw = 2 | 20160403VS33.raw = 3 | 20160403VS34.raw = 4 | 20160403VS35.raw = 5 | 20160403VS36.raw = 6 | 20160403VS38.raw = 1 | 20160403VS39.raw = 2 | 20160403VS40.raw = 3 | 20160403VS41.raw = 4 | 20160403VS42.raw = 5 | 20160403VS43.raw = 6 | 20160403VS44.raw = 1 | 20160403VS45.raw = 2 | 20160403VS46.raw = 3 | 20160403VS47.raw = 4 | 20160403VS48.raw = 5 | 20160403VS49.raw = 6 | 20160403VS52.raw = 1 | 20160403VS53.raw = 2 | 20160403VS54.raw = 3 | 20160403VS55.raw = 4 | 20160403VS56.raw = 5 | 20160403VS57.raw = 6 | 20160403VS58.raw = 1 | 20160403VS59.raw = 2 | 20160403VS60.raw = 3 | 20160403VS61.raw = 4 | 20160403VS62.raw = 5 | 20160403VS63.raw = 6 | 20160403VS64.raw = 1 | 20160403VS65.raw = 2 | 20160403VS66.raw = 3 | 20160403VS67.raw = 4 | 20160403VS68.raw = 5 | 20160403VS69.raw = 6 | 20160423VS22.raw = 1 | 20160423VS23.raw = 2 | 20160423VS24.raw = 3 | 20160423VS25.raw = 4 | 20160423VS26.raw = 5 | 20160423VS27.raw = 6 | 20160423VS28.raw = 1 | 20160423VS29.raw = 2 | 20160423VS30.raw = 3 | 20160423VS31.raw = 4 | 20160423VS32.raw = 5 | 20160423VS33.raw = 6",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that for global proteome analysis, sample lanes were excised from gels and sliced into 6 fractions.",
+        "TRUTH_CHECK": "The runs are mapped to fractions 1-6 for each sample, which matches the described gel slicing procedure.",
+        "COMPLETENESS_CHECK": "The mapping follows the definition, assigning an index to each run based on its fraction."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "AC=MS:1000484; NT=Orbitrap",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer, which is the correct type of information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper does not explicitly name the mass analyzer, but it mentions the use of MaxQuant and Andromeda, and the data is deposited in PRIDE. While the instrument model is not printed in the provided text, the \"mass_analyzer\" field definition allows inference from the instrument model. However, the instrument model itself is missing from the text.",
+        "TRUTH_CHECK": "Without the instrument model stated in the text, the specific analyzer cannot be verified as correct for these runs.",
+        "COMPLETENESS_CHECK": "The value follows the key-value format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "NumberOfMissedCleavages",
+      "extracted_value": "2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number, which is the correct type for a column specifying the number of missed cleavages.",
+        "SOURCE_CHECK": "The paper does not state the number of missed cleavages allowed in the Andromeda/MaxQuant search parameters.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is a plain number, but the content is not in the paper."
+      }
+    }
+  ]
+}

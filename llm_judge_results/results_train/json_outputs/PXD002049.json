@@ -1,0 +1,328 @@
+{
+  "paper_id": "PXD002049",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes human colon and rectal carcinomas and human normal epithelial samples, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analyzed samples are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "colon",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ/organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the analysis of colon and rectal carcinomas and normal colon epithelium.",
+        "TRUTH_CHECK": "The runs are derived from colon and rectal tissue samples.",
+        "COMPLETENESS_CHECK": "Complete. \"colon\" is a correct broader term for the colon and rectal samples described."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "rectum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ/organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"colon and rectal carcinomas\" and \"colorectal carcinoma\" multiple times.",
+        "TRUTH_CHECK": "The samples are from colon and rectal carcinomas; \"rectum\" is the organ of origin for rectal carcinomas.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "colon and rectal tumors",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the samples, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods state the study analyzed \"colon and rectal carcinoma\".",
+        "TRUTH_CHECK": "The runs carry values for colon and rectal tumors, which is correct.",
+        "COMPLETENESS_CHECK": "The value is a correct description of the disease state."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analyzed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the analysis of tumor blocks and biopsies, which are tissues.",
+        "TRUTH_CHECK": "The runs listed are from TCGA samples, which the paper explicitly describes as tissue specimens.",
+        "COMPLETENESS_CHECK": "The value follows the controlled terminology for material_type."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes quantification based on spectral count data and does not mention any isotopic or chemical labels, which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are part of a spectral counting experiment, which is label-free.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF controlled term convention."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=LTQ Orbitrap Velos;AC=MS:1001742",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass spectrometer model, which is the correct field.",
+        "SOURCE_CHECK": "The methods section explicitly states the use of a \"Thermo LTQ Orbitrap Velos ion trap mass spectrometer\".",
+        "TRUTH_CHECK": "The instrument was used for all the LC-MS/MS analysis of the samples.",
+        "COMPLETENESS_CHECK": "The value follows the required key-value format and matches the paper."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that proteins were \"digested with trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the samples analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "35% NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the collision energy, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"35% normalized collision energy\".",
+        "TRUTH_CHECK": "This value was used for the LC-MS/MS analysis of the samples.",
+        "COMPLETENESS_CHECK": "The value \"35% NCE\" is a standard abbreviation for \"35% normalized collision energy\"."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "FractionationMethod",
+      "extracted_value": "NT=Reversed-phase chromatography;AC=PRIDE:0000563",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an offline separation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that peptides were \"fractionated by off-line basic-reverse phase high-performance liquid chromatography\" using an \"XBridge BEH C18\" column.",
+        "TRUTH_CHECK": "The offline fractionation used reversed-phase chromatography for all samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a comprehensive proteomic analysis using LC-MS/MS, which is the basis for this inference.",
+        "TRUTH_CHECK": "The runs are part of the described proteomic profiling experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=Fixed",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states that MS-GF+ considered acetylation for protein N-termini.",
+        "TRUTH_CHECK": "The modification was searched for the runs using MS-GF+.",
+        "COMPLETENESS_CHECK": "The paper does not specify if the acetylation was fixed or variable, but it lists it alongside \"dynamic +16 oxidations\" and \"static +57 modifications\", and typically N-term acetylation is variable in these workflows. However, the definition says a wrong status is a wrong detail (MEDIUM). The paper does not explicitly state \"fixed\" or \"variable\" for acetylation."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"dynamic +16 oxidations to methionines\" in the LC-MS/MS peptide identification section.",
+        "TRUTH_CHECK": "The modification was used for the database searches of the runs.",
+        "COMPLETENESS_CHECK": "Complete. \"Dynamic\" is equivalent to \"Variable\"."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Gln->pyro-Glu;MT=variable;TA=Q;AC=UNIMOD:28",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states that MyriMatch \"added pyroglutamine modifications to the N-termini of peptides starting with Gln residues\".",
+        "TRUTH_CHECK": "The modification was used by the MyriMatch search engine for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states that Pepitome and MyriMatch employed precursor tolerances of 10 ppm.",
+        "TRUTH_CHECK": "The value is correct for runs analyzed with these search engines.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and the unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR01.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR02.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR03.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR04.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR05.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR06.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR07.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR08.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR09.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR10.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR11.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR12.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR13.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR14.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR15.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR01.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR02.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR03.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR04.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR05.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR06.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR07.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR08.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR09.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR10.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR11.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR12.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR13.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR14.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR15.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR01.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR02.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR03.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR04.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR05.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR06.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR07.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR08.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR09.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR10.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR11.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR12.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR13.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR14.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR15.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR01.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR02.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR03.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR04.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR05.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR06.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR07.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR08.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR09.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR10.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR11.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR12.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR13.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR14.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR15.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120921_A0218_3H_R_FR01.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120921_A0218_3H_R_FR02.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR03.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR04.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR05.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR06.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR07.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR08.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR09.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR10.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR11.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR12.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR13.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR14.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR15.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR01.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR02.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR03.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR04.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR05.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR06.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR07.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR08.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR09.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR10.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR11.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR12.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR13.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR14.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR15.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR01.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR02.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR03.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR04.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR05.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR06.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR07.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR08.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR09.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR10.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR11.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR12.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR13.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR14.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR15.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR01.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR03.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR04.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR05.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR06.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR02.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR07.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR08.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR09.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR10.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR11.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR12.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR13.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR14.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR15.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR01.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR02.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR03.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR04.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR05.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR06.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR07.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR08.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR09.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR10.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR11.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR12.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR13.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR14.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR15.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR01.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR02.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR03.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR04.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR05.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR06.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR07.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR08.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR09.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR10.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR11.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR12.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR13.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR14.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR15.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR01.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR02.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR03.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR04.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR05.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR06.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR07.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR08.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR09.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR10.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR11.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR12.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR13.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR14.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR15.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR01.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR02.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR03.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR04.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR05.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR06.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR07.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR08.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR09.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR10.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR11.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR12.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR13.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR14.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR15.raw = 2 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR01.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR02.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR03.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR04.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR05.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR06.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR07.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR08.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR09.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR10.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR11.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR12.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR13.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR14.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR15.raw = 3 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR01.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR02.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR03.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR04.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR05.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR06.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR07.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR08.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR09.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR10.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR11.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR12.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR13.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR14.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR15.raw = 4 | TCGA-AG-A015-01A-51_W_VU_20120921_A0218_3H_R_FR01.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120921_A0218_3H_R_FR02.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR03.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR04.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR05.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR06.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR07.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR08.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR09.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR10.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR11.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR12.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR13.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR14.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR15.raw = 5 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR01.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR02.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR03.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR04.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR05.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR06.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR07.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR08.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR09.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR10.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR11.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR12.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR13.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR14.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR15.raw = 6 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR01.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR02.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR03.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR04.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR05.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR06.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR07.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR08.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR09.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR10.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR11.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR12.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR13.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR14.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR15.raw = 7 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR01.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR03.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR04.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR05.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR06.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR02.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR07.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR08.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR09.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR10.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR11.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR12.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR13.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR14.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR15.raw = 8 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR01.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR02.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR03.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR04.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR05.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR06.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR07.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR08.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR09.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR10.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR11.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR12.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR13.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR14.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR15.raw = 9 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR01.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR02.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR03.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR04.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR05.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR06.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR07.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR08.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR09.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR10.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR11.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR12.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR13.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR14.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR15.raw = 10",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes 95 TCGA carcinoma samples, each fractionated into 15 fractions.",
+        "TRUTH_CHECK": "The mapping assigns all runs to biological replicate 1, but the runs belong to 10 different samples (Sample 1 to Sample 10). Each distinct sample must have a unique biological replicate index.",
+        "COMPLETENESS_CHECK": "Every run is mapped, but the indices are wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR01.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR02.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR03.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR04.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR05.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR06.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR07.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR08.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR09.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR10.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR11.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR12.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR13.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR14.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR15.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR01.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR02.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR03.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR04.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR05.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR06.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR07.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR08.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR09.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR10.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR11.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR12.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR13.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR14.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR15.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR01.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR02.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR03.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR04.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR05.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR06.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR07.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR08.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR09.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR10.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR11.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR12.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR13.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR14.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR15.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR01.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR02.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR03.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR04.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR05.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR06.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR07.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR08.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR09.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR10.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR11.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR12.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR13.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR14.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR15.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120921_A0218_3H_R_FR01.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120921_A0218_3H_R_FR02.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR03.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR04.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR05.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR06.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR07.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR08.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR09.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR10.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR11.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR12.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR13.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR14.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR15.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR01.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR02.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR03.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR04.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR05.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR06.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR07.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR08.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR09.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR10.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR11.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR12.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR13.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR14.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR15.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR01.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR02.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR03.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR04.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR05.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR06.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR07.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR08.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR09.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR10.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR11.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR12.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR13.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR14.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR15.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR01.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR03.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR04.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR05.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR06.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR02.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR07.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR08.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR09.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR10.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR11.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR12.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR13.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR14.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR15.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR01.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR02.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR03.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR04.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR05.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR06.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR07.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR08.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR09.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR10.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR11.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR12.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR13.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR14.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR15.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR01.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR02.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR03.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR04.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR05.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR06.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR07.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR08.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR09.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR10.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR11.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR12.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR13.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR14.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR15.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the technical_replicate field.",
+        "SOURCE_CHECK": "The paper describes that each sample was fractionated into 15 fractions and analyzed.",
+        "TRUTH_CHECK": "The runs are fractions of the same sample, not repeated runs of the same material. According to the field definition, separate elutions or fractions are not technical replicates; they are fractions.",
+        "COMPLETENESS_CHECK": "The mapping assigns index 1 to all runs, which is the correct index for a material measured once, but these are fractions."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR01.raw = 1 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR02.raw = 2 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR03.raw = 3 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR04.raw = 4 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR05.raw = 5 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR06.raw = 6 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR07.raw = 7 | TCGA-AG-A00H-01A-31_W_VU_20121008_A0218_4B_R_FR08.raw = 8 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR09.raw = 9 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR10.raw = 10 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR11.raw = 11 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR12.raw = 12 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR13.raw = 13 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR14.raw = 14 | TCGA-AG-A00H-01A-31_W_VU_20121009_A0218_4B_R_FR15.raw = 15 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR01.raw = 1 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR02.raw = 2 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR03.raw = 3 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR04.raw = 4 | TCGA-AG-A00Y-01A-12_W_VU_20121016_A0218_4G_R_FR05.raw = 5 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR06.raw = 6 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR07.raw = 7 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR08.raw = 8 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR09.raw = 9 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR10.raw = 10 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR11.raw = 11 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR12.raw = 12 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR13.raw = 13 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR14.raw = 14 | TCGA-AG-A00Y-01A-12_W_VU_20121017_A0218_4G_R_FR15.raw = 15 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR01.raw = 1 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR02.raw = 2 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR03.raw = 3 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR04.raw = 4 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR05.raw = 5 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR06.raw = 6 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR07.raw = 7 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR08.raw = 8 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR09.raw = 9 | TCGA-AG-A011-01A-32_W_VU_20120828_A0218_2I_R_FR10.raw = 10 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR11.raw = 11 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR12.raw = 12 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR13.raw = 13 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR14.raw = 14 | TCGA-AG-A011-01A-32_W_VU_20120829_A0218_2I_R_FR15.raw = 15 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR01.raw = 1 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR02.raw = 2 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR03.raw = 3 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR04.raw = 4 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR05.raw = 5 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR06.raw = 6 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR07.raw = 7 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR08.raw = 8 | TCGA-AG-A014-01A-12_W_VU_20120824_A0218_2F_R_FR09.raw = 9 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR10.raw = 10 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR11.raw = 11 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR12.raw = 12 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR13.raw = 13 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR14.raw = 14 | TCGA-AG-A014-01A-12_W_VU_20120825_A0218_2F_R_FR15.raw = 15 | TCGA-AG-A015-01A-51_W_VU_20120921_A0218_3H_R_FR01.raw = 1 | TCGA-AG-A015-01A-51_W_VU_20120921_A0218_3H_R_FR02.raw = 2 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR03.raw = 3 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR04.raw = 4 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR05.raw = 5 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR06.raw = 6 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR07.raw = 7 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR08.raw = 8 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR09.raw = 9 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR10.raw = 10 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR11.raw = 11 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR12.raw = 12 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR13.raw = 13 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR14.raw = 14 | TCGA-AG-A015-01A-51_W_VU_20120922_A0218_3H_R_FR15.raw = 15 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR01.raw = 1 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR02.raw = 2 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR03.raw = 3 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR04.raw = 4 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR05.raw = 5 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR06.raw = 6 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR07.raw = 7 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR08.raw = 8 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR09.raw = 9 | TCGA-AG-A016-01A-23_W_VU_20120730_A0218_1D_R_FR10.raw = 10 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR11.raw = 11 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR12.raw = 12 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR13.raw = 13 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR14.raw = 14 | TCGA-AG-A016-01A-23_W_VU_20120731_A0218_1D_R_FR15.raw = 15 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR01.raw = 1 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR02.raw = 2 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR03.raw = 3 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR04.raw = 4 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR05.raw = 5 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR06.raw = 6 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR07.raw = 7 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR08.raw = 8 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR09.raw = 9 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR10.raw = 10 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR11.raw = 11 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR12.raw = 12 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR13.raw = 13 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR14.raw = 14 | TCGA-AG-A01J-01A-22_W_VU_20121231_A0218_8F_R_FR15.raw = 15 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR01.raw = 1 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR03.raw = 2 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR04.raw = 3 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR05.raw = 4 | TCGA-AG-A01L-01A-22_W_VU_20130129_A0218_9H_R_FR06.raw = 5 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR02.raw = 6 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR07.raw = 7 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR08.raw = 8 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR09.raw = 9 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR10.raw = 10 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR11.raw = 11 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR12.raw = 12 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR13.raw = 13 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR14.raw = 14 | TCGA-AG-A01L-01A-22_W_VU_20130130_A0218_9H_R_FR15.raw = 15 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR01.raw = 1 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR02.raw = 2 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR03.raw = 3 | TCGA-AG-A01N-01A-23_W_VU_20130104_A0218_8I_R_FR04.raw = 4 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR05.raw = 5 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR06.raw = 6 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR07.raw = 7 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR08.raw = 8 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR09.raw = 9 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR10.raw = 10 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR11.raw = 11 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR12.raw = 12 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR13.raw = 13 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR14.raw = 14 | TCGA-AG-A01N-01A-23_W_VU_20130105_A0218_8I_R_FR15.raw = 15 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR01.raw = 1 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR02.raw = 2 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR03.raw = 3 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR04.raw = 4 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR05.raw = 5 | TCGA-AG-A01W-01A-23_W_VU_20121115_A0218_6C_R_FR06.raw = 6 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR07.raw = 7 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR08.raw = 8 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR09.raw = 9 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR10.raw = 10 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR11.raw = 11 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR12.raw = 12 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR13.raw = 13 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR14.raw = 14 | TCGA-AG-A01W-01A-23_W_VU_20121116_A0218_6C_R_FR15.raw = 15",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Fraction indices, the right field.",
+        "SOURCE_CHECK": "The paper states that each tumor sample yielded 15 concatenated peptide fractions analyzed by LC-MS/MS.",
+        "TRUTH_CHECK": "The mapping correctly assigns indices 1-15 to the 15 runs associated with each sample.",
+        "COMPLETENESS_CHECK": "Every run is assigned a fraction index following the described experimental design."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "AC=MS:1000484; NT=Orbitrap",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a mass analyzer, which is the correct type of information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper states that a \"Thermo LTQ Orbitrap Velos ion trap mass spectrometer\" was used.",
+        "TRUTH_CHECK": "The paper explicitly states that \"A full MS scan was collected... on the Orbitrap... followed by eight data-dependent MS/MS scans... on the LTQ.\" This means the MS2 (fragment) scans were acquired in the LTQ (linear ion trap), not the Orbitrap.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

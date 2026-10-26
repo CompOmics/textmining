@@ -1,0 +1,583 @@
+{
+  "paper_id": "PXD011799",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes samples from human patients and human melanoma cells, which is an allowed inference for \"Homo sapiens\".",
+        "TRUTH_CHECK": "The analyzed proteins are from human cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "B cells",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "B cells is a biological cell type, not a tissue. The correct field is cell_type.",
+        "SOURCE_CHECK": "B cells are mentioned throughout the paper.",
+        "TRUTH_CHECK": "The value describes the cell type of the analyzed material, not the tissue.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "melanoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the patients have metastatic melanoma and the B cells are tumor-associated B cells (TAB) from melanoma.",
+        "TRUTH_CHECK": "The runs are derived from patients with melanoma.",
+        "COMPLETENESS_CHECK": "The value follows the definition."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "tumour associated B cells",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a cell type, not an immortalized cell line.",
+        "SOURCE_CHECK": "The paper mentions \"tumor associated B cells\" (TAB), but these are primary cells or EBV-immortalized cells.",
+        "TRUTH_CHECK": "The material is a cell type/population, not a standard immortalized cell line.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "peripheral B cells",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"peripheral B cells\" describes a cell type, not an immortalized cell line.",
+        "SOURCE_CHECK": "The paper mentions \"peripheral B cells\" were collected from PBMC.",
+        "TRUTH_CHECK": "These are primary cells isolated from patients, not an immortalized cell line.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "caucasian",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the ethnicity of the patients.",
+        "TRUTH_CHECK": "The ethnicity is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT126",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Isobaric labeling was performed using 10plex tandem mass tag (TMT) reagents\". While the specific channel \"TMT126\" is not printed, it is a standard component of a TMT 10-plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT 10-plex experiment, and the other values in the column (TMT127N, etc.) confirm the use of a 10-plex set.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Isobaric labeling was performed using 10plex tandem mass tag (TMT) reagents\". While the specific channel \"TMT127N\" is not listed verbatim, it is a standard component of a TMT 10-plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT 10-plex experiment, and the value represents one of the channels used.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Isobaric labeling was performed using 10plex tandem mass tag (TMT) reagents\". While the specific channel \"TMT127C\" is not printed, the use of a 10-plex TMT kit implies the use of its constituent channels.",
+        "TRUTH_CHECK": "The runs are part of the proteomics experiment using TMT 10-plex labeling.",
+        "COMPLETENESS_CHECK": "The value follows the format for a labeled run by specifying the channel."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Isobaric labeling was performed using 10plex tandem mass tag (TMT) reagents\", but it does not list the specific channels used.",
+        "TRUTH_CHECK": "The use of TMT 10-plex implies the use of 10 specific channels; TMT128N is one of the standard channels for a TMT 10-plex kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Isobaric labeling was performed using 10plex tandem mass tag (TMT) reagents\". While the specific channel \"TMT128C\" is not printed, it is a standard component of a TMT 10-plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT 10-plex experiment, and the value represents one of the channels used.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Isobaric labeling was performed using 10plex tandem mass tag (TMT) reagents\". While the specific channel \"TMT129N\" is not listed verbatim, it is a standard component of a TMT 10-plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT 10-plex experiment, and the value represents one of the channels used.",
+        "COMPLETENESS_CHECK": "The value follows the required format for a labeled run."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Isobaric labeling was performed using 10plex tandem mass tag (TMT) reagents\". While the specific channel \"TMT129C\" is not explicitly named, it is a standard component of a TMT 10-plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT 10-plex experiment as described in the proteomics section.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT130N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"10plex tandem mass tag (TMT) reagents\" were used.",
+        "TRUTH_CHECK": "While the specific channel \"TMT130N\" is not printed, it is a standard channel of a TMT 10-plex kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT130C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT label channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Isobaric labeling was performed using 10plex tandem mass tag (TMT) reagents\". While the specific channel \"TMT130C\" is not listed verbatim, it is a standard component of a TMT 10-plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT 10-plex experiment, and the value represents one of the channels used.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT131",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that \"Isobaric labeling was performed using 10plex tandem mass tag (TMT) reagents\". While the specific channel \"TMT131\" is not listed verbatim, it is a standard channel of the TMT 10-plex kit mentioned.",
+        "TRUTH_CHECK": "The runs are part of a TMT 10-plex experiment, and the value represents one of the channels used.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Orbitrap Fusion Lumos",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states \"Eluting peptides were analyzed on an Orbitrap Fusion Lumos mass spectrometer\".",
+        "TRUTH_CHECK": "The Orbitrap Fusion Lumos was the primary instrument used for the proteomics analysis of the runs.",
+        "COMPLETENESS_CHECK": "Complete and follows the key-value format."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that proteins were digested with \"trypsin (1:50; Trypsin Gold, Promega)\".",
+        "TRUTH_CHECK": "The digestion was used for the proteomics analysis of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "no enrichment",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a controlled term for the absence of enrichment, the right field.",
+        "SOURCE_CHECK": "The paper describes a \"global proteome\" analysis in addition to phosphopeptide enrichment.",
+        "TRUTH_CHECK": "The runs for the global proteome did not undergo enrichment.",
+        "COMPLETENESS_CHECK": "Complete. \"no enrichment\" is the correct SDRF term."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "enrichment of phosphorylated Protein",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the enrichment of a peptide subset, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"residual samples were dried in a vacuum concentrator prior to TiO2 phosphopeptide enrichment.\"",
+        "TRUTH_CHECK": "The runs identified as \"Phospho\" used the TiO2 enrichment method to isolate phosphorylated peptides.",
+        "COMPLETENESS_CHECK": "The value uses the SDRF controlled term \"enrichment of phosphorylated protein\" (case difference is ignored)."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a proteomics workflow using TMT labeling, FASP digestion, and an Orbitrap Fusion Lumos mass spectrometer.",
+        "TRUTH_CHECK": "The runs described (global proteome and phosphoproteome) are part of the MS experiment.",
+        "COMPLETENESS_CHECK": "The value follows the required SDRF controlled terminology."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=TMT6plex;PP=Any N-term;AC=UNIMOD:737;MT=fixed",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=TMT10plex;PP=Any N-term;AC=UNIMOD:737;MT=fixed",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Isobaric labeling was performed using 10plex tandem mass tag (TMT) reagents\" and \"TMT tags... were set as fixed modifications\".",
+        "TRUTH_CHECK": "The paper specifies 10plex TMT, not 6plex.",
+        "COMPLETENESS_CHECK": "The value follows the format, but the plexity is a wrong detail."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;AC=UNIMOD:4;MT=fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"carbamidomethylation of C were set as fixed modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, AC, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;TA=M;AC=UNIMOD:35;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"oxidation of M... as variable modifications\" in the Data analysis section.",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Deamidation;TA=N,Q;AC=UNIMOD:7;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"deamidation of N and Q\" as variable modifications in the Data analysis section.",
+        "TRUTH_CHECK": "The modification was searched for all proteomics runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, AC, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phosphorylation;TA=S,T,Y;AC=UNIMOD:21;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"phosphorylation of S, T, and Y (TiO2-enriched samples only) as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it, as they are the phosphopeptide (TiO2-enriched) samples.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;TA;AC;MT format."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "0.01 Da",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "10 ppm",
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass tolerance for precursors, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"The precursor tolerance was set to 10 ppm, fragment tolerance to 0.01 Da for X!Tandem\".",
+        "TRUTH_CHECK": "The value \"0.01 Da\" is the fragment tolerance, not the precursor tolerance.",
+        "COMPLETENESS_CHECK": "The value follows the format but contains the wrong number/unit for this field."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "0.01 Da",
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states \"fragment tolerance to 0.01 Da for X!Tandem\" and \"10 ppm\" for precursor tolerance.",
+        "TRUTH_CHECK": "The value \"10 ppm\" is the precursor tolerance, not the fragment tolerance.",
+        "COMPLETENESS_CHECK": "The value follows the format, but it is the wrong number."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1 | row 133 = 1 | row 134 = 1 | row 135 = 1 | row 136 = 1 | row 137 = 1 | row 138 = 1 | row 139 = 1 | row 140 = 1 | row 141 = 1 | row 142 = 1 | row 143 = 1 | row 144 = 1 | row 145 = 1 | row 146 = 1 | row 147 = 1 | row 148 = 1 | row 149 = 1 | row 150 = 1 | row 151 = 1 | row 152 = 1 | row 153 = 1 | row 154 = 1 | row 155 = 1 | row 156 = 1 | row 157 = 1 | row 158 = 1 | row 159 = 1 | row 160 = 1 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 1 | row 166 = 1 | row 167 = 1 | row 168 = 1 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 1 | row 173 = 1 | row 174 = 1 | row 175 = 1 | row 176 = 1 | row 177 = 1 | row 178 = 1 | row 179 = 1 | row 180 = 1 | row 181 = 1 | row 182 = 1 | row 183 = 1 | row 184 = 1 | row 185 = 1 | row 186 = 1 | row 187 = 1 | row 188 = 1 | row 189 = 1 | row 190 = 1 | row 191 = 1 | row 192 = 1 | row 193 = 1 | row 194 = 1 | row 195 = 1 | row 196 = 1 | row 197 = 1 | row 198 = 1 | row 199 = 1 | row 200 = 1 | row 201 = 1 | row 202 = 1 | row 203 = 1 | row 204 = 1 | row 205 = 1 | row 206 = 1 | row 207 = 1 | row 208 = 1 | row 209 = 1 | row 210 = 1 | row 211 = 1 | row 212 = 1 | row 213 = 1 | row 214 = 1 | row 215 = 1 | row 216 = 1 | row 217 = 1 | row 218 = 1 | row 219 = 1 | row 220 = 1 | row 221 = 1 | row 222 = 1 | row 223 = 1 | row 224 = 1 | row 225 = 1 | row 226 = 1 | row 227 = 1 | row 228 = 1 | row 229 = 1 | row 230 = 1 | row 231 = 1 | row 232 = 1 | row 233 = 1 | row 234 = 1 | row 235 = 1 | row 236 = 1 | row 237 = 1 | row 238 = 1 | row 239 = 1 | row 240 = 1 | row 241 = 1 | row 242 = 1 | row 243 = 1 | row 244 = 1 | row 245 = 1 | row 246 = 1 | row 247 = 1 | row 248 = 1 | row 249 = 1 | row 250 = 1 | row 251 = 1 | row 252 = 1 | row 253 = 1 | row 254 = 1 | row 255 = 1 | row 256 = 1 | row 257 = 1 | row 258 = 1 | row 259 = 1 | row 260 = 1 | row 261 = 1 | row 262 = 1 | row 263 = 1 | row 264 = 1 | row 265 = 1 | row 266 = 1 | row 267 = 1 | row 268 = 1 | row 269 = 1 | row 270 = 1 | row 271 = 1 | row 272 = 1 | row 273 = 1 | row 274 = 1 | row 275 = 1 | row 276 = 1 | row 277 = 1 | row 278 = 1 | row 279 = 1 | row 280 = 1 | row 281 = 1 | row 282 = 1 | row 283 = 1 | row 284 = 1 | row 285 = 1 | row 286 = 1 | row 287 = 1 | row 288 = 1 | row 289 = 1 | row 290 = 1 | row 291 = 1 | row 292 = 1 | row 293 = 1 | row 294 = 1 | row 295 = 1 | row 296 = 1 | row 297 = 1 | row 298 = 1 | row 299 = 1 | row 300 = 1 | row 301 = 1 | row 302 = 1 | row 303 = 1 | row 304 = 1 | row 305 = 1 | row 306 = 1 | row 307 = 1 | row 308 = 1 | row 309 = 1 | row 310 = 1 | row 311 = 1 | row 312 = 1 | row 313 = 1 | row 314 = 1 | row 315 = 1 | row 316 = 1 | row 317 = 1 | row 318 = 1 | row 319 = 1 | row 320 = 1 | row 321 = 1 | row 322 = 1 | row 323 = 1 | row 324 = 1 | row 325 = 1 | row 326 = 1 | row 327 = 1 | row 328 = 1 | row 329 = 1 | row 330 = 1 | row 331 = 1 | row 332 = 1 | row 333 = 1 | row 334 = 1 | row 335 = 1 | row 336 = 1 | row 337 = 1 | row 338 = 1 | row 339 = 1 | row 340 = 1 | row 341 = 1 | row 342 = 1 | row 343 = 1 | row 344 = 1 | row 345 = 1 | row 346 = 1 | row 347 = 1 | row 348 = 1 | row 349 = 1 | row 350 = 1 | row 351 = 1 | row 352 = 1 | row 353 = 1 | row 354 = 1 | row 355 = 1 | row 356 = 1 | row 357 = 1 | row 358 = 1 | row 359 = 1 | row 360 = 1 | row 361 = 1 | row 362 = 1 | row 363 = 1 | row 364 = 1 | row 365 = 1 | row 366 = 1 | row 367 = 1 | row 368 = 1 | row 369 = 1 | row 370 = 1 | row 371 = 1 | row 372 = 1 | row 373 = 1 | row 374 = 1 | row 375 = 1 | row 376 = 1 | row 377 = 1 | row 378 = 1 | row 379 = 1 | row 380 = 1 | row 381 = 1 | row 382 = 1 | row 383 = 1 | row 384 = 1 | row 385 = 1 | row 386 = 1 | row 387 = 1 | row 388 = 1 | row 389 = 1 | row 390 = 1 | row 391 = 1 | row 392 = 1 | row 393 = 1 | row 394 = 1 | row 395 = 1 | row 396 = 1 | row 397 = 1 | row 398 = 1 | row 399 = 1 | row 400 = 1 | row 401 = 1 | row 402 = 1 | row 403 = 1 | row 404 = 1 | row 405 = 1 | row 406 = 1 | row 407 = 1 | row 408 = 1 | row 409 = 1 | row 410 = 1 | row 411 = 1 | row 412 = 1 | row 413 = 1 | row 414 = 1 | row 415 = 1 | row 416 = 1 | row 417 = 1 | row 418 = 1 | row 419 = 1 | row 420 = 1 | row 421 = 1 | row 422 = 1 | row 423 = 1 | row 424 = 1 | row 425 = 1 | row 426 = 1 | row 427 = 1 | row 428 = 1 | row 429 = 1 | row 430 = 1 | row 431 = 1 | row 432 = 1 | row 433 = 1 | row 434 = 1 | row 435 = 1 | row 436 = 1 | row 437 = 1 | row 438 = 1 | row 439 = 1 | row 440 = 1 | row 441 = 1 | row 442 = 1 | row 443 = 1 | row 444 = 1 | row 445 = 1 | row 446 = 1 | row 447 = 1 | row 448 = 1 | row 449 = 1 | row 450 = 1 | row 451 = 1 | row 452 = 1 | row 453 = 1 | row 454 = 1 | row 455 = 1 | row 456 = 1 | row 457 = 1 | row 458 = 1 | row 459 = 1 | row 460 = 1 | row 461 = 1 | row 462 = 1 | row 463 = 1 | row 464 = 1 | row 465 = 1 | row 466 = 1 | row 467 = 1 | row 468 = 1 | row 469 = 1 | row 470 = 1 | row 471 = 1 | row 472 = 1 | row 473 = 1 | row 474 = 1 | row 475 = 1 | row 476 = 1 | row 477 = 1 | row 478 = 1 | row 479 = 1 | row 480 = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes samples from multiple patients (P1, P2, P3, P4) and a pooled sample.",
+        "TRUTH_CHECK": "The mapping assigns the same biological replicate index (1) to runs from different patients (P1, P2, P3, P4), which are independent biological units.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value, but the values are logically incorrect."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1 | row 133 = 1 | row 134 = 1 | row 135 = 1 | row 136 = 1 | row 137 = 1 | row 138 = 1 | row 139 = 1 | row 140 = 1 | row 141 = 1 | row 142 = 1 | row 143 = 1 | row 144 = 1 | row 145 = 1 | row 146 = 1 | row 147 = 1 | row 148 = 1 | row 149 = 1 | row 150 = 1 | row 151 = 1 | row 152 = 1 | row 153 = 1 | row 154 = 1 | row 155 = 1 | row 156 = 1 | row 157 = 1 | row 158 = 1 | row 159 = 1 | row 160 = 1 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 1 | row 166 = 1 | row 167 = 1 | row 168 = 1 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 1 | row 173 = 1 | row 174 = 1 | row 175 = 1 | row 176 = 1 | row 177 = 1 | row 178 = 1 | row 179 = 1 | row 180 = 1 | row 181 = 1 | row 182 = 1 | row 183 = 1 | row 184 = 1 | row 185 = 1 | row 186 = 1 | row 187 = 1 | row 188 = 1 | row 189 = 1 | row 190 = 1 | row 191 = 1 | row 192 = 1 | row 193 = 1 | row 194 = 1 | row 195 = 1 | row 196 = 1 | row 197 = 1 | row 198 = 1 | row 199 = 1 | row 200 = 1 | row 201 = 1 | row 202 = 1 | row 203 = 1 | row 204 = 1 | row 205 = 1 | row 206 = 1 | row 207 = 1 | row 208 = 1 | row 209 = 1 | row 210 = 1 | row 211 = 1 | row 212 = 1 | row 213 = 1 | row 214 = 1 | row 215 = 1 | row 216 = 1 | row 217 = 1 | row 218 = 1 | row 219 = 1 | row 220 = 1 | row 221 = 1 | row 222 = 1 | row 223 = 1 | row 224 = 1 | row 225 = 1 | row 226 = 1 | row 227 = 1 | row 228 = 1 | row 229 = 1 | row 230 = 1 | row 231 = 1 | row 232 = 1 | row 233 = 1 | row 234 = 1 | row 235 = 1 | row 236 = 1 | row 237 = 1 | row 238 = 1 | row 239 = 1 | row 240 = 1 | row 241 = 1 | row 242 = 1 | row 243 = 1 | row 244 = 1 | row 245 = 1 | row 246 = 1 | row 247 = 1 | row 248 = 1 | row 249 = 1 | row 250 = 1 | row 251 = 1 | row 252 = 1 | row 253 = 1 | row 254 = 1 | row 255 = 1 | row 256 = 1 | row 257 = 1 | row 258 = 1 | row 259 = 1 | row 260 = 1 | row 261 = 1 | row 262 = 1 | row 263 = 1 | row 264 = 1 | row 265 = 1 | row 266 = 1 | row 267 = 1 | row 268 = 1 | row 269 = 1 | row 270 = 1 | row 271 = 1 | row 272 = 1 | row 273 = 1 | row 274 = 1 | row 275 = 1 | row 276 = 1 | row 277 = 1 | row 278 = 1 | row 279 = 1 | row 280 = 1 | row 281 = 1 | row 282 = 1 | row 283 = 1 | row 284 = 1 | row 285 = 1 | row 286 = 1 | row 287 = 1 | row 288 = 1 | row 289 = 1 | row 290 = 1 | row 291 = 1 | row 292 = 1 | row 293 = 1 | row 294 = 1 | row 295 = 1 | row 296 = 1 | row 297 = 1 | row 298 = 1 | row 299 = 1 | row 300 = 1 | row 301 = 1 | row 302 = 1 | row 303 = 1 | row 304 = 1 | row 305 = 1 | row 306 = 1 | row 307 = 1 | row 308 = 1 | row 309 = 1 | row 310 = 1 | row 311 = 1 | row 312 = 1 | row 313 = 1 | row 314 = 1 | row 315 = 1 | row 316 = 1 | row 317 = 1 | row 318 = 1 | row 319 = 1 | row 320 = 1 | row 321 = 1 | row 322 = 1 | row 323 = 1 | row 324 = 1 | row 325 = 1 | row 326 = 1 | row 327 = 1 | row 328 = 1 | row 329 = 1 | row 330 = 1 | row 331 = 1 | row 332 = 1 | row 333 = 1 | row 334 = 1 | row 335 = 1 | row 336 = 1 | row 337 = 1 | row 338 = 1 | row 339 = 1 | row 340 = 1 | row 341 = 1 | row 342 = 1 | row 343 = 1 | row 344 = 1 | row 345 = 1 | row 346 = 1 | row 347 = 1 | row 348 = 1 | row 349 = 1 | row 350 = 1 | row 351 = 1 | row 352 = 1 | row 353 = 1 | row 354 = 1 | row 355 = 1 | row 356 = 1 | row 357 = 1 | row 358 = 1 | row 359 = 1 | row 360 = 1 | row 361 = 1 | row 362 = 1 | row 363 = 1 | row 364 = 1 | row 365 = 1 | row 366 = 1 | row 367 = 1 | row 368 = 1 | row 369 = 1 | row 370 = 1 | row 371 = 1 | row 372 = 1 | row 373 = 1 | row 374 = 1 | row 375 = 1 | row 376 = 1 | row 377 = 1 | row 378 = 1 | row 379 = 1 | row 380 = 1 | row 381 = 1 | row 382 = 1 | row 383 = 1 | row 384 = 1 | row 385 = 1 | row 386 = 1 | row 387 = 1 | row 388 = 1 | row 389 = 1 | row 390 = 1 | row 391 = 1 | row 392 = 1 | row 393 = 1 | row 394 = 1 | row 395 = 1 | row 396 = 1 | row 397 = 1 | row 398 = 1 | row 399 = 1 | row 400 = 1 | row 401 = 1 | row 402 = 1 | row 403 = 1 | row 404 = 1 | row 405 = 1 | row 406 = 1 | row 407 = 1 | row 408 = 1 | row 409 = 1 | row 410 = 1 | row 411 = 1 | row 412 = 1 | row 413 = 1 | row 414 = 1 | row 415 = 1 | row 416 = 1 | row 417 = 1 | row 418 = 1 | row 419 = 1 | row 420 = 1 | row 421 = 1 | row 422 = 1 | row 423 = 1 | row 424 = 1 | row 425 = 1 | row 426 = 1 | row 427 = 1 | row 428 = 1 | row 429 = 1 | row 430 = 1 | row 431 = 1 | row 432 = 1 | row 433 = 1 | row 434 = 1 | row 435 = 1 | row 436 = 1 | row 437 = 1 | row 438 = 1 | row 439 = 1 | row 440 = 1 | row 441 = 1 | row 442 = 1 | row 443 = 1 | row 444 = 1 | row 445 = 1 | row 446 = 1 | row 447 = 1 | row 448 = 1 | row 449 = 1 | row 450 = 1 | row 451 = 1 | row 452 = 1 | row 453 = 1 | row 454 = 1 | row 455 = 1 | row 456 = 1 | row 457 = 1 | row 458 = 1 | row 459 = 1 | row 460 = 1 | row 461 = 1 | row 462 = 1 | row 463 = 1 | row 464 = 1 | row 465 = 1 | row 466 = 1 | row 467 = 1 | row 468 = 1 | row 469 = 1 | row 470 = 1 | row 471 = 1 | row 472 = 1 | row 473 = 1 | row 474 = 1 | row 475 = 1 | row 476 = 1 | row 477 = 1 | row 478 = 1 | row 479 = 1 | row 480 = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents technical replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a proteomics experiment with TMT labeling and offline fractionation, but does not explicitly state the number of technical replicates per sample.",
+        "TRUTH_CHECK": "The mapping assigns a technical replicate index of 1 to every run. In the absence of stated technical replicates in the paper, assigning 1 to each run is the standard convention.",
+        "COMPLETENESS_CHECK": "The format is correct, providing an index for every run."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "row 1 = 9 | row 2 = 9 | row 3 = 9 | row 4 = 9 | row 5 = 9 | row 6 = 9 | row 7 = 9 | row 8 = 9 | row 9 = 9 | row 10 = 9 | row 11 = 8 | row 12 = 8 | row 13 = 8 | row 14 = 8 | row 15 = 8 | row 16 = 8 | row 17 = 8 | row 18 = 8 | row 19 = 8 | row 20 = 8 | row 21 = 7 | row 22 = 7 | row 23 = 7 | row 24 = 7 | row 25 = 7 | row 26 = 7 | row 27 = 7 | row 28 = 7 | row 29 = 7 | row 30 = 7 | row 31 = 6 | row 32 = 6 | row 33 = 6 | row 34 = 6 | row 35 = 6 | row 36 = 6 | row 37 = 6 | row 38 = 6 | row 39 = 6 | row 40 = 6 | row 41 = 5 | row 42 = 5 | row 43 = 5 | row 44 = 5 | row 45 = 5 | row 46 = 5 | row 47 = 5 | row 48 = 5 | row 49 = 5 | row 50 = 5 | row 51 = 4 | row 52 = 4 | row 53 = 4 | row 54 = 4 | row 55 = 4 | row 56 = 4 | row 57 = 4 | row 58 = 4 | row 59 = 4 | row 60 = 4 | row 61 = 3 | row 62 = 3 | row 63 = 3 | row 64 = 3 | row 65 = 3 | row 66 = 3 | row 67 = 3 | row 68 = 3 | row 69 = 3 | row 70 = 3 | row 71 = 2 | row 72 = 2 | row 73 = 2 | row 74 = 2 | row 75 = 2 | row 76 = 2 | row 77 = 2 | row 78 = 2 | row 79 = 2 | row 80 = 2 | row 81 = 12 | row 82 = 12 | row 83 = 12 | row 84 = 12 | row 85 = 12 | row 86 = 12 | row 87 = 12 | row 88 = 12 | row 89 = 12 | row 90 = 12 | row 91 = 11 | row 92 = 11 | row 93 = 11 | row 94 = 11 | row 95 = 11 | row 96 = 11 | row 97 = 11 | row 98 = 11 | row 99 = 11 | row 100 = 11 | row 101 = 10 | row 102 = 10 | row 103 = 10 | row 104 = 10 | row 105 = 10 | row 106 = 10 | row 107 = 10 | row 108 = 10 | row 109 = 10 | row 110 = 10 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 9 | row 122 = 9 | row 123 = 9 | row 124 = 9 | row 125 = 9 | row 126 = 9 | row 127 = 9 | row 128 = 9 | row 129 = 9 | row 130 = 9 | row 131 = 8 | row 132 = 8 | row 133 = 8 | row 134 = 8 | row 135 = 8 | row 136 = 8 | row 137 = 8 | row 138 = 8 | row 139 = 8 | row 140 = 8 | row 141 = 7 | row 142 = 7 | row 143 = 7 | row 144 = 7 | row 145 = 7 | row 146 = 7 | row 147 = 7 | row 148 = 7 | row 149 = 7 | row 150 = 7 | row 151 = 6 | row 152 = 6 | row 153 = 6 | row 154 = 6 | row 155 = 6 | row 156 = 6 | row 157 = 6 | row 158 = 6 | row 159 = 6 | row 160 = 6 | row 161 = 5 | row 162 = 5 | row 163 = 5 | row 164 = 5 | row 165 = 5 | row 166 = 5 | row 167 = 5 | row 168 = 5 | row 169 = 5 | row 170 = 5 | row 171 = 4 | row 172 = 4 | row 173 = 4 | row 174 = 4 | row 175 = 4 | row 176 = 4 | row 177 = 4 | row 178 = 4 | row 179 = 4 | row 180 = 4 | row 181 = 3 | row 182 = 3 | row 183 = 3 | row 184 = 3 | row 185 = 3 | row 186 = 3 | row 187 = 3 | row 188 = 3 | row 189 = 3 | row 190 = 3 | row 191 = 2 | row 192 = 2 | row 193 = 2 | row 194 = 2 | row 195 = 2 | row 196 = 2 | row 197 = 2 | row 198 = 2 | row 199 = 2 | row 200 = 2 | row 201 = 12 | row 202 = 12 | row 203 = 12 | row 204 = 12 | row 205 = 12 | row 206 = 12 | row 207 = 12 | row 208 = 12 | row 209 = 12 | row 210 = 12 | row 211 = 11 | row 212 = 11 | row 213 = 11 | row 214 = 11 | row 215 = 11 | row 216 = 11 | row 217 = 11 | row 218 = 11 | row 219 = 11 | row 220 = 11 | row 221 = 10 | row 222 = 10 | row 223 = 10 | row 224 = 10 | row 225 = 10 | row 226 = 10 | row 227 = 10 | row 228 = 10 | row 229 = 10 | row 230 = 10 | row 231 = 1 | row 232 = 1 | row 233 = 1 | row 234 = 1 | row 235 = 1 | row 236 = 1 | row 237 = 1 | row 238 = 1 | row 239 = 1 | row 240 = 1 | row 241 = 9 | row 242 = 9 | row 243 = 9 | row 244 = 9 | row 245 = 9 | row 246 = 9 | row 247 = 9 | row 248 = 9 | row 249 = 9 | row 250 = 9 | row 251 = 8 | row 252 = 8 | row 253 = 8 | row 254 = 8 | row 255 = 8 | row 256 = 8 | row 257 = 8 | row 258 = 8 | row 259 = 8 | row 260 = 8 | row 261 = 7 | row 262 = 7 | row 263 = 7 | row 264 = 7 | row 265 = 7 | row 266 = 7 | row 267 = 7 | row 268 = 7 | row 269 = 7 | row 270 = 7 | row 271 = 6 | row 272 = 6 | row 273 = 6 | row 274 = 6 | row 275 = 6 | row 276 = 6 | row 277 = 6 | row 278 = 6 | row 279 = 6 | row 280 = 6 | row 281 = 5 | row 282 = 5 | row 283 = 5 | row 284 = 5 | row 285 = 5 | row 286 = 5 | row 287 = 5 | row 288 = 5 | row 289 = 5 | row 290 = 5 | row 291 = 4 | row 292 = 4 | row 293 = 4 | row 294 = 4 | row 295 = 4 | row 296 = 4 | row 297 = 4 | row 298 = 4 | row 299 = 4 | row 300 = 4 | row 301 = 2 | row 302 = 2 | row 303 = 2 | row 304 = 2 | row 305 = 2 | row 306 = 2 | row 307 = 2 | row 308 = 2 | row 309 = 2 | row 310 = 2 | row 311 = 12 | row 312 = 12 | row 313 = 12 | row 314 = 12 | row 315 = 12 | row 316 = 12 | row 317 = 12 | row 318 = 12 | row 319 = 12 | row 320 = 12 | row 321 = 11 | row 322 = 11 | row 323 = 11 | row 324 = 11 | row 325 = 11 | row 326 = 11 | row 327 = 11 | row 328 = 11 | row 329 = 11 | row 330 = 11 | row 331 = 10 | row 332 = 10 | row 333 = 10 | row 334 = 10 | row 335 = 10 | row 336 = 10 | row 337 = 10 | row 338 = 10 | row 339 = 10 | row 340 = 10 | row 341 = 1 | row 342 = 1 | row 343 = 1 | row 344 = 1 | row 345 = 1 | row 346 = 1 | row 347 = 1 | row 348 = 1 | row 349 = 1 | row 350 = 1 | row 351 = 9 | row 352 = 9 | row 353 = 9 | row 354 = 9 | row 355 = 9 | row 356 = 9 | row 357 = 9 | row 358 = 9 | row 359 = 9 | row 360 = 9 | row 361 = 8 | row 362 = 8 | row 363 = 8 | row 364 = 8 | row 365 = 8 | row 366 = 8 | row 367 = 8 | row 368 = 8 | row 369 = 8 | row 370 = 8 | row 371 = 7 | row 372 = 7 | row 373 = 7 | row 374 = 7 | row 375 = 7 | row 376 = 7 | row 377 = 7 | row 378 = 7 | row 379 = 7 | row 380 = 7 | row 381 = 6 | row 382 = 6 | row 383 = 6 | row 384 = 6 | row 385 = 6 | row 386 = 6 | row 387 = 6 | row 388 = 6 | row 389 = 6 | row 390 = 6 | row 391 = 5 | row 392 = 5 | row 393 = 5 | row 394 = 5 | row 395 = 5 | row 396 = 5 | row 397 = 5 | row 398 = 5 | row 399 = 5 | row 400 = 5 | row 401 = 4 | row 402 = 4 | row 403 = 4 | row 404 = 4 | row 405 = 4 | row 406 = 4 | row 407 = 4 | row 408 = 4 | row 409 = 4 | row 410 = 4 | row 411 = 3 | row 412 = 3 | row 413 = 3 | row 414 = 3 | row 415 = 3 | row 416 = 3 | row 417 = 3 | row 418 = 3 | row 419 = 3 | row 420 = 3 | row 421 = 2 | row 422 = 2 | row 423 = 2 | row 424 = 2 | row 425 = 2 | row 426 = 2 | row 427 = 2 | row 428 = 2 | row 429 = 2 | row 430 = 2 | row 431 = 1 | row 432 = 1 | row 433 = 1 | row 434 = 1 | row 435 = 1 | row 436 = 1 | row 437 = 1 | row 438 = 1 | row 439 = 1 | row 440 = 1 | row 441 = 12 | row 442 = 12 | row 443 = 12 | row 444 = 12 | row 445 = 12 | row 446 = 12 | row 447 = 12 | row 448 = 12 | row 449 = 12 | row 450 = 12 | row 451 = 11 | row 452 = 11 | row 453 = 11 | row 454 = 11 | row 455 = 11 | row 456 = 11 | row 457 = 11 | row 458 = 11 | row 459 = 11 | row 460 = 11 | row 461 = 10 | row 462 = 10 | row 463 = 10 | row 464 = 10 | row 465 = 10 | row 466 = 10 | row 467 = 10 | row 468 = 10 | row 469 = 10 | row 470 = 10 | row 471 = 3 | row 472 = 3 | row 473 = 3 | row 474 = 3 | row 475 = 3 | row 476 = 3 | row 477 = 3 | row 478 = 3 | row 479 = 3 | row 480 = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fraction index, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that peptides were pooled into a total number of 12 fractions using a concatenation strategy.",
+        "TRUTH_CHECK": "The runs are correctly mapped to the 12 fractions described in the methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "mock",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"mock\" describes a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper states that B cells were incubated in \"1 ml MCM or control medium\" and refers to \"Mock- or MCM-treated immortalized B cells\".",
+        "TRUTH_CHECK": "The value is correct for the runs listed, as they are identified as \"mock\" in the assay column and correspond to the control group in the induction experiments.",
+        "COMPLETENESS_CHECK": "The value is a simple term and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "MCM",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"MCM\" describes a treatment condition (Melanoma Conditioned Medium), which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper states that B cells were incubated in \"1 ml MCM or control medium\" for induction experiments.",
+        "TRUTH_CHECK": "The runs carrying this value are identified as \"MCM\" in the assay column, matching the treatment described in the methods.",
+        "COMPLETENESS_CHECK": "The value is a plain text identifier for the treatment group."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "NumberOfMissedCleavages",
+      "extracted_value": "1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of missed cleavages, which is the correct information for a column named NumberOfMissedCleavages.",
+        "SOURCE_CHECK": "The proteomics analysis section states \"1 missed cleavage was allowed\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it describes the search parameter used for the proteomics analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

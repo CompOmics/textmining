@@ -1,0 +1,447 @@
+{
+  "paper_id": "PXD003977",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper uses the MCF-7 breast cancer cell line and the UniProt Homo sapiens database, which allows the inference of the species.",
+        "TRUTH_CHECK": "The proteins analyzed from the MCF-7 cell line are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "breast",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper states the use of MCF-7 breast cancer cells; the organ of origin (breast) is an allowed inference for this cell line.",
+        "TRUTH_CHECK": "The analyzed material is the MCF-7 cell line, which originates from the breast.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The paper identifies the cell line as MCF-7; the definition allows inferring the cell type for known cell lines (MCF-7 is a well-known breast epithelial cell line).",
+        "TRUTH_CHECK": "The runs are derived from MCF-7 cells, which are epithelial.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "breast adenocarcinoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of origin for the cell line, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the use of \"MCF-7 breast cancer cells\"; the definition explicitly allows inferring \"breast adenocarcinoma\" for the MCF-7 cell line.",
+        "TRUTH_CHECK": "The runs used the MCF-7 cell line, so this disease state is correct for them.",
+        "COMPLETENESS_CHECK": "The value follows the definition for inferred disease states of cell lines."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "69Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of the donor for the MCF-7 cell line.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the sex field.",
+        "SOURCE_CHECK": "The paper does not state the sex of the donor for the MCF-7 cell line.",
+        "TRUTH_CHECK": "The sex is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MCF-7",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an immortalized cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions the \"MCF-7 breast cancer cell line\" in the abstract and methods.",
+        "TRUTH_CHECK": "The MS analysis was performed on proteins extracted from MCF-7 cells.",
+        "COMPLETENESS_CHECK": "Complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the right field.",
+        "SOURCE_CHECK": "The paper states that MCF-7 breast cancer cells were used.",
+        "TRUTH_CHECK": "The material analysed is a cell line.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the controlled terms listed in the field definition."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a developmental stage, which is the right field.",
+        "SOURCE_CHECK": "The related column \"age\" provides \"69Y\", and the definition allows inferring \"adult\" from a stated adult age.",
+        "TRUTH_CHECK": "The sample is from a 69-year-old donor, which is an adult.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Caucasian",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions the use of the MCF-7 breast cancer cell line, but does not state the ethnicity of the donor.",
+        "TRUTH_CHECK": "The ethnicity is not provided in the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the labeling field.",
+        "SOURCE_CHECK": "No labels (TMT, SILAC, etc.) are mentioned in the paper, which allows the inference of a label-free experiment.",
+        "TRUTH_CHECK": "The runs are label-free.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Orbitrap Fusion Lumos;AC=MS:1002732",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state \"MS data were acquired with an Orbitrap Fusion Lumos instrument\".",
+        "TRUTH_CHECK": "The instrument was used for all the listed runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001915;NT=leukocyte elastase",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state that 50 μg of elastase (Worthington Biochemical, no. LS006365) was used.",
+        "TRUTH_CHECK": "The runs listed (containing \"ET\" in the filename) correspond to the elastase digests.",
+        "COMPLETENESS_CHECK": "Complete. \"leukocyte elastase\" is a correct normalized term for the elastase used."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state that the gel slurry was split for digestion by separate enzymes, specifically mentioning trypsin.",
+        "TRUTH_CHECK": "The runs listed are identified as \"Trypsin\" runs and the paper confirms trypsin was used for one part of the experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state that the gel slurry was split for digestion by separate enzymes, specifically trypsin or elastase.",
+        "TRUTH_CHECK": "Trypsin was used for a subset of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a technology type, the right field.",
+        "SOURCE_CHECK": "The paper describes a deep proteome analysis using LC-MS/MS, which is a proteomic profiling experiment.",
+        "TRUTH_CHECK": "The value is correct for the runs described.",
+        "COMPLETENESS_CHECK": "The value uses the official SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"Oxidation (M)\" was set as a variable modification.",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residues, and status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Deamidated;TA=N,Q;AC=UNIMOD:7;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"Deamidation (N,Q)\" as a variable modification.",
+        "TRUTH_CHECK": "The modification was searched for all samples.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residues, and status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Propionamide;AC=UNIMOD:24;TA=C;MT=fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"set propionamide as fixed cysteine modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was a fixed modification for the search.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, AC, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Propionamide;AC=UNIMOD:24;TA=K;PP=Any N-term;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"set propionamide as fixed cysteine modification and variable modification on lysine and N-termini\".",
+        "TRUTH_CHECK": "The value describes the variable propionamide modification on K and N-termini.",
+        "COMPLETENESS_CHECK": "The value follows the required format."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"20 ppm mass error tolerance for the precursor\".",
+        "TRUTH_CHECK": "This tolerance was used for the database searches of the runs.",
+        "COMPLETENESS_CHECK": "The value follows the definition format, including the unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.5 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that CID/IT spectra were searched with 0.5 Da for fragment masses.",
+        "TRUTH_CHECK": "The runs listed are associated with the CID/IT search parameters.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.05 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states that HCD/FT spectra were searched with a 0.05 Da mass tolerance for fragment masses.",
+        "TRUTH_CHECK": "The runs carrying this value are the HCD/FT spectra (indicated by the \"High\" and \"uni\" in the filenames and the context of the CHOPIN/Universal methods), for which 0.05 Da is the correct tolerance.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and unit as printed."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "FL0026_RFI_261114_Deep_High_ET_F12F27_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F13F28_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F14F29_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F15F30_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F16F31_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F17F32_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F18F33_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F19F34_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F20F35_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F21F36_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F22F37_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F23F38_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F24F39_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F25F40_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F26F41_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F12F27_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F13F28_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F14F29_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F15F30_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F16F31_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F17F32_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F18F33_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F19F34_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F20F35_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F21F36_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F22F37_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F23F38_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F24F39_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F25F40_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F26F41_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F12_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F13_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F14_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F15_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F16_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F17_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F18_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F19_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F20_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F21_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F22_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F23_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F24_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F25_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F26_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F27_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F28_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F29_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F30_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F31_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F32_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F33_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F34_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F35_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F36_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F37_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F38_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F39_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F40_hybrid_151219140953.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F41_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F12F27_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F12F27_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F13F28_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F13F28_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F14F29_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F14F29_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F15F30_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F15F30_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F16F31_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F16F31_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F17F32_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F17F32_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F18F33_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F18F33_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F19F34_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F19F34_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F20F35_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F20F35_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F21F36_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F21F36_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F22F37_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F22F37_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F23F38_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F23F38_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F24F39_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F24F39_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F25F40_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F25F40_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F26F41_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F26F41_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F12F27_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F12F27_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F13F28_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F13F28_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F14F29_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F14F29_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F15F30_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F15F30_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F16F31_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F16F31_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F17F32_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F17F32_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F18F33_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F18F33_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F19F34_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F19F34_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F20F35_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F20F35_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F21F36_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F21F36_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F22F37_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F22F37_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F23F38_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F23F38_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F24F39_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F24F39_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F25F40_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F25F40_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F26F41_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F26F41_uni.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes the use of a single cell line (MCF-7) and a single protein lysate preparation (5 mg of protein) that was split for different enzyme digestions and then prefractionated.",
+        "TRUTH_CHECK": "All runs are derived from the same biological source (one batch of MCF-7 cells), so they should all share the same biological replicate index.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned the index 1."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "FL0026_RFI_261114_Deep_High_ET_F12F27_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F13F28_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F14F29_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F15F30_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F16F31_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F17F32_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F18F33_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F19F34_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F20F35_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F21F36_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F22F37_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F23F38_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F24F39_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F25F40_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F26F41_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F12F27_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F13F28_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F14F29_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F15F30_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F16F31_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F17F32_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F18F33_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F19F34_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F20F35_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F21F36_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F22F37_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F23F38_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F24F39_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F25F40_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F26F41_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F12_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F13_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F14_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F15_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F16_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F17_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F18_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F19_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F20_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F21_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F22_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F23_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F24_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F25_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F26_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F27_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F28_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F29_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F30_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F31_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F32_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F33_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F34_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F35_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F36_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F37_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F38_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F39_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F40_hybrid_151219140953.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F41_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F12F27_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F12F27_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F13F28_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F13F28_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F14F29_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F14F29_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F15F30_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F15F30_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F16F31_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F16F31_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F17F32_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F17F32_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F18F33_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F18F33_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F19F34_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F19F34_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F20F35_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F20F35_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F21F36_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F21F36_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F22F37_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F22F37_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F23F38_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F23F38_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F24F39_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F24F39_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F25F40_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F25F40_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F26F41_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F26F41_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F12F27_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F12F27_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F13F28_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F13F28_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F14F29_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F14F29_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F15F30_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F15F30_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F16F31_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F16F31_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F17F32_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F17F32_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F18F33_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F18F33_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F19F34_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F19F34_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F20F35_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F20F35_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F21F36_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F21F36_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F22F37_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F22F37_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F23F38_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F23F38_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F24F39_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F24F39_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F25F40_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F25F40_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F26F41_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F26F41_uni.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a single cell line (MCF-7) processed into different digests and fractions, with no mention of independent biological replicates or repeated injections of the same material.",
+        "TRUTH_CHECK": "All runs are derived from the same biological source (one cell line preparation). Since they are not repeated runs of the same material but rather different fractions or different acquisition methods on the same material, they are correctly assigned as technical replicate 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index of 1, which is correct for material measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "FL0026_RFI_261114_Deep_High_ET_F12F27_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F13F28_hybrid.raw = 2 | FL0026_RFI_261114_Deep_High_ET_F14F29_hybrid.raw = 3 | FL0026_RFI_261114_Deep_High_ET_F15F30_hybrid.raw = 4 | FL0026_RFI_261114_Deep_High_ET_F16F31_hybrid.raw = 5 | FL0026_RFI_261114_Deep_High_ET_F17F32_hybrid.raw = 6 | FL0026_RFI_261114_Deep_High_ET_F18F33_hybrid.raw = 7 | FL0026_RFI_261114_Deep_High_ET_F19F34_hybrid.raw = 8 | FL0026_RFI_261114_Deep_High_ET_F20F35_hybrid.raw = 9 | FL0026_RFI_261114_Deep_High_ET_F21F36_hybrid.raw = 10 | FL0026_RFI_261114_Deep_High_ET_F22F37_hybrid.raw = 11 | FL0026_RFI_261114_Deep_High_ET_F23F38_hybrid.raw = 12 | FL0026_RFI_261114_Deep_High_ET_F24F39_hybrid.raw = 13 | FL0026_RFI_261114_Deep_High_ET_F25F40_hybrid.raw = 14 | FL0026_RFI_261114_Deep_High_ET_F26F41_hybrid.raw = 15 | FL0026_RFI_261114_Deep_High_ET_F12F27_uni.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F13F28_uni.raw = 2 | FL0026_RFI_261114_Deep_High_ET_F14F29_uni.raw = 3 | FL0026_RFI_261114_Deep_High_ET_F15F30_uni.raw = 4 | FL0026_RFI_261114_Deep_High_ET_F16F31_uni.raw = 5 | FL0026_RFI_261114_Deep_High_ET_F17F32_uni.raw = 6 | FL0026_RFI_261114_Deep_High_ET_F18F33_uni.raw = 7 | FL0026_RFI_261114_Deep_High_ET_F19F34_uni.raw = 8 | FL0026_RFI_261114_Deep_High_ET_F20F35_uni.raw = 9 | FL0026_RFI_261114_Deep_High_ET_F21F36_uni.raw = 10 | FL0026_RFI_261114_Deep_High_ET_F22F37_uni.raw = 11 | FL0026_RFI_261114_Deep_High_ET_F23F38_uni.raw = 12 | FL0026_RFI_261114_Deep_High_ET_F24F39_uni.raw = 13 | FL0026_RFI_261114_Deep_High_ET_F25F40_uni.raw = 14 | FL0026_RFI_261114_Deep_High_ET_F26F41_uni.raw = 15 | FL0026_RFI_261114_Deep_High_ET_F12_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_ET_F13_hybrid.raw = 2 | FL0026_RFI_261114_Deep_High_ET_F14_hybrid.raw = 3 | FL0026_RFI_261114_Deep_High_ET_F15_hybrid.raw = 4 | FL0026_RFI_261114_Deep_High_ET_F16_hybrid.raw = 5 | FL0026_RFI_261114_Deep_High_ET_F17_hybrid.raw = 6 | FL0026_RFI_261114_Deep_High_ET_F18_hybrid.raw = 7 | FL0026_RFI_261114_Deep_High_ET_F19_hybrid.raw = 8 | FL0026_RFI_261114_Deep_High_ET_F20_hybrid.raw = 9 | FL0026_RFI_261114_Deep_High_ET_F21_hybrid.raw = 10 | FL0026_RFI_261114_Deep_High_ET_F22_hybrid.raw = 11 | FL0026_RFI_261114_Deep_High_ET_F23_hybrid.raw = 12 | FL0026_RFI_261114_Deep_High_ET_F24_hybrid.raw = 13 | FL0026_RFI_261114_Deep_High_ET_F25_hybrid.raw = 14 | FL0026_RFI_261114_Deep_High_ET_F26_hybrid.raw = 15 | FL0026_RFI_261114_Deep_High_ET_F27_hybrid.raw = 16 | FL0026_RFI_261114_Deep_High_ET_F28_hybrid.raw = 17 | FL0026_RFI_261114_Deep_High_ET_F29_hybrid.raw = 18 | FL0026_RFI_261114_Deep_High_ET_F30_hybrid.raw = 19 | FL0026_RFI_261114_Deep_High_ET_F31_hybrid.raw = 20 | FL0026_RFI_261114_Deep_High_ET_F32_hybrid.raw = 21 | FL0026_RFI_261114_Deep_High_ET_F33_hybrid.raw = 22 | FL0026_RFI_261114_Deep_High_ET_F34_hybrid.raw = 23 | FL0026_RFI_261114_Deep_High_ET_F35_hybrid.raw = 24 | FL0026_RFI_261114_Deep_High_ET_F36_hybrid.raw = 25 | FL0026_RFI_261114_Deep_High_ET_F37_hybrid.raw = 26 | FL0026_RFI_261114_Deep_High_ET_F38_hybrid.raw = 27 | FL0026_RFI_261114_Deep_High_ET_F39_hybrid.raw = 28 | FL0026_RFI_261114_Deep_High_ET_F40_hybrid_151219140953.raw = 29 | FL0026_RFI_261114_Deep_High_ET_F41_hybrid.raw = 30 | FL0026_RFI_261114_Deep_High_E_F12F27_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_E_F12F27_uni.raw = 1 | FL0026_RFI_261114_Deep_High_E_F13F28_hybrid.raw = 2 | FL0026_RFI_261114_Deep_High_E_F13F28_uni.raw = 2 | FL0026_RFI_261114_Deep_High_E_F14F29_hybrid.raw = 3 | FL0026_RFI_261114_Deep_High_E_F14F29_uni.raw = 3 | FL0026_RFI_261114_Deep_High_E_F15F30_hybrid.raw = 4 | FL0026_RFI_261114_Deep_High_E_F15F30_uni.raw = 4 | FL0026_RFI_261114_Deep_High_E_F16F31_hybrid.raw = 5 | FL0026_RFI_261114_Deep_High_E_F16F31_uni.raw = 5 | FL0026_RFI_261114_Deep_High_E_F17F32_hybrid.raw = 6 | FL0026_RFI_261114_Deep_High_E_F17F32_uni.raw = 6 | FL0026_RFI_261114_Deep_High_E_F18F33_hybrid.raw = 7 | FL0026_RFI_261114_Deep_High_E_F18F33_uni.raw = 7 | FL0026_RFI_261114_Deep_High_E_F19F34_hybrid.raw = 8 | FL0026_RFI_261114_Deep_High_E_F19F34_uni.raw = 8 | FL0026_RFI_261114_Deep_High_E_F20F35_hybrid.raw = 9 | FL0026_RFI_261114_Deep_High_E_F20F35_uni.raw = 9 | FL0026_RFI_261114_Deep_High_E_F21F36_hybrid.raw = 10 | FL0026_RFI_261114_Deep_High_E_F21F36_uni.raw = 10 | FL0026_RFI_261114_Deep_High_E_F22F37_hybrid.raw = 11 | FL0026_RFI_261114_Deep_High_E_F22F37_uni.raw = 11 | FL0026_RFI_261114_Deep_High_E_F23F38_hybrid.raw = 12 | FL0026_RFI_261114_Deep_High_E_F23F38_uni.raw = 12 | FL0026_RFI_261114_Deep_High_E_F24F39_hybrid.raw = 13 | FL0026_RFI_261114_Deep_High_E_F24F39_uni.raw = 13 | FL0026_RFI_261114_Deep_High_E_F25F40_hybrid.raw = 14 | FL0026_RFI_261114_Deep_High_E_F25F40_uni.raw = 14 | FL0026_RFI_261114_Deep_High_E_F26F41_hybrid.raw = 15 | FL0026_RFI_261114_Deep_High_E_F26F41_uni.raw = 15 | FL0026_RFI_261114_Deep_High_Trypsin_F12F27_hybrid.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F12F27_uni.raw = 1 | FL0026_RFI_261114_Deep_High_Trypsin_F13F28_hybrid.raw = 2 | FL0026_RFI_261114_Deep_High_Trypsin_F13F28_uni.raw = 2 | FL0026_RFI_261114_Deep_High_Trypsin_F14F29_hybrid.raw = 3 | FL0026_RFI_261114_Deep_High_Trypsin_F14F29_uni.raw = 3 | FL0026_RFI_261114_Deep_High_Trypsin_F15F30_hybrid.raw = 4 | FL0026_RFI_261114_Deep_High_Trypsin_F15F30_uni.raw = 4 | FL0026_RFI_261114_Deep_High_Trypsin_F16F31_hybrid.raw = 5 | FL0026_RFI_261114_Deep_High_Trypsin_F16F31_uni.raw = 5 | FL0026_RFI_261114_Deep_High_Trypsin_F17F32_hybrid.raw = 6 | FL0026_RFI_261114_Deep_High_Trypsin_F17F32_uni.raw = 6 | FL0026_RFI_261114_Deep_High_Trypsin_F18F33_hybrid.raw = 7 | FL0026_RFI_261114_Deep_High_Trypsin_F18F33_uni.raw = 7 | FL0026_RFI_261114_Deep_High_Trypsin_F19F34_hybrid.raw = 8 | FL0026_RFI_261114_Deep_High_Trypsin_F19F34_uni.raw = 8 | FL0026_RFI_261114_Deep_High_Trypsin_F20F35_hybrid.raw = 9 | FL0026_RFI_261114_Deep_High_Trypsin_F20F35_uni.raw = 9 | FL0026_RFI_261114_Deep_High_Trypsin_F21F36_hybrid.raw = 10 | FL0026_RFI_261114_Deep_High_Trypsin_F21F36_uni.raw = 10 | FL0026_RFI_261114_Deep_High_Trypsin_F22F37_hybrid.raw = 11 | FL0026_RFI_261114_Deep_High_Trypsin_F22F37_uni.raw = 11 | FL0026_RFI_261114_Deep_High_Trypsin_F23F38_hybrid.raw = 12 | FL0026_RFI_261114_Deep_High_Trypsin_F23F38_uni.raw = 12 | FL0026_RFI_261114_Deep_High_Trypsin_F24F39_hybrid.raw = 13 | FL0026_RFI_261114_Deep_High_Trypsin_F24F39_uni.raw = 13 | FL0026_RFI_261114_Deep_High_Trypsin_F25F40_hybrid.raw = 14 | FL0026_RFI_261114_Deep_High_Trypsin_F25F40_uni.raw = 14 | FL0026_RFI_261114_Deep_High_Trypsin_F26F41_hybrid.raw = 15 | FL0026_RFI_261114_Deep_High_Trypsin_F26F41_uni.raw = 15",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"Off-line high-pH reverse-phase prefractionation was performed... with fractions collected every 2 min throughout the run.\"",
+        "TRUTH_CHECK": "The runs are correctly mapped to fraction indices based on the file names (e.g., F12, F13) and the described prefractionation workflow.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the definition."
+      }
+    }
+  ]
+}

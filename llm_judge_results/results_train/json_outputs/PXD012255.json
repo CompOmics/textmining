@@ -1,0 +1,311 @@
+{
+  "paper_id": "PXD012255",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the use of the human colon carcinoma cell line HCT 116, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The proteins analysed from the HCT 116 cell line are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "colon",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the right field for tissue.",
+        "SOURCE_CHECK": "The paper describes the HCT116 cell line as a \"human colon carcinoma cell line\".",
+        "TRUTH_CHECK": "The tissue of origin for the HCT116 cell line is the colon.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "colon carcinoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the HCT116 cell line is a \"human colon carcinoma cell line\".",
+        "TRUTH_CHECK": "The runs are derived from the HCT116 cell line, which is a colon carcinoma.",
+        "COMPLETENESS_CHECK": "The value follows the definition for disease state."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HCT 116",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions the \"human colon carcinoma cell line HCT 116\".",
+        "TRUTH_CHECK": "The MS analysis was performed on proteins extracted from HCT116 cells.",
+        "COMPLETENESS_CHECK": "The value matches the name written in the paper."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the use of the HCT 116 cell line.",
+        "TRUTH_CHECK": "The material analysed is a cell line.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the controlled terms listed in the field definition (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a standard DDA phosphoproteomics workflow without any mention of TMT, SILAC, or other labels, which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are label-free.",
+        "COMPLETENESS_CHECK": "Complete. It uses the correct SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002523;NT=Q Exactive HF",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section explicitly states \"a Q-Exactive HF mass spectrometer (Thermo Fisher Scientific) were coupled\".",
+        "TRUTH_CHECK": "The Q-Exactive HF was the primary instrument used for the CZE-MS/MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state \"Trypsin was added to the sample for overnight digestion\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the proteins analysed in all runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a large-scale phosphoproteomics experiment using CZE-MS/MS and LC-MS/MS, which is a proteomic profiling workflow.",
+        "TRUTH_CHECK": "The value correctly describes the nature of the experiment for all 40 runs.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:35;NT=Oxidation;MT=Variable;TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Oxidation (methionine)\" was set as a dynamic modification.",
+        "TRUTH_CHECK": "The modification was used for the database search of the runs.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;AC;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:1;NT=Acetyl;MT=Variable;PP=Protein N-term",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Acetylation at the protein N-terminal was chosen as a dynamic modification\".",
+        "TRUTH_CHECK": "The modification was used for the database search of the runs.",
+        "COMPLETENESS_CHECK": "The value follows the format, using PP for the position as required for N-terminal modifications."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:21;NT=Phospho;MT=variable;TA=S,T,Y",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"phosphorylation (serine, threonine and tyrosine) were set as dynamic modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was used in the search for the HCT116 phosphoproteome.",
+        "COMPLETENESS_CHECK": "Complete. It includes the name, residues, and modification type."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:4;NT=Carbamidomethyl;MT=Fixed;TA=C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Carbamidomethylation (cysteine) was set as a static modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was a global search parameter.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, AC, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"The mass tolerances of precursor and fragments were 20 ppm and 0.05 Da, respectively\" in the Data analysis section.",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.05 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states \"The mass tolerances of precursor and fragments were 20 ppm and 0.05 Da, respectively\" in the Data analysis section.",
+        "TRUTH_CHECK": "The value is correct for the runs described.",
+        "COMPLETENESS_CHECK": "Complete, follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "Phospho_redissolve_final_01.raw = 1 | Phospho_redissolve_final_02.raw = 1 | Phospho_redissolve_final_03.raw = 1 | Phospho_redissolve_final_04.raw = 1 | Phospho_redissolve_final_05.raw = 1 | Phospho_redissolve_final_06.raw = 1 | Phospho_redissolve_final_07.raw = 1 | Phospho_redissolve_final_08.raw = 1 | Phospho_redissolve_final_09.raw = 1 | Phospho_redissolve_final_10.raw = 1 | Phospho_redissolve_final_11.raw = 1 | Phospho_redissolve_final_12.raw = 1 | Phospho_redissolve_final_13.raw = 1 | Phospho_redissolve_final_14.raw = 1 | Phospho_redissolve_final_15.raw = 1 | Phospho_redissolve_final_16.raw = 1 | Phospho_redissolve_final_17.raw = 1 | Phospho_redissolve_final_18.raw = 1 | Phospho_redissolve_final_19.raw = 1 | Phospho_redissolve_final_20.raw = 1 | Phospho_redissolve_final_21.raw = 1 | Phospho_redissolve_final_22.raw = 1 | Phospho_redissolve_final_23.raw = 1 | Phospho_redissolve_final_24.raw = 1 | Phospho_redissolve_final_25.raw = 1 | Phospho_redissolve_final_26.raw = 1 | Phospho_redissolve_final_27.raw = 1 | Phospho_redissolve_final_28.raw = 1 | Phospho_redissolve_final_29.raw = 1 | Phospho_redissolve_final_30.raw = 1 | Phospho_redissolve_final_31.raw = 1 | Phospho_redissolve_final_32.raw = 1 | Phospho_redissolve_final_33.raw = 1 | Phospho_redissolve_final_34.raw = 1 | Phospho_redissolve_final_35.raw = 1 | Phospho_redissolve_final_36.raw = 1 | Phospho_redissolve_final_37.raw = 1 | Phospho_redissolve_final_38.raw = 1 | Phospho_redissolve_final_39.raw = 1 | Phospho_redissolve_final_40.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a single sample preparation from the HCT116 cell line that was fractionated into 40 LC fractions.",
+        "TRUTH_CHECK": "Since all 40 runs are fractions of the same biological sample, they must all share the same biological replicate index.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned to biological replicate 1."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "Phospho_redissolve_final_01.raw = 1 | Phospho_redissolve_final_02.raw = 1 | Phospho_redissolve_final_03.raw = 1 | Phospho_redissolve_final_04.raw = 1 | Phospho_redissolve_final_05.raw = 1 | Phospho_redissolve_final_06.raw = 1 | Phospho_redissolve_final_07.raw = 1 | Phospho_redissolve_final_08.raw = 1 | Phospho_redissolve_final_09.raw = 1 | Phospho_redissolve_final_10.raw = 1 | Phospho_redissolve_final_11.raw = 1 | Phospho_redissolve_final_12.raw = 1 | Phospho_redissolve_final_13.raw = 1 | Phospho_redissolve_final_14.raw = 1 | Phospho_redissolve_final_15.raw = 1 | Phospho_redissolve_final_16.raw = 1 | Phospho_redissolve_final_17.raw = 1 | Phospho_redissolve_final_18.raw = 1 | Phospho_redissolve_final_19.raw = 1 | Phospho_redissolve_final_20.raw = 1 | Phospho_redissolve_final_21.raw = 1 | Phospho_redissolve_final_22.raw = 1 | Phospho_redissolve_final_23.raw = 1 | Phospho_redissolve_final_24.raw = 1 | Phospho_redissolve_final_25.raw = 1 | Phospho_redissolve_final_26.raw = 1 | Phospho_redissolve_final_27.raw = 1 | Phospho_redissolve_final_28.raw = 1 | Phospho_redissolve_final_29.raw = 1 | Phospho_redissolve_final_30.raw = 1 | Phospho_redissolve_final_31.raw = 1 | Phospho_redissolve_final_32.raw = 1 | Phospho_redissolve_final_33.raw = 1 | Phospho_redissolve_final_34.raw = 1 | Phospho_redissolve_final_35.raw = 1 | Phospho_redissolve_final_36.raw = 1 | Phospho_redissolve_final_37.raw = 1 | Phospho_redissolve_final_38.raw = 1 | Phospho_redissolve_final_39.raw = 1 | Phospho_redissolve_final_40.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that 40 LC fractions were collected and one CZE-MS/MS run was performed for each LC fraction.",
+        "TRUTH_CHECK": "Each run corresponds to a different LC fraction (different material), so each is its own first technical replicate.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned the index 1."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "Phospho_redissolve_final_01.raw = 1 | Phospho_redissolve_final_02.raw = 1 | Phospho_redissolve_final_03.raw = 1 | Phospho_redissolve_final_04.raw = 1 | Phospho_redissolve_final_05.raw = 1 | Phospho_redissolve_final_06.raw = 1 | Phospho_redissolve_final_07.raw = 1 | Phospho_redissolve_final_08.raw = 1 | Phospho_redissolve_final_09.raw = 1 | Phospho_redissolve_final_10.raw = 1 | Phospho_redissolve_final_11.raw = 1 | Phospho_redissolve_final_12.raw = 1 | Phospho_redissolve_final_13.raw = 1 | Phospho_redissolve_final_14.raw = 1 | Phospho_redissolve_final_15.raw = 1 | Phospho_redissolve_final_16.raw = 1 | Phospho_redissolve_final_17.raw = 1 | Phospho_redissolve_final_18.raw = 1 | Phospho_redissolve_final_19.raw = 1 | Phospho_redissolve_final_20.raw = 1 | Phospho_redissolve_final_21.raw = 1 | Phospho_redissolve_final_22.raw = 1 | Phospho_redissolve_final_23.raw = 1 | Phospho_redissolve_final_24.raw = 1 | Phospho_redissolve_final_25.raw = 1 | Phospho_redissolve_final_26.raw = 1 | Phospho_redissolve_final_27.raw = 1 | Phospho_redissolve_final_28.raw = 1 | Phospho_redissolve_final_29.raw = 1 | Phospho_redissolve_final_30.raw = 1 | Phospho_redissolve_final_31.raw = 1 | Phospho_redissolve_final_32.raw = 1 | Phospho_redissolve_final_33.raw = 1 | Phospho_redissolve_final_34.raw = 1 | Phospho_redissolve_final_35.raw = 1 | Phospho_redissolve_final_36.raw = 1 | Phospho_redissolve_final_37.raw = 1 | Phospho_redissolve_final_38.raw = 1 | Phospho_redissolve_final_39.raw = 1 | Phospho_redissolve_final_40.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "Phospho_redissolve_final_01.raw = 1 | Phospho_redissolve_final_02.raw = 2 | Phospho_redissolve_final_03.raw = 3 | Phospho_redissolve_final_04.raw = 4 | Phospho_redissolve_final_05.raw = 5 | Phospho_redissolve_final_06.raw = 6 | Phospho_redissolve_final_07.raw = 7 | Phospho_redissolve_final_08.raw = 8 | Phospho_redissolve_final_09.raw = 9 | Phospho_redissolve_final_10.raw = 10 | Phospho_redissolve_final_11.raw = 11 | Phospho_redissolve_final_12.raw = 12 | Phospho_redissolve_final_13.raw = 13 | Phospho_redissolve_final_14.raw = 14 | Phospho_redissolve_final_15.raw = 15 | Phospho_redissolve_final_16.raw = 16 | Phospho_redissolve_final_17.raw = 17 | Phospho_redissolve_final_18.raw = 18 | Phospho_redissolve_final_19.raw = 19 | Phospho_redissolve_final_20.raw = 20 | Phospho_redissolve_final_21.raw = 21 | Phospho_redissolve_final_22.raw = 22 | Phospho_redissolve_final_23.raw = 23 | Phospho_redissolve_final_24.raw = 24 | Phospho_redissolve_final_25.raw = 25 | Phospho_redissolve_final_26.raw = 26 | Phospho_redissolve_final_27.raw = 27 | Phospho_redissolve_final_28.raw = 28 | Phospho_redissolve_final_29.raw = 29 | Phospho_redissolve_final_30.raw = 30 | Phospho_redissolve_final_31.raw = 31 | Phospho_redissolve_final_32.raw = 32 | Phospho_redissolve_final_33.raw = 33 | Phospho_redissolve_final_34.raw = 34 | Phospho_redissolve_final_35.raw = 35 | Phospho_redissolve_final_36.raw = 36 | Phospho_redissolve_final_37.raw = 37 | Phospho_redissolve_final_38.raw = 38 | Phospho_redissolve_final_39.raw = 39 | Phospho_redissolve_final_40.raw = 40",
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the fraction_identifier field.",
+        "SOURCE_CHECK": "The paper describes an SCX-RPLC online fractionation resulting in 40 fractions.",
+        "TRUTH_CHECK": "The paper explicitly states \"One CZE-MS/MS run was performed for each LC fraction\" for the 40 fractions. Therefore, each run corresponds to a different fraction, and they should be indexed 1 to 40, not all as 1.",
+        "COMPLETENESS_CHECK": "The mapping is complete but the values are incorrect."
+      }
+    }
+  ]
+}

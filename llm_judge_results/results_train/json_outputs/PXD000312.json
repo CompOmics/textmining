@@ -1,0 +1,430 @@
+{
+  "paper_id": "PXD000312",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Mus musculus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the search was performed against the SwissProt database selected for Mus musculus.",
+        "TRUTH_CHECK": "The experiment used the WEHI-231 B cell line, which is a mouse B cell line (supported by the use of the Mus musculus database).",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "immune system",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad anatomical system, which fits the definition of tissue.",
+        "SOURCE_CHECK": "The paper uses the WEHI-231 B cell line; B cells are part of the immune system.",
+        "TRUTH_CHECK": "The analyzed material is a B cell line, and \"immune system\" is an allowed broader term for a B cell line.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "B cell",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The abstract explicitly mentions the \"WEHI-231 B cell line\".",
+        "TRUTH_CHECK": "The runs analyzed the WEHI-231 B cell line.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "mercury poisoning",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease or pathological state, which fits the field_name.",
+        "SOURCE_CHECK": "The paper describes \"intoxication with Hg2+\" and \"exposure to HgCl2\", but \"mercury poisoning\" is not stated.",
+        "TRUTH_CHECK": "The experiment uses a cell line (WEHI-231) that is treated with mercury in vitro; the cells themselves do not have a disease state of mercury poisoning, nor is the cell line derived from such a state.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "CLO:0009575",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=WEHI-231;AC=CLO:0009575",
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an accession for a cell line, which is the right field.",
+        "SOURCE_CHECK": "The paper states the use of the \"WEHI-231 B cell line\".",
+        "TRUTH_CHECK": "The runs analyzed the WEHI-231 cell line.",
+        "COMPLETENESS_CHECK": "The value is an accession; the definition asks for the name as written."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "No labels (TMT, SILAC, etc.) are mentioned in the paper; the use of \"label free sample\" is an allowed inference when no label is used.",
+        "TRUTH_CHECK": "The runs described in the paper did not use labels.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=LTQ;AC=MS:1000447",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state \"All analyses were performed on a Thermo LTQ\".",
+        "TRUTH_CHECK": "The LTQ was the primary instrument used for all runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state \"Samples were digested overnight with 1:100 trypsin\" and \"assuming the digestion enzyme trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for all samples in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "enrichment of phosphorylated protein",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an SDRF controlled term for the enrichment of a specific peptide subset, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"Phosphopeptides were isolated... using TiO2 beads\", which is a method for the enrichment of phosphorylated proteins.",
+        "TRUTH_CHECK": "The runs described in the paper all underwent TiO2 affinity selection to enrich for phosphopeptides.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format and is complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a phosphoproteomic profile using TiO2 affinity selection and LC-MS/MS, which is a proteomic profiling workflow.",
+        "TRUTH_CHECK": "The value correctly describes the MS experiment performed on all runs.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"The iodoacetamide derivative of cysteine was specified as a fixed modification\".",
+        "TRUTH_CHECK": "Carbamidomethylation is the modification resulting from iodoacetamide treatment of cysteines.",
+        "COMPLETENESS_CHECK": "Complete, following the NT/TA/MT/AC format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"Oxidation of methionine... were specified as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"acetylation of the n-terminus\" was specified as a variable modification.",
+        "TRUTH_CHECK": "The value is right for the runs that carry it.",
+        "COMPLETENESS_CHECK": "The value follows the required format, specifying the name, position, and modification status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;MT=variable;TA=S,T,Y;AC=UNIMOD:21",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"phosphorylation of serine, threonine and tyrosine were specified as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "1342_01.RAW = 1 | 1342_02.RAW = 1 | 1342_03.RAW = 1 | 1342_04.RAW = 1 | 1342_05.RAW = 1 | 1342_06.RAW = 1 | 1342_07.RAW = 1 | 1342_08.RAW = 1 | 1342_09.RAW = 1 | 1342_10.RAW = 1 | 1342_11.RAW = 1 | 1342_12.RAW = 1 | Elution_rest_a1.RAW = 1 | Elution_rest_a2.RAW = 1 | Elution_rest_a3.RAW = 1 | Elution_rest_a4.RAW = 1 | Elution_rest_a5.RAW = 1 | Elution_rest_a6.RAW = 1 | Elution_rest_a7.RAW = 1 | Elution_rest_a8.RAW = 1 | Elution_rest_a9.RAW = 1 | Elution_rest_b1.RAW = 1 | Elution_rest_b2.RAW = 1 | Elution_rest_b3.RAW = 1 | Elution_rest_b4.RAW = 1 | Elution_rest_b5.RAW = 1 | Elution_rest_b6.RAW = 1 | Elution_rest_b7.RAW = 1 | Elution_rest_b8.RAW = 1 | Elution_rest_b9.RAW = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that the first experiment used 3 independent samples per treatment and the second experiment used 4 independent samples per treatment.",
+        "TRUTH_CHECK": "The mapping assigns every single run to biological replicate 1, which contradicts the paper's description of multiple independent samples per treatment.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "1342_01.RAW = 1 | 1342_02.RAW = 1 | 1342_03.RAW = 1 | 1342_04.RAW = 1 | 1342_05.RAW = 1 | 1342_06.RAW = 1 | 1342_07.RAW = 1 | 1342_08.RAW = 1 | 1342_09.RAW = 1 | 1342_10.RAW = 1 | 1342_11.RAW = 1 | 1342_12.RAW = 1 | Elution_rest_a1.RAW = 1 | Elution_rest_a2.RAW = 1 | Elution_rest_a3.RAW = 1 | Elution_rest_a4.RAW = 1 | Elution_rest_a5.RAW = 1 | Elution_rest_a6.RAW = 1 | Elution_rest_a7.RAW = 1 | Elution_rest_a8.RAW = 1 | Elution_rest_a9.RAW = 1 | Elution_rest_b1.RAW = 1 | Elution_rest_b2.RAW = 1 | Elution_rest_b3.RAW = 1 | Elution_rest_b4.RAW = 1 | Elution_rest_b5.RAW = 1 | Elution_rest_b6.RAW = 1 | Elution_rest_b7.RAW = 1 | Elution_rest_b8.RAW = 1 | Elution_rest_b9.RAW = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes two experiments with multiple independent samples per treatment, but does not mention repeated injections of the same material.",
+        "TRUTH_CHECK": "Every run is assigned index 1, which is correct for materials measured once.",
+        "COMPLETENESS_CHECK": "Every run is mapped to a value."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "1342_01.RAW = 1 | 1342_02.RAW = 1 | 1342_03.RAW = 1 | 1342_04.RAW = 1 | 1342_05.RAW = 1 | 1342_06.RAW = 1 | 1342_07.RAW = 1 | 1342_08.RAW = 1 | 1342_09.RAW = 1 | 1342_10.RAW = 1 | 1342_11.RAW = 1 | 1342_12.RAW = 1 | Elution_rest_a1.RAW = 1 | Elution_rest_a2.RAW = 1 | Elution_rest_a3.RAW = 1 | Elution_rest_a4.RAW = 1 | Elution_rest_a5.RAW = 1 | Elution_rest_a6.RAW = 1 | Elution_rest_a7.RAW = 1 | Elution_rest_a8.RAW = 1 | Elution_rest_a9.RAW = 1 | Elution_rest_b1.RAW = 2 | Elution_rest_b2.RAW = 2 | Elution_rest_b3.RAW = 2 | Elution_rest_b4.RAW = 2 | Elution_rest_b5.RAW = 2 | Elution_rest_b6.RAW = 2 | Elution_rest_b7.RAW = 2 | Elution_rest_b8.RAW = 2 | Elution_rest_b9.RAW = 2",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "1342_01.RAW = 1 | 1342_02.RAW = 1 | 1342_03.RAW = 1 | 1342_04.RAW = 1 | 1342_05.RAW = 1 | 1342_06.RAW = 1 | 1342_07.RAW = 1 | 1342_08.RAW = 1 | 1342_09.RAW = 1 | 1342_10.RAW = 2 | 1342_11.RAW = 2 | 1342_12.RAW = 2 | Elution_rest_a1.RAW = 1 | Elution_rest_a2.RAW = 1 | Elution_rest_a3.RAW = 1 | Elution_rest_a4.RAW = 1 | Elution_rest_a5.RAW = 1 | Elution_rest_a6.RAW = 1 | Elution_rest_a7.RAW = 1 | Elution_rest_a8.RAW = 1 | Elution_rest_a9.RAW = 1 | Elution_rest_b1.RAW = 1 | Elution_rest_b2.RAW = 1 | Elution_rest_b3.RAW = 1 | Elution_rest_b4.RAW = 1 | Elution_rest_b5.RAW = 1 | Elution_rest_b6.RAW = 1 | Elution_rest_b7.RAW = 1 | Elution_rest_b8.RAW = 1 | Elution_rest_b9.RAW = 1",
+      "issue_summary": {
+        "TYPE_CHECK": "Fraction indices, the right field.",
+        "SOURCE_CHECK": "The paper states that for the first experiment, \"two TiO2 selection steps... were run separately on the mass spec.\"",
+        "TRUTH_CHECK": "The runs for the first experiment (E1) should have two fractions. The runs for the second experiment (E2) have only one elution. The mapping incorrectly assigns fractions 1 and 2 to the second experiment (E2) and only fraction 1 to the first experiment (E1).",
+        "COMPLETENESS_CHECK": "Every run is assigned an index, but the mapping is swapped between experiments."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[concentration of]",
+      "extracted_value": "1342_01.RAW = not applicable | 1342_02.RAW = not applicable | 1342_03.RAW = not applicable | 1342_04.RAW = not applicable | 1342_05.RAW = 250 uM | 1342_06.RAW = 250 uM | 1342_07.RAW = 250 uM | 1342_08.RAW = 250 uM | 1342_09.RAW = 0.1 uM | 1342_10.RAW = 0.1 uM | 1342_11.RAW = 0.1 uM | 1342_12.RAW = 0.1 uM | Elution_rest_a1.RAW = not applicable | Elution_rest_a2.RAW = not applicable | Elution_rest_a3.RAW = not applicable | Elution_rest_a4.RAW = 100 uM | Elution_rest_a5.RAW = 100 uM | Elution_rest_a6.RAW = 100 uM | Elution_rest_a7.RAW = 25 uM | Elution_rest_a8.RAW = 25 uM | Elution_rest_a9.RAW = 25 uM | Elution_rest_b1.RAW = not applicable | Elution_rest_b2.RAW = not applicable | Elution_rest_b3.RAW = not applicable | Elution_rest_b4.RAW = 100 uM | Elution_rest_b5.RAW = 100 uM | Elution_rest_b6.RAW = 100 uM | Elution_rest_b7.RAW = 25 uM | Elution_rest_b8.RAW = 25 uM | Elution_rest_b9.RAW = 25 uM",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the concentration of the agents used for treatment, which is a studied variable.",
+        "SOURCE_CHECK": "The paper states concentrations of 250 uM and 100 uM for HgCl2, 25 uM for pervanadate, and 100 nM for okadaic acid.",
+        "TRUTH_CHECK": "The mapping contains a significant error: 0.1 uM is used for some runs, but the paper states 100 nM for okadaic acid (which is 0.1 uM) and 100 uM for HgCl2. However, the mapping assigns 0.1 uM to runs 9-12, which correspond to the first experiment's third group (okadaic acid). The more critical error is that the mapping uses \"not applicable\" for controls, whereas the definition for disease_state/factor_value usually requires a term like \"normal\" or \"untreated\". More importantly, the mapping for the second experiment (runs 13-30) is inconsistent with the paper's design: the second experiment had 4 independent samples per treatment (12 total), but the mapping shows 9 samples (S1-S9).",
+        "COMPLETENESS_CHECK": "The values follow the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Compound",
+      "extracted_value": "mercury dichloride",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a chemical compound used as a treatment, which is appropriate for a column named \"Compound\".",
+        "SOURCE_CHECK": "The paper mentions \"HgCl2\" and \"mercury\" multiple times; \"mercury dichloride\" is the chemical name for HgCl2.",
+        "TRUTH_CHECK": "The runs listed are part of the experiments where cells were exposed to HgCl2.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Compound",
+      "extracted_value": "okadaic acid",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a chemical compound used as a treatment, which is appropriate for a column named \"Compound\".",
+        "SOURCE_CHECK": "The paper states that cells were exposed to okadaic acid at 100 nM.",
+        "TRUTH_CHECK": "Okadaic acid is one of the primary experimental conditions used in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Compound",
+      "extracted_value": "pervanadate",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"pervanadate\" is a chemical compound used as a treatment in the study, which is appropriate for a column named \"Compound\".",
+        "SOURCE_CHECK": "Pervanadate is explicitly mentioned in the abstract and methods as a test agent.",
+        "TRUTH_CHECK": "The runs associated with this value are part of the second experiment where pervanadate was used.",
+        "COMPLETENESS_CHECK": "The value is a plain text name of the compound, which is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[concentration of]",
+      "extracted_value": "250 uM",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a concentration, which is appropriate for a column named \"characteristics[concentration of]\".",
+        "SOURCE_CHECK": "The paper states that cells were exposed to HgCl2 (Hg2+) at 250 μM.",
+        "TRUTH_CHECK": "The value correctly describes the concentration of the treatment agent for the runs it is associated with.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[concentration of]",
+      "extracted_value": "0.1 uM",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a concentration, which is appropriate for a column named \"characteristics[concentration of]\".",
+        "SOURCE_CHECK": "The paper mentions concentrations of 250 μM HgCl2, 100 μM HgCl2, 25 μM pervanadate, and 100 nM okadaic acid. It does not mention 0.1 μM.",
+        "TRUTH_CHECK": "The value 0.1 μM is not supported by the text for any of the treatment groups.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[concentration of]",
+      "extracted_value": "100 uM",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a concentration, which is appropriate for a column named \"characteristics[concentration of]\".",
+        "SOURCE_CHECK": "The paper states that cells were exposed to HgCl2 (Hg2+) at 100 μM.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the 100 μM treatment group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[concentration of]",
+      "extracted_value": "25 uM",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a concentration, which is appropriate for a column named \"characteristics[concentration of]\".",
+        "SOURCE_CHECK": "The paper states \"pervanadate at 25 μM\" in the Exposure and Harvesting section.",
+        "TRUTH_CHECK": "The value is right for the runs associated with the pervanadate treatment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

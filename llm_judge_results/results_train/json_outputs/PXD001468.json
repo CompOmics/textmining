@@ -1,0 +1,396 @@
+{
+  "paper_id": "PXD001468",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes the use of Human HEK293 cells, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The runs are based on HEK293 cells, which are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "kidney",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper specifies the use of HEK293 cells; the field definition explicitly allows inferring \"kidney\" for HEK293.",
+        "TRUTH_CHECK": "The runs are derived from HEK293 cells, which originate from the kidney.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the use of HEK293 cells; the cell type \"epithelial\" is an allowed inference for this cell line.",
+        "TRUTH_CHECK": "The runs carry the value for HEK293 cells, which are epithelial in origin.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HEK-293 cell",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"HEK293 cells\" in the abstract and methods.",
+        "TRUTH_CHECK": "The 24 runs listed are the HEK293 cell fractions analyzed on the Q-Exactive.",
+        "COMPLETENESS_CHECK": "The value is complete. Adding \"cell\" to the name is acceptable."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"cell\" is a description of the material, but it does not match the controlled terms for material_type.",
+        "SOURCE_CHECK": "The paper describes the use of HEK293 cells.",
+        "TRUTH_CHECK": "The runs are derived from HEK293 cells.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the allowed controlled terms (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\", \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "embryo stage",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the developmental_stage field.",
+        "SOURCE_CHECK": "The paper mentions HEK293 cells, but there is no mention of an embryo stage.",
+        "TRUTH_CHECK": "HEK293 is a human embryonic kidney cell line, but the paper does not state the developmental stage of the source material.",
+        "COMPLETENESS_CHECK": "The value follows the general format, but is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a shotgun proteomics experiment on HEK293 cells and mouse brain without mentioning any isotopic labels (TMT, SILAC, etc.), which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are label-free.",
+        "COMPLETENESS_CHECK": "Complete. \"label free sample\" is the correct SDRF term."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state that HEK293 cell fractions were analyzed on a \"Q-Exactive Orbitrap mass spectrometer\".",
+        "TRUTH_CHECK": "The 24 runs are the HEK293 cell fractions, which were analyzed on the Q-Exactive.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that HEK293 cell protein pellets were digested with Lys-C followed by trypsin.",
+        "TRUTH_CHECK": "The runs listed are from HEK293 cells, and trypsin was used for their digestion.",
+        "COMPLETENESS_CHECK": "Complete. One cell naming one of the two agents used is correct."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000422;NT=HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that for HEK293 cells analyzed on a Q-Exactive, the top 20 ions were selected for fragmentation by HCD.",
+        "TRUTH_CHECK": "The runs listed are the HEK293 runs (indicated by 293T and QE3/Q-Exactive), and HCD was the method used for these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "25% NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The methods state \"Normalized collision energies were set to 25%\" for the Q-Exactive Orbitrap runs.",
+        "TRUTH_CHECK": "The value is correct for the 24 runs analyzed on the Q-Exactive.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometer",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "proteomic profiling by mass spectrometry",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the general MS proteomics approach, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a \"shotgun proteomics\" experiment on HEK293 cells, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value is correct for the runs as they are part of the described proteome-wide dataset.",
+        "COMPLETENESS_CHECK": "The value contains a typo (\"mass spectrometer\" instead of \"mass spectrometry\"), which is a format error."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The \"Closed search with dynamic modifications\" section lists \"Oxidation (M)\" in Set 1.",
+        "TRUTH_CHECK": "The modification was used in a closed search to test the sensitivity of the open search on the HEK293 dataset.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Deamidated;MT=Variable;TA=N,Q;AC=UNIMOD:7",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The \"Closed search with dynamic modifications\" section lists \"deamidation (N, Q)\" in Set 1.",
+        "TRUTH_CHECK": "The modification was used in closed searches to test the sensitivity of the open search for the HEK293 dataset.",
+        "COMPLETENESS_CHECK": "Follows the required format with NT, TA, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;MT=Variable;TA=S,T;AC=UNIMOD:21",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The \"Closed search with dynamic modifications\" section explicitly lists \"phosphorylation (ST)\".",
+        "TRUTH_CHECK": "The value is correct for the HEK293 runs (which used trypsin and the dynamic modification sets).",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residues, and modification type."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Gln->pyro-Glu;MT=Variable;TA=Q;PP=Any N-term;AC=UNIMOD:28",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The \"Closed search with dynamic modifications\" section lists \"pyro-glutamate (N-term Q)\" in Set 1.",
+        "TRUTH_CHECK": "The modification was used in closed searches to test the sensitivity of the open search for the HEK293 dataset.",
+        "COMPLETENESS_CHECK": "The value follows the required format, specifying the name, residues, position, and variable status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT= Carbamyl;MT=Variable;TA=K;AC=UNIMOD:5",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The \"Closed search with dynamic modifications\" section lists \"carbamylation (K)\" in Set 1.",
+        "TRUTH_CHECK": "The runs are HEK293 cells, and the paper states these dynamic modifications were used in closed searches to test the sensitivity of the open search.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"All searches were performed using a static modification for cysteine alkylation (57.02146 Da)\" and \"Cysteine alkylation was considered static modification (+57.021464 Da)\".",
+        "TRUTH_CHECK": "The value is correct for the HEK293 runs.",
+        "COMPLETENESS_CHECK": "Complete. \"fixed\" is equivalent to \"Fixed\" in the definition."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The \"Closed Searches\" section states a precursor ion tolerance of 5 ppm.",
+        "TRUTH_CHECK": "The value is correct for the HEK293 runs.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and unit as printed."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.01 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The \"Closed Searches\" section states \"The fragment ion tolerance was set very narrow (0.01 Da).\"",
+        "TRUTH_CHECK": "The value is correct for the HEK293 runs (which used the closed search parameters described).",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "b1906_293T_proteinID_01A_QE3_122212.raw = 1 | b1922_293T_proteinID_02A_QE3_122212.raw = 1 | b1923_293T_proteinID_03A_QE3_122212.raw = 1 | b1924_293T_proteinID_04A_QE3_122212.raw = 1 | b1925_293T_proteinID_05A_QE3_122212.raw = 1 | b1926_293T_proteinID_06A_QE3_122212.raw = 1 | b1927_293T_proteinID_07A_QE3_122212.raw = 1 | b1928_293T_proteinID_08A_QE3_122212.raw = 1 | b1929_293T_proteinID_09A_QE3_122212.raw = 1 | b1930_293T_proteinID_10A_QE3_122212.raw = 1 | b1931_293T_proteinID_11A_QE3_122212.raw = 1 | b1932_293T_proteinID_12A_QE3_122212.raw = 1 | b1937_293T_proteinID_01B_QE3_122212.raw = 1 | b1938_293T_proteinID_02B_QE3_122212.raw = 1 | b1939_293T_proteinID_03B_QE3_122212.raw = 1 | b1940_293T_proteinID_04B_QE3_122212.raw = 1 | b1941_293T_proteinID_05B_QE3_122212.raw = 1 | b1942_293T_proteinID_06B_QE3_122212.raw = 1 | b1943_293T_proteinID_07B_QE3_122212.raw = 1 | b1944_293T_proteinID_08B_QE3_122212.raw = 1 | b1945_293T_proteinID_09B_QE3_122212.raw = 1 | b1946_293T_proteinID_10B_QE3_122212.raw = 1 | b1947_293T_proteinID_11B_QE3_122212.raw = 1 | b1948_293T_proteinID_12B_QE3_122212.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a proteome-wide dataset on HEK293 cells and mentions 24 raw mass spectrometry data files.",
+        "TRUTH_CHECK": "The 24 runs are fractions (consolidated from 96 to 24) of a single HEK293 cell sample, so they all share the same biological replicate index.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned to biological replicate 1."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "b1906_293T_proteinID_01A_QE3_122212.raw = 1 | b1922_293T_proteinID_02A_QE3_122212.raw = 1 | b1923_293T_proteinID_03A_QE3_122212.raw = 1 | b1924_293T_proteinID_04A_QE3_122212.raw = 1 | b1925_293T_proteinID_05A_QE3_122212.raw = 1 | b1926_293T_proteinID_06A_QE3_122212.raw = 1 | b1927_293T_proteinID_07A_QE3_122212.raw = 1 | b1928_293T_proteinID_08A_QE3_122212.raw = 1 | b1929_293T_proteinID_09A_QE3_122212.raw = 1 | b1930_293T_proteinID_10A_QE3_122212.raw = 1 | b1931_293T_proteinID_11A_QE3_122212.raw = 1 | b1932_293T_proteinID_12A_QE3_122212.raw = 1 | b1937_293T_proteinID_01B_QE3_122212.raw = 1 | b1938_293T_proteinID_02B_QE3_122212.raw = 1 | b1939_293T_proteinID_03B_QE3_122212.raw = 1 | b1940_293T_proteinID_04B_QE3_122212.raw = 1 | b1941_293T_proteinID_05B_QE3_122212.raw = 1 | b1942_293T_proteinID_06B_QE3_122212.raw = 1 | b1943_293T_proteinID_07B_QE3_122212.raw = 1 | b1944_293T_proteinID_08B_QE3_122212.raw = 1 | b1945_293T_proteinID_09B_QE3_122212.raw = 1 | b1946_293T_proteinID_10B_QE3_122212.raw = 1 | b1947_293T_proteinID_11B_QE3_122212.raw = 1 | b1948_293T_proteinID_12B_QE3_122212.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes 24 raw files from HEK293 cells, which were derived from basic pH reverse phase fractionation (96 fractions consolidated into 24).",
+        "TRUTH_CHECK": "These runs are not repeated injections of the same material, but rather 24 distinct fractions of a single sample. According to the field definition, separate elutions or enrichment steps are fractions, not technical replicates.",
+        "COMPLETENESS_CHECK": "Each run is assigned an index, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "b1906_293T_proteinID_01A_QE3_122212.raw = 1 | b1922_293T_proteinID_02A_QE3_122212.raw = 2 | b1923_293T_proteinID_03A_QE3_122212.raw = 3 | b1924_293T_proteinID_04A_QE3_122212.raw = 4 | b1925_293T_proteinID_05A_QE3_122212.raw = 5 | b1926_293T_proteinID_06A_QE3_122212.raw = 6 | b1927_293T_proteinID_07A_QE3_122212.raw = 7 | b1928_293T_proteinID_08A_QE3_122212.raw = 8 | b1929_293T_proteinID_09A_QE3_122212.raw = 9 | b1930_293T_proteinID_10A_QE3_122212.raw = 10 | b1931_293T_proteinID_11A_QE3_122212.raw = 11 | b1932_293T_proteinID_12A_QE3_122212.raw = 12 | b1937_293T_proteinID_01B_QE3_122212.raw = 13 | b1938_293T_proteinID_02B_QE3_122212.raw = 14 | b1939_293T_proteinID_03B_QE3_122212.raw = 15 | b1940_293T_proteinID_04B_QE3_122212.raw = 16 | b1941_293T_proteinID_05B_QE3_122212.raw = 17 | b1942_293T_proteinID_06B_QE3_122212.raw = 18 | b1943_293T_proteinID_07B_QE3_122212.raw = 19 | b1944_293T_proteinID_08B_QE3_122212.raw = 20 | b1945_293T_proteinID_09B_QE3_122212.raw = 21 | b1946_293T_proteinID_10B_QE3_122212.raw = 22 | b1947_293T_proteinID_11B_QE3_122212.raw = 23 | b1948_293T_proteinID_12B_QE3_122212.raw = 24",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that HEK293 cell peptides were separated by basic pH reverse phase fractionation into 96 fractions which were consolidated into 24.",
+        "TRUTH_CHECK": "The 24 runs from HEK293 cells correspond to these 24 consolidated fractions.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns a unique fraction index (1-24) to each of the 24 runs."
+      }
+    }
+  ]
+}

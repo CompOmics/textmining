@@ -1,0 +1,126 @@
+{
+  "accession" : "PXD005982",
+  "title" : "A quantitative acetylomic analysis of early seed development in rice (Oryza sativa L.)",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Here, we reported the first quantitative acetylomic case in plants with a special focus on the rice early seed development. The results obtained from this work not only aimed to provide an overall view of the acetylation events, but also explored the regulatory roles of PKA during early seed development in rice.",
+  "sampleProcessingProtocol" : "For digestion, the protein solution was reduced with 10 mM DTT for 1 hour at 37 °C, and alkylated with 20 mM IAA for 45 minutes at room temperature in darkness. For trypsin digestion, the protein sample was diluted by adding 100 mM NH4CO3 to urea concentration less than 2 M. Finally, trypsin was added at 1:50 trypsin-to-protein mass ratio for the first digestion overnight and 1:100 trypsin-to-protein mass ratio for a second 4 hours-digestion. To enrich Kac peptides, tryptic peptides dissolved in NETN buffer (100 mM NaCl, 1 mM EDTA, 50 mM Tris-HCl, 0.5% NP-40, pH 8.0) were incubated with pre-washed antibody beads at 4°C overnight with gentle shaking. The beads were washed four times with NETN buffer and twice with ddH2O. The bound peptides were eluted from the beads with 0.1% TFA. The eluted fractions were combined and vacuum-dried. The resulting peptides were cleaned with C18 ZipTips (Millipore, Darmstadt, Germany) according to the manufacturer’s instructions, followed by LC-MS/MS analysis.",
+  "dataProcessingProtocol" : "Peptides were dissolved in 0.1% FA, directly loaded onto a reversed-phase pre-column (Acclaim PepMap 100, Thermo, Waltham, U.S.A.). Peptide separation was performed using a reversed-phase analytical column (Acclaim PepMap RSLC, Thermo, Waltham, U.S.A.). The gradient was comprised of an increase from 6% to 22% solvent B (0.1% FA in 98% ACN) for 24 minutes, 22% to 40% for 8 minutes and climbing to 80% in 5 minutes then holding at 80% for the last 3 minutes, all at a constant flow rate of 300 nl minutes-1 on an EASY-nLC 1000 UPLC system, the resulting peptides were analyzed by Q ExactiveTM plus hybrid quadrupole-Orbitrap mass spectrometer (Thermo, Waltham, U.S.A.). The peptides were subjected to NSI source followed by tandem mass spectrometry (MS/MS) in Q ExactiveTM plus coupled online to the UPLC. Intact peptides were detected in the Orbitrap at a resolution of 70,000. Peptides were selected for MS/MS using NCE setting as 30; ion fragments were detected in the Orbitrap at a resolution of 17,500. A data-dependent procedure that alternated between one MS scan followed by 20 MS/MS scans was applied for the top 20 precursor ions above a threshold ion count of 5E3 in the MS survey scan with 15.0s dynamic exclusion. The electrospray voltage applied was 2.0 kV. Automatic gain control (AGC) was used to prevent overfilling of the orbitrap; 5E4 ions were accumulated for generation of MS/MS spectra. For MS scans, the m z-1 scan range was 350 to 1800. Fixed first mass was set as 100 m/z. The resulting MS/MS data was processed using MaxQuant with integrated Andromeda search engine (v.1.4.1.2). Tandem mass spectra were searched against uniprot_oyrza sativa database concatenated with reverse decoy database. Trypsin/P was specified as cleavage enzyme allowing up to 4 missing cleavages, 5 modifications per peptide and 5 charges. Mass error was set to 10 ppm for precursor ions and 0.02 Da for fragment ions. Carbamidomethylation on Cys was specified as fixed modification and oxidation on Met, acetylation on Lys protein N-terminal were specified as variable modifications. False discovery rate (FDR) thresholds for protein, peptide and modification site were specified at 1%. Minimum peptide length was set at 7. All the other parameters in MaxQuant were set to default values. Label-free quantification method was LFQ, FDR was adjusted to < 1% and minimum score for modified peptides score was set > 40. Extracted ion chromatogram (sum of areas under the curves of MS1 chromatograms of each peptide identified) was used for normalization across all runs. Within-group means were calculated to determine fold changes.",
+  "projectTags" : [ "Biological" ],
+  "keywords" : [ "Acetylome", "Post-translational modification", "Rice (oryza sativa l.)", "Early seed development" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "EBI terms of use",
+  "submissionDate" : "2017-02-27",
+  "publicationDate" : "2017-07-04",
+  "submitters" : [ {
+    "title" : "Professor",
+    "firstName" : "Jian",
+    "lastName" : "Zhang",
+    "identifier" : "20700162",
+    "affiliation" : "China national rice research institute",
+    "email" : "zhangjian@caas.cn",
+    "country" : "China",
+    "orcid" : "0000-0003-2804-0162",
+    "name" : "Jian Zhang",
+    "id" : "20700162"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Jian",
+    "lastName" : "Zhang",
+    "identifier" : "65530100",
+    "affiliation" : "State Key Lab of Rice Biology, China National Rice Research Institute",
+    "email" : "zhangjian@caas.cn",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Jian Zhang",
+    "id" : "65530100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000433",
+    "name" : "Affinity purification coupled with mass spectrometry proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000274",
+    "name" : "MaxQuant percentage threshold for valid modification location"
+  } ],
+  "countries" : [ "China" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0001226",
+      "name" : "seed"
+    }, {
+      "cvLabel" : "CL",
+      "accession" : "CL:0000610",
+      "name" : "plant cell"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:4530",
+      "name" : "Oryza sativa (Rice)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:4530",
+    "name" : "Oryza sativa (rice)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0001226",
+    "name" : "Seed"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0000610",
+    "name" : "Plant cell"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Wang Y, Hou Y, Qiu J, Li Z, Zhao J, Tong X, Zhang J. A Quantitative Acetylomic Analysis of Early Seed Development in Rice (Oryza sativa L.). Int J Mol Sci. 2017 Jun 27;18(7). pii: E1376",
+    "pubmedID" : 28654018,
+    "doi" : "10.3390/ijms18071376"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00394",
+    "name" : "acetylated residue"
+  } ],
+  "totalFileDownloads" : 1055,
+  "botCount" : 400,
+  "hubCount" : 647,
+  "organicCount" : 8
+}

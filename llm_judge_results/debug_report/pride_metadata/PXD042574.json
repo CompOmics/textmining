@@ -1,0 +1,139 @@
+{
+  "accession" : "PXD042574",
+  "title" : "Limited proteolysis-mass spectrometry of saliva maps proteome-wide structural changes associated with oral cancer aggressiveness.",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Considering that these potential diagnostic and prognostic targets may be regulated by events that do not imply variation in protein abundance levels, we investigated the hypothesis that changes in protein conformation can be associated with diagnosis and prognosis, revealing biological processes and novel targets of clinical relevance. For this, we employed LiP-MS in saliva samples to explore structural alterations comparing the proteome of healthy control and squamous cell carcinoma (OSCC) patients, with and without lymph node metastasis (N0 and N+, respectively). Our LiP strategy revealed 311 proteins with structural rearrangements when comparing among control and OSCC patients and 15 unique enriched biological processes, in contrast to 66 and 11 processes enriched in traditional proteomics workflow, mostly associated with immunity events. Moreover, 51 proteins with potential structural rearrangements were associated with clinical patient features, indicating conformotypic peptides associated with lymph node metastasis.",
+  "sampleProcessingProtocol" : "The samples generated in the previous step were reduced by incubation of samples with Dithiothreitol-DTT (Sigma Aldrich) to a final concentration of 5 mM for 25 min at 56 °C. Next, the alkylation of free cysteine residues was achieved by adding Iodoacetamide-IAA (Sigma Aldrich) to a final concentration of 14 mM for 30 min at room temperature in the dark. Samples were digested with sequencing-grade porcine trypsin (Promega) at an enzyme/substrate ratio of 1:100, added twice to the samples after 4 hours at 37°C, and incubated for 16 h at 37°C. Protease digestion was quenched by lowering the reaction pH (< 3) with final concentration of 0.5% trifluoroacetic acid. The peptide mixtures were loaded onto stage-tip C18, desalted, and eluted with 80% acetonitrile, and 0.1% formic acid. After elution, peptides were dried in a vacuum centrifuge, re-solubilized in 0.1% formic acid, and analyzed by mass spectrometry. Run order was randomized using an R (v3.4.0) environment to prevent systematic bias during MS acquisition.",
+  "dataProcessingProtocol" : "Raw files from both digestion approaches were searched against the Human Uniprot fasta database (version June 2018, 93,599 protein sequences, 36,574,184 residues) using the MaxQuant search engine (version 1.5.8) and PEAKS Studio X (version 7.5, Bioinformatics Solutions Inc). For Tryptic digestion-only proteome on MaxQuant, up to two missed cleavages were allowed, and cleavage of KP and RP peptide bonds was excluded. For MaxQuant search of LiP-MS samples, a semi-specific tryptic digestion was set, while for Tryptic digestion-only proteome samples, a fully tryptic digestion was applied. Cysteine carbamidomethylation (+57.0214 Da) and methionine oxidation (+15.99492) were allowed as fixed and variable modifications, respectively; monoisotopic peptide tolerance was set to 10 ppm, and fragment mass tolerance was set to 1 Da for both digestion strategies. The false discovery rate (FDR) was estimated using the target-decoy method31 and set to 1% at peptide and protein levels. For PEAKS analysis, the database combined with a de novo searches were performed. In the latter case, PTM exploratory search was also included in both types of samples (Tryptic digestion-only proteome and LiP), and all 313 variable modifications present in the PEAKS PTM database were defined and used as a variable modification. In addition, a fully tryptic digestion rule was used for protein abundance quantification for Tryptic digestion-only proteome, while using the semi-specific tryptic rule for LiP-MS samples. The false discovery rate (FDR) was estimated using the target-decoy method31 and set to 1% at peptide and protein levels.",
+  "projectTags" : [ ],
+  "keywords" : [ "Oral cance", "Limited proteolysis", "Saliva", "Functional proteomics", "Mass spectrometry", "Structural proteomic", "Protein post-translational modification", "Prognosis" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2023-05-31",
+  "publicationDate" : "2025-03-11",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Adriana",
+    "lastName" : "Franco Paes Leme",
+    "identifier" : "79750115",
+    "affiliation" : "CNPEM",
+    "email" : "adriana.paesleme@lnbio.cnpem.br",
+    "country" : "Brazil",
+    "orcid" : "0000-0001-7959-147X",
+    "name" : "Adriana Franco Paes Leme",
+    "id" : "79750115"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Adriana Franco Paes",
+    "lastName" : "Leme",
+    "identifier" : "2581171",
+    "affiliation" : "Laboratório Nacional de Biociências, LNBio, CNPEM, Campinas, São Paulo, 13083-970, Brazil",
+    "email" : "adriana.paesleme@lnbio.cnpem.br",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Adriana Franco Paes Leme",
+    "id" : "2581171"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001742",
+    "name" : "LTQ Orbitrap Velos"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000425",
+    "name" : "MS1 intensity based label-free quantification method"
+  } ],
+  "countries" : [ "Brazil" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0001202",
+      "name" : "saliva"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:8618",
+      "name" : "oral cavity cancer"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0001202",
+    "name" : "Saliva"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:8618",
+    "name" : "Oral cavity cancer"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Granato DC, Carnielli CM, Trino LD, Busso-Lopes AF, Câmara GA, Normando AGC, Filho HVR, Domingues RR, Yokoo S, Pauletti BA, Patroni FM, Santos-Silva AR, Lopes MA, Brandão TB, Prado-Ribeiro AC, Lopes-de Oliveira PS, Telles GP, Paes Leme AF. Mapping Conformational Changes in the Saliva Proteome Potentially Associated with Oral Cancer Aggressiveness. J Proteome Res. 2024 23(6):2148-2159",
+    "pubmedID" : 38785273,
+    "doi" : "10.1021/acs.jproteome.4c00093"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00425",
+    "name" : "monohydroxylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 2540,
+  "botCount" : 1184,
+  "hubCount" : 1310,
+  "organicCount" : 46
+}

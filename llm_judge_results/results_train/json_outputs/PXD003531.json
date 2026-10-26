@@ -1,0 +1,651 @@
+{
+  "paper_id": "PXD003531",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states samples were obtained from women (patients), which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analyzed primary cells and OVCAR3 cell line are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "ascites",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value refers to a biological fluid/source, which fits the tissue field.",
+        "SOURCE_CHECK": "The paper states that EOC cells were derived from peritoneal fluid (ascites).",
+        "TRUTH_CHECK": "The runs carry the value \"ascites\", and the paper confirms that some EOC cells were derived from this source.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "distal fallopian tube epithelium",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"fimbriae\" (the distal part of the fallopian tube) and \"FTE\" (Fallopian Tube Epithelium) in the Cell Culture and Data Analysis sections.",
+        "TRUTH_CHECK": "The runs are associated with FTE cells derived from fimbriae, making this a correct description of the tissue of origin.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "ovarian surface epithelium",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an organism part, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"OSE\" cells derived from \"healthy ovarian cortical tissues\". OSE is the standard abbreviation for ovarian surface epithelium.",
+        "TRUTH_CHECK": "The runs are associated with OSE cells derived from ovarian cortical tissue.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial cells",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods explicitly mention analyzing \"patient-derived epithelial cells\" and \"primary epithelial cells\".",
+        "TRUTH_CHECK": "The runs correspond to the primary cells (EOC, FTE, OSE) and the OVCAR3 cell line, all of which are epithelial in nature.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "high grade serous ovarian cancer",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"epithelial ovarian cancer (EOC)\" multiple times, but \"high grade serous ovarian cancer\" is not mentioned in the provided text.",
+        "TRUTH_CHECK": "While EOC is the focus, the specific subtype \"high grade serous\" is not stated in the abstract or methods.",
+        "COMPLETENESS_CHECK": "The value follows the format of a disease name."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes analyzing cells from either healthy or cancerous tissues.",
+        "TRUTH_CHECK": "The runs associated with healthy tissues (OSE and FTE) are correctly assigned the disease state for healthy subjects.",
+        "COMPLETENESS_CHECK": "The value \"normal\" is the correct SDRF controlled term for healthy subjects."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "epithelial ovarian cancer",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods explicitly mention \"epithelial ovarian cancer (EOC)\".",
+        "TRUTH_CHECK": "The value is correct for the runs derived from EOC primary cells or the OVCAR3 cell line.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "60Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the right field.",
+        "SOURCE_CHECK": "The paper states women were aged 45–75 years, but it does not provide the specific age for any individual subject or run.",
+        "TRUTH_CHECK": "The value 60Y is not stated in the text for these runs.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that all tissue samples were obtained from women.",
+        "TRUTH_CHECK": "The runs are derived from these women, so the sex is female.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "OVCAR3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"The pellet of primary cells or of OVCAR3 cells was dissolved in denaturation buffer\" for mass spectrometry analysis.",
+        "TRUTH_CHECK": "OVCAR3 is an immortalized ovarian cancer cell line used in the MS experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "primary cells",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"cell\" is a description of the material, but it is not one of the controlled terms listed in the field definition.",
+        "SOURCE_CHECK": "The paper describes the analysis of \"primary cells\" and \"cell lines\" (OVCAR3).",
+        "TRUTH_CHECK": "The material analyzed consists of primary cells and a cell line.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the allowed controlled terms (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Caucasian",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions the hospital is in Milan, Italy, but does not state the ethnicity of the subjects.",
+        "TRUTH_CHECK": "The ethnicity is not provided in the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention any labels (TMT, SILAC, etc.), and the use of MaxQuant for abundance analysis is consistent with label-free quantification.",
+        "TRUTH_CHECK": "The runs are label-free as no labeling strategy is described for the MS analysis.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the peptide mixtures were analyzed using a Q-Exactive mass spectrometer.",
+        "TRUTH_CHECK": "The value matches the instrument model stated in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002877;NT=Q Exactive HF-X",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Q Exactive",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states the instrument is a \"Q-Exactive mass spectrometer\", but does not mention the \"HF-X\" model.",
+        "TRUTH_CHECK": "The paper prints \"Q-Exactive\", and \"HF-X\" is a specific model of the same family not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The value is a specific model, but it drifts from the general model printed in the paper."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Lys-C;AC=MS:1001309",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for protein digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that proteins were digested with endoproteinase Lys-C and sequencing grade modified trypsin.",
+        "TRUTH_CHECK": "Lys-C was used for the digestion of the samples analyzed in these runs.",
+        "COMPLETENESS_CHECK": "The value follows the key-value format and names one of the two agents used, which is permitted."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state proteins were digested with \"sequencing grade modified trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the samples analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete. The NT term is correct and the AC accession is not judged."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000422;NT=HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not explicitly name the fragmentation method, but it mentions using a Q Exactive mass spectrometer and \"NCE\" (Normalized Collision Energy) in the related columns.",
+        "TRUTH_CHECK": "HCD is the standard fragmentation method for the Q Exactive instrument and is the only method compatible with the mentioned \"NCE\".",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "25% CE",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not state the collision energy used for the mass spectrometry analysis.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is acceptable, but the content is missing from the source."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "28% NCE",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not state the collision energy used for the mass spectrometry analysis.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent from the paper."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "no enrichment",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a controlled term for the enrichment field, the right field.",
+        "SOURCE_CHECK": "The paper states that a small amount of eluted peptides (1%) was taken for proteome analysis, while the rest were used for phosphoproteome analysis.",
+        "TRUTH_CHECK": "The runs with \"no enrichment\" correspond to the proteome analysis part of the experiment.",
+        "COMPLETENESS_CHECK": "Complete. \"no enrichment\" is the correct SDRF term for non-enriched samples."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "enrichment of phosphorylated Protein",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the enrichment of a peptide subset, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"The remaining peptides were used for the analysis of phosphoproteome\", which implies the enrichment of phosphorylated peptides.",
+        "TRUTH_CHECK": "The runs are part of the phosphoproteome analysis.",
+        "COMPLETENESS_CHECK": "The value uses the SDRF controlled term \"enrichment of phosphorylated protein\"."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"mass-spectrometry-based phosphoproteomics\" and \"proteome analysis\" using a Q-Exactive mass spectrometer.",
+        "TRUTH_CHECK": "The runs are part of the MS-based proteomics experiment described in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper does not mention carbamidomethylation or any alkylation reagent.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Follows the format, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a protein modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention oxidation or any other search modifications in the provided text.",
+        "TRUTH_CHECK": "The modification is not stated in the paper.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "not aplicable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"not aplicable\" is not a modification; it is a statement of non-applicability.",
+        "SOURCE_CHECK": "The paper does not state that modifications were not applicable; it describes a phosphoproteomics experiment which inherently requires searching for phosphorylation.",
+        "TRUTH_CHECK": "The runs include both \"no enrichment\" (proteome) and \"enrichment of phosphorylated Protein\" (phosphoproteome). Even for the proteome runs, standard search parameters (like carbamidomethylation) are typically applied.",
+        "COMPLETENESS_CHECK": "The value does not follow the required \"NT=...;TA=...;MT=...\" format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;MT=variable;TA=S,T,Y;AC=UNIMOD:21",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a modification used in the database search, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"phosphoproteomics\" and \"phosphorylation sites\" in the abstract and methods, but does not explicitly list the search parameters (residues or MT status) for the database search.",
+        "TRUTH_CHECK": "The study is a phosphoproteomics experiment, so phosphorylation is the primary modification of interest.",
+        "COMPLETENESS_CHECK": "The value follows the required SDRF key-value format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=deamidation;MT=variable;TA=N,Q;AC=UNIMOD:7",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention deamidation or any search parameters regarding modifications.",
+        "TRUTH_CHECK": "The modification is not stated in the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention Acetyl or any other search modifications; it only mentions the software used (MaxQuant/Andromeda).",
+        "TRUTH_CHECK": "The modification is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The format follows the definition, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "7 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention a precursor mass tolerance value.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not in the paper."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.02 Da",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not state the fragment mass tolerance used in the MaxQuant/Andromeda search.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "20130603_QE3_UPLC9_CFR_SA_OC_P_AS_01_02.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_01_03.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_03_02.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_03_03.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_04.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_06_02.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_06_03.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_01.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_02.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_03.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_04.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_05.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_02.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_03.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_04.raw = not applicable | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_05.raw = not applicable | 20130606_QE3_UPLC10_CFR_SA_OC_T_AS_03_02_01.raw = not applicable | 20130606_QE3_UPLC10_CFR_SA_OC_T_AS_03_03_01.raw = not applicable | 20130606_QE3_UPLC10_CFR_SA_OC_T_AS_04_01_01.raw = not applicable | 20130606_QE3_UPLC9_CFR_SA_OC_T_AS_01_02_01.raw = not applicable | 20130606_QE3_UPLC9_CFR_SA_OC_T_AS_01_03_01.raw = not applicable | 20130608_QE3_UPLC10_CFR_SA_OC_T_AS_06_02_01.raw = not applicable | 20130608_QE3_UPLC10_CFR_SA_OC_T_AS_06_03_01.raw = not applicable | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_01_01_01.raw = not applicable | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_02_01_01.raw = not applicable | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_03_01_01.raw = not applicable | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_04_01_01.raw = not applicable | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_05_01_01.raw = not applicable | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_02_01_01.raw = not applicable | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_03_01_01.raw = not applicable | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_04_01_01.raw = not applicable | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_05_01_01.raw = not applicable | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_NTp1_1_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_NTp1_3_01.raw = 2 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_NTp1_4_01.raw = 3 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p1_1_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p1_2_01.raw = 2 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p1_4_01.raw = 3 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_UOp1_1_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_UOp1_2_01.raw = 2 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_UOp1_3_01.raw = 3 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_NTp2_1_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_NTp2_3_01.raw = 2 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_NTp2_4_01.raw = 3 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p2_1_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p2_2_01.raw = 2 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p2_4_01.raw = 3 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_UOp2_1_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_UOp2_2_01.raw = 2 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_UOp2_3_01.raw = 3 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_NTprot_1_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_NTprot_3_01.raw = 2 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_NTprot_4_01.raw = 3 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_THZ1prot_1_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_THZ1prot_2_01.raw = 2 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_THZ1prot_4_01.raw = 3 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_UOprot_1_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_UOprot_2_01.raw = 2 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_UOprot_3_01.raw = 3",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions that all experiments were performed at least three times and describes multiple samples from patients and cell lines.",
+        "TRUTH_CHECK": "The mapping uses \"not applicable\" for the first 32 runs, but these runs correspond to primary cells from different patients/sources (Sample 1 to 26), which are independent biological units and must have replicate indices.",
+        "COMPLETENESS_CHECK": "The use of \"not applicable\" violates the requirement that every run carries a plain number."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20130603_QE3_UPLC9_CFR_SA_OC_P_AS_01_02.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_01_03.raw = 2 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_03_02.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_03_03.raw = 2 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_04.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_06_02.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_06_03.raw = 2 | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_01.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_02.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_03.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_04.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_05.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_02.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_03.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_04.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_05.raw = 1 | 20130606_QE3_UPLC10_CFR_SA_OC_T_AS_03_02_01.raw = 1 | 20130606_QE3_UPLC10_CFR_SA_OC_T_AS_03_03_01.raw = 2 | 20130606_QE3_UPLC10_CFR_SA_OC_T_AS_04_01_01.raw = 1 | 20130606_QE3_UPLC9_CFR_SA_OC_T_AS_01_02_01.raw = 1 | 20130606_QE3_UPLC9_CFR_SA_OC_T_AS_01_03_01.raw = 2 | 20130608_QE3_UPLC10_CFR_SA_OC_T_AS_06_02_01.raw = 1 | 20130608_QE3_UPLC10_CFR_SA_OC_T_AS_06_03_01.raw = 2 | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_01_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_02_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_03_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_04_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_05_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_02_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_03_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_04_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_05_01_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_NTp1_1_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_NTp1_3_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_NTp1_4_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p1_1_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p1_2_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p1_4_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_UOp1_1_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_UOp1_2_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_UOp1_3_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_NTp2_1_01.raw = 2 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_NTp2_3_01.raw = 2 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_NTp2_4_01.raw = 2 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p2_1_01.raw = 2 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p2_2_01.raw = 2 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p2_4_01.raw = 2 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_UOp2_1_01.raw = 2 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_UOp2_2_01.raw = 2 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_UOp2_3_01.raw = 2 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_NTprot_1_01.raw = not applicable | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_NTprot_3_01.raw = not applicable | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_NTprot_4_01.raw = not applicable | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_THZ1prot_1_01.raw = not applicable | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_THZ1prot_2_01.raw = not applicable | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_THZ1prot_4_01.raw = not applicable | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_UOprot_1_01.raw = not applicable | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_UOprot_2_01.raw = not applicable | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_UOprot_3_01.raw = not applicable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states \"All experiments were performed at least three times\", but does not explicitly detail the technical replication of each raw file.",
+        "TRUTH_CHECK": "The mapping assigns technical replicate indices based on the source sample and file naming. However, for runs 42-50, it assigns \"2\" to runs that are mapped to different source samples (e.g., Sample 36, 37, 38), which contradicts the definition that technical replicates are repeated runs of the same material.",
+        "COMPLETENESS_CHECK": "The value \"not applicable\" is used for several runs, which is forbidden by the SDRF conventions provided."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20130603_QE3_UPLC9_CFR_SA_OC_P_AS_01_02.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_01_03.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_03_02.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_03_03.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_04.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_06_02.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_AS_06_03.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_01.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_02.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_03.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_04.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_FI_05.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_02.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_03.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_04.raw = 1 | 20130603_QE3_UPLC9_CFR_SA_OC_P_NO_05.raw = 1 | 20130606_QE3_UPLC10_CFR_SA_OC_T_AS_03_02_01.raw = 1 | 20130606_QE3_UPLC10_CFR_SA_OC_T_AS_03_03_01.raw = 1 | 20130606_QE3_UPLC10_CFR_SA_OC_T_AS_04_01_01.raw = 1 | 20130606_QE3_UPLC9_CFR_SA_OC_T_AS_01_02_01.raw = 1 | 20130606_QE3_UPLC9_CFR_SA_OC_T_AS_01_03_01.raw = 1 | 20130608_QE3_UPLC10_CFR_SA_OC_T_AS_06_02_01.raw = 1 | 20130608_QE3_UPLC10_CFR_SA_OC_T_AS_06_03_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_01_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_02_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_03_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_04_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_FI_05_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_02_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_03_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_04_01_01.raw = 1 | 20130611_QE3_UPLC10_CFR_SA_OC_T_NO_05_01_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_NTp1_1_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_NTp1_3_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_NTp1_4_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p1_1_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p1_2_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p1_4_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_UOp1_1_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_UOp1_2_01.raw = 1 | 20150616_QE7_UPLC10_RJC_COLLAB_CFR_UOp1_3_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_NTp2_1_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_NTp2_3_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_NTp2_4_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p2_1_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p2_2_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_THZ1p2_4_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_UOp2_1_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_UOp2_2_01.raw = 1 | 20150619_QE7_UPLC10_RJC_COLLAB_CFR_UOp2_3_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_NTprot_1_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_NTprot_3_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_NTprot_4_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_THZ1prot_1_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_THZ1prot_2_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_THZ1prot_4_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_UOprot_1_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_UOprot_2_01.raw = 1 | 20150623_QE7_UPLC10_RJC_COLLAB_CFR_UOprot_3_01.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not describe any offline fractionation; it only mentions peptide purification using C18 cartridges and elution.",
+        "TRUTH_CHECK": "Since no offline fractionation is described, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns 1 to all runs."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Compound",
+      "extracted_value": "CDK7 inhibitor THZ1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a chemical compound used for treatment, which is appropriate for a column named \"Compound\".",
+        "SOURCE_CHECK": "The abstract mentions \"pharmacological inhibition of CDK7\", but the specific inhibitor \"THZ1\" is not mentioned in the provided text.",
+        "TRUTH_CHECK": "While the paper mentions CDK7 inhibition, the specific name of the compound \"THZ1\" is absent from the source text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Compound",
+      "extracted_value": "MEK inhibitor U0126",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a chemical compound used as a treatment, which fits the column name \"Compound\".",
+        "SOURCE_CHECK": "The paper mentions pharmacological inhibition of CDK7, but there is no mention of a MEK inhibitor or the specific compound U0126 in the provided text.",
+        "TRUTH_CHECK": "The content is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Complete as a plain text value."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[proteomics data acquisition method]",
+      "extracted_value": "NT=Data-Dependent Acquisition;AC=NCIT:C161785",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the MS acquisition method, which is appropriate for a column named \"comment[proteomics data acquisition method]\".",
+        "SOURCE_CHECK": "The paper mentions the use of a Q-Exactive mass spectrometer and MaxQuant/Andromeda; while \"Data-Dependent Acquisition\" is not written verbatim, it is the standard acquisition mode for the Q-Exactive in this context and is an allowed inference for the acquisition_method field (and thus a comment about it).",
+        "TRUTH_CHECK": "The value is right for the runs as they were analyzed using a Q-Exactive.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

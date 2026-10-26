@@ -1,0 +1,413 @@
+{
+  "paper_id": "PXD006233",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes \"autopsied human brain tissues\", which is an allowed inference for homo sapiens.",
+        "TRUTH_CHECK": "The analyzed brain tissues are human.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "middle temporal lobe, BA21 region",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the anatomical part of the brain, which is the right field.",
+        "SOURCE_CHECK": "The methods section explicitly states \"middle temporal lobe, BA21 region\".",
+        "TRUTH_CHECK": "The analyzed brain tissues were from this specific region.",
+        "COMPLETENESS_CHECK": "The value is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"healthy age-matched control (Ctrl)\" subjects.",
+        "TRUTH_CHECK": "The runs carry the value for the control group.",
+        "COMPLETENESS_CHECK": "The SDRF term for healthy subjects is \"normal\" (lowercase)."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Alzheimer's and cerebrovascular disease",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper states subjects were diagnosed with \"AD + CVD\" and \"Alzheimer’s disease with cerebrovascular disease\".",
+        "TRUTH_CHECK": "The value correctly identifies the disease state for the case group.",
+        "COMPLETENESS_CHECK": "The value is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "69",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper states that age details for the samples can be found in \"Additional file 1: Table S1\", but this table is not provided in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The value is a number without a unit, whereas the definition requires the unit as stated."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "62",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper states that age details can be found in \"Additional file 1: Table S1\", but the actual values are not provided in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The value is a number without the required unit (e.g., \"years\")."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "67",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper states that age details can be found in \"Additional file 1: Table S1\", but the actual values are not printed in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which is required by the definition."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "65",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper states that details including age can be found in \"Additional file 1: Table S1\", but the actual age values are not printed in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The value is a number without a unit, whereas the definition requires the unit as stated."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "68",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the right field.",
+        "SOURCE_CHECK": "The paper states that age details for the samples can be found in \"Additional file 1: Table S1\", but the actual values are not provided in the provided text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The value is a number without a unit, whereas the definition requires the unit as stated."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "63",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number representing age, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that details including age can be found in \"Additional file 1: Table S1\", but the actual age values are not provided in the provided text.",
+        "TRUTH_CHECK": "Since the value is not in the provided text, it cannot be verified as right for the runs.",
+        "COMPLETENESS_CHECK": "The value lacks a unit (e.g., \"years\"), which is required by the field definition."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper states that gender details can be found in \"Additional file 1: Table S1\", but this file is not provided in the paper text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that gender details can be found in \"Additional file 1: Table S1\", but this table is not provided in the paper text.",
+        "TRUTH_CHECK": "The value cannot be verified against the provided text.",
+        "COMPLETENESS_CHECK": "The value follows the definition format."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a developmental stage, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"elder population\" and the related columns show ages (e.g., 69, 62), allowing the inference of \"adult\".",
+        "TRUTH_CHECK": "The subjects are elderly adults.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a standard LC-MS/MS workflow without any mention of isotopic labels (TMT, SILAC, etc.), which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are label-free.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001911;NT=Q Exactive",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Orbitrap Elite",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states the instrument used was an \"Orbitrap Elite\".",
+        "TRUTH_CHECK": "The candidate value \"Q Exactive\" is a different model from the \"Orbitrap Elite\" printed in the paper.",
+        "COMPLETENESS_CHECK": "The value is a complete term but for the wrong model."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods section mentions \"sequencing-grade-modified trypsin\" was used for both in-solution and in-gel digestion.",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the proteins in all described runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a technology type, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a mass spectrometry-based proteomics workflow using tryptic digestion and LC-MS/MS.",
+        "TRUTH_CHECK": "The value correctly describes the MS experiment performed on the brain fractions.",
+        "COMPLETENESS_CHECK": "The value uses the official SDRF controlled term for MS-based proteomics."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Carbamidomethylation of cysteine residues was considered as fixed modification.\"",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format including name, residue, and modification type."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The bioinformatics section states \"Precursor ion tolerance... kept during the database search at 10 ppm\".",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.05 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The bioinformatics section states \"fragment ion tolerance were kept during the database search at ... 0.05 Da\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and unit as printed."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "BA21_C1_P_01.raw = 1 | BA21_C1_P_02.raw = 1 | BA21_C1_P_03.raw = 1 | BA21_C1_P_04.raw = 1 | BA21_C1_P_05.raw = 1 | BA21_C1_P_06.raw = 1 | BA21_C1_P_07.raw = 1 | BA21_C1_P_08.raw = 1 | BA21_C1_P_09.raw = 1 | BA21_C1_P_10.raw = 1 | BA21_C1_P_11.raw = 1 | BA21_C1_P_12.raw = 1 | BA21_C1_P_13.raw = 1 | BA21_C1_P_14.raw = 1 | BA21_C1_P_15.raw = 1 | BA21_C1_P_16.raw = 1 | BA21_C1_P_17.raw = 1 | BA21_C1_P_18.raw = 1 | BA21_C1_P_19.raw = 1 | BA21_C1_P_20.raw = 1 | BA21_C1_P_21.raw = 1 | BA21_C1_P_22.raw = 1 | BA21_C1_P_23.raw = 1 | BA21_C1_P_24.raw = 1 | BA21_C1_P_25.raw = 1 | BA21_C1_P_26.raw = 1 | BA21_C1_P_27.raw = 1 | BA21_C1_P_28.raw = 1 | BA21_C1_P_29.raw = 1 | BA21_C1_P_30.raw = 1 | BA21_C1_P_31.raw = 1 | BA21_C1_P_32.raw = 1 | BA21_C1_S_01.raw = 1 | BA21_C1_S_02.raw = 1 | BA21_C1_S_03.raw = 1 | BA21_C1_S_04.raw = 1 | BA21_C1_S_05.raw = 1 | BA21_C1_S_06.raw = 1 | BA21_C1_S_07.raw = 1 | BA21_C1_S_08.raw = 1 | BA21_C1_S_09.raw = 1 | BA21_C1_S_10.raw = 1 | BA21_C1_S_11.raw = 1 | BA21_C1_S_12.raw = 1 | BA21_C1_S_13.raw = 1 | BA21_C1_S_14.raw = 1 | BA21_C1_S_15.raw = 1 | BA21_C1_S_16.raw = 1 | BA21_C1_S_17.raw = 1 | BA21_C1_S_18.raw = 1 | BA21_C1_S_19.raw = 1 | BA21_C1_S_20.raw = 1 | BA21_C1_S_21.raw = 1 | BA21_C1_S_22.raw = 1 | BA21_C1_S_23.raw = 1 | BA21_C1_S_24.raw = 1 | BA21_C1_S_25.raw = 1 | BA21_C1_S_26.raw = 1 | BA21_C1_S_27.raw = 1 | BA21_C1_S_28.raw = 1 | BA21_C1_S_29.raw = 1 | BA21_C1_S_30.raw = 1 | BA21_C1_S_31.raw = 1 | BA21_C1_S_32.raw = 1 | BA21_C1_S_33.raw = 1 | BA21_C1_S_34.raw = 1 | BA21_C1_S_35.raw = 1 | BA21_C1_S_36.raw = 1 | BA21_C1_S_37.raw = 1 | BA21_C1_S_38.raw = 1 | BA21_C1_S_39.raw = 1 | BA21_C1_S_40.raw = 1 | BA21_C1_S_41.raw = 1 | BA21_C1_S_42.raw = 1 | BA21_C1_S_43.raw = 1 | BA21_C1_S_44.raw = 1 | BA21_C1_S_45.raw = 1 | BA21_C2_P_01.raw = 2 | BA21_C2_P_02.raw = 2 | BA21_C2_P_03.raw = 2 | BA21_C2_P_04.raw = 2 | BA21_C2_P_05.raw = 2 | BA21_C2_P_06.raw = 2 | BA21_C2_P_07.raw = 2 | BA21_C2_P_08.raw = 2 | BA21_C2_P_09.raw = 2 | BA21_C2_P_10.raw = 2 | BA21_C2_P_11.raw = 2 | BA21_C2_P_12.raw = 2 | BA21_C2_P_13.raw = 2 | BA21_C2_P_14.raw = 2 | BA21_C2_P_15.raw = 2 | BA21_C2_P_16.raw = 2 | BA21_C2_P_17.raw = 2 | BA21_C2_P_18.raw = 2 | BA21_C2_P_19.raw = 2 | BA21_C2_P_20.raw = 2 | BA21_C2_P_21.raw = 2 | BA21_C2_P_22.raw = 2 | BA21_C2_P_23.raw = 2 | BA21_C2_P_24.raw = 2 | BA21_C2_P_25.raw = 2 | BA21_C2_P_26.raw = 2 | BA21_C2_P_27.raw = 2 | BA21_C2_P_28.raw = 2 | BA21_C2_P_29.raw = 2 | BA21_C2_P_30.raw = 2 | BA21_C2_P_31.raw = 2 | BA21_C2_P_32.raw = 2 | BA21_C2_S_01.raw = 2 | BA21_C2_S_02.raw = 2 | BA21_C2_S_03.raw = 2 | BA21_C2_S_04.raw = 2 | BA21_C2_S_05.raw = 2 | BA21_C2_S_06.raw = 2 | BA21_C2_S_07.raw = 2 | BA21_C2_S_08.raw = 2 | BA21_C2_S_09.raw = 2 | BA21_C2_S_10.raw = 2 | BA21_C2_S_11.raw = 2 | BA21_C2_S_12.raw = 2 | BA21_C2_S_13.raw = 2 | BA21_C2_S_14.raw = 2 | BA21_C2_S_15.raw = 2 | BA21_C2_S_16.raw = 2 | BA21_C2_S_17.raw = 2 | BA21_C2_S_18.raw = 2 | BA21_C2_S_19.raw = 2 | BA21_C2_S_20.raw = 2 | BA21_C2_S_21.raw = 2 | BA21_C2_S_22.raw = 2 | BA21_C2_S_23.raw = 2 | BA21_C2_S_24.raw = 2 | BA21_C2_S_25.raw = 2 | BA21_C2_S_26.raw = 2 | BA21_C2_S_27.raw = 2 | BA21_C2_S_28.raw = 2 | BA21_C2_S_29.raw = 2 | BA21_C2_S_30.raw = 2 | BA21_C2_S_31.raw = 2 | BA21_C2_S_32.raw = 2 | BA21_C3_P_01.raw = 3 | BA21_C3_P_02.raw = 3 | BA21_C3_P_03.raw = 3 | BA21_C3_P_04.raw = 3 | BA21_C3_P_05.raw = 3 | BA21_C3_P_06.raw = 3 | BA21_C3_P_07.raw = 3 | BA21_C3_P_08.raw = 3 | BA21_C3_P_09.raw = 3 | BA21_C3_P_10.raw = 3 | BA21_C3_P_11.raw = 3 | BA21_C3_P_12.raw = 3 | BA21_C3_P_13.raw = 3 | BA21_C3_P_14.raw = 3 | BA21_C3_P_15.raw = 3 | BA21_C3_P_16.raw = 3 | BA21_C3_P_17.raw = 3 | BA21_C3_P_18.raw = 3 | BA21_C3_P_19.raw = 3 | BA21_C3_P_20.raw = 3 | BA21_C3_P_21.raw = 3 | BA21_C3_P_22.raw = 3 | BA21_C3_P_23.raw = 3 | BA21_C3_P_24.raw = 3 | BA21_C3_P_25.raw = 3 | BA21_C3_P_26.raw = 3 | BA21_C3_P_27.raw = 3 | BA21_C3_P_28.raw = 3 | BA21_C3_P_29.raw = 3 | BA21_C3_P_30.raw = 3 | BA21_C3_P_31.raw = 3 | BA21_C3_P_32.raw = 3 | BA21_C3_S_01.raw = 3 | BA21_C3_S_02.raw = 3 | BA21_C3_S_03.raw = 3 | BA21_C3_S_04.raw = 3 | BA21_C3_S_05.raw = 3 | BA21_C3_S_06.raw = 3 | BA21_C3_S_07.raw = 3 | BA21_C3_S_08.raw = 3 | BA21_C3_S_09.raw = 3 | BA21_C3_S_10.raw = 3 | BA21_C3_S_11.raw = 3 | BA21_C3_S_12.raw = 3 | BA21_C3_S_13.raw = 3 | BA21_C3_S_14.raw = 3 | BA21_C3_S_15.raw = 3 | BA21_C3_S_16.raw = 3 | BA21_C3_S_17.raw = 3 | BA21_C3_S_18.raw = 3 | BA21_C3_S_19.raw = 3 | BA21_C3_S_20.raw = 3 | BA21_D1_P_01.raw = 1 | BA21_D1_P_02.raw = 1 | BA21_D1_P_03.raw = 1 | BA21_D1_P_04.raw = 1 | BA21_D1_P_05.raw = 1 | BA21_D1_P_06.raw = 1 | BA21_D1_P_07.raw = 1 | BA21_D1_P_08.raw = 1 | BA21_D1_P_09.raw = 1 | BA21_D1_P_10.raw = 1 | BA21_D1_P_11.raw = 1 | BA21_D1_P_12.raw = 1 | BA21_D1_P_13.raw = 1 | BA21_D1_P_14.raw = 1 | BA21_D1_P_15.raw = 1 | BA21_D1_P_16.raw = 1 | BA21_D1_P_17.raw = 1 | BA21_D1_P_18.raw = 1 | BA21_D1_P_19.raw = 1 | BA21_D1_P_20.raw = 1 | BA21_D1_P_21.raw = 1 | BA21_D1_P_22.raw = 1 | BA21_D1_P_23.raw = 1 | BA21_D1_P_24.raw = 1 | BA21_D1_P_25.raw = 1 | BA21_D1_P_26.raw = 1 | BA21_D1_P_27.raw = 1 | BA21_D1_P_28.raw = 1 | BA21_D1_P_29.raw = 1 | BA21_D1_P_30.raw = 1 | BA21_D1_P_31.raw = 1 | BA21_D1_P_32.raw = 1 | BA21_D1_P_33.raw = 1 | BA21_D1_S_01.raw = 1 | BA21_D1_S_02.raw = 1 | BA21_D1_S_03.raw = 1 | BA21_D1_S_04.raw = 1 | BA21_D1_S_05.raw = 1 | BA21_D1_S_06.raw = 1 | BA21_D1_S_07.raw = 1 | BA21_D1_S_08.raw = 1 | BA21_D1_S_09.raw = 1 | BA21_D1_S_10.raw = 1 | BA21_D1_S_11.raw = 1 | BA21_D1_S_12.raw = 1 | BA21_D1_S_13.raw = 1 | BA21_D1_S_14.raw = 1 | BA21_D1_S_15.raw = 1 | BA21_D1_S_16.raw = 1 | BA21_D1_S_17.raw = 1 | BA21_D1_S_18.raw = 1 | BA21_D1_S_19.raw = 1 | BA21_D1_S_20.raw = 1 | BA21_D1_S_21.raw = 1 | BA21_D1_S_22.raw = 1 | BA21_D1_S_23.raw = 1 | BA21_D1_S_24.raw = 1 | BA21_D1_S_25.raw = 1 | BA21_D1_S_26.raw = 1 | BA21_D1_S_27.raw = 1 | BA21_D1_S_28.raw = 1 | BA21_D1_S_29.raw = 1 | BA21_D1_S_30.raw = 1 | BA21_D1_S_31.raw = 1 | BA21_D1_S_32.raw = 1 | BA21_D2_P_01.raw = 2 | BA21_D2_P_02.raw = 2 | BA21_D2_P_03.raw = 2 | BA21_D2_P_04.raw = 2 | BA21_D2_P_05.raw = 2 | BA21_D2_P_06.raw = 2 | BA21_D2_P_07.raw = 2 | BA21_D2_P_08.raw = 2 | BA21_D2_P_09.raw = 2 | BA21_D2_P_10.raw = 2 | BA21_D2_P_11.raw = 2 | BA21_D2_P_12.raw = 2 | BA21_D2_P_13.raw = 2 | BA21_D2_P_14.raw = 2 | BA21_D2_P_15.raw = 2 | BA21_D2_P_16.raw = 2 | BA21_D2_P_17.raw = 2 | BA21_D2_P_18.raw = 2 | BA21_D2_P_19.raw = 2 | BA21_D2_P_20.raw = 2 | BA21_D2_P_21.raw = 2 | BA21_D2_P_22.raw = 2 | BA21_D2_P_23.raw = 2 | BA21_D2_P_24.raw = 2 | BA21_D2_P_25.raw = 2 | BA21_D2_P_26.raw = 2 | BA21_D2_P_27.raw = 2 | BA21_D2_P_28.raw = 2 | BA21_D2_P_29.raw = 2 | BA21_D2_P_30.raw = 2 | BA21_D2_P_31.raw = 2 | BA21_D2_P_32.raw = 2 | BA21_D2_S_01.raw = 2 | BA21_D2_S_02.raw = 2 | BA21_D2_S_03.raw = 2 | BA21_D2_S_04.raw = 2 | BA21_D2_S_05.raw = 2 | BA21_D2_S_06.raw = 2 | BA21_D2_S_07.raw = 2 | BA21_D2_S_08.raw = 2 | BA21_D2_S_09.raw = 2 | BA21_D2_S_10.raw = 2 | BA21_D2_S_11.raw = 2 | BA21_D2_S_12.raw = 2 | BA21_D2_S_13.raw = 2 | BA21_D2_S_14.raw = 2 | BA21_D2_S_15.raw = 2 | BA21_D2_S_16.raw = 2 | BA21_D2_S_17.raw = 2 | BA21_D2_S_18.raw = 2 | BA21_D2_S_19.raw = 2 | BA21_D2_S_20.raw = 2 | BA21_D2_S_21.raw = 2 | BA21_D2_S_22.raw = 2 | BA21_D2_S_23.raw = 2 | BA21_D2_S_24.raw = 2 | BA21_D2_S_25.raw = 2 | BA21_D2_S_26.raw = 2 | BA21_D2_S_27.raw = 2 | BA21_D2_S_28.raw = 2 | BA21_D2_S_29.raw = 2 | BA21_D2_S_30.raw = 2 | BA21_D2_S_31.raw = 2 | BA21_D2_S_32.raw = 2 | BA21_D3_P_01.raw = 3 | BA21_D3_P_02.raw = 3 | BA21_D3_P_03.raw = 3 | BA21_D3_P_04.raw = 3 | BA21_D3_P_05.raw = 3 | BA21_D3_P_06.raw = 3 | BA21_D3_P_07.raw = 3 | BA21_D3_P_08.raw = 3 | BA21_D3_P_09.raw = 3 | BA21_D3_P_10.raw = 3 | BA21_D3_P_11.raw = 3 | BA21_D3_P_12.raw = 3 | BA21_D3_P_13.raw = 3 | BA21_D3_P_14.raw = 3 | BA21_D3_P_15.raw = 3 | BA21_D3_P_16.raw = 3 | BA21_D3_P_17.raw = 3 | BA21_D3_P_18.raw = 3 | BA21_D3_P_19.raw = 3 | BA21_D3_P_20.raw = 3 | BA21_D3_P_21.raw = 3 | BA21_D3_P_22.raw = 3 | BA21_D3_P_23.raw = 3 | BA21_D3_S_01.raw = 3 | BA21_D3_S_02.raw = 3 | BA21_D3_S_03.raw = 3 | BA21_D3_S_04.raw = 3 | BA21_D3_S_05.raw = 3 | BA21_D3_S_06.raw = 3 | BA21_D3_S_07.raw = 3 | BA21_D3_S_08.raw = 3 | BA21_D3_S_09.raw = 3 | BA21_D3_S_10.raw = 3 | BA21_D3_S_11.raw = 3 | BA21_D3_S_12.raw = 3 | BA21_D3_S_13.raw = 3 | BA21_D3_S_14.raw = 3 | BA21_D3_S_15.raw = 3 | BA21_D3_S_16.raw = 3 | BA21_D3_S_17.raw = 3 | BA21_D3_S_18.raw = 3 | BA21_D3_S_19.raw = 3 | BA21_D3_S_20.raw = 3 | BA21_D3_S_21.raw = 3 | BA21_D3_S_22.raw = 3 | BA21_D3_S_23.raw = 3 | BA21_D3_S_24.raw = 3 | BA21_D3_S_25.raw = 3 | BA21_D3_S_26.raw = 3 | BA21_D3_S_27.raw = 3 | BA21_D3_S_28.raw = 3 | BA21_D3_S_29.raw = 3 | BA21_D3_S_30.raw = 3 | BA21_D3_S_31.raw = 3 | BA21_D3_S_32.raw = 3 | BA21_D3_S_33.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that three biological replicates were independently analyzed for each experimental condition.",
+        "TRUTH_CHECK": "The mapping assigns the same index to runs derived from the same sample (e.g., Sample 1, Sample 2, etc.), regardless of whether they are soluble (S) or particulate (P) fractions, which is correct as they originate from the same biological unit.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index, and the grouping by sample is consistent."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "BA21_C1_P_01.raw = 1 | BA21_C1_P_02.raw = 1 | BA21_C1_P_03.raw = 1 | BA21_C1_P_04.raw = 1 | BA21_C1_P_05.raw = 1 | BA21_C1_P_06.raw = 1 | BA21_C1_P_07.raw = 1 | BA21_C1_P_08.raw = 1 | BA21_C1_P_09.raw = 1 | BA21_C1_P_10.raw = 1 | BA21_C1_P_11.raw = 1 | BA21_C1_P_12.raw = 1 | BA21_C1_P_13.raw = 1 | BA21_C1_P_14.raw = 1 | BA21_C1_P_15.raw = 1 | BA21_C1_P_16.raw = 1 | BA21_C1_P_17.raw = 1 | BA21_C1_P_18.raw = 1 | BA21_C1_P_19.raw = 1 | BA21_C1_P_20.raw = 1 | BA21_C1_P_21.raw = 1 | BA21_C1_P_22.raw = 1 | BA21_C1_P_23.raw = 1 | BA21_C1_P_24.raw = 1 | BA21_C1_P_25.raw = 1 | BA21_C1_P_26.raw = 1 | BA21_C1_P_27.raw = 1 | BA21_C1_P_28.raw = 1 | BA21_C1_P_29.raw = 1 | BA21_C1_P_30.raw = 1 | BA21_C1_P_31.raw = 1 | BA21_C1_P_32.raw = 1 | BA21_C1_S_01.raw = 1 | BA21_C1_S_02.raw = 1 | BA21_C1_S_03.raw = 1 | BA21_C1_S_04.raw = 1 | BA21_C1_S_05.raw = 1 | BA21_C1_S_06.raw = 1 | BA21_C1_S_07.raw = 1 | BA21_C1_S_08.raw = 1 | BA21_C1_S_09.raw = 1 | BA21_C1_S_10.raw = 1 | BA21_C1_S_11.raw = 1 | BA21_C1_S_12.raw = 1 | BA21_C1_S_13.raw = 1 | BA21_C1_S_14.raw = 1 | BA21_C1_S_15.raw = 1 | BA21_C1_S_16.raw = 1 | BA21_C1_S_17.raw = 1 | BA21_C1_S_18.raw = 1 | BA21_C1_S_19.raw = 1 | BA21_C1_S_20.raw = 1 | BA21_C1_S_21.raw = 1 | BA21_C1_S_22.raw = 1 | BA21_C1_S_23.raw = 1 | BA21_C1_S_24.raw = 1 | BA21_C1_S_25.raw = 1 | BA21_C1_S_26.raw = 1 | BA21_C1_S_27.raw = 1 | BA21_C1_S_28.raw = 1 | BA21_C1_S_29.raw = 1 | BA21_C1_S_30.raw = 1 | BA21_C1_S_31.raw = 1 | BA21_C1_S_32.raw = 1 | BA21_C1_S_33.raw = 1 | BA21_C1_S_34.raw = 1 | BA21_C1_S_35.raw = 1 | BA21_C1_S_36.raw = 1 | BA21_C1_S_37.raw = 1 | BA21_C1_S_38.raw = 1 | BA21_C1_S_39.raw = 1 | BA21_C1_S_40.raw = 1 | BA21_C1_S_41.raw = 1 | BA21_C1_S_42.raw = 1 | BA21_C1_S_43.raw = 1 | BA21_C1_S_44.raw = 1 | BA21_C1_S_45.raw = 1 | BA21_C2_P_01.raw = 1 | BA21_C2_P_02.raw = 1 | BA21_C2_P_03.raw = 1 | BA21_C2_P_04.raw = 1 | BA21_C2_P_05.raw = 1 | BA21_C2_P_06.raw = 1 | BA21_C2_P_07.raw = 1 | BA21_C2_P_08.raw = 1 | BA21_C2_P_09.raw = 1 | BA21_C2_P_10.raw = 1 | BA21_C2_P_11.raw = 1 | BA21_C2_P_12.raw = 1 | BA21_C2_P_13.raw = 1 | BA21_C2_P_14.raw = 1 | BA21_C2_P_15.raw = 1 | BA21_C2_P_16.raw = 1 | BA21_C2_P_17.raw = 1 | BA21_C2_P_18.raw = 1 | BA21_C2_P_19.raw = 1 | BA21_C2_P_20.raw = 1 | BA21_C2_P_21.raw = 1 | BA21_C2_P_22.raw = 1 | BA21_C2_P_23.raw = 1 | BA21_C2_P_24.raw = 1 | BA21_C2_P_25.raw = 1 | BA21_C2_P_26.raw = 1 | BA21_C2_P_27.raw = 1 | BA21_C2_P_28.raw = 1 | BA21_C2_P_29.raw = 1 | BA21_C2_P_30.raw = 1 | BA21_C2_P_31.raw = 1 | BA21_C2_P_32.raw = 1 | BA21_C2_S_01.raw = 1 | BA21_C2_S_02.raw = 1 | BA21_C2_S_03.raw = 1 | BA21_C2_S_04.raw = 1 | BA21_C2_S_05.raw = 1 | BA21_C2_S_06.raw = 1 | BA21_C2_S_07.raw = 1 | BA21_C2_S_08.raw = 1 | BA21_C2_S_09.raw = 1 | BA21_C2_S_10.raw = 1 | BA21_C2_S_11.raw = 1 | BA21_C2_S_12.raw = 1 | BA21_C2_S_13.raw = 1 | BA21_C2_S_14.raw = 1 | BA21_C2_S_15.raw = 1 | BA21_C2_S_16.raw = 1 | BA21_C2_S_17.raw = 1 | BA21_C2_S_18.raw = 1 | BA21_C2_S_19.raw = 1 | BA21_C2_S_20.raw = 1 | BA21_C2_S_21.raw = 1 | BA21_C2_S_22.raw = 1 | BA21_C2_S_23.raw = 1 | BA21_C2_S_24.raw = 1 | BA21_C2_S_25.raw = 1 | BA21_C2_S_26.raw = 1 | BA21_C2_S_27.raw = 1 | BA21_C2_S_28.raw = 1 | BA21_C2_S_29.raw = 1 | BA21_C2_S_30.raw = 1 | BA21_C2_S_31.raw = 1 | BA21_C2_S_32.raw = 1 | BA21_C3_P_01.raw = 1 | BA21_C3_P_02.raw = 1 | BA21_C3_P_03.raw = 1 | BA21_C3_P_04.raw = 1 | BA21_C3_P_05.raw = 1 | BA21_C3_P_06.raw = 1 | BA21_C3_P_07.raw = 1 | BA21_C3_P_08.raw = 1 | BA21_C3_P_09.raw = 1 | BA21_C3_P_10.raw = 1 | BA21_C3_P_11.raw = 1 | BA21_C3_P_12.raw = 1 | BA21_C3_P_13.raw = 1 | BA21_C3_P_14.raw = 1 | BA21_C3_P_15.raw = 1 | BA21_C3_P_16.raw = 1 | BA21_C3_P_17.raw = 1 | BA21_C3_P_18.raw = 1 | BA21_C3_P_19.raw = 1 | BA21_C3_P_20.raw = 1 | BA21_C3_P_21.raw = 1 | BA21_C3_P_22.raw = 1 | BA21_C3_P_23.raw = 1 | BA21_C3_P_24.raw = 1 | BA21_C3_P_25.raw = 1 | BA21_C3_P_26.raw = 1 | BA21_C3_P_27.raw = 1 | BA21_C3_P_28.raw = 1 | BA21_C3_P_29.raw = 1 | BA21_C3_P_30.raw = 1 | BA21_C3_P_31.raw = 1 | BA21_C3_P_32.raw = 1 | BA21_C3_S_01.raw = 1 | BA21_C3_S_02.raw = 1 | BA21_C3_S_03.raw = 1 | BA21_C3_S_04.raw = 1 | BA21_C3_S_05.raw = 1 | BA21_C3_S_06.raw = 1 | BA21_C3_S_07.raw = 1 | BA21_C3_S_08.raw = 1 | BA21_C3_S_09.raw = 1 | BA21_C3_S_10.raw = 1 | BA21_C3_S_11.raw = 1 | BA21_C3_S_12.raw = 1 | BA21_C3_S_13.raw = 1 | BA21_C3_S_14.raw = 1 | BA21_C3_S_15.raw = 1 | BA21_C3_S_16.raw = 1 | BA21_C3_S_17.raw = 1 | BA21_C3_S_18.raw = 1 | BA21_C3_S_19.raw = 1 | BA21_C3_S_20.raw = 1 | BA21_D1_P_01.raw = 1 | BA21_D1_P_02.raw = 1 | BA21_D1_P_03.raw = 1 | BA21_D1_P_04.raw = 1 | BA21_D1_P_05.raw = 1 | BA21_D1_P_06.raw = 1 | BA21_D1_P_07.raw = 1 | BA21_D1_P_08.raw = 1 | BA21_D1_P_09.raw = 1 | BA21_D1_P_10.raw = 1 | BA21_D1_P_11.raw = 1 | BA21_D1_P_12.raw = 1 | BA21_D1_P_13.raw = 1 | BA21_D1_P_14.raw = 1 | BA21_D1_P_15.raw = 1 | BA21_D1_P_16.raw = 1 | BA21_D1_P_17.raw = 1 | BA21_D1_P_18.raw = 1 | BA21_D1_P_19.raw = 1 | BA21_D1_P_20.raw = 1 | BA21_D1_P_21.raw = 1 | BA21_D1_P_22.raw = 1 | BA21_D1_P_23.raw = 1 | BA21_D1_P_24.raw = 1 | BA21_D1_P_25.raw = 1 | BA21_D1_P_26.raw = 1 | BA21_D1_P_27.raw = 1 | BA21_D1_P_28.raw = 1 | BA21_D1_P_29.raw = 1 | BA21_D1_P_30.raw = 1 | BA21_D1_P_31.raw = 1 | BA21_D1_P_32.raw = 1 | BA21_D1_P_33.raw = 1 | BA21_D1_S_01.raw = 1 | BA21_D1_S_02.raw = 1 | BA21_D1_S_03.raw = 1 | BA21_D1_S_04.raw = 1 | BA21_D1_S_05.raw = 1 | BA21_D1_S_06.raw = 1 | BA21_D1_S_07.raw = 1 | BA21_D1_S_08.raw = 1 | BA21_D1_S_09.raw = 1 | BA21_D1_S_10.raw = 1 | BA21_D1_S_11.raw = 1 | BA21_D1_S_12.raw = 1 | BA21_D1_S_13.raw = 1 | BA21_D1_S_14.raw = 1 | BA21_D1_S_15.raw = 1 | BA21_D1_S_16.raw = 1 | BA21_D1_S_17.raw = 1 | BA21_D1_S_18.raw = 1 | BA21_D1_S_19.raw = 1 | BA21_D1_S_20.raw = 1 | BA21_D1_S_21.raw = 1 | BA21_D1_S_22.raw = 1 | BA21_D1_S_23.raw = 1 | BA21_D1_S_24.raw = 1 | BA21_D1_S_25.raw = 1 | BA21_D1_S_26.raw = 1 | BA21_D1_S_27.raw = 1 | BA21_D1_S_28.raw = 1 | BA21_D1_S_29.raw = 1 | BA21_D1_S_30.raw = 1 | BA21_D1_S_31.raw = 1 | BA21_D1_S_32.raw = 1 | BA21_D2_P_01.raw = 1 | BA21_D2_P_02.raw = 1 | BA21_D2_P_03.raw = 1 | BA21_D2_P_04.raw = 1 | BA21_D2_P_05.raw = 1 | BA21_D2_P_06.raw = 1 | BA21_D2_P_07.raw = 1 | BA21_D2_P_08.raw = 1 | BA21_D2_P_09.raw = 1 | BA21_D2_P_10.raw = 1 | BA21_D2_P_11.raw = 1 | BA21_D2_P_12.raw = 1 | BA21_D2_P_13.raw = 1 | BA21_D2_P_14.raw = 1 | BA21_D2_P_15.raw = 1 | BA21_D2_P_16.raw = 1 | BA21_D2_P_17.raw = 1 | BA21_D2_P_18.raw = 1 | BA21_D2_P_19.raw = 1 | BA21_D2_P_20.raw = 1 | BA21_D2_P_21.raw = 1 | BA21_D2_P_22.raw = 1 | BA21_D2_P_23.raw = 1 | BA21_D2_P_24.raw = 1 | BA21_D2_P_25.raw = 1 | BA21_D2_P_26.raw = 1 | BA21_D2_P_27.raw = 1 | BA21_D2_P_28.raw = 1 | BA21_D2_P_29.raw = 1 | BA21_D2_P_30.raw = 1 | BA21_D2_P_31.raw = 1 | BA21_D2_P_32.raw = 1 | BA21_D2_S_01.raw = 1 | BA21_D2_S_02.raw = 1 | BA21_D2_S_03.raw = 1 | BA21_D2_S_04.raw = 1 | BA21_D2_S_05.raw = 1 | BA21_D2_S_06.raw = 1 | BA21_D2_S_07.raw = 1 | BA21_D2_S_08.raw = 1 | BA21_D2_S_09.raw = 1 | BA21_D2_S_10.raw = 1 | BA21_D2_S_11.raw = 1 | BA21_D2_S_12.raw = 1 | BA21_D2_S_13.raw = 1 | BA21_D2_S_14.raw = 1 | BA21_D2_S_15.raw = 1 | BA21_D2_S_16.raw = 1 | BA21_D2_S_17.raw = 1 | BA21_D2_S_18.raw = 1 | BA21_D2_S_19.raw = 1 | BA21_D2_S_20.raw = 1 | BA21_D2_S_21.raw = 1 | BA21_D2_S_22.raw = 1 | BA21_D2_S_23.raw = 1 | BA21_D2_S_24.raw = 1 | BA21_D2_S_25.raw = 1 | BA21_D2_S_26.raw = 1 | BA21_D2_S_27.raw = 1 | BA21_D2_S_28.raw = 1 | BA21_D2_S_29.raw = 1 | BA21_D2_S_30.raw = 1 | BA21_D2_S_31.raw = 1 | BA21_D2_S_32.raw = 1 | BA21_D3_P_01.raw = 1 | BA21_D3_P_02.raw = 1 | BA21_D3_P_03.raw = 1 | BA21_D3_P_04.raw = 1 | BA21_D3_P_05.raw = 1 | BA21_D3_P_06.raw = 1 | BA21_D3_P_07.raw = 1 | BA21_D3_P_08.raw = 1 | BA21_D3_P_09.raw = 1 | BA21_D3_P_10.raw = 1 | BA21_D3_P_11.raw = 1 | BA21_D3_P_12.raw = 1 | BA21_D3_P_13.raw = 1 | BA21_D3_P_14.raw = 1 | BA21_D3_P_15.raw = 1 | BA21_D3_P_16.raw = 1 | BA21_D3_P_17.raw = 1 | BA21_D3_P_18.raw = 1 | BA21_D3_P_19.raw = 1 | BA21_D3_P_20.raw = 1 | BA21_D3_P_21.raw = 1 | BA21_D3_P_22.raw = 1 | BA21_D3_P_23.raw = 1 | BA21_D3_S_01.raw = 1 | BA21_D3_S_02.raw = 1 | BA21_D3_S_03.raw = 1 | BA21_D3_S_04.raw = 1 | BA21_D3_S_05.raw = 1 | BA21_D3_S_06.raw = 1 | BA21_D3_S_07.raw = 1 | BA21_D3_S_08.raw = 1 | BA21_D3_S_09.raw = 1 | BA21_D3_S_10.raw = 1 | BA21_D3_S_11.raw = 1 | BA21_D3_S_12.raw = 1 | BA21_D3_S_13.raw = 1 | BA21_D3_S_14.raw = 1 | BA21_D3_S_15.raw = 1 | BA21_D3_S_16.raw = 1 | BA21_D3_S_17.raw = 1 | BA21_D3_S_18.raw = 1 | BA21_D3_S_19.raw = 1 | BA21_D3_S_20.raw = 1 | BA21_D3_S_21.raw = 1 | BA21_D3_S_22.raw = 1 | BA21_D3_S_23.raw = 1 | BA21_D3_S_24.raw = 1 | BA21_D3_S_25.raw = 1 | BA21_D3_S_26.raw = 1 | BA21_D3_S_27.raw = 1 | BA21_D3_S_28.raw = 1 | BA21_D3_S_29.raw = 1 | BA21_D3_S_30.raw = 1 | BA21_D3_S_31.raw = 1 | BA21_D3_S_32.raw = 1 | BA21_D3_S_33.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a technical replicate index, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a workflow involving HPLC fractionation where peptides were separated into fractions and pooled.",
+        "TRUTH_CHECK": "The runs are identified as fractions (e.g., _P_01 to _P_32 and _S_01 to _S_45). According to the field definition, separate elutions or enrichment steps are fractions, not technical replicates. Therefore, these runs are different materials and should each be assigned technical replicate 1.",
+        "COMPLETENESS_CHECK": "The mapping is complete as every run is assigned an index."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "BA21_C1_P_01.raw = 1 | BA21_C1_P_02.raw = 2 | BA21_C1_P_03.raw = 3 | BA21_C1_P_04.raw = 4 | BA21_C1_P_05.raw = 5 | BA21_C1_P_06.raw = 6 | BA21_C1_P_07.raw = 7 | BA21_C1_P_08.raw = 8 | BA21_C1_P_09.raw = 9 | BA21_C1_P_10.raw = 10 | BA21_C1_P_11.raw = 11 | BA21_C1_P_12.raw = 12 | BA21_C1_P_13.raw = 13 | BA21_C1_P_14.raw = 14 | BA21_C1_P_15.raw = 15 | BA21_C1_P_16.raw = 16 | BA21_C1_P_17.raw = 17 | BA21_C1_P_18.raw = 18 | BA21_C1_P_19.raw = 19 | BA21_C1_P_20.raw = 20 | BA21_C1_P_21.raw = 21 | BA21_C1_P_22.raw = 22 | BA21_C1_P_23.raw = 23 | BA21_C1_P_24.raw = 24 | BA21_C1_P_25.raw = 25 | BA21_C1_P_26.raw = 26 | BA21_C1_P_27.raw = 27 | BA21_C1_P_28.raw = 28 | BA21_C1_P_29.raw = 29 | BA21_C1_P_30.raw = 30 | BA21_C1_P_31.raw = 31 | BA21_C1_P_32.raw = 32 | BA21_C1_S_01.raw = 1 | BA21_C1_S_02.raw = 2 | BA21_C1_S_03.raw = 3 | BA21_C1_S_04.raw = 4 | BA21_C1_S_05.raw = 5 | BA21_C1_S_06.raw = 6 | BA21_C1_S_07.raw = 7 | BA21_C1_S_08.raw = 8 | BA21_C1_S_09.raw = 9 | BA21_C1_S_10.raw = 10 | BA21_C1_S_11.raw = 11 | BA21_C1_S_12.raw = 12 | BA21_C1_S_13.raw = 13 | BA21_C1_S_14.raw = 14 | BA21_C1_S_15.raw = 15 | BA21_C1_S_16.raw = 16 | BA21_C1_S_17.raw = 17 | BA21_C1_S_18.raw = 18 | BA21_C1_S_19.raw = 19 | BA21_C1_S_20.raw = 20 | BA21_C1_S_21.raw = 21 | BA21_C1_S_22.raw = 22 | BA21_C1_S_23.raw = 23 | BA21_C1_S_24.raw = 24 | BA21_C1_S_25.raw = 25 | BA21_C1_S_26.raw = 26 | BA21_C1_S_27.raw = 27 | BA21_C1_S_28.raw = 28 | BA21_C1_S_29.raw = 29 | BA21_C1_S_30.raw = 30 | BA21_C1_S_31.raw = 31 | BA21_C1_S_32.raw = 32 | BA21_C1_S_33.raw = 33 | BA21_C1_S_34.raw = 34 | BA21_C1_S_35.raw = 35 | BA21_C1_S_36.raw = 36 | BA21_C1_S_37.raw = 37 | BA21_C1_S_38.raw = 38 | BA21_C1_S_39.raw = 39 | BA21_C1_S_40.raw = 40 | BA21_C1_S_41.raw = 41 | BA21_C1_S_42.raw = 42 | BA21_C1_S_43.raw = 43 | BA21_C1_S_44.raw = 44 | BA21_C1_S_45.raw = 45 | BA21_C2_P_01.raw = 1 | BA21_C2_P_02.raw = 2 | BA21_C2_P_03.raw = 3 | BA21_C2_P_04.raw = 4 | BA21_C2_P_05.raw = 5 | BA21_C2_P_06.raw = 6 | BA21_C2_P_07.raw = 7 | BA21_C2_P_08.raw = 8 | BA21_C2_P_09.raw = 9 | BA21_C2_P_10.raw = 10 | BA21_C2_P_11.raw = 11 | BA21_C2_P_12.raw = 12 | BA21_C2_P_13.raw = 13 | BA21_C2_P_14.raw = 14 | BA21_C2_P_15.raw = 15 | BA21_C2_P_16.raw = 16 | BA21_C2_P_17.raw = 17 | BA21_C2_P_18.raw = 18 | BA21_C2_P_19.raw = 19 | BA21_C2_P_20.raw = 20 | BA21_C2_P_21.raw = 21 | BA21_C2_P_22.raw = 22 | BA21_C2_P_23.raw = 23 | BA21_C2_P_24.raw = 24 | BA21_C2_P_25.raw = 25 | BA21_C2_P_26.raw = 26 | BA21_C2_P_27.raw = 27 | BA21_C2_P_28.raw = 28 | BA21_C2_P_29.raw = 29 | BA21_C2_P_30.raw = 30 | BA21_C2_P_31.raw = 31 | BA21_C2_P_32.raw = 32 | BA21_C2_S_01.raw = 1 | BA21_C2_S_02.raw = 2 | BA21_C2_S_03.raw = 3 | BA21_C2_S_04.raw = 4 | BA21_C2_S_05.raw = 5 | BA21_C2_S_06.raw = 6 | BA21_C2_S_07.raw = 7 | BA21_C2_S_08.raw = 8 | BA21_C2_S_09.raw = 9 | BA21_C2_S_10.raw = 10 | BA21_C2_S_11.raw = 11 | BA21_C2_S_12.raw = 12 | BA21_C2_S_13.raw = 13 | BA21_C2_S_14.raw = 14 | BA21_C2_S_15.raw = 15 | BA21_C2_S_16.raw = 16 | BA21_C2_S_17.raw = 17 | BA21_C2_S_18.raw = 18 | BA21_C2_S_19.raw = 19 | BA21_C2_S_20.raw = 20 | BA21_C2_S_21.raw = 21 | BA21_C2_S_22.raw = 22 | BA21_C2_S_23.raw = 23 | BA21_C2_S_24.raw = 24 | BA21_C2_S_25.raw = 25 | BA21_C2_S_26.raw = 26 | BA21_C2_S_27.raw = 27 | BA21_C2_S_28.raw = 28 | BA21_C2_S_29.raw = 29 | BA21_C2_S_30.raw = 30 | BA21_C2_S_31.raw = 31 | BA21_C2_S_32.raw = 32 | BA21_C3_P_01.raw = 1 | BA21_C3_P_02.raw = 2 | BA21_C3_P_03.raw = 3 | BA21_C3_P_04.raw = 4 | BA21_C3_P_05.raw = 5 | BA21_C3_P_06.raw = 6 | BA21_C3_P_07.raw = 7 | BA21_C3_P_08.raw = 8 | BA21_C3_P_09.raw = 9 | BA21_C3_P_10.raw = 10 | BA21_C3_P_11.raw = 11 | BA21_C3_P_12.raw = 12 | BA21_C3_P_13.raw = 13 | BA21_C3_P_14.raw = 14 | BA21_C3_P_15.raw = 15 | BA21_C3_P_16.raw = 16 | BA21_C3_P_17.raw = 17 | BA21_C3_P_18.raw = 18 | BA21_C3_P_19.raw = 19 | BA21_C3_P_20.raw = 20 | BA21_C3_P_21.raw = 21 | BA21_C3_P_22.raw = 22 | BA21_C3_P_23.raw = 23 | BA21_C3_P_24.raw = 24 | BA21_C3_P_25.raw = 25 | BA21_C3_P_26.raw = 26 | BA21_C3_P_27.raw = 27 | BA21_C3_P_28.raw = 28 | BA21_C3_P_29.raw = 29 | BA21_C3_P_30.raw = 30 | BA21_C3_P_31.raw = 31 | BA21_C3_P_32.raw = 32 | BA21_C3_S_01.raw = 1 | BA21_C3_S_02.raw = 2 | BA21_C3_S_03.raw = 3 | BA21_C3_S_04.raw = 4 | BA21_C3_S_05.raw = 5 | BA21_C3_S_06.raw = 6 | BA21_C3_S_07.raw = 7 | BA21_C3_S_08.raw = 8 | BA21_C3_S_09.raw = 9 | BA21_C3_S_10.raw = 10 | BA21_C3_S_11.raw = 11 | BA21_C3_S_12.raw = 12 | BA21_C3_S_13.raw = 13 | BA21_C3_S_14.raw = 14 | BA21_C3_S_15.raw = 15 | BA21_C3_S_16.raw = 16 | BA21_C3_S_17.raw = 17 | BA21_C3_S_18.raw = 18 | BA21_C3_S_19.raw = 19 | BA21_C3_S_20.raw = 20 | BA21_D1_P_01.raw = 1 | BA21_D1_P_02.raw = 2 | BA21_D1_P_03.raw = 3 | BA21_D1_P_04.raw = 4 | BA21_D1_P_05.raw = 5 | BA21_D1_P_06.raw = 6 | BA21_D1_P_07.raw = 7 | BA21_D1_P_08.raw = 8 | BA21_D1_P_09.raw = 9 | BA21_D1_P_10.raw = 10 | BA21_D1_P_11.raw = 11 | BA21_D1_P_12.raw = 12 | BA21_D1_P_13.raw = 13 | BA21_D1_P_14.raw = 14 | BA21_D1_P_15.raw = 15 | BA21_D1_P_16.raw = 16 | BA21_D1_P_17.raw = 17 | BA21_D1_P_18.raw = 18 | BA21_D1_P_19.raw = 19 | BA21_D1_P_20.raw = 20 | BA21_D1_P_21.raw = 21 | BA21_D1_P_22.raw = 22 | BA21_D1_P_23.raw = 23 | BA21_D1_P_24.raw = 24 | BA21_D1_P_25.raw = 25 | BA21_D1_P_26.raw = 26 | BA21_D1_P_27.raw = 27 | BA21_D1_P_28.raw = 28 | BA21_D1_P_29.raw = 29 | BA21_D1_P_30.raw = 30 | BA21_D1_P_31.raw = 31 | BA21_D1_P_32.raw = 32 | BA21_D1_P_33.raw = 33 | BA21_D1_S_01.raw = 1 | BA21_D1_S_02.raw = 2 | BA21_D1_S_03.raw = 3 | BA21_D1_S_04.raw = 4 | BA21_D1_S_05.raw = 5 | BA21_D1_S_06.raw = 6 | BA21_D1_S_07.raw = 7 | BA21_D1_S_08.raw = 8 | BA21_D1_S_09.raw = 9 | BA21_D1_S_10.raw = 10 | BA21_D1_S_11.raw = 11 | BA21_D1_S_12.raw = 12 | BA21_D1_S_13.raw = 13 | BA21_D1_S_14.raw = 14 | BA21_D1_S_15.raw = 15 | BA21_D1_S_16.raw = 16 | BA21_D1_S_17.raw = 17 | BA21_D1_S_18.raw = 18 | BA21_D1_S_19.raw = 19 | BA21_D1_S_20.raw = 20 | BA21_D1_S_21.raw = 21 | BA21_D1_S_22.raw = 22 | BA21_D1_S_23.raw = 23 | BA21_D1_S_24.raw = 24 | BA21_D1_S_25.raw = 25 | BA21_D1_S_26.raw = 26 | BA21_D1_S_27.raw = 27 | BA21_D1_S_28.raw = 28 | BA21_D1_S_29.raw = 29 | BA21_D1_S_30.raw = 30 | BA21_D1_S_31.raw = 31 | BA21_D1_S_32.raw = 32 | BA21_D2_P_01.raw = 1 | BA21_D2_P_02.raw = 2 | BA21_D2_P_03.raw = 3 | BA21_D2_P_04.raw = 4 | BA21_D2_P_05.raw = 5 | BA21_D2_P_06.raw = 6 | BA21_D2_P_07.raw = 7 | BA21_D2_P_08.raw = 8 | BA21_D2_P_09.raw = 9 | BA21_D2_P_10.raw = 10 | BA21_D2_P_11.raw = 11 | BA21_D2_P_12.raw = 12 | BA21_D2_P_13.raw = 13 | BA21_D2_P_14.raw = 14 | BA21_D2_P_15.raw = 15 | BA21_D2_P_16.raw = 16 | BA21_D2_P_17.raw = 17 | BA21_D2_P_18.raw = 18 | BA21_D2_P_19.raw = 19 | BA21_D2_P_20.raw = 20 | BA21_D2_P_21.raw = 21 | BA21_D2_P_22.raw = 22 | BA21_D2_P_23.raw = 23 | BA21_D2_P_24.raw = 24 | BA21_D2_P_25.raw = 25 | BA21_D2_P_26.raw = 26 | BA21_D2_P_27.raw = 27 | BA21_D2_P_28.raw = 28 | BA21_D2_P_29.raw = 29 | BA21_D2_P_30.raw = 30 | BA21_D2_P_31.raw = 31 | BA21_D2_P_32.raw = 32 | BA21_D2_S_01.raw = 1 | BA21_D2_S_02.raw = 2 | BA21_D2_S_03.raw = 3 | BA21_D2_S_04.raw = 4 | BA21_D2_S_05.raw = 5 | BA21_D2_S_06.raw = 6 | BA21_D2_S_07.raw = 7 | BA21_D2_S_08.raw = 8 | BA21_D2_S_09.raw = 9 | BA21_D2_S_10.raw = 10 | BA21_D2_S_11.raw = 11 | BA21_D2_S_12.raw = 12 | BA21_D2_S_13.raw = 13 | BA21_D2_S_14.raw = 14 | BA21_D2_S_15.raw = 15 | BA21_D2_S_16.raw = 16 | BA21_D2_S_17.raw = 17 | BA21_D2_S_18.raw = 18 | BA21_D2_S_19.raw = 19 | BA21_D2_S_20.raw = 20 | BA21_D2_S_21.raw = 21 | BA21_D2_S_22.raw = 22 | BA21_D2_S_23.raw = 23 | BA21_D2_S_24.raw = 24 | BA21_D2_S_25.raw = 25 | BA21_D2_S_26.raw = 26 | BA21_D2_S_27.raw = 27 | BA21_D2_S_28.raw = 28 | BA21_D2_S_29.raw = 29 | BA21_D2_S_30.raw = 30 | BA21_D2_S_31.raw = 31 | BA21_D2_S_32.raw = 32 | BA21_D3_P_01.raw = 1 | BA21_D3_P_02.raw = 2 | BA21_D3_P_03.raw = 3 | BA21_D3_P_04.raw = 4 | BA21_D3_P_05.raw = 5 | BA21_D3_P_06.raw = 6 | BA21_D3_P_07.raw = 7 | BA21_D3_P_08.raw = 8 | BA21_D3_P_09.raw = 9 | BA21_D3_P_10.raw = 10 | BA21_D3_P_11.raw = 11 | BA21_D3_P_12.raw = 12 | BA21_D3_P_13.raw = 13 | BA21_D3_P_14.raw = 14 | BA21_D3_P_15.raw = 15 | BA21_D3_P_16.raw = 16 | BA21_D3_P_17.raw = 17 | BA21_D3_P_18.raw = 18 | BA21_D3_P_19.raw = 19 | BA21_D3_P_20.raw = 20 | BA21_D3_P_21.raw = 21 | BA21_D3_P_22.raw = 22 | BA21_D3_P_23.raw = 23 | BA21_D3_S_01.raw = 1 | BA21_D3_S_02.raw = 2 | BA21_D3_S_03.raw = 3 | BA21_D3_S_04.raw = 4 | BA21_D3_S_05.raw = 5 | BA21_D3_S_06.raw = 6 | BA21_D3_S_07.raw = 7 | BA21_D3_S_08.raw = 8 | BA21_D3_S_09.raw = 9 | BA21_D3_S_10.raw = 10 | BA21_D3_S_11.raw = 11 | BA21_D3_S_12.raw = 12 | BA21_D3_S_13.raw = 13 | BA21_D3_S_14.raw = 14 | BA21_D3_S_15.raw = 15 | BA21_D3_S_16.raw = 16 | BA21_D3_S_17.raw = 17 | BA21_D3_S_18.raw = 18 | BA21_D3_S_19.raw = 19 | BA21_D3_S_20.raw = 20 | BA21_D3_S_21.raw = 21 | BA21_D3_S_22.raw = 22 | BA21_D3_S_23.raw = 23 | BA21_D3_S_24.raw = 24 | BA21_D3_S_25.raw = 25 | BA21_D3_S_26.raw = 26 | BA21_D3_S_27.raw = 27 | BA21_D3_S_28.raw = 28 | BA21_D3_S_29.raw = 29 | BA21_D3_S_30.raw = 30 | BA21_D3_S_31.raw = 31 | BA21_D3_S_32.raw = 32 | BA21_D3_S_33.raw = 33",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes that tryptic peptides were fractionated by a PolyWAX column and \"Fractions were collected every minute... and pooled according to peak intensities.\"",
+        "TRUTH_CHECK": "The runs are correctly mapped to sequential fraction indices for each sample and proteome type (soluble 'S' and particulate 'P').",
+        "COMPLETENESS_CHECK": "The mapping follows the required format of run key = value."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "BA21_C1_P_01.raw = Age-matched Ctrl. 1 | BA21_C1_P_02.raw = Age-matched Ctrl. 1 | BA21_C1_P_03.raw = Age-matched Ctrl. 1 | BA21_C1_P_04.raw = Age-matched Ctrl. 1 | BA21_C1_P_05.raw = Age-matched Ctrl. 1 | BA21_C1_P_06.raw = Age-matched Ctrl. 1 | BA21_C1_P_07.raw = Age-matched Ctrl. 1 | BA21_C1_P_08.raw = Age-matched Ctrl. 1 | BA21_C1_P_09.raw = Age-matched Ctrl. 1 | BA21_C1_P_10.raw = Age-matched Ctrl. 1 | BA21_C1_P_11.raw = Age-matched Ctrl. 1 | BA21_C1_P_12.raw = Age-matched Ctrl. 1 | BA21_C1_P_13.raw = Age-matched Ctrl. 1 | BA21_C1_P_14.raw = Age-matched Ctrl. 1 | BA21_C1_P_15.raw = Age-matched Ctrl. 1 | BA21_C1_P_16.raw = Age-matched Ctrl. 1 | BA21_C1_P_17.raw = Age-matched Ctrl. 1 | BA21_C1_P_18.raw = Age-matched Ctrl. 1 | BA21_C1_P_19.raw = Age-matched Ctrl. 1 | BA21_C1_P_20.raw = Age-matched Ctrl. 1 | BA21_C1_P_21.raw = Age-matched Ctrl. 1 | BA21_C1_P_22.raw = Age-matched Ctrl. 1 | BA21_C1_P_23.raw = Age-matched Ctrl. 1 | BA21_C1_P_24.raw = Age-matched Ctrl. 1 | BA21_C1_P_25.raw = Age-matched Ctrl. 1 | BA21_C1_P_26.raw = Age-matched Ctrl. 1 | BA21_C1_P_27.raw = Age-matched Ctrl. 1 | BA21_C1_P_28.raw = Age-matched Ctrl. 1 | BA21_C1_P_29.raw = Age-matched Ctrl. 1 | BA21_C1_P_30.raw = Age-matched Ctrl. 1 | BA21_C1_P_31.raw = Age-matched Ctrl. 1 | BA21_C1_P_32.raw = Age-matched Ctrl. 1 | BA21_C1_S_01.raw = Age-matched Ctrl. 1 | BA21_C1_S_02.raw = Age-matched Ctrl. 1 | BA21_C1_S_03.raw = Age-matched Ctrl. 1 | BA21_C1_S_04.raw = Age-matched Ctrl. 1 | BA21_C1_S_05.raw = Age-matched Ctrl. 1 | BA21_C1_S_06.raw = Age-matched Ctrl. 1 | BA21_C1_S_07.raw = Age-matched Ctrl. 1 | BA21_C1_S_08.raw = Age-matched Ctrl. 1 | BA21_C1_S_09.raw = Age-matched Ctrl. 1 | BA21_C1_S_10.raw = Age-matched Ctrl. 1 | BA21_C1_S_11.raw = Age-matched Ctrl. 1 | BA21_C1_S_12.raw = Age-matched Ctrl. 1 | BA21_C1_S_13.raw = Age-matched Ctrl. 1 | BA21_C1_S_14.raw = Age-matched Ctrl. 1 | BA21_C1_S_15.raw = Age-matched Ctrl. 1 | BA21_C1_S_16.raw = Age-matched Ctrl. 1 | BA21_C1_S_17.raw = Age-matched Ctrl. 1 | BA21_C1_S_18.raw = Age-matched Ctrl. 1 | BA21_C1_S_19.raw = Age-matched Ctrl. 1 | BA21_C1_S_20.raw = Age-matched Ctrl. 1 | BA21_C1_S_21.raw = Age-matched Ctrl. 1 | BA21_C1_S_22.raw = Age-matched Ctrl. 1 | BA21_C1_S_23.raw = Age-matched Ctrl. 1 | BA21_C1_S_24.raw = Age-matched Ctrl. 1 | BA21_C1_S_25.raw = Age-matched Ctrl. 1 | BA21_C1_S_26.raw = Age-matched Ctrl. 1 | BA21_C1_S_27.raw = Age-matched Ctrl. 1 | BA21_C1_S_28.raw = Age-matched Ctrl. 1 | BA21_C1_S_29.raw = Age-matched Ctrl. 1 | BA21_C1_S_30.raw = Age-matched Ctrl. 1 | BA21_C1_S_31.raw = Age-matched Ctrl. 1 | BA21_C1_S_32.raw = Age-matched Ctrl. 1 | BA21_C1_S_33.raw = Age-matched Ctrl. 1 | BA21_C1_S_34.raw = Age-matched Ctrl. 1 | BA21_C1_S_35.raw = Age-matched Ctrl. 1 | BA21_C1_S_36.raw = Age-matched Ctrl. 1 | BA21_C1_S_37.raw = Age-matched Ctrl. 1 | BA21_C1_S_38.raw = Age-matched Ctrl. 1 | BA21_C1_S_39.raw = Age-matched Ctrl. 1 | BA21_C1_S_40.raw = Age-matched Ctrl. 1 | BA21_C1_S_41.raw = Age-matched Ctrl. 1 | BA21_C1_S_42.raw = Age-matched Ctrl. 1 | BA21_C1_S_43.raw = Age-matched Ctrl. 1 | BA21_C1_S_44.raw = Age-matched Ctrl. 1 | BA21_C1_S_45.raw = Age-matched Ctrl. 1 | BA21_C2_P_01.raw = Age-matched Ctrl. 2 | BA21_C2_P_02.raw = Age-matched Ctrl. 2 | BA21_C2_P_03.raw = Age-matched Ctrl. 2 | BA21_C2_P_04.raw = Age-matched Ctrl. 2 | BA21_C2_P_05.raw = Age-matched Ctrl. 2 | BA21_C2_P_06.raw = Age-matched Ctrl. 2 | BA21_C2_P_07.raw = Age-matched Ctrl. 2 | BA21_C2_P_08.raw = Age-matched Ctrl. 2 | BA21_C2_P_09.raw = Age-matched Ctrl. 2 | BA21_C2_P_10.raw = Age-matched Ctrl. 2 | BA21_C2_P_11.raw = Age-matched Ctrl. 2 | BA21_C2_P_12.raw = Age-matched Ctrl. 2 | BA21_C2_P_13.raw = Age-matched Ctrl. 2 | BA21_C2_P_14.raw = Age-matched Ctrl. 2 | BA21_C2_P_15.raw = Age-matched Ctrl. 2 | BA21_C2_P_16.raw = Age-matched Ctrl. 2 | BA21_C2_P_17.raw = Age-matched Ctrl. 2 | BA21_C2_P_18.raw = Age-matched Ctrl. 2 | BA21_C2_P_19.raw = Age-matched Ctrl. 2 | BA21_C2_P_20.raw = Age-matched Ctrl. 2 | BA21_C2_P_21.raw = Age-matched Ctrl. 2 | BA21_C2_P_22.raw = Age-matched Ctrl. 2 | BA21_C2_P_23.raw = Age-matched Ctrl. 2 | BA21_C2_P_24.raw = Age-matched Ctrl. 2 | BA21_C2_P_25.raw = Age-matched Ctrl. 2 | BA21_C2_P_26.raw = Age-matched Ctrl. 2 | BA21_C2_P_27.raw = Age-matched Ctrl. 2 | BA21_C2_P_28.raw = Age-matched Ctrl. 2 | BA21_C2_P_29.raw = Age-matched Ctrl. 2 | BA21_C2_P_30.raw = Age-matched Ctrl. 2 | BA21_C2_P_31.raw = Age-matched Ctrl. 2 | BA21_C2_P_32.raw = Age-matched Ctrl. 2 | BA21_C2_S_01.raw = Age-matched Ctrl. 2 | BA21_C2_S_02.raw = Age-matched Ctrl. 2 | BA21_C2_S_03.raw = Age-matched Ctrl. 2 | BA21_C2_S_04.raw = Age-matched Ctrl. 2 | BA21_C2_S_05.raw = Age-matched Ctrl. 2 | BA21_C2_S_06.raw = Age-matched Ctrl. 2 | BA21_C2_S_07.raw = Age-matched Ctrl. 2 | BA21_C2_S_08.raw = Age-matched Ctrl. 2 | BA21_C2_S_09.raw = Age-matched Ctrl. 2 | BA21_C2_S_10.raw = Age-matched Ctrl. 2 | BA21_C2_S_11.raw = Age-matched Ctrl. 2 | BA21_C2_S_12.raw = Age-matched Ctrl. 2 | BA21_C2_S_13.raw = Age-matched Ctrl. 2 | BA21_C2_S_14.raw = Age-matched Ctrl. 2 | BA21_C2_S_15.raw = Age-matched Ctrl. 2 | BA21_C2_S_16.raw = Age-matched Ctrl. 2 | BA21_C2_S_17.raw = Age-matched Ctrl. 2 | BA21_C2_S_18.raw = Age-matched Ctrl. 2 | BA21_C2_S_19.raw = Age-matched Ctrl. 2 | BA21_C2_S_20.raw = Age-matched Ctrl. 2 | BA21_C2_S_21.raw = Age-matched Ctrl. 2 | BA21_C2_S_22.raw = Age-matched Ctrl. 2 | BA21_C2_S_23.raw = Age-matched Ctrl. 2 | BA21_C2_S_24.raw = Age-matched Ctrl. 2 | BA21_C2_S_25.raw = Age-matched Ctrl. 2 | BA21_C2_S_26.raw = Age-matched Ctrl. 2 | BA21_C2_S_27.raw = Age-matched Ctrl. 2 | BA21_C2_S_28.raw = Age-matched Ctrl. 2 | BA21_C2_S_29.raw = Age-matched Ctrl. 2 | BA21_C2_S_30.raw = Age-matched Ctrl. 2 | BA21_C2_S_31.raw = Age-matched Ctrl. 2 | BA21_C2_S_32.raw = Age-matched Ctrl. 2 | BA21_C3_P_01.raw = Age-matched Ctrl. 3 | BA21_C3_P_02.raw = Age-matched Ctrl. 3 | BA21_C3_P_03.raw = Age-matched Ctrl. 3 | BA21_C3_P_04.raw = Age-matched Ctrl. 3 | BA21_C3_P_05.raw = Age-matched Ctrl. 3 | BA21_C3_P_06.raw = Age-matched Ctrl. 3 | BA21_C3_P_07.raw = Age-matched Ctrl. 3 | BA21_C3_P_08.raw = Age-matched Ctrl. 3 | BA21_C3_P_09.raw = Age-matched Ctrl. 3 | BA21_C3_P_10.raw = Age-matched Ctrl. 3 | BA21_C3_P_11.raw = Age-matched Ctrl. 3 | BA21_C3_P_12.raw = Age-matched Ctrl. 3 | BA21_C3_P_13.raw = Age-matched Ctrl. 3 | BA21_C3_P_14.raw = Age-matched Ctrl. 3 | BA21_C3_P_15.raw = Age-matched Ctrl. 3 | BA21_C3_P_16.raw = Age-matched Ctrl. 3 | BA21_C3_P_17.raw = Age-matched Ctrl. 3 | BA21_C3_P_18.raw = Age-matched Ctrl. 3 | BA21_C3_P_19.raw = Age-matched Ctrl. 3 | BA21_C3_P_20.raw = Age-matched Ctrl. 3 | BA21_C3_P_21.raw = Age-matched Ctrl. 3 | BA21_C3_P_22.raw = Age-matched Ctrl. 3 | BA21_C3_P_23.raw = Age-matched Ctrl. 3 | BA21_C3_P_24.raw = Age-matched Ctrl. 3 | BA21_C3_P_25.raw = Age-matched Ctrl. 3 | BA21_C3_P_26.raw = Age-matched Ctrl. 3 | BA21_C3_P_27.raw = Age-matched Ctrl. 3 | BA21_C3_P_28.raw = Age-matched Ctrl. 3 | BA21_C3_P_29.raw = Age-matched Ctrl. 3 | BA21_C3_P_30.raw = Age-matched Ctrl. 3 | BA21_C3_P_31.raw = Age-matched Ctrl. 3 | BA21_C3_P_32.raw = Age-matched Ctrl. 3 | BA21_C3_S_01.raw = Age-matched Ctrl. 3 | BA21_C3_S_02.raw = Age-matched Ctrl. 3 | BA21_C3_S_03.raw = Age-matched Ctrl. 3 | BA21_C3_S_04.raw = Age-matched Ctrl. 3 | BA21_C3_S_05.raw = Age-matched Ctrl. 3 | BA21_C3_S_06.raw = Age-matched Ctrl. 3 | BA21_C3_S_07.raw = Age-matched Ctrl. 3 | BA21_C3_S_08.raw = Age-matched Ctrl. 3 | BA21_C3_S_09.raw = Age-matched Ctrl. 3 | BA21_C3_S_10.raw = Age-matched Ctrl. 3 | BA21_C3_S_11.raw = Age-matched Ctrl. 3 | BA21_C3_S_12.raw = Age-matched Ctrl. 3 | BA21_C3_S_13.raw = Age-matched Ctrl. 3 | BA21_C3_S_14.raw = Age-matched Ctrl. 3 | BA21_C3_S_15.raw = Age-matched Ctrl. 3 | BA21_C3_S_16.raw = Age-matched Ctrl. 3 | BA21_C3_S_17.raw = Age-matched Ctrl. 3 | BA21_C3_S_18.raw = Age-matched Ctrl. 3 | BA21_C3_S_19.raw = Age-matched Ctrl. 3 | BA21_C3_S_20.raw = Age-matched Ctrl. 3 | BA21_D1_P_01.raw = Dementia 1 | BA21_D1_P_02.raw = Dementia 1 | BA21_D1_P_03.raw = Dementia 1 | BA21_D1_P_04.raw = Dementia 1 | BA21_D1_P_05.raw = Dementia 1 | BA21_D1_P_06.raw = Dementia 1 | BA21_D1_P_07.raw = Dementia 1 | BA21_D1_P_08.raw = Dementia 1 | BA21_D1_P_09.raw = Dementia 1 | BA21_D1_P_10.raw = Dementia 1 | BA21_D1_P_11.raw = Dementia 1 | BA21_D1_P_12.raw = Dementia 1 | BA21_D1_P_13.raw = Dementia 1 | BA21_D1_P_14.raw = Dementia 1 | BA21_D1_P_15.raw = Dementia 1 | BA21_D1_P_16.raw = Dementia 1 | BA21_D1_P_17.raw = Dementia 1 | BA21_D1_P_18.raw = Dementia 1 | BA21_D1_P_19.raw = Dementia 1 | BA21_D1_P_20.raw = Dementia 1 | BA21_D1_P_21.raw = Dementia 1 | BA21_D1_P_22.raw = Dementia 1 | BA21_D1_P_23.raw = Dementia 1 | BA21_D1_P_24.raw = Dementia 1 | BA21_D1_P_25.raw = Dementia 1 | BA21_D1_P_26.raw = Dementia 1 | BA21_D1_P_27.raw = Dementia 1 | BA21_D1_P_28.raw = Dementia 1 | BA21_D1_P_29.raw = Dementia 1 | BA21_D1_P_30.raw = Dementia 1 | BA21_D1_P_31.raw = Dementia 1 | BA21_D1_P_32.raw = Dementia 1 | BA21_D1_P_33.raw = Dementia 1 | BA21_D1_S_01.raw = Dementia 1 | BA21_D1_S_02.raw = Dementia 1 | BA21_D1_S_03.raw = Dementia 1 | BA21_D1_S_04.raw = Dementia 1 | BA21_D1_S_05.raw = Dementia 1 | BA21_D1_S_06.raw = Dementia 1 | BA21_D1_S_07.raw = Dementia 1 | BA21_D1_S_08.raw = Dementia 1 | BA21_D1_S_09.raw = Dementia 1 | BA21_D1_S_10.raw = Dementia 1 | BA21_D1_S_11.raw = Dementia 1 | BA21_D1_S_12.raw = Dementia 1 | BA21_D1_S_13.raw = Dementia 1 | BA21_D1_S_14.raw = Dementia 1 | BA21_D1_S_15.raw = Dementia 1 | BA21_D1_S_16.raw = Dementia 1 | BA21_D1_S_17.raw = Dementia 1 | BA21_D1_S_18.raw = Dementia 1 | BA21_D1_S_19.raw = Dementia 1 | BA21_D1_S_20.raw = Dementia 1 | BA21_D1_S_21.raw = Dementia 1 | BA21_D1_S_22.raw = Dementia 1 | BA21_D1_S_23.raw = Dementia 1 | BA21_D1_S_24.raw = Dementia 1 | BA21_D1_S_25.raw = Dementia 1 | BA21_D1_S_26.raw = Dementia 1 | BA21_D1_S_27.raw = Dementia 1 | BA21_D1_S_28.raw = Dementia 1 | BA21_D1_S_29.raw = Dementia 1 | BA21_D1_S_30.raw = Dementia 1 | BA21_D1_S_31.raw = Dementia 1 | BA21_D1_S_32.raw = Dementia 1 | BA21_D2_P_01.raw = Dementia 2 | BA21_D2_P_02.raw = Dementia 2 | BA21_D2_P_03.raw = Dementia 2 | BA21_D2_P_04.raw = Dementia 2 | BA21_D2_P_05.raw = Dementia 2 | BA21_D2_P_06.raw = Dementia 2 | BA21_D2_P_07.raw = Dementia 2 | BA21_D2_P_08.raw = Dementia 2 | BA21_D2_P_09.raw = Dementia 2 | BA21_D2_P_10.raw = Dementia 2 | BA21_D2_P_11.raw = Dementia 2 | BA21_D2_P_12.raw = Dementia 2 | BA21_D2_P_13.raw = Dementia 2 | BA21_D2_P_14.raw = Dementia 2 | BA21_D2_P_15.raw = Dementia 2 | BA21_D2_P_16.raw = Dementia 2 | BA21_D2_P_17.raw = Dementia 2 | BA21_D2_P_18.raw = Dementia 2 | BA21_D2_P_19.raw = Dementia 2 | BA21_D2_P_20.raw = Dementia 2 | BA21_D2_P_21.raw = Dementia 2 | BA21_D2_P_22.raw = Dementia 2 | BA21_D2_P_23.raw = Dementia 2 | BA21_D2_P_24.raw = Dementia 2 | BA21_D2_P_25.raw = Dementia 2 | BA21_D2_P_26.raw = Dementia 2 | BA21_D2_P_27.raw = Dementia 2 | BA21_D2_P_28.raw = Dementia 2 | BA21_D2_P_29.raw = Dementia 2 | BA21_D2_P_30.raw = Dementia 2 | BA21_D2_P_31.raw = Dementia 2 | BA21_D2_P_32.raw = Dementia 2 | BA21_D2_S_01.raw = Dementia 2 | BA21_D2_S_02.raw = Dementia 2 | BA21_D2_S_03.raw = Dementia 2 | BA21_D2_S_04.raw = Dementia 2 | BA21_D2_S_05.raw = Dementia 2 | BA21_D2_S_06.raw = Dementia 2 | BA21_D2_S_07.raw = Dementia 2 | BA21_D2_S_08.raw = Dementia 2 | BA21_D2_S_09.raw = Dementia 2 | BA21_D2_S_10.raw = Dementia 2 | BA21_D2_S_11.raw = Dementia 2 | BA21_D2_S_12.raw = Dementia 2 | BA21_D2_S_13.raw = Dementia 2 | BA21_D2_S_14.raw = Dementia 2 | BA21_D2_S_15.raw = Dementia 2 | BA21_D2_S_16.raw = Dementia 2 | BA21_D2_S_17.raw = Dementia 2 | BA21_D2_S_18.raw = Dementia 2 | BA21_D2_S_19.raw = Dementia 2 | BA21_D2_S_20.raw = Dementia 2 | BA21_D2_S_21.raw = Dementia 2 | BA21_D2_S_22.raw = Dementia 2 | BA21_D2_S_23.raw = Dementia 2 | BA21_D2_S_24.raw = Dementia 2 | BA21_D2_S_25.raw = Dementia 2 | BA21_D2_S_26.raw = Dementia 2 | BA21_D2_S_27.raw = Dementia 2 | BA21_D2_S_28.raw = Dementia 2 | BA21_D2_S_29.raw = Dementia 2 | BA21_D2_S_30.raw = Dementia 2 | BA21_D2_S_31.raw = Dementia 2 | BA21_D2_S_32.raw = Dementia 2 | BA21_D3_P_01.raw = Dementia 3 | BA21_D3_P_02.raw = Dementia 3 | BA21_D3_P_03.raw = Dementia 3 | BA21_D3_P_04.raw = Dementia 3 | BA21_D3_P_05.raw = Dementia 3 | BA21_D3_P_06.raw = Dementia 3 | BA21_D3_P_07.raw = Dementia 3 | BA21_D3_P_08.raw = Dementia 3 | BA21_D3_P_09.raw = Dementia 3 | BA21_D3_P_10.raw = Dementia 3 | BA21_D3_P_11.raw = Dementia 3 | BA21_D3_P_12.raw = Dementia 3 | BA21_D3_P_13.raw = Dementia 3 | BA21_D3_P_14.raw = Dementia 3 | BA21_D3_P_15.raw = Dementia 3 | BA21_D3_P_16.raw = Dementia 3 | BA21_D3_P_17.raw = Dementia 3 | BA21_D3_P_18.raw = Dementia 3 | BA21_D3_P_19.raw = Dementia 3 | BA21_D3_P_20.raw = Dementia 3 | BA21_D3_P_21.raw = Dementia 3 | BA21_D3_P_22.raw = Dementia 3 | BA21_D3_P_23.raw = Dementia 3 | BA21_D3_S_01.raw = Dementia 3 | BA21_D3_S_02.raw = Dementia 3 | BA21_D3_S_03.raw = Dementia 3 | BA21_D3_S_04.raw = Dementia 3 | BA21_D3_S_05.raw = Dementia 3 | BA21_D3_S_06.raw = Dementia 3 | BA21_D3_S_07.raw = Dementia 3 | BA21_D3_S_08.raw = Dementia 3 | BA21_D3_S_09.raw = Dementia 3 | BA21_D3_S_10.raw = Dementia 3 | BA21_D3_S_11.raw = Dementia 3 | BA21_D3_S_12.raw = Dementia 3 | BA21_D3_S_13.raw = Dementia 3 | BA21_D3_S_14.raw = Dementia 3 | BA21_D3_S_15.raw = Dementia 3 | BA21_D3_S_16.raw = Dementia 3 | BA21_D3_S_17.raw = Dementia 3 | BA21_D3_S_18.raw = Dementia 3 | BA21_D3_S_19.raw = Dementia 3 | BA21_D3_S_20.raw = Dementia 3 | BA21_D3_S_21.raw = Dementia 3 | BA21_D3_S_22.raw = Dementia 3 | BA21_D3_S_23.raw = Dementia 3 | BA21_D3_S_24.raw = Dementia 3 | BA21_D3_S_25.raw = Dementia 3 | BA21_D3_S_26.raw = Dementia 3 | BA21_D3_S_27.raw = Dementia 3 | BA21_D3_S_28.raw = Dementia 3 | BA21_D3_S_29.raw = Dementia 3 | BA21_D3_S_30.raw = Dementia 3 | BA21_D3_S_31.raw = Dementia 3 | BA21_D3_S_32.raw = Dementia 3 | BA21_D3_S_33.raw = Dementia 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The values are identifiers for the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that three biological replicates were analyzed for each experimental condition (AD+CVD and Ctrl), supporting the existence of 6 distinct individuals.",
+        "TRUTH_CHECK": "The mapping correctly groups runs by individual (C1-C3 for controls, D1-D3 for dementia), and correctly assigns runs from the same subject (both soluble 'S' and particulate 'P' fractions) to the same individual identifier.",
+        "COMPLETENESS_CHECK": "The identifiers are clear and follow the logic of the study design."
+      }
+    }
+  ]
+}

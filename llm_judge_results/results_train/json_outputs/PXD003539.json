@@ -1,0 +1,2470 @@
+{
+  "paper_id": "PXD003539",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes the NCI-60 cell lines; these are well-known human cancer cell lines, and the use of SwissProt (human) proteins is mentioned.",
+        "TRUTH_CHECK": "The NCI-60 cell lines are human-derived.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "blood",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a tissue/organ of origin, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions the NCI-60 cell lines, but does not list the specific cell lines or their origins in the provided text.",
+        "TRUTH_CHECK": "While the cell lines listed in the related columns (e.g., K562, HL-60, MOLT4) are known to be blood-derived, the paper text provided does not state this.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "lung",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper mentions the NCI-60 cell lines; the specific cell lines (e.g., A549, NCI-H460) and their associated disease states (e.g., non-small cell lung carcinoma) are listed in the related columns.",
+        "TRUTH_CHECK": "The runs carry cell lines like A549 and NCI-H460, which are lung-derived.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "large intestine",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\" and the related columns list \"colon carcinoma\" and \"colon adenocarcinoma\" as disease states for the runs.",
+        "TRUTH_CHECK": "The runs carry cell lines like HCT116, HT-29, and SW620, which are derived from the colon/large intestine.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "ovary",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The term \"ovary\" is not in the text, but the paper describes the NCI-60 cell lines, and the related columns list \"ovarian carcinoma\" as the disease state for these runs.",
+        "TRUTH_CHECK": "The organ of origin for ovarian carcinoma cell lines (e.g., SKOV3, OVCAR series) is the ovary, which is an allowed inference.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "kidney",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ name, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The word \"kidney\" does not appear in the text, but the paper describes the NCI-60 cell lines. The related columns list cell lines (e.g., CAKI-1, 786-O, A498, ACHN, TK-10, UO-31, SN12C) and disease states (e.g., \"renal cell carcinoma\", \"renal adenocarcinoma\").",
+        "TRUTH_CHECK": "The tissue \"kidney\" is an allowed inference from the renal cell lines and renal carcinomas listed in the related columns.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "brain",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ name, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The term \"brain\" does not appear in the provided text, nor are the specific cell lines (e.g., U-251 MG, SF539) described in the text.",
+        "TRUTH_CHECK": "The text mentions the \"NCI-60 cell lines\" but does not list them or their origins. While these are known cell lines, the provided text is the only source of truth.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "skin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A tissue name, the right field.",
+        "SOURCE_CHECK": "The term \"skin\" is not in the paper text, but the paper describes the NCI-60 cell lines, and the related columns list \"skin cutaneous melanoma\" and melanoma cell lines (e.g., SK-MEL-2, SK-MEL-5, MALME3M).",
+        "TRUTH_CHECK": "For cell lines derived from skin cutaneous melanoma, the organ of origin is the skin, which is an allowed inference.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "breast",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper mentions the NCI-60 cell lines; the specific cell lines (e.g., MCF-7, MDAMB231) and their associated disease states (e.g., breast adenocarcinoma) are listed in the related columns.",
+        "TRUTH_CHECK": "The runs carry cell lines like MCF-7 and MDAMB231, which are breast-derived; the organ of origin \"breast\" is an allowed inference for these lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "prostate",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A tissue/organ of origin, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"NCI-60 cell lines\" and the related columns list \"prostate adenocarcinoma\" as a disease state and \"DU 145\" and \"PC-3\" as cell lines; the organ of origin (prostate) is an allowed inference from these.",
+        "TRUTH_CHECK": "The runs carry cell lines DU 145 and PC-3, which are prostate cancer cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "acute lymphoblastic leukemia",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field for disease_state.",
+        "SOURCE_CHECK": "The term \"acute lymphoblastic leukemia\" is not mentioned in the provided paper text.",
+        "TRUTH_CHECK": "While the paper mentions the NCI-60 cell lines, the specific disease state for the cell line CCRFCEM is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "non-small cell lung carcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The term \"non-small cell lung carcinoma\" is not mentioned in the provided paper text.",
+        "TRUTH_CHECK": "While the paper mentions the NCI-60 cell lines, the specific disease states for those lines are not listed in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "colon carcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The paper mentions the NCI-60 cell lines, but does not list the specific diseases associated with each line in the provided text.",
+        "TRUTH_CHECK": "While HCT116 is a known colon carcinoma cell line, the paper text provided does not state this.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "ovarian carcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\" but does not list the specific diseases or cell line names in the provided text.",
+        "TRUTH_CHECK": "While the NCI-60 panel is a well-known resource containing ovarian carcinoma lines (like SKOV3 and IGROV-1), the provided paper text does not mention these lines or the disease.",
+        "COMPLETENESS_CHECK": "The value follows the format for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "clear cell renal carcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field for disease_state.",
+        "SOURCE_CHECK": "The term \"clear cell renal carcinoma\" is not mentioned in the provided paper text.",
+        "TRUTH_CHECK": "While the paper mentions the NCI-60 cell lines, it does not list the specific diseases associated with the individual cell lines (like RXF393) in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "renal clear cell adenocarcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The specific term \"renal clear cell adenocarcinoma\" is not mentioned in the provided paper text.",
+        "TRUTH_CHECK": "While the paper mentions the NCI-60 cell lines, the provided text does not list the specific diseases associated with each cell line (e.g., CAKI-1).",
+        "COMPLETENESS_CHECK": "The format is correct for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "colon adenocarcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field for disease_state.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not explicitly list the diseases or the specific cell lines (like HT-29 or HCT15) in the provided text.",
+        "TRUTH_CHECK": "While the NCI-60 is a well-known panel, the provided paper text does not contain the names of the cell lines or their associated diseases.",
+        "COMPLETENESS_CHECK": "The format is correct for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "glioma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The term \"glioma\" is not mentioned in the provided paper text.",
+        "TRUTH_CHECK": "While the paper mentions the NCI-60 cell lines, the provided text does not list the specific diseases associated with the cell lines (e.g., SF539, SNB19, SF268).",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "malignant melanoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the specific diseases or cell line names in the provided text.",
+        "TRUTH_CHECK": "While the NCI-60 is a known panel, the provided paper text does not contain the names of the cell lines or their associated diseases.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "renal cell adenocarcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\" but does not list the specific diseases or cell line names in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not in the text."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "chronic myelogenic leukemia",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", and the related columns show the K-562 cell line was used.",
+        "TRUTH_CHECK": "The disease of origin for K-562 is chronic myeloid leukemia (or chronic myelogenic leukemia), which is an allowed inference for cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "breast adenocarcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field for disease_state.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\". The specific disease \"breast adenocarcinoma\" is not printed in the provided text.",
+        "TRUTH_CHECK": "The runs carry cell lines like MCF-7 and MDAMB231, which are known breast cancer lines, but the field definition allows inference of the disease of origin for cell lines. However, the paper text itself does not provide the specific disease names for these lines.",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "promyelocytic leukemia",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The term \"promyelocytic leukemia\" is not in the paper text, but the cell line HL-60 is listed in the related columns.",
+        "TRUTH_CHECK": "The disease state of HL-60 is promyelocytic leukemia, which is an allowed inference for cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "glioblastoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease name, the right field.",
+        "SOURCE_CHECK": "The term \"glioblastoma\" is not mentioned in the provided paper text.",
+        "TRUTH_CHECK": "While the paper mentions the NCI-60 cell lines, the specific disease states for those lines are not listed in the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable, the value is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "renal carcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The term \"renal carcinoma\" is not in the paper text, and the paper does not provide the specific disease of origin for the A498 cell line.",
+        "TRUTH_CHECK": "While A498 is a known renal cell carcinoma line, the paper text only mentions \"NCI-60 cell lines\" without listing their individual diseases.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "lung carcinoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\" and specifically lists \"A549\" in the related columns; the disease of origin for A549 (lung adenocarcinoma/carcinoma) is an allowed inference.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with A549 and NCI-H322M, which are lung cancer cell lines.",
+        "COMPLETENESS_CHECK": "The value follows the definition for disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "ovarian serous cystadenocarcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The specific term \"ovarian serous cystadenocarcinoma\" does not appear in the provided paper text.",
+        "TRUTH_CHECK": "While the paper mentions the NCI-60 cell lines and the runs are associated with ovarian cell lines (OVCAR3, OVCAR4, OVCAR8, NCI/ADR-RES), the specific disease state is not stated in the text.",
+        "COMPLETENESS_CHECK": "The format is correct for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "skin cutaneous melanoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\" but does not list the specific diseases or cell line names in the provided text.",
+        "TRUTH_CHECK": "While the NCI-60 is a well-known panel, the specific mapping of these runs to \"skin cutaneous melanoma\" is not stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "The format is correct for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "renal adenocarcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease of origin for a cell line, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the specific diseases or cell line names in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "B-cell plasmacytoma; myeloma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\" but does not list the specific diseases or cell line names in the provided text.",
+        "TRUTH_CHECK": "While the NCI-60 is a known panel, the specific mapping of RPMI8226 to \"B-cell plasmacytoma; myeloma\" is not stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "The value follows the format for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "breast ductal adenocarcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\" but does not list the specific diseases or cell line origins in the provided text.",
+        "TRUTH_CHECK": "While the NCI-60 is a well-known panel, the specific mapping of \"breast ductal adenocarcinoma\" to these runs is not stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "The format is correct for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "prostate adenocarcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The term \"prostate adenocarcinoma\" is not in the paper text, and the paper does not describe the specific diseases of the NCI-60 cell lines.",
+        "TRUTH_CHECK": "While the runs are associated with prostate cell lines (DU 145, PC-3), the paper text does not provide the disease state.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "acute T lymphoblastic leukaemia",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The term \"acute T lymphoblastic leukaemia\" is not mentioned in the provided paper text.",
+        "TRUTH_CHECK": "While the paper mentions the NCI-60 cell lines and the related columns list the MOLT4 cell line, the specific disease state for MOLT4 is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "large cell lung carcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The term \"large cell lung carcinoma\" is not mentioned in the provided paper text.",
+        "TRUTH_CHECK": "While the paper mentions the NCI-60 cell lines, the specific disease states for those lines are not listed in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "mesothelioma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The term \"mesothelioma\" does not appear in the provided paper text.",
+        "TRUTH_CHECK": "While the paper mentions the NCI-60 cell lines, the specific disease state for the runs (associated with cell line NCI-H226) is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "melanoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The term \"melanoma\" is not in the provided paper text, but the paper describes the \"NCI-60 cell lines\".",
+        "TRUTH_CHECK": "The NCI-60 is a well-known panel of 60 cancer cell lines; however, the provided paper text does not list the specific cell lines or their diseases. While the related_columns list cell lines like SK-MEL-2, SK-MEL-5, and M14 (which are melanoma lines), this information is not in the provided source text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "renal cell carcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field for disease_state.",
+        "SOURCE_CHECK": "The term \"renal cell carcinoma\" does not appear in the provided paper text, and the paper does not list the specific diseases of the NCI-60 cell lines.",
+        "TRUTH_CHECK": "While the NCI-60 panel is a well-known resource, the provided text only mentions \"NCI-60 cell lines\" without specifying which cell line has which disease.",
+        "COMPLETENESS_CHECK": "The format is correct for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "ovarian adenocarcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\" but does not list the specific diseases or cell line names in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Complete format."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "immunoblastic large cell lymphoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field for disease_state.",
+        "SOURCE_CHECK": "The term \"immunoblastic large cell lymphoma\" does not appear in the provided paper text.",
+        "TRUTH_CHECK": "The paper mentions the NCI-60 cell lines, but the provided text does not list the specific diseases associated with each cell line.",
+        "COMPLETENESS_CHECK": "The value follows the format of a disease name."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "astrocytoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease name, the right field.",
+        "SOURCE_CHECK": "The term \"astrocytoma\" is not mentioned in the provided paper text.",
+        "TRUTH_CHECK": "The paper mentions the NCI-60 cell lines, but does not list the specific diseases associated with each cell line.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "breast carcinoma",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The paper mentions the NCI-60 cell lines; the specific disease \"breast carcinoma\" is not printed in the provided text.",
+        "TRUTH_CHECK": "The runs carry the cell line HS578T, which is part of the NCI-60 panel and is a breast cancer cell line. However, the paper text provided does not list the specific diseases for the NCI-60 lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "3Y11M",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text (abstract and methods) does not mention any ages or subject demographics.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "48Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text (abstract and methods) does not mention the age of any subjects or donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "47Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text (abstract and methods) does not mention the age of the subjects or the origin of the NCI-60 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "54Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or cell line donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "49Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "34Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text (abstract and methods) does not mention any ages for the subjects or cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "60Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of the subjects or the origin of the NCI-60 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "64Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable, the value is hallucinated."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "58Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or cell line donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "44Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "53Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "51Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention any ages for the subjects or cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "24Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text (abstract and methods) does not mention the age of the subjects or the origin of the cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "35Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or cell line donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "69Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "67Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "52Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "75Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or the origin of the NCI-60 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "22Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text (abstract and methods) does not mention the age of any subjects or cell line donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "43Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or the origin of the NCI-60 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "42Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or cell line donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "61Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent from the text."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "72Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or donors.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "19Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of the subjects or the origin of the NCI-60 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "70Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text (abstract and methods) does not mention the age of the subjects or the donors of the NCI-60 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "33Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text (abstract and methods) does not mention the age of any subjects or the origin of the NCI-60 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "11Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text (abstract and methods) does not mention any ages for the NCI-60 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "62Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of any subjects or the origin of the NCI-60 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "74Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the age of the subjects or the origin of the NCI-60 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "Female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the sex of the subjects or cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "Male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the sex field.",
+        "SOURCE_CHECK": "The paper text does not mention the sex of the subjects or the cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The value follows the format, but is unsupported."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "CCRFCEM",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the data resource is for the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While the value is likely part of the NCI-60 panel, it is not explicitly mentioned in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "EKVX",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but the specific cell line \"EKVX\" is not listed in the provided text.",
+        "TRUTH_CHECK": "While \"EKVX\" is part of the NCI-60 panel, it is not explicitly named in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HCT116",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like HCT116) in the provided text.",
+        "TRUTH_CHECK": "While HCT116 is part of the NCI-60 panel, the specific name is not stated in the provided source text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "IGROV-1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While IGROV-1 is part of the NCI-60 panel, the specific name is not stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "RXF393",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but the specific cell line \"RXF393\" is not listed in the provided text.",
+        "TRUTH_CHECK": "While the paper describes a resource for the NCI-60, the specific name \"RXF393\" is not stated in the abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "CAKI-1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the data is for the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While CAKI-1 is part of the NCI-60 panel, it is not mentioned in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "KM12",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like KM12) in the provided text.",
+        "TRUTH_CHECK": "While KM12 is part of the NCI-60 panel, it is not explicitly stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SF539",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but the specific cell line \"SF539\" is not listed in the provided text.",
+        "TRUTH_CHECK": "While SF539 is part of the NCI-60 panel, it is not explicitly mentioned in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SK-MEL-2",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While SK-MEL-2 is part of the NCI-60 panel, it is not explicitly named in the provided abstract and methods.",
+        "COMPLETENESS_CHECK": "The value follows the format of a cell line name."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SKOV3",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper states the data is for the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While SKOV3 is part of the NCI-60 panel, it is not mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "786-O",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like 786-O) in the provided text.",
+        "TRUTH_CHECK": "While 786-O is part of the NCI-60 panel, the specific name is not stated in the provided source text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HT-29",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper states the data is for the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While HT-29 is part of the NCI-60 panel, it is not mentioned in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "K-562",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the data is for the \"NCI-60 cell lines\", and K-562 is a well-known member of the NCI-60 panel.",
+        "TRUTH_CHECK": "The runs are part of the NCI-60 proteomic resource described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MDAMB231",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While MDAMB231 is part of the NCI-60 panel, it is not explicitly named in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SK-MEL-5",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While SK-MEL-5 is part of the NCI-60 panel, it is not explicitly named in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HL-60",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While HL-60 is part of the NCI-60 panel, it is not explicitly mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MCF-7",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the data is for the \"NCI-60 cell lines\". MCF-7 is one of the standard NCI-60 cell lines.",
+        "TRUTH_CHECK": "The runs are part of the NCI-60 proteomic resource described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SF295",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like SF295) in the provided abstract and methods.",
+        "TRUTH_CHECK": "While SF295 is part of the NCI-60 panel, it is not explicitly mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SK-MEL-28",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names like SK-MEL-28 in the provided text.",
+        "TRUTH_CHECK": "While SK-MEL-28 is part of the NCI-60 panel, the specific name is not stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SW620",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While SW620 is part of the NCI-60 panel, it is not explicitly named in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "A498",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like A498) in the provided abstract and methods.",
+        "TRUTH_CHECK": "While A498 is part of the NCI-60 panel, the specific name is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "NCI-H322M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the data resource is for the \"NCI-60 cell lines\", and NCI-H322M is a member of the NCI-60 panel.",
+        "TRUTH_CHECK": "The runs are part of the NCI-60 proteomic resource described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "OVCAR8",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like OVCAR8) in the provided abstract and methods.",
+        "TRUTH_CHECK": "While OVCAR8 is part of the NCI-60 panel, the specific name is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The value follows the format of a cell line name."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SNB19",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like SNB19) in the provided abstract and methods.",
+        "TRUTH_CHECK": "While SNB19 is part of the NCI-60 panel, the specific name is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The value follows the format of a cell line name."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "UACC-62",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While UACC-62 is part of the NCI-60 panel, it is not explicitly mentioned in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "ACHN",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like ACHN) in the provided text.",
+        "TRUTH_CHECK": "While ACHN is part of the NCI-60 panel, it is not stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MALME3M",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While MALME3M is part of the NCI-60 panel, it is not explicitly named in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "OVCAR4",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like OVCAR4) in the provided text.",
+        "TRUTH_CHECK": "While OVCAR4 is part of the NCI-60 panel, it is not explicitly mentioned in the provided source text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "RPMI8226",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While RPMI8226 is part of the NCI-60 panel, it is not explicitly mentioned in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "The value follows the format of a cell line name."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "T47D",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like T47D) in the provided text.",
+        "TRUTH_CHECK": "While T47D is part of the NCI-60 panel, it is not explicitly mentioned in the provided source text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "A549",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", and A549 is a well-known member of the NCI-60 panel, but the specific name \"A549\" does not appear in the provided text.",
+        "TRUTH_CHECK": "The paper describes a proteomic resource for the NCI-60 cell lines; however, the specific cell line A549 is not explicitly listed in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "BT549",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like BT549) in the provided text.",
+        "TRUTH_CHECK": "While BT549 is part of the NCI-60 panel, the specific name is not stated in the provided source text.",
+        "COMPLETENESS_CHECK": "The value follows the format of a cell line name."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "NCI-H522",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states it describes a proteomic resource for the \"NCI-60 cell lines\", but it does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While NCI-H522 is part of the NCI-60 panel, the specific name is not printed in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "The value follows the format of a cell line name."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "TK-10",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While TK-10 is part of the NCI-60 panel, it is not explicitly mentioned in the provided paper text.",
+        "COMPLETENESS_CHECK": "The value follows the format of a cell line name."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "UACC-257",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While UACC-257 is part of the NCI-60 panel, it is not explicitly named in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "DU 145",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While DU 145 is part of the NCI-60 panel, it is not explicitly named in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HCT15",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like HCT15) in the provided text.",
+        "TRUTH_CHECK": "While HCT15 is part of the NCI-60 panel, it is not explicitly mentioned in the provided source text.",
+        "COMPLETENESS_CHECK": "The value follows the format of a cell line name."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MOLT4",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like MOLT4) in the provided text.",
+        "TRUTH_CHECK": "While MOLT4 is part of the NCI-60 panel, the specific name is not stated in the provided source text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "NCI-H460",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper states the data is for the \"NCI-60 cell lines\", and NCI-H460 is a member of the NCI-60 panel.",
+        "TRUTH_CHECK": "The runs are part of the NCI-60 proteomic resource described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "U-251 MG",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While U-251 MG is part of the NCI-60 panel, it is not explicitly named in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "COLO205",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the resource is for the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While COLO205 is part of the NCI-60 panel, it is not mentioned in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MDAMB468",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", and MDAMB468 is one of the standard NCI-60 cell lines, but the specific name \"MDAMB468\" is not printed in the provided text.",
+        "TRUTH_CHECK": "The paper describes a proteomic resource for the NCI-60 cell lines; however, the specific cell line names are not listed in the abstract or methods provided.",
+        "COMPLETENESS_CHECK": "The value follows the format of a cell line name."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "NCI-H226",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the data is for the \"NCI-60 cell lines\", and NCI-H226 is one of the standard lines in the NCI-60 panel.",
+        "TRUTH_CHECK": "The runs are part of the NCI-60 proteomic resource described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "OVCAR3",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like OVCAR3) in the provided text.",
+        "TRUTH_CHECK": "While OVCAR3 is part of the NCI-60 panel, the specific name is not stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SF268",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the data is for the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While SF268 is part of the NCI-60 panel, it is not mentioned in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HCC2998",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper states the data is for the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While HCC2998 is part of the NCI-60 panel, it is not mentioned in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MDAMB435",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the data is for the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While MDAMB435 is part of the NCI-60 panel, the specific name is not printed in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "NCI/ADR-RES",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While the value is likely part of the NCI-60 panel, it is not explicitly stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "NCI-H23",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the data resource is for the \"NCI-60 cell lines\", and the run source \"LC_NCIH23\" indicates NCI-H23 is one of these lines.",
+        "TRUTH_CHECK": "NCI-H23 is part of the NCI-60 panel analyzed by SWATH-MS in this study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "UO-31",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While UO-31 is part of the NCI-60 panel, it is not explicitly mentioned in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HOP-62",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", and HOP-62 is a well-known member of the NCI-60 panel, but the specific name \"HOP-62\" does not appear in the provided text.",
+        "TRUTH_CHECK": "The paper describes a proteomic resource for the NCI-60 cell lines; however, the specific cell line names are not listed in the provided abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "OVCAR5",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While OVCAR5 is part of the NCI-60 panel, it is not explicitly mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SR",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but the specific cell line \"SR\" is not listed in the provided text.",
+        "TRUTH_CHECK": "While the study is about the NCI-60 panel, the specific name \"SR\" is not mentioned in the abstract or methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HOP-92",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While HOP-92 is part of the NCI-60 panel, it is not mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "LOX IMVI",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While LOX IMVI is part of the NCI-60 panel, it is not stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "PC-3",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", and PC-3 is a well-known member of the NCI-60 panel, but the specific name \"PC-3\" does not appear in the provided text.",
+        "TRUTH_CHECK": "The paper describes a proteomic resource for the NCI-60 cell lines; however, the specific cell line PC-3 is not explicitly named in the abstract or methods.",
+        "COMPLETENESS_CHECK": "The value follows the format of a cell line name."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SN12C",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like SN12C) in the provided text.",
+        "TRUTH_CHECK": "While SN12C is part of the NCI-60 panel, it is not explicitly mentioned in the provided abstract and methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "SNB75",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like SNB75) in the provided abstract and methods.",
+        "TRUTH_CHECK": "While SNB75 is part of the NCI-60 panel, it is not explicitly mentioned in the provided text.",
+        "COMPLETENESS_CHECK": "The value follows the format of a cell line name."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HS578T",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names in the provided text.",
+        "TRUTH_CHECK": "While HS578T is part of the NCI-60 panel, it is not explicitly named in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "M14",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A cell line name, the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"NCI-60 cell lines\", but does not list the individual cell line names (like M14) in the provided text.",
+        "TRUTH_CHECK": "While M14 is part of the NCI-60 panel, it is not stated in the provided paper text.",
+        "COMPLETENESS_CHECK": "Not applicable, the value is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the right field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"NCI-60 cell lines\", from which the material type can be inferred.",
+        "TRUTH_CHECK": "The runs are derived from the NCI-60 cell lines.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the controlled terms listed in the field definition (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "caucasian",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the ethnicity of the subjects or the cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes the use of SWATH mass spectrometry, which is a label-free DIA method.",
+        "TRUTH_CHECK": "SWATH-MS is a label-free acquisition strategy; therefore, the runs are label-free.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=TripleTOF 5600;AC=MS:1000932",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The instrument model \"TripleTOF 5600\" is not mentioned in the provided abstract or methods text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The paper text provided (abstract and methods) does not mention the cleavage agent used.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Format is correct, but content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometer",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "proteomic profiling by mass spectrometry",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the general proteomics approach, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a proteomic resource generated by SWATH mass spectrometry, which is a DIA workflow.",
+        "TRUTH_CHECK": "The runs are part of a proteomic profiling experiment.",
+        "COMPLETENESS_CHECK": "The value \"proteomic profiling by mass spectrometer\" is a slight variation of the SDRF controlled term \"proteomic profiling by mass spectrometry\"."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper text provided (abstract and methods) does not mention any search parameters or modifications.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Format is correct, but content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper text (abstract and methods) does not mention any search parameters or modifications.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Format is correct, but content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "guot_L130610_003_SW.wiff = 1 | guot_L130610_004_SW.wiff = 1 | guot_L130610_005_SW.wiff = 1 | guot_L130610_006_SW.wiff = 1 | guot_L130611_007_SW.wiff = 1 | guot_L130611_010_SW.wiff = 1 | guot_L130611_011_SW.wiff = 1 | guot_L130611_012_SW.wiff = 1 | guot_L130611_013_SW.wiff = 1 | guot_L130611_014_SW.wiff = 1 | guot_L130612_002_SW.wiff = 1 | guot_L130612_003_SW.wiff = 1 | guot_L130612_004_SW.wiff = 1 | guot_L130612_005_SW.wiff = 1 | guot_L130612_006_SW.wiff = 1 | guot_L130613_002_SW.wiff = 1 | guot_L130613_003_SW.wiff = 1 | guot_L130613_004_SW.wiff = 1 | guot_L130613_005_SW.wiff = 1 | guot_L130613_006_SW.wiff = 1 | guot_L130614_002_SW.wiff = 1 | guot_L130614_003_SW.wiff = 1 | guot_L130614_004_SW.wiff = 1 | guot_L130614_005_SW.wiff = 1 | guot_L130614_006_SW.wiff = 1 | guot_L130615_002_SW.wiff = 1 | guot_L130615_003_SW.wiff = 1 | guot_L130615_004_SW.wiff = 1 | guot_L130615_005_SW.wiff = 1 | guot_L130615_006_SW.wiff = 1 | guot_L130616_002_SW.wiff = 1 | guot_L130616_003_SW.wiff = 1 | guot_L130616_004_SW.wiff = 1 | guot_L130616_005_SW.wiff = 1 | guot_L130616_006_SW.wiff = 1 | guot_L130617_002_SW.wiff = 1 | guot_L130617_003_SW.wiff = 1 | guot_L130617_004_SW.wiff = 1 | guot_L130617_005_SW.wiff = 1 | guot_L130617_006_SW.wiff = 1 | guot_L130618_002_SW.wiff = 1 | guot_L130618_003_SW.wiff = 1 | guot_L130618_004_SW.wiff = 1 | guot_L130618_005_SW.wiff = 1 | guot_L130618_006_SW.wiff = 1 | guot_L130619_002_SW.wiff = 1 | guot_L130619_003_SW.wiff = 1 | guot_L130619_004_SW.wiff = 1 | guot_L130619_005_SW.wiff = 1 | guot_L130619_006_SW.wiff = 1 | guot_L130620_002_SW.wiff = 1 | guot_L130620_005_SW.wiff = 1 | guot_L130620_006_SW.wiff = 1 | guot_L130621_002_SW.wiff = 1 | guot_L130621_003_SW.wiff = 1 | guot_L130621_004_SW.wiff = 1 | guot_L130621_005_SW.wiff = 1 | guot_L130622_002_SW.wiff = 2 | guot_L130622_003_SW.wiff = 2 | guot_L130622_004_SW.wiff = 2 | guot_L130622_005_SW.wiff = 2 | guot_L130622_006_SW.wiff = 2 | guot_L130623_002_SW.wiff = 2 | guot_L130623_003_SW.wiff = 2 | guot_L130623_004_SW.wiff = 2 | guot_L130623_005_SW.wiff = 2 | guot_L130623_006_SW.wiff = 2 | guot_L130624_002_SW.wiff = 2 | guot_L130624_003_SW.wiff = 2 | guot_L130624_004_SW.wiff = 2 | guot_L130624_005_SW.wiff = 2 | guot_L130624_006_SW.wiff = 2 | guot_L130625_002_SW.wiff = 2 | guot_L130625_003_SW.wiff = 2 | guot_L130625_004_SW.wiff = 2 | guot_L130625_005_SW.wiff = 2 | guot_L130625_006_SW.wiff = 2 | guot_L130626_002_SW.wiff = 2 | guot_L130626_003_SW.wiff = 2 | guot_L130626_004_SW.wiff = 2 | guot_L130626_005_SW.wiff = 2 | guot_L130626_006_SW.wiff = 2 | guot_L130627_002_SW.wiff = 2 | guot_L130627_003_SW.wiff = 2 | guot_L130627_004_SW.wiff = 2 | guot_L130627_005_SW.wiff = 2 | guot_L130627_006_SW.wiff = 2 | guot_L130628_002_SW.wiff = 2 | guot_L130628_003_SW.wiff = 2 | guot_L130628_004_SW.wiff = 2 | guot_L130628_005_SW.wiff = 2 | guot_L130628_006_SW.wiff = 2 | guot_L130629_002_SW.wiff = 2 | guot_L130629_003_SW.wiff = 2 | guot_L130629_004_SW.wiff = 2 | guot_L130629_005_SW.wiff = 2 | guot_L130629_006_SW.wiff = 2 | guot_L130630_002_SW.wiff = 2 | guot_L130630_003_SW.wiff = 2 | guot_L130630_004_SW.wiff = 2 | guot_L130630_005_SW.wiff = 2 | guot_L130630_006_SW.wiff = 2 | guot_L130701_002_SW.wiff = 2 | guot_L130701_003_SW.wiff = 2 | guot_L130701_004_SW.wiff = 2 | guot_L130701_005_SW.wiff = 2 | guot_L130701_006_SW.wiff = 2 | guot_L130702_002_SW.wiff = 2 | guot_L130702_005_SW.wiff = 2 | guot_L130702_006_SW.wiff = 2 | guot_L130703_002_SW.wiff = 2 | guot_L130703_003b_SW.wiff = 2 | guot_L130703_004_SW.wiff = 2 | guot_L130703_005_SW.wiff = 2 | guot_L130719_002_SW.wiff = 1 | guot_L130719_003_SW.wiff = 2 | guot_L130722_001_SW.wiff = 1 | guot_L130722_002_SW.wiff = 2 | guot_L130722_003_SW.wiff = 1 | guot_L130722_004_SW.wiff = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions the NCI-60 cell lines but does not explicitly state the number of biological replicates per cell line.",
+        "TRUTH_CHECK": "The mapping assigns replicate 1 to the first set of cell lines (suffix _a) and replicate 2 to the second set (suffix _b), which is a standard way to represent biological replicates for a set of cell lines.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "guot_L130610_003_SW.wiff = 1 | guot_L130610_004_SW.wiff = 1 | guot_L130610_005_SW.wiff = 1 | guot_L130610_006_SW.wiff = 1 | guot_L130611_007_SW.wiff = 1 | guot_L130611_010_SW.wiff = 1 | guot_L130611_011_SW.wiff = 1 | guot_L130611_012_SW.wiff = 1 | guot_L130611_013_SW.wiff = 1 | guot_L130611_014_SW.wiff = 1 | guot_L130612_002_SW.wiff = 1 | guot_L130612_003_SW.wiff = 1 | guot_L130612_004_SW.wiff = 1 | guot_L130612_005_SW.wiff = 1 | guot_L130612_006_SW.wiff = 1 | guot_L130613_002_SW.wiff = 1 | guot_L130613_003_SW.wiff = 1 | guot_L130613_004_SW.wiff = 1 | guot_L130613_005_SW.wiff = 1 | guot_L130613_006_SW.wiff = 1 | guot_L130614_002_SW.wiff = 1 | guot_L130614_003_SW.wiff = 1 | guot_L130614_004_SW.wiff = 1 | guot_L130614_005_SW.wiff = 1 | guot_L130614_006_SW.wiff = 1 | guot_L130615_002_SW.wiff = 1 | guot_L130615_003_SW.wiff = 1 | guot_L130615_004_SW.wiff = 1 | guot_L130615_005_SW.wiff = 1 | guot_L130615_006_SW.wiff = 1 | guot_L130616_002_SW.wiff = 1 | guot_L130616_003_SW.wiff = 1 | guot_L130616_004_SW.wiff = 1 | guot_L130616_005_SW.wiff = 1 | guot_L130616_006_SW.wiff = 1 | guot_L130617_002_SW.wiff = 1 | guot_L130617_003_SW.wiff = 1 | guot_L130617_004_SW.wiff = 1 | guot_L130617_005_SW.wiff = 1 | guot_L130617_006_SW.wiff = 1 | guot_L130618_002_SW.wiff = 1 | guot_L130618_003_SW.wiff = 1 | guot_L130618_004_SW.wiff = 1 | guot_L130618_005_SW.wiff = 1 | guot_L130618_006_SW.wiff = 1 | guot_L130619_002_SW.wiff = 1 | guot_L130619_003_SW.wiff = 1 | guot_L130619_004_SW.wiff = 1 | guot_L130619_005_SW.wiff = 1 | guot_L130619_006_SW.wiff = 1 | guot_L130620_002_SW.wiff = 1 | guot_L130620_005_SW.wiff = 1 | guot_L130620_006_SW.wiff = 1 | guot_L130621_002_SW.wiff = 1 | guot_L130621_003_SW.wiff = 1 | guot_L130621_004_SW.wiff = 1 | guot_L130621_005_SW.wiff = 1 | guot_L130622_002_SW.wiff = 1 | guot_L130622_003_SW.wiff = 1 | guot_L130622_004_SW.wiff = 1 | guot_L130622_005_SW.wiff = 1 | guot_L130622_006_SW.wiff = 1 | guot_L130623_002_SW.wiff = 1 | guot_L130623_003_SW.wiff = 1 | guot_L130623_004_SW.wiff = 1 | guot_L130623_005_SW.wiff = 1 | guot_L130623_006_SW.wiff = 1 | guot_L130624_002_SW.wiff = 1 | guot_L130624_003_SW.wiff = 1 | guot_L130624_004_SW.wiff = 1 | guot_L130624_005_SW.wiff = 1 | guot_L130624_006_SW.wiff = 1 | guot_L130625_002_SW.wiff = 1 | guot_L130625_003_SW.wiff = 1 | guot_L130625_004_SW.wiff = 1 | guot_L130625_005_SW.wiff = 1 | guot_L130625_006_SW.wiff = 1 | guot_L130626_002_SW.wiff = 1 | guot_L130626_003_SW.wiff = 1 | guot_L130626_004_SW.wiff = 1 | guot_L130626_005_SW.wiff = 1 | guot_L130626_006_SW.wiff = 1 | guot_L130627_002_SW.wiff = 1 | guot_L130627_003_SW.wiff = 1 | guot_L130627_004_SW.wiff = 1 | guot_L130627_005_SW.wiff = 1 | guot_L130627_006_SW.wiff = 1 | guot_L130628_002_SW.wiff = 1 | guot_L130628_003_SW.wiff = 1 | guot_L130628_004_SW.wiff = 1 | guot_L130628_005_SW.wiff = 1 | guot_L130628_006_SW.wiff = 1 | guot_L130629_002_SW.wiff = 1 | guot_L130629_003_SW.wiff = 1 | guot_L130629_004_SW.wiff = 1 | guot_L130629_005_SW.wiff = 1 | guot_L130629_006_SW.wiff = 1 | guot_L130630_002_SW.wiff = 1 | guot_L130630_003_SW.wiff = 1 | guot_L130630_004_SW.wiff = 1 | guot_L130630_005_SW.wiff = 1 | guot_L130630_006_SW.wiff = 1 | guot_L130701_002_SW.wiff = 1 | guot_L130701_003_SW.wiff = 1 | guot_L130701_004_SW.wiff = 1 | guot_L130701_005_SW.wiff = 1 | guot_L130701_006_SW.wiff = 1 | guot_L130702_002_SW.wiff = 1 | guot_L130702_005_SW.wiff = 1 | guot_L130702_006_SW.wiff = 1 | guot_L130703_002_SW.wiff = 1 | guot_L130703_003b_SW.wiff = 1 | guot_L130703_004_SW.wiff = 1 | guot_L130703_005_SW.wiff = 1 | guot_L130719_002_SW.wiff = 1 | guot_L130719_003_SW.wiff = 1 | guot_L130722_001_SW.wiff = 1 | guot_L130722_002_SW.wiff = 1 | guot_L130722_003_SW.wiff = 1 | guot_L130722_004_SW.wiff = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper does not specify the number of technical replicates per sample, but the provided run list shows multiple runs per source (e.g., LE_CCRFCEM_a and LE_CCRFCEM_b).",
+        "TRUTH_CHECK": "The mapping assigns index 1 to every run. However, the source column indicates that for each cell line, there are two distinct materials/aliquots (suffix _a and _b). According to the definition, repeated runs of the same material get 1, 2, 3. Since each run here represents a unique material (a or b) measured once, they should each be technical replicate 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "guot_L130610_003_SW.wiff = 1 | guot_L130610_004_SW.wiff = 1 | guot_L130610_005_SW.wiff = 1 | guot_L130610_006_SW.wiff = 1 | guot_L130611_007_SW.wiff = 1 | guot_L130611_010_SW.wiff = 1 | guot_L130611_011_SW.wiff = 1 | guot_L130611_012_SW.wiff = 1 | guot_L130611_013_SW.wiff = 1 | guot_L130611_014_SW.wiff = 1 | guot_L130612_002_SW.wiff = 1 | guot_L130612_003_SW.wiff = 1 | guot_L130612_004_SW.wiff = 1 | guot_L130612_005_SW.wiff = 1 | guot_L130612_006_SW.wiff = 1 | guot_L130613_002_SW.wiff = 1 | guot_L130613_003_SW.wiff = 1 | guot_L130613_004_SW.wiff = 1 | guot_L130613_005_SW.wiff = 1 | guot_L130613_006_SW.wiff = 1 | guot_L130614_002_SW.wiff = 1 | guot_L130614_003_SW.wiff = 1 | guot_L130614_004_SW.wiff = 1 | guot_L130614_005_SW.wiff = 1 | guot_L130614_006_SW.wiff = 1 | guot_L130615_002_SW.wiff = 1 | guot_L130615_003_SW.wiff = 1 | guot_L130615_004_SW.wiff = 1 | guot_L130615_005_SW.wiff = 1 | guot_L130615_006_SW.wiff = 1 | guot_L130616_002_SW.wiff = 1 | guot_L130616_003_SW.wiff = 1 | guot_L130616_004_SW.wiff = 1 | guot_L130616_005_SW.wiff = 1 | guot_L130616_006_SW.wiff = 1 | guot_L130617_002_SW.wiff = 1 | guot_L130617_003_SW.wiff = 1 | guot_L130617_004_SW.wiff = 1 | guot_L130617_005_SW.wiff = 1 | guot_L130617_006_SW.wiff = 1 | guot_L130618_002_SW.wiff = 1 | guot_L130618_003_SW.wiff = 1 | guot_L130618_004_SW.wiff = 1 | guot_L130618_005_SW.wiff = 1 | guot_L130618_006_SW.wiff = 1 | guot_L130619_002_SW.wiff = 1 | guot_L130619_003_SW.wiff = 1 | guot_L130619_004_SW.wiff = 1 | guot_L130619_005_SW.wiff = 1 | guot_L130619_006_SW.wiff = 1 | guot_L130620_002_SW.wiff = 1 | guot_L130620_005_SW.wiff = 1 | guot_L130620_006_SW.wiff = 1 | guot_L130621_002_SW.wiff = 1 | guot_L130621_003_SW.wiff = 1 | guot_L130621_004_SW.wiff = 1 | guot_L130621_005_SW.wiff = 1 | guot_L130622_002_SW.wiff = 1 | guot_L130622_003_SW.wiff = 1 | guot_L130622_004_SW.wiff = 1 | guot_L130622_005_SW.wiff = 1 | guot_L130622_006_SW.wiff = 1 | guot_L130623_002_SW.wiff = 1 | guot_L130623_003_SW.wiff = 1 | guot_L130623_004_SW.wiff = 1 | guot_L130623_005_SW.wiff = 1 | guot_L130623_006_SW.wiff = 1 | guot_L130624_002_SW.wiff = 1 | guot_L130624_003_SW.wiff = 1 | guot_L130624_004_SW.wiff = 1 | guot_L130624_005_SW.wiff = 1 | guot_L130624_006_SW.wiff = 1 | guot_L130625_002_SW.wiff = 1 | guot_L130625_003_SW.wiff = 1 | guot_L130625_004_SW.wiff = 1 | guot_L130625_005_SW.wiff = 1 | guot_L130625_006_SW.wiff = 1 | guot_L130626_002_SW.wiff = 1 | guot_L130626_003_SW.wiff = 1 | guot_L130626_004_SW.wiff = 1 | guot_L130626_005_SW.wiff = 1 | guot_L130626_006_SW.wiff = 1 | guot_L130627_002_SW.wiff = 1 | guot_L130627_003_SW.wiff = 1 | guot_L130627_004_SW.wiff = 1 | guot_L130627_005_SW.wiff = 1 | guot_L130627_006_SW.wiff = 1 | guot_L130628_002_SW.wiff = 1 | guot_L130628_003_SW.wiff = 1 | guot_L130628_004_SW.wiff = 1 | guot_L130628_005_SW.wiff = 1 | guot_L130628_006_SW.wiff = 1 | guot_L130629_002_SW.wiff = 1 | guot_L130629_003_SW.wiff = 1 | guot_L130629_004_SW.wiff = 1 | guot_L130629_005_SW.wiff = 1 | guot_L130629_006_SW.wiff = 1 | guot_L130630_002_SW.wiff = 1 | guot_L130630_003_SW.wiff = 1 | guot_L130630_004_SW.wiff = 1 | guot_L130630_005_SW.wiff = 1 | guot_L130630_006_SW.wiff = 1 | guot_L130701_002_SW.wiff = 1 | guot_L130701_003_SW.wiff = 1 | guot_L130701_004_SW.wiff = 1 | guot_L130701_005_SW.wiff = 1 | guot_L130701_006_SW.wiff = 1 | guot_L130702_002_SW.wiff = 1 | guot_L130702_005_SW.wiff = 1 | guot_L130702_006_SW.wiff = 1 | guot_L130703_002_SW.wiff = 1 | guot_L130703_003b_SW.wiff = 1 | guot_L130703_004_SW.wiff = 1 | guot_L130703_005_SW.wiff = 1 | guot_L130719_002_SW.wiff = 1 | guot_L130719_003_SW.wiff = 1 | guot_L130722_001_SW.wiff = 1 | guot_L130722_002_SW.wiff = 1 | guot_L130722_003_SW.wiff = 1 | guot_L130722_004_SW.wiff = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "No offline fractionation is described in the paper text.",
+        "TRUTH_CHECK": "Every run is assigned fraction 1, which is correct when no fractionation is performed.",
+        "COMPLETENESS_CHECK": "The mapping follows the required format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[lowest observed m/z]",
+      "extracted_value": "400",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number, which is the correct type for a lowest observed m/z comment.",
+        "SOURCE_CHECK": "The paper text does not mention the lowest observed m/z or the value 400.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The value is a simple number, which is complete for this type of field."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[highest observed m/z]",
+      "extracted_value": "1200",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a numerical value for a comment column regarding the highest observed m/z.",
+        "SOURCE_CHECK": "The paper text does not mention the highest observed m/z or the value 1200.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    }
+  ]
+}

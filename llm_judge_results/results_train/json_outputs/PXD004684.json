@@ -1,0 +1,328 @@
+{
+  "paper_id": "PXD004684",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes samples from human patients (lung squamous cell carcinomas and adjacent tissues), which is an allowed inference for \"Homo sapiens\".",
+        "TRUTH_CHECK": "The analysed tissues are from human patients.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "lung tumor-adjacent tissues",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organism part, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"adjacent lung tissues\" in the abstract and \"adjacent lung tissues\" in the methods.",
+        "TRUTH_CHECK": "The value correctly describes the material for the runs associated with the control/adjacent group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "lung squamous cell carcinoma tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organ of origin for a tumor, which is the correct field.",
+        "SOURCE_CHECK": "The abstract states the samples are \"frozen lung squamous cell carcinomas\".",
+        "TRUTH_CHECK": "The value correctly describes the tissue for the runs associated with the tumor samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "control",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "normal",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"adjacent tissues\" as the comparison for \"lung squamous cell carcinomas\".",
+        "TRUTH_CHECK": "The runs carry the value \"control\" for the adjacent tissues, which are the healthy/normal controls in this study.",
+        "COMPLETENESS_CHECK": "The field definition explicitly states that the SDRF term for healthy subjects is \"normal\" and that other wording is a format error."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "squamous cell carcinoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease, which is the correct field.",
+        "SOURCE_CHECK": "The abstract states the study used \"frozen lung squamous cell carcinomas\".",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the tumor samples.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions that gender is available in Table S1, but Table S1 is not provided in the text.",
+        "TRUTH_CHECK": "The sex of the subjects is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analyzed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that samples were \"frozen lung squamous cell carcinomas and 4 adjacent tissues\".",
+        "TRUTH_CHECK": "The analyzed materials are lung tissues.",
+        "COMPLETENESS_CHECK": "The value follows the allowed terms in the field definition."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "white",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper states that ethnicity can be found in Table S1, but Table S1 is not provided in the text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"label-free quantification (LF)\" and \"label free files\", which supports the use of label-free methods.",
+        "TRUTH_CHECK": "The runs listed are part of the LF (label-free) approach.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002634;NT=Q Exactive Plus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section explicitly names the \"QExactive Plus, Thermo, San Jose, CA\".",
+        "TRUTH_CHECK": "The instrument was used for the tandem mass spectrometry peptide sequencing experiments described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state \"trypsin digestion was carried out overnight\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes discovery proteomics experiments using LC-MS/MS (DDA and DIA), which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the proteomics experiments performed on the lung tissue samples.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF controlled term convention."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:35;NT=Oxidation;MT=Variable;TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"oxidation (methionine)\" as an allowable modification in the IDPicker analysis and \"methionine oxidation\" as a dynamic modification in the Pinnacle analysis.",
+        "TRUTH_CHECK": "The modification was used in the search for the analyzed runs.",
+        "COMPLETENESS_CHECK": "Complete, including name, residue, and variable status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:4;NT=Carbamidomethyl;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Carbamidomethyl;TA=C;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper mentions carbamidomethylation (cysteine) in the IDPicker and Pinnacle analysis sections.",
+        "TRUTH_CHECK": "The modification was used for the database searches of the runs.",
+        "COMPLETENESS_CHECK": "The paper does not explicitly state if carbamidomethylation was fixed or variable, but it is the standard for alkylated cysteines. However, the definition requires the MT status to be based on the paper. In the IDPicker section, it is listed as an \"allowable modification\" and in the Pinnacle section as a \"dynamic modification\". \"Dynamic\" is a synonym for variable."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"precursor mass tolerance was set to 10 ppm\" in the Pinnacle Data Analysis section and \"mass error of 10 ppm\" in the MaxQuant Data Analysis section.",
+        "TRUTH_CHECK": "The value is correct for the runs described in the study.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.05 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The \"Pinnacle Data Analysis\" section states \"MS/MS mass tolerance was 0.05 Da\".",
+        "TRUTH_CHECK": "The value is correct for the runs analyzed using the described pipeline.",
+        "COMPLETENESS_CHECK": "The value follows the definition format, including the unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "N294-1.raw = 1 | N294-2.raw = 1 | N295-1.raw = 1 | N295-2.raw = 1 | N296-1.raw = 1 | N296-2.raw = 1 | N299-1.raw = 1 | N299-2.raw = 1 | T298-1.raw = 1 | T298-2.raw = 1 | T300-1.raw = 1 | T300-2.raw = 1 | T301-1.raw = 1 | T301-2.raw = 1 | T303-1.raw = 1 | T303-2.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "N294-1.raw = 1 | N294-2.raw = 1 | N295-1.raw = 2 | N295-2.raw = 2 | N296-1.raw = 3 | N296-2.raw = 3 | N299-1.raw = 4 | N299-2.raw = 4 | T298-1.raw = 5 | T298-2.raw = 5 | T300-1.raw = 6 | T300-2.raw = 6 | T301-1.raw = 7 | T301-2.raw = 7 | T303-1.raw = 8 | T303-2.raw = 8",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states there are 4 frozen lung squamous cell carcinomas and 4 adjacent tissues (8 samples total).",
+        "TRUTH_CHECK": "The runs are grouped by sample (Sample 1 to Sample 8). Each sample is an independent biological unit. Therefore, runs from different samples must have different biological replicate indices (1, 2, 3, etc.). Assigning all runs to index 1 is incorrect.",
+        "COMPLETENESS_CHECK": "The mapping is complete but logically wrong based on the study design."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "N294-1.raw = 1 | N294-2.raw = 2 | N295-1.raw = 1 | N295-2.raw = 2 | N296-1.raw = 1 | N296-2.raw = 2 | N299-1.raw = 1 | N299-2.raw = 2 | T298-1.raw = 1 | T298-2.raw = 2 | T300-1.raw = 1 | T300-2.raw = 2 | T301-1.raw = 1 | T301-2.raw = 2 | T303-1.raw = 1 | T303-2.raw = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"concordance of LF and single sample DDA technical replicates\" and \"concordance of technical replicates\" for DIA, supporting the existence of technical replicates.",
+        "TRUTH_CHECK": "The runs are grouped by sample (e.g., Sample 1 has two runs), and each pair is assigned indices 1 and 2, which correctly identifies repeated runs of the same material.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index following the definition."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "N294-1.raw = 1 | N294-2.raw = 1 | N295-1.raw = 1 | N295-2.raw = 1 | N296-1.raw = 1 | N296-2.raw = 1 | N299-1.raw = 1 | N299-2.raw = 1 | T298-1.raw = 1 | T298-2.raw = 1 | T300-1.raw = 1 | T300-2.raw = 1 | T301-1.raw = 1 | T301-2.raw = 1 | T303-1.raw = 1 | T303-2.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes single sample analysis for DDA and DIA, and fractionated analysis for LF and TMT. These specific runs (single sample per source) correspond to the unfractionated experiments.",
+        "TRUTH_CHECK": "For single sample runs, no offline fractionation is performed, so they should all be assigned fraction 1.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned the index 1."
+      }
+    }
+  ]
+}

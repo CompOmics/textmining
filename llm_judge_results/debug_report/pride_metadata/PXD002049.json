@@ -1,0 +1,176 @@
+{
+  "accession" : "PXD002049",
+  "title" : "CPTAC proteomic analysis of TCGA colon and rectal carcinomas using standard and customized databases, part 9",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "The goal of the CPTAC, TCGA Cancer Proteome Study of Colorectal Tissue is to analyze the proteomes of TCGA tumor samples that have been comprehensively characterized by molecular methods. Ninety-five TCGA tumor samples were used in this study.",
+  "sampleProcessingProtocol" : "Analytical Sample Protocol - Alkylation: Iodoacetamide, Fractionation: Peptide IEF, Fractions: 15, Proteolysis: Trypsin, Starting Amount: 200 ug; Chromatography Protocol - Column Length: 11 cm, Column Type: C18, Gradient Length: 95 min, Injected: 1 ug, Inside Diameter: 100 um, Particle Size: 5 um; Mass Spectrometry Protocol - Dissociation: CID, Instrument: Thermo LTQ Orbitrap Velos, MS1 Resolution: 60000, Precursors: Top 8. See associated protocols and methods documents at https://cptac-data-portal.georgetown.edu.",
+  "dataProcessingProtocol" : "Peptide identification employed the RefSeq Human protein sequence database using three different database search engines: myrimatch, pepitome and MS-GF+. Spectral identification files were converted to IDPicker SQLite databases (idpDB) using IDPicker 3. The resulting files were used for final protein assembly providing the minimal list of proteins that could explain the available peptides identified. Initially, spectrum-to-peptide match stringency was set at 0.1% FDR with a minimum of 2 distinct peptides identified per protein. The dataset was limited to the 7526 protein groups identified while spectral counts were increased by relaxing the spectrum-to-peptide match FDR to 1%. Assembly at the gene level resulted in the identification of 7211 gene groups for the full dataset. Variant peptide sequences were identified by separate database searches using data from RNA-seq of the individual carcinomas using the R package customProDB. A total of 796 single amino acid variants were identified.",
+  "projectTags" : [ "Cptac consortium", "Biomedical", "Highlighted" ],
+  "keywords" : [ "Cptac cptac-tcga_colorectal_cancer cptac-vu" ],
+  "doi" : "10.6019/PXD002049",
+  "submissionType" : "COMPLETE",
+  "license" : "EBI terms of use",
+  "submissionDate" : "2015-04-13",
+  "publicationDate" : "2015-06-13",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Robbert",
+    "lastName" : "Slebos",
+    "identifier" : "13650122",
+    "affiliation" : "Vanderbilt University",
+    "email" : "r.slebos@vanderbilt.edu",
+    "country" : "United States",
+    "orcid" : "",
+    "name" : "Robbert Slebos",
+    "id" : "13650122"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Daniel C. Liebler,",
+    "lastName" : "Ph.D.",
+    "identifier" : "20310100",
+    "affiliation" : "Vanderbilt University",
+    "email" : "daniel.liebler@Vanderbilt.Edu",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Daniel C. Liebler, Ph.D.",
+    "id" : "20310100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001742",
+    "name" : "LTQ Orbitrap Velos",
+    "value" : ""
+  } ],
+  "softwares" : [ ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "United States" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000586",
+      "name" : "colonic cancer cell",
+      "value" : ""
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000193",
+      "name" : "rectal cancer cell",
+      "value" : ""
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)",
+      "value" : ""
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:234",
+      "name" : "colon adenocarcinoma",
+      "value" : ""
+    }, {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:1996",
+      "name" : "rectum adenocarcinoma",
+      "value" : ""
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)",
+    "value" : ""
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000193",
+    "name" : "Rectal cancer cell",
+    "value" : ""
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000586",
+    "name" : "Colonic cancer cell",
+    "value" : ""
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:1996",
+    "name" : "Rectum adenocarcinoma",
+    "value" : ""
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:234",
+    "name" : "Colon adenocarcinoma",
+    "value" : ""
+  } ],
+  "references" : [ {
+    "referenceLine" : "Slebos RJ, Wang X, Wang X, Zhang B, Tabb DL, Liebler DC. Proteomic analysis of colon and rectal carcinoma using standard and customized databases. Sci Data. 2015 Jun 23;2:150022. eCollection 2015",
+    "pubmedID" : 26110064,
+    "doi" : "10.1038/sdata.2015.22"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:28",
+    "name" : "Gln->pyro-Glu",
+    "value" : ""
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:27",
+    "name" : "Glu->pyro-Glu",
+    "value" : ""
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:4",
+    "name" : "Carbamidomethyl",
+    "value" : ""
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:35",
+    "name" : "Oxidation",
+    "value" : ""
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "UNIMOD",
+    "accession" : "UNIMOD:1",
+    "name" : "Acetyl",
+    "value" : ""
+  } ],
+  "totalFileDownloads" : 44291,
+  "otherOmicsLinks" : [ "px:PXD002042", "px:PXD002043", "px:PXD002041", "px:PXD002050", "px:PXD001006", "px:PXD002048", "px:PXD002046", "px:PXD002047", "px:PXD002044", "pride.project:PXD002050", "px:PXD001991", "px:PXD002045", "pride.project:PXD002042", "pride.project:PXD002041", "pride.project:PXD002044", "pride.project:PXD002043", "pride.project:PXD002046", "pride.project:PXD002045", "pride.project:PXD002048", "pride.project:PXD002047", "pride.project:PXD001945" ]
+}

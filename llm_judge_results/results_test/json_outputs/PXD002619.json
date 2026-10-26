@@ -1,0 +1,1076 @@
+{
+  "paper_id": "PXD002619",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Characteristics[organism]",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes breast tumours from patients at Turku University Hospital, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analysed breast cancer samples are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "Characteristics[organism part]",
+      "extracted_value": "breast cancer cell",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a cell type or material, but the field requires the organism part (tissue).",
+        "SOURCE_CHECK": "The paper describes breast tumours (tissue) and the use of cell lines for the super-SILAC mix.",
+        "TRUTH_CHECK": "The runs listed are from clinical samples (\"PXD002619-Sample 1\", etc.), which are breast tumours (tissue), not \"cells\".",
+        "COMPLETENESS_CHECK": "Not applicable; the value is a type mismatch."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Characteristics[disease]",
+      "extracted_value": "breast cancer",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly states the analysis of \"breast tumours\" and \"breast cancer subtypes\".",
+        "TRUTH_CHECK": "The runs are derived from breast tumour samples.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "Material Type",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "tissue",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"cell\" is a description of material, but it is not one of the controlled terms listed in the field definition.",
+        "SOURCE_CHECK": "The paper describes the analysis of breast tumour samples (tissue) and the use of cell lines for the super-SILAC mix.",
+        "TRUTH_CHECK": "The runs listed are from \"Sample 1\", \"Sample 2\", etc., which correspond to the 40 breast tumour samples described as \"FFPE tumour blocks\" (tissue).",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not a valid controlled term for material_type."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "NT=SILAC;AC=MS:1002611",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the use of a \"super-SILAC mix\" and metabolic labeling with 13C615N4-arginine and l-13C615N2-lysine.",
+        "TRUTH_CHECK": "The runs used SILAC for quantification.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the use of a \"Q Exactive mass spectrometer\".",
+        "TRUTH_CHECK": "The value is correct for the runs listed.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The paper states \"Sequencing grade trypsin was then added to the samples\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of all samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "comment[dissociation method]",
+      "extracted_value": "AC=MS:1000422;NT=HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Higher energy collisional dissociation fragmentation was performed\", which is HCD.",
+        "TRUTH_CHECK": "HCD was used for the MS measurements of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"variable modifications methionine oxidation\".",
+        "TRUTH_CHECK": "The modification was used for the search of all runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, status, and residue."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"variable modifications methionine oxidation and N-terminal acetylation\".",
+        "TRUTH_CHECK": "The modification is correctly attributed to the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, specifying the name, position, and variable status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"fixed modification of carbamidomethyl cysteine\".",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it.",
+        "COMPLETENESS_CHECK": "Follows the required format NT, AC, TA, and MT."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "comment[precursor mass tolerance]",
+      "extracted_value": "6 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states \"Parent peptide masses and fragment masses were searched with maximal initial mass deviation of 6–20 p.p.m., respectively.\"",
+        "TRUTH_CHECK": "The value 6 ppm corresponds to the parent (precursor) peptide mass deviation.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "comment[fragment mass tolerance]",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Parent peptide masses and fragment masses were searched with maximal initial mass deviation of 6–20 p.p.m., respectively.\"",
+        "TRUTH_CHECK": "The fragment mass tolerance is the second value in the range, which is 20 ppm.",
+        "COMPLETENESS_CHECK": "Complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "comment[fraction identifier]",
+      "extracted_value": "20110610_Q2_TaGe_SA_SSM1_2.raw = 2 | 20110610_Q2_TaGe_SA_SSM1_3.raw = 3 | 20110610_Q2_TaGe_SA_SSM1_4.raw = 4 | 20110610_Q2_TaGe_SA_SSM1_5.raw = 5 | 20110610_Q2_TaGe_SA_SSM1_6.raw = 6 | 20110610_Q2_TaGe_SA_SSM2_1.raw = 1 | 20110610_Q2_TaGe_SA_SSM2_2_110612101420.raw = 2 | 20110610_Q2_TaGe_SA_SSM2_3_110612155437.raw = 3 | 20110610_Q2_TaGe_SA_SSM2_4_110612200610.raw = 4 | 20110610_Q2_TaGe_SA_SSM2_5.raw = 5 | 20110610_Q2_TaGe_SA_SSM2_6.raw = 6 | 20110612_EXQ1_TaGe_SA_BC5_1.raw = 1 | 20110612_EXQ1_TaGe_SA_BC5_2.raw = 2 | 20110612_EXQ1_TaGe_SA_BC5_3.raw = 3 | 20110612_EXQ1_TaGe_SA_BC5_4.raw = 4 | 20110612_EXQ1_TaGe_SA_BC5_5.raw = 5 | 20110612_EXQ1_TaGe_SA_BC5_6.raw = 6 | 20110612_EXQ1_TaGe_SA_BC6_1.raw = 1 | 20110612_EXQ1_TaGe_SA_BC6_2.raw = 2 | 20110612_EXQ1_TaGe_SA_BC6_3.raw = 3 | 20110612_EXQ1_TaGe_SA_BC6_4.raw = 4 | 20110612_EXQ1_TaGe_SA_BC6_5.raw = 5 | 20110612_EXQ1_TaGe_SA_BC6_6.raw = 6 | 20110612_EXQ1_TaGe_SA_BC7_1.raw = 1 | 20110612_EXQ1_TaGe_SA_BC7_2.raw = 2 | 20110612_EXQ1_TaGe_SA_BC7_3.raw = 3 | 20110612_EXQ1_TaGe_SA_BC7_4.raw = 4 | 20110612_EXQ1_TaGe_SA_BC7_5.raw = 5 | 20110612_EXQ1_TaGe_SA_BC7_6.raw = 6 | 20110612_Q2_TaGe_SA_BC13_2.raw = 2 | 20110612_Q2_TaGe_SA_BC1_1.raw = 1 | 20110612_Q2_TaGe_SA_BC1_2.raw = 2 | 20110612_Q2_TaGe_SA_BC1_3.raw = 3 | 20110612_Q2_TaGe_SA_BC1_5.raw = 5 | 20110612_Q2_TaGe_SA_BC1_6.raw = 6 | 20110612_Q2_TaGe_SA_BC3_1.raw = 1 | 20110612_Q2_TaGe_SA_BC3_2.raw = 2 | 20110612_Q2_TaGe_SA_BC3_3.raw = 3 | 20110612_Q2_TaGe_SA_BC3_4.raw = 4 | 20110612_Q2_TaGe_SA_BC3_5.raw = 5 | 20110612_Q2_TaGe_SA_BC3_6.raw = 6 | 20110612_Q2_TaGe_SA_BC4_1.raw = 1 | 20110612_Q2_TaGe_SA_BC4_2.raw = 2 | 20110612_Q2_TaGe_SA_BC4_3.raw = 3 | 20110612_Q2_TaGe_SA_BC4_4.raw = 4 | 20110612_Q2_TaGe_SA_BC4_5.raw = 5 | 20110612_Q2_TaGe_SA_BC4_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC10_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC10_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC10_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC10_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC10_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC10_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC12_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC12_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC12_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC12_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC12_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC12_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC17_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC17_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC17_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC17_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC17_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC17_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC18_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC18_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC18_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC18_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC18_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC18_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC19_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC19_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC19_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC19_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC19_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC19_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC20_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC20_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC20_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC20_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC20_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC20_6_110624160855.raw = 6 | 20110616_EXQ1_TaGe_SA_BC25_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC25_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC25_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC25_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC25_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC25_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC26_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC26_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC26_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC26_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC26_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC26_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC27_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC27_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC27_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC27_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC27_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC27_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC33_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC33_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC33_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC33_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC33_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC33_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC34_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC34_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC34_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC34_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC34_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC34_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC36_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC36_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC36_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC36_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC36_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC36_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC37A_1_110708022331.raw = 1 | 20110616_EXQ1_TaGe_SA_BC37A_2_110708062628.raw = 2 | 20110616_EXQ1_TaGe_SA_BC37A_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC37A_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC37A_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC37A_6.raw = 6 | 20110616_EXQ1_TaGe_SA_BC9_1.raw = 1 | 20110616_EXQ1_TaGe_SA_BC9_2.raw = 2 | 20110616_EXQ1_TaGe_SA_BC9_3.raw = 3 | 20110616_EXQ1_TaGe_SA_BC9_4.raw = 4 | 20110616_EXQ1_TaGe_SA_BC9_5.raw = 5 | 20110616_EXQ1_TaGe_SA_BC9_6.raw = 6 | 20110616_EXQ1_TaGe_SA_SSM_1.raw = 1 | 20110616_EXQ1_TaGe_SA_SSM_2.raw = 2 | 20110616_EXQ1_TaGe_SA_SSM_3.raw = 3 | 20110616_EXQ1_TaGe_SA_SSM_4.raw = 4 | 20110616_EXQ1_TaGe_SA_SSM_5.raw = 5 | 20110616_EXQ1_TaGe_SA_SSM_6.raw = 6 | 20110617_EXQ2_TaGe_SA_BC29_1.raw = 1 | 20110617_EXQ2_TaGe_SA_BC29_2.raw = 2 | 20110617_EXQ2_TaGe_SA_BC29_3.raw = 3 | 20110617_EXQ2_TaGe_SA_BC29_4.raw = 4 | 20110617_EXQ2_TaGe_SA_BC29_5.raw = 5 | 20110617_EXQ2_TaGe_SA_BC29_6.raw = 6 | 20110617_EXQ2_TaGe_SA_BC30B_1.raw = 1 | 20110617_EXQ2_TaGe_SA_BC30B_2.raw = 2 | 20110617_EXQ2_TaGe_SA_BC30B_3.raw = 3 | 20110617_EXQ2_TaGe_SA_BC30B_4.raw = 4 | 20110617_EXQ2_TaGe_SA_BC30B_5.raw = 5 | 20110617_EXQ2_TaGe_SA_BC30B_6.raw = 6 | 20110624_EXQ1_TaGe_SA_BC21_1.raw = 1 | 20110624_EXQ1_TaGe_SA_BC21_2.raw = 2 | 20110624_EXQ1_TaGe_SA_BC21_3.raw = 3 | 20110624_EXQ1_TaGe_SA_BC21_4.raw = 4 | 20110624_EXQ1_TaGe_SA_BC21_5.raw = 5 | 20110624_EXQ1_TaGe_SA_BC21_6.raw = 6 | 20110624_EXQ1_TaGe_SA_BC22_1.raw = 1 | 20110624_EXQ1_TaGe_SA_BC22_2.raw = 2 | 20110624_EXQ1_TaGe_SA_BC22_3.raw = 3 | 20110624_EXQ1_TaGe_SA_BC22_4.raw = 4 | 20110624_EXQ1_TaGe_SA_BC22_5.raw = 5 | 20110624_EXQ1_TaGe_SA_BC22_6.raw = 6 | 20110701_EXQ2_TaGe_SA_BC45_1.raw = 1 | 20110701_EXQ2_TaGe_SA_BC45_2.raw = 2 | 20110701_EXQ2_TaGe_SA_BC45_3.raw = 3 | 20110701_EXQ2_TaGe_SA_BC45_4.raw = 4 | 20110701_EXQ2_TaGe_SA_BC45_5.raw = 5 | 20110701_EXQ2_TaGe_SA_BC45_6.raw = 6 | 20110701_EXQ2_TaGe_SA_SSM1.raw = 1 | 20110701_EXQ2_TaGe_SA_SSM2.raw = 2 | 20110701_EXQ2_TaGe_SA_SSM3.raw = 3 | 20110701_EXQ2_TaGe_SA_SSM4.raw = 4 | 20110701_EXQ2_TaGe_SA_SSM5.raw = 5 | 20110701_EXQ2_TaGe_SA_SSM6.raw = 6 | 20110707_EXQ1_TaGe_SA_BC38_1.raw = 1 | 20110707_EXQ1_TaGe_SA_BC38_2.raw = 2 | 20110707_EXQ1_TaGe_SA_BC38_3.raw = 3 | 20110707_EXQ1_TaGe_SA_BC38_4.raw = 4 | 20110707_EXQ1_TaGe_SA_BC38_5.raw = 5 | 20110707_EXQ1_TaGe_SA_BC38_6.raw = 6 | 20110707_EXQ1_TaGe_SA_BC40_1_110713202722.raw = 1 | 20110707_EXQ1_TaGe_SA_BC40_2_110714003635.raw = 2 | 20110707_EXQ1_TaGe_SA_BC40_3.raw = 3 | 20110707_EXQ1_TaGe_SA_BC40_4.raw = 4 | 20110707_EXQ1_TaGe_SA_BC40_5_110714180918.raw = 5 | 20110707_EXQ1_TaGe_SA_BC40_6.raw = 6 | 20110707_EXQ1_TaGe_SA_BC41_1.raw = 1 | 20110707_EXQ1_TaGe_SA_BC41_2.raw = 2 | 20110707_EXQ1_TaGe_SA_BC41_3.raw = 3 | 20110707_EXQ1_TaGe_SA_BC41_4.raw = 4 | 20110707_EXQ1_TaGe_SA_BC41_5.raw = 5 | 20110707_EXQ1_TaGe_SA_BC41_6.raw = 6 | 20110707_EXQ1_TaGe_SA_BC42_1.raw = 1 | 20110707_EXQ1_TaGe_SA_BC42_2.raw = 2 | 20110707_EXQ1_TaGe_SA_BC42_4.raw = 4 | 20110707_EXQ1_TaGe_SA_BC42_5.raw = 5 | 20110707_EXQ1_TaGe_SA_BC42_6.raw = 6 | 20110707_EXQ2_TaGe_SA_BC31_1.raw = 1 | 20110707_EXQ2_TaGe_SA_BC31_2.raw = 2 | 20110707_EXQ2_TaGe_SA_BC31_3.raw = 3 | 20110707_EXQ2_TaGe_SA_BC31_4.raw = 4 | 20110707_EXQ2_TaGe_SA_BC31_5.raw = 5 | 20110707_EXQ2_TaGe_SA_BC31_6.raw = 6 | 20110707_EXQ2_TaGe_SA_BC46_1.raw = 1 | 20110707_EXQ2_TaGe_SA_BC46_2.raw = 2 | 20110707_EXQ2_TaGe_SA_BC46_3.raw = 3 | 20110707_EXQ2_TaGe_SA_BC46_4.raw = 4 | 20110707_EXQ2_TaGe_SA_BC46_5.raw = 5 | 20110707_EXQ2_TaGe_SA_BC46_6.raw = 6 | 20110711_EXQ2_TaGe_SA_BC13_1.raw = 1 | 20110711_EXQ2_TaGe_SA_BC13_3_110712091614.raw = 3 | 20110711_EXQ2_TaGe_SA_BC13_4.raw = 4 | 20110711_EXQ2_TaGe_SA_BC13_5.raw = 5 | 20110711_EXQ2_TaGe_SA_BC13_6.raw = 6 | 20110711_EXQ2_TaGe_SA_BC14_1.raw = 1 | 20110711_EXQ2_TaGe_SA_BC14_2.raw = 2 | 20110711_EXQ2_TaGe_SA_BC14_3.raw = 3 | 20110711_EXQ2_TaGe_SA_BC14_4.raw = 4 | 20110711_EXQ2_TaGe_SA_BC14_5.raw = 5 | 20110711_EXQ2_TaGe_SA_BC14_6.raw = 6 | 20110711_EXQ2_TaGe_SA_BC15_1.raw = 1 | 20110711_EXQ2_TaGe_SA_BC15_2.raw = 2 | 20110711_EXQ2_TaGe_SA_BC15_3.raw = 3 | 20110711_EXQ2_TaGe_SA_BC15_4.raw = 4 | 20110711_EXQ2_TaGe_SA_BC15_5.raw = 5 | 20110711_EXQ2_TaGe_SA_BC15_6.raw = 6 | 20110823_EXQ3_TaGe_SA_BC23_1.raw = 1 | 20110823_EXQ3_TaGe_SA_BC23_2.raw = 2 | 20110823_EXQ3_TaGe_SA_BC23_3.raw = 3 | 20110823_EXQ3_TaGe_SA_BC23_4.raw = 4 | 20110823_EXQ3_TaGe_SA_BC23_5.raw = 5 | 20110823_EXQ3_TaGe_SA_BC23_6.raw = 6 | 20110823_EXQ3_TaGe_SA_BC28_1.raw = 1 | 20110823_EXQ3_TaGe_SA_BC28_2.raw = 2 | 20110823_EXQ3_TaGe_SA_BC28_3.raw = 3 | 20110823_EXQ3_TaGe_SA_BC28_4.raw = 4 | 20110823_EXQ3_TaGe_SA_BC28_5.raw = 5 | 20110823_EXQ3_TaGe_SA_BC28_6.raw = 6 | 20110823_EXQ3_TaGe_SA_BC30_1.raw = 1 | 20110823_EXQ3_TaGe_SA_BC30_2.raw = 2 | 20110823_EXQ3_TaGe_SA_BC30_3.raw = 3 | 20110823_EXQ3_TaGe_SA_BC30_4.raw = 4 | 20110823_EXQ3_TaGe_SA_BC30_5.raw = 5 | 20110823_EXQ3_TaGe_SA_BC30_6.raw = 6 | 20110823_EXQ3_TaGe_SA_BC32_1.raw = 1 | 20110823_EXQ3_TaGe_SA_BC32_2_110831085923.raw = 2 | 20110823_EXQ3_TaGe_SA_BC32_3.raw = 3 | 20110823_EXQ3_TaGe_SA_BC32_4.raw = 4 | 20110823_EXQ3_TaGe_SA_BC32_5.raw = 5 | 20110823_EXQ3_TaGe_SA_BC32_6.raw = 6 | 20110823_EXQ3_TaGe_SA_BC43_1.raw = 1 | 20110823_EXQ3_TaGe_SA_BC8_1.raw = 1 | 20110823_EXQ3_TaGe_SA_BC8_2.raw = 2 | 20110823_EXQ3_TaGe_SA_BC8_3.raw = 3 | 20110823_EXQ3_TaGe_SA_BC8_4.raw = 4 | 20110823_EXQ3_TaGe_SA_BC8_5.raw = 5 | 20110823_EXQ3_TaGe_SA_BC8_6.raw = 6 | 20110901_EXQ3_TaGe_SA_BC43_2.raw = 2 | 20110901_EXQ3_TaGe_SA_BC43_3.raw = 3 | 20110901_EXQ3_TaGe_SA_BC43_4.raw = 4 | 20110901_EXQ3_TaGe_SA_BC43_5.raw = 5 | 20110901_EXQ3_TaGe_SA_BC43_6.raw = 6",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that peptides of each sample were fractionated into six fractions by strong anion exchange chromatography.",
+        "TRUTH_CHECK": "The mapping correctly assigns fraction indices (1-6) to the runs of each sample, matching the described offline fractionation.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Characteristics[phenotype]",
+      "extracted_value": "ERPR",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a breast cancer subtype, which is a phenotype for this study.",
+        "SOURCE_CHECK": "The paper mentions \"14 ERPR tumours\" as one of the breast cancer subtypes analyzed.",
+        "TRUTH_CHECK": "The value correctly identifies the phenotype group for the runs associated with ERPR tumors.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Characteristics[phenotype]",
+      "extracted_value": "Her2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a breast cancer subtype, which is a phenotype for this study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Her2 positive\" as one of the breast cancer subtypes analysed.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with Her2 positive tumours.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Characteristics[phenotype]",
+      "extracted_value": "triple negative",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a breast cancer subtype, which is the phenotype being compared in this study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"triple negative breast tumours\" as one of the analyzed groups.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the triple negative subtype.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[MS2 mass analyzer]",
+      "extracted_value": "AC=MS:1000081;NT=quadrupole",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a mass analyzer, which is appropriate for a column named \"comment[MS2 mass analyzer]\".",
+        "SOURCE_CHECK": "The paper states the instrument used was a \"Q Exactive mass spectrometer\".",
+        "TRUTH_CHECK": "A Q Exactive is a hybrid instrument consisting of a quadrupole mass filter and an Orbitrap analyzer. In the MS2 process of a Q Exactive, the quadrupole is used for precursor selection.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "e3413ae3271c0a411335974b5ddd922db1f0dd9600c5e44316f7eefbf0d68a48",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "The value is not stated in the paper and does not describe any biological or technical parameter of the experiment.",
+        "COMPLETENESS_CHECK": "The value is a complete hash string, but it has no basis in the provided text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "afe43cb73320dfeb8513f07a8735e43d92f37fcfacc883211e0986a10c810b1d",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention any checksums for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "43f84b681b9c39e7afe12cf8fef9624c3415201d35c9bfb7bf981957ece656b1",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention any checksums or provide hash values for the samples.",
+        "TRUTH_CHECK": "The value is not stated in the paper and does not describe any experimental parameter or result mentioned in the text.",
+        "COMPLETENESS_CHECK": "The format is a standard hash, but it has no basis in the provided text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "d8849a577c37cb698dfe248933a13ba569474cf8afbab93436930acc9de528ef",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "dc06f807d271ca4920a481ed8faaaed8a4c8c811f48c20996a0cf446d501542b",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention sample checksums or provide any hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "9b79494550ea27390ae6bf7f5c60ee6aaa1340741283f4b7a1a03ff375a0730d",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is the correct type for a checksum column.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata generated by the pipeline or repository and are not described in the paper text.",
+        "COMPLETENESS_CHECK": "The value follows the format of a standard hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "9785fb0e3fe944238f2448bf8f9be34a88a2eecd020fc646cd730dab714b2f97",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a checksum (hash), which is a technical metadata identifier.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "Checksums are typically generated by the data processing pipeline to ensure data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value is a standard hexadecimal hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "21debd305f7422c94dafadda36b5f2ea11a7b26631b9fa84ba407f0146a476ef",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a hash string, which is the correct format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for file integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the expected format for a checksum."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "7e9c35291cef546567048c98270f2fe891587f39acb36cf3558c6ad30b16f067",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum column.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide these specific hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the expected format for a checksum."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "f985e46062fccdd2dff40dad92c20905626b91e23ff3316f5fc5d448ed1f9a59",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a hash string, which is typical for a checksum column.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide these hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for file integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a hexadecimal hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "3fe015a2ac59071f395f467be7b2bf41004e2dd61481a0bae8cd90a4132d6c79",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention sample checksums or provide any hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "288d5a33bd35daa37fddf7358ebe94cc1a2edc36ebd609acfe3693368dba5e48",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "While checksums are used in data management, they are not described in the paper text and are not part of the experimental metadata provided by the authors.",
+        "COMPLETENESS_CHECK": "The value is a complete hash string."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "f6135ccbc09c5cee9b97ad666f0bec343aee05859fa7ee54a15697ab2f8f9981",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention any checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "The value is not supported by the paper text.",
+        "COMPLETENESS_CHECK": "The format is a standard hash, but it has no basis in the provided text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "129dbae687405376ffa015ca73c2bec5c63db1a25a1fd91c2b0bfc0ac69f66d6",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a checksum hash, which does not belong to any of the defined proteomics metadata fields.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide these hash values.",
+        "TRUTH_CHECK": "Checksums are technical file identifiers and not biological or experimental parameters described in the paper.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "40d6719498b4b4dcc393eae641044c4d96c7ba8614a44a3aa5777e2c06257030",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum column.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide these hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for file integrity and are not described in the biological or experimental methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the expected format for a checksum."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "fa260a67b76a2f10b32c820d3cffca9df42e1a0e2517aaf2399251ff7eb37c3d",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum, but this field is not defined in the provided proteomics metadata definitions.",
+        "SOURCE_CHECK": "The paper text does not mention any checksums or the specific hash value provided.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for file integrity and are not biological or experimental parameters described in the paper text.",
+        "COMPLETENESS_CHECK": "The value is a complete hash string."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "db6be2fa0e95cfe7b96b01980985be518ae43ea84eed78e201cfdfa2a64f171c",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper text does not mention any checksums or provide these hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value is a complete hash string."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "19c5a68041d692bd157f8aa68ebc8e69937dfd164f7d41f58a10a3363e6e5aaf",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper text does not mention checksums or provide these hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "142c7ec8a75a3b019b4bbdaad7866ba4fd9d24958b2015b787bbdc006e90682d",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum, but the field \"sampleChecksum\" is not defined in the provided proteomics metadata definitions.",
+        "SOURCE_CHECK": "The paper text does not mention any checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "The value is not supported by the paper text.",
+        "COMPLETENESS_CHECK": "The value follows a standard hash format, but it has no basis in the provided text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "74853a978fc415a579dde6f457b7a1bcb3fc8c22fecefee747068bb8650fc939",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a checksum hash, which is a technical metadata identifier.",
+        "SOURCE_CHECK": "The paper does not mention sample checksums or provide any hash values.",
+        "TRUTH_CHECK": "Checksums are typically generated by data repositories or pipelines to ensure file integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "3dac29302bae3278033f49a379ab75b8339473f1e76dd27e18c897387a18cc5d",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "f52fb48c0ef93690cb34d93fa9510e3b534c0ee67203f603f802e5b95baec6ce",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum column.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide these hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the expected format for a checksum."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "97a00f756bbcaf86e0c398122bec8bffbc4464aa0205261d149bd4ed972e6bdb",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum, but the field is not defined in the provided proteomics metadata list.",
+        "SOURCE_CHECK": "The paper text does not mention any checksums or provide these hash values.",
+        "TRUTH_CHECK": "The value is not supported by the paper text.",
+        "COMPLETENESS_CHECK": "The value follows a standard hash format, but it has no basis in the provided text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "c5cdd1036d735512c12324db261d7efa8361db81883d69f9f3a6e6abfaa0a06f",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for file integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "4a6d9eefa16938802baf48a79a56885872979f92a971c755dec9763aa0879605",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a checksum hash, which is a technical metadata identifier.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide these hash values.",
+        "TRUTH_CHECK": "Checksums are not described as part of the experimental results or methods in the paper.",
+        "COMPLETENESS_CHECK": "The value is a standard hash string, but it has no basis in the provided text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "3a51d9e191ed64e6e29ed663d2823c223314a980993154a1764ac2b536cb5281",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a hash/checksum, which is a typical technical identifier for a sample checksum column.",
+        "SOURCE_CHECK": "The paper text does not mention checksums or provide these specific alphanumeric strings.",
+        "TRUTH_CHECK": "Checksums are internal database/pipeline identifiers and are not described in the scientific text of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "afa47f228707473a685eaa82d6613fd9c5439adad7bba1261c040c39d2790d37",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a hexadecimal hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper text does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "ddb8d2186ae65343216c6cbf192ae411a8a6949750957e9f0c4a369c8c8c82ba",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention any sample checksums or hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata generated by pipelines to ensure data integrity; they are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "8c7fa1e208ecadd092a66beddd1849512675f42485abbfe345fe5e83fb0fd9fd",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention any checksums for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata generated by data processing pipelines to ensure data integrity; they are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the expected format for a checksum."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "ddd3363d22c10d11a36944e8e6c2b3cc3aed95a1087eb275ea91b1a6d237af60",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention any checksums or the generation of such values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not biological or experimental parameters described in the paper text.",
+        "COMPLETENESS_CHECK": "The value follows the format of a hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "2fc6c176e7d61505a738ac37a66b829654549aac52b3e9c27d77d266d47ee177",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention sample checksums or provide any hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "91da92346706643b6d652832495463469e53aab8f78d6117e22e681473ea7c97",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum column.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata generated by the pipeline or repository and are not described in the paper text.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "73e5770525173dfdb3062530d67a883b9e5810ff948be7b9537fcfec6e828762",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum column.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide hash values for the samples.",
+        "TRUTH_CHECK": "The value is not stated in the paper and is not an allowed inference.",
+        "COMPLETENESS_CHECK": "The value follows the format of a checksum."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "a4b983c2a053ab30f5015554991aca1d0e963de067892eb42fff714a81fec791",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum column.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide hash values for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "7a2f055e96a99158fc89cbcbf7b61e6e1d0e3a50b4a53840b9ff1b1ef37100f5",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention any checksums or provide these hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for file integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "602a3a46a35b9be85930da2fb8538846f59ddbd37d913bee8e9b74c820794f62",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a hash/checksum, which is not a proteomics metadata field defined in the provided list.",
+        "SOURCE_CHECK": "The paper text does not mention any checksums or hashes for the samples.",
+        "TRUTH_CHECK": "The value does not describe any biological or technical aspect of the experiment stated in the paper.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "9914cd98915567f0be2dc5a4ef0df362ea0ff7ff94ecf58f29214a892c16a4ff",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum, but this field is not defined in the provided proteomics metadata definitions.",
+        "SOURCE_CHECK": "The paper text does not mention sample checksums or any such identifiers.",
+        "TRUTH_CHECK": "The value is not supported by the paper text and describes a technical metadata property not mentioned in the study.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "9fb0b46ebdcb01355c1f16416787443e44deac17073e40c3aad90eaac5e3e8b0",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention any checksums for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value is a complete hash string."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "492e0bd1509462cec3e1b63ce2f9051d883b0c024f4769b509f8cb44a4767ff6",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "The value is not stated in the paper and does not describe any biological or technical parameter mentioned in the text.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash, but it has no basis in the provided text."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "521f814ed6ac83fdc4d03e61d844ac85414f97e2b1126317e931a0bf90d1c17b",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a hexadecimal hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper does not mention any checksums for samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a checksum."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "bc4b4e47048bf635cc825a092182795eec950895355ca6fc645d056fee78945b",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum column.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide these specific hash values.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the expected format for a checksum."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "b6a0e682631fb61868671cb07b030b8dd48b8ce7e5d9ab108f3baa6cbd5fad60",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum column.",
+        "SOURCE_CHECK": "The paper does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "The value is not stated in the paper and does not describe any biological or technical parameter of the experiment.",
+        "COMPLETENESS_CHECK": "The value follows the format of a checksum."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "c7149bbef2530c65111ca6faaa8fb9623a063dcaba967b445b6cfa92d55fca09",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is not a proteomics metadata field defined in the provided list.",
+        "SOURCE_CHECK": "The paper text does not mention checksums or provide any such hash values.",
+        "TRUTH_CHECK": "The value does not describe any biological or technical aspect of the experiment described in the paper.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "719708be0cdeae243bf4263814abad894618c6c006f854a1498a5b7ed005ed96",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum.",
+        "SOURCE_CHECK": "The paper text does not mention checksums or provide any hash values for the samples.",
+        "TRUTH_CHECK": "Checksums are technical metadata used for data integrity and are not described in the biological or technical methods of the paper.",
+        "COMPLETENESS_CHECK": "The value follows the format of a SHA-256 hash."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "sampleChecksum",
+      "extracted_value": "287ce68494eb4076b59172a7b5fa48f51e7ed3ec896254dc4bcb8349a3fb76cc",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cryptographic hash, which is a typical format for a checksum, but the field \"sampleChecksum\" is not a defined proteomics metadata field in the provided list.",
+        "SOURCE_CHECK": "The paper text does not mention any checksums or provide these hash values.",
+        "TRUTH_CHECK": "The value is not stated in the paper and does not describe any biological or technical parameter of the experiment mentioned in the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    }
+  ]
+}

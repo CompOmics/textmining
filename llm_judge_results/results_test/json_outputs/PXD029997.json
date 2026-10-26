@@ -1,0 +1,430 @@
+{
+  "paper_id": "PXD029997",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Saccharomyces cerevisiae",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a scientific name of an organism, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"S. cerevisiae\" and \"Saccharomyces cerevisiae\" throughout the text.",
+        "TRUTH_CHECK": "The proteins analyzed in the proteomic screening and histone extraction were from S. cerevisiae.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "characteristics[cell type]",
+      "extracted_value": "yeast",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "\"yeast\" is an organism name, not a biological cell type.",
+        "SOURCE_CHECK": "The paper describes the use of Saccharomyces cerevisiae (yeast).",
+        "TRUTH_CHECK": "The value describes the species, not the cell type.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "characteristics[cell line]",
+      "extracted_value": "Saccharomyces cerevisiae BY4742",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism strain, not an immortalized cell line. The correct field is strain.",
+        "SOURCE_CHECK": "The paper mentions \"Yeast strains are in the BY4742 background\".",
+        "TRUTH_CHECK": "BY4742 is a yeast strain, not a cell line.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "strain",
+      "sdrf_column": "characteristics[strain]",
+      "extracted_value": "BY4742",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a yeast strain name, which is the right field.",
+        "SOURCE_CHECK": "The methods section states \"Yeast strains are in the BY4742 background\".",
+        "TRUTH_CHECK": "The analyzed samples are from the BY4742 strain.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "characteristics[material type]",
+      "extracted_value": "yeast cell lysate",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "cell culture",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the type of material analyzed, which fits the field_name.",
+        "SOURCE_CHECK": "The paper describes the \"Preparation of whole-cell extract from yeast\" and \"extraction of whole yeast cell lysate proteins\".",
+        "TRUTH_CHECK": "The analyzed material for the proteomic screening was indeed yeast cell lysate.",
+        "COMPLETENESS_CHECK": "The value \"yeast cell lysate\" is a description, but the field definition requires a broad class from a specific list (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Q Exactive mass spectrometer (ThermoFisher)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states \"The eluted peptides were analyzed by a Q Exactive mass spectrometer (ThermoFisher Scientific, San Jose, CA)\".",
+        "TRUTH_CHECK": "The Q Exactive was the primary instrument used for the proteomic analysis of histones and non-histone proteins.",
+        "COMPLETENESS_CHECK": "Complete. The vendor name is optional and the model is correct."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "NT=trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that samples were \"digested with trypsin\" and \"Trypsin/P was specified as a cleavage enzyme\".",
+        "TRUTH_CHECK": "Trypsin was used for the proteomic analysis of both histone and non-histone samples.",
+        "COMPLETENESS_CHECK": "The value follows the requested format."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "comment[collision energy]",
+      "extracted_value": "28%",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The methods section under \"HPLC-MS/MS analysis\" states \"The 20 most intensive ions were fragmented with 28% normalized collision energy\".",
+        "TRUTH_CHECK": "The value is correct for the runs analyzed on the Q Exactive mass spectrometer.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "comment[enrichment method]",
+      "extracted_value": "anti-Kbz antibody-conjugated beads",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an antibody-based enrichment of peptides, which is the right field.",
+        "SOURCE_CHECK": "The methods section under \"Immunoprecipitation enrichment\" states that Kbz peptides were incubated with \"pan anti-Kbz antibody-conjugated beads\".",
+        "TRUTH_CHECK": "The value is correct for the runs involving the proteomic screening of Kbz-modified proteins.",
+        "COMPLETENESS_CHECK": "The value follows the definition by providing the method name."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "comment[enrichment method]",
+      "extracted_value": "pan-anti-Kbz antibody",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an antibody used for peptide enrichment, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"The enrichment of Kbz peptides was carried out... with pre-balanced pan anti-Kbz antibody-conjugated beads or pan-Kbz antibody\".",
+        "TRUTH_CHECK": "The antibody was used to enrich benzoylated peptides before LC-MS/MS analysis.",
+        "COMPLETENESS_CHECK": "The value is a correct method name as allowed by the definition."
+      }
+    },
+    {
+      "annotation_type": "reduction_reagent",
+      "sdrf_column": "comment[reduction reagent]",
+      "extracted_value": "TCEP",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a chemical used to reduce disulfide bonds, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under \"Reductive alkylation and trypsin digestion\" states that samples were reduced by adding 5 mM TCEP.",
+        "TRUTH_CHECK": "TCEP was used for the reduction of both whole-cell proteins and histone samples analyzed by MS.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "ionization_type",
+      "sdrf_column": "comment[ionization type]",
+      "extracted_value": "nanoESI",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an ionization type, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that the Q Exactive mass spectrometer was used \"using a nanospray source\".",
+        "TRUTH_CHECK": "The nanospray source was used for the LC-MS/MS analysis of the samples.",
+        "COMPLETENESS_CHECK": "The term \"nanospray\" is explicitly defined as \"nanoESI\" in the field definitions."
+      }
+    },
+    {
+      "annotation_type": "mass_analyzer",
+      "sdrf_column": "comment[mass analyzer type]",
+      "extracted_value": "Orbitrap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer type, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the use of a \"Q Exactive mass spectrometer\", from which \"Orbitrap\" is an allowed inference.",
+        "TRUTH_CHECK": "The Q Exactive instrument uses an Orbitrap mass analyzer.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "acquisition_method",
+      "sdrf_column": "comment[acquisition method]",
+      "extracted_value": "LC-MS/MS",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"LC-MS/MS\" is a general technique, not an acquisition scheme like DDA or DIA.",
+        "SOURCE_CHECK": "The paper mentions \"LC-MS/MS\" throughout, but it does not explicitly name the acquisition scheme.",
+        "TRUTH_CHECK": "The value is a general description of the method, not the specific acquisition method.",
+        "COMPLETENESS_CHECK": "The value does not follow the controlled terms (DDA, DIA, etc.) required by the definition."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=reductive alkylation",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"reductive alkylation\" describes a sample preparation process, not a specific chemical modification set in a database search.",
+        "SOURCE_CHECK": "The paper mentions \"reductive alkylation\" as a sample preparation method.",
+        "TRUTH_CHECK": "Reductive alkylation is the process of reducing and alkylating proteins; the actual modification searched in the database for this process is \"Cysteine carbamidomethylation\".",
+        "COMPLETENESS_CHECK": "The value does not follow the required format \"NT=...;TA=...;MT=...\"."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=propionylation",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=propionylation;TA=K,N-term;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a modification used in the database search, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that \"Peptide N-terminal and lysine propionyl were set as variable modifications when propionylation was performed.\"",
+        "TRUTH_CHECK": "The value is correct for runs that underwent chemical propionylation.",
+        "COMPLETENESS_CHECK": "The value is missing the required residues (TA) and the modification status (MT=Variable)."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "comment[precursor mass tolerance]",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The \"Protein sequence database searching\" section states \"the mass tolerance was set at 20 ppm for precursor ions\".",
+        "TRUTH_CHECK": "The value is correct for the proteomics runs described.",
+        "COMPLETENESS_CHECK": "Complete, including the unit as required."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "comment[fragment mass tolerance]",
+      "extracted_value": "±0.02 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The methods section under \"Protein sequence database searching\" states the mass tolerance was set at \"±0.02 Da for MS/MS\".",
+        "TRUTH_CHECK": "The value is correct for the proteomics runs described.",
+        "COMPLETENESS_CHECK": "Complete, it includes the value and the unit as printed."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[bait]",
+      "extracted_value": "pan anti-Kbz antibody",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an antibody used for affinity enrichment, which is the \"bait\" in an immunoprecipitation experiment.",
+        "SOURCE_CHECK": "The methods state that \"enrichment of Kbz peptides was carried out... with pre-balanced pan anti-Kbz antibody-conjugated beads\".",
+        "TRUTH_CHECK": "The pan anti-Kbz antibody was used as the bait to enrich the benzoylated peptides for the MS analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[bait]",
+      "extracted_value": "anti-Kbz antibody-conjugated beads",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the bait used for affinity enrichment, which is appropriate for a column named \"characteristics[bait]\".",
+        "SOURCE_CHECK": "The \"Immunoprecipitation enrichment\" section states that \"the peptides were incubated with pre-balanced pan anti-Kbz antibody-conjugated beads\".",
+        "TRUTH_CHECK": "The value is correct for the runs involving the proteome-wide screening of non-histone Kbz sites, where these beads were used to enrich the peptides.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the bait used."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[specimen]",
+      "extracted_value": "yeast cell lysate",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the material used for the MS analysis, which is appropriate for a specimen characteristics column.",
+        "SOURCE_CHECK": "The paper describes the \"Preparation of whole-cell extract from yeast\" and \"extraction of whole yeast cell lysate proteins\" for the proteomic screening.",
+        "TRUTH_CHECK": "The value correctly describes the material analyzed in the non-histone Kbz proteomic screening.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the specimen."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[flow rate chromatogram]",
+      "extracted_value": "300 nL/min",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a flow rate, which is a technical parameter of the LC-MS analysis.",
+        "SOURCE_CHECK": "The methods state \"a flow rate of 300 nL/min over 180 min\" in the HPLC-MS/MS analysis section.",
+        "TRUTH_CHECK": "The value correctly describes the flow rate used for the proteomics runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[gradient time]",
+      "extracted_value": "180 min",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a time duration, which is appropriate for a column named \"gradient time\".",
+        "SOURCE_CHECK": "The methods section under \"HPLC-MS/MS analysis\" states \"Peptides were separated with a gradient... over 180 min\".",
+        "TRUTH_CHECK": "The value correctly describes the LC gradient duration for the proteomics runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[number of missed cleavages]",
+      "extracted_value": "4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a number of missed cleavages, which is the correct information for a column named \"comment[number of missed cleavages]\".",
+        "SOURCE_CHECK": "The \"Protein sequence database searching\" section states \"The maximum missing cleavage was set at 4\".",
+        "TRUTH_CHECK": "The value is correct for the proteomics runs described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[separation]",
+      "extracted_value": "C18 reversed-phase",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a chromatographic separation method, which is appropriate for a column named \"comment[separation]\".",
+        "SOURCE_CHECK": "The paper states that peptide samples were \"loaded onto a capillary C18 column\" and \"separated with a gradient of 2–100% HPLC buffer B (0.1% formic acid in 80% acetonitrile, v/v)\", which describes a C18 reversed-phase separation.",
+        "TRUTH_CHECK": "The value correctly describes the separation step used for the LC-MS/MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

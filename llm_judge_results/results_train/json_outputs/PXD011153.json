@@ -1,0 +1,311 @@
+{
+  "paper_id": "PXD011153",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Mus musculus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a scientific name for an organism, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the use of Balb/c mice and the use of the Mus musculus Uniprot sequence database.",
+        "TRUTH_CHECK": "The proteins analyzed were extracted from the spleens of mice.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "spleen",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ name, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper explicitly states that \"Spleens were weighted\" and \"interrogated the spleen proteome\".",
+        "TRUTH_CHECK": "The mass spectrometry runs were performed on protein extracts from isolated spleen cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "normal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the health status of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a \"Control group\" of \"non-infected individuals\".",
+        "TRUTH_CHECK": "The control runs correspond to the non-infected individuals.",
+        "COMPLETENESS_CHECK": "The value \"normal\" is the correct SDRF term for healthy subjects."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "schistosomiasis",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the murine model of schistosomiasis was established and the \"Infected group\" was infected by S. mansoni.",
+        "TRUTH_CHECK": "The runs labeled \"Infected\" carry this value, which is correct as they represent the diseased state.",
+        "COMPLETENESS_CHECK": "The value follows the definition for a disease state."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "The abstract states the use of a \"label-free shotgun approach\".",
+        "TRUTH_CHECK": "The label-free approach was used for all the MS runs described.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001911;NT=Q Exactive",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state \"The spectral data was acquired using a Q Exactive mass spectrometer\".",
+        "TRUTH_CHECK": "The Q Exactive was the primary instrument used for the proteomics runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that proteins were digested with \"MS grade trypsin\" and \"sequencing grade trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of the samples in all runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "NT=collision-induced dissociation;AC=MS:1000133",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=HCD",
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the right field.",
+        "SOURCE_CHECK": "The paper states that ions were fragmented by Higher Energy Collision Induced Dissociation (HCD).",
+        "TRUTH_CHECK": "The runs used HCD, not CID. While HCD is a form of collision-induced dissociation, in the context of a Q Exactive instrument, HCD is the specific method used and is distinct from the traditional CID used in ion traps.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a technology type, the right field.",
+        "SOURCE_CHECK": "The paper describes a \"label-free shotgun approach\" for the \"spleen proteome\", which is a standard bottom-up proteomics workflow.",
+        "TRUTH_CHECK": "The value correctly describes the MS experiment performed on the 6 runs.",
+        "COMPLETENESS_CHECK": "The value uses the official SDRF controlled term for MS-based proteomics."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation; MT=Variable;AC=Unimod:35; TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"methionine oxidation (+15.9949 Da) as variable post-translational modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was part of the search parameters.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;AC;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"cysteine carbamidomethylation (+57.02146 Da) as fixed\".",
+        "TRUTH_CHECK": "The modification is correctly applied to the runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with name, residue, and status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation; MT=Fixed;AC=Unimod:4; TA=C",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Oxidation;TA=M;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper mentions methionine oxidation as a variable modification and cysteine carbamidomethylation as a fixed modification.",
+        "TRUTH_CHECK": "The value describes \"Oxidation\" on cysteine (C) as fixed, but the paper states oxidation is on methionine (M) and is variable.",
+        "COMPLETENESS_CHECK": "The format is correct, but the details (residue and status) are wrong."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "10 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"a mass tolerance error of 10 ppm\" for the MS1 precursor peptide.",
+        "TRUTH_CHECK": "This tolerance was applied to the database search for all runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "Control1.raw = 1 | Control2.raw = 2 | Control3.raw = 3 | Infected1.raw = 4 | Infected2.raw = 5 | Infected3.raw = 6",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "Control1.raw = 1 | Control2.raw = 1 | Control3.raw = 1 | Infected1.raw = 2 | Infected2.raw = 2 | Infected3.raw = 2",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states \"Three biological replicates were prepared for each group, using 30 μg aliquot from pooled extracts of five animals.\"",
+        "TRUTH_CHECK": "The runs are aliquots of a single pooled sample per group. According to the field definition, runs of one pooled biological sample must all get the same index.",
+        "COMPLETENESS_CHECK": "The mapping assigns unique indices to aliquots of the same pool, which is incorrect."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "Control1.raw = 1 | Control2.raw = 1 | Control3.raw = 1 | Infected1.raw = 1 | Infected2.raw = 1 | Infected3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes three biological replicates per group, with no mention of repeated injections of the same material.",
+        "TRUTH_CHECK": "Each biological replicate was measured once, so each should be assigned technical replicate 1.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned the index 1."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "Control1.raw = 1 | Control2.raw = 1 | Control3.raw = 1 | Infected1.raw = 1 | Infected2.raw = 1 | Infected3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The field is for fraction indices, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a standard LC-MS/MS workflow without any offline fractionation.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run is assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned the value 1."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[phenotype]",
+      "extracted_value": "Control1.raw = control | Control2.raw = control | Control3.raw = control | Infected1.raw = infected | Infected2.raw = infected | Infected3.raw = infected",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the levels of the studied variable (phenotype), which is the correct field.",
+        "SOURCE_CHECK": "The paper describes two groups: \"Infected group\" and \"Control groups\".",
+        "TRUTH_CHECK": "The runs are correctly mapped to their respective groups (Control and Infected) as described in the experimental design.",
+        "COMPLETENESS_CHECK": "Every run is assigned the correct level of the phenotype variable."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[Proteomics Data Acquisition Method]",
+      "extracted_value": "DDA",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the MS acquisition method, which is appropriate for a column named \"comment[Proteomics Data Acquisition Method]\".",
+        "SOURCE_CHECK": "The paper describes a \"full-scan/MS2 mode\" with a \"Top 12 criteria\" for precursor isolation, which is a standard DDA (Data Dependent Acquisition) strategy.",
+        "TRUTH_CHECK": "The acquisition method described for all runs is DDA.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

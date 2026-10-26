@@ -1,0 +1,156 @@
+{
+  "accession" : "PXD005207",
+  "title" : "PfCDPK1 mediated signaling in erythrocytic stages of Plasmodium falciparum",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Calcium Dependent Protein Kinases (CDPKs) are key effectors of calcium signaling in malaria parasite.  We have elucidated a novel role of PfCDPK1, which is indispensable for the erythrocytic development of Plasmodium falciparum, in invasion of host Red Blood Cells (RBCs). To gain insights into the mechanisms via which PfCDPK1 is involved in parasitic processes, a comparative phosphoproteomic analysis was employed to identify its parasitic targets.  Proteins were isolated from CDPK1 knockdown and wild type parasites and processed for trypsin digestion and iTRAQ labeling. Quantitative proteomic analysis using high resolution mass spectrometry led to the identification of hypophosphorylated proteins, which can be the likely substrates for this kinase.  In addition, in vitro kinase assays and antibody based validation of the hypophosphorylated sites was carried out. This study will provide a novel insight into the CDPK1 mediated invasion by Plasmodium falciparum.",
+  "sampleProcessingProtocol" : "The comparative phosphoproteomic and proteomic analyses were carried out as five replicates. Proteins were isolated from CDPK1 knockdown and wild type parasites. Equal amount of proteins from both the conditions were then processed for reduction, alkylation and trypsin digestion. Peptides from both the conditions were then labeled with iTRAQ in technical replicates. Peptides from CDPK1 knockdown parasites were labeled with iTRAQ label 116 and 117, whereas, peptides from wild type parasites were labeled with 114 and 115. The pooled peptides were then fractionated using bRPLC and an aliquot was taken out from each fraction for total proteomic analysis. Remaining sample from each fraction was further processed for TiO2-based enrichment of phosphopeptides. Phosphopeptides enriched fractions were then analyzed on Orbitrap Fusion mass spectrometer.",
+  "dataProcessingProtocol" : "Mass spectrometry data obtained from all the LC-MS/MS analyses were searched against a combined protein database of human and Plasmodium falciparum using Sequest and Mascot search engine through Proteome Discoverer 1.4 (Thermo Scientific, Bremen, Germany). Carbamidomethylation of cysteine residues, peptide N-terminal and lysine side chain of iTRAQ were selected as fixed modifications. Oxidation of methionine and phosphorylation of serine, threonine and tyrosine was selected as dynamic modifications. Trypsin was set as the protease and maximum of one missed cleavage was allowed. Precursor mass tolerance was set to 20 ppm and fragment mass tolerance of 0.1 Da was allowed. All PSMs were identified at 1% FDR. The probability of phosphorylation for each site was calculated by the phosphoRS node in Proteome Discoverer. Only the phosphopeptides with >75% site localization were considered for further analysis. Phosphorylation fold change for each peptide was normalized with the total proteome level change and a normalized phosphorylation change of >1.33 fold was considered as significantly regulated.",
+  "projectTags" : [ "Biological", "Biomedical" ],
+  "keywords" : [ "Orbitrap fusion", "Phosphoproteome" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "EBI terms of use",
+  "submissionDate" : "2016-10-24",
+  "publicationDate" : "2017-05-02",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "TS Keshava",
+    "lastName" : "Prasad",
+    "identifier" : "1000008599",
+    "affiliation" : "Director, Center for Omics & Systems Medicine (C-OSM)\nProfessor, Department of Biochemistry\nK.S. Hegde Medical Academy (KSHEMA) \nNitte (Deemed to be University)",
+    "email" : "tskprasad@gmail.com",
+    "country" : "India",
+    "orcid" : "0000-0001-8064-1120",
+    "name" : "TS Keshava Prasad",
+    "id" : "1000008599"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Keshava",
+    "lastName" : "Prasad",
+    "identifier" : "56660100",
+    "affiliation" : "Faculty Scientist, Institute of Bioinformatics, Bangalore, India",
+    "email" : "keshav@ibioinformatics.org",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Keshava Prasad",
+    "id" : "56660100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1002416",
+    "name" : "Orbitrap Fusion"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001207",
+    "name" : "Mascot"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001208",
+    "name" : "Sequest"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000650",
+    "name" : "Proteome Discoverer"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000313",
+    "name" : "iTRAQ"
+  } ],
+  "countries" : [ "India" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "CL",
+      "accession" : "CL:0000000",
+      "name" : "cell"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:5833",
+      "name" : "Plasmodium falciparum"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:0000018",
+      "name" : "disease free"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:5833",
+    "name" : "Plasmodium falciparum"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "CL:0000000",
+    "name" : "Cell"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:0000018",
+    "name" : "Disease free"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Kumar S, Kumar M, Ekka R, Dvorin JD, Paul AS, Madugundu AK, Gilberger T, Gowda H, Duraisingh MT, Keshava Prasad TS, Sharma P. PfCDPK1 mediated signaling in erythrocytic stages of Plasmodium falciparum. Nat Commun. 2017 8(1):63",
+    "pubmedID" : 28680058,
+    "doi" : "10.1038/s41467-017-00053-1"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00425",
+    "name" : "monohydroxylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00696",
+    "name" : "phosphorylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:01499",
+    "name" : "iTRAQ4plex-116 reporter+balance reagent acylated residue"
+  } ],
+  "totalFileDownloads" : 14642
+}

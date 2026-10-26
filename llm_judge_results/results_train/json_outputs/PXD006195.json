@@ -1,0 +1,668 @@
+{
+  "paper_id": "PXD006195",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Escherichia coli",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper explicitly mentions Escherichia coli in the abstract and methods.",
+        "TRUTH_CHECK": "The proteins analyzed in the LC-MS/MS experiment are from E. coli.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "AC=PATO:0001728;NT=multi-cellular organismal disposition",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a general biological disposition term, not a specific organism part or tissue.",
+        "SOURCE_CHECK": "The term \"multi-cellular organismal disposition\" is not mentioned in the paper.",
+        "TRUTH_CHECK": "The samples are from Escherichia coli, which is a unicellular organism, making a \"multi-cellular\" term incorrect.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "cell culture",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "\"cell culture\" is a broad class of material, not a biological cell type. The correct field is material_type.",
+        "SOURCE_CHECK": "The paper describes incubating E. coli cells in LB medium and Azure high-def media, which is cell culture.",
+        "TRUTH_CHECK": "The value describes the material, but it is placed in the cell_type field.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=PRIDE:0000611;NT=SILAC light R:12C(6)14N(4)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a SILAC label, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a \"Super-SILAC Standard\" using heavy isotopes (Arg10 and Lys8) mixed with purified proteins (which are unlabeled/light).",
+        "TRUTH_CHECK": "The runs are part of a SILAC experiment where the purified proteins (LpxC, FtsH, etc.) serve as the light channel.",
+        "COMPLETENESS_CHECK": "The value follows the key-value format and correctly identifies the light channel."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=PRIDE:0000615;NT=SILAC heavy R:13C(6)15N(4)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a SILAC label, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the use of L-arginine (U-13C6, 15N4) and L-lysine (13C6, 15N2) for the super-SILAC standard.",
+        "TRUTH_CHECK": "The runs listed are the super-SILAC standards, which carry the heavy labels.",
+        "COMPLETENESS_CHECK": "The value follows the key-value format and correctly identifies the heavy label for Arginine as described in the text."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=PRIDE:0000613;NT=SILAC light K:12C(6)14N(2)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a Super-SILAC approach using heavy isotopes (Arg10 and Lys8) as a standard mixed with purified proteins. The purified proteins (LpxC, FtsH, etc.) are not labeled, making them the \"light\" channel.",
+        "TRUTH_CHECK": "The runs listed are the experimental samples mixed with the super-SILAC standard; these samples represent the light channel.",
+        "COMPLETENESS_CHECK": "Complete. The NT term correctly identifies the light channel of the SILAC experiment."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=PRIDE:0000617;NT=SILAC heavy K:13C(6)15N(2)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a SILAC label, which is the correct field for labeling.",
+        "SOURCE_CHECK": "The paper states the use of a \"super-SILAC standard\" using L-lysine: 2HCL (13C6, 15N2) (Lys8).",
+        "TRUTH_CHECK": "The runs listed are associated with the super-SILAC standard, which carries the heavy label.",
+        "COMPLETENESS_CHECK": "The value follows the key-value format and correctly identifies the heavy isotope label used."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "SILAC light",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a \"super-SILAC standard\" using heavy isotopes (Arg10, Lys8) mixed with purified proteins (which are naturally light).",
+        "TRUTH_CHECK": "The experiment uses a SILAC approach where the purified proteins (LpxC, FtsH, etc.) act as the light channel and the super-SILAC standard acts as the heavy channel.",
+        "COMPLETENESS_CHECK": "The value follows the format for a labeled run by specifying the channel."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "SILAC heavy",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the use of a \"super-SILAC standard\" using heavy isotopes (L-arginine: HCL (U-13C6, 15N4) and L-lysine: 2HCL (13C6, 15N2)).",
+        "TRUTH_CHECK": "The runs listed are the super-SILAC standards, which are the heavy-labeled samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF convention for labeling channels."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=LTQ Orbitrap Elite;AC=MS:1001910",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Orbitrap Elite",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states an \"Orbitrap Elite hybrid ion trap-Orbitrap mass spectrometer\".",
+        "TRUTH_CHECK": "The instrument used for the runs is the Orbitrap Elite.",
+        "COMPLETENESS_CHECK": "The candidate value \"LTQ Orbitrap Elite\" adds \"LTQ\" which is not in the text; the correct model is \"Orbitrap Elite\"."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin/P;AC=MS:1001313",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease used for protein digestion, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"Dry gel pieces were digested using... trypsin\" and the data analysis section specifies \"Digestion Mode = specific with enzyme Trypsin/P\".",
+        "TRUTH_CHECK": "The value is correct for the runs described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "NT=collision-induced dissociation;AC=MS:1000133",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that peptide ions \"were selected and fragmented by CID\".",
+        "TRUTH_CHECK": "CID (Collision-Induced Dissociation) was used for the MS/MS analysis of the samples.",
+        "COMPLETENESS_CHECK": "Complete. The NT term is a correct expansion of the abbreviation CID."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a quantitative proteomics approach using LC-MS/MS (Orbitrap Elite) to identify proteins, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the MS experiment performed on the listed runs.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=variable;PP=Anywhere;AC=Unimod:35;TA=M;MM=15",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"Variable modification = oxidation of methionine\".",
+        "TRUTH_CHECK": "The modification was used for all runs in the quantitative proteomics analysis.",
+        "COMPLETENESS_CHECK": "The value contains extra fields (PP, MM) not required by the definition, but the core components (NT, TA, MT) are correct."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Label:13C(6)15N(4);TA=R;AC=UNIMOD:267;MT=variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Label:13C(6)15N(4);TA=R;AC=UNIMOD:267;MT=Fixed",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states the use of L-arginine: HCL (U-13C6, 15N4) (Arg10) for the super-SILAC standard and specifies \"Heavy labels = Arg10 and Lys8\" in the MaxQuant parameters.",
+        "TRUTH_CHECK": "The modification is correctly associated with the runs using the super-SILAC standard.",
+        "COMPLETENESS_CHECK": "The format is correct, but the MT status is wrong; SILAC labels are treated as fixed modifications in the search database for the heavy channel, and the paper does not list them as variable modifications (only oxidation of methionine is listed as variable)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Label:13C(6)15N(2);TA=K;AC=UNIMOD:259;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states the use of a super-SILAC standard with L-lysine: 2HCL (13C6, 15N2) (Lys8) and that \"Heavy labels\" = Arg10 and Lys8 were set in MaxQuant.",
+        "TRUTH_CHECK": "The modification is correct for the runs as they were analyzed using the super-SILAC standard.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, AC, MT)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "0.5 Da",
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states \"MS/MS tolerance = 0.5 Da\" in the Data Analysis section.",
+        "TRUTH_CHECK": "The value 20 ppm is incorrect; the paper specifies 0.5 Da.",
+        "COMPLETENESS_CHECK": "The value is complete in format but contains the wrong number."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.5 Da",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods section states \"MS/MS tolerance = 0.5 Da\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, follows the definition format."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "XLV_30_1 = 1 | XLV_30_1_super_silac = 1 | XLV_30_2 = 1 | XLV_30_2_super_silac = 1 | XLV_30_3 = 1 | XLV_30_3_super_silac = 1 | XLV_37_1 = 1 | XLV_37_1_super_silac = 1 | XLV_37_2 = 1 | XLV_37_2_super_silac = 1 | XLV_37_3 = 1 | XLV_37_3_super_silac = 1 | XLV_40_1 = 1 | XLV_40_1_super_silac = 1 | XLV_40_2 = 1 | XLV_40_2_super_silac = 1 | XLV_40_3 = 1 | XLV_40_3_super_silac = 1 | LpxC_30_1 = 1 | LpxC_30_1_super_silac = 1 | LpxC_30_2 = 1 | LpxC_30_2_super_silac = 1 | LpxC_30_3 = 1 | LpxC_30_3_super_silac = 1 | LpxC_37_1 = 1 | LpxC_37_1_super_silac = 1 | LpxC_37_2 = 1 | LpxC_37_2_super_silac = 1 | LpxC_37_3 = 1 | LpxC_37_3_super_silac = 1 | LpxC_40_1 = 1 | LpxC_40_1_super_silac = 1 | LpxC_40_2 = 1 | LpxC_40_2_super_silac = 1 | LpxC_40_3 = 1 | LpxC_40_3_super_silac = 1 | LV_30_1 = 1 | LV_30_1_super_silac = 1 | LV_30_2 = 1 | LV_30_2_super_silac = 1 | LV_30_3 = 1 | LV_30_3_super_silac = 1 | LV_37_1 = 1 | LV_37_1_super_silac = 1 | LV_37_2 = 1 | LV_37_2_super_silac = 1 | LV_37_3 = 1 | LV_37_3_super_silac = 1 | LV_40_1 = 1 | LV_40_1_super_silac = 1 | LV_40_2 = 1 | LV_40_2_super_silac = 1 | LV_40_3 = 1 | LV_40_3_super_silac = 1 | FtsH_30_1 = 1 | FtsH_30_1_super_silac = 1 | FtsH_30_2 = 1 | FtsH_30_2_super_silac = 1 | FtsH_30_3 = 1 | FtsH_30_3_super_silac = 1 | FtsH_37_1 = 1 | FtsH_37_1_super_silac = 1 | FtsH_37_2 = 1 | FtsH_37_2_super_silac = 1 | FtsH_37_3 = 1 | FtsH_37_3_super_silac = 1 | FtsH_40_1 = 1 | FtsH_40_1_super_silac = 1 | FtsH_40_2 = 1 | FtsH_40_2_super_silac = 1 | FtsH_40_3 = 1 | FtsH_40_3_super_silac = 1",
+      "verdict": null,
+      "type_mismatch": null,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": null,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "",
+        "SOURCE_CHECK": "",
+        "TRUTH_CHECK": "",
+        "COMPLETENESS_CHECK": ""
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "XLV_30_1 = 1 | XLV_30_1_super_silac = 1 | XLV_30_2 = 1 | XLV_30_2_super_silac = 1 | XLV_30_3 = 1 | XLV_30_3_super_silac = 1 | XLV_37_1 = 1 | XLV_37_1_super_silac = 1 | XLV_37_2 = 1 | XLV_37_2_super_silac = 1 | XLV_37_3 = 1 | XLV_37_3_super_silac = 1 | XLV_40_1 = 1 | XLV_40_1_super_silac = 1 | XLV_40_2 = 1 | XLV_40_2_super_silac = 1 | XLV_40_3 = 1 | XLV_40_3_super_silac = 1 | LpxC_30_1 = 1 | LpxC_30_1_super_silac = 1 | LpxC_30_2 = 1 | LpxC_30_2_super_silac = 1 | LpxC_30_3 = 1 | LpxC_30_3_super_silac = 1 | LpxC_37_1 = 1 | LpxC_37_1_super_silac = 1 | LpxC_37_2 = 1 | LpxC_37_2_super_silac = 1 | LpxC_37_3 = 1 | LpxC_37_3_super_silac = 1 | LpxC_40_1 = 1 | LpxC_40_1_super_silac = 1 | LpxC_40_2 = 1 | LpxC_40_2_super_silac = 1 | LpxC_40_3 = 1 | LpxC_40_3_super_silac = 1 | LV_30_1 = 1 | LV_30_1_super_silac = 1 | LV_30_2 = 1 | LV_30_2_super_silac = 1 | LV_30_3 = 1 | LV_30_3_super_silac = 1 | LV_37_1 = 1 | LV_37_1_super_silac = 1 | LV_37_2 = 1 | LV_37_2_super_silac = 1 | LV_37_3 = 1 | LV_37_3_super_silac = 1 | LV_40_1 = 1 | LV_40_1_super_silac = 1 | LV_40_2 = 1 | LV_40_2_super_silac = 1 | LV_40_3 = 1 | LV_40_3_super_silac = 1 | FtsH_30_1 = 1 | FtsH_30_1_super_silac = 1 | FtsH_30_2 = 1 | FtsH_30_2_super_silac = 1 | FtsH_30_3 = 1 | FtsH_30_3_super_silac = 1 | FtsH_37_1 = 1 | FtsH_37_1_super_silac = 1 | FtsH_37_2 = 1 | FtsH_37_2_super_silac = 1 | FtsH_37_3 = 1 | FtsH_37_3_super_silac = 1 | FtsH_40_1 = 1 | FtsH_40_1_super_silac = 1 | FtsH_40_2 = 1 | FtsH_40_2_super_silac = 1 | FtsH_40_3 = 1 | FtsH_40_3_super_silac = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents technical replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention repeated runs of the same material; it describes a single LC-MS/MS analysis per sample.",
+        "TRUTH_CHECK": "Since each material was measured once, assigning technical replicate 1 to every run is correct.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index of 1, following the definition for materials measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "XLV_30_1 = 1 | XLV_30_1_super_silac = 1 | XLV_30_2 = 1 | XLV_30_2_super_silac = 1 | XLV_30_3 = 1 | XLV_30_3_super_silac = 1 | XLV_37_1 = 1 | XLV_37_1_super_silac = 1 | XLV_37_2 = 1 | XLV_37_2_super_silac = 1 | XLV_37_3 = 1 | XLV_37_3_super_silac = 1 | XLV_40_1 = 1 | XLV_40_1_super_silac = 1 | XLV_40_2 = 1 | XLV_40_2_super_silac = 1 | XLV_40_3 = 1 | XLV_40_3_super_silac = 1 | LpxC_30_1 = 1 | LpxC_30_1_super_silac = 1 | LpxC_30_2 = 1 | LpxC_30_2_super_silac = 1 | LpxC_30_3 = 1 | LpxC_30_3_super_silac = 1 | LpxC_37_1 = 1 | LpxC_37_1_super_silac = 1 | LpxC_37_2 = 1 | LpxC_37_2_super_silac = 1 | LpxC_37_3 = 1 | LpxC_37_3_super_silac = 1 | LpxC_40_1 = 1 | LpxC_40_1_super_silac = 1 | LpxC_40_2 = 1 | LpxC_40_2_super_silac = 1 | LpxC_40_3 = 1 | LpxC_40_3_super_silac = 1 | LV_30_1 = 1 | LV_30_1_super_silac = 1 | LV_30_2 = 1 | LV_30_2_super_silac = 1 | LV_30_3 = 1 | LV_30_3_super_silac = 1 | LV_37_1 = 1 | LV_37_1_super_silac = 1 | LV_37_2 = 1 | LV_37_2_super_silac = 1 | LV_37_3 = 1 | LV_37_3_super_silac = 1 | LV_40_1 = 1 | LV_40_1_super_silac = 1 | LV_40_2 = 1 | LV_40_2_super_silac = 1 | LV_40_3 = 1 | LV_40_3_super_silac = 1 | FtsH_30_1 = 1 | FtsH_30_1_super_silac = 1 | FtsH_30_2 = 1 | FtsH_30_2_super_silac = 1 | FtsH_30_3 = 1 | FtsH_30_3_super_silac = 1 | FtsH_37_1 = 1 | FtsH_37_1_super_silac = 1 | FtsH_37_2 = 1 | FtsH_37_2_super_silac = 1 | FtsH_37_3 = 1 | FtsH_37_3_super_silac = 1 | FtsH_40_1 = 1 | FtsH_40_1_super_silac = 1 | FtsH_40_2 = 1 | FtsH_40_2_super_silac = 1 | FtsH_40_3 = 1 | FtsH_40_3_super_silac = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes LC-MS/MS analysis but does not mention any offline fractionation.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run is correctly assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the SDRF convention for non-fractionated samples."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[overproduction]",
+      "extracted_value": "XLV_30_1 = Strep-LpxC | XLV_30_1_super_silac = not applicable | XLV_30_2 = Strep-LpxC | XLV_30_2_super_silac = not applicable | XLV_30_3 = Strep-LpxC | XLV_30_3_super_silac = not applicable | XLV_37_1 = Strep-LpxC | XLV_37_1_super_silac = not applicable | XLV_37_2 = Strep-LpxC | XLV_37_2_super_silac = not applicable | XLV_37_3 = Strep-LpxC | XLV_37_3_super_silac = not applicable | XLV_40_1 = Strep-LpxC | XLV_40_1_super_silac = not applicable | XLV_40_2 = Strep-LpxC | XLV_40_2_super_silac = not applicable | XLV_40_3 = Strep-LpxC | XLV_40_3_super_silac = not applicable | LpxC_30_1 = Strep-LpxC | LpxC_30_1_super_silac = not applicable | LpxC_30_2 = Strep-LpxC | LpxC_30_2_super_silac = not applicable | LpxC_30_3 = Strep-LpxC | LpxC_30_3_super_silac = not applicable | LpxC_37_1 = Strep-LpxC | LpxC_37_1_super_silac = not applicable | LpxC_37_2 = Strep-LpxC | LpxC_37_2_super_silac = not applicable | LpxC_37_3 = Strep-LpxC | LpxC_37_3_super_silac = not applicable | LpxC_40_1 = Strep-LpxC | LpxC_40_1_super_silac = not applicable | LpxC_40_2 = Strep-LpxC | LpxC_40_2_super_silac = not applicable | LpxC_40_3 = Strep-LpxC | LpxC_40_3_super_silac = not applicable | LV_30_1 = not applicable | LV_30_1_super_silac = not applicable | LV_30_2 = not applicable | LV_30_2_super_silac = not applicable | LV_30_3 = not applicable | LV_30_3_super_silac = not applicable | LV_37_1 = not applicable | LV_37_1_super_silac = not applicable | LV_37_2 = not applicable | LV_37_2_super_silac = not applicable | LV_37_3 = not applicable | LV_37_3_super_silac = not applicable | LV_40_1 = not applicable | LV_40_1_super_silac = not applicable | LV_40_2 = not applicable | LV_40_2_super_silac = not applicable | LV_40_3 = not applicable | LV_40_3_super_silac = not applicable | FtsH_30_1 = His6-MBP-FtsH | FtsH_30_1_super_silac = not applicable | FtsH_30_2 = His6-MBP-FtsH | FtsH_30_2_super_silac = not applicable | FtsH_30_3 = His6-MBP-FtsH | FtsH_30_3_super_silac = not applicable | FtsH_37_1 = His6-MBP-FtsH | FtsH_37_1_super_silac = not applicable | FtsH_37_2 = His6-MBP-FtsH | FtsH_37_2_super_silac = not applicable | FtsH_37_3 = His6-MBP-FtsH | FtsH_37_3_super_silac = not applicable | FtsH_40_1 = His6-MBP-FtsH | FtsH_40_1_super_silac = not applicable | FtsH_40_2 = His6-MBP-FtsH | FtsH_40_2_super_silac = not applicable | FtsH_40_3 = His6-MBP-FtsH | FtsH_40_3_super_silac = not applicable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the protein overproduced for each run, which is the studied variable.",
+        "SOURCE_CHECK": "The methods state overproduction of Strep-LpxC, His6-MBP-FtsH, and their respective controls (Strep-tag and His6-MBP).",
+        "TRUTH_CHECK": "The mapping correctly assigns Strep-LpxC and His6-MBP-FtsH to their respective runs. The \"LV\" runs correspond to the controls (Strep-tag or His6-MBP), and the super-SILAC runs are the internal standards, both of which are correctly marked as not applicable for the specific overproduction of the target proteins.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value consistent with the experimental design."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[overproduction].1",
+      "extracted_value": "XLV_30_1 = Strep-tag | XLV_30_1_super_silac = not applicable | XLV_30_2 = Strep-tag | XLV_30_2_super_silac = not applicable | XLV_30_3 = Strep-tag | XLV_30_3_super_silac = not applicable | XLV_37_1 = Strep-tag | XLV_37_1_super_silac = not applicable | XLV_37_2 = Strep-tag | XLV_37_2_super_silac = not applicable | XLV_37_3 = Strep-tag | XLV_37_3_super_silac = not applicable | XLV_40_1 = Strep-tag | XLV_40_1_super_silac = not applicable | XLV_40_2 = Strep-tag | XLV_40_2_super_silac = not applicable | XLV_40_3 = Strep-tag | XLV_40_3_super_silac = not applicable | LpxC_30_1 = Strep-tag | LpxC_30_1_super_silac = not applicable | LpxC_30_2 = Strep-tag | LpxC_30_2_super_silac = not applicable | LpxC_30_3 = Strep-tag | LpxC_30_3_super_silac = not applicable | LpxC_37_1 = Strep-tag | LpxC_37_1_super_silac = not applicable | LpxC_37_2 = Strep-tag | LpxC_37_2_super_silac = not applicable | LpxC_37_3 = Strep-tag | LpxC_37_3_super_silac = not applicable | LpxC_40_1 = Strep-tag | LpxC_40_1_super_silac = not applicable | LpxC_40_2 = Strep-tag | LpxC_40_2_super_silac = not applicable | LpxC_40_3 = Strep-tag | LpxC_40_3_super_silac = not applicable | LV_30_1 = not applicable | LV_30_1_super_silac = not applicable | LV_30_2 = not applicable | LV_30_2_super_silac = not applicable | LV_30_3 = not applicable | LV_30_3_super_silac = not applicable | LV_37_1 = not applicable | LV_37_1_super_silac = not applicable | LV_37_2 = not applicable | LV_37_2_super_silac = not applicable | LV_37_3 = not applicable | LV_37_3_super_silac = not applicable | LV_40_1 = not applicable | LV_40_1_super_silac = not applicable | LV_40_2 = not applicable | LV_40_2_super_silac = not applicable | LV_40_3 = not applicable | LV_40_3_super_silac = not applicable | FtsH_30_1 = His6-MBP | FtsH_30_1_super_silac = not applicable | FtsH_30_2 = His6-MBP | FtsH_30_2_super_silac = not applicable | FtsH_30_3 = His6-MBP | FtsH_30_3_super_silac = not applicable | FtsH_37_1 = His6-MBP | FtsH_37_1_super_silac = not applicable | FtsH_37_2 = His6-MBP | FtsH_37_2_super_silac = not applicable | FtsH_37_3 = His6-MBP | FtsH_37_3_super_silac = not applicable | FtsH_40_1 = His6-MBP | FtsH_40_1_super_silac = not applicable | FtsH_40_2 = His6-MBP | FtsH_40_2_super_silac = not applicable | FtsH_40_3 = His6-MBP | FtsH_40_3_super_silac = not applicable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the overproduced protein (the variable being compared), which is a correct use of factor_value.",
+        "SOURCE_CHECK": "The methods state overproduction of Strep-LpxC, Strep-tag, His6-MBP-FtsH, and His6-MBP.",
+        "TRUTH_CHECK": "The mapping is wrong. Runs starting with \"LpxC\" should be assigned \"Strep-LpxC\", not \"Strep-tag\". Runs starting with \"FtsH\" should be assigned \"His6-MBP-FtsH\", not \"His6-MBP\". The \"Strep-tag\" and \"His6-MBP\" runs are the EV controls.",
+        "COMPLETENESS_CHECK": "The format is correct, but the mapping of levels to runs is incorrect."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[induced by]",
+      "extracted_value": "XLV_30_1 = 10 ng Anhydrotetracycline | XLV_30_1_super_silac = not applicable | XLV_30_2 = 10 ng Anhydrotetracycline | XLV_30_2_super_silac = not applicable | XLV_30_3 = 10 ng Anhydrotetracycline | XLV_30_3_super_silac = not applicable | XLV_37_1 = 25 ng Anhydrotetracycline | XLV_37_1_super_silac = not applicable | XLV_37_2 = 25 ng Anhydrotetracycline | XLV_37_2_super_silac = not applicable | XLV_37_3 = 25 ng Anhydrotetracycline | XLV_37_3_super_silac = not applicable | XLV_40_1 = 40 ng Anhydrotetracycline | XLV_40_1_super_silac = not applicable | XLV_40_2 = 40 ng Anhydrotetracycline | XLV_40_2_super_silac = not applicable | XLV_40_3 = 40ng Anhydrotetracycline | XLV_40_3_super_silac = not applicable | LpxC_30_1 = 10 ng Anhydrotetracycline | LpxC_30_1_super_silac = not applicable | LpxC_30_2 = 10 ng Anhydrotetracycline | LpxC_30_2_super_silac = not applicable | LpxC_30_3 = 10 ng Anhydrotetracycline | LpxC_30_3_super_silac = not applicable | LpxC_37_1 = 25 ng Anhydrotetracycline | LpxC_37_1_super_silac = not applicable | LpxC_37_2 = 25 ng Anhydrotetracycline | LpxC_37_2_super_silac = not applicable | LpxC_37_3 = 25 ng Anhydrotetracycline | LpxC_37_3_super_silac = not applicable | LpxC_40_1 = 40ng Anhydrotetracycline | LpxC_40_1_super_silac = not applicable | LpxC_40_2 = 40ng Anhydrotetracycline | LpxC_40_2_super_silac = not applicable | LpxC_40_3 = 40ng Anhydrotetracycline | LpxC_40_3_super_silac = not applicable | LV_30_1 = not applicable | LV_30_1_super_silac = not applicable | LV_30_2 = not applicable | LV_30_2_super_silac = not applicable | LV_30_3 = not applicable | LV_30_3_super_silac = not applicable | LV_37_1 = not applicable | LV_37_1_super_silac = not applicable | LV_37_2 = not applicable | LV_37_2_super_silac = not applicable | LV_37_3 = not applicable | LV_37_3_super_silac = not applicable | LV_40_1 = not applicable | LV_40_1_super_silac = not applicable | LV_40_2 = not applicable | LV_40_2_super_silac = not applicable | LV_40_3 = not applicable | LV_40_3_super_silac = not applicable | FtsH_30_1 = 0.05 mM Isopropyl ?-D-1-Thiogalctopyranoside | FtsH_30_1_super_silac = not applicable | FtsH_30_2 = 0.05 mM Isopropyl ?-D-1-Thiogalctopyranoside | FtsH_30_2_super_silac = not applicable | FtsH_30_3 = 0.05 mM Isopropyl ?-D-1-Thiogalctopyranoside | FtsH_30_3_super_silac = not applicable | FtsH_37_1 = 0.05 mM Isopropyl ?-D-1-Thiogalctopyranoside | FtsH_37_1_super_silac = not applicable | FtsH_37_2 = 0.05 mM Isopropyl ?-D-1-Thiogalctopyranoside | FtsH_37_2_super_silac = not applicable | FtsH_37_3 = 0.05 mM Isopropyl ?-D-1-Thiogalctopyranoside | FtsH_37_3_super_silac = not applicable | FtsH_40_1 = 0.05 mM Isopropyl ?-D-1-Thiogalctopyranoside | FtsH_40_1_super_silac = not applicable | FtsH_40_2 = 0.05 mM Isopropyl ?-D-1-Thiogalctopyranoside | FtsH_40_2_super_silac = not applicable | FtsH_40_3 = 0.05 mM Isopropyl ?-D-1-Thiogalctopyranoside | FtsH_40_3_super_silac = not applicable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the inducer used for protein overproduction, which is a studied variable (factor) for the runs.",
+        "SOURCE_CHECK": "The methods state that Strep-LpxC was induced by 10 ng (30°C), 25 ng (37°C), or 40 ng (40°C) AHT, and His6-MBP-FtsH was induced by 0.05 mM IPTG.",
+        "TRUTH_CHECK": "The mapping correctly assigns AHT concentrations to LpxC/XLV runs and IPTG to FtsH runs. \"AHT\" is the abbreviation for Anhydrotetracycline and \"IPTG\" is the abbreviation for Isopropyl $\\beta$-D-1-thiogalactopyranoside.",
+        "COMPLETENESS_CHECK": "The values are complete and follow the mapping of runs to their respective induction conditions."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Temperature",
+      "extracted_value": "30",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which is appropriate for a column named \"Temperature\" in this study.",
+        "SOURCE_CHECK": "The paper states that cells were incubated at 30°C (slow growth), 37°C (medium growth), or 40°C (fast growth).",
+        "TRUTH_CHECK": "The value 30 corresponds to the growth temperature for the runs associated with the 30°C condition.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Temperature",
+      "extracted_value": "37",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which is appropriate for a column named \"Temperature\" in this study.",
+        "SOURCE_CHECK": "The paper states that cells were incubated at 30°C, 37°C, or 40°C.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., XLV_37_1, LpxC_37_1) correspond to the 37°C growth condition.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Temperature",
+      "extracted_value": "40",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a temperature, which is appropriate for a column named \"Temperature\" in this study.",
+        "SOURCE_CHECK": "The paper states that cells were incubated at 30°C, 37°C, or 40°C.",
+        "TRUTH_CHECK": "The value 40 corresponds to the \"fast growth\" condition described in the paper and is correctly associated with runs labeled as 40.",
+        "COMPLETENESS_CHECK": "The value is a plain number representing the temperature in degrees Celsius."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "GrowthRate",
+      "extracted_value": "slow",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"slow\" refers to a growth rate, which is a relevant experimental variable for this study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"slow growth\" (at 30°C), \"medium growth\" (at 37°C), and \"fast growth\" (at 40°C) in the LpxC and FtsH Purification section.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the 30°C condition (e.g., XLV_30, LpxC_30).",
+        "COMPLETENESS_CHECK": "The value is a plain text descriptor of the growth rate as used in the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "GrowthRate",
+      "extracted_value": "medium",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a growth rate, which is a relevant experimental variable for this study.",
+        "SOURCE_CHECK": "The methods section explicitly mentions \"37°C (medium growth)\".",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., those containing \"37\") correspond to the medium growth condition.",
+        "COMPLETENESS_CHECK": "The value is a simple term and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "GrowthRate",
+      "extracted_value": "fast",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the growth rate of the bacteria, which is a key experimental variable in this study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"slow growth\" (30°C), \"medium growth\" (37°C), and \"fast growth\" (40°C) in the LpxC and FtsH Purification section.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., those with \"40\" in the key) correspond to the 40°C condition, which the paper defines as fast growth.",
+        "COMPLETENESS_CHECK": "The value is a plain text term that correctly identifies the growth rate condition."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[overproduction]",
+      "extracted_value": "Strep-LpxC",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a protein that was overproduced, which is appropriate for a column named \"characteristics[overproduction]\".",
+        "SOURCE_CHECK": "The methods state that \"Overproduction of Strep-LpxC (pBO113)... were induced\".",
+        "TRUTH_CHECK": "The runs listed (XLV_30, 37, 40) correspond to the growth temperatures (30, 37, 40°C) used for the overproduction of Strep-LpxC.",
+        "COMPLETENESS_CHECK": "The value is a plain text name of the overproduced protein, which is complete for this characteristic."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[overproduction]",
+      "extracted_value": "His6-MBP-FtsH",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a protein that was overproduced for the experiment, which is appropriate for a column named \"characteristics[overproduction]\".",
+        "SOURCE_CHECK": "The methods state that \"overproduction of His6-MBP-FtsH (pMal-C-FtsH)... were induced\".",
+        "TRUTH_CHECK": "The runs listed (FtsH_30, FtsH_37, FtsH_40) correspond to the purification of His6-MBP-FtsH at different temperatures.",
+        "COMPLETENESS_CHECK": "The value is a plain text name of the overproduced protein, which is complete for this characteristic."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[overproduction].1",
+      "extracted_value": "Strep-tag",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Strep-tag\" describes a protein overproduced as a control, which fits the column name \"characteristics[overproduction]\".",
+        "SOURCE_CHECK": "The methods state that \"overproduction of Strep-LpxC (pBO113) or Strep-tag (pASK-IBA5+)\" was induced.",
+        "TRUTH_CHECK": "The value is correct for the runs that used the Strep-tag control.",
+        "COMPLETENESS_CHECK": "The value is a plain text identifier for the overproduced protein."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[overproduction].1",
+      "extracted_value": "His6-MBP",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a protein overproduced as a control, which fits the column name \"characteristics[overproduction]\".",
+        "SOURCE_CHECK": "The methods state that \"overproduction of His6-MBP (pBO4811)\" was used as a control for His6-MBP-FtsH.",
+        "TRUTH_CHECK": "The runs listed (FtsH at 30, 37, and 40 degrees) are associated with the FtsH purification experiments where His6-MBP was used as the corresponding EV control.",
+        "COMPLETENESS_CHECK": "The value is a plain text name of the overproduced protein, which is complete for this type of characteristic column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[induced by]",
+      "extracted_value": "10 ng Anhydrotetracycline",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the inducer and concentration used for protein overproduction, which is a relevant sample characteristic for this study.",
+        "SOURCE_CHECK": "The methods state that overproduction of Strep-LpxC or Strep-tag was induced by adding 10 ng (30°C), 25 ng (37°C) or 40 ng (40°C) AHT. AHT is the standard abbreviation for Anhydrotetracycline.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., LpxC_30_1) correspond to the 30°C condition, which the paper states was induced with 10 ng AHT.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[induced by]",
+      "extracted_value": "25 ng Anhydrotetracycline",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the inducer and its concentration, which is appropriate for a characteristics column named \"induced by\".",
+        "SOURCE_CHECK": "The methods state that overproduction of Strep-LpxC or Strep-tag was induced by adding \"25 ng (37°C)\" AHT. AHT is the standard abbreviation for Anhydrotetracycline.",
+        "TRUTH_CHECK": "The runs associated with this value (e.g., LpxC_37) correspond to the 37°C condition where 25 ng of AHT was used.",
+        "COMPLETENESS_CHECK": "The value is a clear and complete description of the induction agent and amount."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[induced by]",
+      "extracted_value": "40 ng Anhydrotetracycline",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the inducer and its concentration, which is appropriate for a column named \"characteristics[induced by]\".",
+        "SOURCE_CHECK": "The paper states that overproduction of Strep-LpxC or Strep-tag was induced by adding 40 ng AHT for 40°C (fast growth). AHT is the standard abbreviation for Anhydrotetracycline.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the 40°C (fast growth) condition.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[induced by]",
+      "extracted_value": "40ng Anhydrotetracycline",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the inducer and concentration used for protein overproduction, which is a relevant characteristic for the runs in this study.",
+        "SOURCE_CHECK": "The methods state that overproduction of Strep-LpxC or Strep-tag was induced by adding 40 ng AHT (Anhydrotetracycline) for the 40°C condition.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the 40°C growth rate (e.g., LpxC_40).",
+        "COMPLETENESS_CHECK": "The value is complete and accurately reflects the paper's description."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[induced by]",
+      "extracted_value": "0.05 mM Isopropyl ?-D-1-Thiogalctopyranoside",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the inducer used for protein expression, which is a correct characteristic for this study.",
+        "SOURCE_CHECK": "The methods state that overproduction of His6-MBP-FtsH was induced by adding 0.05 mM IPTG. \"Isopropyl ?-D-1-Thiogalctopyranoside\" is the full chemical name for IPTG.",
+        "TRUTH_CHECK": "The runs listed (FtsH_30, FtsH_37, FtsH_40) are the FtsH samples, which the paper states were induced with 0.05 mM IPTG.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

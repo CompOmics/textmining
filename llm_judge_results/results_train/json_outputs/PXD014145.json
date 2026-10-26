@@ -1,0 +1,617 @@
+{
+  "paper_id": "PXD014145",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism name, which is the correct field.",
+        "SOURCE_CHECK": "The paper uses A549 lung adenocarcinoma cells and a human proteome database, making \"Homo sapiens\" an allowed inference.",
+        "TRUTH_CHECK": "The analyzed proteins are from human cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "lung",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"lung\" describes the organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper states the use of A549 lung adenocarcinoma cells.",
+        "TRUTH_CHECK": "The runs carry the cell line A549, and the organ of origin for A549 is the lung.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial cell",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the use of A549 lung adenocarcinoma cells; the cell type \"epithelial cell\" is an allowed inference for A549.",
+        "TRUTH_CHECK": "The runs carry the A549 cell line, which are epithelial cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Non-small cell lung carcinoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a disease state, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the use of A549 cells and describes them as \"lung adenocarcinoma cells\".",
+        "TRUTH_CHECK": "A549 is a lung adenocarcinoma cell line; adenocarcinoma is a type of non-small cell lung carcinoma.",
+        "COMPLETENESS_CHECK": "The value is a correct description of the disease state of the A549 cell line."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "58Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of any subjects; it mentions A549 cells and patient tissues but provides no numerical age.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable, the value is hallucinated."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the sex of the subjects or the cell line donor.",
+        "TRUTH_CHECK": "The sex is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "Not applicable, the value is not supported."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "A549",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that A549 lung adenocarcinoma cells were used for the proteome analysis.",
+        "TRUTH_CHECK": "The proteomic sample preparation section explicitly mentions A549 cells were used for the MS experiment.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is written as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the right field.",
+        "SOURCE_CHECK": "The paper states that A549 lung adenocarcinoma cells were used for the proteome analysis.",
+        "TRUTH_CHECK": "The analysed material is a cell line (A549).",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the controlled terms listed in the field definition (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a developmental stage, which is the right field.",
+        "SOURCE_CHECK": "The related column \"age\" lists \"58Y\", and the paper mentions \"patient survival\" and \"patients\", from which \"adult\" is an allowed inference.",
+        "TRUTH_CHECK": "The value is right for the runs coming from patient samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Caucasian",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the ethnicity of the subjects; it mentions the University of Cologne and patients, but ethnicity is never mentioned.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT126",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using \"TMT-10-plex\". While the specific channel \"TMT126\" is not explicitly named, it is a standard component of the TMT-10-plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT-10-plex experiment as described in the proteomic sample preparation section.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using \"TMT-10-plex\", which implies the use of 10 specific TMT channels.",
+        "TRUTH_CHECK": "TMT127N is one of the standard channels used in a TMT-10-plex kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT127C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using \"TMT-10-plex (Thermo Scientific)\".",
+        "TRUTH_CHECK": "TMT-10-plex uses a specific set of 10 channels, and TMT127C is one of the standard channels in that set.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using \"TMT-10-plex\", but it does not list the specific channels used.",
+        "TRUTH_CHECK": "TMT-10-plex uses a specific set of channels; TMT128N is one of the standard channels in a 10-plex set.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT128C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using \"TMT-10-plex\".",
+        "TRUTH_CHECK": "TMT-10-plex uses a set of 10 channels, and TMT128C is one of the standard channels for that kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using \"TMT-10-plex (Thermo Scientific)\".",
+        "TRUTH_CHECK": "TMT-10-plex uses a set of 10 specific channels, and TMT129N is one of the standard channels in that set.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT129C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using \"TMT-10-plex (Thermo Scientific)\". While the specific channel \"TMT129C\" is not printed, it is a standard component of the TMT-10-plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT-10-plex experiment, and the value represents one of the channels used.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT130N",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using \"TMT-10-plex (Thermo Scientific)\", but it does not list the specific channels used.",
+        "TRUTH_CHECK": "While TMT-10-plex was used, the specific channel \"TMT130N\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT130C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using \"TMT-10-plex (Thermo Scientific)\". While the specific channel \"TMT130C\" is not printed, it is a standard channel of the TMT-10-plex kit.",
+        "TRUTH_CHECK": "The runs are part of a TMT-10-plex experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT131N",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT channel label, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using \"TMT-10-plex (Thermo Scientific)\". While the specific channel \"TMT131N\" is not printed verbatim, it is a standard channel of the TMT-10-plex kit used in the experiment.",
+        "TRUTH_CHECK": "The runs are part of a TMT-10-plex experiment, so they carry a TMT label.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "TMT131C",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a TMT label channel, which is the correct type for the labeling field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using \"TMT-10-plex (Thermo Scientific)\".",
+        "TRUTH_CHECK": "TMT-10-plex uses a specific set of 10 channels, and TMT131C is one of the standard channels for that kit.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive Plus;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section explicitly states \"Peptides were analyzed using a Q-Exactive Plus mass spectrometer\".",
+        "TRUTH_CHECK": "The instrument was used for the LC-MS/MS analysis of all samples.",
+        "COMPLETENESS_CHECK": "Complete and follows the key-value format."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001313;NT=Trypsin/P",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"sequencing grade trypsin\" for digestion and \"Trypsin/P enzymatic specificity\" in the MaxQuant analysis section.",
+        "TRUTH_CHECK": "The runs used trypsin for digestion.",
+        "COMPLETENESS_CHECK": "Complete. \"Trypsin/P\" is an equivalent term for trypsin as per the field definition."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a proteomics experiment using TMT labeling and LC-MS/MS (Q-Exactive Plus), which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the mass spectrometry experiment performed on the A549 cells.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled terminology."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"carbamidomethylation of cysteine was set as a fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Follows the required format (NT, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=TMT6plex;AC=UNIMOD:737;TA=K;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=TMT10plex;TA=K;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using TMT-10-plex, not TMT-6plex.",
+        "TRUTH_CHECK": "The runs used TMT-10-plex labeling, so TMT-6plex is the wrong detail.",
+        "COMPLETENESS_CHECK": "Follows the required format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=TMT6plex;AC=UNIMOD:737;PP=Any N-term;MT=Variable",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=TMT10plex;AC=UNIMOD:737;PP=Any N-term;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states that samples were labeled using TMT-10-plex, not TMT-6plex.",
+        "TRUTH_CHECK": "The value TMT6plex is wrong because the paper explicitly uses TMT-10-plex.",
+        "COMPLETENESS_CHECK": "Follows the format, but the content is incorrect."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;AC=UNIMOD:35;MT=Variable;TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"oxidation of methionine were set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was a global search parameter.",
+        "COMPLETENESS_CHECK": "Follows the required format including name, residues, and MT status."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Protein N-term acetylation... were set as variable modifications\".",
+        "TRUTH_CHECK": "The value correctly describes the modification used for the runs.",
+        "COMPLETENESS_CHECK": "Follows the required format with NT, PP, and MT."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "4.5 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper does not state a precursor mass tolerance in the methods or results.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper does not state a fragment mass tolerance.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states A549 cells transfected with siControl or siKMT9α#1 (n = 4) were used.",
+        "TRUTH_CHECK": "The runs are split into 12 fractions (assay=run 1 to 12) for each of the samples. Since the samples are biological replicates of the same conditions, and the fractions are from the same biological sample, all runs from one biological unit should share the same index. However, the mapping assigns all 132 runs (across all samples and fractions) to biological replicate 1, which contradicts the statement that n=4 (meaning there are at least 4 independent biological units per condition).",
+        "COMPLETENESS_CHECK": "The mapping is complete but logically incorrect based on the study design."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a proteomic experiment with TMT-10-plex labeling and offline fractionation into 12 fractions.",
+        "TRUTH_CHECK": "The runs are organized by 12 fractions (assay run 1 to 12) and 11 samples (source Sample 1 to 11). Each specific combination of sample and fraction is measured once. Therefore, each run is a unique material (a specific fraction of a specific sample) and should be assigned technical replicate 1.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned the index 1."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 2 | row 13 = 2 | row 14 = 2 | row 15 = 2 | row 16 = 2 | row 17 = 2 | row 18 = 2 | row 19 = 2 | row 20 = 2 | row 21 = 2 | row 22 = 2 | row 23 = 3 | row 24 = 3 | row 25 = 3 | row 26 = 3 | row 27 = 3 | row 28 = 3 | row 29 = 3 | row 30 = 3 | row 31 = 3 | row 32 = 3 | row 33 = 3 | row 34 = 4 | row 35 = 4 | row 36 = 4 | row 37 = 4 | row 38 = 4 | row 39 = 4 | row 40 = 4 | row 41 = 4 | row 42 = 4 | row 43 = 4 | row 44 = 4 | row 45 = 5 | row 46 = 5 | row 47 = 5 | row 48 = 5 | row 49 = 5 | row 50 = 5 | row 51 = 5 | row 52 = 5 | row 53 = 5 | row 54 = 5 | row 55 = 5 | row 56 = 6 | row 57 = 6 | row 58 = 6 | row 59 = 6 | row 60 = 6 | row 61 = 6 | row 62 = 6 | row 63 = 6 | row 64 = 6 | row 65 = 6 | row 66 = 6 | row 67 = 7 | row 68 = 7 | row 69 = 7 | row 70 = 7 | row 71 = 7 | row 72 = 7 | row 73 = 7 | row 74 = 7 | row 75 = 7 | row 76 = 7 | row 77 = 7 | row 78 = 8 | row 79 = 8 | row 80 = 8 | row 81 = 8 | row 82 = 8 | row 83 = 8 | row 84 = 8 | row 85 = 8 | row 86 = 8 | row 87 = 8 | row 88 = 8 | row 89 = 9 | row 90 = 9 | row 91 = 9 | row 92 = 9 | row 93 = 9 | row 94 = 9 | row 95 = 9 | row 96 = 9 | row 97 = 9 | row 98 = 9 | row 99 = 9 | row 100 = 10 | row 101 = 10 | row 102 = 10 | row 103 = 10 | row 104 = 10 | row 105 = 10 | row 106 = 10 | row 107 = 10 | row 108 = 10 | row 109 = 10 | row 110 = 10 | row 111 = 11 | row 112 = 11 | row 113 = 11 | row 114 = 11 | row 115 = 11 | row 116 = 11 | row 117 = 11 | row 118 = 11 | row 119 = 11 | row 120 = 11 | row 121 = 11 | row 122 = 12 | row 123 = 12 | row 124 = 12 | row 125 = 12 | row 126 = 12 | row 127 = 12 | row 128 = 12 | row 129 = 12 | row 130 = 12 | row 131 = 12 | row 132 = 12",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that 24 fractions were collected and concatenated into 12 fractions, which were then analyzed by LC-MS/MS.",
+        "TRUTH_CHECK": "The mapping correctly assigns each of the 12 fractions to the corresponding runs.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "siControl",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the siRNA treatment used in the experiment, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper explicitly mentions \"siControl\" in the Transfection with siRNA section.",
+        "TRUTH_CHECK": "The proteomic samples were prepared from A549 cells transfected with either siControl or siKMT9α#1.",
+        "COMPLETENESS_CHECK": "The value is a plain text identifier for the treatment group and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "siKMT9#1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "siKMT9α#1",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the siRNA treatment used in the experiment, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The paper mentions \"siKMT9α#1\" as one of the siRNAs used for transfection in A549 cells.",
+        "TRUTH_CHECK": "The value \"siKMT9#1\" is a slight variation of \"siKMT9α#1\" printed in the paper, but it clearly refers to the same treatment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

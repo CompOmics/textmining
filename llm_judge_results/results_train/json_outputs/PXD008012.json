@@ -1,0 +1,838 @@
+{
+  "paper_id": "PXD008012",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper mentions human triple negative breast cancer cell lines and patient tumor samples, and the search was performed against a human protein database.",
+        "TRUTH_CHECK": "The analyzed proteins are from human patients and human cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "breast",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The paper describes \"Triple-negative breast cancer\" and \"breast cancer cell lines\", making \"breast\" a correct description of the organ of origin.",
+        "TRUTH_CHECK": "The runs correspond to both patient tumor samples and TNBC cell lines, all of which originate from the breast.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "Epithelial",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a biological cell type, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"triple negative breast cancer cell lines\" and \"patient tumor samples\" from breast cancer; epithelial cell type is an allowed inference for breast cancer cell lines and breast tumors.",
+        "TRUTH_CHECK": "The runs are associated with breast cancer cell lines and breast tissue, which are epithelial in origin.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Triple-negative breast cancer",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly states the study is on \"Triple-negative breast cancer (TNBC)\".",
+        "TRUTH_CHECK": "The runs include both patient tumor samples and TNBC cell lines, all of which carry this disease state.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "50Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of any individual patient or subject.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "51Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not mention the ages of the individual patients.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "74Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the ages of the individual patients.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "38Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a subject age, which is the correct field.",
+        "SOURCE_CHECK": "The paper text does not mention the ages of the individual patients.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "52Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age with a unit, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not state the ages of the individual patients in the text.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "44Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions patients and a training set of 34 patients, but it does not list the specific ages of individual patients.",
+        "TRUTH_CHECK": "The value is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is absent."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "23Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the ages of the patients in the training or validation sets.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Format is correct, but content is absent."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"female athymic nude mice\" and \"female nude mice\" in the mouse models section, but it does not state the sex of the human patients in the training or validation sets.",
+        "TRUTH_CHECK": "The runs are associated with human individual IDs (e.g., 4020303), but the paper does not provide the sex for these human subjects.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HCC38",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "HCC38 is explicitly listed in the \"Cell lines\" section of the methods.",
+        "TRUTH_CHECK": "The paper states that tumor cell lines were processed for proteomic analysis (LC-MS/MS), making this cell line part of the MS experiment.",
+        "COMPLETENESS_CHECK": "The value is written exactly as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MDA-MB-231",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a name of an immortalized cell line, which is the correct field.",
+        "SOURCE_CHECK": "The cell line MDA-MB-231 is explicitly listed in the \"Cell lines\" section of the methods.",
+        "TRUTH_CHECK": "The methods state that tumor cell lines were processed for proteomic analysis (LC-MS/MS), confirming this cell line was part of the MS experiment.",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "Hs578T",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The cell line Hs578T is explicitly listed in the \"Cell lines\" section of the methods.",
+        "TRUTH_CHECK": "The methods state that tumor cell lines were processed for proteomic analysis, and Hs578T is one of those lines.",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MDA-MB-468",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a name of an immortalized cell line, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly lists MDA-MB-468 as one of the human triple negative breast cancer cell lines used.",
+        "TRUTH_CHECK": "The methods state that tumor cell lines were processed for proteomic analysis (LC-MS/MS), so this cell line is part of the MS experiment.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is written as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MDA-MB-415",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a name of an immortalized cell line, which is the correct field.",
+        "SOURCE_CHECK": "The cell line MDA-MB-415 is explicitly listed in the \"Cell lines\" section of the methods.",
+        "TRUTH_CHECK": "The methods state that tumor cell lines were harvested and analyzed by LC-MS/MS, so this cell line is part of the MS experiment.",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HCC1143",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The cell line HCC1143 is explicitly listed in the \"Cell lines\" section of the methods.",
+        "TRUTH_CHECK": "The methods state that tumor cell lines were processed for proteomic analysis (digested, enriched by Ti4-IMAC, and analyzed by LC-MS/MS).",
+        "COMPLETENESS_CHECK": "The value follows the definition and is written as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "MDA-MB-157",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a name of an immortalized cell line, which is the correct field.",
+        "SOURCE_CHECK": "MDA-MB-157 is explicitly listed in the \"Cell lines\" section of the methods.",
+        "TRUTH_CHECK": "The paper states that a panel of human TNBC cell lines (including MDA-MB-157) were used for proteomic analysis.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "BT483",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "BT483 is explicitly listed in the \"Cell lines\" section of the methods.",
+        "TRUTH_CHECK": "The methods state that a panel of human TNBC cell lines (including BT483) were used for proteomic analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HCC1937",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "HCC1937 is explicitly listed in the \"Cell lines\" section of the methods.",
+        "TRUTH_CHECK": "The methods state that tumor cell lines were processed for proteomic analysis (LC-MS/MS), confirming it was used in the MS experiment.",
+        "COMPLETENESS_CHECK": "The value is written exactly as it appears in the paper."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell line",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions a panel of human triple negative breast cancer cell lines.",
+        "TRUTH_CHECK": "The runs associated with this value correspond to the listed cell lines (e.g., MDA-MB-231, HCC38), which were analyzed by LC-MS/MS.",
+        "COMPLETENESS_CHECK": "The value follows the controlled terminology of the field definition."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "Biopsy",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "tissue",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Biopsy\" describes the sample source, but the field requires a broad class from a controlled list.",
+        "SOURCE_CHECK": "The paper mentions \"biopsy\" in the context of patient tumor samples.",
+        "TRUTH_CHECK": "The runs are derived from patient tumor biopsies, which are tissues.",
+        "COMPLETENESS_CHECK": "The value \"Biopsy\" is not one of the allowed terms in the field definition."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"adult\" is a developmental stage, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions \"patients\" and the related columns provide ages (e.g., 50Y, 74Y), allowing the inference of \"adult\".",
+        "TRUTH_CHECK": "The runs are derived from patient tumor samples of adult age.",
+        "COMPLETENESS_CHECK": "The value follows the allowed SDRF terms for developmental stage."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Caucasian",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper does not mention the ethnicity or ancestry of the patients.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Black",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper does not mention the ethnicity or ancestry of the patients.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly states \"we aimed to probe the phosphoproteome using a label-free single-shot strategy\" and \"Label-free quantification was done\".",
+        "TRUTH_CHECK": "The runs described in the proteomics section used this label-free approach.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=LTQ Orbitrap Elite;AC=MS:1001910",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states that peptides were analyzed using an LTQ-Orbitrap Elite.",
+        "TRUTH_CHECK": "The instrument was used for the LC-MS/MS analysis of the phosphoproteome runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The paper mentions both Lys-C and Trypsin were used for digestion.",
+        "TRUTH_CHECK": "Trypsin was used for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Lys-C;AC=MS:1001309",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that proteins were digested using endoproteinase Lys-C and then Trypsin.",
+        "TRUTH_CHECK": "Lys-C was used for the digestion of the samples in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000133;NT=CID",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that precursors were selected for \"decision-tree-based ion trap CID or ETD fragmentation\".",
+        "TRUTH_CHECK": "The runs used a decision tree to apply either CID or ETD; therefore, CID is one of the methods used for these runs.",
+        "COMPLETENESS_CHECK": "One cell naming one of the methods used (CID) is complete according to the \"ONE VALUE PER CELL\" rule for decision tree runs."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "35% NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the correct field.",
+        "SOURCE_CHECK": "The methods state \"The normalized collision energy for CID was set at 35%\".",
+        "TRUTH_CHECK": "The value is correct for the runs using the LTQ-Orbitrap Elite with CID fragmentation.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "enrichment of phosphorylated Protein",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an enrichment method, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"enriching the phospho-fraction\" and \"Phosphopeptide enrichment was performed using Ti4+-IMAC\", supporting the term.",
+        "TRUTH_CHECK": "The runs are phosphoproteomics runs using IMAC enrichment.",
+        "COMPLETENESS_CHECK": "The value uses the SDRF controlled term for phosphoprotein enrichment."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a high-throughput phosphoproteomics experiment using LC-MS/MS, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The runs are part of the MS-based proteomics experiment described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Carbamidomethylation of cysteines was set as a fixed modification\" in both the Proteome Discoverer and MaxQuant analysis sections.",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, MT) and is complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"oxidation of methionine (M)\" as a variable modification in the proteomics data analysis section.",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=variabl",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=Variable",
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"protein N-terminal acetylation\" was chosen as a variable modification in the MaxQuant analysis.",
+        "TRUTH_CHECK": "The value is right for the runs that carry it.",
+        "COMPLETENESS_CHECK": "The value contains a typo in the MT status (\"variabl\" instead of \"Variable\")."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;MT=variable;TA=S,T,Y;AC=UNIMOD:21",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states phosphorylation of serine, threonine and tyrosine as variable modifications in both the Proteome Discoverer and MaxQuant search sections.",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, following the required format."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"The precursor mass tolerances were set to 20 ppm for the first search and 4.5 for the main search\" in the Proteomics data analysis section.",
+        "TRUTH_CHECK": "The value 20 ppm is one of the precursor tolerances used for the runs.",
+        "COMPLETENESS_CHECK": "Complete, including the value and the unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "20131217_OR8_RP_HP_C1.raw = 1 | 20131217_OR8_RP_HP_C1_rr.raw = 1 | 20131217_OR8_RP_HP_C1b.raw = 1 | 20131217_OR8_RP_HP_C1b_rr.raw = 1 | 20131217_OR8_RP_HP_C3.raw = 1 | 20131217_OR8_RP_HP_C3_rr.raw = 1 | 20131217_OR8_RP_HP_C3b.raw = 1 | 20131217_OR8_RP_HP_C3b_rr.raw = 1 | 20131217_OR8_RP_HP_C3c.raw = 1 | 20131217_OR8_RP_HP_C3c_rr.raw = 1 | 20131217_OR8_RP_HP_C4.raw = 1 | 20131217_OR8_RP_HP_C4_rr.raw = 1 | 20131217_OR8_RP_HP_C4b.raw = 1 | 20131217_OR8_RP_HP_C4b_rr.raw = 1 | 20131217_OR8_RP_HP_C4c.raw = 1 | 20131217_OR8_RP_HP_C4c_rr.raw = 1 | 20131217_OR8_RP_HP_C5.raw = 1 | 20131217_OR8_RP_HP_C5_rr.raw = 1 | 20131217_OR8_RP_HP_C5b.raw = 1 | 20131217_OR8_RP_HP_C5b_rr.raw = 1 | 20131217_OR8_RP_HP_C5c.raw = 1 | 20131217_OR8_RP_HP_C5c_rr.raw = 1 | 20131217_OR8_RP_HP_C6.raw = 1 | 20131217_OR8_RP_HP_C6_rr.raw = 1 | 20131217_OR8_RP_HP_C6b.raw = 1 | 20131217_OR8_RP_HP_C6b_rr.raw = 1 | 20131217_OR8_RP_HP_C7.raw = 1 | 20131217_OR8_RP_HP_C7_rr.raw = 1 | 20131217_OR8_RP_HP_C7b.raw = 1 | 20131217_OR8_RP_HP_C7b_rr.raw = 1 | 20131217_OR8_RP_HP_C8.raw = 1 | 20131217_OR8_RP_HP_C8_rr.raw = 1 | 20131217_OR8_RP_HP_C8b.raw = 1 | 20131217_OR8_RP_HP_C8b_rr.raw = 1 | 20131217_OR8_RP_HP_C9.raw = 1 | 20131217_OR8_RP_HP_C9_rr.raw = 1 | 20131217_OR8_RP_HP_C9b.raw = 1 | 20131217_OR8_RP_HP_C9b_rr.raw = 1 | 20131217_OR8_RP_HP_C10.raw = 1 | 20131217_OR8_RP_HP_C10_rr.raw = 1 | 20131217_OR8_RP_HP_C10b.raw = 1 | 20131217_OR8_RP_HP_C10b_rr.raw = 1 | 20140108_OR8_RP_HP_B10A.raw = 1 | 20140108_OR8_RP_HP_B12A.raw = 1 | 20140108_OR8_RP_HP_B13A.raw = 1 | 20140108_OR8_RP_HP_B14A.raw = 1 | 20140108_OR8_RP_HP_B15A.raw = 1 | 20140108_OR8_RP_HP_B16A.raw = 1 | 20140108_OR8_RP_HP_B17A.raw = 1 | 20140108_OR8_RP_HP_B18A.raw = 1 | 20140108_OR8_RP_HP_B19A.raw = 1 | 20140108_OR8_RP_HP_B1B.raw = 1 | 20140108_OR8_RP_HP_B20A.raw = 1 | 20140108_OR8_RP_HP_B21A.raw = 1 | 20140108_OR8_RP_HP_B2A.raw = 1 | 20140108_OR8_RP_HP_B2B.raw = 1 | 20140108_OR8_RP_HP_B35A.raw = 1 | 20140108_OR8_RP_HP_B36A.raw = 1 | 20140108_OR8_RP_HP_B37A.raw = 1 | 20140108_OR8_RP_HP_B38A.raw = 1 | 20140108_OR8_RP_HP_B39A.raw = 1 | 20140108_OR8_RP_HP_B3A.raw = 1 | 20140108_OR8_RP_HP_B3B.raw = 1 | 20140108_OR8_RP_HP_B42A.raw = 1 | 20140108_OR8_RP_HP_B43A.raw = 1 | 20140108_OR8_RP_HP_B4A.raw = 1 | 20140108_OR8_RP_HP_B4B.raw = 1 | 20140108_OR8_RP_HP_B5A.raw = 1 | 20140108_OR8_RP_HP_B5B.raw = 1 | 20140108_OR8_RP_HP_B6A.raw = 1 | 20140108_OR8_RP_HP_B6B.raw = 1 | 20140108_OR8_RP_HP_B7A.raw = 1 | 20140108_OR8_RP_HP_B7B.raw = 1 | 20140108_OR8_RP_HP_B8A.raw = 1 | 20140108_OR8_RP_HP_B8B.raw = 1 | 20140108_OR8_RP_HP_B9A.raw = 1 | 20140113_OR8_RP_HP_B10A_rr.raw = 1 | 20140113_OR8_RP_HP_B10B.raw = 1 | 20140113_OR8_RP_HP_B10B_rr.raw = 1 | 20140113_OR8_RP_HP_B12A_rr.raw = 1 | 20140113_OR8_RP_HP_B13B.raw = 1 | 20140113_OR8_RP_HP_B13B_rr.raw = 1 | 20140113_OR8_RP_HP_B14A_rr.raw = 1 | 20140113_OR8_RP_HP_B14B.raw = 1 | 20140113_OR8_RP_HP_B14B_rr.raw = 1 | 20140113_OR8_RP_HP_B15A_rr.raw = 1 | 20140113_OR8_RP_HP_B15B.raw = 1 | 20140113_OR8_RP_HP_B15B_rr.raw = 1 | 20140113_OR8_RP_HP_B16A_rr.raw = 1 | 20140113_OR8_RP_HP_B16B.raw = 1 | 20140113_OR8_RP_HP_B17A_rr.raw = 1 | 20140113_OR8_RP_HP_B17B.raw = 1 | 20140113_OR8_RP_HP_B17B_rr.raw = 1 | 20140113_OR8_RP_HP_B18A_rr.raw = 1 | 20140113_OR8_RP_HP_B18B.raw = 1 | 20140113_OR8_RP_HP_B18B_rr.raw = 1 | 20140113_OR8_RP_HP_B19A_rr.raw = 1 | 20140113_OR8_RP_HP_B19C.raw = 1 | 20140113_OR8_RP_HP_B19C_rr.raw = 1 | 20140113_OR8_RP_HP_B1B_rr.raw = 1 | 20140113_OR8_RP_HP_B20A_rr.raw = 1 | 20140113_OR8_RP_HP_B20C.raw = 1 | 20140113_OR8_RP_HP_B20C_rr.raw = 1 | 20140113_OR8_RP_HP_B21A_rr.raw = 1 | 20140113_OR8_RP_HP_B21B.raw = 1 | 20140113_OR8_RP_HP_B21B_rr.raw = 1 | 20140113_OR8_RP_HP_B2A_rr.raw = 1 | 20140113_OR8_RP_HP_B2B_rr.raw = 1 | 20140113_OR8_RP_HP_B35A_rr.raw = 1 | 20140113_OR8_RP_HP_B36A_rr.raw = 1 | 20140113_OR8_RP_HP_B37A_rr.raw = 1 | 20140113_OR8_RP_HP_B38A_rr.raw = 1 | 20140113_OR8_RP_HP_B39A_rr.raw = 1 | 20140113_OR8_RP_HP_B3A_rr.raw = 1 | 20140113_OR8_RP_HP_B3B_rr.raw = 1 | 20140113_OR8_RP_HP_B42A_rr.raw = 1 | 20140113_OR8_RP_HP_B43A_rr.raw = 1 | 20140113_OR8_RP_HP_B43B.raw = 1 | 20140113_OR8_RP_HP_B43B_rr.raw = 1 | 20140113_OR8_RP_HP_B44A.raw = 1 | 20140113_OR8_RP_HP_B44A_rr.raw = 1 | 20140113_OR8_RP_HP_B45A.raw = 1 | 20140113_OR8_RP_HP_B45A_rr.raw = 1 | 20140113_OR8_RP_HP_B47A.raw = 1 | 20140113_OR8_RP_HP_B47A_rr.raw = 1 | 20140113_OR8_RP_HP_B4A_rr.raw = 1 | 20140113_OR8_RP_HP_B4B_rr.raw = 1 | 20140113_OR8_RP_HP_B5A_rr.raw = 1 | 20140113_OR8_RP_HP_B5B_rr.raw = 1 | 20140113_OR8_RP_HP_B6A_rr.raw = 1 | 20140113_OR8_RP_HP_B6B_rr.raw = 1 | 20140113_OR8_RP_HP_B7A_rr.raw = 1 | 20140113_OR8_RP_HP_B7B_rr.raw = 1 | 20140113_OR8_RP_HP_B7C.raw = 1 | 20140113_OR8_RP_HP_B7C_rr.raw = 1 | 20140113_OR8_RP_HP_B8A_rr.raw = 1 | 20140113_OR8_RP_HP_B8B_rr.raw = 1 | 20140113_OR8_RP_HP_B9A_rr.raw = 1 | 20140113_OR8_RP_HP_B9B.raw = 1 | 20140113_OR8_RP_HP_B9B_rr.raw = 1 | 20140117_OR8_RP_HP_B16B_rr.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "20131217_OR8_RP_HP_C1.raw = 1 | 20131217_OR8_RP_HP_C1_rr.raw = 1 | 20131217_OR8_RP_HP_C1b.raw = 2 | 20131217_OR8_RP_HP_C1b_rr.raw = 2 | 20131217_OR8_RP_HP_C3.raw = 3 | 20131217_OR8_RP_HP_C3_rr.raw = 3 | 20131217_OR8_RP_HP_C3b.raw = 4 | 20131217_OR8_RP_HP_C3b_rr.raw = 4 | 20131217_OR8_RP_HP_C3c.raw = 5 | 20131217_OR8_RP_HP_C3c_rr.raw = 5 | 20131217_OR8_RP_HP_C4.raw = 6 | 20131217_OR8_RP_HP_C4_rr.raw = 6 | 20131217_OR8_RP_HP_C4b.raw = 7 | 20131217_OR8_RP_HP_C4b_rr.raw = 7 | 20131217_OR8_RP_HP_C4c.raw = 8 | 20131217_OR8_RP_HP_C4c_rr.raw = 8 | 20131217_OR8_RP_HP_C5.raw = 9 | 20131217_OR8_RP_HP_C5_rr.raw = 9 | 20131217_OR8_RP_HP_C5b.raw = 10 | 20131217_OR8_RP_HP_C5b_rr.raw = 10 | 20131217_OR8_RP_HP_C5c.raw = 11 | 20131217_OR8_RP_HP_C5c_rr.raw = 11 | 20131217_OR8_RP_HP_C6.raw = 12 | 20131217_OR8_RP_HP_C6_rr.raw = 12 | 20131217_OR8_RP_HP_C6b.raw = 13 | 20131217_OR8_RP_HP_C6b_rr.raw = 13 | 20131217_OR8_RP_HP_C7.raw = 14 | 20131217_OR8_RP_HP_C7_rr.raw = 14 | 20131217_OR8_RP_HP_C7b.raw = 15 | 20131217_OR8_RP_HP_C7b_rr.raw = 15 | 20131217_OR8_RP_HP_C8.raw = 16 | 20131217_OR8_RP_HP_C8_rr.raw = 16 | 20131217_OR8_RP_HP_C8b.raw = 17 | 20131217_OR8_RP_HP_C8b_rr.raw = 17 | 20131217_OR8_RP_HP_C9.raw = 18 | 20131217_OR8_RP_HP_C9_rr.raw = 18 | 20131217_OR8_RP_HP_C9b.raw = 19 | 20131217_OR8_RP_HP_C9b_rr.raw = 19 | 20131217_OR8_RP_HP_C10.raw = 20 | 20131217_OR8_RP_HP_C10_rr.raw = 20 | 20131217_OR8_RP_HP_C10b.raw = 21 | 20131217_OR8_RP_HP_C10b_rr.raw = 21 | 20140108_OR8_RP_HP_B10A.raw = 22 | 20140108_OR8_RP_HP_B12A.raw = 23 | 20140108_OR8_RP_HP_B13A.raw = 24 | 20140108_OR8_RP_HP_B14A.raw = 25 | 20140108_OR8_RP_HP_B15A.raw = 26 | 20140108_OR8_RP_HP_B16A.raw = 27 | 20140108_OR8_RP_HP_B17A.raw = 28 | 20140108_OR8_RP_HP_B18A.raw = 29 | 20140108_OR8_RP_HP_B19A.raw = 30 | 20140108_OR8_RP_HP_B1B.raw = 31 | 20140108_OR8_RP_HP_B20A.raw = 32 | 20140108_OR8_RP_HP_B21A.raw = 33 | 20140108_OR8_RP_HP_B2A.raw = 34 | 20140108_OR8_RP_HP_B2B.raw = 35 | 20140108_OR8_RP_HP_B35A.raw = 36 | 20140108_OR8_RP_HP_B36A.raw = 37 | 20140108_OR8_RP_HP_B37A.raw = 38 | 20140108_OR8_RP_HP_B38A.raw = 39 | 20140108_OR8_RP_HP_B39A.raw = 40 | 20140108_OR8_RP_HP_B3A.raw = 41 | 20140108_OR8_RP_HP_B3B.raw = 42 | 20140108_OR8_RP_HP_B42A.raw = 43 | 20140108_OR8_RP_HP_B43A.raw = 44 | 20140108_OR8_RP_HP_B4A.raw = 45 | 20140108_OR8_RP_HP_B4B.raw = 46 | 20140108_OR8_RP_HP_B5A.raw = 47 | 20140108_OR8_RP_HP_B5B.raw = 48 | 20140108_OR8_RP_HP_B6A.raw = 49 | 20140108_OR8_RP_HP_B6B.raw = 50 | 20140108_OR8_RP_HP_B7A.raw = 51 | 20140108_OR8_RP_HP_B7B.raw = 52 | 20140108_OR8_RP_HP_B8A.raw = 53 | 20140108_OR8_RP_HP_B8B.raw = 54 | 20140108_OR8_RP_HP_B9A.raw = 55 | 20140113_OR8_RP_HP_B10A_rr.raw = 22 | 20140113_OR8_RP_HP_B10B.raw = 56 | 20140113_OR8_RP_HP_B10B_rr.raw = 56 | 20140113_OR8_RP_HP_B12A_rr.raw = 23 | 20140113_OR8_RP_HP_B13B.raw = 57 | 20140113_OR8_RP_HP_B13B_rr.raw = 57 | 20140113_OR8_RP_HP_B14A_rr.raw = 25 | 20140113_OR8_RP_HP_B14B.raw = 58 | 20140113_OR8_RP_HP_B14B_rr.raw = 58 | 20140113_OR8_RP_HP_B15A_rr.raw = 26 | 20140113_OR8_RP_HP_B15B.raw = 59 | 20140113_OR8_RP_HP_B15B_rr.raw = 59 | 20140113_OR8_RP_HP_B16A_rr.raw = 27 | 20140113_OR8_RP_HP_B16B.raw = 60 | 20140113_OR8_RP_HP_B17A_rr.raw = 28 | 20140113_OR8_RP_HP_B17B.raw = 61 | 20140113_OR8_RP_HP_B17B_rr.raw = 61 | 20140113_OR8_RP_HP_B18A_rr.raw = 29 | 20140113_OR8_RP_HP_B18B.raw = 62 | 20140113_OR8_RP_HP_B18B_rr.raw = 62 | 20140113_OR8_RP_HP_B19A_rr.raw = 30 | 20140113_OR8_RP_HP_B19C.raw = 63 | 20140113_OR8_RP_HP_B19C_rr.raw = 63 | 20140113_OR8_RP_HP_B1B_rr.raw = 31 | 20140113_OR8_RP_HP_B20A_rr.raw = 32 | 20140113_OR8_RP_HP_B20C.raw = 64 | 20140113_OR8_RP_HP_B20C_rr.raw = 64 | 20140113_OR8_RP_HP_B21A_rr.raw = 33 | 20140113_OR8_RP_HP_B21B.raw = 65 | 20140113_OR8_RP_HP_B21B_rr.raw = 65 | 20140113_OR8_RP_HP_B2A_rr.raw = 34 | 20140113_OR8_RP_HP_B2B_rr.raw = 35 | 20140113_OR8_RP_HP_B35A_rr.raw = 36 | 20140113_OR8_RP_HP_B36A_rr.raw = 37 | 20140113_OR8_RP_HP_B37A_rr.raw = 38 | 20140113_OR8_RP_HP_B38A_rr.raw = 39 | 20140113_OR8_RP_HP_B39A_rr.raw = 40 | 20140113_OR8_RP_HP_B3A_rr.raw = 41 | 20140113_OR8_RP_HP_B3B_rr.raw = 42 | 20140113_OR8_RP_HP_B42A_rr.raw = 43 | 20140113_OR8_RP_HP_B43A_rr.raw = 44 | 20140113_OR8_RP_HP_B43B.raw = 66 | 20140113_OR8_RP_HP_B43B_rr.raw = 66 | 20140113_OR8_RP_HP_B44A.raw = 67 | 20140113_OR8_RP_HP_B44A_rr.raw = 67 | 20140113_OR8_RP_HP_B45A.raw = 68 | 20140113_OR8_RP_HP_B45A_rr.raw = 68 | 20140113_OR8_RP_HP_B47A.raw = 69 | 20140113_OR8_RP_HP_B47A_rr.raw = 69 | 20140113_OR8_RP_HP_B4A_rr.raw = 45 | 20140113_OR8_RP_HP_B4B_rr.raw = 46 | 20140113_OR8_RP_HP_B5A_rr.raw = 47 | 20140113_OR8_RP_HP_B5B_rr.raw = 48 | 20140113_OR8_RP_HP_B6A_rr.raw = 49 | 20140113_OR8_RP_HP_B6B_rr.raw = 50 | 20140113_OR8_RP_HP_B7A_rr.raw = 51 | 20140113_OR8_RP_HP_B7B_rr.raw = 52 | 20140113_OR8_RP_HP_B7C.raw = 70 | 20140113_OR8_RP_HP_B7C_rr.raw = 70 | 20140113_OR8_RP_HP_B8A_rr.raw = 53 | 20140113_OR8_RP_HP_B8B_rr.raw = 54 | 20140113_OR8_RP_HP_B9A_rr.raw = 55 | 20140113_OR8_RP_HP_B9B.raw = 71 | 20140113_OR8_RP_HP_B9B_rr.raw = 71 | 20140117_OR8_RP_HP_B16B_rr.raw = 60",
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents biological replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes analyzing a training set of 34 patients and validation sets, implying multiple independent biological samples.",
+        "TRUTH_CHECK": "The mapping assigns every single run to biological replicate 1, regardless of the source (Sample 1 through Sample 71). Since these are different patient samples, they are independent biological units and must have distinct replicate indices.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20131217_OR8_RP_HP_C1.raw = 1 | 20131217_OR8_RP_HP_C1_rr.raw = 2 | 20131217_OR8_RP_HP_C1b.raw = 1 | 20131217_OR8_RP_HP_C1b_rr.raw = 2 | 20131217_OR8_RP_HP_C3.raw = 1 | 20131217_OR8_RP_HP_C3_rr.raw = 2 | 20131217_OR8_RP_HP_C3b.raw = 1 | 20131217_OR8_RP_HP_C3b_rr.raw = 2 | 20131217_OR8_RP_HP_C3c.raw = 1 | 20131217_OR8_RP_HP_C3c_rr.raw = 2 | 20131217_OR8_RP_HP_C4.raw = 1 | 20131217_OR8_RP_HP_C4_rr.raw = 2 | 20131217_OR8_RP_HP_C4b.raw = 1 | 20131217_OR8_RP_HP_C4b_rr.raw = 2 | 20131217_OR8_RP_HP_C4c.raw = 1 | 20131217_OR8_RP_HP_C4c_rr.raw = 2 | 20131217_OR8_RP_HP_C5.raw = 1 | 20131217_OR8_RP_HP_C5_rr.raw = 2 | 20131217_OR8_RP_HP_C5b.raw = 1 | 20131217_OR8_RP_HP_C5b_rr.raw = 2 | 20131217_OR8_RP_HP_C5c.raw = 1 | 20131217_OR8_RP_HP_C5c_rr.raw = 2 | 20131217_OR8_RP_HP_C6.raw = 1 | 20131217_OR8_RP_HP_C6_rr.raw = 2 | 20131217_OR8_RP_HP_C6b.raw = 1 | 20131217_OR8_RP_HP_C6b_rr.raw = 2 | 20131217_OR8_RP_HP_C7.raw = 1 | 20131217_OR8_RP_HP_C7_rr.raw = 2 | 20131217_OR8_RP_HP_C7b.raw = 1 | 20131217_OR8_RP_HP_C7b_rr.raw = 2 | 20131217_OR8_RP_HP_C8.raw = 1 | 20131217_OR8_RP_HP_C8_rr.raw = 2 | 20131217_OR8_RP_HP_C8b.raw = 1 | 20131217_OR8_RP_HP_C8b_rr.raw = 2 | 20131217_OR8_RP_HP_C9.raw = 1 | 20131217_OR8_RP_HP_C9_rr.raw = 2 | 20131217_OR8_RP_HP_C9b.raw = 1 | 20131217_OR8_RP_HP_C9b_rr.raw = 2 | 20131217_OR8_RP_HP_C10.raw = 1 | 20131217_OR8_RP_HP_C10_rr.raw = 2 | 20131217_OR8_RP_HP_C10b.raw = 1 | 20131217_OR8_RP_HP_C10b_rr.raw = 2 | 20140108_OR8_RP_HP_B10A.raw = 1 | 20140108_OR8_RP_HP_B12A.raw = 1 | 20140108_OR8_RP_HP_B13A.raw = 1 | 20140108_OR8_RP_HP_B14A.raw = 1 | 20140108_OR8_RP_HP_B15A.raw = 1 | 20140108_OR8_RP_HP_B16A.raw = 1 | 20140108_OR8_RP_HP_B17A.raw = 1 | 20140108_OR8_RP_HP_B18A.raw = 1 | 20140108_OR8_RP_HP_B19A.raw = 1 | 20140108_OR8_RP_HP_B1B.raw = 1 | 20140108_OR8_RP_HP_B20A.raw = 1 | 20140108_OR8_RP_HP_B21A.raw = 1 | 20140108_OR8_RP_HP_B2A.raw = 1 | 20140108_OR8_RP_HP_B2B.raw = 1 | 20140108_OR8_RP_HP_B35A.raw = 1 | 20140108_OR8_RP_HP_B36A.raw = 1 | 20140108_OR8_RP_HP_B37A.raw = 1 | 20140108_OR8_RP_HP_B38A.raw = 1 | 20140108_OR8_RP_HP_B39A.raw = 1 | 20140108_OR8_RP_HP_B3A.raw = 1 | 20140108_OR8_RP_HP_B3B.raw = 1 | 20140108_OR8_RP_HP_B42A.raw = 1 | 20140108_OR8_RP_HP_B43A.raw = 1 | 20140108_OR8_RP_HP_B4A.raw = 1 | 20140108_OR8_RP_HP_B4B.raw = 1 | 20140108_OR8_RP_HP_B5A.raw = 1 | 20140108_OR8_RP_HP_B5B.raw = 1 | 20140108_OR8_RP_HP_B6A.raw = 1 | 20140108_OR8_RP_HP_B6B.raw = 1 | 20140108_OR8_RP_HP_B7A.raw = 1 | 20140108_OR8_RP_HP_B7B.raw = 1 | 20140108_OR8_RP_HP_B8A.raw = 1 | 20140108_OR8_RP_HP_B8B.raw = 1 | 20140108_OR8_RP_HP_B9A.raw = 1 | 20140113_OR8_RP_HP_B10A_rr.raw = 2 | 20140113_OR8_RP_HP_B10B.raw = 1 | 20140113_OR8_RP_HP_B10B_rr.raw = 2 | 20140113_OR8_RP_HP_B12A_rr.raw = 2 | 20140113_OR8_RP_HP_B13B.raw = 1 | 20140113_OR8_RP_HP_B13B_rr.raw = 2 | 20140113_OR8_RP_HP_B14A_rr.raw = 2 | 20140113_OR8_RP_HP_B14B.raw = 1 | 20140113_OR8_RP_HP_B14B_rr.raw = 2 | 20140113_OR8_RP_HP_B15A_rr.raw = 2 | 20140113_OR8_RP_HP_B15B.raw = 1 | 20140113_OR8_RP_HP_B15B_rr.raw = 2 | 20140113_OR8_RP_HP_B16A_rr.raw = 2 | 20140113_OR8_RP_HP_B16B.raw = 1 | 20140113_OR8_RP_HP_B17A_rr.raw = 2 | 20140113_OR8_RP_HP_B17B.raw = 1 | 20140113_OR8_RP_HP_B17B_rr.raw = 2 | 20140113_OR8_RP_HP_B18A_rr.raw = 2 | 20140113_OR8_RP_HP_B18B.raw = 1 | 20140113_OR8_RP_HP_B18B_rr.raw = 2 | 20140113_OR8_RP_HP_B19A_rr.raw = 2 | 20140113_OR8_RP_HP_B19C.raw = 1 | 20140113_OR8_RP_HP_B19C_rr.raw = 2 | 20140113_OR8_RP_HP_B1B_rr.raw = 2 | 20140113_OR8_RP_HP_B20A_rr.raw = 2 | 20140113_OR8_RP_HP_B20C.raw = 1 | 20140113_OR8_RP_HP_B20C_rr.raw = 2 | 20140113_OR8_RP_HP_B21A_rr.raw = 2 | 20140113_OR8_RP_HP_B21B.raw = 1 | 20140113_OR8_RP_HP_B21B_rr.raw = 2 | 20140113_OR8_RP_HP_B2A_rr.raw = 2 | 20140113_OR8_RP_HP_B2B_rr.raw = 2 | 20140113_OR8_RP_HP_B35A_rr.raw = 2 | 20140113_OR8_RP_HP_B36A_rr.raw = 2 | 20140113_OR8_RP_HP_B37A_rr.raw = 2 | 20140113_OR8_RP_HP_B38A_rr.raw = 2 | 20140113_OR8_RP_HP_B39A_rr.raw = 2 | 20140113_OR8_RP_HP_B3A_rr.raw = 2 | 20140113_OR8_RP_HP_B3B_rr.raw = 2 | 20140113_OR8_RP_HP_B42A_rr.raw = 2 | 20140113_OR8_RP_HP_B43A_rr.raw = 2 | 20140113_OR8_RP_HP_B43B.raw = 1 | 20140113_OR8_RP_HP_B43B_rr.raw = 2 | 20140113_OR8_RP_HP_B44A.raw = 1 | 20140113_OR8_RP_HP_B44A_rr.raw = 2 | 20140113_OR8_RP_HP_B45A.raw = 1 | 20140113_OR8_RP_HP_B45A_rr.raw = 2 | 20140113_OR8_RP_HP_B47A.raw = 1 | 20140113_OR8_RP_HP_B47A_rr.raw = 2 | 20140113_OR8_RP_HP_B4A_rr.raw = 2 | 20140113_OR8_RP_HP_B4B_rr.raw = 2 | 20140113_OR8_RP_HP_B5A_rr.raw = 2 | 20140113_OR8_RP_HP_B5B_rr.raw = 2 | 20140113_OR8_RP_HP_B6A_rr.raw = 2 | 20140113_OR8_RP_HP_B6B_rr.raw = 2 | 20140113_OR8_RP_HP_B7A_rr.raw = 2 | 20140113_OR8_RP_HP_B7B_rr.raw = 2 | 20140113_OR8_RP_HP_B7C.raw = 1 | 20140113_OR8_RP_HP_B7C_rr.raw = 2 | 20140113_OR8_RP_HP_B8A_rr.raw = 2 | 20140113_OR8_RP_HP_B8B_rr.raw = 2 | 20140113_OR8_RP_HP_B9A_rr.raw = 2 | 20140113_OR8_RP_HP_B9B.raw = 1 | 20140113_OR8_RP_HP_B9B_rr.raw = 2 | 20140117_OR8_RP_HP_B16B_rr.raw = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a \"label-free single-shot strategy\", but the raw filenames (containing \"_rr\") and the mapping indicate that some samples were run twice.",
+        "TRUTH_CHECK": "The mapping correctly assigns index 1 to the first run of a sample and index 2 to the repeated run (indicated by \"_rr\") of the same sample.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index following the definition."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20131217_OR8_RP_HP_C1.raw = 1 | 20131217_OR8_RP_HP_C1_rr.raw = 1 | 20131217_OR8_RP_HP_C1b.raw = 1 | 20131217_OR8_RP_HP_C1b_rr.raw = 1 | 20131217_OR8_RP_HP_C3.raw = 1 | 20131217_OR8_RP_HP_C3_rr.raw = 1 | 20131217_OR8_RP_HP_C3b.raw = 1 | 20131217_OR8_RP_HP_C3b_rr.raw = 1 | 20131217_OR8_RP_HP_C3c.raw = 1 | 20131217_OR8_RP_HP_C3c_rr.raw = 1 | 20131217_OR8_RP_HP_C4.raw = 1 | 20131217_OR8_RP_HP_C4_rr.raw = 1 | 20131217_OR8_RP_HP_C4b.raw = 1 | 20131217_OR8_RP_HP_C4b_rr.raw = 1 | 20131217_OR8_RP_HP_C4c.raw = 1 | 20131217_OR8_RP_HP_C4c_rr.raw = 1 | 20131217_OR8_RP_HP_C5.raw = 1 | 20131217_OR8_RP_HP_C5_rr.raw = 1 | 20131217_OR8_RP_HP_C5b.raw = 1 | 20131217_OR8_RP_HP_C5b_rr.raw = 1 | 20131217_OR8_RP_HP_C5c.raw = 1 | 20131217_OR8_RP_HP_C5c_rr.raw = 1 | 20131217_OR8_RP_HP_C6.raw = 1 | 20131217_OR8_RP_HP_C6_rr.raw = 1 | 20131217_OR8_RP_HP_C6b.raw = 1 | 20131217_OR8_RP_HP_C6b_rr.raw = 1 | 20131217_OR8_RP_HP_C7.raw = 1 | 20131217_OR8_RP_HP_C7_rr.raw = 1 | 20131217_OR8_RP_HP_C7b.raw = 1 | 20131217_OR8_RP_HP_C7b_rr.raw = 1 | 20131217_OR8_RP_HP_C8.raw = 1 | 20131217_OR8_RP_HP_C8_rr.raw = 1 | 20131217_OR8_RP_HP_C8b.raw = 1 | 20131217_OR8_RP_HP_C8b_rr.raw = 1 | 20131217_OR8_RP_HP_C9.raw = 1 | 20131217_OR8_RP_HP_C9_rr.raw = 1 | 20131217_OR8_RP_HP_C9b.raw = 1 | 20131217_OR8_RP_HP_C9b_rr.raw = 1 | 20131217_OR8_RP_HP_C10.raw = 1 | 20131217_OR8_RP_HP_C10_rr.raw = 1 | 20131217_OR8_RP_HP_C10b.raw = 1 | 20131217_OR8_RP_HP_C10b_rr.raw = 1 | 20140108_OR8_RP_HP_B10A.raw = 1 | 20140108_OR8_RP_HP_B12A.raw = 1 | 20140108_OR8_RP_HP_B13A.raw = 1 | 20140108_OR8_RP_HP_B14A.raw = 1 | 20140108_OR8_RP_HP_B15A.raw = 1 | 20140108_OR8_RP_HP_B16A.raw = 1 | 20140108_OR8_RP_HP_B17A.raw = 1 | 20140108_OR8_RP_HP_B18A.raw = 1 | 20140108_OR8_RP_HP_B19A.raw = 1 | 20140108_OR8_RP_HP_B1B.raw = 1 | 20140108_OR8_RP_HP_B20A.raw = 1 | 20140108_OR8_RP_HP_B21A.raw = 1 | 20140108_OR8_RP_HP_B2A.raw = 1 | 20140108_OR8_RP_HP_B2B.raw = 1 | 20140108_OR8_RP_HP_B35A.raw = 1 | 20140108_OR8_RP_HP_B36A.raw = 1 | 20140108_OR8_RP_HP_B37A.raw = 1 | 20140108_OR8_RP_HP_B38A.raw = 1 | 20140108_OR8_RP_HP_B39A.raw = 1 | 20140108_OR8_RP_HP_B3A.raw = 1 | 20140108_OR8_RP_HP_B3B.raw = 1 | 20140108_OR8_RP_HP_B42A.raw = 1 | 20140108_OR8_RP_HP_B43A.raw = 1 | 20140108_OR8_RP_HP_B4A.raw = 1 | 20140108_OR8_RP_HP_B4B.raw = 1 | 20140108_OR8_RP_HP_B5A.raw = 1 | 20140108_OR8_RP_HP_B5B.raw = 1 | 20140108_OR8_RP_HP_B6A.raw = 1 | 20140108_OR8_RP_HP_B6B.raw = 1 | 20140108_OR8_RP_HP_B7A.raw = 1 | 20140108_OR8_RP_HP_B7B.raw = 1 | 20140108_OR8_RP_HP_B8A.raw = 1 | 20140108_OR8_RP_HP_B8B.raw = 1 | 20140108_OR8_RP_HP_B9A.raw = 1 | 20140113_OR8_RP_HP_B10A_rr.raw = 1 | 20140113_OR8_RP_HP_B10B.raw = 1 | 20140113_OR8_RP_HP_B10B_rr.raw = 1 | 20140113_OR8_RP_HP_B12A_rr.raw = 1 | 20140113_OR8_RP_HP_B13B.raw = 1 | 20140113_OR8_RP_HP_B13B_rr.raw = 1 | 20140113_OR8_RP_HP_B14A_rr.raw = 1 | 20140113_OR8_RP_HP_B14B.raw = 1 | 20140113_OR8_RP_HP_B14B_rr.raw = 1 | 20140113_OR8_RP_HP_B15A_rr.raw = 1 | 20140113_OR8_RP_HP_B15B.raw = 1 | 20140113_OR8_RP_HP_B15B_rr.raw = 1 | 20140113_OR8_RP_HP_B16A_rr.raw = 1 | 20140113_OR8_RP_HP_B16B.raw = 1 | 20140113_OR8_RP_HP_B17A_rr.raw = 1 | 20140113_OR8_RP_HP_B17B.raw = 1 | 20140113_OR8_RP_HP_B17B_rr.raw = 1 | 20140113_OR8_RP_HP_B18A_rr.raw = 1 | 20140113_OR8_RP_HP_B18B.raw = 1 | 20140113_OR8_RP_HP_B18B_rr.raw = 1 | 20140113_OR8_RP_HP_B19A_rr.raw = 1 | 20140113_OR8_RP_HP_B19C.raw = 1 | 20140113_OR8_RP_HP_B19C_rr.raw = 1 | 20140113_OR8_RP_HP_B1B_rr.raw = 1 | 20140113_OR8_RP_HP_B20A_rr.raw = 1 | 20140113_OR8_RP_HP_B20C.raw = 1 | 20140113_OR8_RP_HP_B20C_rr.raw = 1 | 20140113_OR8_RP_HP_B21A_rr.raw = 1 | 20140113_OR8_RP_HP_B21B.raw = 1 | 20140113_OR8_RP_HP_B21B_rr.raw = 1 | 20140113_OR8_RP_HP_B2A_rr.raw = 1 | 20140113_OR8_RP_HP_B2B_rr.raw = 1 | 20140113_OR8_RP_HP_B35A_rr.raw = 1 | 20140113_OR8_RP_HP_B36A_rr.raw = 1 | 20140113_OR8_RP_HP_B37A_rr.raw = 1 | 20140113_OR8_RP_HP_B38A_rr.raw = 1 | 20140113_OR8_RP_HP_B39A_rr.raw = 1 | 20140113_OR8_RP_HP_B3A_rr.raw = 1 | 20140113_OR8_RP_HP_B3B_rr.raw = 1 | 20140113_OR8_RP_HP_B42A_rr.raw = 1 | 20140113_OR8_RP_HP_B43A_rr.raw = 1 | 20140113_OR8_RP_HP_B43B.raw = 1 | 20140113_OR8_RP_HP_B43B_rr.raw = 1 | 20140113_OR8_RP_HP_B44A.raw = 1 | 20140113_OR8_RP_HP_B44A_rr.raw = 1 | 20140113_OR8_RP_HP_B45A.raw = 1 | 20140113_OR8_RP_HP_B45A_rr.raw = 1 | 20140113_OR8_RP_HP_B47A.raw = 1 | 20140113_OR8_RP_HP_B47A_rr.raw = 1 | 20140113_OR8_RP_HP_B4A_rr.raw = 1 | 20140113_OR8_RP_HP_B4B_rr.raw = 1 | 20140113_OR8_RP_HP_B5A_rr.raw = 1 | 20140113_OR8_RP_HP_B5B_rr.raw = 1 | 20140113_OR8_RP_HP_B6A_rr.raw = 1 | 20140113_OR8_RP_HP_B6B_rr.raw = 1 | 20140113_OR8_RP_HP_B7A_rr.raw = 1 | 20140113_OR8_RP_HP_B7B_rr.raw = 1 | 20140113_OR8_RP_HP_B7C.raw = 1 | 20140113_OR8_RP_HP_B7C_rr.raw = 1 | 20140113_OR8_RP_HP_B8A_rr.raw = 1 | 20140113_OR8_RP_HP_B8B_rr.raw = 1 | 20140113_OR8_RP_HP_B9A_rr.raw = 1 | 20140113_OR8_RP_HP_B9B.raw = 1 | 20140113_OR8_RP_HP_B9B_rr.raw = 1 | 20140117_OR8_RP_HP_B16B_rr.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the fraction_identifier field.",
+        "SOURCE_CHECK": "The paper describes phosphopeptide enrichment using Ti4+-IMAC, but it does not describe any offline fractionation of the resulting eluates into multiple fractions.",
+        "TRUTH_CHECK": "Since no offline fractionation is described, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the SDRF convention for no fractionation."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "20131217_OR8_RP_HP_C1.raw = not applicable | 20131217_OR8_RP_HP_C1_rr.raw = not applicable | 20131217_OR8_RP_HP_C1b.raw = not applicable | 20131217_OR8_RP_HP_C1b_rr.raw = not applicable | 20131217_OR8_RP_HP_C3.raw = not applicable | 20131217_OR8_RP_HP_C3_rr.raw = not applicable | 20131217_OR8_RP_HP_C3b.raw = not applicable | 20131217_OR8_RP_HP_C3b_rr.raw = not applicable | 20131217_OR8_RP_HP_C3c.raw = not applicable | 20131217_OR8_RP_HP_C3c_rr.raw = not applicable | 20131217_OR8_RP_HP_C4.raw = not applicable | 20131217_OR8_RP_HP_C4_rr.raw = not applicable | 20131217_OR8_RP_HP_C4b.raw = not applicable | 20131217_OR8_RP_HP_C4b_rr.raw = not applicable | 20131217_OR8_RP_HP_C4c.raw = not applicable | 20131217_OR8_RP_HP_C4c_rr.raw = not applicable | 20131217_OR8_RP_HP_C5.raw = not applicable | 20131217_OR8_RP_HP_C5_rr.raw = not applicable | 20131217_OR8_RP_HP_C5b.raw = not applicable | 20131217_OR8_RP_HP_C5b_rr.raw = not applicable | 20131217_OR8_RP_HP_C5c.raw = not applicable | 20131217_OR8_RP_HP_C5c_rr.raw = not applicable | 20131217_OR8_RP_HP_C6.raw = not applicable | 20131217_OR8_RP_HP_C6_rr.raw = not applicable | 20131217_OR8_RP_HP_C6b.raw = not applicable | 20131217_OR8_RP_HP_C6b_rr.raw = not applicable | 20131217_OR8_RP_HP_C7.raw = not applicable | 20131217_OR8_RP_HP_C7_rr.raw = not applicable | 20131217_OR8_RP_HP_C7b.raw = not applicable | 20131217_OR8_RP_HP_C7b_rr.raw = not applicable | 20131217_OR8_RP_HP_C8.raw = not applicable | 20131217_OR8_RP_HP_C8_rr.raw = not applicable | 20131217_OR8_RP_HP_C8b.raw = not applicable | 20131217_OR8_RP_HP_C8b_rr.raw = not applicable | 20131217_OR8_RP_HP_C9.raw = not applicable | 20131217_OR8_RP_HP_C9_rr.raw = not applicable | 20131217_OR8_RP_HP_C9b.raw = not applicable | 20131217_OR8_RP_HP_C9b_rr.raw = not applicable | 20131217_OR8_RP_HP_C10.raw = not applicable | 20131217_OR8_RP_HP_C10_rr.raw = not applicable | 20131217_OR8_RP_HP_C10b.raw = not applicable | 20131217_OR8_RP_HP_C10b_rr.raw = not applicable | 20140108_OR8_RP_HP_B10A.raw = 4020303 | 20140108_OR8_RP_HP_B12A.raw = 4020361 | 20140108_OR8_RP_HP_B13A.raw = 4020351 | 20140108_OR8_RP_HP_B14A.raw = 4020326 | 20140108_OR8_RP_HP_B15A.raw = 4020194 | 20140108_OR8_RP_HP_B16A.raw = 4020171 | 20140108_OR8_RP_HP_B17A.raw = 46090827 | 20140108_OR8_RP_HP_B18A.raw = 46090821 | 20140108_OR8_RP_HP_B19A.raw = 46090817 | 20140108_OR8_RP_HP_B1B.raw = 4030239 | 20140108_OR8_RP_HP_B20A.raw = 110113 | 20140108_OR8_RP_HP_B21A.raw = 110112 | 20140108_OR8_RP_HP_B2A.raw = 4030181 | 20140108_OR8_RP_HP_B2B.raw = 4030181 | 20140108_OR8_RP_HP_B35A.raw = 11010247 | 20140108_OR8_RP_HP_B36A.raw = 11010310 | 20140108_OR8_RP_HP_B37A.raw = 11040041 | 20140108_OR8_RP_HP_B38A.raw = 11050016 | 20140108_OR8_RP_HP_B39A.raw = 11050061 | 20140108_OR8_RP_HP_B3A.raw = 4030124 | 20140108_OR8_RP_HP_B3B.raw = 4030124 | 20140108_OR8_RP_HP_B42A.raw = 11060331 | 20140108_OR8_RP_HP_B43A.raw = 11020374 | 20140108_OR8_RP_HP_B4A.raw = 4020534 | 20140108_OR8_RP_HP_B4B.raw = 4020534 | 20140108_OR8_RP_HP_B5A.raw = 4020467 | 20140108_OR8_RP_HP_B5B.raw = 4020467 | 20140108_OR8_RP_HP_B6A.raw = 4020373 | 20140108_OR8_RP_HP_B6B.raw = 4020373 | 20140108_OR8_RP_HP_B7A.raw = 4020348 | 20140108_OR8_RP_HP_B7B.raw = 4020348 | 20140108_OR8_RP_HP_B8A.raw = 4020328 | 20140108_OR8_RP_HP_B8B.raw = 4020328 | 20140108_OR8_RP_HP_B9A.raw = 4020325 | 20140113_OR8_RP_HP_B10A_rr.raw = 4020303 | 20140113_OR8_RP_HP_B10B.raw = 4020303 | 20140113_OR8_RP_HP_B10B_rr.raw = 4020303 | 20140113_OR8_RP_HP_B12A_rr.raw = 4020361 | 20140113_OR8_RP_HP_B13B.raw = 4020351 | 20140113_OR8_RP_HP_B13B_rr.raw = 4020351 | 20140113_OR8_RP_HP_B14A_rr.raw = 4020326 | 20140113_OR8_RP_HP_B14B.raw = 4020326 | 20140113_OR8_RP_HP_B14B_rr.raw = 4020326 | 20140113_OR8_RP_HP_B15A_rr.raw = 4020194 | 20140113_OR8_RP_HP_B15B.raw = 4020194 | 20140113_OR8_RP_HP_B15B_rr.raw = 4020194 | 20140113_OR8_RP_HP_B16A_rr.raw = 4020171 | 20140113_OR8_RP_HP_B16B.raw = 4020171 | 20140113_OR8_RP_HP_B17A_rr.raw = 46090827 | 20140113_OR8_RP_HP_B17B.raw = 46090827 | 20140113_OR8_RP_HP_B17B_rr.raw = 46090827 | 20140113_OR8_RP_HP_B18A_rr.raw = 46090821 | 20140113_OR8_RP_HP_B18B.raw = 46090821 | 20140113_OR8_RP_HP_B18B_rr.raw = 46090821 | 20140113_OR8_RP_HP_B19A_rr.raw = 46090817 | 20140113_OR8_RP_HP_B19C.raw = 46090817 | 20140113_OR8_RP_HP_B19C_rr.raw = 46090817 | 20140113_OR8_RP_HP_B1B_rr.raw = 4030239 | 20140113_OR8_RP_HP_B20A_rr.raw = 110113 | 20140113_OR8_RP_HP_B20C.raw = 110113 | 20140113_OR8_RP_HP_B20C_rr.raw = 110113 | 20140113_OR8_RP_HP_B21A_rr.raw = 110112 | 20140113_OR8_RP_HP_B21B.raw = 110112 | 20140113_OR8_RP_HP_B21B_rr.raw = 110112 | 20140113_OR8_RP_HP_B2A_rr.raw = 4030181 | 20140113_OR8_RP_HP_B2B_rr.raw = 4030181 | 20140113_OR8_RP_HP_B35A_rr.raw = 11010247 | 20140113_OR8_RP_HP_B36A_rr.raw = 11010310 | 20140113_OR8_RP_HP_B37A_rr.raw = 11040041 | 20140113_OR8_RP_HP_B38A_rr.raw = 11050016 | 20140113_OR8_RP_HP_B39A_rr.raw = 11050061 | 20140113_OR8_RP_HP_B3A_rr.raw = 4030124 | 20140113_OR8_RP_HP_B3B_rr.raw = 4030124 | 20140113_OR8_RP_HP_B42A_rr.raw = 11060331 | 20140113_OR8_RP_HP_B43A_rr.raw = 11020374 | 20140113_OR8_RP_HP_B43B.raw = 11020374 | 20140113_OR8_RP_HP_B43B_rr.raw = 11020374 | 20140113_OR8_RP_HP_B44A.raw = 11060260 | 20140113_OR8_RP_HP_B44A_rr.raw = 11060260 | 20140113_OR8_RP_HP_B45A.raw = 11070168 | 20140113_OR8_RP_HP_B45A_rr.raw = 11070168 | 20140113_OR8_RP_HP_B47A.raw = 11080169 | 20140113_OR8_RP_HP_B47A_rr.raw = 11080169 | 20140113_OR8_RP_HP_B4A_rr.raw = 4020534 | 20140113_OR8_RP_HP_B4B_rr.raw = 4020534 | 20140113_OR8_RP_HP_B5A_rr.raw = 4020467 | 20140113_OR8_RP_HP_B5B_rr.raw = 4020467 | 20140113_OR8_RP_HP_B6A_rr.raw = 4020373 | 20140113_OR8_RP_HP_B6B_rr.raw = 4020373 | 20140113_OR8_RP_HP_B7A_rr.raw = 4020348 | 20140113_OR8_RP_HP_B7B_rr.raw = 4020348 | 20140113_OR8_RP_HP_B7C.raw = 4020348 | 20140113_OR8_RP_HP_B7C_rr.raw = 4020348 | 20140113_OR8_RP_HP_B8A_rr.raw = 4020328 | 20140113_OR8_RP_HP_B8B_rr.raw = 4020328 | 20140113_OR8_RP_HP_B9A_rr.raw = 4020325 | 20140113_OR8_RP_HP_B9B.raw = 4020325 | 20140113_OR8_RP_HP_B9B_rr.raw = 4020325 | 20140117_OR8_RP_HP_B16B_rr.raw = 4020171",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents individual identifiers, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions a training set of 34 patients and validation sets, but it does not list the specific individual IDs (e.g., \"4020303\") provided in the candidate value.",
+        "TRUTH_CHECK": "Since the IDs are not in the text, they cannot be verified as correct for the runs.",
+        "COMPLETENESS_CHECK": "The format is a mapping of run keys to values, which is correct for a verify_runs task."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[phenotype]",
+      "extracted_value": "20131217_OR8_RP_HP_C1.raw = indolent | 20131217_OR8_RP_HP_C1_rr.raw = indolent | 20131217_OR8_RP_HP_C1b.raw = indolent | 20131217_OR8_RP_HP_C1b_rr.raw = indolent | 20131217_OR8_RP_HP_C3.raw = indolent | 20131217_OR8_RP_HP_C3_rr.raw = indolent | 20131217_OR8_RP_HP_C3b.raw = indolent | 20131217_OR8_RP_HP_C3b_rr.raw = indolent | 20131217_OR8_RP_HP_C3c.raw = indolent | 20131217_OR8_RP_HP_C3c_rr.raw = indolent | 20131217_OR8_RP_HP_C4.raw = agressive | 20131217_OR8_RP_HP_C4_rr.raw = agressive | 20131217_OR8_RP_HP_C4b.raw = agressive | 20131217_OR8_RP_HP_C4b_rr.raw = agressive | 20131217_OR8_RP_HP_C4c.raw = agressive | 20131217_OR8_RP_HP_C4c_rr.raw = agressive | 20131217_OR8_RP_HP_C5.raw = agressive | 20131217_OR8_RP_HP_C5_rr.raw = agressive | 20131217_OR8_RP_HP_C5b.raw = agressive | 20131217_OR8_RP_HP_C5b_rr.raw = agressive | 20131217_OR8_RP_HP_C5c.raw = agressive | 20131217_OR8_RP_HP_C5c_rr.raw = agressive | 20131217_OR8_RP_HP_C6.raw = indolent | 20131217_OR8_RP_HP_C6_rr.raw = indolent | 20131217_OR8_RP_HP_C6b.raw = indolent | 20131217_OR8_RP_HP_C6b_rr.raw = indolent | 20131217_OR8_RP_HP_C7.raw = indolent | 20131217_OR8_RP_HP_C7_rr.raw = indolent | 20131217_OR8_RP_HP_C7b.raw = indolent | 20131217_OR8_RP_HP_C7b_rr.raw = indolent | 20131217_OR8_RP_HP_C8.raw = indolent | 20131217_OR8_RP_HP_C8_rr.raw = indolent | 20131217_OR8_RP_HP_C8b.raw = indolent | 20131217_OR8_RP_HP_C8b_rr.raw = indolent | 20131217_OR8_RP_HP_C9.raw = indolent | 20131217_OR8_RP_HP_C9_rr.raw = indolent | 20131217_OR8_RP_HP_C9b.raw = agressive | 20131217_OR8_RP_HP_C9b_rr.raw = agressive | 20131217_OR8_RP_HP_C10.raw = agressive | 20131217_OR8_RP_HP_C10_rr.raw = agressive | 20131217_OR8_RP_HP_C10b.raw = indolent | 20131217_OR8_RP_HP_C10b_rr.raw = indolent | 20140108_OR8_RP_HP_B10A.raw = indolent | 20140108_OR8_RP_HP_B12A.raw = indolent | 20140108_OR8_RP_HP_B13A.raw = no relapse | 20140108_OR8_RP_HP_B14A.raw = no relapse | 20140108_OR8_RP_HP_B15A.raw = no relapse | 20140108_OR8_RP_HP_B16A.raw = no relapse | 20140108_OR8_RP_HP_B17A.raw = relapse | 20140108_OR8_RP_HP_B18A.raw = relapse | 20140108_OR8_RP_HP_B19A.raw = no relapse | 20140108_OR8_RP_HP_B1B.raw = no relapse | 20140108_OR8_RP_HP_B20A.raw = no relapse | 20140108_OR8_RP_HP_B21A.raw = no relapse | 20140108_OR8_RP_HP_B2A.raw = no relapse | 20140108_OR8_RP_HP_B2B.raw = no relapse | 20140108_OR8_RP_HP_B35A.raw = no relapse | 20140108_OR8_RP_HP_B36A.raw = no relapse | 20140108_OR8_RP_HP_B37A.raw = no relapse | 20140108_OR8_RP_HP_B38A.raw = no relapse | 20140108_OR8_RP_HP_B39A.raw = no relapse | 20140108_OR8_RP_HP_B3A.raw = no relapse | 20140108_OR8_RP_HP_B3B.raw = no relapse | 20140108_OR8_RP_HP_B42A.raw = relapse | 20140108_OR8_RP_HP_B43A.raw = relapse | 20140108_OR8_RP_HP_B4A.raw = no relapse | 20140108_OR8_RP_HP_B4B.raw = relapse | 20140108_OR8_RP_HP_B5A.raw = relapse | 20140108_OR8_RP_HP_B5B.raw = relapse | 20140108_OR8_RP_HP_B6A.raw = relapse | 20140108_OR8_RP_HP_B6B.raw = relapse | 20140108_OR8_RP_HP_B7A.raw = relapse | 20140108_OR8_RP_HP_B7B.raw = relapse | 20140108_OR8_RP_HP_B8A.raw = no relapse | 20140108_OR8_RP_HP_B8B.raw = no relapse | 20140108_OR8_RP_HP_B9A.raw = no relapse | 20140113_OR8_RP_HP_B10A_rr.raw = no relapse | 20140113_OR8_RP_HP_B10B.raw = relapse | 20140113_OR8_RP_HP_B10B_rr.raw = no relapse | 20140113_OR8_RP_HP_B12A_rr.raw = no relapse | 20140113_OR8_RP_HP_B13B.raw = no relapse | 20140113_OR8_RP_HP_B13B_rr.raw = no relapse | 20140113_OR8_RP_HP_B14A_rr.raw = no relapse | 20140113_OR8_RP_HP_B14B.raw = no relapse | 20140113_OR8_RP_HP_B14B_rr.raw = no relapse | 20140113_OR8_RP_HP_B15A_rr.raw = no relapse | 20140113_OR8_RP_HP_B15B.raw = no relapse | 20140113_OR8_RP_HP_B15B_rr.raw = relapse | 20140113_OR8_RP_HP_B16A_rr.raw = relapse | 20140113_OR8_RP_HP_B16B.raw = relapse | 20140113_OR8_RP_HP_B17A_rr.raw = relapse | 20140113_OR8_RP_HP_B17B.raw = relapse | 20140113_OR8_RP_HP_B17B_rr.raw = no relapse | 20140113_OR8_RP_HP_B18A_rr.raw = no relapse | 20140113_OR8_RP_HP_B18B.raw = no relapse | 20140113_OR8_RP_HP_B18B_rr.raw = no relapse | 20140113_OR8_RP_HP_B19A_rr.raw = no relapse | 20140113_OR8_RP_HP_B19C.raw = no relapse | 20140113_OR8_RP_HP_B19C_rr.raw = no relapse | 20140113_OR8_RP_HP_B1B_rr.raw = no relapse | 20140113_OR8_RP_HP_B20A_rr.raw = no relapse | 20140113_OR8_RP_HP_B20C.raw = no relapse | 20140113_OR8_RP_HP_B20C_rr.raw = no relapse | 20140113_OR8_RP_HP_B21A_rr.raw = no relapse | 20140113_OR8_RP_HP_B21B.raw = no relapse | 20140113_OR8_RP_HP_B21B_rr.raw = no relapse | 20140113_OR8_RP_HP_B2A_rr.raw = no relapse | 20140113_OR8_RP_HP_B2B_rr.raw = no relapse | 20140113_OR8_RP_HP_B35A_rr.raw = no relapse | 20140113_OR8_RP_HP_B36A_rr.raw = no relapse | 20140113_OR8_RP_HP_B37A_rr.raw = no relapse | 20140113_OR8_RP_HP_B38A_rr.raw = no relapse | 20140113_OR8_RP_HP_B39A_rr.raw = no relapse | 20140113_OR8_RP_HP_B3A_rr.raw = no relapse | 20140113_OR8_RP_HP_B3B_rr.raw = no relapse | 20140113_OR8_RP_HP_B42A_rr.raw = relapse | 20140113_OR8_RP_HP_B43A_rr.raw = relapse | 20140113_OR8_RP_HP_B43B.raw = no relapse | 20140113_OR8_RP_HP_B43B_rr.raw = relapse | 20140113_OR8_RP_HP_B44A.raw = relapse | 20140113_OR8_RP_HP_B44A_rr.raw = relapse | 20140113_OR8_RP_HP_B45A.raw = relapse | 20140113_OR8_RP_HP_B45A_rr.raw = relapse | 20140113_OR8_RP_HP_B47A.raw = relapse | 20140113_OR8_RP_HP_B47A_rr.raw = relapse | 20140113_OR8_RP_HP_B4A_rr.raw = relapse | 20140113_OR8_RP_HP_B4B_rr.raw = relapse | 20140113_OR8_RP_HP_B5A_rr.raw = relapse | 20140113_OR8_RP_HP_B5B_rr.raw = relapse | 20140113_OR8_RP_HP_B6A_rr.raw = relapse | 20140113_OR8_RP_HP_B6B_rr.raw = relapse | 20140113_OR8_RP_HP_B7A_rr.raw = relapse | 20140113_OR8_RP_HP_B7B_rr.raw = relapse | 20140113_OR8_RP_HP_B7C.raw = no relapse | 20140113_OR8_RP_HP_B7C_rr.raw = no relapse | 20140113_OR8_RP_HP_B8A_rr.raw = no relapse | 20140113_OR8_RP_HP_B8B_rr.raw = no relapse | 20140113_OR8_RP_HP_B9A_rr.raw = no relapse | 20140113_OR8_RP_HP_B9B.raw = no relapse | 20140113_OR8_RP_HP_B9B_rr.raw = relapse | 20140117_OR8_RP_HP_B16B_rr.raw = relapse",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the phenotype/clinical outcome of the samples, which is the studied variable.",
+        "SOURCE_CHECK": "The paper mentions \"relapsed cases\" and \"relapse-free rate\" (no relapse), as well as \"aggressive and indolent triple-negative cell lines\".",
+        "TRUTH_CHECK": "The mapping assigns \"indolent\" and \"agressive\" to some runs and \"relapse\" and \"no relapse\" to others. However, the paper describes two distinct groups: a training set of patients (relapsed vs cured/no relapse) and a set of cell lines (aggressive vs indolent). The runs provided in the mapping are mixed, and the paper does not provide a per-sample list to verify which specific raw file corresponds to which phenotype. Furthermore, some runs for the same sample (e.g., 20140113_OR8_RP_HP_B10B.raw and its rr version) are assigned different values (relapse vs no relapse), which is logically impossible for a biological phenotype.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is inconsistent."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "indolent",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/clinical characteristic, which is the correct type of information for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"aggressive and indolent triple-negative cell lines\" in the KSEA section.",
+        "TRUTH_CHECK": "The value \"indolent\" is used to describe a group of cell lines analyzed in the phosphoproteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "agressive",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a phenotype/characteristic of the samples, which is the correct purpose for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"aggressive and indolent triple-negative cell lines\" in the KSEA section.",
+        "TRUTH_CHECK": "The value \"agressive\" (despite the misspelling) refers to the aggressive phenotype of the cell lines analyzed in the phosphoproteomics experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "no relapse",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a clinical phenotype (relapse status), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper discusses \"relapsed cases\" and \"relapse-free rate\" in the abstract, supporting the existence of a relapse/no-relapse distinction.",
+        "TRUTH_CHECK": "The value \"no relapse\" correctly describes the phenotype of the patients who did not relapse, as mentioned in the abstract.",
+        "COMPLETENESS_CHECK": "The value is a plain text description of the phenotype."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[phenotype]",
+      "extracted_value": "relapse",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a clinical phenotype (relapse), which is appropriate for a characteristics[phenotype] column.",
+        "SOURCE_CHECK": "The paper mentions \"relapsed cases\" and \"relapse-free rate\" in the abstract.",
+        "TRUTH_CHECK": "The study compares relapsed versus cured cases to build a functional taxonomy, making \"relapse\" a correct phenotype for the corresponding runs.",
+        "COMPLETENESS_CHECK": "The value is a simple term describing the phenotype."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "AC=MS:1000484; NT=Orbitrap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer, which is the correct type of information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper states that MS and MS/MS spectra were acquired in the Orbitrap for the Q Exactive Plus, and that survey scans were acquired in the Orbitrap for the LTQ-Orbitrap Elite.",
+        "TRUTH_CHECK": "The runs used instruments (Q Exactive Plus and LTQ-Orbitrap Elite) that both utilize an Orbitrap analyzer for high-resolution measurements.",
+        "COMPLETENESS_CHECK": "The value follows the key-value format and is complete."
+      }
+    }
+  ]
+}

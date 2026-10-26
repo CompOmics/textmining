@@ -1,0 +1,379 @@
+{
+  "paper_id": "PXD007555",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"12 human subjects\" and \"human subjects\", which allows the inference of \"homo sapiens\".",
+        "TRUTH_CHECK": "The analyzed cerebrospinal fluid is from human subjects.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "NT=cerebrospinal fluid;AC=UBERON:0001359",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biofluid/organism part, which fits the tissue field.",
+        "SOURCE_CHECK": "The paper explicitly states that cerebrospinal fluid (CSF) was analyzed.",
+        "TRUTH_CHECK": "The analyzed samples are cerebrospinal fluid.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "NT = healthy; AC = HP:0032322",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=normal",
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The paper states the subjects are \"healthy control subjects\" and \"neurologically unimpaired healthy subjects\".",
+        "TRUTH_CHECK": "The subjects are healthy.",
+        "COMPLETENESS_CHECK": "The SDRF term for healthy subjects is \"normal\", not \"healthy\"."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "anonymized",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"anonymized\" does not describe the age of the subjects.",
+        "SOURCE_CHECK": "The paper states the median age was 65, but it does not state that individual ages were anonymized; it mentions that \"anonymous data and materials\" were provided.",
+        "TRUTH_CHECK": "The value does not represent the age of the subjects.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "anonymized",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"anonymized\" does not describe a biological sex.",
+        "SOURCE_CHECK": "The paper mentions that \"Only the anonymous data and materials from the participants were provided\", but it does not state the sex of the individuals as \"anonymized\".",
+        "TRUTH_CHECK": "The value is not a biological sex.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The abstract and methods state that \"label-free quantification (LFQ)\" was used.",
+        "TRUTH_CHECK": "The runs are part of the LFQ experiment described.",
+        "COMPLETENESS_CHECK": "The value uses the SDRF controlled term \"label free sample\" as required."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive; AC = MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the use of a \"quadrupole orbitrap mass spectrometer (Q Exactive, Thermo Fisher Scientific, Bremen, Germany)\".",
+        "TRUTH_CHECK": "The instrument was used for the LC-MS/MS analysis of the CSF samples.",
+        "COMPLETENESS_CHECK": "Complete. The NT term matches the paper."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state \"Tryptic digestion was performed\" and \"The enzyme specificity was set to trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "NT=HCD; AC = PRIDE:0000590",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that the 10 ions with the highest intensities were selected for higher energy collision-induced dissociation (HCD) fragmentation.",
+        "TRUTH_CHECK": "HCD was used for the mass spectrometric analysis of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a global proteome analysis of CSF using LC-MS/MS, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the mass spectrometry experiment performed on all runs.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl; MT=fixed; PP=Anywhere;AC=Unimod:4; TA=C; MM= 57.021464; CF=H(3)C(2)NO",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"Cysteine carbamidomethylation was set as fixed\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the definition, although it contains extra fields (MM, CF) not required by the SDRF definition."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation; MT=variable; PP=Anywhere;AC=Unimod:35; TA=M; MM= 15.994915; CF=O",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"methionine oxidation... set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the definition, although it includes extra fields (MM, CF) not required by the SDRF definition, which is acceptable."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetylation; MT=variable; PP=Protein N-Term;AC=Unimod:1; TA=.; MM= 42.010565; CF=H(2)C(2)O",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"N-terminal acetylation were set as variable modifications\".",
+        "TRUTH_CHECK": "The modification is correctly attributed to the runs.",
+        "COMPLETENESS_CHECK": "The value contains extra fields (MM, CF) not required by the definition and uses PP for the position instead of the standard TA for residues, but the content is correct."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section under \"Protein quantification\" states \"The precursor and fragment ion mass tolerance were set to 5 ppm and 20 ppm, respectively.\"",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods state \"The precursor and fragment ion mass tolerance were set to 5 ppm and 20 ppm, respectively.\"",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "K8.3QEXI16163.raw = 1 | K8.2QEXI16183.raw = 1 | K8.1QEXI16193.raw = 1 | K5.3QEXI16231.raw = 1 | K5.2QEXI16155.raw = 1 | K5.1QEXI16165.raw = 1 | K40.3QEXI16167.raw = 1 | K40.2QEXI16217.raw = 1 | K40.1QEXI16227.raw = 1 | K39.3QEXI16213.raw = 1 | K39.2QEXI16229.raw = 1 | K39.1QEXI16181.raw = 1 | K38.3QEXI16219.raw = 1 | K38.2QEXI16211.raw = 1 | K38.1QEXI16199.raw = 1 | K36.3QEXI16185.raw = 1 | K36.2QEXI16167.raw = 1 | K36.1QEXI16221.raw = 1 | K33.3QEXI16157.raw = 1 | K33.2QEXI16189.raw = 1 | K33.1QEXI16215.raw = 1 | K26.3QEXI16197.raw = 1 | K26.2QEXI16223.raw = 1 | K26.1QEXI16171.raw = 1 | K2.3QEXI16191.raw = 1 | K2.2QEXI16173.raw = 1 | K2.1QEXI16159.raw = 1 | K14.3QEXI16175.raw = 1 | K14.2QEXI16161.raw = 1 | K14.1QEXI16209.raw = 1 | K13.3QEXI16225.raw = 1 | K13.2QEXI16201.raw = 1 | K13.1QEXI16187.raw = 1 | K1.3QEXI16203.raw = 1 | K1.2QEXI16195.raw = 1 | K1.1QEXI16153.raw = 1",
+      "verdict": null,
+      "type_mismatch": null,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": null,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "",
+        "SOURCE_CHECK": "",
+        "TRUTH_CHECK": "",
+        "COMPLETENESS_CHECK": ""
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "K8.3QEXI16163.raw = 1 | K8.2QEXI16183.raw = 1 | K8.1QEXI16193.raw = 1 | K5.3QEXI16231.raw = 1 | K5.2QEXI16155.raw = 1 | K5.1QEXI16165.raw = 1 | K40.3QEXI16167.raw = 1 | K40.2QEXI16217.raw = 1 | K40.1QEXI16227.raw = 1 | K39.3QEXI16213.raw = 1 | K39.2QEXI16229.raw = 1 | K39.1QEXI16181.raw = 1 | K38.3QEXI16219.raw = 1 | K38.2QEXI16211.raw = 1 | K38.1QEXI16199.raw = 1 | K36.3QEXI16185.raw = 1 | K36.2QEXI16167.raw = 1 | K36.1QEXI16221.raw = 1 | K33.3QEXI16157.raw = 1 | K33.2QEXI16189.raw = 1 | K33.1QEXI16215.raw = 1 | K26.3QEXI16197.raw = 1 | K26.2QEXI16223.raw = 1 | K26.1QEXI16171.raw = 1 | K2.3QEXI16191.raw = 1 | K2.2QEXI16173.raw = 1 | K2.1QEXI16159.raw = 1 | K14.3QEXI16175.raw = 1 | K14.2QEXI16161.raw = 1 | K14.1QEXI16209.raw = 1 | K13.3QEXI16225.raw = 1 | K13.2QEXI16201.raw = 1 | K13.1QEXI16187.raw = 1 | K1.3QEXI16203.raw = 1 | K1.2QEXI16195.raw = 1 | K1.1QEXI16153.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a longitudinal design with 12 subjects evaluated at three different time points (T0, T24, T48).",
+        "TRUTH_CHECK": "The runs are grouped by source (Sample 1-12), and each source has three runs. According to the paper, these represent three different time points (longitudinal samples), not repeated runs of the same material. Therefore, they are biological replicates (or time-point fractions), not technical replicates. Each unique time-point sample is measured once, so each should be technical replicate 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index of 1."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "K8.3QEXI16163.raw = 1 | K8.2QEXI16183.raw = 1 | K8.1QEXI16193.raw = 1 | K5.3QEXI16231.raw = 1 | K5.2QEXI16155.raw = 1 | K5.1QEXI16165.raw = 1 | K40.3QEXI16167.raw = 1 | K40.2QEXI16217.raw = 1 | K40.1QEXI16227.raw = 1 | K39.3QEXI16213.raw = 1 | K39.2QEXI16229.raw = 1 | K39.1QEXI16181.raw = 1 | K38.3QEXI16219.raw = 1 | K38.2QEXI16211.raw = 1 | K38.1QEXI16199.raw = 1 | K36.3QEXI16185.raw = 1 | K36.2QEXI16167.raw = 1 | K36.1QEXI16221.raw = 1 | K33.3QEXI16157.raw = 1 | K33.2QEXI16189.raw = 1 | K33.1QEXI16215.raw = 1 | K26.3QEXI16197.raw = 1 | K26.2QEXI16223.raw = 1 | K26.1QEXI16171.raw = 1 | K2.3QEXI16191.raw = 1 | K2.2QEXI16173.raw = 1 | K2.1QEXI16159.raw = 1 | K14.3QEXI16175.raw = 1 | K14.2QEXI16161.raw = 1 | K14.1QEXI16209.raw = 1 | K13.3QEXI16225.raw = 1 | K13.2QEXI16201.raw = 1 | K13.1QEXI16187.raw = 1 | K1.3QEXI16203.raw = 1 | K1.2QEXI16195.raw = 1 | K1.1QEXI16153.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a nanoHPLC separation but mentions no offline fractionation.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "All runs are correctly assigned the value 1."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "K8.3QEXI16163.raw = K8 | K8.2QEXI16183.raw = K8 | K8.1QEXI16193.raw = K8 | K5.3QEXI16231.raw = K5 | K5.2QEXI16155.raw = K5 | K5.1QEXI16165.raw = K5 | K40.3QEXI16167.raw = K40 | K40.2QEXI16217.raw = K40 | K40.1QEXI16227.raw = K40 | K39.3QEXI16213.raw = K39 | K39.2QEXI16229.raw = K39 | K39.1QEXI16181.raw = K39 | K38.3QEXI16219.raw = K38 | K38.2QEXI16211.raw = K38 | K38.1QEXI16199.raw = K38 | K36.3QEXI16185.raw = K36 | K36.2QEXI16167.raw = K36 | K36.1QEXI16221.raw = K36 | K33.3QEXI16157.raw = K33 | K33.2QEXI16189.raw = K33 | K33.1QEXI16215.raw = K33 | K26.3QEXI16197.raw = K26 | K26.2QEXI16223.raw = K26 | K26.1QEXI16171.raw = K26 | K2.3QEXI16191.raw = K2 | K2.2QEXI16173.raw = K2 | K2.1QEXI16159.raw = K2 | K14.3QEXI16175.raw = K14 | K14.2QEXI16161.raw = K14 | K14.1QEXI16209.raw = K14 | K13.3QEXI16225.raw = K13 | K13.2QEXI16201.raw = K13 | K13.1QEXI16187.raw = K13 | K1.3QEXI16203.raw = K1 | K1.2QEXI16195.raw = K1 | K1.1QEXI16153.raw = K1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value contains identifiers for the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that 12 human subjects were evaluated at three different time points, although it does not explicitly list the \"K\" identifiers in the text.",
+        "TRUTH_CHECK": "The mapping correctly groups runs by subject (3 runs per subject for 12 subjects), which matches the study design described in the paper.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[timepoint]",
+      "extracted_value": "3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a timepoint identifier, which is appropriate for a column named characteristics[timepoint].",
+        "SOURCE_CHECK": "The paper states that 12 human subjects were evaluated at three different time points (T0, T24, T48).",
+        "TRUTH_CHECK": "The value \"3\" correctly represents the third time point for the runs associated with it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[timepoint]",
+      "extracted_value": "2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a timepoint index, which is appropriate for a column named characteristics[timepoint].",
+        "SOURCE_CHECK": "The paper describes a longitudinal design with three time points (T0, T24, T48).",
+        "TRUTH_CHECK": "The value \"2\" corresponds to the second time point (T24) for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[timepoint]",
+      "extracted_value": "1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a timepoint index, which is appropriate for a column named \"characteristics[timepoint]\".",
+        "SOURCE_CHECK": "The paper describes a longitudinal design with 12 subjects evaluated at three different time points (T0, T24, T48).",
+        "TRUTH_CHECK": "The value \"1\" corresponds to the first time point (T0) for the 12 subjects.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

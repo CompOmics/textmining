@@ -1,0 +1,165 @@
+{
+  "accession" : "PXD015289",
+  "title" : "Unravelling the proteomic landscape of extracellular vesicles in prostate cancer by density-based fractionation of urine",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "Mass spectrometry-based proteomic analysis of urinary EV (uEV) in men with benign and malignant prostate disease, profiling the proteome of EV separated from prostate tumor interstitial fluid and matched uEV, and a comparative proteomic analysis with uEV from patients with bladder and renal cancer.",
+  "sampleProcessingProtocol" : "Samples were processed for LC-MS/MS by filter-aided sample preparation (FASP) [27]. Lysates were prepared by mixing samples with SDT-lysis buffer (2 % SDS, 500 mM Tris-HCL (pH 7.6), 0.5 M DTT) at a 4:1 sample to buffer ratio and incubated at 95 °C for 5 min. After clarification of lysates by centrifugation (16,000 g for 5 min), samples were mixed with 300 μL UA (8 M urea, 0.1 M Tris-HCl (pH 8.5)) in a Microcon YM-10 centrifugal filter device (Merck KGaA, Darmstadt, Germany). Filters were centrifuged twice (14,000 g for 40 min at 20 °C) with the addition of 200 µL UA in between. Proteins were alkylated by addition of 100 μL IAA solution (0.05 M iodoacetamide in UA buffer) and incubated for 30 min at room temperature, followed by centrifugation. This was followed twice by addition of 100 µL UA and twice by addition of 100 µL DB buffer (1 M urea, 0.1 M Tris-HCl (pH 8.5), with centrifugation in between. Filter units were transferred to new collection tubes and proteins were resuspended in 40 µL DB with Trypsin/Lys-C mix (Promega, Madison, WI, USA) for overnight proteolytic digestion at 37 °C. Digests were collected by addition of 100 µL DB and centrifugation for 15 min at 14,000 g. This step was repeated once. Collected peptides were acidified with 1 % trifluoroacetic acid to a pH of 2-3, followed by desalting with C18-StageTips (C18 Empore Disks, 3M, St. Paul, MN, USA). Desalted peptides were vacuum dried, dissolved in 0.1 % formic acid and analyzed by LC-MS/MS. Equal amounts of peptides of each sample (500 ng) were loaded on a nanoflow HPLC system (Easy- nLC1000, Thermo Fisher Scientific, Waltham, MA, USA) coupled to a Q Exactive HF Hybrid Quadrupole-Orbitrap Mass Spectrometer (Thermo Fisher Scientific, Waltham, MA, USA) equipped with a nano‐electrospray ionization source. The mobile phase consisted of 0.1 % formic acid (solvent A) and acetonitrile/water (95:5 (v/v)) with 0.1 % formic acid (solvent B). The peptides were separated with a 50 min gradient from 8 to 35 % of solvent B. Before the end of the run, the percentage of solvent B was raised to 100 % in 5 min and kept there for 5 min. Full MS scan over the mass-to-charge (m/z) range of 300-1750 with a resolution of 120,000, followed by data dependent acquisition with an isolation window of 2.0 m/z and a dynamic exclusion time of 30 s was performed. The top 12 ions were fragmented by higher energy collisional dissociation (HCD) with a normalized collision energy of 27 % and scanned over the m/z range of 200-2000 with a resolution of 15,000. After the MS2 scan for each of the top 12 ions had been obtained, a new full mass spectrum scan was acquired and the process repeated until the end of the 60 min run. Three repeated runs per sample were performed.",
+  "dataProcessingProtocol" : "Tandem mass spectra were searched using the MaxQuant software (version 1.5.2.8) against a database containing both reviewed (SwissProt) and unreviewed (TrEMBL) sequences of homo sapiens, including different isoforms, of UniProtKB release 2018_07. Peptide-spectrum-match- and protein-level false discovery rates were set at 0.01. Carbamidomethyl (C), as a fixed modification, and oxidation (M) and acetylation of the protein N-terminus as dynamic modifications were included. A maximum of two missed cleavages was allowed. The LC-MS profiles were aligned, and the identifications were transferred to non-sequenced or non-identified MS features in other LC-MS runs (matching between runs). The protein was determined as detected in the sample if its identification had been derived from at least two unique peptide identifications. Filtering for contaminating proteins, reverse identification and identification by site was used. Label-free quantification (LFQ) was performed using the MaxLFQ algorithm integrated in the MaxQuant software.",
+  "projectTags" : [ ],
+  "keywords" : [ "Extracellular vesicles; exosomes; separation; isolation; urine; cancer; biomarkers" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2019-09-03",
+  "publicationDate" : "2020-04-09",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Pekka",
+    "lastName" : "Rappu",
+    "identifier" : "31610162",
+    "affiliation" : "University of Turku",
+    "email" : "pekka.rappu@utu.fi",
+    "country" : "Finland",
+    "orcid" : "0000-0002-5068-2842",
+    "name" : "Pekka Rappu",
+    "id" : "31610162"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Olivier de",
+    "lastName" : "Wever",
+    "identifier" : "158050100",
+    "affiliation" : "Laboratory of Experimental Cancer Research, Department of Human Structure and Repair, Ghent University, Ghent, Belgium",
+    "email" : "Olivier.DeWever@UGent.be",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Olivier de Wever",
+    "id" : "158050100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001583",
+    "name" : "MaxQuant"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000263",
+    "name" : "precursor ion"
+  } ],
+  "countries" : [ "Finland" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "CL",
+      "accession" : "GO:1903561",
+      "name" : "extracellular vesicle"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0001419",
+      "name" : "urine"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:9606",
+      "name" : "Homo sapiens (Human)"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:263",
+      "name" : "kidney cancer"
+    }, {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:10283",
+      "name" : "prostate cancer"
+    }, {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:11054",
+      "name" : "urinary bladder cancer"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:9606",
+    "name" : "Homo sapiens (human)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "CL",
+    "accession" : "GO:1903561",
+    "name" : "Extracellular vesicle"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0001419",
+    "name" : "Urine"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:11054",
+    "name" : "Urinary bladder cancer"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:10283",
+    "name" : "Prostate cancer"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:263",
+    "name" : "Kidney cancer"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Dhondt B, Geeurickx E, Tulkens J, Van Deun J, Vergauwen G, Lippens L, Miinalainen I, Rappu P, Heino J, Ost P, Lumen N, De Wever O, Hendrix A. Unravelling the proteomic landscape of extracellular vesicles in prostate cancer by density-based fractionation of urine. J Extracell Vesicles. 2020 9(1):1736935",
+    "pubmedID" : 32284825,
+    "doi" : "10.1080/20013078.2020.1736935"
+  }, {
+    "referenceLine" : "Dhondt B, Lumen N, De Wever O, Hendrix A. Preparation of Multi-omics Grade Extracellular Vesicles by Density-Based Fractionation of Urine. STAR Protoc. 2020 1(2):100073",
+    "pubmedID" : 33111109,
+    "doi" : "10.1016/j.xpro.2020.100073"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00425",
+    "name" : "monohydroxylated residue"
+  } ],
+  "totalFileDownloads" : 25563,
+  "botCount" : 9694,
+  "hubCount" : 15566,
+  "organicCount" : 303
+}

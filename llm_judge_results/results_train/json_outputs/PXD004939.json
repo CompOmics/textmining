@@ -1,0 +1,277 @@
+{
+  "paper_id": "PXD004939",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Oryza sativa",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states \"rice seedlings\" and \"Nipponbare young seedlings\"; Oryza sativa is the scientific name for rice.",
+        "TRUTH_CHECK": "The analysed samples are rice seedlings.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "Leaf",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the right field.",
+        "SOURCE_CHECK": "The paper states that \"whole seedling samples were collected\", not specifically leaves.",
+        "TRUTH_CHECK": "The analyzed material was the whole seedling, not just the leaf.",
+        "COMPLETENESS_CHECK": "The value is a simple term, but it is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The abstract states \"employing a label-free; MS (Mass Spectrometry)-based phosphoproteomic approach\".",
+        "TRUTH_CHECK": "The runs are part of this label-free phosphoproteomic experiment.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001911;NT=Q Exactive",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Q Exactive Plus",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the instrument is a \"Q-Exactive Plus\".",
+        "TRUTH_CHECK": "The paper specifies the \"Plus\" model, not the base \"Q Exactive\".",
+        "COMPLETENESS_CHECK": "Drift to the base model of the same family."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods section states proteins were digested with trypsin.",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Carbamidomethyl (C) as static modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was a global search parameter.",
+        "COMPLETENESS_CHECK": "Follows the required format (NT, AC, TA, MT). \"Static\" is equivalent to \"Fixed\"."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Oxidation (M)... were set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, MT) and is complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;MT=Variable;PP=Protein N-term;AC=UNIMOD:1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"Acetyl (Protein-N term)\" was set as a variable modification.",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format, specifying the name, status, and position."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;AC=UNIMOD:21;TA=S;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"Phospho (S/T/Y) were set as variable modifications\".",
+        "TRUTH_CHECK": "The modification was used for the runs.",
+        "COMPLETENESS_CHECK": "The cell names only Serine (S), but the paper specifies S, T, and Y. According to the \"ONE VALUE PER CELL\" rule, naming one of several values used by the runs is correct and complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;AC=UNIMOD:21;TA=T;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"Phospho (S/T/Y) were set as variable modifications\".",
+        "TRUTH_CHECK": "The modification was used for the runs.",
+        "COMPLETENESS_CHECK": "The cell names one of the residues (T) from the set (S/T/Y) used in the runs. According to the \"ONE VALUE PER CELL\" rule, this is complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;AC=UNIMOD:21;TA=Y;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states \"Phospho (S/T/Y) were set as variable modifications\".",
+        "TRUTH_CHECK": "The modification was searched for the runs listed.",
+        "COMPLETENESS_CHECK": "The cell names one of the residues (Y) and the correct status (Variable)."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The methods section states \"The mass tolerance was set at 20 ppm for precursor\".",
+        "TRUTH_CHECK": "The value is correct for the runs listed.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and the unit as printed."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "50 mmu",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"50 mmu for the tolerance of product ions\".",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it.",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition, including the unit."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "Rice_phos_ABA_12h_20per_F1_R1.raw = 1 | Rice_phos_ABA_12h_20per_F1_R2.raw = 2 | Rice_phos_ABA_12h_20per_F1_R3.raw = 3 | Rice_phos_ABA_3h_20per_F1_R1.raw = 1 | Rice_phos_ABA_3h_20per_F1_R2.raw = 2 | Rice_phos_ABA_3h_20per_F1_R3.raw = 3 | Rice_phos_Nip_0h_20per_F1_R1.raw = 1 | Rice_phos_Nip_0h_20per_F1_R2.raw = 2 | Rice_phos_Nip_0h_20per_F1_R3.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that phosphopeptides were considered truly phosphorylated if they were present in at least two of the three biological replicates.",
+        "TRUTH_CHECK": "The runs are grouped by condition (0h, 3h, 12h) and each condition has three independent biological replicates (R1, R2, R3), which is correctly mapped.",
+        "COMPLETENESS_CHECK": "Every run is assigned a correct index."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "Rice_phos_ABA_12h_20per_F1_R1.raw = 1 | Rice_phos_ABA_12h_20per_F1_R2.raw = 1 | Rice_phos_ABA_12h_20per_F1_R3.raw = 1 | Rice_phos_ABA_3h_20per_F1_R1.raw = 1 | Rice_phos_ABA_3h_20per_F1_R2.raw = 1 | Rice_phos_ABA_3h_20per_F1_R3.raw = 1 | Rice_phos_Nip_0h_20per_F1_R1.raw = 1 | Rice_phos_Nip_0h_20per_F1_R2.raw = 1 | Rice_phos_Nip_0h_20per_F1_R3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"three biological replicates\" for each condition.",
+        "TRUTH_CHECK": "The runs are labeled R1, R2, R3 and associated with different sample IDs (PXD004939-Sample-1 through 9), indicating they are biological replicates, not technical replicates of the same material. Each biological replicate is measured once.",
+        "COMPLETENESS_CHECK": "Every run is assigned index 1, which is correct for material measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "Rice_phos_ABA_12h_20per_F1_R1.raw = 1 | Rice_phos_ABA_12h_20per_F1_R2.raw = 1 | Rice_phos_ABA_12h_20per_F1_R3.raw = 1 | Rice_phos_ABA_3h_20per_F1_R1.raw = 1 | Rice_phos_ABA_3h_20per_F1_R2.raw = 1 | Rice_phos_ABA_3h_20per_F1_R3.raw = 1 | Rice_phos_Nip_0h_20per_F1_R1.raw = 1 | Rice_phos_Nip_0h_20per_F1_R2.raw = 1 | Rice_phos_Nip_0h_20per_F1_R3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The methods describe TiO2 enrichment and LC-MS/MS, but no offline fractionation (like high pH RP or SCX) is mentioned.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns 1 to all runs."
+      }
+    }
+  ]
+}

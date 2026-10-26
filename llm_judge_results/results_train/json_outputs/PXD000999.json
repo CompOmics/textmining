@@ -1,0 +1,498 @@
+{
+  "paper_id": "PXD000999",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the use of the HeLa cell line and the UniProt Human Complete Proteome database, which allows the inference of Homo sapiens.",
+        "TRUTH_CHECK": "The analysed proteins are from the human HeLa cell line.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "cervix",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ of origin, which is the right field for tissue.",
+        "SOURCE_CHECK": "The paper states the use of the HeLa cell line; the organ of origin (cervix) is an allowed inference for HeLa.",
+        "TRUTH_CHECK": "The runs used HeLa cells, which originate from the cervix.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the right field.",
+        "SOURCE_CHECK": "The paper states the use of the HeLa cell line; the cell type \"epithelial\" is an allowed inference for HeLa.",
+        "TRUTH_CHECK": "The runs used HeLa cells, which are epithelial cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "adenocarcinoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of origin for the material, which is the right field.",
+        "SOURCE_CHECK": "The paper states the use of the HeLa cell line; the disease of origin (cervical adenocarcinoma) is an allowed inference for this cell line.",
+        "TRUTH_CHECK": "The runs used HeLa cells, which originate from a cervical adenocarcinoma.",
+        "COMPLETENESS_CHECK": "The value \"adenocarcinoma\" is a correct but partial description of the disease of origin for HeLa."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "31Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not mention the age of the subjects or the donor of the HeLa cell line.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the sex field.",
+        "SOURCE_CHECK": "The paper mentions the HeLa cell line, but does not state the sex of the donor.",
+        "TRUTH_CHECK": "The sex of a cell line donor cannot be inferred for the sex field.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "HeLa cells",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"HeLa cell line was grown\".",
+        "TRUTH_CHECK": "The runs were performed using the HeLa cell line.",
+        "COMPLETENESS_CHECK": "Complete. Adding \"cells\" to the name \"HeLa\" is a minor wording variation."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell line",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"HeLa cell line was grown\", supporting the material type.",
+        "TRUTH_CHECK": "The runs were performed using HeLa cell line extracts.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms in the definition."
+      }
+    },
+    {
+      "annotation_type": "developmental_stage",
+      "sdrf_column": "DevelopmentalStage",
+      "extracted_value": "adult",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"adult\" belongs to the developmental_stage field.",
+        "SOURCE_CHECK": "The paper does not state the age or developmental stage of the source of the HeLa cell line.",
+        "TRUTH_CHECK": "The value is not supported by the text; HeLa is a cell line, and its developmental stage is not mentioned.",
+        "COMPLETENESS_CHECK": "The value follows the format of the definition."
+      }
+    },
+    {
+      "annotation_type": "ethnicity",
+      "sdrf_column": "AncestryCategory",
+      "extracted_value": "Black",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an ethnic group, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the ethnicity of the HeLa cell line donor.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "NT=label free sample;AC=MS:1002038",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The paper describes a \"shotgun proteomics\" workflow using \"data-dependent acquisition\" without mentioning any isotopic labels (TMT, SILAC, etc.), which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are label-free.",
+        "COMPLETENESS_CHECK": "Complete. The SDRF controlled term \"label free sample\" is used."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state \"Mass spectra were acquired with an Orbitrap Q Exactive mass spectrometer\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state \"Proteins (80 μg) were digested with trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Peptide fragmentation was performed via higher-energy collisional dissociation\", which is the full name for HCD.",
+        "TRUTH_CHECK": "The fragmentation method was used for the LC-MS/MS experiments described.",
+        "COMPLETENESS_CHECK": "Complete. HCD is the standard abbreviation for higher-energy collisional dissociation."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "25 NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"higher-energy collisional dissociation set at 25 V of normalized collisional energy\".",
+        "TRUTH_CHECK": "The value is correct for the runs described.",
+        "COMPLETENESS_CHECK": "The value \"25 NCE\" is a standard abbreviation for \"25 V of normalized collisional energy\"."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;AC=UNIMOD:4;MT=fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a database search modification, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"Fixed Modifications = (carbamidomethylation of C)\".",
+        "TRUTH_CHECK": "The modification was applied to all runs in the study.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, AC, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;TA=M;AC=UNIMOD:35;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Variable Modifications = [oxidation of M, acetylation of protein N terminus]\".",
+        "TRUTH_CHECK": "The modification was used for the search of these runs.",
+        "COMPLETENESS_CHECK": "Follows the required format (NT, TA, AC, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;PP=Any N-term;AC=UNIMOD:1;MT=Variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Variable Modifications = [oxidation of M, acetylation of protein N terminus]\".",
+        "TRUTH_CHECK": "The modification was used for the search of the analyzed HeLa cell samples.",
+        "COMPLETENESS_CHECK": "The value uses PP=Any N-term, but the definition for modifications requires TA for residues or PP for a specific position. \"Protein N terminus\" is a specific site."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "6 ppm",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "10 ppm",
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper mentions 6 ppm in the \"Comparison with State-of-the-Art\" section for Mascot, MaxQuant, and MS-GF+, but the primary search (Morpheus) used 20 ppm in the first pass and 10 ppm in the second pass.",
+        "TRUTH_CHECK": "The runs listed are the primary experimental runs. The primary search used 20 ppm and 10 ppm, not 6 ppm. 6 ppm was only for the comparison search engines.",
+        "COMPLETENESS_CHECK": "Complete format."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper states \"the tolerance for MS/MS was still 20 ppm\" in the Search Engine section.",
+        "TRUTH_CHECK": "The value is correct for the runs described in the study.",
+        "COMPLETENESS_CHECK": "Complete, follows the required format."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "20131202_hela1_120min_131202214433.raw = 1 | 20131202_hela1_120min_2MZ.raw = 1 | 20131202_hela1_120min_6MZ.raw = 1 | 20131202_hela1_120min_8MZ.raw = 1 | 20131106_Q2_SDC_120MIN_HELA1.raw = 1 | 20131106_Q2_SDC_120MIN_HELA2.raw = 1 | 20131106_Q2_SDC_120MIN_HELA3.raw = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states \"Three separate cell pellets were lysed\", indicating three independent biological replicates.",
+        "TRUTH_CHECK": "The runs are grouped into two sources (Sample 1 and Sample 2), but the paper describes three separate cell pellets. The candidate value assigns all runs to biological replicate 1, which contradicts the \"three separate cell pellets\" statement.",
+        "COMPLETENESS_CHECK": "The mapping is complete but logically incorrect based on the sample preparation."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20131202_hela1_120min_131202214433.raw = 2 | 20131202_hela1_120min_2MZ.raw = 1 | 20131202_hela1_120min_6MZ.raw = 3 | 20131202_hela1_120min_8MZ.raw = 4 | 20131106_Q2_SDC_120MIN_HELA1.raw = 1 | 20131106_Q2_SDC_120MIN_HELA2.raw = 2 | 20131106_Q2_SDC_120MIN_HELA3.raw = 3",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "20131202_hela1_120min_131202214433.raw = 1 | 20131202_hela1_120min_2MZ.raw = 1 | 20131202_hela1_120min_6MZ.raw = 1 | 20131202_hela1_120min_8MZ.raw = 1 | 20131106_Q2_SDC_120MIN_HELA1.raw = 1 | 20131106_Q2_SDC_120MIN_HELA2.raw = 1 | 20131106_Q2_SDC_120MIN_HELA3.raw = 1",
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions \"Three separate cell pellets were lysed\" and \"replicated experiments were performed with four different isolation widths\".",
+        "TRUTH_CHECK": "The runs for Sample 1 (4 runs) correspond to the four different isolation widths mentioned in the text. According to the field definition, these are different materials (different experimental parameters/settings), not technical replicates of the same material. They should each be technical replicate 1. The runs for Sample 2 (3 runs) are described as \"replicated experiments\" (likely the three separate cell pellets), which are biological replicates, not technical replicates.",
+        "COMPLETENESS_CHECK": "The mapping provides an index for every run."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20131202_hela1_120min_131202214433.raw = 1 | 20131202_hela1_120min_2MZ.raw = 1 | 20131202_hela1_120min_6MZ.raw = 1 | 20131202_hela1_120min_8MZ.raw = 1 | 20131106_Q2_SDC_120MIN_HELA1.raw = 1 | 20131106_Q2_SDC_120MIN_HELA2.raw = 1 | 20131106_Q2_SDC_120MIN_HELA3.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a single-dimensional LC-MS/MS experiment and does not mention any offline fractionation.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "Every run is correctly assigned the value 1."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[isolation width]",
+      "extracted_value": "20131202_hela1_120min_131202214433.raw = ��2.0 Th | 20131202_hela1_120min_2MZ.raw = ��1.0 Th | 20131202_hela1_120min_6MZ.raw = ��3.0 Th | 20131202_hela1_120min_8MZ.raw = ��4.0 Th | 20131106_Q2_SDC_120MIN_HELA1.raw = not available | 20131106_Q2_SDC_120MIN_HELA2.raw = not available | 20131106_Q2_SDC_120MIN_HELA3.raw = not available",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "20131202_hela1_120min_131202214433.raw = ±2.0 Th | 20131202_hela1_120min_2MZ.raw = ±1.0 Th | 20131202_hela1_120min_6MZ.raw = ±3.0 Th | 20131202_hela1_120min_8MZ.raw = ±4.0 Th | 20131106_Q2_SDC_120MIN_HELA1.raw = not available | 20131106_Q2_SDC_120MIN_HELA2.raw = not available | 20131106_Q2_SDC_120MIN_HELA3.raw = not available",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the levels of a studied variable (isolation width), which is the correct field.",
+        "SOURCE_CHECK": "The paper states that replicated experiments were performed with four different isolation widths: ±1.0, ±2.0, ±3.0, and ±4.0 Th.",
+        "TRUTH_CHECK": "The mapping correctly assigns these four levels to the first four runs. However, the last three runs are marked \"not available\", but the paper describes these as \"replicated experiments\", implying they should also be associated with the isolation width variable or are part of the same set of tests. More importantly, the candidate values contain encoding errors ( instead of ±).",
+        "COMPLETENESS_CHECK": "The values contain corrupted characters () instead of the plus-minus sign (±) printed in the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[isolation width]",
+      "extracted_value": "��2.0 Th",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an isolation width, which is a valid technical parameter for a comment column in this study.",
+        "SOURCE_CHECK": "The methods state that replicated experiments were performed with four different isolation widths: ±1.0, ±2.0, ±3.0, and ±4.0 Th.",
+        "TRUTH_CHECK": "The value corresponds to one of the four isolation widths used in the experiment.",
+        "COMPLETENESS_CHECK": "The value contains the correct numerical value and unit (Th), although it contains encoding errors ( instead of ±)."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[isolation width]",
+      "extracted_value": "��1.0 Th",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "±1.0 Th",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an isolation width, which is a valid technical parameter for a comment column in this study.",
+        "SOURCE_CHECK": "The methods state that replicated experiments were performed with four different isolation widths: ±1.0, ±2.0, ±3.0, and ±4.0 Th.",
+        "TRUTH_CHECK": "The value corresponds to one of the four isolation widths used in the experiment.",
+        "COMPLETENESS_CHECK": "The value contains encoding errors () instead of the plus-minus sign (±) printed in the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[isolation width]",
+      "extracted_value": "��3.0 Th",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an isolation width, which is a valid technical parameter for a comment column in this study.",
+        "SOURCE_CHECK": "The methods state that replicated experiments were performed with four different isolation widths: ±1.0, ±2.0, ±3.0, and ±4.0 Th.",
+        "TRUTH_CHECK": "The value corresponds to one of the four isolation widths used in the experiment.",
+        "COMPLETENESS_CHECK": "The value contains the numerical value and unit (Th) as stated in the paper, although it contains encoding errors ( instead of ±)."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[isolation width]",
+      "extracted_value": "��4.0 Th",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "±4.0 Th",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes an isolation width, which is a valid technical parameter for a comment column in this study.",
+        "SOURCE_CHECK": "The methods state that replicated experiments were performed with four different isolation widths: ±1.0, ±2.0, ±3.0, and ±4.0 Th.",
+        "TRUTH_CHECK": "The value corresponds to one of the four isolation widths used in the experiment.",
+        "COMPLETENESS_CHECK": "The value contains encoding errors () instead of the plus-minus sign (±) printed in the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "NT=Orbitrap;AC=MS:1000484",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer, which is the correct type of information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper states that mass spectra were acquired with an Orbitrap Q Exactive mass spectrometer.",
+        "TRUTH_CHECK": "The Q Exactive uses an Orbitrap as its mass analyzer for MS/MS (MS2) spectra.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

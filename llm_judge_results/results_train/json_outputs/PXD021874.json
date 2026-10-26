@@ -1,0 +1,379 @@
+{
+  "paper_id": "PXD021874",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Haloferax volcanii DS2",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism name, which is the correct field.",
+        "SOURCE_CHECK": "The paper repeatedly mentions \"Haloferax volcanii\" and \"Hfx. volcanii\", but does not mention a \"DS2\" strain.",
+        "TRUTH_CHECK": "The analyzed strains are H53, ΔaglB, and Δagl15. \"DS2\" is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The value includes a strain identifier not found in the text."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "cytosol",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a cellular compartment, which is the correct kind of information for the tissue field in this context.",
+        "SOURCE_CHECK": "The paper describes a \"Cyt fraction\" obtained by ultracentrifugation of the lysate, which corresponds to the cytosol.",
+        "TRUTH_CHECK": "The runs carrying this value are explicitly labeled \"Cyt\", referring to the Cyt fraction.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "membrane",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a cellular fraction/compartment, which is an organism part.",
+        "SOURCE_CHECK": "The methods describe the separation of the \"Mem fraction\" (membrane).",
+        "TRUTH_CHECK": "The runs carrying this value are explicitly labeled as \"Mem\", corresponding to the membrane fraction.",
+        "COMPLETENESS_CHECK": "The value is a plain text term and is complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "culture supernatant",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the part of the organism/culture from which the sample was derived, which fits the tissue field.",
+        "SOURCE_CHECK": "The paper describes the \"SN fraction\" (supernatant) obtained by centrifuging the culture.",
+        "TRUTH_CHECK": "The runs with \"SN\" in their filename correspond to the supernatant of the Haloferax volcanii culture.",
+        "COMPLETENESS_CHECK": "Complete. \"Culture supernatant\" is a correct description of the SN fraction."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "prokaryotic cell",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a general biological cell category, which fits the cell_type field.",
+        "SOURCE_CHECK": "The paper describes the analysis of Haloferax volcanii, which is an archaeon (prokaryote), and mentions \"prokaryotic cellular processes\" in the abstract.",
+        "TRUTH_CHECK": "The runs analyze fractions of H. volcanii cells, which are prokaryotic cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "strain",
+      "sdrf_column": "Strain",
+      "extracted_value": "H53",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A strain identifier, the right field.",
+        "SOURCE_CHECK": "The methods section explicitly mentions \"Hfx. volcanii H53\".",
+        "TRUTH_CHECK": "The runs carrying this value are derived from the H53 strain.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "strain",
+      "sdrf_column": "Strain",
+      "extracted_value": "agl15::trp",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a strain of the organism, which is the right field.",
+        "SOURCE_CHECK": "The paper mentions the \"Δagl15\" mutant and states that \"Each mutant carried a trpA insertion in the respective gene\".",
+        "TRUTH_CHECK": "The value \"agl15::trp\" is a standard genetic notation for the Δagl15 mutant with a tryptophan (trp) insertion, which matches the paper's description.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "strain",
+      "sdrf_column": "Strain",
+      "extracted_value": "aglB::trp",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a strain of the organism, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the \"ΔaglB\" mutant and states that \"Each mutant carried a trpA insertion in the respective gene\".",
+        "TRUTH_CHECK": "The value \"aglB::trp\" is a standard genetic notation for a gene replacement (ΔaglB) with a tryptophan marker (trpA), which matches the described mutant.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a standard DDA workflow without any mention of TMT, SILAC, or other labeling reagents, which allows the inference of \"label free sample\".",
+        "TRUTH_CHECK": "The runs are label-free.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term for label-free runs."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002523;NT=Q Exactive HF",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Q Exactive HFX",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states the instrument was a \"Q-Exactive HFX tandem MS\".",
+        "TRUTH_CHECK": "The candidate value \"Q Exactive HF\" is a different model from the \"Q-Exactive HFX\" printed in the paper.",
+        "COMPLETENESS_CHECK": "The value is a model name, but it is the wrong model of the same family (drift/wrong detail)."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state that proteases were added, specifically mentioning trypsin.",
+        "TRUTH_CHECK": "The runs carrying this value (e.g., those with \"Try\" in the filename) used trypsin.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001314;NT=V8-DE",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the right field.",
+        "SOURCE_CHECK": "The paper states that samples were digested with \"Trypsin and GluC\". V8-DE is not mentioned.",
+        "TRUTH_CHECK": "The runs carrying this value are explicitly labeled as \"GluC\" in their filenames. GluC is the protease used, not V8-DE.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong protease."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "NT=HCD;AC=MS:1002481",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"The top 20 peaks were selected for HCD fragmentation\".",
+        "TRUTH_CHECK": "HCD was used for the mass spectrometric analysis of the samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "25%; 30%; 35% NCE",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes collision energy, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"stepped normalized collision energy (25, 30, and 35 NCE)\".",
+        "TRUTH_CHECK": "The value correctly reflects the stepped NCE used for the runs.",
+        "COMPLETENESS_CHECK": "The value is complete, although it uses a semicolon to list the stepped values."
+      }
+    },
+    {
+      "annotation_type": "reduction_reagent",
+      "sdrf_column": "ReductionReagent",
+      "extracted_value": "DTT",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a chemical used to reduce disulfide bonds, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that samples were reduced by adding 20 mM DTT.",
+        "TRUTH_CHECK": "DTT was used for the reduction step of all processed samples in the MS analysis.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "alkylation_reagent",
+      "sdrf_column": "AlkylationReagent",
+      "extracted_value": "IAA",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an alkylation reagent, which is the right field.",
+        "SOURCE_CHECK": "The methods state that samples were \"alkylated by adding 40 mM iodoacetamide\".",
+        "TRUTH_CHECK": "Iodoacetamide was used for the alkylation step of the proteins analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete. \"IAA\" is a standard abbreviation for iodoacetamide, which is an equivalent term."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a glycoproteomic analysis using LC-MS/MS, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The runs are part of the mass spectrometric analysis of the archaeon.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state that \"carbamidomethylation of C was required as fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "The value follows the required format, including the name, residue, and fixed status."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "20190321_StS_H53_Cyt_Try_stepped.raw = 1 | 20190321_StS_H53_Mem_Try_stepped.raw = 1 | 20190321_StS_H53_SN_Try_stepped.raw = 1 | 20190321_StS_H53_Cyt_GluC_stepped.raw = 1 | 20190321_StS_H53_Mem_GluC_stepped.raw = 1 | 20190321_StS_H53_SN_GluC_stepped.raw = 1 | 20190604_StS_Agl15_Cyt_Try_Rep1.raw = 2 | 20190604_StS_Agl15_Mem_Try_Rep1.raw = 2 | 20190604_StS_Agl15_SN_Try_Rep1.raw = 2 | 20190604_StS_Agl15_Cyt_GluC_Rep1.raw = 2 | 20190604_StS_Agl15_Mem_GluC_Rep1.raw = 2 | 20190604_StS_Agl15_SN_GluC_Rep1.raw = 2 | 20190604_StS_AglB_Cyt_Try_Rep1_2.raw = 2 | 20190604_StS_AglB_Cyt_Try_Rep1.raw = 2 | 20190604_StS_AglB_Mem_Try_Rep1.raw = 2 | 20190604_StS_AglB_SN_Try_Rep1.raw = 2 | 20190604_StS_AglB_Cyt_GluC_Rep1.raw = 2 | 20190604_StS_AglB_Mem_GluC_Rep1.raw = 2 | 20190604_StS_AglB_SN_GluC_Rep1.raw = 2 | 20190604_StS_H53_Cyt_Try_Rep1.raw = 2 | 20190604_StS_H53_Mem_Try_Rep1.raw = 2 | 20190604_StS_H53_SN_Try_Rep1.raw = 2 | 20190604_StS_H53_Cyt_GluC_Rep1-2.raw = 2 | 20190604_StS_H53_Cyt_GluC_Rep1.raw = 2 | 20190604_StS_H53_Mem_GluC_Rep1.raw = 2 | 20190604_StS_H53_SN_GluC_Rep1.raw = 2 | 20190606_StS_Agl15_Cyt_Try_Rep2.raw = 3 | 20190606_StS_Agl15_Mem_Try_Rep2.raw = 3 | 20190606_StS_Agl15_SN_Try_Rep2.raw = 3 | 20190606_StS_Agl15_Cyt_GluC_Rep2.raw = 3 | 20190606_StS_Agl15_Mem_GluC_Rep2.raw = 3 | 20190606_StS_Agl15_SN_GluC_Rep2.raw = 3 | 20190606_StS_AglB_Cyt_Try_Rep2.raw = 3 | 20190606_StS_AglB_Mem_Try_Rep2.raw = 3 | 20190606_StS_AglB_SN_Try_Rep2.raw = 3 | 20190606_StS_AglB_Cyt_GluC_Rep2.raw = 3 | 20190606_StS_AglB_Mem_GluC_Rep2.raw = 3 | 20190606_StS_AglB_SN_GluC_Rep2.raw = 3 | 20190606_StS_H53_Cyt_Try_Rep2.raw = 3 | 20190606_StS_H53_Mem_Try_Rep2.raw = 3 | 20190606_StS_H53_SN_Try_Rep2.raw = 3 | 20190606_StS_H53_Cyt_GluC_Rep2.raw = 3 | 20190606_StS_H53_Mem_GluC_Rep2.raw = 3 | 20190606_StS_H53_SN_GluC_Rep2.raw = 3 | 20190607_StS_Agl15_Cyt_Try_Rep3.raw = 4 | 20190607_StS_Agl15_Mem_Try_Rep3.raw = 4 | 20190607_StS_Agl15_SN_Try_Rep3.raw = 4 | 20190607_StS_Agl15_Cyt_GluC_Rep3.raw = 4 | 20190607_StS_Agl15_Mem_GluC_Rep3.raw = 4 | 20190607_StS_Agl15_SN_GluC_Rep3.raw = 4 | 20190607_StS_AglB_Cyt_Try_Rep3.raw = 4 | 20190607_StS_AglB_Mem_Try_Rep3.raw = 4 | 20190607_StS_AglB_SN_Try_Rep3.raw = 4 | 20190607_StS_AglB_Cyt_GluC_Rep3.raw = 4 | 20190607_StS_AglB_Mem_GluC_Rep3.raw = 4 | 20190607_StS_AglB_SN_GluC_Rep3.raw = 4 | 20190607_StS_H53_Cyt_Try_Rep3.raw = 4 | 20190607_StS_H53_Mem_Try_Rep3.raw = 4 | 20190607_StS_H53_SN_Try_Rep3.raw = 4 | 20190607_StS_H53_Cyt_GluC_Rep3.raw = 4 | 20190607_StS_H53_Mem_GluC_Rep3.raw = 4 | 20190607_StS_H53_SN_GluC_Rep3.raw = 4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper mentions biological replicates for each strain and condition, and the filenames indicate replicates (Rep1, Rep2, Rep3).",
+        "TRUTH_CHECK": "The mapping assigns the same index to runs derived from the same biological sample (same date, same strain, same replicate number), regardless of the cellular fraction (Cyt, Mem, SN) or protease (Try, GluC), which is correct.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20190321_StS_H53_Cyt_Try_stepped.raw = 1 | 20190321_StS_H53_Mem_Try_stepped.raw = 1 | 20190321_StS_H53_SN_Try_stepped.raw = 1 | 20190321_StS_H53_Cyt_GluC_stepped.raw = 1 | 20190321_StS_H53_Mem_GluC_stepped.raw = 1 | 20190321_StS_H53_SN_GluC_stepped.raw = 1 | 20190604_StS_Agl15_Cyt_Try_Rep1.raw = 1 | 20190604_StS_Agl15_Mem_Try_Rep1.raw = 1 | 20190604_StS_Agl15_SN_Try_Rep1.raw = 1 | 20190604_StS_Agl15_Cyt_GluC_Rep1.raw = 1 | 20190604_StS_Agl15_Mem_GluC_Rep1.raw = 1 | 20190604_StS_Agl15_SN_GluC_Rep1.raw = 1 | 20190604_StS_AglB_Cyt_Try_Rep1_2.raw = 1 | 20190604_StS_AglB_Cyt_Try_Rep1.raw = 1 | 20190604_StS_AglB_Mem_Try_Rep1.raw = 1 | 20190604_StS_AglB_SN_Try_Rep1.raw = 1 | 20190604_StS_AglB_Cyt_GluC_Rep1.raw = 1 | 20190604_StS_AglB_Mem_GluC_Rep1.raw = 1 | 20190604_StS_AglB_SN_GluC_Rep1.raw = 1 | 20190604_StS_H53_Cyt_Try_Rep1.raw = 1 | 20190604_StS_H53_Mem_Try_Rep1.raw = 1 | 20190604_StS_H53_SN_Try_Rep1.raw = 1 | 20190604_StS_H53_Cyt_GluC_Rep1-2.raw = 1 | 20190604_StS_H53_Cyt_GluC_Rep1.raw = 1 | 20190604_StS_H53_Mem_GluC_Rep1.raw = 1 | 20190604_StS_H53_SN_GluC_Rep1.raw = 1 | 20190606_StS_Agl15_Cyt_Try_Rep2.raw = 1 | 20190606_StS_Agl15_Mem_Try_Rep2.raw = 1 | 20190606_StS_Agl15_SN_Try_Rep2.raw = 1 | 20190606_StS_Agl15_Cyt_GluC_Rep2.raw = 1 | 20190606_StS_Agl15_Mem_GluC_Rep2.raw = 1 | 20190606_StS_Agl15_SN_GluC_Rep2.raw = 1 | 20190606_StS_AglB_Cyt_Try_Rep2.raw = 1 | 20190606_StS_AglB_Mem_Try_Rep2.raw = 1 | 20190606_StS_AglB_SN_Try_Rep2.raw = 1 | 20190606_StS_AglB_Cyt_GluC_Rep2.raw = 1 | 20190606_StS_AglB_Mem_GluC_Rep2.raw = 1 | 20190606_StS_AglB_SN_GluC_Rep2.raw = 1 | 20190606_StS_H53_Cyt_Try_Rep2.raw = 1 | 20190606_StS_H53_Mem_Try_Rep2.raw = 1 | 20190606_StS_H53_SN_Try_Rep2.raw = 1 | 20190606_StS_H53_Cyt_GluC_Rep2.raw = 1 | 20190606_StS_H53_Mem_GluC_Rep2.raw = 1 | 20190606_StS_H53_SN_GluC_Rep2.raw = 1 | 20190607_StS_Agl15_Cyt_Try_Rep3.raw = 1 | 20190607_StS_Agl15_Mem_Try_Rep3.raw = 1 | 20190607_StS_Agl15_SN_Try_Rep3.raw = 1 | 20190607_StS_Agl15_Cyt_GluC_Rep3.raw = 1 | 20190607_StS_Agl15_Mem_GluC_Rep3.raw = 1 | 20190607_StS_Agl15_SN_GluC_Rep3.raw = 1 | 20190607_StS_AglB_Cyt_Try_Rep3.raw = 1 | 20190607_StS_AglB_Mem_Try_Rep3.raw = 1 | 20190607_StS_AglB_SN_Try_Rep3.raw = 1 | 20190607_StS_AglB_Cyt_GluC_Rep3.raw = 1 | 20190607_StS_AglB_Mem_GluC_Rep3.raw = 1 | 20190607_StS_AglB_SN_GluC_Rep3.raw = 1 | 20190607_StS_H53_Cyt_Try_Rep3.raw = 1 | 20190607_StS_H53_Mem_Try_Rep3.raw = 1 | 20190607_StS_H53_SN_Try_Rep3.raw = 1 | 20190607_StS_H53_Cyt_GluC_Rep3.raw = 1 | 20190607_StS_H53_Mem_GluC_Rep3.raw = 1 | 20190607_StS_H53_SN_GluC_Rep3.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "20190321_StS_H53_Cyt_Try_stepped.raw = 1 | 20190321_StS_H53_Mem_Try_stepped.raw = 1 | 20190321_StS_H53_SN_Try_stepped.raw = 1 | 20190321_StS_H53_Cyt_GluC_stepped.raw = 1 | 20190321_StS_H53_Mem_GluC_stepped.raw = 1 | 20190321_StS_H53_SN_GluC_stepped.raw = 1 | 20190604_StS_Agl15_Cyt_Try_Rep1.raw = 1 | 20190604_StS_Agl15_Mem_Try_Rep1.raw = 1 | 20190604_StS_Agl15_SN_Try_Rep1.raw = 1 | 20190604_StS_Agl15_Cyt_GluC_Rep1.raw = 1 | 20190604_StS_Agl15_Mem_GluC_Rep1.raw = 1 | 20190604_StS_Agl15_SN_GluC_Rep1.raw = 1 | 20190604_StS_AglB_Cyt_Try_Rep1_2.raw = 2 | 20190604_StS_AglB_Cyt_Try_Rep1.raw = 1 | 20190604_StS_AglB_Mem_Try_Rep1.raw = 1 | 20190604_StS_AglB_SN_Try_Rep1.raw = 1 | 20190604_StS_AglB_Cyt_GluC_Rep1.raw = 1 | 20190604_StS_AglB_Mem_GluC_Rep1.raw = 1 | 20190604_StS_AglB_SN_GluC_Rep1.raw = 1 | 20190604_StS_H53_Cyt_Try_Rep1.raw = 1 | 20190604_StS_H53_Mem_Try_Rep1.raw = 1 | 20190604_StS_H53_SN_Try_Rep1.raw = 1 | 20190604_StS_H53_Cyt_GluC_Rep1-2.raw = 2 | 20190604_StS_H53_Cyt_GluC_Rep1.raw = 1 | 20190604_StS_H53_Mem_GluC_Rep1.raw = 1 | 20190604_StS_H53_SN_GluC_Rep1.raw = 1 | 20190606_StS_Agl15_Cyt_Try_Rep2.raw = 1 | 20190606_StS_Agl15_Mem_Try_Rep2.raw = 1 | 20190606_StS_Agl15_SN_Try_Rep2.raw = 1 | 20190606_StS_Agl15_Cyt_GluC_Rep2.raw = 1 | 20190606_StS_Agl15_Mem_GluC_Rep2.raw = 1 | 20190606_StS_Agl15_SN_GluC_Rep2.raw = 1 | 20190606_StS_AglB_Cyt_Try_Rep2.raw = 1 | 20190606_StS_AglB_Mem_Try_Rep2.raw = 1 | 20190606_StS_AglB_SN_Try_Rep2.raw = 1 | 20190606_StS_AglB_Cyt_GluC_Rep2.raw = 1 | 20190606_StS_AglB_Mem_GluC_Rep2.raw = 1 | 20190606_StS_AglB_SN_GluC_Rep2.raw = 1 | 20190606_StS_H53_Cyt_Try_Rep2.raw = 1 | 20190606_StS_H53_Mem_Try_Rep2.raw = 1 | 20190606_StS_H53_SN_Try_Rep2.raw = 1 | 20190606_StS_H53_Cyt_GluC_Rep2.raw = 1 | 20190606_StS_H53_Mem_GluC_Rep2.raw = 1 | 20190606_StS_H53_SN_GluC_Rep2.raw = 1 | 20190607_StS_Agl15_Cyt_Try_Rep3.raw = 1 | 20190607_StS_Agl15_Mem_Try_Rep3.raw = 1 | 20190607_StS_Agl15_SN_Try_Rep3.raw = 1 | 20190607_StS_Agl15_Cyt_GluC_Rep3.raw = 1 | 20190607_StS_Agl15_Mem_GluC_Rep3.raw = 1 | 20190607_StS_Agl15_SN_GluC_Rep3.raw = 1 | 20190607_StS_AglB_Cyt_Try_Rep3.raw = 1 | 20190607_StS_AglB_Mem_Try_Rep3.raw = 1 | 20190607_StS_AglB_SN_Try_Rep3.raw = 1 | 20190607_StS_AglB_Cyt_GluC_Rep3.raw = 1 | 20190607_StS_AglB_Mem_GluC_Rep3.raw = 1 | 20190607_StS_AglB_SN_GluC_Rep3.raw = 1 | 20190607_StS_H53_Cyt_Try_Rep3.raw = 1 | 20190607_StS_H53_Mem_Try_Rep3.raw = 1 | 20190607_StS_H53_SN_Try_Rep3.raw = 1 | 20190607_StS_H53_Cyt_GluC_Rep3.raw = 1 | 20190607_StS_H53_Mem_GluC_Rep3.raw = 1 | 20190607_StS_H53_SN_GluC_Rep3.raw = 1",
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes biological replicates (Rep1, Rep2, Rep3) and different cellular fractions (Cyt, Mem, SN) and different proteases (Trypsin, GluC).",
+        "TRUTH_CHECK": "Most runs are measured once per material (fraction/protease combination), but some runs are repeated injections of the same material (e.g., 20190604_StS_AglB_Cyt_Try_Rep1_2.raw and 20190604_StS_AglB_Cyt_Try_Rep1.raw; 20190604_StS_H53_Cyt_GluC_Rep1-2.raw and 20190604_StS_H53_Cyt_GluC_Rep1.raw). These repeated runs of the same material should have different technical replicate indices (1, 2).",
+        "COMPLETENESS_CHECK": "The mapping is incomplete because it assigns index 1 to all runs, including technical replicates."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "20190321_StS_H53_Cyt_Try_stepped.raw = 1 | 20190321_StS_H53_Mem_Try_stepped.raw = 2 | 20190321_StS_H53_SN_Try_stepped.raw = 3 | 20190321_StS_H53_Cyt_GluC_stepped.raw = 4 | 20190321_StS_H53_Mem_GluC_stepped.raw = 5 | 20190321_StS_H53_SN_GluC_stepped.raw = 6 | 20190604_StS_Agl15_Cyt_Try_Rep1.raw = 1 | 20190604_StS_Agl15_Mem_Try_Rep1.raw = 2 | 20190604_StS_Agl15_SN_Try_Rep1.raw = 3 | 20190604_StS_Agl15_Cyt_GluC_Rep1.raw = 4 | 20190604_StS_Agl15_Mem_GluC_Rep1.raw = 5 | 20190604_StS_Agl15_SN_GluC_Rep1.raw = 6 | 20190604_StS_AglB_Cyt_Try_Rep1_2.raw = 1 | 20190604_StS_AglB_Cyt_Try_Rep1.raw = 2 | 20190604_StS_AglB_Mem_Try_Rep1.raw = 3 | 20190604_StS_AglB_SN_Try_Rep1.raw = 4 | 20190604_StS_AglB_Cyt_GluC_Rep1.raw = 5 | 20190604_StS_AglB_Mem_GluC_Rep1.raw = 6 | 20190604_StS_AglB_SN_GluC_Rep1.raw = 7 | 20190604_StS_H53_Cyt_Try_Rep1.raw = 1 | 20190604_StS_H53_Mem_Try_Rep1.raw = 2 | 20190604_StS_H53_SN_Try_Rep1.raw = 3 | 20190604_StS_H53_Cyt_GluC_Rep1-2.raw = 4 | 20190604_StS_H53_Cyt_GluC_Rep1.raw = 5 | 20190604_StS_H53_Mem_GluC_Rep1.raw = 6 | 20190604_StS_H53_SN_GluC_Rep1.raw = 7 | 20190606_StS_Agl15_Cyt_Try_Rep2.raw = 1 | 20190606_StS_Agl15_Mem_Try_Rep2.raw = 2 | 20190606_StS_Agl15_SN_Try_Rep2.raw = 3 | 20190606_StS_Agl15_Cyt_GluC_Rep2.raw = 4 | 20190606_StS_Agl15_Mem_GluC_Rep2.raw = 5 | 20190606_StS_Agl15_SN_GluC_Rep2.raw = 6 | 20190606_StS_AglB_Cyt_Try_Rep2.raw = 1 | 20190606_StS_AglB_Mem_Try_Rep2.raw = 2 | 20190606_StS_AglB_SN_Try_Rep2.raw = 3 | 20190606_StS_AglB_Cyt_GluC_Rep2.raw = 4 | 20190606_StS_AglB_Mem_GluC_Rep2.raw = 5 | 20190606_StS_AglB_SN_GluC_Rep2.raw = 6 | 20190606_StS_H53_Cyt_Try_Rep2.raw = 1 | 20190606_StS_H53_Mem_Try_Rep2.raw = 2 | 20190606_StS_H53_SN_Try_Rep2.raw = 3 | 20190606_StS_H53_Cyt_GluC_Rep2.raw = 4 | 20190606_StS_H53_Mem_GluC_Rep2.raw = 5 | 20190606_StS_H53_SN_GluC_Rep2.raw = 6 | 20190607_StS_Agl15_Cyt_Try_Rep3.raw = 1 | 20190607_StS_Agl15_Mem_Try_Rep3.raw = 2 | 20190607_StS_Agl15_SN_Try_Rep3.raw = 3 | 20190607_StS_Agl15_Cyt_GluC_Rep3.raw = 4 | 20190607_StS_Agl15_Mem_GluC_Rep3.raw = 5 | 20190607_StS_Agl15_SN_GluC_Rep3.raw = 6 | 20190607_StS_AglB_Cyt_Try_Rep3.raw = 1 | 20190607_StS_AglB_Mem_Try_Rep3.raw = 2 | 20190607_StS_AglB_SN_Try_Rep3.raw = 3 | 20190607_StS_AglB_Cyt_GluC_Rep3.raw = 4 | 20190607_StS_AglB_Mem_GluC_Rep3.raw = 5 | 20190607_StS_AglB_SN_GluC_Rep3.raw = 6 | 20190607_StS_H53_Cyt_Try_Rep3.raw = 1 | 20190607_StS_H53_Mem_Try_Rep3.raw = 2 | 20190607_StS_H53_SN_Try_Rep3.raw = 3 | 20190607_StS_H53_Cyt_GluC_Rep3.raw = 4 | 20190607_StS_H53_Mem_GluC_Rep3.raw = 5 | 20190607_StS_H53_SN_GluC_Rep3.raw = 6",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "20190321_StS_H53_Cyt_Try_stepped.raw = 1 | 20190321_StS_H53_Mem_Try_stepped.raw = 2 | 20190321_StS_H53_SN_Try_stepped.raw = 3 | 20190321_StS_H53_Cyt_GluC_stepped.raw = 1 | 20190321_StS_H53_Mem_GluC_stepped.raw = 2 | 20190321_StS_H53_SN_GluC_stepped.raw = 3 | 20190604_StS_Agl15_Cyt_Try_Rep1.raw = 1 | 20190604_StS_Agl15_Mem_Try_Rep1.raw = 2 | 20190604_StS_Agl15_SN_Try_Rep1.raw = 3 | 20190604_StS_Agl15_Cyt_GluC_Rep1.raw = 1 | 20190604_StS_Agl15_Mem_GluC_Rep1.raw = 2 | 20190604_StS_Agl15_SN_GluC_Rep1.raw = 3 | 20190604_StS_AglB_Cyt_Try_Rep1_2.raw = 1 | 20190604_StS_AglB_Cyt_Try_Rep1.raw = 1 | 20190604_StS_AglB_Mem_Try_Rep1.raw = 2 | 20190604_StS_AglB_SN_Try_Rep1.raw = 3 | 20190604_StS_AglB_Cyt_GluC_Rep1.raw = 1 | 20190604_StS_AglB_Mem_GluC_Rep1.raw = 2 | 20190604_StS_AglB_SN_GluC_Rep1.raw = 3 | 20190604_StS_H53_Cyt_Try_Rep1.raw = 1 | 20190604_StS_H53_Mem_Try_Rep1.raw = 2 | 20190604_StS_H53_SN_Try_Rep1.raw = 3 | 20190604_StS_H53_Cyt_GluC_Rep1-2.raw = 1 | 20190604_StS_H53_Cyt_GluC_Rep1.raw = 1 | 20190604_StS_H53_Mem_GluC_Rep1.raw = 2 | 20190604_StS_H53_SN_GluC_Rep1.raw = 3 | 20190606_StS_Agl15_Cyt_Try_Rep2.raw = 1 | 20190606_StS_Agl15_Mem_Try_Rep2.raw = 2 | 20190606_StS_Agl15_SN_Try_Rep2.raw = 3 | 20190606_StS_Agl15_Cyt_GluC_Rep2.raw = 1 | 20190606_StS_Agl15_Mem_GluC_Rep2.raw = 2 | 20190606_StS_Agl15_SN_GluC_Rep2.raw = 3 | 20190606_StS_AglB_Cyt_Try_Rep2.raw = 1 | 20190606_StS_AglB_Mem_Try_Rep2.raw = 2 | 20190606_StS_AglB_SN_Try_Rep2.raw = 3 | 20190606_StS_AglB_Cyt_GluC_Rep2.raw = 1 | 20190606_StS_AglB_Mem_GluC_Rep2.raw = 2 | 20190606_StS_AglB_SN_GluC_Rep2.raw = 3 | 20190606_StS_H53_Cyt_Try_Rep2.raw = 1 | 20190606_StS_H53_Mem_Try_Rep2.raw = 2 | 20190606_StS_H53_SN_Try_Rep2.raw = 3 | 20190606_StS_H53_Cyt_GluC_Rep2.raw = 1 | 20190606_StS_H53_Mem_GluC_Rep2.raw = 2 | 20190606_StS_H53_SN_GluC_Rep2.raw = 3 | 20190607_StS_Agl15_Cyt_Try_Rep3.raw = 1 | 20190607_StS_Agl15_Mem_Try_Rep3.raw = 2 | 20190607_StS_Agl15_SN_Try_Rep3.raw = 3 | 20190607_StS_Agl15_Cyt_GluC_Rep3.raw = 1 | 20190607_StS_Agl15_Mem_GluC_Rep3.raw = 2 | 20190607_StS_Agl15_SN_GluC_Rep3.raw = 3 | 20190607_StS_AglB_Cyt_Try_Rep3.raw = 1 | 20190607_StS_AglB_Mem_Try_Rep3.raw = 2 | 20190607_StS_AglB_SN_Try_Rep3.raw = 3 | 20190607_StS_AglB_Cyt_GluC_Rep3.raw = 1 | 20190607_StS_AglB_Mem_GluC_Rep3.raw = 2 | 20190607_StS_AglB_SN_GluC_Rep3.raw = 3 | 20190607_StS_H53_Cyt_Try_Rep3.raw = 1 | 20190607_StS_H53_Mem_Try_Rep3.raw = 2 | 20190607_StS_H53_SN_Try_Rep3.raw = 3 | 20190607_StS_H53_Cyt_GluC_Rep3.raw = 1 | 20190607_StS_H53_Mem_GluC_Rep3.raw = 2 | 20190607_StS_H53_SN_GluC_Rep3.raw = 3",
+      "issue_summary": {
+        "TYPE_CHECK": "The field is for fraction indices, which is correct for cellular fractions.",
+        "SOURCE_CHECK": "The paper describes three cellular fractions: Cyt (cytoplasm), Mem (membrane), and SN (supernatant).",
+        "TRUTH_CHECK": "The candidate value incorrectly treats different proteases (Trypsin vs GluC) and technical replicates as separate fractions. According to the definition, \"Conditions, preservation methods, aliquots and repeated runs are never fractions.\" Only the distinct cellular fractions (Cyt, Mem, SN) should be indexed.",
+        "COMPLETENESS_CHECK": "The mapping is incorrect because it assigns unique indices to protease variations and replicates instead of grouping them by the actual cellular fraction."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[growth condition]",
+      "extracted_value": "exponential and stationary growth phase",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the growth phase of the cultures, which is a correct characteristic for a growth condition column.",
+        "SOURCE_CHECK": "The paper describes taking samples at \"mid-logarithmic\" (which is exponential) and \"early stationary phase\".",
+        "TRUTH_CHECK": "The runs listed (e.g., StS_H53, StS_Agl15) correspond to the cell fractionation experiment where samples were taken at these two growth phases and then combined.",
+        "COMPLETENESS_CHECK": "The value is a correct summary of the growth conditions used for the samples in these runs."
+      }
+    }
+  ]
+}

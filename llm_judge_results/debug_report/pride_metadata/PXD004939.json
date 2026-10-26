@@ -1,0 +1,117 @@
+{
+  "accession" : "PXD004939",
+  "title" : "A comprehensive proteomic survey of ABA-induced protein phosphorylation in rice (Oryza sativa L.)",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "In this study, we focused on the profiling of rice young seedling phosphosites, phosphopeptides and phosphorylation intensity dynamics in response to ABA by employing a label-free, MS-based phosphoproteomic approach, and aimed to reveal the biological significance of protein phosphorylation in ABA signaling from the phosphoproteomic data.",
+  "sampleProcessingProtocol" : "Protein extraction. 3 grams of each sample was ground into fine powers in liquid nitrogen, homogenized well in 15mL PEB buffer (0.9 M Sucrose, 0.5 M Tris-HCl, 0.05 M EDTA, 0.1 M KCl, 2 % β-Mercaptoethanol, pH=8.7), extracted with same volume of saturated phenol (pH=4.2) by shaking on ice for 30 minutes. The extracted proteins in the phenol phase were precipitated in 5 volumes of ice-cold PS buffer (0.1 M Ammonium Acetate, 1% β-Mercaptoethanol, in 100% Methanol), washed in 75 % ethanol for three times and finally dissolved in PBS buffer (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 2 mM KH2PO4) for future use.  Protein digestion and phosphopeptide enrichment. The procedures for this part were basically done as described by Qiu et al (2016)[39]. Briefly, protein was treated for a sequential of 5mM DTT reduction, 20mM IAA alkylation and again DTT reduction in the dark. The treated proteins were digested on the 30kDa filter unit (Millipore, Darmstadt, Germany) over night with trypsin at pH8.0 (enzyme:protein =1:50). After the filter-aided sample preparation (FASP), peptides were desalted using C18 Sep-Pak (Waters) and resolved in binding buffer (80% ACN, 5% TFA, 1M lac acid). Subsequently, peptides were incubated with TiO2 beads (GL sciences, Tokyo, Japan) with a ratio of peptide:TiO2=1:4 for 3 × 30 minutes, washed with binding buffer, and then eluted with the elution buffer (40% ACN, 15% NH3H2O) for 4 times. Eluates were subsequently vacuum dried and reconstituted with 5% MeOH in 1% TFA solution for LC-MS/MS analysis.",
+  "dataProcessingProtocol" : "LC-MS/MS and data analysis. This was done by following the methods of Qiu et al (2016)39 in Beijing Proteome Research Center. LC-MS/MS analyses were performed on a Easy-nLC 1000 liquid chromatography system (Thermo, Waltham, U.S.A.) coupled to an Q-Exactive Plus via a nano-electrospray ion source (Thermo, Waltham, U.S.A.). The peptide mixture was eluted from a 360-μm ID x 2 cm, C18 trap column and separated on a homemade 100 μm ID x 10 cm column (C18, 1.9 μm, 120 Å, Dr. Maisch GmbH) with a linear 5-35% acetonitrile gradient at 500 nl/min. Survey scan were acquired after accumulation of 3e6 ions in Orbitrap for m/z 300-1400 using a resolution of 70,000 at m/z 400. The top 20 intense precursor ions were selected for fragmentation in the HCD cell at normalized collision energy of 27%, and then fragment ions were transferred into the Orbitrap analyzer operating at a resolution of 17,500 at m/z 400. The dynamic exclusion of previously acquired precursor ions was enabled at 18 s. Raw spectral data were processed for phosphopeptide identification and phosphosite quantification in Proteome Discoverer 1.4.1.14 suites with Mascot search engine against the rice genome annotation project database: (ftp://ftp.plantbiology.msu.edu/pub/data/Eukaryotic_Projects/o_sativa/annotation_dbs/pseudomolecules/version_7.0/all.dir/). The mass tolerance was set at 20 ppm for precursor, and 50 mmu for the tolerance of product ions. Oxidation (M), Acetyl (Protein-N term) and Phospho(S/T/Y) were set as variable modifications, and Carbamidomethyl (C) as static modification in the Mascot searches for phosphopeptides. Two missed cleavage on trypsin was allowed. The results were filtered for peptide at high identification confidence (False discovery rates < 1%) and E-Value < 0.05 by the Percolator tool of the Protein Discoverer package. Low-scoring peptides (Mascot score ≤20) were excluded from the analysis when they were not further supported by additional high-scoring identifications in other replicates or experiments. All phosphopeptide hits were automatically re-analyzed by the phosphoRS software within the Protein Discoverer software suite. PhosphoRS probability higher than 90% was required for a phosphorylation site to be considered as localized. Only those peptides which were phosphorylated in at least two of the three biological replicates were considered as truly phosphorylated. The phosphorylation is quantified based on the peak area under the ion intensity by using precursor ions area detector in PD1.4.1.14. Extracted ion chromatogram (sum of areas under the curves of MS1 chromatograms of each peptide identified) was used for normalization across all runs. Within-group means were calculated to determine fold changes. The differentially phosphorylated protein was defined to have over two fold changes in the average intensity with credible student’s t-test (P<0.05).",
+  "projectTags" : [ "Biological" ],
+  "keywords" : [ "Rice (oryza sativa l.) - abscisic acid - signaling - phosphorylation - proteome" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "EBI terms of use",
+  "submissionDate" : "2016-09-12",
+  "publicationDate" : "2017-01-17",
+  "submitters" : [ {
+    "title" : "Professor",
+    "firstName" : "Jian",
+    "lastName" : "Zhang",
+    "identifier" : "20700162",
+    "affiliation" : "China national rice research institute",
+    "email" : "zhangjian@caas.cn",
+    "country" : "China",
+    "orcid" : "0000-0003-2804-0162",
+    "name" : "Jian Zhang",
+    "id" : "20700162"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "zhangjian",
+    "lastName" : " ",
+    "identifier" : "53980100",
+    "affiliation" : "Jian Zhang Ph.D and Professor       China National Rice Research Institute       28 shuidaosuo road       Fuyang, Hangzhou            P.R.China 311400       Office: +86 571 63370277       Cell: +86 13656661382       Email: zhangjian@caas.cn (mailto:zhangjian@caas.cn)",
+    "email" : "zhangjian@caas.cn",
+    "country" : "",
+    "orcid" : "",
+    "name" : "zhangjian  ",
+    "id" : "53980100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001911",
+    "name" : "Q Exactive"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001207",
+    "name" : "Mascot"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000650",
+    "name" : "Proteome Discoverer"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000433",
+    "name" : "Affinity purification coupled with mass spectrometry proteomics"
+  } ],
+  "quantificationMethods" : [ ],
+  "countries" : [ "China" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000713",
+      "name" : "leaf"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:4530",
+      "name" : "Oryza sativa (Rice)"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:4530",
+    "name" : "Oryza sativa (rice)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000713",
+    "name" : "Leaf"
+  } ],
+  "diseases" : [ ],
+  "references" : [ {
+    "referenceLine" : "Qiu J, Hou Y, Wang Y, Li Z, Zhao J, Tong X, Lin H, Wei X, Ao H, Zhang J. A Comprehensive Proteomic Survey of ABA-Induced Protein Phosphorylation in Rice (Oryza sativa L.). Int J Mol Sci. 2017 Jan 3;18(1). pii: E60",
+    "pubmedID" : 28054942,
+    "doi" : "10.3390/ijms18010060"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00696",
+    "name" : "phosphorylated residue"
+  } ],
+  "totalFileDownloads" : 3513,
+  "botCount" : 1481,
+  "hubCount" : 1888,
+  "organicCount" : 144
+}

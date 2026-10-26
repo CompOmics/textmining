@@ -1,0 +1,345 @@
+{
+  "paper_id": "PXD013234",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper mentions PV patients and healthy donors, and the search was performed against the Homo sapiens UniProtKB database.",
+        "TRUTH_CHECK": "The analysed serum EVs are from human subjects.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "blood serum",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organism part/biofluid, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"blood serum\" and \"serum EVs\" in the abstract and methods.",
+        "TRUTH_CHECK": "The analyzed proteins were extracted from serum EVs, so the source tissue/fluid is blood serum.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "polycythemia vera",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a disease name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that patients were diagnosed with polycythemia vera.",
+        "TRUTH_CHECK": "The runs associated with this value come from PV patients' blood serum.",
+        "COMPLETENESS_CHECK": "The value follows the definition for a disease state."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "uninfected",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the health status of the subjects, which belongs to the disease_state field.",
+        "SOURCE_CHECK": "The paper describes a control group of \"healthy donors\", not \"uninfected\" subjects.",
+        "TRUTH_CHECK": "The control group consists of healthy donors; \"uninfected\" is a term typically used for infectious disease studies, which is not the case here (polycythemia vera is a myeloproliferative neoplasm).",
+        "COMPLETENESS_CHECK": "The SDRF term for healthy subjects is \"normal\"."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper mentions the use of the \"Max Quant LFQ algorithm\", which is an allowed inference for \"label free sample\".",
+        "TRUTH_CHECK": "The runs are label-free as no isotopic labels (TMT, SILAC, etc.) are mentioned.",
+        "COMPLETENESS_CHECK": "Complete. It uses the correct SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002877; NT=Q Exactive HF-X",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states \"QExactive HF-X mass spectrometer\".",
+        "TRUTH_CHECK": "The instrument was used for all LC-MS/MS measurements of the samples.",
+        "COMPLETENESS_CHECK": "Complete. The hyphen in \"HF-X\" is a minor variation of the paper's \"HF-X\" and is acceptable."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods section states that proteins were digested by trypsin.",
+        "TRUTH_CHECK": "The runs were subjected to a multi-enzyme digestion including trypsin.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Lys-C;AC=MS:1001309",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods section states that proteins were digested with LysC.",
+        "TRUTH_CHECK": "The runs listed are part of the study where LysC was used as one of the three enzymes in the MED-FASP procedure.",
+        "COMPLETENESS_CHECK": "Complete. \"Lys-C\" is a standard normalized term for \"LysC\"."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Lys-C;AC=MS:1001309",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods section states that proteins were digested with LysC.",
+        "TRUTH_CHECK": "The runs were subjected to a multi-enzyme digestion including LysC.",
+        "COMPLETENESS_CHECK": "Complete. Lys-C is the standard normalized term for LysC."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Chymotrypsin;AC=MS:1001306",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods section states that samples were digested by chymotrypsin.",
+        "TRUTH_CHECK": "The runs listed are part of the MS experiment where chymotrypsin was used as one of the three enzymes.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000422;NT=HCD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that precursors were \"fragmented by HCD\".",
+        "TRUTH_CHECK": "The value is correct for the runs listed.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF key-value format."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "FractionationMethod",
+      "extracted_value": "no fractionation",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the absence of offline fractionation, which is the correct field.",
+        "SOURCE_CHECK": "The methods describe an online LC gradient and a TIPS desalting step, but no offline fractionation method.",
+        "TRUTH_CHECK": "The runs did not undergo offline fractionation.",
+        "COMPLETENESS_CHECK": "The value is a correct statement of the absence of the process."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a proteomics study using LC-MS/MS to analyze the composition of serum EVs, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the mass spectrometry experiment performed on the listed runs.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Carbamidomethylation was set as a fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was applied to the entire dataset.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;AC;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "20180411_QX8_JRW_SA_CT_GG191.raw = 1 | 20180411_QX8_JRW_SA_CT_GG193.raw = 1 | 20180411_QX8_JRW_SA_CT_GG194.raw = 1 | 20180411_QX8_JRW_SA_CT_GG195.raw = 1 | 20180411_QX8_JRW_SA_CT_GG198.raw = 1 | 20180411_QX8_JRW_SA_CT_GG199.raw = 1 | 20180411_QX8_JRW_SA_CT_GG205.raw = 1 | 20180411_QX8_JRW_SA_CT_GG207.raw = 1 | 20180411_QX8_JRW_SA_CT_GG209.raw = 1 | 20180411_QX8_JRW_SA_CT_GG214.raw = 1 | 20180411_QX8_JRW_SA_CT_GG215.raw = 1 | 20180411_QX8_JRW_SA_CT_GG216.raw = 1 | 20180411_QX8_JRW_SA_CT_GG217.raw = 1 | 20180411_QX8_JRW_SA_CT_GG218.raw = 1 | 20180411_QX8_JRW_SA_CT_GG219.raw = 1 | 20180411_QX8_JRW_SA_CT_GG220.raw = 1 | 20180411_QX8_JRW_SA_CT_GG221.raw = 1 | 20180411_QX8_JRW_SA_CT_GG222.raw = 1 | 20180411_QX8_JRW_SA_L_GG191.raw = 1 | 20180411_QX8_JRW_SA_L_GG193.raw = 1 | 20180411_QX8_JRW_SA_L_GG194.raw = 1 | 20180411_QX8_JRW_SA_L_GG195.raw = 1 | 20180411_QX8_JRW_SA_L_GG198.raw = 1 | 20180411_QX8_JRW_SA_L_GG199.raw = 1 | 20180411_QX8_JRW_SA_L_GG205.raw = 1 | 20180411_QX8_JRW_SA_L_GG207.raw = 1 | 20180411_QX8_JRW_SA_L_GG209.raw = 1 | 20180411_QX8_JRW_SA_L_GG214.raw = 1 | 20180411_QX8_JRW_SA_L_GG215.raw = 1 | 20180411_QX8_JRW_SA_L_GG216.raw = 1 | 20180411_QX8_JRW_SA_L_GG217.raw = 1 | 20180411_QX8_JRW_SA_L_GG218.raw = 1 | 20180411_QX8_JRW_SA_L_GG219.raw = 1 | 20180411_QX8_JRW_SA_L_GG220.raw = 1 | 20180411_QX8_JRW_SA_L_GG221.raw = 1 | 20180411_QX8_JRW_SA_L_GG222.raw = 1 | 20180411_QX8_JRW_SA_T_GG191.raw = 1 | 20180411_QX8_JRW_SA_T_GG193.raw = 1 | 20180411_QX8_JRW_SA_T_GG194.raw = 1 | 20180411_QX8_JRW_SA_T_GG195.raw = 1 | 20180411_QX8_JRW_SA_T_GG198.raw = 1 | 20180411_QX8_JRW_SA_T_GG199.raw = 1 | 20180411_QX8_JRW_SA_T_GG205.raw = 1 | 20180411_QX8_JRW_SA_T_GG207.raw = 1 | 20180411_QX8_JRW_SA_T_GG209.raw = 1 | 20180411_QX8_JRW_SA_T_GG214.raw = 1 | 20180411_QX8_JRW_SA_T_GG215.raw = 1 | 20180411_QX8_JRW_SA_T_GG216.raw = 1 | 20180411_QX8_JRW_SA_T_GG217.raw = 1 | 20180411_QX8_JRW_SA_T_GG218.raw = 1 | 20180411_QX8_JRW_SA_T_GG219.raw = 1 | 20180411_QX8_JRW_SA_T_GG220.raw = 1 | 20180411_QX8_JRW_SA_T_GG221.raw = 1 | 20180411_QX8_JRW_SA_T_GG222.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "20180411_QX8_JRW_SA_CT_GG191.raw = 1 | 20180411_QX8_JRW_SA_CT_GG193.raw = 2 | 20180411_QX8_JRW_SA_CT_GG194.raw = 3 | 20180411_QX8_JRW_SA_CT_GG195.raw = 4 | 20180411_QX8_JRW_SA_CT_GG198.raw = 5 | 20180411_QX8_JRW_SA_CT_GG199.raw = 6 | 20180411_QX8_JRW_SA_CT_GG205.raw = 7 | 20180411_QX8_JRW_SA_CT_GG207.raw = 8 | 20180411_QX8_JRW_SA_CT_GG209.raw = 9 | 20180411_QX8_JRW_SA_CT_GG214.raw = 1 | 20180411_QX8_JRW_SA_CT_GG215.raw = 2 | 20180411_QX8_JRW_SA_CT_GG216.raw = 3 | 20180411_QX8_JRW_SA_CT_GG217.raw = 4 | 20180411_QX8_JRW_SA_CT_GG218.raw = 5 | 20180411_QX8_JRW_SA_CT_GG219.raw = 6 | 20180411_QX8_JRW_SA_CT_GG220.raw = 7 | 20180411_QX8_JRW_SA_CT_GG221.raw = 8 | 20180411_QX8_JRW_SA_CT_GG222.raw = 9 | 20180411_QX8_JRW_SA_L_GG191.raw = 1 | 20180411_QX8_JRW_SA_L_GG193.raw = 2 | 20180411_QX8_JRW_SA_L_GG194.raw = 3 | 20180411_QX8_JRW_SA_L_GG195.raw = 4 | 20180411_QX8_JRW_SA_L_GG198.raw = 5 | 20180411_QX8_JRW_SA_L_GG199.raw = 6 | 20180411_QX8_JRW_SA_L_GG205.raw = 7 | 20180411_QX8_JRW_SA_L_GG207.raw = 8 | 20180411_QX8_JRW_SA_L_GG209.raw = 9 | 20180411_QX8_JRW_SA_L_GG214.raw = 1 | 20180411_QX8_JRW_SA_L_GG215.raw = 2 | 20180411_QX8_JRW_SA_L_GG216.raw = 3 | 20180411_QX8_JRW_SA_L_GG217.raw = 4 | 20180411_QX8_JRW_SA_L_GG218.raw = 5 | 20180411_QX8_JRW_SA_L_GG219.raw = 6 | 20180411_QX8_JRW_SA_L_GG220.raw = 7 | 20180411_QX8_JRW_SA_L_GG221.raw = 8 | 20180411_QX8_JRW_SA_L_GG222.raw = 9 | 20180411_QX8_JRW_SA_T_GG191.raw = 1 | 20180411_QX8_JRW_SA_T_GG193.raw = 2 | 20180411_QX8_JRW_SA_T_GG194.raw = 3 | 20180411_QX8_JRW_SA_T_GG195.raw = 4 | 20180411_QX8_JRW_SA_T_GG198.raw = 5 | 20180411_QX8_JRW_SA_T_GG199.raw = 6 | 20180411_QX8_JRW_SA_T_GG205.raw = 7 | 20180411_QX8_JRW_SA_T_GG207.raw = 8 | 20180411_QX8_JRW_SA_T_GG209.raw = 9 | 20180411_QX8_JRW_SA_T_GG214.raw = 1 | 20180411_QX8_JRW_SA_T_GG215.raw = 2 | 20180411_QX8_JRW_SA_T_GG216.raw = 3 | 20180411_QX8_JRW_SA_T_GG217.raw = 4 | 20180411_QX8_JRW_SA_T_GG218.raw = 5 | 20180411_QX8_JRW_SA_T_GG219.raw = 6 | 20180411_QX8_JRW_SA_T_GG220.raw = 7 | 20180411_QX8_JRW_SA_T_GG221.raw = 8 | 20180411_QX8_JRW_SA_T_GG222.raw = 9",
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states 18 samples were collected (9 PV patients and 9 healthy donors).",
+        "TRUTH_CHECK": "The mapping assigns all runs to biological replicate 1. However, the paper describes 18 independent biological units (donors). Each donor (PV1-PV9 and N1-N9) must be assigned a unique biological replicate index within their group.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "20180411_QX8_JRW_SA_CT_GG191.raw = 1 | 20180411_QX8_JRW_SA_CT_GG193.raw = 1 | 20180411_QX8_JRW_SA_CT_GG194.raw = 1 | 20180411_QX8_JRW_SA_CT_GG195.raw = 1 | 20180411_QX8_JRW_SA_CT_GG198.raw = 1 | 20180411_QX8_JRW_SA_CT_GG199.raw = 1 | 20180411_QX8_JRW_SA_CT_GG205.raw = 1 | 20180411_QX8_JRW_SA_CT_GG207.raw = 1 | 20180411_QX8_JRW_SA_CT_GG209.raw = 1 | 20180411_QX8_JRW_SA_CT_GG214.raw = 1 | 20180411_QX8_JRW_SA_CT_GG215.raw = 1 | 20180411_QX8_JRW_SA_CT_GG216.raw = 1 | 20180411_QX8_JRW_SA_CT_GG217.raw = 1 | 20180411_QX8_JRW_SA_CT_GG218.raw = 1 | 20180411_QX8_JRW_SA_CT_GG219.raw = 1 | 20180411_QX8_JRW_SA_CT_GG220.raw = 1 | 20180411_QX8_JRW_SA_CT_GG221.raw = 1 | 20180411_QX8_JRW_SA_CT_GG222.raw = 1 | 20180411_QX8_JRW_SA_L_GG191.raw = 1 | 20180411_QX8_JRW_SA_L_GG193.raw = 1 | 20180411_QX8_JRW_SA_L_GG194.raw = 1 | 20180411_QX8_JRW_SA_L_GG195.raw = 1 | 20180411_QX8_JRW_SA_L_GG198.raw = 1 | 20180411_QX8_JRW_SA_L_GG199.raw = 1 | 20180411_QX8_JRW_SA_L_GG205.raw = 1 | 20180411_QX8_JRW_SA_L_GG207.raw = 1 | 20180411_QX8_JRW_SA_L_GG209.raw = 1 | 20180411_QX8_JRW_SA_L_GG214.raw = 1 | 20180411_QX8_JRW_SA_L_GG215.raw = 1 | 20180411_QX8_JRW_SA_L_GG216.raw = 1 | 20180411_QX8_JRW_SA_L_GG217.raw = 1 | 20180411_QX8_JRW_SA_L_GG218.raw = 1 | 20180411_QX8_JRW_SA_L_GG219.raw = 1 | 20180411_QX8_JRW_SA_L_GG220.raw = 1 | 20180411_QX8_JRW_SA_L_GG221.raw = 1 | 20180411_QX8_JRW_SA_L_GG222.raw = 1 | 20180411_QX8_JRW_SA_T_GG191.raw = 1 | 20180411_QX8_JRW_SA_T_GG193.raw = 1 | 20180411_QX8_JRW_SA_T_GG194.raw = 1 | 20180411_QX8_JRW_SA_T_GG195.raw = 1 | 20180411_QX8_JRW_SA_T_GG198.raw = 1 | 20180411_QX8_JRW_SA_T_GG199.raw = 1 | 20180411_QX8_JRW_SA_T_GG205.raw = 1 | 20180411_QX8_JRW_SA_T_GG207.raw = 1 | 20180411_QX8_JRW_SA_T_GG209.raw = 1 | 20180411_QX8_JRW_SA_T_GG214.raw = 1 | 20180411_QX8_JRW_SA_T_GG215.raw = 1 | 20180411_QX8_JRW_SA_T_GG216.raw = 1 | 20180411_QX8_JRW_SA_T_GG217.raw = 1 | 20180411_QX8_JRW_SA_T_GG218.raw = 1 | 20180411_QX8_JRW_SA_T_GG219.raw = 1 | 20180411_QX8_JRW_SA_T_GG220.raw = 1 | 20180411_QX8_JRW_SA_T_GG221.raw = 1 | 20180411_QX8_JRW_SA_T_GG222.raw = 1",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a workflow where each sample was digested by three different enzymes (LysC, Trypsin, Chymotrypsin), and aliquots from each digestion were analyzed.",
+        "TRUTH_CHECK": "The runs are not repeated measurements of the same material, but rather different materials (different enzyme digestions) from the same biological sample. According to the field definition, separate elutions or enrichment steps (or in this case, separate enzymatic digestions) are fractions, not technical replicates.",
+        "COMPLETENESS_CHECK": "The mapping assigns index 1 to all runs, but the logic is wrong because these are fractions."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "20180411_QX8_JRW_SA_CT_GG191.raw = PV1 | 20180411_QX8_JRW_SA_CT_GG193.raw = PV2 | 20180411_QX8_JRW_SA_CT_GG194.raw = PV3 | 20180411_QX8_JRW_SA_CT_GG195.raw = PV4 | 20180411_QX8_JRW_SA_CT_GG198.raw = PV5 | 20180411_QX8_JRW_SA_CT_GG199.raw = PV6 | 20180411_QX8_JRW_SA_CT_GG205.raw = PV7 | 20180411_QX8_JRW_SA_CT_GG207.raw = PV8 | 20180411_QX8_JRW_SA_CT_GG209.raw = PV9 | 20180411_QX8_JRW_SA_CT_GG214.raw = N1 | 20180411_QX8_JRW_SA_CT_GG215.raw = N2 | 20180411_QX8_JRW_SA_CT_GG216.raw = N3 | 20180411_QX8_JRW_SA_CT_GG217.raw = N4 | 20180411_QX8_JRW_SA_CT_GG218.raw = N5 | 20180411_QX8_JRW_SA_CT_GG219.raw = N6 | 20180411_QX8_JRW_SA_CT_GG220.raw = N7 | 20180411_QX8_JRW_SA_CT_GG221.raw = N8 | 20180411_QX8_JRW_SA_CT_GG222.raw = N9 | 20180411_QX8_JRW_SA_L_GG191.raw = PV1 | 20180411_QX8_JRW_SA_L_GG193.raw = PV2 | 20180411_QX8_JRW_SA_L_GG194.raw = PV3 | 20180411_QX8_JRW_SA_L_GG195.raw = PV4 | 20180411_QX8_JRW_SA_L_GG198.raw = PV5 | 20180411_QX8_JRW_SA_L_GG199.raw = PV6 | 20180411_QX8_JRW_SA_L_GG205.raw = PV7 | 20180411_QX8_JRW_SA_L_GG207.raw = PV8 | 20180411_QX8_JRW_SA_L_GG209.raw = PV9 | 20180411_QX8_JRW_SA_L_GG214.raw = N1 | 20180411_QX8_JRW_SA_L_GG215.raw = N2 | 20180411_QX8_JRW_SA_L_GG216.raw = N3 | 20180411_QX8_JRW_SA_L_GG217.raw = N4 | 20180411_QX8_JRW_SA_L_GG218.raw = N5 | 20180411_QX8_JRW_SA_L_GG219.raw = N6 | 20180411_QX8_JRW_SA_L_GG220.raw = N7 | 20180411_QX8_JRW_SA_L_GG221.raw = N8 | 20180411_QX8_JRW_SA_L_GG222.raw = N9 | 20180411_QX8_JRW_SA_T_GG191.raw = PV1 | 20180411_QX8_JRW_SA_T_GG193.raw = PV2 | 20180411_QX8_JRW_SA_T_GG194.raw = PV3 | 20180411_QX8_JRW_SA_T_GG195.raw = PV4 | 20180411_QX8_JRW_SA_T_GG198.raw = PV5 | 20180411_QX8_JRW_SA_T_GG199.raw = PV6 | 20180411_QX8_JRW_SA_T_GG205.raw = PV7 | 20180411_QX8_JRW_SA_T_GG207.raw = PV8 | 20180411_QX8_JRW_SA_T_GG209.raw = PV9 | 20180411_QX8_JRW_SA_T_GG214.raw = N1 | 20180411_QX8_JRW_SA_T_GG215.raw = N2 | 20180411_QX8_JRW_SA_T_GG216.raw = N3 | 20180411_QX8_JRW_SA_T_GG217.raw = N4 | 20180411_QX8_JRW_SA_T_GG218.raw = N5 | 20180411_QX8_JRW_SA_T_GG219.raw = N6 | 20180411_QX8_JRW_SA_T_GG220.raw = N7 | 20180411_QX8_JRW_SA_T_GG221.raw = N8 | 20180411_QX8_JRW_SA_T_GG222.raw = N9",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents subject identifiers, which is the correct field.",
+        "SOURCE_CHECK": "The paper states there were 18 samples (9 PV patients and 9 healthy controls), but it does not provide specific alphanumeric identifiers (like PV1 or N1) for the individuals.",
+        "TRUTH_CHECK": "While the mapping logically groups runs by sample (PV1-9, N1-9), these specific labels are not in the text.",
+        "COMPLETENESS_CHECK": "The format is correct for a run mapping."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Depletion",
+      "extracted_value": "no depletion",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes whether a depletion step was performed, which is a valid technical detail for a proteomics experiment.",
+        "SOURCE_CHECK": "The paper describes EV isolation using a reagent and MED-FASP digestion, but does not mention any depletion of abundant proteins.",
+        "TRUTH_CHECK": "Since no depletion step is mentioned in the methods, \"no depletion\" is a correct description of the workflow.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "AC=MS:1000484; NT=Orbitrap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a mass analyzer, which is the correct information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper states the use of a Q Exactive HF-X mass spectrometer; an Orbitrap analyzer is an allowed inference from this instrument model.",
+        "TRUTH_CHECK": "The Q Exactive HF-X uses an Orbitrap analyzer for MS2 scans.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Separation",
+      "extracted_value": "AC=PRIDE:0000563;NT=Reversed-phase chromatography",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the chromatographic separation method, which is appropriate for a column named \"Separation\".",
+        "SOURCE_CHECK": "The paper states that peptides were chromatographed on a \"C18 material\" using an \"acetonitrile gradient\", which is the standard definition of reversed-phase chromatography.",
+        "TRUTH_CHECK": "This method was used for all the LC-MS/MS runs described in the study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "paper_id": "PXD013765",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism name, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes \"human melanoma cells\" and \"human melanoma cells from four different melanoma patients\", making \"Homo sapiens\" an allowed inference.",
+        "TRUTH_CHECK": "The proteins analyzed in the 144 proteomics runs are from these human melanoma cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "melanoma cerebral metastasis cells cytoplasm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organ of origin (brain/cerebral) and the subcellular fraction (cytoplasm), which fits the tissue field definition for tumors and samples.",
+        "SOURCE_CHECK": "The paper describes \"brain metastatic human melanoma cells\" and the analysis of \"cytoplasmic and nuclear fraction\".",
+        "TRUTH_CHECK": "The runs (e.g., DP-CB2_CYT) correspond to the brain metastatic (CB) variants and the cytoplasmic (CYT) fraction.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "melanoma cerebral metastasis cells nuclear extracts",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "brain",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organ of origin (brain/cerebral) and the subcellular fraction, which fits the tissue field for tumor-derived cell lines.",
+        "SOURCE_CHECK": "The paper describes \"brain metastatic human melanoma cells\" and \"nuclear fraction\" proteomics.",
+        "TRUTH_CHECK": "The runs (e.g., DP-CB2_NE) correspond to brain metastatic (CB) variants and nuclear extracts (NE).",
+        "COMPLETENESS_CHECK": "The value is a descriptive phrase; however, \"nuclear extracts\" describes a subcellular fraction rather than the tissue/organ of origin."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "cutaneous melanoma cells cytoplasm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organ of origin (skin/cutaneous) and the subcellular fraction, which fits the tissue field for tumor-derived cells.",
+        "SOURCE_CHECK": "The paper describes \"cutaneous human melanoma cells\" and the analysis of \"cytoplasmic and nuclear fraction\".",
+        "TRUTH_CHECK": "The runs (e.g., DP-C_CYT) correspond to the cytoplasmic fraction of the cutaneous melanoma variants.",
+        "COMPLETENESS_CHECK": "The value is a descriptive term combining the organ of origin and the fraction."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "cutaneous melanoma cells nuclear extracts",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the origin and fraction of the sample, which fits the tissue field for tumor-derived cell lines.",
+        "SOURCE_CHECK": "The paper describes \"cutaneous human melanoma cells\" and \"nuclear fraction\" proteomics.",
+        "TRUTH_CHECK": "The runs (e.g., DP-C_NE) correspond to the cutaneous (C) variants and nuclear extracts (NE).",
+        "COMPLETENESS_CHECK": "The value is a descriptive term combining the organ of origin (skin/cutaneous) and the specific fraction."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "melanoma cerebral metastasis  cells cytoplasm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organ of origin and the subcellular fraction, which fits the tissue field definition for tumors/cell lines.",
+        "SOURCE_CHECK": "The paper describes \"brain metastatic human melanoma cells\" (CB variants) and the analysis of \"cytoplasmic and nuclear fraction\".",
+        "TRUTH_CHECK": "The runs (YDFR-CB3_CYT) correspond to the brain metastatic (CB) variant and the cytoplasmic (CYT) fraction.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "melanoma cerebral metastasis  cells nuclear extracts",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value contains the organ of origin (brain/cerebral) but also includes cell type and subcellular fraction, which do not belong in the tissue field.",
+        "SOURCE_CHECK": "The paper describes brain metastatic human melanoma cells and the analysis of nuclear fractions.",
+        "TRUTH_CHECK": "The runs are indeed nuclear extracts from brain metastatic melanoma cells.",
+        "COMPLETENESS_CHECK": "The value is a description rather than a plain tissue/organ name."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "melanoma cerebral metastasis cells supernatants",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the origin and fraction of the sample, which fits the tissue field (organ of origin for a tumor/cell line).",
+        "SOURCE_CHECK": "The paper describes \"brain metastatic human melanoma cells\" (CB variants) and the analysis of their \"supernatant\".",
+        "TRUTH_CHECK": "The runs (DP-CB_SN) correspond to the brain metastatic (CB) melanoma cell line supernatants.",
+        "COMPLETENESS_CHECK": "The value is a descriptive term for the tissue/material origin."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "cutaneous melanoma cells supernatants",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the source material and its fraction, which is the right kind of information for tissue.",
+        "SOURCE_CHECK": "The paper describes \"cutaneous human melanoma cells\" and the analysis of \"supernatant\" (secreted proteins).",
+        "TRUTH_CHECK": "The value correctly identifies the organ of origin (skin/cutaneous) and the specific sample fraction for these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "melanoma cerebral metastasis  cells supernatants",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organ of origin (brain/cerebral) and the sample fraction (supernatants), which fits the tissue field for tumors.",
+        "SOURCE_CHECK": "The paper describes \"brain metastatic human melanoma cells\" and the analysis of \"supernatant\" (secreted proteins).",
+        "TRUTH_CHECK": "The runs (e.g., M12-CB_SN) correspond to the brain metastatic (CB) variants and the supernatant (SN) fraction.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "cerebellar",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"cerebellar\" refers to the anatomical location/organ of the metastasis, which belongs to the tissue field, not cell_type.",
+        "SOURCE_CHECK": "The paper mentions \"cerebellar metastasis\", but this describes the site of the tumor.",
+        "TRUTH_CHECK": "The cells are melanoma cells; \"cerebellar\" describes the tissue of origin for these specific variants.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "cutaneous",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "\"cutaneous\" describes a location or variant of the melanoma cells, not a biological cell type.",
+        "SOURCE_CHECK": "The term \"cutaneous\" is used in the paper to describe the melanoma variants.",
+        "TRUTH_CHECK": "The cells are melanoma cells; \"cutaneous\" refers to the tissue of origin or the variant type.",
+        "COMPLETENESS_CHECK": "Not applicable, wrong field."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Melanoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects/cell lines, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly states the use of \"human melanoma cells\" and \"melanoma patients\".",
+        "TRUTH_CHECK": "All 144 runs are derived from melanoma cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"eight cell-lines\" were investigated and that \"cultured cells\" were used.",
+        "TRUTH_CHECK": "The runs are derived from these melanoma cell lines.",
+        "COMPLETENESS_CHECK": "The candidate value \"cell\" is not one of the controlled terms listed in the field definition (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling strategy, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Label free proteome profiling\" and \"Label-free quantification (LFQ)\".",
+        "TRUTH_CHECK": "The proteomics runs described in the paper used a label-free approach.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the peptides were injected into a \"QExactive Orbitrap MS\".",
+        "TRUTH_CHECK": "The instrument was used for the 144 proteomics measurements.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The paper states proteins were digested with \"Trypsin/Lys-C\".",
+        "TRUTH_CHECK": "Trypsin was used for the proteomics runs.",
+        "COMPLETENESS_CHECK": "Complete. One cell naming one of the agents used is correct."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Lys-C;AC=MS:1001309",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease used for protein digestion, the right field.",
+        "SOURCE_CHECK": "The methods state proteins were digested with \"Trypsin/Lys-C\".",
+        "TRUTH_CHECK": "Lys-C was used for the digestion of the proteins analyzed in these runs.",
+        "COMPLETENESS_CHECK": "Complete. One cell naming one of the two agents used is correct."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "CollisionEnergy",
+      "extracted_value": "30%",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The methods state \"The top eight abundant peptide ions were chosen for fragmentation at 30% normalized collision energy\".",
+        "TRUTH_CHECK": "The value is correct for the proteomics runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "FractionationMethod",
+      "extracted_value": "NT=High-performance liquid chromatography;AC=PRIDE:0000565",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a chromatography technique, but the field requires an offline fractionation method.",
+        "SOURCE_CHECK": "The paper describes online HPLC-MS/MS, but no offline fractionation.",
+        "TRUTH_CHECK": "The online LC gradient is explicitly excluded from being a fractionation method by rule D.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"Proteome profiling data\" in the abstract and \"proteome profiling\" in the highlights.",
+        "TRUTH_CHECK": "The 144 runs described are the result of the LC-MS/MS proteomic analysis of cytoplasmic, nuclear, and supernatant fractions.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The \"Proteomics Data Analysis\" section states \"carbamidomethylation as fixed modification\".",
+        "TRUTH_CHECK": "The modification was applied to all proteomics runs.",
+        "COMPLETENESS_CHECK": "Complete, following the NT;AC;TA;MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;AC=UNIMOD:35;MT=Variable;TA=M",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"oxidation of methionine... as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the proteomics runs.",
+        "COMPLETENESS_CHECK": "Follows the required format including NT, AC, TA, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;MT=variable;PP=Protein C-term",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The methods state \"acetylation of the protein C terminus as variable modifications\".",
+        "TRUTH_CHECK": "The value is right for the proteomics runs.",
+        "COMPLETENESS_CHECK": "Complete. It includes the name, position, and modification status."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "DP-CB2_CYT_1_1.raw = 1 | DP-CB2_CYT_1_2.raw = 1 | DP-CB2_CYT_2_1.raw = 2 | DP-CB2_CYT_2_2.raw = 2 | DP-CB2_CYT_3_1.raw = 3 | DP-CB2_CYT_3_2.raw = 3 | DP-CB2_NE_1_1.raw = 1 | DP-CB2_NE_1_2.raw = 1 | DP-CB2_NE_2_1.raw = 2 | DP-CB2_NE_2_2.raw = 2 | DP-CB2_NE_3_1.raw = 3 | DP-CB2_NE_3_2.raw = 3 | DP-C_CYT_1_1.raw = 1 | DP-C_CYT_1_2.raw = 1 | DP-C_CYT_2_1.raw = 2 | DP-C_CYT_2_2.raw = 2 | DP-C_CYT_3_1.raw = 3 | DP-C_CYT_3_2.raw = 3 | DP-C_NE_1_1.raw = 1 | DP-C_NE_1_2.raw = 1 | DP-C_NE_2_1.raw = 2 | DP-C_NE_2_2.raw = 2 | DP-C_NE_3_1.raw = 3 | DP-C_NE_3_2.raw = 3 | M12-CB3_CYT_1_1.raw = 1 | M12-CB3_CYT_1_2.raw = 1 | M12-CB3_CYT_2_1.raw = 2 | M12-CB3_CYT_2_2.raw = 2 | M12-CB3_CYT_3_1.raw = 3 | M12-CB3_CYT_3_2.raw = 3 | M12-CB3_NE_1_1.raw = 1 | M12-CB3_NE_1_2.raw = 1 | M12-CB3_NE_2_1.raw = 2 | M12-CB3_NE_2_2.raw = 2 | M12-CB3_NE_3_1.raw = 3 | M12-CB3_NE_3_2.raw = 3 | M12-C_CYT_1_1.raw = 1 | M12-C_CYT_1_2.raw = 1 | M12-C_CYT_2_1.raw = 2 | M12-C_CYT_2_2.raw = 2 | M12-C_CYT_3_1.raw = 3 | M12-C_CYT_3_2.raw = 3 | M12-C_NE_1_1.raw = 1 | M12-C_NE_1_2.raw = 1 | M12-C_NE_2_1.raw = 2 | M12-C_NE_2_2.raw = 2 | M12-C_NE_3_1.raw = 3 | M12-C_NE_3_2.raw = 3 | M16-CB3_CYT_1_1.raw = 1 | M16-CB3_CYT_1_2.raw = 1 | M16-CB3_CYT_2_1.raw = 2 | M16-CB3_CYT_2_2.raw = 2 | M16-CB3_CYT_3_1.raw = 3 | M16-CB3_CYT_3_2.raw = 3 | M16-CB3_NE_1_1.raw = 1 | M16-CB3_NE_1_2.raw = 1 | M16-CB3_NE_2_1.raw = 2 | M16-CB3_NE_2_2.raw = 2 | M16-CB3_NE_3_1.raw = 3 | M16-CB3_NE_3_2.raw = 3 | M16-C_CYT_1_1.raw = 1 | M16-C_CYT_1_2.raw = 1 | M16-C_CYT_2_1.raw = 2 | M16-C_CYT_2_2.raw = 2 | M16-C_CYT_3_1.raw = 3 | M16-C_CYT_3_2.raw = 3 | M16-C_NE_1_1.raw = 1 | M16-C_NE_1_2.raw = 1 | M16-C_NE_2_1.raw = 2 | M16-C_NE_2_2.raw = 2 | M16-C_NE_3_1.raw = 3 | M16-C_NE_3_2.raw = 3 | YDFR-CB3_CYT_1_1.raw = 1 | YDFR-CB3_CYT_1_2.raw = 1 | YDFR-CB3_CYT_2_1.raw = 2 | YDFR-CB3_CYT_2_2.raw = 2 | YDFR-CB3_CYT_3_1.raw = 3 | YDFR-CB3_CYT_3_2.raw = 3 | YDFR-CB3_NE_1_1.raw = 1 | YDFR-CB3_NE_1_2.raw = 1 | YDFR-CB3_NE_2_1.raw = 2 | YDFR-CB3_NE_2_2.raw = 2 | YDFR-CB3_NE_3_1.raw = 3 | YDFR-CB3_NE_3_2.raw = 3 | YDFR-C_CYT_1_1.raw = 1 | YDFR-C_CYT_1_2.raw = 1 | YDFR-C_CYT_2_1.raw = 2 | YDFR-C_CYT_2_2.raw = 2 | YDFR-C_CYT_3_1.raw = 3 | YDFR-C_CYT_3_2.raw = 3 | YDFR-C_NE_1_1.raw = 1 | YDFR-C_NE_1_2.raw = 1 | YDFR-C_NE_2_1.raw = 2 | YDFR-C_NE_2_2.raw = 2 | YDFR-C_NE_3_1.raw = 3 | YDFR-C_NE_3_2.raw = 3 | DP-CB_SN_1_1.raw = 1 | DP-CB_SN_1_2.raw = 1 | DP-CB_SN_2_1.raw = 2 | DP-CB_SN_2_2.raw = 2 | DP-CB_SN_3_1.raw = 3 | DP-CB_SN_3_2.raw = 3 | DP-C_SN_1_1.raw = 1 | DP-C_SN_1_2.raw = 1 | DP-C_SN_2_1.raw = 2 | DP-C_SN_2_2.raw = 2 | DP-C_SN_3_1.raw = 3 | DP-C_SN_3_2.raw = 3 | M12-CB_SN_1_1.raw = 1 | M12-CB_SN_1_2.raw = 1 | M12-CB_SN_2_1.raw = 2 | M12-CB_SN_2_2.raw = 2 | M12-CB_SN_3_1.raw = 3 | M12-CB_SN_3_2.raw = 3 | M12-C_SN_1_1.raw = 1 | M12-C_SN_1_2.raw = 1 | M12-C_SN_2_1.raw = 2 | M12-C_SN_2_2.raw = 2 | M12-C_SN_3_1.raw = 3 | M12-C_SN_3_2.raw = 3 | M16-CB_SN_1_1.raw = 1 | M16-CB_SN_1_2.raw = 1 | M16-CB_SN_2_1.raw = 2 | M16-CB_SN_2_2.raw = 2 | M16-CB_SN_3_1.raw = 3 | M16-CB_SN_3_2.raw = 3 | M16-C_SN_1_1.raw = 1 | M16-C_SN_1_2.raw = 1 | M16-C_SN_2_1.raw = 2 | M16-C_SN_2_2.raw = 2 | M16-C_SN_3_1.raw = 3 | M16-C_SN_3_2.raw = 3 | YDFR-CB_SN_1_1.raw = 1 | YDFR-CB_SN_1_2.raw = 1 | YDFR-CB_SN_2_1.raw = 2 | YDFR-CB_SN_2_2.raw = 2 | YDFR-CB_SN_3_1.raw = 3 | YDFR-CB_SN_3_2.raw = 3 | YDFR-C_SN_1_1.raw = 1 | YDFR-C_SN_1_2.raw = 1 | YDFR-C_SN_2_1.raw = 2 | YDFR-C_SN_2_2.raw = 2 | YDFR-C_SN_3_1.raw = 3 | YDFR-C_SN_3_2.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states \"Three independent cell culture experiments were carried out for every cell line\" and \"All samples were analyzed with LC-MS/MS in 2 technical replicates\".",
+        "TRUTH_CHECK": "The mapping correctly assigns the same biological replicate index (1, 2, or 3) to the two technical replicates of each independent cell culture experiment across the different fractions (CYT, NE, SN).",
+        "COMPLETENESS_CHECK": "Every run is assigned a biological replicate index consistent with the experimental design."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "DP-CB2_CYT_1_1.raw = 1 | DP-CB2_CYT_1_2.raw = 2 | DP-CB2_CYT_2_1.raw = 1 | DP-CB2_CYT_2_2.raw = 2 | DP-CB2_CYT_3_1.raw = 1 | DP-CB2_CYT_3_2.raw = 2 | DP-CB2_NE_1_1.raw = 1 | DP-CB2_NE_1_2.raw = 2 | DP-CB2_NE_2_1.raw = 1 | DP-CB2_NE_2_2.raw = 2 | DP-CB2_NE_3_1.raw = 1 | DP-CB2_NE_3_2.raw = 2 | DP-C_CYT_1_1.raw = 1 | DP-C_CYT_1_2.raw = 2 | DP-C_CYT_2_1.raw = 1 | DP-C_CYT_2_2.raw = 2 | DP-C_CYT_3_1.raw = 1 | DP-C_CYT_3_2.raw = 2 | DP-C_NE_1_1.raw = 1 | DP-C_NE_1_2.raw = 2 | DP-C_NE_2_1.raw = 1 | DP-C_NE_2_2.raw = 2 | DP-C_NE_3_1.raw = 1 | DP-C_NE_3_2.raw = 2 | M12-CB3_CYT_1_1.raw = 1 | M12-CB3_CYT_1_2.raw = 2 | M12-CB3_CYT_2_1.raw = 1 | M12-CB3_CYT_2_2.raw = 2 | M12-CB3_CYT_3_1.raw = 1 | M12-CB3_CYT_3_2.raw = 2 | M12-CB3_NE_1_1.raw = 1 | M12-CB3_NE_1_2.raw = 2 | M12-CB3_NE_2_1.raw = 1 | M12-CB3_NE_2_2.raw = 2 | M12-CB3_NE_3_1.raw = 1 | M12-CB3_NE_3_2.raw = 2 | M12-C_CYT_1_1.raw = 1 | M12-C_CYT_1_2.raw = 2 | M12-C_CYT_2_1.raw = 1 | M12-C_CYT_2_2.raw = 2 | M12-C_CYT_3_1.raw = 1 | M12-C_CYT_3_2.raw = 2 | M12-C_NE_1_1.raw = 1 | M12-C_NE_1_2.raw = 2 | M12-C_NE_2_1.raw = 1 | M12-C_NE_2_2.raw = 2 | M12-C_NE_3_1.raw = 1 | M12-C_NE_3_2.raw = 2 | M16-CB3_CYT_1_1.raw = 1 | M16-CB3_CYT_1_2.raw = 2 | M16-CB3_CYT_2_1.raw = 1 | M16-CB3_CYT_2_2.raw = 2 | M16-CB3_CYT_3_1.raw = 1 | M16-CB3_CYT_3_2.raw = 2 | M16-CB3_NE_1_1.raw = 1 | M16-CB3_NE_1_2.raw = 2 | M16-CB3_NE_2_1.raw = 1 | M16-CB3_NE_2_2.raw = 2 | M16-CB3_NE_3_1.raw = 1 | M16-CB3_NE_3_2.raw = 2 | M16-C_CYT_1_1.raw = 1 | M16-C_CYT_1_2.raw = 2 | M16-C_CYT_2_1.raw = 1 | M16-C_CYT_2_2.raw = 2 | M16-C_CYT_3_1.raw = 1 | M16-C_CYT_3_2.raw = 2 | M16-C_NE_1_1.raw = 1 | M16-C_NE_1_2.raw = 2 | M16-C_NE_2_1.raw = 1 | M16-C_NE_2_2.raw = 2 | M16-C_NE_3_1.raw = 1 | M16-C_NE_3_2.raw = 2 | YDFR-CB3_CYT_1_1.raw = 1 | YDFR-CB3_CYT_1_2.raw = 2 | YDFR-CB3_CYT_2_1.raw = 1 | YDFR-CB3_CYT_2_2.raw = 2 | YDFR-CB3_CYT_3_1.raw = 1 | YDFR-CB3_CYT_3_2.raw = 2 | YDFR-CB3_NE_1_1.raw = 1 | YDFR-CB3_NE_1_2.raw = 2 | YDFR-CB3_NE_2_1.raw = 1 | YDFR-CB3_NE_2_2.raw = 2 | YDFR-CB3_NE_3_1.raw = 1 | YDFR-CB3_NE_3_2.raw = 2 | YDFR-C_CYT_1_1.raw = 1 | YDFR-C_CYT_1_2.raw = 2 | YDFR-C_CYT_2_1.raw = 1 | YDFR-C_CYT_2_2.raw = 2 | YDFR-C_CYT_3_1.raw = 1 | YDFR-C_CYT_3_2.raw = 2 | YDFR-C_NE_1_1.raw = 1 | YDFR-C_NE_1_2.raw = 2 | YDFR-C_NE_2_1.raw = 1 | YDFR-C_NE_2_2.raw = 2 | YDFR-C_NE_3_1.raw = 1 | YDFR-C_NE_3_2.raw = 2 | DP-CB_SN_1_1.raw = 1 | DP-CB_SN_1_2.raw = 2 | DP-CB_SN_2_1.raw = 1 | DP-CB_SN_2_2.raw = 2 | DP-CB_SN_3_1.raw = 1 | DP-CB_SN_3_2.raw = 2 | DP-C_SN_1_1.raw = 1 | DP-C_SN_1_2.raw = 2 | DP-C_SN_2_1.raw = 1 | DP-C_SN_2_2.raw = 2 | DP-C_SN_3_1.raw = 1 | DP-C_SN_3_2.raw = 2 | M12-CB_SN_1_1.raw = 1 | M12-CB_SN_1_2.raw = 2 | M12-CB_SN_2_1.raw = 1 | M12-CB_SN_2_2.raw = 2 | M12-CB_SN_3_1.raw = 1 | M12-CB_SN_3_2.raw = 2 | M12-C_SN_1_1.raw = 1 | M12-C_SN_1_2.raw = 2 | M12-C_SN_2_1.raw = 1 | M12-C_SN_2_2.raw = 2 | M12-C_SN_3_1.raw = 1 | M12-C_SN_3_2.raw = 2 | M16-CB_SN_1_1.raw = 1 | M16-CB_SN_1_2.raw = 2 | M16-CB_SN_2_1.raw = 1 | M16-CB_SN_2_2.raw = 2 | M16-CB_SN_3_1.raw = 1 | M16-CB_SN_3_2.raw = 2 | M16-C_SN_1_1.raw = 1 | M16-C_SN_1_2.raw = 2 | M16-C_SN_2_1.raw = 1 | M16-C_SN_2_2.raw = 2 | M16-C_SN_3_1.raw = 1 | M16-C_SN_3_2.raw = 2 | YDFR-CB_SN_1_1.raw = 1 | YDFR-CB_SN_1_2.raw = 2 | YDFR-CB_SN_2_1.raw = 1 | YDFR-CB_SN_2_2.raw = 2 | YDFR-CB_SN_3_1.raw = 1 | YDFR-CB_SN_3_2.raw = 2 | YDFR-C_SN_1_1.raw = 1 | YDFR-C_SN_1_2.raw = 2 | YDFR-C_SN_2_1.raw = 1 | YDFR-C_SN_2_2.raw = 2 | YDFR-C_SN_3_1.raw = 1 | YDFR-C_SN_3_2.raw = 2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that all samples were analyzed in 2 technical replicates.",
+        "TRUTH_CHECK": "The mapping correctly assigns indices 1 and 2 to pairs of runs originating from the same sample/material.",
+        "COMPLETENESS_CHECK": "Every run is assigned a value following the definition."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "DP-CB2_CYT_1_1.raw = 1 | DP-CB2_CYT_1_2.raw = 1 | DP-CB2_CYT_2_1.raw = 1 | DP-CB2_CYT_2_2.raw = 1 | DP-CB2_CYT_3_1.raw = 1 | DP-CB2_CYT_3_2.raw = 1 | DP-CB2_NE_1_1.raw = 1 | DP-CB2_NE_1_2.raw = 1 | DP-CB2_NE_2_1.raw = 1 | DP-CB2_NE_2_2.raw = 1 | DP-CB2_NE_3_1.raw = 1 | DP-CB2_NE_3_2.raw = 1 | DP-C_CYT_1_1.raw = 1 | DP-C_CYT_1_2.raw = 1 | DP-C_CYT_2_1.raw = 1 | DP-C_CYT_2_2.raw = 1 | DP-C_CYT_3_1.raw = 1 | DP-C_CYT_3_2.raw = 1 | DP-C_NE_1_1.raw = 1 | DP-C_NE_1_2.raw = 1 | DP-C_NE_2_1.raw = 1 | DP-C_NE_2_2.raw = 1 | DP-C_NE_3_1.raw = 1 | DP-C_NE_3_2.raw = 1 | M12-CB3_CYT_1_1.raw = 1 | M12-CB3_CYT_1_2.raw = 1 | M12-CB3_CYT_2_1.raw = 1 | M12-CB3_CYT_2_2.raw = 1 | M12-CB3_CYT_3_1.raw = 1 | M12-CB3_CYT_3_2.raw = 1 | M12-CB3_NE_1_1.raw = 1 | M12-CB3_NE_1_2.raw = 1 | M12-CB3_NE_2_1.raw = 1 | M12-CB3_NE_2_2.raw = 1 | M12-CB3_NE_3_1.raw = 1 | M12-CB3_NE_3_2.raw = 1 | M12-C_CYT_1_1.raw = 1 | M12-C_CYT_1_2.raw = 1 | M12-C_CYT_2_1.raw = 1 | M12-C_CYT_2_2.raw = 1 | M12-C_CYT_3_1.raw = 1 | M12-C_CYT_3_2.raw = 1 | M12-C_NE_1_1.raw = 1 | M12-C_NE_1_2.raw = 1 | M12-C_NE_2_1.raw = 1 | M12-C_NE_2_2.raw = 1 | M12-C_NE_3_1.raw = 1 | M12-C_NE_3_2.raw = 1 | M16-CB3_CYT_1_1.raw = 1 | M16-CB3_CYT_1_2.raw = 1 | M16-CB3_CYT_2_1.raw = 1 | M16-CB3_CYT_2_2.raw = 1 | M16-CB3_CYT_3_1.raw = 1 | M16-CB3_CYT_3_2.raw = 1 | M16-CB3_NE_1_1.raw = 1 | M16-CB3_NE_1_2.raw = 1 | M16-CB3_NE_2_1.raw = 1 | M16-CB3_NE_2_2.raw = 1 | M16-CB3_NE_3_1.raw = 1 | M16-CB3_NE_3_2.raw = 1 | M16-C_CYT_1_1.raw = 1 | M16-C_CYT_1_2.raw = 1 | M16-C_CYT_2_1.raw = 1 | M16-C_CYT_2_2.raw = 1 | M16-C_CYT_3_1.raw = 1 | M16-C_CYT_3_2.raw = 1 | M16-C_NE_1_1.raw = 1 | M16-C_NE_1_2.raw = 1 | M16-C_NE_2_1.raw = 1 | M16-C_NE_2_2.raw = 1 | M16-C_NE_3_1.raw = 1 | M16-C_NE_3_2.raw = 1 | YDFR-CB3_CYT_1_1.raw = 1 | YDFR-CB3_CYT_1_2.raw = 1 | YDFR-CB3_CYT_2_1.raw = 1 | YDFR-CB3_CYT_2_2.raw = 1 | YDFR-CB3_CYT_3_1.raw = 1 | YDFR-CB3_CYT_3_2.raw = 1 | YDFR-CB3_NE_1_1.raw = 1 | YDFR-CB3_NE_1_2.raw = 1 | YDFR-CB3_NE_2_1.raw = 1 | YDFR-CB3_NE_2_2.raw = 1 | YDFR-CB3_NE_3_1.raw = 1 | YDFR-CB3_NE_3_2.raw = 1 | YDFR-C_CYT_1_1.raw = 1 | YDFR-C_CYT_1_2.raw = 1 | YDFR-C_CYT_2_1.raw = 1 | YDFR-C_CYT_2_2.raw = 1 | YDFR-C_CYT_3_1.raw = 1 | YDFR-C_CYT_3_2.raw = 1 | YDFR-C_NE_1_1.raw = 1 | YDFR-C_NE_1_2.raw = 1 | YDFR-C_NE_2_1.raw = 1 | YDFR-C_NE_2_2.raw = 1 | YDFR-C_NE_3_1.raw = 1 | YDFR-C_NE_3_2.raw = 1 | DP-CB_SN_1_1.raw = 1 | DP-CB_SN_1_2.raw = 1 | DP-CB_SN_2_1.raw = 1 | DP-CB_SN_2_2.raw = 1 | DP-CB_SN_3_1.raw = 1 | DP-CB_SN_3_2.raw = 1 | DP-C_SN_1_1.raw = 1 | DP-C_SN_1_2.raw = 1 | DP-C_SN_2_1.raw = 1 | DP-C_SN_2_2.raw = 1 | DP-C_SN_3_1.raw = 1 | DP-C_SN_3_2.raw = 1 | M12-CB_SN_1_1.raw = 1 | M12-CB_SN_1_2.raw = 1 | M12-CB_SN_2_1.raw = 1 | M12-CB_SN_2_2.raw = 1 | M12-CB_SN_3_1.raw = 1 | M12-CB_SN_3_2.raw = 1 | M12-C_SN_1_1.raw = 1 | M12-C_SN_1_2.raw = 1 | M12-C_SN_2_1.raw = 1 | M12-C_SN_2_2.raw = 1 | M12-C_SN_3_1.raw = 1 | M12-C_SN_3_2.raw = 1 | M16-CB_SN_1_1.raw = 1 | M16-CB_SN_1_2.raw = 1 | M16-CB_SN_2_1.raw = 1 | M16-CB_SN_2_2.raw = 1 | M16-CB_SN_3_1.raw = 1 | M16-CB_SN_3_2.raw = 1 | M16-C_SN_1_1.raw = 1 | M16-C_SN_1_2.raw = 1 | M16-C_SN_2_1.raw = 1 | M16-C_SN_2_2.raw = 1 | M16-C_SN_3_1.raw = 1 | M16-C_SN_3_2.raw = 1 | YDFR-CB_SN_1_1.raw = 1 | YDFR-CB_SN_1_2.raw = 1 | YDFR-CB_SN_2_1.raw = 1 | YDFR-CB_SN_2_2.raw = 1 | YDFR-CB_SN_3_1.raw = 1 | YDFR-CB_SN_3_2.raw = 1 | YDFR-C_SN_1_1.raw = 1 | YDFR-C_SN_1_2.raw = 1 | YDFR-C_SN_2_1.raw = 1 | YDFR-C_SN_2_2.raw = 1 | YDFR-C_SN_3_1.raw = 1 | YDFR-C_SN_3_2.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the separation of cytoplasmic, nuclear, and supernatant fractions, but these are different materials (subcellular fractions), not offline fractionation of a single sample into multiple fractions.",
+        "TRUTH_CHECK": "According to the field definition, separate elutions or enrichment steps of one sample are fractions. However, the runs here are divided by material (CYT, NE, SN). For each of these materials, no further offline fractionation is described. Therefore, every run within its respective material group should be fraction 1.",
+        "COMPLETENESS_CHECK": "Every run is assigned the value 1, which is correct when no offline fractionation is performed."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "DP-CB2_CYT_1_1.raw = DP | DP-CB2_CYT_1_2.raw = DP | DP-CB2_CYT_2_1.raw = DP | DP-CB2_CYT_2_2.raw = DP | DP-CB2_CYT_3_1.raw = DP | DP-CB2_CYT_3_2.raw = DP | DP-CB2_NE_1_1.raw = DP | DP-CB2_NE_1_2.raw = DP | DP-CB2_NE_2_1.raw = DP | DP-CB2_NE_2_2.raw = DP | DP-CB2_NE_3_1.raw = DP | DP-CB2_NE_3_2.raw = DP | DP-C_CYT_1_1.raw = DP | DP-C_CYT_1_2.raw = DP | DP-C_CYT_2_1.raw = DP | DP-C_CYT_2_2.raw = DP | DP-C_CYT_3_1.raw = DP | DP-C_CYT_3_2.raw = DP | DP-C_NE_1_1.raw = DP | DP-C_NE_1_2.raw = DP | DP-C_NE_2_1.raw = DP | DP-C_NE_2_2.raw = DP | DP-C_NE_3_1.raw = DP | DP-C_NE_3_2.raw = DP | M12-CB3_CYT_1_1.raw = M12 | M12-CB3_CYT_1_2.raw = M12 | M12-CB3_CYT_2_1.raw = M12 | M12-CB3_CYT_2_2.raw = M12 | M12-CB3_CYT_3_1.raw = M12 | M12-CB3_CYT_3_2.raw = M12 | M12-CB3_NE_1_1.raw = M12 | M12-CB3_NE_1_2.raw = M12 | M12-CB3_NE_2_1.raw = M12 | M12-CB3_NE_2_2.raw = M12 | M12-CB3_NE_3_1.raw = M12 | M12-CB3_NE_3_2.raw = M12 | M12-C_CYT_1_1.raw = M12 | M12-C_CYT_1_2.raw = M12 | M12-C_CYT_2_1.raw = M12 | M12-C_CYT_2_2.raw = M12 | M12-C_CYT_3_1.raw = M12 | M12-C_CYT_3_2.raw = M12 | M12-C_NE_1_1.raw = M12 | M12-C_NE_1_2.raw = M12 | M12-C_NE_2_1.raw = M12 | M12-C_NE_2_2.raw = M12 | M12-C_NE_3_1.raw = M12 | M12-C_NE_3_2.raw = M12 | M16-CB3_CYT_1_1.raw = M16 | M16-CB3_CYT_1_2.raw = M16 | M16-CB3_CYT_2_1.raw = M16 | M16-CB3_CYT_2_2.raw = M16 | M16-CB3_CYT_3_1.raw = M16 | M16-CB3_CYT_3_2.raw = M16 | M16-CB3_NE_1_1.raw = M16 | M16-CB3_NE_1_2.raw = M16 | M16-CB3_NE_2_1.raw = M16 | M16-CB3_NE_2_2.raw = M16 | M16-CB3_NE_3_1.raw = M16 | M16-CB3_NE_3_2.raw = M16 | M16-C_CYT_1_1.raw = M16 | M16-C_CYT_1_2.raw = M16 | M16-C_CYT_2_1.raw = M16 | M16-C_CYT_2_2.raw = M16 | M16-C_CYT_3_1.raw = M16 | M16-C_CYT_3_2.raw = M16 | M16-C_NE_1_1.raw = M16 | M16-C_NE_1_2.raw = M16 | M16-C_NE_2_1.raw = M16 | M16-C_NE_2_2.raw = M16 | M16-C_NE_3_1.raw = M16 | M16-C_NE_3_2.raw = M16 | YDFR-CB3_CYT_1_1.raw = YDFR | YDFR-CB3_CYT_1_2.raw = YDFR | YDFR-CB3_CYT_2_1.raw = YDFR | YDFR-CB3_CYT_2_2.raw = YDFR | YDFR-CB3_CYT_3_1.raw = YDFR | YDFR-CB3_CYT_3_2.raw = YDFR | YDFR-CB3_NE_1_1.raw = YDFR | YDFR-CB3_NE_1_2.raw = YDFR | YDFR-CB3_NE_2_1.raw = YDFR | YDFR-CB3_NE_2_2.raw = YDFR | YDFR-CB3_NE_3_1.raw = YDFR | YDFR-CB3_NE_3_2.raw = YDFR | YDFR-C_CYT_1_1.raw = YDFR | YDFR-C_CYT_1_2.raw = YDFR | YDFR-C_CYT_2_1.raw = YDFR | YDFR-C_CYT_2_2.raw = YDFR | YDFR-C_CYT_3_1.raw = YDFR | YDFR-C_CYT_3_2.raw = YDFR | YDFR-C_NE_1_1.raw = YDFR | YDFR-C_NE_1_2.raw = YDFR | YDFR-C_NE_2_1.raw = YDFR | YDFR-C_NE_2_2.raw = YDFR | YDFR-C_NE_3_1.raw = YDFR | YDFR-C_NE_3_2.raw = YDFR | DP-CB_SN_1_1.raw = DP | DP-CB_SN_1_2.raw = DP | DP-CB_SN_2_1.raw = DP | DP-CB_SN_2_2.raw = DP | DP-CB_SN_3_1.raw = DP | DP-CB_SN_3_2.raw = DP | DP-C_SN_1_1.raw = DP | DP-C_SN_1_2.raw = DP | DP-C_SN_2_1.raw = DP | DP-C_SN_2_2.raw = DP | DP-C_SN_3_1.raw = DP | DP-C_SN_3_2.raw = DP | M12-CB_SN_1_1.raw = M12 | M12-CB_SN_1_2.raw = M12 | M12-CB_SN_2_1.raw = M12 | M12-CB_SN_2_2.raw = M12 | M12-CB_SN_3_1.raw = M12 | M12-CB_SN_3_2.raw = M12 | M12-C_SN_1_1.raw = M12 | M12-C_SN_1_2.raw = M12 | M12-C_SN_2_1.raw = M12 | M12-C_SN_2_2.raw = M12 | M12-C_SN_3_1.raw = M12 | M12-C_SN_3_2.raw = M12 | M16-CB_SN_1_1.raw = M16 | M16-CB_SN_1_2.raw = M16 | M16-CB_SN_2_1.raw = M16 | M16-CB_SN_2_2.raw = M16 | M16-CB_SN_3_1.raw = M16 | M16-CB_SN_3_2.raw = M16 | M16-C_SN_1_1.raw = M16 | M16-C_SN_1_2.raw = M16 | M16-C_SN_2_1.raw = M16 | M16-C_SN_2_2.raw = M16 | M16-C_SN_3_1.raw = M16 | M16-C_SN_3_2.raw = M16 | YDFR-CB_SN_1_1.raw = YDFR | YDFR-CB_SN_1_2.raw = YDFR | YDFR-CB_SN_2_1.raw = YDFR | YDFR-CB_SN_2_2.raw = YDFR | YDFR-CB_SN_3_1.raw = YDFR | YDFR-CB_SN_3_2.raw = YDFR | YDFR-C_SN_1_1.raw = YDFR | YDFR-C_SN_1_2.raw = YDFR | YDFR-C_SN_2_1.raw = YDFR | YDFR-C_SN_2_2.raw = YDFR | YDFR-C_SN_3_1.raw = YDFR | YDFR-C_SN_3_2.raw = YDFR",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents identifiers for the donors/subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that cells were obtained from four individual patients and names the cell lines (YDFR, DP, M12, M16), which serve as the identifiers for the donors.",
+        "TRUTH_CHECK": "The mapping correctly assigns each run to the donor identifier based on the cell line prefix (e.g., DP for DP-C and DP-CB).",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[individual]",
+      "extracted_value": "DP-CB2_CYT_1_1.raw = DP | DP-CB2_CYT_1_2.raw = DP | DP-CB2_CYT_2_1.raw = DP | DP-CB2_CYT_2_2.raw = DP | DP-CB2_CYT_3_1.raw = DP | DP-CB2_CYT_3_2.raw = DP | DP-CB2_NE_1_1.raw = DP | DP-CB2_NE_1_2.raw = DP | DP-CB2_NE_2_1.raw = DP | DP-CB2_NE_2_2.raw = DP | DP-CB2_NE_3_1.raw = DP | DP-CB2_NE_3_2.raw = DP | DP-C_CYT_1_1.raw = DP | DP-C_CYT_1_2.raw = DP | DP-C_CYT_2_1.raw = DP | DP-C_CYT_2_2.raw = DP | DP-C_CYT_3_1.raw = DP | DP-C_CYT_3_2.raw = DP | DP-C_NE_1_1.raw = DP | DP-C_NE_1_2.raw = DP | DP-C_NE_2_1.raw = DP | DP-C_NE_2_2.raw = DP | DP-C_NE_3_1.raw = DP | DP-C_NE_3_2.raw = DP | M12-CB3_CYT_1_1.raw = M12 | M12-CB3_CYT_1_2.raw = M12 | M12-CB3_CYT_2_1.raw = M12 | M12-CB3_CYT_2_2.raw = M12 | M12-CB3_CYT_3_1.raw = M12 | M12-CB3_CYT_3_2.raw = M12 | M12-CB3_NE_1_1.raw = M12 | M12-CB3_NE_1_2.raw = M12 | M12-CB3_NE_2_1.raw = M12 | M12-CB3_NE_2_2.raw = M12 | M12-CB3_NE_3_1.raw = M12 | M12-CB3_NE_3_2.raw = M12 | M12-C_CYT_1_1.raw = M12 | M12-C_CYT_1_2.raw = M12 | M12-C_CYT_2_1.raw = M12 | M12-C_CYT_2_2.raw = M12 | M12-C_CYT_3_1.raw = M12 | M12-C_CYT_3_2.raw = M12 | M12-C_NE_1_1.raw = M12 | M12-C_NE_1_2.raw = M12 | M12-C_NE_2_1.raw = M12 | M12-C_NE_2_2.raw = M12 | M12-C_NE_3_1.raw = M12 | M12-C_NE_3_2.raw = M12 | M16-CB3_CYT_1_1.raw = M16 | M16-CB3_CYT_1_2.raw = M16 | M16-CB3_CYT_2_1.raw = M16 | M16-CB3_CYT_2_2.raw = M16 | M16-CB3_CYT_3_1.raw = M16 | M16-CB3_CYT_3_2.raw = M16 | M16-CB3_NE_1_1.raw = M16 | M16-CB3_NE_1_2.raw = M16 | M16-CB3_NE_2_1.raw = M16 | M16-CB3_NE_2_2.raw = M16 | M16-CB3_NE_3_1.raw = M16 | M16-CB3_NE_3_2.raw = M16 | M16-C_CYT_1_1.raw = M16 | M16-C_CYT_1_2.raw = M16 | M16-C_CYT_2_1.raw = M16 | M16-C_CYT_2_2.raw = M16 | M16-C_CYT_3_1.raw = M16 | M16-C_CYT_3_2.raw = M16 | M16-C_NE_1_1.raw = M16 | M16-C_NE_1_2.raw = M16 | M16-C_NE_2_1.raw = M16 | M16-C_NE_2_2.raw = M16 | M16-C_NE_3_1.raw = M16 | M16-C_NE_3_2.raw = M16 | YDFR-CB3_CYT_1_1.raw = YDFR | YDFR-CB3_CYT_1_2.raw = YDFR | YDFR-CB3_CYT_2_1.raw = YDFR | YDFR-CB3_CYT_2_2.raw = YDFR | YDFR-CB3_CYT_3_1.raw = YDFR | YDFR-CB3_CYT_3_2.raw = YDFR | YDFR-CB3_NE_1_1.raw = YDFR | YDFR-CB3_NE_1_2.raw = YDFR | YDFR-CB3_NE_2_1.raw = YDFR | YDFR-CB3_NE_2_2.raw = YDFR | YDFR-CB3_NE_3_1.raw = YDFR | YDFR-CB3_NE_3_2.raw = YDFR | YDFR-C_CYT_1_1.raw = YDFR | YDFR-C_CYT_1_2.raw = YDFR | YDFR-C_CYT_2_1.raw = YDFR | YDFR-C_CYT_2_2.raw = YDFR | YDFR-C_CYT_3_1.raw = YDFR | YDFR-C_CYT_3_2.raw = YDFR | YDFR-C_NE_1_1.raw = YDFR | YDFR-C_NE_1_2.raw = YDFR | YDFR-C_NE_2_1.raw = YDFR | YDFR-C_NE_2_2.raw = YDFR | YDFR-C_NE_3_1.raw = YDFR | YDFR-C_NE_3_2.raw = YDFR | DP-CB_SN_1_1.raw = DP | DP-CB_SN_1_2.raw = DP | DP-CB_SN_2_1.raw = DP | DP-CB_SN_2_2.raw = DP | DP-CB_SN_3_1.raw = DP | DP-CB_SN_3_2.raw = DP | DP-C_SN_1_1.raw = DP | DP-C_SN_1_2.raw = DP | DP-C_SN_2_1.raw = DP | DP-C_SN_2_2.raw = DP | DP-C_SN_3_1.raw = DP | DP-C_SN_3_2.raw = DP | M12-CB_SN_1_1.raw = M12 | M12-CB_SN_1_2.raw = M12 | M12-CB_SN_2_1.raw = M12 | M12-CB_SN_2_2.raw = M12 | M12-CB_SN_3_1.raw = M12 | M12-CB_SN_3_2.raw = M12 | M12-C_SN_1_1.raw = M12 | M12-C_SN_1_2.raw = M12 | M12-C_SN_2_1.raw = M12 | M12-C_SN_2_2.raw = M12 | M12-C_SN_3_1.raw = M12 | M12-C_SN_3_2.raw = M12 | M16-CB_SN_1_1.raw = M16 | M16-CB_SN_1_2.raw = M16 | M16-CB_SN_2_1.raw = M16 | M16-CB_SN_2_2.raw = M16 | M16-CB_SN_3_1.raw = M16 | M16-CB_SN_3_2.raw = M16 | M16-C_SN_1_1.raw = M16 | M16-C_SN_1_2.raw = M16 | M16-C_SN_2_1.raw = M16 | M16-C_SN_2_2.raw = M16 | M16-C_SN_3_1.raw = M16 | M16-C_SN_3_2.raw = M16 | YDFR-CB_SN_1_1.raw = YDFR | YDFR-CB_SN_1_2.raw = YDFR | YDFR-CB_SN_2_1.raw = YDFR | YDFR-CB_SN_2_2.raw = YDFR | YDFR-CB_SN_3_1.raw = YDFR | YDFR-CB_SN_3_2.raw = YDFR | YDFR-C_SN_1_1.raw = YDFR | YDFR-C_SN_1_2.raw = YDFR | YDFR-C_SN_2_1.raw = YDFR | YDFR-C_SN_2_2.raw = YDFR | YDFR-C_SN_3_1.raw = YDFR | YDFR-C_SN_3_2.raw = YDFR",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents the individual donor/patient identifier, which is the correct information for the factor_value[individual] field.",
+        "SOURCE_CHECK": "The paper states that cells were obtained from four individual patients and names the variants (YDFR, DP, M12, M16), which serve as the identifiers for the donors.",
+        "TRUTH_CHECK": "The mapping correctly assigns each run to its corresponding donor based on the cell line prefix (e.g., DP for DP-C and DP-CB).",
+        "COMPLETENESS_CHECK": "Every run is assigned a value, and the values match the groups described in the paper."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "MS2MassAnalyzer",
+      "extracted_value": "AC=MS:1000484; NT=Orbitrap",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a mass analyzer, which is the correct type of information for a column named MS2MassAnalyzer.",
+        "SOURCE_CHECK": "The paper states that fragments were analyzed in the Orbitrap.",
+        "TRUTH_CHECK": "The 144 proteomics runs were performed on a QExactive Orbitrap MS, where the MS2 analysis was conducted in the Orbitrap.",
+        "COMPLETENESS_CHECK": "The value follows the key-value format and is complete."
+      }
+    }
+  ]
+}

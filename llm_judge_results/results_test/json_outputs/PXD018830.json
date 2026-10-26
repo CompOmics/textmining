@@ -1,0 +1,430 @@
+{
+  "paper_id": "PXD018830",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "characteristics[organism]",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes breast cancer tissues from women and normal breast tissues from human subjects, which is an allowed inference for Homo sapiens.",
+        "TRUTH_CHECK": "The analysed breast tissues are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "characteristics[organism part]",
+      "extracted_value": "Breast epithelium",
+      "verdict": "low",
+      "type_mismatch": true,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organ/tissue of origin, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"breast cancer tissues\" and \"normal breast tissues\".",
+        "TRUTH_CHECK": "The samples are breast tissues; however, \"epithelium\" is a cell layer/type, not the organ/tissue itself.",
+        "COMPLETENESS_CHECK": "The term \"epithelium\" is more specific than the \"breast\" tissue mentioned in the paper and is not stated or inferable as the sole material."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "characteristics[disease]",
+      "extracted_value": "Breast cancer (BC)",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease of the subjects, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that specimens were collected from women with primary breast cancer.",
+        "TRUTH_CHECK": "The runs carry this value for the breast cancer samples.",
+        "COMPLETENESS_CHECK": "The value is complete, although it includes an abbreviation."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "characteristics[disease]",
+      "extracted_value": "Control",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "normal",
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The paper describes a set of four normal breast tissues collected after breast-reduction surgery.",
+        "TRUTH_CHECK": "The runs carry the value for the normal breast tissue samples.",
+        "COMPLETENESS_CHECK": "The SDRF term for healthy subjects is \"normal\", not \"Control\"."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "characteristics[sex]",
+      "extracted_value": "female",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"All specimens were collected from women with primary breast cancer\".",
+        "TRUTH_CHECK": "The runs carry samples from these women, so the sex is female.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "material type",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that \"breast cancer tissues\" and \"normal breast tissues\" were analyzed.",
+        "TRUTH_CHECK": "The runs are derived from these breast tissue samples.",
+        "COMPLETENESS_CHECK": "The value follows the allowed controlled terms in the definition."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "comment[label]",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Label-free quantification (LFQ) and match between run options were enabled\", which is equivalent to \"label free sample\".",
+        "TRUTH_CHECK": "The MS analysis for the described samples used LFQ.",
+        "COMPLETENESS_CHECK": "Complete. \"label free sample\" is the correct SDRF controlled term."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "comment[instrument]",
+      "extracted_value": "NT=Q Exactive HF-X;AC=MS:1002877",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The paper states \"a Q-Exactive HF-X (Thermo Fisher) mass spectrometer was employed\" for DIA MS analysis.",
+        "TRUTH_CHECK": "The runs listed are DIA MS runs (based on the \"TDM\" prefix and the context of the study's DIA set), and the Q-Exactive HF-X was the instrument used for DIA.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "comment[cleavage agent details]",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Proteins were then digested with trypsin\" and \"The chosen protease was trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the protein digestion of the samples analyzed in the MS runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "comment[dissociation method]",
+      "extracted_value": "NT=HCD;AC=PRIDE:0000590",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragmentation method, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that ions were fragmented by higher energy induced collision dissociation (HCD) for both DDA and DIA MS analysis.",
+        "TRUTH_CHECK": "The runs used the Q-Exactive HF-X (or Q-Exactive Plus for DDA), both of which used HCD as stated in the text.",
+        "COMPLETENESS_CHECK": "Complete. The NT term is correct and follows the SDRF key-value format."
+      }
+    },
+    {
+      "annotation_type": "collision_energy",
+      "sdrf_column": "comment[collision energy]",
+      "extracted_value": "30",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a collision energy, which is the right field.",
+        "SOURCE_CHECK": "The paper states \"collision energy: 30\" for both DDA and DIA MS analysis.",
+        "TRUTH_CHECK": "The runs use the Q Exactive HF-X and HCD fragmentation, for which the paper specifies a collision energy of 30.",
+        "COMPLETENESS_CHECK": "The value is provided as a number; while the paper does not specify the unit (e.g., eV or %), the value \"30\" matches the text exactly."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "comment[fractionation method]",
+      "extracted_value": "NT=High-performance liquid chromatography;AC=PRIDE:0000565",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a separation method, which fits the fractionation_method field.",
+        "SOURCE_CHECK": "The paper describes \"strong anion-exchange fractionation\" (SAX) for DDA and \"unfractionated samples\" for DIA. It does not mention HPLC as an offline fractionation method.",
+        "TRUTH_CHECK": "The runs listed are DIA runs (based on the filenames and the \"unfractionated\" description in the text for DIA), and the paper explicitly states that DIA samples were unfractionated.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a proteogenomic workflow using DDA and DIA mass spectrometry for protein quantification, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The runs are part of the MS experiment described in the paper.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Carbamidomethyl;MT=Fixed;TA=C;AC=UNIMOD:4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Fixed modifications: carbamidomethylation of Cys residues.\"",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it.",
+        "COMPLETENESS_CHECK": "Follows the required format (NT, MT, TA)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Acetyl;MT=Variable;TA=N-term;AC=UNIMOD:1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The paper states \"Variable modifications: acetylation of the N-terminal residue\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, MT)."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "comment[modification parameters]",
+      "extracted_value": "NT=Oxidation;MT=Variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a protein modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Variable modifications: acetylation of the N-terminal residue, oxidation of Met residues\" in the DDA analysis section.",
+        "TRUTH_CHECK": "The modification was used in the database search for the analyzed samples.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, MT, TA) and matches the paper's details."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "characteristics[biological replicate]",
+      "extracted_value": "TDM_M1808_198.raw = 1 | TDM_M1808_186.raw = 2 | TDM_M1808_266.raw = 3 | TDM_M1808_208.raw = 4 | TDM_M1808_210.raw = 5 | TDM_M1811_005.raw = 6 | TDM_M1808_226.raw = 7 | TDM_M1808_283.raw = 8 | TDM_M1811_006.raw = 9 | TDM_M1808_254.raw = 10 | TDM_M1808_276.raw = 11 | TDM_M1808_270.raw = 12 | TDM_M1808_225.raw = 13 | TDM_M1808_265.raw = 14 | TDM_M1810_077.raw = 15 | TDM_M1811_009.raw = 16 | TDM_M1808_197.raw = 17 | TDM_M1808_288.raw = 18 | TDM_M1811_010.raw = 19 | TDM_M1808_259.raw = 20 | TDM_M1808_209.raw = 21 | TDM_M1808_284.raw = 1 | TDM_M1808_220.raw = 2 | TDM_M1810_076.raw = 3 | TDM_M1808_224.raw = 4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes two sample sets: set 1 with 21 samples and set 2 with 24 samples.",
+        "TRUTH_CHECK": "The mapping assigns indices 1-21 to the first 21 runs (matching set 1) and indices 1-4 to the remaining runs. However, the paper states set 2 contains 24 samples, meaning runs 22-25 (and others not listed here) should be treated as independent biological units (1, 2, 3, 4, etc.) within that set. The mapping correctly treats them as independent units.",
+        "COMPLETENESS_CHECK": "Every run is assigned an index."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "comment[technical replicate]",
+      "extracted_value": "TDM_M1808_198.raw = 1 | TDM_M1808_186.raw = 1 | TDM_M1808_266.raw = 1 | TDM_M1808_208.raw = 1 | TDM_M1808_210.raw = 1 | TDM_M1811_005.raw = 1 | TDM_M1808_226.raw = 1 | TDM_M1808_283.raw = 1 | TDM_M1811_006.raw = 1 | TDM_M1808_254.raw = 1 | TDM_M1808_276.raw = 1 | TDM_M1808_270.raw = 1 | TDM_M1808_225.raw = 1 | TDM_M1808_265.raw = 1 | TDM_M1810_077.raw = 1 | TDM_M1811_009.raw = 1 | TDM_M1808_197.raw = 1 | TDM_M1808_288.raw = 1 | TDM_M1811_010.raw = 1 | TDM_M1808_259.raw = 1 | TDM_M1808_209.raw = 1 | TDM_M1808_284.raw = 1 | TDM_M1808_220.raw = 1 | TDM_M1810_076.raw = 1 | TDM_M1808_224.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents technical replicate indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the analysis of breast cancer tissue samples; there is no mention of repeated injections or technical replicates for these runs.",
+        "TRUTH_CHECK": "Each run corresponds to a unique sample (Sample 1 to Sample 25), and since they are measured once, they should each be assigned technical replicate index 1.",
+        "COMPLETENESS_CHECK": "The mapping follows the required format."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "comment[fraction identifier]",
+      "extracted_value": "TDM_M1808_198.raw = 1 | TDM_M1808_186.raw = 1 | TDM_M1808_266.raw = 1 | TDM_M1808_208.raw = 1 | TDM_M1808_210.raw = 1 | TDM_M1811_005.raw = 1 | TDM_M1808_226.raw = 1 | TDM_M1808_283.raw = 1 | TDM_M1811_006.raw = 1 | TDM_M1808_254.raw = 1 | TDM_M1808_276.raw = 1 | TDM_M1808_270.raw = 1 | TDM_M1808_225.raw = 1 | TDM_M1808_265.raw = 1 | TDM_M1810_077.raw = 1 | TDM_M1811_009.raw = 1 | TDM_M1808_197.raw = 1 | TDM_M1808_288.raw = 1 | TDM_M1811_010.raw = 1 | TDM_M1808_259.raw = 1 | TDM_M1808_209.raw = 1 | TDM_M1808_284.raw = 1 | TDM_M1808_220.raw = 1 | TDM_M1810_076.raw = 1 | TDM_M1808_224.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes DIA MS analysis for sample sets 1 and 2, stating that for DIA MS, \"omitting SAX stage tip-based fractionation\" was performed.",
+        "TRUTH_CHECK": "Since the DIA samples were unfractionated, every run should be assigned fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns 1 to every run."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[disease]",
+      "extracted_value": "TDM_M1808_198.raw = Breast cancer (BC) | TDM_M1808_186.raw = Breast cancer (BC) | TDM_M1808_266.raw = Breast cancer (BC) | TDM_M1808_208.raw = Breast cancer (BC) | TDM_M1808_210.raw = Breast cancer (BC) | TDM_M1811_005.raw = Breast cancer (BC) | TDM_M1808_226.raw = Breast cancer (BC) | TDM_M1808_283.raw = Breast cancer (BC) | TDM_M1811_006.raw = Breast cancer (BC) | TDM_M1808_254.raw = Breast cancer (BC) | TDM_M1808_276.raw = Breast cancer (BC) | TDM_M1808_270.raw = Breast cancer (BC) | TDM_M1808_225.raw = Breast cancer (BC) | TDM_M1808_265.raw = Breast cancer (BC) | TDM_M1810_077.raw = Breast cancer (BC) | TDM_M1811_009.raw = Breast cancer (BC) | TDM_M1808_197.raw = Breast cancer (BC) | TDM_M1808_288.raw = Breast cancer (BC) | TDM_M1811_010.raw = Breast cancer (BC) | TDM_M1808_259.raw = Breast cancer (BC) | TDM_M1808_209.raw = Breast cancer (BC) | TDM_M1808_284.raw = Control | TDM_M1808_220.raw = Control | TDM_M1810_076.raw = Control | TDM_M1808_224.raw = Control",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease status of the samples, which is a studied variable, fitting the factor_value field.",
+        "SOURCE_CHECK": "The paper states the analysis of breast cancer tissues (set 1: 21 samples) and a set of four normal breast tissues used for the spectral library.",
+        "TRUTH_CHECK": "The mapping correctly assigns \"Breast cancer (BC)\" to the 21 tumor samples and \"Control\" to the 4 normal breast tissues.",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[subtype]",
+      "extracted_value": "Basal",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Basal\" refers to a breast cancer molecular subtype, which is appropriate for a column named \"characteristics[subtype]\".",
+        "SOURCE_CHECK": "The paper states that \"Breast cancer molecular subtype classification was derived from previously acquired expression data using the AIMS algorithm\" and refers to \"Subtype classification\" in Figure 1C,D and Tables S1 and S2. While the word \"Basal\" is not in the provided text, it is a standard breast cancer molecular subtype (along with Luminal A, Luminal B, and HER2, which are listed as other values in the column).",
+        "TRUTH_CHECK": "The value is right for the runs as the study explicitly classifies the breast cancer samples by molecular subtype.",
+        "COMPLETENESS_CHECK": "The value is a plain text label for a subtype, which is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[subtype]",
+      "extracted_value": "LumA",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a breast cancer molecular subtype, which is a characteristic of the samples.",
+        "SOURCE_CHECK": "The paper states that \"Breast cancer molecular subtype classification was derived from previously acquired expression data using the AIMS algorithm.\"",
+        "TRUTH_CHECK": "While the specific term \"LumA\" is not written in the provided text, it is a standard breast cancer molecular subtype (Luminal A), and the paper explicitly mentions performing subtype classification.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[subtype]",
+      "extracted_value": "LumB",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to a column describing molecular subtypes of breast cancer, which is a relevant characteristic for this study.",
+        "SOURCE_CHECK": "The paper states that \"Breast cancer molecular subtype classification was derived from previously acquired expression data using the AIMS algorithm,\" although the specific labels (LumA, LumB, etc.) are not listed in the provided text.",
+        "TRUTH_CHECK": "The study explicitly analyzes breast cancer molecular subtypes, and LumB is a standard molecular subtype of breast cancer.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[subtype]",
+      "extracted_value": "Her2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"Her2\" refers to a breast cancer molecular subtype, which is appropriate for a column named \"characteristics[subtype]\".",
+        "SOURCE_CHECK": "The paper states that \"Breast cancer molecular subtype classification was derived from previously acquired expression data using the AIMS algorithm\" and refers to Figure 1C,D and Tables S1 and S2 for these characteristics. While \"Her2\" is not written verbatim in the provided text, it is a standard breast cancer molecular subtype (alongside Luminal A, Luminal B, and Basal, which are also in the column).",
+        "TRUTH_CHECK": "The value is right for the runs as the study explicitly classifies tumors by molecular subtype.",
+        "COMPLETENESS_CHECK": "The value is a plain text label for a subtype, which is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "comment[proteomics data acquisition method]",
+      "extracted_value": "NT=Data-independent acquisition;AC=PRIDE:0000450",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the data acquisition method, which is appropriate for a column named \"comment[proteomics data acquisition method]\".",
+        "SOURCE_CHECK": "The paper explicitly mentions \"data-independent acquisition mass spectrometry proteogenomic workflow\" and \"DIA MS analysis\".",
+        "TRUTH_CHECK": "The runs listed are DIA runs (as indicated by the \"TDM\" prefix and the context of the study's DIA analysis), and the value correctly describes the method used for these runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

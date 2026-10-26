@@ -1,0 +1,430 @@
+{
+  "paper_id": "PXD009815",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Saccharomyces cerevisiae",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper states the use of \"yeast lysate\", and Saccharomyces cerevisiae is the standard scientific name for yeast.",
+        "TRUTH_CHECK": "The experiment analyzed proteins from yeast lysate.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "lysate",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell culture",
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"lysate\" is a description of the sample preparation, but it is not one of the broad classes defined for material_type.",
+        "SOURCE_CHECK": "The paper mentions \"yeast lysate\" in section 2.2.",
+        "TRUTH_CHECK": "The material analyzed is indeed a yeast lysate.",
+        "COMPLETENESS_CHECK": "The value does not follow the controlled vocabulary of the field definition."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The abstract and methods explicitly mention \"DDA label-free quantification workflow\" and \"label-free quantification\".",
+        "TRUTH_CHECK": "The 40 runs described in the experimental dataset were analyzed using a label-free workflow.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1001911;NT=Q Exactive",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "NT=Q-Exactive Plus",
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the samples were analyzed using a Q-Exactive Plus mass spectrometer.",
+        "TRUTH_CHECK": "The value refers to the correct instrument used for the 40 runs.",
+        "COMPLETENESS_CHECK": "The value is a drift to the base model \"Q Exactive\" instead of the specific \"Q-Exactive Plus\" printed in the paper."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=trypsin/P;AC=MS:1001313",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"Trypsin digested samples\" in section 2.2.",
+        "TRUTH_CHECK": "The samples were digested with trypsin.",
+        "COMPLETENESS_CHECK": "Complete. \"trypsin/P\" is explicitly listed as an equivalent term for trypsin in the field definition."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, the right field.",
+        "SOURCE_CHECK": "The paper describes a label-free quantification workflow using nanoLC-MS/MS on trypsin digested samples, which is a proteomic profiling experiment.",
+        "TRUTH_CHECK": "The value is correct for the 40 runs described in the experimental dataset.",
+        "COMPLETENESS_CHECK": "Complete and follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not list the search parameters or modifications used for the evaluation dataset; it refers the reader to the Supplementary Material for these details.",
+        "TRUTH_CHECK": "The content is not stated in the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper does not list the search parameters or modifications used for the evaluation dataset in the provided text, stating instead that they can be found in the Supplementary Material.",
+        "TRUTH_CHECK": "The content is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "Follows the format, but content is unsupported."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:67;PP=Protein N-term;MT=variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a modification, which is the correct field.",
+        "SOURCE_CHECK": "The paper does not mention any search parameters or modifications used for the evaluation dataset; it only refers to the Supplementary Material for these details.",
+        "TRUTH_CHECK": "The content is not supported by the provided text.",
+        "COMPLETENESS_CHECK": "The format follows the definition."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "5 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a precursor mass tolerance, which is the right field.",
+        "SOURCE_CHECK": "The paper text does not state the precursor mass tolerance; it refers to the Supplementary Material for data processing parameters.",
+        "TRUTH_CHECK": "The value cannot be verified from the provided text.",
+        "COMPLETENESS_CHECK": "The format is correct, but the content is not in the source text."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "0.07 Da",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper does not state the fragment mass tolerance in the provided text.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "QEKAC160601_02.raw = 1 | QEKAC160601_31.raw = 1 | QEKAC160601_61.raw = 1 | QEKAC160601_113.raw = 1 | QEKAC160601_04.raw = 1 | QEKAC160601_63.raw = 1 | QEKAC160601_34.raw = 1 | QEKAC160601_115.raw = 1 | QEKAC160601_06.raw = 1 | QEKAC160601_65.raw = 1 | QEKAC160601_36.raw = 1 | QEKAC160601_117.raw = 1 | QEKAC160601_08.raw = 1 | QEKAC160601_38.raw = 1 | QEKAC160601_69.raw = 1 | QEKAC160601_119.raw = 1 | QEKAC160601_10.raw = 1 | QEKAC160601_71.raw = 1 | QEKAC160601_40.raw = 1 | QEKAC160601_121.raw = 1 | QEKAC160601_12.raw = 1 | QEKAC160601_42.raw = 1 | QEKAC160601_73.raw = 1 | QEKAC160601_123.raw = 1 | QEKAC160601_14.raw = 1 | QEKAC160601_75.raw = 1 | QEKAC160601_44.raw = 1 | QEKAC160601_125.raw = 1 | QEKAC160601_16.raw = 1 | QEKAC160601_46.raw = 1 | QEKAC160601_77.raw = 1 | QEKAC160601_127.raw = 1 | QEKAC160601_18.raw = 1 | QEKAC160601_48.raw = 1 | QEKAC160601_79.raw = 1 | QEKAC160601_129.raw = 1 | QEKAC160601_20.raw = 1 | QEKAC160601_50.raw = 1 | QEKAC160601_81.raw = 1 | QEKAC160601_131.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes a spiked-in sample (UPS1 mix into yeast lysate) analyzed at 10 different concentrations in quadruplicate.",
+        "TRUTH_CHECK": "The experiment uses a single biological source (yeast lysate spiked with a standard mix) prepared at different concentrations. According to the definition, runs of the same biological sample (even if split into different concentration groups or aliquots) should share the same biological replicate index.",
+        "COMPLETENESS_CHECK": "Every run is assigned the index 1, which is correct for a single biological source."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "QEKAC160601_02.raw = 1 | QEKAC160601_31.raw = 2 | QEKAC160601_61.raw = 3 | QEKAC160601_113.raw = 4 | QEKAC160601_04.raw = 1 | QEKAC160601_63.raw = 2 | QEKAC160601_34.raw = 3 | QEKAC160601_115.raw = 4 | QEKAC160601_06.raw = 1 | QEKAC160601_65.raw = 2 | QEKAC160601_36.raw = 3 | QEKAC160601_117.raw = 4 | QEKAC160601_08.raw = 1 | QEKAC160601_38.raw = 2 | QEKAC160601_69.raw = 3 | QEKAC160601_119.raw = 4 | QEKAC160601_10.raw = 1 | QEKAC160601_71.raw = 2 | QEKAC160601_40.raw = 3 | QEKAC160601_121.raw = 4 | QEKAC160601_12.raw = 1 | QEKAC160601_42.raw = 2 | QEKAC160601_73.raw = 3 | QEKAC160601_123.raw = 4 | QEKAC160601_14.raw = 1 | QEKAC160601_75.raw = 2 | QEKAC160601_44.raw = 3 | QEKAC160601_125.raw = 4 | QEKAC160601_16.raw = 1 | QEKAC160601_46.raw = 2 | QEKAC160601_77.raw = 3 | QEKAC160601_127.raw = 4 | QEKAC160601_18.raw = 1 | QEKAC160601_48.raw = 2 | QEKAC160601_79.raw = 3 | QEKAC160601_129.raw = 4 | QEKAC160601_20.raw = 1 | QEKAC160601_50.raw = 2 | QEKAC160601_81.raw = 3 | QEKAC160601_131.raw = 4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that samples were analyzed in quadruplicate, producing 40 raw MS files.",
+        "TRUTH_CHECK": "The mapping assigns indices 1-4 to the four runs of each of the 10 spiked-in concentrations, which correctly represents the quadruplicate analysis.",
+        "COMPLETENESS_CHECK": "Every run is assigned a technical replicate index following the definition."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "QEKAC160601_02.raw = 1 | QEKAC160601_31.raw = 1 | QEKAC160601_61.raw = 1 | QEKAC160601_113.raw = 1 | QEKAC160601_04.raw = 1 | QEKAC160601_63.raw = 1 | QEKAC160601_34.raw = 1 | QEKAC160601_115.raw = 1 | QEKAC160601_06.raw = 1 | QEKAC160601_65.raw = 1 | QEKAC160601_36.raw = 1 | QEKAC160601_117.raw = 1 | QEKAC160601_08.raw = 1 | QEKAC160601_38.raw = 1 | QEKAC160601_69.raw = 1 | QEKAC160601_119.raw = 1 | QEKAC160601_10.raw = 1 | QEKAC160601_71.raw = 1 | QEKAC160601_40.raw = 1 | QEKAC160601_121.raw = 1 | QEKAC160601_12.raw = 1 | QEKAC160601_42.raw = 1 | QEKAC160601_73.raw = 1 | QEKAC160601_123.raw = 1 | QEKAC160601_14.raw = 1 | QEKAC160601_75.raw = 1 | QEKAC160601_44.raw = 1 | QEKAC160601_125.raw = 1 | QEKAC160601_16.raw = 1 | QEKAC160601_46.raw = 1 | QEKAC160601_77.raw = 1 | QEKAC160601_127.raw = 1 | QEKAC160601_18.raw = 1 | QEKAC160601_48.raw = 1 | QEKAC160601_79.raw = 1 | QEKAC160601_129.raw = 1 | QEKAC160601_20.raw = 1 | QEKAC160601_50.raw = 1 | QEKAC160601_81.raw = 1 | QEKAC160601_131.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes the analysis of 40 raw files from spiked samples but mentions no offline fractionation.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping correctly assigns fraction 1 to all 40 runs."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[mass]",
+      "extracted_value": "1 ug",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"1 ug\" describes a mass of material, which is a characteristic of the sample.",
+        "SOURCE_CHECK": "The methods section states that the UPS1 mix was spiked into \"1 μg of yeast lysate\".",
+        "TRUTH_CHECK": "The 1 μg refers to the amount of yeast lysate used as the background for all 40 runs in the evaluation dataset.",
+        "COMPLETENESS_CHECK": "The value is a simple mass measurement and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=10 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that the UPS1 equimolar mix (Sigma) was spiked at various concentrations, including 0.01 fmol (which equals 10 amol).",
+        "TRUTH_CHECK": "The value correctly identifies the compound (UPS1), the quantity (10 amol), and the nature of the material (mixture) for the runs associated with the 10 amol spike.",
+        "COMPLETENESS_CHECK": "The value is a structured string providing the compound name, quantity, and type, which is complete for this custom column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=50 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that the UPS1 equimolar mix (Sigma) was spiked at various concentrations, including 0.05 fmol (which equals 50 amol).",
+        "TRUTH_CHECK": "The value correctly describes the spiked material (UPS1 mixture) and the quantity (50 amol) for the runs associated with the 50 amol source.",
+        "COMPLETENESS_CHECK": "The value is a structured string providing the compound name, quantity, and type, which is complete for this custom column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=100 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that the \"UPS1 equimolar mix (Sigma)\" was spiked at various concentrations, including 0.1 fmol (which equals 100 amol).",
+        "TRUTH_CHECK": "The value correctly describes the spiked material (UPS1 mix) and the specific quantity (100 amol) for the runs associated with the 0.1 fmol spike.",
+        "COMPLETENESS_CHECK": "The value is a structured string providing the compound name, quantity, and type, which is complete for this custom column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=250 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that the \"UPS1 equimolar mix (Sigma)\" was spiked at various concentrations, including 0.25 fmol (which equals 250 amol).",
+        "TRUTH_CHECK": "The value correctly identifies the compound (UPS1), the quantity (250 amol), and the nature of the material (mixture) for the runs associated with the 0.25 fmol spike.",
+        "COMPLETENESS_CHECK": "The value is a structured string providing the compound name, quantity, and type, which is complete for this custom column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=500 amol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked compound, which is the correct content for a column named \"SpikedCompound\".",
+        "SOURCE_CHECK": "The paper states that the \"UPS1 equimolar mix (Sigma)\" was spiked at various concentrations, including 0.5 fmol (which equals 500 amol).",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the 0.5 fmol / 500 amol spike.",
+        "COMPLETENESS_CHECK": "The value provides the compound name (UPS1), quantity (500 amol), and type (mixture), which is a complete description of the spike."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=1 fmol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the spiked compound, which is a relevant metadata column for this specific study.",
+        "SOURCE_CHECK": "The paper states that the \"UPS1 equimolar mix (Sigma)\" was spiked at various concentrations, including \"1 fmol\".",
+        "TRUTH_CHECK": "The value correctly identifies the compound (UPS1), the quantity (1 fmol), and the nature (mixture) for the runs associated with the 1fmol source.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=5 fmol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that the UPS1 equimolar mix (Sigma) was spiked at various concentrations, including 5 fmol.",
+        "TRUTH_CHECK": "The value correctly describes the material (UPS1 mixture) and the quantity (5 fmol) for the runs associated with the 5fmol source.",
+        "COMPLETENESS_CHECK": "The value is a structured string containing the compound name, quantity, and type, which is a reasonable way to represent this metadata."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=10 fmol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that the \"UPS1 equimolar mix (Sigma)\" was spiked at various concentrations, including \"10 fmol\".",
+        "TRUTH_CHECK": "The value correctly identifies the compound (UPS1) and the quantity (10 fmol) for the runs associated with the 10fmol source.",
+        "COMPLETENESS_CHECK": "The value is a structured string containing the compound name and quantity, which is a reasonable way to represent this metadata."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=25 fmol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that the UPS1 equimolar mix (Sigma) was spiked at various concentrations, including 25 fmol.",
+        "TRUTH_CHECK": "The value correctly describes the material (UPS1 mix) and the quantity (25 fmol) for the runs associated with the 25fmol source.",
+        "COMPLETENESS_CHECK": "The value is a structured string containing the compound name and quantity, which is complete for this custom column."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "SpikedCompound",
+      "extracted_value": "CT=mixture;QY=50 fmol;CN=UPS1;CV=Standards Research Group",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a spiked compound, which is appropriate for a column named \"SpikedCompound\" in this study.",
+        "SOURCE_CHECK": "The paper states that the UPS1 equimolar mix (Sigma) was spiked at various concentrations, including 50 fmol.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with the 50 fmol spike (source=50fmol_1 to 4).",
+        "COMPLETENESS_CHECK": "The value uses a key-value format to capture the compound name (UPS1), quantity (50 fmol), and type (mixture), which is a reasonable way to represent this specific experimental detail."
+      }
+    }
+  ]
+}

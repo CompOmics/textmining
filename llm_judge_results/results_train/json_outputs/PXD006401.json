@@ -1,0 +1,447 @@
+{
+  "paper_id": "PXD006401",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "mus musculus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes the use of murine kidney tissue and a C57 black 6 mouse.",
+        "TRUTH_CHECK": "The runs associated with this value are the kidney samples, which are murine.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase scientific name is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes the analysis of human tonsil FFPE tissue specimens, which allows the inference of \"homo sapiens\".",
+        "TRUTH_CHECK": "The runs associated with this value correspond to the human tonsil samples.",
+        "COMPLETENESS_CHECK": "Complete. Lowercase is the SDRF convention."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "kidney",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organ name, which is the correct field for tissue.",
+        "SOURCE_CHECK": "The methods section explicitly mentions \"FFPE mouse kidney samples\" and \"Kidneys of a male... mouse\".",
+        "TRUTH_CHECK": "The runs associated with this value are the mouse kidney samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "tonsil",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an organism part, which is the right field.",
+        "SOURCE_CHECK": "The methods section explicitly mentions \"FFPE human tonsil samples\".",
+        "TRUTH_CHECK": "The runs listed (e.g., HE, hematoxylin) correspond to the human tonsil experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "6 month",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The methods state the mouse was \"6-months old\".",
+        "TRUTH_CHECK": "The value is correct for the mouse kidney runs.",
+        "COMPLETENESS_CHECK": "The value is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "male",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The methods state \"Kidneys of a male, 6-months old C57 black 6 mouse\".",
+        "TRUTH_CHECK": "The runs listed (DTR and FASP on mouse kidney) come from the male mouse described.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "Formalin-fixed paraffin-embedded tissue",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "tissue",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the right field.",
+        "SOURCE_CHECK": "The paper describes \"formalin-fixation and paraffin embedding (FFPE)\" of \"murine kidney tissue specimens\" and \"human tonsil FFPE tissue specimens\".",
+        "TRUTH_CHECK": "The material analysed in all runs consists of FFPE tissues.",
+        "COMPLETENESS_CHECK": "The value is a descriptive term, but the field definition requires a specific broad class from a list (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the analysis was \"label-free, quantitative liquid chromatography–tandem mass spectrometry (LC–MS/MS)\" and used \"Label-free quantitation (LFQ)\".",
+        "TRUTH_CHECK": "All runs in the study used this label-free approach.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1002634;NT=Q Exactive Plus",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the samples were analyzed by an \"Orbitrap Q-Exactive plus\".",
+        "TRUTH_CHECK": "The value is correct for all runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease, which is the correct field.",
+        "SOURCE_CHECK": "The methods section mentions \"sequencing grade trypsin\" for both DTR and FASP protocols.",
+        "TRUTH_CHECK": "Trypsin was used for all runs described in the paper.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a label-free LC-MS/MS workflow to identify and quantify proteins, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the proteomics experiment performed on the kidney and tonsil samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;AC=UNIMOD:4;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods section states \"Carbamidomethyl at cysteines was the only fixed modification.\"",
+        "TRUTH_CHECK": "The value is correct for all runs as it was the only fixed modification used in the search.",
+        "COMPLETENESS_CHECK": "The value follows the required format including name, residues, and modification type."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "4.5 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance value, the right field.",
+        "SOURCE_CHECK": "The paper states \"the precursor mass tolerance for the initial search was 20 ppm and for the main search 4.5 ppm\".",
+        "TRUTH_CHECK": "The main search tolerance of 4.5 ppm is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete, includes the value and unit."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a fragment mass tolerance, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states \"the fragment mass tolerance was 20 ppm\".",
+        "TRUTH_CHECK": "The value is correct for all runs in the study.",
+        "COMPLETENESS_CHECK": "The value follows the required format (number and unit)."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "1_DTR1.raw = mouse 1 | 2_DTR2.raw = mouse 1 | 3_DTR3.raw = mouse 1 | 4_DTR4.raw = mouse 1 | 5_FASP10k_1.raw = mouse 1 | 6_FASP10k_2.raw = mouse 1 | 7_FASP10k_3.raw = mouse 1 | 8_FASP10k_4.raw = mouse 1 | 9_FASP30k_1.raw = mouse 1 | 10_FASP30k_2.raw = mouse 1 | 11_FASP30k_3.raw = mouse 1 | 12_FASP30k_4.raw = mouse 1 | 1_HE1_1.raw = human 1 | 2_HE1_2.raw = human 1 | 9_HE2_1.raw = human 2 | 10_HE2_2.raw = human 2 | 3_hematoxylin1_1.raw = human 1 | 4_hematoxylin1_2.raw = human 1 | 11_hematoxylin2_1.raw = human 2 | 12_hematoxylin2_2.raw = human 2 | 5_hemalaun1_1.raw = human 1 | 6_hemalaun1_2.raw = human 1 | 13_hemalaun2_1.raw = human 2 | 14_hemalaun2_2.raw = human 2 | 7_unstained1_1.raw = human 1 | 8_unstained1_2.raw = human 1 | 15_unstained2_1.raw = human 2 | 16_unstained2_2.raw = human 2",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "1_DTR1.raw = 1 | 2_DTR2.raw = 1 | 3_DTR3.raw = 1 | 4_DTR4.raw = 1 | 5_FASP10k_1.raw = 1 | 6_FASP10k_2.raw = 1 | 7_FASP10k_3.raw = 1 | 8_FASP10k_4.raw = 1 | 9_FASP30k_1.raw = 1 | 10_FASP30k_2.raw = 1 | 11_FASP30k_3.raw = 1 | 12_FASP30k_4.raw = 1 | 1_HE1_1.raw = 1 | 2_HE1_2.raw = 1 | 9_HE2_1.raw = 2 | 10_HE2_2.raw = 2 | 3_hematoxylin1_1.raw = 1 | 4_hematoxylin1_2.raw = 1 | 11_hematoxylin2_1.raw = 2 | 12_hematoxylin2_2.raw = 2 | 5_hemalaun1_1.raw = 1 | 6_hemalaun1_2.raw = 1 | 13_hemalaun2_1.raw = 2 | 14_hemalaun2_2.raw = 2 | 7_unstained1_1.raw = 1 | 8_unstained1_2.raw = 1 | 15_unstained2_1.raw = 2 | 16_unstained2_2.raw = 2",
+      "issue_summary": {
+        "TYPE_CHECK": "The field requires a biological replicate index, which should be a plain number.",
+        "SOURCE_CHECK": "The paper states that for mouse kidney, one male mouse was used. For human tonsils, two tissue blocks (from two patients) were used.",
+        "TRUTH_CHECK": "The mapping correctly groups runs by biological source (one mouse, two humans), but uses labels (\"mouse 1\", \"human 1\") instead of indices.",
+        "COMPLETENESS_CHECK": "The values are not plain numbers as required by the field definition and the format check."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "1_DTR1.raw = 1 | 2_DTR2.raw = 2 | 3_DTR3.raw = 3 | 4_DTR4.raw = 4 | 5_FASP10k_1.raw = 5 | 6_FASP10k_2.raw = 6 | 7_FASP10k_3.raw = 7 | 8_FASP10k_4.raw = 8 | 9_FASP30k_1.raw = 9 | 10_FASP30k_2.raw = 10 | 11_FASP30k_3.raw = 11 | 12_FASP30k_4.raw = 12 | 1_HE1_1.raw = 1 | 2_HE1_2.raw = 2 | 9_HE2_1.raw = 1 | 10_HE2_2.raw = 2 | 3_hematoxylin1_1.raw = 1 | 4_hematoxylin1_2.raw = 2 | 11_hematoxylin2_1.raw = 1 | 12_hematoxylin2_2.raw = 2 | 5_hemalaun1_1.raw = 1 | 6_hemalaun1_2.raw = 2 | 13_hemalaun2_1.raw = 1 | 14_hemalaun2_2.raw = 2 | 7_unstained1_1.raw = 1 | 8_unstained1_2.raw = 2 | 15_unstained2_1.raw = 1 | 16_unstained2_2.raw = 2",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "1_DTR1.raw = 1 | 2_DTR2.raw = 1 | 3_DTR3.raw = 1 | 4_DTR4.raw = 1 | 5_FASP10k_1.raw = 1 | 6_FASP10k_2.raw = 1 | 7_FASP10k_3.raw = 1 | 8_FASP10k_4.raw = 1 | 9_FASP30k_1.raw = 1 | 10_FASP30k_2.raw = 1 | 11_FASP30k_3.raw = 1 | 12_FASP30k_4.raw = 1 | 1_HE1_1.raw = 1 | 2_HE1_2.raw = 2 | 9_HE2_1.raw = 1 | 10_HE2_2.raw = 2 | 3_hematoxylin1_1.raw = 1 | 4_hematoxylin1_2.raw = 2 | 11_hematoxylin2_1.raw = 1 | 12_hematoxylin2_2.raw = 2 | 5_hemalaun1_1.raw = 1 | 6_hemalaun1_2.raw = 2 | 13_hemalaun2_1.raw = 1 | 14_hemalaun2_2.raw = 2 | 7_unstained1_1.raw = 1 | 8_unstained1_2.raw = 2 | 15_unstained2_1.raw = 1 | 16_unstained2_2.raw = 2",
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes 12 kidney tissue slices used as replicates for three protocols (4 per protocol) and 16 tonsil tissue slices (4 per condition).",
+        "TRUTH_CHECK": "For the kidney samples, the 4 runs per protocol (DTR, FASP 10k, FASP 30k) are described as \"replicates\" coming from \"twelve single kidney tissue slices\". Since each slice is a separate biological unit, these are biological replicates, not technical replicates. They should all be technical replicate 1.",
+        "COMPLETENESS_CHECK": "The mapping uses a continuous index (1-12) for the kidney runs, which is incorrect for technical replicates."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "1_DTR1.raw = 1 | 2_DTR2.raw = 1 | 3_DTR3.raw = 1 | 4_DTR4.raw = 1 | 5_FASP10k_1.raw = 1 | 6_FASP10k_2.raw = 1 | 7_FASP10k_3.raw = 1 | 8_FASP10k_4.raw = 1 | 9_FASP30k_1.raw = 1 | 10_FASP30k_2.raw = 1 | 11_FASP30k_3.raw = 1 | 12_FASP30k_4.raw = 1 | 1_HE1_1.raw = 1 | 2_HE1_2.raw = 1 | 9_HE2_1.raw = 1 | 10_HE2_2.raw = 1 | 3_hematoxylin1_1.raw = 1 | 4_hematoxylin1_2.raw = 1 | 11_hematoxylin2_1.raw = 1 | 12_hematoxylin2_2.raw = 1 | 5_hemalaun1_1.raw = 1 | 6_hemalaun1_2.raw = 1 | 13_hemalaun2_1.raw = 1 | 14_hemalaun2_2.raw = 1 | 7_unstained1_1.raw = 1 | 8_unstained1_2.raw = 1 | 15_unstained2_1.raw = 1 | 16_unstained2_2.raw = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value belongs to the fraction_identifier field.",
+        "SOURCE_CHECK": "The paper describes a non-fractionated LC-MS/MS analysis for the DTR protocol and does not mention any offline fractionation for the FASP or tonsil samples.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "The mapping follows the definition by assigning 1 to all runs."
+      }
+    },
+    {
+      "annotation_type": "individual",
+      "sdrf_column": "characteristics[individual]",
+      "extracted_value": "1_DTR1.raw = 1 | 2_DTR2.raw = 1 | 3_DTR3.raw = 1 | 4_DTR4.raw = 1 | 5_FASP10k_1.raw = 1 | 6_FASP10k_2.raw = 1 | 7_FASP10k_3.raw = 1 | 8_FASP10k_4.raw = 1 | 9_FASP30k_1.raw = 1 | 10_FASP30k_2.raw = 1 | 11_FASP30k_3.raw = 1 | 12_FASP30k_4.raw = 1 | 1_HE1_1.raw = 2 | 2_HE1_2.raw = 2 | 9_HE2_1.raw = 3 | 10_HE2_2.raw = 3 | 3_hematoxylin1_1.raw = 2 | 4_hematoxylin1_2.raw = 2 | 11_hematoxylin2_1.raw = 3 | 12_hematoxylin2_2.raw = 3 | 5_hemalaun1_1.raw = 2 | 6_hemalaun1_2.raw = 2 | 13_hemalaun2_1.raw = 3 | 14_hemalaun2_2.raw = 3 | 7_unstained1_1.raw = 2 | 8_unstained1_2.raw = 2 | 15_unstained2_1.raw = 3 | 16_unstained2_2.raw = 3",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents identifiers for the subjects/donors, which is the correct field.",
+        "SOURCE_CHECK": "The paper states that mouse kidney samples came from \"a male, 6-months old C57 black 6 mouse\" (one individual) and human tonsil samples came from \"two FFPE tonsil tissue blocks\" (two individuals).",
+        "TRUTH_CHECK": "The mapping correctly assigns all mouse kidney runs to individual 1 and splits the human tonsil runs between individual 2 and 3 based on the tissue block origin (tonsil 1 and tonsil 2).",
+        "COMPLETENESS_CHECK": "The mapping is complete and follows the required format."
+      }
+    },
+    {
+      "annotation_type": "factor_value",
+      "sdrf_column": "factor value[protocol]",
+      "extracted_value": "1_DTR1.raw = DTR | 2_DTR2.raw = DTR | 3_DTR3.raw = DTR | 4_DTR4.raw = DTR | 5_FASP10k_1.raw = FASP 10k | 6_FASP10k_2.raw = FASP 10k | 7_FASP10k_3.raw = FASP 10k | 8_FASP10k_4.raw = FASP 10k | 9_FASP30k_1.raw = FASP 30k | 10_FASP30k_2.raw = FASP 30k | 11_FASP30k_3.raw = FASP 30k | 12_FASP30k_4.raw = FASP 30k | 1_HE1_1.raw = DTR | 2_HE1_2.raw = DTR | 9_HE2_1.raw = DTR | 10_HE2_2.raw = DTR | 3_hematoxylin1_1.raw = DTR | 4_hematoxylin1_2.raw = DTR | 11_hematoxylin2_1.raw = DTR | 12_hematoxylin2_2.raw = DTR | 5_hemalaun1_1.raw = DTR | 6_hemalaun1_2.raw = DTR | 13_hemalaun2_1.raw = DTR | 14_hemalaun2_2.raw = DTR | 7_unstained1_1.raw = DTR | 8_unstained1_2.raw = DTR | 15_unstained2_1.raw = DTR | 16_unstained2_2.raw = DTR",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the sample preparation protocol, which is the primary variable being compared in the study.",
+        "SOURCE_CHECK": "The paper explicitly compares the DTR protocol against FASP 10k and FASP 30k for mouse kidney samples, and uses the DTR protocol for the human tonsil staining experiments.",
+        "TRUTH_CHECK": "The mapping correctly assigns DTR, FASP 10k, and FASP 30k to the respective runs. The human tonsil runs (HE, hematoxylin, hemalaun, unstained) were all processed using the DTR protocol as stated in the \"Direct tissue trypsinization using a RapiGest containing buffer (DTR)\" section.",
+        "COMPLETENESS_CHECK": "Every run is assigned the correct protocol level."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[protocol]",
+      "extracted_value": "DTR",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the sample preparation protocol, which is a valid characteristic for this study.",
+        "SOURCE_CHECK": "The paper describes the \"direct trypsinization (DTR) strategy\" and compares it to FASP.",
+        "TRUTH_CHECK": "The runs listed (DTR1-4 and HE1-2, etc.) were all prepared using the DTR protocol as stated in the methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[protocol]",
+      "extracted_value": "FASP 10k",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the sample preparation protocol used, which is appropriate for a characteristics column.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"FASP 10 k\" as one of the three protocols compared.",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it, as they are identified as FASP 10k in the run keys.",
+        "COMPLETENESS_CHECK": "Complete. The slight difference in spacing (\"10k\" vs \"10 k\") is negligible."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "characteristics[protocol]",
+      "extracted_value": "FASP 30k",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the sample preparation protocol, which is a valid characteristic for this study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"FASP 30 k\" as one of the three protocols used.",
+        "TRUTH_CHECK": "The runs associated with this value are identified as FASP 30k in their filenames and correspond to the FASP 30 k protocol described in the methods.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Staining",
+      "extracted_value": "unstained",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the histological staining condition of the samples, which is a relevant variable for this study.",
+        "SOURCE_CHECK": "The paper states that tonsil tissue slices were stained with hematoxylin, H&E, hemalaun or \"left unstained as control\".",
+        "TRUTH_CHECK": "The value is correct for the control group of the human tonsil experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Staining",
+      "extracted_value": "H&E",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a histological staining condition, which is a relevant variable for the human tonsil samples in this study.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"hematoxylin & eosin (H&E)\" staining in the abstract and methods.",
+        "TRUTH_CHECK": "The value is correct for the runs associated with H&E stained human tonsil specimens.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Staining",
+      "extracted_value": "hematoxylin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a histological staining used in the study, which is appropriate for a column named \"Staining\".",
+        "SOURCE_CHECK": "The paper states that tonsil tissue slices were stained with hematoxylin, H&E, hemalaun, or left unstained.",
+        "TRUTH_CHECK": "The value is correct for the runs that carry it, as these runs correspond to the hematoxylin-stained samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Staining",
+      "extracted_value": "hemalum",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": "hemalaun",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a histological staining, which is the intended content for the \"Staining\" column in this study.",
+        "SOURCE_CHECK": "The paper mentions \"hemalaun\" staining in the abstract and methods.",
+        "TRUTH_CHECK": "The runs carrying this value are explicitly labeled as \"hemalaun\" in their filenames.",
+        "COMPLETENESS_CHECK": "The value \"hemalum\" is a misspelling of \"hemalaun\" as printed in the paper."
+      }
+    }
+  ]
+}

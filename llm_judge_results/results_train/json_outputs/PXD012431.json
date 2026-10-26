@@ -1,0 +1,345 @@
+{
+  "paper_id": "PXD012431",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes breast tissues from human patients and uses the human UniProt protein database, which is an allowed inference.",
+        "TRUTH_CHECK": "The analysed breast tissues are human.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "axillary metastatic lymph nodes tissues",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organism part (tissue), which is the correct field.",
+        "SOURCE_CHECK": "The abstract mentions \"axillary metastatic lymph nodes (LN)\" as one of the malignant tissue groups.",
+        "TRUTH_CHECK": "The runs with \"LN\" in their filename correspond to the axillary metastatic lymph nodes group.",
+        "COMPLETENESS_CHECK": "The value is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "primary breast tumor tissues",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organ and pathology of the sample, which is the right field.",
+        "SOURCE_CHECK": "The abstract mentions \"primary breast tumor (PT)\" tissues.",
+        "TRUTH_CHECK": "The runs identified by \"PT\" in their filenames correspond to the primary breast tumor group.",
+        "COMPLETENESS_CHECK": "The value is complete and follows the definition."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "adjacent breast tissues",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organism part the sample came from, which is the right field.",
+        "SOURCE_CHECK": "The abstract and methods mention \"adjacent (ANT) breast tissues\".",
+        "TRUTH_CHECK": "The runs with the ANT label correspond to the adjacent breast tissue group.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "tissue",
+      "sdrf_column": "OrganismPart",
+      "extracted_value": "non-tumor contralateral breast tissues",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the organism part (breast tissue), which is the right field.",
+        "SOURCE_CHECK": "The paper mentions \"non-tumor [contralateral (NCT) and adjacent (ANT)] breast tissues\".",
+        "TRUTH_CHECK": "The runs with this value (NCT) correspond to the contralateral breast tissues.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "Breast cancer",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A disease state, the right field.",
+        "SOURCE_CHECK": "The abstract mentions \"breast tumorigenesis\" and \"breast cancer\".",
+        "TRUTH_CHECK": "The value is applied to all 69 runs, but the study includes non-tumor tissues (NCT and ANT) which should be marked as \"normal\" according to the field definition for a case versus control study.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "tissue",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a broad class of analysed material, which is the correct field.",
+        "SOURCE_CHECK": "The paper explicitly mentions \"breast tissues\" and \"lymph nodes (LN)\" in the abstract and methods.",
+        "TRUTH_CHECK": "The runs correspond to samples of primary breast tumor, lymph nodes, and breast tissues.",
+        "COMPLETENESS_CHECK": "The value follows the controlled terms listed in the definition."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "AC=MS:1002038;NT=label free sample",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a labeling term, which is the right field.",
+        "SOURCE_CHECK": "The abstract and methods state \"label-free mass spectrometry\" and \"LFQ intensity values\".",
+        "TRUTH_CHECK": "The runs described in the paper used a label-free approach.",
+        "COMPLETENESS_CHECK": "The value uses the correct SDRF controlled term \"label free sample\"."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "AC=MS:1000639;NT=LTQ Orbitrap XL ETD",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods section states the samples were analyzed in the LTQ Orbitrap XL ETD.",
+        "TRUTH_CHECK": "The value is correct for the runs listed.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "AC=MS:1001251;NT=Trypsin",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state proteins were \"digested for 18 h with 12.5 ng/μl trypsin\".",
+        "TRUTH_CHECK": "Trypsin was used for the digestion of all samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "fragmentation_method",
+      "sdrf_column": "FragmentationMethod",
+      "extracted_value": "AC=MS:1000133;NT=CID",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragmentation method, the right field.",
+        "SOURCE_CHECK": "The methods section states \"using the CID fragmentation in a DDA mode\".",
+        "TRUTH_CHECK": "The value is right for the runs that carry it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a comparative proteomic analysis using nLC-ESI-MS/MS, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the LC-MS/MS experiment performed on the breast tissue samples.",
+        "COMPLETENESS_CHECK": "The value follows the SDRF controlled term format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:35;NT=Oxidation;TA=M;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper does not mention Oxidation as a searched modification in the methods.",
+        "TRUTH_CHECK": "The modification is not stated as part of the search parameters.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:1;NT=Acetyl;PP=Protein N-term;MT=Variable",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper does not mention Acetyl as a searched modification in the methods.",
+        "TRUTH_CHECK": "The modification is not stated as part of the search parameters.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "AC=UNIMOD:4;NT=Carbamidomethyl;TA=C;MT=Fixed",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification, the right field.",
+        "SOURCE_CHECK": "The paper states that proteins were \"alkylated with 50 mM iodacetamide\", which is the reagent used to create carbamidomethyl modifications on cysteines.",
+        "TRUTH_CHECK": "The modification is correct for the runs as it was part of the sample preparation.",
+        "COMPLETENESS_CHECK": "The value follows the required format (NT, TA, MT). While the paper does not explicitly use the word \"Fixed\", carbamidomethylation of cysteines following iodoacetamide treatment in a standard trypsin workflow is a fixed modification."
+      }
+    },
+    {
+      "annotation_type": "precursor_mass_tolerance",
+      "sdrf_column": "PrecursorMassTolerance",
+      "extracted_value": "20 ppm",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A precursor mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper does not state the precursor mass tolerance.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "fragment_mass_tolerance",
+      "sdrf_column": "FragmentMassTolerance",
+      "extracted_value": "4.0 Da",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": true,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fragment mass tolerance, the right field.",
+        "SOURCE_CHECK": "The paper does not state a fragment mass tolerance.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable, hallucinated."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "P1_LN_1.RAW = 1 | P1_LN_2.RAW = 1 | P1_LN_3.RAW = 1 | P1_PT_1.RAW = 1 | P1_PT_2.RAW = 1 | P1_PT_3.RAW = 1 | P2_ANT_1.RAW = 1 | P2_ANT_2.RAW = 1 | P2_ANT_3.RAW = 1 | P2_NCT_1.RAW = 1 | P2_NCT_2.RAW = 1 | P2_NCT_3.RAW = 1 | P2_PT_1.RAW = 1 | P2_PT_2.RAW = 1 | P2_PT_3.RAW = 1 | P3_ANT_1.RAW = 1 | P3_ANT_2.RAW = 1 | P3_ANT_3.RAW = 1 | P3_NCT_1.RAW = 1 | P3_NCT_2.RAW = 1 | P3_NCT_3.RAW = 1 | P3_PT_1.RAW = 1 | P3_PT_2.RAW = 1 | P3_PT_3.RAW = 1 | P4_ANT_1.RAW = 1 | P4_ANT_2.RAW = 1 | P4_ANT_3.RAW = 1 | P4_NCT_1.RAW = 1 | P4_NCT_2.RAW = 1 | P4_NCT_3.RAW = 1 | P4_PT_1.RAW = 1 | P4_PT_2.RAW = 1 | P4_PT_3.RAW = 1 | P5_ANT_1.RAW = 1 | P5_ANT_2.RAW = 1 | P5_ANT_3.RAW = 1 | P5_LN_1.RAW = 1 | P5_LN_2.RAW = 1 | P5_LN_3.RAW = 1 | P5_NCT_1.RAW = 1 | P5_NCT_2.RAW = 1 | P5_NCT_3.RAW = 1 | P5_PT_1.RAW = 1 | P5_PT_2.RAW = 1 | P5_PT_3.RAW = 1 | P6_ANT_1.RAW = 1 | P6_ANT_2.RAW = 1 | P6_ANT_3.RAW = 1 | P6_LN_1.RAW = 1 | P6_LN_2.RAW = 1 | P6_LN_3.RAW = 1 | P6_NCT_1.RAW = 1 | P6_NCT_2.RAW = 1 | P6_NCT_3.RAW = 1 | P6_PT_1.RAW = 1 | P6_PT_2.RAW = 1 | P6_PT_3.RAW = 1 | P7_ANT_1.RAW = 1 | P7_ANT_2.RAW = 1 | P7_ANT_4.RAW = 1 | P7_LN_1.RAW = 1 | P7_LN_2.RAW = 1 | P7_LN_3.RAW = 1 | P7_NCT_1.RAW = 1 | P7_NCT_2.RAW = 1 | P7_NCT_4.RAW = 1 | P7_PT_1.RAW = 1 | P7_PT_2.RAW = 1 | P7_PT_3.RAW = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that runs were performed in triplicate for each sample.",
+        "TRUTH_CHECK": "The mapping assigns the same index (1) to all runs, regardless of the sample or patient. Each distinct sample (e.g., Sample 1, Sample 2, etc.) is an independent biological unit and must be assigned a unique biological replicate index within its group.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "P1_LN_1.RAW = 1 | P1_LN_2.RAW = 2 | P1_LN_3.RAW = 3 | P1_PT_1.RAW = 1 | P1_PT_2.RAW = 2 | P1_PT_3.RAW = 3 | P2_ANT_1.RAW = 1 | P2_ANT_2.RAW = 2 | P2_ANT_3.RAW = 3 | P2_NCT_1.RAW = 1 | P2_NCT_2.RAW = 2 | P2_NCT_3.RAW = 3 | P2_PT_1.RAW = 1 | P2_PT_2.RAW = 2 | P2_PT_3.RAW = 3 | P3_ANT_1.RAW = 1 | P3_ANT_2.RAW = 2 | P3_ANT_3.RAW = 3 | P3_NCT_1.RAW = 1 | P3_NCT_2.RAW = 2 | P3_NCT_3.RAW = 3 | P3_PT_1.RAW = 1 | P3_PT_2.RAW = 2 | P3_PT_3.RAW = 3 | P4_ANT_1.RAW = 1 | P4_ANT_2.RAW = 2 | P4_ANT_3.RAW = 3 | P4_NCT_1.RAW = 1 | P4_NCT_2.RAW = 2 | P4_NCT_3.RAW = 3 | P4_PT_1.RAW = 1 | P4_PT_2.RAW = 2 | P4_PT_3.RAW = 3 | P5_ANT_1.RAW = 1 | P5_ANT_2.RAW = 2 | P5_ANT_3.RAW = 3 | P5_LN_1.RAW = 1 | P5_LN_2.RAW = 2 | P5_LN_3.RAW = 3 | P5_NCT_1.RAW = 1 | P5_NCT_2.RAW = 2 | P5_NCT_3.RAW = 3 | P5_PT_1.RAW = 1 | P5_PT_2.RAW = 2 | P5_PT_3.RAW = 3 | P6_ANT_1.RAW = 1 | P6_ANT_2.RAW = 2 | P6_ANT_3.RAW = 3 | P6_LN_1.RAW = 1 | P6_LN_2.RAW = 2 | P6_LN_3.RAW = 3 | P6_NCT_1.RAW = 1 | P6_NCT_2.RAW = 2 | P6_NCT_3.RAW = 3 | P6_PT_1.RAW = 1 | P6_PT_2.RAW = 2 | P6_PT_3.RAW = 3 | P7_ANT_1.RAW = 1 | P7_ANT_2.RAW = 2 | P7_ANT_4.RAW = 4 | P7_LN_1.RAW = 1 | P7_LN_2.RAW = 2 | P7_LN_3.RAW = 3 | P7_NCT_1.RAW = 1 | P7_NCT_2.RAW = 2 | P7_NCT_4.RAW = 4 | P7_PT_1.RAW = 1 | P7_PT_2.RAW = 2 | P7_PT_3.RAW = 3",
+      "verdict": null,
+      "type_mismatch": null,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": null,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "",
+        "SOURCE_CHECK": "",
+        "TRUTH_CHECK": "",
+        "COMPLETENESS_CHECK": ""
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "P1_LN_1.RAW = 1 | P1_LN_2.RAW = 1 | P1_LN_3.RAW = 1 | P1_PT_1.RAW = 1 | P1_PT_2.RAW = 1 | P1_PT_3.RAW = 1 | P2_ANT_1.RAW = 1 | P2_ANT_2.RAW = 1 | P2_ANT_3.RAW = 1 | P2_NCT_1.RAW = 1 | P2_NCT_2.RAW = 1 | P2_NCT_3.RAW = 1 | P2_PT_1.RAW = 1 | P2_PT_2.RAW = 1 | P2_PT_3.RAW = 1 | P3_ANT_1.RAW = 1 | P3_ANT_2.RAW = 1 | P3_ANT_3.RAW = 1 | P3_NCT_1.RAW = 1 | P3_NCT_2.RAW = 1 | P3_NCT_3.RAW = 1 | P3_PT_1.RAW = 1 | P3_PT_2.RAW = 1 | P3_PT_3.RAW = 1 | P4_ANT_1.RAW = 1 | P4_ANT_2.RAW = 1 | P4_ANT_3.RAW = 1 | P4_NCT_1.RAW = 1 | P4_NCT_2.RAW = 1 | P4_NCT_3.RAW = 1 | P4_PT_1.RAW = 1 | P4_PT_2.RAW = 1 | P4_PT_3.RAW = 1 | P5_ANT_1.RAW = 1 | P5_ANT_2.RAW = 1 | P5_ANT_3.RAW = 1 | P5_LN_1.RAW = 1 | P5_LN_2.RAW = 1 | P5_LN_3.RAW = 1 | P5_NCT_1.RAW = 1 | P5_NCT_2.RAW = 1 | P5_NCT_3.RAW = 1 | P5_PT_1.RAW = 1 | P5_PT_2.RAW = 1 | P5_PT_3.RAW = 1 | P6_ANT_1.RAW = 1 | P6_ANT_2.RAW = 1 | P6_ANT_3.RAW = 1 | P6_LN_1.RAW = 1 | P6_LN_2.RAW = 1 | P6_LN_3.RAW = 1 | P6_NCT_1.RAW = 1 | P6_NCT_2.RAW = 1 | P6_NCT_3.RAW = 1 | P6_PT_1.RAW = 1 | P6_PT_2.RAW = 1 | P6_PT_3.RAW = 1 | P7_ANT_1.RAW = 1 | P7_ANT_2.RAW = 1 | P7_ANT_4.RAW = 1 | P7_LN_1.RAW = 1 | P7_LN_2.RAW = 1 | P7_LN_3.RAW = 1 | P7_NCT_1.RAW = 1 | P7_NCT_2.RAW = 1 | P7_NCT_4.RAW = 1 | P7_PT_1.RAW = 1 | P7_PT_2.RAW = 1 | P7_PT_3.RAW = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes an online LC-ESI-MS/MS workflow and does not mention any offline fractionation.",
+        "TRUTH_CHECK": "Since no offline fractionation was performed, every run should be assigned to fraction 1.",
+        "COMPLETENESS_CHECK": "All runs are correctly assigned the value 1."
+      }
+    }
+  ]
+}

@@ -1,0 +1,515 @@
+{
+  "paper_id": "PXD013923",
+  "annotations": [
+    {
+      "annotation_type": "species",
+      "sdrf_column": "Organism",
+      "extracted_value": "Homo sapiens",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "An organism name, the right field.",
+        "SOURCE_CHECK": "The paper describes the use of human melanoma cells (A375) and human embryonic kidney cells (HEK293), making \"Homo sapiens\" an allowed inference.",
+        "TRUTH_CHECK": "The proteins analysed in the MS experiments are from human cell lines.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cell_type",
+      "sdrf_column": "CellType",
+      "extracted_value": "epithelial",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological cell type, which is the right field.",
+        "SOURCE_CHECK": "The paper uses A375 cells; while the text does not explicitly state \"epithelial\", A375 is a well-known human melanoma cell line, and melanoma cells are epithelial-derived (melanocytes). However, the field definition allows inference of cell type from a cell line of known origin.",
+        "TRUTH_CHECK": "The runs use A375 cells, which are melanoma cells.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "disease_state",
+      "sdrf_column": "Disease",
+      "extracted_value": "malignant melanoma",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the disease state of the material, which is the correct field.",
+        "SOURCE_CHECK": "The paper states the use of A375 human melanoma cells.",
+        "TRUTH_CHECK": "A375 is a well-known malignant melanoma cell line, and the paper explicitly refers to \"human melanoma cells\".",
+        "COMPLETENESS_CHECK": "The value follows the definition for disease state."
+      }
+    },
+    {
+      "annotation_type": "age",
+      "sdrf_column": "Age",
+      "extracted_value": "54Y",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is an age, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the age of any subjects; it uses A375 and HEK293 cell lines.",
+        "TRUTH_CHECK": "The value is not supported by the text.",
+        "COMPLETENESS_CHECK": "Not applicable."
+      }
+    },
+    {
+      "annotation_type": "sex",
+      "sdrf_column": "Sex",
+      "extracted_value": "female",
+      "verdict": "unverifiable",
+      "type_mismatch": false,
+      "value_correct": null,
+      "value_complete": null,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a biological sex, which is the right field.",
+        "SOURCE_CHECK": "The paper does not state the sex of the subjects or the origin of the A375 cell line.",
+        "TRUTH_CHECK": "The sex is not mentioned in the text.",
+        "COMPLETENESS_CHECK": "The value follows the format, but it is not supported by the text."
+      }
+    },
+    {
+      "annotation_type": "cell_line",
+      "sdrf_column": "CellLine",
+      "extracted_value": "A375",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a cell line name, which is the correct field.",
+        "SOURCE_CHECK": "The paper states \"A375 (ATCC, CRL-1619) cells were SILAC labelled\" in the Cell culture section.",
+        "TRUTH_CHECK": "The A375 cells were used for the quantitative (phospho)-proteomics experiments described.",
+        "COMPLETENESS_CHECK": "The value follows the definition and is complete."
+      }
+    },
+    {
+      "annotation_type": "material_type",
+      "sdrf_column": "MaterialType",
+      "extracted_value": "cell",
+      "verdict": "medium",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": false,
+      "hallucination": false,
+      "corrected_value": "cell line",
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the broad class of the analysed material, which is the right field.",
+        "SOURCE_CHECK": "The paper describes the use of A375 and HEK293 cells, which are cell lines.",
+        "TRUTH_CHECK": "The analysed material consists of cell lines.",
+        "COMPLETENESS_CHECK": "The value \"cell\" is not one of the controlled terms listed in the definition (\"cell line\", \"primary cells\", \"tissue\", \"biofluid\", \"organoid\", \"whole organism\" or \"cell culture\")."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "SILAC heavy",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that A375 cells were SILAC labelled and that samples contained 'heavy', 'medium' and 'light' SILAC labeled samples.",
+        "TRUTH_CHECK": "The runs are part of the quantitative proteomics experiment using SILAC.",
+        "COMPLETENESS_CHECK": "Complete. \"SILAC heavy\" is a correct channel name for a SILAC experiment."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "SILAC medium",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that cells were \"SILAC labelled\" and that samples contained \"‘heavy’, ‘medium’ and ‘light’ SILAC labeled samples\".",
+        "TRUTH_CHECK": "The runs are part of the quantitative proteomics experiment using SILAC.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "labeling",
+      "sdrf_column": "Label",
+      "extracted_value": "SILAC light",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the labeling method, which is the correct field.",
+        "SOURCE_CHECK": "The methods state that A375 cells were \"SILAC labelled\" and that samples were mixed containing \"equal amounts (8 mg) of each of the ‘heavy’, ‘medium’ and ‘light’ SILAC labeled samples.\"",
+        "TRUTH_CHECK": "The runs are part of a SILAC experiment using light, medium, and heavy channels.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "instrument",
+      "sdrf_column": "Instrument",
+      "extracted_value": "NT=Q Exactive;AC=MS:1001911",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A mass spectrometer model, the right field.",
+        "SOURCE_CHECK": "The methods state the samples were analysed on a \"ThermoFisher Scientific Q Exactive mass spectrometer\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Trypsin;AC=MS:1001251",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A protease name, the right field.",
+        "SOURCE_CHECK": "The methods state that trypsin (Sigma-Aldrich, T6567) was used for digestion.",
+        "TRUTH_CHECK": "Trypsin was used for both the A375 cell samples and the HEK293 affinity purification samples.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "cleavage_agent",
+      "sdrf_column": "CleavageAgent",
+      "extracted_value": "NT=Lys-C;AC=MS:1001309",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a protease name, which is the correct field.",
+        "SOURCE_CHECK": "The methods section states that Lys-C protease was added to the sample.",
+        "TRUTH_CHECK": "Lys-C was used for the digestion of the proteins in the described experiments.",
+        "COMPLETENESS_CHECK": "Complete. The NT term is correct and the AC accession is not judged."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "TIO2",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value refers to a peptide enrichment method, which is the correct field.",
+        "SOURCE_CHECK": "The methods section explicitly mentions \"TiO2 enrichment of phosphorylated peptides\" and the use of \"titanium dioxide beads\".",
+        "TRUTH_CHECK": "The runs are part of the phospho-proteomics experiment using TiO2 beads.",
+        "COMPLETENESS_CHECK": "The value \"TIO2\" is a correct representation of the method used."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "enrichment of phosphorylated Protein",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the enrichment of a peptide subset, which is the correct field.",
+        "SOURCE_CHECK": "The methods section explicitly describes \"TiO2 enrichment of phosphorylated peptides\".",
+        "TRUTH_CHECK": "The runs carrying this value are the phospho-proteome runs, which underwent TiO2 enrichment.",
+        "COMPLETENESS_CHECK": "The value uses the SDRF controlled term \"enrichment of phosphorylated protein\"."
+      }
+    },
+    {
+      "annotation_type": "enrichment_method",
+      "sdrf_column": "EnrichmentMethod",
+      "extracted_value": "no enrichment",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is a controlled term for the absence of enrichment, which is the right field.",
+        "SOURCE_CHECK": "The paper describes both \"proteome analysis\" and \"phospho-proteome\" (TiO2 enrichment) experiments.",
+        "TRUTH_CHECK": "The runs with \"no enrichment\" correspond to the proteome analysis, where no enrichment step is described.",
+        "COMPLETENESS_CHECK": "Complete. \"no enrichment\" is the correct SDRF term."
+      }
+    },
+    {
+      "annotation_type": "fractionation_method",
+      "sdrf_column": "FractionationMethod",
+      "extracted_value": "NT=Strong cation-exchange chromatography (SCX);AC=PRIDE:0000561",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A fractionation method, the right field.",
+        "SOURCE_CHECK": "The methods state \"Samples eluted from the Sep-Pak were then fractionated using strong cation exchange chromatography generating 32 fractions.\"",
+        "TRUTH_CHECK": "The runs were derived from these fractions.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "technology_type",
+      "sdrf_column": "technology type",
+      "extracted_value": "proteomic profiling by mass spectrometry",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value is the standard SDRF term for MS-based proteomics, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes a quantitative (phospho)-proteomics workflow using LC-MS/MS, which allows the inference of this technology type.",
+        "TRUTH_CHECK": "The value correctly describes the mass spectrometry experiments performed on the A375 and HEK293 cells.",
+        "COMPLETENESS_CHECK": "The value follows the required SDRF controlled terminology."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Carbamidomethyl;TA=C;MT=fixed;AC=UNIMOD:4",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"cysteine carbamidomethylation was set as a fixed modification\".",
+        "TRUTH_CHECK": "The value is correct for the runs.",
+        "COMPLETENESS_CHECK": "Follows the required format and is complete."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Oxidation;MT=variable;TA=M;AC=UNIMOD:35",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"Methionine oxidation... were set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs as it was part of the search parameters.",
+        "COMPLETENESS_CHECK": "Follows the required format including NT, TA, and MT."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Acetyl;AC=UNIMOD:1;PP=Protein N-term;MT=variable",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"protein N-terminal acetylation\" was set as a variable modification.",
+        "TRUTH_CHECK": "The value is right for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Complete, following the NT/PP/MT format."
+      }
+    },
+    {
+      "annotation_type": "modification",
+      "sdrf_column": "Modification",
+      "extracted_value": "NT=Phospho;MT=variable;TA=S,T,Y;AC=UNIMOD:21",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "A modification set in the database search, the right field.",
+        "SOURCE_CHECK": "The methods state \"serine/threonine/tyrosine phosphorylation were set as variable modifications\".",
+        "TRUTH_CHECK": "The value is correct for the runs carrying it.",
+        "COMPLETENESS_CHECK": "Follows the required format and includes all details provided in the paper."
+      }
+    },
+    {
+      "annotation_type": "biological_replicate",
+      "sdrf_column": "BiologicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1 | row 133 = 1 | row 134 = 1 | row 135 = 1 | row 136 = 1 | row 137 = 1 | row 138 = 1 | row 139 = 1 | row 140 = 1 | row 141 = 1 | row 142 = 1 | row 143 = 1 | row 144 = 1 | row 145 = 1 | row 146 = 1 | row 147 = 1 | row 148 = 1 | row 149 = 1 | row 150 = 1 | row 151 = 1 | row 152 = 1 | row 153 = 1 | row 154 = 1 | row 155 = 1 | row 156 = 1 | row 157 = 1 | row 158 = 1 | row 159 = 1 | row 160 = 1 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 1 | row 166 = 1 | row 167 = 1 | row 168 = 1 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 1 | row 173 = 1 | row 174 = 1 | row 175 = 1 | row 176 = 1 | row 177 = 1 | row 178 = 1 | row 179 = 1 | row 180 = 1 | row 181 = 1 | row 182 = 1 | row 183 = 1 | row 184 = 1 | row 185 = 1 | row 186 = 1 | row 187 = 1 | row 188 = 1 | row 189 = 1 | row 190 = 1 | row 191 = 1 | row 192 = 1 | row 193 = 1 | row 194 = 1 | row 195 = 1 | row 196 = 1 | row 197 = 1 | row 198 = 1 | row 199 = 1 | row 200 = 1 | row 201 = 1 | row 202 = 1 | row 203 = 1 | row 204 = 1 | row 205 = 1 | row 206 = 1 | row 207 = 1 | row 208 = 1 | row 209 = 1 | row 210 = 1 | row 211 = 1 | row 212 = 1 | row 213 = 1 | row 214 = 1 | row 215 = 1 | row 216 = 1 | row 217 = 1 | row 218 = 1 | row 219 = 1 | row 220 = 1 | row 221 = 1 | row 222 = 1 | row 223 = 1 | row 224 = 1 | row 225 = 1 | row 226 = 1 | row 227 = 1 | row 228 = 1 | row 229 = 1 | row 230 = 1 | row 231 = 1 | row 232 = 1 | row 233 = 1 | row 234 = 1 | row 235 = 1 | row 236 = 1 | row 237 = 1 | row 238 = 1 | row 239 = 1 | row 240 = 1 | row 241 = 1 | row 242 = 1 | row 243 = 1 | row 244 = 1 | row 245 = 1 | row 246 = 1 | row 247 = 1 | row 248 = 1 | row 249 = 1 | row 250 = 1 | row 251 = 1 | row 252 = 1 | row 253 = 1 | row 254 = 1 | row 255 = 1 | row 256 = 1 | row 257 = 1 | row 258 = 1 | row 259 = 1 | row 260 = 1 | row 261 = 1 | row 262 = 1 | row 263 = 1 | row 264 = 1 | row 265 = 1 | row 266 = 1 | row 267 = 1 | row 268 = 1 | row 269 = 1 | row 270 = 1 | row 271 = 1 | row 272 = 1 | row 273 = 1 | row 274 = 1 | row 275 = 1 | row 276 = 1 | row 277 = 1 | row 278 = 1 | row 279 = 1 | row 280 = 1 | row 281 = 1 | row 282 = 1 | row 283 = 1 | row 284 = 1 | row 285 = 1 | row 286 = 1 | row 287 = 1 | row 288 = 1 | row 289 = 1 | row 290 = 1 | row 291 = 1 | row 292 = 1 | row 293 = 1 | row 294 = 1 | row 295 = 1 | row 296 = 1 | row 297 = 1 | row 298 = 1 | row 299 = 1 | row 300 = 1 | row 301 = 1 | row 302 = 1 | row 303 = 1 | row 304 = 1 | row 305 = 1 | row 306 = 1 | row 307 = 1 | row 308 = 1 | row 309 = 1 | row 310 = 1 | row 311 = 1 | row 312 = 1 | row 313 = 1 | row 314 = 1 | row 315 = 1 | row 316 = 1 | row 317 = 1 | row 318 = 1 | row 319 = 1 | row 320 = 1 | row 321 = 1 | row 322 = 1 | row 323 = 1 | row 324 = 1 | row 325 = 1 | row 326 = 1 | row 327 = 1 | row 328 = 1 | row 329 = 1 | row 330 = 1 | row 331 = 1 | row 332 = 1 | row 333 = 1 | row 334 = 1 | row 335 = 1 | row 336 = 1 | row 337 = 1 | row 338 = 1 | row 339 = 1 | row 340 = 1 | row 341 = 1 | row 342 = 1 | row 343 = 1 | row 344 = 1 | row 345 = 1 | row 346 = 1 | row 347 = 1 | row 348 = 1 | row 349 = 1 | row 350 = 1 | row 351 = 1 | row 352 = 1 | row 353 = 1 | row 354 = 1 | row 355 = 1 | row 356 = 1 | row 357 = 1 | row 358 = 1 | row 359 = 1 | row 360 = 1 | row 361 = 1 | row 362 = 1 | row 363 = 1 | row 364 = 1 | row 365 = 1 | row 366 = 1 | row 367 = 1 | row 368 = 1 | row 369 = 1 | row 370 = 1 | row 371 = 1 | row 372 = 1",
+      "verdict": "low",
+      "type_mismatch": false,
+      "value_correct": false,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Biological replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper states that each treatment condition was repeated in triplicate.",
+        "TRUTH_CHECK": "The mapping assigns every single run (across 18 different samples/sources) to biological replicate 1. This contradicts the paper's statement that conditions were repeated in triplicate, which requires independent biological units to be indexed as 1, 2, and 3.",
+        "COMPLETENESS_CHECK": "The format is correct, but the logic is wrong."
+      }
+    },
+    {
+      "annotation_type": "technical_replicate",
+      "sdrf_column": "TechnicalReplicate",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 1 | row 5 = 1 | row 6 = 1 | row 7 = 1 | row 8 = 1 | row 9 = 1 | row 10 = 1 | row 11 = 1 | row 12 = 1 | row 13 = 1 | row 14 = 1 | row 15 = 1 | row 16 = 1 | row 17 = 1 | row 18 = 1 | row 19 = 1 | row 20 = 1 | row 21 = 1 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 1 | row 26 = 1 | row 27 = 1 | row 28 = 1 | row 29 = 1 | row 30 = 1 | row 31 = 1 | row 32 = 1 | row 33 = 1 | row 34 = 1 | row 35 = 1 | row 36 = 1 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 1 | row 41 = 1 | row 42 = 1 | row 43 = 1 | row 44 = 1 | row 45 = 1 | row 46 = 1 | row 47 = 1 | row 48 = 1 | row 49 = 1 | row 50 = 1 | row 51 = 1 | row 52 = 1 | row 53 = 1 | row 54 = 1 | row 55 = 1 | row 56 = 1 | row 57 = 1 | row 58 = 1 | row 59 = 1 | row 60 = 1 | row 61 = 1 | row 62 = 1 | row 63 = 1 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 1 | row 68 = 1 | row 69 = 1 | row 70 = 1 | row 71 = 1 | row 72 = 1 | row 73 = 1 | row 74 = 1 | row 75 = 1 | row 76 = 1 | row 77 = 1 | row 78 = 1 | row 79 = 1 | row 80 = 1 | row 81 = 1 | row 82 = 1 | row 83 = 1 | row 84 = 1 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 1 | row 89 = 1 | row 90 = 1 | row 91 = 1 | row 92 = 1 | row 93 = 1 | row 94 = 1 | row 95 = 1 | row 96 = 1 | row 97 = 1 | row 98 = 1 | row 99 = 1 | row 100 = 1 | row 101 = 1 | row 102 = 1 | row 103 = 1 | row 104 = 1 | row 105 = 1 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 1 | row 110 = 1 | row 111 = 1 | row 112 = 1 | row 113 = 1 | row 114 = 1 | row 115 = 1 | row 116 = 1 | row 117 = 1 | row 118 = 1 | row 119 = 1 | row 120 = 1 | row 121 = 1 | row 122 = 1 | row 123 = 1 | row 124 = 1 | row 125 = 1 | row 126 = 1 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 1 | row 131 = 1 | row 132 = 1 | row 133 = 1 | row 134 = 1 | row 135 = 1 | row 136 = 1 | row 137 = 1 | row 138 = 1 | row 139 = 1 | row 140 = 1 | row 141 = 1 | row 142 = 1 | row 143 = 1 | row 144 = 1 | row 145 = 1 | row 146 = 1 | row 147 = 1 | row 148 = 1 | row 149 = 1 | row 150 = 1 | row 151 = 1 | row 152 = 1 | row 153 = 1 | row 154 = 1 | row 155 = 1 | row 156 = 1 | row 157 = 1 | row 158 = 1 | row 159 = 1 | row 160 = 1 | row 161 = 1 | row 162 = 1 | row 163 = 1 | row 164 = 1 | row 165 = 1 | row 166 = 1 | row 167 = 1 | row 168 = 1 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 1 | row 173 = 1 | row 174 = 1 | row 175 = 1 | row 176 = 1 | row 177 = 1 | row 178 = 1 | row 179 = 1 | row 180 = 1 | row 181 = 1 | row 182 = 1 | row 183 = 1 | row 184 = 1 | row 185 = 1 | row 186 = 1 | row 187 = 1 | row 188 = 1 | row 189 = 1 | row 190 = 1 | row 191 = 1 | row 192 = 1 | row 193 = 1 | row 194 = 1 | row 195 = 1 | row 196 = 1 | row 197 = 1 | row 198 = 1 | row 199 = 1 | row 200 = 1 | row 201 = 1 | row 202 = 1 | row 203 = 1 | row 204 = 1 | row 205 = 1 | row 206 = 1 | row 207 = 1 | row 208 = 1 | row 209 = 1 | row 210 = 1 | row 211 = 1 | row 212 = 1 | row 213 = 1 | row 214 = 1 | row 215 = 1 | row 216 = 1 | row 217 = 1 | row 218 = 1 | row 219 = 1 | row 220 = 1 | row 221 = 1 | row 222 = 1 | row 223 = 1 | row 224 = 1 | row 225 = 1 | row 226 = 1 | row 227 = 1 | row 228 = 1 | row 229 = 1 | row 230 = 1 | row 231 = 1 | row 232 = 1 | row 233 = 1 | row 234 = 1 | row 235 = 1 | row 236 = 1 | row 237 = 1 | row 238 = 1 | row 239 = 1 | row 240 = 1 | row 241 = 1 | row 242 = 1 | row 243 = 1 | row 244 = 1 | row 245 = 1 | row 246 = 1 | row 247 = 1 | row 248 = 1 | row 249 = 1 | row 250 = 1 | row 251 = 1 | row 252 = 1 | row 253 = 1 | row 254 = 1 | row 255 = 1 | row 256 = 1 | row 257 = 1 | row 258 = 1 | row 259 = 1 | row 260 = 1 | row 261 = 1 | row 262 = 1 | row 263 = 1 | row 264 = 1 | row 265 = 1 | row 266 = 1 | row 267 = 1 | row 268 = 1 | row 269 = 1 | row 270 = 1 | row 271 = 1 | row 272 = 1 | row 273 = 1 | row 274 = 1 | row 275 = 1 | row 276 = 1 | row 277 = 1 | row 278 = 1 | row 279 = 1 | row 280 = 1 | row 281 = 1 | row 282 = 1 | row 283 = 1 | row 284 = 1 | row 285 = 1 | row 286 = 1 | row 287 = 1 | row 288 = 1 | row 289 = 1 | row 290 = 1 | row 291 = 1 | row 292 = 1 | row 293 = 1 | row 294 = 1 | row 295 = 1 | row 296 = 1 | row 297 = 1 | row 298 = 1 | row 299 = 1 | row 300 = 1 | row 301 = 1 | row 302 = 1 | row 303 = 1 | row 304 = 1 | row 305 = 1 | row 306 = 1 | row 307 = 1 | row 308 = 1 | row 309 = 1 | row 310 = 1 | row 311 = 1 | row 312 = 1 | row 313 = 1 | row 314 = 1 | row 315 = 1 | row 316 = 1 | row 317 = 1 | row 318 = 1 | row 319 = 1 | row 320 = 1 | row 321 = 1 | row 322 = 1 | row 323 = 1 | row 324 = 1 | row 325 = 1 | row 326 = 1 | row 327 = 1 | row 328 = 1 | row 329 = 1 | row 330 = 1 | row 331 = 1 | row 332 = 1 | row 333 = 1 | row 334 = 1 | row 335 = 1 | row 336 = 1 | row 337 = 1 | row 338 = 1 | row 339 = 1 | row 340 = 1 | row 341 = 1 | row 342 = 1 | row 343 = 1 | row 344 = 1 | row 345 = 1 | row 346 = 1 | row 347 = 1 | row 348 = 1 | row 349 = 1 | row 350 = 1 | row 351 = 1 | row 352 = 1 | row 353 = 1 | row 354 = 1 | row 355 = 1 | row 356 = 1 | row 357 = 1 | row 358 = 1 | row 359 = 1 | row 360 = 1 | row 361 = 1 | row 362 = 1 | row 363 = 1 | row 364 = 1 | row 365 = 1 | row 366 = 1 | row 367 = 1 | row 368 = 1 | row 369 = 1 | row 370 = 1 | row 371 = 1 | row 372 = 1",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "Technical replicate indices, the right field.",
+        "SOURCE_CHECK": "The paper describes triplicate experiments for each condition, but does not mention repeated injections of the same material (technical replicates).",
+        "TRUTH_CHECK": "A material measured once gets index 1. There is no evidence of repeated runs of the same material.",
+        "COMPLETENESS_CHECK": "Every run is assigned index 1, which is the correct default for materials measured once."
+      }
+    },
+    {
+      "annotation_type": "fraction_identifier",
+      "sdrf_column": "FractionIdentifier",
+      "extracted_value": "row 1 = 1 | row 2 = 1 | row 3 = 1 | row 4 = 6 | row 5 = 6 | row 6 = 6 | row 7 = 7 | row 8 = 7 | row 9 = 7 | row 10 = 2 | row 11 = 2 | row 12 = 2 | row 13 = 3 | row 14 = 3 | row 15 = 3 | row 16 = 4 | row 17 = 4 | row 18 = 4 | row 19 = 5 | row 20 = 5 | row 21 = 5 | row 22 = 1 | row 23 = 1 | row 24 = 1 | row 25 = 6 | row 26 = 6 | row 27 = 6 | row 28 = 6 | row 29 = 6 | row 30 = 6 | row 31 = 7 | row 32 = 7 | row 33 = 7 | row 34 = 7 | row 35 = 7 | row 36 = 7 | row 37 = 1 | row 38 = 1 | row 39 = 1 | row 40 = 2 | row 41 = 2 | row 42 = 2 | row 43 = 2 | row 44 = 2 | row 45 = 2 | row 46 = 3 | row 47 = 3 | row 48 = 3 | row 49 = 3 | row 50 = 3 | row 51 = 3 | row 52 = 4 | row 53 = 4 | row 54 = 4 | row 55 = 4 | row 56 = 4 | row 57 = 4 | row 58 = 5 | row 59 = 5 | row 60 = 5 | row 61 = 5 | row 62 = 5 | row 63 = 5 | row 64 = 1 | row 65 = 1 | row 66 = 1 | row 67 = 6 | row 68 = 6 | row 69 = 6 | row 70 = 7 | row 71 = 7 | row 72 = 7 | row 73 = 2 | row 74 = 2 | row 75 = 2 | row 76 = 3 | row 77 = 3 | row 78 = 3 | row 79 = 4 | row 80 = 4 | row 81 = 4 | row 82 = 5 | row 83 = 5 | row 84 = 5 | row 85 = 1 | row 86 = 1 | row 87 = 1 | row 88 = 6 | row 89 = 6 | row 90 = 6 | row 91 = 7 | row 92 = 7 | row 93 = 7 | row 94 = 2 | row 95 = 2 | row 96 = 2 | row 97 = 3 | row 98 = 3 | row 99 = 3 | row 100 = 4 | row 101 = 4 | row 102 = 4 | row 103 = 5 | row 104 = 5 | row 105 = 5 | row 106 = 1 | row 107 = 1 | row 108 = 1 | row 109 = 6 | row 110 = 6 | row 111 = 6 | row 112 = 7 | row 113 = 7 | row 114 = 7 | row 115 = 2 | row 116 = 2 | row 117 = 2 | row 118 = 3 | row 119 = 3 | row 120 = 3 | row 121 = 4 | row 122 = 4 | row 123 = 4 | row 124 = 5 | row 125 = 5 | row 126 = 5 | row 127 = 1 | row 128 = 1 | row 129 = 1 | row 130 = 6 | row 131 = 6 | row 132 = 6 | row 133 = 7 | row 134 = 7 | row 135 = 7 | row 136 = 2 | row 137 = 2 | row 138 = 2 | row 139 = 3 | row 140 = 3 | row 141 = 3 | row 142 = 4 | row 143 = 4 | row 144 = 4 | row 145 = 5 | row 146 = 5 | row 147 = 5 | row 148 = 1 | row 149 = 1 | row 150 = 1 | row 151 = 6 | row 152 = 6 | row 153 = 6 | row 154 = 7 | row 155 = 7 | row 156 = 7 | row 157 = 2 | row 158 = 2 | row 159 = 2 | row 160 = 3 | row 161 = 3 | row 162 = 3 | row 163 = 4 | row 164 = 4 | row 165 = 4 | row 166 = 5 | row 167 = 5 | row 168 = 5 | row 169 = 1 | row 170 = 1 | row 171 = 1 | row 172 = 6 | row 173 = 6 | row 174 = 6 | row 175 = 7 | row 176 = 7 | row 177 = 7 | row 178 = 2 | row 179 = 2 | row 180 = 2 | row 181 = 3 | row 182 = 3 | row 183 = 3 | row 184 = 4 | row 185 = 4 | row 186 = 4 | row 187 = 5 | row 188 = 5 | row 189 = 5 | row 190 = 1 | row 191 = 1 | row 192 = 1 | row 193 = 2 | row 194 = 2 | row 195 = 2 | row 196 = 3 | row 197 = 3 | row 198 = 3 | row 199 = 4 | row 200 = 4 | row 201 = 4 | row 202 = 5 | row 203 = 5 | row 204 = 5 | row 205 = 6 | row 206 = 6 | row 207 = 6 | row 208 = 1 | row 209 = 1 | row 210 = 1 | row 211 = 2 | row 212 = 2 | row 213 = 2 | row 214 = 3 | row 215 = 3 | row 216 = 3 | row 217 = 4 | row 218 = 4 | row 219 = 4 | row 220 = 5 | row 221 = 5 | row 222 = 5 | row 223 = 6 | row 224 = 6 | row 225 = 6 | row 226 = 1 | row 227 = 1 | row 228 = 1 | row 229 = 2 | row 230 = 2 | row 231 = 2 | row 232 = 3 | row 233 = 3 | row 234 = 3 | row 235 = 4 | row 236 = 4 | row 237 = 4 | row 238 = 5 | row 239 = 5 | row 240 = 5 | row 241 = 6 | row 242 = 6 | row 243 = 6 | row 244 = 1 | row 245 = 1 | row 246 = 1 | row 247 = 2 | row 248 = 2 | row 249 = 2 | row 250 = 3 | row 251 = 3 | row 252 = 3 | row 253 = 4 | row 254 = 4 | row 255 = 4 | row 256 = 5 | row 257 = 5 | row 258 = 5 | row 259 = 6 | row 260 = 6 | row 261 = 6 | row 262 = 1 | row 263 = 1 | row 264 = 1 | row 265 = 2 | row 266 = 2 | row 267 = 2 | row 268 = 3 | row 269 = 3 | row 270 = 3 | row 271 = 4 | row 272 = 4 | row 273 = 4 | row 274 = 5 | row 275 = 5 | row 276 = 5 | row 277 = 6 | row 278 = 6 | row 279 = 6 | row 280 = 1 | row 281 = 1 | row 282 = 1 | row 283 = 2 | row 284 = 2 | row 285 = 2 | row 286 = 3 | row 287 = 3 | row 288 = 3 | row 289 = 4 | row 290 = 4 | row 291 = 4 | row 292 = 5 | row 293 = 5 | row 294 = 5 | row 295 = 6 | row 296 = 6 | row 297 = 6 | row 298 = 1 | row 299 = 1 | row 300 = 1 | row 301 = 2 | row 302 = 2 | row 303 = 2 | row 304 = 3 | row 305 = 3 | row 306 = 3 | row 307 = 4 | row 308 = 4 | row 309 = 4 | row 310 = 5 | row 311 = 5 | row 312 = 5 | row 313 = 6 | row 314 = 6 | row 315 = 6 | row 316 = 1 | row 317 = 1 | row 318 = 1 | row 319 = 2 | row 320 = 2 | row 321 = 2 | row 322 = 3 | row 323 = 3 | row 324 = 3 | row 325 = 4 | row 326 = 4 | row 327 = 4 | row 328 = 5 | row 329 = 5 | row 330 = 5 | row 331 = 6 | row 332 = 6 | row 333 = 6 | row 334 = 1 | row 335 = 1 | row 336 = 1 | row 337 = 2 | row 338 = 2 | row 339 = 2 | row 340 = 3 | row 341 = 3 | row 342 = 3 | row 343 = 4 | row 344 = 4 | row 345 = 4 | row 346 = 5 | row 347 = 5 | row 348 = 5 | row 349 = 6 | row 350 = 6 | row 351 = 6 | row 352 = 1 | row 353 = 1 | row 354 = 1 | row 355 = 6 | row 356 = 6 | row 357 = 6 | row 358 = 7 | row 359 = 7 | row 360 = 7 | row 361 = 2 | row 362 = 2 | row 363 = 2 | row 364 = 3 | row 365 = 3 | row 366 = 3 | row 367 = 4 | row 368 = 4 | row 369 = 4 | row 370 = 5 | row 371 = 5 | row 372 = 5",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value represents fraction indices, which is the correct field.",
+        "SOURCE_CHECK": "The paper describes offline fractionation using strong cation exchange chromatography generating 32 fractions, which were then pooled and processed.",
+        "TRUTH_CHECK": "The mapping assigns different fraction identifiers to different runs of the same sample. For example, Sample 1 has runs with identifiers 1, 6, 7, 2, 3, 4, 5. This matches the description of multiple fractions/pools being analyzed.",
+        "COMPLETENESS_CHECK": "The mapping follows the required format of <run key> = <value>."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "control",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"control\" is a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The methods state that each treatment condition was repeated in triplicate with an associated DMSO control.",
+        "TRUTH_CHECK": "The value is correct for runs associated with the control group of the experiment.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "BRAF inhibitor dabrafenib",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes the drug treatment applied to the cells, which is the primary variable of the study.",
+        "SOURCE_CHECK": "The paper states that cells were treated with \"dabrafenib, a BRAF inhibitor\".",
+        "TRUTH_CHECK": "The value correctly identifies the treatment for the runs associated with it.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "control",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value \"control\" is a treatment condition, which is appropriate for a column named \"Treatment\".",
+        "SOURCE_CHECK": "The methods state that each treatment condition was repeated in triplicate with an associated DMSO control.",
+        "TRUTH_CHECK": "The value is correct for the runs designated as controls in the study.",
+        "COMPLETENESS_CHECK": "The value is a plain text label and is complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "ERK inhibitor SCH772984",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a drug treatment, which is the primary variable being compared in the study.",
+        "SOURCE_CHECK": "The paper states that cells were treated with SCH772984, which it identifies as an ERK inhibitor.",
+        "TRUTH_CHECK": "The value correctly identifies the treatment applied to the runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    },
+    {
+      "annotation_type": "other_column",
+      "sdrf_column": "Treatment",
+      "extracted_value": "MEK inhibitor trametinib",
+      "verdict": "high",
+      "type_mismatch": false,
+      "value_correct": true,
+      "value_complete": true,
+      "hallucination": false,
+      "corrected_value": null,
+      "issue_summary": {
+        "TYPE_CHECK": "The value describes a drug treatment, which is the primary variable being compared in this study.",
+        "SOURCE_CHECK": "The paper states that cells were treated with trametinib, which is identified as a MEK inhibitor.",
+        "TRUTH_CHECK": "The value correctly identifies the treatment applied to the corresponding runs.",
+        "COMPLETENESS_CHECK": "Complete."
+      }
+    }
+  ]
+}

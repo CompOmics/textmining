@@ -1,0 +1,176 @@
+{
+  "accession" : "PXD019394",
+  "title" : "A Tissue-Specific Atlas of Mouse Protein Phosphorylation and Expression",
+  "additionalAttributes" : [ ],
+  "projectDescription" : "This dataset contains RAW files from a large-scale survey of brain protein phosphorylation.  It is part of a larger project that contains data from a large-scale survey of protein expression and phosphorylation encompassing nine mouse tissues: brain, brown fat, heart, kidney, liver, lung, pancreas, spleen, and testis. Protein expression was surveyed by GeLC-MS, while protein phosphorylation was assessed via a combination of SCX-IMAC enrichment",
+  "sampleProcessingProtocol" : "Protein extracts from nine tissues were separated via SDS-PAGE (65 μg per tissue) and digested in-gel with trypsin. The resulting peptides were then analyzed via LC-MS/MS on an LTQ-Velos-Orbitrap mass spectrometer.",
+  "dataProcessingProtocol" : "Phosphopeptides were analyzed in duplicate via LC-MS/MS on an LTQ-Orbitrap mass spectrometer. Peptides were identified using Sequest and filtered to a 1% peptide FDR via the target-decoy approach, using a linear discriminant function to score each peptide based on parameters such as Xcorr, ΔCn, and precursor mass error. Individual phosphorylation sites were scored using AScore and the resulting dataset was further filtered to achieve an estimated 1.7% final protein FDR (final peptide FDR: 0.15%). MS/MS spectra have been annotated for all 36,000 phosphorylation sites and are available online (http://gygi.med.harvard.edu/phosphomouse) with matching SEQUEST.out files.",
+  "projectTags" : [ ],
+  "keywords" : [ "Phosphoproteomics", "Map phosphoproteome" ],
+  "doi" : "",
+  "submissionType" : "PARTIAL",
+  "license" : "Creative Commons Public Domain (CC0)",
+  "submissionDate" : "2020-05-26",
+  "publicationDate" : "2020-05-26",
+  "submitters" : [ {
+    "title" : "Dr",
+    "firstName" : "Edward",
+    "lastName" : "Huttlin",
+    "identifier" : "101980110",
+    "affiliation" : "Harvard Medical School",
+    "email" : "edward_huttlin@hms.harvard.edu",
+    "country" : "United States",
+    "orcid" : "",
+    "name" : "Edward Huttlin",
+    "id" : "101980110"
+  } ],
+  "labPIs" : [ {
+    "title" : "Dr",
+    "firstName" : "Steven",
+    "lastName" : "Gygi",
+    "identifier" : "197620100",
+    "affiliation" : "Department of Cell Biology, Harvard Medical School, Boston, MA, USA",
+    "email" : "steven_gygi@hms.harvard.edu",
+    "country" : "",
+    "orcid" : "",
+    "name" : "Steven Gygi",
+    "id" : "197620100"
+  } ],
+  "instruments" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1000449",
+    "name" : "LTQ Orbitrap"
+  } ],
+  "softwares" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MS",
+    "accession" : "MS:1001208",
+    "name" : "Sequest"
+  } ],
+  "experimentTypes" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000429",
+    "name" : "Shotgun proteomics"
+  } ],
+  "quantificationMethods" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000436",
+    "name" : "Spectrum counting"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "PRIDE",
+    "accession" : "PRIDE:0000435",
+    "name" : "Peptide counting"
+  } ],
+  "countries" : [ "United States" ],
+  "sampleAttributes" : [ {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000635",
+      "name" : "organism part"
+    },
+    "value" : [ {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000671",
+      "name" : "kidney"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000562",
+      "name" : "heart"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000759",
+      "name" : "liver"
+    }, {
+      "cvLabel" : "BTO",
+      "accession" : "BTO:0000763",
+      "name" : "lung"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "OBI:0100026",
+      "name" : "organism"
+    },
+    "value" : [ {
+      "cvLabel" : "NEWT",
+      "accession" : "NEWT:10090",
+      "name" : "Mus musculus (Mouse)"
+    } ]
+  }, {
+    "@type" : "Tuple",
+    "key" : {
+      "cvLabel" : "EFO",
+      "accession" : "EFO:0000408",
+      "name" : "disease"
+    },
+    "value" : [ {
+      "cvLabel" : "DOID",
+      "accession" : "DOID:0000018",
+      "name" : "disease free"
+    } ]
+  } ],
+  "organisms" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "NEWT",
+    "accession" : "NEWT:10090",
+    "name" : "Mus musculus (mouse)"
+  } ],
+  "organismParts" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000759",
+    "name" : "Liver"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000763",
+    "name" : "Lung"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000671",
+    "name" : "Kidney"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "BTO",
+    "accession" : "BTO:0000562",
+    "name" : "Heart"
+  } ],
+  "diseases" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "DOID",
+    "accession" : "DOID:0000018",
+    "name" : "Disease free"
+  } ],
+  "references" : [ {
+    "referenceLine" : "Huttlin EL, Jedrychowski MP, Elias JE, Goswami T, Rad R, Beausoleil SA, Villén J, Haas W, Sowa ME, Gygi SP. A tissue-specific atlas of mouse protein phosphorylation and expression. Cell. 2010 143(7):1174-1189",
+    "pubmedID" : 21183079,
+    "doi" : "10.1016/j.cell.2010.12.001"
+  } ],
+  "identifiedPTMStrings" : [ {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00425",
+    "name" : "monohydroxylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00696",
+    "name" : "phosphorylated residue"
+  }, {
+    "@type" : "CvParam",
+    "cvLabel" : "MOD",
+    "accession" : "MOD:00397",
+    "name" : "iodoacetamide derivatized residue"
+  } ],
+  "totalFileDownloads" : 34456,
+  "botCount" : 4577,
+  "hubCount" : 29388,
+  "organicCount" : 491
+}
